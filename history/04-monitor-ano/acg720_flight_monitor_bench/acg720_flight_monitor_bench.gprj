@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project><Template>FPGA</Template><Version>5</Version>
+<Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device><FileList>
+<File path="acg720_flight_monitor_bench.v" type="file.verilog" enable="1"/>
+<File path="telemetry_tx.v" type="file.verilog" enable="1"/>
+<File path="core/control_gate.v" type="file.verilog" enable="1"/>
+<File path="core/cordic_atan2.v" type="file.verilog" enable="1"/>
+<File path="core/flight_core.v" type="file.verilog" enable="1"/>
+<File path="core/icm42688_reader.v" type="file.verilog" enable="1"/>
+<File path="core/imu_checked_guard_pipelined.v" type="file.verilog" enable="1"/>
+<File path="core/imu_pipeline_pipelined.v" type="file.verilog" enable="1"/>
+<File path="core/imu_temporal_check_pipelined.v" type="file.verilog" enable="1"/>
+<File path="core/motor_pwm.v" type="file.verilog" enable="1"/>
+<File path="core/rc_ppm.v" type="file.verilog" enable="1"/>
+<File path="core/spi_uart_modules.v" type="file.verilog" enable="1"/>
+<File path="core/tilt_estimator_pipelined.v" type="file.verilog" enable="1"/>
+<File path="core/rtl/pid_divide_signed64.v" type="file.verilog" enable="1"/>
+<File path="core/rtl/quad_mixer_feedback.v" type="file.verilog" enable="1"/>
+<File path="core/rtl/rate_control_px4.v" type="file.verilog" enable="1"/>
+<File path="core/rtl/rate_pid_axis.v" type="file.verilog" enable="1"/>
+<File path="position/position_math.v" type="file.verilog" enable="1"/>
+<File path="position/relative_position.v" type="file.verilog" enable="1"/>
+<File path="position/hold_control.v" type="file.verilog" enable="1"/>
+<File path="sensor/flow_reader.v" type="file.verilog" enable="1"/>
+<File path="sensor/range_reader.v" type="file.verilog" enable="1"/>
+<File path="acg720_flight_monitor_bench.cst" type="file.cst" enable="1"/>
+<File path="acg720_flight_monitor_bench.sdc" type="file.sdc" enable="1"/>
+<File path="core/rtl/initial_profile.vh" type="file.verilog" enable="1"/>
+<File path="sensor/pmw3901_init.vh" type="file.verilog" enable="0"/>
+<File path="calibration.vh" type="file.verilog" enable="1"/>
+</FileList></Project>

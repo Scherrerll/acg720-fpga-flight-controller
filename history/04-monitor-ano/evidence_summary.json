@@ -1,0 +1,22 @@
+{
+  "scope": "Historical evidence summary only; not qualification of exported source",
+  "summary": "flight_monitor验证完成UTC 2026-10-11T18:32:05.155709+00:00，即北京时间10月12日02:32。ANO全局验证最新记录UTC 2026-10-13T13:03:57.030792+00:00。dashboard原README第59行记录10月13日A701/AFSR发布，第65行仍记录线加速度尖峰。此处不打包网页或位流，也不据这些历史报告宣称当前归档源码飞行合格。",
+  "sources": [
+    {
+      "workspace_relative_path": "acg720_flight_monitor_bench/validation.json",
+      "sha256": "0415d3865c01baa5f00edef2d4be71275b996c54930237296fca4e948c8e19e4"
+    },
+    {
+      "workspace_relative_path": "acg720_ano_port/validation.json",
+      "sha256": "e0e1728b344fdf50c28d9023bd7f4f35f0657eeb5a340f94701b543573b37ce5"
+    },
+    {
+      "workspace_relative_path": "acg720_ano_port/PORT_NOTES.txt",
+      "sha256": "ed74ae07a165002360f4b8f9d90dc67aa7858c6fce47b548e0900c2e2f970e8e"
+    },
+    {
+      "workspace_relative_path": "acg720_dashboard/README.md",
+      "sha256": "3f6ae3a963fe5b8ac90dc098596bde61d4aa7a785527b5e8c97bf1046fb01f06"
+    }
+  ]
+}
