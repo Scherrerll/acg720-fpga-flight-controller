@@ -1,0 +1,42 @@
+{
+  "build": "B0AD",
+  "candidate": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ad_local_cancel\\fixture",
+  "verified_at": "2026-10-20T12:42:09.648591+00:00",
+  "offline_verified": true,
+  "bench_ready": true,
+  "flight_ready": false,
+  "fmax_mhz": 50.067,
+  "bitstream": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ad_local_cancel\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+    "sha256": "8cd1f289ecf414e53dadec0a7ad13c12ce45071a332221a759b10c2d7f6d5586",
+    "user_code": "0x0000b0ad"
+  },
+  "five_rtl_regressions_passed": true,
+  "whole_top_takeover_passed": true,
+  "inflight_exit_and_commit_edge_passed": true,
+  "private_cleanup_cycle_comparisons": 7162720,
+  "host_tests_passed": 14,
+  "baseline_source_and_bitstream_unchanged": true,
+  "hardware_accessed": false,
+  "flash_written": false,
+  "outstanding": [
+    "Props-off acceptance of changed manual-throttle pickup operation",
+    "Factory optical-flow rotation and lever-arm semantics unqualified",
+    "Historical loaded 4S all-motor power loss unresolved"
+  ],
+  "evidence_sha256": {
+    "fixture/build_manifest.json": "fa4da470238fe995301c9fef6df73f881640d2e590038d8b7723e80e40206b02",
+    "qualification.json": "7f379028ce80309009de1ec8f0e1bd3390cdf01a8478cf42c2134d40c8aac948",
+    "test_results.json": "17f341b9fdb1a02e7fbb966450070ce6821d1547dbadd3b1c3cd28cd2655cb2f",
+    "integration/proof.json": "d763f3c53908ca8df77ac52d6a4f3fd2b80801387407cab44c4abda0700435f5",
+    "integration/run.log": "d932efdfc1b2db66c3d304a358e96cf1112c5ce2c86366fbb7ef2b91c0749f90",
+    "NEXT_BENCH.txt": "50d62a9db5b89667a8a2529d0f6a310fbef2be2494c50c246ae7f0ab31008785",
+    "PLAN.txt": "487ec5735ae448bd41a8618fc0815a30a267c8c45b7a74eef4161b25c641ef1c",
+    "local_cancel_proof.json": "2d0cfc944052e131cbc47d334e73ad882adf4b3166a9846b27120c90089c7a65",
+    "inflight_test/proof.json": "67dcc935e2bf7191cfa1aef696dc17a44dab04b325fed26806427c6b512a453b",
+    "inflight_test/at_commit/proof.json": "a530ff2eacefa18753cba416cc5cbb2a6be5868b8fd6d4393ceec6966f22431c",
+    "REVIEW_UPDATE.txt": "19b190a22367a0900fb5c8a5bb37342302eda756a14e187cf77b8f37b13c0e8a",
+    "F2_FACTORY_EVIDENCE.txt": "e317df0ef16d1df2738d591b0db44bd3f41ad800725716b7f960d855446dcd20",
+    "finalize_offline.py": "68bf0817bfe596e647d3c9b80dba4ce577893d4d7b23f3aa6d9a38ad4483b396"
+  }
+}

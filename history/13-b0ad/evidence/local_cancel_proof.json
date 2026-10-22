@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "hardware_accessed": false,
+  "synthesis_run": false,
+  "zero_public_latency_change": true,
+  "source_sha256": {
+    "check_local_cancel.py": "fa7efc367bbca96c0b39c4b851502b6065124dc085223c0d66a2364deeeb144e",
+    "reference_geometry.v": "79fea0e891c94c7272d4045e910c842c93531ed25b987da38cd0e12cdd84ec49",
+    "local_cancel_change.json": "261e99b38179cca3a495d512aa68751a0590c42e1f282b90f32bcd3cb1e3211c",
+    "local_cancel_test/bench.v": "2d3c39804374eb084efa2af351f40441f54fbece21d4e2e3fdc11d89f69b8156",
+    "local_cancel_test/reference_geometry_named.v": "76d88d64709af159f25bcc20a4020c05bb09c7d022de68270b615f61c00fbaa8",
+    "fixture/sensor/mtf_shared_geometry.v": "f37cb9c20751fc73c90393cff79bfa54d1b41799e01e88f728bb28ab77361491",
+    "fixture/sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+    "fixture/position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "fixture/nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7"
+  },
+  "compile_returncode": 0,
+  "simulation_returncode": 0,
+  "test_counts": {
+    "cases": 2160,
+    "cycles": 3581360,
+    "public_tuple_checks": 7162720,
+    "publications": 2534,
+    "stale_divider_done_differences": 8,
+    "stale_sincos_done_differences": 12
+  },
+  "phase_coverage": {
+    "geometry_state_bits_hex": "0000003000000000000000000003ffff",
+    "divider_state_bits_hex": "f",
+    "sincos_step_bits_hex": "1ffff"
+  },
+  "sweeps": [
+    {
+      "kind": 0,
+      "cases": 358,
+      "geometry_state_bits_hex": "0000003000000000000000000003ffff",
+      "divider_state_bits_hex": "f",
+      "sincos_step_bits_hex": "1ffff"
+    },
+    {
+      "kind": 1,
+      "cases": 358,
+      "geometry_state_bits_hex": "0000003000000000000000000003ffff",
+      "divider_state_bits_hex": "f",
+      "sincos_step_bits_hex": "1ffff"
+    },
+    {
+      "kind": 2,
+      "cases": 358,
+      "geometry_state_bits_hex": "0000003000000000000000000003ffff",
+      "divider_state_bits_hex": "f",
+      "sincos_step_bits_hex": "1ffff"
+    },
+    {
+      "kind": 3,
+      "cases": 358,
+      "geometry_state_bits_hex": "0000003000000000000000000003ffff",
+      "divider_state_bits_hex": "f",
+      "sincos_step_bits_hex": "1ffff"
+    },
+    {
+      "kind": 4,
+      "cases": 358,
+      "geometry_state_bits_hex": "0000003000000000000000000003ffff",
+      "divider_state_bits_hex": "f",
+      "sincos_step_bits_hex": "1ffff"
+    },
+    {
+      "kind": 5,
+      "cases": 358,
+      "geometry_state_bits_hex": "0000003000000000000000000003ffff",
+      "divider_state_bits_hex": "f",
+      "sincos_step_bits_hex": "1ffff"
+    }
+  ],
+  "nominal_transaction_clocks": 1061,
+  "outcome": "cycle-by-cycle public equivalence passed",
+  "scope": {
+    "geometry_instances": "actual original and candidate RTL, reference module renamed only",
+    "arithmetic_backends": "independent actual four-client nav_math_service with actual position_multiply; unused clients canceled",
+    "compared": "all geometry public ports including update/reason/busy plus external multiply request/cancel/operands",
+    "sampling": "before each clock edge after input changes and after each active edge",
+    "cancellation_kinds": [
+      "range invalid",
+      "pose invalid",
+      "origin reset",
+      "reset",
+      "flow-invalid epoch",
+      "sample overlap"
+    ],
+    "timing": "all private-child clocks and geometry FSM transitions, each eighth repetitive shared-multiply wait clock plus service start/completion boundaries, and two clocks beyond publication; immediate recovery/new sample for destructive cancellation",
+    "vectors": "12 signed/tilted/boundary vectors plus nominal tilted signed vector for all sweeps",
+    "excluded": "private helper output equality is intentionally not required; analog/hardware behavior and place/route timing are outside scope"
+  },
+  "elapsed_seconds": 70.154
+}

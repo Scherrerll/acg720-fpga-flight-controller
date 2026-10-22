@@ -1,0 +1,139 @@
+{
+  "sources_sha256": {
+    "acg720_ano_port.v": "bf1e6ec202cad3a92ca7a4f0e1c35bc89754aecfe045e5941054b69594e8e531",
+    "telemetry_tx.v": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/throttle_takeover.v": "733bd443b7bde404b2b78a459ef2f29f6e5ea77f1ac44c2a9ad3383db6149130",
+    "core/flight_core.v": "c705a97ef94887a19f7f9e96395e74d180ebaca4f39774ef92b7bbc4a48ede55",
+    "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+    "core/imu_checked_guard_pipelined.v": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+    "core/imu_pipeline_pipelined.v": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+    "core/imu_temporal_check_pipelined.v": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+    "core/motor_pwm.v": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+    "core/rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+    "acg720_ano_port.sdc": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "core/ano_attitude_estimator.v": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+    "core/rtl/ano_rate_control.v": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_z_stick.v": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "position/ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+    "sensor/range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+    "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "sensor/mtf01p_reader.v": "282bb3e610d54405c8c67cc2fdd5de05638d4d67b78ae99b83888b9898af6157",
+    "sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sensor/mtf_shared_geometry.v": "f37cb9c20751fc73c90393cff79bfa54d1b41799e01e88f728bb28ab77361491",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "mtf_xyz_navigation_control.v": "4fb740f542a3956152cab181933fdec606ee33df6c1eddbeba05c15c807837e4",
+    "position/mtf_xyz_hold_control.v": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14",
+    "acg720_ano_port.gprj": "211df225e1f7eec82a35038c1b34153113a43c526d02abc3dbf11bcbe96c1d68",
+    "build.tcl": "ce557baf6a2d7e83a3d757edbf3dba1bc14a01c21edc6e3b4813763e902adbe7"
+  },
+  "tests": [
+    {
+      "name": "takeover_unit",
+      "passed": true,
+      "source_sha256": {
+        "fixture\\core\\throttle_takeover.v": "733bd443b7bde404b2b78a459ef2f29f6e5ea77f1ac44c2a9ad3383db6149130"
+      }
+    },
+    {
+      "name": "core_takeover",
+      "passed": true,
+      "source_sha256": {
+        "fixture\\core\\flight_core.v": "c705a97ef94887a19f7f9e96395e74d180ebaca4f39774ef92b7bbc4a48ede55",
+        "fixture\\core\\throttle_takeover.v": "733bd443b7bde404b2b78a459ef2f29f6e5ea77f1ac44c2a9ad3383db6149130",
+        "fixture\\core\\control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "fixture\\core\\motor_pwm.v": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+        "fixture\\core\\rtl\\quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+        "fixture\\core\\rtl\\ano_rate_control.v": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+        "fixture\\core\\rtl\\ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "fixture\\core\\rtl\\pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "fixture\\core\\rtl\\ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "tests\\external_producer_models.v": "cbd0f6e3393f0eadb082b2fffaf79acaab50b0e7de5ed93f43d82280626da892"
+      }
+    },
+    {
+      "name": "pickup_time",
+      "passed": true,
+      "source_sha256": {
+        "fixture\\core\\throttle_takeover.v": "733bd443b7bde404b2b78a459ef2f29f6e5ea77f1ac44c2a9ad3383db6149130"
+      }
+    },
+    {
+      "name": "telemetry_wire",
+      "passed": true,
+      "source_sha256": {
+        "fixture\\telemetry_tx.v": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0",
+        "fixture\\core\\spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3"
+      }
+    },
+    {
+      "name": "full_top",
+      "passed": true,
+      "source_sha256": {
+        "fixture\\acg720_ano_port.v": "bf1e6ec202cad3a92ca7a4f0e1c35bc89754aecfe045e5941054b69594e8e531",
+        "fixture\\telemetry_tx.v": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0",
+        "fixture\\core\\control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "fixture\\core\\cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "fixture\\core\\throttle_takeover.v": "733bd443b7bde404b2b78a459ef2f29f6e5ea77f1ac44c2a9ad3383db6149130",
+        "fixture\\core\\flight_core.v": "c705a97ef94887a19f7f9e96395e74d180ebaca4f39774ef92b7bbc4a48ede55",
+        "fixture\\core\\bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+        "fixture\\core\\imu_checked_guard_pipelined.v": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+        "fixture\\core\\imu_pipeline_pipelined.v": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+        "fixture\\core\\imu_temporal_check_pipelined.v": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+        "fixture\\core\\motor_pwm.v": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+        "fixture\\core\\rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+        "fixture\\core\\spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "fixture\\core\\rtl\\pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "fixture\\core\\rtl\\quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+        "fixture\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "fixture\\position\\relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+        "fixture\\sensor\\flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "fixture\\sensor\\range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "fixture\\core\\ano_attitude_estimator.v": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+        "fixture\\core\\rtl\\ano_rate_control.v": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+        "fixture\\position\\ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "fixture\\position\\ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "fixture\\position\\ano_z_stick.v": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+        "fixture\\core\\rtl\\ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "fixture\\position\\ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+        "fixture\\sensor\\range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+        "fixture\\position\\pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "fixture\\core\\rtl\\ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "fixture\\sensor\\mtf01p_reader.v": "282bb3e610d54405c8c67cc2fdd5de05638d4d67b78ae99b83888b9898af6157",
+        "fixture\\sensor\\mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+        "fixture\\position\\mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "fixture\\mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+        "fixture\\nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "fixture\\sensor\\mtf_shared_geometry.v": "f37cb9c20751fc73c90393cff79bfa54d1b41799e01e88f728bb28ab77361491",
+        "fixture\\position\\mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "fixture\\position\\mtf_shared_height_fusion.v": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+        "fixture\\position\\mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "fixture\\mtf_xyz_navigation_control.v": "4fb740f542a3956152cab181933fdec606ee33df6c1eddbeba05c15c807837e4",
+        "fixture\\position\\mtf_xyz_hold_control.v": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14"
+      }
+    }
+  ],
+  "hardware_accessed": false,
+  "flight_ready": false
+}
