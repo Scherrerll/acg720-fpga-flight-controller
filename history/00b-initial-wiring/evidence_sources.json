@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "scope": "Paraphrased factual index only. No raw conversation, account, order, MAC, license or photo export. Dates are source events, not Git commit dates.",
+  "sources": [
+    {
+      "thread_id": "01a0f5ac-ada5-7250-a1f5-5ace6821a0a6",
+      "thread_title": "我要打FPGA嵌赛高云赛道的开放式选题，现在下完高云的软件需要申请license，这个该怎么填？",
+      "turn_id": "01a0f5c4-4756-73b1-a209-09edf9659a9f",
+      "time_Asia_Shanghai": "2026-10-01 12:41:16",
+      "evidence_kind": "interface_plan",
+      "summary": "将SPI/UART/PWM安排P7，属于GPIO约定，不是器件固定外设端口；旧IMU建议后被实物资料修正。"
+    },
+    {
+      "thread_id": "01a0f5ac-ada5-7250-a1f5-5ace6821a0a6",
+      "thread_title": "我要打FPGA嵌赛高云赛道的开放式选题，现在下完高云的软件需要申请license，这个该怎么填？",
+      "turn_id": "01a0f5e3-1bda-7272-a30d-48aa836a69c7",
+      "time_Asia_Shanghai": "2026-10-01 13:14:56",
+      "evidence_kind": "user_hardware_update",
+      "summary": "补充实际IMU针名与5V/3.3V/12V稳压模块，按实物修订。"
+    },
+    {
+      "thread_id": "01a0f5ac-ada5-7250-a1f5-5ace6821a0a6",
+      "thread_title": "我要打FPGA嵌赛高云赛道的开放式选题，现在下完高云的软件需要申请license，这个该怎么填？",
+      "turn_id": "01a0fd03-b7b9-75f2-af9f-c444cbcc2c1c",
+      "time_Asia_Shanghai": "2026-10-02 22:27:54",
+      "evidence_kind": "user_hardware_confirmation",
+      "summary": "接收机为FS-iA6B。"
+    },
+    {
+      "thread_id": "01a0f5ac-ada5-7250-a1f5-5ace6821a0a6",
+      "thread_title": "我要打FPGA嵌赛高云赛道的开放式选题，现在下完高云的软件需要申请license，这个该怎么填？",
+      "turn_id": "01a1016c-2998-7b72-99d6-6a8c2c0aa597",
+      "time_Asia_Shanghai": "2026-10-03 19:00:28",
+      "evidence_kind": "user_report",
+      "summary": "改用PPM并报告配对完成；ESC仍由FPGA控制。"
+    },
+    {
+      "thread_id": "01a0f5ac-ada5-7250-a1f5-5ace6821a0a6",
+      "thread_title": "我要打FPGA嵌赛高云赛道的开放式选题，现在下完高云的软件需要申请license，这个该怎么填？",
+      "turn_id": "01a10203-c0ba-7022-9fc4-6d51d4d67b81",
+      "time_Asia_Shanghai": "2026-10-03 21:46:02",
+      "evidence_kind": "interface_explanation",
+      "summary": "PMW3901七线与可选板载VL53L0X两根I2C线分开，独立TFmini-S可先使用。"
+    },
+    {
+      "thread_id": "01a0f5ac-ada5-7250-a1f5-5ace6821a0a6",
+      "thread_title": "我要打FPGA嵌赛高云赛道的开放式选题，现在下完高云的软件需要申请license，这个该怎么填？",
+      "turn_id": "01a102de-151f-7390-9059-7e5d903c6cc3",
+      "time_Asia_Shanghai": "2026-10-04 01:44:31",
+      "evidence_kind": "user_progress_report",
+      "summary": "用户报告焊线完成；并非逐线电气或飞行验收。"
+    }
+  ],
+  "later_document": {
+    "path": "ACG720_60K_无人机接线表.md",
+    "sha256": "3930cd35b2ae337d8e0f0dce26ec905abe11b88a8a85ddbcfd6e935c7bc61d43",
+    "title_date": "2026-10-10",
+    "not_an_exact_initial_snapshot": true,
+    "full_text_exported": false
+  },
+  "current_wiring": "docs/HARDWARE.md and selected fixture CST, not the old pin table"
+}
