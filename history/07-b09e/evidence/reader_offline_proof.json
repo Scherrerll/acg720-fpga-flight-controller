@@ -1,0 +1,59 @@
+{
+  "schema": "pmw3901_atk_vendor_reader_offline_proof/v1",
+  "passed": true,
+  "source_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\fixture\\sensor\\flow_reader.v": "d89d6711fa80d849da169fb9d119b8b6307fce14b1b754c9c6f77beff233f387",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\fixture\\sensor\\pmw3901_init.vh": "4ec6c55b79b7c8099697b9cff74df93396d3df54e41a7254d17a4f51a5922db9"
+  },
+  "bench_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\tb_flow_reader_atk.v": "2b27719992d1190bc0d83b6de8a4570aeb5d05251701b932a5651589a231a44d",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\tb_flow_elapsed_clock.v": "5bf78e3999a0f55074c56cd1eb3946bf36c16321379b8b24f67d792737589537",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\tb_flow_gray_commit_boundary.v": "2b0956c0382757929c98162b99f8f31127c7578a7f0d75db98cf15947f3a77cc",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\tb_flow_first_observation_error.v": "81d7d0c47776af1f6e287cf6a41014e35afbba584eb7fa00d968a8e9ae14f835"
+  },
+  "log_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\reader_simulation.txt": "fc909603f1f11446318245324d4ff1c79da0e15cf81cfbc33d2b20752a239f7a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\reader_elapsed_final2_simulation.txt": "bb037c3bfede908a3771b1a3d597fb8d447e6d3e9d542274700191a6dc8ce9d4",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\gray_commit_boundary_after_fix.txt": "9955a7683eadb23b662866e29dac6a2d73f62a9c695cd532741051a6811748d0",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\first_bad_observation_after_fix.txt": "d5939c20e39e3d504bd184bd67d85ed51754366cbed4078c1f0f8b74cb6993fa"
+  },
+  "tool": "Icarus Verilog bundled .tools/iverilog/app/bin, -g2012, 50 MHz simulation clock",
+  "validation": [
+    {
+      "name": "independent_spi_vendor_sequence",
+      "passed": true,
+      "checks": 9130141,
+      "details": "Literal expected command/data table transcribed from supplied PixArt R1.10 pp29-32; no DUT ROM is used as expected result; reset, clear02..06, revision01, complete preamble and corrected73-write tail checked on physical SPI model."
+    },
+    {
+      "name": "conditional_initialization",
+      "passed": true,
+      "details": "67 bit7 set/clear;73 zero/nonzero;47 success on first,second,third trial and3-failure lockout;Observation startup success/failure;C1=28->42,29->40,255->63 widened addition;C2=255->114,1->0,100->45 integer truncation."
+    },
+    {
+      "name": "unshortened_required_delays",
+      "passed": true,
+      "details": "Case1 retains real 500000-clock10ms tail delay afterbank7reg70=0 and750000-clock15ms Observation delay. Other startup/poll waits accelerated only in functional tests; SPI engine real timing unchanged. Real CS setup>=2500clocks."
+    },
+    {
+      "name": "motion_atomic_diagnostics_and_health",
+      "passed": true,
+      "details": "Twelve signed XY edge vectors, zero counts/no-motion valid,exact8diagnostic byte order+revision,all public raw/diagnostic fields atomic,100Hz actual start/commit spacing500000clocks,firstdt0,all subsequentdtactual,raw invalid deltas preserved,falsemotion SQUAL<25 AND shutterUpper31 boundary,unexpectedObservationhealth,recovery,midSPIreset;firstbadObservationerror1,repeatedbadstreak1,recovery1,re-bad2."
+    },
+    {
+      "name": "zero_gray_actual_elapsed_time",
+      "passed": true,
+      "unshortened_clocks": 50000000,
+      "commit_boundary_cases_passed": 4,
+      "details": "Four extra commit-edge cases verify before/exact/after one second and healthy recovery, flags+usable atomic on threshold edge; before-fix failure preserved. Separate isolated elapsed monitor simulation checks all50000000consecutive50MHz clocks, no accelerated counter; fault absent through49999999 andassertedat50000000,source_dt deliberatelyFFFFFFFF hasnoeffect,saturation+reset. SPI-model test checks firstzero tuple transient andfalsefault publication/recovery."
+    }
+  ],
+  "regression_artifacts": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\first_observation_error_regression.json": "8d378fe447dafa0b9ee51530cdadbc020bb90dbc842b72c4c049112bf70e56f6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\gray_commit_boundary_before_fix.txt": "f2e93a4a968833ceb47e00493af06e0fba4cde8c43de60bfb8e48e210ee22652"
+  },
+  "raw_count_fraction_bits": 0,
+  "hardware_accessed": false,
+  "physical_spi_integrity_proven": false,
+  "scope": "Offline RTL/SPI-model proof only; full-board PNR and actual module tracking are separate qualifications."
+}

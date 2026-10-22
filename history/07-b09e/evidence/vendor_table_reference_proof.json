@@ -1,0 +1,17 @@
+{
+  "schema": "vendor_pdf_static_table_proof/v1",
+  "passed": true,
+  "entries": 73,
+  "datasheet_pages": [
+    30,
+    31,
+    32
+  ],
+  "all_addresses_and_values_exact": true,
+  "conditional_preamble_covered_by": "reader_offline_proof.json independent SPI model",
+  "source_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\fixture\\sensor\\pmw3901_init.vh": "4ec6c55b79b7c8099697b9cff74df93396d3df54e41a7254d17a4f51a5922db9",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\atk_pmw3901_comparison_20261017\\vendor_package\\ATK-PMW3901\u5149\u6d41\u6a21\u5757\\\u82af\u7247\u6570\u636e\u624b\u518c\\POT0189-PMW3901MB-TXQT-DS-R1.10-200617--.pdf": "ca4fb1b1ab335519600a2e2804d06c1cb5a852bf16d0f4ae0b67e802b468360f"
+  },
+  "hardware_accessed": false
+}

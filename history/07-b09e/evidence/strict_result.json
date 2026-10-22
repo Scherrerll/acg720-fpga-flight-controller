@@ -1,0 +1,125 @@
+{
+  "name": "flow_atk_vendor_b09e",
+  "status": "offline_qualified",
+  "inspected_utc": "2026-10-17T01:39:49.177727+00:00",
+  "errors": [],
+  "unrouted_nets": null,
+  "positive_footers": {
+    "GowinSynthesis finish": true,
+    "Timing analysis completed": true,
+    "Placement and routing completed": true,
+    "Bitstream generation completed": true
+  },
+  "reused_synthesis_bound": false,
+  "source_changes": [
+    "acg720_ano_port.v",
+    "sensor/flow_reader.v",
+    "sensor/pmw3901_init.vh",
+    "telemetry_tx.v"
+  ],
+  "passed": true,
+  "hardware_accessed": false,
+  "source_mismatches": [],
+  "baseline_source_mismatches": [],
+  "resources": {
+    "Logic": {
+      "used": 34526,
+      "available": 59904,
+      "percent": 58
+    },
+    "Register": {
+      "used": 19860,
+      "available": 60780,
+      "percent": 33
+    },
+    "CLS": {
+      "used": 23027,
+      "available": 29952,
+      "percent": 77
+    },
+    "I/O Port": {
+      "used": 21,
+      "available": 297,
+      "percent": 8
+    },
+    "BSRAM": {
+      "used": 23,
+      "available": 118,
+      "percent": 20
+    }
+  },
+  "pins": {
+    "clk50": "Y18",
+    "imu_miso": "D19",
+    "rc_ppm_in": "B17",
+    "flow_miso": "F14",
+    "range_rx": "C14",
+    "imu_sck": "E17",
+    "imu_mosi": "C20",
+    "imu_cs_n": "E18",
+    "imu_gyro_cs_n": "F20",
+    "flow_sck": "A19",
+    "flow_mosi": "F13",
+    "flow_cs_n": "E13",
+    "flow_pwr_en": "E14",
+    "range_tx": "C15",
+    "uart_tx": "M15",
+    "led2": "L21",
+    "led3": "K21",
+    "motor1_pwm": "D17",
+    "motor2_pwm": "C17",
+    "motor3_pwm": "E16",
+    "motor4_pwm": "D16"
+  },
+  "placed_pins_match": true,
+  "clock_allocation": "6. Global Clock Signals\n\n  -------------------------------------------\n  Signal         | Global Clock   | Location\n  -------------------------------------------\n  clk50_d        | PRIMARY        |  TR BR BL\n  core/imu/temporal/held_raw_95_21| PRIMARY        |  TR BR BL\n  core/imu/temporal/da_x_16_6| PRIMARY        |  TR BR BL\n  core/imu/estimator/matrix[8]_1_5| PRIMARY        |  BL\n  core/manual_angles/n1460_3| PRIMARY        |  TR BL\n  core/yaw_controller/n20957_6| PRIMARY        |  BR\n  core/controller/held_target_roll_6_22| PRIMARY        |  BR\n  flow/n3172_10  | PRIMARY        |  TR\n  n13_12         | LW             |  -\n  staged_telemetry.extension_q_97_16| LW             |  -\n  core/n49_4     | LW             |  -\n  core/n4675_5   | LW             |  -\n  core/imu/estimator/n1740_3| LW             |  -\n  core/imu/estimator/n73884_7| LW             |  -\n  core/controller/n27020_3| LW             |  -\n  height_fusion/n245_4| LW             |  -\n  ===========================================\n\n\n",
+  "expected_user_code": "0x0000B09E",
+  "private_user_code_matches": true,
+  "timing": {
+    "clocks": {
+      "clk50": {
+        "type": "Base",
+        "period_ns": "20.000",
+        "frequency_MHz": "50.000"
+      }
+    },
+    "frequencies": {
+      "clk50": {
+        "constraint_MHz": "50.000",
+        "actual_Fmax_MHz": "51.313",
+        "level": 8,
+        "entity": "TOP"
+      }
+    },
+    "all_clock_slack": [
+      {
+        "clock": "clk50",
+        "analysis": "setup",
+        "TNS_ns": "0.000",
+        "violated_endpoints": 0
+      },
+      {
+        "clock": "clk50",
+        "analysis": "hold",
+        "TNS_ns": "0.000",
+        "violated_endpoints": 0
+      }
+    ],
+    "global_violated_endpoint_totals": {
+      "setup": 0,
+      "hold": 0
+    },
+    "analyzed": {
+      "paths": 51079,
+      "endpoints": 61266
+    },
+    "all_clock_50MHz_zero_setup_hold_TNS_passed": true
+  },
+  "output_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\console.log": "2b110b5a91ccb0c8e61f15c7a7d3e781aa60ed47519e4141c592be2c3900860a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt": "a02bcd9a92dc35fe562f1d7b580f6a77bb0b502480c6c6def648e5bac0e8bf27",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\fixture\\impl\\pnr\\acg720_ano_port.tr": "c445c9bd6a750ff55c91e72b756edd317e08370005a3940ee2d46cc06f1b2e2d",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\fixture\\impl\\pnr\\acg720_ano_port.fs": "e45e175ca2ecde6c74d90bde7356d4c63a2cabfca44278fe8e4a902a14219f56",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\flow_atk_vendor_b09e\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg": "3d954606f5bebfc522af59f5991db013f2c580b675cf7e14e2c18c99fdb1b41e"
+  }
+}

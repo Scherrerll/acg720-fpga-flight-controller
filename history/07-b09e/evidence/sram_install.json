@@ -1,0 +1,16 @@
+{
+  "installed": true,
+  "phase": "SRAM",
+  "flash_written": false,
+  "user_code": "B09E",
+  "bitstream_sha256": "e45e175ca2ecde6c74d90bde7356d4c63a2cabfca44278fe8e4a902a14219f56",
+  "qualification_sha256": "be9bba4a792c7fd0f8946025c40dc8ae4665b7f35f29d4b7dcfb060209ba9047",
+  "installed_utc": "2026-10-17T01:40:09.523947+00:00",
+  "flight_ready": false,
+  "calibration_applied": false,
+  "range_unit": "cm",
+  "arming_unchanged": true,
+  "default_flash_user_code": "B089",
+  "prior_props_removed_confirmation_in_chat": true,
+  "live_rc_off_and_motors_stopped": true
+}
