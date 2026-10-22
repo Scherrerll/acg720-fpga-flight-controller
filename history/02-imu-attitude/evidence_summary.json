@@ -1,0 +1,14 @@
+{
+  "scope": "Historical evidence summary only; not qualification of exported source",
+  "summary": "IMU README第27行起记载10月10日六轴读取、异常和恢复。姿态README第91行起记载10月11日13:23保护构建，141行起记载13:59修订构建与2938帧静置采集。历史711C记录与本次复制的当前源码不保证字节对应；偶发IMU读取异常未因此证明消除。",
+  "sources": [
+    {
+      "workspace_relative_path": "acg720_imu_check/README.md",
+      "sha256": "6942824f43d5c28ae14edf715ae23f03886cad68ff8c9bac857ba730299c3ca7"
+    },
+    {
+      "workspace_relative_path": "acg720_attitude_bench/README.md",
+      "sha256": "db3b218745557f8d44f5a84d72c1b0f645f2ef4eb48c7afdcc453c98de19ceda"
+    }
+  ]
+}

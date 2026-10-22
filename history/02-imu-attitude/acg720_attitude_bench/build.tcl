@@ -1,0 +1,3 @@
+open_project acg720_attitude_bench.gprj
+set_option -top_module acg720_attitude_bench
+run all
