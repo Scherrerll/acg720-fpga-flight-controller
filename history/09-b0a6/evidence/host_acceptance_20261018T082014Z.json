@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "scope": "SiK physical receive -> logging -> ZIP/CSV/analysis -> raw replay",
+  "source": {
+    "port": "COM17",
+    "baud": 115200,
+    "source": "SiK",
+    "usb_device": {
+      "port": "COM17",
+      "description": "USB Serial Port (COM17)",
+      "hwid": "USB VID:PID=0403:6015 SER=DU0ENI02A",
+      "vid": 1027,
+      "pid": 24597,
+      "serial_number": "DU0ENI02A",
+      "selectable": true
+    }
+  },
+  "wireless_accepted": true,
+  "zero_loss_continuous_accepted": false,
+  "snapshot": {
+    "passed": true,
+    "raw_bytes": 503286,
+    "decoded_frames": 5815,
+    "primary_frames": 1470,
+    "checksum_errors": 26,
+    "source": {
+      "port": "COM17",
+      "baud": 115200,
+      "source": "SiK",
+      "usb_device": {
+        "port": "COM17",
+        "description": "USB Serial Port (COM17)",
+        "hwid": "USB VID:PID=0403:6015 SER=DU0ENI02A",
+        "vid": 1027,
+        "pid": 24597,
+        "serial_number": "DU0ENI02A",
+        "selectable": true
+      }
+    },
+    "reported_build_id": 45222,
+    "hash_files": 5,
+    "snapshot_utc": "2026-10-18T08:20:14.382458+00:00"
+  },
+  "receiver_status": {
+    "session_id": "20261018T081725Z_61bbebf6",
+    "source": {
+      "port": "COM17",
+      "baud": 115200,
+      "source": "SiK",
+      "usb_device": {
+        "port": "COM17",
+        "description": "USB Serial Port (COM17)",
+        "hwid": "USB VID:PID=0403:6015 SER=DU0ENI02A",
+        "vid": 1027,
+        "pid": 24597,
+        "serial_number": "DU0ENI02A",
+        "selectable": true
+      }
+    },
+    "bytes": 503286,
+    "frames": 5815,
+    "primary_frames": 1470,
+    "queue_depth": 0,
+    "error": null,
+    "dropped_chunks": 0,
+    "dropped_bytes": 0,
+    "missing_primary_frames": 25,
+    "duplicates": 0,
+    "closed": false,
+    "receiver_checksum_errors": 26,
+    "ingest_latency_p95_ms": 0.5074
+  },
+  "flight_info": {
+    "sequence": 1486,
+    "version": 1,
+    "info_flags": 0,
+    "build_id": 45222,
+    "uptime_ms": 148700,
+    "event_sequence": 0,
+    "event_uptime_ms": 0,
+    "event_code": 0,
+    "event_sensor_mask": 0,
+    "event_imu_reason": 0,
+    "event_attitude_fault": 0,
+    "event_pose_age_ticks": 0,
+    "controller_fault": 0,
+    "reserved": 0,
+    "_protocol": "a580"
+  },
+  "continuous": null,
+  "state_fresh": true,
+  "serial_writes": false,
+  "analysis_samples": 1472,
+  "csv_bytes": 184626,
+  "archive": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a6\\host_acceptance_20261018T082014Z.zip",
+  "flight_acceptance": false
+}

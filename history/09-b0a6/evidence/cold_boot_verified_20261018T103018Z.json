@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-18T10:30:18.081271+00:00",
+  "passed": true,
+  "scope": "B0A6 physical battery-only cold boot and wireless ground logging recovery",
+  "user_report": "Completed battery disconnection, lights off, 5s wait, battery-only reconnection; both FPGA USB disconnected",
+  "physical_power_cycle_verified": true,
+  "default_user_code": "B0A6",
+  "bitstream_sha256": "ffe59ea3262b9a8762de526948ab3c50af7f999b37dff8d44b10bd6ccc947dcc",
+  "first_reported_uptime_ms": 99,
+  "previous_uptime_ms": 7776301,
+  "reset_count": 1,
+  "watched_trace": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a6\\cold_boot_pre_20261018T102604Z_watch.jsonl",
+  "pre_record": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a6\\cold_boot_pre_20261018T102604Z.json",
+  "post_observations": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a6\\cold_boot_post_observations.json",
+  "reboot_log_events": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a6\\cold_boot_log_events.json",
+  "recording_session": "20261018T081725Z_61bbebf6",
+  "post_monitor_seconds": 15.0934536,
+  "primary_frames_delta": 149,
+  "missing_primary_delta": 2,
+  "checksum_errors_delta": 3,
+  "physical_pwm_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "hardware_downloaded_during_test": false,
+  "flash_written_during_test": false,
+  "serial_writes": false,
+  "zero_loss_required": false,
+  "flight_acceptance": false
+}

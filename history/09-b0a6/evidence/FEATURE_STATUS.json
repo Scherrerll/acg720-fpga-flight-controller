@@ -1,0 +1,90 @@
+{
+  "utc": "2026-10-18T10:30:18.081271+00:00",
+  "implemented": true,
+  "live_source": {
+    "port": "COM17",
+    "baud": 115200,
+    "source": "SiK",
+    "usb_device": {
+      "port": "COM17",
+      "description": "USB Serial Port (COM17)",
+      "hwid": "USB VID:PID=0403:6015 SER=DU0ENI02A",
+      "vid": 1027,
+      "pid": 24597,
+      "serial_number": "DU0ENI02A",
+      "selectable": true
+    }
+  },
+  "sram_user_code": "B0A6",
+  "default_flash": "B0A6",
+  "pins": {
+    "radio_RX": "FPGA B15",
+    "radio_TX": "FPGA B16"
+  },
+  "bitstream_sha256": "ffe59ea3262b9a8762de526948ab3c50af7f999b37dff8d44b10bd6ccc947dcc",
+  "fmax_mhz": 59.799,
+  "control_core_byte_identical": true,
+  "real_wireless_log_export_replay_passed": true,
+  "zero_loss_continuous_passed": false,
+  "flight_acceptance": false,
+  "radio_power_dbm": {
+    "local": 20,
+    "remote": 20
+  },
+  "radio_eeprom_written_in_power_test": false,
+  "pending": "MTF-01P physical configuration and wiring, sensor/estimator/control verification; flight acceptance not completed",
+  "readme": "C:\\Users\\ScherrerL\\Desktop\\apple\\sik_ground\\README.md",
+  "physical_radio_move": "User temporarily cannot move radios",
+  "resend_test_improved": false,
+  "fec96_test_improved": false,
+  "radio_configuration_restored": true,
+  "radio_configuration": {
+    "local": {
+      "0": 26,
+      "1": 115,
+      "2": 64,
+      "3": 25,
+      "4": 20,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 433050,
+      "9": 434790,
+      "10": 10,
+      "11": 100,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 131
+    },
+    "remote": {
+      "0": 26,
+      "1": 115,
+      "2": 64,
+      "3": 25,
+      "4": 20,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 433050,
+      "9": 434790,
+      "10": 10,
+      "11": 100,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 131
+    }
+  },
+  "flash_installed": true,
+  "flash_install_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a6\\flash_install.json",
+  "accepted_use": "Read-only monitoring and auxiliary ground logs with marked gaps",
+  "zero_loss_is_required_for_accepted_use": false,
+  "physical_power_cycle_verified": true,
+  "physical_cold_boot_deferred_by_user": false,
+  "post_flash_log_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a6\\host_acceptance_20261018T082014Z.json",
+  "fpga_usb_detach_wireless_logging_verified": true,
+  "usb_detach_proof": "routing_rescue_20261015\\sik_b0a6\\usb_detach_20261018T102514Z.json",
+  "battery_only_wireless_logging_verified": true,
+  "cold_boot_proof": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a6\\cold_boot_verified_20261018T103018Z.json"
+}
