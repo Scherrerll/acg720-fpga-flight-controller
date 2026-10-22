@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "operation": "user_requested_verbatim_document_archive",
+  "archive_date": "2026-10-22",
+  "source": {
+    "relative_to_user_materials": "材料汇总.docx",
+    "sha256": "65389efa527b98161157c58972f27d7c087cca382699dbe681b5139e4689a5ff"
+  },
+  "document_modified": false,
+  "document_converted": false,
+  "files": [
+    {
+      "path": "hardware/材料汇总.docx",
+      "source": "材料汇总.docx",
+      "kind": "verbatim_copy",
+      "sha256": "65389efa527b98161157c58972f27d7c087cca382699dbe681b5139e4689a5ff",
+      "bytes": 3010435
+    },
+    {
+      "path": "hardware/README.md",
+      "source": null,
+      "kind": "generated_index",
+      "sha256": "77676da03f5355d83cb2b18e3970dcf2063963ab67da0b3d1879ca36fbd67c9e",
+      "bytes": 355
+    }
+  ]
+}

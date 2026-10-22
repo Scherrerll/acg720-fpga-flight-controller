@@ -1,0 +1,153 @@
+{
+  "schema": 1,
+  "method": "Read-only binary signature inspection and UTF-8/UTF-16 filename candidate scan; bounded zlib header probe. No SolidWorks application or Document Manager API was invoked.",
+  "assemblies": [
+    {
+      "path": "mechanical/cad/装配体1.SLDASM",
+      "sha256": "736988e76a0d62611092abf316414b8dc50e6d3d6c0375bc2c1cd70cb264dd0d",
+      "status": "references_not_parsed",
+      "ole_compound_document_signature": false,
+      "zip_signature": false,
+      "readable_reference_candidates": [],
+      "zlib_decodable_candidates": 0,
+      "sibling_model_files_available": [
+        "D435i.SLDPRT",
+        "Holybro SiK Telemetry Radio V3 数传电台.SLDPRT",
+        "ICM42688P模块.SLDPRT",
+        "d.SLDPRT",
+        "光流直接粘.SLDPRT",
+        "北醒TFmini-S激光测距传感器.SLDPRT",
+        "无人机顶板3mm.STEP",
+        "电池.SLDPRT",
+        "降压模块直接粘.SLDPRT"
+      ],
+      "external_missing_components": "unknown; absence of parsed references is not evidence of completeness",
+      "saved_solidworks_version": "not parsed",
+      "rebuild_verified": false
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/450机架总装.SLDASM",
+      "sha256": "6e9389ba1f527d39dca6d9203b13becb1538def8a49fbe7851de021475156b1e",
+      "status": "references_not_parsed",
+      "ole_compound_document_signature": false,
+      "zip_signature": false,
+      "readable_reference_candidates": [],
+      "zlib_decodable_candidates": 0,
+      "sibling_model_files_available": [
+        "1045 propeller.SLDPRT",
+        "16mm碳管脚架.SLDPRT",
+        "AVG720.SLDPRT",
+        "D435i.SLDPRT",
+        "Holybro SiK Telemetry Radio V3 数传电台.SLDPRT",
+        "ICM42688P模块.SLDPRT",
+        "Sunnysky X2216 Motor.SLDASM",
+        "中板无人机.SLDPRT",
+        "保护壳.SLDPRT",
+        "北醒TFmini-S激光测距传感器.SLDPRT",
+        "无人机底板.SLDPRT",
+        "无人机顶板.SLDPRT",
+        "机臂碳管.SLDPRT",
+        "机臂管架.SLDPRT",
+        "浮筒.SLDPRT",
+        "电机下固定碳板.DXF",
+        "电机下固定碳板.SLDPRT",
+        "电机碳板.SLDPRT",
+        "电池示意43X43X80.SLDPRT",
+        "电调示意.SLDPRT",
+        "相机安装件.SLDPRT",
+        "碳管固定座.SLDPRT",
+        "脚架接底板连接件.SLDPRT",
+        "防水保护壳.SLDPRT",
+        "降压模块直接粘.SLDPRT",
+        "顶板中板连接件.SLDPRT"
+      ],
+      "external_missing_components": "unknown; absence of parsed references is not evidence of completeness",
+      "saved_solidworks_version": "not parsed",
+      "rebuild_verified": false
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/Sunnysky X2216 Motor.SLDASM",
+      "sha256": "0a932e6f0bda6f750f0bc8d40a5780563fe2c559ee484fb7443d79384a10e2bf",
+      "status": "references_not_parsed",
+      "ole_compound_document_signature": false,
+      "zip_signature": false,
+      "readable_reference_candidates": [],
+      "zlib_decodable_candidates": 0,
+      "sibling_model_files_available": [
+        "1045 propeller.SLDPRT",
+        "16mm碳管脚架.SLDPRT",
+        "450机架总装.SLDASM",
+        "AVG720.SLDPRT",
+        "D435i.SLDPRT",
+        "Holybro SiK Telemetry Radio V3 数传电台.SLDPRT",
+        "ICM42688P模块.SLDPRT",
+        "中板无人机.SLDPRT",
+        "保护壳.SLDPRT",
+        "北醒TFmini-S激光测距传感器.SLDPRT",
+        "无人机底板.SLDPRT",
+        "无人机顶板.SLDPRT",
+        "机臂碳管.SLDPRT",
+        "机臂管架.SLDPRT",
+        "浮筒.SLDPRT",
+        "电机下固定碳板.DXF",
+        "电机下固定碳板.SLDPRT",
+        "电机碳板.SLDPRT",
+        "电池示意43X43X80.SLDPRT",
+        "电调示意.SLDPRT",
+        "相机安装件.SLDPRT",
+        "碳管固定座.SLDPRT",
+        "脚架接底板连接件.SLDPRT",
+        "防水保护壳.SLDPRT",
+        "降压模块直接粘.SLDPRT",
+        "顶板中板连接件.SLDPRT"
+      ],
+      "external_missing_components": "unknown; absence of parsed references is not evidence of completeness",
+      "saved_solidworks_version": "not parsed",
+      "rebuild_verified": false
+    }
+  ],
+  "scope_limit": "No semantic component tree, virtual component, configuration, suppressed component, external search path, equation or feature dependency parsing. No resolve/rebuild/interference/mass/dimensional check.",
+  "external_missing_summary": "Unresolved for all three assemblies. No claim of zero missing components.",
+  "native_duplicate_paths_retained": [
+    {
+      "sha256": "839288fb0c345a990767d47f41e649dafd6e0c068384012feeacf4d440ce9f00",
+      "sources": [
+        "D435i.SLDPRT",
+        "飞机总装/无人机总装/无人机总装/D435i.SLDPRT"
+      ],
+      "retained_reason": "Preserve original relative directory structure; assembly references are unresolved."
+    },
+    {
+      "sha256": "7786887c4ebd2b06893cd8c4df3828c0241e29a8461ba83e76c309eb75342740",
+      "sources": [
+        "Holybro SiK Telemetry Radio V3 数传电台.SLDPRT",
+        "飞机总装/无人机总装/无人机总装/Holybro SiK Telemetry Radio V3 数传电台.SLDPRT"
+      ],
+      "retained_reason": "Preserve original relative directory structure; assembly references are unresolved."
+    },
+    {
+      "sha256": "36c5b9d62989eaaa4d1d4d143cccef4a5bf7e602870f4e89f4a7e033fa192ecd",
+      "sources": [
+        "ICM42688P模块.SLDPRT",
+        "飞机总装/无人机总装/无人机总装/ICM42688P模块.SLDPRT"
+      ],
+      "retained_reason": "Preserve original relative directory structure; assembly references are unresolved."
+    },
+    {
+      "sha256": "3311d25273899af61ba676fd43f761a1191bdc740487d05a3a2534e350bca81d",
+      "sources": [
+        "北醒TFmini-S激光测距传感器.SLDPRT",
+        "飞机总装/无人机总装/无人机总装/北醒TFmini-S激光测距传感器.SLDPRT"
+      ],
+      "retained_reason": "Preserve original relative directory structure; assembly references are unresolved."
+    },
+    {
+      "sha256": "5d524850c489018a7b5186c15a1df92bd26b2bd7b65efd39a1029974ba4103db",
+      "sources": [
+        "降压模块直接粘.SLDPRT",
+        "飞机总装/无人机总装/无人机总装/降压模块直接粘.SLDPRT"
+      ],
+      "retained_reason": "Preserve original relative directory structure; assembly references are unresolved."
+    }
+  ]
+}

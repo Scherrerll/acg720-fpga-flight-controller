@@ -33,6 +33,16 @@ def verify():
         if not path.is_relative_to(ROOT) or sha(path)!=expected:
             raise ValueError('Ground export changed: '+entry['export'])
         host_count+=1
+    asset_count=0
+    for name in ('mechanical/export_manifest.json','hardware/source_manifest.json'):
+        asset_manifest=json.loads((ROOT/name).read_text(encoding='utf-8'))
+        for entry in asset_manifest['files']:
+            path=(ROOT/entry['path']).resolve()
+            if not path.is_relative_to(ROOT) or sha(path)!=entry['sha256']:
+                raise ValueError('Hardware asset export changed: '+entry['path'])
+            if path.stat().st_size!=entry['bytes']:
+                raise ValueError('Hardware asset size changed: '+entry['path'])
+            asset_count+=1
     projects = list(ROOT.glob('history/**/*.gprj')) + [RELEASE/'fixture/acg720_ano_port.gprj']
     count = 0
     for project in projects:
@@ -64,6 +74,7 @@ def verify():
     return {'passed': True, 'b0ae_export_files': len(export['files']),
             'historical_hashes_verified':historical_count,
             'ground_hashes_verified':host_count,
+            'hardware_asset_hashes_verified':asset_count,
             'gprj_count': len(projects), 'project_file_references': count,
             'hardware_accessed': False, 'full_historical_qualification_replayed': False}
 

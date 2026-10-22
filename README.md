@@ -19,6 +19,8 @@ B0AE 的选用来源为 `routing_rescue_20261015/mtf01p_b0ae_ano_control/variant
 ## 目录
 
 - [history](history/README.md)：00a选型、00b初始接线，接01–13阶段源码与验证摘要；[完整时间线](docs/TIMELINE.md)。
+- [mechanical](mechanical/README.md)：SolidWorks总装/零件、STEP、打印件与加工件资料，保留原相对目录。
+- [hardware](hardware/README.md)：材料购买文档原件《材料汇总.docx》。
 - [firmware/B0AE](firmware/B0AE/README.md)：选用 RTL、约束、原始参考函数、测试向量和原始证明记录。
 - [ground](ground/README.md)、`support/`：便携的 Python 只读接收网页与必要解码器。
 - [tools](docs/BUILD_AND_VERIFY.md)：导出完整性校验、可配置工具路径的离线构建和选择性 RTL 回放。
@@ -51,6 +53,6 @@ python -B ground/launch.py --port COM17 --baud 115200 --source SiK --logs ground
 
 `COM17` 只是原机器示例。正在运行的旧网站占用 8765 时，请给新实例选其他端口，不要同时抢占同一串口。
 
-原始飞行日志、工具二进制、位流、`impl/`、用户照片、无关作业、完整厂商资料包和失败变体没有上传。保留的验证文字可能含原机器绝对路径，仅用于来源追溯；原始完整资格检查仍有原工作区依赖，不能据此宣称在任意机器上一键重放了所有历史测试。
+原始飞行日志、工具二进制、位流、`impl/`、单独的用户照片、无关作业、完整厂商资料包和失败变体没有上传。材料Word文档按用户要求原样保存，保留其内嵌内容。保留的验证文字可能含原机器绝对路径，仅用于来源追溯；原始完整资格检查仍有原工作区依赖，不能据此宣称在任意机器上一键重放了所有历史测试。
 
 仓库暂不授予统一的 MIT/GPL 等许可证。第三方版权与许可各自保留；特别是匿名参考源码的公开再分发条件仍需核清，见[第三方说明](THIRD_PARTY_NOTICES.md)。

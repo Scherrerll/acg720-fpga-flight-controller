@@ -1,0 +1,478 @@
+{
+  "schema": "mechanical-export/v1",
+  "created_utc": "2026-10-22T02:20:20.368320+00:00",
+  "source_root": "用户提供的飞机零件资料目录（源文件未改动）",
+  "source_relative_paths_base": "飞机零件",
+  "files": [
+    {
+      "path": "mechanical/cad/20008. YBX-BMI088(SPI)惯性测量单元传感器模块/3D模型/YBX-BMI088 (SPI) v1.0.step",
+      "source": "20008. YBX-BMI088(SPI)惯性测量单元传感器模块/3D模型/YBX-BMI088 (SPI) v1.0.step",
+      "sha256": "6641772b9f9463360d78a871201c75a6ca80dcd1646cf4b2438f9d33836f6559",
+      "bytes": 1523709,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/ACX720-V3机械文件/ACX720-V3.DWG",
+      "source": "ACX720-V3机械文件/ACX720-V3.DWG",
+      "sha256": "f6bb623a6451fad67cc167028831750ba49d55e6438d0496024a058a1e735cce",
+      "bytes": 150108,
+      "kind": "source_model",
+      "format": "DWG"
+    },
+    {
+      "path": "mechanical/cad/D435i.SLDPRT",
+      "source": "D435i.SLDPRT",
+      "sha256": "839288fb0c345a990767d47f41e649dafd6e0c068384012feeacf4d440ce9f00",
+      "bytes": 1836562,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/Holybro SiK Telemetry Radio V3 数传电台.SLDPRT",
+      "source": "Holybro SiK Telemetry Radio V3 数传电台.SLDPRT",
+      "sha256": "7786887c4ebd2b06893cd8c4df3828c0241e29a8461ba83e76c309eb75342740",
+      "bytes": 107272,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/ICM42688P模块.SLDPRT",
+      "source": "ICM42688P模块.SLDPRT",
+      "sha256": "36c5b9d62989eaaa4d1d4d143cccef4a5bf7e602870f4e89f4a7e033fa192ecd",
+      "bytes": 100745,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/d.SLDPRT",
+      "source": "d.SLDPRT",
+      "sha256": "06aa7618c517460a056544d2e5728057c8ab6622bc6a3a4e0296d48c6ea91874",
+      "bytes": 132059,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/光流直接粘.SLDPRT",
+      "source": "光流直接粘.SLDPRT",
+      "sha256": "fedb6fb6c3f2ac6c9603fd68540d4c0e4e8437d94fbb3b55fb135584b4c3eb91",
+      "bytes": 72198,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/北醒TFmini-S激光测距传感器.SLDPRT",
+      "source": "北醒TFmini-S激光测距传感器.SLDPRT",
+      "sha256": "3311d25273899af61ba676fd43f761a1191bdc740487d05a3a2534e350bca81d",
+      "bytes": 82417,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/发加工/中板无人机3mm.STEP",
+      "source": "发加工/中板无人机3mm.STEP",
+      "sha256": "26f5e2730bc563fcbb6d1966e9474a21b624543c5bfe1ac623a0d63f4bc96a76",
+      "bytes": 645119,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/发加工/无人机底板2mm.STEP",
+      "source": "发加工/无人机底板2mm.STEP",
+      "sha256": "594ba1f8d638d4355789dc17be3afcaba930a3316a677af2eb363227a811cf23",
+      "bytes": 426638,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/发加工/无人机顶板3mm.STEP",
+      "source": "发加工/无人机顶板3mm.STEP",
+      "sha256": "59e5b1299d63384f549162ddf0e0ea2da113c148e8f544b3681b7e93828e883a",
+      "bytes": 568665,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/发加工/机臂碳管4个.STEP",
+      "source": "发加工/机臂碳管4个.STEP",
+      "sha256": "8d64cf0815d96afa2c7af1ea27f191cfea7a7b4bbe7462cb60cfcad94f6c3cb7",
+      "bytes": 143882,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/发加工/电机碳板3mm 8个.STEP",
+      "source": "发加工/电机碳板3mm 8个.STEP",
+      "sha256": "4bd21d27b8f04ce7bca2ec9f9a8545f59a3bccc9195e653422a1b0eed2121499",
+      "bytes": 82439,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/打印件/imu块块.STEP",
+      "source": "打印件/imu块块.STEP",
+      "sha256": "a50b3956777edb90d436b6e43cde63a60680729befca621738ed3ae58e49f970",
+      "bytes": 43874,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/打印件/相机安装件1个.STEP",
+      "source": "打印件/相机安装件1个.STEP",
+      "sha256": "fb2012c7b5c636680c7a68171578264321e14dd38be2e69b5793b4c0df2efd32",
+      "bytes": 104896,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/打印件/起落架.STEP",
+      "source": "打印件/起落架.STEP",
+      "sha256": "5bb3bd259127f75c900c24503c5e2c5fc0e4902f559995b49c544a42a160b70f",
+      "bytes": 273810,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/打印件/顶板中板连接件3个.SLDPRT",
+      "source": "打印件/顶板中板连接件3个.SLDPRT",
+      "sha256": "e7cdc4bd57a4559172a9400a3f00b4745c7252fa824862cd8a748d9264181c45",
+      "bytes": 111029,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/打印件/顶板中板连接件3个.STEP",
+      "source": "打印件/顶板中板连接件3个.STEP",
+      "sha256": "be41cbc196cf1c4a647d9b0302d4e13c53be2ece1f3ed0d675593e49dfc73dc6",
+      "bytes": 44147,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/无人机顶板3mm.STEP",
+      "source": "无人机顶板3mm.STEP",
+      "sha256": "63c44623da867a7b1f744b8750da040e6511ac9587dcbba83d6afaafa856a1fe",
+      "bytes": 568676,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/cad/电池.SLDPRT",
+      "source": "电池.SLDPRT",
+      "sha256": "52f3f2939b77e92be7637dd74eaf3f2aa4e0912c000884a0fbd712014ef0e43c",
+      "bytes": 99845,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/装配体1.SLDASM",
+      "source": "装配体1.SLDASM",
+      "sha256": "736988e76a0d62611092abf316414b8dc50e6d3d6c0375bc2c1cd70cb264dd0d",
+      "bytes": 432814,
+      "kind": "source_model",
+      "format": "SLDASM"
+    },
+    {
+      "path": "mechanical/cad/降压模块直接粘.SLDPRT",
+      "source": "降压模块直接粘.SLDPRT",
+      "sha256": "5d524850c489018a7b5186c15a1df92bd26b2bd7b65efd39a1029974ba4103db",
+      "bytes": 72517,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/1045 propeller.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/1045 propeller.SLDPRT",
+      "sha256": "143ad68d3758a433fde73e9b2653001fc72f893765d113d2e93a0778916aeee8",
+      "bytes": 332194,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/16mm碳管脚架.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/16mm碳管脚架.SLDPRT",
+      "sha256": "a0b4b4bebe70eb25f1c02630848bd51b372230b9a63c78204ae2a3a5796bd514",
+      "bytes": 212996,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/450机架总装.SLDASM",
+      "source": "飞机总装/无人机总装/无人机总装/450机架总装.SLDASM",
+      "sha256": "6e9389ba1f527d39dca6d9203b13becb1538def8a49fbe7851de021475156b1e",
+      "bytes": 4453985,
+      "kind": "source_model",
+      "format": "SLDASM"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/AVG720.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/AVG720.SLDPRT",
+      "sha256": "35e2695df5c6ab6714d1da3c03daef591d7d15dc4ba2824394da7ed165ddc750",
+      "bytes": 82726,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/D435i.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/D435i.SLDPRT",
+      "sha256": "839288fb0c345a990767d47f41e649dafd6e0c068384012feeacf4d440ce9f00",
+      "bytes": 1836562,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/Holybro SiK Telemetry Radio V3 数传电台.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/Holybro SiK Telemetry Radio V3 数传电台.SLDPRT",
+      "sha256": "7786887c4ebd2b06893cd8c4df3828c0241e29a8461ba83e76c309eb75342740",
+      "bytes": 107272,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/ICM42688P模块.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/ICM42688P模块.SLDPRT",
+      "sha256": "36c5b9d62989eaaa4d1d4d143cccef4a5bf7e602870f4e89f4a7e033fa192ecd",
+      "bytes": 100745,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/Sunnysky X2216 Motor.SLDASM",
+      "source": "飞机总装/无人机总装/无人机总装/Sunnysky X2216 Motor.SLDASM",
+      "sha256": "0a932e6f0bda6f750f0bc8d40a5780563fe2c559ee484fb7443d79384a10e2bf",
+      "bytes": 2820805,
+      "kind": "source_model",
+      "format": "SLDASM"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/中板无人机.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/中板无人机.SLDPRT",
+      "sha256": "083a54d81c105ea3f14e35721d37cb6711cea665eb79cbf123c98d6fdd24b5a5",
+      "bytes": 749992,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/保护壳.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/保护壳.SLDPRT",
+      "sha256": "faac50e790e7bbabec25c0c3f807c11a1c889df6b6f245eb164a9f51c7ff0d62",
+      "bytes": 108928,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/北醒TFmini-S激光测距传感器.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/北醒TFmini-S激光测距传感器.SLDPRT",
+      "sha256": "3311d25273899af61ba676fd43f761a1191bdc740487d05a3a2534e350bca81d",
+      "bytes": 82417,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/无人机底板.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/无人机底板.SLDPRT",
+      "sha256": "3f4cd946df0e741cbc84ca97be199a18fac9cf55f02d733340f934a54b05929d",
+      "bytes": 720719,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/无人机顶板.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/无人机顶板.SLDPRT",
+      "sha256": "32264b68902af946178f2debd38ecd47a7d9dd1cae655ae4090493f4f30c1432",
+      "bytes": 661219,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/机臂碳管.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/机臂碳管.SLDPRT",
+      "sha256": "0358e06cde3f01de779d58f956adede827b02fb7b6db9ec9996cad0818b6a619",
+      "bytes": 172217,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/机臂管架.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/机臂管架.SLDPRT",
+      "sha256": "fbaadabfbd1a182f5b0661dc9532f0b9f8d1c9e1ccb8c095070f62872b8b241d",
+      "bytes": 117593,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/浮筒.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/浮筒.SLDPRT",
+      "sha256": "aa72d665139c77e761ea265577ee56b1fcbdfe7c8194b39921508628e66463cd",
+      "bytes": 71178,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/电机下固定碳板.DXF",
+      "source": "飞机总装/无人机总装/无人机总装/电机下固定碳板.DXF",
+      "sha256": "0c7278da54dac16dc7d7d797ac68280d3d183666809017091cab431b938fe9dd",
+      "bytes": 27885,
+      "kind": "source_model",
+      "format": "DXF"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/电机下固定碳板.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/电机下固定碳板.SLDPRT",
+      "sha256": "f2b4fe4cb5a23ee1d30b613dd46a29fca652dcebb75789963a0a22f0642f0111",
+      "bytes": 507901,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/电机碳板.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/电机碳板.SLDPRT",
+      "sha256": "ceb4258b1126a7972dc5d700c18db24f4cf8a078395cc91a327f5f5e678552dc",
+      "bytes": 478790,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/电池示意43X43X80.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/电池示意43X43X80.SLDPRT",
+      "sha256": "05a26a316286ac617b2ca6e6816948aa143924027a7944aa0f6b5cc0eae30717",
+      "bytes": 126709,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/电调示意.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/电调示意.SLDPRT",
+      "sha256": "bdf42ae1252e985c7c340e6faea8d8072e787dbba5e72aec0c3a0349095c59cd",
+      "bytes": 115178,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/相机安装件.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/相机安装件.SLDPRT",
+      "sha256": "0e2aaea174b608762ec3cbc516c27ab0cb7ee58b8449bf7c73c5b0886c4bb94c",
+      "bytes": 149898,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/碳管固定座.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/碳管固定座.SLDPRT",
+      "sha256": "af77808e2a565d176a68d1dd070bdc3d8b092fbe1821c857dad6928d1bf2c709",
+      "bytes": 247552,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/脚架接底板连接件.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/脚架接底板连接件.SLDPRT",
+      "sha256": "721d042a097927fbda8e7adf04d4ea186c96f4760daa0605c3b354ab0cee1641",
+      "bytes": 194207,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/防水保护壳.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/防水保护壳.SLDPRT",
+      "sha256": "d94fa4c8eead5f718a38302d132961d431155dfeddfd42eba90103abb529b239",
+      "bytes": 577773,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/降压模块直接粘.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/降压模块直接粘.SLDPRT",
+      "sha256": "5d524850c489018a7b5186c15a1df92bd26b2bd7b65efd39a1029974ba4103db",
+      "bytes": 72517,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/无人机总装/无人机总装/顶板中板连接件.SLDPRT",
+      "source": "飞机总装/无人机总装/无人机总装/顶板中板连接件.SLDPRT",
+      "sha256": "ca5406aa1fd9c69a0fee3eb225af668bc651e11f9f1fbf175817d3d22e42c311",
+      "bytes": 105384,
+      "kind": "source_model",
+      "format": "SLDPRT"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/浮筒.3mf",
+      "source": "飞机总装/浮筒.3mf",
+      "sha256": "3c0825ae7c8ef043205500ca9d850255168c4cd257af6a92b09f98f9dea04513",
+      "bytes": 203841,
+      "kind": "source_model",
+      "format": "3MF"
+    },
+    {
+      "path": "mechanical/cad/飞机总装/浮筒.STEP",
+      "source": "飞机总装/浮筒.STEP",
+      "sha256": "86a9815758c49c0cdc34c31f88f21d862c33b03ad8d075218a484ca3643e527b",
+      "bytes": 15176,
+      "kind": "source_model",
+      "format": "STEP"
+    },
+    {
+      "path": "mechanical/assembly_dependencies.json",
+      "source": null,
+      "sha256": "46796a4d01f01a3f075e3627b22d263e5da6f2ad6749dca882aa0fbd6004df14",
+      "bytes": 6616,
+      "kind": "generated"
+    },
+    {
+      "path": "mechanical/MODEL_INDEX.md",
+      "source": null,
+      "sha256": "6ad78f29990cceab3c4e8b82f42562b1f1c9e7d1b77037a8c06618fb68c0a689",
+      "bytes": 5706,
+      "kind": "generated"
+    },
+    {
+      "path": "mechanical/README.md",
+      "source": null,
+      "sha256": "940b75e3560919438e7abf0216c77c84a62b58903ce026bdfd0e100c7a912d8e",
+      "bytes": 3729,
+      "kind": "generated"
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "source": "20008. YBX-BMI088(SPI)惯性测量单元传感器模块/3D模型/YBX-BMI088 (SPI) v1.0(1).step",
+      "reason": "byte-identical vendor STEP duplicate",
+      "sha256": "6641772b9f9463360d78a871201c75a6ca80dcd1646cf4b2438f9d33836f6559",
+      "bytes": 1523709,
+      "same_as_export": "mechanical/cad/20008. YBX-BMI088(SPI)惯性测量单元传感器模块/3D模型/YBX-BMI088 (SPI) v1.0.step"
+    },
+    {
+      "source": "AVG720.DWG",
+      "reason": "byte-identical board drawing duplicate; keep named vendor drawing",
+      "sha256": "f6bb623a6451fad67cc167028831750ba49d55e6438d0496024a058a1e735cce",
+      "bytes": 150108,
+      "same_as_export": "mechanical/cad/ACX720-V3机械文件/ACX720-V3.DWG"
+    },
+    {
+      "source": "飞机总装/无人机总装/无人机总装/~$电机下固定碳板.SLDPRT",
+      "reason": "SolidWorks temporary lock file",
+      "bytes": 10
+    }
+  ],
+  "source_candidate_count_including_lock": 54,
+  "source_candidate_bytes_including_lock": 24751607,
+  "model_count": 51,
+  "model_bytes": 23077780,
+  "model_formats": {
+    "3MF": 1,
+    "DWG": 1,
+    "DXF": 1,
+    "SLDASM": 3,
+    "SLDPRT": 33,
+    "STEP": 12
+  },
+  "largest_model_bytes": 4453985,
+  "assembly_check": {
+    "assembly_count": 3,
+    "parsed_component_trees": 0,
+    "rebuild_verified": false,
+    "external_missing": "unknown",
+    "details": "mechanical/assembly_dependencies.json"
+  }
+}

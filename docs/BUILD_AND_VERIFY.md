@@ -6,7 +6,7 @@
 python tools/verify_export.py
 ```
 
-核验 B0AE 导出文件 SHA-256、早/晚历史及便携地面站清单哈希、17 个 GPRJ 引用、B0AE qualification 源码哈希、原始参考函数哈希、选用离线证明及关键 TCL 选项。不会执行原机器的完整资格链。
+核验 B0AE 导出文件 SHA-256、早/晚历史及便携地面站清单哈希、机械模型/材料原件的归档哈希与大小、17 个 GPRJ 引用、B0AE qualification 源码哈希、原始参考函数哈希、选用离线证明及关键 TCL 选项。不会执行原机器的完整资格链，也不打开或重建CAD装配。
 
 `.gitattributes` 禁止 Git 换行转换，以保持混合 CRLF/LF 历史文件的原始字节。编辑受证据约束的源码后，旧 qualification 不再代表新源码；不能只刷新哈希就声称重新通过验证。
 
