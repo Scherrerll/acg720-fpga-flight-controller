@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "scope": "Paraphrased factual index only. No raw conversation, account, order, MAC, license or photo export. Dates are source events, not Git commit dates.",
+  "sources": [
+    {
+      "thread_id": "6aad19c8-34d4-83ea-9ae4-9e94185b68cf",
+      "thread_title": "FPGA无人机方案",
+      "turn_id": "8aa13e59-36d9-4591-a6c4-d99d157d1adf",
+      "time_Asia_Shanghai": "2026-09-18 19:21",
+      "evidence_kind": "design_proposal",
+      "summary": "FPGA实时控制、模型到定点RTL的建议；ACG525/BMI088/PMW3901/VL53L1X为当时候选，频率与DShot未构成实现证据。"
+    },
+    {
+      "thread_id": "6aad19c8-34d4-83ea-9ae4-9e94185b68cf",
+      "thread_title": "FPGA无人机方案",
+      "turn_id": "00fc8a41-1c3b-4a8e-a2de-4dc2fe004d67",
+      "time_Asia_Shanghai": "2026-09-18 19:23",
+      "evidence_kind": "design_explanation",
+      "summary": "区分开发板、FPGA芯片与工具，未证明最终选ACG525。"
+    },
+    {
+      "thread_id": "6aad19c8-34d4-83ea-9ae4-9e94185b68cf",
+      "thread_title": "FPGA无人机方案",
+      "turn_id": "593fe44e-2d33-4646-b267-d9e7f61b8b92",
+      "time_Asia_Shanghai": "2026-09-18 19:26",
+      "evidence_kind": "design_proposal",
+      "summary": "软核非必需；ROS仅可选上位机；核心实时控制放FPGA。"
+    },
+    {
+      "thread_id": "6aad19c8-34d4-83ea-9ae4-9e94185b68cf",
+      "thread_title": "FPGA无人机方案",
+      "turn_id": "8186325a-d889-4d68-9b9b-512836003203",
+      "time_Asia_Shanghai": "2026-09-22 09:22",
+      "evidence_kind": "extension_concept",
+      "summary": "用户提出水空构型，后续浮筒/推进器等建议不等于已实现。"
+    },
+    {
+      "thread_id": "6aad19c8-34d4-83ea-9ae4-9e94185b68cf",
+      "thread_title": "FPGA无人机方案",
+      "turn_id": "c240ab35-e60e-4d72-8c0e-f4c1cd36ef71",
+      "time_Asia_Shanghai": "2026-09-22 09:24",
+      "evidence_kind": "extension_concept",
+      "summary": "构型与展示简介属于方案文案，不作为GNSS/视觉/八动力实现证明。"
+    },
+    {
+      "thread_id": "01a0f5ac-ada5-7250-a1f5-5ace6821a0a6",
+      "thread_title": "我要打FPGA嵌赛高云赛道的开放式选题，现在下完高云的软件需要申请license，这个该怎么填？",
+      "turn_id": "01a0f5b4-2850-7ee3-ab05-61f3a79c96da",
+      "time_Asia_Shanghai": "2026-10-01 12:23:39",
+      "evidence_kind": "user_selection",
+      "summary": "明确使用ACG720 60K与现有材料制作无人机，讨论IMU/光流/测距/SiK/四ESC与电源支路；D435i暂缓。"
+    },
+    {
+      "thread_id": "01a0f5ac-ada5-7250-a1f5-5ace6821a0a6",
+      "thread_title": "我要打FPGA嵌赛高云赛道的开放式选题，现在下完高云的软件需要申请license，这个该怎么填？",
+      "turn_id": "01a0f5e3-1bda-7272-a30d-48aa836a69c7",
+      "time_Asia_Shanghai": "2026-10-01 13:14:56",
+      "evidence_kind": "user_hardware_update",
+      "summary": "补充实际IMU针名与5V/3.3V/12V稳压模块，按实物修订。"
+    }
+  ],
+  "read_limitation": "Earliest visible reply references a prior PicoRV32/Crazyflie exchange not returned by read_thread; no earlier date or final adoption is inferred."
+}
