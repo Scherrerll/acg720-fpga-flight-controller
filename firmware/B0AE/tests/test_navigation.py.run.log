@@ -1,0 +1,2 @@
+navigation_control NAVIGATION_PASS real50MHz services: velocity authority independent of position display; 30deg withdraws XY but preserves Z; recovery
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_map2_r2\tests\navigation_control.v:40: $finish called at 130129450000 (1ps)

@@ -1,0 +1,125 @@
+{
+  "candidate": "B0AE",
+  "created_utc": "2026-10-21T19:36:21.260881+00:00",
+  "offline_verified": true,
+  "flight_ready": false,
+  "hardware_programmed": false,
+  "flash_changed": false,
+  "qualification_sha256": "6ddcc10b2b14eccc53b182ec01c745b478f091c7e94bb5d2d0e2693d231e6efd",
+  "build_manifest_sha256": "dc584bfb8215117c03c76764a607522076260a7d16d7d4a0109755b9e66f62e7",
+  "independent_verifier_sha256": "c6c29cfa5d4d9fb4145f233e7bf84834f3e1b89467a33fc58574d2768b242940",
+  "pnr_configuration_verified": true,
+  "pnr_resource_replication_enabled": false,
+  "configuration_requalification": {
+    "parent_qualification_sha256": "8a04de6f5c99df110fc76ab41bad6822e27bcc7676ec1f287da3eb952f7e4ca9",
+    "change": "max_fanout=200,replicate_resources=0; mapper2/P3/R2/50MHz unchanged",
+    "vendor_reference": "SUG1220-2.1E max_fanout default1000; replicate_resources default0",
+    "rtl_changed": false,
+    "existing_proofs_revalidated": true,
+    "created_utc": "2026-10-21T19:19:22.885218+00:00"
+  },
+  "bitstream": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+    "sha256": "7cef4a47a17d2a03709d0b7f5bdb7c1b46c030a33c72876db65aba2e0b953a80",
+    "user_code": "0x0000b0ae"
+  },
+  "fmax_mhz": 50.505,
+  "io_count": 17,
+  "unrouted_nets": 0,
+  "slack": {
+    "setup": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    },
+    "hold": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    }
+  },
+  "source_reference": "reference_ano/quadrotor_tm_v1_20261012/Quadrotor_TM_V1",
+  "hardware_adaptations": "CONTROL_CONTRACT.txt",
+  "numerical_reference_results": {
+    "state_reference": {
+      "samples": 13550,
+      "differences": [],
+      "passed": true,
+      "reference": "unchanged Flight_State_Task, land_discriminat, Motor_Ctrl_Task",
+      "hardware_accessed": false
+    },
+    "sticks_reference": {
+      "samples": 4000,
+      "max_abs_errors": {
+        "nx": 2.494829687504918e-05,
+        "ny": 1.7700843749968165e-05,
+        "z_lpf": 1.9267109374998537e-05,
+        "z_speed_mmps": 0.04223142578121042
+      },
+      "tolerances": [
+        0.001,
+        0.001,
+        0.0001,
+        0.5
+      ],
+      "reference": "unchanged Flight_State_Task, my_deadzone, length_limit",
+      "passed": true
+    },
+    "height_reference": {
+      "samples": 326,
+      "max_abs_errors": [
+        2,
+        1.1102000000000771,
+        10,
+        7.637402342197674e-05
+      ],
+      "allowed": [
+        2,
+        2,
+        10,
+        0.1
+      ],
+      "differences": [],
+      "passed": true,
+      "reference": "unchanged Alt_1level_Ctrl then Alt_2level_Ctrl / Auto_Take_Off_Land_Task"
+    },
+    "xy_reference": {
+      "publications": 140,
+      "compared": 65,
+      "max_abs_error_cdeg": [
+        0.9934390000000022,
+        0.9663340000000176
+      ],
+      "allowed_cdeg": 3,
+      "passed": true,
+      "differences": [],
+      "reference": "unchanged original OF branch, original PID_calculate and Flight_State_Task",
+      "mode_switch_cache": true,
+      "position_outer_loop_absent": true
+    },
+    "manual_reference": {
+      "samples": 683,
+      "max_abs_error_cdeg": [
+        1.0267899999998917,
+        1.0110190000000046,
+        0.0053355568359378935,
+        0.005282201367187156
+      ],
+      "allowed": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "passed": true,
+      "differences": [],
+      "reference": "original Flight_State_Task1ms, manual Loc20ms, original Att_2level_Ctrl angle/trim6ms prefix"
+    }
+  },
+  "rollback": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ad_local_cancel",
+  "last_pre_task_sram_observation": "B0AD",
+  "default_flash_unchanged": "B0AC",
+  "remaining_acceptance": [
+    "New props-off physical control validation",
+    "Vertical sensor failure/fallback limitation (no barometer)",
+    "Flight qualification and historical loaded power-loss investigation"
+  ]
+}

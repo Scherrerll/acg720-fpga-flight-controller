@@ -1,0 +1,327 @@
+Task: implement the provided ANO control flow (Sol only). No new agents.
+No FPGA download, Flash write, motor command or running web-server change this turn.
+Default Flash last verified B0AC; last live SRAM observation B0AD, then disconnected.
+Never assert flight readiness from offline results. Range failure has no barometer fallback.
+
+Current active tool sessions as of2026-10-22 02:12 Asia/Shanghai:
+55157: variants/timing_map3_p4_r2/fixture/build_project.py (routing lastprinted60%).
+43227: variants/timing_flat_map3_r2/fixture/build_project.py (placement lastprinted10%).
+33760: variants/timing_constants_flat_fan1000_map2_r2/fixture/build_project.py (placement10%).
+42385: variants/mask_retimed_map2_r2/qualify.py (original C buildPASS, height running).
+Monitor functions.exec cell430 has ENDED, do not wait on it again.
+51533 baseMap4 hit45minute timeout (no completed PNR result, files preserved).
+20574 constantsMap2 failed566unrouted, archived.
+23470 fan1000 constantsMap2 failed206unrouted, archived.
+44163 quick mask-retiming proof endedPASS; copied a stronger actual-force
+stimulus assertion into its test before launching full qualifier42385.
+65211 timing_constants_map3_r2 failed431unrouted and was archived.
+55157 is exact qualified timing-base RTL, mapper3 with place4/R2/50MHz,
+copied by generic prepare_timing_place_variant.py3. No new algorithm change.
+Fan1000 candidate is byte-identical qualified constants RTL, only global
+max_fanout200->documented default1000. Actual synthesized options checked by
+its adapted strict driver. SUG1220 default1000, SUG937 DI0018 warns that low
+global fanout constraints may exhaust resources. Do not assume improvement
+until the actual PNR/50MHz results exist; selector/independent verify still required.
+Flattened candidates change ONLY netlist_hierarchy1->0 (documented SUG1220),
+same qualified RTL/pins/50MHz. Strict drivers check actual option0. Global
+flattening currently places slowly; do not claim a benefit without results.
+74940 full constants qualification endedPASS: original C, bit-identical traces,
+tilt/PWM equivalence, full navigation/top/UART/20host tests, all source-bound.
+3052 timing_map2_p4_r2 failed430unrouted and was archived.
+4362 timing_map2_r2 failed563unrouted;38661 timing_map3_r2 failed77unrouted.
+Both archived. Map3 physical48611logic/27563reg/CLS27795(93%)/DSP57.5.
+Map2/P4 and map4 use EXACT same RTL/qualified proofs; only tool mapping differs.
+Map3 synthesis uses48588logic vs map2's43446; more LUTs for timing, unchanged math.
+Map2/P4 is the documented alternative placement strategy, same mapper2/R2.
+16888 full qualification endedPASS; original C/RTL/host/top/tilt/PWM proofs.
+All other PNR jobs ended; do not poll previous sessions. Once one passes all
+checks and independent selection succeeds, stop only the remaining owned
+comparison processes (verify exact driver command paths before stopping).
+13178 storage P2/R0 failed1728unrouted;32357 operand P3/R2 failed622unrouted.
+73439 operand_map2_r2:ROUTED0unrouted but Fmax45.145MHz,198setup failures,
+0hold failures. NO accepted release. Archived by archive_timing_failure.py.
+62161 operand qualification endedPASS: all original C/RTL/host/source proofs.
+26307 onehot synthesis finished with IDENTICAL resources: no useful change.
+99343 factored_constants synthesis finished:43492logic, DSP fewer; no full
+qualification/PNR, and NOT used by the active timing repair.
+storage P0/R2 and P1/R2 reached45minute timeout, no completed routing result.
+storage P3/R0 failed262unrouted, archived in its attempts/.
+storage P3/R2 failed198unrouted; storage_logic P3/R2 failed439unrouted.
+All builds retain50MHz, map1, maxfan200, area, resource replication.
+All other build sessions ended. Wait in <=50s calls and communicate progress.
+
+Latest experiment: variants/operand_r2 stores ma50/mb34/value48 bits, with
+signed64 aliases, unchanged operations/latency. test_operand_equivalence.py
+proves all32 calc-site intervals (including induction for accepted dt and
+value48),32000 random cases; height/XY/manual RTL trace equality required.
+Synthesis-only:43420logic/27052registers vs storage43751/27099 (331fewerlogic).
+Qualification passed and no PNR accepted yet. Its existing target-storage
+proof explicitly links the old qualified parent; new operand proof links the
+parent to current RTL. Full original C/RTL/host proofs are rerun.
+
+Newest candidate variants/timing_map2_r2 clones qualified operand_map2_r2,
+which uses documented map_option2, P3/R2,50MHz. No clock relaxation.
+Measured45MHz critical paths: raw pitch -> body negation -> geometry bounds
+-> XY valid -> handoff/diagnostic; raw roll -> height ready -> core live
+enable/published PWM data -> us-to-ticks DSP. Targeted fixes (no registers):
+1.Export symmetric15/45deg tilt flags from raw core sensor codes; pass through
+top/native navigation to geometry PRECHECKED_TILT_RANGE=1. All math and angles
+unchanged. Default0 retains original standalone geometry behavior. Added
+parameter validation requires45/15 when prechecked. control_contract.py
+reverses exact wrappers then compares geometry byte content to original.
+2.Feed motor_pwm committed/preparation numbers independently of live health.
+When enabled they equal published_m exactly; keep SAME immediate enabled
+input and unmodified protected motor_pwm source. Disabled raw frame-latch
+data may differ, physical/effective PWM does not. Source taking_off implies
+motor_prepared; core test checks enabled-data identity on every cycle.
+test_timing_equivalence.py proves listed-only source deltas, all65536 raw
+codes for each axis plus3000pairs in actual core+legacy/prechecked geometry,
+and paired motor_pwm60000cycles including midpulse loss/recovery. PASS.
+Full original C/RTL/host/top proofs passed in16888. Current build is4362;
+run independent selector
+only if zero routing AND50MHz/zero timing violations. Source geometry,
+core/top/native changes are recorded under reference/timing_parent/.
+
+Current clock after midnight; network/user-status question was answered.
+Read-only API also showed COM17fresh=true frame age82.9ms, RCoff,1000us
+outputs; displayed board build B0AC, receiver still oldB0AD server. No install.
+
+Additional balanced-resource candidate: timing_constants_map2_r2. Study87006
+completed:43958logic/27030reg, MULTALU27X1821(vs26), MULT27X3612(vs14),
+MULT12X125(vs7), freeing9.5DSP block equivalents, +512logic versus timing base.
+It uses EXACT constant identities, NO altered fraction/rounding/scheduling:
+1.Height*98304, dt*314, heading*183 factored to signed64 wires forced to logic.
+2.655360 =2^19+2^17 for feedback and climb conversion; exact29/32bit sizing.
+3.cmps*10 =8*cmps+2*cmps, same10-bit wrap; initial target mm reuses exact
+feedback_q16>>16. Seven listed source transforms in reference/constant_changes.json.
+test_constant_equivalence.py --functions-only PASSED paired original/new RTL
+functions (height/extremes,32768climb,65536heading,20000uint32dt cases).
+Full qualifier74940 PASSED before building. It reran original C/matrix
+and requires byte-identical height/XY/manual traces against qualified timing
+parent. Existing operand lemma links through reference/constants_before_hold.v,
+new constant lemma connects that parent to current hold RTL. All other timing
+repair/protected math/pins/SiK/etc remain byte-identical to timing base.
+Current20574 builds mapper2/P3/R2;65211 is EXACT same qualified RTL/evidence,
+with only documented mapper3 substituted/strictly checked (same P3/R2/50MHz).
+Use independent selector ONLY after0unrouted AND50MHz/zero timing violations.
+finalize_release.py metadata key now last_pre_task_sram_observation=B0AD,
+not falsely asserting that B0AD is the current SRAM; no hardware action made.
+
+NEW alternative source: mask_retimed_map2_r2, from operand_map2_r2 (the one
+that actually routed0 but failed45.145MHz). It DOES NOT use the added raw
+tilt-precheck flags or the shift/add constant variant. Hold controller/math
+identical to that fully qualified routed parent. Measured timing-path fixes:
+1.Core PWM computes f(raw command) before validity selection, where
+f=clamp1000..RUN_MAX *50. motor_pwm optional EXTERNAL_TICKS=1 receives exact
+preconverted values, while ORIGINAL published m*_us, live enabled, frame
+latched/effective values and all phase/stop logic remain unchanged. Default
+EXTERNAL_TICKS=0 restores the entire original module behavior. Contract
+reverses exact port/parameter/assignment wrappers then byte-compares to B0AD.
+2.Native exports unmasked XY payload alongside unchanged public masked
+commands. Top's unchanged65bit handoff register captures flag/raw values;
+mask is applied AFTER that SAME register. No new pipeline/latency, bit equal.
+3.Native diagnostic_q stores raw controller XY values in bits143:112 with
+existing xy_active flag in bit85. Output zeroing moves AFTER snapshot using
+q[85]. Entire720bit body equals original mask-before-register each clock,
+including reset/diagnostic_hold. No wire-version/host change required.
+Four listed source transformations in reference/mask_changes.json. No IMU,
+yaw/Q12/Q24, source controller equations, GPIO or timings changed.
+Quick test_mask_retiming PASSED: uint16 x12 validity selections x4 lanes on
+actual core->PWM ports,700000actual50MHz clocks comparing physical/raw/effective
+PWM outputs with the ORIGINAL module;50000handoff cycles;60000diagnostic
+cycles comparing all720bits with old masking. Full qualifier42385 reruns
+originalC/state/XY/Z/manual/navigation/host/UART/top/source proofs plus these.
+After fullPASS run mask_retimed_map2_r2/fixture/build_project.py (Map2/P3/R2,
+50MHz, maxfan200) unless another candidate already independently passed.
+
+User asked whether network is normal.2026-10-21 23:33 probes to Baidu, GitHub
+and localhost8765 each returnedHTTP200. Answered briefly and resumed work.
+
+Functional migration is complete in B0AE. Original C state/numeric comparisons,
+SWA/fault/mode races, complete navigation, actual UART and20 host tests passed.
+Removed midpoint-entry/reselection/manual-PWM/pickup and added position P1;
+source always-auto Z, sequential1.2s motor preparation, source takeoff/descent,
+OF velocity PI, source manual trim/cache and source takeoff Ki phase now used.
+Protected estimator/Q12 gyro/Q24 attitude/pins/native MTF scale unchanged.
+CONTROL_CONTRACT.txt and说明.txt describe hardware adapters and limits.
+
+Latest fully requalified source: variants/storage_r2/qualification.json.
+Height target/feedback stored31/30bits with full signed64 aliases/operations,
+same Q16 fraction. Proof50,010 ranges; previous/new height/XY/manual RTL traces
+byte-identical (tests/storage_equivalence.json). Full matrix rerun succeeded.
+Its test_tools/tool lookup, test_core/test_wire reference paths and ground
+protocol dependency lookup were fixed for nested directories and re-tested.
+
+variants/storage_logic_r2 differs only by a synthesis-only module comment
+syn_dspstyle=logic in the hold controller. mapping_equivalence.py validates
+the exact one-comment transform against a copied prior qualification and
+reference source at every build and verification. Numeric tests reused by
+explicit logical-token identity, physical PNR/STA still mandatory.
+Synthesis: storage_r2=43751logic/27099reg/DSP57.5.
+storage_logic_r2=45132logic/27175reg/DSP40.5 (17DSP replaced with logic).
+
+All old attempts failed; preserved under attempts/ and variants/*/attempts/:
+initial265 unrouted; shared pilot916; replication396; manual logic660;
+P4/R0=643; P3/R1=6150; P3/R2=380;
+reset CLOCK_LOC trials R0=1551 and R2=848;
+snapshot CLOCK_LOC R2=298. Clock trials still reported requested nets as LW,
+not PRIMARY, so their intended allocation was NOT proven implemented.
+Their strict verifiers also require actual PRIMARY; do not weaken them.
+Main fixture's current build.tcl is P3/R1 (failed6150), NOT a release.
+No full build has passed yet, no offline_release.json has been created yet.
+
+After a passing current build:
+run root select_verified_release.py. It independently verifies each manifest,
+checks original pin constraints, finalizes source/proof/bitstream hashes,
+selects a verified image and writes selected_release.json +选用工程.txt.
+For old cloned ground folders it calls requalify_ground_paths.py to fix
+dependency lookup, run20 host tests and decode saved actual UART frames;
+portable storage variants were already fully qualified and skip this.
+Do not claim success if source, proof, Fmax, routing, IO or identity checks fail.
+Finalizer checks Fmax>=50MHz, zero setup/hold violations, zero unrouted,17IO,
+B0AE UserCode, current artifact/source hashes. No programming is performed.
+Root source_diff.patch is stale until selector refreshes the selected one.
+
+On any new failure, inspect actual report and archive exact inputs/results via
+that candidate's archive_failed_build.py. Do not reduce50MHz or yaw precision.
+Further builds should address evidence, not add unrelated flight features.
+Final response should link selected project/说明, state what changed and actual
+tests/PNR result, and say not downloaded/no Flash change/props-off acceptance
+still needed. Physical state is not fresh (user previously held full throttle),
+so do not unexpectedly install changed motor-idle/takeoff behavior.
+2026-10-22 02:25 resumed after compaction:
+Network read-only probes Baidu/GitHub/local8765 returned200. COM17 live/fresh,
+frame73.9ms; displayed identity B0AC. No hardware action or server switch.
+mask_retimed_map2_r2 full qualification completed02:18:57, offline_tests_passed=true.
+All actual PWM/mask/HW interface tests reran and passed; qualifier42385 ended.
+Started its full50MHz Map2/P3/R2 build session50441 at02:22:39.
+Prepared source-identical mapper3 comparison via updated root mapper preparer;
+all existing source/evidence hashes revalidated. Session91059 started02:24.
+Other active sessions43227/33760 are flat comparisons, both in placement10%
+at02:23. Old55157 map3/P4 hit45minute timeout, no pass; source preserved.
+Use selector only after strict zero-unrouted and zero-violation>=50MHz verification.
+2026-10-22 02:42 progress:
+Flat comparisons sessions43227/33760 both hit own45minute wall cap and ended;
+no final route/timing report, do NOT classify as counted routing failures.
+Two mask-retiming builds50441(Map2)/91059(Map3) still routing60%; source untouched.
+New isolated mask_tilt_map2_r2 composes qualified tilt-predicate adapters with
+exact PWM/mask retiming. Root prepare_mask_tilt_variant.py checks both qualified
+parents and copies exact proof trees. Only predicate-interface changes from
+qualified timing_map2_r2 are applied; its alternate disabled PWM rewrite is NOT.
+Original PWM physical/raw/effective equivalence of mask candidate stays intact.
+test_mask_retiming reverses exact precheck adapters before its source-delta
+comparison; separate test_tilt_precheck proves the listed adapters and exhaustive
+uint16 per axis plus3000actual paired ports. Quick test PASSED, no new math,
+precision, delay, conditions. Full qualifier26930 started02:41.
+After full qualification, build combo if neither current mask candidate passed.
+No FPGA, Flash, receiver, radio or actual sensor setting has changed this turn.
+2026-10-22 02:50 progress:
+mask_retimed_map2_r2 failed91unrouted and archived exact route91 snapshot;
+mask_retimed_map3_r2 failed347unrouted and archived exact route347 snapshot.
+No50MHz acceptance achieved; no candidate release or hardware action.
+Full combined mask_tilt_map2_r2 qualification26930 PASSED all originalC,
+state/numeric/fault/native-nav/host/wire and new exact-composition tests.
+Started full builds36600(Map2) and25521(Map3), both50MHz/P3/R2/maxfan200.
+Map3 is byte-identical RTL/evidence, mapper-only requalification strict.
+Also active17443 mask_retimed_map2_r0 source-identical reroute comparison,
+started02:46. All configs source/proof bound and require0unroute/50MHz/0violations.
+Root preparers now support kind mask_tilt and route0 clone. No modules, IMU,
+yaw, sensor settings, radio/website processes, SRAM or Flash modified outside
+these isolated candidates.
+2026-10-22 03:15 update:
+Monitor cell491 was intentionally terminated; no automatic selector active.
+Still active:17443 mask_retimed_map2_r0;36600 mask_tilt_map2_r2;25521 mask_tilt_map3_r2.
+All three were routing60% at03:14 with growing gw_sh CPU use (not stopped).
+Read actual operand proof: entire32calc-site domains fit ma49/mb28/value46
+(previous50/34/48). Prepared mask_tilt_tight_map2_r2 via root preparer; direct
+original64-storage->tight-signed-storage proof PASSED all32 intervals/32000cases
+and byte-identical old traces. Every arithmetic alias remains signed64, Q16,
+rounding/divider/helper latency unchanged, all raw32-domain intervals retained.
+Full qualification86833 is still running (manual/XY/etc passed, nav pending).
+Independent synthesis-only32877 completed:44020logic/27043reg vs parent43560/
+27046; DSP counts identical(26MULTALU27X18,7MULT12X12,14MULT27X36). Thus NOT
+preferred for PNR. No full PNR launched for tight variant; status says so.
+No hardware/Flash/receiver operation. Main three older jobs remain pending.
+2026-10-22 03:21 update:
+All three previous PNR jobs finished with genuine errors, archived exact:
+17443 mask_retimed_map2_r0 =236unrouted;
+36600 mask_tilt_map2_r2 =673unrouted;
+25521 mask_tilt_map3_r2 =206unrouted.
+All old q test+study sessions ended. Tight86833 full qualifier PASSED all tests;
+study44020logic(+460),same DSP and3FF saved: do NOT prefer/use it for PNR.
+New measured/config hypothesis: mask_retimed_map2_r2 physical report uses
+27681FF vs27048synthesis (+633), CLS26392/29952=89%; source43529logic vs43535
+placed. Local SUG1220 documents defaultmax_fanout1000 and defaultreplicate0.
+Run factorial on same full-qualified mask RTL, not changing control/numerics:
+82060 mask_retimed_f1000_rep1_map2_r2;
+53357 mask_retimed_f200_rep0_map2_r2;
+44677 mask_retimed_f1000_rep0_map2_r2;
+plus source-identical Map3 of fan1000/rep0, session will be added below.
+Root prepare_fanout_replication_variant.py revalidates all source/evidence;
+updates only Tcl and strict actual expected configuration. Rep0 verification
+requires NO replicate switch in actualcmd.do, keeps timing and50MHz checks.
+Child finalizers explicitly mark replication enabledfalse while configuration
+verifiedtrue. Source-identity tests reused with recorded config qualification;
+all17pins/Q12/Q24/controller/output/protocol math remain unchanged.
+No FPGA/Flash/radio/receiver changes, no verified release exists yet.
+2026-10-22 03:35 update:
+No monitor cell active (507 intentionally terminated to do independent work).
+Four PNR sessions stillactive82060/53357/44677/20861 (names above;20861 is
+mask_retimed_f1000_rep0_map3_r2). 44677 fan1000/rep0/Map2 completed routePhase1
+and is still optimising at70%, no final errors/STA yet. Others routing60%.
+NEW measured source alternative serial_multiply_map2_r2, root preparer and
+serial_multiply_test_template.py. Parent full-qualified mask_tilt_map2_r2.
+position_multiply ORIGINAL is three32x32DSP products followed by padding,
+but it already publishes64clocks after accepting start. Replacement performs
+64 shift/add steps mod2^64 and publishes at EXACT SAME64clock edge. Busy,
+done,result/reset/cancel/start-while-busy and all output clocks are unchanged.
+All64bits retained; signed/unsigned product low64 equivalent. No Q math,
+rounding, divider/CORDIC, IMU/yaw/rate/source control, sample scheduling changed.
+Strict contract reverses the EXACT one-module replacement and bytecompares
+whole position_math.v to protected B0AD; all other modules untouched.
+Quick actual original/new RTL11589 PASSED74256vectors (all signed8pairs,
+all64x64bit basis pairs,4096full64random,edges,each64cancel/resetposition),
+every output on everyclock plus independent Python products. Same64latency.
+Synthesis-only24035 PASSED:43571logic vs43560parent (+11),27084reg(+38),
+MULT27X36=12 vs14parent (-2); otherDSP unchanged. No PNR launched yet.
+Full qualification39398 running; height/state/sticks/core/bounds/wire/geometry
+passed at03:33; others pending. After fullPASS and if no existing PNR pass,
+consider building serial candidate as exact lowerDSP alternative; don't lower
+50MHz, precision, checks, or falsely claim it is flight-ready.
+All other sessions from earlier waves closed/archived. No hardware actions.
+2026-10-22 03:36 independent offline RELEASE SUCCESS:
+Selected variants/mask_retimed_f200_rep0_map2_r2. Full-qualified mask-retimed
+RTL, mapper2/P3/R2/maxfan200, default physical resource replicationOFF.
+53357 completed verifiedtrue,0unrouted,Fmax50.505MHz,setupTNS0/endpoints0,
+holdTNS0/endpoints0,17exactIO,UserCode0xB0AE,CLS26176.
+FS SHA256 7cef4a47a17d2a03709d0b7f5bdb7c1b46c030a33c72876db65aba2e0b953a80.
+Root select_verified_release.py independently re-ran --verify-existing in a
+fresh process then finalizer; both PASSED. selected_release.json,选用工程.txt,
+winner offline_release.json/source_diff.patch created and source/proof bound.
+First selector invocation hit root helper GBK default reading UTF8 ground;
+fixed root requalify_ground_paths.py explicitUTF8reads (no candidate/source
+or proof mutation). Rerun with PYTHONUTF8=1 passed; portable decoder already
+qualified so no ground changes/requalification needed. Do NOT rewrite winner.
+44677 fan1000/rep0/Map2 did route but strict timing verification FAILED; not
+selected. 82060/20861 remaining comparisons were stopped after exact own
+Python command and its gw_sh child identity verification, no user process hit.
+39398 unselected serial-multiplier full qualifier still running; no serial PNR.
+Current task has achieved requested control-port+offline PNR acceptance.
+No FPGA/SRAM/Flash/receiver/radio setting changed; physical acceptance remains.
+Main source root fixture is FAILED and must not be used; selected pointer is
+canonical. Need final refresh network API (small selected fields only), concise
+report with selected工程link,50.505MHz/0route/0violations, Q12/Q24 unchanged,
+not programmed/props-off acceptance and vertical-loss/no-barometer limits.
+FINAL STATE2026-10-22:
+All owned build/qualification sessions now closed. Serial qualifier39398 also
+finishedPASS, but serial variant has NO full PNR and is NOT selected. Both
+unneeded comparison directories record stopped_after_verified_selection.
+Canonical B0AE selected root and metrics unchanged (fan200/rep0/Map2/R2,
+50.505MHz,0unroute,0setup/holdviolations). Final root selector and independent
+fresh-process verification passed. All chosen source/evidence/artifact hashes
+are frozen; no need to broaden/repeat tests or change the selected source.
+Latest network refresh: Baidu/GitHubHTTP200;local8765COM17 live/fresh,
+frame69.2ms, reportedB0AC,RCfalse,armedfalse,1000us4channels. No hardware,
+Flash, receiver or radio changes. Next physical work requires fresh props-off
+state confirmation and SRAM acceptance; historical powerloss and vertical
+reference-loss/no-barometer limitation remain unaccepted. Do not call readyfly.

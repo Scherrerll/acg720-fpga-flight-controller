@@ -1,0 +1,8 @@
+{
+  "name": "state_reference",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\core\\ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "tests\\state_reference.v": "6accef382fa0fc3daa289e316c4dbe5ccecded752e862600cca9da9471af7d87"
+  }
+}

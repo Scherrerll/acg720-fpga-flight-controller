@@ -1,0 +1,28 @@
+{
+  "core/motor_pwm.v": {
+    "parameter integer MAX_US=1150": "parameter integer MAX_US=1150,\n    parameter integer EXTERNAL_TICKS=0",
+    "    input wire [15:0] m1_us,m2_us,m3_us,m4_us,": "    input wire [15:0] m1_us,m2_us,m3_us,m4_us,\n    input wire [31:0] pre_ticks1,pre_ticks2,pre_ticks3,pre_ticks4,",
+    "ticks1<=clamp(m1_us)*TICKS_PER_US;": "ticks1<=EXTERNAL_TICKS ?pre_ticks1:(clamp(m1_us)*TICKS_PER_US);",
+    "ticks2<=clamp(m2_us)*TICKS_PER_US;": "ticks2<=EXTERNAL_TICKS ?pre_ticks2:(clamp(m2_us)*TICKS_PER_US);",
+    "ticks3<=clamp(m3_us)*TICKS_PER_US;": "ticks3<=EXTERNAL_TICKS ?pre_ticks3:(clamp(m3_us)*TICKS_PER_US);",
+    "ticks4<=clamp(m4_us)*TICKS_PER_US;": "ticks4<=EXTERNAL_TICKS ?pre_ticks4:(clamp(m4_us)*TICKS_PER_US);"
+  },
+  "core/flight_core.v": {
+    "    wire pwm_frame_active,pwm_limited;": "    wire pwm_frame_active,pwm_limited;\n    // f(select(c,a,b))=select(c,f(a),f(b)); keep the same published data,\n    // frame latch and live enable. Only move the us-to-ticks conversion\n    // ahead of validity selection, removing the long health->DSP path.\n    function [31:0] pwm_width_ticks;\n        input [15:0] value;\n        reg [15:0] bounded;\n        begin\n            bounded=value<1000 ?16'd1000:value>RUN_MAX_US ?RUN_MAX_US:value;\n            pwm_width_ticks=bounded*32'd50;\n        end\n    endfunction\n    wire [31:0] pwm_ticks1=rate_fresh ?pwm_width_ticks(m1):idle_running && preparation_mask[0] ?pwm_width_ticks(RUN_MIN_US):pwm_width_ticks(16'd1000);\n    wire [31:0] pwm_ticks2=rate_fresh ?pwm_width_ticks(m2):idle_running && preparation_mask[1] ?pwm_width_ticks(RUN_MIN_US):pwm_width_ticks(16'd1000);\n    wire [31:0] pwm_ticks3=rate_fresh ?pwm_width_ticks(m3):idle_running && preparation_mask[2] ?pwm_width_ticks(RUN_MIN_US):pwm_width_ticks(16'd1000);\n    wire [31:0] pwm_ticks4=rate_fresh ?pwm_width_ticks(m4):idle_running && preparation_mask[3] ?pwm_width_ticks(RUN_MIN_US):pwm_width_ticks(16'd1000);\n",
+    "motor_pwm #(.TICKS_PER_US(50),.FRAME_US(OUTPUT_FRAME_US),.MAX_US(RUN_MAX_US)) outputs": "motor_pwm #(.TICKS_PER_US(50),.FRAME_US(OUTPUT_FRAME_US),.MAX_US(RUN_MAX_US),.EXTERNAL_TICKS(1)) outputs",
+    "        .m1_us(published_m1),.m2_us(published_m2),.m3_us(published_m3),.m4_us(published_m4),": "        .m1_us(published_m1),.m2_us(published_m2),.m3_us(published_m3),.m4_us(published_m4),\n        .pre_ticks1(pwm_ticks1),.pre_ticks2(pwm_ticks2),.pre_ticks3(pwm_ticks3),.pre_ticks4(pwm_ticks4),"
+  },
+  "mtf_xyz_navigation_control.v": {
+    " output wire signed [15:0] xy_roll_target,xy_pitch_target,": " output wire signed [15:0] xy_roll_target,xy_pitch_target,\n output wire signed [15:0] xy_payload_roll,xy_payload_pitch,",
+    " assign xy_roll_target=xy_active ? controller_roll:16'sd0;": " assign xy_payload_roll=controller_roll;assign xy_payload_pitch=controller_pitch;\n assign xy_roll_target=xy_active ? controller_roll:16'sd0;",
+    "position_x_q8,position_y_q8,xy_roll_target,xy_pitch_target,z_throttle_delta,shadow_flags,": "position_x_q8,position_y_q8,controller_roll,controller_pitch,z_throttle_delta,shadow_flags,",
+    " assign diagnostic_body=diagnostic_q;": " // XY-active is shadow_flags[5], diagnostic_q[85]. Capture raw targets\n // and their flag together, then mask after the SAME snapshot register.\n // Every external diagnostic bit equals the old mask-before-register form.\n assign diagnostic_body={diagnostic_q[719:144],\n  diagnostic_q[85] ?diagnostic_q[143:128]:16'd0,\n  diagnostic_q[85] ?diagnostic_q[127:112]:16'd0,diagnostic_q[111:0]};"
+  },
+  "acg720_ano_port.v": {
+    " wire signed [15:0] nav_xy_roll,nav_xy_pitch;wire [15:0] nav_xy_reason;": " wire signed [15:0] nav_xy_roll,nav_xy_pitch;wire [15:0] nav_xy_reason;\n wire signed [15:0] nav_xy_payload_roll,nav_xy_payload_pitch;",
+    " wire signed [15:0] handoff_roll,handoff_pitch,handoff_delta;": " wire signed [15:0] handoff_roll,handoff_pitch,handoff_delta;\n wire signed [15:0] handoff_raw_roll,handoff_raw_pitch;\n assign handoff_roll=xyz_joint_active ?handoff_raw_roll:16'sd0;\n assign handoff_pitch=xyz_joint_active ?handoff_raw_pitch:16'sd0;",
+    ".command_in({raw_xyz_joint_active,nav_xy_roll,nav_xy_pitch,nav_z_throttle,nav_z_collective}),": ".command_in({raw_xyz_joint_active,nav_xy_payload_roll,nav_xy_payload_pitch,nav_z_throttle,nav_z_collective}),",
+    ".command_out({xyz_joint_active,handoff_roll,handoff_pitch,handoff_delta,handoff_collective}));": ".command_out({xyz_joint_active,handoff_raw_roll,handoff_raw_pitch,handoff_delta,handoff_collective}));",
+    "  .xy_roll_target(nav_xy_roll),.xy_pitch_target(nav_xy_pitch),.xy_reason(nav_xy_reason),": "  .xy_roll_target(nav_xy_roll),.xy_pitch_target(nav_xy_pitch),.xy_reason(nav_xy_reason),\n  .xy_payload_roll(nav_xy_payload_roll),.xy_payload_pitch(nav_xy_payload_pitch),"
+  }
+}

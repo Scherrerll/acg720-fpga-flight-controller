@@ -1,0 +1,2 @@
+geometry_domain GEOMETRY_DOMAIN_PASS          49 roll/pitch pairs, maxerror=0.483696mm; flow loss preserves Z; range/tilt revoke
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_map2_r2\tests\geometry_domain.v:36: $finish called at 1105841000 (1ps)

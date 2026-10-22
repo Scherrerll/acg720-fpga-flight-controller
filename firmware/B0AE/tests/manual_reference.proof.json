@@ -1,0 +1,10 @@
+{
+  "name": "manual_reference",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\position\\ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "fixture\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "fixture\\core\\rtl\\ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "tests\\manual_reference.v": "2e88dce5c69388a0bf59c68853e6996fbb3fa541b2d8bd7c4e5ff72d0be85862"
+  }
+}

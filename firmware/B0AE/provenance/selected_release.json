@@ -1,0 +1,24 @@
+{
+  "candidate": "B0AE",
+  "selected_root": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2",
+  "selected_project": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\fixture\\acg720_ano_port.gprj",
+  "selected_build_script": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\fixture\\build_project.py",
+  "bitstream": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+    "sha256": "7cef4a47a17d2a03709d0b7f5bdb7c1b46c030a33c72876db65aba2e0b953a80",
+    "user_code": "0x0000b0ae"
+  },
+  "fmax_mhz": 50.505,
+  "offline_release_sha256": "b2c4db9b018520fd05fc42ae44fc7312437cde2a6dca7048ce47334e63e61ca5",
+  "source_diff_sha256": "21cd27f2fb4dcb61b34592366325e555c8de2d87b564e5764d7480b438134515",
+  "verified_candidates": [
+    {
+      "root": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2",
+      "fmax_mhz": 50.505
+    }
+  ],
+  "created_utc": "2026-10-21T19:36:21.856412+00:00",
+  "hardware_programmed": false,
+  "flash_changed": false,
+  "flight_ready": false
+}

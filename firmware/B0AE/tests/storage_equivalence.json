@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "cases": 50010,
+  "rtl_traces_bit_identical": {
+    "height_rtl.txt": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90",
+    "xy_rtl.txt": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691",
+    "manual_rtl.txt": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f"
+  },
+  "fraction_bits_unchanged": 16,
+  "operations_signed_bits": 64,
+  "physical_hardware_accessed": false
+}

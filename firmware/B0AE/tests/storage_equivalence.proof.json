@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "reference/storage_before_hold.v": "7806ba156067c347b270aecda4c1b6589d3221801f9976ebfce2eb34714ecb6c",
+    "reference/operand_before_hold.v": "3030a1eeb2bd20e80ec2cf1cae287d1430040d3f8c06365e4402769a0a7874e7",
+    "reference/storage_parent.json": "d13856103447dae670d13bfb6076effa1a93e43bc05eecb7ee290f775fea94b5",
+    "test_storage_equivalence.py": "b679ea494b95df237e57ecaf0410f1ff8e9934d76a41dc817510fac33844cccb",
+    "reference/storage_before_height_rtl.txt": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90",
+    "reference/storage_before_xy_rtl.txt": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691",
+    "reference/storage_before_manual_rtl.txt": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f",
+    "tests/height_rtl.txt": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90",
+    "tests/xy_rtl.txt": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691",
+    "tests/manual_rtl.txt": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f"
+  },
+  "method": "Inductive clipping/storage bounds and exact previous-qualified RTL traces; no fractional precision or arithmetic changed"
+}

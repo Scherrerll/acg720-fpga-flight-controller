@@ -1,0 +1,1313 @@
+{
+  "schema": 1,
+  "build_id": "B0AE",
+  "source_root": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2",
+  "note": "Byte-for-byte copies. Historical proof paths may refer to the original machine. No bitstream or hardware programming is included.",
+  "files": [
+    {
+      "path": "firmware/B0AE/fixture/acg720_ano_port.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/acg720_ano_port.v",
+      "sha256": "b82d480c381891c168b89819361c305b9e3ce7ed018047c1f3923e58e27f986c"
+    },
+    {
+      "path": "firmware/B0AE/fixture/telemetry_tx.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/telemetry_tx.v",
+      "sha256": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/control_gate.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/cordic_atan2.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/ano_flight_state.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/ano_flight_state.v",
+      "sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/ano_xy_stick.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/ano_xy_stick.v",
+      "sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/ano_xy_divide36.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/ano_xy_divide36.v",
+      "sha256": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/flight_core.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/flight_core.v",
+      "sha256": "77a144ab5705a6eacb3478f9353b02492341b4b2cdeabebc995b6551afc80fd6"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/bmi088_reader.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/imu_checked_guard_pipelined.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/imu_pipeline_pipelined.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/imu_pipeline_pipelined.v",
+      "sha256": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/imu_temporal_check_pipelined.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/motor_pwm.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/motor_pwm.v",
+      "sha256": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/rc_ppm.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/spi_uart_modules.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/rtl/pid_divide_signed64.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/rtl/quad_mixer_feedback.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/position_math.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/relative_position.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1"
+    },
+    {
+      "path": "firmware/B0AE/fixture/sensor/flow_reader.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709"
+    },
+    {
+      "path": "firmware/B0AE/fixture/sensor/range_reader.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04"
+    },
+    {
+      "path": "firmware/B0AE/fixture/acg720_ano_port.cst",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/acg720_ano_port.cst",
+      "sha256": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73"
+    },
+    {
+      "path": "firmware/B0AE/fixture/acg720_ano_port.sdc",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d"
+    },
+    {
+      "path": "firmware/B0AE/fixture/sensor/pmw3901_init.vh",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389"
+    },
+    {
+      "path": "firmware/B0AE/fixture/calibration.vh",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/ano_attitude_estimator.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/ano_attitude_estimator.v",
+      "sha256": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/rtl/ano_rate_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/rtl/ano_rate_control.v",
+      "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/ano_flow_fusion.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/ano_hold_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/ano_z_stick.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/ano_z_stick.v",
+      "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/rtl/ano_yaw_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/ano_height_fusion.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae"
+    },
+    {
+      "path": "firmware/B0AE/fixture/sensor/range_height_estimate.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/pose_time_adapter.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/rtl/ano_rc_angle_targets.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/rtl/ano_manual_angles.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/core/rtl/ano_manual_angles.v",
+      "sha256": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17"
+    },
+    {
+      "path": "firmware/B0AE/fixture/level_calibration.vh",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b"
+    },
+    {
+      "path": "firmware/B0AE/fixture/sensor/mtf01p_reader.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/sensor/mtf01p_reader.v",
+      "sha256": "282bb3e610d54405c8c67cc2fdd5de05638d4d67b78ae99b83888b9898af6157"
+    },
+    {
+      "path": "firmware/B0AE/fixture/sensor/mtf_native_geometry.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/sensor/mtf_native_geometry.v",
+      "sha256": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/mtf_position_integrator.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/mtf_position_integrator.v",
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28"
+    },
+    {
+      "path": "firmware/B0AE/fixture/mtf_navigation_shadow.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/mtf_navigation_shadow.v",
+      "sha256": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2"
+    },
+    {
+      "path": "firmware/B0AE/fixture/nav_math_service.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/nav_math_service.v",
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7"
+    },
+    {
+      "path": "firmware/B0AE/fixture/sensor/mtf_shared_geometry.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/sensor/mtf_shared_geometry.v",
+      "sha256": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/mtf_shared_flow_fusion.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/mtf_shared_flow_fusion.v",
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/mtf_shared_height_fusion.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/mtf_shared_height_fusion.v",
+      "sha256": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/mtf_shared_hold_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/mtf_shared_hold_control.v",
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5"
+    },
+    {
+      "path": "firmware/B0AE/fixture/mtf_xyz_navigation_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/mtf_xyz_navigation_control.v",
+      "sha256": "1c2e1831d2856bf37ae42a42df38e20c53ae5935e5d6001acc6c36540947727c"
+    },
+    {
+      "path": "firmware/B0AE/fixture/position/mtf_xyz_hold_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/position/mtf_xyz_hold_control.v",
+      "sha256": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682"
+    },
+    {
+      "path": "firmware/B0AE/fixture/acg720_ano_port.gprj",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/acg720_ano_port.gprj",
+      "sha256": "4f7fa810c96de0c3aee3c887e2fc0b845363e70acb19dd01ca48eb8b2ee2a30c"
+    },
+    {
+      "path": "firmware/B0AE/fixture/build.tcl",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/build.tcl",
+      "sha256": "747564b852f6d476ff1071827d21c0a2fedaf39ed9533f1b6e149c1bf0231630"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_AltCtrl.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_AltCtrl.c",
+      "sha256": "c419219ab052e4a2d07697682be01cd1d32d1dc3950eeeee0af9188891c297a3"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_AttCtrl.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_AttCtrl.c",
+      "sha256": "81e9f6dfdcefe73495a4f03d8bcffcfb07aec73ae82b263c6affa8ce16c25667"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_Filter.h",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_Filter.h",
+      "sha256": "15e7fb6d2ece86c350338f07680963617d152d993a1f33fd0ef7741fdb88e70c"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_FlightCtrl.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_FlightCtrl.c",
+      "sha256": "0a490f64fc17aefb932b3223b96c8c2f21bc30de735bbe07339fb0d958cc8691"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_LocCtrl.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_LocCtrl.c",
+      "sha256": "6e38baf1774b1961a29af324560c7e18317555b080f0bddbbd74c4a4dd3cdef2"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_Math.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_Math.c",
+      "sha256": "b0adabaf132af74bf641e99e629bdd922929a1d3698a5a84bb7270cb0e958f65"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_MotorCtrl.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_MotorCtrl.c",
+      "sha256": "c7760c114997134141d05d5023b1be46b88abde85d0cdd929d3ea8997f908c16"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_Parameter.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_Parameter.c",
+      "sha256": "3e225dcd429db0d1f6855960a395b6f80172862143757792cf76b45e68d061eb"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_Pid.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_Pid.c",
+      "sha256": "3ccab514ed143cbafbbb75e221e12ab51af91ff30c67bf607f55e7dd41608e12"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_RC.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_RC.c",
+      "sha256": "c4012cfb561447b25583028700caea7afb4d02ce80b5be34edfd5ba3875fd028"
+    },
+    {
+      "path": "firmware/B0AE/reference/Ano_Scheduler.c",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/Ano_Scheduler.c",
+      "sha256": "75b87206cce7a278367936ee33bfd4f6689cb64d3aca4554d333353367cb8943"
+    },
+    {
+      "path": "firmware/B0AE/reference/config.h",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/config.h",
+      "sha256": "97c8a336edbb71cdf51a0f8ef89d1e695e608e2802b978bcbb06e6e891b68d0d"
+    },
+    {
+      "path": "firmware/B0AE/reference/mask_changes.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/mask_changes.json",
+      "sha256": "c733cc425541815e579e3de66bf643adfe5fec70d32060b15a85d25eb366594d"
+    },
+    {
+      "path": "firmware/B0AE/reference/mask_parent/acg720_ano_port.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/mask_parent/acg720_ano_port.v",
+      "sha256": "725cba0683eee6ed5e613b60e27e51b439dda7db2b55fcd524bd496cb233d279"
+    },
+    {
+      "path": "firmware/B0AE/reference/mask_parent/core/flight_core.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/mask_parent/core/flight_core.v",
+      "sha256": "1948607bae9e81e425c1a0630551ff2d8ef51a979b73c5095a10d2bf9a93898b"
+    },
+    {
+      "path": "firmware/B0AE/reference/mask_parent/core/motor_pwm.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/mask_parent/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3"
+    },
+    {
+      "path": "firmware/B0AE/reference/mask_parent/mtf_xyz_navigation_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/mask_parent/mtf_xyz_navigation_control.v",
+      "sha256": "369969dbb36e98d643241e1bdba2f19c1260fdee3ef097f45c79451d5f934f8c"
+    },
+    {
+      "path": "firmware/B0AE/reference/mask_parent.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/mask_parent.json",
+      "sha256": "97044ce129e484aa68c5b7fcab3b2e43fad6d15e0f2ba62015c8c6c04ac08850"
+    },
+    {
+      "path": "firmware/B0AE/reference/operand_before_height_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/operand_before_height_rtl.txt",
+      "sha256": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90"
+    },
+    {
+      "path": "firmware/B0AE/reference/operand_before_hold.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/operand_before_hold.v",
+      "sha256": "3030a1eeb2bd20e80ec2cf1cae287d1430040d3f8c06365e4402769a0a7874e7"
+    },
+    {
+      "path": "firmware/B0AE/reference/operand_before_manual_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/operand_before_manual_rtl.txt",
+      "sha256": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f"
+    },
+    {
+      "path": "firmware/B0AE/reference/operand_before_xy_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/operand_before_xy_rtl.txt",
+      "sha256": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691"
+    },
+    {
+      "path": "firmware/B0AE/reference/operand_parent.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/operand_parent.json",
+      "sha256": "48553b865f9cd83e6d647f7c67cb239db525939725aec7b6280383329a28d070"
+    },
+    {
+      "path": "firmware/B0AE/reference/storage_before_height_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/storage_before_height_rtl.txt",
+      "sha256": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90"
+    },
+    {
+      "path": "firmware/B0AE/reference/storage_before_hold.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/storage_before_hold.v",
+      "sha256": "7806ba156067c347b270aecda4c1b6589d3221801f9976ebfce2eb34714ecb6c"
+    },
+    {
+      "path": "firmware/B0AE/reference/storage_before_manual_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/storage_before_manual_rtl.txt",
+      "sha256": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f"
+    },
+    {
+      "path": "firmware/B0AE/reference/storage_before_xy_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/storage_before_xy_rtl.txt",
+      "sha256": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691"
+    },
+    {
+      "path": "firmware/B0AE/reference/storage_parent.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reference/storage_parent.json",
+      "sha256": "d13856103447dae670d13bfb6076effa1a93e43bc05eecb7ee290f775fea94b5"
+    },
+    {
+      "path": "firmware/B0AE/tests/ano_telemetry_wire.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/ano_telemetry_wire.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/ano_telemetry_wire.hex",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/ano_telemetry_wire.hex",
+      "sha256": "c13898e9e8817505c1d3041feb06b91bf954f93ed17cc120c79b8cf616bf0428"
+    },
+    {
+      "path": "firmware/B0AE/tests/ano_telemetry_wire.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/ano_telemetry_wire.log",
+      "sha256": "1f8ad82deb30913123f7c8896a3ef6357969e619caece49c9b50b8222ba9b04b"
+    },
+    {
+      "path": "firmware/B0AE/tests/ano_telemetry_wire.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/ano_telemetry_wire.proof.json",
+      "sha256": "e62cf9a1d1bd09d0495dd57c96481f7c7f9d53f9d1386edebd757fb0594256f3"
+    },
+    {
+      "path": "firmware/B0AE/tests/ano_telemetry_wire.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/ano_telemetry_wire.v",
+      "sha256": "cc1c4362b65f369f7603f332ad76ff66afb5801d462ef0a8eaca8dca1b0c78c7"
+    },
+    {
+      "path": "firmware/B0AE/tests/bounded_divide.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/bounded_divide.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/bounded_divide.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/bounded_divide.log",
+      "sha256": "a6a1f81acfe6758349c049e3d20a6793bb32e53d7a5c291d8383a62e02d76c04"
+    },
+    {
+      "path": "firmware/B0AE/tests/bounded_divide.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/bounded_divide.proof.json",
+      "sha256": "ce866b0eed5838e3de8aae49d0ae0c83255923934844c3cae847dd4a0de2aa53"
+    },
+    {
+      "path": "firmware/B0AE/tests/bounded_divide.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/bounded_divide.v",
+      "sha256": "bac5626acfffca00141154f671142873ff17f9bac0dd785a276d80e98a00643f"
+    },
+    {
+      "path": "firmware/B0AE/tests/build_reference.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/build_reference.py.run.log",
+      "sha256": "985579e64242c93cc8546332a0422f8616c98a006f0ff58f868f763040924b03"
+    },
+    {
+      "path": "firmware/B0AE/tests/control_races.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/control_races.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/control_races.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/control_races.log",
+      "sha256": "c854dbf0fe1e7958072a21cbc8c7b322a6cd351a1ebdd5a5e0eacdfa2537e85f"
+    },
+    {
+      "path": "firmware/B0AE/tests/control_races.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/control_races.proof.json",
+      "sha256": "8ba8ee4c75d63f08bb78a52f846cb766767f36ccc08fdf8f0a90d4d0cd181f49"
+    },
+    {
+      "path": "firmware/B0AE/tests/control_races.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/control_races.v",
+      "sha256": "4b01a9693719d30f128504e26a37e9a6a11047487954befdf2864747fbca2f0f"
+    },
+    {
+      "path": "firmware/B0AE/tests/core_control.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/core_control.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/core_control.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/core_control.log",
+      "sha256": "0311a4857e9da443529f4cdb4c5e7e119677b24d2a7d580aa9b75885c1b37353"
+    },
+    {
+      "path": "firmware/B0AE/tests/core_control.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/core_control.proof.json",
+      "sha256": "7c238b91dc8796ef86f41f746a5869d238c440eb1bf8d07201ba769c5cc61924"
+    },
+    {
+      "path": "firmware/B0AE/tests/core_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/core_control.v",
+      "sha256": "329a5429710bd72dbcc0684b6ce2757c6cfb669cfb1e1276489379bc8555eb27"
+    },
+    {
+      "path": "firmware/B0AE/tests/divide36_equivalence.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/divide36_equivalence.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/divide36_equivalence.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/divide36_equivalence.log",
+      "sha256": "10ffc0d6f4669914526f5de3defc276d220b7174774c875d910404656781bd30"
+    },
+    {
+      "path": "firmware/B0AE/tests/divide36_equivalence.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/divide36_equivalence.proof.json",
+      "sha256": "2d1bf9f44b6a45ca86df2d51e436dea9705bf0fafe0d985b26190410da7be8ed"
+    },
+    {
+      "path": "firmware/B0AE/tests/divide36_equivalence.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/divide36_equivalence.v",
+      "sha256": "7ea03e089c4c3bc35ccdc6cf79fda72989dcc7066e0f2860982831a4e5d6a170"
+    },
+    {
+      "path": "firmware/B0AE/tests/divide36_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/divide36_inputs.txt",
+      "sha256": "eebe1a0e85e4f0f386e4d793a004815bf0f9e50374b82b1fc9ce4892bd2f999d"
+    },
+    {
+      "path": "firmware/B0AE/tests/geometry_domain.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/geometry_domain.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/geometry_domain.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/geometry_domain.log",
+      "sha256": "db53bc8890643f979262c005152205c820741e65f08dda27f56341b5ddcc2491"
+    },
+    {
+      "path": "firmware/B0AE/tests/geometry_domain.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/geometry_domain.proof.json",
+      "sha256": "90f9a50d46f4063f8898af207b14590514c31719db6ceabd54904cc0431c6314"
+    },
+    {
+      "path": "firmware/B0AE/tests/geometry_domain.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/geometry_domain.v",
+      "sha256": "2570eef65a4d4891ebddb1c4ea33699c74004201605dd970f68f29462cc292dc"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_inputs.txt",
+      "sha256": "ec933be9971eefcc3f2dd13fdd03d0a634237064e7b219e2d768a9cac1a630a4"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_reference.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_reference.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_reference.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_reference.json",
+      "sha256": "427ab182d3a5dc9c20d812410a4a5cf9e710146bab06bf7deaf599ef05e43c75"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_reference.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_reference.log",
+      "sha256": "776def74ef9b800e949a811a62c5643d57740d772a4fedfb576a9e9a53f67152"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_reference.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_reference.proof.json",
+      "sha256": "41dab3976e14c8c207a891256eecc26027287c70fd5d7833da5a8b3981012889"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_reference.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_reference.txt",
+      "sha256": "08c3cbf8c43dcd427b114c003760a1bc729c8a1c530375e94a78cf5b3bb6566e"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_reference.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_reference.v",
+      "sha256": "3d505f86f6d1edf3e385da4c268c21f0230f765d759790a6e1019899e2279fb6"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_rtl.txt",
+      "sha256": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90"
+    },
+    {
+      "path": "firmware/B0AE/tests/height_rtl_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/height_rtl_inputs.txt",
+      "sha256": "413d6f2c7bdb2e8c99a6ee7908a1f519270fa2d6cd233056debc1c3e957bb5e9"
+    },
+    {
+      "path": "firmware/B0AE/tests/host_tests.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/host_tests.log",
+      "sha256": "1e32413304c5001ad8f20e895d71a998fc572ab00d317ebb42a71abf5d88ecac"
+    },
+    {
+      "path": "firmware/B0AE/tests/legacy_telemetry_wire.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/legacy_telemetry_wire.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/legacy_telemetry_wire.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/legacy_telemetry_wire.log",
+      "sha256": "0e9bfc96661475fad50aa81dbae08a49bb222dde32edea016a920acab1684e76"
+    },
+    {
+      "path": "firmware/B0AE/tests/legacy_telemetry_wire.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/legacy_telemetry_wire.proof.json",
+      "sha256": "2f643650a462c992a5aa02bb01444c1c73097d497dc1237b5f7c3699ba95ebd2"
+    },
+    {
+      "path": "firmware/B0AE/tests/legacy_telemetry_wire.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/legacy_telemetry_wire.v",
+      "sha256": "3289f717a6d9344ede217e1deb7a00b776d647da04d167f64f4729269a3b90cb"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_handoff.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_handoff.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_handoff.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_handoff.log",
+      "sha256": "20901c38d83394efc0acfb79a402e3a3b08bafd45b7616a8adb7f733e3f60d72"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_handoff.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_handoff.proof.json",
+      "sha256": "8e4eacfe9ff79961c80fc8b56828c5b737e95ad352d8fcb8d260296d68607707"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_handoff.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_handoff.v",
+      "sha256": "91ba8f4a7b77eb62e0dc94ee7c7b7561983e9321681146b4e79f1f2bf98e1df8"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_inputs.txt",
+      "sha256": "4dcc9d74e115dc47168d5faf3fb198e44a2d2cbe66aec41f5275b2fc8e4ae83a"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_reference.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_reference.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_reference.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_reference.json",
+      "sha256": "4936f8068df420ce1b172df74a93ae0dadaa68c8b4d1e1edab5593018ecfbbe2"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_reference.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_reference.log",
+      "sha256": "0eba4899d4e1ab1e40260018c3f3388845cd50c91a09c0540b277c94ea24571c"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_reference.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_reference.proof.json",
+      "sha256": "a38954be14c0bda05fb886073eecf73b6b865b73fb9da1ff92ba20e2ab049293"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_reference.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_reference.txt",
+      "sha256": "320b44a28b6eadfa45938741c76bc34bdf05c586fe3699cec9441c87f256261d"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_reference.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_reference.v",
+      "sha256": "2e88dce5c69388a0bf59c68853e6996fbb3fa541b2d8bd7c4e5ff72d0be85862"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_rtl.txt",
+      "sha256": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f"
+    },
+    {
+      "path": "firmware/B0AE/tests/manual_rtl_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/manual_rtl_inputs.txt",
+      "sha256": "a45d17f0a381eb173fad9fcf102b57e4a75925f4888e0009fb4eb13708b1370c"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_diagnostic.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_diagnostic.compile.log",
+      "sha256": "bbc1498c2d4b4ee5d67bc7d1d3b6bc7844ab29ad2020aebdf780ceea753e76df"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_diagnostic.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_diagnostic.log",
+      "sha256": "ad991bd7c6fec7e94f8131265c9330fa7003da39572493a3b31f4c83892806c3"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_diagnostic.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_diagnostic.proof.json",
+      "sha256": "ff05b1ce054ffccf4b3d84fae86388769d6acb116719c8f874787e356fac0e2b"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_diagnostic.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_diagnostic.v",
+      "sha256": "1509ae746f0bed27c990aa6267c8cb0fb3e790f2f19fca9b683aa4910c900f23"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_handoff.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_handoff.compile.log",
+      "sha256": "bbc1498c2d4b4ee5d67bc7d1d3b6bc7844ab29ad2020aebdf780ceea753e76df"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_handoff.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_handoff.log",
+      "sha256": "17e13dbbd49dd6a6621cc1d9d54573a862ad3e38571e3a954702c8bce5653189"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_handoff.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_handoff.proof.json",
+      "sha256": "f8c62a4f15dbdb3e2ed57121c8bdad33c46c939b28482d3cccc38e6a40af555f"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_handoff.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_handoff.v",
+      "sha256": "ed79835d67d95187a84d40fa413ca3c482f80ed8a175c73b20cd3db380cfd611"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_pwm.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_pwm.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_pwm.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_pwm.log",
+      "sha256": "1ef73d7369bb836401d57d230445dce5944392cb9e7c47632f9c82a159b26add"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_pwm.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_pwm.proof.json",
+      "sha256": "b58f940bab079c7c749b6c902a693b5b02e84720fca7ba90d133ccb495316e13"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_pwm.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_pwm.v",
+      "sha256": "b71eac67a5dc2dc7770951b44119d65bc2641980cee9cf90a595e64ec59fcd88"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_retiming.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_retiming.json",
+      "sha256": "a9d5676668f4b39f44d2cdc3fc252b3cc427e63027452d68be04176287100fd6"
+    },
+    {
+      "path": "firmware/B0AE/tests/mask_retiming.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/mask_retiming.proof.json",
+      "sha256": "275ed0d925a3f52d2f269698d980c2f593d5cff4034394555662e467684fdde2"
+    },
+    {
+      "path": "firmware/B0AE/tests/navigation_control.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/navigation_control.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/navigation_control.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/navigation_control.log",
+      "sha256": "b8f05d9ca16f80288fb7a42c4bd611522ba027f9f189ef1f8756c7d703a968dc"
+    },
+    {
+      "path": "firmware/B0AE/tests/navigation_control.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/navigation_control.proof.json",
+      "sha256": "800bbbd607b4446d31ed46080ac4a8eda762d9bced5f6218869d80ed2e456414"
+    },
+    {
+      "path": "firmware/B0AE/tests/navigation_control.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/navigation_control.v",
+      "sha256": "ca585b1ae8221343cb2c5065f776725f6a103d5b69eb7fa81ddb9fa9287a0da9"
+    },
+    {
+      "path": "firmware/B0AE/tests/operand_equivalence.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/operand_equivalence.json",
+      "sha256": "f98e53bbfb1458d775f03fb77550831020e59eda672ad831744547e60d416154"
+    },
+    {
+      "path": "firmware/B0AE/tests/operand_equivalence.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/operand_equivalence.proof.json",
+      "sha256": "ceaf749742b3c4cb1ca973bb45431d0c0c23f28d1bac0b9c828a9c9607d0868e"
+    },
+    {
+      "path": "firmware/B0AE/tests/original_motor_pwm.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/original_motor_pwm.v",
+      "sha256": "a064c0b6ba9b8f3a1b6f2b1274dcf7caa5d52a0324d3dcb713c7f7a3d6368ab2"
+    },
+    {
+      "path": "firmware/B0AE/tests/reference_compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/reference_compile.log",
+      "sha256": "0585ec08789bcf6f6af98268c50d4809b8b6a517b787613b3284653a4b9bde18"
+    },
+    {
+      "path": "firmware/B0AE/tests/reference_oracle.cpp",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/reference_oracle.cpp",
+      "sha256": "ac2db654ad1d5431c5d3cdc55322ad1c14b1a6eed28ece76266657fbed16aacd"
+    },
+    {
+      "path": "firmware/B0AE/tests/state_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/state_inputs.txt",
+      "sha256": "df1c2ecab2b253f7599fab0e58c8528cf78063458bd84076c7d82e5ad1db9fa7"
+    },
+    {
+      "path": "firmware/B0AE/tests/state_reference.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/state_reference.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/state_reference.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/state_reference.json",
+      "sha256": "6a61d4e856fbaf14a5e0bd5fa60da9671f3403296017f3d5ed254c98f57e0413"
+    },
+    {
+      "path": "firmware/B0AE/tests/state_reference.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/state_reference.log",
+      "sha256": "a98f93f0986d8f99f0f7c50ae3dec7681c64db2cec6887b5ada413652ffef887"
+    },
+    {
+      "path": "firmware/B0AE/tests/state_reference.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/state_reference.proof.json",
+      "sha256": "92716f8567e2eec015957d6a47d27d52685c70407377dee6ddc370d58c9605c4"
+    },
+    {
+      "path": "firmware/B0AE/tests/state_reference.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/state_reference.txt",
+      "sha256": "89aa88f7b97a85616012e966d2d016799bdaa4bd359d9efbdf2ffb3917e90476"
+    },
+    {
+      "path": "firmware/B0AE/tests/state_reference.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/state_reference.v",
+      "sha256": "6accef382fa0fc3daa289e316c4dbe5ccecded752e862600cca9da9471af7d87"
+    },
+    {
+      "path": "firmware/B0AE/tests/state_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/state_rtl.txt",
+      "sha256": "25989470bbf02e90f954056e52280a5b1056dab8de11b0373e4ad343adfe7606"
+    },
+    {
+      "path": "firmware/B0AE/tests/stick_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/stick_inputs.txt",
+      "sha256": "a33afce0f574a864ba21206030254bb2e54c91ff7923a5f8ebf540f584790075"
+    },
+    {
+      "path": "firmware/B0AE/tests/stick_reference.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/stick_reference.txt",
+      "sha256": "677b57ff94054b330553bb64f9c2fc4d5faeb7490ba5310d94aa9799db024eb1"
+    },
+    {
+      "path": "firmware/B0AE/tests/stick_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/stick_rtl.txt",
+      "sha256": "1046bef85deebea964c68363caa5715fb2d70914e9d69a924df9aef6e4e038fc"
+    },
+    {
+      "path": "firmware/B0AE/tests/stick_rtl_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/stick_rtl_inputs.txt",
+      "sha256": "7b23d6a59ba22dcd23b709f713f424b41a331706151a1585b8b243057bdc6209"
+    },
+    {
+      "path": "firmware/B0AE/tests/sticks_reference.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/sticks_reference.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/sticks_reference.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/sticks_reference.json",
+      "sha256": "4df23f8edca1b39886d6f0da648dc31fde312ea3a1edd32c449ee56e36eb2680"
+    },
+    {
+      "path": "firmware/B0AE/tests/sticks_reference.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/sticks_reference.log",
+      "sha256": "6570cb3eefd632cdd8c61e0c94599d0ff990616ba42905b03d502087a64ce007"
+    },
+    {
+      "path": "firmware/B0AE/tests/sticks_reference.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/sticks_reference.proof.json",
+      "sha256": "a240ca95f75d174d871296ada1b991ebc152663c7f5754fda8c33c13ae0f2786"
+    },
+    {
+      "path": "firmware/B0AE/tests/sticks_reference.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/sticks_reference.v",
+      "sha256": "6f2a618b9d2e30a8cb9fe7ed9f8c465f85ce32774a7bd19ffa4769b9f9c7d080"
+    },
+    {
+      "path": "firmware/B0AE/tests/storage_equivalence.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/storage_equivalence.json",
+      "sha256": "44842a88e1d13fd05915ba7411bcd7830f54c45f855cfeb55c84130932f2bb6f"
+    },
+    {
+      "path": "firmware/B0AE/tests/storage_equivalence.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/storage_equivalence.proof.json",
+      "sha256": "ae5aac94e1c4fdfa61b5fe64c93d24e82a8ca6dc4047db6559d5199682b578e6"
+    },
+    {
+      "path": "firmware/B0AE/tests/telemetry_wire.hex",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/telemetry_wire.hex",
+      "sha256": "6411c12f217331cc385950fb61d1baecfd765c910572c0df5d42a1c90365f344"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_bounds_races.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_bounds_races.py.run.log",
+      "sha256": "dad2d1e4f584f92be6b3875d47621a95f9a13ad5077321899775225f9e50cd92"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_core.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_core.py.run.log",
+      "sha256": "35a6a264664b98d12b1b95360ca0fd329c6409ee09d8e11f4eeaac6ee23492ca"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_divide36.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_divide36.py.run.log",
+      "sha256": "2a5de5b6df997ab6977c7b2a34ab8f2b246bace25bae493465e29dfa79498cbe"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_geometry.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_geometry.py.run.log",
+      "sha256": "2baa3c707c49aa3d5b05c3f1c15fc34a0d981c710084824166daa9777e41b94a"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_height_reference.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_height_reference.py.run.log",
+      "sha256": "044b61023575721400843159fea6d6651f3b4458cb401521b5dfc0a7de323302"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_manual_handoff.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_manual_handoff.py.run.log",
+      "sha256": "2a07eb80029f70514da4be1fca7bd0dd7bf9d4feba4fc635aca5a7d4793cabda"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_manual_reference.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_manual_reference.py.run.log",
+      "sha256": "10966e3f0366464caf83a01fd288ca628229c742d1f590530f3e595f9e237473"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_mask_retiming.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_mask_retiming.py.run.log",
+      "sha256": "eae48457b64a5f08b1f7ed27e9fee4e828d56c02920da811baf2401197d836a9"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_navigation.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_navigation.py.run.log",
+      "sha256": "65cf97acdccced4ae608e530e75ae4b9327e2e20a5662e0a4cb369448312658d"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_operand_equivalence.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_operand_equivalence.py.run.log",
+      "sha256": "d746b711dcbb002fafa26ee94716737108cdc1962b206a456d501e8cf2c0d337"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_state_reference.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_state_reference.py.run.log",
+      "sha256": "55eb8d6e3fc78f047df6efaa7d3d38290b46e9a44aa604558a5306801c29a12f"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_sticks_reference.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_sticks_reference.py.run.log",
+      "sha256": "664555c9f4f25ac3333cc65ff3321a8604c648b4668974c1763a754ad5471cb2"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_storage_equivalence.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_storage_equivalence.py.run.log",
+      "sha256": "a0274e6c3ed24bbb738906cdbc030cd0f3c04df901488d35b333888303a0114f"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_tools.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_tools.py.run.log",
+      "sha256": "526c76896a2aa9c6738f4cee7350eda08d3b33710af2a2f30d209424f1e80d88"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_wire.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_wire.py.run.log",
+      "sha256": "c71ec95ede59b3854a717f17311c7162d07c6678367e877048478be64cad5560"
+    },
+    {
+      "path": "firmware/B0AE/tests/test_xy_reference.py.run.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/test_xy_reference.py.run.log",
+      "sha256": "77b5c6807d12c701876b5456ccffae560fb9b7de16daf61cd8e7dc734e470438"
+    },
+    {
+      "path": "firmware/B0AE/tests/top.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/top.compile.log",
+      "sha256": "bbc1498c2d4b4ee5d67bc7d1d3b6bc7844ab29ad2020aebdf780ceea753e76df"
+    },
+    {
+      "path": "firmware/B0AE/tests/top.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/top.proof.json",
+      "sha256": "1210830049e44b4bd98243bd31c494d2958676fd7fccddfdccfe2d824476eeb9"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_inputs.txt",
+      "sha256": "4851c5573a048470af5049a7b804503b19b8392abff61f8c7ea22b1e4ffb602e"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_reference.compile.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_reference.compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_reference.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_reference.json",
+      "sha256": "4c72bba043a07fa9e67fc97548d217337aa11fc7620a6d77e220b6966a2253e2"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_reference.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_reference.log",
+      "sha256": "6deba704222f467fdd5ecc32b3f862b4a3cf6d7d13f8ae39ec838149516dc13a"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_reference.proof.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_reference.proof.json",
+      "sha256": "265288c0300f5fe5c58f0a6bb4f2383e8167b9cf9318cd345558021880624ce0"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_reference.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_reference.txt",
+      "sha256": "10533a5a641d18d390faedffd08dcf7dd19fcb3703d923da8756f6d3b9ffbadb"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_reference.v",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_reference.v",
+      "sha256": "89c1e150eb3afafe92da9befe100a357908febef297c5cd65b4ceedbc3d8d51f"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_rtl.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_rtl.txt",
+      "sha256": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691"
+    },
+    {
+      "path": "firmware/B0AE/tests/xy_rtl_inputs.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/tests/xy_rtl_inputs.txt",
+      "sha256": "e01971a6bf1b92f965f8b79bc3cb6d1458f49ebc6fa700f9103ec71c6e97a6a6"
+    },
+    {
+      "path": "firmware/B0AE/provenance/baseline.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/baseline.json",
+      "sha256": "55493c05731955d531631008eab2de8e07072ad5a9483c9fc33450dce08bf437"
+    },
+    {
+      "path": "firmware/B0AE/provenance/qualification.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/qualification.json",
+      "sha256": "6ddcc10b2b14eccc53b182ec01c745b478f091c7e94bb5d2d0e2693d231e6efd"
+    },
+    {
+      "path": "firmware/B0AE/provenance/offline_release.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/offline_release.json",
+      "sha256": "b2c4db9b018520fd05fc42ae44fc7312437cde2a6dca7048ce47334e63e61ca5"
+    },
+    {
+      "path": "firmware/B0AE/provenance/source_diff.patch",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/source_diff.patch",
+      "sha256": "21cd27f2fb4dcb61b34592366325e555c8de2d87b564e5764d7480b438134515"
+    },
+    {
+      "path": "firmware/B0AE/provenance/CONTROL_CONTRACT.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/CONTROL_CONTRACT.txt",
+      "sha256": "1513f54ec90b4796ba096d1d20776e30030134bbb963702afd75627fbb1abf90"
+    },
+    {
+      "path": "firmware/B0AE/provenance/DO_NOT_PROGRAM",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/DO_NOT_PROGRAM",
+      "sha256": "28d5cb88d4f2b4b7b30701053b4eedef24ee2e589ff23123305e7c4a45725035"
+    },
+    {
+      "path": "firmware/B0AE/provenance/independent_verification.log",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/independent_verification.log",
+      "sha256": "e31f90c8fdc49cf507e8584bde5f78d69dd92fb77f76d38bde89d4caa00fdf70"
+    },
+    {
+      "path": "firmware/B0AE/provenance/说明.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/说明.txt",
+      "sha256": "1a47dac67efbf9d316c357f4e5aa5881ab4fe3c335c0c8c4963731b22c14e20a"
+    },
+    {
+      "path": "firmware/B0AE/provenance/实物验收要点.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/实物验收要点.txt",
+      "sha256": "cc51bee0026d83d149b649ae39ca78e9a452e5666e80fc9350973a4a344456c1"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/archive_failed_build.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/archive_failed_build.py",
+      "sha256": "76156ca6b5b3b40976bd352b30b42ddae2706abc5b5a9ac0bd74a468bef77c0f"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/build_after_qualification.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/build_after_qualification.py",
+      "sha256": "a1e23f63f63b6d51e112cb220f3ae30283bcb1690cf6b830f5521ae135eb6883"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/build_reference.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/build_reference.py",
+      "sha256": "fb53982d53b09d3376a35dea65f2b637991807304ec9b33717b30cab98288c9d"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/control_contract.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/control_contract.py",
+      "sha256": "748535d89173009c2b1fb730c64b4e856e31cb0168f44219638326b6c379010e"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/enable_route1_comparison.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/enable_route1_comparison.py",
+      "sha256": "a672c74537bf512cd9c590d8aa45c6d2341e710d46b377158c064cd4ad4be464"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/enable_route_replication.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/enable_route_replication.py",
+      "sha256": "0ab6e38ddd1d7122014d663e83ce76ffc4de0198240d4eb77f9238736aa16929"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/finalize_release.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/finalize_release.py",
+      "sha256": "b2f9bcccfcde136103f503d61a0510ec8512b8ad0d255c69e0825dcd604755f5"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/netlist_fanout_review.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/netlist_fanout_review.py",
+      "sha256": "8773bb44c37125e037523f61bcf9bf19b0cb5f4ceb532ade24469db4e52b62e2"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/port_control.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/port_control.py",
+      "sha256": "5a3fe7bfc4745630b7aacfb21aa391ccdde30122536f99872836d0079937d293"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/port_ground.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/port_ground.py",
+      "sha256": "7a3189686e2e6211336745487cc5eb8561a034740f471f73d561c344fe969c16"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/prepare_place4_variant.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/prepare_place4_variant.py",
+      "sha256": "893e18b42843e3b3d298aecc86eb5a1dbff66091fe11198d70baefaf83edd147"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/prepare_reset_global_variant.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/prepare_reset_global_variant.py",
+      "sha256": "cad31a94fb627ded261f9ada1a2a864cae22fc6ea5bd8e276a69e604134abb79"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/prepare_reset_route2_variant.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/prepare_reset_route2_variant.py",
+      "sha256": "cbc594278c3ffefe31809a706d621c5fc0f5093db8034e8022ee9a4d66436fc7"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/prepare_route2_variant.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/prepare_route2_variant.py",
+      "sha256": "8f59376dd91bd855ac8b6c81a315e63a0b647217dc0e024efc3a4c6a0d7ec28c"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/prepare_snapshot_global_variant.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/prepare_snapshot_global_variant.py",
+      "sha256": "d93653300d180e31270a1305e918650a14741f25a3fea7b079bf31f7bf2e3b24"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/prepare_storage_variant.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/prepare_storage_variant.py",
+      "sha256": "cfee68a01a2ad821b419f67d7238da9afb746476358323d62f26edc13f2fc4d2"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/qualify.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/qualify.py",
+      "sha256": "baf7da9c2c7a1063f2b8041398d48696983c8fbed5d814712b274e3907668ac7"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/reset_global_use_route0.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/reset_global_use_route0.py",
+      "sha256": "28b7431aeac052f818a2659ca7de6147a3ebf31b5eb820113b9576111730cbe4"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/select_verified_release.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/select_verified_release.py",
+      "sha256": "41c9efe7d8d5275ae03c660e0fd3e5b9dd6fd1e3ad558f102c3e2df0695f8b85"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/storage_equivalence_test_template.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/storage_equivalence_test_template.py",
+      "sha256": "de2666f9d74f46adb7948d1305a22bc93532e3c32a2d8e854298ea3e99660853"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/study_manual_logic_mapping.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/study_manual_logic_mapping.py",
+      "sha256": "d5b50e9a2b267765c191a48587e17f0963de9ea40aa5a56cf78f8b0c3d754d5f"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/study_target_storage.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/study_target_storage.py",
+      "sha256": "2e0fcb17ae02e1470c57441b22da22085ebe8daeb30035f5432c50c3527a811b"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_bounds_races.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_bounds_races.py",
+      "sha256": "9b4877111cac9c22f3709408ff3500385a4cda1ff8fff0d4355177c4ebf55fad"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_core.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_core.py",
+      "sha256": "66b99186af3b97a8a206fecab64415466e0e6d1519a73f98ad43deadd4c888e7"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_divide36.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_divide36.py",
+      "sha256": "f16c60ae07c4a36b136e288b7aa32b8c942dbf9de84832bc98887ad624fdcacf"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_geometry.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_geometry.py",
+      "sha256": "af3f681a620b9d20911a4c4e5324f3ec0040ab3e52e1b85ed207b82b91ba5f4a"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_height_reference.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_height_reference.py",
+      "sha256": "a5e4fbdab62997702f90b557bc3ef0f12d1b90a6ee867d581ede26af616e943c"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_manual_handoff.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_manual_handoff.py",
+      "sha256": "c3fafe1a6585efd80f2ff19f0574aadc33511427807e8904e2b7ec6d526cc5a4"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_manual_reference.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_manual_reference.py",
+      "sha256": "a9deb23f962bdecf429e239f563bab8cf806e72fe04f979807b91401c88a1422"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_mask_retiming.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_mask_retiming.py",
+      "sha256": "9a6c1710ccb2e6a20d2761de7fcb12ca78a3c6b28c6d6268c94d89f5b5807816"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_navigation.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_navigation.py",
+      "sha256": "688065b43ee600b277ae77800ae326f2593396b7a5d83df95b864f669d295e05"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_operand_equivalence.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_operand_equivalence.py",
+      "sha256": "2809fc3fd4fe89f2f92300f6e9e6dcc6401c836f4affcf65ddc8037279dbb6f5"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_state_reference.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_state_reference.py",
+      "sha256": "d1cd016a94d5400a750d703d5b7b515b148bee68e92ee0a59e227426bfe630a0"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_sticks_reference.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_sticks_reference.py",
+      "sha256": "1f55da84722e44289d9223ce82978d1e59bce2f539665139f3008a2f93f325c7"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_storage_equivalence.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_storage_equivalence.py",
+      "sha256": "b679ea494b95df237e57ecaf0410f1ff8e9934d76a41dc817510fac33844cccb"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_tools.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_tools.py",
+      "sha256": "bf059a5eb69ebd60290fbb82fca7b55fe14915dc6a39d89af421ff6df59f7f9c"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_wire.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_wire.py",
+      "sha256": "99a0b8e04a27062bb710fc7762daef5a529dd0c60a495d2472a85ab48ca33738"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/test_xy_reference.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/test_xy_reference.py",
+      "sha256": "d082f1061aa5906b66351a8c17ca642a0c482fab548e73bffd59a9d3e208f6f2"
+    },
+    {
+      "path": "firmware/B0AE/provenance/original_scripts/build_project.py",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/build_project.py",
+      "sha256": "c6c29cfa5d4d9fb4145f233e7bf84834f3e1b89467a33fc58574d2768b242940"
+    },
+    {
+      "path": "firmware/B0AE/provenance/build_manifest.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/build_manifest.json",
+      "sha256": "dc584bfb8215117c03c76764a607522076260a7d16d7d4a0109755b9e66f62e7"
+    },
+    {
+      "path": "firmware/B0AE/provenance/pnr/acg720_ano_port.tr",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/impl/pnr/acg720_ano_port.tr",
+      "sha256": "c0268e90fc6bfcca0a1119fb74fa317d1b404db1c91704a8c23ae12974fdfc7e"
+    },
+    {
+      "path": "firmware/B0AE/provenance/pnr/acg720_ano_port.rpt.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/impl/pnr/acg720_ano_port.rpt.txt",
+      "sha256": "a0ffa22c6b6af4bc78daeaca50f670e22450376cbd4523477014c7b337aaf0a0"
+    },
+    {
+      "path": "firmware/B0AE/provenance/pnr/cmd.do",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/impl/pnr/cmd.do",
+      "sha256": "a0459fdcf13e0dfef5614fbc748c443631a6f31c28e4efbeb3d4c624cf182128"
+    },
+    {
+      "path": "firmware/B0AE/provenance/synthesis/acg720_ano_port.prj",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/impl/gwsynthesis/acg720_ano_port.prj",
+      "sha256": "687f2d9119af4951a00cbab556a5e48c4d6e479aa8d96ddbc580ba38eb535d7f"
+    },
+    {
+      "path": "firmware/B0AE/provenance/synthesis/acg720_ano_port_syn_rsc.xml",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/fixture/impl/gwsynthesis/acg720_ano_port_syn_rsc.xml",
+      "sha256": "c54f0349a98919ed63ea6785c18d928416264f61a5a2ee86f6eb1ce147551ee5"
+    },
+    {
+      "path": "firmware/B0AE/provenance/selected_release.json",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/selected_release.json",
+      "sha256": "65b21822cf8f1840a4d3d18e3485df86422f8734713c0eeff569eee0aa39b850"
+    },
+    {
+      "path": "firmware/B0AE/provenance/latest_work_state_at_export.txt",
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/WORK_STATE.txt",
+      "sha256": "785977b31638139fab198fd8497272e18371675da93421488ee0d965ff7c5b90"
+    },
+    {
+      "path": "firmware/B0AE/fixture/sensor/UPSTREAM_LICENSE.txt",
+      "source": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd"
+    },
+    {
+      "path": "firmware/B0AE/fixture/core/NOTICE_PX4.txt",
+      "source": "acg720_ano_port/core/NOTICE_PX4.txt",
+      "sha256": "4f8d7f1b8bce41d1db4f054daa9b35eb59215d150542673b43b2afe8933bf0f1"
+    },
+    {
+      "path": "firmware/B0AE/tests/external_producer_models.v",
+      "source": "routing_rescue_20261015/b0ac_algorithm_review_20261020T090039Z/external_producer_models.v",
+      "sha256": "4915b8c174999a4c690ca4884c0aa08fd011ea2898dbcda9dbe53291e517b832"
+    }
+  ]
+}

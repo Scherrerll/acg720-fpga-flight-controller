@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "reference/operand_before_hold.v": "3030a1eeb2bd20e80ec2cf1cae287d1430040d3f8c06365e4402769a0a7874e7",
+    "fixture/position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+    "reference/operand_parent.json": "48553b865f9cd83e6d647f7c67cb239db525939725aec7b6280383329a28d070",
+    "test_operand_equivalence.py": "2809fc3fd4fe89f2f92300f6e9e6dcc6401c836f4affcf65ddc8037279dbb6f5",
+    "reference/operand_before_height_rtl.txt": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90",
+    "reference/operand_before_xy_rtl.txt": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691",
+    "reference/operand_before_manual_rtl.txt": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f",
+    "tests/height_rtl.txt": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90",
+    "tests/xy_rtl.txt": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691",
+    "tests/manual_rtl.txt": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f"
+  },
+  "method": "Inductive operand/result intervals for all32 calc sites; exact old/new RTL trace equality"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "geometry_domain",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\sensor\\mtf_shared_geometry.v": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+    "fixture\\sensor\\mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+    "fixture\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "fixture\\nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "tests\\geometry_domain.v": "2570eef65a4d4891ebddb1c4ea33699c74004201605dd970f68f29462cc292dc"
+  }
+}

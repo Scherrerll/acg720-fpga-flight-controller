@@ -1,0 +1,20 @@
+-d C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\impl\gwsynthesis\acg720_ano_port.vg
+-p GW5AT-60B-PBGA484A-1
+-pn GW5AT-LV60PG484AC1/I0
+-cst C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\acg720_ano_port.cst
+-cfg C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\impl\pnr\device.cfg
+-sdc C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\acg720_ano_port.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 3
+-route_option 2
+-retiming_resource none
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
+-enable_dsrm 0

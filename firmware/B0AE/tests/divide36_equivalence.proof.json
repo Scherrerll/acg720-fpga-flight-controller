@@ -1,0 +1,9 @@
+{
+  "name": "divide36_equivalence",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "fixture\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "tests\\divide36_equivalence.v": "7ea03e089c4c3bc35ccdc6cf79fda72989dcc7066e0f2860982831a4e5d6a170"
+  }
+}

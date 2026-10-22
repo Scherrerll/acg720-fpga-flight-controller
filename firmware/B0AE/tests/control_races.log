@@ -1,0 +1,2 @@
+CONTROL_RACE_PASS preselected/full-stick entry, immediate cancel, atomic PI rollback, vertical continuity, recovery
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_map2_r2\tests\control_races.v:49: $finish called at 4096730000 (1ps)

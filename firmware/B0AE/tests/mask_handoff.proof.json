@@ -1,0 +1,8 @@
+{
+  "name": "mask_handoff",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\acg720_ano_port.v": "b82d480c381891c168b89819361c305b9e3ce7ed018047c1f3923e58e27f986c",
+    "tests\\mask_handoff.v": "ed79835d67d95187a84d40fa413ca3c482f80ed8a175c73b20cd3db380cfd611"
+  }
+}

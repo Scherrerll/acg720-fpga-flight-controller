@@ -1,0 +1,2 @@
+DIAGNOSTIC_MASK_COMMUTATION_PASS60000cycles all720bits, resets and holds
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_map2_r2\tests\mask_diagnostic.v:27: $finish called at 1200041000 (1ps)

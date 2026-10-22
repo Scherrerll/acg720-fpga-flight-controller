@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="acg720_ano_port" Register="2020" Alu="146" Lut="139" T_Register="27048(2020)" T_Alu="8921(146)" T_Lut="34608(139)" T_MULTALU27X18="26(0)" T_MULT12X12="7(0)" T_MULT27X36="14(0)" T_Bsram="2(0)">
+ <SubModule name="acc_time" Register="310" Alu="7" Lut="138" T_Register="310(310)" T_Alu="7(7)" T_Lut="138(138)"/>
+ <SubModule name="command_handoff" Register="40" T_Register="40(40)"/>
+ <SubModule name="core" Register="778" Alu="308" Lut="1282" MULTALU27X18="4" MULT12X12="2" T_Register="13205(778)" T_Alu="4750(308)" T_Lut="19114(1282)" T_MULTALU27X18="10(4)" T_MULT12X12="3(2)" T_MULT27X36="3(0)">
+  <SubModule name="imu" Register="25" Lut="73" T_Register="7771(25)" T_Alu="2704(0)" T_Lut="11488(73)" T_MULTALU27X18="6(0)" T_MULT12X12="1(0)" T_MULT27X36="2(0)">
+   <SubModule name="reader" Register="479" Lut="883" MULTALU27X18="2" T_Register="669(479)" T_Lut="1038(883)" T_MULTALU27X18="2(2)">
+    <SubModule name="spi" Register="190" Lut="155" T_Register="190(190)" T_Lut="155(155)"/>
+   </SubModule>
+   <SubModule name="temporal" Register="985" Alu="255" Lut="858" MULTALU27X18="3" T_Register="985(985)" T_Alu="255(255)" T_Lut="858(858)" T_MULTALU27X18="3(3)"/>
+   <SubModule name="guard" Register="314" Alu="62" Lut="250" T_Register="314(314)" T_Alu="62(62)" T_Lut="250(250)"/>
+   <SubModule name="estimator" Register="5063" Alu="2057" Lut="8089" MULTALU27X18="1" MULT12X12="1" MULT27X36="1" T_Register="5778(5063)" T_Alu="2387(2057)" T_Lut="9269(8089)" T_MULTALU27X18="1(1)" T_MULT12X12="1(1)" T_MULT27X36="2(1)">
+    <SubModule name="mul" Register="232" Alu="64" Lut="179" T_Register="232(232)" T_Alu="64(64)" T_Lut="179(179)"/>
+    <SubModule name="div" Register="171" Alu="64" Lut="244" T_Register="171(171)" T_Alu="64(64)" T_Lut="244(244)"/>
+    <SubModule name="sqrt" Register="200" Alu="94" Lut="158" T_Register="200(200)" T_Alu="94(94)" T_Lut="158(158)"/>
+    <SubModule name="angle" Register="112" Alu="108" Lut="599" MULT27X36="1" T_Register="112(112)" T_Alu="108(108)" T_Lut="599(599)" T_MULT27X36="1(1)"/>
+   </SubModule>
+  </SubModule>
+  <SubModule name="receiver" Register="255" Lut="211" T_Register="255(255)" T_Lut="211(211)"/>
+  <SubModule name="manual_angles" Register="489" Alu="415" Lut="488" T_Register="626(489)" T_Alu="467(415)" T_Lut="696(488)">
+   <SubModule name="divider" Register="137" Alu="52" Lut="208" T_Register="137(137)" T_Alu="52(52)" T_Lut="208(208)"/>
+  </SubModule>
+  <SubModule name="yaw_controller" Register="927" Alu="272" Lut="1753" T_Register="1415(927)" T_Alu="427(272)" T_Lut="2277(1753)">
+   <SubModule name="multiply" Register="232" Alu="64" Lut="179" T_Register="232(232)" T_Alu="64(64)" T_Lut="179(179)"/>
+   <SubModule name="divide" Register="256" Alu="91" Lut="345" T_Register="256(256)" T_Alu="91(91)" T_Lut="345(345)"/>
+  </SubModule>
+  <SubModule name="gate" Register="110" Alu="30" Lut="201" T_Register="110(110)" T_Alu="30(30)" T_Lut="201(201)"/>
+  <SubModule name="controller" Register="1544" Alu="354" Lut="2080" MULT27X36="1" T_Register="2052(1544)" T_Alu="519(354)" T_Lut="2614(2080)" T_MULT27X36="1(1)">
+   <SubModule name="multiplier" Register="232" Alu="64" Lut="179" T_Register="232(232)" T_Alu="64(64)" T_Lut="179(179)"/>
+   <SubModule name="divider" Register="276" Alu="101" Lut="355" T_Register="276(276)" T_Alu="101(101)" T_Lut="355(355)"/>
+  </SubModule>
+  <SubModule name="flight_state" Register="67" Alu="15" Lut="128" T_Register="67(67)" T_Alu="15(15)" T_Lut="128(128)"/>
+  <SubModule name="mixer" Alu="196" Lut="125" T_Alu="196(196)" T_Lut="125(125)"/>
+  <SubModule name="outputs" Register="131" Alu="84" Lut="92" T_Register="131(131)" T_Alu="84(84)" T_Lut="92(92)"/>
+ </SubModule>
+ <SubModule name="laser_geometry" Lut="1" T_Lut="1(1)"/>
+ <SubModule name="height_fusion" Register="1" T_Register="1(1)"/>
+ <SubModule name="mtf" Register="925" Alu="63" Lut="96" T_Register="2207(925)" T_Alu="559(63)" T_Lut="763(96)" T_MULTALU27X18="2(0)" T_MULT27X36="2(0)">
+  <SubModule name="uart" Register="41" Lut="62" T_Register="41(41)" T_Lut="62(62)"/>
+  <SubModule name="parser" Register="848" Alu="170" Lut="324" T_Register="848(848)" T_Alu="170(170)" T_Lut="324(324)"/>
+  <SubModule name="metric" Register="393" Alu="326" Lut="281" MULTALU27X18="2" MULT27X36="2" T_Register="393(393)" T_Alu="326(326)" T_Lut="281(281)" T_MULTALU27X18="2(2)" T_MULT27X36="2(2)"/>
+ </SubModule>
+ <SubModule name="native_navigation" Register="1355" Alu="82" Lut="333" MULT27X36="1" T_Register="8842(1355)" T_Alu="3413(82)" T_Lut="11785(333)" T_MULTALU27X18="14(0)" T_MULT12X12="4(0)" T_MULT27X36="9(1)" T_Bsram="2(0)">
+  <SubModule name="multiply_service" Register="225" Alu="68" Lut="335" T_Register="454(225)" T_Alu="138(68)" T_Lut="518(335)" T_MULT27X36="2(0)">
+   <SubModule name="multiplication_engine.engine" Register="229" Alu="70" Lut="183" MULT27X36="2" T_Register="229(229)" T_Alu="70(70)" T_Lut="183(183)" T_MULT27X36="2(2)"/>
+  </SubModule>
+  <SubModule name="divide_service" Register="215" Alu="53" Lut="244" T_Register="459(215)" T_Alu="117(53)" T_Lut="732(244)">
+   <SubModule name="division_engine.engine" Register="244" Alu="64" Lut="488" T_Register="244(244)" T_Alu="64(64)" T_Lut="488(488)"/>
+  </SubModule>
+  <SubModule name="geometry" Register="745" Alu="157" Lut="1232" MULT12X12="1" T_Register="978(745)" T_Alu="233(157)" T_Lut="2004(1232)" T_MULT12X12="1(1)">
+   <SubModule name="d" Register="117" Lut="338" T_Register="117(117)" T_Lut="338(338)"/>
+   <SubModule name="t" Register="116" Alu="76" Lut="434" T_Register="116(116)" T_Alu="76(76)" T_Lut="434(434)"/>
+  </SubModule>
+  <SubModule name="velocity_fusion" Register="786" Alu="393" Lut="793" MULT27X36="2" T_Register="786(786)" T_Alu="393(393)" T_Lut="793(793)" T_MULT27X36="2(2)"/>
+  <SubModule name="height_fusion" Register="1122" Alu="928" Lut="1516" MULTALU27X18="2" MULT12X12="1" MULT27X36="1" Bsram="2" T_Register="1122(1122)" T_Alu="928(928)" T_Lut="1516(1516)" T_MULTALU27X18="2(2)" T_MULT12X12="1(1)" T_MULT27X36="1(1)" T_Bsram="2(2)"/>
+  <SubModule name="position" Register="409" Alu="16" Lut="659" MULT27X36="1" T_Register="525(409)" T_Alu="32(16)" T_Lut="1073(659)" T_MULT27X36="1(1)">
+   <SubModule name="divide" Register="116" Alu="16" Lut="414" T_Register="116(116)" T_Alu="16(16)" T_Lut="414(414)"/>
+  </SubModule>
+  <SubModule name="controller_proof" Register="2197" Alu="1098" Lut="3093" MULTALU27X18="5" MULT12X12="2" MULT27X36="2" T_Register="3163(2197)" T_Alu="1490(1098)" T_Lut="4816(3093)" T_MULTALU27X18="12(5)" T_MULT12X12="2(2)" T_MULT27X36="2(2)">
+   <SubModule name="z_stick" Register="265" Alu="93" Lut="408" MULTALU27X18="2" T_Register="265(265)" T_Alu="93(93)" T_Lut="408(408)" T_MULTALU27X18="2(2)"/>
+   <SubModule name="xy_stick" Register="434" Alu="139" Lut="676" MULTALU27X18="5" T_Register="585(434)" T_Alu="223(139)" T_Lut="908(676)" T_MULTALU27X18="5(5)">
+    <SubModule name="div" Register="151" Alu="84" Lut="232" T_Register="151(151)" T_Alu="84(84)" T_Lut="232(232)"/>
+   </SubModule>
+   <SubModule name="t" Register="116" Alu="76" Lut="407" T_Register="116(116)" T_Alu="76(76)" T_Lut="407(407)"/>
+  </SubModule>
+ </SubModule>
+ <SubModule name="telemetry" Register="400" Alu="46" Lut="2628" T_Register="423(400)" T_Alu="46(46)" T_Lut="2668(2628)">
+  <SubModule name="uart" Register="23" Lut="40" T_Register="23(23)" T_Lut="40(40)"/>
+ </SubModule>
+</Module>

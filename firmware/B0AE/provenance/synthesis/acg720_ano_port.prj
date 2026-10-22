@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5AT-60B" package="PBGA484A" speed="1" partNumber="GW5AT-LV60PG484AC1/I0"/>
+    <FileList>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\acg720_ano_port.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\telemetry_tx.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\control_gate.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\cordic_atan2.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\ano_flight_state.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\ano_xy_stick.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\ano_xy_divide36.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\flight_core.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\bmi088_reader.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\imu_checked_guard_pipelined.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\imu_pipeline_pipelined.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\imu_temporal_check_pipelined.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\motor_pwm.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\rc_ppm.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\spi_uart_modules.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\rtl\pid_divide_signed64.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\rtl\quad_mixer_feedback.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\position_math.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\relative_position.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\sensor\flow_reader.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\sensor\range_reader.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\calibration.vh" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\ano_attitude_estimator.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\rtl\ano_rate_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\ano_flow_fusion.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\ano_hold_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\ano_z_stick.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\rtl\ano_yaw_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\ano_height_fusion.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\sensor\range_height_estimate.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\pose_time_adapter.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\rtl\ano_rc_angle_targets.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\core\rtl\ano_manual_angles.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\level_calibration.vh" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\sensor\mtf01p_reader.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\sensor\mtf_native_geometry.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\mtf_position_integrator.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\mtf_navigation_shadow.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\nav_math_service.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\sensor\mtf_shared_geometry.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\mtf_shared_flow_fusion.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\mtf_shared_height_fusion.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\mtf_shared_hold_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\mtf_xyz_navigation_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\position\mtf_xyz_hold_control.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_style" value="auto"/>
+        <Option type="enable_dsrm" value="0"/>
+        <Option type="global_freq" value="50.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="map_option" value="2"/>
+        <Option type="max_fanout" value="200"/>
+        <Option type="netlist_hierarchy" value="1"/>
+        <Option type="opt_goal" value="area"/>
+        <Option type="output_file" value="C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_f200_rep0_map2_r2\fixture\impl\gwsynthesis\acg720_ano_port.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="ram_style" value="auto"/>
+        <Option type="rom_style" value="auto"/>
+        <Option type="shift_reg" value="auto"/>
+        <Option type="top_module" value="acg720_ano_port"/>
+        <Option type="vcc" value="0.95"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
