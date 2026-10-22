@@ -1,0 +1,18 @@
+{
+  "scope": "Historical evidence summary only; not qualification of exported source",
+  "summary": "BMI088 README第70行说明B088锁定停机工程；第104行更新10月16日实机默认已改B089。此目录仅冻结acg720_bmi088_port中的B088源码，绝不把它称为实机B089默认源码。B089来源为routing_rescue_20261015/cm_bench_release/fixture；由最新工程另行维护。prepare_project.py从acg720_ano_port生成，依赖适配助手，本档省略整个生成链，直接打开冻结GPRJ。",
+  "sources": [
+    {
+      "workspace_relative_path": "acg720_bmi088_port/README.md",
+      "sha256": "2ef029385d33bec9b158eed5d28f9b11e4d036e3515b352912943540b3077ec6"
+    },
+    {
+      "workspace_relative_path": "bmi088_adaptation_20261014/prepare_project.py",
+      "sha256": "e08d82ff0b2ad1c00063fce1ce405990e2c74a31b6b8c9837cf5580e984e4073"
+    },
+    {
+      "workspace_relative_path": "bmi088_adaptation_20261014/hardware_summary_20261014.json",
+      "sha256": "779f9fe862f5dd937825a3d183b9d4faea8501156be9d9077a805dc5f98795df"
+    }
+  ]
+}
