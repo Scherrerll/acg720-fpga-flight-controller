@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="63 178 203 40" width="203" height="40">
+  <defs>
+    <linearGradient id="g6" gradientUnits="userSpaceOnUse" x1="65.0" y1="180.0" x2="265.0" y2="217.0">
+      <stop stop-color="#079cd2" />
+      <stop offset=".67" stop-color="#394de7" />
+    </linearGradient>
+    <linearGradient id="g7" gradientUnits="userSpaceOnUse" x1="65.0" y1="180.0" x2="265.0" y2="217.0">
+      <stop stop-color="#079cd2" />
+      <stop offset=".67" stop-color="#394de7" />
+    </linearGradient>
+    <linearGradient id="g8" gradientUnits="userSpaceOnUse" x1="65.0" y1="180.0" x2="265.0" y2="217.0">
+      <stop stop-color="#079cd2" />
+      <stop offset=".67" stop-color="#394de7" />
+    </linearGradient>
+    <linearGradient id="g9" gradientUnits="userSpaceOnUse" x1="65.0" y1="180.0" x2="265.0" y2="217.0">
+      <stop stop-color="#079cd2" />
+      <stop offset=".67" stop-color="#394de7" />
+    </linearGradient>
+    <linearGradient id="g10" gradientUnits="userSpaceOnUse" x1="65.0" y1="180.0" x2="265.0" y2="217.0">
+      <stop stop-color="#079cd2" />
+      <stop offset=".67" stop-color="#394de7" />
+    </linearGradient>
+  </defs>
+  <path d="M145 194 L144 202 L165 202 L166 199 L166 193 L165 194 L147 194 L146 193 Z" transform="translate(0,0)" fill="url(#g6)" fill-rule="evenodd" />
+  <path d="M228 180 L233 184 L239 201 L238 216 L247 216 L250 200 L264 180 L253 180 L246 191 L244 190 L241 180 Z" transform="translate(0,0)" fill="url(#g7)" fill-rule="evenodd" />
+  <path d="M170 180 L175 184 L171 185 L167 216 L177 216 L178 205 L180 203 L189 203 L190 195 L181 195 L180 190 L182 188 L190 188 L197 194 L197 188 L199 181 L202 184 L201 185 L197 216 L223 216 L225 203 L221 207 L209 207 L208 206 L209 205 L212 180 Z" transform="translate(0,0)" fill="url(#g8)" fill-rule="evenodd" />
+  <path d="M132 180 L124 191 L124 194 L128 202 L130 199 L131 200 L129 216 L139 216 L144 180 Z" transform="translate(0,0)" fill="url(#g9)" fill-rule="evenodd" />
+  <path d="M65 216 L96 216 L98 199 L94 195 L83 195 L82 203 L86 203 L87 206 L86 207 L77 207 L76 206 L78 199 L78 193 L80 189 L94 189 L99 194 L100 184 L102 180 L104 182 L104 187 L103 188 L103 194 L102 195 L102 201 L99 216 L109 216 L110 215 L111 202 L113 199 L119 214 L125 206 L125 204 L115 180 L75 180 L69 186 Z" transform="translate(0,0)" fill="url(#g10)" fill-rule="evenodd" />
+</svg>
