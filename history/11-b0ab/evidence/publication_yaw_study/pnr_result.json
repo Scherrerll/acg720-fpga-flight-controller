@@ -1,0 +1,29 @@
+{
+  "variant": "publication_yaw_study",
+  "current_board": "B0AA",
+  "default_flash": "B0A6",
+  "hardware_accessed": false,
+  "programming_authorized": false,
+  "sram_written": false,
+  "flash_written": false,
+  "flight_ready": false,
+  "resource_timing_verified": true,
+  "outcome": "routed_and_50mhz_verified",
+  "routed": true,
+  "unrouted_nets": 0,
+  "fmax_mhz": 50.001,
+  "slack": {
+    "setup": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    },
+    "hold": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    }
+  },
+  "bitstream_generated": true,
+  "archive": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ab_control\\publication_yaw_study\\attempts\\verified_20261019T025215_618595Z",
+  "archive_manifest_sha256": "bd676108e9c2fb72ba6764fda35f0334cce3ead05dc095e66894124343ac202c",
+  "files": 366
+}
