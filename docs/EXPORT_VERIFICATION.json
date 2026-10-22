@@ -1,0 +1,104 @@
+{
+  "generated_utc": "2026-10-22T01:58:55.478182+00:00",
+  "export_integrity": {
+    "passed": true,
+    "b0ae_export_files": 261,
+    "historical_hashes_verified": 506,
+    "ground_hashes_verified": 27,
+    "gprj_count": 17,
+    "project_file_references": 454,
+    "hardware_accessed": false,
+    "full_historical_qualification_replayed": false
+  },
+  "selected_rtl_replay": {
+    "passed": true,
+    "tests": [
+      {
+        "bench": "control_races",
+        "passed": true,
+        "marker": "CONTROL_RACE_PASS"
+      },
+      {
+        "bench": "core_control",
+        "passed": true,
+        "marker": "CORE_ANO_PASS"
+      },
+      {
+        "bench": "geometry_domain",
+        "passed": true,
+        "marker": "GEOMETRY_DOMAIN_PASS"
+      },
+      {
+        "bench": "navigation_control",
+        "passed": true,
+        "marker": "NAVIGATION_PASS"
+      },
+      {
+        "bench": "bounded_divide",
+        "passed": true,
+        "marker": "BOUNDED_DIVIDE_PASS"
+      },
+      {
+        "bench": "divide36_equivalence",
+        "passed": true,
+        "marker": "DIVIDE36_EQUIVALENCE_PASS"
+      },
+      {
+        "bench": "mask_diagnostic",
+        "passed": true,
+        "marker": "DIAGNOSTIC_MASK_COMMUTATION_PASS"
+      },
+      {
+        "bench": "mask_pwm",
+        "passed": true,
+        "marker": "PWM_PRECONVERSION_EXACT_PASS"
+      },
+      {
+        "bench": "mask_handoff",
+        "passed": true,
+        "marker": "HANDOFF_MASK_COMMUTATION_PASS"
+      }
+    ],
+    "hardware_accessed": false,
+    "full_historical_qualification_replayed": false
+  },
+  "selected_rtl_result_sha256": "9719e8983d7d0783e41e87199c7b31bb57fa121663d687e588e123be2c2f93a4",
+  "portable_ground_tests": {
+    "tests": 8,
+    "result": "passed",
+    "command": "python -B -m unittest discover -s ground -p \"test_*.py\" -v",
+    "isolated_copy_result": "8 tests passed from temporary ground+support-only copy using Python isolated mode (-I)",
+    "scope": [
+      "synthetic primary/A580 CRC frames and fragmented stream resynchronization",
+      "temporary recorder raw bytes/decoded records and analysis",
+      "in-memory HTTP handler routes, loopback Host guard, blocked calibration/aircraft commands",
+      "CSV export and ZIP SHA/replay verification",
+      "offline mode forbids serial opening and device enumeration"
+    ],
+    "not_exercised": [
+      "real COM device",
+      "real browser/listening HTTP server",
+      "FPGA hardware",
+      "historical source tests requiring original logs"
+    ]
+  },
+  "build_wrapper_check": {
+    "dry_run_passed": true,
+    "gowin_run_this_export": false,
+    "report_parser_checked_against_original_selected_build": true,
+    "original_fmax_mhz": 50.505,
+    "original_bitstream_sha256": "7cef4a47a17d2a03709d0b7f5bdb7c1b46c030a33c72876db65aba2e0b953a80"
+  },
+  "independent_reviews": {
+    "all_project_sources_present": true,
+    "gprj_count": 17,
+    "recursive_includes_checked": 33,
+    "bounded_secret_scan": "No obvious credential/private-key patterns in planned upload; not an exhaustive certification",
+    "privacy_notes": "Historical provenance retains original machine paths and some USB identifiers; private archive only"
+  },
+  "hardware_accessed": false,
+  "firmware_programmed": false,
+  "existing_monitor_changed": false,
+  "full_historical_qualification_replayed": false,
+  "flight_acceptance": false
+}

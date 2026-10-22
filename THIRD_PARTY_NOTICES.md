@@ -11,6 +11,6 @@
 
 完整 `reference_ano`、TI MCU 库、Bosch API 参考包、第三方资料压缩包和手册不在本次上传范围。特别是原资料树含仅允许面向 TI MCU 使用的文件，不能将整个资料树都标成项目自有开源代码。
 
-来源/字节清单：`history/early_manifest.json`、`history/late_manifest.json`、`firmware/B0AE/source_export.json`、`ground/export_manifest.json`。地面站便携化修改在其清单中逐项列出；其修改不改变上游各自许可。
+来源/字节清单：`history/origins_manifest.json`、`history/early_manifest.json`、`history/late_manifest.json`、`firmware/B0AE/source_export.json`、`ground/export_manifest.json`。最早方案/接线仅保存事实摘要与会话来源索引，不上传完整聊天。地面站便携化修改在其清单中逐项列出；其修改不改变上游各自许可。
 
 原始飞行日志和实物照片没有上传。少量历史证明保留原工作区路径及 USB 设备标识；转公开前还需复核第三方权限与这些记录的公开范围。是否转公开由仓库所有者后续决定，本次保持私有。

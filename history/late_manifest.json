@@ -1,0 +1,3682 @@
+{
+  "schema": "late-history-export/v1",
+  "source_relative_to": "C:/Users/ScherrerL/Desktop/apple",
+  "scope": "history/06-b089 through history/13-b0ad only; no bitstreams or full evidence replay",
+  "files": [
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/acg720_ano_port.cst",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/acg720_ano_port.cst",
+      "sha256": "442453132406ca60ce90fc89695bee2d2e86e17911a55a050cf7802438e9d0b9",
+      "bytes": 2071
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/acg720_ano_port.gprj",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/acg720_ano_port.gprj",
+      "sha256": "fb8225b600fdcdd21dbf92c9aae195fc801ff016b91560fbeff60933e27b375b",
+      "bytes": 2551
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/acg720_ano_port.sdc",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "bytes": 61
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/acg720_ano_port.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/acg720_ano_port.v",
+      "sha256": "5b604af1e16f744722d84e2113a5794d45e730a5c284276eb42fad0a9bf39e11",
+      "bytes": 16424
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/build.tcl",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/build.tcl",
+      "sha256": "c45a0cdc92bf5ef481cae29946f175d4b6a060f732f80736eede607cc5e97607",
+      "bytes": 279
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/ano_attitude_estimator.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/ano_attitude_estimator.v",
+      "sha256": "88813abbb9b2a22c717e24e2a7aabf31f899a5fa542f0774a1423ad671be66a7",
+      "bytes": 38067
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/bmi088_reader.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "bytes": 12748
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/control_gate.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/cordic_atan2.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/flight_core.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/flight_core.v",
+      "sha256": "44c28df4ab9b183a53b6b9d6eccd4f404b729083c0437c98f4bd3a3dc12f1974",
+      "bytes": 33585
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/imu_checked_guard_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "bytes": 6260
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/imu_pipeline_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/imu_pipeline_pipelined.v",
+      "sha256": "9b857d6287d97c8cbf0135c1f73f5e788f5a02437d0fd8bb56600135e53681b3",
+      "bytes": 5981
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/imu_temporal_check_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "bytes": 8389
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/motor_pwm.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+      "bytes": 3358
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/rc_ppm.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "bytes": 5625
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/rtl/ano_rate_control.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/rtl/ano_rate_control.v",
+      "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+      "bytes": 16535
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/rtl/ano_rc_angle_targets.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/rtl/ano_yaw_control.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/rtl/pid_divide_signed64.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/rtl/quad_mixer_feedback.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "bytes": 1866
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/core/spi_uart_modules.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/level_calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/position/ano_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/position/ano_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "bytes": 44871
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/position/ano_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/position/ano_z_stick.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "bytes": 3581
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/position/pose_time_adapter.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "bytes": 2024
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/position/position_math.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/position/relative_position.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "bytes": 13836
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/sensor/flow_reader.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/sensor/pmw3901_init.vh",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/sensor/range_height_estimate.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "bytes": 6070
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/sensor/range_reader.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/telemetry_tx.v",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/telemetry_tx.v",
+      "sha256": "0be58c8ccbda37172217605200812f872311c613f62554b470e38031b736c91f",
+      "bytes": 3567
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/trial.tcl",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/fixture/trial.tcl",
+      "sha256": "c89aff1ec13405d35c32fc80d87e36cfcf4879c2eb6d1dd538603ae12ed031b2",
+      "bytes": 289
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/fixture/sensor/UPSTREAM_LICENSE.txt",
+      "source_relative_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "bytes": 1055
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/evidence/bench_qualification.json",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/bench_qualification.json",
+      "sha256": "89b5e80059fe3db25145c79a1cbb70f23eb57f41034092ab54d7860e173b8201",
+      "bytes": 6042
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/evidence/result.json",
+      "source_relative_path": "routing_rescue_20261015/cm_bench_release/result.json",
+      "sha256": "91db0c06aca61d2b3b9843eccde834d1672a94ed23cf4bdecd02673ca800d7ea",
+      "bytes": 8661
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/evidence/frozen_backup_manifest.json",
+      "source_relative_path": "routing_rescue_20261015/original_b089_backup_20261018/MANIFEST.json",
+      "sha256": "35cf34bc624b00bb41578e9d3dd51ab4d16be888b93dcddfd0207f7dfd150e02",
+      "bytes": 4877
+    },
+    {
+      "stage": "06-b089",
+      "export_path": "06-b089/README.md",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "ef27bf6bf02192003b6080055b0d40cc487121172214f0c3384a189307096179",
+      "bytes": 1288
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/acg720_ano_port.cst",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/acg720_ano_port.cst",
+      "sha256": "442453132406ca60ce90fc89695bee2d2e86e17911a55a050cf7802438e9d0b9",
+      "bytes": 2071
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/acg720_ano_port.gprj",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/acg720_ano_port.gprj",
+      "sha256": "fb8225b600fdcdd21dbf92c9aae195fc801ff016b91560fbeff60933e27b375b",
+      "bytes": 2551
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/acg720_ano_port.sdc",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "bytes": 61
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/acg720_ano_port.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/acg720_ano_port.v",
+      "sha256": "0354c82d37a4474edcc08e4a1e4e58aa839ff0a91db47d1cb2f9e8bad704aa55",
+      "bytes": 17564
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/build.tcl",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/build.tcl",
+      "sha256": "c45a0cdc92bf5ef481cae29946f175d4b6a060f732f80736eede607cc5e97607",
+      "bytes": 279
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/ano_attitude_estimator.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/ano_attitude_estimator.v",
+      "sha256": "88813abbb9b2a22c717e24e2a7aabf31f899a5fa542f0774a1423ad671be66a7",
+      "bytes": 38067
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/bmi088_reader.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "bytes": 12748
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/control_gate.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/cordic_atan2.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/flight_core.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/flight_core.v",
+      "sha256": "44c28df4ab9b183a53b6b9d6eccd4f404b729083c0437c98f4bd3a3dc12f1974",
+      "bytes": 33585
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/imu_checked_guard_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "bytes": 6260
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/imu_pipeline_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/imu_pipeline_pipelined.v",
+      "sha256": "9b857d6287d97c8cbf0135c1f73f5e788f5a02437d0fd8bb56600135e53681b3",
+      "bytes": 5981
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/imu_temporal_check_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "bytes": 8389
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/motor_pwm.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+      "bytes": 3358
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/rc_ppm.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "bytes": 5625
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/rtl/ano_rate_control.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/rtl/ano_rate_control.v",
+      "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+      "bytes": 16535
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/rtl/ano_rc_angle_targets.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/rtl/ano_yaw_control.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/rtl/pid_divide_signed64.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/rtl/quad_mixer_feedback.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "bytes": 1866
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/core/spi_uart_modules.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/level_calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/position/ano_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/position/ano_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "bytes": 44871
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/position/ano_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/position/ano_z_stick.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "bytes": 3581
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/position/pose_time_adapter.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "bytes": 2024
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/position/position_math.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/position/relative_position.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "bytes": 13836
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/sensor/flow_reader.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/sensor/flow_reader.v",
+      "sha256": "d89d6711fa80d849da169fb9d119b8b6307fce14b1b754c9c6f77beff233f387",
+      "bytes": 18485
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/sensor/pmw3901_init.vh",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/sensor/pmw3901_init.vh",
+      "sha256": "4ec6c55b79b7c8099697b9cff74df93396d3df54e41a7254d17a4f51a5922db9",
+      "bytes": 2125
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/sensor/range_height_estimate.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "bytes": 6070
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/sensor/range_reader.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/telemetry_tx.v",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/telemetry_tx.v",
+      "sha256": "672b99575430842811fc394921cd08fc829300f31e6a94224ba346e58de8939c",
+      "bytes": 5324
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/trial.tcl",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/fixture/trial.tcl",
+      "sha256": "0177d5afc8d36f51b5954db62cdb6a7db636b0ff38def8cd2519e11678d37a3e",
+      "bytes": 299
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/fixture/sensor/UPSTREAM_LICENSE.txt",
+      "source_relative_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "bytes": 1055
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/evidence/diagnostic_qualification.json",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/diagnostic_qualification.json",
+      "sha256": "be9bba4a792c7fd0f8946025c40dc8ae4665b7f35f29d4b7dcfb060209ba9047",
+      "bytes": 7352
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/evidence/strict_result.json",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/strict_result.json",
+      "sha256": "073aa8c2b66164cf194a53aa1a53a9dc80639b9ea3b285801639237fd0175677",
+      "bytes": 4722
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/evidence/reader_offline_proof.json",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/reader_offline_proof.json",
+      "sha256": "df82b257e16d97be3d523ad81c33c10ff27a91615f2c2b5ca7535a4c4c16384c",
+      "bytes": 5036
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/evidence/vendor_table_reference_proof.json",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/vendor_table_reference_proof.json",
+      "sha256": "202035c9a66d8210d575b06e4dd8230eb39e89dc4331095d80bbeb1287d0695d",
+      "bytes": 839
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/evidence/sram_install.json",
+      "source_relative_path": "routing_rescue_20261015/flow_atk_vendor_b09e/sram_install.json",
+      "sha256": "ae1b6eeb982d2fe5a68acfa35a434ddb3a533e1832e666cc7237ba797db3f38f",
+      "bytes": 585
+    },
+    {
+      "stage": "07-b09e",
+      "export_path": "07-b09e/README.md",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "1c5460323a1c02315527351e88d5608e5603f67ce2501c656807e263a231fca0",
+      "bytes": 1351
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/acg720_ano_port.cst",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/acg720_ano_port.cst",
+      "sha256": "66431a4d4cee189667c57f635b3c43b5db5e71f6916443d01e3dbfe1cd1958b7",
+      "bytes": 2176
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/acg720_ano_port.gprj",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/acg720_ano_port.gprj",
+      "sha256": "fb8225b600fdcdd21dbf92c9aae195fc801ff016b91560fbeff60933e27b375b",
+      "bytes": 2551
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/acg720_ano_port.sdc",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "bytes": 61
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/acg720_ano_port.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/acg720_ano_port.v",
+      "sha256": "e7b851a3eacaf69edb95dd2063d4cfa0b809bc8d7aa11debe8aa5b634a662dd2",
+      "bytes": 18424
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/build.tcl",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/build.tcl",
+      "sha256": "a0a48131788a2e9cb0a0f0ba11ea3dfedd7cf8292fd66a014b5376005d577684",
+      "bytes": 279
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/ano_attitude_estimator.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/ano_attitude_estimator.v",
+      "sha256": "88813abbb9b2a22c717e24e2a7aabf31f899a5fa542f0774a1423ad671be66a7",
+      "bytes": 38067
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/bmi088_reader.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "bytes": 12748
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/control_gate.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/cordic_atan2.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/flight_core.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/flight_core.v",
+      "sha256": "44c28df4ab9b183a53b6b9d6eccd4f404b729083c0437c98f4bd3a3dc12f1974",
+      "bytes": 33585
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/imu_checked_guard_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "bytes": 6260
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/imu_pipeline_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/imu_pipeline_pipelined.v",
+      "sha256": "9b857d6287d97c8cbf0135c1f73f5e788f5a02437d0fd8bb56600135e53681b3",
+      "bytes": 5981
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/imu_temporal_check_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "bytes": 8389
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/motor_pwm.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+      "bytes": 3358
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/rc_ppm.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "bytes": 5625
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/rtl/ano_rate_control.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/rtl/ano_rate_control.v",
+      "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+      "bytes": 16535
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/rtl/ano_rc_angle_targets.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/rtl/ano_yaw_control.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/rtl/pid_divide_signed64.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/rtl/quad_mixer_feedback.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "bytes": 1866
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/core/spi_uart_modules.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/level_calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/position/ano_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/position/ano_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "bytes": 44871
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/position/ano_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/position/ano_z_stick.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "bytes": 3581
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/position/pose_time_adapter.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "bytes": 2024
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/position/position_math.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/position/relative_position.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "bytes": 13836
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/sensor/flow_reader.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/sensor/pmw3901_init.vh",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/sensor/range_height_estimate.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "bytes": 6070
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/sensor/range_reader.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/telemetry_tx.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/telemetry_tx.v",
+      "sha256": "1da51d33b28c9ebbb31dacc5e7da1452128af30d511c8d0a2d1716c3859ce45a",
+      "bytes": 4715
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/trial.tcl",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/fixture/trial.tcl",
+      "sha256": "a0a48131788a2e9cb0a0f0ba11ea3dfedd7cf8292fd66a014b5376005d577684",
+      "bytes": 279
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/fixture/sensor/UPSTREAM_LICENSE.txt",
+      "source_relative_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "bytes": 1055
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/evidence/qualification.json",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/qualification.json",
+      "sha256": "7162ead6c1d981a71df367c550ee48be0d7934fbdbf2ddbcaad8107bbc197505",
+      "bytes": 5261
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/evidence/telemetry_proof.json",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/telemetry_proof.json",
+      "sha256": "da940738672966d2dc16a9c0f7325adc0e80380bfe2b569b0ec26856160f3420",
+      "bytes": 144
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/evidence/host_acceptance_20261018T061701Z.json",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/host_acceptance_20261018T061701Z.json",
+      "sha256": "513f2f6ce89f24fa511757b1105f0d31e39d28f9a602ef022c8a66d9c5903f7f",
+      "bytes": 1432
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/evidence/sram_install.json",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a0/sram_install.json",
+      "sha256": "50312efc38cc38b10c9c840a9c12363bcfa1b870430c0046d208c3b6f7950462",
+      "bytes": 328
+    },
+    {
+      "stage": "08-b0a0",
+      "export_path": "08-b0a0/README.md",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "d0b061d9e0f8e990403ee31b6ef86c4f51fd061913c9feab7f4edb4f51920cb6",
+      "bytes": 1075
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/acg720_ano_port.cst",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/acg720_ano_port.cst",
+      "sha256": "88e9c72dc2613a51d20d36b89e2c36570fa80b4293eaf8fd6c6e8f46fe39506f",
+      "bytes": 2176
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/acg720_ano_port.gprj",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/acg720_ano_port.gprj",
+      "sha256": "fb8225b600fdcdd21dbf92c9aae195fc801ff016b91560fbeff60933e27b375b",
+      "bytes": 2551
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/acg720_ano_port.sdc",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "bytes": 61
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/acg720_ano_port.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/acg720_ano_port.v",
+      "sha256": "766189bba3a8cb23ef26980590f65eb260a2b7a66a5e736bd2b53e41d4482fb9",
+      "bytes": 18424
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/build.tcl",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/build.tcl",
+      "sha256": "eec478103bd2af15d72f5ea7c03c2851676e8ecab2e0cdcca5e639e43060c765",
+      "bytes": 279
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/ano_attitude_estimator.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/ano_attitude_estimator.v",
+      "sha256": "88813abbb9b2a22c717e24e2a7aabf31f899a5fa542f0774a1423ad671be66a7",
+      "bytes": 38067
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/bmi088_reader.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "bytes": 12748
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/control_gate.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/cordic_atan2.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/flight_core.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/flight_core.v",
+      "sha256": "44c28df4ab9b183a53b6b9d6eccd4f404b729083c0437c98f4bd3a3dc12f1974",
+      "bytes": 33585
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/imu_checked_guard_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "bytes": 6260
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/imu_pipeline_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/imu_pipeline_pipelined.v",
+      "sha256": "9b857d6287d97c8cbf0135c1f73f5e788f5a02437d0fd8bb56600135e53681b3",
+      "bytes": 5981
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/imu_temporal_check_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "bytes": 8389
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/motor_pwm.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+      "bytes": 3358
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/rc_ppm.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "bytes": 5625
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/rtl/ano_rate_control.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/rtl/ano_rate_control.v",
+      "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+      "bytes": 16535
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/rtl/ano_rc_angle_targets.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/rtl/ano_yaw_control.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/rtl/pid_divide_signed64.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/rtl/quad_mixer_feedback.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "bytes": 1866
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/core/spi_uart_modules.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/level_calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/position/ano_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/position/ano_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "bytes": 44871
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/position/ano_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/position/ano_z_stick.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "bytes": 3581
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/position/pose_time_adapter.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "bytes": 2024
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/position/position_math.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/position/relative_position.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "bytes": 13836
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/sensor/flow_reader.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/sensor/pmw3901_init.vh",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/sensor/range_height_estimate.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "bytes": 6070
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/sensor/range_reader.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/telemetry_tx.v",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/telemetry_tx.v",
+      "sha256": "1da51d33b28c9ebbb31dacc5e7da1452128af30d511c8d0a2d1716c3859ce45a",
+      "bytes": 4715
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/trial.tcl",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/fixture/trial.tcl",
+      "sha256": "eec478103bd2af15d72f5ea7c03c2851676e8ecab2e0cdcca5e639e43060c765",
+      "bytes": 279
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/fixture/sensor/UPSTREAM_LICENSE.txt",
+      "source_relative_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "bytes": 1055
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/evidence/qualification.json",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/qualification.json",
+      "sha256": "a83002a864a92d99bf366778ebaeb7a9c518fc6c0d64a5580603363c854e485f",
+      "bytes": 5261
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/evidence/FEATURE_STATUS.json",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/FEATURE_STATUS.json",
+      "sha256": "df387901e15f731674c6fa0f6893ddc6405001c084be60f035c7970fad99e90d",
+      "bytes": 2808
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/evidence/cold_boot_verified_20261018T103018Z.json",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/cold_boot_verified_20261018T103018Z.json",
+      "sha256": "961b99053f0e0fb43f26ab35bd8e24a4f81282fff23cece1c7b1d7c532f3aac5",
+      "bytes": 1503
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/evidence/host_acceptance_20261018T082014Z.json",
+      "source_relative_path": "routing_rescue_20261015/sik_b0a6/host_acceptance_20261018T082014Z.json",
+      "sha256": "c1979dfc570bb007471693e7bbed630b5f4e63f72e1709da48110dda98e93f61",
+      "bytes": 2627
+    },
+    {
+      "stage": "09-b0a6",
+      "export_path": "09-b0a6/README.md",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "99a975ec5b1c9761827c74af5d129a6ec0b98d2cfef463b9903ec8999e6c1ebc",
+      "bytes": 1172
+    },
+    {
+      "stage": "10-mtf-eval",
+      "export_path": "10-mtf-eval/ORIGINAL_README.md",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_eval_20261018/README.md",
+      "sha256": "aeb6f94c81e7f2bfdd0960b2abee9583d225d0c79ba7b4564137b92d61f6ea95",
+      "bytes": 3590
+    },
+    {
+      "stage": "10-mtf-eval",
+      "export_path": "10-mtf-eval/micolink_monitor.py",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_eval_20261018/micolink_monitor.py",
+      "sha256": "bbbc09164d68918f697888dae9b33e03ffaa33ea63502b9d5e21b601735fc8bf",
+      "bytes": 8199
+    },
+    {
+      "stage": "10-mtf-eval",
+      "export_path": "10-mtf-eval/README.md",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "7c3603c8c1ac7382ac84b081ebdfe5c0139e399ddc2e3f4c0f1d65235453e252",
+      "bytes": 962
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/acg720_ano_port.cst",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/acg720_ano_port.cst",
+      "sha256": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+      "bytes": 1672
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/acg720_ano_port.gprj",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/acg720_ano_port.gprj",
+      "sha256": "b5d48b96750be44a63b696832c7a1f145d10a13e17cd7133bdf93bd3d0fd2d9b",
+      "bytes": 3431
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/acg720_ano_port.sdc",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "bytes": 61
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/acg720_ano_port.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/acg720_ano_port.v",
+      "sha256": "0fbe1a4c673e89f4085b507f3fad855b45f7119596da8fe9d608b74c4ec08abe",
+      "bytes": 20518
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/build.tcl",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/build.tcl",
+      "sha256": "2a0f7906c30f3e80f6e694386fbb4fe38363d46cfdfe1f3f93cab810a401cd4c",
+      "bytes": 362
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/ano_attitude_estimator.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/ano_attitude_estimator.v",
+      "sha256": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+      "bytes": 38384
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/bmi088_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "bytes": 12748
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/control_gate.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/cordic_atan2.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/flight_core.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/flight_core.v",
+      "sha256": "b6fae129a912a16bd373fd8b9266633495979a910648546d8749e4c2e5d90cd5",
+      "bytes": 33654
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/imu_checked_guard_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "bytes": 6260
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/imu_pipeline_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/imu_pipeline_pipelined.v",
+      "sha256": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+      "bytes": 6040
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/imu_temporal_check_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "bytes": 8389
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/motor_pwm.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+      "bytes": 3358
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/rc_ppm.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "bytes": 5625
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/rtl/ano_rate_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/rtl/ano_rate_control.v",
+      "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+      "bytes": 16535
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/rtl/ano_rc_angle_targets.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/rtl/ano_yaw_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/rtl/pid_divide_signed64.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/rtl/quad_mixer_feedback.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "bytes": 1866
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/core/spi_uart_modules.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/level_calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/mtf_navigation_shadow.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/mtf_navigation_shadow.v",
+      "sha256": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+      "bytes": 10862
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/mtf_xyz_navigation_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/mtf_xyz_navigation_control.v",
+      "sha256": "4fb740f542a3956152cab181933fdec606ee33df6c1eddbeba05c15c807837e4",
+      "bytes": 21732
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/nav_math_service.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/nav_math_service.v",
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "bytes": 4106
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/ano_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/ano_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "bytes": 44871
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/ano_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/ano_z_stick.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "bytes": 3581
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/mtf_position_integrator.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/mtf_position_integrator.v",
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "bytes": 9147
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/mtf_shared_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/mtf_shared_flow_fusion.v",
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "bytes": 9359
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/mtf_shared_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/mtf_shared_height_fusion.v",
+      "sha256": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+      "bytes": 45671
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/mtf_shared_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/mtf_shared_hold_control.v",
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "bytes": 23874
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/mtf_xyz_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/mtf_xyz_hold_control.v",
+      "sha256": "c434359a2bd3180f7e65fa3fe047dc9748f146e0c3541e97722756e6a3a798f7",
+      "bytes": 24565
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/pose_time_adapter.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "bytes": 2024
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/position_math.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/position/relative_position.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "bytes": 13836
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/sensor/flow_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/sensor/mtf01p_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/sensor/mtf01p_reader.v",
+      "sha256": "282bb3e610d54405c8c67cc2fdd5de05638d4d67b78ae99b83888b9898af6157",
+      "bytes": 12291
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/sensor/mtf_native_geometry.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/sensor/mtf_native_geometry.v",
+      "sha256": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+      "bytes": 13913
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/sensor/mtf_shared_geometry.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/sensor/mtf_shared_geometry.v",
+      "sha256": "79fea0e891c94c7272d4045e910c842c93531ed25b987da38cd0e12cdd84ec49",
+      "bytes": 12461
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/sensor/pmw3901_init.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/sensor/range_height_estimate.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "bytes": 6070
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/sensor/range_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/telemetry_tx.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/fixture/telemetry_tx.v",
+      "sha256": "0742df1f2f41b2ce836fd77e061b46c2b13736321b7edc1f98d82cce2fd28045",
+      "bytes": 16330
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/fixture/sensor/UPSTREAM_LICENSE.txt",
+      "source_relative_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "bytes": 1055
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/evidence/selected_build.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/selected_build.json",
+      "sha256": "a1626d195f2c4cf036ebda846329310b0eebcbe8923fe57d43c2f87582986c6e",
+      "bytes": 170604
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/evidence/publication_yaw_study/qualification.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/qualification.json",
+      "sha256": "3c80d88d859c1ab9f887ba8f5d3f55921f14269601ddc969b311577794e3f799",
+      "bytes": 120084
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/evidence/publication_yaw_study/pnr_result.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ab_control/publication_yaw_study/pnr_result.json",
+      "sha256": "23bbd38364226d0283171122e45d25da1b9e3f96cd89745310976e668a9fd8ee",
+      "bytes": 877
+    },
+    {
+      "stage": "11-b0ab",
+      "export_path": "11-b0ab/README.md",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "6516ab1ced3ea62c69d832110d1d811318e23a1fa0515209047190c1c050d90e",
+      "bytes": 1140
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/acg720_ano_port.cst",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/acg720_ano_port.cst",
+      "sha256": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+      "bytes": 1672
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/acg720_ano_port.gprj",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/acg720_ano_port.gprj",
+      "sha256": "b5d48b96750be44a63b696832c7a1f145d10a13e17cd7133bdf93bd3d0fd2d9b",
+      "bytes": 3431
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/acg720_ano_port.sdc",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "bytes": 61
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/acg720_ano_port.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/acg720_ano_port.v",
+      "sha256": "c09da92dd2c3a8556112062c633696d6627c0803c4f1fe32a835b197a26db48a",
+      "bytes": 20518
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/build.tcl",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/build.tcl",
+      "sha256": "95e44cf1c2d26767ec56fcce7494cea51d3459998b1e178149c626a7bc7565ab",
+      "bytes": 362
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/ano_attitude_estimator.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/ano_attitude_estimator.v",
+      "sha256": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+      "bytes": 38384
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/bmi088_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "bytes": 12748
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/control_gate.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/cordic_atan2.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/flight_core.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/flight_core.v",
+      "sha256": "b6fae129a912a16bd373fd8b9266633495979a910648546d8749e4c2e5d90cd5",
+      "bytes": 33654
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/imu_checked_guard_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "bytes": 6260
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/imu_pipeline_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/imu_pipeline_pipelined.v",
+      "sha256": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+      "bytes": 6040
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/imu_temporal_check_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "bytes": 8389
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/motor_pwm.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+      "bytes": 3358
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/rc_ppm.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "bytes": 5625
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/rtl/ano_rate_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/rtl/ano_rate_control.v",
+      "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+      "bytes": 16535
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/rtl/ano_rc_angle_targets.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/rtl/ano_yaw_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/rtl/pid_divide_signed64.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/rtl/quad_mixer_feedback.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "bytes": 1866
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/core/spi_uart_modules.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/level_calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/mtf_navigation_shadow.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/mtf_navigation_shadow.v",
+      "sha256": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+      "bytes": 10862
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/mtf_xyz_navigation_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/mtf_xyz_navigation_control.v",
+      "sha256": "4fb740f542a3956152cab181933fdec606ee33df6c1eddbeba05c15c807837e4",
+      "bytes": 21732
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/nav_math_service.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/nav_math_service.v",
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "bytes": 4106
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/ano_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/ano_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "bytes": 44871
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/ano_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/ano_z_stick.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "bytes": 3581
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/mtf_position_integrator.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/mtf_position_integrator.v",
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "bytes": 9147
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/mtf_shared_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/mtf_shared_flow_fusion.v",
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "bytes": 9359
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/mtf_shared_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/mtf_shared_height_fusion.v",
+      "sha256": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+      "bytes": 45671
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/mtf_shared_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/mtf_shared_hold_control.v",
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "bytes": 23874
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/mtf_xyz_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/mtf_xyz_hold_control.v",
+      "sha256": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14",
+      "bytes": 24751
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/pose_time_adapter.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "bytes": 2024
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/position_math.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/position/relative_position.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "bytes": 13836
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/sensor/flow_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/sensor/mtf01p_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/sensor/mtf01p_reader.v",
+      "sha256": "282bb3e610d54405c8c67cc2fdd5de05638d4d67b78ae99b83888b9898af6157",
+      "bytes": 12291
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/sensor/mtf_native_geometry.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/sensor/mtf_native_geometry.v",
+      "sha256": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+      "bytes": 13913
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/sensor/mtf_shared_geometry.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/sensor/mtf_shared_geometry.v",
+      "sha256": "79fea0e891c94c7272d4045e910c842c93531ed25b987da38cd0e12cdd84ec49",
+      "bytes": 12461
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/sensor/pmw3901_init.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/sensor/range_height_estimate.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "bytes": 6070
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/sensor/range_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/telemetry_tx.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/fixture/telemetry_tx.v",
+      "sha256": "0742df1f2f41b2ce836fd77e061b46c2b13736321b7edc1f98d82cce2fd28045",
+      "bytes": 16330
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/fixture/sensor/UPSTREAM_LICENSE.txt",
+      "source_relative_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "bytes": 1055
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/evidence/selected_build.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/selected_build.json",
+      "sha256": "bf4c2c521f991fc0468d7316e7d04d2b45b39ebef55677c4e02f0c283440f0a0",
+      "bytes": 133738
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/evidence/qualification.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/qualification.json",
+      "sha256": "61651c20a50f4657394626b80fa365558e68d63d8f1dc7876533fe40bb612ddd",
+      "bytes": 131544
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/evidence/hardware_status.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ac_preserve_fsm/hardware_status.json",
+      "sha256": "e106fe6d9f32fc084dc3eedc0a14b471241b1de7530f3f3d424a129fba9bc902",
+      "bytes": 2365
+    },
+    {
+      "stage": "12-b0ac",
+      "export_path": "12-b0ac/README.md",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "562c432472996be8a76cae57010741abab9a53b73235273d17c0bc038f6fca22",
+      "bytes": 1269
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/acg720_ano_port.cst",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/acg720_ano_port.cst",
+      "sha256": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+      "bytes": 1672
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/acg720_ano_port.gprj",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/acg720_ano_port.gprj",
+      "sha256": "211df225e1f7eec82a35038c1b34153113a43c526d02abc3dbf11bcbe96c1d68",
+      "bytes": 3503
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/acg720_ano_port.sdc",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "bytes": 61
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/acg720_ano_port.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/acg720_ano_port.v",
+      "sha256": "bf1e6ec202cad3a92ca7a4f0e1c35bc89754aecfe045e5941054b69594e8e531",
+      "bytes": 21996
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/build.tcl",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/build.tcl",
+      "sha256": "ce557baf6a2d7e83a3d757edbf3dba1bc14a01c21edc6e3b4813763e902adbe7",
+      "bytes": 362
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/ano_attitude_estimator.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/ano_attitude_estimator.v",
+      "sha256": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+      "bytes": 38384
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/bmi088_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "bytes": 12748
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/control_gate.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/cordic_atan2.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/flight_core.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/flight_core.v",
+      "sha256": "c705a97ef94887a19f7f9e96395e74d180ebaca4f39774ef92b7bbc4a48ede55",
+      "bytes": 35016
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/imu_checked_guard_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "bytes": 6260
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/imu_pipeline_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/imu_pipeline_pipelined.v",
+      "sha256": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+      "bytes": 6040
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/imu_temporal_check_pipelined.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "bytes": 8389
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/motor_pwm.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+      "bytes": 3358
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/rc_ppm.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "bytes": 5625
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/rtl/ano_rate_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/rtl/ano_rate_control.v",
+      "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+      "bytes": 16535
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/rtl/ano_rc_angle_targets.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/rtl/ano_yaw_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/rtl/pid_divide_signed64.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/rtl/quad_mixer_feedback.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "bytes": 1866
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/spi_uart_modules.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/core/throttle_takeover.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/core/throttle_takeover.v",
+      "sha256": "733bd443b7bde404b2b78a459ef2f29f6e5ea77f1ac44c2a9ad3383db6149130",
+      "bytes": 2667
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/level_calibration.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/mtf_navigation_shadow.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/mtf_navigation_shadow.v",
+      "sha256": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+      "bytes": 10862
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/mtf_xyz_navigation_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/mtf_xyz_navigation_control.v",
+      "sha256": "4fb740f542a3956152cab181933fdec606ee33df6c1eddbeba05c15c807837e4",
+      "bytes": 21732
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/nav_math_service.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/nav_math_service.v",
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "bytes": 4106
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/ano_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/ano_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "bytes": 44871
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/ano_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/ano_z_stick.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "bytes": 3581
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/mtf_position_integrator.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/mtf_position_integrator.v",
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "bytes": 9147
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/mtf_shared_flow_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/mtf_shared_flow_fusion.v",
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "bytes": 9359
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/mtf_shared_height_fusion.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/mtf_shared_height_fusion.v",
+      "sha256": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+      "bytes": 45671
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/mtf_shared_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/mtf_shared_hold_control.v",
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "bytes": 23874
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/mtf_xyz_hold_control.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/mtf_xyz_hold_control.v",
+      "sha256": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14",
+      "bytes": 24751
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/pose_time_adapter.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "bytes": 2024
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/position_math.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/position/relative_position.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "bytes": 13836
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/sensor/flow_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/sensor/mtf01p_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/sensor/mtf01p_reader.v",
+      "sha256": "282bb3e610d54405c8c67cc2fdd5de05638d4d67b78ae99b83888b9898af6157",
+      "bytes": 12291
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/sensor/mtf_native_geometry.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/sensor/mtf_native_geometry.v",
+      "sha256": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+      "bytes": 13913
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/sensor/mtf_shared_geometry.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/sensor/mtf_shared_geometry.v",
+      "sha256": "f37cb9c20751fc73c90393cff79bfa54d1b41799e01e88f728bb28ab77361491",
+      "bytes": 12736
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/sensor/pmw3901_init.vh",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/sensor/range_height_estimate.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "bytes": 6070
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/sensor/range_reader.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/telemetry_tx.v",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/fixture/telemetry_tx.v",
+      "sha256": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0",
+      "bytes": 17592
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/fixture/sensor/UPSTREAM_LICENSE.txt",
+      "source_relative_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "bytes": 1055
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/evidence/offline_release.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/offline_release.json",
+      "sha256": "5312d9a9ef5ad09f7058917dde2e1bde74384bc3c45f8716b6e373342200d21a",
+      "bytes": 2419
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/evidence/qualification.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/qualification.json",
+      "sha256": "7f379028ce80309009de1ec8f0e1bd3390cdf01a8478cf42c2134d40c8aac948",
+      "bytes": 11816
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/evidence/status.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/status.json",
+      "sha256": "9eefb21cbff45faccfc507a0fb2694f26f0f4a0932fbff29b6c0484e598e6949",
+      "bytes": 1932
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/evidence/local_cancel_proof.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/local_cancel_proof.json",
+      "sha256": "2d0cfc944052e131cbc47d334e73ad882adf4b3166a9846b27120c90089c7a65",
+      "bytes": 4049
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/evidence/test_results.json",
+      "source_relative_path": "routing_rescue_20261015/mtf01p_b0ad_local_cancel/test_results.json",
+      "sha256": "17f341b9fdb1a02e7fbb966450070ce6821d1547dbadd3b1c3cd28cd2655cb2f",
+      "bytes": 11654
+    },
+    {
+      "stage": "13-b0ad",
+      "export_path": "13-b0ad/README.md",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "6d810e165cd7963cd43f63a85ee539762a42d262cbf27133d5e47e0b9600f163",
+      "bytes": 1234
+    },
+    {
+      "stage": "10-mtf-eval",
+      "export_path": "10-mtf-eval/SELF_TEST.json",
+      "source_relative_path": null,
+      "generated": true,
+      "sha256": "4942753a2706d291e838959b1a5703d4b089c99064d5765ea52e708af7304ef8",
+      "bytes": 308
+    }
+  ],
+  "gprj_reference_checks": [
+    {
+      "stage": "06-b089",
+      "reference": "acg720_ano_port.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "telemetry_tx.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/control_gate.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/cordic_atan2.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/flight_core.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/bmi088_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/imu_checked_guard_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/imu_pipeline_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/imu_temporal_check_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/motor_pwm.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/rc_ppm.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/spi_uart_modules.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/rtl/pid_divide_signed64.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/rtl/quad_mixer_feedback.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "position/position_math.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "position/relative_position.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "sensor/flow_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "sensor/range_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "acg720_ano_port.cst",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "acg720_ano_port.sdc",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "sensor/pmw3901_init.vh",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/ano_attitude_estimator.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/rtl/ano_rate_control.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "position/ano_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "position/ano_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "position/ano_z_stick.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/rtl/ano_yaw_control.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "position/ano_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "sensor/range_height_estimate.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "position/pose_time_adapter.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "core/rtl/ano_rc_angle_targets.v",
+      "exists": true
+    },
+    {
+      "stage": "06-b089",
+      "reference": "level_calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "acg720_ano_port.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "telemetry_tx.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/control_gate.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/cordic_atan2.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/flight_core.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/bmi088_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/imu_checked_guard_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/imu_pipeline_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/imu_temporal_check_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/motor_pwm.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/rc_ppm.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/spi_uart_modules.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/rtl/pid_divide_signed64.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/rtl/quad_mixer_feedback.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "position/position_math.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "position/relative_position.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "sensor/flow_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "sensor/range_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "acg720_ano_port.cst",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "acg720_ano_port.sdc",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "sensor/pmw3901_init.vh",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/ano_attitude_estimator.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/rtl/ano_rate_control.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "position/ano_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "position/ano_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "position/ano_z_stick.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/rtl/ano_yaw_control.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "position/ano_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "sensor/range_height_estimate.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "position/pose_time_adapter.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "core/rtl/ano_rc_angle_targets.v",
+      "exists": true
+    },
+    {
+      "stage": "07-b09e",
+      "reference": "level_calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "acg720_ano_port.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "telemetry_tx.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/control_gate.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/cordic_atan2.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/flight_core.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/bmi088_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/imu_checked_guard_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/imu_pipeline_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/imu_temporal_check_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/motor_pwm.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/rc_ppm.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/spi_uart_modules.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/rtl/pid_divide_signed64.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/rtl/quad_mixer_feedback.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "position/position_math.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "position/relative_position.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "sensor/flow_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "sensor/range_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "acg720_ano_port.cst",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "acg720_ano_port.sdc",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "sensor/pmw3901_init.vh",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/ano_attitude_estimator.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/rtl/ano_rate_control.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "position/ano_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "position/ano_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "position/ano_z_stick.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/rtl/ano_yaw_control.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "position/ano_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "sensor/range_height_estimate.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "position/pose_time_adapter.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "core/rtl/ano_rc_angle_targets.v",
+      "exists": true
+    },
+    {
+      "stage": "08-b0a0",
+      "reference": "level_calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "acg720_ano_port.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "telemetry_tx.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/control_gate.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/cordic_atan2.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/flight_core.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/bmi088_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/imu_checked_guard_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/imu_pipeline_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/imu_temporal_check_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/motor_pwm.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/rc_ppm.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/spi_uart_modules.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/rtl/pid_divide_signed64.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/rtl/quad_mixer_feedback.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "position/position_math.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "position/relative_position.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "sensor/flow_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "sensor/range_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "acg720_ano_port.cst",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "acg720_ano_port.sdc",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "sensor/pmw3901_init.vh",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/ano_attitude_estimator.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/rtl/ano_rate_control.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "position/ano_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "position/ano_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "position/ano_z_stick.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/rtl/ano_yaw_control.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "position/ano_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "sensor/range_height_estimate.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "position/pose_time_adapter.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "core/rtl/ano_rc_angle_targets.v",
+      "exists": true
+    },
+    {
+      "stage": "09-b0a6",
+      "reference": "level_calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "acg720_ano_port.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "telemetry_tx.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/control_gate.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/cordic_atan2.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/flight_core.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/bmi088_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/imu_checked_guard_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/imu_pipeline_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/imu_temporal_check_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/motor_pwm.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/rc_ppm.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/spi_uart_modules.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/rtl/pid_divide_signed64.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/rtl/quad_mixer_feedback.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/position_math.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/relative_position.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "sensor/flow_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "sensor/range_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "acg720_ano_port.cst",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "acg720_ano_port.sdc",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "sensor/pmw3901_init.vh",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/ano_attitude_estimator.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/rtl/ano_rate_control.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/ano_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/ano_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/ano_z_stick.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/rtl/ano_yaw_control.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/ano_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "sensor/range_height_estimate.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/pose_time_adapter.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "core/rtl/ano_rc_angle_targets.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "level_calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "sensor/mtf01p_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "sensor/mtf_native_geometry.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/mtf_position_integrator.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "mtf_navigation_shadow.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "nav_math_service.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "sensor/mtf_shared_geometry.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/mtf_shared_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/mtf_shared_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/mtf_shared_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "mtf_xyz_navigation_control.v",
+      "exists": true
+    },
+    {
+      "stage": "11-b0ab",
+      "reference": "position/mtf_xyz_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "acg720_ano_port.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "telemetry_tx.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/control_gate.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/cordic_atan2.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/flight_core.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/bmi088_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/imu_checked_guard_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/imu_pipeline_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/imu_temporal_check_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/motor_pwm.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/rc_ppm.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/spi_uart_modules.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/rtl/pid_divide_signed64.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/rtl/quad_mixer_feedback.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/position_math.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/relative_position.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "sensor/flow_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "sensor/range_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "acg720_ano_port.cst",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "acg720_ano_port.sdc",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "sensor/pmw3901_init.vh",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/ano_attitude_estimator.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/rtl/ano_rate_control.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/ano_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/ano_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/ano_z_stick.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/rtl/ano_yaw_control.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/ano_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "sensor/range_height_estimate.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/pose_time_adapter.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "core/rtl/ano_rc_angle_targets.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "level_calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "sensor/mtf01p_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "sensor/mtf_native_geometry.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/mtf_position_integrator.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "mtf_navigation_shadow.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "nav_math_service.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "sensor/mtf_shared_geometry.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/mtf_shared_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/mtf_shared_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/mtf_shared_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "mtf_xyz_navigation_control.v",
+      "exists": true
+    },
+    {
+      "stage": "12-b0ac",
+      "reference": "position/mtf_xyz_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "acg720_ano_port.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "telemetry_tx.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/control_gate.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/cordic_atan2.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/throttle_takeover.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/flight_core.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/bmi088_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/imu_checked_guard_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/imu_pipeline_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/imu_temporal_check_pipelined.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/motor_pwm.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/rc_ppm.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/spi_uart_modules.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/rtl/pid_divide_signed64.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/rtl/quad_mixer_feedback.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/position_math.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/relative_position.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "sensor/flow_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "sensor/range_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "acg720_ano_port.cst",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "acg720_ano_port.sdc",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "sensor/pmw3901_init.vh",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/ano_attitude_estimator.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/rtl/ano_rate_control.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/ano_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/ano_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/ano_z_stick.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/rtl/ano_yaw_control.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/ano_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "sensor/range_height_estimate.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/pose_time_adapter.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "core/rtl/ano_rc_angle_targets.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "level_calibration.vh",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "sensor/mtf01p_reader.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "sensor/mtf_native_geometry.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/mtf_position_integrator.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "mtf_navigation_shadow.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "nav_math_service.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "sensor/mtf_shared_geometry.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/mtf_shared_flow_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/mtf_shared_height_fusion.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/mtf_shared_hold_control.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "mtf_xyz_navigation_control.v",
+      "exists": true
+    },
+    {
+      "stage": "13-b0ad",
+      "reference": "position/mtf_xyz_hold_control.v",
+      "exists": true
+    }
+  ],
+  "missing": [],
+  "stages": [
+    {
+      "stage": "06-b089",
+      "files": 41,
+      "bytes": 354509
+    },
+    {
+      "stage": "07-b09e",
+      "files": 43,
+      "bytes": 361503
+    },
+    {
+      "stage": "08-b0a0",
+      "files": 42,
+      "bytes": 345124
+    },
+    {
+      "stage": "09-b0a6",
+      "files": 42,
+      "bytes": 350255
+    },
+    {
+      "stage": "10-mtf-eval",
+      "files": 4,
+      "bytes": 13059
+    },
+    {
+      "stage": "11-b0ab",
+      "files": 51,
+      "bytes": 831904
+    },
+    {
+      "stage": "12-b0ac",
+      "files": 51,
+      "bytes": 808301
+    },
+    {
+      "stage": "13-b0ad",
+      "files": 54,
+      "bytes": 579605
+    }
+  ]
+}

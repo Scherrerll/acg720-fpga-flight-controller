@@ -1,0 +1,1323 @@
+{
+  "archive_date": "2026-10-22",
+  "historical_exact_snapshot": false,
+  "files": [
+    {
+      "export_path": "01-bringup/acg720_smoke_test/acg720_smoke.cst",
+      "original_workspace_path": "acg720_smoke_test/acg720_smoke.cst",
+      "sha256": "3a8f22399da0af2ece53f5aef3aad958d257e244eb5b3266afddc3f092d2c3c7",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/acg720_smoke_test/acg720_smoke.gprj",
+      "original_workspace_path": "acg720_smoke_test/acg720_smoke.gprj",
+      "sha256": "f9a9676f43620271563503477925b7bd0ea235ee0893ee0cfa74c1231b5efe1d",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/acg720_smoke_test/acg720_smoke.sdc",
+      "original_workspace_path": "acg720_smoke_test/acg720_smoke.sdc",
+      "sha256": "882b801a02eb1c31186ec38dbc752fca205bac46f2776f33cae5594d16b4d075",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/acg720_smoke_test/acg720_smoke.v",
+      "original_workspace_path": "acg720_smoke_test/acg720_smoke.v",
+      "sha256": "8549055bd68c68fe4e8202d9c92277411ccca63ac995c1464258595e503cafb1",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/acg720_ppm_check/acg720_ppm_check.cst",
+      "original_workspace_path": "acg720_ppm_check/acg720_ppm_check.cst",
+      "sha256": "5910ac04c7895e3eb95ae64313aff57e2a41d489f939cfe9f9240e62a1085cae",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/acg720_ppm_check/acg720_ppm_check.gprj",
+      "original_workspace_path": "acg720_ppm_check/acg720_ppm_check.gprj",
+      "sha256": "5e3ddf5a7ca1e1d76fa48d1bf576a13207505f758bf37d364d3a9aec3a4d3111",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/acg720_ppm_check/acg720_ppm_check.sdc",
+      "original_workspace_path": "acg720_ppm_check/acg720_ppm_check.sdc",
+      "sha256": "882b801a02eb1c31186ec38dbc752fca205bac46f2776f33cae5594d16b4d075",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/acg720_ppm_check/acg720_ppm_check.v",
+      "original_workspace_path": "acg720_ppm_check/acg720_ppm_check.v",
+      "sha256": "2ad8464b52745f76e5547b08c8fd31638669743e01ecfc8b9af62c734ea73800",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/acg720_ppm_check/ppm_capture.v",
+      "original_workspace_path": "acg720_ppm_check/ppm_capture.v",
+      "sha256": "b50e935d2c878628046c31b141ff59c0d657dfa2437f5d0b679cbf750a50ecc6",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "01-bringup/README.md",
+      "original_workspace_path": null,
+      "sha256": "306b7c64c6c28a67b79d78ddaa979e1d254fe030719078733d89f4a53878daa8",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_smoke_test/README.md",
+        "acg720_ppm_check/README.md"
+      ]
+    },
+    {
+      "export_path": "01-bringup/evidence_summary.json",
+      "original_workspace_path": null,
+      "sha256": "f32680ad472f9a181205e2a0a18643d41a2528582e5735371c1c29fbba4815df",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_smoke_test/README.md",
+        "acg720_ppm_check/README.md"
+      ]
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_imu_check/acg720_imu_check.cst",
+      "original_workspace_path": "acg720_imu_check/acg720_imu_check.cst",
+      "sha256": "475697558c12a8a0e8baff954d5ec63eedaed3a7b74013ecded4b7015e6040b6",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_imu_check/acg720_imu_check.gprj",
+      "original_workspace_path": "acg720_imu_check/acg720_imu_check.gprj",
+      "sha256": "fbcfe575fb4b6936a6f5b6f36c04e02f27a2e5728cec7d6d74b0113d3f444add",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_imu_check/acg720_imu_check.sdc",
+      "original_workspace_path": "acg720_imu_check/acg720_imu_check.sdc",
+      "sha256": "59890a297cc277e77be128c99e98987d7ef357b2af07d1c51f47978b017a6180",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_imu_check/acg720_imu_check.v",
+      "original_workspace_path": "acg720_imu_check/acg720_imu_check.v",
+      "sha256": "14dd156d8d8e131f935333d1a2b4e427580b251062300f1987844fa124e2c67e",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_imu_check/build.tcl",
+      "original_workspace_path": "acg720_imu_check/build.tcl",
+      "sha256": "2adbd69728b76dbaa260609d892980cc6c0c0b67d5b6e9b95bbde19b66fc9305",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/acg720_attitude_bench.cst",
+      "original_workspace_path": "acg720_attitude_bench/acg720_attitude_bench.cst",
+      "sha256": "475697558c12a8a0e8baff954d5ec63eedaed3a7b74013ecded4b7015e6040b6",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/acg720_attitude_bench.gprj",
+      "original_workspace_path": "acg720_attitude_bench/acg720_attitude_bench.gprj",
+      "sha256": "15092db29ad2279c80630d4edbfe19fcd291202da0f15315ee24b4d7f59d93b4",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/acg720_attitude_bench.sdc",
+      "original_workspace_path": "acg720_attitude_bench/acg720_attitude_bench.sdc",
+      "sha256": "59890a297cc277e77be128c99e98987d7ef357b2af07d1c51f47978b017a6180",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/acg720_attitude_bench.v",
+      "original_workspace_path": "acg720_attitude_bench/acg720_attitude_bench.v",
+      "sha256": "f30c0581e73420fd51c4b1312b2b6bab6ccdcf3e88f68042d4c753836bf0b4c2",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/cordic_atan2.v",
+      "original_workspace_path": "acg720_attitude_bench/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/icm42688_reader.v",
+      "original_workspace_path": "acg720_attitude_bench/icm42688_reader.v",
+      "sha256": "0484199978e1ff27d8a2fb3c22bfc18879e92508577906c3c7027747519d79f3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/imu_checked_guard.v",
+      "original_workspace_path": "acg720_attitude_bench/imu_checked_guard.v",
+      "sha256": "42bff9987f52b07d184ab52c95d1d2bba77e13e09c93c51e3b636cab3897d44b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/imu_temporal_check.v",
+      "original_workspace_path": "acg720_attitude_bench/imu_temporal_check.v",
+      "sha256": "ca8d4ed493ea7d6034a53a55b88c0d67d98beed7f66f787ad393c9d095a40927",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/spi_uart_modules.v",
+      "original_workspace_path": "acg720_attitude_bench/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/tilt_estimator.v",
+      "original_workspace_path": "acg720_attitude_bench/tilt_estimator.v",
+      "sha256": "fe676644a7c88abbc3dd3bcca5c7ea2e11a4543a0353d9f8598c09a27a92b3a9",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/acg720_attitude_bench/build.tcl",
+      "original_workspace_path": "acg720_attitude_bench/build.tcl",
+      "sha256": "fb21c9097ef9bd06f2dcedc117368547df92e0796deab4d408f66c01b1c86468",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "02-imu-attitude/README.md",
+      "original_workspace_path": null,
+      "sha256": "e02fd3c9769b4d28083d439d75a14c8139137dcc72ea53b2d5745d823e270ce7",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_imu_check/README.md",
+        "acg720_attitude_bench/README.md"
+      ]
+    },
+    {
+      "export_path": "02-imu-attitude/evidence_summary.json",
+      "original_workspace_path": null,
+      "sha256": "7e2204fa8e34fa22869c93237d8f29d82d1ecb400393e2a73c5fbd130814a277",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_imu_check/README.md",
+        "acg720_attitude_bench/README.md"
+      ]
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/acg720_control_bench.cst",
+      "original_workspace_path": "acg720_control_bench/acg720_control_bench.cst",
+      "sha256": "0e321da18e3d779265a66660fc4e73e8d1ba1e4cc42ffe6e1c48dd075496043a",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/acg720_control_bench.gprj",
+      "original_workspace_path": "acg720_control_bench/acg720_control_bench.gprj",
+      "sha256": "63fdb0606cf8c0c668b5ab54bf2be1b37a0e21660c610e08453ea55991b18e05",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/acg720_control_bench.sdc",
+      "original_workspace_path": "acg720_control_bench/acg720_control_bench.sdc",
+      "sha256": "59890a297cc277e77be128c99e98987d7ef357b2af07d1c51f47978b017a6180",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/acg720_control_bench.v",
+      "original_workspace_path": "acg720_control_bench/acg720_control_bench.v",
+      "sha256": "16124c53169ac16fc3adfaf054520bdf3852be2b3ff37ead72662352ef661343",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/control_gate.v",
+      "original_workspace_path": "acg720_control_bench/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/cordic_atan2.v",
+      "original_workspace_path": "acg720_control_bench/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/icm42688_reader.v",
+      "original_workspace_path": "acg720_control_bench/icm42688_reader.v",
+      "sha256": "0484199978e1ff27d8a2fb3c22bfc18879e92508577906c3c7027747519d79f3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/imu_checked_guard.v",
+      "original_workspace_path": "acg720_control_bench/imu_checked_guard.v",
+      "sha256": "42bff9987f52b07d184ab52c95d1d2bba77e13e09c93c51e3b636cab3897d44b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/imu_pipeline.v",
+      "original_workspace_path": "acg720_control_bench/imu_pipeline.v",
+      "sha256": "53dc80e303b0e100214b181862c5b5b6b773661f701ee7595e420bf1ab237af9",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/imu_temporal_check.v",
+      "original_workspace_path": "acg720_control_bench/imu_temporal_check.v",
+      "sha256": "ca8d4ed493ea7d6034a53a55b88c0d67d98beed7f66f787ad393c9d095a40927",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/quad_mixer.v",
+      "original_workspace_path": "acg720_control_bench/quad_mixer.v",
+      "sha256": "6676768f20b9ed5acbe066d5434931e83c533af090ab84861c562646651b4cc9",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/rate_control.v",
+      "original_workspace_path": "acg720_control_bench/rate_control.v",
+      "sha256": "ac05d14939a394514275f4e04888570f1a071e887ca9ebee951c98fe69e99c6e",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/rc_ppm.v",
+      "original_workspace_path": "acg720_control_bench/rc_ppm.v",
+      "sha256": "85fad78b4e8a84976c417928c7a5082dba38e0bd83ce34976e55d3c48edc4993",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/spi_uart_modules.v",
+      "original_workspace_path": "acg720_control_bench/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/tilt_estimator.v",
+      "original_workspace_path": "acg720_control_bench/tilt_estimator.v",
+      "sha256": "fe676644a7c88abbc3dd3bcca5c7ea2e11a4543a0353d9f8598c09a27a92b3a9",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_control_bench/build.tcl",
+      "original_workspace_path": "acg720_control_bench/build.tcl",
+      "sha256": "52eda0436f1039a3f59fb734196787a026d919a6f7c9cefdbf4f7a6ca1c6ef83",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/acg720_motor_bench.cst",
+      "original_workspace_path": "acg720_motor_bench/acg720_motor_bench.cst",
+      "sha256": "fa88d9e90276459c5af393b914283a877e10d9da413dddbd716611948a07a023",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/acg720_motor_bench.gprj",
+      "original_workspace_path": "acg720_motor_bench/acg720_motor_bench.gprj",
+      "sha256": "fb43629d3eeae8308e435006d7e2ba810b2963dd0f7b3937d8f7fb4ffd047a8c",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/acg720_motor_bench.sdc",
+      "original_workspace_path": "acg720_motor_bench/acg720_motor_bench.sdc",
+      "sha256": "59890a297cc277e77be128c99e98987d7ef357b2af07d1c51f47978b017a6180",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/acg720_motor_bench.v",
+      "original_workspace_path": "acg720_motor_bench/acg720_motor_bench.v",
+      "sha256": "a76cb77b4a178015239fdace791abcf2a559ad5c6f33c7333c50af6123271569",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/control_gate.v",
+      "original_workspace_path": "acg720_motor_bench/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/cordic_atan2.v",
+      "original_workspace_path": "acg720_motor_bench/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/icm42688_reader.v",
+      "original_workspace_path": "acg720_motor_bench/icm42688_reader.v",
+      "sha256": "0484199978e1ff27d8a2fb3c22bfc18879e92508577906c3c7027747519d79f3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/imu_checked_guard.v",
+      "original_workspace_path": "acg720_motor_bench/imu_checked_guard.v",
+      "sha256": "42bff9987f52b07d184ab52c95d1d2bba77e13e09c93c51e3b636cab3897d44b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/imu_pipeline.v",
+      "original_workspace_path": "acg720_motor_bench/imu_pipeline.v",
+      "sha256": "53dc80e303b0e100214b181862c5b5b6b773661f701ee7595e420bf1ab237af9",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/imu_temporal_check.v",
+      "original_workspace_path": "acg720_motor_bench/imu_temporal_check.v",
+      "sha256": "ca8d4ed493ea7d6034a53a55b88c0d67d98beed7f66f787ad393c9d095a40927",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/motor_pwm.v",
+      "original_workspace_path": "acg720_motor_bench/motor_pwm.v",
+      "sha256": "fa5b91ab1dd387482618f50b91f4b5fff83e8732a0b48a7442d489214d627f9b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/quad_mixer.v",
+      "original_workspace_path": "acg720_motor_bench/quad_mixer.v",
+      "sha256": "335afc6fd4f86721f7178bbef84c481616a247943e6723cce65ffc0701468fdd",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/rate_control.v",
+      "original_workspace_path": "acg720_motor_bench/rate_control.v",
+      "sha256": "ac05d14939a394514275f4e04888570f1a071e887ca9ebee951c98fe69e99c6e",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/rc_ppm.v",
+      "original_workspace_path": "acg720_motor_bench/rc_ppm.v",
+      "sha256": "85fad78b4e8a84976c417928c7a5082dba38e0bd83ce34976e55d3c48edc4993",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/spi_uart_modules.v",
+      "original_workspace_path": "acg720_motor_bench/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/tilt_estimator.v",
+      "original_workspace_path": "acg720_motor_bench/tilt_estimator.v",
+      "sha256": "fe676644a7c88abbc3dd3bcca5c7ea2e11a4543a0353d9f8598c09a27a92b3a9",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/acg720_motor_bench/build.tcl",
+      "original_workspace_path": "acg720_motor_bench/build.tcl",
+      "sha256": "11b49f7ad11e6652b88a97f9f68ace0989603eff9cbeda74d555c6748ce51f51",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "03-control-motor/README.md",
+      "original_workspace_path": null,
+      "sha256": "85069929a65611645e91ceb7cd15f2a58bb91429eae48d5ab7873fa99fd49069",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_control_bench/README.md",
+        "acg720_motor_bench/README.md"
+      ]
+    },
+    {
+      "export_path": "03-control-motor/evidence_summary.json",
+      "original_workspace_path": null,
+      "sha256": "e129f161305a67449c5a9b1457ebcb9b34df5635656de975e10fa0a4fcd8fe3a",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_control_bench/README.md",
+        "acg720_motor_bench/README.md"
+      ]
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/acg720_flight_monitor_bench.cst",
+      "original_workspace_path": "acg720_flight_monitor_bench/acg720_flight_monitor_bench.cst",
+      "sha256": "1357052813c301c3571b9bfd76fcd926c8fdcfc71eb72dc62fa71cf0b3c41609",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/acg720_flight_monitor_bench.gprj",
+      "original_workspace_path": "acg720_flight_monitor_bench/acg720_flight_monitor_bench.gprj",
+      "sha256": "991a4188734a15202b8614d86018a0b5d8f04338dd3d93e48bb5581b9cb16174",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/acg720_flight_monitor_bench.sdc",
+      "original_workspace_path": "acg720_flight_monitor_bench/acg720_flight_monitor_bench.sdc",
+      "sha256": "59890a297cc277e77be128c99e98987d7ef357b2af07d1c51f47978b017a6180",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/acg720_flight_monitor_bench.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/acg720_flight_monitor_bench.v",
+      "sha256": "a580515b7199054e281a403fb572f175c265573b5f518a61f4ea0bf41f60fbfb",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/calibration.vh",
+      "original_workspace_path": "acg720_flight_monitor_bench/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/control_gate.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/cordic_atan2.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/flight_core.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/flight_core.v",
+      "sha256": "89a885a942a877c719a812d8cf8dda5ade5b8ae2ce167cec3db5651e422fd28c",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/icm42688_reader.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/icm42688_reader.v",
+      "sha256": "0484199978e1ff27d8a2fb3c22bfc18879e92508577906c3c7027747519d79f3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/imu_checked_guard_pipelined.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/imu_checked_guard_pipelined.v",
+      "sha256": "f08f0767c3788b0a520c6934da7fbcce234ea524719b9f6c3568555746d38833",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/imu_pipeline_pipelined.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/imu_pipeline_pipelined.v",
+      "sha256": "4e539e593608f3935c424f4de7c96c2a59d397a4ea17e8f3a97aafccb2a6c416",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/imu_temporal_check_pipelined.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/motor_pwm.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/motor_pwm.v",
+      "sha256": "fa5b91ab1dd387482618f50b91f4b5fff83e8732a0b48a7442d489214d627f9b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/rc_ppm.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/rtl/initial_profile.vh",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/rtl/initial_profile.vh",
+      "sha256": "5c552d5cf79fe1d28258483e1d81ab97b43156cf2a2f1f0c46a44ad538ddc937",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/rtl/pid_divide_signed64.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/rtl/pid_divide_signed64.v",
+      "sha256": "b63e0d34752bc6f56bd2b3275a848afb8fa58452df3485fed3fd37ac73c6fa44",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/rtl/quad_mixer_feedback.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/rtl/rate_control_px4.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/rtl/rate_control_px4.v",
+      "sha256": "cbddf664c49acf8d2b91a8224d6483e8568cc3292d7624e7faffb2977dc5487e",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/rtl/rate_pid_axis.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/rtl/rate_pid_axis.v",
+      "sha256": "25f1ecac1ce287634800e9072b890061a286270746b30786f129e7a884a66a9c",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/spi_uart_modules.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/tilt_estimator_pipelined.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/tilt_estimator_pipelined.v",
+      "sha256": "95a68a0ec7cc02d005f5d028f0e99849a665bb210ae00641179dc1a1f4a92f5c",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/position/hold_control.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/position/hold_control.v",
+      "sha256": "ac061a1738c95cbe17c38c3f417b2db4d641ed8de023ece36cdd8b42981fef07",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/position/position_math.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/position/position_math.v",
+      "sha256": "5cde0f57ec66366d7269bb5ba9f63e14865c742bc69c04fa66f477b39a7f4429",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/position/relative_position.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/position/relative_position.v",
+      "sha256": "49795d3de8d27c97e528f839ca7fe47d558d395eb5867e79d1380a072558ac07",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/sensor/flow_reader.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/sensor/pmw3901_init.vh",
+      "original_workspace_path": "acg720_flight_monitor_bench/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/sensor/range_reader.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/sensor/range_reader.v",
+      "sha256": "ac116ce7c3b8f3ed281d572cd7687e9118e6eb05dffbdf3bd2f57a5a82c72021",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/telemetry_tx.v",
+      "original_workspace_path": "acg720_flight_monitor_bench/telemetry_tx.v",
+      "sha256": "80ffb6350129cbce331409100341f058c34a1999bda6f8de584a8855c57b6091",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/build.tcl",
+      "original_workspace_path": "acg720_flight_monitor_bench/build.tcl",
+      "sha256": "7261bc3b485f3a7f554832b3cc48fd37f6ae174f59d390b28658add5c5fc0d05",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/core/NOTICE_PX4.txt",
+      "original_workspace_path": "acg720_flight_monitor_bench/core/NOTICE_PX4.txt",
+      "sha256": "4f8d7f1b8bce41d1db4f054daa9b35eb59215d150542673b43b2afe8933bf0f1",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_flight_monitor_bench/sensor/UPSTREAM_LICENSE.txt",
+      "original_workspace_path": "acg720_flight_monitor_bench/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/acg720_ano_port.cst",
+      "original_workspace_path": "acg720_ano_port/acg720_ano_port.cst",
+      "sha256": "1357052813c301c3571b9bfd76fcd926c8fdcfc71eb72dc62fa71cf0b3c41609",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/acg720_ano_port.gprj",
+      "original_workspace_path": "acg720_ano_port/acg720_ano_port.gprj",
+      "sha256": "d155b85249955048ec8170e7d0435747e02fa83cd48e8c73659c62fb782e6b4c",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/acg720_ano_port.sdc",
+      "original_workspace_path": "acg720_ano_port/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/acg720_ano_port.v",
+      "original_workspace_path": "acg720_ano_port/acg720_ano_port.v",
+      "sha256": "cadf308c869a586a5f1304671dcd2d080a73d3dfb8c9cbe5e6af87a1ba9ffcb7",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/calibration.vh",
+      "original_workspace_path": "acg720_ano_port/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/ano_attitude_estimator.v",
+      "original_workspace_path": "acg720_ano_port/core/ano_attitude_estimator.v",
+      "sha256": "f7f7b5f57b7c94db40b029be0904491471350af9a2844f007136f862e5e024b6",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/control_gate.v",
+      "original_workspace_path": "acg720_ano_port/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/cordic_atan2.v",
+      "original_workspace_path": "acg720_ano_port/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/flight_core.v",
+      "original_workspace_path": "acg720_ano_port/core/flight_core.v",
+      "sha256": "758700c6ea000d2db946506cbec7880752486f963fa55c8c2ebf7506c4b1cd05",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/icm42688_reader.v",
+      "original_workspace_path": "acg720_ano_port/core/icm42688_reader.v",
+      "sha256": "5ff83a6b736dcfdd5c58b6b002cf7aeec7f2d71056e70d6333779e3f1e5be1db",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/imu_checked_guard_pipelined.v",
+      "original_workspace_path": "acg720_ano_port/core/imu_checked_guard_pipelined.v",
+      "sha256": "13a80025d18593b111d53e3aa5c2cdfb2aadf6612212e3475dd5327b1d4a0bfe",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/imu_pipeline_pipelined.v",
+      "original_workspace_path": "acg720_ano_port/core/imu_pipeline_pipelined.v",
+      "sha256": "78305f3358f055986437b683575c5244213e7d78b4a7d547a40bbd8af2439225",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/imu_temporal_check_pipelined.v",
+      "original_workspace_path": "acg720_ano_port/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/motor_pwm.v",
+      "original_workspace_path": "acg720_ano_port/core/motor_pwm.v",
+      "sha256": "fa5b91ab1dd387482618f50b91f4b5fff83e8732a0b48a7442d489214d627f9b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/rc_ppm.v",
+      "original_workspace_path": "acg720_ano_port/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/rtl/ano_rate_control.v",
+      "original_workspace_path": "acg720_ano_port/core/rtl/ano_rate_control.v",
+      "sha256": "2a35b72248f0fc9fb5d850db695b1dfad9aa28ff7ae8b171788ba27e561be517",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/rtl/ano_rc_angle_targets.v",
+      "original_workspace_path": "acg720_ano_port/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "a772718bca7179d49888c0d570faa615dfae97e8d718c3c08157b6e494468d89",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/rtl/ano_yaw_control.v",
+      "original_workspace_path": "acg720_ano_port/core/rtl/ano_yaw_control.v",
+      "sha256": "de82ccb0345cfe00ad870f555b53dd5d0ecca7f55e21e402d79919921c9b71f0",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/rtl/pid_divide_signed64.v",
+      "original_workspace_path": "acg720_ano_port/core/rtl/pid_divide_signed64.v",
+      "sha256": "b63e0d34752bc6f56bd2b3275a848afb8fa58452df3485fed3fd37ac73c6fa44",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/rtl/quad_mixer_feedback.v",
+      "original_workspace_path": "acg720_ano_port/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/spi_uart_modules.v",
+      "original_workspace_path": "acg720_ano_port/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/level_calibration.vh",
+      "original_workspace_path": "acg720_ano_port/level_calibration.vh",
+      "sha256": "ae6064e1a38b33c57e655cd3af109544b63ab60379acfd7f4f3642f86565b955",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/position/ano_flow_fusion.v",
+      "original_workspace_path": "acg720_ano_port/position/ano_flow_fusion.v",
+      "sha256": "9cba1ed8be8dccc22e8113d87129c9a6aa8c9c4d6a5ef40174cbfeddc1d7c2cf",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/position/ano_height_fusion.v",
+      "original_workspace_path": "acg720_ano_port/position/ano_height_fusion.v",
+      "sha256": "e1eb08f07e415fb1d70bcb57d3a21726df640b4140ea582600dd9c0fe8932c61",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/position/ano_hold_control.v",
+      "original_workspace_path": "acg720_ano_port/position/ano_hold_control.v",
+      "sha256": "7ed0239cb55ea60b605aef3bec91cf06807af50160e85be0cf46dfd42721c9ef",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/position/ano_z_stick.v",
+      "original_workspace_path": "acg720_ano_port/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/position/pose_time_adapter.v",
+      "original_workspace_path": "acg720_ano_port/position/pose_time_adapter.v",
+      "sha256": "3916a39037634430c9464aab63ea1e552abf69f87ddb264917b0e8f9976b0585",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/position/position_math.v",
+      "original_workspace_path": "acg720_ano_port/position/position_math.v",
+      "sha256": "65371b21616b605b81d2388b820beab1d0fd01b8b78937f68accfc430fc9553e",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/position/relative_position.v",
+      "original_workspace_path": "acg720_ano_port/position/relative_position.v",
+      "sha256": "e855ea385eb117bc103629b39ee0cc6278075a27b0a828bc570b958780980d84",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/sensor/flow_reader.v",
+      "original_workspace_path": "acg720_ano_port/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/sensor/pmw3901_init.vh",
+      "original_workspace_path": "acg720_ano_port/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/sensor/range_height_estimate.v",
+      "original_workspace_path": "acg720_ano_port/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/sensor/range_reader.v",
+      "original_workspace_path": "acg720_ano_port/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/telemetry_tx.v",
+      "original_workspace_path": "acg720_ano_port/telemetry_tx.v",
+      "sha256": "4fd1238a599c92d47e19d19cc5b29f81884d51ea4d0bc36624a74efaf57a2332",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/build.tcl",
+      "original_workspace_path": "acg720_ano_port/build.tcl",
+      "sha256": "066748e09717a5747aa8e344b35d59c12e45376ecdaa7b6933d1fbc689e1b66b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/core/NOTICE_PX4.txt",
+      "original_workspace_path": "acg720_ano_port/core/NOTICE_PX4.txt",
+      "sha256": "4f8d7f1b8bce41d1db4f054daa9b35eb59215d150542673b43b2afe8933bf0f1",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "original_workspace_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "04-monitor-ano/README.md",
+      "original_workspace_path": null,
+      "sha256": "dee44ac77f743fa5f69914096d550b585a53a7bfac6e6082da1608329d71e365",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_flight_monitor_bench/validation.json",
+        "acg720_ano_port/validation.json",
+        "acg720_ano_port/PORT_NOTES.txt",
+        "acg720_dashboard/README.md"
+      ]
+    },
+    {
+      "export_path": "04-monitor-ano/evidence_summary.json",
+      "original_workspace_path": null,
+      "sha256": "80117ef2a4e2260354f27bd83b2c1073448a504c5644814fa46559292fe45417",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_flight_monitor_bench/validation.json",
+        "acg720_ano_port/validation.json",
+        "acg720_ano_port/PORT_NOTES.txt",
+        "acg720_dashboard/README.md"
+      ]
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/acg720_ano_port.cst",
+      "original_workspace_path": "acg720_bmi088_port/acg720_ano_port.cst",
+      "sha256": "442453132406ca60ce90fc89695bee2d2e86e17911a55a050cf7802438e9d0b9",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/acg720_ano_port.gprj",
+      "original_workspace_path": "acg720_bmi088_port/acg720_ano_port.gprj",
+      "sha256": "fb8225b600fdcdd21dbf92c9aae195fc801ff016b91560fbeff60933e27b375b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/acg720_ano_port.sdc",
+      "original_workspace_path": "acg720_bmi088_port/acg720_ano_port.sdc",
+      "sha256": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/acg720_ano_port.v",
+      "original_workspace_path": "acg720_bmi088_port/acg720_ano_port.v",
+      "sha256": "5b604af1e16f744722d84e2113a5794d45e730a5c284276eb42fad0a9bf39e11",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/calibration.vh",
+      "original_workspace_path": "acg720_bmi088_port/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/ano_attitude_estimator.v",
+      "original_workspace_path": "acg720_bmi088_port/core/ano_attitude_estimator.v",
+      "sha256": "88813abbb9b2a22c717e24e2a7aabf31f899a5fa542f0774a1423ad671be66a7",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/bmi088_reader.v",
+      "original_workspace_path": "acg720_bmi088_port/core/bmi088_reader.v",
+      "sha256": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/control_gate.v",
+      "original_workspace_path": "acg720_bmi088_port/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/cordic_atan2.v",
+      "original_workspace_path": "acg720_bmi088_port/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/flight_core.v",
+      "original_workspace_path": "acg720_bmi088_port/core/flight_core.v",
+      "sha256": "7d4d37ae2dc652a01bfcd7958512b5ca67fdc8a2ed11e2d18fe8f2cc8f665423",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/imu_checked_guard_pipelined.v",
+      "original_workspace_path": "acg720_bmi088_port/core/imu_checked_guard_pipelined.v",
+      "sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/imu_pipeline_pipelined.v",
+      "original_workspace_path": "acg720_bmi088_port/core/imu_pipeline_pipelined.v",
+      "sha256": "9b857d6287d97c8cbf0135c1f73f5e788f5a02437d0fd8bb56600135e53681b3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/imu_temporal_check_pipelined.v",
+      "original_workspace_path": "acg720_bmi088_port/core/imu_temporal_check_pipelined.v",
+      "sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/motor_pwm.v",
+      "original_workspace_path": "acg720_bmi088_port/core/motor_pwm.v",
+      "sha256": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/rc_ppm.v",
+      "original_workspace_path": "acg720_bmi088_port/core/rc_ppm.v",
+      "sha256": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/rtl/ano_rate_control.v",
+      "original_workspace_path": "acg720_bmi088_port/core/rtl/ano_rate_control.v",
+      "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/rtl/ano_rc_angle_targets.v",
+      "original_workspace_path": "acg720_bmi088_port/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/rtl/ano_yaw_control.v",
+      "original_workspace_path": "acg720_bmi088_port/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/rtl/pid_divide_signed64.v",
+      "original_workspace_path": "acg720_bmi088_port/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/rtl/quad_mixer_feedback.v",
+      "original_workspace_path": "acg720_bmi088_port/core/rtl/quad_mixer_feedback.v",
+      "sha256": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/spi_uart_modules.v",
+      "original_workspace_path": "acg720_bmi088_port/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/level_calibration.vh",
+      "original_workspace_path": "acg720_bmi088_port/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/position/ano_flow_fusion.v",
+      "original_workspace_path": "acg720_bmi088_port/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/position/ano_height_fusion.v",
+      "original_workspace_path": "acg720_bmi088_port/position/ano_height_fusion.v",
+      "sha256": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/position/ano_hold_control.v",
+      "original_workspace_path": "acg720_bmi088_port/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/position/ano_z_stick.v",
+      "original_workspace_path": "acg720_bmi088_port/position/ano_z_stick.v",
+      "sha256": "6096796af23cf4eae56b9e2dd250761a003f7565bf4a5a5782aa66bf4422e558",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/position/pose_time_adapter.v",
+      "original_workspace_path": "acg720_bmi088_port/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/position/position_math.v",
+      "original_workspace_path": "acg720_bmi088_port/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/position/relative_position.v",
+      "original_workspace_path": "acg720_bmi088_port/position/relative_position.v",
+      "sha256": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/sensor/flow_reader.v",
+      "original_workspace_path": "acg720_bmi088_port/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/sensor/pmw3901_init.vh",
+      "original_workspace_path": "acg720_bmi088_port/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/sensor/range_height_estimate.v",
+      "original_workspace_path": "acg720_bmi088_port/sensor/range_height_estimate.v",
+      "sha256": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/sensor/range_reader.v",
+      "original_workspace_path": "acg720_bmi088_port/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/telemetry_tx.v",
+      "original_workspace_path": "acg720_bmi088_port/telemetry_tx.v",
+      "sha256": "0be58c8ccbda37172217605200812f872311c613f62554b470e38031b736c91f",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/build.tcl",
+      "original_workspace_path": "acg720_bmi088_port/build.tcl",
+      "sha256": "c45a0cdc92bf5ef481cae29946f175d4b6a060f732f80736eede607cc5e97607",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/core/NOTICE_PX4.txt",
+      "original_workspace_path": "acg720_ano_port/core/NOTICE_PX4.txt",
+      "sha256": "4f8d7f1b8bce41d1db4f054daa9b35eb59215d150542673b43b2afe8933bf0f1",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/acg720_bmi088_port/sensor/UPSTREAM_LICENSE.txt",
+      "original_workspace_path": "acg720_ano_port/sensor/UPSTREAM_LICENSE.txt",
+      "sha256": "d1bc9fc0dd202dc8046b2e1d38ea1fc3ae8b185c15ef79acad7e77d0e49e92cd",
+      "kind": "copied",
+      "source_evidence": []
+    },
+    {
+      "export_path": "05-bmi088/README.md",
+      "original_workspace_path": null,
+      "sha256": "5710fabc03ab59f81637adc2c03a4c8bebfcd57a06d497cfa3a1b96ea58d85fb",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_bmi088_port/README.md",
+        "bmi088_adaptation_20261014/prepare_project.py",
+        "bmi088_adaptation_20261014/hardware_summary_20261014.json"
+      ]
+    },
+    {
+      "export_path": "05-bmi088/evidence_summary.json",
+      "original_workspace_path": null,
+      "sha256": "4ded14657a41705a380acbcb84f2f80673d34f2a0eae24d0230b234486b5ab6f",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_bmi088_port/README.md",
+        "bmi088_adaptation_20261014/prepare_project.py",
+        "bmi088_adaptation_20261014/hardware_summary_20261014.json"
+      ]
+    },
+    {
+      "export_path": "README.md",
+      "original_workspace_path": null,
+      "sha256": "bd5d6def20644378e1a8bce91e10ca4e30a939f9073cb1d7a945091726912504",
+      "kind": "derived_documentation",
+      "source_evidence": [
+        "acg720_smoke_test/README.md",
+        "acg720_ppm_check/README.md",
+        "acg720_imu_check/README.md",
+        "acg720_attitude_bench/README.md",
+        "acg720_control_bench/README.md",
+        "acg720_motor_bench/README.md",
+        "acg720_flight_monitor_bench/validation.json",
+        "acg720_ano_port/validation.json",
+        "acg720_ano_port/PORT_NOTES.txt",
+        "acg720_dashboard/README.md",
+        "acg720_bmi088_port/README.md",
+        "bmi088_adaptation_20261014/prepare_project.py",
+        "bmi088_adaptation_20261014/hardware_summary_20261014.json"
+      ]
+    }
+  ],
+  "gprj_checks": [
+    {
+      "gprj": "01-bringup/acg720_smoke_test/acg720_smoke.gprj",
+      "reference_count": 3,
+      "missing": []
+    },
+    {
+      "gprj": "01-bringup/acg720_ppm_check/acg720_ppm_check.gprj",
+      "reference_count": 4,
+      "missing": []
+    },
+    {
+      "gprj": "02-imu-attitude/acg720_imu_check/acg720_imu_check.gprj",
+      "reference_count": 3,
+      "missing": []
+    },
+    {
+      "gprj": "02-imu-attitude/acg720_attitude_bench/acg720_attitude_bench.gprj",
+      "reference_count": 9,
+      "missing": []
+    },
+    {
+      "gprj": "03-control-motor/acg720_control_bench/acg720_control_bench.gprj",
+      "reference_count": 14,
+      "missing": []
+    },
+    {
+      "gprj": "03-control-motor/acg720_motor_bench/acg720_motor_bench.gprj",
+      "reference_count": 15,
+      "missing": []
+    },
+    {
+      "gprj": "04-monitor-ano/acg720_flight_monitor_bench/acg720_flight_monitor_bench.gprj",
+      "reference_count": 27,
+      "missing": []
+    },
+    {
+      "gprj": "04-monitor-ano/acg720_ano_port/acg720_ano_port.gprj",
+      "reference_count": 33,
+      "missing": []
+    },
+    {
+      "gprj": "05-bmi088/acg720_bmi088_port/acg720_ano_port.gprj",
+      "reference_count": 33,
+      "missing": []
+    }
+  ],
+  "missing_references": [],
+  "license_review": "ANO-derived permissions unresolved; original heads and available notices retained; no complete third-party reference libraries exported"
+}
