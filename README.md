@@ -1,4 +1,8 @@
-# ACG720 FPGA 四旋翼飞控开发与验证
+<p align="center">
+  <img src="assets/branding/gm-fly.png" alt="GM-FLY 项目标志" width="180">
+</p>
+
+# GM-FLY · ACG720 FPGA 四旋翼飞控开发与验证
 
 面向嵌赛高云赛道的 ACG720 / Gowin GW5AT-60K 四旋翼飞控工程，重点展示 FPGA 并行传感器接口、定点 RTL 姿态与飞行控制、资源与时序收敛，以及可追溯的验证流程。系统接入 BMI088、MTF-01P 光流/测距和 SiK 无线遥测，配套本地网页与日志分析工具。
 
