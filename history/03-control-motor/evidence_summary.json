@@ -1,0 +1,14 @@
+{
+  "scope": "Historical evidence summary only; not qualification of exported source",
+  "summary": "控制README第60行起记载15:10虚拟控制基线，第194行记载60ms一致时限与9FB9构建。电机README第56行记载20:15四路短时转动，第62、64行记录SWA停止与无线失联台架。仅为各次拆桨台架证据；失联恢复低油门/SWA高档情形的自动重解锁风险未被记录排除。",
+  "sources": [
+    {
+      "workspace_relative_path": "acg720_control_bench/README.md",
+      "sha256": "cef7258d097e5545ebc6b8eea033c70909ace4c91303d005d7a8f737750996e2"
+    },
+    {
+      "workspace_relative_path": "acg720_motor_bench/README.md",
+      "sha256": "69445e4b072b1ea9b463ada5a6f5695c53dfdb145983b673ba1ceff08cb7f314"
+    }
+  ]
+}
