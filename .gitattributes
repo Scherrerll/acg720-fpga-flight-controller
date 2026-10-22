@@ -1,0 +1,7 @@
+# Preserve exported source/evidence bytes and their SHA-256 across clones.
+# Do not normalize historical CRLF/LF files during git add or checkout.
+* -text
+*.v linguist-language=Verilog
+firmware/B0AE/tests/* linguist-generated=true
+**/provenance/* linguist-generated=true
+

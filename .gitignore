@@ -1,0 +1,21 @@
+# Hardware build products, runtime logs and local tools
+**/impl/
+**/__pycache__/
+*.py[cod]
+*.vvp
+*.exe
+*.dll
+*.fs
+*.gprj.user
+.venv/
+.tools/
+out/
+runtime/
+flight_logs/
+flights/
+.env
+.env.*
+*.pem
+*.key
+*.token
+
