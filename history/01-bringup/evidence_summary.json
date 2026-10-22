@@ -1,0 +1,14 @@
+{
+  "scope": "Historical evidence summary only; not qualification of exported source",
+  "summary": "Smoke README称第一次下载验证，未提供明确日期；PPM README第24行明确记载2026-10-09以Gowin V1.9.12.04编译、SRAM下载完成。Smoke在PPM之前是文档步骤顺序，不是独立时间戳证明。",
+  "sources": [
+    {
+      "workspace_relative_path": "acg720_smoke_test/README.md",
+      "sha256": "4a7f63a0cf180fdcfdefd07c2a9ea9007a126892468f2dfadf346b2f3acc80a7"
+    },
+    {
+      "workspace_relative_path": "acg720_ppm_check/README.md",
+      "sha256": "ff0a75c682c1025b75b791dceb172d62559e00b07064860f8f7203fcd0d2cbee"
+    }
+  ]
+}

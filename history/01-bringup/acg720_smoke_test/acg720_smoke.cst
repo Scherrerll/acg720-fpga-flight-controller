@@ -1,0 +1,7 @@
+// ACG720 138K/60K common board: 50 MHz oscillator and onboard LED2.
+// The GW5AT-60 PG484A pinout confirms Y18 is a clock-capable I/O
+// and L21 is a general-purpose I/O. Both board nets are 3.3 V.
+IO_LOC "clk50" Y18;
+IO_PORT "clk50" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "led2" L21;
+IO_PORT "led2" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
