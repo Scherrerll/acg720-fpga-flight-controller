@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "scope": "USB physical receive -> logging -> ZIP/CSV/analysis -> raw replay",
+  "source": {
+    "port": "COM23",
+    "baud": 115200,
+    "source": "USB",
+    "usb_device": null
+  },
+  "wireless_accepted": false,
+  "snapshot": {
+    "passed": true,
+    "raw_bytes": 104128,
+    "decoded_frames": 1026,
+    "primary_frames": 342,
+    "checksum_errors": 0,
+    "source": {
+      "port": "COM23",
+      "baud": 115200,
+      "source": "USB",
+      "usb_device": null
+    },
+    "reported_build_id": null,
+    "hash_files": 5,
+    "snapshot_utc": "2026-10-18T06:17:01.710956+00:00"
+  },
+  "receiver_status": {
+    "session_id": "20261018T061447Z_fe9ebe09",
+    "source": {
+      "port": "COM23",
+      "baud": 115200,
+      "source": "USB",
+      "usb_device": null
+    },
+    "bytes": 103968,
+    "frames": 1026,
+    "primary_frames": 342,
+    "queue_depth": 0,
+    "error": null,
+    "dropped_chunks": 0,
+    "dropped_bytes": 0,
+    "missing_primary_frames": 0,
+    "duplicates": 0,
+    "closed": false,
+    "receiver_checksum_errors": 0,
+    "ingest_latency_p95_ms": 0.1774
+  },
+  "flight_info": null,
+  "state_fresh": true,
+  "serial_writes": false,
+  "analysis_samples": 344,
+  "csv_bytes": 42744,
+  "archive": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\sik_b0a0\\host_acceptance_20261018T061701Z.zip",
+  "flight_acceptance": false
+}
