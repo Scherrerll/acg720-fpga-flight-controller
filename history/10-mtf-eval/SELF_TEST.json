@@ -1,0 +1,7 @@
+{
+  "generated_utc": "2026-10-22T01:27:27.110813+00:00",
+  "command": "python micolink_monitor.py --self-test",
+  "exit_code": 0,
+  "stdout": "SELF_TEST PASS: 5 frames decoded, checksum corruption rejected",
+  "scope": "Exported standalone tool offline parser self-test only; no hardware accessed."
+}
