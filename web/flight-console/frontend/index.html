@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="GM-FLY · ACG720 FPGA 飞控，只读遥测与日志分析地面站">
+  <meta property="og:title" content="GM-FLY · ACG720 飞行遥测">
+  <meta property="og:image" content="https://acg720-flight-console.bloomybowl256.chatgpt.site/gm-fly.png">
+  <title>GM-FLY · ACG720 飞行遥测</title>
+  <link rel="icon" type="image/svg+xml" href="/gm-fly-mark.svg">
+  <link rel="apple-touch-icon" href="/gm-fly.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#live" aria-label="GM-FLY · ACG720 飞行遥测"><img class="brand-logo" src="/gm-fly-mark.svg" alt="" width="46" height="46"><img class="brand-wordmark" src="/gm-fly-wordmark.svg" alt="GM-FLY" width="126" height="26"><span class="brand-detail">ACG720 飞行遥测</span></a>
+    <div class="top-status"><span id="connection" class="connection"><i></i><span>等待数据</span></span><span class="top-divider"></span><span id="firmware">固件 —</span><span id="sequence" class="desktop-only">SEQ —</span></div>
+    <div class="top-end"><span class="readonly">只读监控</span><span id="access-mode">正在连接</span><time id="clock">—</time></div>
+  </header>
+  <div class="app-shell">
+    <nav class="rail" aria-label="主导航">
+      <a href="#live" id="nav-live" class="nav-item active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><span>实时</span></a>
+      <a href="#logs" id="nav-logs" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6M9 7h3"/></svg><span>日志分析</span></a>
+      <div class="rail-bottom"><span class="rail-line"></span><span>FPGA</span><span class="rail-version">CONSOLE / 01</span></div>
+    </nav>
+    <main>
+      <section id="live-view" aria-labelledby="live-title">
+        <div class="page-heading"><div><p class="eyebrow">TELEMETRY / LIVE</p><h1 id="live-title">实时监控</h1></div><div class="heading-meta"><span id="sample-time">尚未收到遥测</span><span id="age">—</span></div></div>
+        <div id="stale-banner" class="status-banner" role="status">等待遥测连接。所有读数均来自接收数据。</div>
+        <div class="live-layout">
+          <div class="live-main">
+            <section class="panel flight-panel" aria-labelledby="attitude-title">
+              <div class="panel-heading"><h2 id="attitude-title">姿态与运动</h2><span id="value-state" class="muted">无数据</span></div>
+              <div id="instrument-content" class="instrument-content is-stale">
+                <div class="horizon-wrap">
+                  <svg id="horizon" class="horizon" viewBox="0 0 400 280" role="img" aria-label="姿态仪，等待有效姿态数据">
+                    <defs><clipPath id="horizon-clip"><rect x="38" y="20" width="324" height="240" rx="3"/></clipPath></defs>
+                    <g clip-path="url(#horizon-clip)"><rect x="38" y="20" width="324" height="240" fill="#1e2933"/><g id="attitude-rotation"><g id="attitude-pitch"><rect x="-200" y="-500" width="800" height="640" fill="#253c4b"/><rect x="-200" y="140" width="800" height="640" fill="#3d3933"/><path d="M-200 140H600" stroke="#b8c4cd" stroke-width="1.4"/><g id="pitch-ladder"></g></g></g><path d="M38 140h40m244 0h40" stroke="#6d8493" stroke-width="1"/></g>
+                    <path d="M156 140h30l14 9 14-9h30" stroke="#ecf0f2" stroke-width="3" fill="none"/><circle cx="200" cy="140" r="3" fill="#ecf0f2"/>
+                    <path d="M123 38a97 97 0 0 1 154 0" fill="none" stroke="#8b9ba6"/><path d="M200 24l-5 9h10z" fill="#e5ebef"/>
+                    <text x="46" y="250" class="svg-label">ROLL</text><text x="354" y="250" text-anchor="end" class="svg-label">PITCH</text><text id="horizon-roll" x="46" y="233" class="svg-number">—</text><text id="horizon-pitch" x="354" y="233" text-anchor="end" class="svg-number">—</text>
+                  </svg>
+                  <div class="yaw-strip"><span>相对航向</span><div><strong id="yaw-value">—</strong><span>°</span></div><span class="muted">无绝对航向参考</span></div>
+                </div>
+                <div class="flight-numbers">
+                  <div class="primary-reading"><span>融合高度</span><div><strong id="height-value">—</strong><span>m</span></div><small>导航高度估计</small></div>
+                  <div class="primary-reading"><span>水平速度</span><div><strong id="speed-value">—</strong><span>m/s</span></div><small>光流 / 状态估计</small></div>
+                  <dl class="compact-readings"><div><dt>水平速度 X</dt><dd><b id="vx-value">—</b> <span>m/s</span></dd></div><div><dt>水平速度 Y</dt><dd><b id="vy-value">—</b> <span>m/s</span></dd></div><div><dt>垂直速度 Z</dt><dd><b id="vz-value">—</b> <span>m/s</span></dd></div></dl>
+                </div>
+              </div>
+              <div class="mode-strip"><div><span>运行状态</span><strong id="armed-value">—</strong></div><div><span>控制模式</span><strong id="mode-value">—</strong></div><div><span>模式请求</span><strong id="requested-value">—</strong></div><div><span>XY / Z</span><strong id="axes-value">— / —</strong></div></div>
+            </section>
+            <section class="panel live-traces" aria-labelledby="traces-title"><div class="panel-heading"><h2 id="traces-title">近期趋势</h2><span class="muted">接收时间 · 最近 60 s</span></div><p id="live-scale-help" class="chart-help">图内滚轮缩放纵轴，按住鼠标左键上下拖动平移；恢复默认后自动适配。</p><div class="trace-heading"><span><i class="series-roll_deg" aria-hidden="true"></i>横滚</span><span><i class="series-pitch_deg" aria-hidden="true"></i>俯仰</span><span class="chart-unit">姿态 / °</span><button id="reset-attitude-scale" type="button" class="button chart-reset" aria-controls="live-attitude-chart" aria-label="恢复姿态曲线默认比例尺" disabled>恢复默认</button></div><canvas id="live-attitude-chart" class="live-chart" role="img" tabindex="0" aria-describedby="live-scale-help" aria-label="最近60秒横滚和俯仰曲线，滚轮缩放，鼠标上下拖动平移，按0恢复默认比例尺"></canvas><div class="trace-heading"><span><i class="series-height_m" aria-hidden="true"></i>融合高度</span><span class="chart-unit">融合高度 / m</span><button id="reset-height-scale" type="button" class="button chart-reset" aria-controls="live-height-chart" aria-label="恢复高度曲线默认比例尺" disabled>恢复默认</button></div><canvas id="live-height-chart" class="live-chart height-chart" role="img" tabindex="0" aria-describedby="live-scale-help" aria-label="最近60秒融合高度曲线，滚轮缩放，鼠标上下拖动平移，按0恢复默认比例尺"></canvas></section>
+          </div>
+          <aside class="telemetry-sidebar" aria-label="系统遥测">
+            <section class="panel"><div class="panel-heading"><h2>数据有效性</h2><span class="muted">当前帧</span></div><dl id="health-list" class="health-list"></dl><p id="reason-text" class="reason-text">等待状态信息</p></section>
+            <section class="panel"><div class="panel-heading"><h2>四路电机输出</h2><span class="muted">µs · 命令值</span></div><div id="motors" class="motors"></div><p class="panel-note">PWM 命令不代表实测转速</p></section>
+            <section class="panel"><div class="panel-heading"><h2>遥控输入</h2><span id="rc-valid" class="muted">—</span></div><div class="throttle-row"><span>CH3 油门</span><strong id="throttle-value">—</strong><span>µs</span></div><div id="channels" class="channels"></div></section>
+            <section class="panel recording-panel"><div class="panel-heading"><h2>接收记录</h2><span id="recording-active" class="muted">—</span></div><dl class="recording-stats"><div><dt>完整帧</dt><dd id="record-frames">—</dd></div><div><dt>序号缺口</dt><dd id="record-missing">—</dd></div><div><dt>解码错误</dt><dd id="record-errors">—</dd></div><div><dt>序号重置</dt><dd id="record-resets">—</dd></div></dl></section>
+          </aside>
+        </div>
+      </section>
+      <section id="logs-view" aria-labelledby="logs-title" hidden>
+        <div class="page-heading"><div><p class="eyebrow">TELEMETRY / REVIEW</p><h1 id="logs-title">日志分析</h1></div><button id="refresh-logs" class="button">刷新列表</button></div>
+        <div class="review-layout"><aside class="panel log-browser" aria-label="日志列表"><div class="panel-heading"><h2>接收日志</h2><span id="log-count" class="muted">—</span></div><div id="log-list" class="log-list"><p class="empty-note">正在获取日志列表…</p></div><p class="panel-note">仅展示可访问的接收日志</p></aside>
+          <div class="review-main"><section class="panel review-toolbar"><div class="review-title"><h2 id="selected-log-title">选择一份日志</h2><span id="log-summary" class="muted">在左侧选择记录以查看曲线</span></div><div class="review-actions"><a id="download-csv" class="button" hidden>下载 CSV</a><button id="share-log" class="button accent" hidden disabled>分享此日志</button></div></section>
+            <p id="log-message" class="log-message" role="status">日志读取后可选择字段，并用时间轴逐帧回看。</p>
+            <section class="panel plot-panel"><div class="panel-heading"><h2>同步时序曲线</h2><div class="chart-tools"><span class="muted">不同单位分轴 · 同一时间轴</span><button id="reset-log-scale" type="button" class="button chart-reset" aria-controls="log-chart" disabled>恢复默认</button></div></div><p id="log-scale-help" class="chart-help">图内滚轮缩放、按住鼠标左键上下拖动该单位纵轴；按 0 或点恢复默认。</p><fieldset id="field-selector" class="field-selector" aria-label="选择要绘制的字段" disabled><legend class="sr-only">选择要绘制的字段</legend></fieldset><div class="plot-scroll"><canvas id="log-chart" class="log-chart" role="img" tabindex="0" aria-describedby="log-scale-help" aria-label="日志时序曲线。滚轮缩放纵轴，鼠标上下拖动平移，按0恢复默认，使用下方时间滑条调整回看位置。"></canvas></div><div class="playback"><button id="play-log" class="button play-button" disabled aria-label="播放日志">播放</button><time id="play-time">00:00.0</time><input id="timeline" type="range" min="0" max="0" value="0" step="0.02" disabled aria-label="日志回放时间（秒）"><time id="total-time">00:00.0</time><label class="speed-select"><span class="sr-only">回放速度</span><select id="play-speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="0.5">0.5×</option></select></label></div><div id="cursor-readings" class="cursor-readings"><span class="muted">无选中数据</span></div></section>
+          </div></div>
+      </section>
+      <footer><span>ACG720 / GW5AT · 接收端监控</span><span>仅读取遥测，不发送飞控指令</span></footer>
+    </main>
+  </div>
+</body>
+</html>

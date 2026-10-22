@@ -1,0 +1,79 @@
+{
+  "provider": "Tencent EdgeOne Makers",
+  "project_id": "makers-pgx1ueruoas8",
+  "project_name": "gmfly-flight-console-test",
+  "deployment_id": "dpuiqjnbrjkm",
+  "default_url": "https://gmfly-flight-console-test-yhasagv5.edgeone.dev",
+  "test_hostname": "test.gmflylog.com",
+  "area": "overseas",
+  "cloud_region": "ap-hongkong",
+  "platform_build": "success",
+  "acceptance": "complete_apex_mainland_no_vpn_live_confirmed",
+  "local_checks": {
+    "javascript_tests_passed": 20,
+    "python_tests_passed": 16
+  },
+  "production_dns_switched": true,
+  "live_relay_switched": true,
+  "test_dns": "cname_saved_and_resolved",
+  "https_certificate": "test_domain_https_active",
+  "health": {
+    "ok": true,
+    "storage_ready": true
+  },
+  "module_mime_compatibility": "published_module_copies_use_js_extension",
+  "acceptance_evidence": {
+    "synthetic_api_smoke": "passed_on_dpsnx_same_runtime_normalization",
+    "final_health": "200_storage_ready_true",
+    "final_live": "200_fresh_valid_telemetry",
+    "mainland_no_vpn": "user_confirmed_test_domain_opens_with_valid_telemetry",
+    "temporary_authenticated_probe": "removed_in_final_deployment",
+    "initial_empty_cloud": "passed_fresh_false_before_relay_activation",
+    "apex_tls": "normal_verified",
+    "apex_full_synthetic_smoke": "all_passed_including_cleanup",
+    "apex_live": "three_fresh_samples_max_age_1150ms_sequence_increasing",
+    "apex_mainland": "user_confirmed_exact_https_apex_check_url_new_phone_tab_no_vpn_GM_FLY_page_and_live_values_normal",
+    "large_synthetic_log": {
+      "samples": 12000,
+      "upload_status": 200,
+      "read_count_and_endpoints": "passed",
+      "csv_data_rows": 12000,
+      "cleanup_status": 404
+    },
+    "response_wire_gzip": "content_encoding_absent_even_when_gzip_accepted_gateway_treatment_unverified",
+    "server_response_limit": "5MiB_explicit_error_no_silent_truncation",
+    "previous_screenshot_issue": "prior_chatgpt_site_entry_or_cache_current_receiver_bridge_and_apex_html_checked_no_old_host_links",
+    "screenshot": "../gmflylog-live-verified.png"
+  },
+  "relay_status": {
+    "current": {
+      "pid": 19860,
+      "local_port": 8766,
+      "site_url": "https://gmflylog.com",
+      "sharing_enabled": true
+    },
+    "previous_original": {
+      "pid": 63588,
+      "stopped": true
+    },
+    "previous_test": {
+      "pid": 33764,
+      "stopped": true
+    },
+    "receiver": {
+      "pid": 45828,
+      "untouched": true
+    },
+    "new_start_default_sharing_enabled": false
+  },
+  "runtime_normalization": "rebuild_native_Request_using_Request_prototype_body_getter_to_avoid_EdgeOne_body_and_signal_shadowing",
+  "apex_dns": {
+    "cname": "gmflylog.com.pages.dnsoe6.com",
+    "public_resolution": "verified",
+    "old_a_records": "two_paused_retained",
+    "verification_txt": "retained"
+  },
+  "apex_https_certificate": "normal_verified",
+  "historical_cloud_logs_migrated": false,
+  "log_sharing": "selected_logs_only_never_automatic"
+}

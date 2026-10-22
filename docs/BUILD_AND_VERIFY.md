@@ -18,6 +18,20 @@ Python 3.10+、pyserial 3.5。见 [ground/README.md](../ground/README.md)。离�
 python -B -m unittest discover -s ground -p "test_*.py" -v
 ```
 
+## 分享网站
+
+Node.js 20.18+、Python 3.10+。在 `web/flight-console/` 执行：
+
+```sh
+npm ci
+npm test
+npm run build
+cd local
+python -B -m unittest test_bridge.py
+```
+
+网页测试使用内存或本地 mock，不接串口、不发布真实遥测。归档时 20 项 Node、16 项 Python 测试通过；实际部署与公网验收记录见 [deployment.json](../web/flight-console/deployment.json)。网站源码不属于上面旧工程导出清单的哈希核验范围。部署凭证、发布令牌和私人飞行日志不入库。
+
 ## 选择性 RTL 回放
 
 安装 Icarus Verilog，使 `iverilog` 和 `vvp` 在 PATH，或显式指定路径：
