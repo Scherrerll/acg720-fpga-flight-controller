@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/branding/gm-fly.png" alt="GM-FLY 项目标志" width="180">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/branding/gm-fly-dark.svg">
+    <img src="assets/branding/gm-fly.svg" alt="GM-FLY 项目标志" width="180">
+  </picture>
 </p>
 
 # GM-FLY · ACG720 FPGA 四旋翼飞控开发与验证
