@@ -1,0 +1,212 @@
+{
+  "schema": "acg720.portable-ground-export.v1",
+  "files": [
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/analysis.py",
+      "source_sha256": "a61ec0682d57bc20cf2dc20e81483aeac60a2faf7b1a1969439ff86b08c51f62",
+      "export": "ground/analysis.py",
+      "export_sha256": "a61ec0682d57bc20cf2dc20e81483aeac60a2faf7b1a1969439ff86b08c51f62",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/dashboard.html",
+      "source_sha256": "7c129e19f043bb0645f1403a2205fa65fb4b7bdc96c4283e7d3acbafcee87cd8",
+      "export": "ground/dashboard.html",
+      "export_sha256": "7c129e19f043bb0645f1403a2205fa65fb4b7bdc96c4283e7d3acbafcee87cd8",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/dashboard.js",
+      "source_sha256": "bdbde38c12136b6541c4715d27967c8cfaddbfcf5bbfea3f4b7b808f75c6d90b",
+      "export": "ground/dashboard.js",
+      "export_sha256": "bdbde38c12136b6541c4715d27967c8cfaddbfcf5bbfea3f4b7b808f75c6d90b",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/logs-ui.html",
+      "source_sha256": "72382abf04fb13e725e32f49f933e263e06edc6dcdf7c912e009fe43870cad90",
+      "export": "ground/logs-ui.html",
+      "export_sha256": "72382abf04fb13e725e32f49f933e263e06edc6dcdf7c912e009fe43870cad90",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/logs.js",
+      "source_sha256": "121882f31a2621e03e5494b8672748a40adfcb681cf5e7b9c6c3a1c96591ec34",
+      "export": "ground/logs.js",
+      "export_sha256": "121882f31a2621e03e5494b8672748a40adfcb681cf5e7b9c6c3a1c96591ec34",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/mtf_protocol.py",
+      "source_sha256": "b39f7955f27984b593339e1caf2d80d9f693a7f9abaade5f4a0b9276094cf65b",
+      "export": "ground/mtf_protocol.py",
+      "export_sha256": "b39f7955f27984b593339e1caf2d80d9f693a7f9abaade5f4a0b9276094cf65b",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/mtf-ui.js",
+      "source_sha256": "c9be0959f98e04b85f1f2d886d16499e2a32a76356fd3a81f07457ccd47d98b1",
+      "export": "ground/mtf-ui.js",
+      "export_sha256": "c9be0959f98e04b85f1f2d886d16499e2a32a76356fd3a81f07457ccd47d98b1",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/nav_protocol.py",
+      "source_sha256": "35021fb3316baacf371cca167cee0fa423a71ce070fb0b352f6092165ba77763",
+      "export": "ground/nav_protocol.py",
+      "export_sha256": "35021fb3316baacf371cca167cee0fa423a71ce070fb0b352f6092165ba77763",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/recorder.py",
+      "source_sha256": "0d14b8f99bbaec95a7d55d94140037ad22b50be680eeded980977cf97f3c18cf",
+      "export": "ground/recorder.py",
+      "export_sha256": "0d14b8f99bbaec95a7d55d94140037ad22b50be680eeded980977cf97f3c18cf",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/rotation_protocol.py",
+      "source_sha256": "dc60a997ccd3a0f4779937845cfcaa1098b62d940ab42923675f1c2bc9c4123e",
+      "export": "ground/rotation_protocol.py",
+      "export_sha256": "dc60a997ccd3a0f4779937845cfcaa1098b62d940ab42923675f1c2bc9c4123e",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/telemetry-ui.js",
+      "source_sha256": "19a632be2f5f893f22a1f3e3b301a6cbf9f74016727686407b864c8bcc92733f",
+      "export": "ground/telemetry-ui.js",
+      "export_sha256": "19a632be2f5f893f22a1f3e3b301a6cbf9f74016727686407b864c8bcc92733f",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/ui.css",
+      "source_sha256": "4d581350fefe11f8c174119bd5c4cde3b760ba81a6cc559eec68dbf00c08dfc0",
+      "export": "ground/ui.css",
+      "export_sha256": "4d581350fefe11f8c174119bd5c4cde3b760ba81a6cc559eec68dbf00c08dfc0",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/verify_log.py",
+      "source_sha256": "f9fb3d14560a2a3210abf95c44e05411548cd7481133754ab964cf04a722c9ec",
+      "export": "ground/verify_log.py",
+      "export_sha256": "f9fb3d14560a2a3210abf95c44e05411548cd7481133754ab964cf04a722c9ec",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/test_ano_control.py",
+      "source_sha256": "7f5f86f3494de41145920595b2f394acd3ec9fac7518d1e9a77787959f478c63",
+      "export": "ground/test_ano_control.py",
+      "export_sha256": "7f5f86f3494de41145920595b2f394acd3ec9fac7518d1e9a77787959f478c63",
+      "changes": "Byte-for-byte source copy"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/protocol.py",
+      "source_sha256": "56dea89e381d78da66981f042a98c7236db55d9bc220a5478030375b475cb333",
+      "export": "ground/protocol.py",
+      "export_sha256": "27aeb7d9314c989f55eb4e89378185a6853901cefeacfc14e17924c724cccb62",
+      "changes": "Load bundled adjacent support; remove ancestor workspace discovery"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/ground_server.py",
+      "source_sha256": "76ab911f867b59f216cb3678d7b70ef9aba3558bd95040c9bcfbcc78294f301b",
+      "export": "ground/ground_server.py",
+      "export_sha256": "57716ec6ae021982c2d499d2d15b2d6dfc15de19f5544f979cb9baac0114399f",
+      "changes": "Explicit serial device/log directory; offline skips serial enumeration and source switching; in-export logs restricted to ignored ground/runtime; loopback and command rejection retained"
+    },
+    {
+      "source": "acg720_dashboard/server.py",
+      "source_sha256": "06c462cb1d87475585baf6da71f6b1073d9520de2f5000a31ccae21b6a4cbe83",
+      "export": "support/server.py",
+      "export_sha256": "d3108b6af4485e0e94e620e01da9a0d53e131309d253ebc6ebe5a4775072b96a",
+      "changes": "Keep packet receiver/normalization/dashboard; disabled calibration object; omit serial/demo/firmware workers; minimal loopback HTTP base without commands"
+    },
+    {
+      "source": "bmi088_adaptation_20261014/bmi_dashboard.py",
+      "source_sha256": "a5d3d7df9a26c537983abc85edab59579bee9ae49ed263fa06db14498edf7928",
+      "export": "support/bmi_dashboard.py",
+      "export_sha256": "23b6ee90ae97180ba605de4d5db79962bf04ae2e64644027adcceb8281ed37f1",
+      "changes": "Bundle paths; omit serial entry point/local calibration receipts; preserve disabled calibration and BMI decoding"
+    },
+    {
+      "source": "acg720_bmi088_port/monitor_control.py",
+      "source_sha256": "92e779ba25f80817d37c3ac871dfd7ffabeb838321c1d276e790826be79ca0bd",
+      "export": "support/monitor_control.py",
+      "export_sha256": "86e85a2ade33bb83c8a089cbea32f684388280e97ee6b395d851f4455e803078",
+      "changes": "Keep pure decoders and validators; omit serial collection/output CLI"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/launch.py",
+      "source_sha256": "134799e8d4e3853847afa1a1bb1786c070afe13200273131f0815a9ac8c285d3",
+      "export": "ground/launch.py",
+      "export_sha256": "8068279d44c559e812e35bb442ed878991291da99a7cc831a0b20edff3511451",
+      "changes": "Replace original fixed-port/background launcher with direct portable CLI forwarding"
+    },
+    {
+      "source": "routing_rescue_20261015/mtf01p_b0ae_ano_control/variants/mask_retimed_f200_rep0_map2_r2/ground/start_monitor.cmd",
+      "source_sha256": "341927114a537ad03818be3f60ccb948e118c8e660dc3e0976e93b7dda31a9e0",
+      "export": "ground/start_monitor.cmd",
+      "export_sha256": "410b75c34460b3f034b007fa6f9e254a4c4cc4844c2f3c1d332fbc96763447ba",
+      "changes": "Forward explicit CLI options using script-relative entry point"
+    }
+  ],
+  "excluded": [
+    "test_system.py: machine/log dependencies",
+    "test_mtf.py: imports historical test_system",
+    "test_review_fixes.py: original fixture dependency",
+    "logs.html: unused legacy page",
+    "launch.py: fixed original COM/HTTP ports/browser launcher",
+    "start_monitor.cmd: replaced portable entry point",
+    "all raw flight logs, calibration receipts, caches, vendor runtimes"
+  ],
+  "generated_files": [
+    {
+      "export": "ground/README.md",
+      "sha256": "8093958d9861531d88c484d93ef8d0e6d7fbfb167cbe47cea7a6275f1e922c60",
+      "reason": "Portable setup, runtime isolation and precise verification scope"
+    },
+    {
+      "export": "ground/requirements.txt",
+      "sha256": "0b81718d1cbe8a7696e45a9388c9205272b5e345cd79d0cf1ccfb7a9fd1925e9",
+      "reason": "Only external Python runtime dependency"
+    },
+    {
+      "export": "ground/.gitignore",
+      "sha256": "0bb4d226b4a4ce9939c95f38e86d1080b80f8905e23fd1d8e07e7ed57b793228",
+      "reason": "Ignore runtime logs, bytecode and virtual environments"
+    },
+    {
+      "export": "support/.gitignore",
+      "sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+      "reason": "Ignore bytecode"
+    },
+    {
+      "export": "support/readonly_calibration.py",
+      "sha256": "492ce35335b6f811e729b5c2bf36da926c0c6e3bde7d432e1cda85ee07072a93",
+      "reason": "Disabled calibration seam without file access or aircraft actions"
+    },
+    {
+      "export": "ground/test_portable.py",
+      "sha256": "2507c95dcb659221c181b8baf68d9a4c1f1ff518d9905b7e55b54f5041c60fb9",
+      "reason": "Synthetic protocol/logging/HTTP/export proof with no listening sockets or serial device access"
+    }
+  ],
+  "verification": {
+    "tests": 8,
+    "result": "passed",
+    "command": "python -B -m unittest discover -s ground -p \"test_*.py\" -v",
+    "isolated_copy_result": "8 tests passed from temporary ground+support-only copy using Python isolated mode (-I)",
+    "scope": [
+      "synthetic primary/A580 CRC frames and fragmented stream resynchronization",
+      "temporary recorder raw bytes/decoded records and analysis",
+      "in-memory HTTP handler routes, loopback Host guard, blocked calibration/aircraft commands",
+      "CSV export and ZIP SHA/replay verification",
+      "offline mode forbids serial opening and device enumeration"
+    ],
+    "not_exercised": [
+      "real COM device",
+      "real browser/listening HTTP server",
+      "FPGA hardware",
+      "historical source tests requiring original logs"
+    ]
+  }
+}
