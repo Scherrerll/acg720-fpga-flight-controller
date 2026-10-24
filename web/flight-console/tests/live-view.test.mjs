@@ -49,8 +49,10 @@ test('latest live values and history update immediately, drawing eases briefly, 
   assert.equal(element('horizon-roll').textContent,'15.0°');
   assert.equal(element('height-value').textContent,'11.00');
   assert.equal(element('attitude-rotation').getAttribute('transform'),first,'numeric update does not wait for the drawing');
-  flushFrames(280);assert.equal(element('attitude-rotation').getAttribute('transform'),'rotate(-12.5,200,140)');
-  flushFrames(360);assert.equal(element('attitude-rotation').getAttribute('transform'),'rotate(-15,200,140)');
+  const drawnRoll=()=>-Number(element('attitude-rotation').getAttribute('transform').match(/rotate\(([^,]+)/)[1]);
+  flushFrames(280);const middle=drawnRoll();assert.ok(middle>10&&middle<15);
+  flushFrames(360);assert.ok(drawnRoll()>middle&&drawnRoll()<15);
+  assert.equal(element('horizon-roll').textContent,'15.0°','numeric labels remain the real latest value while the drawing follows');
   assert.equal(element('motor-value-1').textContent,'1201');assert.equal(element('armed-value').textContent,'未解锁');
   const series=(id,color)=>element(id).context.strokes.find(s=>s.color===color).path;
   const roll=series('live-orientation-chart','#2dd4bf');
@@ -106,15 +108,16 @@ test('latest live values and history update immediately, drawing eases briefly, 
   overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));flushFrames(650);
   assert.equal(element('horizon-roll').textContent,heldRoll);assert.equal(element('horizon-pitch').textContent,heldPitch);
   assert.match(element('pose-status').textContent,/最后有效值/);
-  // A healthy but slow cloud cadence must still ease to the latest pose.
+  // A slow cloud cadence must keep following after the old 160ms animation would have stopped.
   live.attitude={roll_deg:22,pitch_deg:30,yaw_deg:3};live.fresh=true;live.age_ms=100;live.sequence++;
   const beforeSlow=element('attitude-rotation').getAttribute('transform');await pollAt(3300);
   assert.equal(element('horizon-roll').textContent,'22.0°');
   assert.equal(element('attitude-rotation').getAttribute('transform'),beforeSlow,'2.6-second response spacing must not disable transitions');
-  flushFrames(3380);assert.equal(element('attitude-rotation').getAttribute('transform'),'rotate(-18.5,200,140)');
-  flushFrames(3460);assert.equal(element('attitude-rotation').getAttribute('transform'),'rotate(-22,200,140)');
+  flushFrames(3700);const late=drawnRoll();flushFrames(4100);assert.ok(drawnRoll()>late&&drawnRoll()<22,'graphical attitude still moves between slow packets');
+  assert.equal(element('horizon-roll').textContent,'22.0°');
+  assert.match(element('playback-status').textContent,/连续跟随/);
   overrides.location.hash='#logs';listeners.get('window:hashchange')();await new Promise(resolve=>setImmediate(resolve));
-  await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(3500);
+  await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(4200);
   assert.equal(element('tracking-axis').value,'roll');
   const checked=()=>element('field-selector').querySelectorAll('input').filter(input=>input.checked).map(input=>input.value).sort();
   assert.deepEqual(checked(),['roll_deg','roll_sp_deg']);

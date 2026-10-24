@@ -1,7 +1,7 @@
 'use strict';
 import {liveState} from './live-state.mjs';
 import {createLivePoller} from './polling.mjs';
-import {createLiveTween,createLivePose} from './live-playback.mjs';
+import {createLiveTween,createLiveFollower,createLivePose} from './live-playback.mjs';
 
 (() => {
   const $ = id => document.getElementById(id);
@@ -100,7 +100,7 @@ import {createLiveTween,createLivePose} from './live-playback.mjs';
   function liveStatus(){return liveState(state.live,{elapsedMs:Math.max(0,performance.now()-state.lastSuccess),requestRttMs:state.liveRtt});}
 
   const livePose = createLivePose();
-  const poseTransition = createLiveTween();
+  const poseTransition = createLiveFollower();
   const chartClock = createLiveTween({angularKeys:[]});
   const chartTransitions = new Map();
   let poseEpoch = null, poseStamp = null;
@@ -109,7 +109,7 @@ import {createLiveTween,createLivePose} from './live-playback.mjs';
     const now = performance.now(), pose = livePose.sample(now);
     if (pose?.epoch !== poseEpoch) { poseTransition.reset(); poseStamp = null; chartTransitions.clear(); poseEpoch = pose?.epoch; }
     const a = pose?.attitude || {}, m = state.live?.motion || {};
-    if (pose?.receivedAt !== poseStamp) { poseTransition.set(pose?.attitude, now, {snap:!state.animatePose}); poseStamp = pose?.receivedAt; }
+    if (pose?.receivedAt !== poseStamp) { poseTransition.set(pose?.attitude, now, {snap:!state.animatePose,sampleId:valid(state.live?.sequence)?`${pose?.epoch}:${state.live.sequence}`:null}); poseStamp = pose?.receivedAt; }
     const displayed = state.animatePose ? poseTransition.sample(now) || {} : a;
     // Readouts report the latest real sample immediately. Only the drawing eases.
     text('horizon-roll', valid(a.roll_deg) ? `${fmt(a.roll_deg)}°` : '等待');
@@ -122,15 +122,15 @@ import {createLiveTween,createLivePose} from './live-playback.mjs';
     for (const [id, value, digits] of [['yaw-value', a.yaw_deg, 1], ['height-value', m.height_m, 2], ['speed-value', m.speed_mps, 2]]) text(id, fmt(value, digits));
     const poseAge = valid(pose?.age_ms) ? pose.age_ms / 1000 : null;
     const held = pose?.retained || !liveStatus().recent;
-    text('pose-status', !pose ? '等待首个有效姿态' : `${held ? '姿态保留最后有效值' : '姿态为最新接收值'}${poseAge === null ? '' : ` · 估计源龄 ${poseAge.toFixed(1)} s`}`);
-    text('playback-status', `数值和曲线均按最新接收数据更新 · ${state.animatePose || state.smooth ? '画面短过渡 160 ms' : '画面即时切换'} · 无额外回放缓冲`);
+    text('pose-status', !pose ? '等待首个有效姿态' : `${held ? '姿态保留最后有效值' : '姿态数字为最新接收值'}${poseAge === null ? '' : ` · 估计源龄 ${poseAge.toFixed(1)} s`}`);
+    text('playback-status', `数值和曲线均按最新接收数据更新 · ${state.animatePose ? '姿态图连续跟随（图形有平滑滞后）' : '姿态图即时切换'} · 无额外回放缓冲`);
   }
   function stopVisuals() { if (animationId !== null) cancelAnimationFrame(animationId); animationId = null; }
   function startVisuals() {
     if (animationId !== null || document.hidden || state.page !== 'live') return;
     const frame = now => {
       if (document.hidden || state.page !== 'live') { animationId = null; return; }
-      if (now - lastVisualFrame >= 1000 / 60) {
+      if (now - lastVisualFrame >= 1000 / 60 - 1) {
         renderMotion(); lastVisualFrame = now;
         if (now - lastChartFrame >= 1000 / 30) { drawLive(); lastChartFrame = now; }
       }
@@ -160,7 +160,7 @@ import {createLiveTween,createLivePose} from './live-playback.mjs';
     $('mode-value').classList.toggle('is-stale', !recent);
     $('armed-value').classList.toggle('is-stale', !recent);
     $('stale-banner').className = `status-banner ${status.kind === 'delayed' ? 'playback' : fresh ? 'fresh' : 'stale'}`;
-    $('stale-banner').textContent = status.kind === 'delayed' ? '数据已接收，公网同步有延迟 · 当前显示最新接收值。' : fresh ? '只读遥测接收中 · 数值与曲线显示最新接收数据，画面短过渡。' : status.kind === 'source_invalid' ? '源遥测尚无有效更新 · 保留最后有效姿态，灰色读数不代表当前状态。' : status.kind === 'timing_unknown' ? '正在确认转发时间 · 保留最后有效姿态。' : status.kind === 'expired' ? '连接正常，当前数据更新延迟 · 保留最后有效值，等待新数据。' : data ? '遥测连接中断 · 正在重试，姿态保留最后有效值并显示数据年龄。' : '等待遥测连接 · 尚无有效接收数据。';
+    $('stale-banner').textContent = status.kind === 'delayed' ? '数据已接收，公网同步有延迟 · 当前显示最新接收值。' : fresh ? '只读遥测接收中 · 数字和曲线使用最新接收值，姿态图可连续跟随。' : status.kind === 'source_invalid' ? '源遥测尚无有效更新 · 保留最后有效姿态，灰色读数不代表当前状态。' : status.kind === 'timing_unknown' ? '正在确认转发时间 · 保留最后有效姿态。' : status.kind === 'expired' ? '连接正常，当前数据更新延迟 · 保留最后有效值，等待新数据。' : data ? '遥测连接中断 · 正在重试，姿态保留最后有效值并显示数据年龄。' : '等待遥测连接 · 尚无有效接收数据。';
     text('value-state', !pose ? '等待有效姿态' : recent && !pose.retained ? '最新接收' : '最后有效姿态');
     text('firmware', `固件 ${data?.firmware ?? '—'}`);
     text('sequence', `SEQ ${data?.sequence ?? '—'}`);

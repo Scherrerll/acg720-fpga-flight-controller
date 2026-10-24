@@ -24,6 +24,38 @@ export function createLiveTween({durationMs=160,maxGapMs=10000,angularKeys=['rol
  return {set,sample,reset};
 }
 
+// A short fixed tween finishes long before the next cloud packet. Follow the
+// latest endpoint continuously instead, adapting the response to real arrivals.
+// This changes the drawing only: no future attitude or queued history is used.
+export function createLiveFollower({initialIntervalMs=1000,maxGapMs=10000}={}){
+ let current=null,target=null,tick=null,received=null,lastId=null,interval=initialIntervalMs,intervals=0;
+ const reset=()=>{current=null;target=null;tick=null;received=null;lastId=null;interval=initialIntervalMs;intervals=0;};
+ function sample(now){
+  if(!target)return null;
+  const elapsed=Math.max(0,now-tick);tick=Math.max(tick,now);
+  const tau=Math.max(50,Math.min(700,interval*.28));
+  const fraction=-Math.expm1(-elapsed/tau);
+  current=Object.fromEntries(Object.entries(target).map(([key,value])=>{
+   if(!finite(value)||!finite(current?.[key]))return [key,value];
+   const delta=key==='roll_deg'||key==='yaw_deg'?angular(current[key],value,1)-current[key]:value-current[key];
+   return [key,Math.abs(delta)*(1-fraction)<.00001?value:current[key]+delta*fraction];
+  }));
+  return {...current};
+ }
+ function set(values,now,{snap=false,sampleId=null}={}){
+  if(!values){reset();return;}
+  if(sampleId!==null&&sampleId===lastId&&!snap)return;
+  sample(now);
+  const gap=received===null?null:Math.max(0,now-received);
+  if(gap!==null&&gap>0&&gap<=maxGapMs){interval=intervals?interval*.4+gap*.6:gap;intervals++;}
+  else if(gap!==null&&gap>maxGapMs){interval=initialIntervalMs;intervals=0;}
+  received=now;lastId=sampleId;target={...values};
+  if(!current||snap||gap>maxGapMs)current={...target};
+  tick=now;
+ }
+ return {set,sample,reset};
+}
+
 // Latest real attitude is independent of presentation transitions. Keep a
 // complete roll/pitch pair together; missing values never replace it with zero.
 export function createLivePose(){

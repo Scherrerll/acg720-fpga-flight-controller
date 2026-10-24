@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createLiveTween,createLivePose} from '../frontend/live-playback.mjs';
+import {createLiveTween,createLiveFollower,createLivePose} from '../frontend/live-playback.mjs';
 const point=(t,x=t/1000)=>({t,roll_deg:x,pitch_deg:x*2,yaw_deg:x,height_m:x,speed_mps:x});
 const packet=(history,extra={})=>({mode:'share',connected:true,source_valid:true,fresh:true,timing_valid:true,firmware:'B0B0',sequence:1,history,...extra});
 
@@ -67,4 +67,39 @@ test('pose epoch changes can reset drawing transitions; normal sequence wrap doe
  p.ingest(base,0);const epoch=p.sample(0).epoch;
  p.ingest({...base,sequence:0},500);assert.equal(p.sample(500).epoch,epoch);assert.equal(p.sample(500).receivedAt,500);
  p.ingest({...base,sequence:1,firmware:'B0B1'},1000);assert.notEqual(p.sample(1000).epoch,epoch);
+});
+
+
+test('1Hz attitude keeps moving between packets instead of stopping after 160ms',()=>{
+ const p=createLiveFollower();p.set({roll_deg:0},0);p.set({roll_deg:10},1000);
+ let previous=p.sample(1000).roll_deg,moving=0;
+ for(let t=1016;t<2000;t+=16){const value=p.sample(t).roll_deg;assert.ok(value>=previous&&value<=10);moving+=value-previous>1e-8;previous=value;}
+ assert.equal(moving,62,'every frame follows the received endpoint during the one-second interval');
+ assert.ok(p.sample(2000).roll_deg>9.7,'the latest endpoint is nearly reached before the next normal packet');
+ assert.equal(p.sample(20000).roll_deg,10,'no extrapolation after packets stop');
+});
+test('slow 2.6s arrivals keep moving and a new target starts at the displayed pose',()=>{
+ const p=createLiveFollower();p.set({roll_deg:0},0);p.set({roll_deg:10},2600);
+ assert.ok(p.sample(3000).roll_deg<p.sample(4000).roll_deg);
+ const before=p.sample(4500).roll_deg;p.set({roll_deg:-5},4500);
+ assert.equal(p.sample(4500).roll_deg,before);
+ const next=p.sample(4600).roll_deg;assert.ok(next<before&&next>-5);
+});
+test('fast local updates use a fast response and duplicate snapshots do not change cadence',()=>{
+ const a=createLiveFollower(),b=createLiveFollower();
+ for(const p of [a,b]){p.set({roll_deg:0},0,{sampleId:1});p.set({roll_deg:10},200,{sampleId:2});}
+ assert.ok(a.sample(400).roll_deg>9.7);
+ a.set({roll_deg:99},450,{sampleId:2});
+ assert.ok(Math.abs(a.sample(500).roll_deg-b.sample(500).roll_deg)<1e-10,'duplicate identity cannot reset cadence or replace the real endpoint');
+});
+test('continuous following respects short angular wrap, missing data and explicit instant mode',()=>{
+ const p=createLiveFollower();p.set({roll_deg:179,pitch_deg:null},0);p.set({roll_deg:-179,pitch_deg:3},1000);
+ const halfway=p.sample(1200);assert.ok(halfway.roll_deg>179&&halfway.roll_deg<181);assert.equal(halfway.pitch_deg,3);
+ p.set({roll_deg:null,pitch_deg:null},1300);assert.deepEqual(p.sample(1400),{roll_deg:null,pitch_deg:null});
+ p.set({roll_deg:30,pitch_deg:5},1500,{snap:true});assert.deepEqual(p.sample(1500),{roll_deg:30,pitch_deg:5});
+ p.reset();assert.equal(p.sample(1600),null);
+});
+test('long source gaps snap to a real sample without replaying old movement',()=>{
+ const p=createLiveFollower();p.set({roll_deg:0},0);p.set({roll_deg:10},1000);p.sample(1100);
+ p.set({roll_deg:50},12000);assert.equal(p.sample(12000).roll_deg,50);
 });
