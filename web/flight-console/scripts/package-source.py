@@ -9,7 +9,8 @@ files = [root / name for name in ('.gitignore', 'README.md', 'deployment.json', 
 for folder in ('frontend', 'worker', 'platform', 'cloud-functions', 'tests'):
     files.extend(p for p in (root / folder).rglob('*') if p.is_file() and p.suffix in ('.js', '.mjs', '.html', '.css', '.svg', '.png'))
 files.extend(root / 'local' / name for name in ('bridge.py', 'test_bridge.py', 'start-bridge.mjs', 'README.md',
-    'attitude_tracking.py', 'receiver_setpoints.py', 'test_attitude_tracking.py', 'test_receiver_setpoints.py'))
+    'attitude_tracking.py', 'receiver_setpoints.py', 'test_attitude_tracking.py', 'test_receiver_setpoints.py',
+    'keepalive.py', 'test_keepalive.py'))
 files.extend(root / 'scripts' / name for name in ('build-edgeone.mjs', 'package-source.py', 'smoke.mjs'))
 with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as output:
     for path in sorted(set(files)):

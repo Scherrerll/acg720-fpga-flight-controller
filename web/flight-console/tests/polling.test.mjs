@@ -2,6 +2,14 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createLivePoller} from '../frontend/polling.mjs';
 const settle=()=>new Promise(resolve=>setImmediate(resolve));
+
+test('local preview may poll at 200ms while cloud remains at 1s',async()=>{
+ let local=true,next=null;
+ const poller=createLivePoller({poll:async()=>{},visible:()=>true,connected:()=>true,intervalMs:()=>local?200:1000,
+ setTimer:(fn,delay)=>(next={fn,delay}),clearTimer:()=>{next=null;},clock:()=>0});
+ poller.resume();await settle();assert.equal(next.delay,200);
+ local=false;await next.fn();assert.equal(next.delay,1000);
+});
 test('visible polling is 1s, brief disconnect retries quickly, hidden stops and resume polls now',async()=>{
  let shown=true,online=true,calls=0,next=null;
  const poller=createLivePoller({poll:async()=>{calls++;},visible:()=>shown,connected:()=>online,

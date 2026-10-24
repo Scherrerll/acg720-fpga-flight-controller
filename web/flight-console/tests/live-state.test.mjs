@@ -3,6 +3,13 @@ import assert from 'node:assert/strict';
 import {liveState} from '../frontend/live-state.mjs';
 import {cleanLive,getAge} from '../worker/flight.mjs';
 const shared=(extra={})=>({mode:'share',connected:true,source_valid:true,timing_valid:true,fresh:true,age_ms:1400,...extra});
+
+test('a successful slow response is aged data, not a disconnected network link',()=>{
+ const delayed=liveState(shared({age_ms:6500,fresh:false}),{requestRttMs:4500,elapsedMs:100});
+ assert.equal(delayed.connected,true);assert.equal(delayed.kind,'expired');assert.equal(delayed.fresh,false);
+ assert.equal(liveState(shared(),{requestRttMs:4500,elapsedMs:10001}).kind,'disconnected');
+ assert.equal(liveState(shared({connected:false}),{requestRttMs:100}).kind,'disconnected');
+});
 test('normal 1Hz relay with network jitter is not a source-expiry alarm',()=>{
  const v=shared();
  assert.equal(liveState(v,{elapsedMs:800,requestRttMs:900}).kind,'delayed');

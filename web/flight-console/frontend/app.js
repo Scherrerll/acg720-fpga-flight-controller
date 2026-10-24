@@ -1,7 +1,7 @@
 'use strict';
 import {liveState} from './live-state.mjs';
 import {createLivePoller} from './polling.mjs';
-import {createLivePlayback} from './live-playback.mjs';
+import {createLivePlayback,createLivePose} from './live-playback.mjs';
 
 (() => {
   const $ = id => document.getElementById(id);
@@ -27,7 +27,7 @@ import {createLivePlayback} from './live-playback.mjs';
   const attitudeOverview = fields.slice(0, 3).map((field, i) => ({...field, color:['#2dd4bf','#7395ff','#ffb454'][i]}));
   const chartFields = keys => keys.map(key => fields.find(field => field.key === key));
   const state = {
-    smooth: true, visual: null, live: null, lastSuccess: 0, liveRtt: 0, pollBusy: false, pollFailed: false, caps: null, logsLocal: false,
+    smooth: true, instantPose: true, visual: null, live: null, lastSuccess: 0, liveRtt: 0, pollBusy: false, pollFailed: false, caps: null, logsLocal: false,
     logs: [], selected: null, logId: null, samples: [], selectedFields: new Set(),
     cursor: 0, start: 0, end: 0, playing: false, playStamp: 0, page: 'live', requestId: 0
   };
@@ -100,23 +100,30 @@ import {createLivePlayback} from './live-playback.mjs';
   function liveStatus(){return liveState(state.live,{elapsedMs:Math.max(0,performance.now()-state.lastSuccess),requestRttMs:state.liveRtt});}
 
   const livePlayback = createLivePlayback();
+  const livePose = createLivePose();
   let animationId = null, lastVisualFrame = 0, lastChartFrame = 0;
   const playbackQualified = () => state.live?.connected === true && state.live?.source_valid === true
-    && state.live?.fresh === true && (state.live?.mode !== 'share' || state.live?.timing_valid === true);
+    && (state.live?.mode !== 'share' || state.live?.timing_valid === true);
   function renderMotion(sample = null) {
-    const a = sample || state.live?.attitude || {};
-    const m = sample || state.live?.motion || {};
-    text('horizon-roll', `${fmt(a.roll_deg)}${valid(a.roll_deg) ? '°' : ''}`);
-    text('horizon-pitch', `${fmt(a.pitch_deg)}${valid(a.pitch_deg) ? '°' : ''}`);
+    const pose = livePose.sample(performance.now());
+    const bufferedPose = !state.instantPose && valid(sample?.roll_deg) && valid(sample?.pitch_deg);
+    const a = bufferedPose ? sample : pose?.attitude || {};
+    const m = !state.instantPose && sample ? sample : state.live?.motion || {};
+    text('horizon-roll', valid(a.roll_deg) ? `${fmt(a.roll_deg)}°` : '等待');
+    text('horizon-pitch', valid(a.pitch_deg) ? `${fmt(a.pitch_deg)}°` : '等待');
     const attitudeValid = valid(a.roll_deg) && valid(a.pitch_deg);
     $('attitude-rotation').setAttribute('transform', `rotate(${attitudeValid ? -a.roll_deg : 0},200,140)`);
     $('attitude-pitch').setAttribute('transform', `translate(0,${attitudeValid ? clamp(a.pitch_deg, -90, 90) * 3 : 0})`);
     $('attitude-rotation').style.opacity = attitudeValid ? '1' : '0.2';
-    $('horizon').setAttribute('aria-label', attitudeValid ? `${sample ? '平滑回放' : '接收'}姿态：横滚${fmt(a.roll_deg)}度，俯仰${fmt(a.pitch_deg)}度` : '无有效姿态数据');
+    $('horizon').setAttribute('aria-label', attitudeValid ? `${bufferedPose ? '平滑回放' : pose?.retained || !liveStatus().recent ? '最后有效' : '最新接收'}姿态：横滚${fmt(a.roll_deg)}度，俯仰${fmt(a.pitch_deg)}度` : '等待首个有效姿态');
     for (const [id, value, digits] of [['yaw-value', a.yaw_deg, 1], ['height-value', m.height_m, 2], ['speed-value', m.speed_mps, 2]]) text(id, fmt(value, digits));
     const reference = valid(state.live?.server_response_time_ms) ? state.live.server_response_time_ms : Date.parse(state.live?.received_at);
     const lag = sample && valid(reference) ? Math.max(0, reference + state.liveRtt + Math.max(0, performance.now() - state.lastSuccess) - sample.t) / 1000 : null;
-    text('playback-status', !state.smooth ? '即时显示 · 按最新接收值更新' : !sample ? '连贯显示 · 正在等待接收缓冲' : `${sample.buffering ? '缓冲等待' : '平滑回放'}${lag === null ? '' : ` · 延后约 ${lag.toFixed(1)} 秒`} · 状态与电机数值为最新接收值`);
+    const poseAge = bufferedPose ? lag : valid(pose?.age_ms) ? pose.age_ms / 1000 : null;
+    const held = pose?.retained || !liveStatus().recent;
+    text('pose-status', !pose && !bufferedPose ? '等待首个有效姿态' : `${bufferedPose ? '姿态随曲线回放' : held ? '姿态保留最后有效值' : '姿态为最新接收值'}${poseAge === null ? '' : ` · 估计源龄 ${poseAge.toFixed(1)} s`}`);
+    const playing = playbackQualified() && liveStatus().connected;
+    text('playback-status', !state.smooth ? '曲线即时显示 · 按最新接收记录更新' : !sample ? '曲线正在等待接收缓冲' : `${!playing ? '曲线已暂停' : sample.buffering ? '曲线缓冲等待' : '曲线平滑回放'}${lag === null ? '' : ` · 延后约 ${lag.toFixed(1)} 秒`} · 状态与电机数值为最新接收值`);
   }
   function stopVisuals() { if (animationId !== null) cancelAnimationFrame(animationId); animationId = null; }
   function startVisuals() {
@@ -138,21 +145,25 @@ import {createLivePlayback} from './live-playback.mjs';
     if (state.live) { livePlayback.ingest(state.live, performance.now()); state.visual = livePlayback.sample(performance.now(), {advance:false}); }
     renderLive();
   });
+  $('pose-instant').addEventListener('click', () => {
+    state.instantPose = !state.instantPose; $('pose-instant').setAttribute('aria-pressed', String(state.instantPose)); renderLive();
+  });
 
   function renderLive() {
     const data = state.live;
     const status=liveStatus(),fresh=status.fresh,recent=status.recent;
     const buffered = state.smooth && state.visual && playbackQualified() && status.connected;
-    $('connection').className = `connection${buffered ? ' buffered' : fresh ? ' fresh' : data ? ' stale' : ''}`;
-    $('connection').lastElementChild.textContent = buffered ? '数据接收与回放' : {live:'实时接收',delayed:'同步有延迟',source_invalid:'源遥测未更新',timing_unknown:'同步时间未确认',expired:'数据过期',disconnected:'连接中断',waiting:'等待连接'}[status.kind];
-    $('instrument-content').classList.toggle('is-stale', !(recent || buffered));
+    const pose = livePose.sample(performance.now());
+    $('connection').className = `connection${fresh ? ' fresh' : status.kind === 'delayed' ? ' buffered' : data ? ' stale' : ''}`;
+    $('connection').lastElementChild.textContent = {live:'实时接收',delayed:'同步有延迟',source_invalid:'源遥测未更新',timing_unknown:'同步时间未确认',expired:'已连接 · 数据延迟',disconnected:'连接中断',waiting:'等待连接'}[status.kind];
+    $('instrument-content').classList.toggle('is-stale', !(state.instantPose ? recent && pose && !pose.retained : recent || buffered));
     $('motors').classList.toggle('is-stale', !recent);
     $('channels').classList.toggle('is-stale', !recent);
     $('mode-value').classList.toggle('is-stale', !recent);
     $('armed-value').classList.toggle('is-stale', !recent);
-    $('stale-banner').className = `status-banner ${buffered ? 'playback' : fresh ? 'fresh' : 'stale'}`;
-    $('stale-banner').textContent = buffered ? '连贯显示中 · 姿态、融合高度与曲线按已接收记录平滑回放，延后时间见下方。' : status.kind==='delayed' ? '源遥测有效，公网同步略有延迟 · 显示数值的估计源龄见右上角。' : fresh ? '只读遥测接收中 · 下方为数据与控制状态，不代表飞行验收结果。' : status.kind==='source_invalid' ? '接收端尚无有效源遥测 · 灰色读数为最后接收值。' : status.kind==='timing_unknown' ? '正在确认转发时间 · 灰色读数为最后接收值。' : data ? '遥测未更新 · 灰色读数为最后接收值，请勿视为当前状态。' : '等待遥测连接 · 尚无有效接收数据。';
-    text('value-state', buffered ? '缓冲回放' : fresh ? '当前接收值' : recent ? '延迟接收值' : data ? '最后接收值' : '无数据');
+    $('stale-banner').className = `status-banner ${status.kind === 'delayed' ? 'playback' : fresh ? 'fresh' : 'stale'}`;
+    $('stale-banner').textContent = status.kind === 'delayed' ? '数据已接收，公网同步有延迟 · 姿态和曲线分别标注数据年龄。' : fresh ? '只读遥测接收中 · 姿态可显示最新接收值，曲线可独立平滑回放。' : status.kind === 'source_invalid' ? '源遥测尚无有效更新 · 保留最后有效姿态，灰色读数不代表当前状态。' : status.kind === 'timing_unknown' ? '正在确认转发时间 · 保留最后有效姿态。' : status.kind === 'expired' ? '连接正常，当前数据更新延迟 · 姿态保留最后有效值，曲线只回放已接收记录。' : data ? '遥测连接中断 · 正在重试，姿态保留最后有效值并显示数据年龄。' : '等待遥测连接 · 尚无有效接收数据。';
+    text('value-state', !pose ? '等待有效姿态' : state.instantPose ? recent && !pose.retained ? '最新接收' : '最后有效姿态' : buffered ? '姿态回放' : '等待回放');
     text('firmware', `固件 ${data?.firmware ?? '—'}`);
     text('sequence', `SEQ ${data?.sequence ?? '—'}`);
     const age = status.age_ms;
@@ -163,9 +174,9 @@ import {createLivePlayback} from './live-playback.mjs';
     for (const [id, value] of [['vx-value', m.vx_mps], ['vy-value', m.vy_mps], ['vz-value', m.vz_mps]]) text(id, fmt(value, 2));
     text('armed-value', boolText(data?.armed, '已解锁', '未解锁'));
     const mode = data?.control_mode;
-    const modeNames = { ATT_STAB: '自稳', LOC_HOLD: '定点', ALT_HOLD: '定高' };
+    const modeNames = { ATT_STAB: '自稳', LOC_HOLD: '定点', ALT_HOLD: '定高', DISARMED:'待机', ATT_ALT_HOLD:'自稳 + 高度控制', FLOW_ALT_HOLD:'光流 + 高度控制', ATT_MANUAL_THR:'自稳 · 手动油门接管' };
     text('mode-value', typeof mode === 'string' && modeNames[mode] ? `${modeNames[mode]} / ${mode}` : mode);
-    text('requested-value', data?.flags?.requested);
+    text('requested-value', modeNames[data?.flags?.requested] || data?.flags?.requested);
     text('axes-value', `${boolText(data?.flags?.xy_active, '启用', '停用')} / ${boolText(data?.flags?.z_active, '启用', '停用')}`);
     text('reason-text', data?.flags?.reason_text || '未提供额外状态说明');
     for (const [key] of healthNames) {
@@ -194,6 +205,7 @@ import {createLivePlayback} from './live-playback.mjs';
       const data = await api('/api/live');
       if (!data || data.schema !== 1) throw new Error('不支持的数据格式');
       state.pollFailed = false; state.live = data; state.lastSuccess = performance.now();state.liveRtt=state.lastSuccess-started;
+      livePose.ingest(data, state.lastSuccess, state.liveRtt);
       livePlayback.ingest(data, state.lastSuccess); state.visual = livePlayback.sample(state.lastSuccess, {advance:false});
     } catch { state.pollFailed = true; /* Age and stale state continue advancing. */ }
     finally { state.pollBusy = false; renderLive(); }
@@ -605,7 +617,7 @@ import {createLivePlayback} from './live-playback.mjs';
   }
   window.addEventListener('hashchange', route);
   let resizeTimer; window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => state.page === 'logs' ? drawLog() : drawLive(), 80); });
-  const livePoller = createLivePoller({poll:pollLive, visible:()=>!document.hidden, connected:()=>!state.pollFailed && liveStatus().connected});
+  const livePoller = createLivePoller({poll:pollLive, visible:()=>!document.hidden, connected:()=>!state.pollFailed && liveStatus().connected, intervalMs:()=>state.caps?.mode === 'local' ? 200 : 1000});
   document.addEventListener('visibilitychange', () => { if (document.hidden) { pause(); stopVisuals(); livePoller.suspend(); } else { livePlayback.reset(); state.visual = null; livePoller.resume(); startVisuals(); loadCapabilities(); } });
   function tick() { if (document.hidden) return; text('clock', new Date().toLocaleTimeString('zh-CN', { hour12: false })); renderLive(); }
   renderLive(); route(); if (!document.hidden) loadCapabilities(); livePoller.resume(); tick();

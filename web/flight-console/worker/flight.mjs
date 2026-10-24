@@ -6,7 +6,7 @@ const ID=/^[A-Za-z0-9_-]{8,90}$/;
 const SECURE={'X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','X-Robots-Tag':'noindex, nofollow, noarchive','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'"};
 const num=(v,lo=-1e12,hi=1e12)=>typeof v==='number'&&Number.isFinite(v)&&v>=lo&&v<=hi?v:null;
 const bool=v=>typeof v==='boolean'?v:null;
-const mode=v=>typeof v==='string'&&['ATT_STAB','LOC_HOLD','MANUAL','XYZ','ALT_HOLD','STABILIZE','DISARMED','自稳','定高','定点','未上报'].includes(v)?v:num(v,0,255);
+const mode=v=>typeof v==='string'&&['ATT_STAB','LOC_HOLD','MANUAL','XYZ','ALT_HOLD','STABILIZE','DISARMED','ATT_ALT_HOLD','FLOW_ALT_HOLD','ATT_MANUAL_THR','自稳','定高','定点','未上报'].includes(v)?v:num(v,0,255);
 const numbers=(o,keys)=>Object.fromEntries(keys.map(k=>[k,num(o?.[k])]));
 const json=(o,status=200,headers={})=>new Response(JSON.stringify(o),{status,headers:{...SECURE,'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store',...headers}});
 const SHARE_FRESH_MS=5000,SHARE_DISCONNECT_MS=10000;

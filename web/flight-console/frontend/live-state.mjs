@@ -10,7 +10,9 @@ export function liveState(data,{elapsedMs=0,requestRttMs=0}={}){
  const age=finite(data?.age_ms)?data.age_ms+elapsed+rtt:null;
  const sourceValid=typeof data?.source_valid==='boolean'?data.source_valid:data?.fresh===true;
  const timingValid=!share||data?.timing_valid===true;
- const connected=data?.connected===true&&elapsed+rtt<=linkLimit&&(age===null||age<=linkLimit);
+ // A completed slow response is evidence of a live link. Data age controls
+ // freshness below; it must not turn a successful response into a disconnect.
+ const connected=data?.connected===true&&Number.isFinite(rtt)&&elapsed<=linkLimit;
  const fresh=connected&&sourceValid&&timingValid&&data?.fresh===true&&age!==null&&age<=freshLimit&&elapsed+rtt<=freshLimit;
  // Full RTT is an upper bound, not evidence that the snapshot has expired.
  // Keep recently received values visible with an explicit delay label while

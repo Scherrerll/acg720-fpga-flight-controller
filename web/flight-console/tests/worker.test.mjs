@@ -28,6 +28,9 @@ test('live allowlist, nullable values and expiry',()=>{
  assert.equal(getAge({...v,age_ms:4900},now+200).fresh,false);
  assert.equal(cleanLive({schema:1,control_mode:'LOC_HOLD',flags:{requested:'LOC_HOLD'}}).flags.requested,'LOC_HOLD');
  assert.equal(cleanLive(snapshot({flags:{requested:'自稳',xy_active:false}})).flags.reason_text,'');
+ for(const mode of ['DISARMED','ATT_ALT_HOLD','FLOW_ALT_HOLD','ATT_MANUAL_THR']){
+  assert.equal(cleanLive(snapshot({control_mode:mode,flags:{requested:mode}})).control_mode,mode);
+ }
 });
 test('source validity is separate from local cache TTL and includes upload timing',()=>{
  const now=1800000000000;

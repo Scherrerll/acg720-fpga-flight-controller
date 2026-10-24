@@ -36,7 +36,11 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
  try{
   for(const [k,v] of Object.entries(overrides))Object.defineProperty(globalThis,k,{configurable:true,writable:true,value:v});
   await import('../frontend/app.js?live-view-test');await new Promise(resolve=>setImmediate(resolve));
-  flushFrames(100);const first=element('attitude-rotation').getAttribute('transform');flushFrames(200);
+  flushFrames(100);
+  assert.equal(element('horizon-roll').textContent,'10.0°','default attitude follows the latest real value, not the chart buffer');
+  assert.match(element('pose-status').textContent,/最新接收值/);
+  element('pose-instant').events.click();
+  const first=element('attitude-rotation').getAttribute('transform');flushFrames(200);
   assert.notEqual(element('attitude-rotation').getAttribute('transform'),first);
   assert.equal(element('horizon-roll').textContent,'6.2°');
   assert.equal(element('height-value').textContent,'6.20');
@@ -66,14 +70,20 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   assert.equal(element('motor-value-1').textContent,'1201');
   assert.match(element('playback-status').textContent,/即时显示/);
   assert.match(element('live-history-window').textContent,/10\.2 s/);
+  element('smooth-live').events.click();
   // Refresh through the real visibility/resume path with a full window and a
   // genuine five-second source gap. Adaptive axes must not hide or fill it.
   overrides.document.hidden=true;listeners.get('visibilitychange')();
-  live.server_response_time_ms=70000;live.sequence=2000;
+  live.server_response_time_ms=70000;live.sequence=2000;live.fresh=false;live.age_ms=6500;
+  live.control_mode='DISARMED';live.flags={requested:'ATT_ALT_HOLD'};
   live.history=Array.from({length:141},(_,i)=>({t:i*500,roll_deg:i,pitch_deg:i/2,yaw_deg:i/3,height_m:1,speed_mps:0})).filter(p=>p.t<=35000||p.t>=40500);
   overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));
   flushFrames(300);
   assert.match(element('live-history-window').textContent,/60\.0 s/);
+  const delayedPose=element('attitude-rotation').getAttribute('transform');flushFrames(350);
+  assert.notEqual(element('attitude-rotation').getAttribute('transform'),delayedPose,'already received history keeps playing through a delayed cloud snapshot');
+  assert.match(element('connection').lastElementChild.textContent,/已连接.*数据延迟/);
+  assert.equal(element('mode-value').textContent,'待机 / DISARMED');assert.equal(element('requested-value').textContent,'自稳 + 高度控制');
   assert.ok(series('live-attitude-chart','#65a5e7').filter(p=>p.op==='move').length>=2,'real source gaps remain disconnected');
   overrides.document.hidden=true;listeners.get('visibilitychange')();
   for(const p of live.history)p.yaw_deg=null;live.attitude.yaw_deg=null;live.sequence++;
@@ -81,6 +91,13 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   flushFrames(400);
   assert.equal(series('live-orientation-chart','#ffb454').length,0,'missing yaw is never plotted as zero');
   assert.ok(series('live-orientation-chart','#2dd4bf').length>0,'missing yaw does not hide the other angles');
+  element('pose-instant').events.click();
+  const heldRoll=element('horizon-roll').textContent,heldPitch=element('horizon-pitch').textContent;
+  overrides.document.hidden=true;listeners.get('visibilitychange')();
+  live.attitude={roll_deg:null,pitch_deg:99,yaw_deg:null};live.sequence++;
+  overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));flushFrames(450);
+  assert.equal(element('horizon-roll').textContent,heldRoll);assert.equal(element('horizon-pitch').textContent,heldPitch);
+  assert.match(element('pose-status').textContent,/最后有效值/);
   overrides.location.hash='#logs';listeners.get('window:hashchange')();await new Promise(resolve=>setImmediate(resolve));
   await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(500);
   assert.equal(element('tracking-axis').value,'roll');

@@ -8,7 +8,7 @@ export function createLivePlayback({delayMs=4000,maxGapMs=1600}={}){
  let points=[],cursor=null,lastTick=null,firmware=null,sequence=null,cutoff=-Infinity;
  function reset(){points=[];cursor=null;lastTick=null;firmware=null;sequence=null;cutoff=-Infinity;}
  function ingest(data,now){
-  const valid=data?.connected===true&&data?.source_valid===true&&data?.fresh===true
+  const valid=data?.connected===true&&data?.source_valid===true
    &&(data.mode!=='share'||data.timing_valid===true);
   if(!valid||!Array.isArray(data.history))return false;
   const incoming=data.history.filter(p=>p&&finite(p.t)).map(p=>Object.fromEntries(['t',...fields].map(k=>[k,finite(p[k])?p[k]:null]))).sort((a,b)=>a.t-b.t);
@@ -52,4 +52,46 @@ export function createLivePlayback({delayMs=4000,maxGapMs=1600}={}){
   return result;
  }
  return {ingest,sample,reset,history:()=>points.map(p=>({...p}))};
+}
+
+// Latest real attitude is independent of the delayed chart playhead. Keep a
+// complete roll/pitch pair together; missing values never replace it with zero.
+export function createLivePose(){
+ let rp=null,yaw=null,firmware=null,sequence=null,packet=0;
+ const reset=()=>{rp=null;yaw=null;firmware=null;sequence=null;packet=0;};
+ function ingest(data,now,rtt=0){
+  packet++;
+  const seq=finite(data?.sequence)?data.sequence:null;
+  const build=typeof data?.firmware==='string'?data.firmware:null;
+  if(build&&firmware&&build!==firmware||seq!==null&&sequence!==null&&seq<sequence&&sequence-seq<32768){rp=null;yaw=null;}
+  if(build)firmware=build;
+  if(seq!==null)sequence=seq;
+  const qualified=data?.connected===true&&data?.source_valid===true&&data?.health?.imu!==false
+   &&(data.mode!=='share'||data.timing_valid===true);
+  if(!qualified)return false;
+  const a=data.attitude||{},history=Array.isArray(data.history)?data.history:[];
+  const stamp=(values,fromHistory=false,t=null)=>{
+   const age=fromHistory&&finite(t)&&finite(data.server_response_time_ms)?Math.max(0,data.server_response_time_ms-t):finite(data.age_ms)&&data.age_ms>=0?data.age_ms:null;
+   return {values,at:now,age:age===null?null:age+Math.max(0,rtt),packet,fromHistory};
+  };
+  if(finite(a.roll_deg)&&finite(a.pitch_deg))rp=stamp({roll_deg:a.roll_deg,pitch_deg:a.pitch_deg});
+  else if(!rp){
+   const previous=history.filter(p=>p&&finite(p.t)&&finite(p.roll_deg)&&finite(p.pitch_deg)).sort((a,b)=>b.t-a.t)[0];
+   if(previous)rp=stamp({roll_deg:previous.roll_deg,pitch_deg:previous.pitch_deg},true,previous.t);
+  }
+  if(finite(a.yaw_deg))yaw=stamp({yaw_deg:a.yaw_deg});
+  else if(!yaw){
+   const previous=history.filter(p=>p&&finite(p.t)&&finite(p.yaw_deg)).sort((a,b)=>b.t-a.t)[0];
+   if(previous)yaw=stamp({yaw_deg:previous.yaw_deg},true,previous.t);
+  }
+  return rp!==null;
+ }
+ function sample(now){
+  if(!rp&&!yaw)return null;
+  const parts=[rp,yaw].filter(Boolean),ages=parts.map(p=>p.age===null?null:p.age+Math.max(0,now-p.at));
+  return {attitude:{...(rp?.values||{}),...(yaw?.values||{})},
+   retained:parts.some(p=>p.packet!==packet||p.fromHistory),
+   age_ms:ages.some(a=>a===null)?null:Math.max(...ages)};
+ }
+ return {ingest,sample,reset};
 }

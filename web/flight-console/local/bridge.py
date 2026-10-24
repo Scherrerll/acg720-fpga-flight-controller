@@ -5,6 +5,7 @@ import argparse
 import copy
 import csv
 import gzip
+import http.client
 import datetime as dt
 import io
 import json
@@ -21,6 +22,7 @@ from collections import deque
 from dataclasses import dataclass, field
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from keepalive import PersistentHTTPS, ResponseTooLarge
 
 MAX_RESPONSE = 20 * 1024 * 1024
 MAX_SAMPLES = 20000
@@ -71,8 +73,13 @@ def dictionary(value):
 
 def mode_value(value):
     if isinstance(value, str):
+        aliases = {"待机": "DISARMED", "自稳 + 高度控制": "ATT_ALT_HOLD",
+            "光流速度控制 + 高度": "FLOW_ALT_HOLD", "光流刹停 + 高度控制": "FLOW_ALT_HOLD",
+            "自稳 · 测高失效，手动油门接管": "ATT_MANUAL_THR"}
+        if value in aliases:
+            return aliases[value]
         return value if value in {"ATT_STAB", "LOC_HOLD", "MANUAL", "XYZ", "ALT_HOLD", "STABILIZE", "DISARMED",
-            "自稳", "定高", "定点", "未上报"} else None
+            "ATT_ALT_HOLD", "FLOW_ALT_HOLD", "ATT_MANUAL_THR", "自稳", "定高", "定点", "未上报"} else None
     return number(value)
 
 
@@ -232,9 +239,12 @@ class HTTPClient:
         # The local receiver never leaves loopback. Outbound HTTPS follows the
         # user's existing system proxy, which may be needed on this network.
         self.publish_opener = urllib.request.build_opener(urllib.request.ProxyHandler(), NoRedirect())
+        self.live_transport = PersistentHTTPS(config.site_url) if config.site_url else None
 
-    def _read(self, request, limit=MAX_RESPONSE, timeout=8, opener=None):
+    def _read(self, request, limit=MAX_RESPONSE, timeout=8, opener=None, persistent=None):
         try:
+            if persistent is not None and persistent.supported():
+                return persistent.read(request, limit, timeout)
             with (opener or self.opener).open(request, timeout=timeout) as response:
                 if response.status != 200 and not 200 <= response.status < 300:
                     raise BridgeError(502, "Remote service unavailable")
@@ -247,7 +257,9 @@ class HTTPClient:
                 return value
         except BridgeError:
             raise
-        except (OSError, ValueError, urllib.error.URLError):
+        except ResponseTooLarge:
+            raise BridgeError(413, "Response exceeds limit; no complete log was loaded") from None
+        except (OSError, ValueError, urllib.error.URLError, http.client.HTTPException):
             # Never return exception strings: URLs, paths, source identity or credentials may occur there.
             raise BridgeError(502, "Remote service unavailable") from None
 
@@ -271,7 +283,8 @@ class HTTPClient:
         request = urllib.request.Request(self.config.site_url + "/api/health", method="GET",
             headers={"User-Agent": "ACG720-GroundStation/1.0", "Cache-Control": "no-cache"})
         remote = urllib.parse.urlsplit(self.config.site_url).hostname not in ("127.0.0.1", "localhost")
-        raw = self._read(request, limit=16384, opener=self.publish_opener if remote else self.opener)
+        raw = self._read(request, limit=16384, opener=self.publish_opener if remote else self.opener,
+                         persistent=self.live_transport if remote else None)
         try:
             value = json.loads(raw)
             stamp = number(value.get("server_time_ms")) if isinstance(value, dict) else None
@@ -298,7 +311,8 @@ class HTTPClient:
         request = urllib.request.Request(self.config.site_url + "/api/publish/" + kind, data=body, method="POST",
             headers={"Content-Type": "application/json", "User-Agent": "ACG720-GroundStation/1.0", "X-Flight-Publish-Token": self.config.publish_token, **encoding})
         remote = urllib.parse.urlsplit(self.config.site_url).hostname not in ("127.0.0.1", "localhost")
-        raw = self._read(request, limit=65536, opener=self.publish_opener if remote else self.opener)
+        raw = self._read(request, limit=65536, opener=self.publish_opener if remote else self.opener,
+                         persistent=self.live_transport if remote and kind == "live" else None)
         try:
             result = json.loads(raw) if raw else {}
         except ValueError:

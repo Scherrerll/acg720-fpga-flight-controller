@@ -93,6 +93,16 @@ class FakeClient:
 
 
 class UnitTests(unittest.TestCase):
+    def test_b0b0_reported_modes_are_mapped_instead_of_replaced_by_dashes(self):
+        for raw, expected in [('待机', 'DISARMED'), ('自稳 + 高度控制', 'ATT_ALT_HOLD'),
+                              ('光流速度控制 + 高度', 'FLOW_ALT_HOLD'), ('光流刹停 + 高度控制', 'FLOW_ALT_HOLD'),
+                              ('自稳 · 测高失效，手动油门接管', 'ATT_MANUAL_THR')]:
+            value = state(); value['data']['mode_active'] = value['data']['mode_requested'] = raw
+            cleaned = bridge.sanitize_live(value)
+            self.assertEqual(cleaned['control_mode'], expected)
+            self.assertEqual(cleaned['flags']['requested'], expected)
+        self.assertIsNone(bridge.mode_value('PRIVATE_PATH_SENTINEL'))
+
     def test_reported_tracking_flows_to_history_and_csv_without_rc_reconstruction(self):
         fake = FakeClient()
         fake.value['tracking'] = dict(roll_sp_deg=4.5, pitch_sp_deg=-2,
