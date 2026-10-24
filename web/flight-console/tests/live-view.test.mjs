@@ -25,7 +25,7 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   attitude:{roll_deg:10,pitch_deg:20,yaw_deg:10},motion:{height_m:10,speed_mps:10,vx_mps:8,vy_mps:6,vz_mps:1},
   armed:false,control_mode:'ALT_HOLD',motors_us:[1000,1201,1302,1403],rc:{channels:[1500,1500,1000],valid:true},
   history:Array.from({length:21},(_,i)=>({t:i*500,roll_deg:i/2,pitch_deg:i,yaw_deg:i/2,height_m:i/2,speed_mps:i/2,roll_sp_deg:i<12?0:6,pitch_sp_deg:-3,yaw_rate_dps:i/10,yaw_rate_sp_dps:5}))};
- const log={id:'tracking_test_123',samples:[{t_s:0,roll_deg:1,roll_sp_deg:0,pitch_deg:2,pitch_sp_deg:3,yaw_rate_dps:4,yaw_rate_sp_dps:5},{t_s:1,roll_deg:2,roll_sp_deg:3,pitch_deg:3,pitch_sp_deg:4,yaw_rate_dps:5,yaw_rate_sp_dps:6}]};
+ const log={id:'tracking_test_123',samples:[{t_s:0,roll_deg:1,roll_sp_deg:0,pitch_deg:2,pitch_sp_deg:3,yaw_deg:12,yaw_rate_dps:4,yaw_rate_sp_dps:5},{t_s:1,roll_deg:2,roll_sp_deg:3,pitch_deg:3,pitch_sp_deg:4,yaw_deg:13,yaw_rate_dps:5,yaw_rate_sp_dps:6}]};
  const overrides={document:{hidden:false,getElementById:element,createElement:tag=>new Element(tag),createTextNode:text=>Object.assign(new Element(),{textContent:text}),createElementNS:()=>new Element(),addEventListener:(k,fn)=>listeners.set(k,fn)},
   window:{devicePixelRatio:1,addEventListener:(k,fn)=>listeners.set('window:'+k,fn)},location:{hash:'',search:'',href:'http://localhost/'},
   performance:{now:()=>stamp},fetch:async url=>({ok:true,json:async()=>url.includes('capabilities')?{mode:'share'}:url==='/api/logs'?{logs:[log]}:url.includes('/api/logs/')?{log}:structuredClone(live)}),
@@ -43,13 +43,18 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   assert.equal(element('motor-value-1').textContent,'1201');assert.equal(element('armed-value').textContent,'未解锁');
   assert.match(element('playback-status').textContent,/平滑回放/);
   const series=(id,color)=>element(id).context.strokes.find(s=>s.color===color).path;
-  const roll=series('live-attitude-chart','#65a5e7');
+  const roll=series('live-orientation-chart','#2dd4bf');
   assert.equal(roll[0].x,52,'short received history starts at the left edge instead of an empty fixed 60-second window');
   assert.ok(Math.abs(roll.at(-1).x-782)<.01);
   assert.match(element('live-history-window').textContent,/6\.2 s/);
-  const yaw=series('live-yaw-chart','#b29dcd');
+  const yaw=series('live-orientation-chart','#ffb454');
+  const pitch=series('live-orientation-chart','#7395ff');
   assert.ok(yaw.length>2,'relative yaw is actually drawn, not just added to the legend');
   assert.equal(yaw[0].x,roll[0].x);assert.equal(yaw.at(-1).x,roll.at(-1).x);
+  assert.equal(pitch[0].y,roll[0].y);assert.equal(yaw.at(-1).y,roll.at(-1).y);
+  assert.ok(pitch.at(-1).y<roll.at(-1).y,'all three angles share the same vertical scale');
+  assert.equal(element('live-attitude-chart').context,undefined,'detailed target plots are initially collapsed');
+  element('live-tracking').open=true;element('live-tracking').events.toggle();
   const target=series('live-attitude-chart','#8cbaa6');
   assert.ok(target.some((point,i)=>i>0&&point.x===target[i-1].x&&point.y!==target[i-1].y),'setpoint changes are drawn as steps');
   assert.ok(series('live-pitch-chart','#d4b574').length>2);assert.ok(series('live-pitch-chart','#8cbaa6').length>2);
@@ -74,8 +79,8 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   for(const p of live.history)p.yaw_deg=null;live.attitude.yaw_deg=null;live.sequence++;
   overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));
   flushFrames(400);
-  assert.equal(series('live-yaw-chart','#b29dcd').length,0,'missing yaw is never plotted as zero');
-  assert.ok(element('live-yaw-chart').context.texts.includes('此时段无有效数据'));
+  assert.equal(series('live-orientation-chart','#ffb454').length,0,'missing yaw is never plotted as zero');
+  assert.ok(series('live-orientation-chart','#2dd4bf').length>0,'missing yaw does not hide the other angles');
   overrides.location.hash='#logs';listeners.get('window:hashchange')();await new Promise(resolve=>setImmediate(resolve));
   await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(500);
   assert.equal(element('tracking-axis').value,'roll');
@@ -84,6 +89,8 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   element('tracking-axis').value='pitch';element('tracking-axis').events.change();assert.deepEqual(checked(),['pitch_deg','pitch_sp_deg']);
   element('tracking-axis').value='yaw_rate';element('tracking-axis').events.change();assert.deepEqual(checked(),['yaw_rate_dps','yaw_rate_sp_dps']);
   assert.ok(element('log-chart').context.texts.includes('°/s'),'yaw rate comparison keeps rate units in log view');
+  element('tracking-axis').value='overview';element('tracking-axis').events.change();
+  assert.deepEqual(checked(),['pitch_deg','roll_deg','yaw_deg']);
   overrides.document.hidden=true;listeners.get('visibilitychange')();assert.equal(frames.size,0);
  }finally{
   for(const [k,descriptor] of saved){if(descriptor)Object.defineProperty(globalThis,k,descriptor);else delete globalThis[k];}

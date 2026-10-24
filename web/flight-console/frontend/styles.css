@@ -10,3 +10,10 @@
 .series-roll_sp_deg,.series-pitch_sp_deg,.series-yaw_rate_sp_dps{--line:#8cbaa6}
 .series-yaw_rate_dps{--line:#65a5e7}
 .tracking-select{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:11px}
+.series-overview-roll{--line:#2dd4bf}.series-overview-pitch{--line:#7395ff}.series-overview-yaw{--line:#ffb454}
+.orientation-chart{height:230px}
+.tracking-details{border-top:1px solid var(--border);margin-top:12px}
+.tracking-details summary{cursor:pointer;padding:14px 16px;color:var(--text);font-size:12px}
+.tracking-details summary .muted{margin-left:10px}
+.tracking-details[open] summary{border-bottom:1px solid var(--border)}
+.live-traces .trace-heading{flex-wrap:wrap;row-gap:8px}

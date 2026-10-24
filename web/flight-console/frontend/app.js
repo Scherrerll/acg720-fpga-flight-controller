@@ -23,7 +23,8 @@ import {createLivePlayback} from './live-playback.mjs';
     ['roll_sp_deg', '横滚 Setpoint', '°', '#8cbaa6'], ['pitch_sp_deg', '俯仰 Setpoint', '°', '#8cbaa6'],
     ['yaw_rate_dps', '偏航角速度 Estimate', '°/s', '#65a5e7'], ['yaw_rate_sp_dps', '偏航角速度 Setpoint', '°/s', '#8cbaa6']
   ].map(([key, label, unit, color]) => ({ key, label, unit, color, step:key.includes('_sp_') }));
-  const trackingPairs = {roll:['roll_deg','roll_sp_deg'], pitch:['pitch_deg','pitch_sp_deg'], yaw_rate:['yaw_rate_dps','yaw_rate_sp_dps']};
+  const trackingPairs = {overview:['roll_deg','pitch_deg','yaw_deg'], roll:['roll_deg','roll_sp_deg'], pitch:['pitch_deg','pitch_sp_deg'], yaw_rate:['yaw_rate_dps','yaw_rate_sp_dps']};
+  const attitudeOverview = fields.slice(0, 3).map((field, i) => ({...field, color:['#2dd4bf','#7395ff','#ffb454'][i]}));
   const chartFields = keys => keys.map(key => fields.find(field => field.key === key));
   const state = {
     smooth: true, visual: null, live: null, lastSuccess: 0, liveRtt: 0, pollBusy: false, pollFailed: false, caps: null, logsLocal: false,
@@ -397,13 +398,15 @@ import {createLivePlayback} from './live-playback.mjs';
     const oldest = history.reduce((t, s) => valid(s.t) && s.t <= now ? Math.min(t, s.t) : t, now) / 1000;
     const start = samples.length ? Math.max(end - 60, Math.min(end - 5, oldest)) : end - 60;
     text('live-history-window', samples.length ? `接收时间 · 当前显示 ${(end - start).toFixed(1)} s · 最多 60 s` : '接收时间 · 等待历史记录');
-    chart($('live-attitude-chart'), samples, chartFields(trackingPairs.roll), start, end);
-    chart($('live-pitch-chart'), samples, chartFields(trackingPairs.pitch), start, end);
-    chart($('live-yaw-rate-chart'), samples, chartFields(trackingPairs.yaw_rate), start, end);
-    chart($('live-yaw-chart'), samples, [fields[2]], start, end);
+    chart($('live-orientation-chart'), samples, attitudeOverview, start, end);
     chart($('live-height-chart'), samples, [fields[3]], start, end);
+    if ($('live-tracking').open) {
+      chart($('live-attitude-chart'), samples, chartFields(trackingPairs.roll), start, end);
+      chart($('live-pitch-chart'), samples, chartFields(trackingPairs.pitch), start, end);
+      chart($('live-yaw-rate-chart'), samples, chartFields(trackingPairs.yaw_rate), start, end);
+    }
     const current = liveFresh() || buffered && playbackQualified() && liveStatus().connected;
-    for (const id of ['live-attitude-chart', 'live-pitch-chart', 'live-yaw-rate-chart', 'live-yaw-chart', 'live-height-chart']) $(id).classList.toggle('is-stale', !current);
+    for (const id of ['live-orientation-chart', 'live-attitude-chart', 'live-pitch-chart', 'live-yaw-rate-chart', 'live-height-chart']) $(id).classList.toggle('is-stale', !current);
   }
 
   async function loadLogs() {
@@ -519,7 +522,8 @@ import {createLivePlayback} from './live-playback.mjs';
   bindChartScale('live-attitude-chart', 'reset-attitude-scale', drawLive);
   bindChartScale('live-pitch-chart', 'reset-pitch-scale', drawLive);
   bindChartScale('live-yaw-rate-chart', 'reset-yaw-rate-scale', drawLive);
-  bindChartScale('live-yaw-chart', 'reset-yaw-scale', drawLive);
+  bindChartScale('live-orientation-chart', 'reset-orientation-scale', drawLive);
+  $('live-tracking').addEventListener('toggle', () => { if (state.page === 'live') drawLive(); });
   bindChartScale('live-height-chart', 'reset-height-scale', drawLive);
   bindChartScale('log-chart', 'reset-log-scale', drawLog);
 
