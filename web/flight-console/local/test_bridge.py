@@ -93,6 +93,24 @@ class FakeClient:
 
 
 class UnitTests(unittest.TestCase):
+    def test_reported_tracking_flows_to_history_and_csv_without_rc_reconstruction(self):
+        fake = FakeClient()
+        fake.value['tracking'] = dict(roll_sp_deg=4.5, pitch_sp_deg=-2,
+                                     yaw_rate_dps=1.25, yaw_rate_sp_dps=3, private='PRIVATE_SECRET')
+        observer = bridge.Bridge(bridge.Config(), fake)
+        observer.poll_once()
+        value = observer.live()
+        self.assertEqual(value['tracking']['roll_sp_deg'], 4.5)
+        self.assertEqual(value['history'][-1]['yaw_rate_sp_dps'], 3)
+        self.assertNotIn('PRIVATE_SECRET', json.dumps(value))
+        fake.value['fresh'] = False
+        self.assertTrue(all(v is None for v in bridge.sanitize_live(fake.value)['tracking'].values()))
+        raw = b'elapsed_s,protocol,roll_deg,roll_sp_deg,pitch_sp_deg,yaw_rate_dps,yaw_rate_sp_dps\n0,a579,1,2,-3,4,5\n1,a582,,,,,\n'
+        sample = bridge.csv_samples(raw, ID)['log']['samples'][0]
+        self.assertEqual([sample[k] for k in bridge.TRACKING], [2, -3, 4, 5])
+        old = bridge.csv_samples(csv_data(), ID)['log']['samples'][0]
+        self.assertTrue(all(old[k] is None for k in bridge.TRACKING))
+
     def test_live_sharing_defaults_off_skips_cloud_clock_and_posts(self):
         fake = FakeClient()
         calls = []

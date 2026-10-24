@@ -3,6 +3,13 @@ import assert from 'node:assert/strict';
 import {createLivePlayback} from '../frontend/live-playback.mjs';
 const point=(t,x=t/1000)=>({t,roll_deg:x,pitch_deg:x*2,yaw_deg:x,height_m:x,speed_mps:x});
 const packet=(history,extra={})=>({mode:'share',connected:true,source_valid:true,fresh:true,timing_valid:true,firmware:'B0B0',sequence:1,history,...extra});
+
+test('setpoints hold their reported step while measured rate is interpolated',()=>{
+ const p=createLivePlayback({delayMs:250});
+ p.ingest(packet([{...point(0),roll_sp_deg:0,yaw_rate_sp_dps:2,yaw_rate_dps:0},{...point(500),roll_sp_deg:10,yaw_rate_sp_dps:6,yaw_rate_dps:4}]),0);
+ const first=p.sample(0);assert.equal(first.roll_sp_deg,0);assert.equal(first.yaw_rate_sp_dps,2);assert.equal(first.yaw_rate_dps,2);
+ const next=p.sample(250);assert.equal(next.roll_sp_deg,10);assert.equal(next.yaw_rate_sp_dps,6);
+});
 test('buffered history advances continuously between actual received points',()=>{
  const p=createLivePlayback();p.ingest(packet(Array.from({length:21},(_,i)=>point(i*500))),0);
  assert.equal(p.sample(0).t,6000);

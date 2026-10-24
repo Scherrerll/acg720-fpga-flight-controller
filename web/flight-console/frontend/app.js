@@ -13,14 +13,18 @@ import {createLivePlayback} from './live-playback.mjs';
   const logArmed = value => value === true || value === 1 ? true : value === false || value === 0 ? false : null;
   const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
   const fields = [
-    ['roll_deg', '横滚', '°', '#65a5e7'], ['pitch_deg', '俯仰', '°', '#d4b574'],
+    ['roll_deg', '横滚 Estimate', '°', '#65a5e7'], ['pitch_deg', '俯仰 Estimate', '°', '#d4b574'],
     ['yaw_deg', '相对航向', '°', '#b29dcd'], ['height_m', '融合高度', 'm', '#80b9a4'],
     ['vx_mps', '水平速度 X', 'm/s', '#65a5e7'], ['vy_mps', '水平速度 Y', 'm/s', '#d4b574'],
     ['vz_mps', '垂直速度', 'm/s', '#b29dcd'], ['m1_us', 'M1', 'µs', '#65a5e7'],
     ['m2_us', 'M2', 'µs', '#80b9a4'], ['m3_us', 'M3', 'µs', '#d4b574'],
     ['m4_us', 'M4', 'µs', '#b29dcd'], ['throttle_us', '油门', 'µs', '#d28f88'],
-    ['armed', '解锁状态', '状态', '#80b9a4']
-  ].map(([key, label, unit, color]) => ({ key, label, unit, color }));
+    ['armed', '解锁状态', '状态', '#80b9a4'],
+    ['roll_sp_deg', '横滚 Setpoint', '°', '#8cbaa6'], ['pitch_sp_deg', '俯仰 Setpoint', '°', '#8cbaa6'],
+    ['yaw_rate_dps', '偏航角速度 Estimate', '°/s', '#65a5e7'], ['yaw_rate_sp_dps', '偏航角速度 Setpoint', '°/s', '#8cbaa6']
+  ].map(([key, label, unit, color]) => ({ key, label, unit, color, step:key.includes('_sp_') }));
+  const trackingPairs = {roll:['roll_deg','roll_sp_deg'], pitch:['pitch_deg','pitch_sp_deg'], yaw_rate:['yaw_rate_dps','yaw_rate_sp_dps']};
+  const chartFields = keys => keys.map(key => fields.find(field => field.key === key));
   const state = {
     smooth: true, visual: null, live: null, lastSuccess: 0, liveRtt: 0, pollBusy: false, pollFailed: false, caps: null, logsLocal: false,
     logs: [], selected: null, logId: null, samples: [], selectedFields: new Set(),
@@ -357,15 +361,16 @@ import {createLivePlayback} from './live-playback.mjs';
       if (groups) { ctx.fillStyle = '#a6b4c1'; ctx.textAlign = 'left'; ctx.fillText(group.unit, left, y0 - 8); }
       ctx.save(); ctx.beginPath(); ctx.rect(left, y0, right - left, Math.max(0, y1 - y0)); ctx.clip();
       group.fields.forEach(field => {
-        ctx.strokeStyle = field.color; ctx.lineWidth = 1.5; ctx.beginPath(); let pen = false; let prev = null;
+        ctx.strokeStyle = field.color; ctx.lineWidth = 1.5; ctx.beginPath(); let pen = false; let prev = null, prevValue = null;
         // Interleaved protocol rows omit unrelated fields. Connect consecutive
         // valid values of this field, preserving every exported sample/spike.
         const fieldSamples = samples.filter(s => valid(s.t_s) && valid(val(s, field)) && s.t_s >= start && s.t_s <= end);
         for (const s of fieldSamples) {
           const t = s.t_s, v = val(s, field);
           if (prev !== null && t - prev > 2) pen = false;
-          if (pen) ctx.lineTo(x(t), y(v)); else ctx.moveTo(x(t), y(v));
-          pen = true; prev = t;
+          if (pen) { if (field.step) ctx.lineTo(x(t), y(prevValue)); ctx.lineTo(x(t), y(v)); }
+          else ctx.moveTo(x(t), y(v));
+          pen = true; prev = t; prevValue = v;
         }
         ctx.stroke();
       });
@@ -392,11 +397,13 @@ import {createLivePlayback} from './live-playback.mjs';
     const oldest = history.reduce((t, s) => valid(s.t) && s.t <= now ? Math.min(t, s.t) : t, now) / 1000;
     const start = samples.length ? Math.max(end - 60, Math.min(end - 5, oldest)) : end - 60;
     text('live-history-window', samples.length ? `接收时间 · 当前显示 ${(end - start).toFixed(1)} s · 最多 60 s` : '接收时间 · 等待历史记录');
-    chart($('live-attitude-chart'), samples, fields.slice(0, 2), start, end);
+    chart($('live-attitude-chart'), samples, chartFields(trackingPairs.roll), start, end);
+    chart($('live-pitch-chart'), samples, chartFields(trackingPairs.pitch), start, end);
+    chart($('live-yaw-rate-chart'), samples, chartFields(trackingPairs.yaw_rate), start, end);
     chart($('live-yaw-chart'), samples, [fields[2]], start, end);
     chart($('live-height-chart'), samples, [fields[3]], start, end);
     const current = liveFresh() || buffered && playbackQualified() && liveStatus().connected;
-    for (const id of ['live-attitude-chart', 'live-yaw-chart', 'live-height-chart']) $(id).classList.toggle('is-stale', !current);
+    for (const id of ['live-attitude-chart', 'live-pitch-chart', 'live-yaw-rate-chart', 'live-yaw-chart', 'live-height-chart']) $(id).classList.toggle('is-stale', !current);
   }
 
   async function loadLogs() {
@@ -440,6 +447,7 @@ import {createLivePlayback} from './live-playback.mjs';
     text('play-time', '00:00.0'); text('total-time', '00:00.0'); renderCursor();
     $('download-csv').hidden = true; $('field-selector').disabled = true; $('timeline').disabled = true; $('play-log').disabled = true;
     $('field-selector').replaceChildren(); text('selected-log-title', '正在读取日志…'); text('log-summary', '');
+    $('tracking-axis').disabled = true;
     text('log-message', '正在加载所选日志'); renderLogList(); updateShare(); drawLog();
     try {
       const result = await api(`/api/logs/${encodeURIComponent(id)}`);
@@ -474,20 +482,32 @@ import {createLivePlayback} from './live-playback.mjs';
   function buildFields() {
     $('field-selector').replaceChildren();
     const available = fields.filter(field => state.samples.some(s => field.key === 'armed' ? logArmed(s.armed) !== null : valid(s[field.key])));
-    const defaults = ['roll_deg', 'pitch_deg', 'height_m'];
+    const keys = new Set(available.map(field => field.key));
+    const hasRoll = trackingPairs.roll.every(key => keys.has(key));
+    const defaults = hasRoll ? trackingPairs.roll : ['roll_deg', 'pitch_deg', 'height_m'];
+    $('tracking-axis').value = hasRoll ? 'roll' : 'custom';
+    $('tracking-axis').disabled = !available.length;
+    for (const axis of Object.keys(trackingPairs)) $(`tracking-${axis}`).disabled = !trackingPairs[axis].every(key => keys.has(key));
     available.forEach(field => {
       const label = document.createElement('label'); const checkbox = document.createElement('input'); checkbox.type = 'checkbox'; checkbox.value = field.key;
       checkbox.checked = defaults.includes(field.key); if (checkbox.checked) state.selectedFields.add(field.key);
       const line = document.createElement('i'); line.className = `series-${field.key}`;
       const name = document.createElement('span'); name.textContent = `${field.label} ${field.unit}`;
       label.append(checkbox, line, name); $('field-selector').append(label);
-      checkbox.addEventListener('change', () => { if (checkbox.checked) state.selectedFields.add(field.key); else state.selectedFields.delete(field.key); chartViews.get($('log-chart')).ranges.delete(field.unit); drawLog(); renderCursor(); });
+      checkbox.addEventListener('change', () => { $('tracking-axis').value = 'custom'; if (checkbox.checked) state.selectedFields.add(field.key); else state.selectedFields.delete(field.key); chartViews.get($('log-chart')).ranges.delete(field.unit); drawLog(); renderCursor(); });
     });
     if (!state.selectedFields.size && available.length) {
       state.selectedFields.add(available[0].key); $('field-selector').querySelector('input').checked = true;
     }
     $('field-selector').disabled = !available.length;
   }
+
+  $('tracking-axis').addEventListener('change', () => {
+    const keys = trackingPairs[$('tracking-axis').value]; if (!keys) return;
+    state.selectedFields = new Set(keys);
+    for (const input of $('field-selector').querySelectorAll('input')) input.checked = state.selectedFields.has(input.value);
+    chartViews.get($('log-chart')).ranges.clear(); drawLog(); renderCursor();
+  });
 
   function selectedFields() { return fields.filter(f => state.selectedFields.has(f.key)); }
   function drawLog() {
@@ -497,6 +517,8 @@ import {createLivePlayback} from './live-playback.mjs';
   }
 
   bindChartScale('live-attitude-chart', 'reset-attitude-scale', drawLive);
+  bindChartScale('live-pitch-chart', 'reset-pitch-scale', drawLive);
+  bindChartScale('live-yaw-rate-chart', 'reset-yaw-rate-scale', drawLive);
   bindChartScale('live-yaw-chart', 'reset-yaw-scale', drawLive);
   bindChartScale('live-height-chart', 'reset-height-scale', drawLive);
   bindChartScale('log-chart', 'reset-log-scale', drawLog);

@@ -1,6 +1,7 @@
 // Only the local publisher has write access. Public routes are read-only.
 const ASSETS = globalThis.__FLIGHT_ASSETS__ || {};
-const FIELDS=['t_s','roll_deg','pitch_deg','yaw_deg','height_m','vx_mps','vy_mps','vz_mps','speed_mps','m1_us','m2_us','m3_us','m4_us','throttle_us','armed'];
+const TRACKING=['roll_sp_deg','pitch_sp_deg','yaw_rate_dps','yaw_rate_sp_dps'];
+const FIELDS=['t_s','roll_deg','pitch_deg','yaw_deg','height_m','vx_mps','vy_mps','vz_mps','speed_mps','m1_us','m2_us','m3_us','m4_us','throttle_us','armed',...TRACKING];
 const ID=/^[A-Za-z0-9_-]{8,90}$/;
 const SECURE={'X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','X-Robots-Tag':'noindex, nofollow, noarchive','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'"};
 const num=(v,lo=-1e12,hi=1e12)=>typeof v==='number'&&Number.isFinite(v)&&v>=lo&&v<=hi?v:null;
@@ -20,6 +21,7 @@ function cleanLive(v,now=Date.now()){
   sequence:num(v.sequence,0,Number.MAX_SAFE_INTEGER),armed:bool(v.armed),
   control_mode:mode(v.control_mode),
   attitude:numbers(v.attitude,['roll_deg','pitch_deg','yaw_deg']),
+  tracking:numbers(v.tracking,TRACKING),
   motion:numbers(v.motion,['height_m','vx_mps','vy_mps','speed_mps','x_m','y_m','vz_mps']),
   rc:{valid:bool(v.rc?.valid),throttle_us:num(v.rc?.throttle_us,0,3000),channels:Array.isArray(v.rc?.channels)?v.rc.channels.slice(0,16).map(x=>num(x,0,3000)):[]},
   motors_us:Array.from({length:4},(_,i)=>num(v.motors_us?.[i],0,3000)),
@@ -42,7 +44,7 @@ function cleanLive(v,now=Date.now()){
  const historyReference=num(v.history_reference_time_ms,1,253402300799000);
  if(state.timing_valid&&historyReference!==null&&Array.isArray(v.history)){
   const offset=sourceTime-historyReference;
-  state.history=v.history.slice(-120).map(p=>({...numbers(p,['roll_deg','pitch_deg','yaw_deg','height_m','speed_mps']),t:num(typeof p?.t==='number'?p.t+offset:null,0,now+state.clock_uncertainty_ms+100)})).filter(p=>p.t!==null);
+  state.history=v.history.slice(-120).map(p=>({...numbers(p,['roll_deg','pitch_deg','yaw_deg','height_m','speed_mps',...TRACKING]),t:num(typeof p?.t==='number'?p.t+offset:null,0,now+state.clock_uncertainty_ms+100)})).filter(p=>p.t!==null);
  }
  return state;
 }

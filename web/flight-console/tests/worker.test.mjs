@@ -3,6 +3,16 @@ import worker,{cleanLive,cleanLog,getAge,csv} from '../worker/flight.mjs';
 class Bucket{data=new Map();async put(k,v,o={}){this.data.set(k,{v,customMetadata:o.customMetadata});}async get(k){const a=this.data.get(k);return a?{json:async()=>JSON.parse(a.v)}:null;}async delete(k){this.data.delete(k);}async list(){return {objects:[...this.data].filter(([k])=>k.startsWith('logs/')).map(([key,v])=>({key,customMetadata:v.customMetadata})),truncated:false};}}
 const request=(path,o,token='')=>new Request('https://test.invalid'+path,{method:'POST',headers:{'Content-Type':'application/json','X-Flight-Publish-Token':token},body:JSON.stringify(o)});
 const snapshot=(overrides={},now=Date.now())=>({schema:1,connected:true,fresh:true,source_valid:true,firmware:'B0AC',source_ttl_ms:500,age_ms:20,timing_version:2,timing_valid:true,clock_uncertainty_ms:0,source_publish_at:new Date(now).toISOString(),...overrides});
+
+test('reported tracking fields survive cloud live/history/log allowlists without exposing metadata',()=>{
+ const now=1800000000000,tracking={roll_sp_deg:5,pitch_sp_deg:-4,yaw_rate_dps:1.5,yaw_rate_sp_dps:2,private:'secret'};
+ const v=cleanLive(snapshot({firmware:'B0B0',tracking,history_reference_time_ms:now,history:[{t:now-500,...tracking}]},now),now);
+ assert.equal(v.tracking.roll_sp_deg,5);assert.equal(v.tracking.private,undefined);
+ assert.equal(v.history[0].yaw_rate_sp_dps,2);assert.equal(v.history[0].private,undefined);
+ const log=cleanLog({id:'tracking_test_123',samples:[{t_s:0,...tracking},{t_s:1,roll_sp_deg:null,pitch_sp_deg:'invalid'}]});
+ assert.equal(log.samples[0].pitch_sp_deg,-4);assert.equal(log.samples[1].pitch_sp_deg,null);
+ assert.ok(log.columns.includes('yaw_rate_sp_dps'));assert.equal(log.samples[0].private,undefined);
+});
 test('anonymous visitors cannot publish or execute aircraft commands',async()=>{
  const env={PUBLISH_TOKEN:'a'.repeat(64),BUCKET:new Bucket()};
  assert.equal((await worker.fetch(request('/api/publish/live',{schema:1}),env)).status,401);

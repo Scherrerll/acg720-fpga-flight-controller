@@ -1,6 +1,6 @@
 // Presentation only: interpolate between received history points, never beyond
 // the last point or through a source gap. Source validity is owned by live-state.
-const fields=['roll_deg','pitch_deg','yaw_deg','height_m','speed_mps'];
+const fields=['roll_deg','pitch_deg','yaw_deg','height_m','speed_mps','roll_sp_deg','pitch_sp_deg','yaw_rate_dps','yaw_rate_sp_dps'];
 const finite=v=>typeof v==='number'&&Number.isFinite(v);
 const angular=(a,b,f)=>a+(((b-a+180)%360+360)%360-180)*f;
 
@@ -47,7 +47,7 @@ export function createLivePlayback({delayMs=4000,maxGapMs=1600}={}){
   const f=b.t===a.t?0:Math.max(0,Math.min(1,(cursor-a.t)/(b.t-a.t)));
   const result={t:cursor,buffering:cursor>=latest||gap,playing:advance&&cursor<latest&&!gap};
   for(const k of fields){
-   result[k]=f===0?a[k]:f===1?b[k]:finite(a[k])&&finite(b[k])?(k.endsWith('_deg')?angular(a[k],b[k],f):a[k]+(b[k]-a[k])*f):null;
+   result[k]=f===0?a[k]:f===1?b[k]:k.includes('_sp_')?a[k]:finite(a[k])&&finite(b[k])?(k.endsWith('_deg')?angular(a[k],b[k],f):a[k]+(b[k]-a[k])*f):null;
   }
   return result;
  }

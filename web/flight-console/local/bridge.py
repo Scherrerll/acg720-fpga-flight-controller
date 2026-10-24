@@ -26,7 +26,9 @@ MAX_RESPONSE = 20 * 1024 * 1024
 MAX_SAMPLES = 20000
 SESSION = re.compile(r"\d{8}T\d{6}Z_[0-9a-f]{8}\Z")
 COLUMNS = ["t_s", "roll_deg", "pitch_deg", "yaw_deg", "height_m", "vx_mps", "vy_mps", "vz_mps",
-           "m1_us", "m2_us", "m3_us", "m4_us", "throttle_us", "armed"]
+           "m1_us", "m2_us", "m3_us", "m4_us", "throttle_us", "armed",
+           "roll_sp_deg", "pitch_sp_deg", "yaw_rate_dps", "yaw_rate_sp_dps"]
+TRACKING = ("roll_sp_deg", "pitch_sp_deg", "yaw_rate_dps", "yaw_rate_sp_dps")
 HERE = Path(__file__).resolve().parent
 
 
@@ -142,6 +144,7 @@ def sanitize_live(state):
         "sequence": number(state.get("sequence")), "armed": boolean(data.get("armed")),
         "control_mode": mode_value(data.get("mode_active")),
         "attitude": {"roll_deg": number(data.get("roll_deg")), "pitch_deg": number(data.get("pitch_deg")), "yaw_deg": number(data.get("yaw_relative_deg"))},
+        "tracking": {k: number(dictionary(state.get("tracking")).get(k)) if fresh else None for k in TRACKING},
         "motion": {"height_m": height, "vx_mps": vx, "vy_mps": vy,
             "speed_mps": math.hypot(vx, vy) if vx is not None and vy is not None else None,
             "x_m": scaled(nv.get("nav_position_x_mm"), 1000) if nf else number(data.get("position_x_m")),
@@ -334,6 +337,8 @@ def csv_samples(raw, identifier):
             if protocol == "a579":
                 for k in ("roll_deg", "pitch_deg", "yaw_deg", "throttle_us", "m1_us", "m2_us", "m3_us", "m4_us"):
                     sample[k] = number(row.get(k))
+                for k in TRACKING:
+                    sample[k] = number(row.get(k))
                 sample["height_m"] = scaled(row.get("selected_height_cm"), 100)
                 # Never reinterpret diagnostic/nav placeholder armed=False as a real motor state.
                 sample["armed"] = {"true": True, "false": False, "1": True, "0": False}.get(str(row.get("armed", "")).lower())
@@ -414,7 +419,7 @@ class Bridge:
                     # Build only from this successful poll's live fields, never
                     # backfill old source history or reset the source frame age.
                     if not self.history or source_time > self.history[-1]["t"]:
-                        self.history.append({"t": round(source_time), **value["attitude"],
+                        self.history.append({"t": round(source_time), **value["attitude"], **value["tracking"],
                             "height_m": value["motion"]["height_m"], "speed_mps": value["motion"]["speed_mps"]})
                         self.last_history_time, self.last_history_identity = now, identity
                 value["history"] = list(self.history)

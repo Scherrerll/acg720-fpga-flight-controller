@@ -7,3 +7,6 @@
 .brand-wordmark{display:block;width:126px;height:26px;object-fit:contain;flex-shrink:0}@media(max-width:620px){.brand-wordmark{width:100px;height:22px}}
 
 .display-mode{display:flex;align-items:center;gap:12px}.display-mode .button{padding:5px 9px;font-size:11px}.display-mode .button[aria-pressed="true"]{border-color:#5283a4;color:#a9d0ec;background:#152b3a}.playback-status{margin:0 18px 8px;min-height:16px}.status-banner.playback{background:#14232e;border-color:#294558;color:#a5bdce}.connection.buffered{color:#9bc6e3}.connection.buffered i{background:#7caccd}
+.series-roll_sp_deg,.series-pitch_sp_deg,.series-yaw_rate_sp_dps{--line:#8cbaa6}
+.series-yaw_rate_dps{--line:#65a5e7}
+.tracking-select{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:11px}
