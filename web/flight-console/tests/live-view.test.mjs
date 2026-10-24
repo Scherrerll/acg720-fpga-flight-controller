@@ -1,14 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-test('live view animates received history, leaves discrete values raw, and switches to instant mode',async()=>{
+test('live view animates history, plots relative yaw, adapts short windows, and preserves raw states and gaps',async()=>{
  const nodes=new Map(),listeners=new Map(),frames=new Map();let stamp=0,serial=0;
+ class CanvasContext{
+  constructor(){this.strokes=[];this.texts=[];this.path=[];}
+  scale(){this.strokes=[];this.texts=[];}
+  beginPath(){this.path=[];}moveTo(x,y){this.path.push({op:'move',x,y});}lineTo(x,y){this.path.push({op:'line',x,y});}
+  stroke(){this.strokes.push({color:this.strokeStyle,path:[...this.path]});}
+  fillText(value){this.texts.push(value);}save(){}restore(){}rect(){}clip(){}setLineDash(){}
+ }
  class Element{
-  constructor(){this.attrs={};this.events={};this.style={};this.textContent='';this.className='';this.lastElementChild={textContent:''};this.hidden=false;this.classes=new Set();this.classList={toggle:(k,on)=>{if(on)this.classes.add(k);else this.classes.delete(k);},add:k=>this.classes.add(k),remove:k=>this.classes.delete(k)};}
+  constructor(){this.attrs={};this.dataset={};this.events={};this.style={};this.textContent='';this.className='';this.lastElementChild={textContent:''};this.hidden=false;this.classes=new Set();this.classList={toggle:(k,on)=>{if(on)this.classes.add(k);else this.classes.delete(k);},add:k=>this.classes.add(k),remove:k=>this.classes.delete(k)};}
   set id(v){this._id=v;nodes.set(v,this);}get id(){return this._id;}
   setAttribute(k,v){this.attrs[k]=String(v);}getAttribute(k){return this.attrs[k];}removeAttribute(k){delete this.attrs[k];}
   append(){}appendChild(){}replaceChildren(){}addEventListener(k,fn){this.events[k]=fn;}
-  getBoundingClientRect(){return {width:0,height:0,left:0,top:0};}
+  getBoundingClientRect(){return {width:this.id?.startsWith('live-')&&this.id.endsWith('-chart')?800:0,height:143,left:0,top:0};}
+  getContext(){return this.context??=new CanvasContext();}
  }
  const element=id=>{if(!nodes.has(id)){const e=new Element();e.id=id;}return nodes.get(id);};
  const live={schema:1,mode:'share',connected:true,fresh:true,source_valid:true,timing_valid:true,age_ms:100,
@@ -32,12 +40,36 @@ test('live view animates received history, leaves discrete values raw, and switc
   assert.equal(element('height-value').textContent,'6.20');
   assert.equal(element('motor-value-1').textContent,'1201');assert.equal(element('armed-value').textContent,'未解锁');
   assert.match(element('playback-status').textContent,/平滑回放/);
+  const series=(id,color)=>element(id).context.strokes.find(s=>s.color===color).path;
+  const roll=series('live-attitude-chart','#65a5e7');
+  assert.equal(roll[0].x,52,'short received history starts at the left edge instead of an empty fixed 60-second window');
+  assert.ok(Math.abs(roll.at(-1).x-782)<.01);
+  assert.match(element('live-history-window').textContent,/6\.2 s/);
+  const yaw=series('live-yaw-chart','#b29dcd');
+  assert.ok(yaw.length>2,'relative yaw is actually drawn, not just added to the legend');
+  assert.equal(yaw[0].x,roll[0].x);assert.equal(yaw.at(-1).x,roll.at(-1).x);
   element('smooth-live').events.click();
   assert.equal(element('smooth-live').getAttribute('aria-pressed'),'false');
   assert.equal(element('horizon-roll').textContent,'10.0°');
   assert.equal(element('height-value').textContent,'10.00');
   assert.equal(element('motor-value-1').textContent,'1201');
   assert.match(element('playback-status').textContent,/即时显示/);
+  assert.match(element('live-history-window').textContent,/10\.2 s/);
+  // Refresh through the real visibility/resume path with a full window and a
+  // genuine five-second source gap. Adaptive axes must not hide or fill it.
+  overrides.document.hidden=true;listeners.get('visibilitychange')();
+  live.server_response_time_ms=70000;live.sequence=2000;
+  live.history=Array.from({length:141},(_,i)=>({t:i*500,roll_deg:i,pitch_deg:i/2,yaw_deg:i/3,height_m:1,speed_mps:0})).filter(p=>p.t<=35000||p.t>=40500);
+  overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));
+  flushFrames(300);
+  assert.match(element('live-history-window').textContent,/60\.0 s/);
+  assert.ok(series('live-attitude-chart','#65a5e7').filter(p=>p.op==='move').length>=2,'real source gaps remain disconnected');
+  overrides.document.hidden=true;listeners.get('visibilitychange')();
+  for(const p of live.history)p.yaw_deg=null;live.attitude.yaw_deg=null;live.sequence++;
+  overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));
+  flushFrames(400);
+  assert.equal(series('live-yaw-chart','#b29dcd').length,0,'missing yaw is never plotted as zero');
+  assert.ok(element('live-yaw-chart').context.texts.includes('此时段无有效数据'));
   overrides.document.hidden=true;listeners.get('visibilitychange')();assert.equal(frames.size,0);
  }finally{
   for(const [k,descriptor] of saved){if(descriptor)Object.defineProperty(globalThis,k,descriptor);else delete globalThis[k];}

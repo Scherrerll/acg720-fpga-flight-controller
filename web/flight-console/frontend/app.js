@@ -384,12 +384,19 @@ import {createLivePlayback} from './live-playback.mjs';
     const received=valid(state.live?.server_response_time_ms)?state.live.server_response_time_ms:Date.parse(state.live?.received_at);
     const buffered = state.smooth && state.visual;
     const now = buffered ? state.visual.t : Number.isFinite(received) ? received+state.liveRtt+Math.max(0,performance.now()-state.lastSuccess) : Date.now();
-    const samples = (buffered ? livePlayback.history() : Array.isArray(state.live?.history) ? state.live.history : []).filter(s => valid(s.t) && s.t >= now - 60000 && (buffered ? s.t <= now : s.t <= now + 1000)).map(s => ({ ...s, t_s: s.t / 1000 })).sort((a, b) => a.t_s - b.t_s);
+    const history = buffered ? livePlayback.history() : Array.isArray(state.live?.history) ? state.live.history : [];
+    const samples = history.filter(s => valid(s.t) && s.t >= now - 60000 && (buffered ? s.t <= now : s.t <= now + 1000)).map(s => ({ ...s, t_s: s.t / 1000 })).sort((a, b) => a.t_s - b.t_s);
     if (buffered && samples.at(-1)?.t !== state.visual.t) samples.push({...state.visual, t_s:state.visual.t / 1000});
-    chart($('live-attitude-chart'), samples, fields.slice(0, 2), now / 1000 - 60, now / 1000);
-    chart($('live-height-chart'), samples, [fields[3]], now / 1000 - 60, now / 1000);
-    $('live-attitude-chart').classList.toggle('is-stale', !(liveFresh() || buffered && playbackQualified() && liveStatus().connected));
-    $('live-height-chart').classList.toggle('is-stale', !(liveFresh() || buffered && playbackQualified() && liveStatus().connected));
+    const end = now / 1000;
+    // Expand to 60 seconds as history arrives; leave actual source gaps intact.
+    const oldest = history.reduce((t, s) => valid(s.t) && s.t <= now ? Math.min(t, s.t) : t, now) / 1000;
+    const start = samples.length ? Math.max(end - 60, Math.min(end - 5, oldest)) : end - 60;
+    text('live-history-window', samples.length ? `接收时间 · 当前显示 ${(end - start).toFixed(1)} s · 最多 60 s` : '接收时间 · 等待历史记录');
+    chart($('live-attitude-chart'), samples, fields.slice(0, 2), start, end);
+    chart($('live-yaw-chart'), samples, [fields[2]], start, end);
+    chart($('live-height-chart'), samples, [fields[3]], start, end);
+    const current = liveFresh() || buffered && playbackQualified() && liveStatus().connected;
+    for (const id of ['live-attitude-chart', 'live-yaw-chart', 'live-height-chart']) $(id).classList.toggle('is-stale', !current);
   }
 
   async function loadLogs() {
@@ -490,6 +497,7 @@ import {createLivePlayback} from './live-playback.mjs';
   }
 
   bindChartScale('live-attitude-chart', 'reset-attitude-scale', drawLive);
+  bindChartScale('live-yaw-chart', 'reset-yaw-scale', drawLive);
   bindChartScale('live-height-chart', 'reset-height-scale', drawLive);
   bindChartScale('log-chart', 'reset-log-scale', drawLog);
 

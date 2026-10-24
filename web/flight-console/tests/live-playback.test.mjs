@@ -48,3 +48,13 @@ test('normal 16-bit sequence wrap keeps the existing buffer',()=>{
  const p=createLivePlayback();p.ingest(packet([point(0),point(500)],{sequence:65535}),0);
  p.ingest(packet([point(500),point(1000)],{sequence:0}),100);assert.equal(p.history().length,3);
 });
+
+test('a running buffer retains 60 seconds behind its delayed playhead',()=>{
+ const p=createLivePlayback();
+ p.ingest(packet(Array.from({length:121},(_,i)=>point(i*500)),{sequence:1}),0);
+ p.ingest(packet(Array.from({length:121},(_,i)=>point(4000+i*500)),{sequence:2}),4000);
+ assert.equal(p.history()[0].t,0);
+ for(let t=0;t<=4000;t+=100)p.sample(t);
+ const now=p.sample(4000).t;
+ assert.ok(now-p.history()[0].t>=60000);
+});

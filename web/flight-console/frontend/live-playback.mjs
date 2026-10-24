@@ -21,7 +21,8 @@ export function createLivePlayback({delayMs=4000,maxGapMs=1600}={}){
   const merged=new Map(points.map(p=>[p.t,p]));
   for(const p of incoming)if(p.t>=cutoff)merged.set(p.t,p);
   points=[...merged.values()].sort((a,b)=>a.t-b.t);
-  const oldest=points.at(-1).t-60000;
+  // Retain the playback delay too, so a buffered 60-second plot can stay full.
+  const oldest=points.at(-1).t-60000-delayMs;
   points=points.filter(p=>p.t>=oldest).slice(-256);
   const target=Math.max(points[0].t,points.at(-1).t-delayMs);
   if(cursor===null||cursor<points[0].t||points.at(-1).t-cursor>Math.max(12000,delayMs*3))cursor=target;
