@@ -100,15 +100,21 @@ test('latest live values and history update immediately, drawing eases briefly, 
   flushFrames(600);
   assert.equal(series('live-orientation-chart','#ffb454').length,0,'missing yaw is never plotted as zero');
   assert.ok(series('live-orientation-chart','#2dd4bf').length>0,'missing yaw does not hide the other angles');
-  element('pose-instant').events.click();
   const heldRoll=element('horizon-roll').textContent,heldPitch=element('horizon-pitch').textContent;
   overrides.document.hidden=true;listeners.get('visibilitychange')();
   live.attitude={roll_deg:null,pitch_deg:99,yaw_deg:null};live.sequence++;
   overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));flushFrames(650);
   assert.equal(element('horizon-roll').textContent,heldRoll);assert.equal(element('horizon-pitch').textContent,heldPitch);
   assert.match(element('pose-status').textContent,/最后有效值/);
+  // A healthy but slow cloud cadence must still ease to the latest pose.
+  live.attitude={roll_deg:22,pitch_deg:30,yaw_deg:3};live.fresh=true;live.age_ms=100;live.sequence++;
+  const beforeSlow=element('attitude-rotation').getAttribute('transform');await pollAt(3300);
+  assert.equal(element('horizon-roll').textContent,'22.0°');
+  assert.equal(element('attitude-rotation').getAttribute('transform'),beforeSlow,'2.6-second response spacing must not disable transitions');
+  flushFrames(3380);assert.equal(element('attitude-rotation').getAttribute('transform'),'rotate(-18.5,200,140)');
+  flushFrames(3460);assert.equal(element('attitude-rotation').getAttribute('transform'),'rotate(-22,200,140)');
   overrides.location.hash='#logs';listeners.get('window:hashchange')();await new Promise(resolve=>setImmediate(resolve));
-  await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(700);
+  await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(3500);
   assert.equal(element('tracking-axis').value,'roll');
   const checked=()=>element('field-selector').querySelectorAll('input').filter(input=>input.checked).map(input=>input.value).sort();
   assert.deepEqual(checked(),['roll_deg','roll_sp_deg']);

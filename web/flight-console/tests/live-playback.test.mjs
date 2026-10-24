@@ -27,10 +27,10 @@ test('roll/yaw wrap follows the short arc, while missing values stay missing',()
  assert.deepEqual(p.sample(350),{roll_deg:null,yaw_deg:null,pitch_deg:null});
 });
 test('resume after a long source gap, explicit instant mode and resets snap to real values',()=>{
- const p=createLiveTween();p.set({roll_deg:1},0);p.set({roll_deg:9},2000);
- assert.equal(p.sample(2000).roll_deg,9);
- p.set({roll_deg:20},2100,{snap:true});assert.equal(p.sample(2100).roll_deg,20);
- p.reset();assert.equal(p.sample(2200),null);p.set({roll_deg:30},2200);assert.equal(p.sample(2200).roll_deg,30);
+ const p=createLiveTween();p.set({roll_deg:1},0);p.set({roll_deg:9},12000);
+ assert.equal(p.sample(12000).roll_deg,9);
+ p.set({roll_deg:20},12100,{snap:true});assert.equal(p.sample(12100).roll_deg,20);
+ p.reset();assert.equal(p.sample(12200),null);p.set({roll_deg:30},12200);assert.equal(p.sample(12200).roll_deg,30);
 });
 test('clock correction eases without freezing the moving time axis',()=>{
  const p=createLiveTween({angularKeys:[]});p.set({offset:10000},0);p.set({offset:10040},1000);

@@ -3,7 +3,7 @@
 const finite=v=>typeof v==='number'&&Number.isFinite(v);
 const angular=(a,b,f)=>a+(((b-a+180)%360+360)%360-180)*f;
 
-export function createLiveTween({durationMs=160,maxGapMs=1600,angularKeys=['roll_deg','yaw_deg']}={}){
+export function createLiveTween({durationMs=160,maxGapMs=10000,angularKeys=['roll_deg','yaw_deg']}={}){
  let from=null,target=null,started=0,updated=null;
  const reset=()=>{from=null;target=null;updated=null;};
  function sample(now){
