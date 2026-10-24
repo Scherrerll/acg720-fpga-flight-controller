@@ -1,55 +1,41 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createLivePlayback,createLivePose} from '../frontend/live-playback.mjs';
+import {createLiveTween,createLivePose} from '../frontend/live-playback.mjs';
 const point=(t,x=t/1000)=>({t,roll_deg:x,pitch_deg:x*2,yaw_deg:x,height_m:x,speed_mps:x});
 const packet=(history,extra={})=>({mode:'share',connected:true,source_valid:true,fresh:true,timing_valid:true,firmware:'B0B0',sequence:1,history,...extra});
 
-test('setpoints hold their reported step while measured rate is interpolated',()=>{
- const p=createLivePlayback({delayMs:250});
- p.ingest(packet([{...point(0),roll_sp_deg:0,yaw_rate_sp_dps:2,yaw_rate_dps:0},{...point(500),roll_sp_deg:10,yaw_rate_sp_dps:6,yaw_rate_dps:4}]),0);
- const first=p.sample(0);assert.equal(first.roll_sp_deg,0);assert.equal(first.yaw_rate_sp_dps,2);assert.equal(first.yaw_rate_dps,2);
- const next=p.sample(250);assert.equal(next.roll_sp_deg,10);assert.equal(next.yaw_rate_sp_dps,6);
+test('drawing eases to the newest target in 160ms and stops without extrapolation',()=>{
+ const p=createLiveTween();assert.equal(p.sample(0),null);
+ p.set({roll_deg:0,pitch_deg:0},0);assert.equal(p.sample(0).roll_deg,0);
+ p.set({roll_deg:10,pitch_deg:20},1000);
+ assert.equal(p.sample(1000).roll_deg,0);assert.equal(p.sample(1080).roll_deg,5);
+ assert.deepEqual(p.sample(1160),{roll_deg:10,pitch_deg:20});
+ assert.deepEqual(p.sample(100000),{roll_deg:10,pitch_deg:20});
 });
-test('buffered history advances continuously between actual received points',()=>{
- const p=createLivePlayback();p.ingest(packet(Array.from({length:21},(_,i)=>point(i*500))),0);
- assert.equal(p.sample(0).t,6000);
- const a=p.sample(100),b=p.sample(200);
- assert.equal(a.t,6100);assert.equal(b.t,6200);assert.equal(a.roll_deg,6.1);assert.equal(b.height_m,6.2);
+test('retargeting starts from the visible pose; repeated targets do not restart motion',()=>{
+ const p=createLiveTween();p.set({roll_deg:0},0);p.set({roll_deg:10},100);
+ const halfway=p.sample(180).roll_deg;p.set({roll_deg:20},180);
+ assert.equal(p.sample(180).roll_deg,halfway);assert.equal(p.sample(260).roll_deg,12.5);
+ p.set({roll_deg:20},260);assert.equal(p.sample(340).roll_deg,20);
 });
-test('jittered response batches do not snap the playhead to the latest packet',()=>{
- const p=createLivePlayback();p.ingest(packet(Array.from({length:21},(_,i)=>point(i*500))),0);
- let previous=p.sample(0).t;
- for(let t=100;t<=9000;t+=100){
-  if([2300,5100,8500].includes(t))p.ingest(packet(Array.from({length:21},(_,i)=>point(t+i*500)),{sequence:t}),t);
-  const s=p.sample(t);assert.ok(s.t>=previous&&s.t-previous<=111);previous=s.t;
- }
+test('roll/yaw wrap follows the short arc, while missing values stay missing',()=>{
+ const p=createLiveTween();p.set({roll_deg:179,yaw_deg:179,pitch_deg:null},0);
+ p.set({roll_deg:-179,yaw_deg:-179,pitch_deg:2},100);
+ assert.deepEqual(p.sample(180),{roll_deg:180,yaw_deg:180,pitch_deg:2});
+ assert.deepEqual(p.sample(260),{roll_deg:-179,yaw_deg:-179,pitch_deg:2});
+ p.set({roll_deg:null,yaw_deg:null,pitch_deg:null},300);
+ assert.deepEqual(p.sample(350),{roll_deg:null,yaw_deg:null,pitch_deg:null});
 });
-test('never extrapolates after receiving stops and can be frozen immediately',()=>{
- const p=createLivePlayback({delayMs:500});p.ingest(packet([point(0),point(500),point(1000)]),0);
- for(let t=0;t<3000;t+=100)assert.ok(p.sample(t).t<=1000);
- const end=p.sample(3000);assert.equal(end.t,1000);assert.equal(end.buffering,true);
- assert.equal(p.sample(8000,{advance:false}).t,1000);
+test('resume after a long source gap, explicit instant mode and resets snap to real values',()=>{
+ const p=createLiveTween();p.set({roll_deg:1},0);p.set({roll_deg:9},2000);
+ assert.equal(p.sample(2000).roll_deg,9);
+ p.set({roll_deg:20},2100,{snap:true});assert.equal(p.sample(2100).roll_deg,20);
+ p.reset();assert.equal(p.sample(2200),null);p.set({roll_deg:30},2200);assert.equal(p.sample(2200).roll_deg,30);
 });
-test('a source gap is not turned into invented intermediate motion',()=>{
- const p=createLivePlayback({delayMs:500});p.ingest(packet([point(0),point(500),point(5000),point(5500)]),0);
- const s=p.sample(0);assert.equal(s.t,5000);
- p.reset();p.ingest(packet([point(0),point(500),point(5000)]),0);
- const gap=p.sample(100);assert.equal(gap.t,500);assert.equal(gap.buffering,true);assert.equal(gap.roll_deg,.5);
-});
-test('yaw crosses wrap by the shortest path and unknown values stay unknown',()=>{
- const p=createLivePlayback({delayMs:250});p.ingest(packet([{...point(0),yaw_deg:179,height_m:null},{...point(500),yaw_deg:-179}]),0);
- const s=p.sample(0);assert.equal(s.yaw_deg,180);assert.equal(s.height_m,null);
-});
-test('invalid or unsynchronised packets cannot make playback current',()=>{
- for(const invalid of [{source_valid:false},{timing_valid:false},{connected:false}]){
-  const p=createLivePlayback();assert.equal(p.ingest(packet([point(0)],invalid),0),false);assert.equal(p.sample(0),null);
- }
-});
-
-test('delayed but valid received history can play without claiming current data',()=>{
- const p=createLivePlayback({delayMs:250});
- assert.equal(p.ingest(packet([point(0),point(500)],{fresh:false,age_ms:6500}),0),true);
- assert.equal(p.sample(100).t,350);
+test('clock correction eases without freezing the moving time axis',()=>{
+ const p=createLiveTween({angularKeys:[]});p.set({offset:10000},0);p.set({offset:10040},1000);
+ assert.equal(1080+p.sample(1080).offset,11100);
+ assert.equal(1160+p.sample(1160).offset,11200);
 });
 
 test('latest pose ignores chart delay and retains coherent roll/pitch through missing fields',()=>{
@@ -76,23 +62,9 @@ test('invalid source keeps last valid pose aged; real epoch changes discard it',
  assert.equal(p.sample(800).attitude.roll_deg,1);assert.equal(p.sample(800).age_ms,900);assert.equal(p.sample(800).retained,true);
  p.ingest({...base,firmware:'B0B1',source_valid:false},1000);assert.equal(p.sample(1000),null);
 });
-test('firmware changes and sequence restarts discard previous-epoch motion',()=>{
- const p=createLivePlayback();p.ingest(packet([point(0),point(500)],{sequence:100}),0);
- p.ingest(packet([point(0),point(500),point(1000)],{sequence:1}),100);
- assert.equal(p.sample(100).t,1000);assert.equal(p.history().length,1);
- p.ingest(packet([point(1500)],{firmware:'B0B1',sequence:2}),200);assert.equal(p.history()[0].t,1500);
-});
-test('normal 16-bit sequence wrap keeps the existing buffer',()=>{
- const p=createLivePlayback();p.ingest(packet([point(0),point(500)],{sequence:65535}),0);
- p.ingest(packet([point(500),point(1000)],{sequence:0}),100);assert.equal(p.history().length,3);
-});
-
-test('a running buffer retains 60 seconds behind its delayed playhead',()=>{
- const p=createLivePlayback();
- p.ingest(packet(Array.from({length:121},(_,i)=>point(i*500)),{sequence:1}),0);
- p.ingest(packet(Array.from({length:121},(_,i)=>point(4000+i*500)),{sequence:2}),4000);
- assert.equal(p.history()[0].t,0);
- for(let t=0;t<=4000;t+=100)p.sample(t);
- const now=p.sample(4000).t;
- assert.ok(now-p.history()[0].t>=60000);
+test('pose epoch changes can reset drawing transitions; normal sequence wrap does not',()=>{
+ const p=createLivePose(),base=packet([],{sequence:65535,age_ms:100,attitude:{roll_deg:1,pitch_deg:2,yaw_deg:3}});
+ p.ingest(base,0);const epoch=p.sample(0).epoch;
+ p.ingest({...base,sequence:0},500);assert.equal(p.sample(500).epoch,epoch);assert.equal(p.sample(500).receivedAt,500);
+ p.ingest({...base,sequence:1,firmware:'B0B1'},1000);assert.notEqual(p.sample(1000).epoch,epoch);
 });

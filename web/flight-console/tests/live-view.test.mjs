@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-test('live view animates history, plots relative yaw, adapts short windows, and preserves raw states and gaps',async()=>{
- const nodes=new Map(),listeners=new Map(),frames=new Map();let stamp=0,serial=0;
+test('latest live values and history update immediately, drawing eases briefly, and raw states and source gaps stay intact',async()=>{
+ const nodes=new Map(),listeners=new Map(),frames=new Map(),timers=new Map();let stamp=0,serial=0;
  class CanvasContext{
   constructor(){this.strokes=[];this.texts=[];this.path=[];}
   scale(){this.strokes=[];this.texts=[];}
@@ -30,27 +30,34 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   window:{devicePixelRatio:1,addEventListener:(k,fn)=>listeners.set('window:'+k,fn)},location:{hash:'',search:'',href:'http://localhost/'},
   performance:{now:()=>stamp},fetch:async url=>({ok:true,json:async()=>url.includes('capabilities')?{mode:'share'}:url==='/api/logs'?{logs:[log]}:url.includes('/api/logs/')?{log}:structuredClone(live)}),
   requestAnimationFrame:fn=>{const id=++serial;frames.set(id,fn);return id;},cancelAnimationFrame:id=>frames.delete(id),
-  setTimeout:()=>++serial,clearTimeout(){},setInterval:()=>++serial};
+  setTimeout:(fn,delay)=>{const id=++serial;timers.set(id,{fn,delay});return id;},clearTimeout:id=>timers.delete(id),setInterval:()=>++serial};
  const saved=new Map(Object.keys(overrides).map(k=>[k,Object.getOwnPropertyDescriptor(globalThis,k)]));
  const flushFrames=t=>{stamp=t;const pending=[...frames.values()];frames.clear();for(const fn of pending)fn(t);};
+ const pollAt=async t=>{stamp=t;const [id,timer]=[...timers].find(([,timer])=>timer.delay===1000);timers.delete(id);await timer.fn();await new Promise(resolve=>setImmediate(resolve));};
  try{
   for(const [k,v] of Object.entries(overrides))Object.defineProperty(globalThis,k,{configurable:true,writable:true,value:v});
   await import('../frontend/app.js?live-view-test');await new Promise(resolve=>setImmediate(resolve));
   flushFrames(100);
   assert.equal(element('horizon-roll').textContent,'10.0°','default attitude follows the latest real value, not the chart buffer');
   assert.match(element('pose-status').textContent,/最新接收值/);
-  element('pose-instant').events.click();
-  const first=element('attitude-rotation').getAttribute('transform');flushFrames(200);
-  assert.notEqual(element('attitude-rotation').getAttribute('transform'),first);
-  assert.equal(element('horizon-roll').textContent,'6.2°');
-  assert.equal(element('height-value').textContent,'6.20');
+  assert.equal(element('height-value').textContent,'10.00');
+  assert.match(element('playback-status').textContent,/无额外回放缓冲/);
+  // Change the real packet through the existing poller, without a visibility reset.
+  const first=element('attitude-rotation').getAttribute('transform');
+  live.attitude={roll_deg:15,pitch_deg:25,yaw_deg:12};live.motion.height_m=11;live.sequence++;
+  await pollAt(200);
+  assert.equal(element('horizon-roll').textContent,'15.0°');
+  assert.equal(element('height-value').textContent,'11.00');
+  assert.equal(element('attitude-rotation').getAttribute('transform'),first,'numeric update does not wait for the drawing');
+  flushFrames(280);assert.equal(element('attitude-rotation').getAttribute('transform'),'rotate(-12.5,200,140)');
+  flushFrames(360);assert.equal(element('attitude-rotation').getAttribute('transform'),'rotate(-15,200,140)');
   assert.equal(element('motor-value-1').textContent,'1201');assert.equal(element('armed-value').textContent,'未解锁');
-  assert.match(element('playback-status').textContent,/平滑回放/);
   const series=(id,color)=>element(id).context.strokes.find(s=>s.color===color).path;
   const roll=series('live-orientation-chart','#2dd4bf');
   assert.equal(roll[0].x,52,'short received history starts at the left edge instead of an empty fixed 60-second window');
-  assert.ok(Math.abs(roll.at(-1).x-782)<.01);
-  assert.match(element('live-history-window').textContent,/6\.2 s/);
+  assert.ok(roll.at(-1).x>750,'newest received history point is already visible');
+  assert.equal(roll.length,21,'all 21 actual samples are drawn immediately, including the newest four seconds');
+  assert.match(element('live-history-window').textContent,/10\.2 s/);
   const yaw=series('live-orientation-chart','#ffb454');
   const pitch=series('live-orientation-chart','#7395ff');
   assert.ok(yaw.length>2,'relative yaw is actually drawn, not just added to the legend');
@@ -65,11 +72,13 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   assert.ok(series('live-yaw-rate-chart','#65a5e7').length>2);assert.ok(series('live-yaw-rate-chart','#8cbaa6').length>2);
   element('smooth-live').events.click();
   assert.equal(element('smooth-live').getAttribute('aria-pressed'),'false');
-  assert.equal(element('horizon-roll').textContent,'10.0°');
-  assert.equal(element('height-value').textContent,'10.00');
+  assert.equal(element('horizon-roll').textContent,'15.0°');
+  assert.equal(element('height-value').textContent,'11.00');
   assert.equal(element('motor-value-1').textContent,'1201');
-  assert.match(element('playback-status').textContent,/即时显示/);
-  assert.match(element('live-history-window').textContent,/10\.2 s/);
+  assert.match(element('playback-status').textContent,/无额外回放缓冲/);
+  element('pose-instant').events.click();
+  assert.match(element('playback-status').textContent,/即时切换/);
+  element('pose-instant').events.click();
   element('smooth-live').events.click();
   // Refresh through the real visibility/resume path with a full window and a
   // genuine five-second source gap. Adaptive axes must not hide or fill it.
@@ -78,28 +87,28 @@ test('live view animates history, plots relative yaw, adapts short windows, and 
   live.control_mode='DISARMED';live.flags={requested:'ATT_ALT_HOLD'};
   live.history=Array.from({length:141},(_,i)=>({t:i*500,roll_deg:i,pitch_deg:i/2,yaw_deg:i/3,height_m:1,speed_mps:0})).filter(p=>p.t<=35000||p.t>=40500);
   overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));
-  flushFrames(300);
+  flushFrames(500);
   assert.match(element('live-history-window').textContent,/60\.0 s/);
-  const delayedPose=element('attitude-rotation').getAttribute('transform');flushFrames(350);
-  assert.notEqual(element('attitude-rotation').getAttribute('transform'),delayedPose,'already received history keeps playing through a delayed cloud snapshot');
+  const delayedPose=element('attitude-rotation').getAttribute('transform');flushFrames(550);
+  assert.equal(element('attitude-rotation').getAttribute('transform'),delayedPose,'no old history is replayed while the latest snapshot is delayed');
   assert.match(element('connection').lastElementChild.textContent,/已连接.*数据延迟/);
   assert.equal(element('mode-value').textContent,'待机 / DISARMED');assert.equal(element('requested-value').textContent,'自稳 + 高度控制');
   assert.ok(series('live-attitude-chart','#65a5e7').filter(p=>p.op==='move').length>=2,'real source gaps remain disconnected');
   overrides.document.hidden=true;listeners.get('visibilitychange')();
   for(const p of live.history)p.yaw_deg=null;live.attitude.yaw_deg=null;live.sequence++;
   overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));
-  flushFrames(400);
+  flushFrames(600);
   assert.equal(series('live-orientation-chart','#ffb454').length,0,'missing yaw is never plotted as zero');
   assert.ok(series('live-orientation-chart','#2dd4bf').length>0,'missing yaw does not hide the other angles');
   element('pose-instant').events.click();
   const heldRoll=element('horizon-roll').textContent,heldPitch=element('horizon-pitch').textContent;
   overrides.document.hidden=true;listeners.get('visibilitychange')();
   live.attitude={roll_deg:null,pitch_deg:99,yaw_deg:null};live.sequence++;
-  overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));flushFrames(450);
+  overrides.document.hidden=false;listeners.get('visibilitychange')();await new Promise(resolve=>setImmediate(resolve));flushFrames(650);
   assert.equal(element('horizon-roll').textContent,heldRoll);assert.equal(element('horizon-pitch').textContent,heldPitch);
   assert.match(element('pose-status').textContent,/最后有效值/);
   overrides.location.hash='#logs';listeners.get('window:hashchange')();await new Promise(resolve=>setImmediate(resolve));
-  await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(500);
+  await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(700);
   assert.equal(element('tracking-axis').value,'roll');
   const checked=()=>element('field-selector').querySelectorAll('input').filter(input=>input.checked).map(input=>input.value).sort();
   assert.deepEqual(checked(),['roll_deg','roll_sp_deg']);

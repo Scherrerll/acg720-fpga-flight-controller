@@ -1,7 +1,7 @@
 'use strict';
 import {liveState} from './live-state.mjs';
 import {createLivePoller} from './polling.mjs';
-import {createLivePlayback,createLivePose} from './live-playback.mjs';
+import {createLiveTween,createLivePose} from './live-playback.mjs';
 
 (() => {
   const $ = id => document.getElementById(id);
@@ -27,7 +27,7 @@ import {createLivePlayback,createLivePose} from './live-playback.mjs';
   const attitudeOverview = fields.slice(0, 3).map((field, i) => ({...field, color:['#2dd4bf','#7395ff','#ffb454'][i]}));
   const chartFields = keys => keys.map(key => fields.find(field => field.key === key));
   const state = {
-    smooth: true, instantPose: true, visual: null, live: null, lastSuccess: 0, liveRtt: 0, pollBusy: false, pollFailed: false, caps: null, logsLocal: false,
+    smooth: true, animatePose: true, live: null, lastSuccess: 0, liveRtt: 0, pollBusy: false, pollFailed: false, caps: null, logsLocal: false,
     logs: [], selected: null, logId: null, samples: [], selectedFields: new Set(),
     cursor: 0, start: 0, end: 0, playing: false, playStamp: 0, page: 'live', requestId: 0
   };
@@ -99,41 +99,40 @@ import {createLivePlayback,createLivePose} from './live-playback.mjs';
   }
   function liveStatus(){return liveState(state.live,{elapsedMs:Math.max(0,performance.now()-state.lastSuccess),requestRttMs:state.liveRtt});}
 
-  const livePlayback = createLivePlayback();
   const livePose = createLivePose();
+  const poseTransition = createLiveTween();
+  const chartClock = createLiveTween({angularKeys:[]});
+  const chartTransitions = new Map();
+  let poseEpoch = null, poseStamp = null;
   let animationId = null, lastVisualFrame = 0, lastChartFrame = 0;
-  const playbackQualified = () => state.live?.connected === true && state.live?.source_valid === true
-    && (state.live?.mode !== 'share' || state.live?.timing_valid === true);
-  function renderMotion(sample = null) {
-    const pose = livePose.sample(performance.now());
-    const bufferedPose = !state.instantPose && valid(sample?.roll_deg) && valid(sample?.pitch_deg);
-    const a = bufferedPose ? sample : pose?.attitude || {};
-    const m = !state.instantPose && sample ? sample : state.live?.motion || {};
+  function renderMotion() {
+    const now = performance.now(), pose = livePose.sample(now);
+    if (pose?.epoch !== poseEpoch) { poseTransition.reset(); poseStamp = null; chartTransitions.clear(); poseEpoch = pose?.epoch; }
+    const a = pose?.attitude || {}, m = state.live?.motion || {};
+    if (pose?.receivedAt !== poseStamp) { poseTransition.set(pose?.attitude, now, {snap:!state.animatePose}); poseStamp = pose?.receivedAt; }
+    const displayed = state.animatePose ? poseTransition.sample(now) || {} : a;
+    // Readouts report the latest real sample immediately. Only the drawing eases.
     text('horizon-roll', valid(a.roll_deg) ? `${fmt(a.roll_deg)}°` : '等待');
     text('horizon-pitch', valid(a.pitch_deg) ? `${fmt(a.pitch_deg)}°` : '等待');
     const attitudeValid = valid(a.roll_deg) && valid(a.pitch_deg);
-    $('attitude-rotation').setAttribute('transform', `rotate(${attitudeValid ? -a.roll_deg : 0},200,140)`);
-    $('attitude-pitch').setAttribute('transform', `translate(0,${attitudeValid ? clamp(a.pitch_deg, -90, 90) * 3 : 0})`);
+    $('attitude-rotation').setAttribute('transform', `rotate(${attitudeValid ? -displayed.roll_deg : 0},200,140)`);
+    $('attitude-pitch').setAttribute('transform', `translate(0,${attitudeValid ? clamp(displayed.pitch_deg, -90, 90) * 3 : 0})`);
     $('attitude-rotation').style.opacity = attitudeValid ? '1' : '0.2';
-    $('horizon').setAttribute('aria-label', attitudeValid ? `${bufferedPose ? '平滑回放' : pose?.retained || !liveStatus().recent ? '最后有效' : '最新接收'}姿态：横滚${fmt(a.roll_deg)}度，俯仰${fmt(a.pitch_deg)}度` : '等待首个有效姿态');
+    $('horizon').setAttribute('aria-label', attitudeValid ? `${pose?.retained || !liveStatus().recent ? '最后有效' : '最新接收'}姿态：横滚${fmt(a.roll_deg)}度，俯仰${fmt(a.pitch_deg)}度` : '等待首个有效姿态');
     for (const [id, value, digits] of [['yaw-value', a.yaw_deg, 1], ['height-value', m.height_m, 2], ['speed-value', m.speed_mps, 2]]) text(id, fmt(value, digits));
-    const reference = valid(state.live?.server_response_time_ms) ? state.live.server_response_time_ms : Date.parse(state.live?.received_at);
-    const lag = sample && valid(reference) ? Math.max(0, reference + state.liveRtt + Math.max(0, performance.now() - state.lastSuccess) - sample.t) / 1000 : null;
-    const poseAge = bufferedPose ? lag : valid(pose?.age_ms) ? pose.age_ms / 1000 : null;
+    const poseAge = valid(pose?.age_ms) ? pose.age_ms / 1000 : null;
     const held = pose?.retained || !liveStatus().recent;
-    text('pose-status', !pose && !bufferedPose ? '等待首个有效姿态' : `${bufferedPose ? '姿态随曲线回放' : held ? '姿态保留最后有效值' : '姿态为最新接收值'}${poseAge === null ? '' : ` · 估计源龄 ${poseAge.toFixed(1)} s`}`);
-    const playing = playbackQualified() && liveStatus().connected;
-    text('playback-status', !state.smooth ? '曲线即时显示 · 按最新接收记录更新' : !sample ? '曲线正在等待接收缓冲' : `${!playing ? '曲线已暂停' : sample.buffering ? '曲线缓冲等待' : '曲线平滑回放'}${lag === null ? '' : ` · 延后约 ${lag.toFixed(1)} 秒`} · 状态与电机数值为最新接收值`);
+    text('pose-status', !pose ? '等待首个有效姿态' : `${held ? '姿态保留最后有效值' : '姿态为最新接收值'}${poseAge === null ? '' : ` · 估计源龄 ${poseAge.toFixed(1)} s`}`);
+    text('playback-status', `数值和曲线均按最新接收数据更新 · ${state.animatePose || state.smooth ? '画面短过渡 160 ms' : '画面即时切换'} · 无额外回放缓冲`);
   }
   function stopVisuals() { if (animationId !== null) cancelAnimationFrame(animationId); animationId = null; }
   function startVisuals() {
     if (animationId !== null || document.hidden || state.page !== 'live') return;
     const frame = now => {
       if (document.hidden || state.page !== 'live') { animationId = null; return; }
-      if (now - lastVisualFrame >= 1000 / 30) {
-        state.visual = livePlayback.sample(now, {advance:state.smooth && playbackQualified() && liveStatus().connected});
-        renderMotion(state.smooth ? state.visual : null); lastVisualFrame = now;
-        if (now - lastChartFrame >= 100) { drawLive(); lastChartFrame = now; }
+      if (now - lastVisualFrame >= 1000 / 60) {
+        renderMotion(); lastVisualFrame = now;
+        if (now - lastChartFrame >= 1000 / 30) { drawLive(); lastChartFrame = now; }
       }
       animationId = requestAnimationFrame(frame);
     };
@@ -141,35 +140,34 @@ import {createLivePlayback,createLivePose} from './live-playback.mjs';
   }
   $('smooth-live').addEventListener('click', () => {
     state.smooth = !state.smooth; $('smooth-live').setAttribute('aria-pressed', String(state.smooth));
-    livePlayback.reset(); state.visual = null;
-    if (state.live) { livePlayback.ingest(state.live, performance.now()); state.visual = livePlayback.sample(performance.now(), {advance:false}); }
-    renderLive();
+    chartTransitions.clear(); renderLive();
   });
   $('pose-instant').addEventListener('click', () => {
-    state.instantPose = !state.instantPose; $('pose-instant').setAttribute('aria-pressed', String(state.instantPose)); renderLive();
+    state.animatePose = !state.animatePose; $('pose-instant').setAttribute('aria-pressed', String(state.animatePose));
+    if (!state.animatePose) poseTransition.set(livePose.sample(performance.now())?.attitude, performance.now(), {snap:true});
+    renderLive();
   });
 
   function renderLive() {
     const data = state.live;
     const status=liveStatus(),fresh=status.fresh,recent=status.recent;
-    const buffered = state.smooth && state.visual && playbackQualified() && status.connected;
     const pose = livePose.sample(performance.now());
     $('connection').className = `connection${fresh ? ' fresh' : status.kind === 'delayed' ? ' buffered' : data ? ' stale' : ''}`;
     $('connection').lastElementChild.textContent = {live:'实时接收',delayed:'同步有延迟',source_invalid:'源遥测未更新',timing_unknown:'同步时间未确认',expired:'已连接 · 数据延迟',disconnected:'连接中断',waiting:'等待连接'}[status.kind];
-    $('instrument-content').classList.toggle('is-stale', !(state.instantPose ? recent && pose && !pose.retained : recent || buffered));
+    $('instrument-content').classList.toggle('is-stale', !(recent && pose && !pose.retained));
     $('motors').classList.toggle('is-stale', !recent);
     $('channels').classList.toggle('is-stale', !recent);
     $('mode-value').classList.toggle('is-stale', !recent);
     $('armed-value').classList.toggle('is-stale', !recent);
     $('stale-banner').className = `status-banner ${status.kind === 'delayed' ? 'playback' : fresh ? 'fresh' : 'stale'}`;
-    $('stale-banner').textContent = status.kind === 'delayed' ? '数据已接收，公网同步有延迟 · 姿态和曲线分别标注数据年龄。' : fresh ? '只读遥测接收中 · 姿态可显示最新接收值，曲线可独立平滑回放。' : status.kind === 'source_invalid' ? '源遥测尚无有效更新 · 保留最后有效姿态，灰色读数不代表当前状态。' : status.kind === 'timing_unknown' ? '正在确认转发时间 · 保留最后有效姿态。' : status.kind === 'expired' ? '连接正常，当前数据更新延迟 · 姿态保留最后有效值，曲线只回放已接收记录。' : data ? '遥测连接中断 · 正在重试，姿态保留最后有效值并显示数据年龄。' : '等待遥测连接 · 尚无有效接收数据。';
-    text('value-state', !pose ? '等待有效姿态' : state.instantPose ? recent && !pose.retained ? '最新接收' : '最后有效姿态' : buffered ? '姿态回放' : '等待回放');
+    $('stale-banner').textContent = status.kind === 'delayed' ? '数据已接收，公网同步有延迟 · 当前显示最新接收值。' : fresh ? '只读遥测接收中 · 数值与曲线显示最新接收数据，画面短过渡。' : status.kind === 'source_invalid' ? '源遥测尚无有效更新 · 保留最后有效姿态，灰色读数不代表当前状态。' : status.kind === 'timing_unknown' ? '正在确认转发时间 · 保留最后有效姿态。' : status.kind === 'expired' ? '连接正常，当前数据更新延迟 · 保留最后有效值，等待新数据。' : data ? '遥测连接中断 · 正在重试，姿态保留最后有效值并显示数据年龄。' : '等待遥测连接 · 尚无有效接收数据。';
+    text('value-state', !pose ? '等待有效姿态' : recent && !pose.retained ? '最新接收' : '最后有效姿态');
     text('firmware', `固件 ${data?.firmware ?? '—'}`);
     text('sequence', `SEQ ${data?.sequence ?? '—'}`);
     const age = status.age_ms;
     text('age', age === null ? '源龄 —' : `源龄估计 ${(age / 1000).toFixed(1)} s`);
     text('sample-time', data?.received_at ? `最后接收 ${dateText(data.received_at)}` : '尚未收到遥测');
-    renderMotion(state.smooth ? state.visual : null);
+    renderMotion();
     const m = data?.motion ?? {};
     for (const [id, value] of [['vx-value', m.vx_mps], ['vy-value', m.vy_mps], ['vz-value', m.vz_mps]]) text(id, fmt(value, 2));
     text('armed-value', boolText(data?.armed, '已解锁', '未解锁'));
@@ -206,7 +204,8 @@ import {createLivePlayback,createLivePose} from './live-playback.mjs';
       if (!data || data.schema !== 1) throw new Error('不支持的数据格式');
       state.pollFailed = false; state.live = data; state.lastSuccess = performance.now();state.liveRtt=state.lastSuccess-started;
       livePose.ingest(data, state.lastSuccess, state.liveRtt);
-      livePlayback.ingest(data, state.lastSuccess); state.visual = livePlayback.sample(state.lastSuccess, {advance:false});
+      const reference = valid(data.server_response_time_ms) ? data.server_response_time_ms : Date.parse(data.received_at);
+      if (valid(reference)) chartClock.set({offset:reference + state.liveRtt - state.lastSuccess}, state.lastSuccess);
     } catch { state.pollFailed = true; /* Age and stale state continue advancing. */ }
     finally { state.pollBusy = false; renderLive(); }
   }
@@ -319,7 +318,7 @@ import {createLivePlayback,createLivePose} from './live-playback.mjs';
     });
   }
 
-  function chart(canvas, samples, selected, start, end, cursor = null, groups = false) {
+  function chart(canvas, samples, selected, start, end, cursor = null, groups = false, animate = false) {
     const context = configureCanvas(canvas); if (!context) return;
     const { ctx, width, height } = context;
     const unitGroups = [];
@@ -356,6 +355,16 @@ import {createLivePlayback,createLivePose} from './live-playback.mjs';
       else { const pad = (max - min) * 0.13; min -= pad; max += pad; }
       const manual = view?.ranges.get(group.unit);
       if (manual) { min = manual.min; max = manual.max; }
+      if (animate && !manual && hasValues) {
+        let transitions = chartTransitions.get(canvas);
+        if (!transitions) { transitions = new Map(); chartTransitions.set(canvas, transitions); }
+        let transition = transitions.get(group.unit);
+        if (!transition) { transition = createLiveTween({angularKeys:[]}); transitions.set(group.unit, transition); }
+        transition.set({min,max},performance.now());
+        const eased = transition.sample(performance.now());
+        // Expand immediately so a new extreme is never clipped; ease contraction.
+        min = Math.min(min,eased.min); max = Math.max(max,eased.max);
+      }
       view?.lanes.push({ unit: group.unit, y0, y1, min, max, hasValues });
       const y = value => y1 - (value - min) / (max - min) * (y1 - y0);
       ctx.lineWidth = 1;
@@ -400,24 +409,28 @@ import {createLivePlayback,createLivePose} from './live-playback.mjs';
 
   function drawLive() {
     const received=valid(state.live?.server_response_time_ms)?state.live.server_response_time_ms:Date.parse(state.live?.received_at);
-    const buffered = state.smooth && state.visual;
-    const now = buffered ? state.visual.t : Number.isFinite(received) ? received+state.liveRtt+Math.max(0,performance.now()-state.lastSuccess) : Date.now();
-    const history = buffered ? livePlayback.history() : Array.isArray(state.live?.history) ? state.live.history : [];
-    const samples = history.filter(s => valid(s.t) && s.t >= now - 60000 && (buffered ? s.t <= now : s.t <= now + 1000)).map(s => ({ ...s, t_s: s.t / 1000 })).sort((a, b) => a.t_s - b.t_s);
-    if (buffered && samples.at(-1)?.t !== state.visual.t) samples.push({...state.visual, t_s:state.visual.t / 1000});
+    const history = Array.isArray(state.live?.history) ? state.live.history : [];
+    const stamp = performance.now();
+    const offset = state.smooth ? chartClock.sample(stamp)?.offset : null;
+    const wallTime = valid(offset) ? stamp + offset : Number.isFinite(received) ? received+state.liveRtt+Math.max(0,stamp-state.lastSuccess) : Date.now();
+    // Include every newly received point immediately; only the viewport clock
+    // and automatic Y range ease. Never move a telemetry point or replay old data.
+    const newest = history.reduce((t,s)=>valid(s.t)?Math.max(t,s.t):t,-Infinity);
+    const now = Math.max(wallTime,newest);
+    const samples = history.filter(s => valid(s.t) && s.t >= now - 60000 && s.t <= now).map(s => ({ ...s, t_s: s.t / 1000 })).sort((a, b) => a.t_s - b.t_s);
     const end = now / 1000;
     // Expand to 60 seconds as history arrives; leave actual source gaps intact.
     const oldest = history.reduce((t, s) => valid(s.t) && s.t <= now ? Math.min(t, s.t) : t, now) / 1000;
     const start = samples.length ? Math.max(end - 60, Math.min(end - 5, oldest)) : end - 60;
     text('live-history-window', samples.length ? `接收时间 · 当前显示 ${(end - start).toFixed(1)} s · 最多 60 s` : '接收时间 · 等待历史记录');
-    chart($('live-orientation-chart'), samples, attitudeOverview, start, end);
-    chart($('live-height-chart'), samples, [fields[3]], start, end);
+    chart($('live-orientation-chart'), samples, attitudeOverview, start, end, null, false, state.smooth);
+    chart($('live-height-chart'), samples, [fields[3]], start, end, null, false, state.smooth);
     if ($('live-tracking').open) {
-      chart($('live-attitude-chart'), samples, chartFields(trackingPairs.roll), start, end);
-      chart($('live-pitch-chart'), samples, chartFields(trackingPairs.pitch), start, end);
-      chart($('live-yaw-rate-chart'), samples, chartFields(trackingPairs.yaw_rate), start, end);
+      chart($('live-attitude-chart'), samples, chartFields(trackingPairs.roll), start, end, null, false, state.smooth);
+      chart($('live-pitch-chart'), samples, chartFields(trackingPairs.pitch), start, end, null, false, state.smooth);
+      chart($('live-yaw-rate-chart'), samples, chartFields(trackingPairs.yaw_rate), start, end, null, false, state.smooth);
     }
-    const current = liveFresh() || buffered && playbackQualified() && liveStatus().connected;
+    const current = liveFresh();
     for (const id of ['live-orientation-chart', 'live-attitude-chart', 'live-pitch-chart', 'live-yaw-rate-chart', 'live-height-chart']) $(id).classList.toggle('is-stale', !current);
   }
 
@@ -618,7 +631,7 @@ import {createLivePlayback,createLivePose} from './live-playback.mjs';
   window.addEventListener('hashchange', route);
   let resizeTimer; window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => state.page === 'logs' ? drawLog() : drawLive(), 80); });
   const livePoller = createLivePoller({poll:pollLive, visible:()=>!document.hidden, connected:()=>!state.pollFailed && liveStatus().connected, intervalMs:()=>state.caps?.mode === 'local' ? 200 : 1000});
-  document.addEventListener('visibilitychange', () => { if (document.hidden) { pause(); stopVisuals(); livePoller.suspend(); } else { livePlayback.reset(); state.visual = null; livePoller.resume(); startVisuals(); loadCapabilities(); } });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) { pause(); stopVisuals(); livePoller.suspend(); } else { poseTransition.reset(); poseStamp = null; chartClock.reset(); chartTransitions.clear(); livePoller.resume(); startVisuals(); loadCapabilities(); } });
   function tick() { if (document.hidden) return; text('clock', new Date().toLocaleTimeString('zh-CN', { hour12: false })); renderLive(); }
   renderLive(); route(); if (!document.hidden) loadCapabilities(); livePoller.resume(); tick();
   setInterval(tick, 1000);
