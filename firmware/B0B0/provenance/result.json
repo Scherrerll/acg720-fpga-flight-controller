@@ -1,0 +1,69 @@
+{
+  "routing_passed": true,
+  "timing_passed": true,
+  "feasibility_passed": true,
+  "functional_qualification_pending": true,
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "programming_authorized": false,
+  "release_eligible": false,
+  "vendor_returncode": 0,
+  "contract_sha256": "fc228659a685bf1aaba229437da234942f73834047e58086b150fbea37962ddf",
+  "vg_sha256": "0be62a85bf094d9102a6488b792c77c8cb9296d9a5b4aaa3e05a72ea96fd3500",
+  "actual_outputs_sha256": {
+    "impl\\pnr\\acg720_ano_port.bin": "9fa97561f176077beca069895f1319f932ee7a58ee70edd4d9d7ec0f9b5d856d",
+    "impl\\pnr\\acg720_ano_port.binx": "fffd5758a4cecb6e6d2084b3fdb626b9cfdbfe7a77631122b76c87d7071c73ac",
+    "impl\\pnr\\acg720_ano_port.db": "d2b67b123b8a4cd2bafb503bca4735a42bd251985052822b2243a3c961c5ef76",
+    "impl\\pnr\\acg720_ano_port.fs": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+    "impl\\pnr\\acg720_ano_port.log": "5507c176690c2041ecff92fb767aa974eac27dfa500c09ae5e12e27e6c38719e",
+    "impl\\pnr\\acg720_ano_port.p": "a716d485de1aadaaab069af206d7eee112220741bec7810b01ebf6a0fb29da2b",
+    "impl\\pnr\\acg720_ano_port.pin.html": "2f120e2da140150325e013db68b7198372dd828359d11f9ea60cacad778afa85",
+    "impl\\pnr\\acg720_ano_port.power.html": "8a629bbc4de12c088e1f5d70d0427073756b1df93809f7ab05b017f2a54559ee",
+    "impl\\pnr\\acg720_ano_port.pr": "540eccb35a5f2b5e48e4944f37720cec60c25eaed8261bfda618892db7e2e763",
+    "impl\\pnr\\acg720_ano_port.rpt.html": "1e2c8358ce1b49c714849a964310e37fd44b2e9bea9368f42bdadaaf3d8d1aa5",
+    "impl\\pnr\\acg720_ano_port.rpt.txt": "f4313d32d077ee67fda563577b67ad570ff99dd2a8325c6eb20da1e5131eb060",
+    "impl\\pnr\\acg720_ano_port.timing_paths": "56b28fdcda64c1a4bdb811fb042efd28be97c436548148134fda4821b987bd00",
+    "impl\\pnr\\acg720_ano_port.tr": "2cb4b5269fb2709349f746705e83f9c1a9795eac0133a5b3525df2edea92b5b8",
+    "impl\\pnr\\acg720_ano_port.tr.html": "cc2f6fe8f0499921d9dc69545e98f811257bc558d7229ea6ac2eb7031bb63f50",
+    "impl\\pnr\\acg720_ano_port_tr_cata.html": "1e7d51025f9dc838b5c9820c21014c9a8fef07d2bd6e8220ed46e5c2a91ee52d",
+    "impl\\pnr\\acg720_ano_port_tr_content.html": "9daac2e7698943dfac3bc223a81c76f191d59efd450bc58215630318306d4392",
+    "impl\\pnr\\cmd.do": "bfebbe41f4b69589f73a2d26f5adcf4fec31f4903fc1faf7793179460163dd40",
+    "impl\\pnr\\device.cfg": "33ba432cbd4a44d10f19391b43baa62eb4bea583ce189b6e1fe8960db56363ba"
+  },
+  "errors": [],
+  "unrouted_nets": 0,
+  "pins": {
+    "clk50": "Y18",
+    "imu_miso": "D19",
+    "rc_ppm_in": "B17",
+    "range_rx": "C14",
+    "imu_sck": "E17",
+    "imu_mosi": "C20",
+    "imu_cs_n": "E18",
+    "imu_gyro_cs_n": "F20",
+    "range_tx": "C15",
+    "uart_tx": "M15",
+    "radio_tx": "B15",
+    "led2": "L21",
+    "led3": "K21",
+    "motor1_pwm": "D17",
+    "motor2_pwm": "C17",
+    "motor3_pwm": "E16",
+    "motor4_pwm": "D16"
+  },
+  "fmax_mhz": 51.608,
+  "slack": {
+    "setup": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    },
+    "hold": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    }
+  },
+  "bitstream": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+    "sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111"
+  }
+}

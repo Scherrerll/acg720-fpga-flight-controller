@@ -1,0 +1,41 @@
+{
+  "candidate": "B0AF",
+  "result": "HARDWARE_ACCEPTANCE_REJECTED",
+  "utc": "2026-10-23T04:32:30.797405+00:00",
+  "flight_ready": false,
+  "flash_changed": false,
+  "installed_image_sha256": "28284ebb9369d9b4123a4220537002a87e0c15593ec604b4728dc546ee9f393c",
+  "symptom": "Idle 1200us present; crossing takeoff threshold loses public command freshness and publishes four1000us despite controller commits.",
+  "active_samples": 404,
+  "active_stopped_samples": 404,
+  "command_count_first": 67,
+  "command_count_last": 37606,
+  "source_log": "C:\\Users\\ScherrerL\\Desktop\\apple\\flight_logs\\20261023T042303Z_07078a44\\telemetry.jsonl",
+  "captured_sample_sha256": "86e7f8057f3109d6a4fd0957a30e7c0dd7ce534ff5b582559b5e5028a7ff21c1",
+  "cause": "Gowin forward implicit declarations/redeclarations of selected_throttle and rate_fresh disconnect initialized nets; synthesis collapses public freshness to idle_running.",
+  "synthesis_warnings": [
+    "Undeclared symbol 'land_lock', assumed default net type 'wire'(\"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\core\\flight_core.v\":339)",
+    "WARN  (EX3638) : 'land_lock' is already implicitly declared on line 339(\"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\core\\flight_core.v\":391)",
+    "Undeclared symbol 'selected_throttle', assumed default net type 'wire'(\"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\core\\flight_core.v\":393)",
+    "Undeclared symbol 'rate_fresh', assumed default net type 'wire'(\"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\core\\flight_core.v\":402)",
+    "WARN  (EX3638) : 'selected_throttle' is already implicitly declared on line 393(\"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\core\\flight_core.v\":405)",
+    "WARN  (EX3638) : 'rate_fresh' is already implicitly declared on line 402(\"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\core\\flight_core.v\":475)",
+    "WARN  (EX1998) : Net 'selected_throttle[15]' does not have a driver(\"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\core\\flight_core.v\":393)",
+    "WARN  (EX1998) : Net 'rate_fresh' does not have a driver(\"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\core\\flight_core.v\":402)"
+  ],
+  "synthesis_log_sha256": "b87757453d7e6d1306f678816e8c3e987e75af7b3a5cd5ae7ae704efd3ec897e",
+  "minimal_tool_reproduction": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\hardware\\scratch_forward_net_20261023",
+  "stopped_after_user_reset": true,
+  "current_build": 45231,
+  "fallback_sensor_unplug_acceptance": "NOT PERFORMED / NO FALLBACK ENTERED",
+  "action": "Do not program or fly B0AF. Repair declaration ordering in separately identified B0B0 and enforce warning gates.",
+  "netlist_proof": {
+    "actual_fixture": "fixture/impl/gwsynthesis/acg720_ano_port.vg",
+    "public_freshness_register_line": 602196,
+    "public_freshness_register_D": "idle_running",
+    "motor_pwm_enable_port_line": 322192,
+    "motor_pwm_enable": "idle_running",
+    "explanation": "rate_fresh OR idle_running collapsed to idle_running; once taking_off and motor_prepared true, idle_running false and outputs disabled despite rate commits."
+  },
+  "updated_utc": "2026-10-23T04:35:09.150626+00:00"
+}

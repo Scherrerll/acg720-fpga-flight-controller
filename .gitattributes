@@ -4,4 +4,8 @@
 *.v linguist-language=Verilog
 firmware/B0AE/tests/* linguist-generated=true
 **/provenance/* linguist-generated=true
+firmware/B0B0/provenance/** linguist-generated=true
+firmware/B0B0/selected_netlist/** linguist-generated=true
+firmware/B0B0/release/*.fs binary
+validation/** linguist-generated=true
 

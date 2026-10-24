@@ -1,0 +1,37 @@
+--- a/fixture/mtf_xyz_navigation_control.v
++++ b/fixture/mtf_xyz_navigation_control.v
+@@ -6,7 +6,7 @@
+ // PROOF_CONTROLLER permits the existing numeric controller, never installation acceptance.
+ // control_permission reports active calculation only, not physical release authority.
+ // This isolated candidate remains DO_NOT_PROGRAM; it has no physical stop lock.
+-module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0)(
++module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0)(
+  input wire clk,rst_n,origin_reset,diagnostic_hold,
+  input wire sample_valid,range_valid,flow_valid,
+  input wire [31:0] distance_mm,dt_ms,source_age_ms,
+@@ -306,7 +306,13 @@
+   16'sd0,16'sd0,16'sd0,16'h0040,8'd0,8'd0,16'd0,16'd1,32'sd0};
+  reg [719:0] diagnostic_q=RESET_DIAGNOSTIC;
+  always @(posedge clk)begin
+-  if(!rst_n)diagnostic_q<=RESET_DIAGNOSTIC;else if(!diagnostic_hold)diagnostic_q<=diagnostic_next;
++  if(STARTUP_ONLY_DIAGNOSTIC_RESET)begin
++   // Caller must guarantee reset starts low and never reasserts.
++   // Preserve initialized payload until reset releases; never delay captures.
++   if(rst_n && !diagnostic_hold)diagnostic_q<=diagnostic_next;
++  end else begin
++   if(!rst_n)diagnostic_q<=RESET_DIAGNOSTIC;else if(!diagnostic_hold)diagnostic_q<=diagnostic_next;
++  end
+  end
+  // XY-active is shadow_flags[5], diagnostic_q[85]. Capture raw targets
+  // and their flag together, then mask after the SAME snapshot register.
+--- a/fixture/acg720_ano_port.v
++++ b/fixture/acg720_ano_port.v
+@@ -265,7 +265,7 @@
+   if(!telemetry_snapshot_hold)rotation_pair_q<={rotation_pair[335:16],throttle_pickup_us};
+  end
+  wire [719:0] navigation_body;
+- mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1)) native_navigation(
++ mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1)) native_navigation(
+   .clk(clk50),.rst_n(rst_n),.origin_reset(observer_reset),.sample_valid(mtf_sample),
+   .range_valid(mtf_range_ok),.flow_valid(mtf_flow_ok && mtf_integrated),
+   .distance_mm(mtf_distance_mm),.dt_ms(mtf_dt_ms),.source_age_ms(mtf_age_ms),

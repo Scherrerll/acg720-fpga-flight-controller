@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-24T04:31:08.178077+00:00",
+  "passed": true,
+  "build": "B0B0",
+  "flash_default": "B0B0",
+  "physical_power_cycle_verified": true,
+  "battery_only_verified": true,
+  "human_confirmation": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\cold_boot_20261024T042756_919986Z\\human_confirmation.json",
+  "human_confirmation_sha256": "88d6c948cd1dfb4283d6d5b090b1e13fd9bc486063d0677b7a369fc261f4dbbd",
+  "gap_s": 36.454085999997915,
+  "first_new_uptime_ms": 199,
+  "first_calibrated_snapshot_uptime_ms": 2999,
+  "stable_unique_snapshots": 38,
+  "stable_span_s": 10.199605499990867,
+  "stable_fresh_module_packets": 1019,
+  "stable_module_error_increments": {
+    "checksum_errors": 0,
+    "length_errors": 0,
+    "uart_errors": 0,
+    "packet_timeouts": 0,
+    "module_missing": 0,
+    "module_duplicates": 0,
+    "module_restarts": 0,
+    "integration_breaks": 0
+  },
+  "stable_core_fault_gate_increments": {
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "raw_payloads_independently_checked": 75,
+  "payload_mismatches": 0,
+  "all_motors_stayed_stopped": true,
+  "usb_offline_during_new_stable_window": true,
+  "evidence_sha256": {
+    "start.json": "703f344f2c2778234082a612803ef380422628f55125625aec1bbf7c521cd271",
+    "observations.jsonl": "677c433579dbe063aa7a0ff129d5ef1c493380206403ce83197ff90a1c348498",
+    "capture_result.json": "ed75eaacdb34aead3dde4fdb4d85588fcc14d17491c96e6145515e2645d909d7",
+    "independent_payload_check.json": "6a3192066aa32ed2fca0b89327b6367c7a4ec865e64ac8fca6bdd90a7aa976ef",
+    "human_confirmation.json": "88d6c948cd1dfb4283d6d5b090b1e13fd9bc486063d0677b7a369fc261f4dbbd",
+    "final_sik_stopped_state.json": "f072ef3f0cb967fa193c6de8e57cd30323056825d161df9bda08c0640167f978"
+  },
+  "folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\cold_boot_20261024T042756_919986Z",
+  "firmware_source_changed": false,
+  "rotation_compensation_qualified": false,
+  "loaded_flight_accepted": false,
+  "flight_ready": false,
+  "scope": "Current exact B0B0 persistent image, operator-confirmed battery-only cold boot and stopped SiK startup. No loaded motor, optical rotation qualification, or airborne performance proof."
+}

@@ -1,0 +1,42 @@
+{
+  "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p1_r1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.log",
+  "conclusion": "Freshness gate and PWM connectivity match repaired parent; command_seen and age comparator remain reachable; primary862 D core_body[0].",
+  "netlist_sha256": "F9179EAFB379E407482E5F67AE9FDC5E0F5B43C87E46FAAAFDB1A574873255E3",
+  "log_sha256": "6E2BEEB821FC3A160AD57A523FF9365C2D167C9785D32729B2535266EACD9785",
+  "target_warning_count": 0,
+  "netlist": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p1_r1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "byte_identical_parent": false,
+  "parent_netlist_sha256": "21394C934076C271ACB9696FCAEC868A6070F930A54BA704A17B43BF0C56D5CD",
+  "evidence": [
+    {
+      "end_line": 331893,
+      "text": "  LUT4 n3434_s96 (\n    .F(n3434_132),\n    .I0(command_age[20]),\n    .I1(n3434_133),\n    .I2(command_age[21]),\n    .I3(n3434_134) \n);\ndefparam n3434_s96.INIT=16'hE0FF;",
+      "start_line": 331886
+    },
+    {
+      "end_line": 334357,
+      "text": "  LUT4 core_body_0_s1 (\n    .F(core_body_0_4),\n    .I0(n3434_132),\n    .I1(command_seen),\n    .I2(core_body_861),\n    .I3(controller_run) \n);\ndefparam core_body_0_s1.INIT=16'h4000;\n  LUT4 core_body_506_s0 (",
+      "start_line": 334349
+    },
+    {
+      "end_line": 337884,
+      "text": "  LUT4 core_body_0_s2 (\n    .F(core_body_0),\n    .I0(flight_state_flags_0_2),\n    .I1(flight_state_flags[1]),\n    .I2(core_body_860),\n    .I3(core_body_0_4) \n);\ndefparam core_body_0_s2.INIT=16'hFF70;",
+      "start_line": 337877
+    },
+    {
+      "end_line": 631342,
+      "text": "  DFFRE \\staged_telemetry.core_q_862_s0  (\n    .Q(\\staged_telemetry.core_q [862]),\n    .D(core_body[0]),\n    .CLK(clk50_d),\n    .RESET(GND),\n    .CE(\\staged_telemetry.core_q_453_16 ) \n);\ndefparam \\staged_telemetry.core_q_862_s0 .INIT=1'b0;",
+      "start_line": 631335
+    },
+    {
+      "end_line": 350323,
+      "text": "  motor_pwm outputs (\n    .clk50_d(clk50_d),\n    .n49_6(n49_6),\n    .core_body_0_4(core_body_0_4),\n    .core_body_458_3(core_body_458_3),\n    .core_body_474_3(core_body_474_3),\n    .core_body_490_3(core_body_490_3),\n    .core_body_506_3(core_body_506_3),\n    .n13_12(n13_12),\n    .n13_13(n13_13),\n    .n6246_12(n6246_12),\n    .n6340_12(n6340_12),\n    .n6434_12(n6434_12),\n    .n6528_12(n6528_12),\n    .n6246_11(n6246_11),\n    .n6340_11(n6340_11),\n    .n6434_11(n6434_11),\n    .n6528_11(n6528_11),\n    .pwm_ticks1(pwm_ticks1[16:0]),\n    .pwm_ticks2(pwm_ticks2[16:0]),\n    .pwm_ticks3(pwm_ticks3[16:0]),\n    .pwm_ticks4(pwm_ticks4[16:0]),\n    .m1({m1_3[10:8],m1_7,m1_3[6],m1_5,m1_3[4:3],m1_2,m1_1,m1_0}),\n    .m4({m4_3[9:8],m4_7,m4_3[6],m4_5,m4_3[4:3],m4_2,m4_1,m4_0}),\n    .m3({m3_3[9:8],m3_7,m3_3[6],m3_5,m3_3[4:3],m3_2,m3_1,m3_0}),\n    .m2({m2_3[9:8],m2_7,m2_3[6],m2_5,m2_3[4:3],m2_2,m2_1,m2_0}),\n    .core_body_0(core_body_0),\n    .core_body_451(core_body_451),",
+      "start_line": 350296
+    },
+    {
+      "end_line": 648946,
+      "text": "    .motor1_pwm_d(motor1_pwm_d),\n    .motor2_pwm_d(motor2_pwm_d),\n    .motor3_pwm_d(motor3_pwm_d),\n    .motor4_pwm_d(motor4_pwm_d),\n    .core_body_0(core_body[0]),\n    .core_body_72(core_body[72]),\n    .core_body_73(core_body[73]),",
+      "start_line": 648940
+    }
+  ]
+}

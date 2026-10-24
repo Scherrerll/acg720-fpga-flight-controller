@@ -1,0 +1,2 @@
+REPRODUCED: low stick ch3=1000 / collective=1200 asserted land_lock after 1700 ms while armed remained high; taking_off=0
+C:\Users\ScherrerL\Desktop\apple\routing_closure_20261024\code_audit\low_throttle_repro.v:18: $finish called at 317030000 (1ps)

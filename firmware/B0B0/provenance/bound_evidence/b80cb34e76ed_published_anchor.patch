@@ -1,0 +1,34 @@
+--- a/fixture/core/flight_core.v
++++ b/fixture/core/flight_core.v
+@@ -401,11 +401,11 @@
+     height_loss_fallback fallback_control(.clk(clk50),.rst_n(rst_n),
+      .healthy(sensor_ok && rc_valid && ch5>=1800 && ch5<=2200 && fallback_norm_valid && !land_lock),
+      .armed(armed),.taking_off(taking_off),.height_available(vertical_available),
+-     .automatic_valid(rate_fresh && altitude_active && !height_fallback_active),
++     .automatic_valid(controller_update && controller_enabled && controller_run && altitude_active && !height_fallback_active),
+      .automatic_collective_us(pending_throttle),.ch3(ch3),
+      .active(height_fallback_active),.prior_collective_valid(),.collective_us(fallback_collective));
+     assign selected_throttle=height_fallback_active ?fallback_collective:hold_collective_us;
+-    wire [15:0] mixed_collective=pending_throttle;
++    wire [15:0] mixed_collective=height_fallback_active ?fallback_collective:pending_throttle;
+     // Latch the exact yaw code before the safety gate clears the controller.
+     reg [7:0] last_yaw_fault=0;
+     assign sticky_yaw_fault=last_yaw_fault;
+--- a/fixture/core/height_loss_fallback.v
++++ b/fixture/core/height_loss_fallback.v
+@@ -56,13 +56,13 @@
+    low_q<=0;high_q<=0;product_low_q<=0;product_high_q<=0;
+   end else begin
+    if(!latched && height_available && automatic_valid && taking_off &&
+-      automatic_collective_us>=MIN_US && automatic_collective_us<=MAX_US)begin
++      automatic_collective_us>=1000 && automatic_collective_us<=MAX_US)begin
+     seen<=1;last_good<=automatic_collective_us;
+    end
+    if(!latched && enter)begin
+     latched<=1;manual_us<=last_good;anchor_us<=last_good;
+     anchor_stick<=entry_stick;target_q<=last_good;
+-    numerator<=({8'd0,last_good}-MIN_US)<<12;
++    numerator<=last_good<MIN_US ?24'd0:({8'd0,last_good}-MIN_US)<<12;
+     denominator<=entry_stick-1000;quotient<=0;remainder<=0;
+     bits_left<=24;divide_state<=1;curve_ready<=0;slew_phase<=0;valid_q<=0;
+    end else if(latched)begin

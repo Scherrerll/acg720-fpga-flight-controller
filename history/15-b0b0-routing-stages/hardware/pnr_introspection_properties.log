@@ -1,0 +1,357 @@
+*** GOWIN Tcl Command Line Console  *** 
+QUERY set_option -h
+Brief:
+  Set project options.
+Usage:
+  set_option [options]
+Options:
+  -h, --help                                                                                                                         
+  -output_base_name <name>                                                                                                           
+  -global_freq <value>                                                                                                               
+  -enable_dsrm <0|1>                                                                                                                 
+  -synthesis_tool <tool>                                                                                                             
+  -top_module <name>                                                                                                                 
+  -include_path <path>                                                                                                               
+  -verilog_std <v1995|v2001|sysv2017>                                                                                                
+  -vhdl_std <vhd1993|vhd2008>                                                                                                        
+  -print_all_synthesis_warning <0|1>                                                                                                 
+  -allow_duplicate_modules <0|1>                                                                                                     
+  -auto_constraint_io <0|1>                                                                                                          
+  -compiler_compatible <0|1>                                                                                                         
+  -default_enum_encoding <default|onehot|gray|sequential>                                                                            
+  -disable_io_insertion <0|1>                                                                                                        
+  -fix_gated_and_generated_clocks <0|1>                                                                                              
+  -frequency <value>                                                                                                                 
+  -looplimit <value>                                                                                                                 
+  -maxfan <value>                                                                                                                    
+  -multi_file_compilation_unit <0|1>                                                                                                 
+  -num_critical_paths <value>                                                                                                        
+  -num_startend_points <value>                                                                                                       
+  -pipe <0|1>                                                                                                                        
+  -resolve_multiple_driver <0|1>                                                                                                     
+  -resource_sharing <0|1>                                                                                                            
+  -retiming <0|1>                                                                                                                    
+  -run_prop_extract <0|1>                                                                                                            
+  -rw_check_on_ram <0|1>                                                                                                             
+  -supporttypedflt <0|1>                                                                                                             
+  -symbolic_fsm_compiler <0|1>                                                                                                       
+  -synthesis_onoff_pragma <0|1>                                                                                                      
+  -update_models_cp <0|1>                                                                                                            
+  -write_apr_constraint <0|1>                                                                                                        
+  -opt_goal <auto|area|timing>                                                                                                       
+  -netlist_hierarchy <0|1>                                                                                                           
+  -dsp_style <auto|logic|dsp>                                                                                                        
+  -ram_style <auto|block_ram|distributed_ram|registers>                                                                              
+  -rom_style <auto|block_rom|distributed_rom|logic>                                                                                  
+  -max_fanout <value>                                                                                                                
+  -shift_reg <auto|block_ram|distributed_ram|registers>                                                                              
+  -map_option <1|2|3|4>                                                                                                              
+  -gen_sdf <0|1>                                                                                                                     
+  -gen_io_cst <0|1>                                                                                                                  
+  -vccaux <2.5|3.3>                                                                                                                  
+  -gen_ibis <0|1>                                                                                                                    
+  -gen_posp <0|1>                                                                                                                    
+  -gen_verilog_sim_netlist <0|1>                                                                                                     
+  -gen_vhdl_sim_netlist <0|1>                                                                                                        
+  -show_init_in_vo <0|1>                                                                                                             
+  -show_all_warn <0|1>                                                                                                               
+  -timing_driven <0|1>                                                                                                               
+  -reg_in_iob <0|1>                                                                                                                  
+  -ireg_in_iob <0|1>                                                                                                                 
+  -oreg_in_iob <0|1>                                                                                                                 
+  -ioreg_in_iob <0|1>                                                                                                                
+  -replicate_resources <0|1>                                                                                                         
+  -cst_warn_to_error <0|1>                                                                                                           
+  -rpt_auto_place_io_info <0|1>                                                                                                      
+  -place_option <0|1|2|3|4>                                                                                                          
+  -route_option <0|1|2>                                                                                                              
+  -inc <value>                                                                                                                       
+  -bsram_simple_ce <0|1>                                                                                                             
+  -bsram_simple_addr4 <0|1>                                                                                                          
+  -bsram_simple_wre <0|1>                                                                                                            
+  -clock_route_order <0|1>                                                                                                           
+  -route_maxfan <value>                                                                                                              
+  -correct_hold_violation <0|1>                                                                                                      
+  -retiming_resource <none|all|bsram|dsp>                                                                                            
+  -set_route_vcc <0|1>                                                                                                               
+  -convert_sdp32_36_to_sdp16_18 <0|1>                                                                                                
+  -serdesRetiming <0|1>                                                                                                              
+  -co-place_io_registers <0|1>                                                                                                       
+  -use_jtag_as_gpio <0|1>                                                                                                            
+  -use_sspi_as_gpio <0|1>                                                                                                            
+  -use_mspi_as_gpio <0|1>                                                                                                            
+  -use_ready_as_gpio <0|1>                                                                                                           
+  -use_done_as_gpio <0|1>                                                                                                            
+  -use_reconfign_as_gpio <0|1>                                                                                                       
+  -use_mode_as_gpio <0|1>                                                                                                            
+  -use_i2c_as_gpio <0|1>                                                                                                             
+  -use_cpu_as_gpio <0|1>                                                                                                             
+  -inc_place <0|auto|file>                                                                                                           
+  -inc_pnr <0|auto|file>                                                                                                             
+  -bit_format <txt|bin>                                                                                                              
+  -bit_crc_check <0|1>                                                                                                               
+  -bit_compress <0|1>                                                                                                                
+  -bit_encrypt <0|1>                                                                                                                 
+  -bit_encrypt_key <key>                                                                                                             
+  -bit_security <0|1>                                                                                                                
+  -bit_incl_bsram_init <0|1>                                                                                                         
+  -bsram_init_print_mode <default|partial>                                                                                           
+  -bg_programming <off|jtag|i2c|internal|goconfig|goconfig_mode1|userlogic|i2c_jtag_sspi_qsspi|jtag_sspi_qsspi|i2c_jtag|sspi_qsspi>  
+  -hotboot <0|1>                                                                                                                     
+  -i2c_slave_addr <value>                                                                                                            
+  -secure_mode <0|1>                                                                                                                 
+  -loading_rate <value>                                                                                                              
+  -program_done_bypass <0|1>                                                                                                         
+  -wakeup_mode <0|1>                                                                                                                 
+  -user_code <default|value>                                                                                                         
+  -power_on_reset_monitor <0|1>                                                                                                      
+  -spi_flash_addr <value>                                                                                                            
+  -multi_boot <0|1>                                                                                                                  
+  -multiboot_address_width <24|32>                                                                                                   
+  -multiboot_mode <single|fast|dual|quad>                                                                                            
+  -multiboot_spi_flash_address <value>                                                                                               
+  -mspi_jump <0|1>                                                                                                                   
+  -mspijump_address_width <24|32>                                                                                                    
+  -mspijump_mode <single|fast|dual|quad>                                                                                             
+  -mspijump_spi_flash_address <value>                                                                                                
+  -turn_off_bg <0|1>                                                                                                                 
+  -merge_jumpbit <0|1>                                                                                                               
+  -vccx <value>                                                                                                                      
+  -vcc <value>                                                                                                                       
+  -seu_handler <0|1>                                                                                                                 
+  -seu_handler_mode <auto|userlogic>                                                                                                 
+  -seu_handler_checksum <0|1>                                                                                                        
+  -error_detection <0|1>                                                                                                             
+  -error_detection_correction <0|1>                                                                                                  
+  -stop_seu_handler <0|1>                                                                                                            
+  -error_injection <0|1>                                                                                                             
+  -ext_cclk <0|1>                                                                                                                    
+  -ext_cclk_div <value>                                                                                                              
+  -ctp <0|1>                                                                                                                         
+  -unused_pin <default|open_drain>                                                                                                   
+
+
+QUERY set_option --help
+Brief:
+  Set project options.
+Usage:
+  set_option [options]
+Options:
+  -h, --help                                                                                                                         
+  -output_base_name <name>                                                                                                           
+  -global_freq <value>                                                                                                               
+  -enable_dsrm <0|1>                                                                                                                 
+  -synthesis_tool <tool>                                                                                                             
+  -top_module <name>                                                                                                                 
+  -include_path <path>                                                                                                               
+  -verilog_std <v1995|v2001|sysv2017>                                                                                                
+  -vhdl_std <vhd1993|vhd2008>                                                                                                        
+  -print_all_synthesis_warning <0|1>                                                                                                 
+  -allow_duplicate_modules <0|1>                                                                                                     
+  -auto_constraint_io <0|1>                                                                                                          
+  -compiler_compatible <0|1>                                                                                                         
+  -default_enum_encoding <default|onehot|gray|sequential>                                                                            
+  -disable_io_insertion <0|1>                                                                                                        
+  -fix_gated_and_generated_clocks <0|1>                                                                                              
+  -frequency <value>                                                                                                                 
+  -looplimit <value>                                                                                                                 
+  -maxfan <value>                                                                                                                    
+  -multi_file_compilation_unit <0|1>                                                                                                 
+  -num_critical_paths <value>                                                                                                        
+  -num_startend_points <value>                                                                                                       
+  -pipe <0|1>                                                                                                                        
+  -resolve_multiple_driver <0|1>                                                                                                     
+  -resource_sharing <0|1>                                                                                                            
+  -retiming <0|1>                                                                                                                    
+  -run_prop_extract <0|1>                                                                                                            
+  -rw_check_on_ram <0|1>                                                                                                             
+  -supporttypedflt <0|1>                                                                                                             
+  -symbolic_fsm_compiler <0|1>                                                                                                       
+  -synthesis_onoff_pragma <0|1>                                                                                                      
+  -update_models_cp <0|1>                                                                                                            
+  -write_apr_constraint <0|1>                                                                                                        
+  -opt_goal <auto|area|timing>                                                                                                       
+  -netlist_hierarchy <0|1>                                                                                                           
+  -dsp_style <auto|logic|dsp>                                                                                                        
+  -ram_style <auto|block_ram|distributed_ram|registers>                                                                              
+  -rom_style <auto|block_rom|distributed_rom|logic>                                                                                  
+  -max_fanout <value>                                                                                                                
+  -shift_reg <auto|block_ram|distributed_ram|registers>                                                                              
+  -map_option <1|2|3|4>                                                                                                              
+  -gen_sdf <0|1>                                                                                                                     
+  -gen_io_cst <0|1>                                                                                                                  
+  -vccaux <2.5|3.3>                                                                                                                  
+  -gen_ibis <0|1>                                                                                                                    
+  -gen_posp <0|1>                                                                                                                    
+  -gen_verilog_sim_netlist <0|1>                                                                                                     
+  -gen_vhdl_sim_netlist <0|1>                                                                                                        
+  -show_init_in_vo <0|1>                                                                                                             
+  -show_all_warn <0|1>                                                                                                               
+  -timing_driven <0|1>                                                                                                               
+  -reg_in_iob <0|1>                                                                                                                  
+  -ireg_in_iob <0|1>                                                                                                                 
+  -oreg_in_iob <0|1>                                                                                                                 
+  -ioreg_in_iob <0|1>                                                                                                                
+  -replicate_resources <0|1>                                                                                                         
+  -cst_warn_to_error <0|1>                                                                                                           
+  -rpt_auto_place_io_info <0|1>                                                                                                      
+  -place_option <0|1|2|3|4>                                                                                                          
+  -route_option <0|1|2>                                                                                                              
+  -inc <value>                                                                                                                       
+  -bsram_simple_ce <0|1>                                                                                                             
+  -bsram_simple_addr4 <0|1>                                                                                                          
+  -bsram_simple_wre <0|1>                                                                                                            
+  -clock_route_order <0|1>                                                                                                           
+  -route_maxfan <value>                                                                                                              
+  -correct_hold_violation <0|1>                                                                                                      
+  -retiming_resource <none|all|bsram|dsp>                                                                                            
+  -set_route_vcc <0|1>                                                                                                               
+  -convert_sdp32_36_to_sdp16_18 <0|1>                                                                                                
+  -serdesRetiming <0|1>                                                                                                              
+  -co-place_io_registers <0|1>                                                                                                       
+  -use_jtag_as_gpio <0|1>                                                                                                            
+  -use_sspi_as_gpio <0|1>                                                                                                            
+  -use_mspi_as_gpio <0|1>                                                                                                            
+  -use_ready_as_gpio <0|1>                                                                                                           
+  -use_done_as_gpio <0|1>                                                                                                            
+  -use_reconfign_as_gpio <0|1>                                                                                                       
+  -use_mode_as_gpio <0|1>                                                                                                            
+  -use_i2c_as_gpio <0|1>                                                                                                             
+  -use_cpu_as_gpio <0|1>                                                                                                             
+  -inc_place <0|auto|file>                                                                                                           
+  -inc_pnr <0|auto|file>                                                                                                             
+  -bit_format <txt|bin>                                                                                                              
+  -bit_crc_check <0|1>                                                                                                               
+  -bit_compress <0|1>                                                                                                                
+  -bit_encrypt <0|1>                                                                                                                 
+  -bit_encrypt_key <key>                                                                                                             
+  -bit_security <0|1>                                                                                                                
+  -bit_incl_bsram_init <0|1>                                                                                                         
+  -bsram_init_print_mode <default|partial>                                                                                           
+  -bg_programming <off|jtag|i2c|internal|goconfig|goconfig_mode1|userlogic|i2c_jtag_sspi_qsspi|jtag_sspi_qsspi|i2c_jtag|sspi_qsspi>  
+  -hotboot <0|1>                                                                                                                     
+  -i2c_slave_addr <value>                                                                                                            
+  -secure_mode <0|1>                                                                                                                 
+  -loading_rate <value>                                                                                                              
+  -program_done_bypass <0|1>                                                                                                         
+  -wakeup_mode <0|1>                                                                                                                 
+  -user_code <default|value>                                                                                                         
+  -power_on_reset_monitor <0|1>                                                                                                      
+  -spi_flash_addr <value>                                                                                                            
+  -multi_boot <0|1>                                                                                                                  
+  -multiboot_address_width <24|32>                                                                                                   
+  -multiboot_mode <single|fast|dual|quad>                                                                                            
+  -multiboot_spi_flash_address <value>                                                                                               
+  -mspi_jump <0|1>                                                                                                                   
+  -mspijump_address_width <24|32>                                                                                                    
+  -mspijump_mode <single|fast|dual|quad>                                                                                             
+  -mspijump_spi_flash_address <value>                                                                                                
+  -turn_off_bg <0|1>                                                                                                                 
+  -merge_jumpbit <0|1>                                                                                                               
+  -vccx <value>                                                                                                                      
+  -vcc <value>                                                                                                                       
+  -seu_handler <0|1>                                                                                                                 
+  -seu_handler_mode <auto|userlogic>                                                                                                 
+  -seu_handler_checksum <0|1>                                                                                                        
+  -error_detection <0|1>                                                                                                             
+  -error_detection_correction <0|1>                                                                                                  
+  -stop_seu_handler <0|1>                                                                                                            
+  -error_injection <0|1>                                                                                                             
+  -ext_cclk <0|1>                                                                                                                    
+  -ext_cclk_div <value>                                                                                                              
+  -ctp <0|1>                                                                                                                         
+  -unused_pin <default|open_drain>                                                                                                   
+
+
+QUERY set_file_prop -h
+Brief:
+  Set file's properties.
+Usage:
+  set_file_prop [options] <file...>
+Arguments:
+  <file...>  The files being set.
+Options:
+  -h, --help      Show this help.
+  -lib <library>  Specifies the library associated with VHDL files.
+                  Multiple libraries must be separated by comma and
+                  included in a pair of braces.
+
+
+QUERY import_files -h
+Brief:
+  Import files.
+Usage:
+  import_files [options]
+Options:
+  -h, --help            Show this help.
+  -file <ValueList>     Import file to current project.e.g. -file fileA
+                        fileB
+  -dir <dir>            Import folder to current project.
+                        e.g. -dir /user/src
+  -fileList <fileList>  Import the file list base on the given file.
+                        e.g. -fileList importList.txt
+  -force                Cover if file exist.
+                        e.g. -force
+
+
+QUERY add_file -h
+Brief:
+  Add design files.
+Usage:
+  add_file [options] <file...>
+Arguments:
+  <file...>  The files being added.
+Options:
+  -h, --help    Show this help.
+  -type <type>  Override file type explicitly. This command automatically
+                judge the file's type by it extension name. This option
+                can override it.
+  -disable      Add but disable the file.
+
+
+QUERY create_project -h
+Brief:
+  Create project.
+Usage:
+  create_project [options]
+Options:
+  -h, --help                        Show this help.
+  -name <name>                      Specify the project name.e.g. -name
+                                    fpga_project
+  -dir <dir>                        Specify the create path.
+                                    e.g. -dir /user/project
+  -pn <part_number>                 Specify the device part number.
+                                    e.g. -pn GW1N-UV4LQ144C6/I5
+  -device_version <device_version>  Specify the device version.
+                                    e.g. -device_version NA|B|C|D
+  -force                            Cover if project exist.
+                                    e.g. -force
+
+
+QUERY open_project -h
+Brief:
+  Open a project file(.gprj).
+Usage:
+  open_project [options] <file>
+Arguments:
+  <file>  Project file to be read.
+Options:
+  -h, --help                        Show this help.
+  -pn <part_number>                 Open the project using this
+                                    part(overrides project's part)
+  -device_version <device_version>  Specify the device version.
+                                    e.g. -device_version NA|B|C|D
+
+
+QUERY set_file_enable -h
+Brief:
+  Enable/Disable some file in current project.
+Usage:
+  set_file_enable [options] <file> <true|false>
+Arguments:
+  <file>        The file being set.
+  <true|false>  true for enable, false for disable
+Options:
+  -h, --help  Show this help.
+
+

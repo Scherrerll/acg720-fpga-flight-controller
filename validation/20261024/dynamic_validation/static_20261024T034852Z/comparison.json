@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-24T03:54:47.372059+00:00",
+  "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\static_20261024T034051Z\\static20_review.json",
+  "baseline_sha256": "07066a1e46011576db384f4b78f56c026eec735e6f9db85e42eb735fd20a333d",
+  "paper": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\static_20261024T034852Z\\static20_review.json",
+  "paper_sha256": "5e5393f8625fa57ebc43bf461faa9dc717de577cf5a30d217bc0737cb00c42dd",
+  "raw_payload_total_checked": 2556,
+  "payload_mismatches": 0,
+  "fused_rms_mm_s": {
+    "fused_vx_q16": {
+      "original_surface": 12.358141767198124,
+      "printed_surface": 8.478228630464892,
+      "observed_reduction_percent": 31.39560307546866
+    },
+    "fused_vy_q16": {
+      "original_surface": 14.530628179561829,
+      "printed_surface": 6.589167058871666,
+      "observed_reduction_percent": 54.65325395814813
+    }
+  },
+  "finding": "Stationary factory optical-flow variation is present in raw payloads. Paper condition has lower fused velocity RMS. Input/scene effects are supported but exact cause not isolated; no RTL conversion defect or automatic coefficient correction inferred.",
+  "limitations": [
+    "Single short comparison; range medians differed 215 vs202mm",
+    "No illumination/power/optics measurement",
+    "Diagnostic position drift is not directly consumed by current ANO velocity PI",
+    "No new powered correction-direction or flight acceptance"
+  ],
+  "firmware_changed": false,
+  "factory_scale_changed": false,
+  "rotation_compensation_qualified": false,
+  "flight_ready": false
+}

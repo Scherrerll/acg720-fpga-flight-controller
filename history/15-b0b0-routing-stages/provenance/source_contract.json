@@ -1,0 +1,16 @@
+{
+  "parent": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2",
+  "allowed_changes": {
+    "acg720_ano_port.gprj": "f6f7553aab05450fa8ed6e09167527bdc6db2004a3e1aea4c20c3e3cb707c6fb",
+    "acg720_ano_port.v": "7c933a4f4b9424748b0846d686a5007c1b7af2f78b909b3e4da370b951e6e9a0",
+    "build.tcl": "b63d28d72ac12411c5dc8c6f4b2afe7fa6e21d426feae0e1a32c44d2f450f129",
+    "build_project.py": "4301d64b20abf7686d0a1b5e6a65c538f8b25bb1f032169ce28cc8e3bb4269a6",
+    "core/flight_core.v": "7280aae3fa9b96b684af766229caebbb1b73e6c879fbb029ddb8e2a148953e25"
+  },
+  "new_sources": {
+    "core/height_loss_fallback.v": "dcdbdab7e3ea0891479d6b6cf17c03fc7c35f9d6eea0d8c645428a58521f035b"
+  },
+  "parent_qualification_sha256": "6ddcc10b2b14eccc53b182ec01c745b478f091c7e94bb5d2d0e2693d231e6efd",
+  "reference_core_sha256": "26c8ba79f3625de04b0713204a5c834b9019d347abc08ff16d454df386cb9c5a",
+  "purpose": "B0B0 preserves B0AF control behavior and repairs Gowin forward declarations only; B0AE reference unchanged."
+}

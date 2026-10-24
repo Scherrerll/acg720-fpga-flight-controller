@@ -1,0 +1,13 @@
+*** GOWIN Tcl Command Line Console  *** 
+COMMANDS_BEGIN
+add_file after append apply array auto_execok auto_import auto_load auto_load_index auto_qualify binary break case catch cd chan clock close concat continue coroutine create_ipc create_project dict encoding encrypt eof error eval exec exit expr fblocked fconfigure fcopy file fileevent flush for foreach format generate_target get_ips gets glob global if import_files incr info interp join lappend lassign lindex linsert list list_property llength lmap load lrange lrepeat lreplace lreverse lsearch lset lsort namespace open open_project package pid proc puts pwd read read_ipc regexp regsub rename report_property reset_option return rm_file run saveto scan seek set set_csr set_device set_file_enable set_file_prop set_option set_property set_synplify_path socket source split string subst switch tailcall tclLog tell throw time trace try unknown unload unset update uplevel upvar variable vwait while write_ip_tcl yield yieldto zlib
+COMMANDS_END
+QUERY help
+QUERY run
+invalid command name "help"
+QUERY read_design
+QUERY read_verilog
+QUERY read_netlist
+QUERY place
+QUERY route
+QUERY pnr

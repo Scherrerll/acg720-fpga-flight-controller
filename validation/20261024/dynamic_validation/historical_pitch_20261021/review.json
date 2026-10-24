@@ -1,0 +1,159 @@
+{
+  "protocol_counts": {
+    "a579": 703,
+    "a57a": 703,
+    "a580": 703,
+    "a581": 703,
+    "a582": 703,
+    "a583": 703
+  },
+  "scope": "Read-only received telemetry observation; hand pivot/translation and lever arm are not independently measured. A583 is not exposure synchronized.",
+  "factory_scale_changed": false,
+  "firmware_changed": false,
+  "rotation_compensation_qualified": false,
+  "flight_ready": false,
+  "all_unarmed_and_reported_pwm1000": true,
+  "build_ids": [
+    45229
+  ],
+  "pose_cdeg": {
+    "roll_cdeg": {
+      "min": 2,
+      "median": 33,
+      "max": 39
+    },
+    "pitch_cdeg": {
+      "min": 184,
+      "median": 192,
+      "max": 616
+    },
+    "yaw_relative_cdeg": {
+      "min": 17659,
+      "median": 17722,
+      "max": 17789
+    }
+  },
+  "baseline_pose_cdeg": {
+    "roll_cdeg": 38,
+    "pitch_cdeg": 190
+  },
+  "end_pose_cdeg": {
+    "roll_cdeg": 34,
+    "pitch_cdeg": 192
+  },
+  "core_counter_deltas": {
+    "rejected_count": 3,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "module_counter_deltas": {
+    "checksum_errors": 0,
+    "length_errors": 0,
+    "uart_errors": 0,
+    "packet_timeouts": 0,
+    "module_missing": 0,
+    "module_duplicates": 0,
+    "module_restarts": 0,
+    "integration_breaks": 0
+  },
+  "module_range_mm": {
+    "min": 211,
+    "median": 222,
+    "max": 233
+  },
+  "module_flow_quality": {
+    "min": 79,
+    "median": 88,
+    "max": 96
+  },
+  "module_max_source_age_ms": 10,
+  "module_packets": 14031,
+  "cumulative_xy_mm": {
+    "x_mm_x100000": {
+      "span_mm": 24.099999999976717,
+      "end_minus_start_mm": -0.9520000000484288
+    },
+    "y_mm_x100000": {
+      "span_mm": 9.25,
+      "end_minus_start_mm": -6.676000000006752
+    }
+  },
+  "receipt_pairs": {
+    "count": 703,
+    "valid": 703,
+    "gyro_deg_s": {
+      "gx_deg_s": {
+        "min": -0.5054306402439025,
+        "median": 0.0005954649390243903,
+        "max": 0.6561874761814025
+      },
+      "gy_deg_s": {
+        "min": -3.4014892578125004,
+        "median": -0.007621951219512196,
+        "max": 3.4704440977515247
+      },
+      "gz_deg_s": {
+        "min": -0.16884408346036586,
+        "median": -0.00794945693597561,
+        "max": 0.1580512814405488
+      }
+    },
+    "factory_body_velocity_mm_s": {
+      "body_forward_mm_s": {
+        "min": -45.8,
+        "median": 0.0,
+        "max": 87.2
+      },
+      "body_right_mm_s": {
+        "min": -89.2,
+        "median": 0.0,
+        "max": 90.4
+      }
+    }
+  },
+  "fused_velocity_mm_s": {
+    "fused_vx_q16": {
+      "min": -5.7866668701171875,
+      "median": 0.081451416015625,
+      "max": 10.027206420898438
+    },
+    "fused_vy_q16": {
+      "min": -24.480972290039062,
+      "median": -0.015899658203125,
+      "max": 31.730865478515625
+    }
+  },
+  "height_ready_fraction": 1.0,
+  "source_session": "20261020T140334Z_ca766040",
+  "source_offset": [
+    2482582561,
+    2487762745
+  ],
+  "historical_build": "B0AD",
+  "current_build": "B0B0",
+  "reuse_scope": "Historical raw sensor motion reference only; not current-controller or whole-image qualification.",
+  "human": "Small nose-up and return complete, frame setdown; transmitter off previouslyconfirmed.",
+  "source_marker_sha256": {
+    "start": "1f8c81928e1d86c7d3e8da1d85dec5ba7349f64dc42f2ab9f53d3170d288a0ac",
+    "end": "54ae5bb2be97232fd317f3b2fd9399cb6b42434ac6059712a754078274377d10"
+  },
+  "selected_telemetry_sha256": "ff959c0ecc557aa4ab1604756b2e72cb929938e01b63a02628630dc59133f8a0",
+  "reader_logic_reuse": {
+    "mtf_uart_rx": {
+      "byte_equal": true,
+      "old_sha256": "69373665c8bd12e8895fe523753c9befa0a2af990bad62cac69f413d9b16fe42",
+      "current_sha256": "69373665c8bd12e8895fe523753c9befa0a2af990bad62cac69f413d9b16fe42"
+    },
+    "micolink_parser": {
+      "byte_equal": false,
+      "old_sha256": "275bd9f93ad6aeb2fc6576e6191d362bdf7104663f67311d55dac0440f4138bc",
+      "current_sha256": "014dd1afc6d19daa0ec4d9669e10d8f76a585b3463f01a1f2949fb16f8deb82b"
+    },
+    "mtf_metric_observer": {
+      "byte_equal": true,
+      "old_sha256": "87ec02c71707e0b7a9d868565f3116ba66974801f15cf2d66b2c98caa5f95bfd",
+      "current_sha256": "87ec02c71707e0b7a9d868565f3116ba66974801f15cf2d66b2c98caa5f95bfd"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "updated_utc": "2026-10-23T04:01:28.606872+00:00",
+  "measured_cause_today": "B0AE native-height-ready deassertion clears control_gate and armed_usable, verified at idle while CH5 remained high.",
+  "nominal_reference": "ANO THR_AUTO in both modes retained; reference platform has other sensor conditions unavailable here.",
+  "historical_4s_incident": "No matching airborne evidence has been established for the earlier ~10s power loss; do not assign cause from today's induced MTF disconnect.",
+  "log_diagnosis": {
+    "commanded_stop": "Reported effective PWM 1000us + gate event + nav validity/RC/SWA allows diagnosis of commanded stop. Event0x32/mask0 alone cannot distinguish landing lock from native vertical-reference loss.",
+    "reset": "FPGA uptime/sequence/build restart identifies reset evidence, not its electrical cause.",
+    "downstream_power": "Continuing non-idle commands with observed motor power loss points to downstream or electrical investigation, but reported PWM is not a measured signal/RPM.",
+    "telemetry_gap": "Missing ground radio frames alone cannot prove aircraft reset or motor shutdown.",
+    "unmeasured": [
+      "battery voltage",
+      "FPGA regulator output under load",
+      "current",
+      "ESC RPM/temperature"
+    ]
+  },
+  "change_scope": "Only post-takeoff native-height-loss path; retain established hard-stop protections and normal arithmetic. No board/Flash write performed.",
+  "next_hardware": "Only after strict50MHz PNR and verified image, perform targeted props-off fallback/stop/recovery acceptance; no repeated optical-flow calibration."
+}

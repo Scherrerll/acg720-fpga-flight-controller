@@ -1,0 +1,7 @@
+{
+  "hardware_accessed": false,
+  "flash_written": false,
+  "stage": "offline verify_files before rollback copy or any programmer operation",
+  "error": "AttributeError: str object has no attribute read_bytes",
+  "resolution": "Wrap __file__ and imported __file__ in pathlib.Path before the existing SHA helper; prepare then passed; no firmware/evidence modified"
+}

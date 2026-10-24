@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "utc": "2026-10-23T05:51:00.122986+00:00",
+  "netlist_sha256": "21394c934076c271acb9696fcaec868a6070f930a54ba704a17b43bf0c56d5cd",
+  "log_sha256": "303747222560f48cbfa819de905794925d2b7f198e2fff2d05d1dbe5c8a3e7e3",
+  "connectivity_excerpts_unchanged": true,
+  "prior_connectivity_evidence_sha256": "c02741164f1466d2e7f76677e19485bbe02435055004593f9f0d4d7e9538ffec",
+  "vendor_dependency_synthesis_reran": true,
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "logic_without_line_comments_sha256": "072e7755e35323dba14850d436ebe28c2eed1da84b2bfe11dad92de0dbe22862",
+  "qualified_reference_netlist": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\synthesis\\20261023T043538_236355Z\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "qualified_reference_netlist_sha256": "aa3d19bb8972b926647a83480fc50ef64408726f273a99ff064277497abd5d2b",
+  "qualified_reference_sources_match": true
+}

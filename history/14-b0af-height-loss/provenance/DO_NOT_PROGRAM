@@ -1,0 +1,1 @@
+B0AF HARDWARE REJECTED on 2026-10-23. Public command freshness lost after takeoff due to Gowin implicit-net synthesis bug. Do not program SRAM or Flash, do not fly this image. See HARDWARE_REJECTED.json. Default Flash B0AC unchanged. Repair candidate is isolated B0B0.

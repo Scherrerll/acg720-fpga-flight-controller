@@ -1,0 +1,81 @@
+*** GOWIN Tcl Command Line Console  *** 
+NAMESPACE ::
+::add_file ::after ::append ::apply ::array ::auto_execok ::auto_import ::auto_load ::auto_load_index ::auto_qualify ::binary ::break ::case ::catch ::cd ::chan ::clock ::close ::concat ::continue ::coroutine ::create_ipc ::create_project ::dict ::encoding ::encrypt ::eof ::error ::eval ::exec ::exit ::expr ::fblocked ::fconfigure ::fcopy ::file ::fileevent ::flush ::for ::foreach ::format ::generate_target ::get_ips ::gets ::glob ::global ::if ::import_files ::incr ::info ::interp ::inventory ::join ::lappend ::lassign ::lindex ::linsert ::list ::list_property ::llength ::lmap ::load ::lrange ::lrepeat ::lreplace ::lreverse ::lsearch ::lset ::lsort ::namespace ::open ::open_project ::package ::pid ::proc ::puts ::pwd ::read ::read_ipc ::regexp ::regsub ::rename ::report_property ::reset_option ::return ::rm_file ::run ::saveto ::scan ::seek ::set ::set_csr ::set_device ::set_file_enable ::set_file_prop ::set_option ::set_property ::set_synplify_path ::socket ::source ::split ::string ::subst ::switch ::tailcall ::tclLog ::tell ::throw ::time ::trace ::try ::unknown ::unload ::unset ::update ::uplevel ::upvar ::variable ::vwait ::while ::write_ip_tcl ::yield ::yieldto ::zlib
+NAMESPACE ::platform
+::platform::LibcVersion ::platform::generic ::platform::identify ::platform::patterns
+NAMESPACE ::activestate
+
+NAMESPACE ::activestate::teapot
+
+NAMESPACE ::activestate::teapot::link
+::activestate::teapot::link::setup ::activestate::teapot::link::use ::activestate::teapot::link::usel
+NAMESPACE ::zlib
+::zlib::pkgconfig
+NAMESPACE ::oo
+::oo::InfoClass ::oo::InfoObject ::oo::Slot ::oo::UnknownDefinition ::oo::class ::oo::copy ::oo::define ::oo::objdefine ::oo::object
+NAMESPACE ::oo::InfoClass
+::oo::InfoClass::call ::oo::InfoClass::constructor ::oo::InfoClass::definition ::oo::InfoClass::destructor ::oo::InfoClass::filters ::oo::InfoClass::forward ::oo::InfoClass::instances ::oo::InfoClass::methods ::oo::InfoClass::methodtype ::oo::InfoClass::mixins ::oo::InfoClass::subclasses ::oo::InfoClass::superclasses ::oo::InfoClass::variables
+NAMESPACE ::oo::Obj10
+::oo::Obj10::my
+NAMESPACE ::oo::Obj1
+::oo::Obj1::my
+NAMESPACE ::oo::Obj2
+::oo::Obj2::my
+NAMESPACE ::oo::objdefine
+::oo::objdefine::class ::oo::objdefine::deletemethod ::oo::objdefine::export ::oo::objdefine::filter ::oo::objdefine::forward ::oo::objdefine::method ::oo::objdefine::mixin ::oo::objdefine::renamemethod ::oo::objdefine::unexport ::oo::objdefine::variable
+NAMESPACE ::oo::Obj3
+::oo::Obj3::my
+NAMESPACE ::oo::Obj4
+::oo::Obj4::my
+NAMESPACE ::oo::Obj5
+::oo::Obj5::my
+NAMESPACE ::oo::Obj6
+::oo::Obj6::my
+NAMESPACE ::oo::Obj7
+::oo::Obj7::my
+NAMESPACE ::oo::Obj8
+::oo::Obj8::my
+NAMESPACE ::oo::define
+::oo::define::constructor ::oo::define::deletemethod ::oo::define::destructor ::oo::define::export ::oo::define::filter ::oo::define::forward ::oo::define::method ::oo::define::mixin ::oo::define::renamemethod ::oo::define::self ::oo::define::superclass ::oo::define::unexport ::oo::define::variable
+NAMESPACE ::oo::Helpers
+::oo::Helpers::next ::oo::Helpers::nextto ::oo::Helpers::self
+NAMESPACE ::oo::InfoObject
+::oo::InfoObject::call ::oo::InfoObject::class ::oo::InfoObject::definition ::oo::InfoObject::filters ::oo::InfoObject::forward ::oo::InfoObject::isa ::oo::InfoObject::methods ::oo::InfoObject::methodtype ::oo::InfoObject::mixins ::oo::InfoObject::namespace ::oo::InfoObject::variables ::oo::InfoObject::vars
+NAMESPACE ::oo::Obj9
+::oo::Obj9::my
+NAMESPACE ::tcl
+::tcl::Bgerror ::tcl::CopyDirectory ::tcl::EnvTraceProc ::tcl::InitWinEnv ::tcl::pkgconfig ::tcl::prefix
+NAMESPACE ::tcl::file
+::tcl::file::atime ::tcl::file::attributes ::tcl::file::channels ::tcl::file::copy ::tcl::file::delete ::tcl::file::dirname ::tcl::file::executable ::tcl::file::exists ::tcl::file::extension ::tcl::file::isdirectory ::tcl::file::isfile ::tcl::file::join ::tcl::file::link ::tcl::file::lstat ::tcl::file::mkdir ::tcl::file::mtime ::tcl::file::nativename ::tcl::file::normalize ::tcl::file::owned ::tcl::file::pathtype ::tcl::file::readable ::tcl::file::readlink ::tcl::file::rename ::tcl::file::rootname ::tcl::file::separator ::tcl::file::size ::tcl::file::split ::tcl::file::stat ::tcl::file::system ::tcl::file::tail ::tcl::file::tempfile ::tcl::file::type ::tcl::file::volumes ::tcl::file::writable
+NAMESPACE ::tcl::tm
+::tcl::tm::Defaults ::tcl::tm::UnknownHandler ::tcl::tm::add ::tcl::tm::list ::tcl::tm::path ::tcl::tm::remove ::tcl::tm::roots
+NAMESPACE ::tcl::info
+::tcl::info::args ::tcl::info::body ::tcl::info::cmdcount ::tcl::info::commands ::tcl::info::complete ::tcl::info::coroutine ::tcl::info::default ::tcl::info::errorstack ::tcl::info::exists ::tcl::info::frame ::tcl::info::functions ::tcl::info::globals ::tcl::info::hostname ::tcl::info::level ::tcl::info::library ::tcl::info::loaded ::tcl::info::locals ::tcl::info::nameofexecutable ::tcl::info::patchlevel ::tcl::info::procs ::tcl::info::script ::tcl::info::sharedlibextension ::tcl::info::tclversion ::tcl::info::vars
+NAMESPACE ::tcl::clock
+::tcl::clock::ConvertLocalToUTC ::tcl::clock::GetDateFields ::tcl::clock::GetJulianDayFromEraYearMonthDay ::tcl::clock::GetJulianDayFromEraYearWeekDay ::tcl::clock::Oldscan ::tcl::clock::ParseFormatArgs ::tcl::clock::clicks ::tcl::clock::getenv ::tcl::clock::microseconds ::tcl::clock::milliseconds ::tcl::clock::seconds
+NAMESPACE ::tcl::binary
+::tcl::binary::decode ::tcl::binary::encode ::tcl::binary::format ::tcl::binary::scan
+NAMESPACE ::tcl::binary::decode
+::tcl::binary::decode::base64 ::tcl::binary::decode::hex ::tcl::binary::decode::uuencode
+NAMESPACE ::tcl::binary::encode
+::tcl::binary::encode::base64 ::tcl::binary::encode::hex ::tcl::binary::encode::uuencode
+NAMESPACE ::tcl::namespace
+::tcl::namespace::children ::tcl::namespace::code ::tcl::namespace::current ::tcl::namespace::delete ::tcl::namespace::ensemble ::tcl::namespace::eval ::tcl::namespace::exists ::tcl::namespace::export ::tcl::namespace::forget ::tcl::namespace::import ::tcl::namespace::inscope ::tcl::namespace::origin ::tcl::namespace::parent ::tcl::namespace::path ::tcl::namespace::qualifiers ::tcl::namespace::tail ::tcl::namespace::unknown ::tcl::namespace::upvar ::tcl::namespace::which
+NAMESPACE ::tcl::array
+::tcl::array::anymore ::tcl::array::donesearch ::tcl::array::exists ::tcl::array::get ::tcl::array::names ::tcl::array::nextelement ::tcl::array::set ::tcl::array::size ::tcl::array::startsearch ::tcl::array::statistics ::tcl::array::unset
+NAMESPACE ::tcl::zlib
+
+NAMESPACE ::tcl::mathop
+::tcl::mathop::! ::tcl::mathop::!= ::tcl::mathop::% ::tcl::mathop::& ::tcl::mathop::* ::tcl::mathop::** ::tcl::mathop::+ ::tcl::mathop::- ::tcl::mathop::/ ::tcl::mathop::< ::tcl::mathop::<< ::tcl::mathop::<= ::tcl::mathop::== ::tcl::mathop::> ::tcl::mathop::>= ::tcl::mathop::>> ::tcl::mathop::^ ::tcl::mathop::eq ::tcl::mathop::in ::tcl::mathop::ne ::tcl::mathop::ni ::tcl::mathop::| ::tcl::mathop::~
+NAMESPACE ::tcl::unsupported
+::tcl::unsupported::assemble ::tcl::unsupported::disassemble ::tcl::unsupported::getbytecode ::tcl::unsupported::inject ::tcl::unsupported::representation
+NAMESPACE ::tcl::chan
+::tcl::chan::blocked ::tcl::chan::close ::tcl::chan::copy ::tcl::chan::create ::tcl::chan::eof ::tcl::chan::event ::tcl::chan::flush ::tcl::chan::gets ::tcl::chan::names ::tcl::chan::pending ::tcl::chan::pipe ::tcl::chan::pop ::tcl::chan::postevent ::tcl::chan::push ::tcl::chan::puts ::tcl::chan::read ::tcl::chan::seek ::tcl::chan::tell ::tcl::chan::truncate
+NAMESPACE ::tcl::dict
+::tcl::dict::append ::tcl::dict::create ::tcl::dict::exists ::tcl::dict::filter ::tcl::dict::for ::tcl::dict::get ::tcl::dict::incr ::tcl::dict::info ::tcl::dict::keys ::tcl::dict::lappend ::tcl::dict::map ::tcl::dict::merge ::tcl::dict::remove ::tcl::dict::replace ::tcl::dict::set ::tcl::dict::size ::tcl::dict::unset ::tcl::dict::update ::tcl::dict::values ::tcl::dict::with
+NAMESPACE ::tcl::prefix
+::tcl::prefix::all ::tcl::prefix::longest ::tcl::prefix::match
+NAMESPACE ::tcl::mathfunc
+::tcl::mathfunc::abs ::tcl::mathfunc::acos ::tcl::mathfunc::asin ::tcl::mathfunc::atan ::tcl::mathfunc::atan2 ::tcl::mathfunc::bool ::tcl::mathfunc::ceil ::tcl::mathfunc::cos ::tcl::mathfunc::cosh ::tcl::mathfunc::double ::tcl::mathfunc::entier ::tcl::mathfunc::exp ::tcl::mathfunc::floor ::tcl::mathfunc::fmod ::tcl::mathfunc::hypot ::tcl::mathfunc::int ::tcl::mathfunc::isqrt ::tcl::mathfunc::log ::tcl::mathfunc::log10 ::tcl::mathfunc::max ::tcl::mathfunc::min ::tcl::mathfunc::pow ::tcl::mathfunc::rand ::tcl::mathfunc::round ::tcl::mathfunc::sin ::tcl::mathfunc::sinh ::tcl::mathfunc::sqrt ::tcl::mathfunc::srand ::tcl::mathfunc::tan ::tcl::mathfunc::tanh ::tcl::mathfunc::wide
+NAMESPACE ::tcl::string
+::tcl::string::bytelength ::tcl::string::cat ::tcl::string::compare ::tcl::string::equal ::tcl::string::first ::tcl::string::index ::tcl::string::is ::tcl::string::last ::tcl::string::length ::tcl::string::map ::tcl::string::match ::tcl::string::range ::tcl::string::repeat ::tcl::string::replace ::tcl::string::reverse ::tcl::string::tolower ::tcl::string::totitle ::tcl::string::toupper ::tcl::string::trim ::tcl::string::trimleft ::tcl::string::trimright ::tcl::string::wordend ::tcl::string::wordstart

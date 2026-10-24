@@ -1,0 +1,1551 @@
+{
+  "baseline": {
+    "vg_sha256": "f293c3d1cf948e72be1f18f5d87e0aa8abedd53bca8c944361d92ff81e98d2cd",
+    "depths": {
+      "pose_valid": {
+        "start": [
+          "/core/imu/estimator",
+          "pose_valid"
+        ],
+        "end": [
+          "/native_navigation",
+          "nav_vertical_ready"
+        ],
+        "lut_stages": 6,
+        "combin_cell_stages": 6,
+        "path": [
+          {
+            "path": "/core/imu/estimator",
+            "net": "accel_valid",
+            "type": "LUT2",
+            "instance": "accel_valid_s"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc_5",
+            "type": "LUT4",
+            "instance": "live_acc_s2"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc",
+            "type": "LUT4",
+            "instance": "live_acc_s3"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready_10",
+            "type": "LUT3",
+            "instance": "nav_vertical_ready_s7"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready_4",
+            "type": "LUT3",
+            "instance": "nav_vertical_ready_s1"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready",
+            "type": "LUT4",
+            "instance": "nav_vertical_ready_s"
+          }
+        ]
+      },
+      "origin_reset": {
+        "start": [
+          "",
+          "observer_reset"
+        ],
+        "end": [
+          "/native_navigation",
+          "nav_vertical_ready"
+        ],
+        "lut_stages": null,
+        "combin_cell_stages": null,
+        "path": []
+      },
+      "stale_q": {
+        "start": [
+          "/core/imu/guard",
+          "stale_q"
+        ],
+        "end": [
+          "/native_navigation",
+          "nav_vertical_ready"
+        ],
+        "lut_stages": 8,
+        "combin_cell_stages": 8,
+        "path": [
+          {
+            "path": "/core/imu/estimator",
+            "net": "pose_valid_4",
+            "type": "LUT2",
+            "instance": "pose_valid_s1"
+          },
+          {
+            "path": "/core/imu/estimator",
+            "net": "pose_valid",
+            "type": "LUT4",
+            "instance": "pose_valid_s2"
+          },
+          {
+            "path": "/core/imu/estimator",
+            "net": "accel_valid",
+            "type": "LUT2",
+            "instance": "accel_valid_s"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc_5",
+            "type": "LUT4",
+            "instance": "live_acc_s2"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc",
+            "type": "LUT4",
+            "instance": "live_acc_s3"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready_10",
+            "type": "LUT3",
+            "instance": "nav_vertical_ready_s7"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready_4",
+            "type": "LUT3",
+            "instance": "nav_vertical_ready_s1"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready",
+            "type": "LUT4",
+            "instance": "nav_vertical_ready_s"
+          }
+        ]
+      }
+    },
+    "tails": {},
+    "scope": "Syntactic conservative fanin/LUT-stage inventory with FF-Q boundary. No Boolean equivalence, false-path/timing or physical proof; no BDD invoked."
+  },
+  "proposal": {
+    "vg_sha256": "6ebbd100aa829d46a7164000c33a67e6f617c6b56f4d65f2fe48dd0fd2d84a86",
+    "depths": {
+      "pose_valid": {
+        "start": [
+          "/core/imu/estimator",
+          "pose_valid"
+        ],
+        "end": [
+          "/native_navigation",
+          "nav_vertical_ready"
+        ],
+        "lut_stages": 4,
+        "combin_cell_stages": 4,
+        "path": [
+          {
+            "path": "",
+            "net": "observer_reset",
+            "type": "LUT2",
+            "instance": "observer_reset_s1"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc_5",
+            "type": "LUT4",
+            "instance": "live_acc_s2"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc",
+            "type": "LUT2",
+            "instance": "live_acc_s1"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready",
+            "type": "LUT4",
+            "instance": "nav_vertical_ready_s"
+          }
+        ]
+      },
+      "origin_reset": {
+        "start": [
+          "",
+          "observer_reset"
+        ],
+        "end": [
+          "/native_navigation",
+          "nav_vertical_ready"
+        ],
+        "lut_stages": 3,
+        "combin_cell_stages": 3,
+        "path": [
+          {
+            "path": "/native_navigation",
+            "net": "live_acc_5",
+            "type": "LUT4",
+            "instance": "live_acc_s2"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc",
+            "type": "LUT2",
+            "instance": "live_acc_s1"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready",
+            "type": "LUT4",
+            "instance": "nav_vertical_ready_s"
+          }
+        ]
+      },
+      "stale_q": {
+        "start": [
+          "/core/imu/guard",
+          "stale_q"
+        ],
+        "end": [
+          "/native_navigation",
+          "nav_vertical_ready"
+        ],
+        "lut_stages": 6,
+        "combin_cell_stages": 6,
+        "path": [
+          {
+            "path": "/core/imu/estimator",
+            "net": "pose_valid_3",
+            "type": "LUT2",
+            "instance": "pose_valid_s0"
+          },
+          {
+            "path": "/core/imu/estimator",
+            "net": "pose_valid",
+            "type": "LUT4",
+            "instance": "pose_valid_s"
+          },
+          {
+            "path": "",
+            "net": "observer_reset",
+            "type": "LUT2",
+            "instance": "observer_reset_s1"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc_5",
+            "type": "LUT4",
+            "instance": "live_acc_s2"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "live_acc",
+            "type": "LUT2",
+            "instance": "live_acc_s1"
+          },
+          {
+            "path": "/native_navigation",
+            "net": "nav_vertical_ready",
+            "type": "LUT4",
+            "instance": "nav_vertical_ready_s"
+          }
+        ]
+      }
+    },
+    "tails": {
+      "geometry": {
+        "net": [
+          "/native_navigation/geometry",
+          "height_ready_state_numeric_tail_kept"
+        ],
+        "driver": {
+          "type": "LUT5",
+          "instance": "height_ready_state_numeric_tail_kept_s10",
+          "direct_fanins": [
+            [
+              "/native_navigation/geometry",
+              "height_ready_state_numeric_tail_kept_5"
+            ],
+            [
+              "/native_navigation/geometry",
+              "height_ready_state_numeric_tail_kept_6"
+            ],
+            [
+              "/core/imu/estimator",
+              "body_tilt4500_ok"
+            ],
+            [
+              "/core/imu/estimator",
+              "body_yaw_range_ok"
+            ],
+            [
+              "/native_navigation/geometry",
+              "geometry_height_ready_3"
+            ]
+          ]
+        },
+        "combinational_driver": true,
+        "combin_nodes": 91,
+        "ff_boundary_leaves": [
+          {
+            "net": [
+              "/core/imu/estimator",
+              "body_tilt4500_ok"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core/imu/estimator",
+              "body_yaw_range_ok"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/mtf",
+              "mtf_sample"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[0]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[10]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[11]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[12]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[13]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[14]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[15]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[16]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[17]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[18]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[19]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[1]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[20]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[21]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[22]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[23]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[24]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[25]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[26]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[27]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[28]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[29]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[2]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[30]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[31]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[3]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[4]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[5]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[6]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[7]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[8]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/mtf/parser",
+              "mtf_distance_mm[9]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "fault[5]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "geometry_reason_6"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[10]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[11]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[12]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[13]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[14]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[15]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[16]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[17]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[18]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[19]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[20]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[21]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[22]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[6]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[7]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[8]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "publication_age[9]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "seen"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "state[0]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "state[1]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "state[2]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "state[3]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "state[4]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "state[6]"
+            ],
+            "type": "DFFRE"
+          }
+        ],
+        "other_boundary_leaves": [],
+        "unsupported_or_undriven": [],
+        "forbidden_named_boundaries_present": {},
+        "queried_forbidden_boundaries": {
+          "pose_valid": [
+            "/core/imu/estimator",
+            "pose_valid"
+          ],
+          "origin_reset": [
+            "",
+            "observer_reset"
+          ],
+          "stale_q": [
+            "/core/imu/guard",
+            "stale_q"
+          ],
+          "geometry_full_ready": [
+            "/native_navigation/geometry",
+            "geometry_height_ready"
+          ],
+          "fusion_full_ready": [
+            "/native_navigation/height_fusion",
+            "height_estimate_ready"
+          ],
+          "module_fresh": [
+            "/native_navigation",
+            "module_fresh"
+          ]
+        }
+      },
+      "height_fusion": {
+        "net": [
+          "/native_navigation/height_fusion",
+          "estimate_ready_state_numeric_tail_kept"
+        ],
+        "driver": {
+          "type": "LUT4",
+          "instance": "estimate_ready_state_numeric_tail_kept_s2",
+          "direct_fanins": [
+            [
+              "/native_navigation/height_fusion",
+              "estimate_ready_state_numeric_tail_kept_6"
+            ],
+            [
+              "/native_navigation/height_fusion",
+              "estimate_ready_state_numeric_tail_kept_7"
+            ],
+            [
+              "/native_navigation/height_fusion",
+              "height_estimate_ready_4"
+            ],
+            [
+              "/native_navigation/height_fusion",
+              "estimate_ready_state_numeric_tail_kept_8"
+            ]
+          ]
+        },
+        "combinational_driver": true,
+        "combin_nodes": 151,
+        "ff_boundary_leaves": [
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[0]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[10]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[11]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[12]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[13]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[14]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[15]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[16]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[17]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[18]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[19]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[1]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[20]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[21]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[22]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[23]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[24]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[25]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[26]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[27]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[28]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[29]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[2]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[30]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[31]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[3]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[4]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[5]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[6]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[7]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[8]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/acc_time",
+              "converted_az[9]"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[10]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[11]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[12]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[13]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[14]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[15]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[16]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[17]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[18]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[19]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[20]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[21]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[22]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[23]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[24]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[25]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[26]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[27]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[28]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[29]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[30]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[31]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[6]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[7]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[8]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/core",
+              "pose_age_Z[9]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_0"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_1"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_10"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_11"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_12"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_2"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_3"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_31"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_4"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_5"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_6"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_7"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_8"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/geometry",
+              "height_mm_Z_9"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "d_cancel[2]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "fault"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[10]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[11]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[12]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[13]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[14]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[15]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[16]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[17]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[18]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[19]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[20]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[21]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[22]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[23]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[24]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[25]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[26]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[27]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[28]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[29]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[30]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[31]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[6]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[7]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[8]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "publication_age[9]"
+            ],
+            "type": "DFFSE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "seeded"
+            ],
+            "type": "DFFRE"
+          },
+          {
+            "net": [
+              "/native_navigation/height_fusion",
+              "seen"
+            ],
+            "type": "DFFRE"
+          }
+        ],
+        "other_boundary_leaves": [],
+        "unsupported_or_undriven": [],
+        "forbidden_named_boundaries_present": {},
+        "queried_forbidden_boundaries": {
+          "pose_valid": [
+            "/core/imu/estimator",
+            "pose_valid"
+          ],
+          "origin_reset": [
+            "",
+            "observer_reset"
+          ],
+          "stale_q": [
+            "/core/imu/guard",
+            "stale_q"
+          ],
+          "geometry_full_ready": [
+            "/native_navigation/geometry",
+            "geometry_height_ready"
+          ],
+          "fusion_full_ready": [
+            "/native_navigation/height_fusion",
+            "height_estimate_ready"
+          ],
+          "module_fresh": [
+            "/native_navigation",
+            "module_fresh"
+          ]
+        }
+      }
+    },
+    "scope": "Syntactic conservative fanin/LUT-stage inventory with FF-Q boundary. No Boolean equivalence, false-path/timing or physical proof; no BDD invoked."
+  },
+  "delta": {
+    "pose_valid": {
+      "old": 6,
+      "new": 4
+    },
+    "origin_reset": {
+      "old": null,
+      "new": 3
+    },
+    "stale_q": {
+      "old": 8,
+      "new": 6
+    }
+  },
+  "functional_tests_run": false,
+  "simulation_run": false,
+  "synthesis_run": false,
+  "pnr_run": false,
+  "inventory_tool_sha256": "9cc7ebf50654bba84d20cde34344257ad6609fd1d1dce62de8f9bdc67ffc3871",
+  "parser_dependency_sha256": "a83fd9a9c7a88f28525f276a507f3bae7e054b0f791cab1ecb62ef6942cd5fc5",
+  "node_count_note": "combin_nodes is total unique visited cone nodes including FF/constants boundary, not LUT count",
+  "origin_reset_comparison_limit": "Baseline same-name cut had no traced combinational route; no old/new depth reduction claimed for origin_reset."
+}

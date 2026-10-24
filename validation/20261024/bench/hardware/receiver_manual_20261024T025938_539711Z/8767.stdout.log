@@ -1,0 +1,1 @@
+{"url": "http://127.0.0.1:8767", "source": {"port": "COM23", "baud": 115200, "source": "USB", "usb_device": {"port": "COM23", "description": "USB-SERIAL CH340 (COM23)", "hwid": "USB VID:PID=1A86:7523 SER= LOCATION=1-1", "vid": 6790, "pid": 29987, "serial_number": "", "selectable": true}}, "session": "20261024T025940Z_d11e552e", "serial_writes": false}

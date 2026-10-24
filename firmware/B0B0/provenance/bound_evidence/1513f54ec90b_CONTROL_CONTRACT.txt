@@ -1,0 +1,61 @@
+B0AE — ANO control-flow migration (offline candidate, NOT flight accepted)
+
+Authoritative source:
+reference_ano/quadrotor_tm_v1_20261012/Quadrotor_TM_V1
+Individual original files and the B0AD rollback image are SHA256-bound by baseline.json.
+
+Requested common control path:
+1. Select attitude / optical-flow mode independently of throttle and arming.
+   SWC low/middle = ATT_STAB; SWC high = the source LOC_HOLD optical-flow branch.
+   No standalone altitude-only switch is added. Vertical closed loop operates
+   in both modes, as Alt_1level_Ctrl unconditionally sets THR_AUTO in the source.
+2. Source throttle50us deadzone, .0023 normalization, .5 LPF and .8cm/s/ms
+   slew. Above1554us can set taking_off AFTER source motor preparation.
+   Midpoint requests zero climb; bottom requests descent; SWA low stops motors.
+3. Source sequential300ms motor preparation (1.2s total), idle20%, taking_off,
+   flying-after1s, low-stick landing discriminator with200ms delay and1500ms
+   low-thrust dwell. Preserve source unlock_sta2 semantics until throttle>1200.
+4. Source Alt1 then Alt2 at11ms, 1Hz THR_START35% bias relaxation, original
+   vertical defaults, integer-cm height feedback, s16cm/s climb setpoint,
+   60cm/80cm/s automatic takeoff assistance and its2s/5s exit conditions.
+   No captured-entry PWM, manual PWM takeover or special200ms center entry.
+5. Optical flow: source velocity PI, .0022 normalized sticks with3Hz LPF,
+   circular velocity limit, height-dependent50..150cm/s bound,5Hz acceleration
+   feedback filter, original PI/feedforward defaults. Remove the added position
+   P1 outer loop. Its behavior is source optical-flow braking/velocity hold;
+   integrating velocity for telemetry is NOT absolute position measurement.
+   The telemetry position accumulator does not authorize or revoke OF PI.
+   ATT_STAB trim follows the selected mode, independently of sensor readiness.
+   Manual Loc callback20ms and Att trim6ms reuse the same1ms Flight_State_Task
+   normalized stick pair as OF control; there is one filter/length limiter.
+6. Source takeoff phase sets roll/pitch rate-loop Ki to0; normal phase restores
+   the previously ported defaults. Existing attitude/yaw estimator arithmetic
+   and Q12/Q24 representation remain unchanged.
+
+Explicit hardware/platform adapters (not represented as source-identical):
+- Keep measured radio channel/polarity, SWA arm/stop and low/high arming
+  confirmation; do not switch this aircraft to the original stick gestures.
+- Keep BMI088, MTF-01P native Micolink units/mounting, established motor order,
+  400Hz PWM, pin constraints, SiK framing and log CRC/sequence handling.
+- FRD/world/mm/Q-format transformations remain adapters around source equations.
+- Keep immediate RC/IMU fault masks,45deg tilt stop,60ms IMU watchdog,
+  transaction/overflow guards and rate-allocation anti-windup. Original has
+  other hardware and different sensor/failsafe/tilt behavior.
+- Split geometry qualifications: the cosine-corrected vertical laser reference
+  supports the existing45deg core bound; the provisional optical-flow path
+  retains15deg. Exiting the XY qualification must not itself cancel Z.
+- No barometer/GPS/UWB/battery-voltage/RPM inputs exist here. Do not invent their
+  readings or claim original barometric fallback, RTH or electrical diagnosis.
+  Loss of vertical reference cannot be handled like a barometer-equipped ANO.
+- PC commands, one-key remote commands and aerobatics remain unavailable.
+
+Acceptance:
+Original C-function state oracle + numeric Z/XY traces; mode/stop/fault tests;
+whole-top elaboration; unchanged protected IMU/yaw/IO hash checks; updated
+versioned host parser/log/UI tests; source-bound synthesis/PNR at50MHz with
+zero unrouted nets and zero setup/hold violations. Then props-off acceptance.
+No flight-ready assertion from compilation or props-off operation alone.
+
+Rollback:
+No existing source, running receiver, SRAM or Flash is edited by this folder.
+Board currently B0AD SRAM; default Flash B0AC. No new Flash write authorized.

@@ -1,0 +1,3 @@
+Current-candidate individual test outputs:
+PASS fallback component: 42042 curve points; boundary, entry, recovery, stop, slew
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\variants\published_anchor_p2_r2_rep1\tests\fallback_component.v:53: $finish called at 4618970000 (1ps)

@@ -1,0 +1,17 @@
+{
+  "status": "cancelled_redundant_verification",
+  "passed": false,
+  "completed": false,
+  "reason": "Stopped owned vvp process after deciding to use an explicit compositional proof of unchanged diagnostic-bank context. This partial run is not a current full-top PASS. No test assertion failure was observed before cancellation, but completion was not achieved.",
+  "utc": "2026-10-23T11:13:56.032886+00:00",
+  "artifacts_sha256": {
+    "full_top.py": "4c33068609c29ca2b95649a79c62d3d533df7c60c8d37e8cb075d3d804f4ea66",
+    "full_top_tb.v": "7b811f56d10507fe5d59516bb5fc71ef5144a57d481e2e8006b8adf00cb67819",
+    "full_proposed.v": "e567347d9f21b023776b006cf91d92b6f3381e94d5a363cea30437085dfdd0fc",
+    "full_top.vvp": "de485d32f05f9dc7c7967d3395a4afd513d1f2c14fc5627566b2fbd744f6a646",
+    "full_top_0.log": "1737ac35da7be839ee180ef4e10469b9341796072851fee1195daa5310f3c264",
+    "full_top_1.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "full_top_acceptance.log": "db621a63986702d8c6ca66f252d4d8a163075e18e3cce3934d81ce3126d01be8"
+  },
+  "hardware_accessed": false
+}

@@ -1,0 +1,13 @@
+{
+  "expected_failure_observed": true,
+  "passed": false,
+  "stage": "Final unchanged regression against preserved pre-fix RTL",
+  "failure_count": 10,
+  "checks": 13,
+  "bench_sha256": "744558b8c1e98c69c4b40baf6103570d2c197464cd003b32f6d725ec17dd1f4a",
+  "rtl_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\diagnostic_reset_p2_r2_rep1\\fixture\\core\\flight_core.v": "7280aae3fa9b96b684af766229caebbb1b73e6c879fbb029ddb8e2a148953e25",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\diagnostic_reset_p2_r2_rep1\\fixture\\core\\height_loss_fallback.v": "dcdbdab7e3ea0891479d6b6cf17c03fc7c35f9d6eea0d8c645428a58521f035b"
+  },
+  "log_sha256": "52a9eb12199d4a7804ffc94d7c2f6cf7158a44926972ae7d32abe40b23494a66"
+}

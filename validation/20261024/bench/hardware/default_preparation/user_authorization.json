@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-24T04:25:18.051476+00:00",
+  "source": "Direct user reply in current chat",
+  "authorization": "授权固化 B0B0，继续拆桨冷启动验证",
+  "low_controls_confirmation": "遥控已开启，低油门及低档就绪",
+  "intended_default": "B0B0",
+  "previous_default": "B0AC",
+  "new_bitstream_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+  "props_off_authorization_retained": true
+}

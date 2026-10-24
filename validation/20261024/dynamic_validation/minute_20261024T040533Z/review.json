@@ -1,0 +1,139 @@
+{
+  "utc": "2026-10-24T04:06:35.084156+00:00",
+  "duration_s": 60.0,
+  "frames": 301,
+  "protocol_counts": {
+    "a579": 301,
+    "a57a": 301,
+    "a580": 301,
+    "a581": 301,
+    "a582": 301,
+    "a583": 301
+  },
+  "source_session": "20261024T025940Z_d11e552e",
+  "source_offset": [
+    148226550,
+    150594485
+  ],
+  "source_sha256": "cd8a5a8300da34a5e8eaa5df248be938fd86dde860a1a167fa7d9bffc011c03b",
+  "partial_boundary_lines_skipped": 1,
+  "fused_position_delta_xy_mm": [
+    3.6640625,
+    -2.4375
+  ],
+  "fused_position_net_mm": 4.400768143620639,
+  "fused_position_net_cm": 0.4400768143620639,
+  "fused_position_max_excursion_mm": 4.400768143620639,
+  "max_excursion_time_s": 60.0,
+  "fused_velocity": {
+    "fused_vx_q16": {
+      "mean_mm_s": 0.026708507854677117,
+      "median_mm_s": 0.0571136474609375,
+      "rms_mm_s": 0.9860531758590306,
+      "p95_abs_mm_s": 1.927276611328125,
+      "max_abs_mm_s": 2.9933319091796875
+    },
+    "fused_vy_q16": {
+      "mean_mm_s": -0.028156724087027615,
+      "median_mm_s": -0.0539093017578125,
+      "rms_mm_s": 1.0555838714661747,
+      "p95_abs_mm_s": 2.046356201171875,
+      "max_abs_mm_s": 3.098419189453125
+    }
+  },
+  "checkpoints": [
+    {
+      "seconds": 0.0,
+      "x_mm": 0.0,
+      "y_mm": 0.0,
+      "net_mm": 0.0
+    },
+    {
+      "seconds": 10.0,
+      "x_mm": -1.30859375,
+      "y_mm": -0.1171875,
+      "net_mm": 1.313830473347042
+    },
+    {
+      "seconds": 20.0,
+      "x_mm": -1.77734375,
+      "y_mm": -0.05078125,
+      "net_mm": 1.7780690484386779
+    },
+    {
+      "seconds": 30.0,
+      "x_mm": -1.49609375,
+      "y_mm": 1.34375,
+      "net_mm": 2.0109601118095464
+    },
+    {
+      "seconds": 40.0,
+      "x_mm": -1.6171875,
+      "y_mm": 1.25390625,
+      "net_mm": 2.0463568344610166
+    },
+    {
+      "seconds": 50.0,
+      "x_mm": 1.8046875,
+      "y_mm": 0.6953125,
+      "net_mm": 1.9340001151273234
+    },
+    {
+      "seconds": 60.0,
+      "x_mm": 3.6640625,
+      "y_mm": -2.4375,
+      "net_mm": 4.400768143620639
+    }
+  ],
+  "position_valid_all": true,
+  "velocity_valid_all": true,
+  "height_valid_all": true,
+  "all_stopped": true,
+  "build_ids": [
+    45232
+  ],
+  "pose_ranges_deg": {
+    "roll_cdeg": [
+      0.41,
+      0.47
+    ],
+    "pitch_cdeg": [
+      1.89,
+      1.96
+    ]
+  },
+  "module_age_max_ms": 10,
+  "module_packets": 5994,
+  "module_range_mm": [
+    201,
+    225
+  ],
+  "module_quality": [
+    106,
+    127
+  ],
+  "module_counter_deltas": {
+    "checksum_errors": 0,
+    "length_errors": 0,
+    "uart_errors": 0,
+    "packet_timeouts": 0,
+    "module_missing": 0,
+    "module_duplicates": 0,
+    "module_restarts": 0,
+    "integration_breaks": 0
+  },
+  "core_counter_deltas": {
+    "rejected_count": 0,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "raw_payloads_checked": 301,
+  "raw_payload_mismatches": [],
+  "http_guard_samples": 224,
+  "all_http_guards_stopped": true,
+  "scope": "One actual60s stationary unarmed observation; fused position is a velocity integral, not airborne position truth. No serial writes or sensor/firmware changes.",
+  "flight_ready": false,
+  "firmware_changed": false,
+  "factory_scale_changed": false
+}

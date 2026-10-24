@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-24T03:39:48.973019+00:00",
+  "source_sha256": "ae5e22420a3e4639f2a9d298af0e9105ea42e5b136b9721cc48087e00b732100",
+  "script_sha256": "73bad35fcde381f9b7d1d1aaa1de4d3b3ee587a158f7bafc78d3ac8346d297ba",
+  "decoded_module_frames": 475,
+  "independent_payload_checks_passed": true,
+  "mismatches": [],
+  "aligned_received_snapshots": 475,
+  "duration_s": 94.79837299999781,
+  "all_sensor_ok": true,
+  "all_attitude_valid": true,
+  "all_attitude_fault_zero": true,
+  "all_height_ready": true,
+  "all_velocity_ready": true,
+  "phase_selection": "Pose-relative +/-2 degrees for observation only; not independently marked pure-rotation phases.",
+  "phases": {
+    "positive_roll": {
+      "count": 59,
+      "time_range_s": [
+        54.59902329999022,
+        66.19887069999822
+      ],
+      "roll_range_deg": [
+        2.51,
+        4.56
+      ],
+      "pitch_range_deg": [
+        1.34,
+        1.88
+      ],
+      "yaw_span_deg": 0.6300000000000008,
+      "module_xy_span_mm": [
+        2.480000000000018,
+        2.0720000000000027
+      ]
+    },
+    "negative_roll": {
+      "count": 57,
+      "time_range_s": [
+        72.79876249999506,
+        83.99856120000186
+      ],
+      "roll_range_deg": [
+        -3.73,
+        -1.87
+      ],
+      "pitch_range_deg": [
+        1.47,
+        2.79
+      ],
+      "yaw_span_deg": 2.1599999999999984,
+      "module_xy_span_mm": [
+        34.446,
+        162.62599999999998
+      ]
+    }
+  },
+  "final_fused_velocity_mm_s": {
+    "fused_x_mm_s": {
+      "median": -4.907501220703125,
+      "max_abs": 43.36140441894531
+    },
+    "fused_y_mm_s": {
+      "median": -0.530975341796875,
+      "max_abs": 55.355072021484375
+    }
+  },
+  "interpretation": "Both roll directions and sensor continuity were observed. Whole-window translation/yaw from handling and unknown camera lever arm prevent isolating rotational optical flow. No correction coefficient or flight qualification inferred.",
+  "rotation_compensation_qualified": false,
+  "flight_ready": false
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "pwm_uint16_selections": 3145728,
+  "pwm_actual50mhz_cycles": 700000,
+  "handoff_cycles": 50000,
+  "diagnostic_cycles": 60000,
+  "diagnostic_bits_compared": 720,
+  "extra_control_latency_clocks": 0,
+  "physical_raw_and_effective_outputs_bit_equal": true,
+  "payload_and_control_values_bit_equal": true,
+  "fractional_precision_changed": false
+}

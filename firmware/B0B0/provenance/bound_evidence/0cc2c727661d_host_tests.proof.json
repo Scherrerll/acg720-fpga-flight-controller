@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "tests": 24,
+  "source_sha256": {
+    "ground\\analysis.py": "808e74adea58424a6e2eddda4642a95e1412a96f051e2e166eedf8f84e53b512",
+    "ground\\ground_server.py": "88b7db3d6ab938fdfa0567725c2617a1563c77dcd594cfd4f21784ae75009f79",
+    "ground\\launch.py": "134799e8d4e3853847afa1a1bb1786c070afe13200273131f0815a9ac8c285d3",
+    "ground\\mtf_protocol.py": "1d26ff571c5fc0ffe8307f3d73a1f340924627302a081029f9f371c6a5a18844",
+    "ground\\nav_protocol.py": "e9e01fdc31c8e286f347d0edcebee37be30e719842596d83e5c7a73c0b7eab73",
+    "ground\\protocol.py": "84149f22be872de2e93aa13398cea56e4d8f725917af3881d5e2258c9217900d",
+    "ground\\recorder.py": "0d14b8f99bbaec95a7d55d94140037ad22b50be680eeded980977cf97f3c18cf",
+    "ground\\rotation_protocol.py": "731761ea9388304e2d9268c0786b8683fc8c7c57fdbfb3973a65ba8709726c23",
+    "ground\\test_ano_control.py": "0d1e826a9e40ee5b2c892fa6650affe243b9305f9c24632d657c5e667f871bd4",
+    "ground\\test_height_loss.py": "ee391d03d55caf4ad44ec0d2a8cef8292876189943963a364fa5542a6c7675d8",
+    "ground\\test_mtf.py": "6318cbe2e432168e3784462253fbfb30511eb9129bc3be804168206fd15442d7",
+    "ground\\test_review_fixes.py": "2ef2ac15eb233b20136094fe9bfd27f2a0240168c70fe1292d976bc99e394e82",
+    "ground\\test_system.py": "b32f44e709e6ae08839ccd570c4dc509c4af66038f897cd3a4aff2d1d60ea131",
+    "ground\\verify_log.py": "c36473cdafb307cbd82a232f6ff0a72563d68d201f9b91e73bab62298ea5a3ad"
+  },
+  "log_sha256": "b11e431fa1784689c440c46841ca905bf6b6435f2e2d7a8c988051b42484d0e3"
+}

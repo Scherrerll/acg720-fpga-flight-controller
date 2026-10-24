@@ -1,0 +1,34 @@
+{
+  "passed": false,
+  "routing_passed": true,
+  "fmax_mhz": 47.948,
+  "summaries": {
+    "setup": {
+      "tns_ns": -78.051,
+      "violated_endpoints": 216
+    },
+    "hold": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    }
+  },
+  "worst_reported_slack_ns": {
+    "setup": -0.856,
+    "hold": 0.14,
+    "recovery": 11.838,
+    "removal": 3.228,
+    "minimum_pulse_width": 7.127
+  },
+  "original_20ns_clock_only": true,
+  "timing_exceptions_added": false,
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "evidence_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.tr": "db98fef9d8d59748f8d1e283856a75fbde44657c930b844f13da2a88b2f32b8e",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt": "749ba3912f098b1dc9f5535811192075fe3371668d988fb2673b59785f096825",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\fixture\\acg720_ano_port.sdc": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\fixture\\acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\fixture\\console.txt": "8d0ae8e8407f4b3b93df6a3c3c43898e00e69d161c37bc7f20b7b67f418f94cb"
+  },
+  "scope": "Physical timing audit only; does not establish RTL equivalence, electrical health or flight acceptance."
+}

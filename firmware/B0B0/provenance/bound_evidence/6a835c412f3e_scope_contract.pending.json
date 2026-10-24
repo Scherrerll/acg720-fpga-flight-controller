@@ -1,0 +1,2155 @@
+{
+  "scope": "Limited offline stopped-SRAM candidate; inherited original scoped control/host evidence plus separately scoped changed-cone source and isolated primitive proofs. No whole-mapped/current full-top simulation claim.",
+  "source_context_review_complete": true,
+  "source_context_edges": [
+    {
+      "parent_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\info_snapshot_plan\\synthesis_only\\20261023T191515_828752Z\\study.json",
+      "child_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\synthesis_only\\20261023T204223_094931Z\\study.json",
+      "exact_changed_files": [
+        "sensor/mtf01p_reader.v"
+      ],
+      "changed_file_hashes": {
+        "sensor/mtf01p_reader.v": {
+          "parent": "c61ecf4fd67bdb0cbdf4afe1acefdfb9d42a0f1adbaaacc71d9978250840426c",
+          "child": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680"
+        }
+      },
+      "all_44_RTL_source_hash_equality": {
+        "acg720_ano_port.v": {
+          "parent": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "child": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "equal": true
+        },
+        "telemetry_tx.v": {
+          "parent": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "child": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "equal": true
+        },
+        "core/control_gate.v": {
+          "parent": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "child": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "equal": true
+        },
+        "core/cordic_atan2.v": {
+          "parent": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "child": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "equal": true
+        },
+        "core/ano_flight_state.v": {
+          "parent": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "child": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "equal": true
+        },
+        "position/ano_xy_stick.v": {
+          "parent": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "child": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "equal": true
+        },
+        "position/ano_xy_divide36.v": {
+          "parent": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "child": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "equal": true
+        },
+        "core/height_loss_fallback.v": {
+          "parent": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "child": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "equal": true
+        },
+        "core/flight_core.v": {
+          "parent": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+          "child": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+          "equal": true
+        },
+        "core/bmi088_reader.v": {
+          "parent": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "child": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "equal": true
+        },
+        "core/imu_checked_guard_pipelined.v": {
+          "parent": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "child": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "equal": true
+        },
+        "core/imu_pipeline_pipelined.v": {
+          "parent": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "child": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "equal": true
+        },
+        "core/imu_temporal_check_pipelined.v": {
+          "parent": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "child": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "equal": true
+        },
+        "core/motor_pwm.v": {
+          "parent": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "child": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "equal": true
+        },
+        "core/rc_ppm.v": {
+          "parent": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "child": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "equal": true
+        },
+        "core/spi_uart_modules.v": {
+          "parent": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "child": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "equal": true
+        },
+        "core/rtl/pid_divide_signed64.v": {
+          "parent": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "child": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "equal": true
+        },
+        "core/rtl/quad_mixer_feedback.v": {
+          "parent": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+          "child": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+          "equal": true
+        },
+        "position/position_math.v": {
+          "parent": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "child": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "equal": true
+        },
+        "position/relative_position.v": {
+          "parent": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "child": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "equal": true
+        },
+        "sensor/flow_reader.v": {
+          "parent": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "child": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "equal": true
+        },
+        "sensor/range_reader.v": {
+          "parent": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "child": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "equal": true
+        },
+        "core/ano_attitude_estimator.v": {
+          "parent": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "child": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "equal": true
+        },
+        "core/rtl/ano_rate_control.v": {
+          "parent": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "child": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "equal": true
+        },
+        "position/ano_flow_fusion.v": {
+          "parent": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "child": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "equal": true
+        },
+        "position/ano_hold_control.v": {
+          "parent": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "child": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "equal": true
+        },
+        "position/ano_z_stick.v": {
+          "parent": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "child": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "equal": true
+        },
+        "core/rtl/ano_yaw_control.v": {
+          "parent": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "child": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "equal": true
+        },
+        "position/ano_height_fusion.v": {
+          "parent": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "child": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "equal": true
+        },
+        "sensor/range_height_estimate.v": {
+          "parent": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "child": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "equal": true
+        },
+        "position/pose_time_adapter.v": {
+          "parent": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "child": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "equal": true
+        },
+        "core/rtl/ano_rc_angle_targets.v": {
+          "parent": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "child": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "equal": true
+        },
+        "core/rtl/ano_manual_angles.v": {
+          "parent": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "child": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "equal": true
+        },
+        "sensor/mtf01p_reader.v": {
+          "parent": "c61ecf4fd67bdb0cbdf4afe1acefdfb9d42a0f1adbaaacc71d9978250840426c",
+          "child": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "equal": false
+        },
+        "sensor/mtf_native_geometry.v": {
+          "parent": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "child": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "equal": true
+        },
+        "position/mtf_position_integrator.v": {
+          "parent": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "child": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "equal": true
+        },
+        "mtf_navigation_shadow.v": {
+          "parent": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "child": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "equal": true
+        },
+        "nav_math_service.v": {
+          "parent": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "child": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "equal": true
+        },
+        "sensor/mtf_shared_geometry.v": {
+          "parent": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "child": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "equal": true
+        },
+        "position/mtf_shared_flow_fusion.v": {
+          "parent": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "child": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "equal": true
+        },
+        "position/mtf_shared_height_fusion.v": {
+          "parent": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+          "child": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+          "equal": true
+        },
+        "position/mtf_shared_hold_control.v": {
+          "parent": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "child": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "equal": true
+        },
+        "mtf_xyz_navigation_control.v": {
+          "parent": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+          "child": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+          "equal": true
+        },
+        "position/mtf_xyz_hold_control.v": {
+          "parent": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "child": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "equal": true
+        }
+      },
+      "unchanged_source_entries": [
+        "acg720_ano_port.v",
+        "telemetry_tx.v",
+        "core/control_gate.v",
+        "core/cordic_atan2.v",
+        "core/ano_flight_state.v",
+        "position/ano_xy_stick.v",
+        "position/ano_xy_divide36.v",
+        "core/height_loss_fallback.v",
+        "core/flight_core.v",
+        "core/bmi088_reader.v",
+        "core/imu_checked_guard_pipelined.v",
+        "core/imu_pipeline_pipelined.v",
+        "core/imu_temporal_check_pipelined.v",
+        "core/motor_pwm.v",
+        "core/rc_ppm.v",
+        "core/spi_uart_modules.v",
+        "core/rtl/pid_divide_signed64.v",
+        "core/rtl/quad_mixer_feedback.v",
+        "position/position_math.v",
+        "position/relative_position.v",
+        "sensor/flow_reader.v",
+        "sensor/range_reader.v",
+        "acg720_ano_port.cst",
+        "acg720_ano_port.sdc",
+        "sensor/pmw3901_init.vh",
+        "calibration.vh",
+        "core/ano_attitude_estimator.v",
+        "core/rtl/ano_rate_control.v",
+        "position/ano_flow_fusion.v",
+        "position/ano_hold_control.v",
+        "position/ano_z_stick.v",
+        "core/rtl/ano_yaw_control.v",
+        "position/ano_height_fusion.v",
+        "sensor/range_height_estimate.v",
+        "position/pose_time_adapter.v",
+        "core/rtl/ano_rc_angle_targets.v",
+        "core/rtl/ano_manual_angles.v",
+        "level_calibration.vh",
+        "sensor/mtf_native_geometry.v",
+        "position/mtf_position_integrator.v",
+        "mtf_navigation_shadow.v",
+        "nav_math_service.v",
+        "sensor/mtf_shared_geometry.v",
+        "position/mtf_shared_flow_fusion.v",
+        "position/mtf_shared_height_fusion.v",
+        "position/mtf_shared_hold_control.v",
+        "mtf_xyz_navigation_control.v",
+        "position/mtf_xyz_hold_control.v",
+        "acg720_ano_port.gprj",
+        "build.tcl"
+      ],
+      "scope": "Direct original X c61 reader to final a299 published-view parser regression:65435cycles/597samples; settled published outputs+unchanged state/shift/counters, signedflow/time/seqwrap. No zero-time/full mapped parser claim. Intermediate35b incomplete mapped work not used.",
+      "scoped_evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\post_route\\proof.json": "23009f2dbeb911d7063326d672e82d1d9aead9d86b1c68ed0c9867e50db33c47",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\post_route\\regression.log": "ba88a170c53119fc0ba0d466b2b85d526382e108665865b0a7bcd5a2863895e4"
+      }
+    },
+    {
+      "parent_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\synthesis_only\\20261023T204223_094931Z\\study.json",
+      "child_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\mixer_throttle_last_plan\\synthesis_only\\20261023T211942_922976Z\\study.json",
+      "exact_changed_files": [
+        "core/rtl/quad_mixer_feedback.v",
+        "build.tcl"
+      ],
+      "changed_file_hashes": {
+        "core/rtl/quad_mixer_feedback.v": {
+          "parent": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+          "child": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+        },
+        "build.tcl": {
+          "parent": "beb5ce95a66afe6c8e9dc1c6e2a55cb68b5581e597b39fbc29924b7473ab5fb9",
+          "child": "7c8ea1a0a3481d169c6654c7038e75863205d493cf898c29dac59246573413e0"
+        }
+      },
+      "all_44_RTL_source_hash_equality": {
+        "acg720_ano_port.v": {
+          "parent": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "child": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "equal": true
+        },
+        "telemetry_tx.v": {
+          "parent": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "child": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "equal": true
+        },
+        "core/control_gate.v": {
+          "parent": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "child": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "equal": true
+        },
+        "core/cordic_atan2.v": {
+          "parent": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "child": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "equal": true
+        },
+        "core/ano_flight_state.v": {
+          "parent": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "child": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "equal": true
+        },
+        "position/ano_xy_stick.v": {
+          "parent": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "child": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "equal": true
+        },
+        "position/ano_xy_divide36.v": {
+          "parent": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "child": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "equal": true
+        },
+        "core/height_loss_fallback.v": {
+          "parent": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "child": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "equal": true
+        },
+        "core/flight_core.v": {
+          "parent": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+          "child": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+          "equal": true
+        },
+        "core/bmi088_reader.v": {
+          "parent": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "child": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "equal": true
+        },
+        "core/imu_checked_guard_pipelined.v": {
+          "parent": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "child": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "equal": true
+        },
+        "core/imu_pipeline_pipelined.v": {
+          "parent": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "child": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "equal": true
+        },
+        "core/imu_temporal_check_pipelined.v": {
+          "parent": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "child": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "equal": true
+        },
+        "core/motor_pwm.v": {
+          "parent": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "child": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "equal": true
+        },
+        "core/rc_ppm.v": {
+          "parent": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "child": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "equal": true
+        },
+        "core/spi_uart_modules.v": {
+          "parent": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "child": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "equal": true
+        },
+        "core/rtl/pid_divide_signed64.v": {
+          "parent": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "child": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "equal": true
+        },
+        "core/rtl/quad_mixer_feedback.v": {
+          "parent": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+          "child": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+          "equal": false
+        },
+        "position/position_math.v": {
+          "parent": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "child": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "equal": true
+        },
+        "position/relative_position.v": {
+          "parent": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "child": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "equal": true
+        },
+        "sensor/flow_reader.v": {
+          "parent": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "child": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "equal": true
+        },
+        "sensor/range_reader.v": {
+          "parent": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "child": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "equal": true
+        },
+        "core/ano_attitude_estimator.v": {
+          "parent": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "child": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "equal": true
+        },
+        "core/rtl/ano_rate_control.v": {
+          "parent": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "child": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "equal": true
+        },
+        "position/ano_flow_fusion.v": {
+          "parent": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "child": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "equal": true
+        },
+        "position/ano_hold_control.v": {
+          "parent": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "child": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "equal": true
+        },
+        "position/ano_z_stick.v": {
+          "parent": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "child": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "equal": true
+        },
+        "core/rtl/ano_yaw_control.v": {
+          "parent": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "child": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "equal": true
+        },
+        "position/ano_height_fusion.v": {
+          "parent": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "child": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "equal": true
+        },
+        "sensor/range_height_estimate.v": {
+          "parent": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "child": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "equal": true
+        },
+        "position/pose_time_adapter.v": {
+          "parent": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "child": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "equal": true
+        },
+        "core/rtl/ano_rc_angle_targets.v": {
+          "parent": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "child": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "equal": true
+        },
+        "core/rtl/ano_manual_angles.v": {
+          "parent": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "child": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "equal": true
+        },
+        "sensor/mtf01p_reader.v": {
+          "parent": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "child": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "equal": true
+        },
+        "sensor/mtf_native_geometry.v": {
+          "parent": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "child": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "equal": true
+        },
+        "position/mtf_position_integrator.v": {
+          "parent": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "child": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "equal": true
+        },
+        "mtf_navigation_shadow.v": {
+          "parent": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "child": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "equal": true
+        },
+        "nav_math_service.v": {
+          "parent": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "child": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "equal": true
+        },
+        "sensor/mtf_shared_geometry.v": {
+          "parent": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "child": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "equal": true
+        },
+        "position/mtf_shared_flow_fusion.v": {
+          "parent": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "child": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "equal": true
+        },
+        "position/mtf_shared_height_fusion.v": {
+          "parent": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+          "child": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+          "equal": true
+        },
+        "position/mtf_shared_hold_control.v": {
+          "parent": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "child": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "equal": true
+        },
+        "mtf_xyz_navigation_control.v": {
+          "parent": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+          "child": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+          "equal": true
+        },
+        "position/mtf_xyz_hold_control.v": {
+          "parent": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "child": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "equal": true
+        }
+      },
+      "unchanged_source_entries": [
+        "acg720_ano_port.v",
+        "telemetry_tx.v",
+        "core/control_gate.v",
+        "core/cordic_atan2.v",
+        "core/ano_flight_state.v",
+        "position/ano_xy_stick.v",
+        "position/ano_xy_divide36.v",
+        "core/height_loss_fallback.v",
+        "core/flight_core.v",
+        "core/bmi088_reader.v",
+        "core/imu_checked_guard_pipelined.v",
+        "core/imu_pipeline_pipelined.v",
+        "core/imu_temporal_check_pipelined.v",
+        "core/motor_pwm.v",
+        "core/rc_ppm.v",
+        "core/spi_uart_modules.v",
+        "core/rtl/pid_divide_signed64.v",
+        "position/position_math.v",
+        "position/relative_position.v",
+        "sensor/flow_reader.v",
+        "sensor/range_reader.v",
+        "acg720_ano_port.cst",
+        "acg720_ano_port.sdc",
+        "sensor/pmw3901_init.vh",
+        "calibration.vh",
+        "core/ano_attitude_estimator.v",
+        "core/rtl/ano_rate_control.v",
+        "position/ano_flow_fusion.v",
+        "position/ano_hold_control.v",
+        "position/ano_z_stick.v",
+        "core/rtl/ano_yaw_control.v",
+        "position/ano_height_fusion.v",
+        "sensor/range_height_estimate.v",
+        "position/pose_time_adapter.v",
+        "core/rtl/ano_rc_angle_targets.v",
+        "core/rtl/ano_manual_angles.v",
+        "level_calibration.vh",
+        "sensor/mtf01p_reader.v",
+        "sensor/mtf_native_geometry.v",
+        "position/mtf_position_integrator.v",
+        "mtf_navigation_shadow.v",
+        "nav_math_service.v",
+        "sensor/mtf_shared_geometry.v",
+        "position/mtf_shared_flow_fusion.v",
+        "position/mtf_shared_height_fusion.v",
+        "position/mtf_shared_hold_control.v",
+        "mtf_xyz_navigation_control.v",
+        "position/mtf_xyz_hold_control.v",
+        "acg720_ano_port.gprj"
+      ],
+      "scope": "Signed32 mixer throttle-last reassociation;22804vectors each actual/defaultbounds, motor/strictsat/directional bits+modular algebra. build.tcl map2->1 is explicit packing-only delta; no functional mapped claim.",
+      "scoped_evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\post_route\\proof.json": "24cd6e1a1746bea8c045319582ebe5408cbb27d8742217e43d5adf78d591636b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\post_route\\regression.log": "693350aaa5e83c6c540edb191bcdeabcd6f1bb879547a5322486e4cf01866237"
+      }
+    },
+    {
+      "parent_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\mixer_throttle_last_plan\\synthesis_only\\20261023T211942_922976Z\\study.json",
+      "child_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\synthesis_only\\20261023T213859_081106Z\\study.json",
+      "exact_changed_files": [
+        "core/flight_core.v",
+        "build.tcl"
+      ],
+      "changed_file_hashes": {
+        "core/flight_core.v": {
+          "parent": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+          "child": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa"
+        },
+        "build.tcl": {
+          "parent": "7c8ea1a0a3481d169c6654c7038e75863205d493cf898c29dac59246573413e0",
+          "child": "beb5ce95a66afe6c8e9dc1c6e2a55cb68b5581e597b39fbc29924b7473ab5fb9"
+        }
+      },
+      "all_44_RTL_source_hash_equality": {
+        "acg720_ano_port.v": {
+          "parent": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "child": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "equal": true
+        },
+        "telemetry_tx.v": {
+          "parent": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "child": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "equal": true
+        },
+        "core/control_gate.v": {
+          "parent": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "child": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "equal": true
+        },
+        "core/cordic_atan2.v": {
+          "parent": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "child": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "equal": true
+        },
+        "core/ano_flight_state.v": {
+          "parent": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "child": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "equal": true
+        },
+        "position/ano_xy_stick.v": {
+          "parent": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "child": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "equal": true
+        },
+        "position/ano_xy_divide36.v": {
+          "parent": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "child": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "equal": true
+        },
+        "core/height_loss_fallback.v": {
+          "parent": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "child": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "equal": true
+        },
+        "core/flight_core.v": {
+          "parent": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+          "child": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+          "equal": false
+        },
+        "core/bmi088_reader.v": {
+          "parent": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "child": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "equal": true
+        },
+        "core/imu_checked_guard_pipelined.v": {
+          "parent": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "child": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "equal": true
+        },
+        "core/imu_pipeline_pipelined.v": {
+          "parent": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "child": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "equal": true
+        },
+        "core/imu_temporal_check_pipelined.v": {
+          "parent": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "child": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "equal": true
+        },
+        "core/motor_pwm.v": {
+          "parent": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "child": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "equal": true
+        },
+        "core/rc_ppm.v": {
+          "parent": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "child": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "equal": true
+        },
+        "core/spi_uart_modules.v": {
+          "parent": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "child": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "equal": true
+        },
+        "core/rtl/pid_divide_signed64.v": {
+          "parent": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "child": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "equal": true
+        },
+        "core/rtl/quad_mixer_feedback.v": {
+          "parent": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+          "child": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+          "equal": true
+        },
+        "position/position_math.v": {
+          "parent": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "child": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "equal": true
+        },
+        "position/relative_position.v": {
+          "parent": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "child": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "equal": true
+        },
+        "sensor/flow_reader.v": {
+          "parent": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "child": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "equal": true
+        },
+        "sensor/range_reader.v": {
+          "parent": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "child": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "equal": true
+        },
+        "core/ano_attitude_estimator.v": {
+          "parent": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "child": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "equal": true
+        },
+        "core/rtl/ano_rate_control.v": {
+          "parent": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "child": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "equal": true
+        },
+        "position/ano_flow_fusion.v": {
+          "parent": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "child": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "equal": true
+        },
+        "position/ano_hold_control.v": {
+          "parent": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "child": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "equal": true
+        },
+        "position/ano_z_stick.v": {
+          "parent": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "child": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "equal": true
+        },
+        "core/rtl/ano_yaw_control.v": {
+          "parent": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "child": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "equal": true
+        },
+        "position/ano_height_fusion.v": {
+          "parent": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "child": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "equal": true
+        },
+        "sensor/range_height_estimate.v": {
+          "parent": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "child": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "equal": true
+        },
+        "position/pose_time_adapter.v": {
+          "parent": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "child": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "equal": true
+        },
+        "core/rtl/ano_rc_angle_targets.v": {
+          "parent": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "child": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "equal": true
+        },
+        "core/rtl/ano_manual_angles.v": {
+          "parent": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "child": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "equal": true
+        },
+        "sensor/mtf01p_reader.v": {
+          "parent": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "child": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "equal": true
+        },
+        "sensor/mtf_native_geometry.v": {
+          "parent": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "child": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "equal": true
+        },
+        "position/mtf_position_integrator.v": {
+          "parent": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "child": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "equal": true
+        },
+        "mtf_navigation_shadow.v": {
+          "parent": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "child": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "equal": true
+        },
+        "nav_math_service.v": {
+          "parent": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "child": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "equal": true
+        },
+        "sensor/mtf_shared_geometry.v": {
+          "parent": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "child": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "equal": true
+        },
+        "position/mtf_shared_flow_fusion.v": {
+          "parent": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "child": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "equal": true
+        },
+        "position/mtf_shared_height_fusion.v": {
+          "parent": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+          "child": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+          "equal": true
+        },
+        "position/mtf_shared_hold_control.v": {
+          "parent": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "child": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "equal": true
+        },
+        "mtf_xyz_navigation_control.v": {
+          "parent": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+          "child": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+          "equal": true
+        },
+        "position/mtf_xyz_hold_control.v": {
+          "parent": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "child": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "equal": true
+        }
+      },
+      "unchanged_source_entries": [
+        "acg720_ano_port.v",
+        "telemetry_tx.v",
+        "core/control_gate.v",
+        "core/cordic_atan2.v",
+        "core/ano_flight_state.v",
+        "position/ano_xy_stick.v",
+        "position/ano_xy_divide36.v",
+        "core/height_loss_fallback.v",
+        "core/bmi088_reader.v",
+        "core/imu_checked_guard_pipelined.v",
+        "core/imu_pipeline_pipelined.v",
+        "core/imu_temporal_check_pipelined.v",
+        "core/motor_pwm.v",
+        "core/rc_ppm.v",
+        "core/spi_uart_modules.v",
+        "core/rtl/pid_divide_signed64.v",
+        "core/rtl/quad_mixer_feedback.v",
+        "position/position_math.v",
+        "position/relative_position.v",
+        "sensor/flow_reader.v",
+        "sensor/range_reader.v",
+        "acg720_ano_port.cst",
+        "acg720_ano_port.sdc",
+        "sensor/pmw3901_init.vh",
+        "calibration.vh",
+        "core/ano_attitude_estimator.v",
+        "core/rtl/ano_rate_control.v",
+        "position/ano_flow_fusion.v",
+        "position/ano_hold_control.v",
+        "position/ano_z_stick.v",
+        "core/rtl/ano_yaw_control.v",
+        "position/ano_height_fusion.v",
+        "sensor/range_height_estimate.v",
+        "position/pose_time_adapter.v",
+        "core/rtl/ano_rc_angle_targets.v",
+        "core/rtl/ano_manual_angles.v",
+        "level_calibration.vh",
+        "sensor/mtf01p_reader.v",
+        "sensor/mtf_native_geometry.v",
+        "position/mtf_position_integrator.v",
+        "mtf_navigation_shadow.v",
+        "nav_math_service.v",
+        "sensor/mtf_shared_geometry.v",
+        "position/mtf_shared_flow_fusion.v",
+        "position/mtf_shared_height_fusion.v",
+        "position/mtf_shared_hold_control.v",
+        "mtf_xyz_navigation_control.v",
+        "position/mtf_xyz_hold_control.v",
+        "acg720_ano_port.gprj"
+      ],
+      "scope": "Core Boolean equivalence:8192truth combinations+1024fallback implication cases, exact live gates and F=>fallback_norm_valid instance premise. build.tcl map1->2 explicitly restored.",
+      "scoped_evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\post_route\\proof.json": "24cd6e1a1746bea8c045319582ebe5408cbb27d8742217e43d5adf78d591636b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\post_route\\regression.log": "693350aaa5e83c6c540edb191bcdeabcd6f1bb879547a5322486e4cf01866237"
+      }
+    },
+    {
+      "parent_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\synthesis_only\\20261023T213859_081106Z\\study.json",
+      "child_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_plan\\synthesis_only\\20261023T220717_220954Z\\study.json",
+      "exact_changed_files": [
+        "position/mtf_shared_height_fusion.v",
+        "mtf_xyz_navigation_control.v"
+      ],
+      "changed_file_hashes": {
+        "position/mtf_shared_height_fusion.v": {
+          "parent": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+          "child": "1933a6a42feadca50fb9fb3abcae4e6faa5f78ed9d4c506cdc7546cbdff72a8a"
+        },
+        "mtf_xyz_navigation_control.v": {
+          "parent": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+          "child": "3d5c57327d08ac319e619dee834214a5079b5eb8df71f6c93b738c484a27dd8f"
+        }
+      },
+      "all_44_RTL_source_hash_equality": {
+        "acg720_ano_port.v": {
+          "parent": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "child": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "equal": true
+        },
+        "telemetry_tx.v": {
+          "parent": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "child": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "equal": true
+        },
+        "core/control_gate.v": {
+          "parent": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "child": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "equal": true
+        },
+        "core/cordic_atan2.v": {
+          "parent": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "child": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "equal": true
+        },
+        "core/ano_flight_state.v": {
+          "parent": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "child": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "equal": true
+        },
+        "position/ano_xy_stick.v": {
+          "parent": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "child": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "equal": true
+        },
+        "position/ano_xy_divide36.v": {
+          "parent": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "child": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "equal": true
+        },
+        "core/height_loss_fallback.v": {
+          "parent": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "child": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "equal": true
+        },
+        "core/flight_core.v": {
+          "parent": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+          "child": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+          "equal": true
+        },
+        "core/bmi088_reader.v": {
+          "parent": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "child": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "equal": true
+        },
+        "core/imu_checked_guard_pipelined.v": {
+          "parent": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "child": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "equal": true
+        },
+        "core/imu_pipeline_pipelined.v": {
+          "parent": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "child": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "equal": true
+        },
+        "core/imu_temporal_check_pipelined.v": {
+          "parent": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "child": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "equal": true
+        },
+        "core/motor_pwm.v": {
+          "parent": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "child": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "equal": true
+        },
+        "core/rc_ppm.v": {
+          "parent": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "child": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "equal": true
+        },
+        "core/spi_uart_modules.v": {
+          "parent": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "child": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "equal": true
+        },
+        "core/rtl/pid_divide_signed64.v": {
+          "parent": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "child": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "equal": true
+        },
+        "core/rtl/quad_mixer_feedback.v": {
+          "parent": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+          "child": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+          "equal": true
+        },
+        "position/position_math.v": {
+          "parent": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "child": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "equal": true
+        },
+        "position/relative_position.v": {
+          "parent": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "child": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "equal": true
+        },
+        "sensor/flow_reader.v": {
+          "parent": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "child": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "equal": true
+        },
+        "sensor/range_reader.v": {
+          "parent": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "child": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "equal": true
+        },
+        "core/ano_attitude_estimator.v": {
+          "parent": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "child": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "equal": true
+        },
+        "core/rtl/ano_rate_control.v": {
+          "parent": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "child": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "equal": true
+        },
+        "position/ano_flow_fusion.v": {
+          "parent": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "child": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "equal": true
+        },
+        "position/ano_hold_control.v": {
+          "parent": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "child": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "equal": true
+        },
+        "position/ano_z_stick.v": {
+          "parent": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "child": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "equal": true
+        },
+        "core/rtl/ano_yaw_control.v": {
+          "parent": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "child": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "equal": true
+        },
+        "position/ano_height_fusion.v": {
+          "parent": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "child": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "equal": true
+        },
+        "sensor/range_height_estimate.v": {
+          "parent": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "child": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "equal": true
+        },
+        "position/pose_time_adapter.v": {
+          "parent": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "child": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "equal": true
+        },
+        "core/rtl/ano_rc_angle_targets.v": {
+          "parent": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "child": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "equal": true
+        },
+        "core/rtl/ano_manual_angles.v": {
+          "parent": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "child": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "equal": true
+        },
+        "sensor/mtf01p_reader.v": {
+          "parent": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "child": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "equal": true
+        },
+        "sensor/mtf_native_geometry.v": {
+          "parent": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "child": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "equal": true
+        },
+        "position/mtf_position_integrator.v": {
+          "parent": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "child": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "equal": true
+        },
+        "mtf_navigation_shadow.v": {
+          "parent": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "child": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "equal": true
+        },
+        "nav_math_service.v": {
+          "parent": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "child": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "equal": true
+        },
+        "sensor/mtf_shared_geometry.v": {
+          "parent": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "child": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "equal": true
+        },
+        "position/mtf_shared_flow_fusion.v": {
+          "parent": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "child": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "equal": true
+        },
+        "position/mtf_shared_height_fusion.v": {
+          "parent": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+          "child": "1933a6a42feadca50fb9fb3abcae4e6faa5f78ed9d4c506cdc7546cbdff72a8a",
+          "equal": false
+        },
+        "position/mtf_shared_hold_control.v": {
+          "parent": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "child": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "equal": true
+        },
+        "mtf_xyz_navigation_control.v": {
+          "parent": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+          "child": "3d5c57327d08ac319e619dee834214a5079b5eb8df71f6c93b738c484a27dd8f",
+          "equal": false
+        },
+        "position/mtf_xyz_hold_control.v": {
+          "parent": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "child": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "equal": true
+        }
+      },
+      "unchanged_source_entries": [
+        "acg720_ano_port.v",
+        "telemetry_tx.v",
+        "core/control_gate.v",
+        "core/cordic_atan2.v",
+        "core/ano_flight_state.v",
+        "position/ano_xy_stick.v",
+        "position/ano_xy_divide36.v",
+        "core/height_loss_fallback.v",
+        "core/flight_core.v",
+        "core/bmi088_reader.v",
+        "core/imu_checked_guard_pipelined.v",
+        "core/imu_pipeline_pipelined.v",
+        "core/imu_temporal_check_pipelined.v",
+        "core/motor_pwm.v",
+        "core/rc_ppm.v",
+        "core/spi_uart_modules.v",
+        "core/rtl/pid_divide_signed64.v",
+        "core/rtl/quad_mixer_feedback.v",
+        "position/position_math.v",
+        "position/relative_position.v",
+        "sensor/flow_reader.v",
+        "sensor/range_reader.v",
+        "acg720_ano_port.cst",
+        "acg720_ano_port.sdc",
+        "sensor/pmw3901_init.vh",
+        "calibration.vh",
+        "core/ano_attitude_estimator.v",
+        "core/rtl/ano_rate_control.v",
+        "position/ano_flow_fusion.v",
+        "position/ano_hold_control.v",
+        "position/ano_z_stick.v",
+        "core/rtl/ano_yaw_control.v",
+        "position/ano_height_fusion.v",
+        "sensor/range_height_estimate.v",
+        "position/pose_time_adapter.v",
+        "core/rtl/ano_rc_angle_targets.v",
+        "core/rtl/ano_manual_angles.v",
+        "level_calibration.vh",
+        "sensor/mtf01p_reader.v",
+        "sensor/mtf_native_geometry.v",
+        "position/mtf_position_integrator.v",
+        "mtf_navigation_shadow.v",
+        "nav_math_service.v",
+        "sensor/mtf_shared_geometry.v",
+        "position/mtf_shared_flow_fusion.v",
+        "position/mtf_shared_hold_control.v",
+        "position/mtf_xyz_hold_control.v",
+        "acg720_ano_port.gprj",
+        "build.tcl"
+      ],
+      "scope": "Appended default-off RANGE_AGE_PRECHECKED guarded AGE_LIMIT5m and native opt-in. Source-bound6400 age/live combinations and default/non5m/falsecase theorem; sources_ok only range-age conjunct changes, no fusionFSM/fullmapped claim. Evidence executed on final819 with same fusion bytes and explicit caller predicate preserved across NAV low7 change.",
+      "scoped_evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\post_route_pending\\proof.json": "ed51dfd5f48b5d0d4a3e05188a9191190bf6fc07f9d284576cdfa9eb362f4308",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\post_route_pending\\caller_contract.json": "9a5d715f38192f75a4bbfdb4f3f746747dcd520265a5af58aa7a415679604729",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\post_route_pending\\connectivity_review.json": "626fd658e16a493d377c8ef039d52c0476e861cfde2b913ad5884eabbfd9ec57"
+      }
+    },
+    {
+      "parent_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_plan\\synthesis_only\\20261023T220717_220954Z\\study.json",
+      "child_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\synthesis_only\\20261023T233128_740589Z\\study.json",
+      "exact_changed_files": [
+        "mtf_xyz_navigation_control.v"
+      ],
+      "changed_file_hashes": {
+        "mtf_xyz_navigation_control.v": {
+          "parent": "3d5c57327d08ac319e619dee834214a5079b5eb8df71f6c93b738c484a27dd8f",
+          "child": "52e5b5edcd5b9e680a41417af25fa9541958920f1fe8394a79bea2450df2309c"
+        }
+      },
+      "all_44_RTL_source_hash_equality": {
+        "acg720_ano_port.v": {
+          "parent": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "child": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+          "equal": true
+        },
+        "telemetry_tx.v": {
+          "parent": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "child": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+          "equal": true
+        },
+        "core/control_gate.v": {
+          "parent": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "child": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+          "equal": true
+        },
+        "core/cordic_atan2.v": {
+          "parent": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "child": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+          "equal": true
+        },
+        "core/ano_flight_state.v": {
+          "parent": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "child": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+          "equal": true
+        },
+        "position/ano_xy_stick.v": {
+          "parent": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "child": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+          "equal": true
+        },
+        "position/ano_xy_divide36.v": {
+          "parent": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "child": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+          "equal": true
+        },
+        "core/height_loss_fallback.v": {
+          "parent": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "child": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+          "equal": true
+        },
+        "core/flight_core.v": {
+          "parent": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+          "child": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+          "equal": true
+        },
+        "core/bmi088_reader.v": {
+          "parent": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "child": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+          "equal": true
+        },
+        "core/imu_checked_guard_pipelined.v": {
+          "parent": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "child": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+          "equal": true
+        },
+        "core/imu_pipeline_pipelined.v": {
+          "parent": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "child": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+          "equal": true
+        },
+        "core/imu_temporal_check_pipelined.v": {
+          "parent": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "child": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+          "equal": true
+        },
+        "core/motor_pwm.v": {
+          "parent": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "child": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+          "equal": true
+        },
+        "core/rc_ppm.v": {
+          "parent": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "child": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+          "equal": true
+        },
+        "core/spi_uart_modules.v": {
+          "parent": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "child": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+          "equal": true
+        },
+        "core/rtl/pid_divide_signed64.v": {
+          "parent": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "child": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+          "equal": true
+        },
+        "core/rtl/quad_mixer_feedback.v": {
+          "parent": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+          "child": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+          "equal": true
+        },
+        "position/position_math.v": {
+          "parent": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "child": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+          "equal": true
+        },
+        "position/relative_position.v": {
+          "parent": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "child": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+          "equal": true
+        },
+        "sensor/flow_reader.v": {
+          "parent": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "child": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+          "equal": true
+        },
+        "sensor/range_reader.v": {
+          "parent": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "child": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+          "equal": true
+        },
+        "core/ano_attitude_estimator.v": {
+          "parent": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "child": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+          "equal": true
+        },
+        "core/rtl/ano_rate_control.v": {
+          "parent": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "child": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+          "equal": true
+        },
+        "position/ano_flow_fusion.v": {
+          "parent": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "child": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+          "equal": true
+        },
+        "position/ano_hold_control.v": {
+          "parent": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "child": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+          "equal": true
+        },
+        "position/ano_z_stick.v": {
+          "parent": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "child": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+          "equal": true
+        },
+        "core/rtl/ano_yaw_control.v": {
+          "parent": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "child": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+          "equal": true
+        },
+        "position/ano_height_fusion.v": {
+          "parent": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "child": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+          "equal": true
+        },
+        "sensor/range_height_estimate.v": {
+          "parent": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "child": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+          "equal": true
+        },
+        "position/pose_time_adapter.v": {
+          "parent": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "child": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+          "equal": true
+        },
+        "core/rtl/ano_rc_angle_targets.v": {
+          "parent": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "child": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+          "equal": true
+        },
+        "core/rtl/ano_manual_angles.v": {
+          "parent": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "child": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+          "equal": true
+        },
+        "sensor/mtf01p_reader.v": {
+          "parent": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "child": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+          "equal": true
+        },
+        "sensor/mtf_native_geometry.v": {
+          "parent": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "child": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+          "equal": true
+        },
+        "position/mtf_position_integrator.v": {
+          "parent": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "child": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+          "equal": true
+        },
+        "mtf_navigation_shadow.v": {
+          "parent": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "child": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+          "equal": true
+        },
+        "nav_math_service.v": {
+          "parent": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "child": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+          "equal": true
+        },
+        "sensor/mtf_shared_geometry.v": {
+          "parent": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "child": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+          "equal": true
+        },
+        "position/mtf_shared_flow_fusion.v": {
+          "parent": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "child": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+          "equal": true
+        },
+        "position/mtf_shared_height_fusion.v": {
+          "parent": "1933a6a42feadca50fb9fb3abcae4e6faa5f78ed9d4c506cdc7546cbdff72a8a",
+          "child": "1933a6a42feadca50fb9fb3abcae4e6faa5f78ed9d4c506cdc7546cbdff72a8a",
+          "equal": true
+        },
+        "position/mtf_shared_hold_control.v": {
+          "parent": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "child": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+          "equal": true
+        },
+        "mtf_xyz_navigation_control.v": {
+          "parent": "3d5c57327d08ac319e619dee834214a5079b5eb8df71f6c93b738c484a27dd8f",
+          "child": "52e5b5edcd5b9e680a41417af25fa9541958920f1fe8394a79bea2450df2309c",
+          "equal": false
+        },
+        "position/mtf_xyz_hold_control.v": {
+          "parent": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "child": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+          "equal": true
+        }
+      },
+      "unchanged_source_entries": [
+        "acg720_ano_port.v",
+        "telemetry_tx.v",
+        "core/control_gate.v",
+        "core/cordic_atan2.v",
+        "core/ano_flight_state.v",
+        "position/ano_xy_stick.v",
+        "position/ano_xy_divide36.v",
+        "core/height_loss_fallback.v",
+        "core/flight_core.v",
+        "core/bmi088_reader.v",
+        "core/imu_checked_guard_pipelined.v",
+        "core/imu_pipeline_pipelined.v",
+        "core/imu_temporal_check_pipelined.v",
+        "core/motor_pwm.v",
+        "core/rc_ppm.v",
+        "core/spi_uart_modules.v",
+        "core/rtl/pid_divide_signed64.v",
+        "core/rtl/quad_mixer_feedback.v",
+        "position/position_math.v",
+        "position/relative_position.v",
+        "sensor/flow_reader.v",
+        "sensor/range_reader.v",
+        "acg720_ano_port.cst",
+        "acg720_ano_port.sdc",
+        "sensor/pmw3901_init.vh",
+        "calibration.vh",
+        "core/ano_attitude_estimator.v",
+        "core/rtl/ano_rate_control.v",
+        "position/ano_flow_fusion.v",
+        "position/ano_hold_control.v",
+        "position/ano_z_stick.v",
+        "core/rtl/ano_yaw_control.v",
+        "position/ano_height_fusion.v",
+        "sensor/range_height_estimate.v",
+        "position/pose_time_adapter.v",
+        "core/rtl/ano_rc_angle_targets.v",
+        "core/rtl/ano_manual_angles.v",
+        "level_calibration.vh",
+        "sensor/mtf01p_reader.v",
+        "sensor/mtf_native_geometry.v",
+        "position/mtf_position_integrator.v",
+        "mtf_navigation_shadow.v",
+        "nav_math_service.v",
+        "sensor/mtf_shared_geometry.v",
+        "position/mtf_shared_flow_fusion.v",
+        "position/mtf_shared_height_fusion.v",
+        "position/mtf_shared_hold_control.v",
+        "position/mtf_xyz_hold_control.v",
+        "acg720_ano_port.gprj",
+        "build.tcl"
+      ],
+      "scope": "Only NAV true-branch product low7 and c_position_age RHS sharing:365cases/100selected exhaustive+false-domain structural theorem; actual isolated vendorDSP+responsible-cone connectivity reviewed. No full mapped NAV/consumer-FSM claim.",
+      "scoped_evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\post_route_pending\\proof.json": "ed51dfd5f48b5d0d4a3e05188a9191190bf6fc07f9d284576cdfa9eb362f4308",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\post_route_pending\\run.log": "c307a0128e8966dae4d652f66fa149b43791aa6b6b7be6f89f10e5e1b5b61b51",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\post_route_pending\\connectivity_review.json": "626fd658e16a493d377c8ef039d52c0476e861cfde2b913ad5884eabbfd9ec57",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\post_route_pending\\primitive_boundary.json": "986e0187294157dce612115e245652d2f2c0253de340593636a9a9fcc30ed36b"
+      }
+    }
+  ],
+  "inherited_qualifications": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\qualification.json",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\qualification.json",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\qualification.json",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\qualification.json"
+  ],
+  "additional_scoped_evidence": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\ground_packaging_plan\\source_audit.json": "5c6b35a8370c08c99cff8c016445a20db905b48f60b47d9700315d826a1b0833",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\source_contract.json": "8cad06ecc9728aa0dce3583b2e18626de7c9df6827abda9525f3a8125c090d78",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\source_contract.json": "3b184de31d8a445856912d8ddd09821d171c5567994078570fb622d3cc88c6d4",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\source_contract.json": "e227e8329960e41f1518565bf2933d8dd82f37d28fa794de7613a6f21c86ff8e"
+  },
+  "original_inherited_lineage": [
+    {
+      "qualification": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\qualification.json",
+      "qualification_sha256": "02e66ede8732d9e9923c622fc3094241053db25e32f2a8adeb45608a152d51a5",
+      "scope": "Control RTL unchanged from N and published-anchor C. New structural change only reviewed INFO duplicate snapshot removal plus opt-in top. No full X top dynamic simulation, PNR or hardware acceptance claimed.",
+      "offline_tests_passed": true,
+      "source_sha256": {
+        "acg720_ano_port.v": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+        "telemetry_tx.v": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+        "core/flight_core.v": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+        "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+        "core/imu_checked_guard_pipelined.v": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+        "core/imu_pipeline_pipelined.v": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+        "core/imu_temporal_check_pipelined.v": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+        "acg720_ano_port.sdc": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "position/ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+        "sensor/range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "sensor/mtf01p_reader.v": "c61ecf4fd67bdb0cbdf4afe1acefdfb9d42a0f1adbaaacc71d9978250840426c",
+        "sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "sensor/mtf_shared_geometry.v": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "mtf_xyz_navigation_control.v": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+        "position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+        "acg720_ano_port.gprj": "f6f7553aab05450fa8ed6e09167527bdc6db2004a3e1aea4c20c3e3cb707c6fb",
+        "build.tcl": "beb5ce95a66afe6c8e9dc1c6e2a55cb68b5581e597b39fbc29924b7473ab5fb9"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\control_contract.py": "b0898679c16ebf1b32716ea0fa55f0f8469256e4c88894a7180248831989b8f6",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\freeze_mapped_review.py": "1548d87c8de50098b898f09da6cbb01dc00c0873136d4b2d993774a860e4471f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\inherited_context_bridge.py": "13b80895a8a8e0afbfa99e2e8bcf2b990b2768b7aa89a4758ae8100fbdae39aa",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\qualify_current_context.py": "2e065ebd26556dec5254eaf08e7ef1463dfa4ec8dcd9c6777f2de60eeaa0df9d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\verify_info_binding.py": "6e91dda8b49a478aeed1fcfd7c3d86b350a1e3eec8f5b676060aae8cd90bd4ac",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\verify_mapped_binding.py": "ddad6a926b5a1b4d8e8584d428f31a607f99fc2cc335df1e47695b77cd6d3d1f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\source_contract.json": "8cad06ecc9728aa0dce3583b2e18626de7c9df6827abda9525f3a8125c090d78",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\OPERATOR_NOTES.txt": "030299c3473a4e0659e8a8c6ca2e66abc2367f959de2d8f2a1e3fdea6b8190ea",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\DO_NOT_PROGRAM": "7a45fedfa0d6347a04a56a3d730d67fe4cdf0d8f769d25ac07217c32e8fae80a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\synthesis_study.json": "568cde7b126c2c754acdeae45180bbc5356c16c2c96f0fa4e0cae731bd0f3028",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\fixture\\build_project.py": "35545fff3fa40ff863b4f60138102a8524eaba1f81b72455d76b65860ce0d743",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\tests\\top_elaboration.proof.json": "518a53f49dd441f1a58c606e097ca3751f3929f164a728497106dc367c8e4e55",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\tests\\top_elaboration.log": "c3bc6c055425146503c316ce08751e9871887a6c6ae58ae0b6f710e1df940aef",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\info_mapped_binding.json": "a2a6cee799b7f0058dff6a6953243fb1496f694c3142b6056fecaa3eed687b45",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\info_mapped_review.json": "414849c8fb7237e10c977953d89d5a3e912b41323f4bf736cc9fe2c71ed28fda",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\inherited_context_bridge.json": "346cf0cb64e5c91bfa93bc160e90fcca769efb1fccab87468401bdb7e9f49db0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_720_candidate_bdd.json": "d688fb08d133619e1a2fe4d7f71cb3caa34eb95d4acbfdcb7f07f8747ff90540",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_720_reference_bdd.json": "b737344db73c14fd99ddf89c96e9711a3352fcfd272ad415d11ed23a87f9c481",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_init_review.json": "806044e392d3f6d25ea7ff4033a1625387925434094bb6443c4c35b8828af023",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_mtf_audit.py": "a83fd9a9c7a88f28525f276a507f3bae7e054b0f791cab1ecb62ef6942cd5fc5",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_mtf_review.json": "1068954b2b980b37f63dd0757eccfa12835f06060a037659c3dbc2da1e5a051d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_nav_review.json": "d0b86405b941bf418d0001cdd04718d8627717ca4c560025828cf114a7378049",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_probe.py": "4d08c476c1bdf59156aa8875ecec9a0aec59cbd51d7d120c87e73b71de9604f8",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_review.py": "cc8106151bc1e37705d41a68a38adef66e6da341600e61c840c50eae05d08ce7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_structure.py": "b4723ef2bbeb3f00319e93f846f6680a92bca04d2db118b243d6e8ff896be480",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\review_synthesis_freshness.py": "c7dd98b1acaa1b78d3da34bb1d322dc3181456f24c15cfa43a50a5050d98cdb4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\synthesis_freshness_review.json": "078268db83870970d8658c8ef33eb1f7af5637ad59ebceb6820a13aa9fa0e7a7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_probe\\bank_cells.json": "40d1b08d03839284f5205f5399e6e1031f840342c1efda99ee73b20b3d725e06",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_probe\\compile.log": "a4210f1ce3f3e780e4be9bd906c8a199db32c84841804937786261b37b587fe5",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_probe\\sim.log": "5233cd2dfa8cc631e596d818df74f5ab66e425b3986c2f740bcbaa7bcd21e504",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_probe\\sim.vvp": "d93153f0bce3045ce43705076504bc9ffd2b030e56ae1a666132f50ac48b73b4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\hardware\\mapped_probe\\tb.v": "af626a892011f0f6a7756012f3f48dc1218d4439d5e862e049d3c7a754ea45ac"
+      },
+      "source_contract": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\info_snapshot_p2_r2_rep1\\source_contract.json",
+      "source_contract_sha256": "8cad06ecc9728aa0dce3583b2e18626de7c9df6827abda9525f3a8125c090d78"
+    },
+    {
+      "qualification": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\qualification.json",
+      "qualification_sha256": "dd556d30cb143552de31a1f32ff7c11606f5e2497bcf0dc7d50cbc54348c26e2",
+      "scope": "Control RTL unchanged from published-anchor C. New structural change only in MTF diagnostic bank and opt-in caller. No full N top dynamic simulation, PNR or hardware acceptance claimed.",
+      "offline_tests_passed": true,
+      "source_sha256": {
+        "acg720_ano_port.v": "f783e184bc1ed47961f808bfd9aad8dc777b35861171c6e950d444428329a96e",
+        "telemetry_tx.v": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+        "core/flight_core.v": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+        "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+        "core/imu_checked_guard_pipelined.v": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+        "core/imu_pipeline_pipelined.v": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+        "core/imu_temporal_check_pipelined.v": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+        "acg720_ano_port.sdc": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "position/ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+        "sensor/range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "sensor/mtf01p_reader.v": "c61ecf4fd67bdb0cbdf4afe1acefdfb9d42a0f1adbaaacc71d9978250840426c",
+        "sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "sensor/mtf_shared_geometry.v": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "mtf_xyz_navigation_control.v": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+        "position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+        "acg720_ano_port.gprj": "f6f7553aab05450fa8ed6e09167527bdc6db2004a3e1aea4c20c3e3cb707c6fb",
+        "build.tcl": "beb5ce95a66afe6c8e9dc1c6e2a55cb68b5581e597b39fbc29924b7473ab5fb9"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\control_contract.py": "a8461905fe6c5eeee2272395b19bdc771a4990498a0ba82b658b7f43a1dc8592",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\finalize_release.py": "6626bc2b6dda5b3c1d100dfc9676b35fd0fc25285c38f8e5b1cf8a2fa764230c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\freeze_mapped_review.py": "ddc795cd66e7be8dfba81f7b08f4251721cd42344be32cd954855f420907add3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\inherited_context_bridge.py": "090be717dc4cfeb10626c315830d290ddd09cfb63e76cc444ba607679f86a1c0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\qualify_current_context.py": "0701fd77edc5a1d2483401e342e805726eb34949793c590f04046c98e752893d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\verify_mapped_binding.py": "868ff8e8545f3ea28dab3efad9541a516c942ea7583f243036ab0a5e01e42ebe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\source_contract.json": "3b184de31d8a445856912d8ddd09821d171c5567994078570fb622d3cc88c6d4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\OPERATOR_NOTES.txt": "d5dabda54de3572f16c64865f61b44d65ba1ee0f43d160ff9630f065d1b9d72f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\DO_NOT_PROGRAM": "244baf6f18000d5b0eed6d0ad219073f7c7fb0b172acca6ec21e7df54615b7ec",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\synthesis_study.json": "08ca00e0aa4f4853798e55def9796bf6ebf8097ec54aed6e86f40bc47ed5c049",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\fixture\\build_project.py": "c84c0d98250d6a25e0fe00405e909cbf4a820f905945bf858716bb5d0b81623e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\tests\\top_elaboration.proof.json": "5514a55e6587fdd131e13727359dc1cf3a329defa7f14335fbf462e621210aca",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\tests\\top_elaboration.log": "2cf2b1e3e818950b72d25313a095db2eb2aebc42ec97bb4f74782b9a7af3362f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\preliminary_mapped_archive\\qualification.json": "d692d07f953f5ffdfe63bdb2deb7caec1891e9b42f0bfc1fc5d218aeb9cd7881",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\preliminary_mapped_archive\\archive_index.json": "54ddac660bed081d85014d3bceeb4f62642ea2e773a41b677055f7d6c299440c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\full_syn_alpha_review.json": "f6e9a5a4413c5478fa8a589679eb9176db51fca59f3f0025158533c0cc6d361a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\full_syn_alpha_review.py": "628ea2d8d1c0b7b909ada12296f939dcf43dcdaee565541138feff7598905bc2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\inherited_context_bridge.json": "6e88e6085a331771bd01474e927c45b5f035dd465c29f7643c8cd6e34499195e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_720_candidate_bdd.json": "b9b11ff972ed74826950ab8aadff40d1d76ff0fd40db95c9af8762ca3bd3dccf",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_720_reference_bdd.json": "b737344db73c14fd99ddf89c96e9711a3352fcfd272ad415d11ed23a87f9c481",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_init_review.json": "099f68e3191468d525a78b611c39c297d99d7d56195d23d06c9e3b811a8be237",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_mtf_audit.py": "a83fd9a9c7a88f28525f276a507f3bae7e054b0f791cab1ecb62ef6942cd5fc5",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_mtf_review.json": "5c85fa319c421620178e483e167c79a9e631ec2063f8ccc7aceb97a2f488f88f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_nav_review.json": "0f2f0ce093a841a3b2058d76a72419cbf5965767be73360f56d0960e28785d54",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_probe.py": "4d08c476c1bdf59156aa8875ecec9a0aec59cbd51d7d120c87e73b71de9604f8",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_review.py": "cc8106151bc1e37705d41a68a38adef66e6da341600e61c840c50eae05d08ce7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_structure.py": "b4723ef2bbeb3f00319e93f846f6680a92bca04d2db118b243d6e8ff896be480",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\review_synthesis_freshness.py": "c7dd98b1acaa1b78d3da34bb1d322dc3181456f24c15cfa43a50a5050d98cdb4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\synthesis_freshness_review.json": "90805b694c2b63e6c21f93ad9c1082b45ef03ff71e2441ecd31d07c8351e68e5",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_probe\\bank_cells.json": "40d1b08d03839284f5205f5399e6e1031f840342c1efda99ee73b20b3d725e06",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_probe\\compile.log": "d4bb99d20b954e6bec0c0a6224e3f28048f6f1077124fe706140bf59c17fc8d7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_probe\\sim.log": "47fb884d570048ade9963cb30ac036c992fb35574576d8110e1cd7531728b394",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_probe\\sim.vvp": "b44b58f328b126b3407370092a4268aed675a29db5ff6616f5ea62d87977a4cb",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\hardware\\mapped_probe\\tb.v": "af626a892011f0f6a7756012f3f48dc1218d4439d5e862e049d3c7a754ea45ac"
+      },
+      "source_contract": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\source_contract.json",
+      "source_contract_sha256": "3b184de31d8a445856912d8ddd09821d171c5567994078570fb622d3cc88c6d4"
+    },
+    {
+      "qualification": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\qualification.json",
+      "qualification_sha256": "0d69005874501475984e12fefde72ded70be4e38bbb5f5f5b126fbfcb0a0f1de",
+      "scope": "Published-anchor repair: directed publication/low-anchor/queued-result regression, fallback component/core, nominal equivalence, UART and host tests. No PNR or hardware acceptance.",
+      "offline_tests_passed": true,
+      "source_sha256": {
+        "acg720_ano_port.v": "42aaa5ccc497e53cbce4c57ddc014305ff50212fd7353345b57c295a6b6286e2",
+        "telemetry_tx.v": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+        "core/flight_core.v": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+        "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+        "core/imu_checked_guard_pipelined.v": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+        "core/imu_pipeline_pipelined.v": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+        "core/imu_temporal_check_pipelined.v": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+        "acg720_ano_port.sdc": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "position/ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+        "sensor/range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "sensor/mtf01p_reader.v": "282bb3e610d54405c8c67cc2fdd5de05638d4d67b78ae99b83888b9898af6157",
+        "sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "sensor/mtf_shared_geometry.v": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "mtf_xyz_navigation_control.v": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+        "position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+        "acg720_ano_port.gprj": "f6f7553aab05450fa8ed6e09167527bdc6db2004a3e1aea4c20c3e3cb707c6fb",
+        "build.tcl": "beb5ce95a66afe6c8e9dc1c6e2a55cb68b5581e597b39fbc29924b7473ab5fb9"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\diagnostic_context_bridge.py": "64e50bb74caccef6f0a57396ee4c21c8827e6eed9328ff42bede2bd587fbf72a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_context_bridge.json": "94a4bbfc2a688a5a117fc38ae9f80a82378c9c0a99cb08214b93e41c9b6d7448",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\partial_current_full_top\\status.json": "f080a28dc969be92bb1017c13f2406e1deb1e6a748cf47f7e6d4b0553b8047be",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\finalize_current_proofs.py": "28b7084ff028553c008778d6927b397c86e8c436cfcaae1be72fc9759e5b913e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\control_contract.py": "46312efa3537906248de67c25a2043221a3175970e0869fa78bdb73a740a564b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\source_contract.json": "e227e8329960e41f1518565bf2933d8dd82f37d28fa794de7613a6f21c86ff8e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\baseline.json": "982fa81c311910977724bd130706d674c9d92f69b8b67ed6d5748d8bc2c85f87",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\qualify.py": "bcd39f4bc80d99aff15aa374018c201cbb78e62f4e8bf7e61e4e237e6ec832bb",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\full_design_connectivity.json": "66334adb15e5ecb0de230e1baa835897d720d17c1ac4d6b3b6d89916e8fa86e8",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\repro.v": "f699d0a8632d0ee9b5852a60655b7d29f80dd516e93e0051fac974b43cbfa411",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\bad.v": "5ce9636b2c9e338c1afad6aca7add76cb911c18ebadb1a1fa4977c954a7c97f1",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\console.log": "b9e96b5ba492a0ed6d429a666efaa03b4375f2b6b23f098c8fdf195eeddd02d2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\run.tcl": "fe948484d997c3a86df6d8a87ad75eda677a2245227f53f01be361905083d19f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\console.log": "19033bff86c0aca62d9a5846a0db4e998c9331c798d19798968c4d9ac2d44234",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\good.v": "128725feceedd097463be9114fe13ab2621d7e5c8f699da9aa961240927e4008",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\run.tcl": "0604ea21de0b4a5ea61cc7f874f421be0e6c3c0ebceadaeb702df6004ba7ef2f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\impl\\gwsynthesis\\good.log": "fa37c0c7fd75eac58240bd76a524ddf352f4a37c47009b97bcae3e9f5068e4e1",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\impl\\gwsynthesis\\good.prj": "604992403767bc8ae74bcfb410d418562d8aa51a758d1fb4d1dd10a42f043e8c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\impl\\gwsynthesis\\good.vg": "de788685e8e00591ff632d624560bfae3aa6ab6b5edce8ee7bf6ed2e50af7f86",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\impl\\gwsynthesis\\good_syn.rpt.html": "926a3b0e16b9553dfc71667ab1460471a704c8ebcf2c2b152970c34769e97bcf",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\impl\\gwsynthesis\\good_syn_resource.html": "c6fbb654cb4c0c13dcd242983e6a4454eac4901cf8d1cd70df0bf6c0d880cf82",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\good\\impl\\gwsynthesis\\good_syn_rsc.xml": "01711c4802d6751b5c0d7801c3d78267ca23580920cc7b7855eab2b267d27943",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\impl\\gwsynthesis\\bad.log": "b56979777b7b11f14d17f015fbde5ba7b123e17e36dd453aae273ecf84df0111",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\impl\\gwsynthesis\\bad.prj": "7bb30c0377333c6327e117b782cbd08302d8a4cfd6262078a55a0923f0b7ef85",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\impl\\gwsynthesis\\bad.vg": "4ffff0c497c9f317380bff191dbf982ae6d646ed617b3dbcbd037a0039e885f4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\impl\\gwsynthesis\\bad_syn.rpt.html": "dcd0d45571468393230d07c1dcfd873aaa692539dcad85fd1cd48e3100300f84",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\impl\\gwsynthesis\\bad_syn_resource.html": "3c03f1845711386054bfe8a24d4c6a03fbd32143a63998c7b0947400e351e2cf",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\forward_net_reproduction\\bad\\impl\\gwsynthesis\\bad_syn_rsc.xml": "a6be769ab5899f8aad9c0e33b842e816500107f0a8c08f52778aa95cb1ee12d9",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\acg720_ano_port.proposed.v": "42aaa5ccc497e53cbce4c57ddc014305ff50212fd7353345b57c295a6b6286e2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\artifact_manifest.json": "9b3608cddc18022dd5fa8990dc7a5e38962f7f4e2870c5e83d28016e9c28077a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\banks.v": "51273fe2265aec21d27c65e6945873dcc67c538cac73247c72b17aef4753f740",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\check_packets.py": "e517ea107d505bf487a93b679490d52cd708658ca01320363bd2b4bc1131a931",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\full_proposed.v": "e567347d9f21b023776b006cf91d92b6f3381e94d5a363cea30437085dfdd0fc",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\full_top.proof.json": "419f2679a8c8ca46e072e11f7108de7d2aeacf5276ef2092cf983e0c84a4d1e7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\full_top.py": "976ffc718118cf14cea7dfe456bf6a0193993d19be66e90310989f1d7f783f88",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\full_top.vvp": "4c1c39b15cea3a820e85faaf7c37692f58bff075c67553ddd81587c884204a0e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\full_top_0.log": "006779d855af335cdea93c5b3b725e0f06220057d9108699ba13db178a14602b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\full_top_1.log": "ee4e2d1866de5f8f17b153829872546362a3bd5feba250d390d5e2c811a6947a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\full_top_acceptance.log": "6941a9a4672dc92e25f620cdee704785b5b2dc3ad7baf6f5528e7d030f957d67",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\full_top_tb.v": "7b811f56d10507fe5d59516bb5fc71ef5144a57d481e2e8006b8adf00cb67819",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\mtf_xyz_navigation_control.proposed.v": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\proof.json": "a098e608ef535636d8a2b4441e86ff5ba519295ff8359142a1d7c5f3f14e511a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\proof_bundle.json": "af10c957df7598b12fa924b9575f819bcb213a234ed9962701721f60f7029bd3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\proposed.patch": "3c94d19ca233387701d0dcf12f3aae15955b35e77055ad8ee1448349e0f0792a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\prove.py": "77faccbdd506912b4b7822fd1d8a9fdca1f52b6940fd7093238aaf26d600901e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\README.md": "27246498576d9fbeb279c4c06743706513c6f901ddaf2b5715e321c6cb581a2c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\simulation.log": "5c7de8a7de026a2ef0f63282baedc447669ddb7b2ada84a03952e10e0df621aa",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\study.vvp": "101649b9053fe846f32c88011d09db2427af1bc303e7c2a9ea6cb6e2f232332e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\diagnostic_reset_proof\\tb.v": "c1355a83728df1e0c570203c1d648f084d7e9dc8eb60d393c3935f5f897c9272",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\independent_control_review.json": "ebf7422d7507df2cb0cdc3ee2f323c788b928661981cf4f70276e7e7b2180ef7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\published_anchor_validation.md": "cacf23b1e2ba0597cf8f171a9b514c8c69d298bee27b37bf3667b3be60895e36",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\OPERATOR_NOTES.txt": "1b5e193f6edcf325e8090ea22e25ef0f9ae7a127f04e95f1ec83947f51333809",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\verify_published_anchor.py": "f2c8282b2ba5689b938eeb71e11141f2bb4e6e0d1692bfe180baff96413e72d7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\published_anchor_delta.json": "807145c742c36673f463cbe2f7841f1c6c6d0f49e2e1e9ffead1f60bde0464fa",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\published_anchor.patch": "b80cb34e76ed5871acbd5a935010085b6cc09458fcdfbf17b1ebbdb6556811f0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\published_anchor.prefix_failure.json": "b6aabc9a7413c67fda20deae45afeec15c04caa5ae79b1fa7e8f8382c9fda3ea",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\published_anchor.prefix_failure.log": "52a9eb12199d4a7804ffc94d7c2f6cf7158a44926972ae7d32abe40b23494a66",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\diagnostic_delta.json": "4fec7e5baf88f23650cc2898b0c257df27473df9a5d0795efd5b2d505cb661a4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\verify_diagnostic_proof.py": "e8aa20ed165ce0b9f6d086beedbbdd11fde93a210748f2702aa65c2b5a12b0db",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\verify_mapped_binding.py": "bdabcb3eaeba142715712a5e8d1755bff6b9a5ce42c8230d94d98daab342f819",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\fixture\\build_project.py": "1a8b843b4ecaf904837cb31c8b758eb75d03da9dd3e1497bc069531e6e39a60b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_probe\\bank_cells.json": "40d1b08d03839284f5205f5399e6e1031f840342c1efda99ee73b20b3d725e06",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_probe\\compile.log": "9738c9b9d718e268f404f54b0bb7a951f43afb34b97fd16772422f7a19d783c4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_probe\\sim.log": "92e39daec00c83d80b89f6886de03bc29d9497859671b08b9f0b5122288832ff",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_probe\\sim.vvp": "c9f1d2264c3992cd6cfeca225d699b7eee0ff467ae7c14f4e22cc0136e3433ac",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_probe\\tb.v": "af626a892011f0f6a7756012f3f48dc1218d4439d5e862e049d3c7a754ea45ac",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\review_synthesis_freshness.py": "c7dd98b1acaa1b78d3da34bb1d322dc3181456f24c15cfa43a50a5050d98cdb4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\synthesis_freshness_review.json": "9c5eb5d3a22f700909373522791e369d0682215003ce2abdc8abadec2c3833bc",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_720_bdd.json": "3e8a7979c54981c94f5f8e9026cca7633749ca60c065a1698c0455921d9d8410",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_720_candidate_bdd.json": "3e8a7979c54981c94f5f8e9026cca7633749ca60c065a1698c0455921d9d8410",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_720_reference_bdd.json": "b737344db73c14fd99ddf89c96e9711a3352fcfd272ad415d11ed23a87f9c481",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_init_review.json": "64f4f0c9daf8fe2d2977ccab04a5b12b67f518a1b6df749b7d6a34e1761c1855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_probe.py": "4d08c476c1bdf59156aa8875ecec9a0aec59cbd51d7d120c87e73b71de9604f8",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_review.py": "06e676e22b73049df4abc2495daf0213dc9a0837dd2ddfc1848da88bce45a544",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\hardware\\mapped_structure.py": "b4723ef2bbeb3f00319e93f846f6680a92bca04d2db118b243d6e8ff896be480",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\fallback_component.proof.json": "caa34d0fa04ed87968bed2e92d7eff6758dbb2d52f7a78fd441af8187294531a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\fallback_core.proof.json": "2e6a67e165d2de78e1a2953ffa1e3c5745af3e1b253c65b49b0b02c4b1bbe047",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\fallback_telemetry_wire.proof.json": "5f83317fbde6d3d1aeb4ec96ad3991e0baa14b9dbb19b20ac0de499adb8cedc5",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\host_tests.proof.json": "0cc2c727661d1bfa49074b599ce9ce268a39ee1afc2a97e1f9a07b5a9116590b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\legacy_telemetry_wire.proof.json": "2f643650a462c992a5aa02bb01444c1c73097d497dc1237b5f7c3699ba95ebd2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\nominal_core_equivalence.proof.json": "ce6e81943ed6ba977da519fab934516ac5d4f6ca8e57fb622b2ac6e0906c3f4d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\published_anchor.proof.json": "dd825291017b405b7ca7133b21c8cbee152e6018c4908dae193485e912eb2e62",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\top.proof.json": "c88998d571d72dc16c0952f07c7c32ed5485cf0ac593507fee19086e606b6c0d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\external_models.v": "8a3d419d3979d6ce9e9c72a9e5e4ba5ec0b786e02f9d6122d0f82092b17318b3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\fallback_component.v": "058e8a090e4adab1fd7efd59b837839baa8ce107cdd3aa34147563d74049f01f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\fallback_core.v": "0bfc2d8affb0bd69a1358bffb3d56ff787f1460123d01c66a27876d012ecf118",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\fallback_telemetry_wire.v": "bac7784f392f933c1e9c889c8ce858ede4776b0a7a9c8260b275e1ac4082a9c2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\legacy_telemetry_wire.v": "3289f717a6d9344ede217e1deb7a00b776d647da04d167f64f4729269a3b90cb",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\nominal_core_equivalence.v": "28dcae9c95e215aaf701c4eba212151be9c58055aab75cac2ec96c70eafc368a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\published_anchor.v": "744558b8c1e98c69c4b40baf6103570d2c197464cd003b32f6d725ec17dd1f4a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\test_component.py": "f7a726e8c1781caf90efaf76bcf44a71296aadb43df07ff4796e23e93681f314",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\test_declarations.py": "ec0db8abe16bcadf981812fc6ee2f3c5d6d5b63eacbacfd43b79d7948e49f4a5",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\test_fallback_core.py": "79489b1a485c9b7cdd26a23e0840b41b2e538ce3245eccba9cf7a86469653502",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\test_nominal_equivalence.py": "9fa4f93dd7c79e87e394009ce8d5b878f60632d141743de2271a6c1894c513c4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\test_published_anchor.py": "17f1d509761a278fb8d528cb7618196c3f1a8af368865a7f391bb712c7a88383",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\test_tools.py": "d35a201e7ce61bd9c5f0f5113b720c61aab831a4ef96a5ae4859cbcc97b831e0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\test_wire.py": "67ea69b98b550f76e660db0831ac66e43923805bca33a5698c1242a766d45c80",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\analysis.py": "808e74adea58424a6e2eddda4642a95e1412a96f051e2e166eedf8f84e53b512",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\dashboard.html": "7c129e19f043bb0645f1403a2205fa65fb4b7bdc96c4283e7d3acbafcee87cd8",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\dashboard.js": "bdbde38c12136b6541c4715d27967c8cfaddbfcf5bbfea3f4b7b808f75c6d90b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\ground_server.py": "88b7db3d6ab938fdfa0567725c2617a1563c77dcd594cfd4f21784ae75009f79",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\launch.py": "134799e8d4e3853847afa1a1bb1786c070afe13200273131f0815a9ac8c285d3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\logs-ui.html": "72382abf04fb13e725e32f49f933e263e06edc6dcdf7c912e009fe43870cad90",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\logs.html": "95d6e092c5a0f5d944fb7092066097aa18d92e3aaf814aa7e75d72fff0e4a412",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\logs.js": "121882f31a2621e03e5494b8672748a40adfcb681cf5e7b9c6c3a1c96591ec34",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\mtf-ui.js": "3ed46e9b8f791fb7891bf664804eb2e13aa55d01a4b4065c7d6379f65f65b858",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\mtf_protocol.py": "1d26ff571c5fc0ffe8307f3d73a1f340924627302a081029f9f371c6a5a18844",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\nav_protocol.py": "e9e01fdc31c8e286f347d0edcebee37be30e719842596d83e5c7a73c0b7eab73",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\protocol.py": "84149f22be872de2e93aa13398cea56e4d8f725917af3881d5e2258c9217900d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\recorder.py": "0d14b8f99bbaec95a7d55d94140037ad22b50be680eeded980977cf97f3c18cf",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\rotation_protocol.py": "731761ea9388304e2d9268c0786b8683fc8c7c57fdbfb3973a65ba8709726c23",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\start_monitor.cmd": "341927114a537ad03818be3f60ccb948e118c8e660dc3e0976e93b7dda31a9e0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\telemetry-ui.js": "19a632be2f5f893f22a1f3e3b301a6cbf9f74016727686407b864c8bcc92733f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\test_ano_control.py": "0d1e826a9e40ee5b2c892fa6650affe243b9305f9c24632d657c5e667f871bd4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\test_height_loss.py": "ee391d03d55caf4ad44ec0d2a8cef8292876189943963a364fa5542a6c7675d8",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\test_mtf.py": "6318cbe2e432168e3784462253fbfb30511eb9129bc3be804168206fd15442d7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\test_review_fixes.py": "2ef2ac15eb233b20136094fe9bfd27f2a0240168c70fe1292d976bc99e394e82",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\test_system.py": "b32f44e709e6ae08839ccd570c4dc509c4af66038f897cd3a4aff2d1d60ea131",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\ui.css": "4d581350fefe11f8c174119bd5c4cde3b760ba81a6cc559eec68dbf00c08dfc0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\ground\\verify_log.py": "c36473cdafb307cbd82a232f6ff0a72563d68d201f9b91e73bab62298ea5a3ad",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\qualification_test_declarations.log": "635ef8e6c25f760f3a8956a1ff7d967e1f79ff2250065910f70715e80613a18b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\qualification_test_component.log": "eb3c12a8bf8239287905a1e7b1962f18a4f0649fcbe3a92bfaccde8ef5ce2236",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\qualification_test_fallback_core.log": "c4378b1ab7f2e799c42e07978c38a9076d674ecb787f9881a22981541e609377",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\qualification_test_published_anchor.log": "b7c11759c7fe26476c8caf04e9ea4a54c277908d10478b712fb287da5c72f7df",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\qualification_test_nominal_equivalence.log": "d1ac60efd3f7ba0f4f96743c6960cb28048f3dd0d6eafd23cb545d1fd3a30e7b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\qualification_test_tools.log": "bdb459807d653ff44c9e62406a87843a6f19afe2221be8c6d8e0fde5821f7207",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\qualification_test_wire.log": "3f79a54d5978260121f8d015620360c9f74a3d2559599aafb728e600cb497b1d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\tests\\host_tests.log": "b11e431fa1784689c440c46841ca905bf6b6435f2e2d7a8c988051b42484d0e3"
+      },
+      "source_contract": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1\\source_contract.json",
+      "source_contract_sha256": "e227e8329960e41f1518565bf2933d8dd82f37d28fa794de7613a6f21c86ff8e"
+    },
+    {
+      "qualification": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\qualification.json",
+      "qualification_sha256": "6ddcc10b2b14eccc53b182ec01c745b478f091c7e94bb5d2d0e2693d231e6efd",
+      "scope": null,
+      "offline_tests_passed": true,
+      "source_sha256": {
+        "acg720_ano_port.v": "b82d480c381891c168b89819361c305b9e3ce7ed018047c1f3923e58e27f986c",
+        "telemetry_tx.v": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "core/flight_core.v": "77a144ab5705a6eacb3478f9353b02492341b4b2cdeabebc995b6551afc80fd6",
+        "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+        "core/imu_checked_guard_pipelined.v": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+        "core/imu_pipeline_pipelined.v": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+        "core/imu_temporal_check_pipelined.v": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+        "acg720_ano_port.sdc": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "position/ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+        "sensor/range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "sensor/mtf01p_reader.v": "282bb3e610d54405c8c67cc2fdd5de05638d4d67b78ae99b83888b9898af6157",
+        "sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "sensor/mtf_shared_geometry.v": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "mtf_xyz_navigation_control.v": "1c2e1831d2856bf37ae42a42df38e20c53ae5935e5d6001acc6c36540947727c",
+        "position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+        "acg720_ano_port.gprj": "4f7fa810c96de0c3aee3c887e2fc0b845363e70acb19dd01ca48eb8b2ee2a30c",
+        "build.tcl": "747564b852f6d476ff1071827d21c0a2fedaf39ed9533f1b6e149c1bf0231630"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\ano_telemetry_wire.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\ano_telemetry_wire.hex": "c13898e9e8817505c1d3041feb06b91bf954f93ed17cc120c79b8cf616bf0428",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\ano_telemetry_wire.log": "1f8ad82deb30913123f7c8896a3ef6357969e619caece49c9b50b8222ba9b04b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\ano_telemetry_wire.proof.json": "e62cf9a1d1bd09d0495dd57c96481f7c7f9d53f9d1386edebd757fb0594256f3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\ano_telemetry_wire.v": "cc1c4362b65f369f7603f332ad76ff66afb5801d462ef0a8eaca8dca1b0c78c7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\bounded_divide.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\bounded_divide.log": "a6a1f81acfe6758349c049e3d20a6793bb32e53d7a5c291d8383a62e02d76c04",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\bounded_divide.proof.json": "ce866b0eed5838e3de8aae49d0ae0c83255923934844c3cae847dd4a0de2aa53",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\bounded_divide.v": "bac5626acfffca00141154f671142873ff17f9bac0dd785a276d80e98a00643f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\build_reference.py.run.log": "985579e64242c93cc8546332a0422f8616c98a006f0ff58f868f763040924b03",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\control_races.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\control_races.log": "c854dbf0fe1e7958072a21cbc8c7b322a6cd351a1ebdd5a5e0eacdfa2537e85f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\control_races.proof.json": "8ba8ee4c75d63f08bb78a52f846cb766767f36ccc08fdf8f0a90d4d0cd181f49",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\control_races.v": "4b01a9693719d30f128504e26a37e9a6a11047487954befdf2864747fbca2f0f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\core_control.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\core_control.log": "0311a4857e9da443529f4cdb4c5e7e119677b24d2a7d580aa9b75885c1b37353",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\core_control.proof.json": "7c238b91dc8796ef86f41f746a5869d238c440eb1bf8d07201ba769c5cc61924",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\core_control.v": "329a5429710bd72dbcc0684b6ce2757c6cfb669cfb1e1276489379bc8555eb27",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\divide36_equivalence.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\divide36_equivalence.log": "10ffc0d6f4669914526f5de3defc276d220b7174774c875d910404656781bd30",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\divide36_equivalence.proof.json": "2d1bf9f44b6a45ca86df2d51e436dea9705bf0fafe0d985b26190410da7be8ed",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\divide36_equivalence.v": "7ea03e089c4c3bc35ccdc6cf79fda72989dcc7066e0f2860982831a4e5d6a170",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\divide36_inputs.txt": "eebe1a0e85e4f0f386e4d793a004815bf0f9e50374b82b1fc9ce4892bd2f999d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\geometry_domain.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\geometry_domain.log": "db53bc8890643f979262c005152205c820741e65f08dda27f56341b5ddcc2491",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\geometry_domain.proof.json": "90f9a50d46f4063f8898af207b14590514c31719db6ceabd54904cc0431c6314",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\geometry_domain.v": "2570eef65a4d4891ebddb1c4ea33699c74004201605dd970f68f29462cc292dc",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_inputs.txt": "ec933be9971eefcc3f2dd13fdd03d0a634237064e7b219e2d768a9cac1a630a4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_reference.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_reference.json": "427ab182d3a5dc9c20d812410a4a5cf9e710146bab06bf7deaf599ef05e43c75",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_reference.log": "776def74ef9b800e949a811a62c5643d57740d772a4fedfb576a9e9a53f67152",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_reference.proof.json": "41dab3976e14c8c207a891256eecc26027287c70fd5d7833da5a8b3981012889",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_reference.txt": "08c3cbf8c43dcd427b114c003760a1bc729c8a1c530375e94a78cf5b3bb6566e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_reference.v": "3d505f86f6d1edf3e385da4c268c21f0230f765d759790a6e1019899e2279fb6",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_rtl.txt": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\height_rtl_inputs.txt": "413d6f2c7bdb2e8c99a6ee7908a1f519270fa2d6cd233056debc1c3e957bb5e9",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\host_tests.log": "1e32413304c5001ad8f20e895d71a998fc572ab00d317ebb42a71abf5d88ecac",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\legacy_telemetry_wire.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\legacy_telemetry_wire.log": "0e9bfc96661475fad50aa81dbae08a49bb222dde32edea016a920acab1684e76",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\legacy_telemetry_wire.proof.json": "2f643650a462c992a5aa02bb01444c1c73097d497dc1237b5f7c3699ba95ebd2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\legacy_telemetry_wire.v": "3289f717a6d9344ede217e1deb7a00b776d647da04d167f64f4729269a3b90cb",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_handoff.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_handoff.log": "20901c38d83394efc0acfb79a402e3a3b08bafd45b7616a8adb7f733e3f60d72",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_handoff.proof.json": "8e4eacfe9ff79961c80fc8b56828c5b737e95ad352d8fcb8d260296d68607707",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_handoff.v": "91ba8f4a7b77eb62e0dc94ee7c7b7561983e9321681146b4e79f1f2bf98e1df8",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_inputs.txt": "4dcc9d74e115dc47168d5faf3fb198e44a2d2cbe66aec41f5275b2fc8e4ae83a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_reference.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_reference.json": "4936f8068df420ce1b172df74a93ae0dadaa68c8b4d1e1edab5593018ecfbbe2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_reference.log": "0eba4899d4e1ab1e40260018c3f3388845cd50c91a09c0540b277c94ea24571c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_reference.proof.json": "a38954be14c0bda05fb886073eecf73b6b865b73fb9da1ff92ba20e2ab049293",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_reference.txt": "320b44a28b6eadfa45938741c76bc34bdf05c586fe3699cec9441c87f256261d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_reference.v": "2e88dce5c69388a0bf59c68853e6996fbb3fa541b2d8bd7c4e5ff72d0be85862",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_rtl.txt": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\manual_rtl_inputs.txt": "a45d17f0a381eb173fad9fcf102b57e4a75925f4888e0009fb4eb13708b1370c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_diagnostic.compile.log": "bbc1498c2d4b4ee5d67bc7d1d3b6bc7844ab29ad2020aebdf780ceea753e76df",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_diagnostic.log": "ad991bd7c6fec7e94f8131265c9330fa7003da39572493a3b31f4c83892806c3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_diagnostic.proof.json": "ff05b1ce054ffccf4b3d84fae86388769d6acb116719c8f874787e356fac0e2b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_diagnostic.v": "1509ae746f0bed27c990aa6267c8cb0fb3e790f2f19fca9b683aa4910c900f23",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_handoff.compile.log": "bbc1498c2d4b4ee5d67bc7d1d3b6bc7844ab29ad2020aebdf780ceea753e76df",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_handoff.log": "17e13dbbd49dd6a6621cc1d9d54573a862ad3e38571e3a954702c8bce5653189",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_handoff.proof.json": "f8c62a4f15dbdb3e2ed57121c8bdad33c46c939b28482d3cccc38e6a40af555f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_handoff.v": "ed79835d67d95187a84d40fa413ca3c482f80ed8a175c73b20cd3db380cfd611",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_pwm.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_pwm.log": "1ef73d7369bb836401d57d230445dce5944392cb9e7c47632f9c82a159b26add",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_pwm.proof.json": "b58f940bab079c7c749b6c902a693b5b02e84720fca7ba90d133ccb495316e13",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_pwm.v": "b71eac67a5dc2dc7770951b44119d65bc2641980cee9cf90a595e64ec59fcd88",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_retiming.json": "a9d5676668f4b39f44d2cdc3fc252b3cc427e63027452d68be04176287100fd6",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\mask_retiming.proof.json": "275ed0d925a3f52d2f269698d980c2f593d5cff4034394555662e467684fdde2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\navigation_control.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\navigation_control.log": "b8f05d9ca16f80288fb7a42c4bd611522ba027f9f189ef1f8756c7d703a968dc",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\navigation_control.proof.json": "800bbbd607b4446d31ed46080ac4a8eda762d9bced5f6218869d80ed2e456414",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\navigation_control.v": "ca585b1ae8221343cb2c5065f776725f6a103d5b69eb7fa81ddb9fa9287a0da9",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\operand_equivalence.json": "f98e53bbfb1458d775f03fb77550831020e59eda672ad831744547e60d416154",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\operand_equivalence.proof.json": "ceaf749742b3c4cb1ca973bb45431d0c0c23f28d1bac0b9c828a9c9607d0868e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\original_motor_pwm.v": "a064c0b6ba9b8f3a1b6f2b1274dcf7caa5d52a0324d3dcb713c7f7a3d6368ab2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\reference_compile.log": "0585ec08789bcf6f6af98268c50d4809b8b6a517b787613b3284653a4b9bde18",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\reference_oracle.cpp": "ac2db654ad1d5431c5d3cdc55322ad1c14b1a6eed28ece76266657fbed16aacd",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\reference_oracle.exe": "a12cc0b29e19d375d5a68abb23c34176d3c14e1a35180aaa4ec162c481b46b36",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\state_inputs.txt": "df1c2ecab2b253f7599fab0e58c8528cf78063458bd84076c7d82e5ad1db9fa7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\state_reference.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\state_reference.json": "6a61d4e856fbaf14a5e0bd5fa60da9671f3403296017f3d5ed254c98f57e0413",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\state_reference.log": "a98f93f0986d8f99f0f7c50ae3dec7681c64db2cec6887b5ada413652ffef887",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\state_reference.proof.json": "92716f8567e2eec015957d6a47d27d52685c70407377dee6ddc370d58c9605c4",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\state_reference.txt": "89aa88f7b97a85616012e966d2d016799bdaa4bd359d9efbdf2ffb3917e90476",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\state_reference.v": "6accef382fa0fc3daa289e316c4dbe5ccecded752e862600cca9da9471af7d87",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\state_rtl.txt": "25989470bbf02e90f954056e52280a5b1056dab8de11b0373e4ad343adfe7606",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\sticks_reference.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\sticks_reference.json": "4df23f8edca1b39886d6f0da648dc31fde312ea3a1edd32c449ee56e36eb2680",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\sticks_reference.log": "6570cb3eefd632cdd8c61e0c94599d0ff990616ba42905b03d502087a64ce007",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\sticks_reference.proof.json": "a240ca95f75d174d871296ada1b991ebc152663c7f5754fda8c33c13ae0f2786",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\sticks_reference.v": "6f2a618b9d2e30a8cb9fe7ed9f8c465f85ce32774a7bd19ffa4769b9f9c7d080",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\stick_inputs.txt": "a33afce0f574a864ba21206030254bb2e54c91ff7923a5f8ebf540f584790075",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\stick_reference.txt": "677b57ff94054b330553bb64f9c2fc4d5faeb7490ba5310d94aa9799db024eb1",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\stick_rtl.txt": "1046bef85deebea964c68363caa5715fb2d70914e9d69a924df9aef6e4e038fc",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\stick_rtl_inputs.txt": "7b23d6a59ba22dcd23b709f713f424b41a331706151a1585b8b243057bdc6209",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\storage_equivalence.json": "44842a88e1d13fd05915ba7411bcd7830f54c45f855cfeb55c84130932f2bb6f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\storage_equivalence.proof.json": "ae5aac94e1c4fdfa61b5fe64c93d24e82a8ca6dc4047db6559d5199682b578e6",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\telemetry_wire.hex": "6411c12f217331cc385950fb61d1baecfd765c910572c0df5d42a1c90365f344",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_bounds_races.py.run.log": "dad2d1e4f584f92be6b3875d47621a95f9a13ad5077321899775225f9e50cd92",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_core.py.run.log": "35a6a264664b98d12b1b95360ca0fd329c6409ee09d8e11f4eeaac6ee23492ca",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_divide36.py.run.log": "2a5de5b6df997ab6977c7b2a34ab8f2b246bace25bae493465e29dfa79498cbe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_geometry.py.run.log": "2baa3c707c49aa3d5b05c3f1c15fc34a0d981c710084824166daa9777e41b94a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_height_reference.py.run.log": "044b61023575721400843159fea6d6651f3b4458cb401521b5dfc0a7de323302",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_manual_handoff.py.run.log": "2a07eb80029f70514da4be1fca7bd0dd7bf9d4feba4fc635aca5a7d4793cabda",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_manual_reference.py.run.log": "10966e3f0366464caf83a01fd288ca628229c742d1f590530f3e595f9e237473",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_mask_retiming.py.run.log": "eae48457b64a5f08b1f7ed27e9fee4e828d56c02920da811baf2401197d836a9",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_navigation.py.run.log": "65cf97acdccced4ae608e530e75ae4b9327e2e20a5662e0a4cb369448312658d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_operand_equivalence.py.run.log": "d746b711dcbb002fafa26ee94716737108cdc1962b206a456d501e8cf2c0d337",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_state_reference.py.run.log": "55eb8d6e3fc78f047df6efaa7d3d38290b46e9a44aa604558a5306801c29a12f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_sticks_reference.py.run.log": "664555c9f4f25ac3333cc65ff3321a8604c648b4668974c1763a754ad5471cb2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_storage_equivalence.py.run.log": "a0274e6c3ed24bbb738906cdbc030cd0f3c04df901488d35b333888303a0114f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_tools.py.run.log": "526c76896a2aa9c6738f4cee7350eda08d3b33710af2a2f30d209424f1e80d88",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_wire.py.run.log": "c71ec95ede59b3854a717f17311c7162d07c6678367e877048478be64cad5560",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\test_xy_reference.py.run.log": "77b5c6807d12c701876b5456ccffae560fb9b7de16daf61cd8e7dc734e470438",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\top.compile.log": "bbc1498c2d4b4ee5d67bc7d1d3b6bc7844ab29ad2020aebdf780ceea753e76df",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\top.proof.json": "1210830049e44b4bd98243bd31c494d2958676fd7fccddfdccfe2d824476eeb9",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_inputs.txt": "4851c5573a048470af5049a7b804503b19b8392abff61f8c7ea22b1e4ffb602e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_reference.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_reference.json": "4c72bba043a07fa9e67fc97548d217337aa11fc7620a6d77e220b6966a2253e2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_reference.log": "6deba704222f467fdd5ecc32b3f862b4a3cf6d7d13f8ae39ec838149516dc13a",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_reference.proof.json": "265288c0300f5fe5c58f0a6bb4f2383e8167b9cf9318cd345558021880624ce0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_reference.txt": "10533a5a641d18d390faedffd08dcf7dd19fcb3703d923da8756f6d3b9ffbadb",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_reference.v": "89c1e150eb3afafe92da9befe100a357908febef297c5cd65b4ceedbc3d8d51f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_rtl.txt": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\tests\\xy_rtl_inputs.txt": "e01971a6bf1b92f965f8b79bc3cb6d1458f49ebc6fa700f9103ec71c6e97a6a6",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\control_contract.py": "748535d89173009c2b1fb730c64b4e856e31cb0168f44219638326b6c379010e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\CONTROL_CONTRACT.txt": "1513f54ec90b4796ba096d1d20776e30030134bbb963702afd75627fbb1abf90",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\baseline.json": "55493c05731955d531631008eab2de8e07072ad5a9483c9fc33450dce08bf437",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\build_reference.py": "fb53982d53b09d3376a35dea65f2b637991807304ec9b33717b30cab98288c9d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\qualify.py": "baf7da9c2c7a1063f2b8041398d48696983c8fbed5d814712b274e3907668ac7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\test_mask_retiming.py": "9a6c1710ccb2e6a20d2761de7fcb12ca78a3c6b28c6d6268c94d89f5b5807816",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\test_operand_equivalence.py": "2809fc3fd4fe89f2f92300f6e9e6dcc6401c836f4affcf65ddc8037279dbb6f5",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\test_storage_equivalence.py": "b679ea494b95df237e57ecaf0410f1ff8e9934d76a41dc817510fac33844cccb",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\test_tools.py": "bf059a5eb69ebd60290fbb82fca7b55fe14915dc6a39d89af421ff6df59f7f9c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\test_wire.py": "99a0b8e04a27062bb710fc7762daef5a529dd0c60a495d2472a85ab48ca33738",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\test_core.py": "66b99186af3b97a8a206fecab64415466e0e6d1519a73f98ad43deadd4c888e7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_AltCtrl.c": "c419219ab052e4a2d07697682be01cd1d32d1dc3950eeeee0af9188891c297a3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_AttCtrl.c": "81e9f6dfdcefe73495a4f03d8bcffcfb07aec73ae82b263c6affa8ce16c25667",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_Filter.h": "15e7fb6d2ece86c350338f07680963617d152d993a1f33fd0ef7741fdb88e70c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_FlightCtrl.c": "0a490f64fc17aefb932b3223b96c8c2f21bc30de735bbe07339fb0d958cc8691",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_LocCtrl.c": "6e38baf1774b1961a29af324560c7e18317555b080f0bddbbd74c4a4dd3cdef2",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_Math.c": "b0adabaf132af74bf641e99e629bdd922929a1d3698a5a84bb7270cb0e958f65",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_MotorCtrl.c": "c7760c114997134141d05d5023b1be46b88abde85d0cdd929d3ea8997f908c16",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_Parameter.c": "3e225dcd429db0d1f6855960a395b6f80172862143757792cf76b45e68d061eb",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_Pid.c": "3ccab514ed143cbafbbb75e221e12ab51af91ff30c67bf607f55e7dd41608e12",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_RC.c": "c4012cfb561447b25583028700caea7afb4d02ce80b5be34edfd5ba3875fd028",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\Ano_Scheduler.c": "75b87206cce7a278367936ee33bfd4f6689cb64d3aca4554d333353367cb8943",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\config.h": "97c8a336edbb71cdf51a0f8ef89d1e695e608e2802b978bcbb06e6e891b68d0d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\mask_changes.json": "c733cc425541815e579e3de66bf643adfe5fec70d32060b15a85d25eb366594d",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\mask_parent.json": "97044ce129e484aa68c5b7fcab3b2e43fad6d15e0f2ba62015c8c6c04ac08850",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\operand_before_height_rtl.txt": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\operand_before_hold.v": "3030a1eeb2bd20e80ec2cf1cae287d1430040d3f8c06365e4402769a0a7874e7",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\operand_before_manual_rtl.txt": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\operand_before_xy_rtl.txt": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\operand_parent.json": "48553b865f9cd83e6d647f7c67cb239db525939725aec7b6280383329a28d070",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\storage_before_height_rtl.txt": "9efcb6c28f3b85a08956e7f083335a0941a1d5d60c632f767d2b3e36655f7d90",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\storage_before_hold.v": "7806ba156067c347b270aecda4c1b6589d3221801f9976ebfce2eb34714ecb6c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\storage_before_manual_rtl.txt": "ecc9c3bd7008eda2a2e9d888e3945b04d7fa86ea5319a21d521f676712b0085f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\storage_before_xy_rtl.txt": "6783cc8a4fd6de1cd3eed97fb167e9f0492a3c4b1d6d7a1b8ba8c79a9a589691",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\storage_parent.json": "d13856103447dae670d13bfb6076effa1a93e43bc05eecb7ee290f775fea94b5",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\mask_parent\\acg720_ano_port.v": "725cba0683eee6ed5e613b60e27e51b439dda7db2b55fcd524bd496cb233d279",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\mask_parent\\mtf_xyz_navigation_control.v": "369969dbb36e98d643241e1bdba2f19c1260fdee3ef097f45c79451d5f934f8c",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\mask_parent\\core\\flight_core.v": "1948607bae9e81e425c1a0630551ff2d8ef51a979b73c5095a10d2bf9a93898b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\reference\\mask_parent\\core\\motor_pwm.v": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\analysis.py": "a61ec0682d57bc20cf2dc20e81483aeac60a2faf7b1a1969439ff86b08c51f62",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\dashboard.html": "7c129e19f043bb0645f1403a2205fa65fb4b7bdc96c4283e7d3acbafcee87cd8",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\dashboard.js": "bdbde38c12136b6541c4715d27967c8cfaddbfcf5bbfea3f4b7b808f75c6d90b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\ground_server.py": "76ab911f867b59f216cb3678d7b70ef9aba3558bd95040c9bcfbcc78294f301b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\launch.py": "134799e8d4e3853847afa1a1bb1786c070afe13200273131f0815a9ac8c285d3",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\logs-ui.html": "72382abf04fb13e725e32f49f933e263e06edc6dcdf7c912e009fe43870cad90",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\logs.html": "95d6e092c5a0f5d944fb7092066097aa18d92e3aaf814aa7e75d72fff0e4a412",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\logs.js": "121882f31a2621e03e5494b8672748a40adfcb681cf5e7b9c6c3a1c96591ec34",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\mtf-ui.js": "c9be0959f98e04b85f1f2d886d16499e2a32a76356fd3a81f07457ccd47d98b1",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\mtf_protocol.py": "b39f7955f27984b593339e1caf2d80d9f693a7f9abaade5f4a0b9276094cf65b",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\nav_protocol.py": "35021fb3316baacf371cca167cee0fa423a71ce070fb0b352f6092165ba77763",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\protocol.py": "56dea89e381d78da66981f042a98c7236db55d9bc220a5478030375b475cb333",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\recorder.py": "0d14b8f99bbaec95a7d55d94140037ad22b50be680eeded980977cf97f3c18cf",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\rotation_protocol.py": "dc60a997ccd3a0f4779937845cfcaa1098b62d940ab42923675f1c2bc9c4123e",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\start_monitor.cmd": "341927114a537ad03818be3f60ccb948e118c8e660dc3e0976e93b7dda31a9e0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\telemetry-ui.js": "19a632be2f5f893f22a1f3e3b301a6cbf9f74016727686407b864c8bcc92733f",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\test_ano_control.py": "7f5f86f3494de41145920595b2f394acd3ec9fac7518d1e9a77787959f478c63",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\test_mtf.py": "11041f811bea4de2e0885be87cd6f874f1ab0156630a0ed94a9d02c2e79ea064",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\test_review_fixes.py": "452412c6ba117602f66e50c9547ba8e95f7db692333730a7cf9498b70e506942",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\test_system.py": "48f4c15e4814a15f00cfa9854657ca78ab02cb79a1c7e362a1924548aff5e320",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\ui.css": "4d581350fefe11f8c174119bd5c4cde3b760ba81a6cc559eec68dbf00c08dfc0",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2\\ground\\verify_log.py": "f9fb3d14560a2a3210abf95c44e05411548cd7481133754ab964cf04a722c9ec"
+      },
+      "source_contract": null,
+      "source_contract_sha256": null
+    }
+  ],
+  "unchanged_INFO_top_telemetry_context": {
+    "acg720_ano_port.v": [
+      "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+      "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+      "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+      "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+      "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+      "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b"
+    ],
+    "telemetry_tx.v": [
+      "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+      "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+      "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+      "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+      "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+      "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01"
+    ]
+  },
+  "remaining_limits": [
+    "Independent scope-contract review pending",
+    "50MHz feasibility required before any positive packaging; no current release/program/hardware flags changed",
+    "Old Y incomplete mapped parser/MTF qualification is not inherited or represented as complete",
+    "New parser proof is RTL source-level; later proofs are scoped to source and isolated DSP/connectivity, not whole mapped controller"
+  ],
+  "real_metadata_gaps": [],
+  "operator_notes": "DO_NOT_PROGRAM. Limited offline evidence inheritance only, scoped as recorded. No whole-mapped/current-full-top/hardware/Flash/flight/program authorization. Positive packaging remains gated on actual zero-unrouted >=50MHz setup/hold clean result and independent review. Original host24 tests inherited through23 identical ground files, not newly executed.",
+  "independent_review_complete": true,
+  "independent_review_record": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\qualified_candidate_plan\\independent_review.json",
+  "independent_review_record_sha256": "7fbea7f2ca15c0c461cb4fe641c84f19bb93e214b2a336a01b9d4d95712bea1d"
+}

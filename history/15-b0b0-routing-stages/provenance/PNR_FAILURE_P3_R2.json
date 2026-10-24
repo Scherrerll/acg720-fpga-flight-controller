@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-10-23T06:31:11.362059+00:00",
+  "passed": false,
+  "unrouted_nets": 652,
+  "placement_option": 3,
+  "route_option": 2,
+  "global_freq_mhz": 50,
+  "report": "fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+  "report_sha256": "987724e47c861b77a8467a2fbaec52928ff3afd1bb9c41db54cf6c4111b6e205",
+  "build_console_sha256": "bd1a3a965c6e6de92dde32dc4332e04d4c3a6ac1440f72f294f4b19b1554398a",
+  "hardware_accessed": false,
+  "flash_changed": false,
+  "flight_ready": false
+}

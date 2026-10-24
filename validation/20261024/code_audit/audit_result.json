@@ -1,0 +1,79 @@
+{
+  "utc": "2026-10-24T03:30:12.416128+00:00",
+  "status": "focused_review_complete_no_new_confirmed_actionable_defect",
+  "firmware_changed": false,
+  "programmed_during_audit": false,
+  "motor_operation_during_audit": false,
+  "http_telemetry_read_only": true,
+  "manifest_sha256": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+  "bitstream_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+  "user_clarifications": [
+    {
+      "topic": "historical_loaded_power_loss",
+      "source": "direct_user_statement",
+      "user_statement": "这个掉动力不用管是电池松了",
+      "disposition": "Operator attributes the event to a loose battery; no further software investigation requested for that event; not independently verified by software."
+    },
+    {
+      "topic": "minimum_throttle_landing_lock_in_fallback",
+      "source": "direct_user_statement",
+      "user_statement": "这个是没有问题的，不太用管",
+      "disposition": "Accepted intended behavior; preserve existing RTL; no actionable defect filed."
+    }
+  ],
+  "new_reader_boundary_checks": 13,
+  "reader_checks_passed": true,
+  "stopped_monitor": {
+    "samples": 31,
+    "duration_uptime_ms": 6400,
+    "all_current_build_b0b0": true,
+    "all_fresh": true,
+    "all_stopped": true,
+    "all_imu_healthy": true,
+    "all_module_fresh": true,
+    "all_height_velocity_ready": true,
+    "source_age_ms_max": 7,
+    "new_module_packets": 640,
+    "mtf_counter_deltas": {
+      "checksum_errors": 0,
+      "length_errors": 0,
+      "uart_errors": 0,
+      "packet_timeouts": 0,
+      "module_missing": 0,
+      "module_duplicates": 0,
+      "module_restarts": 0
+    },
+    "diagnostic_counter_deltas": {
+      "rejected_count": 0,
+      "controller_fault_count": 0,
+      "gate_interruption_count": 0,
+      "gate_revoke_count": 0
+    },
+    "host_counter_deltas": {
+      "checksum_errors": 0,
+      "discarded_bytes": 0,
+      "sequence_gap_events": 0,
+      "missing_frames": 0,
+      "sequence_resets": 0
+    },
+    "scope": "Read-only HTTP telemetry; no serial writes or motor operations; periodic host history omitted from saved snapshots."
+  },
+  "residual_validation": [
+    "MTF factory velocity rotation-compensation semantics and installation response remain unqualified",
+    "Loaded/flight acceptance not performed",
+    "Flash remains B0AC; current B0B0 is SRAM-only"
+  ],
+  "scope": "Focused active-path code review and UART/metric module simulation; not whole-top formal equivalence or exhaustive warning/flight qualification.",
+  "evidence_sha256": {
+    "代码与数据排查.md": "bba087f32d8ffdf5fe49ff8865a804de6ac80341e2a56549211367fc56239244",
+    "reader_boundaries.v": "b6fd6500991db099231f994422f6bffe2880257121d43ef263952da7f1205713",
+    "run_reader_boundaries.py": "4669e4842dec1374452a8b5ba9c8f2c0e23131e3573cfa7518ce8f2c733a8a1e",
+    "reader_boundaries_result.json": "7e4bde074f90915f84ab025d7910b3f3e6630190b09d2a0856b588d09a745957",
+    "reader_boundaries_initial_harness_failure.json": "ae049bb9fae2119d54136c4f7e866e73f3d20b08058c71ca9025e1cb817d2e68",
+    "stopped_monitor_summary.json": "d745753ee876371fd2ea62a6414eb41fb03914c1a56f48896d85097a79bb0c0a",
+    "stopped_monitor.jsonl": "3a2462900691c8a88c12c09b8218efbeeaafe43831e0aee7938883fa3b2202de",
+    "low_throttle_repro.v": "a00584042202ffa3daafab173d5c09a837c1da70806d4983499ced34557f1567",
+    "low_throttle_repro.log": "c85df955110663d702dd3f8e725152d1d8058bdac19b0f54eec54dacc1b2a222"
+  },
+  "package_verification_sha256": "f2366f302626ccfda0f457dc0b3b82caafd28230260e5d46b08f235d6a394816"
+}

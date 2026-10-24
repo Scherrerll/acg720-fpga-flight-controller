@@ -1,0 +1,37 @@
+*** GOWIN Tcl Command Line Console  *** 
+current device: GW5AT-60B  GW5AT-LV60PG484AC1/I0
+add new file: "bad.v"
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v'
+Undeclared symbol 'selected_throttle', assumed default net type 'wire'("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":3)
+Undeclared symbol 'rate_fresh', assumed default net type 'wire'("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":3)
+WARN  (EX3638) : 'selected_throttle' is already implicitly declared on line 3("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":4)
+WARN  (EX3638) : 'rate_fresh' is already implicitly declared on line 3("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":4)
+Compiling module 'bad'("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":2)
+Compiling module 'sink'("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":1)
+WARN  (EX1998) : Net 'selected_throttle[15]' does not have a driver("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":3)
+WARN  (EX1998) : Net 'rate_fresh' does not have a driver("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":3)
+NOTE  (EX0101) : Current top module is "bad"
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input a is unused("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":2)
+WARN  (CV0016) : Input x is unused("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":2)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "sink" instantiated to "s" is swept in optimizing("C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\bad.v":3)
+[95%] Generate netlist file "C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\impl\gwsynthesis\bad.vg" completed
+[100%] Generate report file "C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\forward_net_reproduction\bad\impl\gwsynthesis\bad_syn.rpt.html" completed
+GowinSynthesis finish

@@ -1,0 +1,2 @@
+PASS fallback component: 21021 curve points; boundary, entry, recovery, stop, slew
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0af_height_loss\tests\fallback_component.v:52: $finish called at 2310020000 (1ps)

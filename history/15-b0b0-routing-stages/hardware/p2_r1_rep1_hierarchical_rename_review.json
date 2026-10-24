@@ -1,0 +1,406 @@
+{
+  "passed": true,
+  "sha256": [
+    "f9179eafb379e407482e5f67ae9fdc5e0f5b43c87e46faaafdb1a574873255e3",
+    "eb33cfe778ac9a63c2f052d75b4c3c4e0a982fd7b4a46b4795df61acc52542b9"
+  ],
+  "files": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p1_r1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p2_r1_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg"
+  ],
+  "method": "Ordered per-module token comparison with explicit collision-free declared-symbol bijections; child named pins mapped only through their declared module interface; vendor/primitive pins unchanged. All other tokens exact, including port direction/width/order, literals, types, operators, strings, attributes and positional bindings. Top ports unchanged. Only full-line metadata comments excluded.",
+  "modules": [
+    {
+      "module": "pose_time_adapter",
+      "token_count": 22023,
+      "renames": {
+        "n3666_6": "n3640_6",
+        "n3666_s2": "n3640_s2"
+      },
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "nav_control_handoff",
+      "token_count": 2137,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "spi_mode3_master_1mhz",
+      "token_count": 16152,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "bmi088_reader",
+      "token_count": 70405,
+      "renames": {},
+      "child_instances_checked": 1,
+      "mismatch_count": 0
+    },
+    {
+      "module": "imu_temporal_check",
+      "token_count": 104452,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "imu_checked_guard_pipelined",
+      "token_count": 31115,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_attitude_mul32",
+      "token_count": 23790,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_attitude_div64",
+      "token_count": 23602,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_attitude_sqrt64",
+      "token_count": 22674,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "cordic_atan2",
+      "token_count": 40223,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_attitude_estimator",
+      "token_count": 770716,
+      "renames": {},
+      "child_instances_checked": 4,
+      "mismatch_count": 0
+    },
+    {
+      "module": "imu_pipeline",
+      "token_count": 7999,
+      "renames": {},
+      "child_instances_checked": 4,
+      "mismatch_count": 0
+    },
+    {
+      "module": "rc_ppm",
+      "token_count": 19968,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_xy_divide36",
+      "token_count": 23473,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_xy_stick",
+      "token_count": 64539,
+      "renames": {},
+      "child_instances_checked": 1,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_xy_divide36_0",
+      "token_count": 19397,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_manual_angles",
+      "token_count": 72305,
+      "renames": {},
+      "child_instances_checked": 1,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_multiply_signed64_32",
+      "token_count": 24123,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "pid_divide_signed64",
+      "token_count": 34763,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_yaw_control",
+      "token_count": 145869,
+      "renames": {},
+      "child_instances_checked": 2,
+      "mismatch_count": 0
+    },
+    {
+      "module": "control_gate",
+      "token_count": 16093,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_multiply_signed64_32_0",
+      "token_count": 24141,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "pid_divide_signed64_0",
+      "token_count": 36931,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_rate_control",
+      "token_count": 197310,
+      "renames": {},
+      "child_instances_checked": 2,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_flight_state",
+      "token_count": 10242,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "height_loss_fallback",
+      "token_count": 33884,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "quad_mixer_feedback",
+      "token_count": 16701,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "motor_pwm",
+      "token_count": 15714,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "flight_core",
+      "token_count": 130957,
+      "renames": {},
+      "child_instances_checked": 11,
+      "mismatch_count": 0
+    },
+    {
+      "module": "range_height_estimate",
+      "token_count": 77,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_height_fusion",
+      "token_count": 97,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_uart_rx",
+      "token_count": 5016,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "micolink_parser",
+      "token_count": 64767,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_metric_observer",
+      "token_count": 56843,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf01p_reader",
+      "token_count": 58280,
+      "renames": {},
+      "child_instances_checked": 3,
+      "mismatch_count": 0
+    },
+    {
+      "module": "position_multiply",
+      "token_count": 25395,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "nav_math_service",
+      "token_count": 29816,
+      "renames": {},
+      "child_instances_checked": 1,
+      "mismatch_count": 0
+    },
+    {
+      "module": "position_divide",
+      "token_count": 39809,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "nav_math_service_0",
+      "token_count": 27859,
+      "renames": {},
+      "child_instances_checked": 1,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_divide100",
+      "token_count": 21817,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "position_sincos",
+      "token_count": 29591,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_shared_geometry",
+      "token_count": 107416,
+      "renames": {},
+      "child_instances_checked": 2,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_shared_flow_fusion",
+      "token_count": 99386,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_shared_height_fusion",
+      "token_count": 186739,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_position_divide_constant",
+      "token_count": 25174,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_position_integrator",
+      "token_count": 52315,
+      "renames": {},
+      "child_instances_checked": 1,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_z_stick",
+      "token_count": 39807,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_xy_divide36_1",
+      "token_count": 23489,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "ano_xy_stick_0",
+      "token_count": 67448,
+      "renames": {},
+      "child_instances_checked": 1,
+      "mismatch_count": 0
+    },
+    {
+      "module": "position_sincos_0",
+      "token_count": 28776,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_xyz_hold_control",
+      "token_count": 325860,
+      "renames": {},
+      "child_instances_checked": 3,
+      "mismatch_count": 0
+    },
+    {
+      "module": "mtf_xyz_navigation_control",
+      "token_count": 101450,
+      "renames": {},
+      "child_instances_checked": 7,
+      "mismatch_count": 0
+    },
+    {
+      "module": "uart_tx_115200",
+      "token_count": 2878,
+      "renames": {},
+      "child_instances_checked": 0,
+      "mismatch_count": 0
+    },
+    {
+      "module": "telemetry_tx",
+      "token_count": 156952,
+      "renames": {},
+      "child_instances_checked": 1,
+      "mismatch_count": 0
+    },
+    {
+      "module": "acg720_ano_port",
+      "token_count": 179402,
+      "renames": {},
+      "child_instances_checked": 8,
+      "mismatch_count": 0
+    }
+  ],
+  "renamed_child_bindings": [],
+  "mismatches": [],
+  "outside_modules_identical": true,
+  "limits": "Structural emitted-netlist rename equivalence only; not RTL-to-synthesis equivalence, timing, routing or hardware validation."
+}

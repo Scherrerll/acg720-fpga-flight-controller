@@ -1,0 +1,80 @@
+{
+  "status": "PROPOSAL_ONLY_NOT_BUILT_OR_TESTED",
+  "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\synthesis_only\\20261023T233128_740589Z",
+  "baseline_VG": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+  "source_hashes": {
+    "core/ano_attitude_estimator.v": {
+      "reference_sha256": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+      "proposal_sha256": "878bb041f592691ffd0b33746bd8dd18d5506ddb0bb8ec8695ccd89bdf7c28a8"
+    },
+    "core/imu_pipeline_pipelined.v": {
+      "reference_sha256": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+      "proposal_sha256": "55220d17d4fd7d3badc12a1283d8ebddbfb4fc953d6a4561e6fddd98696e2509"
+    },
+    "core/flight_core.v": {
+      "reference_sha256": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+      "proposal_sha256": "70cfc8a6618f5dc9ec59c7e60b77011fcd8815fe2ea52ab186243c44ee9a08d4"
+    },
+    "acg720_ano_port.v": {
+      "reference_sha256": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+      "proposal_sha256": "bef0a3adc8af362b4ed8f0a1eb56ad9c0d1b89f2a1a31c98632da8fe1e7da8fc"
+    },
+    "mtf_xyz_navigation_control.v": {
+      "reference_sha256": "52e5b5edcd5b9e680a41417af25fa9541958920f1fe8394a79bea2450df2309c",
+      "proposal_sha256": "4ddf650891b858b1cc02f3235319a6f948ffef35e57ce38ee32147e6e35d62f6"
+    },
+    "sensor/mtf_shared_geometry.v": {
+      "reference_sha256": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+      "proposal_sha256": "7f6d11d896b9e863a0c16f1724324db533a2611cd0cc954fc8c041b6ed5209b0"
+    }
+  },
+  "actual_named_callers": [
+    {
+      "file": "acg720_ano_port.v",
+      "module": "flight_core",
+      "instance": "core",
+      "named": true
+    },
+    {
+      "file": "acg720_ano_port.v",
+      "module": "mtf_xyz_navigation_control",
+      "instance": "native_navigation",
+      "named": true
+    },
+    {
+      "file": "core/flight_core.v",
+      "module": "imu_pipeline",
+      "instance": "imu",
+      "named": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "module": "ano_attitude_estimator",
+      "instance": "estimator",
+      "named": true
+    },
+    {
+      "file": "mtf_navigation_shadow.v",
+      "module": "mtf_shared_geometry",
+      "instance": "geometry",
+      "named": true
+    },
+    {
+      "file": "mtf_xyz_navigation_control.v",
+      "module": "mtf_shared_geometry",
+      "instance": "geometry",
+      "named": true
+    }
+  ],
+  "original_assignment_inventory": {
+    "roll_cdeg": [
+      "0",
+      "pending_roll"
+    ],
+    "pitch_cdeg": [
+      "0",
+      "pending_pitch"
+    ]
+  },
+  "qualification_claimed": false
+}

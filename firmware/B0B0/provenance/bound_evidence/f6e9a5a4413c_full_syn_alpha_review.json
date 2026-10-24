@@ -1,0 +1,2386 @@
+{
+  "passed": true,
+  "purpose": "Diagnostic only; no release gate or canonical comparator changed",
+  "preliminary_sha256": "ed558a80b748027ed1e9776eb05e284a3fb34c83844c0efa27557853045791af",
+  "actual_sha256": "a27dca89aa11e49bab4a370e5617bcac73c62db3ce5a9a5a4c8961cf31d207d8",
+  "script_sha256": "628ea2d8d1c0b7b909ada12296f939dcf43dcdaee565541138feff7598905bc2",
+  "restricted_local": {
+    "passed": false,
+    "purpose": "Diagnosis only; final release still requires freshly reviewed actual full SYN and exact canonical identity",
+    "preliminary_netlist": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\synthesis\\20261023T175739_346753Z\\impl\\gwsynthesis\\acg720_ano_port.vg",
+    "actual_full_netlist": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+    "preliminary_sha256": "ed558a80b748027ed1e9776eb05e284a3fb34c83844c0efa27557853045791af",
+    "actual_sha256": "a27dca89aa11e49bab4a370e5617bcac73c62db3ce5a9a5a4c8961cf31d207d8",
+    "preliminary_tokens": 3779777,
+    "actual_tokens": 3779777,
+    "script_sha256": "628ea2d8d1c0b7b909ada12296f939dcf43dcdaee565541138feff7598905bc2",
+    "hardware_accessed": false,
+    "module_port_name_differences": [
+      {
+        "module": "ano_rate_control",
+        "preliminary_only": [
+          "gy_q12",
+          "gz_q12"
+        ],
+        "actual_only": [
+          "gy_q12_Z",
+          "gz_q12_Z"
+        ]
+      },
+      {
+        "module": "flight_core",
+        "preliminary_only": [
+          "altitude_consumed",
+          "base_throttle_us_0",
+          "base_throttle_us_1",
+          "base_throttle_us_10",
+          "base_throttle_us_11",
+          "base_throttle_us_15",
+          "base_throttle_us_2",
+          "base_throttle_us_3",
+          "base_throttle_us_4",
+          "base_throttle_us_5",
+          "base_throttle_us_6",
+          "base_throttle_us_7",
+          "base_throttle_us_8",
+          "base_throttle_us_9",
+          "gy_q12",
+          "gz_q12",
+          "hold_consumed"
+        ],
+        "actual_only": [
+          "altitude_consumed_Z",
+          "base_throttle_us_Z_0",
+          "base_throttle_us_Z_1",
+          "base_throttle_us_Z_10",
+          "base_throttle_us_Z_11",
+          "base_throttle_us_Z_15",
+          "base_throttle_us_Z_2",
+          "base_throttle_us_Z_3",
+          "base_throttle_us_Z_4",
+          "base_throttle_us_Z_5",
+          "base_throttle_us_Z_6",
+          "base_throttle_us_Z_7",
+          "base_throttle_us_Z_8",
+          "base_throttle_us_Z_9",
+          "gy_q12_Z",
+          "gz_q12_Z",
+          "hold_consumed_Z"
+        ]
+      },
+      {
+        "module": "ano_xy_divide36_1",
+        "preliminary_only": [
+          "done_Z",
+          "error_Z"
+        ],
+        "actual_only": [
+          "done",
+          "error"
+        ]
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "preliminary_only": [
+          "base_throttle_us_0",
+          "base_throttle_us_1",
+          "base_throttle_us_10",
+          "base_throttle_us_11",
+          "base_throttle_us_15",
+          "base_throttle_us_2",
+          "base_throttle_us_3",
+          "base_throttle_us_4",
+          "base_throttle_us_5",
+          "base_throttle_us_6",
+          "base_throttle_us_7",
+          "base_throttle_us_8",
+          "base_throttle_us_9"
+        ],
+        "actual_only": [
+          "base_throttle_us_Z_0",
+          "base_throttle_us_Z_1",
+          "base_throttle_us_Z_10",
+          "base_throttle_us_Z_11",
+          "base_throttle_us_Z_15",
+          "base_throttle_us_Z_2",
+          "base_throttle_us_Z_3",
+          "base_throttle_us_Z_4",
+          "base_throttle_us_Z_5",
+          "base_throttle_us_Z_6",
+          "base_throttle_us_Z_7",
+          "base_throttle_us_Z_8",
+          "base_throttle_us_Z_9"
+        ]
+      }
+    ],
+    "different_token_positions": 1048,
+    "first_raw_token_difference": {
+      "token_index": 538,
+      "preliminary": "n3640_6",
+      "actual": "n3652_6"
+    },
+    "protected_header_difference": {
+      "module": "ano_rate_control",
+      "token_index": 1616598,
+      "preliminary": "gy_q12",
+      "actual": "gy_q12_Z",
+      "preliminary_context": [
+        "outer_target_roll_12",
+        ",",
+        "outer_target_roll_15",
+        ",",
+        "outer_target_pitch",
+        ",",
+        "gx_q12",
+        ",",
+        "gy_q12",
+        ",",
+        "fine_gy",
+        ",",
+        "gz_q12",
+        ",",
+        "fine_gz",
+        ",",
+        "core_body"
+      ],
+      "actual_context": [
+        "outer_target_roll_12",
+        ",",
+        "outer_target_roll_15",
+        ",",
+        "outer_target_pitch",
+        ",",
+        "gx_q12",
+        ",",
+        "gy_q12_Z",
+        ",",
+        "fine_gy",
+        ",",
+        "gz_q12_Z",
+        ",",
+        "fine_gz",
+        ",",
+        "core_body"
+      ],
+      "preliminary_only_ports": [
+        "gy_q12",
+        "gz_q12"
+      ],
+      "actual_only_ports": [
+        "gy_q12_Z",
+        "gz_q12_Z"
+      ]
+    },
+    "result": "Requested whole-netlist alpha proof not established",
+    "actual_difference": "('Module name/header/ports differ', 'ano_rate_control', 1616598, 'gy_q12', 'gy_q12_Z')",
+    "limitations": [
+      "This is exact structural alpha comparison, not an independent vendor-primitive semantic model or RTL-to-netlist equivalence proof.",
+      "Comments and whitespace are excluded; source path/timestamp comments may differ.",
+      "No routing, timing, bitstream, physical hardware or power-loss conclusion follows.",
+      "Failure means this restricted proof did not establish equality; it does not establish a hardware defect.",
+      "Release gates remain unchanged and require actual-full-synthesis mapped/freshness audits."
+    ]
+  },
+  "hierarchical_alpha": {
+    "passed": true,
+    "scope": "Whole VG exact aligned-token comparison under bijective module-local wire/instance and consistently bound user-module port renaming; top external ports and vendor pins protected",
+    "result": "Exact whole-VG structural equality modulo explicit bijective hierarchical alpha renaming",
+    "modules": [
+      {
+        "module": "pose_time_adapter",
+        "ports": 19,
+        "wires": 150,
+        "instances": 454,
+        "named_bindings": 2125,
+        "renamed_identifiers": 2
+      },
+      {
+        "module": "nav_control_handoff",
+        "ports": 70,
+        "wires": 2,
+        "instances": 42,
+        "named_bindings": 202,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "spi_mode3_master_1mhz",
+        "ports": 19,
+        "wires": 161,
+        "instances": 344,
+        "named_bindings": 1505,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "bmi088_reader",
+        "ports": 20,
+        "wires": 923,
+        "instances": 1358,
+        "named_bindings": 6470,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "imu_temporal_check",
+        "ports": 18,
+        "wires": 1422,
+        "instances": 2076,
+        "named_bindings": 9926,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "imu_checked_guard_pipelined",
+        "ports": 99,
+        "wires": 370,
+        "instances": 622,
+        "named_bindings": 3029,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_attitude_mul32",
+        "ports": 10,
+        "wires": 250,
+        "instances": 476,
+        "named_bindings": 2287,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_attitude_div64",
+        "ports": 43,
+        "wires": 375,
+        "instances": 476,
+        "named_bindings": 2320,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_attitude_sqrt64",
+        "ports": 9,
+        "wires": 352,
+        "instances": 453,
+        "named_bindings": 2234,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "cordic_atan2",
+        "ports": 12,
+        "wires": 812,
+        "instances": 813,
+        "named_bindings": 3767,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_attitude_estimator",
+        "ports": 74,
+        "wires": 12571,
+        "instances": 15579,
+        "named_bindings": 75520,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "imu_pipeline",
+        "ports": 152,
+        "wires": 98,
+        "instances": 104,
+        "named_bindings": 698,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "rc_ppm",
+        "ports": 73,
+        "wires": 208,
+        "instances": 451,
+        "named_bindings": 2127,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_xy_divide36",
+        "ports": 9,
+        "wires": 405,
+        "instances": 464,
+        "named_bindings": 2263,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_xy_stick",
+        "ports": 33,
+        "wires": 1071,
+        "instances": 1181,
+        "named_bindings": 5834,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_xy_divide36_0",
+        "ports": 40,
+        "wires": 315,
+        "instances": 394,
+        "named_bindings": 1894,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_manual_angles",
+        "ports": 115,
+        "wires": 1276,
+        "instances": 1387,
+        "named_bindings": 7180,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_multiply_signed64_32",
+        "ports": 12,
+        "wires": 186,
+        "instances": 476,
+        "named_bindings": 2287,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "pid_divide_signed64",
+        "ports": 8,
+        "wires": 411,
+        "instances": 682,
+        "named_bindings": 3322,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_yaw_control",
+        "ports": 49,
+        "wires": 2246,
+        "instances": 2875,
+        "named_bindings": 14031,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "control_gate",
+        "ports": 92,
+        "wires": 250,
+        "instances": 338,
+        "named_bindings": 1603,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_multiply_signed64_32_0",
+        "ports": 11,
+        "wires": 186,
+        "instances": 476,
+        "named_bindings": 2290,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "pid_divide_signed64_0",
+        "ports": 11,
+        "wires": 420,
+        "instances": 722,
+        "named_bindings": 3526,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_rate_control",
+        "ports": 72,
+        "wires": 2775,
+        "instances": 3923,
+        "named_bindings": 19025,
+        "renamed_identifiers": 2
+      },
+      {
+        "module": "ano_flight_state",
+        "ports": 31,
+        "wires": 155,
+        "instances": 201,
+        "named_bindings": 967,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "height_loss_fallback",
+        "ports": 48,
+        "wires": 571,
+        "instances": 660,
+        "named_bindings": 3260,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "quad_mixer_feedback",
+        "ports": 45,
+        "wires": 390,
+        "instances": 317,
+        "named_bindings": 1711,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "motor_pwm",
+        "ports": 84,
+        "wires": 259,
+        "instances": 305,
+        "named_bindings": 1543,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "flight_core",
+        "ports": 770,
+        "wires": 1760,
+        "instances": 2544,
+        "named_bindings": 12402,
+        "renamed_identifiers": 260
+      },
+      {
+        "module": "range_height_estimate",
+        "ports": 5,
+        "wires": 2,
+        "instances": 3,
+        "named_bindings": 7,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_height_fusion",
+        "ports": 3,
+        "wires": 2,
+        "instances": 3,
+        "named_bindings": 7,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_uart_rx",
+        "ports": 8,
+        "wires": 69,
+        "instances": 104,
+        "named_bindings": 478,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "micolink_parser",
+        "ports": 69,
+        "wires": 674,
+        "instances": 1343,
+        "named_bindings": 6813,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_metric_observer",
+        "ports": 135,
+        "wires": 779,
+        "instances": 1005,
+        "named_bindings": 5352,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf01p_reader",
+        "ports": 910,
+        "wires": 246,
+        "instances": 1086,
+        "named_bindings": 5630,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "position_multiply",
+        "ports": 34,
+        "wires": 297,
+        "instances": 485,
+        "named_bindings": 2418,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "nav_math_service",
+        "ports": 81,
+        "wires": 420,
+        "instances": 572,
+        "named_bindings": 2844,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "position_divide",
+        "ports": 11,
+        "wires": 583,
+        "instances": 783,
+        "named_bindings": 3791,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "nav_math_service_0",
+        "ports": 66,
+        "wires": 363,
+        "instances": 515,
+        "named_bindings": 2598,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_divide100",
+        "ports": 10,
+        "wires": 303,
+        "instances": 443,
+        "named_bindings": 2033,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "position_sincos",
+        "ports": 10,
+        "wires": 567,
+        "instances": 601,
+        "named_bindings": 2825,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_shared_geometry",
+        "ports": 288,
+        "wires": 1599,
+        "instances": 2153,
+        "named_bindings": 10448,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_shared_flow_fusion",
+        "ports": 113,
+        "wires": 1659,
+        "instances": 1962,
+        "named_bindings": 9808,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_shared_height_fusion",
+        "ports": 108,
+        "wires": 3487,
+        "instances": 3544,
+        "named_bindings": 18126,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_position_divide_constant",
+        "ports": 9,
+        "wires": 385,
+        "instances": 494,
+        "named_bindings": 2342,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_position_integrator",
+        "ports": 140,
+        "wires": 647,
+        "instances": 1068,
+        "named_bindings": 4900,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_z_stick",
+        "ports": 17,
+        "wires": 601,
+        "instances": 750,
+        "named_bindings": 3603,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "ano_xy_divide36_1",
+        "ports": 12,
+        "wires": 406,
+        "instances": 465,
+        "named_bindings": 2264,
+        "renamed_identifiers": 3
+      },
+      {
+        "module": "ano_xy_stick_0",
+        "ports": 19,
+        "wires": 1093,
+        "instances": 1236,
+        "named_bindings": 6075,
+        "renamed_identifiers": 2
+      },
+      {
+        "module": "position_sincos_0",
+        "ports": 9,
+        "wires": 546,
+        "instances": 580,
+        "named_bindings": 2733,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_xyz_hold_control",
+        "ports": 285,
+        "wires": 5512,
+        "instances": 6278,
+        "named_bindings": 31592,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "ports": 863,
+        "wires": 570,
+        "instances": 1702,
+        "named_bindings": 9536,
+        "renamed_identifiers": 13
+      },
+      {
+        "module": "uart_tx_115200",
+        "ports": 8,
+        "wires": 39,
+        "instances": 61,
+        "named_bindings": 275,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "telemetry_tx",
+        "ports": 2894,
+        "wires": 2610,
+        "instances": 3016,
+        "named_bindings": 14625,
+        "renamed_identifiers": 0
+      },
+      {
+        "module": "acg720_ano_port",
+        "ports": 17,
+        "wires": 636,
+        "instances": 2342,
+        "named_bindings": 17174,
+        "renamed_identifiers": 5
+      }
+    ],
+    "renamed_identifier_count": 287,
+    "renames": [
+      {
+        "module": "pose_time_adapter",
+        "kind": "wire",
+        "preliminary": "n3640_6",
+        "actual": "n3652_6"
+      },
+      {
+        "module": "pose_time_adapter",
+        "kind": "instance",
+        "preliminary": "n3640_s2",
+        "actual": "n3652_s2"
+      },
+      {
+        "module": "ano_rate_control",
+        "kind": "port",
+        "preliminary": "gy_q12",
+        "actual": "gy_q12_Z"
+      },
+      {
+        "module": "ano_rate_control",
+        "kind": "port",
+        "preliminary": "gz_q12",
+        "actual": "gz_q12_Z"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "hold_consumed",
+        "actual": "hold_consumed_Z"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "altitude_consumed",
+        "actual": "altitude_consumed_Z"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "gy_q12",
+        "actual": "gy_q12_Z"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "gz_q12",
+        "actual": "gz_q12_Z"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_0",
+        "actual": "base_throttle_us_Z_0"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_1",
+        "actual": "base_throttle_us_Z_1"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_2",
+        "actual": "base_throttle_us_Z_2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_3",
+        "actual": "base_throttle_us_Z_3"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_4",
+        "actual": "base_throttle_us_Z_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_5",
+        "actual": "base_throttle_us_Z_5"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_6",
+        "actual": "base_throttle_us_Z_6"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_7",
+        "actual": "base_throttle_us_Z_7"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_8",
+        "actual": "base_throttle_us_Z_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_9",
+        "actual": "base_throttle_us_Z_9"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_10",
+        "actual": "base_throttle_us_Z_10"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_11",
+        "actual": "base_throttle_us_Z_11"
+      },
+      {
+        "module": "flight_core",
+        "kind": "port",
+        "preliminary": "base_throttle_us_15",
+        "actual": "base_throttle_us_Z_15"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_1_5",
+        "actual": "gy_q12_Z_1_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_2_5",
+        "actual": "gy_q12_Z_2_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_3_5",
+        "actual": "gy_q12_Z_3_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_4_5",
+        "actual": "gy_q12_Z_4_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_5_5",
+        "actual": "gy_q12_Z_5_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_6_5",
+        "actual": "gy_q12_Z_6_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_7_5",
+        "actual": "gy_q12_Z_7_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_8_5",
+        "actual": "gy_q12_Z_8_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_9_5",
+        "actual": "gy_q12_Z_9_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_10_5",
+        "actual": "gy_q12_Z_10_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_11_5",
+        "actual": "gy_q12_Z_11_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_12_5",
+        "actual": "gy_q12_Z_12_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_13_5",
+        "actual": "gy_q12_Z_13_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_14_5",
+        "actual": "gy_q12_Z_14_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_15_5",
+        "actual": "gy_q12_Z_15_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_16_5",
+        "actual": "gy_q12_Z_16_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_17_5",
+        "actual": "gy_q12_Z_17_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_18_5",
+        "actual": "gy_q12_Z_18_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_19_5",
+        "actual": "gy_q12_Z_19_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_20_5",
+        "actual": "gy_q12_Z_20_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_21_5",
+        "actual": "gy_q12_Z_21_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_22_5",
+        "actual": "gy_q12_Z_22_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_23_5",
+        "actual": "gy_q12_Z_23_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_24_5",
+        "actual": "gy_q12_Z_24_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_25_5",
+        "actual": "gy_q12_Z_25_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_26_5",
+        "actual": "gy_q12_Z_26_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_27_5",
+        "actual": "gy_q12_Z_27_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_28_0_COUT",
+        "actual": "gy_q12_Z_28_0_COUT"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_1_5",
+        "actual": "gz_q12_Z_1_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_2_5",
+        "actual": "gz_q12_Z_2_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_3_5",
+        "actual": "gz_q12_Z_3_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_4_5",
+        "actual": "gz_q12_Z_4_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_5_5",
+        "actual": "gz_q12_Z_5_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_6_5",
+        "actual": "gz_q12_Z_6_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_7_5",
+        "actual": "gz_q12_Z_7_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_8_5",
+        "actual": "gz_q12_Z_8_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_9_5",
+        "actual": "gz_q12_Z_9_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_10_5",
+        "actual": "gz_q12_Z_10_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_11_5",
+        "actual": "gz_q12_Z_11_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_12_5",
+        "actual": "gz_q12_Z_12_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_13_5",
+        "actual": "gz_q12_Z_13_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_14_5",
+        "actual": "gz_q12_Z_14_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_15_5",
+        "actual": "gz_q12_Z_15_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_16_5",
+        "actual": "gz_q12_Z_16_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_17_5",
+        "actual": "gz_q12_Z_17_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_18_5",
+        "actual": "gz_q12_Z_18_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_19_5",
+        "actual": "gz_q12_Z_19_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_20_5",
+        "actual": "gz_q12_Z_20_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_21_5",
+        "actual": "gz_q12_Z_21_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_22_5",
+        "actual": "gz_q12_Z_22_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_23_5",
+        "actual": "gz_q12_Z_23_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_24_5",
+        "actual": "gz_q12_Z_24_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_25_5",
+        "actual": "gz_q12_Z_25_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_26_5",
+        "actual": "gz_q12_Z_26_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_27_5",
+        "actual": "gz_q12_Z_27_4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_28_0_COUT",
+        "actual": "gz_q12_Z_28_0_COUT"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_0_11",
+        "actual": "gy_q12_Z_0_10"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_1_9",
+        "actual": "gy_q12_Z_1_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_2_9",
+        "actual": "gy_q12_Z_2_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_3_9",
+        "actual": "gy_q12_Z_3_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_4_9",
+        "actual": "gy_q12_Z_4_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_5_9",
+        "actual": "gy_q12_Z_5_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_6_9",
+        "actual": "gy_q12_Z_6_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_7_9",
+        "actual": "gy_q12_Z_7_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_8_9",
+        "actual": "gy_q12_Z_8_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_9_9",
+        "actual": "gy_q12_Z_9_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_10_9",
+        "actual": "gy_q12_Z_10_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_11_9",
+        "actual": "gy_q12_Z_11_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_12_9",
+        "actual": "gy_q12_Z_12_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_13_9",
+        "actual": "gy_q12_Z_13_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_14_9",
+        "actual": "gy_q12_Z_14_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_15_9",
+        "actual": "gy_q12_Z_15_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_16_9",
+        "actual": "gy_q12_Z_16_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_17_9",
+        "actual": "gy_q12_Z_17_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_18_9",
+        "actual": "gy_q12_Z_18_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_19_9",
+        "actual": "gy_q12_Z_19_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_20_9",
+        "actual": "gy_q12_Z_20_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_21_9",
+        "actual": "gy_q12_Z_21_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_22_9",
+        "actual": "gy_q12_Z_22_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_23_9",
+        "actual": "gy_q12_Z_23_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_24_9",
+        "actual": "gy_q12_Z_24_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_25_9",
+        "actual": "gy_q12_Z_25_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_26_9",
+        "actual": "gy_q12_Z_26_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_27_9",
+        "actual": "gy_q12_Z_27_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gy_q12_28_9",
+        "actual": "gy_q12_Z_28_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_0_11",
+        "actual": "gz_q12_Z_0_10"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_1_9",
+        "actual": "gz_q12_Z_1_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_2_9",
+        "actual": "gz_q12_Z_2_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_3_9",
+        "actual": "gz_q12_Z_3_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_4_9",
+        "actual": "gz_q12_Z_4_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_5_9",
+        "actual": "gz_q12_Z_5_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_6_9",
+        "actual": "gz_q12_Z_6_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_7_9",
+        "actual": "gz_q12_Z_7_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_8_9",
+        "actual": "gz_q12_Z_8_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_9_9",
+        "actual": "gz_q12_Z_9_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_10_9",
+        "actual": "gz_q12_Z_10_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_11_9",
+        "actual": "gz_q12_Z_11_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_12_9",
+        "actual": "gz_q12_Z_12_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_13_9",
+        "actual": "gz_q12_Z_13_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_14_9",
+        "actual": "gz_q12_Z_14_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_15_9",
+        "actual": "gz_q12_Z_15_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_16_9",
+        "actual": "gz_q12_Z_16_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_17_9",
+        "actual": "gz_q12_Z_17_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_18_9",
+        "actual": "gz_q12_Z_18_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_19_9",
+        "actual": "gz_q12_Z_19_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_20_9",
+        "actual": "gz_q12_Z_20_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_21_9",
+        "actual": "gz_q12_Z_21_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_22_9",
+        "actual": "gz_q12_Z_22_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_23_9",
+        "actual": "gz_q12_Z_23_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_24_9",
+        "actual": "gz_q12_Z_24_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_25_9",
+        "actual": "gz_q12_Z_25_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_26_9",
+        "actual": "gz_q12_Z_26_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_27_9",
+        "actual": "gz_q12_Z_27_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "wire",
+        "preliminary": "gz_q12_28_9",
+        "actual": "gz_q12_Z_28_8"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "hold_consumed_s",
+        "actual": "hold_consumed_Z_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "altitude_consumed_s",
+        "actual": "altitude_consumed_Z_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_0_s",
+        "actual": "base_throttle_us_Z_0_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_1_s",
+        "actual": "base_throttle_us_Z_1_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_2_s",
+        "actual": "base_throttle_us_Z_2_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_4_s",
+        "actual": "base_throttle_us_Z_4_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_10_s",
+        "actual": "base_throttle_us_Z_10_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_11_s",
+        "actual": "base_throttle_us_Z_11_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_15_s",
+        "actual": "base_throttle_us_Z_15_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_3_s",
+        "actual": "base_throttle_us_Z_3_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_5_s",
+        "actual": "base_throttle_us_Z_5_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_6_s",
+        "actual": "base_throttle_us_Z_6_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_7_s",
+        "actual": "base_throttle_us_Z_7_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_8_s",
+        "actual": "base_throttle_us_Z_8_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "base_throttle_us_9_s",
+        "actual": "base_throttle_us_Z_9_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_1_s",
+        "actual": "gy_q12_Z_1_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_2_s",
+        "actual": "gy_q12_Z_2_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_3_s",
+        "actual": "gy_q12_Z_3_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_4_s",
+        "actual": "gy_q12_Z_4_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_5_s",
+        "actual": "gy_q12_Z_5_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_6_s",
+        "actual": "gy_q12_Z_6_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_7_s",
+        "actual": "gy_q12_Z_7_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_8_s",
+        "actual": "gy_q12_Z_8_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_9_s",
+        "actual": "gy_q12_Z_9_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_10_s",
+        "actual": "gy_q12_Z_10_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_11_s",
+        "actual": "gy_q12_Z_11_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_12_s",
+        "actual": "gy_q12_Z_12_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_13_s",
+        "actual": "gy_q12_Z_13_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_14_s",
+        "actual": "gy_q12_Z_14_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_15_s",
+        "actual": "gy_q12_Z_15_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_16_s",
+        "actual": "gy_q12_Z_16_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_17_s",
+        "actual": "gy_q12_Z_17_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_18_s",
+        "actual": "gy_q12_Z_18_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_19_s",
+        "actual": "gy_q12_Z_19_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_20_s",
+        "actual": "gy_q12_Z_20_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_21_s",
+        "actual": "gy_q12_Z_21_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_22_s",
+        "actual": "gy_q12_Z_22_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_23_s",
+        "actual": "gy_q12_Z_23_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_24_s",
+        "actual": "gy_q12_Z_24_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_25_s",
+        "actual": "gy_q12_Z_25_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_26_s",
+        "actual": "gy_q12_Z_26_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_27_s",
+        "actual": "gy_q12_Z_27_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_28_s",
+        "actual": "gy_q12_Z_28_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_1_s",
+        "actual": "gz_q12_Z_1_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_2_s",
+        "actual": "gz_q12_Z_2_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_3_s",
+        "actual": "gz_q12_Z_3_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_4_s",
+        "actual": "gz_q12_Z_4_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_5_s",
+        "actual": "gz_q12_Z_5_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_6_s",
+        "actual": "gz_q12_Z_6_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_7_s",
+        "actual": "gz_q12_Z_7_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_8_s",
+        "actual": "gz_q12_Z_8_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_9_s",
+        "actual": "gz_q12_Z_9_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_10_s",
+        "actual": "gz_q12_Z_10_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_11_s",
+        "actual": "gz_q12_Z_11_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_12_s",
+        "actual": "gz_q12_Z_12_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_13_s",
+        "actual": "gz_q12_Z_13_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_14_s",
+        "actual": "gz_q12_Z_14_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_15_s",
+        "actual": "gz_q12_Z_15_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_16_s",
+        "actual": "gz_q12_Z_16_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_17_s",
+        "actual": "gz_q12_Z_17_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_18_s",
+        "actual": "gz_q12_Z_18_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_19_s",
+        "actual": "gz_q12_Z_19_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_20_s",
+        "actual": "gz_q12_Z_20_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_21_s",
+        "actual": "gz_q12_Z_21_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_22_s",
+        "actual": "gz_q12_Z_22_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_23_s",
+        "actual": "gz_q12_Z_23_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_24_s",
+        "actual": "gz_q12_Z_24_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_25_s",
+        "actual": "gz_q12_Z_25_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_26_s",
+        "actual": "gz_q12_Z_26_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_27_s",
+        "actual": "gz_q12_Z_27_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_28_s",
+        "actual": "gz_q12_Z_28_s"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_0_s4",
+        "actual": "gy_q12_Z_0_s4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_1_s2",
+        "actual": "gy_q12_Z_1_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_2_s2",
+        "actual": "gy_q12_Z_2_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_3_s2",
+        "actual": "gy_q12_Z_3_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_4_s2",
+        "actual": "gy_q12_Z_4_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_5_s2",
+        "actual": "gy_q12_Z_5_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_6_s2",
+        "actual": "gy_q12_Z_6_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_7_s2",
+        "actual": "gy_q12_Z_7_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_8_s2",
+        "actual": "gy_q12_Z_8_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_9_s2",
+        "actual": "gy_q12_Z_9_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_10_s2",
+        "actual": "gy_q12_Z_10_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_11_s2",
+        "actual": "gy_q12_Z_11_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_12_s2",
+        "actual": "gy_q12_Z_12_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_13_s2",
+        "actual": "gy_q12_Z_13_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_14_s2",
+        "actual": "gy_q12_Z_14_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_15_s2",
+        "actual": "gy_q12_Z_15_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_16_s2",
+        "actual": "gy_q12_Z_16_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_17_s2",
+        "actual": "gy_q12_Z_17_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_18_s2",
+        "actual": "gy_q12_Z_18_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_19_s2",
+        "actual": "gy_q12_Z_19_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_20_s2",
+        "actual": "gy_q12_Z_20_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_21_s2",
+        "actual": "gy_q12_Z_21_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_22_s2",
+        "actual": "gy_q12_Z_22_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_23_s2",
+        "actual": "gy_q12_Z_23_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_24_s2",
+        "actual": "gy_q12_Z_24_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_25_s2",
+        "actual": "gy_q12_Z_25_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_26_s2",
+        "actual": "gy_q12_Z_26_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_27_s2",
+        "actual": "gy_q12_Z_27_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gy_q12_28_s2",
+        "actual": "gy_q12_Z_28_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_0_s4",
+        "actual": "gz_q12_Z_0_s4"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_1_s2",
+        "actual": "gz_q12_Z_1_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_2_s2",
+        "actual": "gz_q12_Z_2_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_3_s2",
+        "actual": "gz_q12_Z_3_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_4_s2",
+        "actual": "gz_q12_Z_4_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_5_s2",
+        "actual": "gz_q12_Z_5_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_6_s2",
+        "actual": "gz_q12_Z_6_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_7_s2",
+        "actual": "gz_q12_Z_7_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_8_s2",
+        "actual": "gz_q12_Z_8_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_9_s2",
+        "actual": "gz_q12_Z_9_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_10_s2",
+        "actual": "gz_q12_Z_10_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_11_s2",
+        "actual": "gz_q12_Z_11_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_12_s2",
+        "actual": "gz_q12_Z_12_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_13_s2",
+        "actual": "gz_q12_Z_13_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_14_s2",
+        "actual": "gz_q12_Z_14_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_15_s2",
+        "actual": "gz_q12_Z_15_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_16_s2",
+        "actual": "gz_q12_Z_16_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_17_s2",
+        "actual": "gz_q12_Z_17_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_18_s2",
+        "actual": "gz_q12_Z_18_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_19_s2",
+        "actual": "gz_q12_Z_19_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_20_s2",
+        "actual": "gz_q12_Z_20_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_21_s2",
+        "actual": "gz_q12_Z_21_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_22_s2",
+        "actual": "gz_q12_Z_22_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_23_s2",
+        "actual": "gz_q12_Z_23_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_24_s2",
+        "actual": "gz_q12_Z_24_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_25_s2",
+        "actual": "gz_q12_Z_25_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_26_s2",
+        "actual": "gz_q12_Z_26_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_27_s2",
+        "actual": "gz_q12_Z_27_s2"
+      },
+      {
+        "module": "flight_core",
+        "kind": "instance",
+        "preliminary": "gz_q12_28_s2",
+        "actual": "gz_q12_Z_28_s2"
+      },
+      {
+        "module": "ano_xy_divide36_1",
+        "kind": "port",
+        "preliminary": "done_Z",
+        "actual": "done"
+      },
+      {
+        "module": "ano_xy_divide36_1",
+        "kind": "port",
+        "preliminary": "error_Z",
+        "actual": "error"
+      },
+      {
+        "module": "ano_xy_divide36_1",
+        "kind": "wire",
+        "preliminary": "error_6",
+        "actual": "error_9"
+      },
+      {
+        "module": "ano_xy_stick_0",
+        "kind": "wire",
+        "preliminary": "done_Z",
+        "actual": "done"
+      },
+      {
+        "module": "ano_xy_stick_0",
+        "kind": "wire",
+        "preliminary": "error_Z",
+        "actual": "error"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_0",
+        "actual": "base_throttle_us_Z_0"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_1",
+        "actual": "base_throttle_us_Z_1"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_2",
+        "actual": "base_throttle_us_Z_2"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_3",
+        "actual": "base_throttle_us_Z_3"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_4",
+        "actual": "base_throttle_us_Z_4"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_5",
+        "actual": "base_throttle_us_Z_5"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_6",
+        "actual": "base_throttle_us_Z_6"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_7",
+        "actual": "base_throttle_us_Z_7"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_8",
+        "actual": "base_throttle_us_Z_8"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_9",
+        "actual": "base_throttle_us_Z_9"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_10",
+        "actual": "base_throttle_us_Z_10"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_11",
+        "actual": "base_throttle_us_Z_11"
+      },
+      {
+        "module": "mtf_xyz_navigation_control",
+        "kind": "port",
+        "preliminary": "base_throttle_us_15",
+        "actual": "base_throttle_us_Z_15"
+      },
+      {
+        "module": "acg720_ano_port",
+        "kind": "wire",
+        "preliminary": "hold_consumed",
+        "actual": "hold_consumed_Z"
+      },
+      {
+        "module": "acg720_ano_port",
+        "kind": "wire",
+        "preliminary": "altitude_consumed",
+        "actual": "altitude_consumed_Z"
+      },
+      {
+        "module": "acg720_ano_port",
+        "kind": "wire",
+        "preliminary": "gy_q12",
+        "actual": "gy_q12_Z"
+      },
+      {
+        "module": "acg720_ano_port",
+        "kind": "wire",
+        "preliminary": "gz_q12",
+        "actual": "gz_q12_Z"
+      },
+      {
+        "module": "acg720_ano_port",
+        "kind": "wire",
+        "preliminary": "base_throttle_us",
+        "actual": "base_throttle_us_Z"
+      }
+    ],
+    "top_external_ports_preserved": 17,
+    "preserved": [
+      "Module names, header order, port kinds and widths",
+      "Every cell type, vendor primitive pin, constant, INIT and defparam value",
+      "Every named user-module call binding under the callee-specific port bijection",
+      "All declaration/assignment/connection token topology and order",
+      "Top acg720_ano_port17external port names exactly"
+    ]
+  },
+  "limitations": [
+    "This is exact structural alpha comparison, not an independent vendor-primitive semantic model or RTL-to-netlist equivalence proof.",
+    "Comments and whitespace are excluded; source path/timestamp comments may differ.",
+    "No routing, timing, bitstream, physical hardware or power-loss conclusion follows.",
+    "Failure means this restricted proof did not establish equality; it does not establish a hardware defect.",
+    "Release gates remain unchanged and require actual-full-synthesis mapped/freshness audits."
+  ],
+  "hardware_accessed": false,
+  "in_memory_negative_checks": {
+    "INIT_literal": {
+      "rejected": true,
+      "reason": "('Non-alpha token differs', 'pose_time_adapter', 715, '8', '999', ['defparam', 'reduced_6_s0', '.', 'INIT', '=', '8', \"'\", 'h80', ';', 'LUT3', 'reduced_5_s0'], ['defparam', 'reduced_6_s0', '.', 'INIT', '=', '999', \"'\", 'h80', ';', 'LUT3', 'reduced_5_s0'])"
+    },
+    "vendor_pin": {
+      "rejected": true,
+      "reason": "('Vendor pin differs', 'pose_time_adapter', 'LUT3', 686, 'I0', 'I0_CORRUPTED')"
+    },
+    "external_top_port": {
+      "rejected": true,
+      "reason": "('Non-port header token differs', 'acg720_ano_port', 3599852, 'clk50', 'clk50_CORRUPTED')"
+    }
+  }
+}

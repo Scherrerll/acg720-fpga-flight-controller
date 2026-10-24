@@ -1,0 +1,13 @@
+test_live_guards_reject_high_switch_stale_and_nonidle_outputs (test_install_default.InstallerTests.test_live_guards_reject_high_switch_stale_and_nonidle_outputs) ... ok
+test_no_approval_rejects_every_programmer_operation (test_install_default.InstallerTests.test_no_approval_rejects_every_programmer_operation) ... ok
+test_operation_whitelist_image_hash_and_flash_address (test_install_default.InstallerTests.test_operation_whitelist_image_hash_and_flash_address) ... ok
+test_postwrite_verification_failure_rolls_back (test_install_default.InstallerTests.test_postwrite_verification_failure_rolls_back) ... ok
+test_preflight_rejection_never_reprograms_or_recovers (test_install_default.InstallerTests.test_preflight_rejection_never_reprograms_or_recovers) ... ok
+test_prewrite_verify_failure_preserves_flash_and_restores_current_sram (test_install_default.InstallerTests.test_prewrite_verify_failure_preserves_flash_and_restores_current_sram) ... ok
+test_success_checks_old_before_erase_and_new_before_final_reload (test_install_default.InstallerTests.test_success_checks_old_before_erase_and_new_before_final_reload) ... ok
+test_write_failure_restores_and_independently_verifies_old_default (test_install_default.InstallerTests.test_write_failure_restores_and_independently_verifies_old_default) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.030s
+
+OK

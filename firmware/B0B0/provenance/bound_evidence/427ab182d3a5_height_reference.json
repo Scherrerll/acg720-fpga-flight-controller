@@ -1,0 +1,18 @@
+{
+  "samples": 326,
+  "max_abs_errors": [
+    2,
+    1.1102000000000771,
+    10,
+    7.637402342197674e-05
+  ],
+  "allowed": [
+    2,
+    2,
+    10,
+    0.1
+  ],
+  "differences": [],
+  "passed": true,
+  "reference": "unchanged Alt_1level_Ctrl then Alt_2level_Ctrl / Auto_Take_Off_Land_Task"
+}

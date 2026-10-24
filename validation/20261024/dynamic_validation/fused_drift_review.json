@@ -1,0 +1,80 @@
+{
+  "utc": "2026-10-24T03:58:42.783630+00:00",
+  "scope": "Same saved final19.79s operator-confirmed stationary windows; actual fused Q16 velocity and Q8 integral position telemetry, not raw module cumulative position.",
+  "windows": {
+    "original_surface": {
+      "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\static_20261024T034051Z\\static20_telemetry.jsonl",
+      "source_sha256": "102ea75c27cd7366a781676e75ad1714dae14070ef83904f341e5f09322c817c",
+      "samples": 100,
+      "duration_s": 19.8,
+      "fused_position_delta_xy_mm": [
+        71.23828125,
+        43.09375
+      ],
+      "fused_position_net_mm": 83.25841701904139,
+      "fused_position_net_cm": 8.325841701904139,
+      "fused_velocity": {
+        "fused_vx_q16": {
+          "mean_mm_s": 3.7424903869628907,
+          "median_mm_s": 1.48614501953125,
+          "rms_mm_s": 12.358141767198124,
+          "p95_abs_mm_s": 29.750381469726562,
+          "max_abs_mm_s": 37.083770751953125,
+          "snapshot_trapezoid_integral_mm": 71.60238189697266
+        },
+        "fused_vy_q16": {
+          "mean_mm_s": 2.1694886779785154,
+          "median_mm_s": 0.1863861083984375,
+          "rms_mm_s": 14.530628179561829,
+          "p95_abs_mm_s": 33.61279296875,
+          "max_abs_mm_s": 52.50691223144531,
+          "snapshot_trapezoid_integral_mm": 43.45395355224609
+        }
+      },
+      "position_valid_all": true,
+      "velocity_valid_all": true,
+      "position_faults": [
+        0
+      ],
+      "controller_enabled_samples": 0
+    },
+    "printed_paper": {
+      "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\static_20261024T034852Z\\static20_telemetry.jsonl",
+      "source_sha256": "eb1022f4e0b72c2ccfbfdd2c0a4b6e8bfb7a5aaa2cbf93b76ca453f8f246b2c1",
+      "samples": 100,
+      "duration_s": 19.8,
+      "fused_position_delta_xy_mm": [
+        50.09765625,
+        -54.44140625
+      ],
+      "fused_position_net_mm": 73.98406501552009,
+      "fused_position_net_cm": 7.398406501552008,
+      "fused_velocity": {
+        "fused_vx_q16": {
+          "mean_mm_s": 2.2339752197265623,
+          "median_mm_s": 0.9392852783203125,
+          "rms_mm_s": 8.478228630464892,
+          "p95_abs_mm_s": 18.388168334960938,
+          "max_abs_mm_s": 32.500762939453125,
+          "snapshot_trapezoid_integral_mm": 45.06412353515625
+        },
+        "fused_vy_q16": {
+          "mean_mm_s": -2.569491729736328,
+          "median_mm_s": -1.0055465698242188,
+          "rms_mm_s": 6.589167058871666,
+          "p95_abs_mm_s": 14.844573974609375,
+          "max_abs_mm_s": 23.975128173828125,
+          "snapshot_trapezoid_integral_mm": -51.54000244140625
+        }
+      },
+      "position_valid_all": true,
+      "velocity_valid_all": true,
+      "position_faults": [
+        0
+      ],
+      "controller_enabled_samples": 0
+    }
+  },
+  "flight_ready": false,
+  "firmware_changed": false
+}

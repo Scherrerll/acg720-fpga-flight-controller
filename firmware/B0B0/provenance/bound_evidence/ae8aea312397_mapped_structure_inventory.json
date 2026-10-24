@@ -1,0 +1,974 @@
+{
+  "baseline_vg_sha256": "6ebbd100aa829d46a7164000c33a67e6f617c6b56f4d65f2fe48dd0fd2d84a86",
+  "proposed_vg_sha256": "0be62a85bf094d9102a6488b792c77c8cb9296d9a5b4aaa3e05a72ea96fd3500",
+  "endpoints": {
+    "observation_bad": {
+      "baseline_depths": {
+        "pose_valid": {
+          "start": [
+            "/core/imu/estimator",
+            "pose_valid"
+          ],
+          "end": [
+            "/native_navigation",
+            "observation_bad"
+          ],
+          "lut_stages": 6,
+          "combin_cell_stages": 6,
+          "path": [
+            {
+              "path": "/native_navigation/geometry",
+              "net": "geometry_reason_0",
+              "type": "LUT4",
+              "instance": "geometry_reason_0_s0"
+            },
+            {
+              "path": "/native_navigation/geometry",
+              "net": "m_cancel_0_10",
+              "type": "LUT4",
+              "instance": "m_cancel_0_s4"
+            },
+            {
+              "path": "/native_navigation/geometry",
+              "net": "geometry_height_ready",
+              "type": "LUT4",
+              "instance": "geometry_height_ready_s1"
+            },
+            {
+              "path": "/native_navigation/height_fusion",
+              "net": "height_estimate_ready_16",
+              "type": "LUT4",
+              "instance": "height_estimate_ready_s12"
+            },
+            {
+              "path": "/native_navigation/height_fusion",
+              "net": "height_estimate_ready",
+              "type": "LUT4",
+              "instance": "height_estimate_ready_s13"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "observation_bad",
+              "type": "LUT3",
+              "instance": "observation_bad_s2"
+            }
+          ]
+        },
+        "origin_reset": {
+          "start": [
+            "",
+            "observer_reset"
+          ],
+          "end": [
+            "/native_navigation",
+            "observation_bad"
+          ],
+          "lut_stages": 5,
+          "combin_cell_stages": 5,
+          "path": [
+            {
+              "path": "/native_navigation",
+              "net": "live_acc_5",
+              "type": "LUT4",
+              "instance": "live_acc_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_velocity_11",
+              "type": "LUT3",
+              "instance": "live_velocity_s6"
+            },
+            {
+              "path": "/native_navigation/height_fusion",
+              "net": "height_estimate_ready_16",
+              "type": "LUT4",
+              "instance": "height_estimate_ready_s12"
+            },
+            {
+              "path": "/native_navigation/height_fusion",
+              "net": "height_estimate_ready",
+              "type": "LUT4",
+              "instance": "height_estimate_ready_s13"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "observation_bad",
+              "type": "LUT3",
+              "instance": "observation_bad_s2"
+            }
+          ]
+        },
+        "stale_q": {
+          "start": [
+            "/core/imu/guard",
+            "stale_q"
+          ],
+          "end": [
+            "/native_navigation",
+            "observation_bad"
+          ],
+          "lut_stages": 8,
+          "combin_cell_stages": 8,
+          "path": [
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid_3",
+              "type": "LUT2",
+              "instance": "pose_valid_s0"
+            },
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid",
+              "type": "LUT4",
+              "instance": "pose_valid_s"
+            },
+            {
+              "path": "/native_navigation/geometry",
+              "net": "geometry_reason_0",
+              "type": "LUT4",
+              "instance": "geometry_reason_0_s0"
+            },
+            {
+              "path": "/native_navigation/geometry",
+              "net": "m_cancel_0_10",
+              "type": "LUT4",
+              "instance": "m_cancel_0_s4"
+            },
+            {
+              "path": "/native_navigation/geometry",
+              "net": "geometry_height_ready",
+              "type": "LUT4",
+              "instance": "geometry_height_ready_s1"
+            },
+            {
+              "path": "/native_navigation/height_fusion",
+              "net": "height_estimate_ready_16",
+              "type": "LUT4",
+              "instance": "height_estimate_ready_s12"
+            },
+            {
+              "path": "/native_navigation/height_fusion",
+              "net": "height_estimate_ready",
+              "type": "LUT4",
+              "instance": "height_estimate_ready_s13"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "observation_bad",
+              "type": "LUT3",
+              "instance": "observation_bad_s2"
+            }
+          ]
+        }
+      },
+      "proposal_depths": {
+        "pose_valid": {
+          "start": [
+            "/core/imu/estimator",
+            "pose_valid"
+          ],
+          "end": [
+            "/native_navigation",
+            "observation_bad"
+          ],
+          "lut_stages": 4,
+          "combin_cell_stages": 4,
+          "path": [
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "observation_bad",
+              "type": "LUT2",
+              "instance": "observation_bad_s2"
+            }
+          ]
+        },
+        "origin_reset": {
+          "start": [
+            "",
+            "observer_reset"
+          ],
+          "end": [
+            "/native_navigation",
+            "observation_bad"
+          ],
+          "lut_stages": 3,
+          "combin_cell_stages": 3,
+          "path": [
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "observation_bad",
+              "type": "LUT2",
+              "instance": "observation_bad_s2"
+            }
+          ]
+        },
+        "stale_q": {
+          "start": [
+            "/core/imu/guard",
+            "stale_q"
+          ],
+          "end": [
+            "/native_navigation",
+            "observation_bad"
+          ],
+          "lut_stages": 6,
+          "combin_cell_stages": 6,
+          "path": [
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid_3",
+              "type": "LUT2",
+              "instance": "pose_valid_s0"
+            },
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid",
+              "type": "LUT4",
+              "instance": "pose_valid_s"
+            },
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "observation_bad",
+              "type": "LUT2",
+              "instance": "observation_bad_s2"
+            }
+          ]
+        }
+      },
+      "delta": {
+        "pose_valid": {
+          "old": 6,
+          "new": 4
+        },
+        "origin_reset": {
+          "old": 5,
+          "new": 3
+        },
+        "stale_q": {
+          "old": 8,
+          "new": 6
+        }
+      }
+    },
+    "nav_z_active": {
+      "baseline_depths": {
+        "pose_valid": {
+          "start": [
+            "/core/imu/estimator",
+            "pose_valid"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_z_active"
+          ],
+          "lut_stages": 10,
+          "combin_cell_stages": 10,
+          "path": [
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc_5",
+              "type": "LUT4",
+              "instance": "live_acc_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT2",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/core/fallback_control",
+              "net": "height_fallback_active_3",
+              "type": "LUT4",
+              "instance": "height_fallback_active_s0"
+            },
+            {
+              "path": "/core",
+              "net": "core_body_860_7",
+              "type": "LUT4",
+              "instance": "core_body_860_s3"
+            },
+            {
+              "path": "/core",
+              "net": "core_body_860",
+              "type": "LUT3",
+              "instance": "core_body_860_s4"
+            },
+            {
+              "path": "",
+              "net": "n16970_6",
+              "type": "LUT4",
+              "instance": "n16970_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active_3",
+              "type": "LUT3",
+              "instance": "nav_z_active_s0"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active",
+              "type": "LUT4",
+              "instance": "nav_z_active_s"
+            }
+          ]
+        },
+        "origin_reset": {
+          "start": [
+            "",
+            "observer_reset"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_z_active"
+          ],
+          "lut_stages": 9,
+          "combin_cell_stages": 9,
+          "path": [
+            {
+              "path": "/native_navigation",
+              "net": "live_acc_5",
+              "type": "LUT4",
+              "instance": "live_acc_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT2",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/core/fallback_control",
+              "net": "height_fallback_active_3",
+              "type": "LUT4",
+              "instance": "height_fallback_active_s0"
+            },
+            {
+              "path": "/core",
+              "net": "core_body_860_7",
+              "type": "LUT4",
+              "instance": "core_body_860_s3"
+            },
+            {
+              "path": "/core",
+              "net": "core_body_860",
+              "type": "LUT3",
+              "instance": "core_body_860_s4"
+            },
+            {
+              "path": "",
+              "net": "n16970_6",
+              "type": "LUT4",
+              "instance": "n16970_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active_3",
+              "type": "LUT3",
+              "instance": "nav_z_active_s0"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active",
+              "type": "LUT4",
+              "instance": "nav_z_active_s"
+            }
+          ]
+        },
+        "stale_q": {
+          "start": [
+            "/core/imu/guard",
+            "stale_q"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_z_active"
+          ],
+          "lut_stages": 12,
+          "combin_cell_stages": 12,
+          "path": [
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid_3",
+              "type": "LUT2",
+              "instance": "pose_valid_s0"
+            },
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid",
+              "type": "LUT4",
+              "instance": "pose_valid_s"
+            },
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc_5",
+              "type": "LUT4",
+              "instance": "live_acc_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT2",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/core/fallback_control",
+              "net": "height_fallback_active_3",
+              "type": "LUT4",
+              "instance": "height_fallback_active_s0"
+            },
+            {
+              "path": "/core",
+              "net": "core_body_860_7",
+              "type": "LUT4",
+              "instance": "core_body_860_s3"
+            },
+            {
+              "path": "/core",
+              "net": "core_body_860",
+              "type": "LUT3",
+              "instance": "core_body_860_s4"
+            },
+            {
+              "path": "",
+              "net": "n16970_6",
+              "type": "LUT4",
+              "instance": "n16970_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active_3",
+              "type": "LUT3",
+              "instance": "nav_z_active_s0"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active",
+              "type": "LUT4",
+              "instance": "nav_z_active_s"
+            }
+          ]
+        }
+      },
+      "proposal_depths": {
+        "pose_valid": {
+          "start": [
+            "/core/imu/estimator",
+            "pose_valid"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_z_active"
+          ],
+          "lut_stages": 7,
+          "combin_cell_stages": 7,
+          "path": [
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/core/fallback_control",
+              "net": "height_fallback_active",
+              "type": "LUT4",
+              "instance": "height_fallback_active_s"
+            },
+            {
+              "path": "",
+              "net": "n16970_6",
+              "type": "LUT4",
+              "instance": "n16970_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active_3",
+              "type": "LUT3",
+              "instance": "nav_z_active_s0"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active",
+              "type": "LUT3",
+              "instance": "nav_z_active_s2"
+            }
+          ]
+        },
+        "origin_reset": {
+          "start": [
+            "",
+            "observer_reset"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_z_active"
+          ],
+          "lut_stages": 6,
+          "combin_cell_stages": 6,
+          "path": [
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/core/fallback_control",
+              "net": "height_fallback_active",
+              "type": "LUT4",
+              "instance": "height_fallback_active_s"
+            },
+            {
+              "path": "",
+              "net": "n16970_6",
+              "type": "LUT4",
+              "instance": "n16970_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active_3",
+              "type": "LUT3",
+              "instance": "nav_z_active_s0"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active",
+              "type": "LUT3",
+              "instance": "nav_z_active_s2"
+            }
+          ]
+        },
+        "stale_q": {
+          "start": [
+            "/core/imu/guard",
+            "stale_q"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_z_active"
+          ],
+          "lut_stages": 9,
+          "combin_cell_stages": 9,
+          "path": [
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid_3",
+              "type": "LUT2",
+              "instance": "pose_valid_s0"
+            },
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid",
+              "type": "LUT4",
+              "instance": "pose_valid_s"
+            },
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            },
+            {
+              "path": "/core/fallback_control",
+              "net": "height_fallback_active",
+              "type": "LUT4",
+              "instance": "height_fallback_active_s"
+            },
+            {
+              "path": "",
+              "net": "n16970_6",
+              "type": "LUT4",
+              "instance": "n16970_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active_3",
+              "type": "LUT3",
+              "instance": "nav_z_active_s0"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_z_active",
+              "type": "LUT3",
+              "instance": "nav_z_active_s2"
+            }
+          ]
+        }
+      },
+      "delta": {
+        "pose_valid": {
+          "old": 10,
+          "new": 7
+        },
+        "origin_reset": {
+          "old": 9,
+          "new": 6
+        },
+        "stale_q": {
+          "old": 12,
+          "new": 9
+        }
+      }
+    },
+    "nav_vertical_ready": {
+      "baseline_depths": {
+        "pose_valid": {
+          "start": [
+            "/core/imu/estimator",
+            "pose_valid"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_vertical_ready"
+          ],
+          "lut_stages": 4,
+          "combin_cell_stages": 4,
+          "path": [
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc_5",
+              "type": "LUT4",
+              "instance": "live_acc_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT2",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            }
+          ]
+        },
+        "origin_reset": {
+          "start": [
+            "",
+            "observer_reset"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_vertical_ready"
+          ],
+          "lut_stages": 3,
+          "combin_cell_stages": 3,
+          "path": [
+            {
+              "path": "/native_navigation",
+              "net": "live_acc_5",
+              "type": "LUT4",
+              "instance": "live_acc_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT2",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            }
+          ]
+        },
+        "stale_q": {
+          "start": [
+            "/core/imu/guard",
+            "stale_q"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_vertical_ready"
+          ],
+          "lut_stages": 6,
+          "combin_cell_stages": 6,
+          "path": [
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid_3",
+              "type": "LUT2",
+              "instance": "pose_valid_s0"
+            },
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid",
+              "type": "LUT4",
+              "instance": "pose_valid_s"
+            },
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc_5",
+              "type": "LUT4",
+              "instance": "live_acc_s2"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT2",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            }
+          ]
+        }
+      },
+      "proposal_depths": {
+        "pose_valid": {
+          "start": [
+            "/core/imu/estimator",
+            "pose_valid"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_vertical_ready"
+          ],
+          "lut_stages": 3,
+          "combin_cell_stages": 3,
+          "path": [
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            }
+          ]
+        },
+        "origin_reset": {
+          "start": [
+            "",
+            "observer_reset"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_vertical_ready"
+          ],
+          "lut_stages": 2,
+          "combin_cell_stages": 2,
+          "path": [
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            }
+          ]
+        },
+        "stale_q": {
+          "start": [
+            "/core/imu/guard",
+            "stale_q"
+          ],
+          "end": [
+            "/native_navigation",
+            "nav_vertical_ready"
+          ],
+          "lut_stages": 5,
+          "combin_cell_stages": 5,
+          "path": [
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid_3",
+              "type": "LUT2",
+              "instance": "pose_valid_s0"
+            },
+            {
+              "path": "/core/imu/estimator",
+              "net": "pose_valid",
+              "type": "LUT4",
+              "instance": "pose_valid_s"
+            },
+            {
+              "path": "",
+              "net": "observer_reset",
+              "type": "LUT2",
+              "instance": "observer_reset_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "live_acc",
+              "type": "LUT4",
+              "instance": "live_acc_s1"
+            },
+            {
+              "path": "/native_navigation",
+              "net": "nav_vertical_ready",
+              "type": "LUT4",
+              "instance": "nav_vertical_ready_s"
+            }
+          ]
+        }
+      },
+      "delta": {
+        "pose_valid": {
+          "old": 4,
+          "new": 3
+        },
+        "origin_reset": {
+          "old": 3,
+          "new": 2
+        },
+        "stale_q": {
+          "old": 6,
+          "new": 5
+        }
+      }
+    }
+  },
+  "raw_revoke_reason_limit": "No matching raw_revoke_reason named boundary in baseline NAV; no reconstructed comparison claimed.",
+  "scope": "Read-only syntactic DAG/LUT-depth with FF-Q cut; not Boolean equivalence or timing measurement",
+  "functional_tests_run": false,
+  "simulation_run": false,
+  "synthesis_run": false,
+  "pnr_run": false,
+  "inventory_tool_sha256": "00735fc28da0246bb88f617b4bce69943cadd050aa125ed85099035756048e36",
+  "raw_Q_inventory_sha256": "e9576036e0bdca1f23bb2629d88067fefe264bb3e51e64875ab4186e9c3fe283"
+}

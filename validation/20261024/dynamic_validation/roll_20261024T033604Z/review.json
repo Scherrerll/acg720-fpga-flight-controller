@@ -1,0 +1,140 @@
+{
+  "protocol_counts": {
+    "a579": 475,
+    "a57a": 475,
+    "a580": 475,
+    "a581": 475,
+    "a582": 475,
+    "a583": 475
+  },
+  "scope": "Read-only received telemetry observation; hand pivot/translation and lever arm are not independently measured. A583 is not exposure synchronized.",
+  "factory_scale_changed": false,
+  "firmware_changed": false,
+  "rotation_compensation_qualified": false,
+  "flight_ready": false,
+  "all_unarmed_and_reported_pwm1000": true,
+  "build_ids": [
+    45232
+  ],
+  "pose_cdeg": {
+    "roll_cdeg": {
+      "min": -373,
+      "median": 47,
+      "max": 456
+    },
+    "pitch_cdeg": {
+      "min": 22,
+      "median": 192,
+      "max": 328
+    },
+    "yaw_relative_cdeg": {
+      "min": -1903,
+      "median": -1558,
+      "max": -499
+    }
+  },
+  "baseline_pose_cdeg": {
+    "roll_cdeg": 46,
+    "pitch_cdeg": 193
+  },
+  "end_pose_cdeg": {
+    "roll_cdeg": 47,
+    "pitch_cdeg": 192
+  },
+  "core_counter_deltas": {
+    "rejected_count": 1,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "module_counter_deltas": {
+    "checksum_errors": 0,
+    "length_errors": 0,
+    "uart_errors": 0,
+    "packet_timeouts": 0,
+    "module_missing": 0,
+    "module_duplicates": 0,
+    "module_restarts": 0,
+    "integration_breaks": 0
+  },
+  "module_range_mm": {
+    "min": 205,
+    "median": 219,
+    "max": 251
+  },
+  "module_flow_quality": {
+    "min": 61,
+    "median": 86,
+    "max": 101
+  },
+  "module_max_source_age_ms": 10,
+  "module_packets": 9473,
+  "cumulative_xy_mm": {
+    "x_mm_x100000": {
+      "span_mm": 344.292,
+      "end_minus_start_mm": -282.832
+    },
+    "y_mm_x100000": {
+      "span_mm": 398.426,
+      "end_minus_start_mm": 323.49
+    }
+  },
+  "receipt_pairs": {
+    "count": 475,
+    "valid": 475,
+    "gyro_deg_s": {
+      "gx_deg_s": {
+        "min": -8.929666658727134,
+        "median": -0.012534536966463415,
+        "max": 11.233044135861281
+      },
+      "gy_deg_s": {
+        "min": -16.22481183307927,
+        "median": -0.00040193883384146345,
+        "max": 8.934921636814025
+      },
+      "gz_deg_s": {
+        "min": -17.409444669397868,
+        "median": -0.003319717035060976,
+        "max": 12.354379049161587
+      }
+    },
+    "factory_body_velocity_mm_s": {
+      "body_forward_mm_s": {
+        "min": -508.8,
+        "median": 0.0,
+        "max": 599.2
+      },
+      "body_right_mm_s": {
+        "min": -884.0,
+        "median": 0.0,
+        "max": 1128.4
+      }
+    }
+  },
+  "fused_velocity_mm_s": {
+    "fused_vx_q16": {
+      "min": -33.577850341796875,
+      "median": 0.9147491455078125,
+      "max": 76.69552612304688
+    },
+    "fused_vy_q16": {
+      "min": -55.355072021484375,
+      "median": 0.331512451171875,
+      "max": 99.9822998046875
+    }
+  },
+  "height_ready_fraction": 1.0,
+  "utc": "2026-10-24T03:37:39.918769+00:00",
+  "human": "Operator confirmed both left and right roll motions completed and frame set down; props removed, disarmed, low throttle and SWA/SWC low throughout requested procedure.",
+  "source_session": "20261024T025940Z_d11e552e",
+  "source_offset": [
+    81693617,
+    85268042
+  ],
+  "skipped_partial_lines": 0,
+  "selected_telemetry_sha256": "ae5e22420a3e4639f2a9d298af0e9105ea42e5b136b9721cc48087e00b732100",
+  "start_sha256": "dcf3e982516b7762bba252bfcff5fc0a26b50b4e56113fac7a50ac1f6f7fd4fb",
+  "end_sha256": "494682ada242a1126b457d20c19d5e4e4a2577bb96ea4c4edecbe7120b150919",
+  "final_live_stopped": true
+}

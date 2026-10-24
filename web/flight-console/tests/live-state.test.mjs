@@ -7,7 +7,9 @@ test('normal 1Hz relay with network jitter is not a source-expiry alarm',()=>{
  const v=shared();
  assert.equal(liveState(v,{elapsedMs:800,requestRttMs:900}).kind,'delayed');
  assert.equal(liveState(v,{elapsedMs:800,requestRttMs:900}).fresh,true);
- assert.equal(liveState(v,{elapsedMs:3000,requestRttMs:900}).kind,'expired');
+ assert.equal(liveState(v,{elapsedMs:3000,requestRttMs:900}).kind,'delayed');
+ assert.equal(liveState(v,{elapsedMs:3000,requestRttMs:900}).fresh,false);
+ assert.equal(liveState(v,{elapsedMs:4000,requestRttMs:900}).kind,'expired');
  assert.equal(liveState(v,{elapsedMs:11000,requestRttMs:900}).kind,'disconnected');
 });
 test('source invalid, unsynchronised and unknown ages cannot become live',()=>{
@@ -15,6 +17,16 @@ test('source invalid, unsynchronised and unknown ages cannot become live',()=>{
  assert.equal(liveState(shared({timing_valid:false,fresh:false,age_ms:null})).kind,'timing_unknown');
  for(const age_ms of [null,-1,NaN,Infinity])assert.equal(liveState(shared({age_ms})).fresh,false);
  assert.equal(liveState({mode:'local',connected:true,source_valid:true,fresh:false,source_ttl_ms:500,age_ms:510}).fresh,false);
+});
+test('slow responses keep qualified values visible without calling them fresh',()=>{
+ const timing={requestRttMs:1500,elapsedMs:300};
+ const delayed=liveState(shared({age_ms:3600}),timing);
+ assert.equal(delayed.kind,'delayed');assert.equal(delayed.recent,true);assert.equal(delayed.fresh,false);
+ for(const override of [{fresh:false},{source_valid:false},{timing_valid:false},{connected:false},{age_ms:null}]){
+  assert.equal(liveState(shared({age_ms:3600,...override}),timing).recent,false);
+ }
+ const expired=liveState(shared({age_ms:3600}),{requestRttMs:1500,elapsedMs:1500});
+ assert.equal(expired.kind,'expired');assert.equal(expired.recent,false);assert.equal(expired.fresh,false);
 });
 test('cloud to browser timing accounts for request RTT and ignores browser wall-clock jumps',()=>{
  const server=1800000000000;

@@ -1,0 +1,14 @@
+{
+  "publications": 140,
+  "compared": 65,
+  "max_abs_error_cdeg": [
+    0.9934390000000022,
+    0.9663340000000176
+  ],
+  "allowed_cdeg": 3,
+  "passed": true,
+  "differences": [],
+  "reference": "unchanged original OF branch, original PID_calculate and Flight_State_Task",
+  "mode_switch_cache": true,
+  "position_outer_loop_absent": true
+}

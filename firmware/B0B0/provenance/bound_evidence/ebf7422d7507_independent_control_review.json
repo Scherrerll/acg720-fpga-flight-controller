@@ -1,0 +1,54 @@
+{
+  "schema": "independent_control_review_v1",
+  "reviewed_utc": "2026-10-23T10:59:33.3530717Z",
+  "reviewer": "b0b0_final_review_sol",
+  "candidate": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_anchor_p2_r2_rep1",
+  "parent_variant": "diagnostic_reset_p2_r2_rep1",
+  "verdict": "No additional actionable finding within the focused repair scope",
+  "findings": [],
+  "scope": [
+    "Read actual two-file RTL diff against parent and surrounding publication, mixer, fallback arithmetic, and stop gates.",
+    "Checked exact latest published automatic collective capture, raw 1000..1199 entry anchors, zero lower numerator before unsigned subtraction, and live fallback mixer override for queued automatic results.",
+    "Checked final regression assertions and recorded positive/negative test evidence without rerunning builds or simulations."
+  ],
+  "observations": [
+    "RTL changes match the agreed minimal design. Normal-path mixer selection remains pending_throttle; safety predicates and explicit stop masks are unchanged.",
+    "Publication-boundary bench checks all four committed motor registers before/after 1100 entry with nonzero corrections, plus explicit expected four-motor values for a queued 1500 result after a published 1400 anchor.",
+    "The final bench rejects unknown assertion results using case inequality, requires exactly +1 us after the recovery interval, and checks the recovery target equals 1200.",
+    "Component bench covers seven stick entry anchors and six collective anchors (1000,1100,1199,1200,1500,1850), 1001 stick values per pair, monotonic target shape, endpoints, entry continuity, latch persistence, stop override, and slew."
+  ],
+  "evidence": {
+    "published_anchor_current": "Recorded PASS: 13 checks",
+    "published_anchor_parent": "Recorded expected failure: 10 of the same 13 checks",
+    "fallback_component": "Recorded PASS: 42042 curve points",
+    "binding_checks": "Recomputed every source hash in both positive proof manifests and verified final bench, parent RTL, and pre-fix log hashes against negative proof manifest",
+    "rtl_changed_files": [
+      "core/flight_core.v",
+      "core/height_loss_fallback.v"
+    ],
+    "non_rtl_fixture_differences_observed": [
+      "build_project.py",
+      "__pycache__/build_project.cpython-313.pyc"
+    ]
+  },
+  "limitations": [
+    "Focused source and test review, not proof of complete RTL correctness or full input/state coverage.",
+    "Publication-boundary bench forces internal health, controller signals, and fixed corrections. It checks actual committed motor registers but does not independently validate realistic sensor timing, PWM waveforms, arming hardware, or controller trajectories.",
+    "Component bench uses accelerated SLEW_TICKS=2; publication bench checks a 50000-clock recovery interval. Reported 42042 are curve points, not exhaustive system scenarios.",
+    "The curve oracle uses the intended piecewise mathematical contract, including internal target checks; motor publication assertions provide separate observable-output checks.",
+    "No new simulation, synthesis, routing, mapped-netlist review, initialization review, network access, or hardware access was performed by this reviewer.",
+    "Eligibility deliberately includes a first legal published 1000..1199 command while taking_off; taking_off is a software state and does not prove physical liftoff."
+  ],
+  "sha256": {
+    "fixture/core/flight_core.v": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+    "fixture/core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+    "tests/published_anchor.v": "744558b8c1e98c69c4b40baf6103570d2c197464cd003b32f6d725ec17dd1f4a",
+    "tests/fallback_component.v": "058e8a090e4adab1fd7efd59b837839baa8ce107cdd3aa34147563d74049f01f",
+    "tests/published_anchor.log": "b7c11759c7fe26476c8caf04e9ea4a54c277908d10478b712fb287da5c72f7df",
+    "tests/published_anchor.proof.json": "dd825291017b405b7ca7133b21c8cbee152e6018c4908dae193485e912eb2e62",
+    "tests/published_anchor.prefix_failure.log": "52a9eb12199d4a7804ffc94d7c2f6cf7158a44926972ae7d32abe40b23494a66",
+    "tests/published_anchor.prefix_failure.json": "b6aabc9a7413c67fda20deae45afeec15c04caa5ae79b1fa7e8f8382c9fda3ea",
+    "tests/fallback_component.log": "9a485f4dfcd1c3dbab7fe5260c832589113a1d2830e3d851820cd1a38bd385e6",
+    "tests/fallback_component.proof.json": "caa34d0fa04ed87968bed2e92d7eff6758dbb2d52f7a78fd441af8187294531a"
+  }
+}

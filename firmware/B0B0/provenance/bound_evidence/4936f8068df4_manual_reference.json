@@ -1,0 +1,18 @@
+{
+  "samples": 683,
+  "max_abs_error_cdeg": [
+    1.0267899999998917,
+    1.0110190000000046,
+    0.0053355568359378935,
+    0.005282201367187156
+  ],
+  "allowed": [
+    2,
+    2,
+    1,
+    1
+  ],
+  "passed": true,
+  "differences": [],
+  "reference": "original Flight_State_Task1ms, manual Loc20ms, original Att_2level_Ctrl angle/trim6ms prefix"
+}

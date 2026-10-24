@@ -1,0 +1,9 @@
+{
+  "name": "manual_handoff",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\core\\rtl\\ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "fixture\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "tests\\manual_handoff.v": "91ba8f4a7b77eb62e0dc94ee7c7b7561983e9321681146b4e79f1f2bf98e1df8"
+  }
+}

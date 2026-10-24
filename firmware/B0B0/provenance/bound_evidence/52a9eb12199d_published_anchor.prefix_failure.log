@@ -1,0 +1,12 @@
+FAIL fresh published1100 replaces older1400
+FAIL entry edge preserves below-idle anchor
+FAIL unpublished pending1500 cannot replace published1400
+FAIL queued automatic1500 excluded immediately on loss
+FAIL ompletion uses fallback anchor with nonzero attitude corrections
+FAIL no fallback prior_value first actual publication
+FAIL completion after height loss cannot establish prior valid anchor
+FAIL first legal sub-idle publication permits fallback
+FAIL legal1000 publication is exact first anchor
+FAIL below-idle recovery retains1us per millisecond slew
+FATAL: C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\variants\published_anchor_p2_r2_rep1\tests\published_anchor.v:43: Published anchor regression: 10 of 13 checks failed
+       Time: 1208240000  Scope: tb

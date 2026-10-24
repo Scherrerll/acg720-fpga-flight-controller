@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-24T03:50:00.600603+00:00",
+  "condition_name": "printed_matte_paper_or_newspaper",
+  "requested_change": "Ground texture only; leave aircraft position, camera height, lighting, firmware and sensor parameters unchanged.",
+  "human_completion": "Operator confirmed printed paper and20seconds static",
+  "references": [
+    {
+      "url": "https://micoair.cn/zh/docs/sensors/sensors/mtf-01p-sensors",
+      "checked_local_date": "2026-10-24",
+      "manufacturer_conditions": {
+        "optical_flow_min_distance_cm": 8,
+        "illumination_lux_greater_than": 60,
+        "optical_flow_fov_deg": 42,
+        "output_hz": 100,
+        "uart_baud": 115200,
+        "supply_v": 5
+      }
+    },
+    {
+      "url": "https://micoair.cn/zh/docs/sensors/micolink",
+      "unit_formula": "speed_mm_s = signed_factory_flow_cm_s_at_1m * distance_mm / 100"
+    }
+  ],
+  "scope": "Controlled surface comparison; no lux/voltage measurement or sensor parameter read-back is implied.",
+  "end_marker_sha256": "559d7f27ff20da1b6102d31ad4f83568ff1fa9d894228b578374e1a7c6ddfa88"
+}

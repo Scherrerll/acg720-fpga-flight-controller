@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-24T04:48:16.264900+00:00",
+  "passed": true,
+  "hardware_accessed": false,
+  "archive_hash_verification": {
+    "passed": true,
+    "files": 979,
+    "source_inputs": 51,
+    "project_references": 49,
+    "inherited_text_evidence_archived": 643,
+    "inherited_evidence_indexed": 677,
+    "full_qualification_replayed": false
+  },
+  "legacy_export_verification": {
+    "passed": true,
+    "b0ae_files": 261,
+    "historical_hashes": 506,
+    "ground_hashes": 27,
+    "hardware_assets": 56,
+    "gprj_count": 18,
+    "project_references": 503
+  },
+  "tests": {
+    "website_node": 23,
+    "website_python_bridge_and_launcher": 21,
+    "b0b0_ground": 24
+  },
+  "portability_repairs": "Host import and historical fixture/output paths only; real seed/wire copied; assertions unchanged; original missing external fixture failures corrected",
+  "hardware_acceptance": "Reused exact-bound B0B0 evidence. No new hardware operation during website/upload task.",
+  "secret_policy": "Existing private repository. Credentials and full raw streams excluded. Selected exact B0B0 and B0AC rollback explicitly included.",
+  "flight_ready": false
+}

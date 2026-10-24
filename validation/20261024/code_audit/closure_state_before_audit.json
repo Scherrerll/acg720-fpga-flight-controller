@@ -1,0 +1,97 @@
+{
+  "updated_utc": "2026-10-24T03:11:26.592783+00:00",
+  "objective": "B0B0 strict 50MHz route/timing closure with preserved functionality",
+  "hardware_accessed": false,
+  "flash_changed": false,
+  "flight_ready": false,
+  "active_trials": [],
+  "best_complete_baseline": {
+    "variant": "control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "6924f4ad250967042dd00ac769b861f9dbcfd9f11d0fcb6dbecbc454ab7adf7c",
+    "netlist_sha256": "0be62a85bf094d9102a6488b792c77c8cb9296d9a5b4aaa3e05a72ea96fd3500",
+    "routing_passed": true,
+    "unrouted_nets": 0,
+    "raw_unrouted_field": null,
+    "zero_basis": "Actual full route/bitstream completion; no route errors",
+    "timing_passed": false,
+    "fmax_mhz": 49.457,
+    "slack": {
+      "setup": {
+        "tns_ns": -3.181,
+        "violated_endpoints": 22
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+      "sha256": "0aabe4d4869fbaf75eda30f77d338e7913b314595f74a5799fc66c00ccaad308",
+      "user_code": "0x0000b0b0"
+    },
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "reason": "Latest 0be has fewer logic levels but56unrouted; preserve best819 zero-route baseline as independent physical-only fallback. No product-source changes in this session.",
+  "acceptance": [
+    "Actual complete routing with no errors",
+    "Unchanged clk50 period20ns and17pins",
+    "Actual setup/hold/recovery/removal and pulse width nonnegative",
+    "Source-bound changed-cone proofs and inherited evidence verified before release",
+    "Fresh stopped physical state and targeted bench checks before hardware/flight conclusions"
+  ],
+  "completed_this_session": [
+    {
+      "name": "fine_velocity_global_control",
+      "routing_passed": true,
+      "fmax_mhz": 49.457,
+      "setup_wns_ns": -0.22,
+      "setup_violated_endpoints": 22
+    },
+    {
+      "name": "best819_global_height_ready",
+      "routing_passed": true,
+      "fmax_mhz": 39.162,
+      "rejected": true
+    }
+  ],
+  "phase": "routing_timing_scoped_proofs_and_targeted_props_off_acceptance_complete",
+  "active_sessions": {},
+  "active_routing_trials": [],
+  "active_compiler_processes": [],
+  "owned_gw_sh_pid": null,
+  "owned_gw_sh_pids": {},
+  "hardware_programmed": true,
+  "pnr_verified": true,
+  "scoped_offline_proofs_passed": true,
+  "selected_release": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\B0B0_51_608MHz_verified",
+    "manifest_sha256": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+    "fmax_mhz": 51.608,
+    "constraint_period_ns": 19.5,
+    "hardware_clock_mhz": 50,
+    "unrouted_nets": 0,
+    "setup_violated_endpoints": 0,
+    "hold_violated_endpoints": 0,
+    "bitstream_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+    "offline_candidate_verified": true,
+    "hardware_sram_installed": true,
+    "stopped_startup_passed": true,
+    "healthy_height_output_passed": true,
+    "flash_written": false,
+    "flight_ready": false,
+    "targeted_props_off_acceptance_passed": true,
+    "hardware_acceptance_sha256": "70734ef829a1f6055f828c6e9241b816f4833728c7af3fbbe5458fcbb8ca5a03"
+  },
+  "current_verifier": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verify_package.py",
+  "best_unrouted_nets": 0,
+  "best_variant": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195",
+  "latest_progress": "Completed: zero-route51.608MHz at19.5ns/setuphold0; three scoped incremental proofs; frozen package51sources/677evidence. SRAM B0B0 startup/healthyheight/fallback/manual-throttle/recovery-latch/SWAstop passed. Final stopped; Flash unchangedB0AC; powercycle returnsoldcode; no flight release.",
+  "remaining": [
+    "Investigate historical loaded-flight power loss and complete loaded/flight acceptance before flight release"
+  ],
+  "hardware_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\hardware_acceptance.json",
+  "hardware_acceptance_sha256": "70734ef829a1f6055f828c6e9241b816f4833728c7af3fbbe5458fcbb8ca5a03"
+}

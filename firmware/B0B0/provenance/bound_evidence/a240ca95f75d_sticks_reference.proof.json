@@ -1,0 +1,11 @@
+{
+  "name": "sticks_reference",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\position\\ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "fixture\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "fixture\\position\\ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "fixture\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "tests\\sticks_reference.v": "6f2a618b9d2e30a8cb9fe7ed9f8c465f85ce32774a7bd19ffa4769b9f9c7d080"
+  }
+}

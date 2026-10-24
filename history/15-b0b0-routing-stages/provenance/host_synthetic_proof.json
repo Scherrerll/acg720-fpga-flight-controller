@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "synthetic": true,
+  "physical_sensor_verified": false,
+  "actual_wireless_verified": false,
+  "raw_replay": {
+    "passed": true,
+    "raw_bytes": 1176,
+    "decoded_frames": 9,
+    "primary_frames": 3,
+    "checksum_errors": 0,
+    "source": {
+      "port": "TEST",
+      "baud": 115200,
+      "source": "USB",
+      "usb_device": null
+    },
+    "reported_build_id": 45223,
+    "hash_files": 5,
+    "snapshot_utc": "2026-10-23T04:45:16.490582+00:00"
+  }
+}

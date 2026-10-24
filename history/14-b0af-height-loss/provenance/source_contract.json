@@ -1,0 +1,16 @@
+{
+  "parent": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2",
+  "allowed_changes": {
+    "acg720_ano_port.gprj": "f6f7553aab05450fa8ed6e09167527bdc6db2004a3e1aea4c20c3e3cb707c6fb",
+    "acg720_ano_port.v": "a5fcc531b7734a230ef4dfe5e83eff648a157ac9c16c0de93d0485e4f4c040bf",
+    "build.tcl": "24debbf2d27d18fc23ad4d27585bb2f598330283b6e51c81e53f0b658072ab71",
+    "build_project.py": "1e5966f3d9559e8c33f29e518f4e9e38f86aec33018b1c8d38f642372ccbf94d",
+    "core/flight_core.v": "19ff29fcc91c66d86ca0155876374eb2907780822f0e96b2c06dd6556f35bd51"
+  },
+  "new_sources": {
+    "core/height_loss_fallback.v": "dcdbdab7e3ea0891479d6b6cf17c03fc7c35f9d6eea0d8c645428a58521f035b"
+  },
+  "parent_qualification_sha256": "6ddcc10b2b14eccc53b182ec01c745b478f091c7e94bb5d2d0e2693d231e6efd",
+  "reference_core_sha256": "26c8ba79f3625de04b0713204a5c834b9019d347abc08ff16d454df386cb9c5a",
+  "purpose": "Only native-height-loss path changes. Numeric ANO controllers, IMU, units, pins, PWM, RC decoder and flight-state module remain inherited byte-for-byte."
+}

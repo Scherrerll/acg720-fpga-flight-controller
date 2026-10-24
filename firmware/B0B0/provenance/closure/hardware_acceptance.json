@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "scope": "Targeted props-off B0B0 startup/healthyheight/fallback/manualthrottle/recovery-latch/SWA-stop acceptance",
+  "bitstream_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+  "offline_manifest_sha256": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+  "startup_passed": true,
+  "healthy_height_output_passed": true,
+  "height_loss_fallback_passed": true,
+  "manual_throttle_response_passed": true,
+  "recovery_remains_latched_passed": true,
+  "SWA_stop_passed": true,
+  "fpga_uptime_continuous_during_loss_test": true,
+  "final_stopped": true,
+  "flash_written": false,
+  "flight_ready": false,
+  "evidence_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\sram_20261024T025954_416010Z\\report.json": "d898818b1ee710d68b07511286710ffa669e2d8472c76566aed9d25676debb87",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\healthy_height_20261024T030250Z\\acceptance.json": "826ad54ecab5011e29318c62dc44accd991a4b3c3de748f1e801ad53c5b438db",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\height_loss_20261024T030546Z\\acceptance.json": "712cdf157b0e9bb0f6671cb836d8b9f387f5534640ce71c1b3b40965798fcff1",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\height_loss_20261024T030546Z\\post_recovery_stopped.json": "01fa31f2b74f0f597b39d8b7018855adb72c3ba90d6685649c519e8624220bd9"
+  },
+  "notes": [
+    "Insertion UART errors685; stable after reconnection; checksum/length errors0",
+    "Prior loaded-flight power-loss cause not fully excluded; no loaded-flight release",
+    "Only SRAM changed; power cycle returns to priorB0AC Flash"
+  ]
+}

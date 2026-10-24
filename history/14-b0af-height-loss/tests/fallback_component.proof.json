@@ -1,0 +1,8 @@
+{
+  "name": "fallback_component",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\core\\height_loss_fallback.v": "dcdbdab7e3ea0891479d6b6cf17c03fc7c35f9d6eea0d8c645428a58521f035b",
+    "tests\\fallback_component.v": "744c4ca2fad7627cc4a8e18f7cca776e387b9bf2a986038498e92d9bf0166da8"
+  }
+}

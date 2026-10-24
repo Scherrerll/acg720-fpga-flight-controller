@@ -1,0 +1,140 @@
+{
+  "protocol_counts": {
+    "a579": 1375,
+    "a57a": 1375,
+    "a580": 1375,
+    "a581": 1375,
+    "a582": 1375,
+    "a583": 1375
+  },
+  "scope": "Read-only received telemetry observation; hand pivot/translation and lever arm are not independently measured. A583 is not exposure synchronized.",
+  "factory_scale_changed": false,
+  "firmware_changed": false,
+  "rotation_compensation_qualified": false,
+  "flight_ready": false,
+  "all_unarmed_and_reported_pwm1000": true,
+  "build_ids": [
+    45232
+  ],
+  "pose_cdeg": {
+    "roll_cdeg": {
+      "min": 40,
+      "median": 44,
+      "max": 47
+    },
+    "pitch_cdeg": {
+      "min": 188,
+      "median": 193,
+      "max": 198
+    },
+    "yaw_relative_cdeg": {
+      "min": -2180,
+      "median": -2056,
+      "max": -1920
+    }
+  },
+  "baseline_pose_cdeg": {
+    "roll_cdeg": 42,
+    "pitch_cdeg": 193
+  },
+  "end_pose_cdeg": {
+    "roll_cdeg": 44,
+    "pitch_cdeg": 193
+  },
+  "core_counter_deltas": {
+    "rejected_count": 1,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "module_counter_deltas": {
+    "checksum_errors": 0,
+    "length_errors": 0,
+    "uart_errors": 0,
+    "packet_timeouts": 0,
+    "module_missing": 0,
+    "module_duplicates": 0,
+    "module_restarts": 0,
+    "integration_breaks": 0
+  },
+  "module_range_mm": {
+    "min": 205,
+    "median": 215,
+    "max": 227
+  },
+  "module_flow_quality": {
+    "min": 76,
+    "median": 87,
+    "max": 100
+  },
+  "module_max_source_age_ms": 10,
+  "module_packets": 27464,
+  "cumulative_xy_mm": {
+    "x_mm_x100000": {
+      "span_mm": 1878.308,
+      "end_minus_start_mm": -1824.794
+    },
+    "y_mm_x100000": {
+      "span_mm": 2003.3739999999998,
+      "end_minus_start_mm": 1956.1100000000001
+    }
+  },
+  "receipt_pairs": {
+    "count": 1375,
+    "valid": 1375,
+    "gyro_deg_s": {
+      "gx_deg_s": {
+        "min": -0.16579232564786586,
+        "median": 0.0003870522103658537,
+        "max": 0.19663740948932928
+      },
+      "gy_deg_s": {
+        "min": -0.29453184546493905,
+        "median": -5.954649390243903e-05,
+        "max": 0.2622427591463415
+      },
+      "gz_deg_s": {
+        "min": -0.15738138338414637,
+        "median": -0.007041372903963415,
+        "max": 0.1892983041158537
+      }
+    },
+    "factory_body_velocity_mm_s": {
+      "body_forward_mm_s": {
+        "min": -523.2,
+        "median": 0.0,
+        "max": 621.6
+      },
+      "body_right_mm_s": {
+        "min": -1181.6,
+        "median": 0.0,
+        "max": 1405.8
+      }
+    }
+  },
+  "fused_velocity_mm_s": {
+    "fused_vx_q16": {
+      "min": -35.31317138671875,
+      "median": 6.349365234375,
+      "max": 63.643280029296875
+    },
+    "fused_vy_q16": {
+      "min": -55.9200439453125,
+      "median": 1.224639892578125,
+      "max": 138.1177978515625
+    }
+  },
+  "height_ready_fraction": 1.0,
+  "utc": "2026-10-24T03:45:27.006657+00:00",
+  "human": "Operator confirms aircraft remained stationary for 20 seconds, camera view unobstructed, fixed textured ground, disarmed.",
+  "source_session": "20261024T025940Z_d11e552e",
+  "source_offset": [
+    92495290,
+    102849322
+  ],
+  "skipped_partial_lines": 0,
+  "selected_telemetry_sha256": "860508f3ebc6214f929c896816e6223dbf92a0962d12f963c42f3947dea47bbc",
+  "start_sha256": "14f6f31a9a71cf56f2f95a65db1f5ef61893e11601c723ea4e238b812746f4a5",
+  "end_sha256": "49650110782609c586f1e4717034fb06758237917b07c6757e31580560aae768",
+  "final_live_stopped": true
+}

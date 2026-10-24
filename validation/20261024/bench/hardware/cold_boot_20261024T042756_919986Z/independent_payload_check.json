@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-24T04:30:05.047183+00:00",
+  "passed": true,
+  "new_boot_unique_raw_payloads_checked": 75,
+  "payload_mismatches": [],
+  "first_calibrated_snapshot_uptime_ms": 2999,
+  "observations_sha256": "677c433579dbe063aa7a0ff129d5ef1c493380206403ce83197ff90a1c348498",
+  "capture_script_sha256": "11fa1df11bd567cc0e5630f59fb3e5dd7a5452a5b06eb13a9bdbdb3d4e4e6b98",
+  "capture_result_sha256": "ed75eaacdb34aead3dde4fdb4d85588fcc14d17491c96e6145515e2645d909d7",
+  "physical_power_cycle_human_confirmed": false,
+  "flight_ready": false
+}

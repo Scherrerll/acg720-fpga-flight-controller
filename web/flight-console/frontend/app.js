@@ -95,17 +95,17 @@ import {createLivePoller} from './polling.mjs';
 
   function renderLive() {
     const data = state.live;
-    const status=liveStatus(),fresh=status.fresh;
+    const status=liveStatus(),fresh=status.fresh,recent=status.recent;
     $('connection').className = `connection${fresh ? ' fresh' : data ? ' stale' : ''}`;
     $('connection').lastElementChild.textContent = {live:'实时接收',delayed:'同步有延迟',source_invalid:'源遥测未更新',timing_unknown:'同步时间未确认',expired:'数据过期',disconnected:'连接中断',waiting:'等待连接'}[status.kind];
-    $('instrument-content').classList.toggle('is-stale', !fresh);
-    $('motors').classList.toggle('is-stale', !fresh);
-    $('channels').classList.toggle('is-stale', !fresh);
-    $('mode-value').classList.toggle('is-stale', !fresh);
-    $('armed-value').classList.toggle('is-stale', !fresh);
+    $('instrument-content').classList.toggle('is-stale', !recent);
+    $('motors').classList.toggle('is-stale', !recent);
+    $('channels').classList.toggle('is-stale', !recent);
+    $('mode-value').classList.toggle('is-stale', !recent);
+    $('armed-value').classList.toggle('is-stale', !recent);
     $('stale-banner').className = `status-banner ${fresh ? 'fresh' : 'stale'}`;
     $('stale-banner').textContent = status.kind==='delayed' ? '源遥测有效，公网同步略有延迟 · 显示数值的估计源龄见右上角。' : fresh ? '只读遥测接收中 · 下方为数据与控制状态，不代表飞行验收结果。' : status.kind==='source_invalid' ? '接收端尚无有效源遥测 · 灰色读数为最后接收值。' : status.kind==='timing_unknown' ? '正在确认转发时间 · 灰色读数为最后接收值。' : data ? '遥测未更新 · 灰色读数为最后接收值，请勿视为当前状态。' : '等待遥测连接 · 尚无有效接收数据。';
-    text('value-state', fresh ? '当前接收值' : data ? '最后接收值' : '无数据');
+    text('value-state', fresh ? '当前接收值' : recent ? '延迟接收值' : data ? '最后接收值' : '无数据');
     text('firmware', `固件 ${data?.firmware ?? '—'}`);
     text('sequence', `SEQ ${data?.sequence ?? '—'}`);
     const age = status.age_ms;

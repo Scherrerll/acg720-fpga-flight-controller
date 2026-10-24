@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-24T03:48:32.601441+00:00",
+  "scope": "Final received 20-second window of the operator-confirmed stationary observation; receipt snapshots are 5 Hz, module cumulative integrals include accepted 100 Hz intervals.",
+  "source_sha256": "860508f3ebc6214f929c896816e6223dbf92a0962d12f963c42f3947dea47bbc",
+  "end_marker_sha256": "49650110782609c586f1e4717034fb06758237917b07c6757e31580560aae768",
+  "script_sha256": "9ddff02316afb73649b1d92e045c3d8e9ce4180ac8dc6fd2e573255c316901f7",
+  "full_window_payload_checks": 1375,
+  "payload_checks_passed": true,
+  "payload_mismatches": [],
+  "duration_s": 19.79,
+  "frames": 100,
+  "module_packets": 1979,
+  "all_stopped": true,
+  "all_imu_healthy": true,
+  "all_height_velocity_ready": true,
+  "module_counter_deltas": {
+    "checksum_errors": 0,
+    "length_errors": 0,
+    "uart_errors": 0,
+    "packet_timeouts": 0,
+    "module_missing": 0,
+    "module_duplicates": 0,
+    "module_restarts": 0,
+    "integration_breaks": 0
+  },
+  "source_age_max_ms": 10,
+  "range_mm": [
+    207,
+    222
+  ],
+  "quality": [
+    77,
+    97
+  ],
+  "pose_ranges_deg": {
+    "roll_cdeg": [
+      0.42,
+      0.45
+    ],
+    "pitch_cdeg": [
+      1.91,
+      1.96
+    ]
+  },
+  "module_delta_xy_mm": [
+    -63.218,
+    65.004
+  ],
+  "module_mean_velocity_xy_mm_s": [
+    -3.1944416371905007,
+    3.2846892369883784
+  ],
+  "module_snapshot_nonzero_fraction": 0.57,
+  "fused_velocity_mm_s": {
+    "fused_vx_q16": {
+      "median": 1.48614501953125,
+      "rms": 12.358141767198124,
+      "p95_abs": 29.750381469726562,
+      "max_abs": 37.083770751953125
+    },
+    "fused_vy_q16": {
+      "median": 0.1863861083984375,
+      "rms": 14.530628179561829,
+      "p95_abs": 33.61279296875,
+      "max_abs": 52.50691223144531
+    }
+  },
+  "gyro_rms_deg_s": {
+    "gx_deg_s": 0.06881686166507976,
+    "gy_deg_s": 0.09751906037388351,
+    "gz_deg_s": 0.04800916921271203
+  },
+  "root_cause": "undetermined; nonzero observations are present in committed raw module payloads, with matching numeric conversion",
+  "limits": [
+    "Cumulative position drift alone is not proof of a code fault; current ANO XY control uses fused velocity rather than this diagnostic position integral.",
+    "No stationary-error acceptance envelope was specified in advance; this is an observation-quality comparison, not an invented binary threshold.",
+    "Scene illumination, optics, and sensor power were not independently measured."
+  ],
+  "firmware_changed": false,
+  "factory_scale_changed": false,
+  "rotation_compensation_qualified": false,
+  "flight_ready": false
+}

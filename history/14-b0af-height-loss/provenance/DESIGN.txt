@@ -1,0 +1,18 @@
+B0AF: native-height-loss fallback (development only)
+Normal measurement/control: retain B0AE ANO XY/Z equations and pilot semantics.
+Eligibility: only after an armed takeoff state has actually delivered a valid
+vertical-loop collective. Missing height while starting/at idle still stops.
+Fallback: latch until disarm; disable XY/Z command consumption; keep independent
+BMI088 attitude/yaw/rate loops and independent RC stick processing alive.
+Throttle: capture last committed valid collective and current stick as an anchor.
+Manual curve passes through that anchor; lower/upper endpoints retain 1200/1850us.
+No switch re-selection, midpoint qualification or throttle matching gate.
+First failure output equals prior collective. Subsequent pilot requests use bounded
+output slew; explicit SWA/RC/IMU/tilt/controller-fault stop always bypasses slew.
+Reacquired height does not automatically re-enter automatic control while armed.
+Re-arm with valid native height restores the original nominal control flow.
+New fallback state/cause must be present in telemetry, replay and operator display.
+No airborne hold/landing capability is claimed without a measured height source.
+No download/Flash/flight is authorized by offline tests or this design file.
+Remaining: implement component, integrated safety and nominal equivalence tests,
+new receiver identity, source-bound qualification, 50MHz PNR and props-off acceptance.

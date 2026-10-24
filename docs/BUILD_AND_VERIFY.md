@@ -61,3 +61,10 @@ python tools/build_firmware.py --gw-sh "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/bin/gw
 GPRJ 是源码入口，严格选用参数以 TCL 为准。不能只打开 GUI 使用默认选项，就声称复现选用构建。
 
 旧阶段的构建说明见各自 README。部分历史脚本含原机器路径/回退位流依赖，仅作为追溯资料，仓库没有完整拷贝这些依赖。上传整理没有重跑 Gowin 全量布线，也没有更改原工程。
+
+
+## 10-23～24 追加归档
+
+`python tools/verify_recent_export.py` 验证 979 项有界导出、JSONL gzip 解压后哈希、51 个 B0B0 源输入、精确网表/位流和 GPRJ 引用；不访问硬件，也不依赖原机器路径。完整原始资格链没有重跑。当前 B0B0 接收端测试从 `ground/B0B0` 单独执行，避免与历史接收器同名模块混淆。
+
+当前两份选中位流是 .gitignore 的明确例外；没有放宽其他位流、凭证、完整原始日志和大型 impl 数据库的忽略规则。

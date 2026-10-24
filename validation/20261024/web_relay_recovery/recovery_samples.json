@@ -1,0 +1,127 @@
+{
+  "cause": "8766 HTTP-only publisher not running; 8765 SiK receiving healthy B0B0",
+  "restored": true,
+  "pid": 26716,
+  "upstream": "http://127.0.0.1:8765",
+  "public_site": "https://gmflylog.com",
+  "sharing_enabled": true,
+  "samples": [
+    {
+      "utc": "2026-10-24T04:37:37.594768+00:00",
+      "bridge": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": null,
+        "firmware": "B0B0",
+        "sequence": 2529.0,
+        "age_ms": 410.39890000193844,
+        "received_at": "2026-10-24T04:37:37.362Z"
+      },
+      "public": {
+        "connected": false,
+        "fresh": false,
+        "source_valid": false,
+        "timing_valid": true,
+        "firmware": "B0AC",
+        "sequence": 32121,
+        "age_ms": 47336255.947450005,
+        "received_at": "2026-10-23T17:35:40.658Z"
+      }
+    },
+    {
+      "utc": "2026-10-24T04:37:41.427491+00:00",
+      "bridge": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": null,
+        "firmware": "B0B0",
+        "sequence": 2550.0,
+        "age_ms": 115.66499999237712,
+        "received_at": "2026-10-24T04:37:41.314Z"
+      },
+      "public": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": true,
+        "firmware": "B0B0",
+        "sequence": 2548,
+        "age_ms": 1937.520250003098,
+        "received_at": "2026-10-24T04:38:24.404Z"
+      }
+    },
+    {
+      "utc": "2026-10-24T04:37:45.454362+00:00",
+      "bridge": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": null,
+        "firmware": "B0B0",
+        "sequence": 2569.0,
+        "age_ms": 330.41120000355875,
+        "received_at": "2026-10-24T04:37:45.249Z"
+      },
+      "public": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": true,
+        "firmware": "B0B0",
+        "sequence": 2572,
+        "age_ms": 4618.065850000328,
+        "received_at": "2026-10-24T04:38:32.188Z"
+      }
+    },
+    {
+      "utc": "2026-10-24T04:37:52.281875+00:00",
+      "bridge": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": null,
+        "firmware": "B0B0",
+        "sequence": 2603.0,
+        "age_ms": 311.0477999897441,
+        "received_at": "2026-10-24T04:37:52.046Z"
+      },
+      "public": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": true,
+        "firmware": "B0B0",
+        "sequence": 2602,
+        "age_ms": 2194.85865000583,
+        "received_at": "2026-10-24T04:38:35.537Z"
+      }
+    },
+    {
+      "utc": "2026-10-24T04:37:55.760755+00:00",
+      "bridge": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": null,
+        "firmware": "B0B0",
+        "sequence": 2621.0,
+        "age_ms": 272.3834000059636,
+        "received_at": "2026-10-24T04:37:55.710Z"
+      },
+      "public": {
+        "connected": true,
+        "fresh": true,
+        "source_valid": true,
+        "timing_valid": true,
+        "firmware": "B0B0",
+        "sequence": 2615,
+        "age_ms": 2933.094450007181,
+        "received_at": "2026-10-24T04:38:37.433Z"
+      }
+    }
+  ],
+  "serial_opened": false,
+  "firmware_changed": false
+}

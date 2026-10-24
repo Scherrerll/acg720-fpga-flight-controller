@@ -1,0 +1,3 @@
+
+PASS tilt producer checks=1295
+tb.v:1306: $finish called at 2589000 (1ps)

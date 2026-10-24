@@ -1,0 +1,506 @@
+{
+  "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p2_r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn_rsc.xml",
+  "source_sha256": "39f04fa3138dd01193babc74f7499ea79e20a94fe423d63c86bb205831e42770",
+  "stage": "Synthesis before placement and high-fanout replication",
+  "inclusive_counts_must_not_be_added_across_nested_rows": true,
+  "receiver_and_flight_state_lut": 328,
+  "receiver_and_flight_state_fraction_of_total_lut": 0.00911440242309723,
+  "note": "This is not all pilot-input processing. Filters, normalization, and manual attitude control are separate rows. Routing feasibility cannot be inferred from LUT counts alone.",
+  "modules": [
+    {
+      "path": "acg720_ano_port",
+      "lut_own": 143,
+      "lut_inclusive": 35987,
+      "alu_own": 146,
+      "alu_inclusive": 9261,
+      "register_own": 2021,
+      "register_inclusive": 27834
+    },
+    {
+      "path": "acg720_ano_port/acc_time",
+      "lut_own": 138,
+      "lut_inclusive": 138,
+      "alu_own": 7,
+      "alu_inclusive": 7,
+      "register_own": 310,
+      "register_inclusive": 310
+    },
+    {
+      "path": "acg720_ano_port/command_handoff",
+      "lut_own": 0,
+      "lut_inclusive": 0,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 40,
+      "register_inclusive": 40
+    },
+    {
+      "path": "acg720_ano_port/core",
+      "lut_own": 1399,
+      "lut_inclusive": 20463,
+      "alu_own": 327,
+      "alu_inclusive": 5090,
+      "register_own": 806,
+      "register_inclusive": 13989
+    },
+    {
+      "path": "acg720_ano_port/core/imu",
+      "lut_own": 73,
+      "lut_inclusive": 11491,
+      "alu_own": 0,
+      "alu_inclusive": 2704,
+      "register_own": 25,
+      "register_inclusive": 7771
+    },
+    {
+      "path": "acg720_ano_port/core/imu/reader",
+      "lut_own": 888,
+      "lut_inclusive": 1043,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 479,
+      "register_inclusive": 669
+    },
+    {
+      "path": "acg720_ano_port/core/imu/reader/spi",
+      "lut_own": 155,
+      "lut_inclusive": 155,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 190,
+      "register_inclusive": 190
+    },
+    {
+      "path": "acg720_ano_port/core/imu/temporal",
+      "lut_own": 858,
+      "lut_inclusive": 858,
+      "alu_own": 255,
+      "alu_inclusive": 255,
+      "register_own": 985,
+      "register_inclusive": 985
+    },
+    {
+      "path": "acg720_ano_port/core/imu/guard",
+      "lut_own": 250,
+      "lut_inclusive": 250,
+      "alu_own": 62,
+      "alu_inclusive": 62,
+      "register_own": 314,
+      "register_inclusive": 314
+    },
+    {
+      "path": "acg720_ano_port/core/imu/estimator",
+      "lut_own": 8086,
+      "lut_inclusive": 9267,
+      "alu_own": 2057,
+      "alu_inclusive": 2387,
+      "register_own": 5063,
+      "register_inclusive": 5778
+    },
+    {
+      "path": "acg720_ano_port/core/imu/estimator/mul",
+      "lut_own": 179,
+      "lut_inclusive": 179,
+      "alu_own": 64,
+      "alu_inclusive": 64,
+      "register_own": 232,
+      "register_inclusive": 232
+    },
+    {
+      "path": "acg720_ano_port/core/imu/estimator/div",
+      "lut_own": 245,
+      "lut_inclusive": 245,
+      "alu_own": 64,
+      "alu_inclusive": 64,
+      "register_own": 171,
+      "register_inclusive": 171
+    },
+    {
+      "path": "acg720_ano_port/core/imu/estimator/sqrt",
+      "lut_own": 158,
+      "lut_inclusive": 158,
+      "alu_own": 94,
+      "alu_inclusive": 94,
+      "register_own": 200,
+      "register_inclusive": 200
+    },
+    {
+      "path": "acg720_ano_port/core/imu/estimator/angle",
+      "lut_own": 599,
+      "lut_inclusive": 599,
+      "alu_own": 108,
+      "alu_inclusive": 108,
+      "register_own": 112,
+      "register_inclusive": 112
+    },
+    {
+      "path": "acg720_ano_port/core/receiver",
+      "lut_own": 202,
+      "lut_inclusive": 202,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 255,
+      "register_inclusive": 255
+    },
+    {
+      "path": "acg720_ano_port/core/fallback_sticks",
+      "lut_own": 673,
+      "lut_inclusive": 906,
+      "alu_own": 123,
+      "alu_inclusive": 207,
+      "register_own": 401,
+      "register_inclusive": 552
+    },
+    {
+      "path": "acg720_ano_port/core/fallback_sticks/div",
+      "lut_own": 233,
+      "lut_inclusive": 233,
+      "alu_own": 84,
+      "alu_inclusive": 84,
+      "register_own": 151,
+      "register_inclusive": 151
+    },
+    {
+      "path": "acg720_ano_port/core/manual_angles",
+      "lut_own": 489,
+      "lut_inclusive": 697,
+      "alu_own": 415,
+      "alu_inclusive": 467,
+      "register_own": 489,
+      "register_inclusive": 626
+    },
+    {
+      "path": "acg720_ano_port/core/manual_angles/divider",
+      "lut_own": 208,
+      "lut_inclusive": 208,
+      "alu_own": 52,
+      "alu_inclusive": 52,
+      "register_own": 137,
+      "register_inclusive": 137
+    },
+    {
+      "path": "acg720_ano_port/core/yaw_controller",
+      "lut_own": 1748,
+      "lut_inclusive": 2272,
+      "alu_own": 272,
+      "alu_inclusive": 427,
+      "register_own": 927,
+      "register_inclusive": 1415
+    },
+    {
+      "path": "acg720_ano_port/core/yaw_controller/multiply",
+      "lut_own": 179,
+      "lut_inclusive": 179,
+      "alu_own": 64,
+      "alu_inclusive": 64,
+      "register_own": 232,
+      "register_inclusive": 232
+    },
+    {
+      "path": "acg720_ano_port/core/yaw_controller/divide",
+      "lut_own": 345,
+      "lut_inclusive": 345,
+      "alu_own": 91,
+      "alu_inclusive": 91,
+      "register_own": 256,
+      "register_inclusive": 256
+    },
+    {
+      "path": "acg720_ano_port/core/gate",
+      "lut_own": 203,
+      "lut_inclusive": 203,
+      "alu_own": 30,
+      "alu_inclusive": 30,
+      "register_own": 110,
+      "register_inclusive": 110
+    },
+    {
+      "path": "acg720_ano_port/core/controller",
+      "lut_own": 2080,
+      "lut_inclusive": 2614,
+      "alu_own": 354,
+      "alu_inclusive": 519,
+      "register_own": 1544,
+      "register_inclusive": 2052
+    },
+    {
+      "path": "acg720_ano_port/core/controller/multiplier",
+      "lut_own": 179,
+      "lut_inclusive": 179,
+      "alu_own": 64,
+      "alu_inclusive": 64,
+      "register_own": 232,
+      "register_inclusive": 232
+    },
+    {
+      "path": "acg720_ano_port/core/controller/divider",
+      "lut_own": 355,
+      "lut_inclusive": 355,
+      "alu_own": 101,
+      "alu_inclusive": 101,
+      "register_own": 276,
+      "register_inclusive": 276
+    },
+    {
+      "path": "acg720_ano_port/core/flight_state",
+      "lut_own": 126,
+      "lut_inclusive": 126,
+      "alu_own": 15,
+      "alu_inclusive": 15,
+      "register_own": 67,
+      "register_inclusive": 67
+    },
+    {
+      "path": "acg720_ano_port/core/fallback_control",
+      "lut_own": 340,
+      "lut_inclusive": 340,
+      "alu_own": 114,
+      "alu_inclusive": 114,
+      "register_own": 204,
+      "register_inclusive": 204
+    },
+    {
+      "path": "acg720_ano_port/core/mixer",
+      "lut_own": 125,
+      "lut_inclusive": 125,
+      "alu_own": 196,
+      "alu_inclusive": 196,
+      "register_own": 0,
+      "register_inclusive": 0
+    },
+    {
+      "path": "acg720_ano_port/core/outputs",
+      "lut_own": 88,
+      "lut_inclusive": 88,
+      "alu_own": 84,
+      "alu_inclusive": 84,
+      "register_own": 131,
+      "register_inclusive": 131
+    },
+    {
+      "path": "acg720_ano_port/laser_geometry",
+      "lut_own": 1,
+      "lut_inclusive": 1,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 0,
+      "register_inclusive": 0
+    },
+    {
+      "path": "acg720_ano_port/height_fusion",
+      "lut_own": 0,
+      "lut_inclusive": 0,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 1,
+      "register_inclusive": 1
+    },
+    {
+      "path": "acg720_ano_port/mtf",
+      "lut_own": 96,
+      "lut_inclusive": 763,
+      "alu_own": 63,
+      "alu_inclusive": 559,
+      "register_own": 925,
+      "register_inclusive": 2207
+    },
+    {
+      "path": "acg720_ano_port/mtf/uart",
+      "lut_own": 62,
+      "lut_inclusive": 62,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 41,
+      "register_inclusive": 41
+    },
+    {
+      "path": "acg720_ano_port/mtf/parser",
+      "lut_own": 324,
+      "lut_inclusive": 324,
+      "alu_own": 170,
+      "alu_inclusive": 170,
+      "register_own": 848,
+      "register_inclusive": 848
+    },
+    {
+      "path": "acg720_ano_port/mtf/metric",
+      "lut_own": 281,
+      "lut_inclusive": 281,
+      "alu_own": 326,
+      "alu_inclusive": 326,
+      "register_own": 393,
+      "register_inclusive": 393
+    },
+    {
+      "path": "acg720_ano_port/native_navigation",
+      "lut_own": 325,
+      "lut_inclusive": 11809,
+      "alu_own": 82,
+      "alu_inclusive": 3413,
+      "register_own": 1355,
+      "register_inclusive": 8842
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/multiply_service",
+      "lut_own": 335,
+      "lut_inclusive": 518,
+      "alu_own": 68,
+      "alu_inclusive": 138,
+      "register_own": 225,
+      "register_inclusive": 454
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/multiply_service/multiplication_engine.engine",
+      "lut_own": 183,
+      "lut_inclusive": 183,
+      "alu_own": 70,
+      "alu_inclusive": 70,
+      "register_own": 229,
+      "register_inclusive": 229
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/divide_service",
+      "lut_own": 244,
+      "lut_inclusive": 732,
+      "alu_own": 53,
+      "alu_inclusive": 117,
+      "register_own": 215,
+      "register_inclusive": 459
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/divide_service/division_engine.engine",
+      "lut_own": 488,
+      "lut_inclusive": 488,
+      "alu_own": 64,
+      "alu_inclusive": 64,
+      "register_own": 244,
+      "register_inclusive": 244
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/geometry",
+      "lut_own": 1264,
+      "lut_inclusive": 2027,
+      "alu_own": 157,
+      "alu_inclusive": 233,
+      "register_own": 745,
+      "register_inclusive": 978
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/geometry/d",
+      "lut_own": 337,
+      "lut_inclusive": 337,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 117,
+      "register_inclusive": 117
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/geometry/t",
+      "lut_own": 426,
+      "lut_inclusive": 426,
+      "alu_own": 76,
+      "alu_inclusive": 76,
+      "register_own": 116,
+      "register_inclusive": 116
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/velocity_fusion",
+      "lut_own": 796,
+      "lut_inclusive": 796,
+      "alu_own": 393,
+      "alu_inclusive": 393,
+      "register_own": 786,
+      "register_inclusive": 786
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/height_fusion",
+      "lut_own": 1526,
+      "lut_inclusive": 1526,
+      "alu_own": 928,
+      "alu_inclusive": 928,
+      "register_own": 1122,
+      "register_inclusive": 1122
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/position",
+      "lut_own": 659,
+      "lut_inclusive": 1073,
+      "alu_own": 16,
+      "alu_inclusive": 32,
+      "register_own": 409,
+      "register_inclusive": 525
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/position/divide",
+      "lut_own": 414,
+      "lut_inclusive": 414,
+      "alu_own": 16,
+      "alu_inclusive": 16,
+      "register_own": 116,
+      "register_inclusive": 116
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/controller_proof",
+      "lut_own": 3089,
+      "lut_inclusive": 4812,
+      "alu_own": 1098,
+      "alu_inclusive": 1490,
+      "register_own": 2197,
+      "register_inclusive": 3163
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/controller_proof/z_stick",
+      "lut_own": 408,
+      "lut_inclusive": 408,
+      "alu_own": 93,
+      "alu_inclusive": 93,
+      "register_own": 265,
+      "register_inclusive": 265
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/controller_proof/xy_stick",
+      "lut_own": 676,
+      "lut_inclusive": 908,
+      "alu_own": 139,
+      "alu_inclusive": 223,
+      "register_own": 434,
+      "register_inclusive": 585
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/controller_proof/xy_stick/div",
+      "lut_own": 232,
+      "lut_inclusive": 232,
+      "alu_own": 84,
+      "alu_inclusive": 84,
+      "register_own": 151,
+      "register_inclusive": 151
+    },
+    {
+      "path": "acg720_ano_port/native_navigation/controller_proof/t",
+      "lut_own": 407,
+      "lut_inclusive": 407,
+      "alu_own": 76,
+      "alu_inclusive": 76,
+      "register_own": 116,
+      "register_inclusive": 116
+    },
+    {
+      "path": "acg720_ano_port/telemetry",
+      "lut_own": 2630,
+      "lut_inclusive": 2670,
+      "alu_own": 46,
+      "alu_inclusive": 46,
+      "register_own": 401,
+      "register_inclusive": 424
+    },
+    {
+      "path": "acg720_ano_port/telemetry/uart",
+      "lut_own": 40,
+      "lut_inclusive": 40,
+      "alu_own": 0,
+      "alu_inclusive": 0,
+      "register_own": 23,
+      "register_inclusive": 23
+    }
+  ]
+}

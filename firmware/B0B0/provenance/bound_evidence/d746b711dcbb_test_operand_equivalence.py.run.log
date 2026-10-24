@@ -1,0 +1,1 @@
+OPERAND_EQUIVALENCE_PASS all32 calc bounds,32000 cases; same64-bit math and RTL traces

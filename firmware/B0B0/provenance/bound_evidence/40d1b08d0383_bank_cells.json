@@ -1,0 +1,7581 @@
+[
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_709_s0",
+    "bit": 709,
+    "pins": {
+      "Q": "navigation_body_709",
+      "D": "position_ready",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_708_s0",
+    "bit": 708,
+    "pins": {
+      "Q": "navigation_body_708",
+      "D": "live_velocity",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_707_s0",
+    "bit": 707,
+    "pins": {
+      "Q": "navigation_body_707",
+      "D": "nav_vertical_ready",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_706_s0",
+    "bit": 706,
+    "pins": {
+      "Q": "navigation_body_706",
+      "D": "geometry_flow_ready",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_705_s0",
+    "bit": 705,
+    "pins": {
+      "Q": "navigation_body_705",
+      "D": "geometry_height_ready",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_704_s0",
+    "bit": 704,
+    "pins": {
+      "Q": "navigation_body_704",
+      "D": "module_fresh",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_687_s0",
+    "bit": 687,
+    "pins": {
+      "Q": "navigation_body_687",
+      "D": "uptime_ms[63]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_686_s0",
+    "bit": 686,
+    "pins": {
+      "Q": "navigation_body_686",
+      "D": "uptime_ms[62]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_685_s0",
+    "bit": 685,
+    "pins": {
+      "Q": "navigation_body_685",
+      "D": "uptime_ms[61]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_684_s0",
+    "bit": 684,
+    "pins": {
+      "Q": "navigation_body_684",
+      "D": "uptime_ms[60]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_683_s0",
+    "bit": 683,
+    "pins": {
+      "Q": "navigation_body_683",
+      "D": "uptime_ms[59]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_682_s0",
+    "bit": 682,
+    "pins": {
+      "Q": "navigation_body_682",
+      "D": "uptime_ms[58]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_681_s0",
+    "bit": 681,
+    "pins": {
+      "Q": "navigation_body_681",
+      "D": "uptime_ms[57]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_680_s0",
+    "bit": 680,
+    "pins": {
+      "Q": "navigation_body_680",
+      "D": "uptime_ms[56]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_679_s0",
+    "bit": 679,
+    "pins": {
+      "Q": "navigation_body_679",
+      "D": "uptime_ms[55]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_678_s0",
+    "bit": 678,
+    "pins": {
+      "Q": "navigation_body_678",
+      "D": "uptime_ms[54]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_677_s0",
+    "bit": 677,
+    "pins": {
+      "Q": "navigation_body_677",
+      "D": "uptime_ms[53]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_676_s0",
+    "bit": 676,
+    "pins": {
+      "Q": "navigation_body_676",
+      "D": "uptime_ms[52]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_675_s0",
+    "bit": 675,
+    "pins": {
+      "Q": "navigation_body_675",
+      "D": "uptime_ms[51]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_674_s0",
+    "bit": 674,
+    "pins": {
+      "Q": "navigation_body_674",
+      "D": "uptime_ms[50]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_673_s0",
+    "bit": 673,
+    "pins": {
+      "Q": "navigation_body_673",
+      "D": "uptime_ms[49]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_672_s0",
+    "bit": 672,
+    "pins": {
+      "Q": "navigation_body_672",
+      "D": "uptime_ms[48]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_671_s0",
+    "bit": 671,
+    "pins": {
+      "Q": "navigation_body_671",
+      "D": "uptime_ms[47]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_670_s0",
+    "bit": 670,
+    "pins": {
+      "Q": "navigation_body_670",
+      "D": "uptime_ms[46]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_669_s0",
+    "bit": 669,
+    "pins": {
+      "Q": "navigation_body_669",
+      "D": "uptime_ms[45]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_668_s0",
+    "bit": 668,
+    "pins": {
+      "Q": "navigation_body_668",
+      "D": "uptime_ms[44]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_667_s0",
+    "bit": 667,
+    "pins": {
+      "Q": "navigation_body_667",
+      "D": "uptime_ms[43]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_666_s0",
+    "bit": 666,
+    "pins": {
+      "Q": "navigation_body_666",
+      "D": "uptime_ms[42]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_665_s0",
+    "bit": 665,
+    "pins": {
+      "Q": "navigation_body_665",
+      "D": "uptime_ms[41]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_664_s0",
+    "bit": 664,
+    "pins": {
+      "Q": "navigation_body_664",
+      "D": "uptime_ms[40]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_663_s0",
+    "bit": 663,
+    "pins": {
+      "Q": "navigation_body_663",
+      "D": "uptime_ms[39]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_662_s0",
+    "bit": 662,
+    "pins": {
+      "Q": "navigation_body_662",
+      "D": "uptime_ms[38]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_661_s0",
+    "bit": 661,
+    "pins": {
+      "Q": "navigation_body_661",
+      "D": "uptime_ms[37]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_660_s0",
+    "bit": 660,
+    "pins": {
+      "Q": "navigation_body_660",
+      "D": "uptime_ms[36]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_659_s0",
+    "bit": 659,
+    "pins": {
+      "Q": "navigation_body_659",
+      "D": "uptime_ms[35]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_658_s0",
+    "bit": 658,
+    "pins": {
+      "Q": "navigation_body_658",
+      "D": "uptime_ms[34]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_657_s0",
+    "bit": 657,
+    "pins": {
+      "Q": "navigation_body_657",
+      "D": "uptime_ms[33]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_656_s0",
+    "bit": 656,
+    "pins": {
+      "Q": "navigation_body_656",
+      "D": "uptime_ms[32]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_655_s0",
+    "bit": 655,
+    "pins": {
+      "Q": "navigation_body_655",
+      "D": "uptime_ms[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_654_s0",
+    "bit": 654,
+    "pins": {
+      "Q": "navigation_body_654",
+      "D": "uptime_ms[30]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_653_s0",
+    "bit": 653,
+    "pins": {
+      "Q": "navigation_body_653",
+      "D": "uptime_ms[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_652_s0",
+    "bit": 652,
+    "pins": {
+      "Q": "navigation_body_652",
+      "D": "uptime_ms[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_651_s0",
+    "bit": 651,
+    "pins": {
+      "Q": "navigation_body_651",
+      "D": "uptime_ms[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_650_s0",
+    "bit": 650,
+    "pins": {
+      "Q": "navigation_body_650",
+      "D": "uptime_ms[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_649_s0",
+    "bit": 649,
+    "pins": {
+      "Q": "navigation_body_649",
+      "D": "uptime_ms[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_648_s0",
+    "bit": 648,
+    "pins": {
+      "Q": "navigation_body_648",
+      "D": "uptime_ms[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_647_s0",
+    "bit": 647,
+    "pins": {
+      "Q": "navigation_body_647",
+      "D": "uptime_ms[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_646_s0",
+    "bit": 646,
+    "pins": {
+      "Q": "navigation_body_646",
+      "D": "uptime_ms[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_645_s0",
+    "bit": 645,
+    "pins": {
+      "Q": "navigation_body_645",
+      "D": "uptime_ms[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_644_s0",
+    "bit": 644,
+    "pins": {
+      "Q": "navigation_body_644",
+      "D": "uptime_ms[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_643_s0",
+    "bit": 643,
+    "pins": {
+      "Q": "navigation_body_643",
+      "D": "uptime_ms[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_642_s0",
+    "bit": 642,
+    "pins": {
+      "Q": "navigation_body_642",
+      "D": "uptime_ms[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_641_s0",
+    "bit": 641,
+    "pins": {
+      "Q": "navigation_body_641",
+      "D": "uptime_ms[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_640_s0",
+    "bit": 640,
+    "pins": {
+      "Q": "navigation_body_640",
+      "D": "uptime_ms[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_639_s0",
+    "bit": 639,
+    "pins": {
+      "Q": "navigation_body_639",
+      "D": "uptime_ms[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_638_s0",
+    "bit": 638,
+    "pins": {
+      "Q": "navigation_body_638",
+      "D": "uptime_ms[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_637_s0",
+    "bit": 637,
+    "pins": {
+      "Q": "navigation_body_637",
+      "D": "uptime_ms[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_636_s0",
+    "bit": 636,
+    "pins": {
+      "Q": "navigation_body_636",
+      "D": "uptime_ms[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_635_s0",
+    "bit": 635,
+    "pins": {
+      "Q": "navigation_body_635",
+      "D": "uptime_ms[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_634_s0",
+    "bit": 634,
+    "pins": {
+      "Q": "navigation_body_634",
+      "D": "uptime_ms[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_633_s0",
+    "bit": 633,
+    "pins": {
+      "Q": "navigation_body_633",
+      "D": "uptime_ms[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_632_s0",
+    "bit": 632,
+    "pins": {
+      "Q": "navigation_body_632",
+      "D": "uptime_ms[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_631_s0",
+    "bit": 631,
+    "pins": {
+      "Q": "navigation_body_631",
+      "D": "uptime_ms[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_630_s0",
+    "bit": 630,
+    "pins": {
+      "Q": "navigation_body_630",
+      "D": "uptime_ms[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_629_s0",
+    "bit": 629,
+    "pins": {
+      "Q": "navigation_body_629",
+      "D": "uptime_ms[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_628_s0",
+    "bit": 628,
+    "pins": {
+      "Q": "navigation_body_628",
+      "D": "uptime_ms[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_627_s0",
+    "bit": 627,
+    "pins": {
+      "Q": "navigation_body_627",
+      "D": "uptime_ms[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_626_s0",
+    "bit": 626,
+    "pins": {
+      "Q": "navigation_body_626",
+      "D": "uptime_ms[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_625_s0",
+    "bit": 625,
+    "pins": {
+      "Q": "navigation_body_625",
+      "D": "uptime_ms[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_624_s0",
+    "bit": 624,
+    "pins": {
+      "Q": "navigation_body_624",
+      "D": "uptime_ms[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_623_s0",
+    "bit": 623,
+    "pins": {
+      "Q": "navigation_body_623",
+      "D": "navigation_sequence[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_622_s0",
+    "bit": 622,
+    "pins": {
+      "Q": "navigation_body_622",
+      "D": "navigation_sequence[30]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_621_s0",
+    "bit": 621,
+    "pins": {
+      "Q": "navigation_body_621",
+      "D": "navigation_sequence[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_620_s0",
+    "bit": 620,
+    "pins": {
+      "Q": "navigation_body_620",
+      "D": "navigation_sequence[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_619_s0",
+    "bit": 619,
+    "pins": {
+      "Q": "navigation_body_619",
+      "D": "navigation_sequence[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_618_s0",
+    "bit": 618,
+    "pins": {
+      "Q": "navigation_body_618",
+      "D": "navigation_sequence[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_617_s0",
+    "bit": 617,
+    "pins": {
+      "Q": "navigation_body_617",
+      "D": "navigation_sequence[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_616_s0",
+    "bit": 616,
+    "pins": {
+      "Q": "navigation_body_616",
+      "D": "navigation_sequence[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_615_s0",
+    "bit": 615,
+    "pins": {
+      "Q": "navigation_body_615",
+      "D": "navigation_sequence[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_614_s0",
+    "bit": 614,
+    "pins": {
+      "Q": "navigation_body_614",
+      "D": "navigation_sequence[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_613_s0",
+    "bit": 613,
+    "pins": {
+      "Q": "navigation_body_613",
+      "D": "navigation_sequence[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_612_s0",
+    "bit": 612,
+    "pins": {
+      "Q": "navigation_body_612",
+      "D": "navigation_sequence[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_611_s0",
+    "bit": 611,
+    "pins": {
+      "Q": "navigation_body_611",
+      "D": "navigation_sequence[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_610_s0",
+    "bit": 610,
+    "pins": {
+      "Q": "navigation_body_610",
+      "D": "navigation_sequence[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_609_s0",
+    "bit": 609,
+    "pins": {
+      "Q": "navigation_body_609",
+      "D": "navigation_sequence[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_608_s0",
+    "bit": 608,
+    "pins": {
+      "Q": "navigation_body_608",
+      "D": "navigation_sequence[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_607_s0",
+    "bit": 607,
+    "pins": {
+      "Q": "navigation_body_607",
+      "D": "navigation_sequence[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_606_s0",
+    "bit": 606,
+    "pins": {
+      "Q": "navigation_body_606",
+      "D": "navigation_sequence[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_605_s0",
+    "bit": 605,
+    "pins": {
+      "Q": "navigation_body_605",
+      "D": "navigation_sequence[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_604_s0",
+    "bit": 604,
+    "pins": {
+      "Q": "navigation_body_604",
+      "D": "navigation_sequence[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_603_s0",
+    "bit": 603,
+    "pins": {
+      "Q": "navigation_body_603",
+      "D": "navigation_sequence[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_602_s0",
+    "bit": 602,
+    "pins": {
+      "Q": "navigation_body_602",
+      "D": "navigation_sequence[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_601_s0",
+    "bit": 601,
+    "pins": {
+      "Q": "navigation_body_601",
+      "D": "navigation_sequence[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_600_s0",
+    "bit": 600,
+    "pins": {
+      "Q": "navigation_body_600",
+      "D": "navigation_sequence[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_599_s0",
+    "bit": 599,
+    "pins": {
+      "Q": "navigation_body_599",
+      "D": "navigation_sequence[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_598_s0",
+    "bit": 598,
+    "pins": {
+      "Q": "navigation_body_598",
+      "D": "navigation_sequence[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_597_s0",
+    "bit": 597,
+    "pins": {
+      "Q": "navigation_body_597",
+      "D": "navigation_sequence[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_596_s0",
+    "bit": 596,
+    "pins": {
+      "Q": "navigation_body_596",
+      "D": "navigation_sequence[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_595_s0",
+    "bit": 595,
+    "pins": {
+      "Q": "navigation_body_595",
+      "D": "navigation_sequence[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_594_s0",
+    "bit": 594,
+    "pins": {
+      "Q": "navigation_body_594",
+      "D": "navigation_sequence[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_593_s0",
+    "bit": 593,
+    "pins": {
+      "Q": "navigation_body_593",
+      "D": "navigation_sequence[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_592_s0",
+    "bit": 592,
+    "pins": {
+      "Q": "navigation_body_592",
+      "D": "navigation_sequence[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_543_s0",
+    "bit": 543,
+    "pins": {
+      "Q": "navigation_body_543",
+      "D": "geometry_dt_us[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_542_s0",
+    "bit": 542,
+    "pins": {
+      "Q": "navigation_body_542",
+      "D": "geometry_dt_us[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_541_s0",
+    "bit": 541,
+    "pins": {
+      "Q": "navigation_body_541",
+      "D": "geometry_dt_us[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_540_s0",
+    "bit": 540,
+    "pins": {
+      "Q": "navigation_body_540",
+      "D": "geometry_dt_us[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_539_s0",
+    "bit": 539,
+    "pins": {
+      "Q": "navigation_body_539",
+      "D": "geometry_dt_us[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_538_s0",
+    "bit": 538,
+    "pins": {
+      "Q": "navigation_body_538",
+      "D": "geometry_dt_us[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_537_s0",
+    "bit": 537,
+    "pins": {
+      "Q": "navigation_body_537",
+      "D": "geometry_dt_us[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_536_s0",
+    "bit": 536,
+    "pins": {
+      "Q": "navigation_body_536",
+      "D": "geometry_dt_us[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_535_s0",
+    "bit": 535,
+    "pins": {
+      "Q": "navigation_body_535",
+      "D": "geometry_dt_us[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_534_s0",
+    "bit": 534,
+    "pins": {
+      "Q": "navigation_body_534",
+      "D": "geometry_dt_us[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_533_s0",
+    "bit": 533,
+    "pins": {
+      "Q": "navigation_body_533",
+      "D": "geometry_dt_us[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_532_s0",
+    "bit": 532,
+    "pins": {
+      "Q": "navigation_body_532",
+      "D": "geometry_dt_us[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_531_s0",
+    "bit": 531,
+    "pins": {
+      "Q": "navigation_body_531",
+      "D": "geometry_dt_us[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_530_s0",
+    "bit": 530,
+    "pins": {
+      "Q": "navigation_body_530",
+      "D": "geometry_dt_us[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_529_s0",
+    "bit": 529,
+    "pins": {
+      "Q": "navigation_body_529",
+      "D": "geometry_dt_us[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_528_s0",
+    "bit": 528,
+    "pins": {
+      "Q": "navigation_body_528",
+      "D": "geometry_dt_us[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_525_s0",
+    "bit": 525,
+    "pins": {
+      "Q": "navigation_body_525",
+      "D": "n4724_7",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_524_s0",
+    "bit": 524,
+    "pins": {
+      "Q": "navigation_body_524",
+      "D": "n4725_6",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_523_s0",
+    "bit": 523,
+    "pins": {
+      "Q": "navigation_body_523",
+      "D": "n4726_7",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_522_s0",
+    "bit": 522,
+    "pins": {
+      "Q": "navigation_body_522",
+      "D": "n4727_7",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_518_s0",
+    "bit": 518,
+    "pins": {
+      "Q": "navigation_body_518",
+      "D": "n4731_6",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_517_s0",
+    "bit": 517,
+    "pins": {
+      "Q": "navigation_body_517",
+      "D": "n4732_6",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_507_s0",
+    "bit": 507,
+    "pins": {
+      "Q": "navigation_body_507",
+      "D": "geometry_reason[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_506_s0",
+    "bit": 506,
+    "pins": {
+      "Q": "navigation_body_506",
+      "D": "observer_reset",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_502_s0",
+    "bit": 502,
+    "pins": {
+      "Q": "navigation_body_502",
+      "D": "geometry_reason[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_501_s0",
+    "bit": 501,
+    "pins": {
+      "Q": "navigation_body_501",
+      "D": "geometry_reason[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_500_s0",
+    "bit": 500,
+    "pins": {
+      "Q": "navigation_body_500",
+      "D": "geometry_reason[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_499_s0",
+    "bit": 499,
+    "pins": {
+      "Q": "navigation_body_499",
+      "D": "geometry_reason[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_498_s0",
+    "bit": 498,
+    "pins": {
+      "Q": "navigation_body_498",
+      "D": "geometry_reason[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_497_s0",
+    "bit": 497,
+    "pins": {
+      "Q": "navigation_body_497",
+      "D": "geometry_reason[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_496_s0",
+    "bit": 496,
+    "pins": {
+      "Q": "navigation_body_496",
+      "D": "geometry_reason[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_495_s0",
+    "bit": 495,
+    "pins": {
+      "Q": "navigation_body_495",
+      "D": "height_mm_Z[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_476_s0",
+    "bit": 476,
+    "pins": {
+      "Q": "navigation_body_476",
+      "D": "height_mm_Z[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_475_s0",
+    "bit": 475,
+    "pins": {
+      "Q": "navigation_body_475",
+      "D": "height_mm_Z[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_474_s0",
+    "bit": 474,
+    "pins": {
+      "Q": "navigation_body_474",
+      "D": "height_mm_Z[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_473_s0",
+    "bit": 473,
+    "pins": {
+      "Q": "navigation_body_473",
+      "D": "height_mm_Z[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_472_s0",
+    "bit": 472,
+    "pins": {
+      "Q": "navigation_body_472",
+      "D": "height_mm_Z[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_471_s0",
+    "bit": 471,
+    "pins": {
+      "Q": "navigation_body_471",
+      "D": "height_mm_Z[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_470_s0",
+    "bit": 470,
+    "pins": {
+      "Q": "navigation_body_470",
+      "D": "height_mm_Z[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_469_s0",
+    "bit": 469,
+    "pins": {
+      "Q": "navigation_body_469",
+      "D": "height_mm_Z[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_468_s0",
+    "bit": 468,
+    "pins": {
+      "Q": "navigation_body_468",
+      "D": "height_mm_Z[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_467_s0",
+    "bit": 467,
+    "pins": {
+      "Q": "navigation_body_467",
+      "D": "height_mm_Z[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_466_s0",
+    "bit": 466,
+    "pins": {
+      "Q": "navigation_body_466",
+      "D": "height_mm_Z[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_465_s0",
+    "bit": 465,
+    "pins": {
+      "Q": "navigation_body_465",
+      "D": "height_mm_Z[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_464_s0",
+    "bit": 464,
+    "pins": {
+      "Q": "navigation_body_464",
+      "D": "height_mm_Z[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_463_s0",
+    "bit": 463,
+    "pins": {
+      "Q": "navigation_body_463",
+      "D": "bvx[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_461_s0",
+    "bit": 461,
+    "pins": {
+      "Q": "navigation_body_461",
+      "D": "bvx[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_460_s0",
+    "bit": 460,
+    "pins": {
+      "Q": "navigation_body_460",
+      "D": "bvx[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_459_s0",
+    "bit": 459,
+    "pins": {
+      "Q": "navigation_body_459",
+      "D": "bvx[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_458_s0",
+    "bit": 458,
+    "pins": {
+      "Q": "navigation_body_458",
+      "D": "bvx[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_457_s0",
+    "bit": 457,
+    "pins": {
+      "Q": "navigation_body_457",
+      "D": "bvx[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_456_s0",
+    "bit": 456,
+    "pins": {
+      "Q": "navigation_body_456",
+      "D": "bvx[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_455_s0",
+    "bit": 455,
+    "pins": {
+      "Q": "navigation_body_455",
+      "D": "bvx[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_454_s0",
+    "bit": 454,
+    "pins": {
+      "Q": "navigation_body_454",
+      "D": "bvx[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_453_s0",
+    "bit": 453,
+    "pins": {
+      "Q": "navigation_body_453",
+      "D": "bvx[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_452_s0",
+    "bit": 452,
+    "pins": {
+      "Q": "navigation_body_452",
+      "D": "bvx[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_451_s0",
+    "bit": 451,
+    "pins": {
+      "Q": "navigation_body_451",
+      "D": "bvx[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_450_s0",
+    "bit": 450,
+    "pins": {
+      "Q": "navigation_body_450",
+      "D": "bvx[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_449_s0",
+    "bit": 449,
+    "pins": {
+      "Q": "navigation_body_449",
+      "D": "bvx[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_448_s0",
+    "bit": 448,
+    "pins": {
+      "Q": "navigation_body_448",
+      "D": "bvx[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_447_s0",
+    "bit": 447,
+    "pins": {
+      "Q": "navigation_body_447",
+      "D": "bvx[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_446_s0",
+    "bit": 446,
+    "pins": {
+      "Q": "navigation_body_446",
+      "D": "bvx[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_445_s0",
+    "bit": 445,
+    "pins": {
+      "Q": "navigation_body_445",
+      "D": "bvx[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_444_s0",
+    "bit": 444,
+    "pins": {
+      "Q": "navigation_body_444",
+      "D": "bvx[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_443_s0",
+    "bit": 443,
+    "pins": {
+      "Q": "navigation_body_443",
+      "D": "bvx[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_442_s0",
+    "bit": 442,
+    "pins": {
+      "Q": "navigation_body_442",
+      "D": "bvx[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_441_s0",
+    "bit": 441,
+    "pins": {
+      "Q": "navigation_body_441",
+      "D": "bvx[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_440_s0",
+    "bit": 440,
+    "pins": {
+      "Q": "navigation_body_440",
+      "D": "bvx[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_439_s0",
+    "bit": 439,
+    "pins": {
+      "Q": "navigation_body_439",
+      "D": "bvx[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_438_s0",
+    "bit": 438,
+    "pins": {
+      "Q": "navigation_body_438",
+      "D": "bvx[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_437_s0",
+    "bit": 437,
+    "pins": {
+      "Q": "navigation_body_437",
+      "D": "bvx[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_436_s0",
+    "bit": 436,
+    "pins": {
+      "Q": "navigation_body_436",
+      "D": "bvx[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_435_s0",
+    "bit": 435,
+    "pins": {
+      "Q": "navigation_body_435",
+      "D": "bvx[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_434_s0",
+    "bit": 434,
+    "pins": {
+      "Q": "navigation_body_434",
+      "D": "bvx[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_433_s0",
+    "bit": 433,
+    "pins": {
+      "Q": "navigation_body_433",
+      "D": "bvx[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_432_s0",
+    "bit": 432,
+    "pins": {
+      "Q": "navigation_body_432",
+      "D": "bvx[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_431_s0",
+    "bit": 431,
+    "pins": {
+      "Q": "navigation_body_431",
+      "D": "bvy[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_429_s0",
+    "bit": 429,
+    "pins": {
+      "Q": "navigation_body_429",
+      "D": "bvy[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_428_s0",
+    "bit": 428,
+    "pins": {
+      "Q": "navigation_body_428",
+      "D": "bvy[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_427_s0",
+    "bit": 427,
+    "pins": {
+      "Q": "navigation_body_427",
+      "D": "bvy[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_426_s0",
+    "bit": 426,
+    "pins": {
+      "Q": "navigation_body_426",
+      "D": "bvy[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_425_s0",
+    "bit": 425,
+    "pins": {
+      "Q": "navigation_body_425",
+      "D": "bvy[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_424_s0",
+    "bit": 424,
+    "pins": {
+      "Q": "navigation_body_424",
+      "D": "bvy[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_423_s0",
+    "bit": 423,
+    "pins": {
+      "Q": "navigation_body_423",
+      "D": "bvy[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_422_s0",
+    "bit": 422,
+    "pins": {
+      "Q": "navigation_body_422",
+      "D": "bvy[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_421_s0",
+    "bit": 421,
+    "pins": {
+      "Q": "navigation_body_421",
+      "D": "bvy[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_420_s0",
+    "bit": 420,
+    "pins": {
+      "Q": "navigation_body_420",
+      "D": "bvy[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_419_s0",
+    "bit": 419,
+    "pins": {
+      "Q": "navigation_body_419",
+      "D": "bvy[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_418_s0",
+    "bit": 418,
+    "pins": {
+      "Q": "navigation_body_418",
+      "D": "bvy[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_417_s0",
+    "bit": 417,
+    "pins": {
+      "Q": "navigation_body_417",
+      "D": "bvy[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_416_s0",
+    "bit": 416,
+    "pins": {
+      "Q": "navigation_body_416",
+      "D": "bvy[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_415_s0",
+    "bit": 415,
+    "pins": {
+      "Q": "navigation_body_415",
+      "D": "bvy[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_414_s0",
+    "bit": 414,
+    "pins": {
+      "Q": "navigation_body_414",
+      "D": "bvy[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_413_s0",
+    "bit": 413,
+    "pins": {
+      "Q": "navigation_body_413",
+      "D": "bvy[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_412_s0",
+    "bit": 412,
+    "pins": {
+      "Q": "navigation_body_412",
+      "D": "bvy[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_411_s0",
+    "bit": 411,
+    "pins": {
+      "Q": "navigation_body_411",
+      "D": "bvy[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_410_s0",
+    "bit": 410,
+    "pins": {
+      "Q": "navigation_body_410",
+      "D": "bvy[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_409_s0",
+    "bit": 409,
+    "pins": {
+      "Q": "navigation_body_409",
+      "D": "bvy[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_408_s0",
+    "bit": 408,
+    "pins": {
+      "Q": "navigation_body_408",
+      "D": "bvy[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_407_s0",
+    "bit": 407,
+    "pins": {
+      "Q": "navigation_body_407",
+      "D": "bvy[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_406_s0",
+    "bit": 406,
+    "pins": {
+      "Q": "navigation_body_406",
+      "D": "bvy[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_405_s0",
+    "bit": 405,
+    "pins": {
+      "Q": "navigation_body_405",
+      "D": "bvy[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_404_s0",
+    "bit": 404,
+    "pins": {
+      "Q": "navigation_body_404",
+      "D": "bvy[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_403_s0",
+    "bit": 403,
+    "pins": {
+      "Q": "navigation_body_403",
+      "D": "bvy[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_402_s0",
+    "bit": 402,
+    "pins": {
+      "Q": "navigation_body_402",
+      "D": "bvy[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_401_s0",
+    "bit": 401,
+    "pins": {
+      "Q": "navigation_body_401",
+      "D": "bvy[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_400_s0",
+    "bit": 400,
+    "pins": {
+      "Q": "navigation_body_400",
+      "D": "bvy[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_399_s0",
+    "bit": 399,
+    "pins": {
+      "Q": "navigation_body_399",
+      "D": "wvx[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_397_s0",
+    "bit": 397,
+    "pins": {
+      "Q": "navigation_body_397",
+      "D": "wvx[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_396_s0",
+    "bit": 396,
+    "pins": {
+      "Q": "navigation_body_396",
+      "D": "wvx[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_395_s0",
+    "bit": 395,
+    "pins": {
+      "Q": "navigation_body_395",
+      "D": "wvx[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_394_s0",
+    "bit": 394,
+    "pins": {
+      "Q": "navigation_body_394",
+      "D": "wvx[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_393_s0",
+    "bit": 393,
+    "pins": {
+      "Q": "navigation_body_393",
+      "D": "wvx[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_392_s0",
+    "bit": 392,
+    "pins": {
+      "Q": "navigation_body_392",
+      "D": "wvx[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_391_s0",
+    "bit": 391,
+    "pins": {
+      "Q": "navigation_body_391",
+      "D": "wvx[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_390_s0",
+    "bit": 390,
+    "pins": {
+      "Q": "navigation_body_390",
+      "D": "wvx[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_389_s0",
+    "bit": 389,
+    "pins": {
+      "Q": "navigation_body_389",
+      "D": "wvx[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_388_s0",
+    "bit": 388,
+    "pins": {
+      "Q": "navigation_body_388",
+      "D": "wvx[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_387_s0",
+    "bit": 387,
+    "pins": {
+      "Q": "navigation_body_387",
+      "D": "wvx[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_386_s0",
+    "bit": 386,
+    "pins": {
+      "Q": "navigation_body_386",
+      "D": "wvx[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_385_s0",
+    "bit": 385,
+    "pins": {
+      "Q": "navigation_body_385",
+      "D": "wvx[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_384_s0",
+    "bit": 384,
+    "pins": {
+      "Q": "navigation_body_384",
+      "D": "wvx[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_383_s0",
+    "bit": 383,
+    "pins": {
+      "Q": "navigation_body_383",
+      "D": "wvx[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_382_s0",
+    "bit": 382,
+    "pins": {
+      "Q": "navigation_body_382",
+      "D": "wvx[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_381_s0",
+    "bit": 381,
+    "pins": {
+      "Q": "navigation_body_381",
+      "D": "wvx[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_380_s0",
+    "bit": 380,
+    "pins": {
+      "Q": "navigation_body_380",
+      "D": "wvx[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_379_s0",
+    "bit": 379,
+    "pins": {
+      "Q": "navigation_body_379",
+      "D": "wvx[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_378_s0",
+    "bit": 378,
+    "pins": {
+      "Q": "navigation_body_378",
+      "D": "wvx[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_377_s0",
+    "bit": 377,
+    "pins": {
+      "Q": "navigation_body_377",
+      "D": "wvx[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_376_s0",
+    "bit": 376,
+    "pins": {
+      "Q": "navigation_body_376",
+      "D": "wvx[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_375_s0",
+    "bit": 375,
+    "pins": {
+      "Q": "navigation_body_375",
+      "D": "wvx[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_374_s0",
+    "bit": 374,
+    "pins": {
+      "Q": "navigation_body_374",
+      "D": "wvx[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_373_s0",
+    "bit": 373,
+    "pins": {
+      "Q": "navigation_body_373",
+      "D": "wvx[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_372_s0",
+    "bit": 372,
+    "pins": {
+      "Q": "navigation_body_372",
+      "D": "wvx[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_371_s0",
+    "bit": 371,
+    "pins": {
+      "Q": "navigation_body_371",
+      "D": "wvx[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_370_s0",
+    "bit": 370,
+    "pins": {
+      "Q": "navigation_body_370",
+      "D": "wvx[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_369_s0",
+    "bit": 369,
+    "pins": {
+      "Q": "navigation_body_369",
+      "D": "wvx[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_368_s0",
+    "bit": 368,
+    "pins": {
+      "Q": "navigation_body_368",
+      "D": "wvx[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_367_s0",
+    "bit": 367,
+    "pins": {
+      "Q": "navigation_body_367",
+      "D": "wvy[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_365_s0",
+    "bit": 365,
+    "pins": {
+      "Q": "navigation_body_365",
+      "D": "wvy[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_364_s0",
+    "bit": 364,
+    "pins": {
+      "Q": "navigation_body_364",
+      "D": "wvy[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_363_s0",
+    "bit": 363,
+    "pins": {
+      "Q": "navigation_body_363",
+      "D": "wvy[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_362_s0",
+    "bit": 362,
+    "pins": {
+      "Q": "navigation_body_362",
+      "D": "wvy[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_361_s0",
+    "bit": 361,
+    "pins": {
+      "Q": "navigation_body_361",
+      "D": "wvy[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_360_s0",
+    "bit": 360,
+    "pins": {
+      "Q": "navigation_body_360",
+      "D": "wvy[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_359_s0",
+    "bit": 359,
+    "pins": {
+      "Q": "navigation_body_359",
+      "D": "wvy[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_358_s0",
+    "bit": 358,
+    "pins": {
+      "Q": "navigation_body_358",
+      "D": "wvy[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_357_s0",
+    "bit": 357,
+    "pins": {
+      "Q": "navigation_body_357",
+      "D": "wvy[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_356_s0",
+    "bit": 356,
+    "pins": {
+      "Q": "navigation_body_356",
+      "D": "wvy[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_355_s0",
+    "bit": 355,
+    "pins": {
+      "Q": "navigation_body_355",
+      "D": "wvy[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_354_s0",
+    "bit": 354,
+    "pins": {
+      "Q": "navigation_body_354",
+      "D": "wvy[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_353_s0",
+    "bit": 353,
+    "pins": {
+      "Q": "navigation_body_353",
+      "D": "wvy[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_352_s0",
+    "bit": 352,
+    "pins": {
+      "Q": "navigation_body_352",
+      "D": "wvy[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_351_s0",
+    "bit": 351,
+    "pins": {
+      "Q": "navigation_body_351",
+      "D": "wvy[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_350_s0",
+    "bit": 350,
+    "pins": {
+      "Q": "navigation_body_350",
+      "D": "wvy[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_349_s0",
+    "bit": 349,
+    "pins": {
+      "Q": "navigation_body_349",
+      "D": "wvy[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_348_s0",
+    "bit": 348,
+    "pins": {
+      "Q": "navigation_body_348",
+      "D": "wvy[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_347_s0",
+    "bit": 347,
+    "pins": {
+      "Q": "navigation_body_347",
+      "D": "wvy[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_346_s0",
+    "bit": 346,
+    "pins": {
+      "Q": "navigation_body_346",
+      "D": "wvy[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_345_s0",
+    "bit": 345,
+    "pins": {
+      "Q": "navigation_body_345",
+      "D": "wvy[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_344_s0",
+    "bit": 344,
+    "pins": {
+      "Q": "navigation_body_344",
+      "D": "wvy[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_343_s0",
+    "bit": 343,
+    "pins": {
+      "Q": "navigation_body_343",
+      "D": "wvy[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_342_s0",
+    "bit": 342,
+    "pins": {
+      "Q": "navigation_body_342",
+      "D": "wvy[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_341_s0",
+    "bit": 341,
+    "pins": {
+      "Q": "navigation_body_341",
+      "D": "wvy[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_340_s0",
+    "bit": 340,
+    "pins": {
+      "Q": "navigation_body_340",
+      "D": "wvy[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_339_s0",
+    "bit": 339,
+    "pins": {
+      "Q": "navigation_body_339",
+      "D": "wvy[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_338_s0",
+    "bit": 338,
+    "pins": {
+      "Q": "navigation_body_338",
+      "D": "wvy[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_337_s0",
+    "bit": 337,
+    "pins": {
+      "Q": "navigation_body_337",
+      "D": "wvy[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_336_s0",
+    "bit": 336,
+    "pins": {
+      "Q": "navigation_body_336",
+      "D": "wvy[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_335_s0",
+    "bit": 335,
+    "pins": {
+      "Q": "navigation_body_335",
+      "D": "fused_vx_q16_Z[30]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_333_s0",
+    "bit": 333,
+    "pins": {
+      "Q": "navigation_body_333",
+      "D": "fused_vx_q16_Z[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_332_s0",
+    "bit": 332,
+    "pins": {
+      "Q": "navigation_body_332",
+      "D": "fused_vx_q16_Z[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_331_s0",
+    "bit": 331,
+    "pins": {
+      "Q": "navigation_body_331",
+      "D": "fused_vx_q16_Z[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_330_s0",
+    "bit": 330,
+    "pins": {
+      "Q": "navigation_body_330",
+      "D": "fused_vx_q16_Z[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_329_s0",
+    "bit": 329,
+    "pins": {
+      "Q": "navigation_body_329",
+      "D": "fused_vx_q16_Z[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_328_s0",
+    "bit": 328,
+    "pins": {
+      "Q": "navigation_body_328",
+      "D": "fused_vx_q16_Z[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_327_s0",
+    "bit": 327,
+    "pins": {
+      "Q": "navigation_body_327",
+      "D": "fused_vx_q16_Z[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_326_s0",
+    "bit": 326,
+    "pins": {
+      "Q": "navigation_body_326",
+      "D": "fused_vx_q16_Z[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_325_s0",
+    "bit": 325,
+    "pins": {
+      "Q": "navigation_body_325",
+      "D": "fused_vx_q16_Z[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_324_s0",
+    "bit": 324,
+    "pins": {
+      "Q": "navigation_body_324",
+      "D": "fused_vx_q16_Z[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_323_s0",
+    "bit": 323,
+    "pins": {
+      "Q": "navigation_body_323",
+      "D": "fused_vx_q16_Z[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_322_s0",
+    "bit": 322,
+    "pins": {
+      "Q": "navigation_body_322",
+      "D": "fused_vx_q16_Z[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_321_s0",
+    "bit": 321,
+    "pins": {
+      "Q": "navigation_body_321",
+      "D": "fused_vx_q16_Z[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_320_s0",
+    "bit": 320,
+    "pins": {
+      "Q": "navigation_body_320",
+      "D": "fused_vx_q16_Z[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_319_s0",
+    "bit": 319,
+    "pins": {
+      "Q": "navigation_body_319",
+      "D": "fused_vx_q16_Z[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_318_s0",
+    "bit": 318,
+    "pins": {
+      "Q": "navigation_body_318",
+      "D": "fused_vx_q16_Z[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_317_s0",
+    "bit": 317,
+    "pins": {
+      "Q": "navigation_body_317",
+      "D": "fused_vx_q16_Z[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_316_s0",
+    "bit": 316,
+    "pins": {
+      "Q": "navigation_body_316",
+      "D": "fused_vx_q16_Z[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_315_s0",
+    "bit": 315,
+    "pins": {
+      "Q": "navigation_body_315",
+      "D": "fused_vx_q16_Z[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_314_s0",
+    "bit": 314,
+    "pins": {
+      "Q": "navigation_body_314",
+      "D": "fused_vx_q16_Z[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_313_s0",
+    "bit": 313,
+    "pins": {
+      "Q": "navigation_body_313",
+      "D": "fused_vx_q16_Z[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_312_s0",
+    "bit": 312,
+    "pins": {
+      "Q": "navigation_body_312",
+      "D": "fused_vx_q16_Z[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_311_s0",
+    "bit": 311,
+    "pins": {
+      "Q": "navigation_body_311",
+      "D": "fused_vx_q16_Z[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_310_s0",
+    "bit": 310,
+    "pins": {
+      "Q": "navigation_body_310",
+      "D": "fused_vx_q16_Z[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_309_s0",
+    "bit": 309,
+    "pins": {
+      "Q": "navigation_body_309",
+      "D": "fused_vx_q16_Z[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_308_s0",
+    "bit": 308,
+    "pins": {
+      "Q": "navigation_body_308",
+      "D": "fused_vx_q16_Z[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_307_s0",
+    "bit": 307,
+    "pins": {
+      "Q": "navigation_body_307",
+      "D": "fused_vx_q16_Z[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_306_s0",
+    "bit": 306,
+    "pins": {
+      "Q": "navigation_body_306",
+      "D": "fused_vx_q16_Z[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_305_s0",
+    "bit": 305,
+    "pins": {
+      "Q": "navigation_body_305",
+      "D": "fused_vx_q16_Z[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_304_s0",
+    "bit": 304,
+    "pins": {
+      "Q": "navigation_body_304",
+      "D": "fused_vx_q16_Z[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_303_s0",
+    "bit": 303,
+    "pins": {
+      "Q": "navigation_body_303",
+      "D": "fused_vy_q16_Z[30]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_301_s0",
+    "bit": 301,
+    "pins": {
+      "Q": "navigation_body_301",
+      "D": "fused_vy_q16_Z[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_300_s0",
+    "bit": 300,
+    "pins": {
+      "Q": "navigation_body_300",
+      "D": "fused_vy_q16_Z[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_299_s0",
+    "bit": 299,
+    "pins": {
+      "Q": "navigation_body_299",
+      "D": "fused_vy_q16_Z[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_298_s0",
+    "bit": 298,
+    "pins": {
+      "Q": "navigation_body_298",
+      "D": "fused_vy_q16_Z[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_297_s0",
+    "bit": 297,
+    "pins": {
+      "Q": "navigation_body_297",
+      "D": "fused_vy_q16_Z[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_296_s0",
+    "bit": 296,
+    "pins": {
+      "Q": "navigation_body_296",
+      "D": "fused_vy_q16_Z[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_295_s0",
+    "bit": 295,
+    "pins": {
+      "Q": "navigation_body_295",
+      "D": "fused_vy_q16_Z[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_294_s0",
+    "bit": 294,
+    "pins": {
+      "Q": "navigation_body_294",
+      "D": "fused_vy_q16_Z[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_293_s0",
+    "bit": 293,
+    "pins": {
+      "Q": "navigation_body_293",
+      "D": "fused_vy_q16_Z[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_292_s0",
+    "bit": 292,
+    "pins": {
+      "Q": "navigation_body_292",
+      "D": "fused_vy_q16_Z[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_291_s0",
+    "bit": 291,
+    "pins": {
+      "Q": "navigation_body_291",
+      "D": "fused_vy_q16_Z[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_290_s0",
+    "bit": 290,
+    "pins": {
+      "Q": "navigation_body_290",
+      "D": "fused_vy_q16_Z[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_289_s0",
+    "bit": 289,
+    "pins": {
+      "Q": "navigation_body_289",
+      "D": "fused_vy_q16_Z[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_288_s0",
+    "bit": 288,
+    "pins": {
+      "Q": "navigation_body_288",
+      "D": "fused_vy_q16_Z[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_287_s0",
+    "bit": 287,
+    "pins": {
+      "Q": "navigation_body_287",
+      "D": "fused_vy_q16_Z[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_286_s0",
+    "bit": 286,
+    "pins": {
+      "Q": "navigation_body_286",
+      "D": "fused_vy_q16_Z[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_285_s0",
+    "bit": 285,
+    "pins": {
+      "Q": "navigation_body_285",
+      "D": "fused_vy_q16_Z[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_284_s0",
+    "bit": 284,
+    "pins": {
+      "Q": "navigation_body_284",
+      "D": "fused_vy_q16_Z[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_283_s0",
+    "bit": 283,
+    "pins": {
+      "Q": "navigation_body_283",
+      "D": "fused_vy_q16_Z[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_282_s0",
+    "bit": 282,
+    "pins": {
+      "Q": "navigation_body_282",
+      "D": "fused_vy_q16_Z[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_281_s0",
+    "bit": 281,
+    "pins": {
+      "Q": "navigation_body_281",
+      "D": "fused_vy_q16_Z[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_280_s0",
+    "bit": 280,
+    "pins": {
+      "Q": "navigation_body_280",
+      "D": "fused_vy_q16_Z[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_279_s0",
+    "bit": 279,
+    "pins": {
+      "Q": "navigation_body_279",
+      "D": "fused_vy_q16_Z[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_278_s0",
+    "bit": 278,
+    "pins": {
+      "Q": "navigation_body_278",
+      "D": "fused_vy_q16_Z[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_277_s0",
+    "bit": 277,
+    "pins": {
+      "Q": "navigation_body_277",
+      "D": "fused_vy_q16_Z[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_276_s0",
+    "bit": 276,
+    "pins": {
+      "Q": "navigation_body_276",
+      "D": "fused_vy_q16_Z[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_275_s0",
+    "bit": 275,
+    "pins": {
+      "Q": "navigation_body_275",
+      "D": "fused_vy_q16_Z[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_274_s0",
+    "bit": 274,
+    "pins": {
+      "Q": "navigation_body_274",
+      "D": "fused_vy_q16_Z[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_273_s0",
+    "bit": 273,
+    "pins": {
+      "Q": "navigation_body_273",
+      "D": "fused_vy_q16_Z[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_272_s0",
+    "bit": 272,
+    "pins": {
+      "Q": "navigation_body_272",
+      "D": "fused_vy_q16_Z[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_271_s0",
+    "bit": 271,
+    "pins": {
+      "Q": "navigation_body_271",
+      "D": "fused_height[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_270_s0",
+    "bit": 270,
+    "pins": {
+      "Q": "navigation_body_270",
+      "D": "fused_height[30]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_269_s0",
+    "bit": 269,
+    "pins": {
+      "Q": "navigation_body_269",
+      "D": "fused_height[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_268_s0",
+    "bit": 268,
+    "pins": {
+      "Q": "navigation_body_268",
+      "D": "fused_height[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_267_s0",
+    "bit": 267,
+    "pins": {
+      "Q": "navigation_body_267",
+      "D": "fused_height[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_266_s0",
+    "bit": 266,
+    "pins": {
+      "Q": "navigation_body_266",
+      "D": "fused_height[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_265_s0",
+    "bit": 265,
+    "pins": {
+      "Q": "navigation_body_265",
+      "D": "fused_height[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_264_s0",
+    "bit": 264,
+    "pins": {
+      "Q": "navigation_body_264",
+      "D": "fused_height[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_263_s0",
+    "bit": 263,
+    "pins": {
+      "Q": "navigation_body_263",
+      "D": "fused_height[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_262_s0",
+    "bit": 262,
+    "pins": {
+      "Q": "navigation_body_262",
+      "D": "fused_height[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_261_s0",
+    "bit": 261,
+    "pins": {
+      "Q": "navigation_body_261",
+      "D": "fused_height[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_260_s0",
+    "bit": 260,
+    "pins": {
+      "Q": "navigation_body_260",
+      "D": "fused_height[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_259_s0",
+    "bit": 259,
+    "pins": {
+      "Q": "navigation_body_259",
+      "D": "fused_height[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_258_s0",
+    "bit": 258,
+    "pins": {
+      "Q": "navigation_body_258",
+      "D": "fused_height[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_257_s0",
+    "bit": 257,
+    "pins": {
+      "Q": "navigation_body_257",
+      "D": "fused_height[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_256_s0",
+    "bit": 256,
+    "pins": {
+      "Q": "navigation_body_256",
+      "D": "fused_height[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_255_s0",
+    "bit": 255,
+    "pins": {
+      "Q": "navigation_body_255",
+      "D": "fused_height[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_254_s0",
+    "bit": 254,
+    "pins": {
+      "Q": "navigation_body_254",
+      "D": "fused_height[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_253_s0",
+    "bit": 253,
+    "pins": {
+      "Q": "navigation_body_253",
+      "D": "fused_height[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_252_s0",
+    "bit": 252,
+    "pins": {
+      "Q": "navigation_body_252",
+      "D": "fused_height[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_251_s0",
+    "bit": 251,
+    "pins": {
+      "Q": "navigation_body_251",
+      "D": "fused_height[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_250_s0",
+    "bit": 250,
+    "pins": {
+      "Q": "navigation_body_250",
+      "D": "fused_height[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_249_s0",
+    "bit": 249,
+    "pins": {
+      "Q": "navigation_body_249",
+      "D": "fused_height[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_248_s0",
+    "bit": 248,
+    "pins": {
+      "Q": "navigation_body_248",
+      "D": "fused_height[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_247_s0",
+    "bit": 247,
+    "pins": {
+      "Q": "navigation_body_247",
+      "D": "fused_height[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_246_s0",
+    "bit": 246,
+    "pins": {
+      "Q": "navigation_body_246",
+      "D": "fused_height[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_245_s0",
+    "bit": 245,
+    "pins": {
+      "Q": "navigation_body_245",
+      "D": "fused_height[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_244_s0",
+    "bit": 244,
+    "pins": {
+      "Q": "navigation_body_244",
+      "D": "fused_height[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_243_s0",
+    "bit": 243,
+    "pins": {
+      "Q": "navigation_body_243",
+      "D": "fused_height[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_242_s0",
+    "bit": 242,
+    "pins": {
+      "Q": "navigation_body_242",
+      "D": "fused_height[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_241_s0",
+    "bit": 241,
+    "pins": {
+      "Q": "navigation_body_241",
+      "D": "fused_height[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_240_s0",
+    "bit": 240,
+    "pins": {
+      "Q": "navigation_body_240",
+      "D": "fused_height[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_239_s0",
+    "bit": 239,
+    "pins": {
+      "Q": "navigation_body_239",
+      "D": "fused_vz_q16[31]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_238_s0",
+    "bit": 238,
+    "pins": {
+      "Q": "navigation_body_238",
+      "D": "fused_vz_q16[30]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_237_s0",
+    "bit": 237,
+    "pins": {
+      "Q": "navigation_body_237",
+      "D": "fused_vz_q16[29]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_236_s0",
+    "bit": 236,
+    "pins": {
+      "Q": "navigation_body_236",
+      "D": "fused_vz_q16[28]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_235_s0",
+    "bit": 235,
+    "pins": {
+      "Q": "navigation_body_235",
+      "D": "fused_vz_q16[27]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_234_s0",
+    "bit": 234,
+    "pins": {
+      "Q": "navigation_body_234",
+      "D": "fused_vz_q16[26]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_233_s0",
+    "bit": 233,
+    "pins": {
+      "Q": "navigation_body_233",
+      "D": "fused_vz_q16[25]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_232_s0",
+    "bit": 232,
+    "pins": {
+      "Q": "navigation_body_232",
+      "D": "fused_vz_q16[24]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_231_s0",
+    "bit": 231,
+    "pins": {
+      "Q": "navigation_body_231",
+      "D": "fused_vz_q16[23]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_230_s0",
+    "bit": 230,
+    "pins": {
+      "Q": "navigation_body_230",
+      "D": "fused_vz_q16[22]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_229_s0",
+    "bit": 229,
+    "pins": {
+      "Q": "navigation_body_229",
+      "D": "fused_vz_q16[21]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_228_s0",
+    "bit": 228,
+    "pins": {
+      "Q": "navigation_body_228",
+      "D": "fused_vz_q16[20]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_227_s0",
+    "bit": 227,
+    "pins": {
+      "Q": "navigation_body_227",
+      "D": "fused_vz_q16[19]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_226_s0",
+    "bit": 226,
+    "pins": {
+      "Q": "navigation_body_226",
+      "D": "fused_vz_q16[18]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_225_s0",
+    "bit": 225,
+    "pins": {
+      "Q": "navigation_body_225",
+      "D": "fused_vz_q16[17]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_224_s0",
+    "bit": 224,
+    "pins": {
+      "Q": "navigation_body_224",
+      "D": "fused_vz_q16[16]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_223_s0",
+    "bit": 223,
+    "pins": {
+      "Q": "navigation_body_223",
+      "D": "fused_vz_q16[15]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_222_s0",
+    "bit": 222,
+    "pins": {
+      "Q": "navigation_body_222",
+      "D": "fused_vz_q16[14]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_221_s0",
+    "bit": 221,
+    "pins": {
+      "Q": "navigation_body_221",
+      "D": "fused_vz_q16[13]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_220_s0",
+    "bit": 220,
+    "pins": {
+      "Q": "navigation_body_220",
+      "D": "fused_vz_q16[12]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_219_s0",
+    "bit": 219,
+    "pins": {
+      "Q": "navigation_body_219",
+      "D": "fused_vz_q16[11]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_218_s0",
+    "bit": 218,
+    "pins": {
+      "Q": "navigation_body_218",
+      "D": "fused_vz_q16[10]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_217_s0",
+    "bit": 217,
+    "pins": {
+      "Q": "navigation_body_217",
+      "D": "fused_vz_q16[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_216_s0",
+    "bit": 216,
+    "pins": {
+      "Q": "navigation_body_216",
+      "D": "fused_vz_q16[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_215_s0",
+    "bit": 215,
+    "pins": {
+      "Q": "navigation_body_215",
+      "D": "fused_vz_q16[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_214_s0",
+    "bit": 214,
+    "pins": {
+      "Q": "navigation_body_214",
+      "D": "fused_vz_q16[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_213_s0",
+    "bit": 213,
+    "pins": {
+      "Q": "navigation_body_213",
+      "D": "fused_vz_q16[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_212_s0",
+    "bit": 212,
+    "pins": {
+      "Q": "navigation_body_212",
+      "D": "fused_vz_q16[4]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_211_s0",
+    "bit": 211,
+    "pins": {
+      "Q": "navigation_body_211",
+      "D": "fused_vz_q16[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_210_s0",
+    "bit": 210,
+    "pins": {
+      "Q": "navigation_body_210",
+      "D": "fused_vz_q16[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_209_s0",
+    "bit": 209,
+    "pins": {
+      "Q": "navigation_body_209",
+      "D": "fused_vz_q16[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_208_s0",
+    "bit": 208,
+    "pins": {
+      "Q": "navigation_body_208",
+      "D": "fused_vz_q16[0]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_207_s0",
+    "bit": 207,
+    "pins": {
+      "Q": "navigation_body_207",
+      "D": "position_raw_x[31]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_203_s0",
+    "bit": 203,
+    "pins": {
+      "Q": "navigation_body_203",
+      "D": "position_raw_x[27]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_202_s0",
+    "bit": 202,
+    "pins": {
+      "Q": "navigation_body_202",
+      "D": "position_raw_x[26]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_201_s0",
+    "bit": 201,
+    "pins": {
+      "Q": "navigation_body_201",
+      "D": "position_raw_x[25]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_200_s0",
+    "bit": 200,
+    "pins": {
+      "Q": "navigation_body_200",
+      "D": "position_raw_x[24]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_199_s0",
+    "bit": 199,
+    "pins": {
+      "Q": "navigation_body_199",
+      "D": "position_raw_x[23]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_198_s0",
+    "bit": 198,
+    "pins": {
+      "Q": "navigation_body_198",
+      "D": "position_raw_x[22]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_197_s0",
+    "bit": 197,
+    "pins": {
+      "Q": "navigation_body_197",
+      "D": "position_raw_x[21]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_196_s0",
+    "bit": 196,
+    "pins": {
+      "Q": "navigation_body_196",
+      "D": "position_raw_x[20]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_195_s0",
+    "bit": 195,
+    "pins": {
+      "Q": "navigation_body_195",
+      "D": "position_raw_x[19]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_194_s0",
+    "bit": 194,
+    "pins": {
+      "Q": "navigation_body_194",
+      "D": "position_raw_x[18]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_193_s0",
+    "bit": 193,
+    "pins": {
+      "Q": "navigation_body_193",
+      "D": "position_raw_x[17]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_192_s0",
+    "bit": 192,
+    "pins": {
+      "Q": "navigation_body_192",
+      "D": "position_raw_x[16]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_191_s0",
+    "bit": 191,
+    "pins": {
+      "Q": "navigation_body_191",
+      "D": "position_raw_x[15]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_190_s0",
+    "bit": 190,
+    "pins": {
+      "Q": "navigation_body_190",
+      "D": "position_raw_x[14]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_189_s0",
+    "bit": 189,
+    "pins": {
+      "Q": "navigation_body_189",
+      "D": "position_raw_x[13]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_188_s0",
+    "bit": 188,
+    "pins": {
+      "Q": "navigation_body_188",
+      "D": "position_raw_x[12]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_187_s0",
+    "bit": 187,
+    "pins": {
+      "Q": "navigation_body_187",
+      "D": "position_raw_x[11]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_186_s0",
+    "bit": 186,
+    "pins": {
+      "Q": "navigation_body_186",
+      "D": "position_raw_x[10]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_185_s0",
+    "bit": 185,
+    "pins": {
+      "Q": "navigation_body_185",
+      "D": "position_raw_x[9]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_184_s0",
+    "bit": 184,
+    "pins": {
+      "Q": "navigation_body_184",
+      "D": "position_raw_x[8]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_183_s0",
+    "bit": 183,
+    "pins": {
+      "Q": "navigation_body_183",
+      "D": "position_raw_x[7]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_182_s0",
+    "bit": 182,
+    "pins": {
+      "Q": "navigation_body_182",
+      "D": "position_raw_x[6]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_181_s0",
+    "bit": 181,
+    "pins": {
+      "Q": "navigation_body_181",
+      "D": "position_raw_x[5]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_180_s0",
+    "bit": 180,
+    "pins": {
+      "Q": "navigation_body_180",
+      "D": "position_raw_x[4]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_179_s0",
+    "bit": 179,
+    "pins": {
+      "Q": "navigation_body_179",
+      "D": "position_raw_x[3]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_178_s0",
+    "bit": 178,
+    "pins": {
+      "Q": "navigation_body_178",
+      "D": "position_raw_x[2]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_177_s0",
+    "bit": 177,
+    "pins": {
+      "Q": "navigation_body_177",
+      "D": "position_raw_x[1]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_176_s0",
+    "bit": 176,
+    "pins": {
+      "Q": "navigation_body_176",
+      "D": "position_raw_x[0]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_175_s0",
+    "bit": 175,
+    "pins": {
+      "Q": "navigation_body_175",
+      "D": "position_raw_y[31]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_172_s0",
+    "bit": 172,
+    "pins": {
+      "Q": "navigation_body_172",
+      "D": "position_raw_y[28]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_171_s0",
+    "bit": 171,
+    "pins": {
+      "Q": "navigation_body_171",
+      "D": "position_raw_y[27]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_170_s0",
+    "bit": 170,
+    "pins": {
+      "Q": "navigation_body_170",
+      "D": "position_raw_y[26]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_169_s0",
+    "bit": 169,
+    "pins": {
+      "Q": "navigation_body_169",
+      "D": "position_raw_y[25]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_168_s0",
+    "bit": 168,
+    "pins": {
+      "Q": "navigation_body_168",
+      "D": "position_raw_y[24]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_167_s0",
+    "bit": 167,
+    "pins": {
+      "Q": "navigation_body_167",
+      "D": "position_raw_y[23]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_166_s0",
+    "bit": 166,
+    "pins": {
+      "Q": "navigation_body_166",
+      "D": "position_raw_y[22]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_165_s0",
+    "bit": 165,
+    "pins": {
+      "Q": "navigation_body_165",
+      "D": "position_raw_y[21]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_164_s0",
+    "bit": 164,
+    "pins": {
+      "Q": "navigation_body_164",
+      "D": "position_raw_y[20]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_163_s0",
+    "bit": 163,
+    "pins": {
+      "Q": "navigation_body_163",
+      "D": "position_raw_y[19]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_162_s0",
+    "bit": 162,
+    "pins": {
+      "Q": "navigation_body_162",
+      "D": "position_raw_y[18]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_161_s0",
+    "bit": 161,
+    "pins": {
+      "Q": "navigation_body_161",
+      "D": "position_raw_y[17]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_160_s0",
+    "bit": 160,
+    "pins": {
+      "Q": "navigation_body_160",
+      "D": "position_raw_y[16]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_159_s0",
+    "bit": 159,
+    "pins": {
+      "Q": "navigation_body_159",
+      "D": "position_raw_y[15]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_158_s0",
+    "bit": 158,
+    "pins": {
+      "Q": "navigation_body_158",
+      "D": "position_raw_y[14]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_157_s0",
+    "bit": 157,
+    "pins": {
+      "Q": "navigation_body_157",
+      "D": "position_raw_y[13]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_156_s0",
+    "bit": 156,
+    "pins": {
+      "Q": "navigation_body_156",
+      "D": "position_raw_y[12]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_155_s0",
+    "bit": 155,
+    "pins": {
+      "Q": "navigation_body_155",
+      "D": "position_raw_y[11]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_154_s0",
+    "bit": 154,
+    "pins": {
+      "Q": "navigation_body_154",
+      "D": "position_raw_y[10]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_153_s0",
+    "bit": 153,
+    "pins": {
+      "Q": "navigation_body_153",
+      "D": "position_raw_y[9]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_152_s0",
+    "bit": 152,
+    "pins": {
+      "Q": "navigation_body_152",
+      "D": "position_raw_y[8]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_151_s0",
+    "bit": 151,
+    "pins": {
+      "Q": "navigation_body_151",
+      "D": "position_raw_y[7]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_150_s0",
+    "bit": 150,
+    "pins": {
+      "Q": "navigation_body_150",
+      "D": "position_raw_y[6]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_149_s0",
+    "bit": 149,
+    "pins": {
+      "Q": "navigation_body_149",
+      "D": "position_raw_y[5]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_148_s0",
+    "bit": 148,
+    "pins": {
+      "Q": "navigation_body_148",
+      "D": "position_raw_y[4]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_147_s0",
+    "bit": 147,
+    "pins": {
+      "Q": "navigation_body_147",
+      "D": "position_raw_y[3]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_146_s0",
+    "bit": 146,
+    "pins": {
+      "Q": "navigation_body_146",
+      "D": "position_raw_y[2]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_145_s0",
+    "bit": 145,
+    "pins": {
+      "Q": "navigation_body_145",
+      "D": "position_raw_y[1]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_144_s0",
+    "bit": 144,
+    "pins": {
+      "Q": "navigation_body_144",
+      "D": "position_raw_y[0]",
+      "CLK": "clk50_d",
+      "RESET": "position_x_q8_31_6",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_143_s0",
+    "bit": 143,
+    "pins": {
+      "Q": "diagnostic_q_143",
+      "D": "nav_xy_payload_roll_15",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_139_s0",
+    "bit": 139,
+    "pins": {
+      "Q": "diagnostic_q_139",
+      "D": "nav_xy_payload_roll_11",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_138_s0",
+    "bit": 138,
+    "pins": {
+      "Q": "diagnostic_q_138",
+      "D": "nav_xy_payload_roll_10",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_137_s0",
+    "bit": 137,
+    "pins": {
+      "Q": "diagnostic_q_137",
+      "D": "nav_xy_payload_roll_9",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_136_s0",
+    "bit": 136,
+    "pins": {
+      "Q": "diagnostic_q_136",
+      "D": "nav_xy_payload_roll_8",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_135_s0",
+    "bit": 135,
+    "pins": {
+      "Q": "diagnostic_q_135",
+      "D": "nav_xy_payload_roll_7",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_134_s0",
+    "bit": 134,
+    "pins": {
+      "Q": "diagnostic_q_134",
+      "D": "nav_xy_payload_roll_6",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_133_s0",
+    "bit": 133,
+    "pins": {
+      "Q": "diagnostic_q_133",
+      "D": "nav_xy_payload_roll_5",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_132_s0",
+    "bit": 132,
+    "pins": {
+      "Q": "diagnostic_q_132",
+      "D": "nav_xy_payload_roll_4",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_131_s0",
+    "bit": 131,
+    "pins": {
+      "Q": "diagnostic_q_131",
+      "D": "nav_xy_payload_roll_3",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_130_s0",
+    "bit": 130,
+    "pins": {
+      "Q": "diagnostic_q_130",
+      "D": "nav_xy_payload_roll_2",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_129_s0",
+    "bit": 129,
+    "pins": {
+      "Q": "diagnostic_q_129",
+      "D": "nav_xy_payload_roll_1",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_128_s0",
+    "bit": 128,
+    "pins": {
+      "Q": "diagnostic_q_128",
+      "D": "nav_xy_payload_roll_0",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_124_s0",
+    "bit": 124,
+    "pins": {
+      "Q": "diagnostic_q_124",
+      "D": "nav_xy_payload_pitch_15",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_123_s0",
+    "bit": 123,
+    "pins": {
+      "Q": "diagnostic_q_123",
+      "D": "nav_xy_payload_pitch_11",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_122_s0",
+    "bit": 122,
+    "pins": {
+      "Q": "diagnostic_q_122",
+      "D": "nav_xy_payload_pitch_10",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_121_s0",
+    "bit": 121,
+    "pins": {
+      "Q": "diagnostic_q_121",
+      "D": "nav_xy_payload_pitch_9",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_120_s0",
+    "bit": 120,
+    "pins": {
+      "Q": "diagnostic_q_120",
+      "D": "nav_xy_payload_pitch_8",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_119_s0",
+    "bit": 119,
+    "pins": {
+      "Q": "diagnostic_q_119",
+      "D": "nav_xy_payload_pitch_7",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_118_s0",
+    "bit": 118,
+    "pins": {
+      "Q": "diagnostic_q_118",
+      "D": "nav_xy_payload_pitch_6",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_117_s0",
+    "bit": 117,
+    "pins": {
+      "Q": "diagnostic_q_117",
+      "D": "nav_xy_payload_pitch_5",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_116_s0",
+    "bit": 116,
+    "pins": {
+      "Q": "diagnostic_q_116",
+      "D": "nav_xy_payload_pitch_4",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_115_s0",
+    "bit": 115,
+    "pins": {
+      "Q": "diagnostic_q_115",
+      "D": "nav_xy_payload_pitch_3",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_114_s0",
+    "bit": 114,
+    "pins": {
+      "Q": "diagnostic_q_114",
+      "D": "nav_xy_payload_pitch_2",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_113_s0",
+    "bit": 113,
+    "pins": {
+      "Q": "diagnostic_q_113",
+      "D": "nav_xy_payload_pitch_1",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_112_s0",
+    "bit": 112,
+    "pins": {
+      "Q": "diagnostic_q_112",
+      "D": "nav_xy_payload_pitch_0",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_111_s0",
+    "bit": 111,
+    "pins": {
+      "Q": "navigation_body_111",
+      "D": "controller_delta[15]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_105_s0",
+    "bit": 105,
+    "pins": {
+      "Q": "navigation_body_105",
+      "D": "controller_delta[9]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_104_s0",
+    "bit": 104,
+    "pins": {
+      "Q": "navigation_body_104",
+      "D": "controller_delta[8]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_103_s0",
+    "bit": 103,
+    "pins": {
+      "Q": "navigation_body_103",
+      "D": "controller_delta[7]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_102_s0",
+    "bit": 102,
+    "pins": {
+      "Q": "navigation_body_102",
+      "D": "controller_delta[6]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_101_s0",
+    "bit": 101,
+    "pins": {
+      "Q": "navigation_body_101",
+      "D": "controller_delta[5]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_100_s0",
+    "bit": 100,
+    "pins": {
+      "Q": "navigation_body_100",
+      "D": "controller_delta[4]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_99_s0",
+    "bit": 99,
+    "pins": {
+      "Q": "navigation_body_99",
+      "D": "controller_delta[3]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_98_s0",
+    "bit": 98,
+    "pins": {
+      "Q": "navigation_body_98",
+      "D": "controller_delta[2]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_97_s0",
+    "bit": 97,
+    "pins": {
+      "Q": "navigation_body_97",
+      "D": "controller_delta[1]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_96_s0",
+    "bit": 96,
+    "pins": {
+      "Q": "navigation_body_96",
+      "D": "controller_delta[0]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_95_s0",
+    "bit": 95,
+    "pins": {
+      "Q": "navigation_body_95",
+      "D": "position_reason[9]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_94_s0",
+    "bit": 94,
+    "pins": {
+      "Q": "navigation_body_94",
+      "D": "position_reason[8]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_93_s0",
+    "bit": 93,
+    "pins": {
+      "Q": "navigation_body_93",
+      "D": "position_reason[7]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_92_s0",
+    "bit": 92,
+    "pins": {
+      "Q": "navigation_body_92",
+      "D": "position_reason[6]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_91_s0",
+    "bit": 91,
+    "pins": {
+      "Q": "navigation_body_91",
+      "D": "position_reason[5]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_89_s0",
+    "bit": 89,
+    "pins": {
+      "Q": "navigation_body_89",
+      "D": "position_reason[3]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_88_s0",
+    "bit": 88,
+    "pins": {
+      "Q": "navigation_body_88",
+      "D": "position_reason[2]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_87_s0",
+    "bit": 87,
+    "pins": {
+      "Q": "navigation_body_87",
+      "D": "position_reason[1]",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_85_s0",
+    "bit": 85,
+    "pins": {
+      "Q": "navigation_body_85",
+      "D": "nav_xy_active",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_84_s0",
+    "bit": 84,
+    "pins": {
+      "Q": "navigation_body_84",
+      "D": "nav_z_active",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_83_s0",
+    "bit": 83,
+    "pins": {
+      "Q": "navigation_body_83",
+      "D": "source_loc_selected",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_82_s0",
+    "bit": 82,
+    "pins": {
+      "Q": "navigation_body_82",
+      "D": "controller_z_requested",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_81_s0",
+    "bit": 81,
+    "pins": {
+      "Q": "navigation_body_81",
+      "D": "nav_xy_ready",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_80_s0",
+    "bit": 80,
+    "pins": {
+      "Q": "navigation_body_80",
+      "D": "controller_z_ready",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_63_s0",
+    "bit": 63,
+    "pins": {
+      "Q": "navigation_body_63",
+      "D": "controller_collective[15]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_59_s0",
+    "bit": 59,
+    "pins": {
+      "Q": "navigation_body_59",
+      "D": "controller_collective[11]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_58_s0",
+    "bit": 58,
+    "pins": {
+      "Q": "navigation_body_58",
+      "D": "controller_collective[10]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_57_s0",
+    "bit": 57,
+    "pins": {
+      "Q": "navigation_body_57",
+      "D": "controller_collective[9]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_56_s0",
+    "bit": 56,
+    "pins": {
+      "Q": "navigation_body_56",
+      "D": "controller_collective[8]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_55_s0",
+    "bit": 55,
+    "pins": {
+      "Q": "navigation_body_55",
+      "D": "controller_collective[7]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_54_s0",
+    "bit": 54,
+    "pins": {
+      "Q": "navigation_body_54",
+      "D": "controller_collective[6]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_53_s0",
+    "bit": 53,
+    "pins": {
+      "Q": "navigation_body_53",
+      "D": "controller_collective[5]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_52_s0",
+    "bit": 52,
+    "pins": {
+      "Q": "navigation_body_52",
+      "D": "controller_collective[4]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_51_s0",
+    "bit": 51,
+    "pins": {
+      "Q": "navigation_body_51",
+      "D": "controller_collective[3]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_50_s0",
+    "bit": 50,
+    "pins": {
+      "Q": "navigation_body_50",
+      "D": "controller_collective[2]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_49_s0",
+    "bit": 49,
+    "pins": {
+      "Q": "navigation_body_49",
+      "D": "controller_collective[1]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_48_s0",
+    "bit": 48,
+    "pins": {
+      "Q": "navigation_body_48",
+      "D": "controller_collective[0]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_41_s0",
+    "bit": 41,
+    "pins": {
+      "Q": "navigation_body_41",
+      "D": "n4976_9",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_40_s0",
+    "bit": 40,
+    "pins": {
+      "Q": "navigation_body_40",
+      "D": "n4977_6",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_39_s0",
+    "bit": 39,
+    "pins": {
+      "Q": "navigation_body_39",
+      "D": "n4978_9",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_38_s0",
+    "bit": 38,
+    "pins": {
+      "Q": "navigation_body_38",
+      "D": "n4979_10",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_35_s0",
+    "bit": 35,
+    "pins": {
+      "Q": "navigation_body_35",
+      "D": "n4982_6",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_33_s0",
+    "bit": 33,
+    "pins": {
+      "Q": "navigation_body_33",
+      "D": "n4984_6",
+      "CLK": "clk50_d",
+      "RESET": "xy_reason_11_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_31_s0",
+    "bit": 31,
+    "pins": {
+      "Q": "navigation_body_31",
+      "D": "controller_target_height[31]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_14_s0",
+    "bit": 14,
+    "pins": {
+      "Q": "navigation_body_14",
+      "D": "controller_target_height[14]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_13_s0",
+    "bit": 13,
+    "pins": {
+      "Q": "navigation_body_13",
+      "D": "controller_target_height[13]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_12_s0",
+    "bit": 12,
+    "pins": {
+      "Q": "navigation_body_12",
+      "D": "controller_target_height[12]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_11_s0",
+    "bit": 11,
+    "pins": {
+      "Q": "navigation_body_11",
+      "D": "controller_target_height[11]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_10_s0",
+    "bit": 10,
+    "pins": {
+      "Q": "navigation_body_10",
+      "D": "controller_target_height[10]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_9_s0",
+    "bit": 9,
+    "pins": {
+      "Q": "navigation_body_9",
+      "D": "controller_target_height[9]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_8_s0",
+    "bit": 8,
+    "pins": {
+      "Q": "navigation_body_8",
+      "D": "controller_target_height[8]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_7_s0",
+    "bit": 7,
+    "pins": {
+      "Q": "navigation_body_7",
+      "D": "controller_target_height[7]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_6_s0",
+    "bit": 6,
+    "pins": {
+      "Q": "navigation_body_6",
+      "D": "controller_target_height[6]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_5_s0",
+    "bit": 5,
+    "pins": {
+      "Q": "navigation_body_5",
+      "D": "controller_target_height[5]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_4_s0",
+    "bit": 4,
+    "pins": {
+      "Q": "navigation_body_4",
+      "D": "controller_target_height[4]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_3_s0",
+    "bit": 3,
+    "pins": {
+      "Q": "navigation_body_3",
+      "D": "controller_target_height[3]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_2_s0",
+    "bit": 2,
+    "pins": {
+      "Q": "navigation_body_2",
+      "D": "controller_target_height[2]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_1_s0",
+    "bit": 1,
+    "pins": {
+      "Q": "navigation_body_1",
+      "D": "controller_target_height[1]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_0_s0",
+    "bit": 0,
+    "pins": {
+      "Q": "navigation_body_0",
+      "D": "controller_target_height[0]",
+      "CLK": "clk50_d",
+      "RESET": "z_throttle_delta_15_5",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_86_s1",
+    "bit": 86,
+    "pins": {
+      "Q": "navigation_body_86",
+      "D": "position_reason[0]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_503_s1",
+    "bit": 503,
+    "pins": {
+      "Q": "navigation_body_503",
+      "D": "geometry_reason_7_4",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_512_s1",
+    "bit": 512,
+    "pins": {
+      "Q": "navigation_body_512",
+      "D": "reasons[16]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_514_s1",
+    "bit": 514,
+    "pins": {
+      "Q": "navigation_body_514",
+      "D": "reasons[18]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_560_s1",
+    "bit": 560,
+    "pins": {
+      "Q": "navigation_body_560",
+      "D": "mtf_age_ms[0]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_561_s1",
+    "bit": 561,
+    "pins": {
+      "Q": "navigation_body_561",
+      "D": "mtf_age_ms[1]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_562_s1",
+    "bit": 562,
+    "pins": {
+      "Q": "navigation_body_562",
+      "D": "mtf_age_ms[2]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_563_s1",
+    "bit": 563,
+    "pins": {
+      "Q": "navigation_body_563",
+      "D": "mtf_age_ms[3]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_564_s1",
+    "bit": 564,
+    "pins": {
+      "Q": "navigation_body_564",
+      "D": "mtf_age_ms[4]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_565_s1",
+    "bit": 565,
+    "pins": {
+      "Q": "navigation_body_565",
+      "D": "mtf_age_ms[5]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_566_s1",
+    "bit": 566,
+    "pins": {
+      "Q": "navigation_body_566",
+      "D": "mtf_age_ms[6]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_567_s1",
+    "bit": 567,
+    "pins": {
+      "Q": "navigation_body_567",
+      "D": "mtf_age_ms[7]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_568_s1",
+    "bit": 568,
+    "pins": {
+      "Q": "navigation_body_568",
+      "D": "mtf_age_ms[8]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_569_s1",
+    "bit": 569,
+    "pins": {
+      "Q": "navigation_body_569",
+      "D": "mtf_age_ms[9]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_570_s1",
+    "bit": 570,
+    "pins": {
+      "Q": "navigation_body_570",
+      "D": "mtf_age_ms[10]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_571_s1",
+    "bit": 571,
+    "pins": {
+      "Q": "navigation_body_571",
+      "D": "mtf_age_ms[11]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_572_s1",
+    "bit": 572,
+    "pins": {
+      "Q": "navigation_body_572",
+      "D": "mtf_age_ms[12]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_573_s1",
+    "bit": 573,
+    "pins": {
+      "Q": "navigation_body_573",
+      "D": "mtf_age_ms[13]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_574_s1",
+    "bit": 574,
+    "pins": {
+      "Q": "navigation_body_574",
+      "D": "mtf_age_ms[14]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_575_s1",
+    "bit": 575,
+    "pins": {
+      "Q": "navigation_body_575",
+      "D": "mtf_age_ms[15]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_576_s1",
+    "bit": 576,
+    "pins": {
+      "Q": "navigation_body_576",
+      "D": "mtf_age_ms[16]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_577_s1",
+    "bit": 577,
+    "pins": {
+      "Q": "navigation_body_577",
+      "D": "mtf_age_ms[17]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_578_s1",
+    "bit": 578,
+    "pins": {
+      "Q": "navigation_body_578",
+      "D": "mtf_age_ms[18]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_579_s1",
+    "bit": 579,
+    "pins": {
+      "Q": "navigation_body_579",
+      "D": "mtf_age_ms[19]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_580_s1",
+    "bit": 580,
+    "pins": {
+      "Q": "navigation_body_580",
+      "D": "mtf_age_ms[20]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_581_s1",
+    "bit": 581,
+    "pins": {
+      "Q": "navigation_body_581",
+      "D": "mtf_age_ms[21]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_582_s1",
+    "bit": 582,
+    "pins": {
+      "Q": "navigation_body_582",
+      "D": "mtf_age_ms[22]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_583_s1",
+    "bit": 583,
+    "pins": {
+      "Q": "navigation_body_583",
+      "D": "mtf_age_ms[23]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_584_s1",
+    "bit": 584,
+    "pins": {
+      "Q": "navigation_body_584",
+      "D": "mtf_age_ms[24]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_585_s1",
+    "bit": 585,
+    "pins": {
+      "Q": "navigation_body_585",
+      "D": "mtf_age_ms[25]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_586_s1",
+    "bit": 586,
+    "pins": {
+      "Q": "navigation_body_586",
+      "D": "mtf_age_ms[26]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_587_s1",
+    "bit": 587,
+    "pins": {
+      "Q": "navigation_body_587",
+      "D": "mtf_age_ms[27]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_588_s1",
+    "bit": 588,
+    "pins": {
+      "Q": "navigation_body_588",
+      "D": "mtf_age_ms[28]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_589_s1",
+    "bit": 589,
+    "pins": {
+      "Q": "navigation_body_589",
+      "D": "mtf_age_ms[29]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_590_s1",
+    "bit": 590,
+    "pins": {
+      "Q": "navigation_body_590",
+      "D": "mtf_age_ms[30]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_591_s1",
+    "bit": 591,
+    "pins": {
+      "Q": "navigation_body_591",
+      "D": "mtf_age_ms[31]",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_32_s6",
+    "bit": 32,
+    "pins": {
+      "Q": "navigation_body_32",
+      "D": "diagnostic_q_32_17",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_42_s6",
+    "bit": 42,
+    "pins": {
+      "Q": "navigation_body_42",
+      "D": "diagnostic_q_42_14",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_504_s4",
+    "bit": 504,
+    "pins": {
+      "Q": "navigation_body_504",
+      "D": "VCC",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  },
+  {
+    "type": "DFFSE",
+    "name": "diagnostic_q_516_s6",
+    "bit": 516,
+    "pins": {
+      "Q": "navigation_body_516",
+      "D": "diagnostic_q_516_15",
+      "CLK": "clk50_d",
+      "SET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b1"
+  },
+  {
+    "type": "DFFRE",
+    "name": "diagnostic_q_526_s6",
+    "bit": 526,
+    "pins": {
+      "Q": "navigation_body_526",
+      "D": "diagnostic_q_526_14",
+      "CLK": "clk50_d",
+      "RESET": "GND",
+      "CE": "diagnostic_q_32_20"
+    },
+    "init": "1'b0"
+  }
+]

@@ -1,0 +1,5 @@
+Current-candidate individual test outputs:
+TELEMETRY_WIRE_PASS two complete 568 byte frames
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\variants\published_anchor_p2_r2_rep1\tests\legacy_telemetry_wire.v:20: $finish called at 98610210000 (1ps)
+TELEMETRY_WIRE_PASS two complete 568 byte frames
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\variants\published_anchor_p2_r2_rep1\tests\fallback_telemetry_wire.v:20: $finish called at 98610210000 (1ps)

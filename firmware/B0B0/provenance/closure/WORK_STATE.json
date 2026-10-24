@@ -1,0 +1,192 @@
+{
+  "updated_utc": "2026-10-24T04:31:08.178077+00:00",
+  "objective": "B0B0 strict 50MHz route/timing closure with preserved functionality",
+  "hardware_accessed": true,
+  "flash_changed": true,
+  "flight_ready": false,
+  "active_trials": [],
+  "best_complete_baseline": {
+    "variant": "control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "6924f4ad250967042dd00ac769b861f9dbcfd9f11d0fcb6dbecbc454ab7adf7c",
+    "netlist_sha256": "0be62a85bf094d9102a6488b792c77c8cb9296d9a5b4aaa3e05a72ea96fd3500",
+    "routing_passed": true,
+    "unrouted_nets": 0,
+    "raw_unrouted_field": null,
+    "zero_basis": "Actual full route/bitstream completion; no route errors",
+    "timing_passed": false,
+    "fmax_mhz": 49.457,
+    "slack": {
+      "setup": {
+        "tns_ns": -3.181,
+        "violated_endpoints": 22
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+      "sha256": "0aabe4d4869fbaf75eda30f77d338e7913b314595f74a5799fc66c00ccaad308",
+      "user_code": "0x0000b0b0"
+    },
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "reason": "Selected frozen 0be release achieves zero unrouted / 51.608 MHz at 19.5 ns; targeted SRAM bench and focused code/data review complete. No RTL changes in the audit.",
+  "acceptance": [
+    "Actual complete routing with no errors",
+    "Unchanged clk50 period20ns and17pins",
+    "Actual setup/hold/recovery/removal and pulse width nonnegative",
+    "Source-bound changed-cone proofs and inherited evidence verified before release",
+    "Fresh stopped physical state and targeted bench checks before hardware/flight conclusions"
+  ],
+  "completed_this_session": [
+    {
+      "name": "fine_velocity_global_control",
+      "routing_passed": true,
+      "fmax_mhz": 49.457,
+      "setup_wns_ns": -0.22,
+      "setup_violated_endpoints": 22
+    },
+    {
+      "name": "best819_global_height_ready",
+      "routing_passed": true,
+      "fmax_mhz": 39.162,
+      "rejected": true
+    },
+    "User-authorized B0B0 Flash and operator-confirmed battery-only cold boot accepted; props-off motors always stopped"
+  ],
+  "phase": "B0B0_flash_and_battery_only_cold_boot_passed",
+  "active_sessions": {},
+  "active_routing_trials": [],
+  "active_compiler_processes": [],
+  "owned_gw_sh_pid": null,
+  "owned_gw_sh_pids": {},
+  "hardware_programmed": true,
+  "pnr_verified": true,
+  "scoped_offline_proofs_passed": true,
+  "selected_release": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\B0B0_51_608MHz_verified",
+    "manifest_sha256": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+    "fmax_mhz": 51.608,
+    "constraint_period_ns": 19.5,
+    "hardware_clock_mhz": 50,
+    "unrouted_nets": 0,
+    "setup_violated_endpoints": 0,
+    "hold_violated_endpoints": 0,
+    "bitstream_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+    "offline_candidate_verified": true,
+    "hardware_sram_installed": true,
+    "stopped_startup_passed": true,
+    "healthy_height_output_passed": true,
+    "flash_written": true,
+    "flight_ready": false,
+    "targeted_props_off_acceptance_passed": true,
+    "hardware_acceptance_sha256": "70734ef829a1f6055f828c6e9241b816f4833728c7af3fbbe5458fcbb8ca5a03",
+    "powered_attitude_direction_passed": true,
+    "flash_contents_certified": true,
+    "physical_cold_boot_verified": true
+  },
+  "current_verifier": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verify_package.py",
+  "best_unrouted_nets": 0,
+  "best_variant": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195",
+  "latest_progress": "Authorized exact B0B0 Flash program/verify, independent Flash verify and final JTAG/reload passed. Operator confirmed battery-only physical cold boot with both board USB removed and all motors stayed stopped. SiK gap36.454s then B0B0 uptime199ms; calibration observed2999ms;38 healthy stopped snapshots/10.200s,1019 fresh module packets,75 raw payload checks matched, no stable-window module/core/gate error increments. No source/scale changes. Loaded/flight and optical rotation qualification remain pending.",
+  "remaining": [
+    "Loaded/airborne acceptance not performed; next physical stage is controlled first low-altitude loaded validation",
+    "Optical rotation-component semantics remain unqualified; SWC-low attitude correction does not qualify active XY optical response"
+  ],
+  "hardware_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\hardware_acceptance.json",
+  "hardware_acceptance_sha256": "70734ef829a1f6055f828c6e9241b816f4833728c7af3fbbe5458fcbb8ca5a03",
+  "historical_reason_before_audit": "Latest 0be has fewer logic levels but56unrouted; preserve best819 zero-route baseline as independent physical-only fallback. No product-source changes in this session.",
+  "best_complete_baseline_is_historical": true,
+  "authoritative_current_result": "selected_release",
+  "code_audit": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\code_audit\\audit_result.json",
+    "sha256": "b16f1217d1380c530eb0bc2e701115437a2b6db7636b2706761756c4d040e589",
+    "new_reader_boundary_checks": 13,
+    "passed": true,
+    "new_confirmed_actionable_defects": 0,
+    "minimum_throttle_landing_lock": "user_accepted_intended_behavior",
+    "historical_power_loss": "user_confirmed_loose_battery",
+    "rotation_semantics_qualified": false,
+    "firmware_changed": false
+  },
+  "user_clarifications": [
+    {
+      "topic": "historical_loaded_power_loss",
+      "source": "direct_user_statement",
+      "user_statement": "这个掉动力不用管是电池松了",
+      "disposition": "Operator attributes the event to a loose battery; no further software investigation requested for that event; not independently verified by software."
+    },
+    {
+      "topic": "minimum_throttle_landing_lock_in_fallback",
+      "source": "direct_user_statement",
+      "user_statement": "这个是没有问题的，不太用管",
+      "disposition": "Accepted intended behavior; preserve existing RTL; no actionable defect filed."
+    }
+  ],
+  "dynamic_validation": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\STATUS.json",
+    "sha256": "44346b053b9a3704699eea0e1184524525b79076cd767d62ac1f1c7adc04e146",
+    "phase": "persistent_B0B0_battery_only_cold_boot_passed"
+  },
+  "latest_fused_review": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\fused_drift_review.json",
+    "sha256": "ca39fae8b08696dded6f868b4152713d95a69fd4b86b934c77d5ba244da29cae",
+    "paper_fused_position_net_cm": 7.3984065,
+    "paper_fused_velocity_rms_mm_s": [
+      8.4782286,
+      6.5891671
+    ],
+    "paper_fused_velocity_mean_mm_s": [
+      2.2339752,
+      -2.5694917
+    ],
+    "user_priority": "Assess actual fused control measurements; user may accept small fused error. No threshold or blanket flight acceptance inferred."
+  },
+  "latest_minute_fused": {
+    "folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\minute_20261024T040533Z",
+    "review_sha256": "7ec48a2de063e50bc3103b936fe8e411dd75e8e2ecdc5f84431d7f81ebdc7727",
+    "independent_check_sha256": "18276f99d03a4a1c1eec67f59cfb29f1c7ce4723a9de58f254a4f25075389ba3",
+    "seconds": 60,
+    "net_drift_mm": 4.400768143620639,
+    "max_excursion_mm": 4.400768143620639,
+    "velocity_rms_mm_s": [
+      0.9860531758590306,
+      1.0555838714661747
+    ],
+    "all_stopped": true,
+    "module_counter_increments": 0,
+    "quality_range": [
+      106,
+      127
+    ],
+    "firmware_changed": false,
+    "scope": "Latest60s observation only; earlier20s results retained separately; not loaded-flight qualification.",
+    "readable_report": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\minute_20261024T040533Z\\一分钟融合静止结果.md",
+    "report_sha256": "c42b037aaea78843520a80abccb9f06f5af07672325080d5c84988b88f482789"
+  },
+  "powered_direction_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\powered_direction_acceptance.json",
+  "powered_direction_acceptance_sha256": "edc5fd2ec29bb7df90b58f1b305af3dbe4223904f1a8a63115fb8e2b3f387247",
+  "default_boot_preparation": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\default_preparation\\plan.json",
+    "sha256": "92b1ddf2c4bb008c1f4f481a24f65ed03b536f2b4bb2bf3e673ce38e76374784",
+    "offline_guard_tests_passed": 8,
+    "flash_written": true,
+    "explicit_approval_received": true,
+    "authorization": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\default_preparation\\user_authorization.json"
+  },
+  "flash_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\flash_acceptance.json",
+  "flash_acceptance_sha256": "509345951cadad67517d49a13747d6f1c56ab7e2abb6534a569f49082c3dbdae",
+  "cold_boot_observation": {
+    "folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\cold_boot_20261024T042756_919986Z",
+    "software_passed": true,
+    "physical_human_confirmation_pending": true,
+    "unique_raw_payloads_checked": 75
+  },
+  "physical_cold_boot_verified": true,
+  "cold_boot_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\cold_boot_acceptance.json",
+  "cold_boot_acceptance_sha256": "61d32c508beacf2f64e36ab84ecec55e021a66f946d9f8159ee050b6d60f3995"
+}

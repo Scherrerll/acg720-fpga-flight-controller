@@ -1,0 +1,3 @@
+Current-candidate individual test outputs:
+PASS actual core: no PWM gap, independent pilot, latched fallback, preflight block, SWA/IMU/RC immediate stops
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\variants\published_anchor_p2_r2_rep1\tests\fallback_core.v:50: $finish called at 60407720000 (1ps)

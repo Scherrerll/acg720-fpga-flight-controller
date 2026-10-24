@@ -1,0 +1,3 @@
+sticks_reference stick trace complete
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_map2_r2\tests\sticks_reference.v:22: $finish called at 40000020000 (1ps)
+{'samples': 4000, 'max_abs_errors': {'nx': 2.494829687504918e-05, 'ny': 1.7700843749968165e-05, 'z_lpf': 1.9267109374998537e-05, 'z_speed_mmps': 0.04223142578121042}, 'tolerances': [0.001, 0.001, 0.0001, 0.5], 'reference': 'unchanged Flight_State_Task, my_deadzone, length_limit', 'passed': True}

@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-24T04:27:52.412899+00:00",
+  "installed": true,
+  "build": "B0B0",
+  "default_after": "B0B0",
+  "flash_contents_certified": true,
+  "bitstream_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+  "previous_B0AC_sha256": "212f31daed0c96e71c4cd3f1e56a580cdc1b9d425a15ba391cf2a37e74e92c34",
+  "installer_receipt": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\flash_install_20261024T042524_170748Z\\flash_install.json",
+  "installer_receipt_sha256": "30206126903dfa9d9fdc9643cfac0c2eff89c4e8c2f86d66fda1f0c561d627d9",
+  "operation_log_sha256": {
+    "01_B0B0_sram_identity.txt": "e082a8e8209343aedd0d232d0db0631a619c06061f748527d02164bd0ec94451",
+    "02_previous_flash_reload.txt": "382a9b4dccfa3f9e637bbeaab54e30ff31b0ca0b18b564da80db7e10c66fe69d",
+    "04_previous_identity.txt": "1e73ba05e309433d1d8316669a649cd638af2ad6b47fac32e31b9194a4dd746b",
+    "05_previous_flash_independent_verify.txt": "f22bf45511950dde765e5fd3985c2af7de4ae87d663e1eb1bb0a149ce878ae41",
+    "06_previous_flash_reload_after_verify.txt": "48d0ad9442f8ed3222101fefed2af2eff53823e488f9ee6755ab3fb5fbabe0a8",
+    "08_write_entry_identity.txt": "0e4a3cfe8411ee508083980581da04ed799207ef2b50480addc0364615c58453",
+    "09_B0B0_program_verify.txt": "dd1ca811f96674410ff21f99afe7a075b3680e94f1132195f23978a6825c0995",
+    "10_B0B0_reload.txt": "40a322ba8c3d7cea616acf560cfbffe71eaedf127c054a225db491294cceee0c",
+    "12_B0B0_identity.txt": "e41f355fb7cd5a053ee966c54035b9306b76d3e2b0dee0a0880fee2377b3d127",
+    "13_B0B0_independent_verify.txt": "c6fe81d3d14cc08a8fb0213ef2879f2443dace2f9f5ca4373415ffce6cbdf6f7",
+    "14_B0B0_final_reload.txt": "382a9b4dccfa3f9e637bbeaab54e30ff31b0ca0b18b564da80db7e10c66fe69d",
+    "16_B0B0_final_identity.txt": "d87895cf58b18d8a4ea7823d0758a650063035ceac2a13c936f97fba90395f2d"
+  },
+  "flash_approval_received": true,
+  "physical_cold_boot_verified": true,
+  "flight_ready": false,
+  "pending": "Loaded/flight acceptance and optical rotation qualification remain outside proven scope",
+  "first_attempt_note": "First attempt rejected before Flash write at SWA1507; unnecessary SRAM recovery occurred and low-control wait failed. Record preserved. Installer fixed and8 offline tests passed before successful attempt.",
+  "cold_boot_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\cold_boot_acceptance.json",
+  "cold_boot_acceptance_sha256": "61d32c508beacf2f64e36ab84ecec55e021a66f946d9f8159ee050b6d60f3995",
+  "latest_utc": "2026-10-24T04:31:08.178077+00:00"
+}

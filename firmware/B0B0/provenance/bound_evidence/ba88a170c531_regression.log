@@ -1,0 +1,3 @@
+
+PASS cycles=65435 accepted=597 checksum=11 length=59 uart=465 timeout=26 explicit_wrap_frames=3
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\parser_published_view_plan\post_route\tb.v:82: $finish called at 654347000 (1ps)

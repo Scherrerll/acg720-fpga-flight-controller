@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-24T04:31:08.178077+00:00",
+  "source": "Direct user reply in this chat",
+  "confirmation": "已仅用电池冷启动，四个电机始终未转",
+  "confirmed_procedure": "Board battery and both board USB removed; waited >=10s; battery only reconnected, ground SiK USB retained; held stopped/low controls and stationary >=20s",
+  "physical_power_cycle_confirmed": true,
+  "battery_only_confirmed": true,
+  "all_motors_stayed_stopped": true
+}

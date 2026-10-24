@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "scope": "One change-focused source-RTL parser regression, original X c61 vs final published-view source bound to1aee study VG. Comparisons occur1ns after each clock, after NBA and continuous assignments settle; no zero-time continuous-bus or whole-design equivalence claim.",
+  "coverage": {
+    "cycles": 65435,
+    "accepted_samples": 597,
+    "checksum_events": 11,
+    "length_events": 59,
+    "uart_events": 465,
+    "timeout_events": 26,
+    "explicit_wrap_frames": 3
+  },
+  "source_vg_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\info_snapshot_plan\\synthesis_only\\20261023T191515_828752Z\\sensor\\mtf01p_reader.v": "c61ecf4fd67bdb0cbdf4afe1acefdfb9d42a0f1adbaaacc71d9978250840426c",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\synthesis_only\\20261023T204223_094931Z\\sensor\\mtf01p_reader.v": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\synthesis_only\\20261023T204223_094931Z\\impl\\gwsynthesis\\acg720_ano_port.vg": "1aee1a81653d106b9cf21e0e1326846d90bc5a5a3ebf4c4bbe4304bd680c45b6"
+  },
+  "commands": [
+    [
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+      "-g2012",
+      "-s",
+      "tb",
+      "-o",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\post_route\\regression.vvp",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\post_route\\modules.v",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\post_route\\tb.v"
+    ],
+    [
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\post_route\\regression.vvp"
+    ]
+  ],
+  "source_induction": "Each accepted0x51/20 commit captures raw_frame and old decoded regs on the same edge. Payload bytej becomes committed raw_frame[(20-j)*8+:8], little-endian fields assembled identically; sequence header byte4 becomes raw_frame[183:176]. Otherwise published values hold; reset/raw INIT0 establishes zero fields. Removed private payload/pendingseq state is excluded from direct state comparison.",
+  "compared": "All parser published outputs, error/sample counters, and unchanged state/gap/sum/message_id/payload_length/payload_index/shift after every clock.",
+  "coverage_scope": "Reuse500 randomized valid frames; unknown IDs at0/1/20/64; invalid51 lengths0/1/19/21/64/65/255 and unknown65/255; reset/error/timeout interruptions at partial boundaries0..26; checksumEF resync;30000 random transport cycles; explicit timeFFFFFFFF->0->1, sequenceFF->0->1, signedflow minimum/maximum/negative/zero.",
+  "evidence_sha256": {
+    "run_regression.py": "96237f717a2233f448b12bf9c0650691b64d5c98a256d8bc557fc5b90b463adf",
+    "modules.v": "733e6ad22396d259f7f73da9858f87d3e217ff8dac8429da94a5f78caf67be64",
+    "tb.v": "aef23e2b4fb64871b6e995ea1a96df399fc21999bc4edc74f798efff508a37a2",
+    "regression.log": "ba88a170c53119fc0ba0d466b2b85d526382e108665865b0a7bcd5a2863895e4"
+  },
+  "functional_runs": 1,
+  "synthesis_run": false,
+  "pnr_run": false,
+  "hardware_accessed": false,
+  "full_qualification": false,
+  "limitations": "Parser byte interface only; unchanged physical UART, flow calibration, RC/core and whole project not rerun. Routing zero-unrouted is separate from timing closure; this source proof does not repair or accept41.761MHz timing."
+}

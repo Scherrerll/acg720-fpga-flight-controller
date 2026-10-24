@@ -1,0 +1,17 @@
+{
+  "reference": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p2_r2_rep1",
+  "files": {
+    "acg720_ano_port.v": {
+      "reference_sha256": "7c933a4f4b9424748b0846d686a5007c1b7af2f78b909b3e4da370b951e6e9a0",
+      "candidate_sha256": "42aaa5ccc497e53cbce4c57ddc014305ff50212fd7353345b57c295a6b6286e2"
+    },
+    "mtf_xyz_navigation_control.v": {
+      "reference_sha256": "1c2e1831d2856bf37ae42a42df38e20c53ae5935e5d6001acc6c36540947727c",
+      "candidate_sha256": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b"
+    }
+  },
+  "reviewed_patch_sha256": "3c94d19ca233387701d0dcf12f3aae15955b35e77055ad8ee1448349e0f0792a",
+  "full_top_proof_pending": false,
+  "proof_evidence_mode": "original_source_evidence_plus_explicit_compositional_bridge",
+  "current_full_top_simulation_passed": false
+}

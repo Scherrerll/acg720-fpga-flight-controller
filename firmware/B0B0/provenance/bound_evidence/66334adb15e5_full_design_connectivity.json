@@ -1,0 +1,30 @@
+{
+  "netlist": "synthesis\\20261023T043538_236355Z\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "netlist_sha256": "aa3d19bb8972b926647a83480fc50ef64408726f273a99ff064277497abd5d2b",
+  "primary_bit862": {
+    "line": 631335,
+    "D": "core_body[0]"
+  },
+  "fresh_lut": {
+    "line": 334349,
+    "output": "core_body_0_4",
+    "inputs": [
+      "n3434_132",
+      "command_seen",
+      "core_body_861",
+      "controller_run"
+    ],
+    "INIT": "4000"
+  },
+  "fresh_or_idle_lut": {
+    "line": 337877,
+    "output": "core_body_0",
+    "INIT": "FF70",
+    "fresh_input": "core_body_0_4"
+  },
+  "pwm_consumers": [
+    325170,
+    325184
+  ],
+  "interpretation": "Command freshness restored to telemetry bit862 and PWM consumers, with watchdog command_seen dependency; no longer optimized to idle alone."
+}

@@ -1,0 +1,126 @@
+{
+  "archived_utc": "2026-10-23T18:19:34.792921+00:00",
+  "reason": "Actual full-build SYN token stream differs from preliminary. Preserve original scoped qualification and all30evidencefiles before re-auditing actual full-build VG. RTL/source inputs unchanged. No release/FS/hardware qualification existed.",
+  "files": {
+    "control_contract.py": {
+      "archive_relative_path": "control_contract.py",
+      "sha256": "a8461905fe6c5eeee2272395b19bdc771a4990498a0ba82b658b7f43a1dc8592"
+    },
+    "finalize_release.py": {
+      "archive_relative_path": "finalize_release.py",
+      "sha256": "6626bc2b6dda5b3c1d100dfc9676b35fd0fc25285c38f8e5b1cf8a2fa764230c"
+    },
+    "freeze_mapped_review.py": {
+      "archive_relative_path": "freeze_mapped_review.py",
+      "sha256": "c2355d035ae784b17b5afe3a5a725ca53d9722b1fa2d06f4dab34fc221ae2b33"
+    },
+    "inherited_context_bridge.py": {
+      "archive_relative_path": "inherited_context_bridge.py",
+      "sha256": "090be717dc4cfeb10626c315830d290ddd09cfb63e76cc444ba607679f86a1c0"
+    },
+    "qualify_current_context.py": {
+      "archive_relative_path": "qualify_current_context.py",
+      "sha256": "b0193d7b4108059fb3568295980a4b93070e80acc13a9a4cc45ea04a5d7e7d70"
+    },
+    "verify_mapped_binding.py": {
+      "archive_relative_path": "verify_mapped_binding.py",
+      "sha256": "868ff8e8545f3ea28dab3efad9541a516c942ea7583f243036ab0a5e01e42ebe"
+    },
+    "source_contract.json": {
+      "archive_relative_path": "source_contract.json",
+      "sha256": "3b184de31d8a445856912d8ddd09821d171c5567994078570fb622d3cc88c6d4"
+    },
+    "OPERATOR_NOTES.txt": {
+      "archive_relative_path": "OPERATOR_NOTES.txt",
+      "sha256": "d5dabda54de3572f16c64865f61b44d65ba1ee0f43d160ff9630f065d1b9d72f"
+    },
+    "DO_NOT_PROGRAM": {
+      "archive_relative_path": "DO_NOT_PROGRAM",
+      "sha256": "244baf6f18000d5b0eed6d0ad219073f7c7fb0b172acca6ec21e7df54615b7ec"
+    },
+    "synthesis_study.json": {
+      "archive_relative_path": "synthesis_study.json",
+      "sha256": "08ca00e0aa4f4853798e55def9796bf6ebf8097ec54aed6e86f40bc47ed5c049"
+    },
+    "fixture\\build_project.py": {
+      "archive_relative_path": "fixture\\build_project.py",
+      "sha256": "c84c0d98250d6a25e0fe00405e909cbf4a820f905945bf858716bb5d0b81623e"
+    },
+    "tests\\top_elaboration.proof.json": {
+      "archive_relative_path": "tests\\top_elaboration.proof.json",
+      "sha256": "5514a55e6587fdd131e13727359dc1cf3a329defa7f14335fbf462e621210aca"
+    },
+    "tests\\top_elaboration.log": {
+      "archive_relative_path": "tests\\top_elaboration.log",
+      "sha256": "2cf2b1e3e818950b72d25313a095db2eb2aebc42ec97bb4f74782b9a7af3362f"
+    },
+    "hardware\\inherited_context_bridge.json": {
+      "archive_relative_path": "hardware\\inherited_context_bridge.json",
+      "sha256": "6e88e6085a331771bd01474e927c45b5f035dd465c29f7643c8cd6e34499195e"
+    },
+    "hardware\\mapped_720_candidate_bdd.json": {
+      "archive_relative_path": "hardware\\mapped_720_candidate_bdd.json",
+      "sha256": "f13c7e3a12aff68a136603231ad688860f2eb4043e3b02a63b53202a1ae564b8"
+    },
+    "hardware\\mapped_720_reference_bdd.json": {
+      "archive_relative_path": "hardware\\mapped_720_reference_bdd.json",
+      "sha256": "b737344db73c14fd99ddf89c96e9711a3352fcfd272ad415d11ed23a87f9c481"
+    },
+    "hardware\\mapped_init_review.json": {
+      "archive_relative_path": "hardware\\mapped_init_review.json",
+      "sha256": "fa40e0665f9ef5d44b07928a7165c4e4f8b4a6dabdd5e4bd6be1ebf0d5d7f500"
+    },
+    "hardware\\mapped_mtf_audit.py": {
+      "archive_relative_path": "hardware\\mapped_mtf_audit.py",
+      "sha256": "a83fd9a9c7a88f28525f276a507f3bae7e054b0f791cab1ecb62ef6942cd5fc5"
+    },
+    "hardware\\mapped_mtf_review.json": {
+      "archive_relative_path": "hardware\\mapped_mtf_review.json",
+      "sha256": "c8db9840ec63b40f9787b121257727bc5d44ccd0aec04a993c91ff3eab6b7e1c"
+    },
+    "hardware\\mapped_nav_review.json": {
+      "archive_relative_path": "hardware\\mapped_nav_review.json",
+      "sha256": "8dd65c19136a4a618aaa64f16915fd4c7077812608bb4c9938802a3ad34aabb8"
+    },
+    "hardware\\mapped_probe.py": {
+      "archive_relative_path": "hardware\\mapped_probe.py",
+      "sha256": "4d08c476c1bdf59156aa8875ecec9a0aec59cbd51d7d120c87e73b71de9604f8"
+    },
+    "hardware\\mapped_review.py": {
+      "archive_relative_path": "hardware\\mapped_review.py",
+      "sha256": "72a7be34e7d9c4bbaaada06abab2f5bf88bf453bec7f50cee404345f306d6a92"
+    },
+    "hardware\\mapped_structure.py": {
+      "archive_relative_path": "hardware\\mapped_structure.py",
+      "sha256": "b4723ef2bbeb3f00319e93f846f6680a92bca04d2db118b243d6e8ff896be480"
+    },
+    "hardware\\review_synthesis_freshness.py": {
+      "archive_relative_path": "hardware\\review_synthesis_freshness.py",
+      "sha256": "c7dd98b1acaa1b78d3da34bb1d322dc3181456f24c15cfa43a50a5050d98cdb4"
+    },
+    "hardware\\synthesis_freshness_review.json": {
+      "archive_relative_path": "hardware\\synthesis_freshness_review.json",
+      "sha256": "083add34b0e99a75825ada8fac854452f3d141e9f6d731cf99b934a0e0362075"
+    },
+    "hardware\\mapped_probe\\bank_cells.json": {
+      "archive_relative_path": "hardware\\mapped_probe\\bank_cells.json",
+      "sha256": "40d1b08d03839284f5205f5399e6e1031f840342c1efda99ee73b20b3d725e06"
+    },
+    "hardware\\mapped_probe\\compile.log": {
+      "archive_relative_path": "hardware\\mapped_probe\\compile.log",
+      "sha256": "d4bb99d20b954e6bec0c0a6224e3f28048f6f1077124fe706140bf59c17fc8d7"
+    },
+    "hardware\\mapped_probe\\sim.log": {
+      "archive_relative_path": "hardware\\mapped_probe\\sim.log",
+      "sha256": "47fb884d570048ade9963cb30ac036c992fb35574576d8110e1cd7531728b394"
+    },
+    "hardware\\mapped_probe\\sim.vvp": {
+      "archive_relative_path": "hardware\\mapped_probe\\sim.vvp",
+      "sha256": "8877523c1e9a8c4be95608bcb9878e218640f132d5590a364f45f74c3b1979f7"
+    },
+    "hardware\\mapped_probe\\tb.v": {
+      "archive_relative_path": "hardware\\mapped_probe\\tb.v",
+      "sha256": "af626a892011f0f6a7756012f3f48dc1218d4439d5e862e049d3c7a754ea45ac"
+    }
+  }
+}

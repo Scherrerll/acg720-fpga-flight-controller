@@ -1,0 +1,15 @@
+{
+  "reference": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\diagnostic_reset_p2_r2_rep1",
+  "files": {
+    "core/flight_core.v": {
+      "reference_sha256": "7280aae3fa9b96b684af766229caebbb1b73e6c879fbb029ddb8e2a148953e25",
+      "candidate_sha256": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff"
+    },
+    "core/height_loss_fallback.v": {
+      "reference_sha256": "dcdbdab7e3ea0891479d6b6cf17c03fc7c35f9d6eea0d8c645428a58521f035b",
+      "candidate_sha256": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6"
+    }
+  },
+  "qualification_pending": false,
+  "reviewed_patch_sha256": "b80cb34e76ed5871acbd5a935010085b6cc09458fcdfbf17b1ebbdb6556811f0"
+}

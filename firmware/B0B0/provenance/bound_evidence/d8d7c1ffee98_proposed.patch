@@ -1,0 +1,72 @@
+--- a/position/mtf_shared_height_fusion.v
++++ b/position/mtf_shared_height_fusion.v
+@@ -32,7 +32,8 @@
+  output reg signed [31:0] fused_height_mm,vz_mmps,sample_az_mmps2,
+  output reg signed [31:0] vz_q16,output wire vz_q16_valid,
+  output reg [15:0] reason,
+- output wire estimate_ready_state_numeric_tail
++ output wire estimate_ready_state_numeric_tail,
++ output wire vz_q16_range_raw
+ );
+  localparam PERIOD_TICKS=CLK_HZ*11/1000;
+  localparam integer TIMER_STORAGE_BITS=(CLK_HZ==50000000) ? 20:32;
+@@ -77,6 +78,7 @@
+  reg trunc_negative=0;reg signed [31:0] publish_h_integer=0,publish_v_integer=0;
+  reg signed [31:0] publish_v_q16=0;
+  reg publish_v_q16_range=0,v_q16_range=0;
++ assign vz_q16_range_raw=v_q16_range;
+  // Check the full signed64 state BEFORE narrowing. An invalid fine bus
+  // must never masquerade as an in-range control velocity after wrapping.
+  assign vz_q16_valid=estimate_ready && v_q16_range;
+--- a/mtf_xyz_navigation_control.v
++++ b/mtf_xyz_navigation_control.v
+@@ -103,6 +103,7 @@
+  wire height_estimate_ready,height_qualified_ready,height_fusion_update;
+  wire signed [31:0] fused_height,fused_vz,fused_vz_q16,height_sample_az;
+  wire fused_vz_q16_valid;wire [15:0] height_reason;
++ wire height_vz_q16_range_raw;
+  mtf_shared_height_fusion #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.CAL_MASK(0),.RANGE_AGE_PRECHECKED(1)) height_fusion(
+   .clk(clk),.rst_n(rst_n),.origin_reset(origin_reset),.range_valid(geometry_height_ready && module_fresh),
+   .acc_valid(live_acc),.acc_update(acc_update),.acc_dt_us(acc_dt_us),
+@@ -110,7 +111,7 @@
+   .ref_height_mm(height_mm),.az_up_mmps2(az_up_mmps2),.valid(),.estimate_ready(height_estimate_ready),.estimate_ready_state_numeric_tail(height_estimate_state_numeric_tail),
+   .qualified_ready(height_qualified_ready),.qualified_valid(),.update(height_fusion_update),
+   .fused_height_mm(fused_height),.vz_mmps(fused_vz),.sample_az_mmps2(height_sample_az),
+-  .vz_q16(fused_vz_q16),.vz_q16_valid(fused_vz_q16_valid),.reason(height_reason),
++  .vz_q16(fused_vz_q16),.vz_q16_valid(fused_vz_q16_valid),.vz_q16_range_raw(height_vz_q16_range_raw),.reason(height_reason),
+   .math_mul_start(m_request[2]),.math_mul_cancel(m_cancel[2]),
+   .math_mul_a(m_a[128 +:64]),.math_mul_b(m_b[128 +:64]),
+   .math_mul_busy(m_busy[2]),.math_mul_done(m_done[2]),.math_mul_result(m_result),
+@@ -139,12 +140,12 @@
+   raw_fvx>=-655360000 && raw_fvx<=655360000 && raw_fvy>=-655360000 && raw_fvy<=655360000 &&
+   ax_mmps2>=-30000 && ax_mmps2<=30000 && ay_mmps2>=-30000 && ay_mmps2<=30000 &&
+   az_up_mmps2>=-30000 && az_up_mmps2<=30000 && live_yaw_range_ok;
+- wire observation_bad=!height_ready || !fused_vz_q16_valid;
++ wire observation_bad=!height_ready || !height_vz_q16_range_raw;
+  wire control_bad=observation_bad || !rc_valid || !enabled;
+  reg observation_bad_d=1,control_bad_d=1,origin_d=0,manual_d=0;
+  reg [7:0] observation_epoch=0,control_epoch=0;
+  reg [15:0] observation_epoch_reason=0,control_revoke_reason=0;
+- wire [15:0] raw_revoke_reason=origin_reset ?16'd1024:observation_bad || !height_ready || !fused_vz_q16_valid || !position_internal_ready || !raw_numeric_ok ?16'd4:
++ wire [15:0] raw_revoke_reason=origin_reset ?16'd1024:observation_bad || !position_internal_ready || !raw_numeric_ok ?16'd4:
+   !rc_valid || channel_count<7 || !(raw_requested || raw_manual) ?16'd1:!enabled ?16'd2:!raw_centered ?16'd16:16'd1;
+  wire observation_event=(observation_bad && !observation_bad_d) || (origin_reset && !origin_d);
+  wire control_event=observation_event || (control_bad && !control_bad_d);
+@@ -178,7 +179,7 @@
+    p_ch1<=0;p_ch2<=0;p_ch3<=0;p_ch4<=0;p_ch7<=0;
+    p_height_update<=0;p_sample_update<=0;p_sample_dt<=0;p_vz<=0;p_collective<=0;
+   end else begin
+-   p_live<=live_velocity;p_height_valid<=height_ready && fused_vz_q16_valid;p_acc_valid<=live_acc;p_rc_valid<=rc_valid;p_enabled<=enabled;
++   p_live<=live_velocity;p_height_valid<=height_ready && height_vz_q16_range_raw;p_acc_valid<=live_acc;p_rc_valid<=rc_valid;p_enabled<=enabled;
+    p_observation_epoch<=next_observation_epoch;p_control_epoch<=next_control_epoch;
+    p_vx<=raw_fvx;p_vy<=raw_fvy;p_height<=fused_height;p_ax<=ax_mmps2;p_ay<=ay_mmps2;p_az<=height_sample_az;p_yaw<=yaw_cdeg;
+    p_height_update<=height_fusion_update;p_sample_update<=acc_update;p_sample_dt<=acc_dt_us;p_vz<=fused_vz_q16;p_collective<=collective_us;
+@@ -280,7 +281,7 @@
+  assign xy_payload_roll=controller_roll;assign xy_payload_pitch=controller_pitch;
+  assign xy_roll_target=xy_active ? controller_roll:16'sd0;
+  assign xy_pitch_target=xy_active ? controller_pitch:16'sd0;
+- assign z_active=controller_z_active && controller_z_ready && height_ready && fused_vz_q16_valid && controller_observation_epoch_ok && controller_control_epoch_ok && rc_valid && enabled && !origin_reset;
++ assign z_active=controller_z_active && controller_z_ready && height_ready && height_vz_q16_range_raw && controller_observation_epoch_ok && controller_control_epoch_ok && rc_valid && enabled && !origin_reset;
+  assign z_throttle_delta=z_active ?controller_delta:16'sd0;
+  assign z_collective=z_active ?controller_collective:16'd0;
+  wire signed [31:0] z_target_height=z_active ?controller_target_height:32'sd0;

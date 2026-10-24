@@ -1,0 +1,75 @@
+{
+  "baseline": {
+    "fusion_range_related_ffs": [
+      {
+        "type": "DFFRE",
+        "name": "v_q16_range_s0",
+        "ports": "\n    .Q(v_q16_range),\n    .D(publish_v_q16_range),\n    .CLK(clk50_d),\n    .RESET(n1001_6),\n    .CE(n7358_21) ",
+        "parameters": [
+          "defparam v_q16_range_s0.INIT=1'b0;"
+        ]
+      },
+      {
+        "type": "DFFRE",
+        "name": "publish_v_q16_range_s0",
+        "ports": "\n    .Q(publish_v_q16_range),\n    .D(n4710_3),\n    .CLK(clk50_d),\n    .RESET(n1001_6),\n    .CE(n6650_6) ",
+        "parameters": [
+          "defparam publish_v_q16_range_s0.INIT=1'b0;"
+        ]
+      }
+    ],
+    "fusion_range_ports": [
+      "output v_q16_range;"
+    ],
+    "nav_range_connections": [
+      "wire v_q16_range;",
+      "    .I0(v_q16_range),",
+      "    .I1(v_q16_range),",
+      "    .I0(v_q16_range),",
+      "    .v_q16_range(v_q16_range),"
+    ]
+  },
+  "proposal": {
+    "fusion_range_related_ffs": [
+      {
+        "type": "DFFRE",
+        "name": "v_q16_range_s0",
+        "ports": "\n    .Q(height_vz_q16_range_raw),\n    .D(publish_v_q16_range),\n    .CLK(clk50_d),\n    .RESET(n1002_6),\n    .CE(n7359_21) ",
+        "parameters": [
+          "defparam v_q16_range_s0.INIT=1'b0;"
+        ]
+      },
+      {
+        "type": "DFFRE",
+        "name": "publish_v_q16_range_s0",
+        "ports": "\n    .Q(publish_v_q16_range),\n    .D(n4711_3),\n    .CLK(clk50_d),\n    .RESET(n1002_6),\n    .CE(n6651_6) ",
+        "parameters": [
+          "defparam publish_v_q16_range_s0.INIT=1'b0;"
+        ]
+      }
+    ],
+    "fusion_range_ports": [],
+    "nav_range_connections": [
+      "wire height_vz_q16_range_raw;",
+      "    .I0(height_vz_q16_range_raw),",
+      "    .I0(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I0(height_vz_q16_range_raw),",
+      "    .I0(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .I1(height_vz_q16_range_raw),",
+      "    .height_vz_q16_range_raw(height_vz_q16_range_raw),"
+    ]
+  }
+}

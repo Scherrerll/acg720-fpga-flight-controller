@@ -1,0 +1,119 @@
+{
+  "utc": "2026-10-24T04:31:08.178077+00:00",
+  "phase": "persistent_B0B0_battery_only_cold_boot_passed",
+  "current_build": "B0B0",
+  "roll_review": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\roll_20261024T033604Z\\review.json",
+  "roll_review_sha256": "aff51c34b14d4983110baa9c5b80b61f6bb188e728c795cc41da4752d090d12b",
+  "payload_review": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\roll_20261024T033604Z\\payload_and_phases.json",
+  "payload_review_sha256": "819ddd8e79dd212067228630dbad6a7a0b3d4ef454ab0cb92d12bad30c6d6edb",
+  "roll_observation": {
+    "range_deg": [
+      -3.73,
+      4.56
+    ],
+    "initial_roll_deg": 0.46,
+    "final_roll_deg": 0.47,
+    "all_stopped": true,
+    "module_error_increments": 0,
+    "independent_payloads_checked": 475,
+    "payload_mismatches": 0
+  },
+  "pending_static_folder": null,
+  "observation_to_disambiguate": "Stationary raw-flow variation / accumulated diagnostic position drift persists; input conditions versus sensor behavior not isolated. Current XY uses fused velocity, not the diagnostic position accumulator.",
+  "rotation_compensation_qualified": false,
+  "loaded_flight_accepted": false,
+  "firmware_changed": false,
+  "programmed": false,
+  "flash_changed": true,
+  "flight_ready": false,
+  "stationary_review": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\static_20261024T034051Z\\static20_review.json",
+  "stationary_review_sha256": "07066a1e46011576db384f4b78f56c026eec735e6f9db85e42eb735fd20a333d",
+  "stationary_summary": {
+    "module_xy_delta_mm": [
+      -63.218,
+      65.004
+    ],
+    "seconds": 19.79,
+    "raw_payload_checks": 1375,
+    "raw_payload_mismatches": 0,
+    "all_stopped": true,
+    "module_error_increments": 0,
+    "fused_velocity_median_mm_s": [
+      1.486145,
+      0.186386
+    ],
+    "cause": "undetermined"
+  },
+  "monitor_page": {
+    "url": "http://127.0.0.1:8767/",
+    "visible_page_verified": true,
+    "title": "ACG720 · 飞行监控"
+  },
+  "comparison": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\static_20261024T034852Z\\comparison.json",
+  "comparison_sha256": "2ad73f7b9bb715432c59aadce7d9294f897960e3e08f0d542a35541c51dd2286",
+  "report": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\动态采样结果.md",
+  "report_sha256": "fe2b3482d53ee7745a5efa00f76fe26bafe704a3022428e61c58ff4102ea13b5",
+  "final_stopped_state_sha256": "9cb6ecb07a3952ee3feb1133a6113afecc64f6f4f34bcd18b66bf4a7759b099f",
+  "new_confirmed_rtl_defects": 0,
+  "frozen_source_hashes_verified": 51,
+  "conclusion": "No conversion mismatch; stationary raw-flow noise remains, with lower fused noise on printed paper. Preserve factory coefficients; stop repeating static/hand motion checks. Rotation semantics and flight qualification remain outside proven scope.",
+  "fused_drift_review": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\fused_drift_review.json",
+    "sha256": "ca39fae8b08696dded6f868b4152713d95a69fd4b86b934c77d5ba244da29cae",
+    "paper_fused_position_net_cm": 7.3984065,
+    "paper_fused_velocity_rms_mm_s": [
+      8.4782286,
+      6.5891671
+    ],
+    "paper_fused_velocity_mean_mm_s": [
+      2.2339752,
+      -2.5694917
+    ],
+    "user_priority": "Assess actual fused control measurements; user may accept small fused error. No threshold or blanket flight acceptance inferred."
+  },
+  "latest_minute": {
+    "folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\minute_20261024T040533Z",
+    "review_sha256": "7ec48a2de063e50bc3103b936fe8e411dd75e8e2ecdc5f84431d7f81ebdc7727",
+    "independent_check_sha256": "18276f99d03a4a1c1eec67f59cfb29f1c7ce4723a9de58f254a4f25075389ba3",
+    "seconds": 60,
+    "net_drift_mm": 4.400768143620639,
+    "max_excursion_mm": 4.400768143620639,
+    "velocity_rms_mm_s": [
+      0.9860531758590306,
+      1.0555838714661747
+    ],
+    "all_stopped": true,
+    "module_counter_increments": 0,
+    "quality_range": [
+      106,
+      127
+    ],
+    "firmware_changed": false,
+    "scope": "Latest60s observation only; earlier20s results retained separately; not loaded-flight qualification.",
+    "readable_report": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\dynamic_validation\\minute_20261024T040533Z\\一分钟融合静止结果.md",
+    "report_sha256": "c42b037aaea78843520a80abccb9f06f5af07672325080d5c84988b88f482789"
+  },
+  "powered_direction": {
+    "utc": "2026-10-24T04:23:09.127734+00:00",
+    "build": "B0B0",
+    "scope": "Current-image props-off correction direction and FPGA-reported PWM allocation",
+    "passed": true,
+    "review": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\powered_direction_20261024T041227Z\\review.json",
+    "review_sha256": "bd2370c1f00ec5132504a5869c07701fa4e3dec8515c9d96e94007c38bfbc4fc",
+    "report": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\powered_direction_20261024T041227Z\\带动力纠偏结果.md",
+    "report_sha256": "03f920c94718473db4e9013a06baf8d5d7d0789ccc4c6b4d4f0292a5ec5792c9",
+    "active_samples": 577,
+    "active_sample_span_s": 115.19806129999051,
+    "final_stopped": true,
+    "firmware_changed": false,
+    "flash_changed": false,
+    "rotation_compensation_qualified": false,
+    "loaded_flight_accepted": false,
+    "flight_ready": false
+  },
+  "default_boot_plan": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\bench\\hardware\\default_preparation\\plan.json",
+  "flash_installed": true,
+  "cold_boot_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\cold_boot_acceptance.json",
+  "cold_boot_acceptance_sha256": "61d32c508beacf2f64e36ab84ecec55e021a66f946d9f8159ee050b6d60f3995",
+  "physical_cold_boot_verified": true
+}

@@ -1,0 +1,188 @@
+--- core\flight_core.v
++++ core\flight_core.v
+@@ -27,6 +27,7 @@
+     input wire signed [17:0] pilot_norm_x,pilot_norm_y,
+     input wire pilot_norm_update,pilot_norm_valid,input wire [15:0] pilot_norm_dt_us,
+     output wire taking_off_out,
++    output wire height_fallback_active,
+     output wire [3:0] flight_state_flags,
+     input wire signed [31:0] vertical_height_mm,
+     input wire signed [15:0] hold_roll_cdeg,hold_pitch_cdeg,hold_throttle_delta_us,
+@@ -153,19 +154,40 @@
+     reg [31:0] manual_outer_dt_accum=0,manual_outer_dt_ticks=0;
+     always @(posedge clk50) begin
+         if(!rst_n) begin hold_override<=0;altitude_override<=0;end
+-        else begin hold_override<=hold_active && control_enabled;altitude_override<=altitude_active && control_enabled;end
++        else begin hold_override<=hold_active && control_enabled && !height_fallback_active;altitude_override<=altitude_active && control_enabled && !height_fallback_active;end
+     end
+     wire signed [15:0] manual_roll_cdeg,manual_pitch_cdeg;
+     wire manual_angle_update,manual_angle_busy;
+     wire [7:0] manual_angle_fault;
++    // Warm independent RC path: native-height loss must not freeze pilot input.
++    reg [19:0] fallback_stick_phase=0;
++    reg fallback_stick_tick=0;
++    always @(posedge clk50)begin
++        fallback_stick_tick<=0;
++        if(!rst_n || !rc_valid)fallback_stick_phase<=0;
++        else if(fallback_stick_phase==499999)begin fallback_stick_phase<=0;fallback_stick_tick<=1;end
++        else fallback_stick_phase<=fallback_stick_phase+1'b1;
++    end
++    wire signed [17:0] fallback_norm_x,fallback_norm_y;
++    wire fallback_norm_update,fallback_norm_valid,fallback_norm_fault;
++    wire [15:0] fallback_norm_dt;
++    ano_xy_stick fallback_sticks(.clk(clk50),.rst_n(rst_n),.enabled(rc_valid),
++        .sample_update(fallback_stick_tick),.sample_dt_us(32'd10000),.ch1(ch1),.ch2(ch2),
++        .nx(fallback_norm_x),.ny(fallback_norm_y),.busy(),.fault(fallback_norm_fault),
++        .update(fallback_norm_update),.valid(fallback_norm_valid),.output_dt_us(fallback_norm_dt));
++    wire selected_norm_update=height_fallback_active ?fallback_norm_update:pilot_norm_update;
++    wire selected_norm_valid=height_fallback_active ?fallback_norm_valid:pilot_norm_valid;
++    wire [15:0] selected_norm_dt=height_fallback_active ?fallback_norm_dt:pilot_norm_dt_us;
++    wire signed [17:0] selected_norm_x=height_fallback_active ?fallback_norm_x:pilot_norm_x;
++    wire signed [17:0] selected_norm_y=height_fallback_active ?fallback_norm_y:pilot_norm_y;
+     wire source_loc_selected=rc_valid && channel_count>=7 && ch7>=1800 && ch7<=2200;
+     wire signed [15:0] manual_snapshot_roll,manual_snapshot_pitch;
+     ano_manual_angles manual_angles(.clk(clk50),.rst_n(rst_n),
+-        .sample_update(pilot_norm_update),.norm_valid(pilot_norm_valid),.norm_dt_us(pilot_norm_dt_us),
+-        .norm_roll_q16(pilot_norm_y),.norm_pitch_q16(pilot_norm_x),
+-        .loc_override(hold_active),.loc_roll_cdeg(hold_roll_cdeg),.loc_pitch_cdeg(hold_pitch_cdeg),
++        .sample_update(selected_norm_update),.norm_valid(selected_norm_valid),.norm_dt_us(selected_norm_dt),
++        .norm_roll_q16(selected_norm_y),.norm_pitch_q16(selected_norm_x),
++        .loc_override(hold_active && !height_fallback_active),.loc_roll_cdeg(hold_roll_cdeg),.loc_pitch_cdeg(hold_pitch_cdeg),
+         .outer_update(manual_outer_update),.outer_dt_ticks(manual_outer_dt_ticks),
+-        .enabled(controller_enabled),.att_stab(!source_loc_selected),
++        .enabled(controller_enabled),.att_stab(!source_loc_selected || height_fallback_active),
+         .roll_cdeg(roll),.pitch_cdeg(pitch),
+         .update(manual_angle_update),.busy(manual_angle_busy),.fault(manual_angle_fault),
+         .snapshot_roll_cdeg(manual_snapshot_roll),.snapshot_pitch_cdeg(manual_snapshot_pitch),
+@@ -260,7 +282,7 @@
+     always @(posedge clk50) begin
+         if(!rst_n) begin throttle_active_q<=0; request_expired_q<=0; command_expired_q<=1; end
+         else begin
+-            throttle_active_q<=taking_off && altitude_active;
++            throttle_active_q<=taking_off && (altitude_active || height_fallback_active);
+             request_expired_q<=request_age>=POSE_TIMEOUT_TICKS;
+             command_expired_q<=command_age>=POSE_TIMEOUT_TICKS;
+         end
+@@ -314,20 +336,20 @@
+     // Keep the actual estimator/telemetry alive; all motor PWM remains1000us.
+     wire installation_verified=1'b1; // B089 PROPS-OFF HARDWARE BENCH; not flight accepted.
+     control_gate #(.LOW_HOLD_TICKS(ARM_LOW_TICKS),.HIGH_HOLD_TICKS(ARM_HIGH_TICKS)) gate(
+-        .clk(clk50),.rst_n(rst_n),.rc_valid(rc_valid),.sensor_ok(sensor_ok && installation_verified && vertical_available && !land_lock),
++        .clk(clk50),.rst_n(rst_n),.rc_valid(rc_valid),.sensor_ok(sensor_ok && installation_verified && (vertical_available || height_fallback_active) && !land_lock),
+         .channel_count(channel_count),.ch3(ch3),.ch5(ch5),
+         .armed(armed),.inhibit_reason(inhibit_reason),
+         .event_pulse(gate_event_pulse),.event_code(gate_event_code),
+         .interruption_count(gate_interruption_count),.revoke_count(gate_revoke_count),
+         .last_interruption_code(gate_last_interruption_code),.last_revoke_code(gate_last_revoke_code));
+-    assign armed_usable=installation_verified && armed && rc_valid && sensor_ok && vertical_available && !land_lock && channel_count>=5 && channel_count<=8 &&
++    assign armed_usable=installation_verified && armed && rc_valid && sensor_ok && (vertical_available || height_fallback_active) && !land_lock && channel_count>=5 && channel_count<=8 &&
+         ch3>=800 && ch3<=2200 && ch5>=1800 && ch5<=2200;
+     // Export only the existing gate state to the hold FSM. Live health still
+     // masks command/PWM validity below; do not use this raw state for motors.
+     assign armed_raw=installation_verified && armed;
+     // In altitude modes low stick requests descent. SWA and live health still
+     // revoke output; the mode can only be entered through its centered gate.
+-    assign controller_enabled=RUN_RANGE_OK && armed_usable && taking_off && altitude_active;
++    assign controller_enabled=RUN_RANGE_OK && armed_usable && taking_off && (altitude_active || height_fallback_active);
+     assign control_enabled=controller_enabled;
+     // Actual consumed mode follows the latched target selection, but a live
+     // stop hides it on the same cycle as physical command validity.
+@@ -359,7 +381,7 @@
+         end
+     end
+     ano_rate_control #(.GYRO_FRAC_BITS(12),.MAX_DT_TICKS(POSE_TIMEOUT_TICKS)) controller(
+-        .clk(clk50),.rst_n(rst_n),.sample_update(rate_sample_update),.enabled(controller_run),.auto_takeoff(auto_takeoff),
++        .clk(clk50),.rst_n(rst_n),.sample_update(rate_sample_update),.enabled(controller_run),.auto_takeoff(auto_takeoff && !height_fallback_active),
+         .dt_ticks(control_dt_ticks),.roll_cdeg(outer_roll),.pitch_cdeg(outer_pitch),
+         .target_roll_cdeg(outer_target_roll),.target_pitch_cdeg(outer_target_pitch),
+         .gx(gx_q12),.gy(gy_q12),.gz(gz_q12),.target_yaw_rate_cdeg_s(target_yaw),
+@@ -368,12 +390,19 @@
+     reg [15:0] pending_throttle=1000;
+     wire motor_prepared,taking_off,flying,land_lock;wire [3:0] preparation_mask;
+     ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS)) flight_state(.clk(clk50),.rst_n(rst_n),.armed(armed_usable),
+-     .ch3(ch3),.collective_us(hold_collective_us),.motor_prepared(motor_prepared),
++     .ch3(ch3),.collective_us(selected_throttle),.motor_prepared(motor_prepared),
+      .taking_off(taking_off),.flying(flying),.land_lock(land_lock),.preparation_mask(preparation_mask));
+     assign taking_off_out=taking_off;
+     assign flight_state_flags={auto_takeoff,flying,motor_prepared,taking_off};
+     assign throttle_takeover_active=1'b0;assign throttle_pickup_us=16'd0;
+-    wire [15:0] selected_throttle=hold_collective_us;
++    wire [15:0] fallback_collective;
++    height_loss_fallback fallback_control(.clk(clk50),.rst_n(rst_n),
++     .healthy(sensor_ok && rc_valid && ch5>=1800 && ch5<=2200 && fallback_norm_valid && !land_lock),
++     .armed(armed),.taking_off(taking_off),.height_available(vertical_available),
++     .automatic_valid(rate_fresh && altitude_active && !height_fallback_active),
++     .automatic_collective_us(pending_throttle),.ch3(ch3),
++     .active(height_fallback_active),.prior_collective_valid(),.collective_us(fallback_collective));
++    wire [15:0] selected_throttle=height_fallback_active ?fallback_collective:hold_collective_us;
+     wire [15:0] mixed_collective=pending_throttle;
+     // Latch the exact yaw code before the safety gate clears the controller.
+     reg [7:0] last_yaw_fault=0;
+@@ -426,7 +455,7 @@
+             if(command_age!=32'hFFFFFFFF) command_age<=command_age+1'b1;
+             if(rate_sample_update && !controller_busy) begin
+                 throttle_base<=selected_throttle;captured_hold<=altitude_override;
+-                captured_hold_delta<=hold_throttle_delta_us;captured_hold_collective<=hold_collective_us;captured_active<=RUN_RANGE_OK && taking_off && altitude_active;
++                captured_hold_delta<=hold_throttle_delta_us;captured_hold_collective<=hold_collective_us;captured_active<=RUN_RANGE_OK && taking_off && (altitude_active || height_fallback_active);
+                 throttle_commit<=1;
+                 latency_counter<=0; measuring<=1;
+             end else if(measuring && latency_counter!=16'hFFFF) latency_counter<=latency_counter+1'b1;
+--- acg720_ano_port.v
++++ acg720_ano_port.v
+@@ -46,7 +46,7 @@
+  // and all target fields together; normal mode/command handoff adds20ns.
+  // Original core RC/SWA/IMU gates still mask physical commands directly.
+  wire raw_xyz_joint_active=nav_xy_active;
+- wire taking_off,nav_vertical_ready,nav_auto_takeoff;wire [3:0] flight_state_flags;wire signed [31:0] nav_feedback_height,nav_target_height;
++ wire taking_off,nav_vertical_ready,nav_auto_takeoff,height_fallback_active;wire [3:0] flight_state_flags;wire signed [31:0] nav_feedback_height,nav_target_height;
+  reg z_handoff_active=0;
+  always @(posedge clk50)if(!rst_n)z_handoff_active<=0;else z_handoff_active<=nav_z_active;
+  wire xyz_joint_active;
+@@ -66,7 +66,7 @@
+   requested && !hold_consumed ? hold_reason:altitude_requested ? altitude_reason:16'd1;
+  wire signed [15:0] hold_roll,hold_pitch,hold_throttle;
+  flight_core #(.RAW_TELEMETRY_COMMANDS(1),.LEVEL_TRIM_ENABLE(`LEVEL_TRIM_ENABLE),.LEVEL_R00_Q24(`LEVEL_R00_Q24),.LEVEL_R01_Q24(`LEVEL_R01_Q24),.LEVEL_R02_Q24(`LEVEL_R02_Q24),.LEVEL_R10_Q24(`LEVEL_R10_Q24),.LEVEL_R11_Q24(`LEVEL_R11_Q24),.LEVEL_R12_Q24(`LEVEL_R12_Q24),.LEVEL_R20_Q24(`LEVEL_R20_Q24),.LEVEL_R21_Q24(`LEVEL_R21_Q24),.LEVEL_R22_Q24(`LEVEL_R22_Q24)) core(.clk50(clk50),.imu_miso(imu_miso),.rc_ppm_in(rc_ppm_in),
+-  .hold_active(xyz_joint_active),.altitude_active(z_handoff_active),.vertical_available(nav_vertical_ready),.auto_takeoff(nav_auto_takeoff),.taking_off_out(taking_off),.flight_state_flags(flight_state_flags),.vertical_height_mm(nav_feedback_height),.hold_roll_cdeg(handoff_roll),.hold_pitch_cdeg(handoff_pitch),.hold_throttle_delta_us(handoff_delta),.hold_collective_us(handoff_collective),
++  .hold_active(xyz_joint_active),.altitude_active(z_handoff_active),.vertical_available(nav_vertical_ready),.auto_takeoff(nav_auto_takeoff),.taking_off_out(taking_off),.height_fallback_active(height_fallback_active),.flight_state_flags(flight_state_flags),.vertical_height_mm(nav_feedback_height),.hold_roll_cdeg(handoff_roll),.hold_pitch_cdeg(handoff_pitch),.hold_throttle_delta_us(handoff_delta),.hold_collective_us(handoff_collective),
+   .pilot_norm_x(pilot_norm_x),.pilot_norm_y(pilot_norm_y),.pilot_norm_update(pilot_norm_update),.pilot_norm_valid(pilot_norm_valid),.pilot_norm_dt_us(pilot_norm_dt_us),
+   .imu_sck(imu_sck),.imu_mosi(imu_mosi),.imu_cs_n(imu_cs_n),.imu_gyro_cs_n(imu_gyro_cs_n),.led2(led2),.led3(led3),
+   .motor1_pwm(motor1_pwm),.motor2_pwm(motor2_pwm),.motor3_pwm(motor3_pwm),.motor4_pwm(motor4_pwm),
+@@ -236,7 +236,7 @@
+   end
+  end
+  // A580/40B: primary sequence, v1, flags, build ID, uptime, sticky event.
+- wire [271:0] flight_info={8'd3,{4'd0,flight_state_flags},32'h0000B0AE,uptime_ms,event_sequence,event_time_ms,
++ wire [271:0] flight_info={8'd4,{3'd0,height_fallback_active,flight_state_flags},32'h0000B0AF,uptime_ms,event_sequence,event_time_ms,
+   event_code,event_mask,event_imu,event_attitude,event_pose_age,core_body[839:832],sticky_yaw_fault};
+  reg [271:0] flight_info_q=0;
+  always @(posedge clk50) if(!telemetry_snapshot_hold) flight_info_q<=flight_info;
+@@ -273,7 +273,7 @@
+   .pose_valid(pose_valid),.pose_age_ticks(pose_age),.roll_cdeg(roll),.pitch_cdeg(pitch),.yaw_cdeg(body_yaw),.yaw_range_ok(body_yaw_range_ok),
+   .acc_valid(accel_valid && converted_acc_valid && time_adapter_fault==0),
+   .acc_update(acceleration_update),.acc_dt_us(converted_dt_us),.ax_mmps2(converted_ax),.ay_mmps2(converted_ay),.az_up_mmps2(converted_az),
+-  .rc_valid(rc_valid),.enabled(armed),.taking_off(taking_off),.channel_count(channels),.ch1(ch1),.ch2(ch2),.ch3(ch3),.ch4(ch4),.ch7(ch7),
++  .rc_valid(rc_valid),.enabled(armed && !height_fallback_active),.taking_off(taking_off),.channel_count(channels),.ch1(ch1),.ch2(ch2),.ch3(ch3),.ch4(ch4),.ch7(ch7),
+   .collective_us(base_throttle_us),.uptime_ms(uptime_ms),.diagnostic_hold(telemetry_snapshot_hold),.diagnostic_body(navigation_body),
+   .control_permission(),.position_ready(),.height_ready(nav_vertical_ready),.auto_takeoff(nav_auto_takeoff),.z_feedback_height(nav_feedback_height),.z_target_height_out(nav_target_height),.position_x_q8(),.position_y_q8(),
+   .xy_requested(nav_xy_requested),.xy_ready(nav_xy_ready),.xy_active(nav_xy_active),
+--- acg720_ano_port.gprj
++++ acg720_ano_port.gprj
+@@ -9,6 +9,7 @@
+ <File path="core/ano_flight_state.v" type="file.verilog" enable="1"/>
+ <File path="position/ano_xy_stick.v" type="file.verilog" enable="1"/>
+ <File path="position/ano_xy_divide36.v" type="file.verilog" enable="1"/>
++<File path="core/height_loss_fallback.v" type="file.verilog" enable="1"/>
+ <File path="core/flight_core.v" type="file.verilog" enable="1"/>
+ <File path="core/bmi088_reader.v" type="file.verilog" enable="1"/>
+ <File path="core/imu_checked_guard_pipelined.v" type="file.verilog" enable="1"/>
+--- build.tcl
++++ build.tcl
+@@ -1,7 +1,7 @@
+ open_project acg720_ano_port.gprj
+ set_option -top_module acg720_ano_port
+ set_option -output_base_name acg720_ano_port
+-set_option -user_code 0000B0AE
++set_option -user_code 0000B0AF
+ set_option -place_option 3
+ set_option -route_option 2
+ set_option -timing_driven 1

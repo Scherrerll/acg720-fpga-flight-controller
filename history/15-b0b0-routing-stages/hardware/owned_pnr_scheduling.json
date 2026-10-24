@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-23T20:00:53.6111816+00:00",
+  "scope": "Owned offline compiler scheduling only; no global settings or receiver/hardware actions",
+  "changes": [
+    {
+      "variant": "info_netlist_p2_r2_rep0_fan23",
+      "owned_pid": 58120,
+      "before": "Normal",
+      "after": "AboveNormal",
+      "affinity_changed": false,
+      "inputs_changed": false
+    },
+    {
+      "variant": "info_netlist_p2_r2_rep1_fan23",
+      "owned_pid": 12344,
+      "before": "Normal",
+      "after": "AboveNormal",
+      "affinity_changed": false,
+      "inputs_changed": false
+    },
+    {
+      "variant": "info_netlist_p2_r2_rep1_fan32",
+      "owned_pid": 39776,
+      "before": "Normal",
+      "after": "AboveNormal",
+      "affinity_changed": false,
+      "inputs_changed": false
+    },
+    {
+      "variant": "info_netlist_p3_r2_rep1_fan23",
+      "owned_pid": 46376,
+      "before": "Normal",
+      "after": "AboveNormal",
+      "affinity_changed": false,
+      "inputs_changed": false
+    }
+  ]
+}

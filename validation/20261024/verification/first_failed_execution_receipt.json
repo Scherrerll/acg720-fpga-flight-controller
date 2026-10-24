@@ -1,0 +1,16 @@
+{
+  "adapter_sha256": "a5013d728753e5b759e163766223c49473e686591e44527b2c2714935ba3e27d",
+  "repair": "Only sha input coercion str->Path; all original assertions retained",
+  "jobs": [
+    {
+      "script": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\published_tilt4500_proposal\\post_route_pending\\run_proof.py",
+      "original_script_sha256": "39534730c2b648dc16574095ac84450eaca04616b87ceaa41d443793540296a6",
+      "prepared_sha256": "329f5a93979c9329387331713e01c410b05b8c420eb601c8a808afd220f9d840",
+      "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verification\\published_tilt4500_proposal.adapted.log",
+      "passed": false,
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\run_scoped_proofs.py\", line 46, in main\n    ns[\"main\"]()\n    ~~~~~~~~~~^^\n  File \"C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\published_tilt4500_proposal\\post_route_pending\\run_proof.py\", line 53, in main\n    p=subprocess.run(cmd,cwd=D,env=env,capture_output=True,text=True,timeout=60);logs.append(p.stdout+p.stderr);(D/'run.log').write_text('\\n'.join(logs));assert p.returncode==0,logs[-1]\n                                                                                                                                                                 ^^^^^^^^^^^^^^^\nAssertionError: tb.v:2: syntax error\ntb.v:1: Errors in port declarations.\n\n"
+    }
+  ],
+  "passed": false,
+  "hardware_accessed": false
+}

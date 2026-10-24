@@ -1,0 +1,37 @@
+{
+  "candidate": "B0AF",
+  "created_utc": "2026-10-23T04:11:09.658655+00:00",
+  "offline_verified": true,
+  "qualification_sha256": "4c07493d18a54dd36046c1c0ab84e6fb5a7c1896722037f45e693b75d3b9e243",
+  "build_manifest_sha256": "7de46b4bab06eab44bfa7a9257f8bf825ae396bbffcab8900499da3cff80436e",
+  "verifier_sha256": "1e5966f3d9559e8c33f29e518f4e9e38f86aec33018b1c8d38f642372ccbf94d",
+  "source_contract_sha256": "9006c5a1055aea7f09e8f734af8ec9ed2f14052b7164edbda204f6296c09e870",
+  "bitstream": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+    "sha256": "28284ebb9369d9b4123a4220537002a87e0c15593ec604b4728dc546ee9f393c",
+    "user_code": "0x0000b0af"
+  },
+  "fmax_mhz": 50.064,
+  "unrouted_nets": 0,
+  "io_count": 17,
+  "slack": {
+    "setup": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    },
+    "hold": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    }
+  },
+  "hardware_programmed": false,
+  "flash_changed": false,
+  "flight_ready": false,
+  "parent": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2",
+  "operator_notes_sha256": "dfbbecd21b758ad7874890dc5a9fec6063466d4398ad03cfd3b114c9045a73f8",
+  "remaining": [
+    "Targeted props-off B0AF loss/manual-pilot/stop/recovery acceptance",
+    "Default Flash update only with explicit authorization and cold-start validation",
+    "Historical loaded power-loss investigation and actual flight qualification"
+  ]
+}

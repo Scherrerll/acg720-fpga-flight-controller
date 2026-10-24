@@ -1,0 +1,189 @@
+--- a/core/ano_attitude_estimator.v
++++ b/core/ano_attitude_estimator.v
+@@ -42,7 +42,8 @@
+  // legacy integer gyro ports are display/telemetry only in this project.
+  output reg signed [31:0] filtered_gx_q12=0,output reg signed [31:0] filtered_gy_q12=0,output reg signed [31:0] filtered_gz_q12=0,
+  output reg signed [31:0] world_ax_mmps2=0,output reg signed [31:0] world_ay_mmps2=0,output reg signed [31:0] world_az_mmps2=0,
+- output wire linear_accel_valid
++ output wire linear_accel_valid,
++ output reg tilt4500_ok=1'b1
+ );
+  // Q24 nearest rounding, ties away from zero. Arithmetic shifts alone
+  // round negatives down and can accumulate a false integral from zero-mean
+@@ -227,6 +228,8 @@
+  reg matrix_for_output=0;
+  reg signed [63:0] accum=0,prod=0,quotient=0;
+  reg signed [31:0] corrected_rate=0,pending_roll=0,pending_pitch=0,pending_yaw=0;
++ wire signed [15:0] publication_roll_word=pending_roll[15:0],publication_pitch_word=pending_pitch[15:0];
++ wire publication_tilt4500=(publication_roll_word>=-4500 && publication_roll_word<=4500 && publication_pitch_word>=-4500 && publication_pitch_word<=4500);
+  wire signed [15:0] publication_yaw_word=pending_yaw[15:0];
+  wire publication_yaw_range=(publication_yaw_word>=-18000 && publication_yaw_word<=18000);
+  reg signed [31:0] pending_world[0:2],pending_gyro[0:2];
+@@ -303,7 +306,7 @@
+    cal_count<=0;cal_rejects<=0;reseed_count<=0;sum_x<=0;sum_y<=0;sum_z<=0;
+    bias_x<=0;bias_y<=0;bias_z<=0;fault<=0;accel_correction<=0;
+    bias_x_q12<=0;bias_y_q12<=0;bias_z_q12<=0;
+-   roll_cdeg<=0;pitch_cdeg<=0;yaw_cdeg<=0;yaw_range_ok<=1'b1;filtered_gx<=0;filtered_gy<=0;filtered_gz<=0;filtered_gx_q12<=0;filtered_gy_q12<=0;filtered_gz_q12<=0;
++   roll_cdeg<=0;pitch_cdeg<=0;yaw_cdeg<=0;yaw_range_ok<=1'b1;tilt4500_ok<=1'b1;filtered_gx<=0;filtered_gy<=0;filtered_gz<=0;filtered_gx_q12<=0;filtered_gy_q12<=0;filtered_gz_q12<=0;
+    world_ax_mmps2<=0;world_ay_mmps2<=0;world_az_mmps2<=0;
+    alignment<=1;aligned_ticks<=0;lpf_remainder_storage<=0;
+    integral_fraction<=0;integral_sum_q<=0;
+@@ -590,7 +593,7 @@
+    50:begin c_x<=angle_r00;c_y<=angle_r10;c_start<=1;state<=51;end
+    51:if(c_done) begin pending_yaw<=cdeg_scaled>>>16;state<=PUBLISH;end
+    PUBLISH:begin
+-    roll_cdeg<=pending_roll;pitch_cdeg<=pending_pitch;yaw_cdeg<=pending_yaw;yaw_range_ok<=publication_yaw_range;
++    roll_cdeg<=pending_roll;pitch_cdeg<=pending_pitch;yaw_cdeg<=pending_yaw;yaw_range_ok<=publication_yaw_range;tilt4500_ok<=publication_tilt4500;
+     filtered_gx<=sat16(pending_gyro[0]);filtered_gy<=sat16(pending_gyro[1]);filtered_gz<=sat16(pending_gyro[2]);
+     filtered_gx_q12<=pending_fine_x;filtered_gy_q12<=pending_fine_y;filtered_gz_q12<=pending_fine_z;
+     world_ax_mmps2<=pending_world[0];world_ay_mmps2<=pending_world[1];world_az_mmps2<=pending_world[2];
+--- a/core/imu_pipeline_pipelined.v
++++ b/core/imu_pipeline_pipelined.v
+@@ -26,7 +26,8 @@
+     output wire signed [31:0] filtered_gx_q12,filtered_gy_q12,filtered_gz_q12,
+     output wire signed [31:0] world_ax,world_ay,world_az_mmps2,
+     output wire linear_accel_valid,
+-    output wire [31:0] accepted_raw_age_ticks
++    output wire [31:0] accepted_raw_age_ticks,
++ output wire tilt4500_ok
+ );
+     wire record_ready;
+     wire [95:0] record_raw;
+@@ -87,7 +88,7 @@
+         .link_usable(link_usable),.raw(accepted_raw),.dt_ticks(dt_ticks),
+         .reject_event(reject_event),
+         .calibrated(calibrated),.attitude_valid(attitude_valid),.update(attitude_update),
+-        .roll_cdeg(roll),.pitch_cdeg(pitch),.yaw_cdeg(yaw),.yaw_range_ok(yaw_range_ok),.bias_x(bias_x),.bias_y(bias_y),.bias_z(bias_z),
++        .roll_cdeg(roll),.pitch_cdeg(pitch),.yaw_cdeg(yaw),.yaw_range_ok(yaw_range_ok),.tilt4500_ok(tilt4500_ok),.bias_x(bias_x),.bias_y(bias_y),.bias_z(bias_z),
+         .cal_count(cal_count),.fault(attitude_fault),.accel_correction(accel_correction),
+         .filtered_gx(filtered_gx),.filtered_gy(filtered_gy),.filtered_gz(filtered_gz),
+         .filtered_gx_q12(filtered_gx_q12),.filtered_gy_q12(filtered_gy_q12),.filtered_gz_q12(filtered_gz_q12),
+--- a/core/flight_core.v
++++ b/core/flight_core.v
+@@ -56,7 +56,8 @@
+     output wire signed [15:0] raw_ax_counts,raw_ay_counts,raw_az_counts,
+     output wire raw_accel_valid,
+     output wire [31:0] raw_accel_age_ticks,
+-    output wire [863:0] telemetry_body
++    output wire [863:0] telemetry_body,
++ output wire body_tilt4500_ok
+ );
+     reg [7:0] boot=0;
+     always @(posedge clk50) if(boot!=8'hFF) boot<=boot+1'b1;
+@@ -87,7 +88,7 @@
+         .accepted_raw(accepted_raw),.dt_ticks(dt_ticks),
+         .accepted_count(accepted_count),.rejected_count(rejected_count),
+         .reason(imu_reason),.who(who),.pwr(pwr),.attitude_fault(attitude_fault),
+-        .cal_count(cal_count),.roll(sensor_roll),.pitch(sensor_pitch),.yaw(sensor_yaw),.yaw_range_ok(body_yaw_range_ok),
++        .cal_count(cal_count),.roll(sensor_roll),.pitch(sensor_pitch),.yaw(sensor_yaw),.yaw_range_ok(body_yaw_range_ok),.tilt4500_ok(body_tilt4500_ok),
+         .filtered_gx(filtered_gx),.filtered_gy(filtered_gy),.filtered_gz(filtered_gz),
+         .filtered_gx_q12(fine_gx),.filtered_gy_q12(fine_gy),.filtered_gz_q12(fine_gz),
+         .world_ax(sensor_world_ax),.world_ay(sensor_world_ay),.world_az_mmps2(sensor_world_az),.linear_accel_valid(linear_accel_valid),
+@@ -301,7 +302,7 @@
+     wire roll_tilt_ok=tilt_within_limit(sensor_roll);
+     wire pitch_tilt_ok=tilt_within_limit(sensor_pitch);
+     wire sensor_ok=attitude_valid && calibrated && pose_seen && pose_age<POSE_TIMEOUT_TICKS &&
+-        roll_tilt_ok && pitch_tilt_ok &&
++        body_tilt4500_ok &&
+         controller_fault==0 && yaw_fault==0 && !controller_stale;
+     // Diagnostics mirror the existing validity terms without changing them.
+     // Latch on the same edge that clears gate preparation/arming; a recovered
+--- a/acg720_ano_port.v
++++ b/acg720_ano_port.v
+@@ -33,6 +33,7 @@
+   .update(acceleration_update),.dt_us(converted_dt_us),.output_ax(converted_ax),.output_ay(converted_ay),.output_az(converted_az),
+   .output_acc_valid(converted_acc_valid),.busy(),.fault(time_adapter_fault));
+  wire body_yaw_range_ok;
++ wire body_tilt4500_ok;
+  wire signed [15:0] roll,pitch,body_yaw;
+  wire [15:0] hold_collective;wire signed [16:0] gx,gy,gz;
+  wire signed [28:0] gx_q12,gy_q12,gz_q12;
+@@ -76,7 +77,7 @@
+   .throttle_takeover_active(throttle_takeover_active),.throttle_pickup_us(throttle_pickup_us),
+   .sticky_yaw_fault(sticky_yaw_fault),.world_ax_mmps2(world_ax),.world_ay_mmps2(world_ay),.world_az_up_mmps2(world_azup),.linear_accel_valid(accel_valid),
+   .raw_ax_counts(raw_ax),.raw_ay_counts(raw_ay),.raw_az_counts(raw_az),.raw_accel_valid(raw_accel_valid),.raw_accel_age_ticks(raw_accel_age),
+-  .body_roll_cdeg(roll),.body_pitch_cdeg(pitch),.body_yaw_cdeg(body_yaw),.body_yaw_range_ok(body_yaw_range_ok),.body_gx(gx),.body_gy(gy),.body_gz(gz),
++  .body_roll_cdeg(roll),.body_pitch_cdeg(pitch),.body_yaw_cdeg(body_yaw),.body_yaw_range_ok(body_yaw_range_ok),.body_tilt4500_ok(body_tilt4500_ok),.body_gx(gx),.body_gy(gy),.body_gz(gz),
+   .body_gx_q12(gx_q12),.body_gy_q12(gy_q12),.body_gz_q12(gz_q12),
+   .armed_usable(armed),.armed_raw(armed_raw),.hold_consumed(hold_consumed),.altitude_consumed(altitude_consumed),
+   .control_enabled(enabled),.command_fresh(fresh),.telemetry_body(core_body));
+@@ -265,12 +266,12 @@
+   if(!telemetry_snapshot_hold)rotation_pair_q<={rotation_pair[335:16],throttle_pickup_us};
+  end
+  wire [719:0] navigation_body;
+- mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1)) native_navigation(
++ mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1)) native_navigation(
+   .clk(clk50),.rst_n(rst_n),.origin_reset(observer_reset),.sample_valid(mtf_sample),
+   .range_valid(mtf_range_ok),.flow_valid(mtf_flow_ok && mtf_integrated),
+   .distance_mm(mtf_distance_mm),.dt_ms(mtf_dt_ms),.source_age_ms(mtf_age_ms),
+   .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),
+-  .pose_valid(pose_valid),.pose_age_ticks(pose_age),.roll_cdeg(roll),.pitch_cdeg(pitch),.yaw_cdeg(body_yaw),.yaw_range_ok(body_yaw_range_ok),
++  .pose_valid(pose_valid),.pose_age_ticks(pose_age),.roll_cdeg(roll),.pitch_cdeg(pitch),.yaw_cdeg(body_yaw),.yaw_range_ok(body_yaw_range_ok),.height_tilt4500_ok(body_tilt4500_ok),
+   .acc_valid(accel_valid && converted_acc_valid && time_adapter_fault==0),
+   .acc_update(acceleration_update),.acc_dt_us(converted_dt_us),.ax_mmps2(converted_ax),.ay_mmps2(converted_ay),.az_up_mmps2(converted_az),
+   .rc_valid(rc_valid),.enabled(armed && !height_fallback_active),.taking_off(taking_off),.channel_count(channels),.ch1(ch1),.ch2(ch2),.ch3(ch3),.ch4(ch4),.ch7(ch7),
+--- a/mtf_xyz_navigation_control.v
++++ b/mtf_xyz_navigation_control.v
+@@ -6,7 +6,7 @@
+ // PROOF_CONTROLLER permits the existing numeric controller, never installation acceptance.
+ // control_permission reports active calculation only, not physical release authority.
+ // This isolated candidate remains DO_NOT_PROGRAM; it has no physical stop lock.
+-module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0)(
++module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0)(
+  input wire clk,rst_n,origin_reset,diagnostic_hold,
+  input wire sample_valid,range_valid,flow_valid,
+  input wire [31:0] distance_mm,dt_ms,source_age_ms,
+@@ -32,7 +32,8 @@
+  output wire pilot_norm_update,pilot_norm_valid,output wire [15:0] pilot_norm_dt_us,
+  output wire auto_takeoff,
+  output wire z_active,output wire signed [15:0] z_throttle_delta,
+- output wire [15:0] z_collective,z_reason
++ output wire [15:0] z_collective,z_reason,
++ input wire height_tilt4500_ok
+ );
+  // One shared multiply and one independently arbitrated divide serve only
+  // this added navigation domain. Client0=geometry,1=XY fusion,2=Z fusion,
+@@ -61,11 +62,11 @@
+  // Height cosine correction stays valid through the core's45deg stop bound.
+  // The provisional optical-flow qualification retains its tighter15deg bound;
+  // leaving that bound withdraws XY, without cancelling the vertical reference.
+- mtf_shared_geometry #(.HEIGHT_TILT_LIMIT_CDEG(4500),.FLOW_TILT_LIMIT_CDEG(1500),.SWAP_AXES(1),.NEGATE_X(0),.NEGATE_Y(1),.MAPPING_VERIFIED(0),.PRECHECKED_YAW_RANGE(PRECHECKED_YAW_RANGE)) geometry(
++ mtf_shared_geometry #(.HEIGHT_TILT_LIMIT_CDEG(4500),.FLOW_TILT_LIMIT_CDEG(1500),.SWAP_AXES(1),.NEGATE_X(0),.NEGATE_Y(1),.MAPPING_VERIFIED(0),.PRECHECKED_YAW_RANGE(PRECHECKED_YAW_RANGE),.PRECHECKED_HEIGHT_TILT4500(PRECHECKED_HEIGHT_TILT4500)) geometry(
+   .clk(clk),.rst_n(rst_n),.origin_reset(origin_reset),.sample_valid(sample_valid),
+   .range_valid(range_valid),.flow_valid(flow_valid),.distance_mm(distance_mm),.dt_ms(dt_ms),
+   .vx_x100(vx_x100),.vy_x100(vy_x100),.pose_valid(pose_valid),.pose_age_ticks(pose_age_ticks),
+-  .roll_cdeg(roll_cdeg),.pitch_cdeg(pitch_cdeg),.body_yaw_cdeg(yaw_cdeg),.body_yaw_range_ok(yaw_range_ok),
++  .roll_cdeg(roll_cdeg),.pitch_cdeg(pitch_cdeg),.body_yaw_cdeg(yaw_cdeg),.body_yaw_range_ok(yaw_range_ok),.body_tilt4500_ok(height_tilt4500_ok),
+   .update(geometry_update),.height_ready(geometry_height_ready),.flow_ready(geometry_flow_ready),
+   .reason(geometry_reason),.height_mm(height_mm),.body_vx_q16(bvx),.body_vy_q16(bvy),
+   .world_vx_q16(wvx),.world_vy_q16(wvy),.dt_us(geometry_dt_us),.busy(),
+--- a/sensor/mtf_shared_geometry.v
++++ b/sensor/mtf_shared_geometry.v
+@@ -7,7 +7,7 @@
+  parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,POSE_AGE_LIMIT=3000000,
+  parameter integer MAX_COMPUTE_TICKS=10000,
+  parameter integer HEIGHT_TILT_LIMIT_CDEG=1500,FLOW_TILT_LIMIT_CDEG=1500,
+- parameter integer SWAP_AXES=0,NEGATE_X=0,NEGATE_Y=0,MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0
++ parameter integer SWAP_AXES=0,NEGATE_X=0,NEGATE_Y=0,MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0
+ )(
+  input wire clk,rst_n,origin_reset,sample_valid,range_valid,flow_valid,
+  input wire [31:0] distance_mm,dt_ms,
+@@ -28,14 +28,16 @@
+  output wire math_mul_start,math_mul_cancel,
+  output wire signed [63:0] math_mul_a,math_mul_b,
+  input wire math_mul_busy,math_mul_done,
+- input wire signed [63:0] math_mul_result
++ input wire signed [63:0] math_mul_result,
++ input wire body_tilt4500_ok
+ );
+  localparam signed [63:0] V_LIMIT_Q16=64'sd655360000;
+  localparam integer AGE_BITS=$clog2(AGE_LIMIT+1),COMPUTE_BITS=$clog2(MAX_COMPUTE_TICKS+1);
+  localparam [AGE_BITS-1:0] AGE_SAT=AGE_LIMIT;
+  wire live_yaw_range_ok=PRECHECKED_YAW_RANGE ?body_yaw_range_ok:(body_yaw_cdeg>=-18000 && body_yaw_cdeg<=18000);
++ wire live_height_tilt_ok=(PRECHECKED_HEIGHT_TILT4500 && HEIGHT_TILT_LIMIT_CDEG==4500) ?body_tilt4500_ok:(roll_cdeg>=-HEIGHT_TILT_LIMIT_CDEG && roll_cdeg<=HEIGHT_TILT_LIMIT_CDEG && pitch_cdeg>=-HEIGHT_TILT_LIMIT_CDEG && pitch_cdeg<=HEIGHT_TILT_LIMIT_CDEG);
+  wire pose_ok=pose_valid && pose_age_ticks<POSE_AGE_LIMIT &&
+-  roll_cdeg>=-HEIGHT_TILT_LIMIT_CDEG && roll_cdeg<=HEIGHT_TILT_LIMIT_CDEG && pitch_cdeg>=-HEIGHT_TILT_LIMIT_CDEG && pitch_cdeg<=HEIGHT_TILT_LIMIT_CDEG &&
++  live_height_tilt_ok &&
+   live_yaw_range_ok;
+  wire flow_pose_ok=roll_cdeg>=-FLOW_TILT_LIMIT_CDEG && roll_cdeg<=FLOW_TILT_LIMIT_CDEG &&
+   pitch_cdeg>=-FLOW_TILT_LIMIT_CDEG && pitch_cdeg<=FLOW_TILT_LIMIT_CDEG;

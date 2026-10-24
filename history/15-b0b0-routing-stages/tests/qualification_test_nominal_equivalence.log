@@ -1,0 +1,2 @@
+nominal_core_equivalence PASS nominal core equivalence: 3170330 clocks, core telemetry and four actual PWM signals
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\tests\nominal_core_equivalence.v:40: $finish called at 63411691000 (1ps)

@@ -1,0 +1,9 @@
+{
+  "name": "fallback_telemetry_wire",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\telemetry_tx.v": "6e58e98c3aee8ef1fd34159164b787f9fc915bb11dab256db72f6c171693ced0",
+    "fixture\\core\\spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "tests\\fallback_telemetry_wire.v": "0c619c6192ac791721242d182cf1c4b7243ac63b308b5462d3b4a7787763675f"
+  }
+}

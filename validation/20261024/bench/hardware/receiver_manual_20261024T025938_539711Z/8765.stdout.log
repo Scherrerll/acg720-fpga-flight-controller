@@ -1,0 +1,1 @@
+{"url": "http://127.0.0.1:8765", "source": {"port": "COM17", "baud": 115200, "source": "SiK", "usb_device": {"port": "COM17", "description": "USB Serial Port (COM17)", "hwid": "USB VID:PID=0403:6015 SER=DU0ENI02A", "vid": 1027, "pid": 24597, "serial_number": "DU0ENI02A", "selectable": true}}, "session": "20261024T025939Z_beb53bf1", "serial_writes": false}

@@ -1,0 +1,14 @@
+{
+  "human_result": "Four motors turned and SWA stopped them",
+  "samples": 740,
+  "armed_samples": 84,
+  "published_four_samples": 78,
+  "max_pwm_us": [
+    1793,
+    1815,
+    2000,
+    1929
+  ],
+  "hardware_flash_written": false,
+  "flight_ready": false
+}

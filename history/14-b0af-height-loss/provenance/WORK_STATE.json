@@ -1,0 +1,41 @@
+{
+  "updated_utc": "2026-10-23T04:24:30.061670+00:00",
+  "phase": "hardware_rejected_synthesis_connectivity_fault",
+  "candidate": "B0AF",
+  "parent": "B0AE",
+  "hardware_programmed": true,
+  "flash_changed": false,
+  "flight_ready": false,
+  "active_sessions": {},
+  "passed_individually": [
+    "21,021 throttle curve points plus entry/bounds/slew/fault/endpoint checks",
+    "Actual rate/angle/mixer/PWM core loss test: prior collective, independent pilot response, latched fallback, no preflight fallback, immediate SWA/IMU/RC stops",
+    "3,170,330 clock nominal core telemetry and actual four-PWM equivalence against frozen B0AE",
+    "Whole RTL elaboration",
+    "23 receiver/dashboard/recording/CSV regression tests",
+    "Actual UART framing/CRC and B0AF version-4 info flags roundtrip"
+  ],
+  "remaining": [
+    "Targeted props-off hardware fallback acceptance",
+    "Explicit Flash authorization and cold-start verification if releasing B0AF",
+    "Historical loaded power-loss diagnosis and flight acceptance"
+  ],
+  "important": [
+    "Default Flash remains B0AC; no new hardware download performed",
+    "B0AE bench run has 13 recorded checks, optical-flow translation retest cancelled by user; use prior direction records",
+    "B0AF latched airborne-height-loss fallback requires a prior committed valid Z collective; idle/missing height at arming still stops",
+    "Once fallback is entered, range recovery does not automatically reclaim throttle; disarm/rearm with good height resets it",
+    "Manual curve anchors last committed collective at entry rod position, endpoints1200/1850us,1us/ms slew; SWA/RC/IMU bypass ramp",
+    "Actual core test initially fired before the baseline physical PWM frame had delivered1400us. Fixed test precondition to wait for effective four-output baseline; retained per-clock no-gap assertion and tests passed",
+    "Do not rerun qualified frozen B0AE source tests in the parent: new work is isolated here",
+    "Do not spawn agents absent user instruction; use Sol if explicitly delegating later"
+  ],
+  "offline_qualification_passed": true,
+  "resource_synthesis_logic": 43098,
+  "pnr_verified": true,
+  "fmax_mhz": 50.064,
+  "hardware_evidence": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0af_height_loss\\hardware\\sram_20261023T042341_777645Z",
+  "hardware_acceptance_passed": false,
+  "replacement_candidate": "B0B0",
+  "current_stopped": true
+}

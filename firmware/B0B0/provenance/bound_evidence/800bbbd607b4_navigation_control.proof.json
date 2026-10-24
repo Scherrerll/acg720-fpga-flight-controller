@@ -1,0 +1,19 @@
+{
+  "name": "navigation_control",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\mtf_xyz_navigation_control.v": "1c2e1831d2856bf37ae42a42df38e20c53ae5935e5d6001acc6c36540947727c",
+    "fixture\\sensor\\mtf_shared_geometry.v": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+    "fixture\\sensor\\mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+    "fixture\\position\\mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "fixture\\position\\mtf_shared_height_fusion.v": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+    "fixture\\position\\mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "fixture\\position\\mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+    "fixture\\position\\ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "fixture\\position\\ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "fixture\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "fixture\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "fixture\\nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "tests\\navigation_control.v": "ca585b1ae8221343cb2c5065f776725f6a103d5b69eb7fa81ddb9fa9287a0da9"
+  }
+}

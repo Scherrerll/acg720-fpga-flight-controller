@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "healthy_native_height_four_output_witnesses": 66,
+  "controller_enabled_samples": 66,
+  "no_fallback_in_healthy_witness": true,
+  "final_stopped": true,
+  "user_confirmed_four_motors_and_SWA_stop": true,
+  "samples_sha256": "f00fda384e1052c5ad839b682de70f2f66a121c40f630e4d9c1006282e1ed608",
+  "scope": "Telemetry plus operator observation; no external pin measurement or loaded-flight approval",
+  "flight_ready": false
+}

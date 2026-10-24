@@ -1,0 +1,3 @@
+
+PASS 50000 cycles: full 720-bit bank/output, boot/init/hold/random payload; generic repeated reset unchanged
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\diagnostic_reset_study\tb.v:38: $finish called at 500006 (1s)

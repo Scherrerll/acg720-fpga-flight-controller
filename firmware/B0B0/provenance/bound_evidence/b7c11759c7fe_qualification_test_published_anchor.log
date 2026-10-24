@@ -1,0 +1,2 @@
+PASS published anchor: 13 checks, publication boundary,1000/1100 anchors, queued result, nonzero corrections, slew
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\variants\published_anchor_p2_r2_rep1\tests\published_anchor.v:44: $finish called at 1208240000 (1ps)

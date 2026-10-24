@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "created_utc": "2026-10-23T19:28:33.065560+00:00",
+  "netlist": "routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\info_snapshot_plan\\synthesis_only\\20261023T191515_828752Z\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "netlist_sha256": "aa2de0222dc404ae2326da2d068fc079833296dece1b726f1af0b10f5bb9f941",
+  "reference_netlist": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\diagnostic_reset_p2_r2_rep1\\synthesis\\20261023T102524_797062Z\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "reference_sha256": "d533b948c8039eb934d25e1d7feec95e626373f577087acf0f82403c1eb9ef70",
+  "log_sha256": "9246e3ad9396fcd8fc692428056f0a6be7d50597bd7a5c9b58cb127210a36fe3",
+  "reviewer_sha256": "c7dd98b1acaa1b78d3da34bb1d322dc3181456f24c15cfa43a50a5050d98cdb4",
+  "forbidden_warnings": 0,
+  "age_cone_structurally_identical": true,
+  "age_boundary_and_sample_checks": 2339,
+  "age_comparator_exact_all_32bit_values": true,
+  "age_bdd_node_count": 96,
+  "freshness_gate_truth_tables_exhaustive": true,
+  "pwm_module_exactly_unchanged": true,
+  "pwm_unchanged_definition": "Exact complete module text equality after bijective declared port/net alpha-renaming; INIT/cells/all connections retained.",
+  "pwm_port_alpha_renaming": {
+    "n6246_12": "n6248_12",
+    "n6340_12": "n6342_12",
+    "n6434_12": "n6436_12",
+    "n6528_12": "n6530_12",
+    "n6246_11": "n6248_11",
+    "n6340_11": "n6342_11",
+    "n6434_11": "n6436_11",
+    "n6528_11": "n6530_11",
+    "core_body_8": "core_body_8_9"
+  },
+  "pwm_renamed_input_cones_proven": [
+    "n6248_12",
+    "n6342_12",
+    "n6436_12",
+    "n6530_12",
+    "n6248_11",
+    "n6342_11",
+    "n6436_11",
+    "n6530_11"
+  ],
+  "pwm_all_34_input_and_four_motor_output_bindings_unchanged": true,
+  "pwm_binding_definition": "Bindings exact or identical LUT cones to the same committed motor bits for renamed inputs.",
+  "physical_motor_obuf_connections": {
+    "motor1_pwm": {
+      "O": "motor1_pwm",
+      "I": "motor1_pwm_d"
+    },
+    "motor2_pwm": {
+      "O": "motor2_pwm",
+      "I": "motor2_pwm_d"
+    },
+    "motor3_pwm": {
+      "O": "motor3_pwm",
+      "I": "motor3_pwm_d"
+    },
+    "motor4_pwm": {
+      "O": "motor4_pwm",
+      "I": "motor4_pwm_d"
+    }
+  },
+  "source_sha256": {
+    "core/flight_core.v": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+    "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6"
+  },
+  "synthesized_two_file_snapshot_matches_current_fixture": true,
+  "limitations": [
+    "Only targeted mapped freshness/motor PWM/primary snapshot paths are checked; not whole-design equivalence.",
+    "Bindings/cones are compared at committed motor-bit and named interface boundaries, not the changed upstream mixer/controller arithmetic.",
+    "Primary bit862 is checked through snapshot D/Q connectivity; UART serialization is covered by separate proofs.",
+    "No timing/routing/board/flight acceptance is implied."
+  ],
+  "primary_862_reads_combined_freshness": true,
+  "primary_cell": "DFFRE \\staged_telemetry.core_q_862_s0  (\n    .Q(\\staged_telemetry.core_q [862]),\n    .D(core_body[0]),\n    .CLK(clk50_d),\n    .RESET(GND),\n    .CE(\\staged_telemetry.core_q_453_16 ) \n);\ndefparam \\staged_telemetry.core_q_862_s0 .INIT=1'b0;",
+  "hardware_accessed": false,
+  "scope": "Targeted synthesized age/seen/enabled/run freshness-to-PWM and telemetry connectivity. Not a whole-netlist equivalence proof or routing acceptance."
+}

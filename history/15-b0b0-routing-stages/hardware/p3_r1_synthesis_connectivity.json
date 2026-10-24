@@ -1,0 +1,70 @@
+{
+  "hardware_accessed": false,
+  "connectivity_conclusion": "Actual inspected gate retains command_age/command_seen/controller_run/enabled dependencies and connects public freshness to telemetry862 and motorPWM. Whole-netlist semantic equivalence not established.",
+  "actual_p3_r1_body_identical_to_independently_reviewed_p1_r1": false,
+  "different_noncomment_lines": 183,
+  "different_lines_not_explained_by_generated_n_number_renaming": null,
+  "forbidden_connectivity_diagnostics": 0,
+  "previous_provisional_record": {
+    "created_utc": "2026-10-23T15:20:19.305323+08:00",
+    "actual_p3_r1_body_identical_to_independently_reviewed_p1_r1": false,
+    "canonicalization": "Remove only full-line// metadata comments; reject synthesis/synopsys/pragma/translate directives; preserve all otherbytes.",
+    "bodies": {
+      "p1_r1": [
+        "85ac7d6618a803d5fca96f603e6e4e31cdde7f68923a21908c1195113683d5e8",
+        55
+      ],
+      "p3_r1": [
+        "b84f92b046926456f5a0f4966762def5ccbb67bece2235d6757b3c06b490461c",
+        55
+      ]
+    },
+    "raw_vg_sha256": {
+      "p1_r1": "f9179eafb379e407482e5f67ae9fdc5e0f5b43c87e46faaafdb1a574873255e3",
+      "p3_r1": "4c6e44399e0b090d8e6851430008851c9722e864a7b3b6fb8b03e2b7213cebd4"
+    },
+    "synthesis_log_sha256": "03d00a45a22d304bd126e708a923c274e7f98fa263c60bbd4801c0c5b29345af",
+    "forbidden_connectivity_diagnostics": 0,
+    "hardware_accessed": false
+  },
+  "raw_vg_sha256": "4C6E44399E0B090D8E6851430008851C9722E864A7B3B6FB8B03E2B7213CEBD4",
+  "synthesis_log_sha256": "03D00A45A22D304BD126E708A923C274E7F98FA263C60BBD4801C0C5B29345AF",
+  "evidence": [
+    {
+      "start_line": 331886,
+      "text": "  LUT4 n3434_s96 (\n    .F(n3434_132),\n    .I0(command_age[20]),\n    .I1(n3434_133),\n    .I2(command_age[21]),\n    .I3(n3434_134) \n);\ndefparam n3434_s96.INIT=16'hE0FF;",
+      "end_line": 331893
+    },
+    {
+      "start_line": 334349,
+      "text": "  LUT4 core_body_0_s1 (\n    .F(core_body_0_4),\n    .I0(n3434_132),\n    .I1(command_seen),\n    .I2(core_body_861),\n    .I3(controller_run) \n);\ndefparam core_body_0_s1.INIT=16'h4000;\n  LUT4 core_body_506_s0 (",
+      "end_line": 334357
+    },
+    {
+      "start_line": 337877,
+      "text": "  LUT4 core_body_0_s2 (\n    .F(core_body_0),\n    .I0(flight_state_flags_0_2),\n    .I1(flight_state_flags[1]),\n    .I2(core_body_860),\n    .I3(core_body_0_4) \n);\ndefparam core_body_0_s2.INIT=16'hFF70;",
+      "end_line": 337884
+    },
+    {
+      "start_line": 631335,
+      "text": "  DFFRE \\staged_telemetry.core_q_862_s0  (\n    .Q(\\staged_telemetry.core_q [862]),\n    .D(core_body[0]),\n    .CLK(clk50_d),\n    .RESET(GND),\n    .CE(\\staged_telemetry.core_q_453_16 ) \n);\ndefparam \\staged_telemetry.core_q_862_s0 .INIT=1'b0;",
+      "end_line": 631342
+    },
+    {
+      "start_line": 350296,
+      "text": "  motor_pwm outputs (\n    .clk50_d(clk50_d),\n    .n49_6(n49_6),\n    .core_body_0_4(core_body_0_4),\n    .core_body_458_3(core_body_458_3),\n    .core_body_474_3(core_body_474_3),\n    .core_body_490_3(core_body_490_3),\n    .core_body_506_3(core_body_506_3),\n    .n13_12(n13_12),\n    .n13_13(n13_13),\n    .n6246_12(n6246_12),\n    .n6340_12(n6340_12),\n    .n6434_12(n6434_12),\n    .n6528_12(n6528_12),\n    .n6246_11(n6246_11),\n    .n6340_11(n6340_11),\n    .n6434_11(n6434_11),\n    .n6528_11(n6528_11),\n    .pwm_ticks1(pwm_ticks1[16:0]),\n    .pwm_ticks2(pwm_ticks2[16:0]),\n    .pwm_ticks3(pwm_ticks3[16:0]),\n    .pwm_ticks4(pwm_ticks4[16:0]),\n    .m1({m1_3[10:8],m1_7,m1_3[6],m1_5,m1_3[4:3],m1_2,m1_1,m1_0}),\n    .m4({m4_3[9:8],m4_7,m4_3[6],m4_5,m4_3[4:3],m4_2,m4_1,m4_0}),\n    .m3({m3_3[9:8],m3_7,m3_3[6],m3_5,m3_3[4:3],m3_2,m3_1,m3_0}),\n    .m2({m2_3[9:8],m2_7,m2_3[6],m2_5,m2_3[4:3],m2_2,m2_1,m2_0}),\n    .core_body_0(core_body_0),\n    .core_body_451(core_body_451),",
+      "end_line": 350323
+    },
+    {
+      "start_line": 648940,
+      "text": "    .motor1_pwm_d(motor1_pwm_d),\n    .motor2_pwm_d(motor2_pwm_d),\n    .motor3_pwm_d(motor3_pwm_d),\n    .motor4_pwm_d(motor4_pwm_d),\n    .core_body_0(core_body[0]),\n    .core_body_72(core_body[72]),\n    .core_body_73(core_body[73]),",
+      "end_line": 648946
+    }
+  ],
+  "first_body_difference": {
+    "p1": "wire n3666_6;",
+    "line": 212,
+    "p3": "wire n3640_6;"
+  },
+  "rename_comparison_limit": "First difference is generated wire n3666_6 versus n3640_6; exhaustive rename-only equivalence not established. Do not treat numeric diagnostic as whole-netlist equivalence."
+}

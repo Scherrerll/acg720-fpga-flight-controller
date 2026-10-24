@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "routing_passed": true,
+  "fmax_mhz": 51.608,
+  "constraint_period_ns": 19.5,
+  "summaries": {
+    "setup": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    },
+    "hold": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    }
+  },
+  "worst_reported_slack_ns": {
+    "setup": 0.123,
+    "hold": 0.192,
+    "recovery": 14.646,
+    "removal": 1.713,
+    "minimum_pulse_width": 7.137
+  },
+  "clock_20ns_or_stricter_only": true,
+  "timing_exceptions_added": false,
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "evidence_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195\\fixture\\impl\\pnr\\acg720_ano_port.tr": "2cb4b5269fb2709349f746705e83f9c1a9795eac0133a5b3525df2edea92b5b8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt": "f4313d32d077ee67fda563577b67ad570ff99dd2a8325c6eb20da1e5131eb060",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195\\fixture\\acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195\\fixture\\acg720_ano_port.cst": "87483c421b5cbee4353047e7829a8e81115e807e0ba918574a22ac7acdbda886",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195\\fixture\\console.txt": "f2840120e4564f09cd9c792b5c26cd4c2c8bbc8d84fae7954dab0b8d213f3b54"
+  },
+  "scope": "Physical timing audit only; does not establish RTL equivalence, electrical health or flight acceptance."
+}

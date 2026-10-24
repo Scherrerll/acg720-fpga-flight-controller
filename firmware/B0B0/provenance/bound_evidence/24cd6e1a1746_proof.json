@@ -1,0 +1,43 @@
+{
+  "status": "PASS scoped RTL/combinational proof",
+  "bindings": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\synthesis_only\\20261023T204223_094931Z\\core\\rtl\\quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\synthesis_only\\20261023T213859_081106Z\\core\\rtl\\quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\parser_published_view_plan\\synthesis_only\\20261023T204223_094931Z\\core\\flight_core.v": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\synthesis_only\\20261023T213859_081106Z\\core\\flight_core.v": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\synthesis_only\\20261023T213859_081106Z\\core\\height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\readiness_boolean_map2_plan\\synthesis_only\\20261023T213859_081106Z\\impl\\gwsynthesis\\acg720_ano_port.vg": "9e4ea068664dc558f6238f04c46311cfdb381b1d71ddb3ba68d7867c690f0b8d"
+  },
+  "mixer_vectors": 22804,
+  "bounds": [
+    [
+      1200,
+      2000
+    ],
+    [
+      1000,
+      1200
+    ]
+  ],
+  "boolean_truth_cases": 8192,
+  "fallback_instance_premise_cases": 1024,
+  "source_exact_mixer_delta": true,
+  "seed": "0x9e4ea",
+  "scope": "settled two-state RTL combinational outputs; all four motors, strict saturated and six inclusive directional bits; signed extrema, enabled, clamp edges and deterministic random; core Boolean truth tables under exact source-bound instance implication",
+  "limitations": [
+    "No actual mapped equivalence",
+    "No whole-core or whole-design verification",
+    "No zero-time continuous bus/X-state equivalence",
+    "No hardware acceptance; routed candidate timing remains below 50MHz"
+  ],
+  "synthesis_run": false,
+  "pnr_run": false,
+  "hardware_accessed": false,
+  "evidence_hashes": {
+    "run_proof.py": "56ee058e893ddc4523b793ff940e56cd652bd50f78211a41f642181ca4e089be",
+    "modules.v": "d41e9ab3247f7b2636382c232392b4a0e1a621fcc39cd9cb04713fe14990b1fb",
+    "tb.v": "be95e70f821ee4905e474f12930bc457dde9730bc6d2c5697f3781d1309158a2",
+    "vectors.hex": "8fdf28010e3e26a922280ead2e61823ec3f79324c569036a95916a81f30d3f1d",
+    "regression.log": "693350aaa5e83c6c540edb191bcdeabcd6f1bb879547a5322486e4cf01866237"
+  }
+}

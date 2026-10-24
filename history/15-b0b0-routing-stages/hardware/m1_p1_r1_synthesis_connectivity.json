@@ -1,0 +1,53 @@
+{
+  "netlist": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\m1_p1_r1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "evidence": [
+    {
+      "start_line": 336062,
+      "text": "  LUT4 n3434_s96 (\n    .F(n3434_132),\n    .I0(command_age[20]),\n    .I1(n3434_133),\n    .I2(command_age[21]),\n    .I3(n3434_134) \n);\ndefparam n3434_s96.INIT=16'hE0FF;",
+      "end_line": 336069
+    },
+    {
+      "start_line": 338688,
+      "text": "  LUT4 core_body_0_s1 (\n    .F(core_body_0_4),\n    .I0(n3434_132),\n    .I1(command_seen),\n    .I2(core_body_861),\n    .I3(controller_run) \n);\ndefparam core_body_0_s1.INIT=16'h4000;",
+      "end_line": 338695
+    },
+    {
+      "start_line": 342422,
+      "text": "  LUT4 core_body_0_s2 (\n    .F(core_body_0),\n    .I0(flight_state_flags_0_2),\n    .I1(flight_state_flags[1]),\n    .I2(core_body_860),\n    .I3(core_body_0_4) \n);\ndefparam core_body_0_s2.INIT=16'hFF70;",
+      "end_line": 342429
+    },
+    {
+      "start_line": 638710,
+      "text": "  DFFRE \\staged_telemetry.core_q_862_s0  (\n    .Q(\\staged_telemetry.core_q [862]),\n    .D(core_body[0]),\n    .CLK(clk50_d),\n    .RESET(GND),\n    .CE(\\staged_telemetry.core_q_453_16 ) \n);\ndefparam \\staged_telemetry.core_q_862_s0 .INIT=1'b0;",
+      "end_line": 638717
+    },
+    {
+      "start_line": 354549,
+      "text": "  motor_pwm outputs (\n    .clk50_d(clk50_d),\n    .n49_6(n49_6),\n    .core_body_0_4(core_body_0_4),\n    .core_body_458_3(core_body_458_3),\n    .core_body_474_3(core_body_474_3),\n    .core_body_490_3(core_body_490_3),\n    .core_body_506_3(core_body_506_3),\n    .n13_12(n13_12),\n    .n13_13(n13_13),\n    .n6246_12(n6246_12),\n    .n6340_12(n6340_12),\n    .n6434_12(n6434_12),\n    .n6528_12(n6528_12),\n    .n6246_11(n6246_11),\n    .n6340_11(n6340_11),\n    .n6434_11(n6434_11),\n    .n6528_11(n6528_11),\n    .pwm_ticks1(pwm_ticks1[16:0]),\n    .pwm_ticks2(pwm_ticks2[16:0]),\n    .pwm_ticks3(pwm_ticks3[16:0]),\n    .pwm_ticks4(pwm_ticks4[16:0]),\n    .m1({m1_3[10:8],m1_7,m1_3[6],m1_5,m1_3[4:3],m1_2,m1_1,m1_0}),\n    .m4({m4_3[9:8],m4_7,m4_3[6],m4_5,m4_3[4:3],m4_2,m4_1,m4_0}),\n    .m3({m3_3[9:8],m3_7,m3_3[6],m3_5,m3_3[4:3],m3_2,m3_1,m3_0}),\n    .m2({m2_3[9:8],m2_7,m2_3[6],m2_5,m2_3[4:3],m2_2,m2_1,m2_0}),\n    .core_body_0(core_body_0),\n    .core_body_451(core_body_451),\n    .core_body_452(core_body_452),",
+      "end_line": 354577
+    },
+    {
+      "start_line": 656316,
+      "text": "    .motor1_pwm_d(motor1_pwm_d),\n    .motor2_pwm_d(motor2_pwm_d),\n    .motor3_pwm_d(motor3_pwm_d),\n    .motor4_pwm_d(motor4_pwm_d),\n    .core_body_0(core_body[0]),\n    .core_body_72(core_body[72]),\n    .core_body_73(core_body[73]),\n    .core_body_74(core_body[74]),",
+      "end_line": 656323
+    }
+  ],
+  "target_warning_count": 0,
+  "netlist_sha256": "F01AD650EFFF8BC7A4085B737F016F9F2090C6F324B2EFFE81C6938667386CA7",
+  "conclusion": "Repaired gate intact: command_seen/controller_run/enabled/age -> rate gate -> public freshness -> primary862 and PWM.",
+  "resources": {
+    "m1_p1_r1": {
+      "alu": "9261(146)",
+      "register": "27833(2021)",
+      "lut": "35990(142)"
+    },
+    "p1_r1": {
+      "alu": "9261(146)",
+      "register": "27834(2021)",
+      "lut": "35987(143)"
+    }
+  },
+  "log_sha256": "DD9F7D7B656DC02628911AA5169E23ACBBA470719A0F85BD29FFEC18E38F7254",
+  "build_option_difference": "Only map_option differs: p1_r1=2; m1_p1_r1=1. Both place1 route1 timing_driven1 replicate_resources0 global_freq50 max_fanout200 opt_goalarea.",
+  "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\m1_p1_r1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.log"
+}

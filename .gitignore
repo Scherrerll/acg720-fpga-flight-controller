@@ -6,6 +6,7 @@
 *.exe
 *.dll
 *.fs
+!firmware/B0B0/release/*.fs
 *.gprj.user
 .venv/
 .tools/

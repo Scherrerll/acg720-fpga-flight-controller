@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-10-23T08:05:10.534504+00:00",
+  "passed": true,
+  "hardware_accessed": false,
+  "target_warning_count": 0,
+  "evidence": [
+    {
+      "start_line": 331886,
+      "end_line": 331893,
+      "text": "  LUT4 n3434_s96 (\n    .F(n3434_132),\n    .I0(command_age[20]),\n    .I1(n3434_133),\n    .I2(command_age[21]),\n    .I3(n3434_134) \n);\ndefparam n3434_s96.INIT=16'hE0FF;"
+    },
+    {
+      "start_line": 334349,
+      "end_line": 334357,
+      "text": "  LUT4 core_body_0_s1 (\n    .F(core_body_0_4),\n    .I0(n3434_132),\n    .I1(command_seen),\n    .I2(core_body_861),\n    .I3(controller_run) \n);\ndefparam core_body_0_s1.INIT=16'h4000;\n  LUT4 core_body_506_s0 ("
+    },
+    {
+      "start_line": 337877,
+      "end_line": 337884,
+      "text": "  LUT4 core_body_0_s2 (\n    .F(core_body_0),\n    .I0(flight_state_flags_0_2),\n    .I1(flight_state_flags[1]),\n    .I2(core_body_860),\n    .I3(core_body_0_4) \n);\ndefparam core_body_0_s2.INIT=16'hFF70;"
+    },
+    {
+      "start_line": 631335,
+      "end_line": 631342,
+      "text": "  DFFRE \\staged_telemetry.core_q_862_s0  (\n    .Q(\\staged_telemetry.core_q [862]),\n    .D(core_body[0]),\n    .CLK(clk50_d),\n    .RESET(GND),\n    .CE(\\staged_telemetry.core_q_453_16 ) \n);\ndefparam \\staged_telemetry.core_q_862_s0 .INIT=1'b0;"
+    },
+    {
+      "start_line": 350296,
+      "end_line": 350323,
+      "text": "  motor_pwm outputs (\n    .clk50_d(clk50_d),\n    .n49_6(n49_6),\n    .core_body_0_4(core_body_0_4),\n    .core_body_458_3(core_body_458_3),\n    .core_body_474_3(core_body_474_3),\n    .core_body_490_3(core_body_490_3),\n    .core_body_506_3(core_body_506_3),\n    .n13_12(n13_12),\n    .n13_13(n13_13),\n    .n6246_12(n6246_12),\n    .n6340_12(n6340_12),\n    .n6434_12(n6434_12),\n    .n6528_12(n6528_12),\n    .n6246_11(n6246_11),\n    .n6340_11(n6340_11),\n    .n6434_11(n6434_11),\n    .n6528_11(n6528_11),\n    .pwm_ticks1(pwm_ticks1[16:0]),\n    .pwm_ticks2(pwm_ticks2[16:0]),\n    .pwm_ticks3(pwm_ticks3[16:0]),\n    .pwm_ticks4(pwm_ticks4[16:0]),\n    .m1({m1_3[10:8],m1_7,m1_3[6],m1_5,m1_3[4:3],m1_2,m1_1,m1_0}),\n    .m4({m4_3[9:8],m4_7,m4_3[6],m4_5,m4_3[4:3],m4_2,m4_1,m4_0}),\n    .m3({m3_3[9:8],m3_7,m3_3[6],m3_5,m3_3[4:3],m3_2,m3_1,m3_0}),\n    .m2({m2_3[9:8],m2_7,m2_3[6],m2_5,m2_3[4:3],m2_2,m2_1,m2_0}),\n    .core_body_0(core_body_0),\n    .core_body_451(core_body_451),"
+    },
+    {
+      "start_line": 648940,
+      "end_line": 648946,
+      "text": "    .motor1_pwm_d(motor1_pwm_d),\n    .motor2_pwm_d(motor2_pwm_d),\n    .motor3_pwm_d(motor3_pwm_d),\n    .motor4_pwm_d(motor4_pwm_d),\n    .core_body_0(core_body[0]),\n    .core_body_72(core_body[72]),\n    .core_body_73(core_body[73]),"
+    }
+  ],
+  "netlist_sha256": "a08d7a3aa5cc5715b1797110f58caa02cbf41917d9cb7658a6eef578354ecb38",
+  "log_sha256": "ad429220f67c6489451dded803ecba008c78ed456fc0ee0f52651a5bb61cce93",
+  "cmd_sha256": "28c9ddd7530883d79bb222bba314b06b15ffe7d3dd5818e4c74d1fdbcf5f206d",
+  "prj_sha256": "f91f9c85038e14aec1e3082acefa9a8f7df06646e1ebed9cd9e4a2f62c314873",
+  "actual_pnr_cmd": "-d C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p3_r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg\n-p GW5AT-60B-PBGA484A-1\n-pn GW5AT-LV60PG484AC1/I0\n-cst C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p3_r2_rep1\\fixture\\acg720_ano_port.cst\n-cfg C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p3_r2_rep1\\fixture\\impl\\pnr\\device.cfg\n-sdc C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\p3_r2_rep1\\fixture\\acg720_ano_port.sdc\n-bit\n-tr\n-ph\n-timing\n-replicate\n-cst_error\n-convert_sdp32_36_to_sdp16_18\n-place_option 3\n-route_option 2\n-retiming_resource none\n-clock_route_order 0\n-correct_hold 1\n-route_maxfan 23\n-global_freq 50.000\n-enable_dsrm 0\n",
+  "actual_synthesis_options": {
+    "map_option": "2",
+    "opt_goal": "area",
+    "max_fanout": "200",
+    "global_freq": "50.000"
+  },
+  "structural_comparison_report_sha256": "b6eabfde3c07d1a059a0ad841aaf4013df24423a6c345775e52489b5aca50d2b",
+  "conclusion": "Repaired age/seen/controller freshness path and PWM/telemetry connectivity exactly match inspected p1_r1 snippets; full emitted netlist matches p1_r1 under two internal pose_time_adapter renames. Actual PNR replication enabled, place3 route2 50MHz. Routing acceptance remains pending."
+}

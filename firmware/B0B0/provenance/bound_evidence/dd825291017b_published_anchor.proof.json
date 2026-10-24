@@ -1,0 +1,21 @@
+{
+  "name": "published_anchor",
+  "passed": true,
+  "source_sha256": {
+    "fixture\\core\\flight_core.v": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+    "fixture\\core\\height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+    "fixture\\core\\ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "fixture\\core\\control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "fixture\\core\\motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "fixture\\core\\rtl\\quad_mixer_feedback.v": "872d9a267cf52b52e8e7e9f6ce512adbc1a85685ec894721c4e7fc9c6a9df3b5",
+    "fixture\\core\\rtl\\ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "fixture\\core\\rtl\\ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "fixture\\core\\rtl\\pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "fixture\\core\\rtl\\ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "fixture\\core\\rtl\\ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "fixture\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "fixture\\position\\ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "tests\\external_models.v": "8a3d419d3979d6ce9e9c72a9e5e4ba5ec0b786e02f9d6122d0f82092b17318b3",
+    "tests\\published_anchor.v": "744558b8c1e98c69c4b40baf6103570d2c197464cd003b32f6d725ec17dd1f4a"
+  }
+}

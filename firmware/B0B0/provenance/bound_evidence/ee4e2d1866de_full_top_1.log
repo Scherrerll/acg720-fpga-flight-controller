@@ -1,0 +1,2 @@
+PASS actual dual top: cycles=4935299 bytes=1136 frames=2 held_changes=4950 origin_events=399
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0b0_synthesis_fix\hardware\diagnostic_reset_study\full_top_tb.v:53: $finish called at 98705971000 (1ps)

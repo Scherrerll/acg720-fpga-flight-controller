@@ -1,0 +1,1755 @@
+{
+  "candidate": "B0B0",
+  "phase": "routing_timing_scoped_proofs_and_targeted_props_off_acceptance_complete",
+  "updated_utc": "2026-10-24T03:11:26.592783+00:00",
+  "active_sessions": {},
+  "hardware_programmed": true,
+  "flash_changed": false,
+  "flight_ready": false,
+  "parent_current_board": "Historical observation only; fresh physical-state confirmation required before any hardware action. See historical_metadata; no current physical authorization.",
+  "default_flash": "B0AC",
+  "completed": [
+    "Declaration-only RTL repair",
+    "Current-source component/core/nominal equivalence/UART/top proofs",
+    "24 ground host tests",
+    "Strict actual Gowin synthesis warning gate",
+    "Actual synthesized freshness-to-PWM connectivity verified",
+    "Additional independent Sol control review and two-file published-anchor regression repair"
+  ],
+  "remaining": [
+    "Investigate historical loaded-flight power loss and complete loaded/flight acceptance before flight release"
+  ],
+  "important": [
+    "Current aircraft props removed and transmitter off by human confirmation; preserve stopped state",
+    "B0AF fallback unplug test not reached: healthy-height output publication failed first",
+    "No Flash authorization for B0B0",
+    "Do not repeat flow calibration/RC endpoints",
+    "Historical loaded-power loss remains unresolved"
+  ],
+  "owned_gw_sh_pid": null,
+  "latest_progress": "Completed: zero-route51.608MHz at19.5ns/setuphold0; three scoped incremental proofs; frozen package51sources/677evidence. SRAM B0B0 startup/healthyheight/fallback/manual-throttle/recovery-latch/SWAstop passed. Final stopped; Flash unchangedB0AC; powercycle returnsoldcode; no flight release.",
+  "full_build_session": null,
+  "full_build_outcome": "Historical N436 failure; current f293 netlist-only PNR active",
+  "maximum_pnr_runtime_minutes": 90,
+  "vendor_dependency_synthesis_reran": false,
+  "post_pnr_next_steps": [
+    "Require selected candidate strict complete routing and 50MHz setup/hold timing",
+    "Freeze independent selected-variant release, pin exact imageSHA",
+    "Manual read-only receiver switch due previous automatic-start policy rejection",
+    "SRAM-only stopped installation then brief healthy-height output regression before fallback tests"
+  ],
+  "next_variant": null,
+  "variants": {
+    "p1_r1": {
+      "map": 2,
+      "place": 1,
+      "route": 1,
+      "session": 48551
+    },
+    "m1_p1_r1": {
+      "map": 1,
+      "place": 1,
+      "route": 1,
+      "session": 59670
+    },
+    "p3_r1": {
+      "map": 2,
+      "place": 3,
+      "route": 1,
+      "session": 79378
+    },
+    "p3_r2_rep1": {
+      "map": 2,
+      "place": 3,
+      "route": 2,
+      "replicate_resources": 1,
+      "session": 25319
+    },
+    "p3_r2_rep1_fan16": {
+      "map": 2,
+      "place": 3,
+      "route": 2,
+      "replicate_resources": 1,
+      "route_maxfan": 16,
+      "session": 83594
+    },
+    "p2_r2_rep1": {
+      "map": 2,
+      "place": 2,
+      "route": 2,
+      "replicate_resources": 1,
+      "route_maxfan": 23,
+      "session": 75319
+    },
+    "p2_r1_rep1": {
+      "map": 2,
+      "place": 2,
+      "route": 1,
+      "replicate": 1,
+      "route_maxfan": 23,
+      "status": "completed_routing_failure",
+      "session": 96292,
+      "unrouted_nets": 6156,
+      "evidence": "variants/p2_r1_rep1/PNR_FAILURE.json"
+    }
+  },
+  "owned_gw_sh_pids": {},
+  "synthesis_connectivity_evidence": {
+    "p1_r1": {
+      "path": "hardware\\p1_r1_synthesis_connectivity.json",
+      "sha256": "88eb5fcd83418ec7a5212942d429534a2a8f11794cb6bed24b9a3664d0b9300a"
+    },
+    "m1_p1_r1": {
+      "path": "hardware\\m1_p1_r1_synthesis_connectivity.json",
+      "sha256": "bbc19cd9510f90f3f6024a613f7fdb364abbe9194adae7e0f47c02e05ef1922f"
+    },
+    "p3_r2_rep1": {
+      "rep1_synthesis_connectivity.json": {
+        "path": "hardware\\rep1_synthesis_connectivity.json",
+        "sha256": "028f2493da14c0b842a862735f76f08a02baa056b6dd03545f2e03019da696ad"
+      },
+      "rep1_hierarchical_rename_review.json": {
+        "path": "hardware\\rep1_hierarchical_rename_review.json",
+        "sha256": "b6eabfde3c07d1a059a0ad841aaf4013df24423a6c345775e52489b5aca50d2b"
+      }
+    },
+    "p3_r2_rep1_fan16": {
+      "fan16_synthesis_connectivity.json": {
+        "path": "hardware\\fan16_synthesis_connectivity.json",
+        "sha256": "1bd53eb1f35ba155a25c90a630c4e07fefdacf465814d5905748913701ec2e07"
+      },
+      "fan16_hierarchical_rename_review.json": {
+        "path": "hardware\\fan16_hierarchical_rename_review.json",
+        "sha256": "277ed3d897a44cfbd327f11fcb8f6b0a9be6de070e2ce5b257d649d15c824196"
+      }
+    },
+    "p2_r2_rep1": {
+      "p2_rep1_synthesis_connectivity.json": {
+        "path": "hardware\\p2_rep1_synthesis_connectivity.json",
+        "sha256": "38d98bad7fc34464e2e7a8b65625e4225efc011b54a8ea48a1e292fae730db51"
+      },
+      "p2_rep1_hierarchical_rename_review.json": {
+        "path": "hardware\\p2_rep1_hierarchical_rename_review.json",
+        "sha256": "dcc80810e1d7a86d556d4607766f292dd1150fe8591f458d7cb68a231b200d63"
+      }
+    }
+  },
+  "pnr_outcomes": {
+    "p1_r1": {
+      "unrouted_nets": 14605,
+      "completed": true,
+      "passed": false,
+      "evidence": "variants/p1_r1/PNR_FAILURE.json"
+    },
+    "p3_r1": {
+      "unrouted_nets": 8271,
+      "completed": true,
+      "passed": false,
+      "evidence": "variants/p3_r1/PNR_FAILURE.json"
+    },
+    "p3_r2": {
+      "unrouted_nets": 652,
+      "completed": true,
+      "passed": false,
+      "evidence": "PNR_FAILURE_P3_R2.json"
+    },
+    "m1_p1_r1": {
+      "unrouted_nets": 13883,
+      "completed": true,
+      "passed": false,
+      "evidence": "variants/m1_p1_r1/PNR_FAILURE.json"
+    },
+    "p3_r2_rep1": {
+      "unrouted_nets": 361,
+      "completed": true,
+      "passed": false,
+      "cls_used": 26650,
+      "registers": 28474,
+      "evidence": "variants/p3_r2_rep1/PNR_FAILURE.json"
+    },
+    "p3_r2_rep1_fan16": {
+      "unrouted_nets": 10986,
+      "passed": false,
+      "cls_used": 26650,
+      "registers": 28474,
+      "completed": true,
+      "evidence": "variants/p3_r2_rep1_fan16/PNR_FAILURE.json"
+    },
+    "p2_r2_rep1": {
+      "unrouted_nets": 127,
+      "passed": false,
+      "cls_used": 26348,
+      "registers": 28474,
+      "completed": true,
+      "evidence": "variants/p2_r2_rep1/PNR_FAILURE.json"
+    },
+    "published_anchor_p2_r2_rep1": {
+      "unrouted_nets": 530,
+      "passed": false,
+      "completed": true,
+      "cls_used": 26349,
+      "registers": 28467,
+      "evidence": "variants/published_anchor_p2_r2_rep1/PNR_FAILURE.json"
+    },
+    "mtf_diag_reset_p2_r2_rep1": {
+      "unrouted_nets": 436,
+      "passed": false,
+      "completed": true,
+      "cls_used": 26269,
+      "registers": 28466,
+      "evidence": "variants/mtf_diag_reset_p2_r2_rep1/PNR_FAILURE.json"
+    },
+    "reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23": {
+      "variant": "reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23",
+      "completed": true,
+      "outcome": "failed",
+      "errors": [
+        "ERROR  (PR0004) : There are total 344 unrouted nets"
+      ],
+      "unrouted_nets": 344,
+      "routing_passed": false,
+      "timing_passed": false,
+      "verified": false,
+      "bitstream_generated": false,
+      "timing_report_generated": false,
+      "functional_qualification_pending": true,
+      "programming_authorized": false,
+      "release_eligible": false,
+      "evidence": "variants/reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23/feasibility_result.json",
+      "evidence_sha256": "822956e70ade94f8312f566b24245b89f700c15ec314e3fa22f96ef6b7db02a4"
+    },
+    "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23": {
+      "variant": "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23",
+      "completed": true,
+      "outcome": "failed",
+      "errors": [
+        "ERROR  (PR0004) : There are total 338 unrouted nets"
+      ],
+      "unrouted_nets": 338,
+      "routing_passed": false,
+      "timing_passed": false,
+      "verified": false,
+      "bitstream_generated": false,
+      "timing_report_generated": false,
+      "functional_qualification_pending": true,
+      "programming_authorized": false,
+      "release_eligible": false,
+      "evidence": "variants/reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23/feasibility_result.json",
+      "evidence_sha256": "45b04a749c01fb75fa20e05dd273daefa517a5810be64099c6dc854a904cdfed"
+    }
+  },
+  "lead_model": "Sol per latest user request; Astra work interrupted",
+  "excluded_resource_changes": [
+    "counterwidthonly~17FF",
+    "fixed10000us specialization alreadyconstantpropagated",
+    "CRC alreadybytewise, nofullframeCRC toremove",
+    "Normal/fallback arithmetic sharing: independent operands, events, resets and concurrent active histories; no proven mutual exclusion",
+    "PIDdividercoldresetremoval rejected:actualtwoenginesuse dynamic enable/fault resets;532FF/340nonconstantresetpins;wouldbreakstop/cancellation. Noedits."
+  ],
+  "latest_telemetry_observation": {
+    "observed_utc": "2026-10-23T19:02:22.201548+00:00",
+    "fresh": false,
+    "8765_status": "stale",
+    "8767_status": "disconnected",
+    "receiver_profile": "mtf01p.b0af_height_loss.v6",
+    "build": null,
+    "fpga_usb_detected": false,
+    "sik_usb_detected": "COM17",
+    "note": "Read-only observation only. No physical stopped-state/identity inferred; no programming permitted from stale evidence."
+  },
+  "best_unrouted_nets": 0,
+  "best_variant": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\fine_global_guardband195",
+  "active_monitor": "root",
+  "historical_metadata": {
+    "superseded_root_pnr_workflow": {
+      "independent_pnr_verifier": "verify_completed_pnr.py",
+      "expected_old_wrapper_netlist_hash_guard_failure": true,
+      "new_netlist_logic_metadata_only_verified": true,
+      "post_pnr_independent_verification_required": true,
+      "pnr_only_evidence": "hardware/pnr_retry_20261023T054556_750275Z",
+      "pnr_only_session": null,
+      "pnr_only_outcome": "failed_652_unrouted"
+    },
+    "superseded_primary_status_20261023T2012Z": {
+      "best_unrouted_nets": 127,
+      "best_variant": "variants/p2_r2_rep1",
+      "best_routing_result": {
+        "variant": "p2_r2_rep1",
+        "unrouted_nets": 127
+      },
+      "next_variant": "variants/mtf_diag_reset_p2_r2_rep1",
+      "current_verifier": "variants/mtf_diag_reset_p2_r2_rep1/fixture/build_project.py",
+      "current_synthesis_folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\synthesis\\20261023T175739_346753Z",
+      "current_synthesis_resources": {
+        "T_Lut": 35942,
+        "T_Alu": 9262,
+        "T_Register": 27829,
+        "T_Bsram": 2
+      },
+      "next_routing_method": {
+        "method": "official_netlist_only_project",
+        "recognition_probe": "hardware/pnr_netlist_probe/probe.json",
+        "audited_vg_sha256": "a27dca89aa11e49bab4a370e5617bcac73c62db3ce5a9a5a4c8961cf31d207d8",
+        "pnr_passed": false
+      }
+    },
+    "superseded_pre_mixer_pointer_fields": {
+      "current_verifier": "variants/info_netlist_p2_r2_rep0_fan23/fixture/build_project.py",
+      "current_synthesis_evidence": {
+        "hardware\\p2_r1_rep1_synthesis_connectivity.json": "bc6437b07fcfb4ebabe2346dc80af46148e9fadf4ef09b4fefd70f3f77533b8b",
+        "hardware\\p2_r1_rep1_hierarchical_rename_review.json": "fbcc9efdd88d360056ec7e88dba431a984b3304a05d660f0aceb907275484241"
+      },
+      "current_synthesis_folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\info_snapshot_plan\\synthesis_only\\20261023T191515_828752Z",
+      "current_synthesis_resources": {
+        "T_Lut": 35945,
+        "T_Alu": 9262,
+        "T_Register": 27604,
+        "T_Bsram": 2
+      },
+      "next_routing_method": {
+        "method": "official_netlist_only_project",
+        "audited_vg_sha256": "aa2de0222dc404ae2326da2d068fc079833296dece1b726f1af0b10f5bb9f941",
+        "pnr_passed": false,
+        "current_trials": []
+      },
+      "contingency_if_current_route_fails": {
+        "action": "One isolated SYN-only with exact same final RTL and actual options except map_option2to1, then p2r2rep0fan23/50 netlistPNR",
+        "not_launched": true,
+        "rationale": "Official SUG100/1220 map1default, map2LUT5oriented. Historical identical49-file sourcepair actualSYN map1+3LUT/-1FF relativemap2 but oldPNRconfoundedplace/route settings; source differsfromcurrent6RTLfiles. No promisedareaorrouteimprovement. Keep opt_goalarea and allsource/constraints unchanged.",
+        "user_verification_order": "Functional validation after zero-routing, not before; immutable qualified release gates unchanged."
+      }
+    },
+    "previous_8e320_pnr_input": {
+      "study": "hardware/range_age_prechecked_plan/synthesis_only/20261023T220717_220954Z",
+      "netlist_sha256": "8e32072310b6b8826c1431f4b7116f5a9d8cb95d2df17f63dd8e4014b6cd8445",
+      "synthesis_map_option": 2,
+      "source_delta_from_9e4ea": [
+        "mtf_xyz_navigation_control.v",
+        "position/mtf_shared_height_fusion.v"
+      ],
+      "source_hashes": {
+        "mtf_xyz_navigation_control.v": "3d5c57327d08ac319e619dee834214a5079b5eb8df71f6c93b738c484a27dd8f",
+        "position/mtf_shared_height_fusion.v": "1933a6a42feadca50fb9fb3abcae4e6faa5f78ed9d4c506cdc7546cbdff72a8a",
+        "sensor/mtf01p_reader.v": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+        "core/flight_core.v": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+        "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+      },
+      "functional_qualification_pending": true,
+      "programming_authorized": false,
+      "release_eligible": false,
+      "policy_options": [
+        {
+          "place_option": 4,
+          "route_option": 2,
+          "replicate_resources": 0,
+          "route_maxfan": 23,
+          "global_freq": 50
+        }
+      ]
+    },
+    "superseded_pointers_before_f293_route1": {
+      "best_variant": "variants/parser_published_feasibility_p2_r2_rep0_fan23",
+      "best_routing_result": {
+        "variant": "parser_published_feasibility_p2_r2_rep0_fan23",
+        "unrouted_nets": 0,
+        "routing_passed": true,
+        "timing_passed": false,
+        "passed": false,
+        "fmax_mhz": 41.761,
+        "usable_for_programming": false,
+        "raw_unrouted_field": null,
+        "zero_basis": "Complete placement/routing and bitstream generation, no ERROR or nonzero-unrouted report; routing_passed is true."
+      },
+      "current_corrected_source_best_routing": {
+        "variant": "parser_published_feasibility_p2_r2_rep0_fan23",
+        "unrouted_nets": 0,
+        "routing_passed": true,
+        "timing_passed": false,
+        "passed": false,
+        "fmax_mhz": 41.761,
+        "usable_for_programming": false,
+        "raw_unrouted_field": null,
+        "zero_basis": "Complete placement/routing and bitstream generation, no ERROR or nonzero-unrouted report; routing_passed is true."
+      },
+      "current_synthesis_folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\reader_age_predicate_proposal\\synthesis_only\\20261023T224547_610550Z",
+      "current_synthesis_evidence": {
+        "study": "hardware/reader_age_predicate_proposal/synthesis_resource_study.json",
+        "vg_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e",
+        "functional_qualification_pending": true
+      },
+      "current_synthesis_resources": {
+        "T_Lut": 35918,
+        "T_Alu": 9294,
+        "T_Register": 27377,
+        "T_Bsram": 2
+      },
+      "combined_range_age7_contingency": {
+        "status": "P2 fully routed47.948 timingfail; root sameVG physical-only P3/P4 active",
+        "source_plan": "hardware/range_age_prechecked_multiply7_plan/source_plan.json",
+        "source_plan_sha256": "b12d0f29b8a49a8eb16d1b38870687ee6c8d5c6c6475d12c0f34fc229f27ce99",
+        "baseline_vg_sha256": "8e32072310b6b8826c1431f4b7116f5a9d8cb95d2df17f63dd8e4014b6cd8445",
+        "functional_tests_run": false,
+        "synthesis_run": true,
+        "pnr_run": true,
+        "programming_authorized": false,
+        "owned_pid": 41796,
+        "worker_session": null,
+        "study_folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\synthesis_only\\20261023T233128_740589Z",
+        "synthesis_passed": true,
+        "resources": {
+          "T_Lut": 35857,
+          "T_Alu": 9296,
+          "T_Register": 27372,
+          "T_Bsram": 2
+        },
+        "resource_delta_from_8e320": {
+          "T_Lut": 47,
+          "T_Alu": 0,
+          "T_Register": -8,
+          "T_Bsram": 0
+        },
+        "actual_vg_sha256": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+        "study_manifest": "hardware/range_age_prechecked_multiply7_plan/synthesis_resource_study.json",
+        "study_manifest_sha256": "925974226badafd3ad14bf364607060383e499d2cca6f649b919339b5c45fa62",
+        "dsp_evidence": "hardware/range_age_prechecked_multiply7_plan/dsp_comparison.json",
+        "dsp_evidence_sha256": "e7f8a977853a8f8ded4e8d8ac1eb51d037bd7fd1e65aff9947022615a84cd867",
+        "root_session": 48243,
+        "started_epoch": 1792798650.5179446
+      },
+      "prepared_pnr_trial": "variants\\published_tilt4500_map2_feasibility_p2_r2_rep0_fan23",
+      "parent_current_board": "Fresh read-only HTTP observation: B0AC, disarmed, four reported PWM1000us; current receiver B0AFv6. No programming performed.",
+      "full_build_outcome": "completed_PR0004_436_unrouted",
+      "vendor_dependency_synthesis_reran": true,
+      "updated_utc": "2026-10-23T23:34:35.720497+00:00"
+    },
+    "superseded_f293_synthesis_pointers": {
+      "current_synthesis_folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\published_tilt4500_proposal\\synthesis_only\\20261024T005225_383171Z",
+      "current_synthesis_evidence": {
+        "study": "hardware\\published_tilt4500_proposal\\synthesis_resource_study.json",
+        "vg_sha256": "f293c3d1cf948e72be1f18f5d87e0aa8abedd53bca8c944361d92ff81e98d2cd",
+        "functional_qualification_pending": true
+      },
+      "current_synthesis_resources": {
+        "T_Lut": 35913,
+        "T_Alu": 9293,
+        "T_Register": 27368,
+        "T_Bsram": 2
+      }
+    },
+    "superseded_6ebb_synthesis_pointers": {
+      "current_synthesis_folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\control_ready_factoring_plan\\synthesis_only\\20261024T013341_913278Z",
+      "current_synthesis_evidence": {
+        "study": "hardware\\control_ready_factoring_plan\\synthesis_resource_study.json",
+        "vg_sha256": "6ebbd100aa829d46a7164000c33a67e6f617c6b56f4d65f2fe48dd0fd2d84a86",
+        "actual_result_pending": false,
+        "functional_qualification_pending": true
+      },
+      "current_synthesis_resources": {
+        "T_Lut": 35930,
+        "T_Alu": 9294,
+        "T_Register": 27363,
+        "T_Bsram": 2
+      }
+    }
+  },
+  "current_verifier": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verify_package.py",
+  "current_synthesis_evidence": {
+    "study": "hardware\\control_fine_velocity_factoring_plan\\synthesis_resource_study.json",
+    "vg_sha256": "0be62a85bf094d9102a6488b792c77c8cb9296d9a5b4aaa3e05a72ea96fd3500",
+    "actual_result_pending": false,
+    "functional_qualification_pending": true
+  },
+  "best_routing_result": {
+    "variant": "control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "6924f4ad250967042dd00ac769b861f9dbcfd9f11d0fcb6dbecbc454ab7adf7c",
+    "netlist_sha256": "0be62a85bf094d9102a6488b792c77c8cb9296d9a5b4aaa3e05a72ea96fd3500",
+    "routing_passed": true,
+    "unrouted_nets": 0,
+    "raw_unrouted_field": null,
+    "zero_basis": "Actual full route/bitstream completion; no route errors",
+    "timing_passed": false,
+    "fmax_mhz": 49.457,
+    "slack": {
+      "setup": {
+        "tns_ns": -3.181,
+        "violated_endpoints": 22
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+      "sha256": "0aabe4d4869fbaf75eda30f77d338e7913b314595f74a5799fc66c00ccaad308",
+      "user_code": "0x0000b0b0"
+    },
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "current_synthesis_folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\control_fine_velocity_factoring_plan\\synthesis_only\\20261024T015539_307340Z",
+  "current_synthesis_resources": {
+    "T_Lut": 35893,
+    "T_Alu": 9293,
+    "T_Register": 27363,
+    "T_Bsram": 2
+  },
+  "active_compiler_processes": [],
+  "pnr_reuse_attempts": [
+    {
+      "variant": "mtf_diag_reuse_p2_r2_rep0",
+      "outcome": "aborted_on_implicit_synthesis",
+      "vg_unchanged": true,
+      "routing_completed": false,
+      "image_generated": false
+    },
+    {
+      "variant": "mtf_diag_reuse_p3_r2_rep1",
+      "outcome": "aborted_on_implicit_synthesis",
+      "vg_unchanged": true,
+      "routing_completed": false,
+      "image_generated": false
+    }
+  ],
+  "next_routing_method": {
+    "method": "official_netlist_only_projects",
+    "current_trials": [
+      "reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23",
+      "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23"
+    ],
+    "inputs": [
+      {
+        "variant": "reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23",
+        "vg_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e"
+      },
+      {
+        "variant": "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23",
+        "vg_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e"
+      }
+    ],
+    "pnr_passed": false,
+    "note": "Same4c386 exactVG, onlyplacement1/2 differs; no selectedrelease."
+  },
+  "active_routing_trials": [],
+  "fan32_rationale": "Official installed docs permit1..100, GW5AT60B default23, warn smaller may cause routing failure. Two bounded rep1+fan32 trials; no monotonic benefit assumed.",
+  "info_snapshot_contingency": {
+    "variant": "variants/info_snapshot_p2_r2_rep1",
+    "study": "hardware/info_snapshot_plan/synthesis_resource_study.json",
+    "mapped_info_report": "hardware/info_snapshot_plan/mapped_info/proof.json",
+    "vg_sha256": "aa2de0222dc404ae2326da2d068fc079833296dece1b726f1af0b10f5bb9f941",
+    "measured_ff_reduction": 225,
+    "lut_increase": 3,
+    "rtl_uart_proof_passed": true,
+    "mapped_info_producer_passed": true,
+    "independent_final_review_pending": false,
+    "current_context_qualification_passed": true,
+    "pnr_run": true,
+    "hardware_accessed": false,
+    "qualification_sha256": "02e66ede8732d9e9923c622fc3094241053db25e32f2a8adeb45608a152d51a5",
+    "evidence_count": 32,
+    "mapped_logical_bits": 1968
+  },
+  "routing_results": [
+    {
+      "variant": "mtf_netlist_p2_r2_rep0",
+      "unrouted_nets": 221,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "mtf_netlist_p3_r2_rep1",
+      "unrouted_nets": 186,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "mtf_netlist_p2_r2_rep1_fan32",
+      "unrouted_nets": 436,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "mtf_netlist_p3_r2_rep1_fan32",
+      "unrouted_nets": 186,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "info_netlist_p2_r2_rep0_fan23",
+      "unrouted_nets": 66,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "info_netlist_p2_r2_rep1_fan23",
+      "unrouted_nets": 502,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "info_netlist_p2_r2_rep1_fan32",
+      "unrouted_nets": 502,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "info_netlist_p3_r2_rep1_fan23",
+      "unrouted_nets": 208,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "info_netlist_p3_r2_rep0_fan23",
+      "unrouted_nets": 437,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "info_netlist_p2_r1_rep0_fan23",
+      "unrouted_nets": 5221,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "info_netlist_p1_r2_rep0_fan23",
+      "unrouted_nets": 344,
+      "outcome": "failed",
+      "bitstream_generated": false
+    },
+    {
+      "variant": "parser_published_feasibility_p2_r2_rep0_fan23",
+      "unrouted_nets": 0,
+      "routing_passed": true,
+      "timing_passed": false,
+      "passed": false,
+      "fmax_mhz": 41.761,
+      "usable_for_programming": false,
+      "raw_unrouted_field": null,
+      "zero_basis": "Complete placement/routing and bitstream generation, no ERROR or nonzero-unrouted report; routing_passed is true.",
+      "outcome": "routed_timing_failure",
+      "bitstream_generated": true
+    },
+    {
+      "variant": "mixer_throttle_last_map1_feasibility_p2_r2_rep0_fan23",
+      "unrouted_nets": 223,
+      "outcome": "failed",
+      "routing_passed": false,
+      "timing_passed": false,
+      "bitstream_generated": false,
+      "evidence": "variants/mixer_throttle_last_map1_feasibility_p2_r2_rep0_fan23/feasibility_result.json",
+      "selected": false
+    },
+    {
+      "variant": "readiness_boolean_map2_feasibility_p2_r2_rep0_fan23",
+      "unrouted_nets": 0,
+      "raw_unrouted_field": null,
+      "zero_basis": "Complete routing and bitstream generation; no ERROR or nonzero-unrouted report; routing_passed=true",
+      "routing_passed": true,
+      "timing_passed": false,
+      "passed": false,
+      "fmax_mhz": 41.571,
+      "slack": {
+        "setup": {
+          "tns_ns": -1823.108,
+          "violated_endpoints": 996
+        },
+        "hold": {
+          "tns_ns": 0.0,
+          "violated_endpoints": 0
+        }
+      },
+      "outcome": "routed_timing_failure",
+      "bitstream_generated": true,
+      "usable_for_programming": false,
+      "evidence": "variants/readiness_boolean_map2_feasibility_p2_r2_rep0_fan23/feasibility_result.json"
+    },
+    {
+      "variant": "range_age_prechecked_map2_feasibility_p2_r2_rep0_fan23",
+      "unrouted_nets": 145,
+      "outcome": "failed",
+      "routing_passed": false,
+      "timing_passed": false,
+      "bitstream_generated": false,
+      "evidence": "variants/range_age_prechecked_map2_feasibility_p2_r2_rep0_fan23/feasibility_result.json",
+      "selected": false
+    },
+    {
+      "variant": "range_age_prechecked_map2_feasibility_p3_r2_rep0_fan23",
+      "unrouted_nets": 397,
+      "outcome": "failed",
+      "routing_passed": false,
+      "timing_passed": false,
+      "bitstream_generated": false,
+      "selected": false,
+      "evidence": "variants/range_age_prechecked_map2_feasibility_p3_r2_rep0_fan23/feasibility_result.json"
+    },
+    {
+      "variant": "range_age_prechecked_map2_feasibility_p4_r2_rep0_fan23",
+      "unrouted_nets": 379,
+      "outcome": "failed",
+      "routing_passed": false,
+      "timing_passed": false,
+      "bitstream_generated": false,
+      "selected": false,
+      "evidence": "variants/range_age_prechecked_map2_feasibility_p4_r2_rep0_fan23/feasibility_result.json"
+    },
+    {
+      "variant": "reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23",
+      "completed": true,
+      "outcome": "failed",
+      "errors": [
+        "ERROR  (PR0004) : There are total 344 unrouted nets"
+      ],
+      "unrouted_nets": 344,
+      "routing_passed": false,
+      "timing_passed": false,
+      "verified": false,
+      "bitstream_generated": false,
+      "timing_report_generated": false,
+      "functional_qualification_pending": true,
+      "programming_authorized": false,
+      "release_eligible": false,
+      "evidence": "variants/reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23/feasibility_result.json",
+      "evidence_sha256": "822956e70ade94f8312f566b24245b89f700c15ec314e3fa22f96ef6b7db02a4",
+      "original_run_metadata": {
+        "variant": "reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23",
+        "started_epoch": 1792796300.891961,
+        "owned_pid": 61144,
+        "root_session": 8490,
+        "console_path": "fixture/console.txt",
+        "policy": {
+          "place_option": 2,
+          "route_option": 2,
+          "replicate_resources": 0,
+          "route_maxfan": 23,
+          "global_freq": 50
+        },
+        "pnr_only": true,
+        "skip_synthesis_confirmed": true,
+        "independent_identity_review_passed": true,
+        "netlist_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e",
+        "source_study": "hardware/reader_age_predicate_proposal/synthesis_only/20261023T224547_610550Z",
+        "functional_qualification_pending": true,
+        "programming_authorized": false,
+        "release_eligible": false,
+        "hardware_accessed": false
+      }
+    },
+    {
+      "variant": "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23",
+      "completed": true,
+      "outcome": "failed",
+      "errors": [
+        "ERROR  (PR0004) : There are total 338 unrouted nets"
+      ],
+      "unrouted_nets": 338,
+      "routing_passed": false,
+      "timing_passed": false,
+      "verified": false,
+      "bitstream_generated": false,
+      "timing_report_generated": false,
+      "functional_qualification_pending": true,
+      "programming_authorized": false,
+      "release_eligible": false,
+      "evidence": "variants/reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23/feasibility_result.json",
+      "evidence_sha256": "45b04a749c01fb75fa20e05dd273daefa517a5810be64099c6dc854a904cdfed",
+      "original_run_metadata": {
+        "variant": "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23",
+        "started_epoch": 1792797236.8396626,
+        "owned_pid": 52100,
+        "root_session": 33834,
+        "console_path": "fixture/console.txt",
+        "policy": {
+          "place_option": 1,
+          "route_option": 2,
+          "replicate_resources": 0,
+          "route_maxfan": 23,
+          "global_freq": 50
+        },
+        "pnr_only": true,
+        "skip_synthesis_confirmed": true,
+        "independent_identity_review_passed": true,
+        "netlist_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e",
+        "source_study": "hardware/reader_age_predicate_proposal/synthesis_only/20261023T224547_610550Z",
+        "functional_qualification_pending": true,
+        "programming_authorized": false,
+        "release_eligible": false,
+        "hardware_accessed": false
+      }
+    },
+    {
+      "variant": "nav_age_multiply7_map2_feasibility_p2_r2_rep0_fan23",
+      "result_path": "variants\\nav_age_multiply7_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+      "result_sha256": "96f7f47c9600ee32d2f2825ef7e92c0872532cd05632737f6e41a49ce4b3c4e7",
+      "unrouted_nets": 252,
+      "routing_passed": false,
+      "timing_passed": false,
+      "netlist_sha256": "295885db6f57ad74359384ea6ee3a2bab2a6141eb4b4c7acdc38f72f21d43981",
+      "policy": {
+        "place_option": 2,
+        "route_option": 2,
+        "replicate_resources": 0,
+        "route_maxfan": 23,
+        "global_freq": 50
+      },
+      "source_study": "hardware/nav_age_multiply7_plan/synthesis_only/20261023T232133_624240Z",
+      "source_family": "9e4ea-parent; NAV-only guarded low7 multiply/shared numeric age; no8e320prechecked/no4cflags",
+      "resources": {
+        "LUT": 35764,
+        "ALU": 9295,
+        "FF": 27367,
+        "BSRAM": 2
+      },
+      "functional_proof_run": false,
+      "programming_authorized": false,
+      "release_eligible": false,
+      "root_session": 94885,
+      "owned_pid": 7180
+    }
+  ],
+  "current_corrected_source_best_routing": {
+    "variant": "range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "2ac67a8e24d7119be09d1b3fc37ac195a388e7c5a75d5a0da360f7ed42ce5fb6",
+    "netlist_sha256": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+    "routing_passed": true,
+    "timing_passed": false,
+    "fmax_mhz": 47.948,
+    "slack": {
+      "setup": {
+        "tns_ns": -78.051,
+        "violated_endpoints": 216
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+      "sha256": "62d98023464e5ffaa78c365df7a6e37fcff743aeaf9dc566820ade187c497262",
+      "user_code": "0x0000b0b0"
+    },
+    "policy": {
+      "place_option": 2,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "functional_qualification_pending": true,
+    "programming_authorized": false,
+    "release_eligible": false,
+    "passed": false,
+    "usable_for_programming": false,
+    "raw_unrouted_field": null,
+    "zero_basis": "Vendor full routing and bitstream completion/no route errors; original null preserved in result"
+  },
+  "staged_release_finalizer": {
+    "path": "hardware/netlist_release_plan/finalize_trial.py",
+    "independent_review_passed": true,
+    "successful_finalization_executed": false,
+    "runtime_or_hardware_accessed": false
+  },
+  "prefetch8_adoption": {
+    "adopted": false,
+    "reason": "Measured56FF saved but23totalLUT added and prefetch primitive depth11to13; not adopted/routed",
+    "evidence": "hardware/prefetch8_plan/recommendation.json"
+  },
+  "selected_release": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\B0B0_51_608MHz_verified",
+    "manifest_sha256": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+    "fmax_mhz": 51.608,
+    "constraint_period_ns": 19.5,
+    "hardware_clock_mhz": 50,
+    "unrouted_nets": 0,
+    "setup_violated_endpoints": 0,
+    "hold_violated_endpoints": 0,
+    "bitstream_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+    "offline_candidate_verified": true,
+    "hardware_sram_installed": true,
+    "stopped_startup_passed": true,
+    "healthy_height_output_passed": true,
+    "flash_written": false,
+    "flight_ready": false,
+    "targeted_props_off_acceptance_passed": true,
+    "hardware_acceptance_sha256": "70734ef829a1f6055f828c6e9241b816f4833728c7af3fbbe5458fcbb8ca5a03"
+  },
+  "route1_rationale": "Official SUG1220/SUG100: route_option1 slower and targets better routing quality; one bounded sameVG p2rep0fan23 contingency, no success assumption or source changes.",
+  "active_synthesis_studies": [],
+  "parser_payload_contingency": {
+    "adopted": false,
+    "qualification_pending": true,
+    "actual_synthesis_vg_sha256": "35b1c9c4900e7f988b451fb2c4d7cdf7c6e61431d10f64d4ef6b1e97fcd7ed77",
+    "measured_register_reduction": 208,
+    "measured_lut_reduction": 21,
+    "mapped_parser_proof_pending": true,
+    "current_vg_mapped_reaudits_pending": true,
+    "new_variant": "variants/parser_payload_p2_r2_rep0",
+    "pnr_run": false,
+    "hardware_accessed": false
+  },
+  "verification_strategy": {
+    "requested_by_user": "further trim without behavior change, then directly SYN/PNR; remaining functional feasibility validation after routing succeeds; avoid redundant tests",
+    "before_routing": "source index/interface review, synthesis diagnostics/resource comparison and exact input identity only",
+    "after_routing_success": "One focused mixer/coreBoolean proof completed for9e4ea; parser proof reused when unchanged. Future changed age-guard caller contract proof after zero-route. Only winner current-VG qualification/artifact binding/package; no repeated old matrices.",
+    "no_hardware_until_qualified": true
+  },
+  "selected_pnr_input": {
+    "scope": "Two active experiments with distinctVG/sourcefamilies; not selected release",
+    "active_variants": [
+      {
+        "variant": "nav_age_multiply7_map2_feasibility_p2_r2_rep0_fan23",
+        "netlist_sha256": "295885db6f57ad74359384ea6ee3a2bab2a6141eb4b4c7acdc38f72f21d43981",
+        "policy": {
+          "place_option": 2,
+          "route_option": 2,
+          "replicate_resources": 0,
+          "route_maxfan": 23,
+          "global_freq": 50
+        }
+      }
+    ],
+    "functional_qualification_pending": true,
+    "release_eligible": false
+  },
+  "last_routing_observation": {
+    "observed_utc": "2026-10-23T23:28:06.958427+00:00",
+    "observations": [
+      {
+        "variant": "nav_age_multiply7_map2_feasibility_p2_r2_rep0_fan23",
+        "root_session": 94885,
+        "owned_pid": 7180,
+        "last_stage": "Placement Phase1 (root-reported)",
+        "inputs_frozen": true
+      },
+      {
+        "variant": "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23",
+        "root_session": 33834,
+        "owned_pid": 52100,
+        "last_stage": "Routing Phase0 (root-reported)",
+        "inputs_frozen": true
+      }
+    ]
+  },
+  "contingency_if_current_route_fails": {
+    "proposal": "hardware/readiness_boolean_contingency/proposal.json",
+    "implemented": false,
+    "new_synthesis_or_pnr_launched": false,
+    "decision_requires": "actual current routing/timing report"
+  },
+  "timing_bottleneck": {
+    "worst_from": "core/imu/guard/qualified_s1/Q",
+    "worst_to": "core/mix_saturated_s0/D",
+    "delay_ns": 23.871,
+    "slack_ns": -3.946,
+    "levels": 23,
+    "routing_delay_ns": 16.017,
+    "logic_delay_ns": 7.511,
+    "reported_top25_all_same_start": true,
+    "additional_manual_CE_slack_ns": -3.29,
+    "fix_plan": "Exact signed32 mixer reassociation: attitude correction sums first, late throttle last; no safety enable changes/registers/latency. One isolatedSYN with documented map1 alternate packing, same area/50MHz. Routefirst then one changed mixer regression."
+  },
+  "final_parser_regression": {
+    "passed": true,
+    "proof": "hardware/parser_published_view_plan/post_route/proof.json",
+    "proof_sha256": "23009f2dbeb911d7063326d672e82d1d9aead9d86b1c68ed0c9867e50db33c47",
+    "cycles": 65435,
+    "accepted_samples": 597,
+    "source_reader_sha256": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+    "reused_if_reader_unchanged": true
+  },
+  "read_only_timing_contingencies": [
+    {
+      "scope": "controller_enabled",
+      "identity": "(V||F)&&(A||F) == F||(V&&A)",
+      "preserve": "all other armed/channel/health/stop conditions exactly",
+      "implemented": false,
+      "implemented_in_isolated_study": true
+    },
+    {
+      "scope": "selected_norm_valid",
+      "identity": "F implies fallback_norm_valid, so F?fallback_norm_valid:pilot_norm_valid == F||pilot_norm_valid",
+      "requires": "bind exact fallback healthy/active expressions, no latency change",
+      "implemented": false,
+      "implemented_in_isolated_study": true
+    }
+  ],
+  "mixer_and_boolean_regression": {
+    "passed": true,
+    "proof": "hardware\\readiness_boolean_map2_plan\\post_route\\proof.json",
+    "sha256": "24cd6e1a1746bea8c045319582ebe5408cbb27d8742217e43d5adf78d591636b",
+    "mixer_vectors": 22804,
+    "bounds_sets": 2,
+    "boolean_combinations": 8192,
+    "fallback_premise_combinations": 1024,
+    "scope": "local two-state settled RTL and exact combinational identities; no mapped/whole-core/hardware claim",
+    "reusable_if_sources_unchanged": true
+  },
+  "latest_timing_bottleneck": {
+    "variant": "readiness_boolean_map2_feasibility_p2_r2_rep0_fan23",
+    "start": "mtf/age_ms_3_s1/Q",
+    "worst_end": "core/mix_saturated_s0/D",
+    "delay_ns": 24.006,
+    "slack_ns": -4.055,
+    "levels": 24,
+    "cell_ns": 8.6,
+    "route_ns": 15.063,
+    "top25_same_start": true,
+    "next_change": "default-off per-caller range-age-prechecked contract, exact same-cycle sources_ok"
+  },
+  "placement_contingency": {
+    "vg_sha256": "8e32072310b6b8826c1431f4b7116f5a9d8cb95d2df17f63dd8e4014b6cd8445",
+    "place_options": [
+      3,
+      4
+    ],
+    "route_option": 2,
+    "replicate_resources": 0,
+    "route_maxfan": 23,
+    "global_freq": 50,
+    "changes_only": "place_option; same exact netlist/source/constraints",
+    "maximum_parallel_trials": 2,
+    "official_support": "SUG1220-2.1E PDF43-44/printed36-37;3/4 attempt better placement; no guaranteed improvement"
+  },
+  "current_verifiers": [
+    "variants/reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23/fixture/feasibility_runner.py",
+    "variants/reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23/fixture/feasibility_runner.py"
+  ],
+  "incremental_placement_contingency": {
+    "variant": "variants/range_age_prechecked_map2_incremental_p2_r2_rep0_fan23",
+    "prepared": true,
+    "independent_review_passed": true,
+    "launched": true,
+    "vg_sha256": "8e32072310b6b8826c1431f4b7116f5a9d8cb95d2df17f63dd8e4014b6cd8445",
+    "policy": "p2r2rep0fan23/50 plus explicit official inc_place isolated9e4ea.p copy",
+    "reference_provenance": "Original9e4ea routed result.p/outputSHA/sourceVG and isolatedcopy allbound; immutable pre/post checks",
+    "actual_vendor_reference_use_confirmed": false,
+    "scope": "No third active trial. No inc_pnr .p/.pr ambiguous syntax. No source/SYN/functional/hardware actions.",
+    "root_session": 17950,
+    "owned_pid": 53084,
+    "completed": false,
+    "outcome": "vendor_rejected_reference_match; aborted_duplicate_default_flow",
+    "matching_percent": 3.24,
+    "required_matching_percent": 80,
+    "aborted_evidence": "variants/range_age_prechecked_map2_incremental_p2_r2_rep0_fan23/ABORTED_INCREMENTAL_REJECTED.json",
+    "checkpoint_original_and_copy_unchanged": true
+  },
+  "reader_age_predicate_contingency": {
+    "proposal": "hardware/reader_age_predicate_proposal/proposal.json",
+    "source_review_passed": true,
+    "adopted": false,
+    "tests_run": false,
+    "synthesis_run": true,
+    "reason": "Only if actual next timing requires; same-edge next-age predicate invariant, genericdefaultcomparator, sampleswrap/sampleoverride preserved",
+    "api_limit": "Currentonlynamedinstances reviewed; no externalpositionalportcompatibility claim",
+    "isolated_synthesis_requested": true,
+    "vg_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e",
+    "resource_delta_from_8e320": {
+      "LUT": 108,
+      "ALU": -2,
+      "FF": -3
+    },
+    "pnr_run": true,
+    "functional_proof_pending": true,
+    "reuse_binding": "hardware/reader_age_predicate_proposal/module_reuse_bindings.json",
+    "module_reuse_scope": "Parser/UART/metricObserver LF-normalized moduletext identical; raw bytes differ byCRLFtoLF, no raw byte-identity claim",
+    "adopted_for_next_feasibility_candidate": true,
+    "next_variant": "variants/reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23",
+    "active_variant": null,
+    "root_session": null,
+    "owned_pid": null,
+    "completed_trials": [
+      {
+        "variant": "reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23",
+        "completed": true,
+        "outcome": "failed",
+        "errors": [
+          "ERROR  (PR0004) : There are total 344 unrouted nets"
+        ],
+        "unrouted_nets": 344,
+        "routing_passed": false,
+        "timing_passed": false,
+        "verified": false,
+        "bitstream_generated": false,
+        "timing_report_generated": false,
+        "functional_qualification_pending": true,
+        "programming_authorized": false,
+        "release_eligible": false,
+        "evidence": "variants/reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23/feasibility_result.json",
+        "evidence_sha256": "822956e70ade94f8312f566b24245b89f700c15ec314e3fa22f96ef6b7db02a4",
+        "original_run_metadata": {
+          "variant": "reader_age_predicate_map2_feasibility_p2_r2_rep0_fan23",
+          "started_epoch": 1792796300.891961,
+          "owned_pid": 61144,
+          "root_session": 8490,
+          "console_path": "fixture/console.txt",
+          "policy": {
+            "place_option": 2,
+            "route_option": 2,
+            "replicate_resources": 0,
+            "route_maxfan": 23,
+            "global_freq": 50
+          },
+          "pnr_only": true,
+          "skip_synthesis_confirmed": true,
+          "independent_identity_review_passed": true,
+          "netlist_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e",
+          "source_study": "hardware/reader_age_predicate_proposal/synthesis_only/20261023T224547_610550Z",
+          "functional_qualification_pending": true,
+          "programming_authorized": false,
+          "release_eligible": false,
+          "hardware_accessed": false
+        }
+      },
+      {
+        "variant": "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23",
+        "completed": true,
+        "outcome": "failed",
+        "errors": [
+          "ERROR  (PR0004) : There are total 338 unrouted nets"
+        ],
+        "unrouted_nets": 338,
+        "routing_passed": false,
+        "timing_passed": false,
+        "verified": false,
+        "bitstream_generated": false,
+        "timing_report_generated": false,
+        "functional_qualification_pending": true,
+        "programming_authorized": false,
+        "release_eligible": false,
+        "evidence": "variants/reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23/feasibility_result.json",
+        "evidence_sha256": "45b04a749c01fb75fa20e05dd273daefa517a5810be64099c6dc854a904cdfed",
+        "original_run_metadata": {
+          "variant": "reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23",
+          "started_epoch": 1792797236.8396626,
+          "owned_pid": 52100,
+          "root_session": 33834,
+          "console_path": "fixture/console.txt",
+          "policy": {
+            "place_option": 1,
+            "route_option": 2,
+            "replicate_resources": 0,
+            "route_maxfan": 23,
+            "global_freq": 50
+          },
+          "pnr_only": true,
+          "skip_synthesis_confirmed": true,
+          "independent_identity_review_passed": true,
+          "netlist_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e",
+          "source_study": "hardware/reader_age_predicate_proposal/synthesis_only/20261023T224547_610550Z",
+          "functional_qualification_pending": true,
+          "programming_authorized": false,
+          "release_eligible": false,
+          "hardware_accessed": false
+        }
+      }
+    ],
+    "status": "retired bothsettings failed344/338; functional proof not executed"
+  },
+  "mixer_signed19_contingency": {
+    "study": "hardware/mixer_signed19_plan",
+    "source_review_passed": true,
+    "scope": "All t/r/p/y/a/b/c/d signed19; full unsigned16throttle and signed16corrections bounded[-98304,163839], clamp input32/ports/params/comparators unchanged",
+    "synthesis_running": false,
+    "tests_run": false,
+    "pnr_run": false,
+    "decision": "Only adopt if actualSYN meaningful savings; otherwise preserve4c386. No activep4 changes.",
+    "synthesis_passed": true,
+    "vg_sha256": "644619eb6dda725b0b9af142cab6b5f3e550acbe679b79474eb0cc58019fa8cf",
+    "measured_delta_from_4c386": {
+      "LUT": -2,
+      "ALU": -3,
+      "FF": 0
+    },
+    "adopted": false,
+    "reason": "No material physical savings; boundedstudyrejected, do not mixinto4c386."
+  },
+  "preferred_experimental_pnr_input": {
+    "study": "hardware/reader_age_predicate_proposal/synthesis_only/20261023T224547_610550Z",
+    "netlist_sha256": "4c386192b5323ecce63e91d3d0427729e01efb3e643e736d7a8d844dd617b33e",
+    "synthesis_map_option": 2,
+    "source_hashes": {
+      "sensor/mtf01p_reader.v": "0d0358ea46f918f3b7599d630106cdc7c68277bc904adfc2d77c24a82f7cc12a",
+      "mtf_xyz_navigation_control.v": "a33a97a82e54cfd4b092559bad7221edf6fa2e2b0b81db92f7c1747fc628074d",
+      "core/flight_core.v": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+      "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+    },
+    "policy": {
+      "place_option": 2,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "functional_qualification_pending": true,
+    "release_eligible": false,
+    "source_hashes_scope": "Selected reader/navigation/core/mixer files only; complete44-file binding is in the actual synthesis study and runner contract.",
+    "latest_outcome": "P2 failed344unrouted; sameVG P1 remains pending; not a selected release"
+  },
+  "age_predicate_post_route_proof": {
+    "script": "hardware/reader_age_predicate_proposal/post_route_pending/run_proof.py",
+    "prepared": true,
+    "executed": false,
+    "passed": null,
+    "execution_condition": "root confirms4c386 complete routing; only one targeted run, no oldwholematrix"
+  },
+  "programming_authorized": false,
+  "functional_qualification_pending": true,
+  "release_eligible": false,
+  "nav_age_multiply7_contingency": {
+    "scope": "OnlyNAV2line guarded source_age_ms[6:0]*50000 and c_position_age wire reuse against9e4ea; not4c386predicate/prechecked/signed19 source family",
+    "study": "hardware/nav_age_multiply7_plan/synthesis_resource_study.json",
+    "study_sha256": "a85160338b862324f5a3863c38fc1efacec95222ea8cc4e72bc1e60f7736d6fb",
+    "source_study_sha256": "a85160338b862324f5a3863c38fc1efacec95222ea8cc4e72bc1e60f7736d6fb",
+    "netlist_sha256": "295885db6f57ad74359384ea6ee3a2bab2a6141eb4b4c7acdc38f72f21d43981",
+    "source_hashes": {
+      "acg720_ano_port.v": "b8736a2967908079c96255573e4c6f432b0e3c10441b973fd644f29662de823b",
+      "telemetry_tx.v": "18b844326a020c2320228ea38151a64508483c7b2f8be7d8773e744a951a3b01",
+      "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+      "core/flight_core.v": "ebe01007043ab61bd75338183b17cc50e80d373917e7ba534231c002b33ddfaa",
+      "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "core/imu_checked_guard_pipelined.v": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+      "core/imu_pipeline_pipelined.v": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+      "core/imu_temporal_check_pipelined.v": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+      "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+      "core/rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+      "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "position/relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+      "acg720_ano_port.sdc": "376f34618eb37dd83683f7978674718624cf84ba1fd1dfe417876f3716da5d4d",
+      "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "core/ano_attitude_estimator.v": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+      "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "position/ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "sensor/range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+      "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "sensor/mtf01p_reader.v": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+      "sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+      "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+      "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "sensor/mtf_shared_geometry.v": "848e8c5efc6c45122dc6649abe2a9eee4a51e2b1646a1343580d77853816df18",
+      "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "position/mtf_shared_height_fusion.v": "8792ab9b76bcd6b27cb17529b51a33a5c01d0e38e2d1a542d5f20997e75d5ee1",
+      "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "mtf_xyz_navigation_control.v": "d74ad838b5639fd5d65ea9cbfb63d819eb281ce0a104d3bc32064277fa0aba9b",
+      "position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+      "acg720_ano_port.gprj": "f6f7553aab05450fa8ed6e09167527bdc6db2004a3e1aea4c20c3e3cb707c6fb",
+      "build.tcl": "beb5ce95a66afe6c8e9dc1c6e2a55cb68b5581e597b39fbc29924b7473ab5fb9"
+    },
+    "resources": {
+      "T_Lut": 35764,
+      "T_Alu": 9295,
+      "T_Register": 27367,
+      "T_Bsram": 2
+    },
+    "dsp_comparison_evidence": "hardware/nav_age_multiply7_plan/dsp_comparison.json",
+    "dsp_comparison_sha256": "bf7573a866b1870e1727e0979b704c56c1d2c4400317285f8e921e5a72f63db2",
+    "preflight_evidence": "variants/nav_age_multiply7_map2_feasibility_p2_r2_rep0_fan23/preflight.json",
+    "preflight_sha256": "0117c9bd6bdbe35b65a4c64cca47f07be54efad64c53fd45ea87086e477e6551",
+    "baseline_netlist": "9e4ea068664dc558f6238f04c46311cfdb381b1d71ddb3ba68d7867c690f0b8d",
+    "active_variant": "nav_age_multiply7_map2_feasibility_p2_r2_rep0_fan23",
+    "root_session": 94885,
+    "owned_pid": 7180,
+    "functional_qualification_pending": true,
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "combined_range_age7_contingency": {
+    "status": "All819physical trials completed: P2rep0 fullyrouted47.948 timingfail(best); P1failed311,P3failed570,P4fullyrouted37.25 timingfail,P2rep1failed216; incremental rejected3.25% andaborted",
+    "source_plan": "hardware/range_age_prechecked_multiply7_plan/source_plan.json",
+    "source_plan_sha256": "b12d0f29b8a49a8eb16d1b38870687ee6c8d5c6c6475d12c0f34fc229f27ce99",
+    "baseline_vg_sha256": "8e32072310b6b8826c1431f4b7116f5a9d8cb95d2df17f63dd8e4014b6cd8445",
+    "functional_tests_run": false,
+    "synthesis_run": true,
+    "pnr_run": true,
+    "programming_authorized": false,
+    "owned_pid": null,
+    "worker_session": null,
+    "study_folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\synthesis_only\\20261023T233128_740589Z",
+    "synthesis_passed": true,
+    "resources": {
+      "T_Lut": 35857,
+      "T_Alu": 9296,
+      "T_Register": 27372,
+      "T_Bsram": 2
+    },
+    "resource_delta_from_8e320": {
+      "T_Lut": 47,
+      "T_Alu": 0,
+      "T_Register": -8,
+      "T_Bsram": 0
+    },
+    "actual_vg_sha256": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+    "study_manifest": "hardware/range_age_prechecked_multiply7_plan/synthesis_resource_study.json",
+    "study_manifest_sha256": "925974226badafd3ad14bf364607060383e499d2cca6f649b919339b5c45fa62",
+    "dsp_evidence": "hardware/range_age_prechecked_multiply7_plan/dsp_comparison.json",
+    "dsp_evidence_sha256": "e7f8a977853a8f8ded4e8d8ac1eb51d037bd7fd1e65aff9947022615a84cd867",
+    "root_session": null,
+    "started_epoch": 1792798650.5179446,
+    "active": false,
+    "completed": true
+  },
+  "retired_4c386_p1_raw_result": {
+    "path": "variants\\reader_age_predicate_map2_feasibility_p1_r2_rep0_fan23\\feasibility_result.json",
+    "sha256": "45b04a749c01fb75fa20e05dd273daefa517a5810be64099c6dc854a904cdfed",
+    "unrouted_nets": 338,
+    "routing_passed": false,
+    "functional_proof_run": false,
+    "retired": true
+  },
+  "nav_age_multiply7_final_result": {
+    "variant": "nav_age_multiply7_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\nav_age_multiply7_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "96f7f47c9600ee32d2f2825ef7e92c0872532cd05632737f6e41a49ce4b3c4e7",
+    "unrouted_nets": 252,
+    "routing_passed": false,
+    "timing_passed": false,
+    "netlist_sha256": "295885db6f57ad74359384ea6ee3a2bab2a6141eb4b4c7acdc38f72f21d43981",
+    "policy": {
+      "place_option": 2,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "source_study": "hardware/nav_age_multiply7_plan/synthesis_only/20261023T232133_624240Z",
+    "source_family": "9e4ea-parent; NAV-only guarded low7 multiply/shared numeric age; no8e320prechecked/no4cflags",
+    "resources": {
+      "LUT": 35764,
+      "ALU": 9295,
+      "FF": 27367,
+      "BSRAM": 2
+    },
+    "functional_proof_run": false,
+    "programming_authorized": false,
+    "release_eligible": false,
+    "root_session": 94885,
+    "owned_pid": 7180
+  },
+  "combined_range_age7_final_result": {
+    "variant": "range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "2ac67a8e24d7119be09d1b3fc37ac195a388e7c5a75d5a0da360f7ed42ce5fb6",
+    "netlist_sha256": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+    "routing_passed": true,
+    "timing_passed": false,
+    "fmax_mhz": 47.948,
+    "slack": {
+      "setup": {
+        "tns_ns": -78.051,
+        "violated_endpoints": 216
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+      "sha256": "62d98023464e5ffaa78c365df7a6e37fcff743aeaf9dc566820ade187c497262",
+      "user_code": "0x0000b0b0"
+    },
+    "policy": {
+      "place_option": 2,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "functional_qualification_pending": true,
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "best_routed_unqualified_result": {
+    "variant": "range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "2ac67a8e24d7119be09d1b3fc37ac195a388e7c5a75d5a0da360f7ed42ce5fb6",
+    "netlist_sha256": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+    "routing_passed": true,
+    "timing_passed": false,
+    "fmax_mhz": 47.948,
+    "slack": {
+      "setup": {
+        "tns_ns": -78.051,
+        "violated_endpoints": 216
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+      "sha256": "62d98023464e5ffaa78c365df7a6e37fcff743aeaf9dc566820ade187c497262",
+      "user_code": "0x0000b0b0"
+    },
+    "policy": {
+      "place_option": 2,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "functional_qualification_pending": true,
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "prepared_pnr_trial": "variants\\control_fine_velocity_global_control_map2_feasibility_p2_r2_rep0_fan23",
+  "combined_focused_proof_status": {
+    "builder_reported_pass": true,
+    "independent_reviewer_ack": true,
+    "final_metadata_pending": false,
+    "hash_bound": true,
+    "path": "hardware\\range_age_prechecked_multiply7_plan\\post_route_pending\\proof.json",
+    "sha256": "ed51dfd5f48b5d0d4a3e05188a9191190bf6fc07f9d284576cdfa9eb362f4308",
+    "scope": "Scoped source plus isolated DSP,365 ages and6400 caller cases; not whole mapped functionality",
+    "execution_history": "3 compilations,2 simulations; bench-only GSR/extraction reset-vs-normal repairs; initial logs preserved",
+    "same819_p3_reusable_without_repeat": true,
+    "functional_qualification_complete": false,
+    "remaining_gate": "50MHz physical timing winner before positivefreeze; scoped connectivity and packaging independently accepted",
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "same819_p4_final_result": {
+    "variant": "range_age_prechecked_multiply7_map2_feasibility_p4_r2_rep0_fan23",
+    "result_path": "variants\\range_age_prechecked_multiply7_map2_feasibility_p4_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "77e990804a86d41bccf4010b1c85ccccef8d927572680898a873c2752e7108a8",
+    "routing_passed": true,
+    "timing_passed": false,
+    "fmax_mhz": 37.25,
+    "slack": {
+      "setup": {
+        "tns_ns": -6355.112,
+        "violated_endpoints": 1951
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "vg_sha256": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+    "bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\range_age_prechecked_multiply7_map2_feasibility_p4_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+      "sha256": "cc82d012a2e18d42e689922341d63b354c2549e2ad190b400f55f1ec1104827e",
+      "user_code": "0x0000b0b0"
+    },
+    "policy": {
+      "place_option": 4,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "retired": true,
+    "functional_tests_run": false,
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "independent_packaging_preparation": {
+    "status": "Independent review ACCEPTED; scoped offline proofs/connections/preparation closed; only50MHz physical timing winner required before positivefreeze",
+    "helper_path": "hardware\\qualified_candidate_plan\\freeze_candidate.py",
+    "scope_path": "hardware\\qualified_candidate_plan\\scope_contract.pending.json",
+    "record_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\qualified_candidate_plan\\independent_review.json",
+    "helper_sha256": "b1d972661023182ce9badc987e18b9ad6940ba69301ac851af9e76441fa9555e",
+    "scope_sha256": "6a835c412f3e629db53d475d2e5e018df968d20414c2cbf7b35dbfa576de7a7e",
+    "independent_record_sha256": "7fbea7f2ca15c0c461cb4fe641c84f19bb93e214b2a336a01b9d4d95712bea1d",
+    "positive_freeze_executed": false,
+    "hardware_accessed": false,
+    "programming_authorized": false,
+    "flight_ready": false
+  },
+  "same819_p3_final_result": {
+    "variant": "range_age_prechecked_multiply7_map2_feasibility_p3_r2_rep0_fan23",
+    "result_path": "variants\\range_age_prechecked_multiply7_map2_feasibility_p3_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "a211a1c7b1556da8f602f02f874ef1930087d1015f763b2486ec76a2d603ce01",
+    "routing_passed": false,
+    "unrouted_nets": 570,
+    "vg_sha256": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+    "policy": {
+      "place_option": 3,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "retired": true,
+    "functional_tests_run": false,
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "same819_p1_final_result": {
+    "result_path": "variants\\range_age_prechecked_multiply7_map2_feasibility_p1_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "787c28d310d364dbbefa3a85effb1061f69b0557e810c5fbfdaec523f693ab61",
+    "unrouted_nets": 311,
+    "routing_passed": false,
+    "retired": true
+  },
+  "same819_incremental_rejected_aborted": {
+    "variant": "range_age_prechecked_multiply7_map2_incremental_p2_r2_rep1_fan23",
+    "result_path": "variants\\range_age_prechecked_multiply7_map2_incremental_p2_r2_rep1_fan23\\feasibility_result.json",
+    "result_sha256": "ced5a9d0050995a49cc333b482bc54d731f1e2f7fabcd6ec0160309ff5d79cc1",
+    "status": "Vendor increment rejected then owned duplicate aborted; not completed routing failure or success",
+    "owned_pid": 21820,
+    "started_epoch": 1792802458.15411,
+    "reference_read": true,
+    "placement_match_percent": [
+      3.25,
+      3.25
+    ],
+    "vendor_incremental_reuse_confirmed": false,
+    "acceptance_error": "Missing/stale report",
+    "full_pnr_completed": false,
+    "bitstream_generated": false,
+    "reference_checkpoint_sha256": "4811cbbfaaa439b54cc3d7b8472104cf03f8d7bb1584751d612b55b79fb17c4a",
+    "archival_evidence_sha256": {
+      "variants\\range_age_prechecked_multiply7_map2_incremental_p2_r2_rep1_fan23\\fixture\\impl\\pnr\\acg720_ano_port.reference_input.p": "4811cbbfaaa439b54cc3d7b8472104cf03f8d7bb1584751d612b55b79fb17c4a",
+      "variants\\range_age_prechecked_multiply7_map2_incremental_p2_r2_rep1_fan23\\fixture\\impl\\pnr\\acg720_ano_port.reference_evidence.json": "3648834dc610f3a9931131378ce8179db72aab6f939548edf6012d34638b5cd3"
+    },
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "same819_fresh_rep1_final_result": {
+    "variant": "range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep1_fan23",
+    "result_path": "variants\\range_age_prechecked_multiply7_map2_feasibility_p2_r2_rep1_fan23\\feasibility_result.json",
+    "result_sha256": "58fb6d31fb3d306a0584c405a3b9ce654a1d36a175d8911a1633ec1cbf08cddb",
+    "unrouted_nets": 216,
+    "routing_passed": false,
+    "full_routing_failed": true,
+    "no_tr_or_fs": true,
+    "vg_sha256": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+    "policy": {
+      "place_option": 2,
+      "route_option": 2,
+      "replicate_resources": 1,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "functional_tests_run": false,
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "published_tilt4500_synthesis_result": {
+    "vg_sha256": "f293c3d1cf948e72be1f18f5d87e0aa8abedd53bca8c944361d92ff81e98d2cd",
+    "study_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\published_tilt4500_proposal\\synthesis_resource_study.json",
+    "study_manifest_sha256": "87cc3e78449f478778a19492c1a4597b42ff5ba7495e14a579ee94de2859f920",
+    "resources": {
+      "T_Lut": 35913,
+      "T_Alu": 9293,
+      "T_Register": 27368,
+      "T_Bsram": 2
+    },
+    "source_delta_files": 6,
+    "source_input_count": 51,
+    "functional_tests_run": false,
+    "qualification_passed": false
+  },
+  "tilt4500_packaging_template": "hardware\\tilt4500_qualified_candidate_plan",
+  "published_tilt4500_final_result": {
+    "variant": "published_tilt4500_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\published_tilt4500_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "37f68bf0e3eb8f37d8c30c8309daedd90afd4792379730811046fd1ef5e1faf2",
+    "vg_sha256": "f293c3d1cf948e72be1f18f5d87e0aa8abedd53bca8c944361d92ff81e98d2cd",
+    "routing_passed": true,
+    "timing_passed": false,
+    "fmax_mhz": 45.408,
+    "slack": {
+      "setup": {
+        "tns_ns": -324.985,
+        "violated_endpoints": 318
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\published_tilt4500_map2_feasibility_p2_r2_rep0_fan23\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+      "sha256": "e2573b9b5ee4c6d203e95ba001e5e40b314e3901686b74dcfbfeb59f2957aed1",
+      "user_code": "0x0000b0b0"
+    },
+    "policy": {
+      "place_option": 2,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "functional_focused_proof_pending": true,
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "f293_physical_retry_final_results": [
+    {
+      "variant": "published_tilt4500_map2_feasibility_p2_r2_rep1_fan23",
+      "result_path": "variants\\published_tilt4500_map2_feasibility_p2_r2_rep1_fan23\\feasibility_result.json",
+      "result_sha256": "c164c91f09a20cb61e493a724fc3d341082cd80b6d5ea741f373c917119c7ec1",
+      "vg_sha256": "f293c3d1cf948e72be1f18f5d87e0aa8abedd53bca8c944361d92ff81e98d2cd",
+      "policy": {
+        "place_option": 2,
+        "route_option": 2,
+        "replicate_resources": 1,
+        "route_maxfan": 23,
+        "global_freq": 50
+      },
+      "unrouted_nets": 399,
+      "routing_passed": false,
+      "timing_passed": false,
+      "no_tr_or_fs": true,
+      "retired": true,
+      "functional_tests_run": false,
+      "programming_authorized": false,
+      "release_eligible": false
+    },
+    {
+      "variant": "published_tilt4500_map2_feasibility_p1_r2_rep0_fan23",
+      "result_path": "variants\\published_tilt4500_map2_feasibility_p1_r2_rep0_fan23\\feasibility_result.json",
+      "result_sha256": "1da3747f95e19eab9665a7dae03e05e2cdd755bba5932027141be7c72dd97d81",
+      "vg_sha256": "f293c3d1cf948e72be1f18f5d87e0aa8abedd53bca8c944361d92ff81e98d2cd",
+      "policy": {
+        "place_option": 1,
+        "route_option": 2,
+        "replicate_resources": 0,
+        "route_maxfan": 23,
+        "global_freq": 50
+      },
+      "unrouted_nets": 405,
+      "routing_passed": false,
+      "timing_passed": false,
+      "no_tr_or_fs": true,
+      "retired": true,
+      "functional_tests_run": false,
+      "programming_authorized": false,
+      "release_eligible": false
+    }
+  ],
+  "timing_source_proposal": {
+    "plan": "hardware/control_ready_factoring_plan",
+    "owner": "mtf_diag_builder_sol",
+    "source_delta_files_expected": 3,
+    "status": "SYN complete; actualVG structure review before PNR",
+    "synthesis_run": true,
+    "pnr_run": false,
+    "validation_run": false,
+    "synthesis_completed": true,
+    "owned_pid": null,
+    "session": null,
+    "started_epoch": 1792805621.7796724,
+    "actual_vg_sha256": "6ebbd100aa829d46a7164000c33a67e6f617c6b56f4d65f2fe48dd0fd2d84a86"
+  },
+  "factoring_structure_review": {
+    "independent_ack": true,
+    "scope": "Actual DAG structure only; not timing or functional acceptance",
+    "staleQ_to_H_LUT_depth_before": 8,
+    "staleQ_to_H_LUT_depth_after": 6,
+    "posevalid_to_H_LUT_depth_before": 6,
+    "posevalid_to_H_LUT_depth_after": 4,
+    "tails_boundary": "FF boundary; no live/full G/E inputs",
+    "unsupported_or_undriven": 0,
+    "evidence_sha256": {
+      "hardware\\control_ready_factoring_plan\\mapped_structure_inventory.json": "7de67e75ace82d50698c160a7e5ceb1d7a3ef0c6c27f20d805e9139892ca39ad",
+      "hardware\\control_ready_factoring_plan\\inspect_structure.py": "9cc7ebf50654bba84d20cde34344257ad6609fd1d1dce62de8f9bdc67ffc3871"
+    }
+  },
+  "control_ready_factoring_final_result": {
+    "variant": "control_ready_factoring_map2_feasibility_p2_r2_rep0_fan23",
+    "result_path": "variants\\control_ready_factoring_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "0cb2b3fbcf023648fb18a1ccd2a796155b41d1c136810d97391803d5cd954b13",
+    "vg_sha256": "6ebbd100aa829d46a7164000c33a67e6f617c6b56f4d65f2fe48dd0fd2d84a86",
+    "policy": {
+      "place_option": 2,
+      "route_option": 2,
+      "replicate_resources": 0,
+      "route_maxfan": 23,
+      "global_freq": 50
+    },
+    "unrouted_nets": 139,
+    "routing_passed": false,
+    "timing_measured": false,
+    "no_tr_or_fs": true,
+    "wrapper_exit0_is_not_vendor_success": true,
+    "functional_proofs_executed": false,
+    "programming_authorized": false,
+    "release_eligible": false
+  },
+  "next_timing_source_proposal": {
+    "scope": "Fine-velocity readiness absorption",
+    "expected_changed_files": 2,
+    "owners": [
+      "mtf_diag_builder_sol",
+      "mtf_diag_reviewer_sol"
+    ],
+    "status": "Actual SYN complete; independent structure review pending beforePNR",
+    "synthesis_run": true,
+    "pnr_run": false,
+    "functional_tests_run": false,
+    "synthesis_completed": true,
+    "patch_sha256": "d8d7c1ffee9806bcaed02a4e635f74b5d9b6c75e2d03e45062a8db707fb3f0af",
+    "actual_vg_sha256": "0be62a85bf094d9102a6488b792c77c8cb9296d9a5b4aaa3e05a72ea96fd3500"
+  },
+  "fine_velocity_structure_evidence": {
+    "independent_source_structure_ack": true,
+    "evidence_sha256": {
+      "hardware\\control_fine_velocity_factoring_plan\\mapped_structure_inventory.json": "ae8aea312397900bf47e8940423f983f31af67771daf411ce6ffde6fc8d1777c",
+      "hardware\\control_fine_velocity_factoring_plan\\mapped_range_Q_inventory.json": "e9576036e0bdca1f23bb2629d88067fefe264bb3e51e64875ab4186e9c3fe283",
+      "hardware\\control_fine_velocity_factoring_plan\\inspect_structure.py": "00735fc28da0246bb88f617b4bce69943cadd050aa125ed85099035756048e36"
+    },
+    "scope": "Actual structure only, not timing/fullfunction qualification"
+  },
+  "fine_velocity_0be_final_result": {
+    "result_path": "variants\\control_fine_velocity_factoring_map2_feasibility_p2_r2_rep0_fan23\\feasibility_result.json",
+    "result_sha256": "90f33dcdd878dc6119fd3de5b6b897cb65807011b8b0b0ae7ff44635f74272e0",
+    "unrouted_nets": 56,
+    "routing_passed": false,
+    "no_tr_or_fs": true,
+    "functional_proofs_executed": false
+  },
+  "external_continuation": {
+    "workspace": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024",
+    "active_trials": [],
+    "selected_release": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\B0B0_51_608MHz_verified",
+      "manifest_sha256": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+      "fmax_mhz": 51.608,
+      "constraint_period_ns": 19.5,
+      "hardware_clock_mhz": 50,
+      "unrouted_nets": 0,
+      "setup_violated_endpoints": 0,
+      "hold_violated_endpoints": 0,
+      "bitstream_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+      "offline_candidate_verified": true,
+      "hardware_sram_installed": true,
+      "stopped_startup_passed": true,
+      "healthy_height_output_passed": true,
+      "flash_written": false,
+      "flight_ready": false,
+      "targeted_props_off_acceptance_passed": true,
+      "hardware_acceptance_sha256": "70734ef829a1f6055f828c6e9241b816f4833728c7af3fbbe5458fcbb8ca5a03"
+    }
+  },
+  "active_trials": [],
+  "pnr_verified": true,
+  "scoped_offline_proofs_passed": true,
+  "hardware_acceptance": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\hardware_acceptance.json",
+  "hardware_acceptance_sha256": "70734ef829a1f6055f828c6e9241b816f4833728c7af3fbbe5458fcbb8ca5a03"
+}

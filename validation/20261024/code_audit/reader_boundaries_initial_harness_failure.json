@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-24T03:27:50.213197+00:00",
+  "passed": false,
+  "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\B0B0_51_608MHz_verified\\source_snapshot\\sensor\\mtf01p_reader.v",
+  "source_sha256": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+  "manifest_sha256": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+  "bench_sha256": "8a05e9c384ba9c03dd47f96f47c7ff2e49f7c7184ab5e878b01bf3c23666c824",
+  "runner_sha256": "4669e4842dec1374452a8b5ba9c8f2c0e23131e3573cfa7518ce8f2c733a8a1e",
+  "scope": "Actual frozen UART/parser/metric source only; simulated 1 MHz clock with rounded 9-tick UART bits. No hardware operations or whole-top equivalence claim.",
+  "records": [
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-s",
+        "reader_boundaries",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\code_audit\\reader_boundaries.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\code_audit\\reader_boundaries.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\B0B0_51_608MHz_verified\\source_snapshot\\sensor\\mtf01p_reader.v"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\code_audit\\reader_boundaries.v:31: syntax error\n"
+    }
+  ]
+}

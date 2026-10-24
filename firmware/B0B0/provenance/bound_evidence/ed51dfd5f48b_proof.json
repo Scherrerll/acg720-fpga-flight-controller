@@ -1,0 +1,49 @@
+{
+  "status": "PASS executed focused source-RHS plus isolated actual vendor primitive",
+  "bindings": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_plan\\synthesis_only\\20261023T220717_220954Z\\mtf_xyz_navigation_control.v": "3d5c57327d08ac319e619dee834214a5079b5eb8df71f6c93b738c484a27dd8f",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\synthesis_only\\20261023T233128_740589Z\\mtf_xyz_navigation_control.v": "52e5b5edcd5b9e680a41417af25fa9541958920f1fe8394a79bea2450df2309c",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_plan\\synthesis_only\\20261023T220717_220954Z\\impl\\gwsynthesis\\acg720_ano_port.vg": "8e32072310b6b8826c1431f4b7116f5a9d8cb95d2df17f63dd8e4014b6cd8445",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\synthesis_only\\20261023T233128_740589Z\\impl\\gwsynthesis\\acg720_ano_port.vg": "819dece08aabeacd611838551cf8b160c8240be8c9c685d3c77369496cadf45b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_plan\\synthesis_only\\20261023T220717_220954Z\\position\\mtf_shared_height_fusion.v": "1933a6a42feadca50fb9fb3abcae4e6faa5f78ed9d4c506cdc7546cbdff72a8a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\range_age_prechecked_multiply7_plan\\synthesis_only\\20261023T233128_740589Z\\position\\mtf_shared_height_fusion.v": "1933a6a42feadca50fb9fb3abcae4e6faa5f78ed9d4c506cdc7546cbdff72a8a",
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\simlib\\gw5a\\prim_sim.v": "7109c2568188627465d218bc099cf72f12e90807c21d4d862d2335b499043544"
+  },
+  "selected_ages_exhaustive": 100,
+  "other_cases": 265,
+  "caller_contract_cases": 6400,
+  "seed": "0x295885",
+  "false_branch_theorem": "For every unsigned32 age>=100 both actual RHS return FFFFFFFF independently of product; for age<100 low7==age, max4950000<2^23.",
+  "limits": [
+    "Not whole mapped NAV equivalence",
+    "Original DOUT reconstruction recorded, but consumer mux/FF cone not proved",
+    "No whole-top/parser/core/RC/hardware/timing acceptance"
+  ],
+  "synthesis_run": false,
+  "pnr_run": false,
+  "evidence_hashes": {
+    "run_proof.py": "de709252607af00671f0a910525d7be9b44d45bfe06ebc64e4e0af00e626e582",
+    "prepared_inputs.json": "8bfaf6c9fd671045bcc3b29af6a9b66008d7203093bd24f89187e2607c333066",
+    "extracted.v": "ca9a4164e5b2cecbb687d17fc3c10c8d764d5dba5fa86f4cd35d286bc0b55aa6",
+    "tb.v": "f6504a1e90a8854c059d158c6345217dbbd8e7d591e4529738e450fd7464588b",
+    "primitive_boundary.json": "986e0187294157dce612115e245652d2f2c0253de340593636a9a9fcc30ed36b",
+    "caller_contract.json": "9a5d715f38192f75a4bbfdb4f3f746747dcd520265a5af58aa7a415679604729",
+    "run.log": "c307a0128e8966dae4d652f66fa149b43791aa6b6b7be6f89f10e5e1b5b61b51"
+  },
+  "bench_repair_history": [
+    "Initial compile failed because vendor global GSR was absent; added bench GSR only.",
+    "Next simulation exposed extraction regex selecting reset c_position_age RHS, not normal RHS. Extraction now asserts exactly reset+normal assignments and selects normal RHS; explicit timescale added.",
+    "Final corrected focused run passed. No RTL or frozen source/VG mutation."
+  ],
+  "diagnostic_hashes": {
+    "initial_compile_failure.log": "7c1bbd51db478ec0b72f7d23216221242a0896fde07efc429ae79d008cf99b7a",
+    "initial_extraction_failure.log": "d2b6f815adb590ab99d34ce5dbbcb7265704cb44c03c082947808e10bae11efd",
+    "extracted.initial.v": "536a887a3ece32594fa33e9a6511f366758317f47e145251bb6b6aacd53c9318",
+    "run_proof.initial.py": "1b1b8b7b9d7f518357d4993a86f714d4a8604a6d45e62444923f076490323365"
+  },
+  "attempt_counts": {
+    "compile_attempts": 3,
+    "simulation_attempts": 2,
+    "final_successful_cases": 365
+  }
+}

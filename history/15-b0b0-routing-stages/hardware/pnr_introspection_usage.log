@@ -1,0 +1,32 @@
+*** GOWIN Tcl Command Line Console  *** 
+QUERY run
+Please specify target process
+
+QUERY run -help
+Brief:
+  Run some or all processes.
+Usage:
+  run [options] <process>
+Arguments:
+  <process>  The process name. Available processes are:
+             'syn' for synthesis;
+             'pnr' for place&route;
+             'all' for all the processes.
+Options:
+  -h, --help  Show this help.
+
+
+QUERY run help
+unknown process: help
+
+QUERY import_files
+no working project.
+
+QUERY set_option
+
+QUERY set_file_prop
+please specify files
+
+QUERY set_property
+ERROR (IP0015) : No IP object specified.
+

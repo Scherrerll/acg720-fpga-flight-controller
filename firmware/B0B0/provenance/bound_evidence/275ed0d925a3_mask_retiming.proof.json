@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "reference/mask_changes.json": "c733cc425541815e579e3de66bf643adfe5fec70d32060b15a85d25eb366594d",
+    "reference/mask_parent.json": "97044ce129e484aa68c5b7fcab3b2e43fad6d15e0f2ba62015c8c6c04ac08850",
+    "test_mask_retiming.py": "9a6c1710ccb2e6a20d2761de7fcb12ca78a3c6b28c6d6268c94d89f5b5807816",
+    "reference/mask_parent/core/motor_pwm.v": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+    "fixture/core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "reference/mask_parent/core/flight_core.v": "1948607bae9e81e425c1a0630551ff2d8ef51a979b73c5095a10d2bf9a93898b",
+    "fixture/core/flight_core.v": "77a144ab5705a6eacb3478f9353b02492341b4b2cdeabebc995b6551afc80fd6",
+    "reference/mask_parent/mtf_xyz_navigation_control.v": "369969dbb36e98d643241e1bdba2f19c1260fdee3ef097f45c79451d5f934f8c",
+    "fixture/mtf_xyz_navigation_control.v": "1c2e1831d2856bf37ae42a42df38e20c53ae5935e5d6001acc6c36540947727c",
+    "reference/mask_parent/acg720_ano_port.v": "725cba0683eee6ed5e613b60e27e51b439dda7db2b55fcd524bd496cb233d279",
+    "fixture/acg720_ano_port.v": "b82d480c381891c168b89819361c305b9e3ce7ed018047c1f3923e58e27f986c",
+    "tests/original_motor_pwm.v": "a064c0b6ba9b8f3a1b6f2b1274dcf7caa5d52a0324d3dcb713c7f7a3d6368ab2"
+  },
+  "method": "Exact listed transforms; function/selector distribution; mask/register commutation; actual-interface and whole-waveform comparisons"
+}

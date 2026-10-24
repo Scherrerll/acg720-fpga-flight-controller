@@ -1,0 +1,47 @@
+{
+  "adapter_sha256": "6886c5ef9a2fdb0b34991628860cc72cd5577d62bbf0257ec0cb94ab9b47d5e0",
+  "repair": "Path coercion str->Path; tilt bench port initializers expressed as equivalent initial block; all assertions/vectors retained",
+  "jobs": [
+    {
+      "script": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\published_tilt4500_proposal\\post_route_pending\\run_proof.py",
+      "original_script_sha256": "39534730c2b648dc16574095ac84450eaca04616b87ceaa41d443793540296a6",
+      "executed_script": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verification\\published_tilt4500_proposal.executed.py",
+      "executed_script_sha256": "417d2520130731c75307bef10158321606e68800e88cba2266610bacf9934d08",
+      "prepared_sha256": "329f5a93979c9329387331713e01c410b05b8c420eb601c8a808afd220f9d840",
+      "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verification\\published_tilt4500_proposal.adapted.log",
+      "passed": true,
+      "proof": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\published_tilt4500_proposal\\post_route_pending\\proof.json",
+      "proof_sha256": "d8e4f8ca7b5244bc5a815383f7a7095b33ecb12b7ef7b16a399a72eb358ae7b2",
+      "log_sha256": "dedf3cc22eb9fc0e94a4caa809822c1ca53edd27f68def1d5dd2afadaaf165c2",
+      "status": "PASS scoped source projection/membership/local producer boundary"
+    },
+    {
+      "script": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\control_ready_factoring_plan\\post_route_pending\\prove_factoring.py",
+      "original_script_sha256": "bec53522320836e2d6468dc9d7a1f758d0b0dc47aeb77834f440e7c209c5fa77",
+      "executed_script": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verification\\control_ready_factoring_plan.executed.py",
+      "executed_script_sha256": "79e73d2be46d57e3fcfbf2e34df632de9e69898911cf787df76fcf6850bf4a98",
+      "prepared_sha256": "9491fae7cace1e479f470a3dd499d8f743cbd079484f2b05b11eb861e657815f",
+      "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verification\\control_ready_factoring_plan.adapted.log",
+      "passed": true,
+      "proof": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\control_ready_factoring_plan\\post_route_pending\\factoring_proof.json",
+      "proof_sha256": "0ed0fda3d7416a135530b9ca4805ed8a8e6e782f595900ab755ec6bccf8584d5",
+      "log_sha256": "49c4275c301a481e7fded15b1a46eab9cc0388a02dff9446a26e611fcab3959c",
+      "status": "PASS executed exact-source projection plus AND-atom normalization"
+    },
+    {
+      "script": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\control_fine_velocity_factoring_plan\\post_route_pending\\prove_fine_velocity.py",
+      "original_script_sha256": "fbe354d65f9d8914de45de8636d4ce2d7b5977a2629eb61386ee4a7710fc41fd",
+      "executed_script": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verification\\control_fine_velocity_factoring_plan.executed.py",
+      "executed_script_sha256": "65a61a93769db25b2d9fc0b8f9ce4b8afba22cd4ead240d52f910f0f3f889284",
+      "prepared_sha256": "a76f57b22dcf3de1c3cd6e4784674594115838a4f5537a546ee3f3db1c190c2a",
+      "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\verification\\control_fine_velocity_factoring_plan.adapted.log",
+      "passed": true,
+      "proof": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\control_fine_velocity_factoring_plan\\post_route_pending\\fine_velocity_proof.json",
+      "proof_sha256": "80fbfc4a61b5e4cac26eac5608629624530ba11455ccec9cb2e78fde8da7592c",
+      "log_sha256": "e3adbe84b09782a1da46de807839ca152039bc10e915f5fec3d990c0da65a1e1",
+      "status": "PASS executed two-file exact source projection and H=>E source-atom implication"
+    }
+  ],
+  "passed": true,
+  "hardware_accessed": false
+}

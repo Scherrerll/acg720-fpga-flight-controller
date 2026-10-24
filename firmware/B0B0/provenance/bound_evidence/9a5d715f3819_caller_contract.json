@@ -1,0 +1,6 @@
+{
+  "actual_sources_ok": "range_valid && acc_valid && ((RANGE_AGE_PRECHECKED && AGE_LIMIT==5000000) || range_age_ticks<AGE_LIMIT) && acc_age_ticks<AGE_LIMIT &&\n     ref_height_mm>=0 && ref_height_mm<=5000 && az_up_mmps2>=-30000 && az_up_mmps2<=30000",
+  "valid_age_live_cases": 6400,
+  "default_and_nonstandard_limit_comparison_preserved": true,
+  "scope": "Local caller implication only; no fusion FSM simulation"
+}

@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-24T04:07:19.015480+00:00",
+  "passed": true,
+  "review_sha256": "7ec48a2de063e50bc3103b936fe8e411dd75e8e2ecdc5f84431d7f81ebdc7727",
+  "actual_nav_time_deltas_ms": [
+    200
+  ],
+  "frames": 301,
+  "duration_s": 60,
+  "absolute_position_start_mm": [
+    5138.265625,
+    285.41015625
+  ],
+  "absolute_position_end_mm": [
+    5141.9296875,
+    282.97265625
+  ],
+  "recomputed_delta_mm": [
+    3.6640625,
+    -2.4375
+  ],
+  "no_sampled_position_reset_or_invalidity": true,
+  "scope": "Independent endpoint/time/validity recomputation from saved A582 records; no claim about unobserved subframe behavior."
+}

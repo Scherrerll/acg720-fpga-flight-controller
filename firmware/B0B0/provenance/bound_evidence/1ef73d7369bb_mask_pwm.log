@@ -1,0 +1,2 @@
+PWM_PRECONVERSION_EXACT_PASS uint16x12selections x4lanes;700000actual50MHz clocks; all outputs equal
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_map2_r2\tests\mask_pwm.v:58: $finish called at 14786471000 (1ps)

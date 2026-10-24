@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-24T04:25:46.633928+00:00",
+  "passed": true,
+  "checks": 8,
+  "hardware_accessed": false,
+  "installer_sha256": "fe10cf6eff3e6e7afb299098862d48ae8f5c395cd271d2bca44e3f77530c535a",
+  "test_script_sha256": "4cee7f3358795af6d33ab52c5c126638a1e532909726842ccd00c563dfcb244e",
+  "output_sha256": "436e1470ad937ba51864d62b220fa22b21ab0cafebe2b37575deb9e76d5c56db"
+}

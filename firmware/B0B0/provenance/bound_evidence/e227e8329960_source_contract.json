@@ -1,0 +1,17 @@
+{
+  "parent": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ae_ano_control\\variants\\mask_retimed_f200_rep0_map2_r2",
+  "allowed_changes": {
+    "acg720_ano_port.gprj": "f6f7553aab05450fa8ed6e09167527bdc6db2004a3e1aea4c20c3e3cb707c6fb",
+    "acg720_ano_port.v": "42aaa5ccc497e53cbce4c57ddc014305ff50212fd7353345b57c295a6b6286e2",
+    "build.tcl": "beb5ce95a66afe6c8e9dc1c6e2a55cb68b5581e597b39fbc29924b7473ab5fb9",
+    "build_project.py": "1a8b843b4ecaf904837cb31c8b758eb75d03da9dd3e1497bc069531e6e39a60b",
+    "core/flight_core.v": "7822ac60300d04ca6c7ba4bc34079eb3778a1f8e6de2eb350f5151f1d53031ff",
+    "mtf_xyz_navigation_control.v": "f67c404e23e6acc892ec0380310f6044503979f4bee2edc7c2d6c7746c34084b"
+  },
+  "new_sources": {
+    "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6"
+  },
+  "parent_qualification_sha256": "6ddcc10b2b14eccc53b182ec01c745b478f091c7e94bb5d2d0e2693d231e6efd",
+  "reference_core_sha256": "26c8ba79f3625de04b0713204a5c834b9019d347abc08ff16d454df386cb9c5a",
+  "purpose": "Opt-in startup-only navigation diagnostic-bank reset removal; exact two-file reviewed delta; control arithmetic/state unchanged."
+}

@@ -1,0 +1,3457 @@
+{
+  "passed": true,
+  "reference_vg": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\variants\\mtf_diag_reset_p2_r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "candidate_vg": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0b0_synthesis_fix\\hardware\\info_snapshot_plan\\synthesis_only\\20261023T191515_828752Z\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "reference_vg_sha256": "a27dca89aa11e49bab4a370e5617bcac73c62db3ce5a9a5a4c8961cf31d207d8",
+  "candidate_vg_sha256": "aa2de0222dc404ae2326da2d068fc079833296dece1b726f1af0b10f5bb9f941",
+  "logical_info_bits": 272,
+  "physical_own_flight_info_ff": 219,
+  "physical_shared_core_ff": 6,
+  "physical_upstream_ff": 225,
+  "upstream_ff_init_all_zero": true,
+  "upstream_pin_cones_boolean_equal": true,
+  "upstream_mapping": [
+    {
+      "cell": "flight_info_q_260_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[260]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_259_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[259]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_258_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[258]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_257_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[257]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_256_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[256]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_223_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[223]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_222_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[222]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_221_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[221]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_220_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[220]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_219_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[219]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_218_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[218]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_217_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[217]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_216_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[216]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_215_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[215]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_214_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[214]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_213_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[213]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_212_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[212]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_211_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[211]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_210_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[210]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_209_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[209]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_208_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[208]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_207_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[207]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_206_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[206]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_205_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[205]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_204_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[204]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_203_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[203]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_202_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[202]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_201_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[201]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_200_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[200]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_199_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[199]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_198_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[198]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_197_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[197]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_196_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[196]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_195_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[195]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_194_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[194]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_193_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[193]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_192_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[192]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_191_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[191]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_190_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[190]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_189_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[189]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_188_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[188]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_187_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[187]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_186_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[186]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_185_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[185]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_184_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[184]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_183_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[183]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_182_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[182]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_181_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[181]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_180_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[180]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_179_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[179]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_178_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[178]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_177_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[177]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_176_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[176]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_175_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[175]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_174_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[174]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_173_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[173]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_172_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[172]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_171_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[171]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_170_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[170]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_169_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[169]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_168_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[168]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_167_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[167]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_166_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[166]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_165_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[165]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_164_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[164]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_163_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[163]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_162_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[162]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_161_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[161]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_160_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[160]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_159_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[159]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_158_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[158]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_157_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[157]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_156_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[156]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_155_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[155]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_154_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[154]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_153_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[153]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_152_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[152]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_151_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[151]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_150_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[150]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_149_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[149]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_148_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[148]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_147_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[147]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_146_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[146]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_145_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[145]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_144_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[144]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_143_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[143]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_142_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[142]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_141_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[141]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_140_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[140]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_139_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[139]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_138_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[138]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_137_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[137]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_136_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[136]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_135_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[135]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_134_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[134]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_133_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[133]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_132_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[132]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_131_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[131]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_130_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[130]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_129_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[129]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_128_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[128]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_127_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[127]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_126_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[126]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_125_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[125]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_124_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[124]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_123_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[123]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_122_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[122]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_121_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[121]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_120_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[120]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_119_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[119]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_118_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[118]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_117_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[117]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_116_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[116]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_115_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[115]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_114_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[114]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_113_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[113]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_112_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[112]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_111_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[111]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_110_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[110]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_109_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[109]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_108_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[108]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_107_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[107]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_106_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[106]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_105_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[105]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_104_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[104]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_103_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[103]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_102_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[102]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_101_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[101]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_100_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[100]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_99_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[99]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_98_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[98]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_97_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[97]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_96_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[96]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_95_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[95]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_94_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[94]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_93_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[93]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_92_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[92]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_91_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[91]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_90_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[90]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_89_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[89]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_88_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[88]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_87_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[87]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_86_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[86]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_85_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[85]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_84_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[84]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_83_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[83]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_82_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[82]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_81_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[81]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_80_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[80]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_77_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[77]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_76_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[76]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_75_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[75]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_74_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[74]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_73_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[73]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_72_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[72]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_71_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[71]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_70_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[70]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_69_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[69]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_68_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[68]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_67_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[67]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_66_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[66]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_65_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[65]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_64_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[64]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_63_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[63]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_62_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[62]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_61_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[61]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_60_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[60]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_59_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[59]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_58_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[58]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_57_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[57]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_56_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[56]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_55_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[55]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_54_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[54]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_53_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[53]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_52_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[52]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_51_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[51]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_50_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[50]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_49_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[49]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_48_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[48]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_47_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[47]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_46_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[46]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_45_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[45]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_44_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[44]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_43_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[43]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_42_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[42]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_41_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[41]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_40_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[40]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_39_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[39]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_38_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[38]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_37_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[37]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_36_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[36]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_35_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[35]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_34_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[34]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_33_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[33]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_32_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[32]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_31_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[31]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_30_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[30]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_29_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[29]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_28_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[28]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_27_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[27]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_26_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[26]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_25_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[25]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_24_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[24]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_23_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[23]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_22_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[22]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_21_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[21]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_20_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[20]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_19_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[19]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_18_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[18]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_17_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[17]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_16_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[16]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_6_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[6]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_5_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[5]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_4_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[4]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_3_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[3]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_2_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[2]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_1_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[1]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_0_s0",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[0]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "cell": "flight_info_q_228_s4",
+      "primitive": "DFFRE",
+      "q": "flight_info_q[228]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    }
+  ],
+  "shared_upstream_mapping": [
+    {
+      "reference_cell": "\\staged_telemetry.core_q_832_s0",
+      "candidate_cell": "\\staged_telemetry.core_q_832_s0",
+      "q": "\\staged_telemetry.core_q[832]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "reference_cell": "\\staged_telemetry.core_q_833_s0",
+      "candidate_cell": "\\staged_telemetry.core_q_833_s0",
+      "q": "\\staged_telemetry.core_q[833]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "reference_cell": "\\staged_telemetry.core_q_834_s0",
+      "candidate_cell": "\\staged_telemetry.core_q_834_s0",
+      "q": "\\staged_telemetry.core_q[834]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "reference_cell": "\\staged_telemetry.core_q_835_s0",
+      "candidate_cell": "\\staged_telemetry.core_q_835_s0",
+      "q": "\\staged_telemetry.core_q[835]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "reference_cell": "\\staged_telemetry.core_q_836_s0",
+      "candidate_cell": "\\staged_telemetry.core_q_836_s0",
+      "q": "\\staged_telemetry.core_q[836]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    },
+    {
+      "reference_cell": "\\staged_telemetry.core_q_837_s0",
+      "candidate_cell": "\\staged_telemetry.core_q_837_s0",
+      "q": "\\staged_telemetry.core_q[837]",
+      "init": 0,
+      "pins_boolean_equal": [
+        "CE",
+        "CLK",
+        "D",
+        "RESET"
+      ]
+    }
+  ],
+  "logical_aliases": {
+    ".flight_info_q[228]": [
+      266,
+      239,
+      237,
+      236,
+      231,
+      229,
+      228
+    ],
+    ".flight_info_q[260]": [
+      260
+    ],
+    ".flight_info_q[259]": [
+      259
+    ],
+    ".flight_info_q[258]": [
+      258
+    ],
+    ".flight_info_q[257]": [
+      257
+    ],
+    ".flight_info_q[256]": [
+      256
+    ],
+    ".flight_info_q[223]": [
+      223
+    ],
+    ".flight_info_q[222]": [
+      222
+    ],
+    ".flight_info_q[221]": [
+      221
+    ],
+    ".flight_info_q[220]": [
+      220
+    ],
+    ".flight_info_q[219]": [
+      219
+    ],
+    ".flight_info_q[218]": [
+      218
+    ],
+    ".flight_info_q[217]": [
+      217
+    ],
+    ".flight_info_q[216]": [
+      216
+    ],
+    ".flight_info_q[215]": [
+      215
+    ],
+    ".flight_info_q[214]": [
+      214
+    ],
+    ".flight_info_q[213]": [
+      213
+    ],
+    ".flight_info_q[212]": [
+      212
+    ],
+    ".flight_info_q[211]": [
+      211
+    ],
+    ".flight_info_q[210]": [
+      210
+    ],
+    ".flight_info_q[209]": [
+      209
+    ],
+    ".flight_info_q[208]": [
+      208
+    ],
+    ".flight_info_q[207]": [
+      207
+    ],
+    ".flight_info_q[206]": [
+      206
+    ],
+    ".flight_info_q[205]": [
+      205
+    ],
+    ".flight_info_q[204]": [
+      204
+    ],
+    ".flight_info_q[203]": [
+      203
+    ],
+    ".flight_info_q[202]": [
+      202
+    ],
+    ".flight_info_q[201]": [
+      201
+    ],
+    ".flight_info_q[200]": [
+      200
+    ],
+    ".flight_info_q[199]": [
+      199
+    ],
+    ".flight_info_q[198]": [
+      198
+    ],
+    ".flight_info_q[197]": [
+      197
+    ],
+    ".flight_info_q[196]": [
+      196
+    ],
+    ".flight_info_q[195]": [
+      195
+    ],
+    ".flight_info_q[194]": [
+      194
+    ],
+    ".flight_info_q[193]": [
+      193
+    ],
+    ".flight_info_q[192]": [
+      192
+    ],
+    ".flight_info_q[191]": [
+      191
+    ],
+    ".flight_info_q[190]": [
+      190
+    ],
+    ".flight_info_q[189]": [
+      189
+    ],
+    ".flight_info_q[188]": [
+      188
+    ],
+    ".flight_info_q[187]": [
+      187
+    ],
+    ".flight_info_q[186]": [
+      186
+    ],
+    ".flight_info_q[185]": [
+      185
+    ],
+    ".flight_info_q[184]": [
+      184
+    ],
+    ".flight_info_q[183]": [
+      183
+    ],
+    ".flight_info_q[182]": [
+      182
+    ],
+    ".flight_info_q[181]": [
+      181
+    ],
+    ".flight_info_q[180]": [
+      180
+    ],
+    ".flight_info_q[179]": [
+      179
+    ],
+    ".flight_info_q[178]": [
+      178
+    ],
+    ".flight_info_q[177]": [
+      177
+    ],
+    ".flight_info_q[176]": [
+      176
+    ],
+    ".flight_info_q[175]": [
+      175
+    ],
+    ".flight_info_q[174]": [
+      174
+    ],
+    ".flight_info_q[173]": [
+      173
+    ],
+    ".flight_info_q[172]": [
+      172
+    ],
+    ".flight_info_q[171]": [
+      171
+    ],
+    ".flight_info_q[170]": [
+      170
+    ],
+    ".flight_info_q[169]": [
+      169
+    ],
+    ".flight_info_q[168]": [
+      168
+    ],
+    ".flight_info_q[167]": [
+      167
+    ],
+    ".flight_info_q[166]": [
+      166
+    ],
+    ".flight_info_q[165]": [
+      165
+    ],
+    ".flight_info_q[164]": [
+      164
+    ],
+    ".flight_info_q[163]": [
+      163
+    ],
+    ".flight_info_q[162]": [
+      162
+    ],
+    ".flight_info_q[161]": [
+      161
+    ],
+    ".flight_info_q[160]": [
+      160
+    ],
+    ".flight_info_q[159]": [
+      159
+    ],
+    ".flight_info_q[158]": [
+      158
+    ],
+    ".flight_info_q[157]": [
+      157
+    ],
+    ".flight_info_q[156]": [
+      156
+    ],
+    ".flight_info_q[155]": [
+      155
+    ],
+    ".flight_info_q[154]": [
+      154
+    ],
+    ".flight_info_q[153]": [
+      153
+    ],
+    ".flight_info_q[152]": [
+      152
+    ],
+    ".flight_info_q[151]": [
+      151
+    ],
+    ".flight_info_q[150]": [
+      150
+    ],
+    ".flight_info_q[149]": [
+      149
+    ],
+    ".flight_info_q[148]": [
+      148
+    ],
+    ".flight_info_q[147]": [
+      147
+    ],
+    ".flight_info_q[146]": [
+      146
+    ],
+    ".flight_info_q[145]": [
+      145
+    ],
+    ".flight_info_q[144]": [
+      144
+    ],
+    ".flight_info_q[143]": [
+      143
+    ],
+    ".flight_info_q[142]": [
+      142
+    ],
+    ".flight_info_q[141]": [
+      141
+    ],
+    ".flight_info_q[140]": [
+      140
+    ],
+    ".flight_info_q[139]": [
+      139
+    ],
+    ".flight_info_q[138]": [
+      138
+    ],
+    ".flight_info_q[137]": [
+      137
+    ],
+    ".flight_info_q[136]": [
+      136
+    ],
+    ".flight_info_q[135]": [
+      135
+    ],
+    ".flight_info_q[134]": [
+      134
+    ],
+    ".flight_info_q[133]": [
+      133
+    ],
+    ".flight_info_q[132]": [
+      132
+    ],
+    ".flight_info_q[131]": [
+      131
+    ],
+    ".flight_info_q[130]": [
+      130
+    ],
+    ".flight_info_q[129]": [
+      129
+    ],
+    ".flight_info_q[128]": [
+      128
+    ],
+    ".flight_info_q[127]": [
+      127
+    ],
+    ".flight_info_q[126]": [
+      126
+    ],
+    ".flight_info_q[125]": [
+      125
+    ],
+    ".flight_info_q[124]": [
+      124
+    ],
+    ".flight_info_q[123]": [
+      123
+    ],
+    ".flight_info_q[122]": [
+      122
+    ],
+    ".flight_info_q[121]": [
+      121
+    ],
+    ".flight_info_q[120]": [
+      120
+    ],
+    ".flight_info_q[119]": [
+      119
+    ],
+    ".flight_info_q[118]": [
+      118
+    ],
+    ".flight_info_q[117]": [
+      117
+    ],
+    ".flight_info_q[116]": [
+      116
+    ],
+    ".flight_info_q[115]": [
+      115
+    ],
+    ".flight_info_q[114]": [
+      114
+    ],
+    ".flight_info_q[113]": [
+      113
+    ],
+    ".flight_info_q[112]": [
+      112
+    ],
+    ".flight_info_q[111]": [
+      111
+    ],
+    ".flight_info_q[110]": [
+      110
+    ],
+    ".flight_info_q[109]": [
+      109
+    ],
+    ".flight_info_q[108]": [
+      108
+    ],
+    ".flight_info_q[107]": [
+      107
+    ],
+    ".flight_info_q[106]": [
+      106
+    ],
+    ".flight_info_q[105]": [
+      105
+    ],
+    ".flight_info_q[104]": [
+      104
+    ],
+    ".flight_info_q[103]": [
+      103
+    ],
+    ".flight_info_q[102]": [
+      102
+    ],
+    ".flight_info_q[101]": [
+      101
+    ],
+    ".flight_info_q[100]": [
+      100
+    ],
+    ".flight_info_q[99]": [
+      99
+    ],
+    ".flight_info_q[98]": [
+      98
+    ],
+    ".flight_info_q[97]": [
+      97
+    ],
+    ".flight_info_q[96]": [
+      96
+    ],
+    ".flight_info_q[95]": [
+      95
+    ],
+    ".flight_info_q[94]": [
+      94
+    ],
+    ".flight_info_q[93]": [
+      93
+    ],
+    ".flight_info_q[92]": [
+      92
+    ],
+    ".flight_info_q[91]": [
+      91
+    ],
+    ".flight_info_q[90]": [
+      90
+    ],
+    ".flight_info_q[89]": [
+      89
+    ],
+    ".flight_info_q[88]": [
+      88
+    ],
+    ".flight_info_q[87]": [
+      87
+    ],
+    ".flight_info_q[86]": [
+      86
+    ],
+    ".flight_info_q[85]": [
+      85
+    ],
+    ".flight_info_q[84]": [
+      84
+    ],
+    ".flight_info_q[83]": [
+      83
+    ],
+    ".flight_info_q[82]": [
+      82
+    ],
+    ".flight_info_q[81]": [
+      81
+    ],
+    ".flight_info_q[80]": [
+      80
+    ],
+    ".flight_info_q[77]": [
+      77
+    ],
+    ".flight_info_q[76]": [
+      76
+    ],
+    ".flight_info_q[75]": [
+      75
+    ],
+    ".flight_info_q[74]": [
+      74
+    ],
+    ".flight_info_q[73]": [
+      73
+    ],
+    ".flight_info_q[72]": [
+      72
+    ],
+    ".flight_info_q[71]": [
+      71
+    ],
+    ".flight_info_q[70]": [
+      70
+    ],
+    ".flight_info_q[69]": [
+      69
+    ],
+    ".flight_info_q[68]": [
+      68
+    ],
+    ".flight_info_q[67]": [
+      67
+    ],
+    ".flight_info_q[66]": [
+      66
+    ],
+    ".flight_info_q[65]": [
+      65
+    ],
+    ".flight_info_q[64]": [
+      64
+    ],
+    ".flight_info_q[63]": [
+      63
+    ],
+    ".flight_info_q[62]": [
+      62
+    ],
+    ".flight_info_q[61]": [
+      61
+    ],
+    ".flight_info_q[60]": [
+      60
+    ],
+    ".flight_info_q[59]": [
+      59
+    ],
+    ".flight_info_q[58]": [
+      58
+    ],
+    ".flight_info_q[57]": [
+      57
+    ],
+    ".flight_info_q[56]": [
+      56
+    ],
+    ".flight_info_q[55]": [
+      55
+    ],
+    ".flight_info_q[54]": [
+      54
+    ],
+    ".flight_info_q[53]": [
+      53
+    ],
+    ".flight_info_q[52]": [
+      52
+    ],
+    ".flight_info_q[51]": [
+      51
+    ],
+    ".flight_info_q[50]": [
+      50
+    ],
+    ".flight_info_q[49]": [
+      49
+    ],
+    ".flight_info_q[48]": [
+      48
+    ],
+    ".flight_info_q[47]": [
+      47
+    ],
+    ".flight_info_q[46]": [
+      46
+    ],
+    ".flight_info_q[45]": [
+      45
+    ],
+    ".flight_info_q[44]": [
+      44
+    ],
+    ".flight_info_q[43]": [
+      43
+    ],
+    ".flight_info_q[42]": [
+      42
+    ],
+    ".flight_info_q[41]": [
+      41
+    ],
+    ".flight_info_q[40]": [
+      40
+    ],
+    ".flight_info_q[39]": [
+      39
+    ],
+    ".flight_info_q[38]": [
+      38
+    ],
+    ".flight_info_q[37]": [
+      37
+    ],
+    ".flight_info_q[36]": [
+      36
+    ],
+    ".flight_info_q[35]": [
+      35
+    ],
+    ".flight_info_q[34]": [
+      34
+    ],
+    ".flight_info_q[33]": [
+      33
+    ],
+    ".flight_info_q[32]": [
+      32
+    ],
+    ".flight_info_q[31]": [
+      31
+    ],
+    ".flight_info_q[30]": [
+      30
+    ],
+    ".flight_info_q[29]": [
+      29
+    ],
+    ".flight_info_q[28]": [
+      28
+    ],
+    ".flight_info_q[27]": [
+      27
+    ],
+    ".flight_info_q[26]": [
+      26
+    ],
+    ".flight_info_q[25]": [
+      25
+    ],
+    ".flight_info_q[24]": [
+      24
+    ],
+    ".flight_info_q[23]": [
+      23
+    ],
+    ".flight_info_q[22]": [
+      22
+    ],
+    ".flight_info_q[21]": [
+      21
+    ],
+    ".flight_info_q[20]": [
+      20
+    ],
+    ".flight_info_q[19]": [
+      19
+    ],
+    ".flight_info_q[18]": [
+      18
+    ],
+    ".flight_info_q[17]": [
+      17
+    ],
+    ".flight_info_q[16]": [
+      16
+    ],
+    ".\\staged_telemetry.core_q[837]": [
+      13
+    ],
+    ".\\staged_telemetry.core_q[836]": [
+      12
+    ],
+    ".\\staged_telemetry.core_q[835]": [
+      11
+    ],
+    ".\\staged_telemetry.core_q[834]": [
+      10
+    ],
+    ".\\staged_telemetry.core_q[833]": [
+      9
+    ],
+    ".\\staged_telemetry.core_q[832]": [
+      8
+    ],
+    ".flight_info_q[6]": [
+      6
+    ],
+    ".flight_info_q[5]": [
+      5
+    ],
+    ".flight_info_q[4]": [
+      4
+    ],
+    ".flight_info_q[3]": [
+      3
+    ],
+    ".flight_info_q[2]": [
+      2
+    ],
+    ".flight_info_q[1]": [
+      1
+    ],
+    ".flight_info_q[0]": [
+      0
+    ]
+  },
+  "logical_constants": {
+    "271": 0,
+    "270": 0,
+    "269": 0,
+    "268": 0,
+    "267": 0,
+    "265": 0,
+    "264": 0,
+    "263": 0,
+    "262": 0,
+    "261": 0,
+    "255": 0,
+    "254": 0,
+    "253": 0,
+    "252": 0,
+    "251": 0,
+    "250": 0,
+    "249": 0,
+    "248": 0,
+    "247": 0,
+    "246": 0,
+    "245": 0,
+    "244": 0,
+    "243": 0,
+    "242": 0,
+    "241": 0,
+    "240": 0,
+    "238": 0,
+    "235": 0,
+    "234": 0,
+    "233": 0,
+    "232": 0,
+    "230": 0,
+    "227": 0,
+    "226": 0,
+    "225": 0,
+    "224": 0,
+    "79": 0,
+    "78": 0,
+    "15": 0,
+    "14": 0,
+    "7": 0
+  },
+  "reference_local_snapshot_ff": 225,
+  "candidate_local_snapshot_ff": 0,
+  "old_local_snapshot_init_zero": true,
+  "old_local_snapshot_ce_equals_sequence_capture_ce": true,
+  "logical_payload_after_capture_boolean_equal": true,
+  "inactive_initial_packet_differing_logical_bits": [],
+  "scope": "Exact Boolean equivalence at named Q/input boundaries, including top core_body/flight_state_flags/sticky_yaw_fault/height_fallback_active source boundaries. Original local Q is substituted by its capture D only within the source-proven legal serialization window. All225 upstream physical FF INIT/primitive/Q/clock/D/CE/reset pins match, including6 shared core snapshot FFs. This does not prove nonbank sequential equivalence, full controller, physical timing, routed bitstream, or hardware acceptance.",
+  "temporal_contract_proof_sha256": "222f32dee23019e241ecb92b280c0127b3a2d2b02f0048c64e9c9cb507cb9b06",
+  "caller_context_sha256": "2a215fcc525b1b058a27e5839af580ba4e7d8cca1d10d9a3e4c1b83d73c062d5",
+  "bdd_library_sha256": "a83fd9a9c7a88f28525f276a507f3bae7e054b0f791cab1ecb62ef6942cd5fc5",
+  "audit_driver_sha256": "b456dacb7f987dea8c1014ed7a8d183ac9e2dc89617fea33819df24fdb180fb8",
+  "synthesis_run": false,
+  "pnr_run": false,
+  "hardware_accessed": false
+}

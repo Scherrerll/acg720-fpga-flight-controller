@@ -1,0 +1,10 @@
+{
+  "parent_qualification_sha256": "694076ab90e988ec1be7ff656f537236534a898360890b41664a61129f515878",
+  "sources_sha256": {
+    "core/motor_pwm.v": "411cd1d7ac668b0293e738f1e0a4692a07ea5a926ea41626ccc0ec28ea6504f3",
+    "core/flight_core.v": "1948607bae9e81e425c1a0630551ff2d8ef51a979b73c5095a10d2bf9a93898b",
+    "mtf_xyz_navigation_control.v": "369969dbb36e98d643241e1bdba2f19c1260fdee3ef097f45c79451d5f934f8c",
+    "acg720_ano_port.v": "725cba0683eee6ed5e613b60e27e51b439dda7db2b55fcd524bd496cb233d279"
+  },
+  "changes_sha256": "c733cc425541815e579e3de66bf643adfe5fec70d32060b15a85d25eb366594d"
+}

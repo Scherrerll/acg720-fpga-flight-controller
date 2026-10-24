@@ -1,0 +1,2 @@
+fallback_core PASS actual core: no PWM gap, independent pilot, latched fallback, preflight block, SWA/IMU/RC immediate stops
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0af_height_loss\tests\fallback_core.v:50: $finish called at 60407720000 (1ps)

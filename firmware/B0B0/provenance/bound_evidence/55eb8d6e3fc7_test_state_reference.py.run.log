@@ -1,0 +1,3 @@
+state_reference state trace completed
+C:\Users\ScherrerL\Desktop\apple\routing_rescue_20261015\mtf01p_b0ae_ano_control\variants\mask_retimed_map2_r2\tests\state_reference.v:20: $finish called at 2710020000 (1ps)
+ANO original C state comparison passed: 13550 ms
