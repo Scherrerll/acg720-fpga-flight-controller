@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scope": "actual controller and shared math; accelerated sample cadence with original dt; no flight dynamics",
+  "checks": [
+    "PASS default P005/I0 exact callback outputs positive negative fractional zero",
+    "PASS original V15 P015/I010 restored integral exact callback equivalence",
+    "PASS nondefault P, nonzero I, both rails, zero error, cancellation, mode reentry, RC/sensor/stop reset publications=134",
+    "PASS coherent work pair across interleaved input update; max isolated XY callback 5082 clocks (101640 ns at 50MHz)",
+    "PASS maximum encoded P=1 with +/-10000mm/s: signed P+I+FF reaches final angle clip without wrap"
+  ]
+}

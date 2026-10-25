@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-25T13:34:17.533354+00:00",
+  "build": "B0B2",
+  "version": "original sealed V15",
+  "default_boot_source": "Flash",
+  "flash_contents_certified": true,
+  "independent_flash_verify_passed": true,
+  "physical_battery_only_cold_boot_verified": true,
+  "ground_and_persistence_stage_complete": true,
+  "final_stopped_check_passed": true,
+  "v16_v17_routing": "paused by user; no automatic resume",
+  "v16_v17_zero_or_clamp_installed": false,
+  "flight_ready": false,
+  "scope": "Ground continuity and persistence complete; loaded flight and optical-flow position performance remain unaccepted",
+  "evidence": {
+    "v15_manifest": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\verified_timing_20261025\\manifest.json",
+      "sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1"
+    },
+    "original_v15_bitstream": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\verified_timing_20261025\\bitstream\\acg720_ano_port.fs",
+      "sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306"
+    },
+    "flash_install": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flash_install_20261025T132659_439750Z\\flash_install.json",
+      "sha256": "de5b8de2741ec7dafd0672624c5e370338735508a56e34ce3e3f4c178bed880e"
+    },
+    "battery_cold_boot": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flash_install_20261025T132659_439750Z\\cold_boot_20261025T132935_908607Z\\summary.json",
+      "sha256": "b282a37e8b96ea09810ea98986b937a6a2a4bddc6279ca4d6e033714456cb2b2"
+    },
+    "short_active_control": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_active_imu_20261025T131703_954633Z\\summary.json",
+      "sha256": "fa729fa34953ee13270493344bdc889ae29a6994be8eb178d1ed4cf930d5edb7"
+    },
+    "completion_stopped": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flash_install_20261025T132659_439750Z\\completion_stopped.json",
+      "sha256": "a636e0ce355af3d2a8f6dddb0dd61dbd7b6f63bd8025481e630ea510a9f64c1e"
+    },
+    "report": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flash_install_20261025T132659_439750Z\\README.md",
+      "sha256": "139aa55a828bc19cfac891c96f54f47cd92f0a157bfd4158569dff59a442ca5b"
+    }
+  }
+}

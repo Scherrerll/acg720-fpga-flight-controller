@@ -1,0 +1,20 @@
+-d C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\B0B2\b0b0_physical_replay_20261025\fixture\impl\gwsynthesis\acg720_ano_port.vg
+-p GW5AT-60B-PBGA484A-1
+-pn GW5AT-LV60PG484AC1/I0
+-cst C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\B0B2\b0b0_physical_replay_20261025\fixture\acg720_ano_port.cst
+-cfg C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\B0B2\b0b0_physical_replay_20261025\fixture\impl\pnr\device.cfg
+-sdc C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\B0B2\b0b0_physical_replay_20261025\fixture\acg720_ano_port.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 2
+-route_option 2
+-retiming_resource none
+-clock_route_order 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
+-enable_dsrm 0

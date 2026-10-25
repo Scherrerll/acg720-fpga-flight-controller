@@ -1,0 +1,51 @@
+{
+  "schema": "b0b2.independent-review-replay.v1",
+  "passed": true,
+  "unit_results": [
+    {
+      "suite": "test_protocol.py",
+      "returncode": 0,
+      "log": "final_test_protocol.py.log",
+      "log_sha256": "15911e022d5ccc028e54feb6cb1acb4d176ac8083d7341e5f880e881e0eae1d2"
+    },
+    {
+      "suite": "test_analyze_bench.py",
+      "returncode": 0,
+      "log": "final_test_analyze_bench.py.log",
+      "log_sha256": "f72b209c1cd21f8d54893dec1db5cdf9cfb16edc98ec87cd00c8c1b3b45c97c4"
+    }
+  ],
+  "counterexamples": [
+    {
+      "case": "controller_commands_advance_while_reported_stopped",
+      "input_sha256": "6218c7125a467cd73239ddee1b60ea067011068be30a2ed0efb892273f51dd05",
+      "previous_report_sha256": "158b130509ed15aa6e1fbf6be0cf5e5ba0cb0003a7d916b1a5c02a2e80259d96",
+      "current_report_sha256": "decbd30c5e706fbaf75467fafab11ec04c97308302169a5e36c12ee51ffa8c9b",
+      "previous_status": "acceptable",
+      "status": "inconclusive",
+      "issues": {
+        "fail": {},
+        "inconclusive": {
+          "new_control_transactions_while_reported_stopped": 300
+        }
+      }
+    },
+    {
+      "case": "accepted_pose_advance_200x_raw_records",
+      "input_sha256": "a1731bea2f6e799bf3c3862c4c11ed4cec02bb6a9681a3b6ff80005ee70f791c",
+      "previous_report_sha256": "66d5e336b0433debf412dc40878579ab10c3cce285f0679d6dba636d685ce8ea",
+      "current_report_sha256": "84d23d5b7864f3184f9619eda00ec2ba7e4d3e814100a51afd23c1f7a1d87279",
+      "previous_status": "acceptable",
+      "status": "inconclusive",
+      "issues": {
+        "fail": {},
+        "inconclusive": {
+          "raw_accept_reject_total_mismatch": 1
+        }
+      }
+    }
+  ],
+  "analyzer_sha256": "cfa80c90bee2f66c390df8845dfd6a3dc7494d4d9e204f3fd371045993374401",
+  "hardware_accessed": false,
+  "vendor_called": false
+}

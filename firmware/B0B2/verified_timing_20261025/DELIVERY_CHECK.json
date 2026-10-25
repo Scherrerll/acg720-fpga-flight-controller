@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checked_utc": "2026-10-25T08:42:59.200877+00:00",
+  "manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "source_files": 54,
+  "evidence_items": 313,
+  "canonical_source_matches": true,
+  "prepared_project": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\builds\\verified_20261025T084212Z_4307a523",
+  "prepared_inputs_match": true,
+  "replay_helper_sha256": "7fca28707132800fdd35bc7ec939f9a20bbee3b7d7fcd07886e499eb776862ab",
+  "readme_sha256": "022f91fdf09233dded723a2f6c6336017790c8e724d64b72d787b08f6c8f0e3d",
+  "hardware_accessed": false
+}

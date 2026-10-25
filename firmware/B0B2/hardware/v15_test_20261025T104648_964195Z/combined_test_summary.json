@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "scope": "V15 stationary plus operator-directed roll/pitch direction and return checks only",
+  "utc": "2026-10-25T10:55:40.8761133+00:00",
+  "routing_paused": true,
+  "active_gowin_processes": 0,
+  "new_calibration_applied": false,
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false,
+  "tests": {
+    "stationary": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_test_20261025T104648_964195Z\\summary.json",
+      "sha256": "0e59907ad6e6fc8a7809baa40005c00e0b28e6cad9577fe4d49d4acae64333f9",
+      "result": {
+        "passed": true,
+        "scope": "V15 static stopped read-only test after user paused routing; no new calibration applied",
+        "duration_seconds": 60.02636290001101,
+        "samples": 60,
+        "angles": {
+          "roll_deg": {
+            "mean": 0.912,
+            "standard_deviation": 0.009273618495495711,
+            "minimum": 0.89,
+            "maximum": 0.93
+          },
+          "pitch_deg": {
+            "mean": 3.3081666666666667,
+            "standard_deviation": 0.014432794447214861,
+            "minimum": 3.28,
+            "maximum": 3.34
+          }
+        },
+        "diagnostic_delta": {
+          "accepted_count": 60094,
+          "rejected_count": 0,
+          "controller_fault_count": 0,
+          "command_count": 0,
+          "gate_interruption_count": 0,
+          "gate_revoke_count": 0
+        },
+        "stats_delta": {
+          "frames": 298,
+          "checksum_errors": 0,
+          "discarded_bytes": 136,
+          "missing_frames": 2,
+          "sequence_resets": 0
+        },
+        "final_state": {
+          "sensor_ok": true,
+          "attitude_valid": true,
+          "calibrated": true,
+          "rc_valid": true,
+          "armed": false,
+          "controller_enabled": false,
+          "physical_output_active": false,
+          "command_us": [
+            1000,
+            1000,
+            1000,
+            1000
+          ],
+          "pwm_us": [
+            1000,
+            1000,
+            1000,
+            1000
+          ]
+        },
+        "final_boot_uptime_ms": 5607200,
+        "build_id": 45234,
+        "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+        "installation_report_sha256": "bf089617ed03b61ab0f71f5dad563bc87e0407f304ed9f0f9583bdb6e0f69ab9",
+        "snapshots_sha256": "a0d1ef49e4a36c3427f5d4b242784fb56e4d881d4f7b55664fb087400b0a0aa2",
+        "observer_sha256": "8708dc3bffdf7082b58fb44c66bc55571ce5a112b205df3c83eb52f62cd55768",
+        "failures": [],
+        "serial_writes": false,
+        "programmer_operations": [],
+        "flash_written": false,
+        "flight_ready": false
+      }
+    },
+    "roll": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_motion_roll_20261025T105122_159279Z\\summary.json",
+      "sha256": "41d7be7fdcb3e5716853ccc000df66e8334c0096502caabbd4222c3dc382fdad",
+      "result": {
+        "passed": true,
+        "axis": "roll",
+        "scope": "Operator-directed positive tilt then negative tilt, followed by return to original reference; V15 remains unarmed",
+        "baseline_deg": 0.920952380952381,
+        "positive_peak_change_deg": 10.62904761904762,
+        "negative_peak_change_deg": -10.730952380952381,
+        "positive_first_seconds": 38.93857729999581,
+        "negative_first_seconds": 54.49351649999153,
+        "returned_mean_deg": 0.9204347826086957,
+        "return_error_deg": -0.0005175983436852549,
+        "returned_std_deg": 0.0069019599419076335,
+        "baseline_frames": 21,
+        "return_frames": 23,
+        "distinct_frames": 395,
+        "duration_seconds": 94.8776896999916,
+        "diagnostic_delta": {
+          "accepted_count": 95150,
+          "rejected_count": 0,
+          "controller_fault_count": 0
+        },
+        "failures": [],
+        "final_reported_pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+        "samples_sha256": "b3072fa3822776882b258ffe318a40e2dc57a334c9a7cc98b39e1570a8d29a45",
+        "observer_sha256": "6281d5010c334b769634603a91e1737bf4c1c525770363b094716f9688d63f54",
+        "serial_writes": false,
+        "programmer_operations": [],
+        "flash_written": false,
+        "flight_ready": false
+      }
+    },
+    "pitch": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_motion_pitch_20261025T105306_972336Z\\summary.json",
+      "sha256": "e9f15ed85adf1bf89c271c8e403b0d4f0e015c7a4d4268181bc7e3c407508f0a",
+      "result": {
+        "passed": true,
+        "axis": "pitch",
+        "scope": "Operator-directed positive tilt then negative tilt, followed by return to original reference; V15 remains unarmed",
+        "baseline_deg": 3.277142857142857,
+        "positive_peak_change_deg": 10.092857142857142,
+        "negative_peak_change_deg": -12.917142857142858,
+        "positive_first_seconds": 31.024051600019448,
+        "negative_first_seconds": 46.55856930001755,
+        "returned_mean_deg": 3.263478260869565,
+        "return_error_deg": -0.013664596273291973,
+        "returned_std_deg": 0.0047628048478711195,
+        "baseline_frames": 21,
+        "return_frames": 23,
+        "distinct_frames": 322,
+        "duration_seconds": 76.64323040001909,
+        "diagnostic_delta": {
+          "accepted_count": 76921,
+          "rejected_count": 0,
+          "controller_fault_count": 0
+        },
+        "failures": [],
+        "final_reported_pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+        "samples_sha256": "ecc78a80a687850f79c109eccd9b3cb5d3c63b05459cea1e60ba8f19101f776e",
+        "observer_sha256": "6281d5010c334b769634603a91e1737bf4c1c525770363b094716f9688d63f54",
+        "serial_writes": false,
+        "programmer_operations": [],
+        "flash_written": false,
+        "flight_ready": false
+      }
+    }
+  }
+}

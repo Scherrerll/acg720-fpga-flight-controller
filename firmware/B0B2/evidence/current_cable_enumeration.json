@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-24T20:14:54.363129+00:00",
+  "command": [
+    "programmer_cli.exe",
+    "--scan-cables",
+    "F"
+  ],
+  "returncode": 0,
+  "observed_lines": [
+    "Cable found: USB Debugger A/0/0/null (USB location:0)",
+    "Cable found: Gowin USB Cable(FT2CH)/1/289/null (USB location:289)"
+  ],
+  "selected_type": "Gowin USB Cable(FT2CH)",
+  "cable_index": 1,
+  "location": 289,
+  "related_usb_serial": "6",
+  "scope": "Download-cable enumeration only, not FPGA device scan, identity read or programming",
+  "serial_opened": false,
+  "device_operation_invoked": false,
+  "bitstream_loaded": false,
+  "flash_written": false
+}

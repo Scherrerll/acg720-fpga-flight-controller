@@ -1,0 +1,75 @@
+--- frozen_P005_I0/mtf_xyz_hold_control.v
++++ response_compact/mtf_xyz_hold_control.v
+@@ -12,6 +12,8 @@
+ )(
+  input wire clk,rst_n,origin_reset,rc_valid,input wire [3:0] channel_count,
+  input wire [15:0] ch1,ch2,ch3,ch4,ch7,
++ input wire [15:0] xy_p_value,xy_i_value,
++ output wire parameter_boundary,
+  input wire enabled,taking_off,position_valid,height_valid,position_update,height_update,
+  input wire sample_update,input wire [31:0] sample_dt_us,
+  input wire [31:0] position_age,position_dt_us,
+@@ -129,8 +131,10 @@
+  reg signed [32-1:0] ey_store=0;
+  reg signed [32-1:0] fixx_store=0;
+  reg signed [32-1:0] fixy_store=0;
+- reg signed [32-1:0] ux_store=0;
+- reg signed [32-1:0] uy_store=0;
++ // Runtime P up to 1.0 -> internal gain 10: preserve the full P+I+FF
++ // before final +/-25deg clipping. Old signed32 Q16 could wrap at 32768cdeg.
++ reg signed [35:0] ux_store=0;
++ reg signed [35:0] uy_store=0;
+  reg signed [33-1:0] hx_store=0;
+  reg signed [33-1:0] hy_store=0;
+  reg signed [31-1:0] sample_vx_store=0;
+@@ -173,8 +177,8 @@
+  wire signed [63:0] ey={{32{ey_store[31]}},ey_store};
+  wire signed [63:0] fixx={{32{fixx_store[31]}},fixx_store};
+  wire signed [63:0] fixy={{32{fixy_store[31]}},fixy_store};
+- wire signed [63:0] ux={{32{ux_store[31]}},ux_store};
+- wire signed [63:0] uy={{32{uy_store[31]}},uy_store};
++ wire signed [63:0] ux={{28{ux_store[35]}},ux_store};
++ wire signed [63:0] uy={{28{uy_store[35]}},uy_store};
+  wire signed [63:0] hx={{31{hx_store[32]}},hx_store};
+  wire signed [63:0] hy={{31{hy_store[32]}},hy_store};
+  wire signed [63:0] sample_vx={{33{sample_vx_store[30]}},sample_vx_store};
+@@ -196,6 +200,11 @@
+  wire signed [63:0] position_qy=$signed(position_qy_store);
+  wire signed [63:0] horizontal_speed_limit_q16=clip($signed(ph)*64'sd98304,64'sd32768000,64'sd98304000);
+  reg [7:0] state=0,return_state=0;
++ // The stopped/cancelled idle boundary cannot start an old-coefficient
++ // callback on the same edge as the bank commits a new pair.
++ assign parameter_boundary=state==0 && cancel;
++ // Capture the whole pair once per callback, never between axes.
++ reg [15:0] work_p=500,work_i=0;
+  reg mul_start=0,div_start=0,trig_start=0;
+  reg signed [49:0] ma_store=0;
+  wire signed [63:0] ma={{14{ma_store[49]}},ma_store};
+@@ -321,7 +330,7 @@
+       held_h<=pending_h;held_az<=pending_az;speed_z_tick_store<=keep64(pending_z_speed);
+       inner_alt_speed<=alt_speed;calc($signed(pending_az)*65536-afz,1,5,20);
+      end else if(position_due && position_stick_captured && !xy_cancel)begin
+-      position_due<=0;work_xy<=1;
++      position_due<=0;work_xy<=1;work_p<=xy_p_value;work_i<=xy_i_value;
+       // A source callback is atomic. Roll back a cancelled, partly executed
+       // FPGA callback; preserve the last completed OF PI/filter state in ATT_STAB.
+       saved_ix<=ix_store;saved_iy<=iy_store;saved_afx<=afx_store;saved_afy<=afy_store;
+@@ -338,10 +347,14 @@
+      3:begin afy_store<=keep64(afy+value);calc(afx,3,100,4);end
+      4:begin ex_store<=keep64(fixx-value);calc(afy,3,100,5);end
+      5:begin ey_store<=keep64(fixy-value);calc(clip(fixx,-32768000,32768000),$signed({1'b0,dt}),1000000,6);end
+-     6:begin ix_store<=keep64(0);calc(clip(fixy,-32768000,32768000),$signed({1'b0,dt}),1000000,7);end
+-     7:begin iy_store<=keep64(0);calc(ex,1,2,8);end
+-     8:begin ux_store<=keep64(value);calc(ey,1,2,9);end
+-     9:begin uy_store<=keep64(value);calc(sx,1,5,10);end
++     // Original error source, dt, +/-500mm/s clamp, +/-1000cdeg I rail.
++     // Gain public*10 = wire/1000. I=0 destroys accumulated state.
++     6:calc(value,$signed({1'b0,work_i}),1000,64);
++     64:begin ix_store<=keep64(taking_off && work_i!=0 ?clip(ix+value,-65536000,65536000):0);calc(clip(fixy,-32768000,32768000),$signed({1'b0,dt}),1000000,7);end
++     7:calc(value,$signed({1'b0,work_i}),1000,65);
++     65:begin iy_store<=keep64(taking_off && work_i!=0 ?clip(iy+value,-65536000,65536000):0);calc(ex,$signed({1'b0,work_p}),1000,8);end
++     8:begin ux_store<=keep64(value+ix);calc(ey,$signed({1'b0,work_p}),1000,9);end
++     9:begin uy_store<=keep64(value+iy);calc(sx,1,5,10);end
+      10:begin ux_store<=keep64(ux+value);calc(sy,1,5,11);end
+      11:begin uy_store<=keep64(uy+value);state<=17;end
+      17:begin

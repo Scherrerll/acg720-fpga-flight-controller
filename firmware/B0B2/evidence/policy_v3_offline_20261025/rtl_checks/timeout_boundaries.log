@@ -1,0 +1,3 @@
+
+PASS timeout_alignment: RC default=500ms, accepted frame/recovery, countdown boundary, invalid-frame rejection; module offline=1000ms boundary/recovery, duplicate timestamp rejected, metric freshness remains 200ms
+C:\Users\ScherrerL\Desktop\apple\side_timeout_alignment_20261025\timeout_boundaries.v:46: $finish called at 27700331000 (1ps)

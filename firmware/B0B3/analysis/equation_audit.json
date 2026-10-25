@@ -1,0 +1,156 @@
+{
+  "P0.05_I0": {
+    "samples": {
+      "max_formula_error_cdeg": 0.00011900108574991464,
+      "max_integer_output_error_cdeg": 0.5542019571503616,
+      "steps": [
+        {
+          "target_mmps": 100,
+          "velocity_mmps": 0,
+          "accel_mmps2": 0,
+          "taking_off": true,
+          "c_u_cdeg": 70.0,
+          "rtl_formula_u_cdeg": 70.0,
+          "rtl_integer_u_cdeg": 70,
+          "c_i_cdeg": 0.0,
+          "rtl_i_cdeg": 0.0,
+          "lp_c_mmps2": 0.0,
+          "lp_rtl_mmps2": 0.0
+        },
+        {
+          "target_mmps": 100,
+          "velocity_mmps": 0,
+          "accel_mmps2": 1000,
+          "taking_off": true,
+          "c_u_cdeg": 64.21375921375922,
+          "rtl_formula_u_cdeg": 64.2138671875,
+          "rtl_integer_u_cdeg": 64,
+          "c_i_cdeg": 0.0,
+          "rtl_i_cdeg": 0.0,
+          "lp_c_mmps2": 385.74938574938574,
+          "lp_rtl_mmps2": 385.7421875
+        },
+        {
+          "target_mmps": 0,
+          "velocity_mmps": 100,
+          "accel_mmps2": 0,
+          "taking_off": true,
+          "c_u_cdeg": -53.55420195715036,
+          "rtl_formula_u_cdeg": -53.554168701171875,
+          "rtl_integer_u_cdeg": -53,
+          "c_i_cdeg": 0.0,
+          "rtl_i_cdeg": 0.0,
+          "lp_c_mmps2": 236.94679714335734,
+          "lp_rtl_mmps2": 236.94515991210938
+        },
+        {
+          "target_mmps": -100,
+          "velocity_mmps": 0,
+          "accel_mmps2": -1000,
+          "taking_off": true,
+          "c_u_cdeg": -66.39692994910956,
+          "rtl_formula_u_cdeg": -66.39704895019531,
+          "rtl_integer_u_cdeg": -66,
+          "c_i_cdeg": 0.0,
+          "rtl_i_cdeg": 0.0,
+          "lp_c_mmps2": -240.2046700593628,
+          "lp_rtl_mmps2": -240.19676208496094
+        },
+        {
+          "target_mmps": 0,
+          "velocity_mmps": 0,
+          "accel_mmps2": 0,
+          "taking_off": false,
+          "c_u_cdeg": 2.213187991947446,
+          "rtl_formula_u_cdeg": 2.213134765625,
+          "rtl_integer_u_cdeg": 2,
+          "c_i_cdeg": 0.0,
+          "rtl_i_cdeg": 0.0,
+          "lp_c_mmps2": -147.54586612982973,
+          "lp_rtl_mmps2": -147.54273986816406
+        }
+      ]
+    },
+    "random2000": {
+      "max_formula_error_cdeg": 0.000981973848411144,
+      "max_integer_output_error_cdeg": 0.9998028303998581
+    }
+  },
+  "P0.15_I0.1": {
+    "samples": {
+      "max_formula_error_cdeg": 0.0003570032572781656,
+      "max_integer_output_error_cdeg": 0.6626058714510918,
+      "steps": [
+        {
+          "target_mmps": 100,
+          "velocity_mmps": 0,
+          "accel_mmps2": 0,
+          "taking_off": true,
+          "c_u_cdeg": 172.0,
+          "rtl_formula_u_cdeg": 172.0,
+          "rtl_integer_u_cdeg": 172,
+          "c_i_cdeg": 2.0,
+          "rtl_i_cdeg": 2.0,
+          "lp_c_mmps2": 0.0,
+          "lp_rtl_mmps2": 0.0
+        },
+        {
+          "target_mmps": 100,
+          "velocity_mmps": 0,
+          "accel_mmps2": 1000,
+          "taking_off": true,
+          "c_u_cdeg": 156.64127764127767,
+          "rtl_formula_u_cdeg": 156.6416015625,
+          "rtl_integer_u_cdeg": 156,
+          "c_i_cdeg": 4.0,
+          "rtl_i_cdeg": 4.0,
+          "lp_c_mmps2": 385.74938574938574,
+          "lp_rtl_mmps2": 385.7421875
+        },
+        {
+          "target_mmps": 0,
+          "velocity_mmps": 100,
+          "accel_mmps2": 0,
+          "taking_off": true,
+          "c_u_cdeg": -158.6626058714511,
+          "rtl_formula_u_cdeg": -158.6625213623047,
+          "rtl_integer_u_cdeg": -158,
+          "c_i_cdeg": 2.0,
+          "rtl_i_cdeg": 2.0,
+          "lp_c_mmps2": 236.94679714335734,
+          "lp_rtl_mmps2": 236.94515991210938
+        },
+        {
+          "target_mmps": -100,
+          "velocity_mmps": 0,
+          "accel_mmps2": -1000,
+          "taking_off": true,
+          "c_u_cdeg": -159.19078984732866,
+          "rtl_formula_u_cdeg": -159.19114685058594,
+          "rtl_integer_u_cdeg": -159,
+          "c_i_cdeg": 0.0,
+          "rtl_i_cdeg": 0.0,
+          "lp_c_mmps2": -240.2046700593628,
+          "lp_rtl_mmps2": -240.19676208496094
+        },
+        {
+          "target_mmps": 0,
+          "velocity_mmps": 0,
+          "accel_mmps2": 0,
+          "taking_off": false,
+          "c_u_cdeg": 6.6395639758423375,
+          "rtl_formula_u_cdeg": 6.639404296875,
+          "rtl_integer_u_cdeg": 6,
+          "c_i_cdeg": 0.0,
+          "rtl_i_cdeg": 0.0,
+          "lp_c_mmps2": -147.54586612982973,
+          "lp_rtl_mmps2": -147.54273986816406
+        }
+      ]
+    },
+    "random2000": {
+      "max_formula_error_cdeg": 0.0029636217402639886,
+      "max_integer_output_error_cdeg": 1.0011354545877111
+    }
+  }
+}

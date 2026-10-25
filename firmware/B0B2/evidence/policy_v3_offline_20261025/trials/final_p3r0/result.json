@@ -1,0 +1,32 @@
+{
+  "routing_passed": false,
+  "unrouted_nets": 1910,
+  "timing_summary_passed": false,
+  "fmax_mhz": null,
+  "summaries": {
+    "setup": null,
+    "hold": null
+  },
+  "pins_passed": true,
+  "identity_passed": false,
+  "errors": [
+    "ERROR  (PR0004) : There are total 1910 unrouted nets",
+    "    ERROR  (PR0004) : There are total 1910 unrouted nets"
+  ],
+  "vendor_returncode": 1,
+  "netlist_sha256": "5bf484f5e473e49e7ebca62582043132d8fcb7a1aca68eb56981db51e2d7cbdd",
+  "outputs_sha256": {
+    "fixture\\impl\\pnr\\acg720_ano_port.db": "bb03e20d2a1d2c63ea8cb6cbb14c377a9f25812868b7a3d257ddbc65ede6fb97",
+    "fixture\\impl\\pnr\\acg720_ano_port.log": "e0acfc5e963caeb76386a99d8567ec8b3f0378419c1e3ea789eead7d3f43b503",
+    "fixture\\impl\\pnr\\acg720_ano_port.p": "b53dcff56341d6e8720baa524a0b8b47434ac03dcb1d9334eee36d5bcce0a085",
+    "fixture\\impl\\pnr\\acg720_ano_port.pin.html": "4a287a76b66d23e4f9d596ec9ae244e366d77abc8fc764e74008080d781131af",
+    "fixture\\impl\\pnr\\acg720_ano_port.rpt.html": "b8ac19ea60e1083b80b6ac9fd96323591476f317a0f83f791d565581440ceb7c",
+    "fixture\\impl\\pnr\\acg720_ano_port.rpt.txt": "a943e0e5bb5b54976dadaa8a386e9fee7ea46d62b50dbcff346ebed088a30275",
+    "fixture\\impl\\pnr\\cmd.do": "380a3948491b2b6c6e5f1c7371f8acddb7fcf1c20ad7bcd65f10d923e11a3537",
+    "fixture\\impl\\pnr\\device.cfg": "1c531c08d794d69f6bc0a168f4dd0a94cba8156f0c3cf4f3d07f9a54474df10a"
+  },
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "release_eligible": false,
+  "scope": "Physical feasibility only; complete STA audit and functional/source binding required separately"
+}

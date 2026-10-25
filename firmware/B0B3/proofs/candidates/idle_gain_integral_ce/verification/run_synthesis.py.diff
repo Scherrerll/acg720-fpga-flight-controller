@@ -1,0 +1,11 @@
+--- C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_ce\run_synthesis.py
++++ C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_integral_ce\run_synthesis.py
+@@ -13,7 +13,7 @@
+ for p in prerequisites:assert json.loads(p.read_text())['passed'],p
+ assert not (O/'synthesis_input.json').exists(),'Only one synthesis invocation authorized'
+ tcl=(S/'build.tcl').read_bytes();assert tcl.count(b'run all')==1
+-tcl=tcl.replace(b'run all',b'run syn');assert b'run pnr'not in tcl and b'run all'not in tcl
++tcl=tcl.replace(b'run all',b'run syn');assert tcl.endswith(b'exit\n');tcl=tcl[:-len(b'exit\n')]+b'puts SYNTHESIS_COMMAND_RETURNED_EOF\nflush stdout\n';assert b'run pnr'not in tcl and b'run all'not in tcl and not any(line.strip()==b'exit'for line in tcl.splitlines())
+ (C/'synth_only.tcl').write_bytes(tcl)
+ tool=Path('C:/Gowin/Gowin_V1.9.12.04_x64/IDE/bin/gw_sh.exe')
+ inputs=dict(started_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),source_sha256=record['candidate_source_sha256'],baseline_source_sha256=record['baseline_source_sha256'],tool=str(tool),tool_sha256=sha(tool),tcl_sha256=sha(C/'synth_only.tcl'),prerequisites_sha256={str(p):sha(p)for p in prerequisites},mode='exactly one run syn; ordinary EOF script; stdin DEVNULL; CREATE_NO_WINDOW; actual child wait exit code recorded; no PNR')

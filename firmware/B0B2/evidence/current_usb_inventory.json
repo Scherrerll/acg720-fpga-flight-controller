@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-24T20:13:51.934651+00:00",
+  "enumeration_only": true,
+  "serial_opened": false,
+  "programmer_called": false,
+  "device_written": false,
+  "ports": [
+    {
+      "device": "COM24",
+      "vid": 6790,
+      "pid": 29987,
+      "serial": "",
+      "location": "1-5",
+      "hwid": "USB VID:PID=1A86:7523 SER= LOCATION=1-5"
+    },
+    {
+      "device": "COM17",
+      "vid": 1027,
+      "pid": 24597,
+      "serial": "DU0ENI02A",
+      "location": null,
+      "hwid": "USB VID:PID=0403:6015 SER=DU0ENI02A"
+    },
+    {
+      "device": "COM21",
+      "vid": 1027,
+      "pid": 24596,
+      "serial": "6",
+      "location": null,
+      "hwid": "USB VID:PID=0403:6014 SER=6"
+    }
+  ]
+}

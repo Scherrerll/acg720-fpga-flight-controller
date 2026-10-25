@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "axis": "roll",
+  "scope": "Operator-directed positive tilt then negative tilt, followed by return to original reference; V15 remains unarmed",
+  "baseline_deg": 0.920952380952381,
+  "positive_peak_change_deg": 10.62904761904762,
+  "negative_peak_change_deg": -10.730952380952381,
+  "positive_first_seconds": 38.93857729999581,
+  "negative_first_seconds": 54.49351649999153,
+  "returned_mean_deg": 0.9204347826086957,
+  "return_error_deg": -0.0005175983436852549,
+  "returned_std_deg": 0.0069019599419076335,
+  "baseline_frames": 21,
+  "return_frames": 23,
+  "distinct_frames": 395,
+  "duration_seconds": 94.8776896999916,
+  "diagnostic_delta": {
+    "accepted_count": 95150,
+    "rejected_count": 0,
+    "controller_fault_count": 0
+  },
+  "failures": [],
+  "final_reported_pwm_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "samples_sha256": "b3072fa3822776882b258ffe318a40e2dc57a334c9a7cc98b39e1570a8d29a45",
+  "observer_sha256": "6281d5010c334b769634603a91e1737bf4c1c525770363b094716f9688d63f54",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

@@ -1,0 +1,13 @@
+{
+  "p2_index_sha256": "bcb3813de42ae4104ff4a6c5b6cedc80b44386f6346d70fce86017aa5cbb080b",
+  "p2_files_checked": 376,
+  "p2_hash_mismatches": [],
+  "rtl_compared_files": 54,
+  "rtl_same_files": 53,
+  "rtl_different_files": [
+    "position\\mtf_xyz_hold_control.v"
+  ],
+  "frozen_current_hold_sha256": "78952264bf5a507f2f9e080e53fe0dd41b940cf13c699a134fb5aa12be539258",
+  "original_v15_hold_sha256": "41ae4ee0c4129afcc18758d93d960c415f860ca5e2a65dfb8d199129133adff2",
+  "authority": "P2 identity from explicit user confirmation. Hash verification only; no provenance/version investigation."
+}

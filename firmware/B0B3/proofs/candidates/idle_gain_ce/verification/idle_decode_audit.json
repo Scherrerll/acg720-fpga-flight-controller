@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "work_gain_CE": "n16252_13",
+  "work_gain_FF": 32,
+  "actual_mapped_boolean": "state[6:0] == 0",
+  "all_mapped_state_combinations_checked": 128,
+  "only_asserted_state": 0,
+  "source_scope": "Unchanged reachable source state graph uses states0..101; source state[7] optimized away. This is a small mapped-LUT decode truth-table check, not full sequential netlist equivalence.",
+  "cone": {
+    "n16252_13": {
+      "cell": "n16252_s7",
+      "type": "LUT4",
+      "INIT": "16'h0002",
+      "table": 2,
+      "pins": {
+        "F": "n16252_13",
+        "I0": "n16252_11",
+        "I1": "state[4]",
+        "I2": "state[5]",
+        "I3": "state[6]"
+      }
+    },
+    "n16252_11": {
+      "cell": "n16252_s6",
+      "type": "LUT4",
+      "INIT": "16'h0001",
+      "table": 1,
+      "pins": {
+        "F": "n16252_11",
+        "I0": "state[0]",
+        "I1": "state[1]",
+        "I2": "state[2]",
+        "I3": "state[3]"
+      }
+    }
+  },
+  "state_leaves": [
+    "state[0]",
+    "state[1]",
+    "state[2]",
+    "state[3]",
+    "state[4]",
+    "state[5]",
+    "state[6]"
+  ],
+  "netlist_sha256": "97810a976f2af928c8a6d43a28481202cc6cdec4d85349c9073804188faddd33",
+  "script_sha256": "9a469e8a12d7017e473b000c39c9c1c537668e86c8a3d8001e43ab9964b7008a"
+}

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-25T12:50:05.7174816+00:00",
+  "motors_observed_running": true,
+  "operator_report": "All four motors idled for about15seconds, then SWA low stopped them",
+  "props_removed_confirmed_in_current_session": true,
+  "source": "Current chat human answer"
+}

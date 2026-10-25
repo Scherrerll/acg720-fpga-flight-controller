@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-10-25T20:53:23.7020734+08:00",
+  "stopped": true,
+  "fresh": true,
+  "frame_age_ms": 28.4,
+  "rc_valid": true,
+  "armed": false,
+  "controller_enabled": false,
+  "physical_output_active": false,
+  "pwm_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "command_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "rc_us": [
+    1499,
+    1501,
+    1003,
+    1500,
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "gate_last_revoke_code": 52,
+  "gate_last_revoke_text": "已解锁：解锁开关回低",
+  "compiler_processes": 0,
+  "samples_sha256": "73ae147c9a5ea0ad537732e40c87c04ce4c19da57e3202b01631316064fd47e4",
+  "summary_sha256": "eeb4da81471d9f78deff1180774332b1fd1b2ae3fd413230b784842238d79ef6",
+  "serial_writes": false,
+  "flash_written": false
+}

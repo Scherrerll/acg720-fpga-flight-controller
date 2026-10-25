@@ -7,6 +7,8 @@
 *.dll
 *.fs
 !firmware/B0B0/release/*.fs
+!firmware/B0B2/verified_timing_20261025/bitstream/acg720_ano_port.fs
+!firmware/B0B3/release/*.fs
 *.gprj.user
 .venv/
 .tools/
@@ -19,4 +21,16 @@ flights/
 *.pem
 *.key
 *.token
+
+# Curated B0B3 proofs only: their exact contents are bound by export_manifest.
+!firmware/B0B3/proofs/**/impl/
+!firmware/B0B3/proofs/**/impl/**
+!firmware/B0B3/tests/evidence/legacy19p5/source/impl/
+!firmware/B0B3/tests/evidence/legacy19p5/source/impl/**
+
+# Full local acquisition/intermediate stores are indexed by hash, not uploaded.
+firmware/B0B2/verified_timing_20261025/evidence/blobs/
+firmware/B0B2/hardware/**/*.jsonl
+firmware/B0B2/hardware/**/*.bin
+firmware/B0B2/hardware/**/*.mp4
 

@@ -1,0 +1,21 @@
+{
+  "schema": "b0b2.failed-route-evidence.v1",
+  "passed": false,
+  "unrouted_nets": 292,
+  "vendor_returncode": 1,
+  "timing_available": false,
+  "bitstream_available": false,
+  "scope": "Frozen default full-build failed; observer reset omitted from automatic LW allocation. No programming permitted.",
+  "artifact_sha256": {
+    "inputs.json": "285e4ed8c7780ab9c71edf6af102f09f34e0bc6780da7ad7d815757e10103571",
+    "result.json": "880f4fecfae731da408cb4dab81a73323d077b73212b49fa909733dc33160beb",
+    "console.log": "b22856684bda4370a7b0baf8dd6af2e8c7babaf9a08ce12235e6faecef764351",
+    "physical_report.txt": "5595a17d667ef5e8a344680be93c709c7bd17c23e5666e56dd313fbe324e9738",
+    "physical_constraints.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+    "build_runner.py": "6781a3829eb80e64f531568ffc447bc14d1bfac5b498475aa0dd15f1ceec8c21"
+  },
+  "synthesis_netlist_sha256": "29e7a58e6b84eaae03cbe9fb806f1d1186933ec1150844839c2c11b58a7473ed",
+  "device_written": false,
+  "flash_changed": false,
+  "flight_ready": false
+}

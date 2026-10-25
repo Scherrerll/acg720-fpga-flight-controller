@@ -1,0 +1,94 @@
+{
+  "fixture": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\builds\\idle_integral_p3r0",
+  "parser_sha256": "a50a8dceeb4874e21873cf6e83689a2433ba5b29d034ca55567da276ae0c3bb0",
+  "period_ns": 20.0,
+  "fmax_mhz": 50.257,
+  "setup_violated_endpoints": 0,
+  "hold_violated_endpoints": 0,
+  "checks": {
+    "setup": {
+      "worst_slack_ns": 0.102,
+      "reported_paths": 25,
+      "worst_path": {
+        "number": "1",
+        "slack_ns": "0.102",
+        "from": "mtf/parser/raw_frame_130_s0/Q",
+        "to": "core/gate_last_revoke_attitude_fault_2_s0/CE",
+        "from_clock": "clk50:[R]",
+        "to_clock": "clk50:[R]",
+        "relation_ns": "20.000",
+        "skew_ns": "0.017",
+        "data_delay_ns": "19.601"
+      }
+    },
+    "hold": {
+      "worst_slack_ns": 0.145,
+      "reported_paths": 25,
+      "worst_path": {
+        "number": "1",
+        "slack_ns": "0.145",
+        "from": "native_navigation/geometry/value_store_13_s0/Q",
+        "to": "native_navigation/geometry/angle_q20_13_s0/D",
+        "from_clock": "clk50:[R]",
+        "to_clock": "clk50:[R]",
+        "relation_ns": "0.000",
+        "skew_ns": "-0.170",
+        "data_delay_ns": "0.267"
+      }
+    },
+    "recovery": {
+      "worst_slack_ns": 11.895,
+      "reported_paths": 25,
+      "worst_path": {
+        "number": "1",
+        "slack_ns": "11.895",
+        "from": "core/boot_1_s0/Q",
+        "to": "core/gate/last_revoke_code_0_s1/CLEAR",
+        "from_clock": "clk50:[R]",
+        "to_clock": "clk50:[R]",
+        "relation_ns": "20.000",
+        "skew_ns": "0.008",
+        "data_delay_ns": "7.784"
+      }
+    },
+    "removal": {
+      "worst_slack_ns": 3.312,
+      "reported_paths": 25,
+      "worst_path": {
+        "number": "1",
+        "slack_ns": "3.312",
+        "from": "core/boot_5_s0/Q",
+        "to": "core/gate/last_interruption_code_4_s2/CLEAR",
+        "from_clock": "clk50:[R]",
+        "to_clock": "clk50:[R]",
+        "relation_ns": "0.000",
+        "skew_ns": "0.000",
+        "data_delay_ns": "3.264"
+      }
+    },
+    "minimum_pulse_width": {
+      "worst_slack_ns": 7.387,
+      "reported_paths": 10,
+      "worst_path": [
+        "1",
+        "7.387",
+        "8.287",
+        "0.900",
+        "Low Pulse Width",
+        "clk50",
+        "core/imu/estimator/cdeg_scaled_0_s"
+      ]
+    }
+  },
+  "timing_passed": true,
+  "route_unrouted_log_matches": [],
+  "timing_constraints_report": "SDC Command Type    State                          Detail Command                         \n ================== ========= ============================================================= \n  TC_CLOCK           Actived   create_clock -name clk50 -period 20.000 [get_ports {clk50}]  \n  TC_FALSE_PATH      Actived   set_false_path -from [get_ports {radio_rx}]",
+  "timing_exceptions_report": "3.7.1 Setup Analysis Report\nReport Command:report_exceptions -setup -max_paths 5 -max_common_paths 1\nNo timing exceptions to report!\n\n3.7.2 Hold Analysis Report\nReport Command:report_exceptions -hold -max_paths 5 -max_common_paths 1\nNo timing exceptions to report!\n\n3.7.3 Recovery Analysis Report\nReport Command:report_exceptions -recovery -max_paths 5 -max_common_paths 1\nNo timing exceptions to report!\n\n3.7.4 Removal Analysis Report\nReport Command:report_exceptions -removal -max_paths 5 -max_common_paths 1\nNo timing exceptions to report!",
+  "evidence_sha256": {
+    "acg720_ano_port.tr": "e155cdef595756f4b5033fe752cc230186cae259803e1ee2b3cb179abe570ea3",
+    "acg720_ano_port.pr": "cf1f4230147cc0393ccbe76d90d911d95b2a7c4b3f866769ace2114985ed1892",
+    "acg720_ano_port.fs": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.vg": "4497e28d79a30da7487a40449d0f0ed19735d1859d2601f0d972f51344b9d9eb"
+  }
+}

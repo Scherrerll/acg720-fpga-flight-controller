@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-25T13:20:27.8771122+00:00",
+  "stopped": true,
+  "fresh": true,
+  "frame_age_ms": 101.5,
+  "build_id": 45234,
+  "armed": false,
+  "controller_enabled": false,
+  "pwm_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "command_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "rc_us": [
+    1500,
+    1501,
+    1000,
+    1500,
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "gate_last_revoke_code": 52,
+  "serial_writes": false,
+  "flash_written": false
+}

@@ -1,0 +1,2 @@
+PASS actual top/core stopped-width arm/controller/fresh/takeoff gates; actual simultaneous arm-FF/commit rejected; bank through real controller ports; cancelled-idle boundary
+C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_ce\verification\regressions\top_safety\top_safety_tb.v:62: $finish called at 4180853000 (1ps)

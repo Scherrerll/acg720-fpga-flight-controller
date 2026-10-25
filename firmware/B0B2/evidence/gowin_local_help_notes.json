@@ -1,0 +1,189 @@
+{
+  "schema": "gowin.local-official-help-notes.v1",
+  "created_utc": "2026-10-24T21:13:44.242694+00:00",
+  "scope": "Bounded read-only search of installed Gowin V1.9.12.04 official documentation and already-generated textual artifacts; no GUI, tool process, build or hardware action during this search.",
+  "official_documents": {
+    "SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf": {
+      "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+      "sha256": "c8ee7e8cb8486220a8639424f71debe9f4c3dff0d4c365860474c24782ded08c"
+    },
+    "SUG940-2.0.5E_Gowin Design Timing Constraints User Guide.pdf": {
+      "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG940-2.0.5E_Gowin Design Timing Constraints User Guide.pdf",
+      "sha256": "acdc93ed3dae7eb2edbf7c80269d5a146c9338755fc29683e03996510dc91d05"
+    },
+    "SUG100-4.4.7E_Gowin Software User Guide.pdf": {
+      "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG100-4.4.7E_Gowin Software User Guide.pdf",
+      "sha256": "b4e8891ffecdfcd8f60f060cb6025e0ab09e7e177759e3fb6570ade8c1c20d1f"
+    },
+    "SUG113-1.3E_Gowin FPGA Design User Guide.pdf": {
+      "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG113-1.3E_Gowin FPGA Design User Guide.pdf",
+      "sha256": "f9f03262d4829d37091dff19a40ee56b7ebd5b94c9748dfbd6e5b29547084ecd"
+    },
+    "SUG1541-1.0E_Gowin Software Physical Constraints User Guide.pdf": {
+      "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG1541-1.0E_Gowin Software Physical Constraints User Guide.pdf",
+      "sha256": "594fcb9b408b22b82c9a225b979f56dc9f9c529939f66c4adc558a47189dc110"
+    },
+    "SUG937-1.1E_Gowin Software User Messages Reference.pdf": {
+      "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG937-1.1E_Gowin Software User Messages Reference.pdf",
+      "sha256": "5f1a99e38f0dfd7dc1ee9728b6f9ae03b7f7eb2d1f1a01175a69752e81394a11"
+    }
+  },
+  "official_config": {
+    "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\data\\config\\rtlrouteoptions.xml",
+    "sha256": "231314a56a52428e6d80562754e23a1c0570e958ce61c215f4fe8183a38e9176",
+    "lines": "24-27"
+  },
+  "route_maxfan": {
+    "value_in_frozen_baseline": 23,
+    "official_meaning": "Fanout-based routing optimization setting/guideline; not a retry count, not a count of unrouted nets and not a guarantee that every resulting net has fanout <=23.",
+    "allowed_values": "Integers 1 through 100 inclusive",
+    "default_for_GW5AT_60": 23,
+    "other_documented_defaults": "10 for GW1NZ-1/GW1N-2/GW1NR-2/GW1N-1P5; 23 for other devices",
+    "manual_source": "SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+    "pdf_pages": [
+      48,
+      49
+    ],
+    "printed_pages": [
+      41,
+      42
+    ],
+    "short_exact_excerpts": [
+      "Sets maximum fanout for routing.",
+      "greater than 0 and less than or equal to 100",
+      "default value is 23"
+    ],
+    "config_exact_description": "Set the guideline for routing fanout-based optimizations."
+  },
+  "routing_diagnostics": {
+    "documented_named_unrouted_net_export_cli_found": false,
+    "documented_standalone_failed_db_query_cli_found": false,
+    "search_result": "Not found within the bounded installed official manuals and existing text artifacts. This is not proof that no private/internal tool mechanism exists.",
+    "confirmed_report_constraint": {
+      "name": "report_route_congestion",
+      "source": "SUG940-2.0.5E_Gowin Design Timing Constraints User Guide.pdf",
+      "pdf_pages": [
+        87,
+        88
+      ],
+      "printed_pages": [
+        77,
+        78
+      ],
+      "syntax": "report_route_congestion -max_grids <max_grids_value> [-min_route_congestion <min_route_congestion_value>] [-max_route_congestion <max_route_congestion_value>] [-LOC <grid_position>]",
+      "meaning": "SDC report constraint for ranked physical routing-congestion grids; not a list of failed networks. Default maximum 10 grids; congestion filters range 0..1. No documented method was found to load an already-failed routing .db into a standalone CLI and invoke this without rerunning PNR.",
+      "invoked": false
+    },
+    "project_cli": {
+      "source": "SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+      "pdf_pages": [
+        13,
+        14,
+        23,
+        24
+      ],
+      "printed_pages": [
+        6,
+        7,
+        16,
+        17
+      ],
+      "documented_run_syntax": "run [-h/--help] <syn/pnr/all>",
+      "observation": "Documented project command list and run flow expose syn/pnr/all; no documented read_db/open_design or report_unrouted standalone command was found. report_property in this manual is an IP-property query, not a routed-design query."
+    },
+    "documented_gui_context": {
+      "source": "SUG940-2.0.5E_Gowin Design Timing Constraints User Guide.pdf",
+      "pdf_pages": [
+        40,
+        41
+      ],
+      "printed_pages": [
+        30,
+        31
+      ],
+      "description": "Timing Constraints Editor provides Report Route Congestion settings. This documents editing report constraints, not guaranteed extraction from a failed-routing database. No GUI was launched."
+    },
+    "failed_artifacts": [
+      {
+        "build": "build_policy_netlist_global_p2r2_rep0",
+        "unrouted_count": 210,
+        "rpt_path": "out/B0B2/build_policy_netlist_global_p2r2_rep0/fixture/impl/pnr/acg720_ano_port.rpt.txt",
+        "rpt_sha256": "410bd6ccbb8ac72c3f4a384f84ef253c1689d4ec392bf77e74feaddf84b8a264",
+        "log_path": "out/B0B2/build_policy_netlist_global_p2r2_rep0/fixture/impl/pnr/acg720_ano_port.log",
+        "log_sha256": "5bf9803c9d1667a08d4a443c542a3b20679f5655fd859cd173c941cb381a0146",
+        "timing_tr_exists": false,
+        "observation": "Existing RPT/LOG supply only total unrouted count; no named unrouted-net list or congestion-grid table found. .db is binary and .p starts a protected Verilog block; neither was decoded or modified."
+      },
+      {
+        "build": "build_policy_netlist_global_p2r2_rep1",
+        "unrouted_count": 266,
+        "rpt_path": "out/B0B2/build_policy_netlist_global_p2r2_rep1/fixture/impl/pnr/acg720_ano_port.rpt.txt",
+        "rpt_sha256": "3b51ff4ca5e339fac2ed9d0597a70f300ed6bdfef759cfcc7b7bfab0a65d0bb5",
+        "log_path": "out/B0B2/build_policy_netlist_global_p2r2_rep1/fixture/impl/pnr/acg720_ano_port.log",
+        "log_sha256": "67659106ea5f26cfcc52421e0e9db6c69693e67aefa8190dcfcc3d917bbce60d",
+        "timing_tr_exists": false,
+        "observation": "Existing RPT/LOG supply only total unrouted count; no named unrouted-net list or congestion-grid table found. .db is binary and .p starts a protected Verilog block; neither was decoded or modified."
+      }
+    ],
+    "existing_successful_baseline_report": {
+      "path": "out/B0B2/b0b0_physical_replay_20261025/fixture/impl/pnr/acg720_ano_port.tr",
+      "sha256": "e3a38096e5a38cef9ddec4acf7286b77ac81ed955de939b89fe57ccf25487f9b",
+      "section": "3.6 Route Congestions Report",
+      "lines": "6073-6087",
+      "command_already_in_report": "report_route_congestion -max_grids 10",
+      "top_grids": [
+        {
+          "location": "R46C48",
+          "congestion": 0.958
+        },
+        {
+          "location": "R15C130",
+          "congestion": 0.944
+        },
+        {
+          "location": "R20C132",
+          "congestion": 0.944
+        },
+        {
+          "location": "R50C39",
+          "congestion": 0.944
+        },
+        {
+          "location": "R46C50",
+          "congestion": 0.944
+        },
+        {
+          "location": "R18C121",
+          "congestion": 0.931
+        },
+        {
+          "location": "R22C130",
+          "congestion": 0.931
+        },
+        {
+          "location": "R23C125",
+          "congestion": 0.917
+        },
+        {
+          "location": "R41C46",
+          "congestion": 0.917
+        },
+        {
+          "location": "R42C42",
+          "congestion": 0.917
+        }
+      ],
+      "meaning": "The successful baseline already contains a grid congestion table, with worst grid 0.958; congestion fraction is not an unrouted-net fraction. This report cannot identify the failed B0B2 networks."
+    },
+    "stop_condition": "No new command, SDC/TCL edit, independent DB loader, GUI, PNR rerun or parameter scan is proposed or executed by these notes."
+  },
+  "replay_inputs_sha256": "85456cfc93e0ba79c40f54b388e763e474e9800210feaa8ed87a9970a13d26e5",
+  "analysis_sha256": "d49d486e061866f98df26af6e9fb0a865296fe0027d6f6205efc76022c1ca233",
+  "replay_physical_inputs_unchanged": true,
+  "hardware_accessed": false,
+  "new_tool_process_started": false,
+  "new_build_started": false,
+  "shared_helper_modified": false,
+  "sdc_or_tcl_modified": false,
+  "parameter_scan_performed": false
+}

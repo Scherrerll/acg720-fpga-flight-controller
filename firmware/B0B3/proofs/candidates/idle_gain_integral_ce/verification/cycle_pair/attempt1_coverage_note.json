@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "failure_kind": "coverage only; zero public mismatch across both actual baselines",
+  "cycles": 956519,
+  "XY": 79,
+  "Z": 79,
+  "saved_freeze": 528118,
+  "saved_captures": 87,
+  "saved_rollbacks": 2,
+  "nonzero_partial_I_rollbacks": 0,
+  "cause": "Existing mode drop occurred before a changed live I value was read by rollback, or the prior integral was already at a rail.",
+  "remedy": "Retain original956519 stimulus and assertions; append directed known nonzero I cases that cancel at state65 and state17. No RTL change or assertion weakening."
+}

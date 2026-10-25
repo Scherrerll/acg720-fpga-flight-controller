@@ -1,0 +1,18 @@
+{
+  "schema": "b0b0.physical-replay-archive.v1",
+  "purpose": "baseline comparison only",
+  "b0b2_acceptance_created": false,
+  "new_bitstream_hardware_qualified": false,
+  "flash_changed": false,
+  "artifact_sha256": {
+    "inputs.json": "85456cfc93e0ba79c40f54b388e763e474e9800210feaa8ed87a9970a13d26e5",
+    "replay_runner.py": "decc0ab258d8499cc122f75c45f54137a89df4cc625ca2426fde980288d9824a",
+    "replay_complete.json": "917b1061b738c7e9565bed991e6e591ad66096d15a3465883303ae5234feaf1e",
+    "analysis.json": "d49d486e061866f98df26af6e9fb0a865296fe0027d6f6205efc76022c1ca233",
+    "console.log": "fbde1cdfadb4e6317674692a060cd85fb4b24d63c5ce1f3046e886d4b605f77b",
+    "physical_report.txt": "c4908c19da89bda9b0066df22f6e78f29a6a1a0400684c0ed7816238b9fae2ce",
+    "timing_report.tr": "e3a38096e5a38cef9ddec4acf7286b77ac81ed955de939b89fe57ccf25487f9b",
+    "timing_paths.txt": "56b28fdcda64c1a4bdb811fb042efd28be97c436548148134fda4821b987bd00",
+    "cmd.do": "6c330c89f9b88f75d95a61afebca1f81798df5a4f044a89ec33c5c5dc4fcc345"
+  }
+}

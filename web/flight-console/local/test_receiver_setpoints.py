@@ -28,7 +28,7 @@ class ReceiverWrapperTests(unittest.TestCase):
                     self.assertIn('yaw_rate_sp_dps', json.load(response)['fields'])
                 meta = json.loads((Path(directory) / started['session'] / 'meta.json').read_text(encoding='utf-8'))
                 provenance = meta['reported_attitude_tracking']
-                self.assertEqual(provenance['firmware'], 'B0B0')
+                self.assertEqual(provenance['firmware_builds'], ['B0B0', 'B0B1', 'B0B2'])
                 self.assertIn('attitude_tracking.py', provenance['software_sha256'])
                 request = urllib.request.Request(base + '/api/service/stop', data=b'{}', headers={'Content-Type': 'application/json'})
                 with urllib.request.urlopen(request, timeout=5):

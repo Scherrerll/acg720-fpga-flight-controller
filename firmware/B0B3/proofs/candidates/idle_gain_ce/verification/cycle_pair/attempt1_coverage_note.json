@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "failure_kind": "testbench coverage threshold, not a controller mismatch",
+  "public_cycle_mismatches": 0,
+  "xy_publications": 79,
+  "z_publications": 79,
+  "freeze_checks": 528118,
+  "joint_ready_priority_checks": 11,
+  "required_joint_ready_priority_checks": 60,
+  "cause": "Simultaneous source callback strobes did not imply simultaneous captured stick readiness; the real XY and Z stick helpers finished at different times.",
+  "remedy": "Improve legal stimulus: wait until both stick helpers are idle and pause sample strobes around callback admission. The priority threshold and all active-work assertions remain unchanged.",
+  "rtl_changes_after_failure": false
+}

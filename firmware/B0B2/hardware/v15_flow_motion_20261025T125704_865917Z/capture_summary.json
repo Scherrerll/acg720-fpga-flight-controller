@@ -1,0 +1,43 @@
+{
+  "capture_completed": true,
+  "physical_mapping_qualified": false,
+  "rotation_qualified": false,
+  "scope": "Manual sequence recorded for analysis; this capture alone does not qualify calibration, gyro compensation or flight",
+  "folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flow_motion_20261025T125704_865917Z",
+  "duration_seconds": 106.97827769999276,
+  "distinct_frames": 491,
+  "counter_delta": {
+    "accepted_count": 106968,
+    "rejected_count": 0,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "communication_delta": {
+    "frames": 525,
+    "missing_frames": 9,
+    "checksum_errors": 0,
+    "discarded_bytes": 641
+  },
+  "failures": [],
+  "operator_report": {
+    "utc": "2026-10-25T12:58:46.5754624+00:00",
+    "movement_sequence_completed": false,
+    "mapping_passed": false,
+    "rotation_passed": false,
+    "operator_report": "Operator cannot perform the prescribed sequence precisely and asked to reuse earlier tests; root stopped this capture without qualifying it",
+    "source": "Current chat user reply"
+  },
+  "final_pwm_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "samples_sha256": "31db4eb878a30c9af8a1b39fb11f53e3e59eb5e5deb952e946b230654a1e9c50",
+  "observer_sha256": "3a55ad26f1fd64e0c55e6f66751fc5296aaa34a40b20c20c1767763d5cf2bc52",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

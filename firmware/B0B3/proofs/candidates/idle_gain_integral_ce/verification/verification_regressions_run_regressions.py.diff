@@ -1,0 +1,17 @@
+--- C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_ce\verification\regressions\run_regressions.py
++++ C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_integral_ce\verification\regressions\run_regressions.py
+@@ -1,12 +1,12 @@
+ """Isolate the checked-in numerical/top13/contention suites; no RTL edits."""
+ from pathlib import Path
+ import ast,datetime,difflib,hashlib,json,os,subprocess,sys
+-D=Path(__file__).resolve().parent;R=D.parents[3];C=R/'candidates/idle_gain_ce';S=C/'source'
++D=Path(__file__).resolve().parent;R=D.parents[3];C=R/'candidates/idle_gain_integral_ce';S=C/'source'
+ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+ def source_tree(root):return {p.relative_to(root).as_posix():sha(p)for p in root.rglob('*')if p.is_file()and 'impl'not in p.parts and p.suffix not in('.log','.bak','.user')}
+ def all_files(root):return {p.relative_to(root).as_posix():sha(p)for p in root.rglob('*')if p.is_file()}
+ assert not(D/'regression_input.json').exists(),'One frozen regression run per directory'
+-source=source_tree(S);assert len(source)==55 and source['position/mtf_xyz_hold_control.v']=='9bb8eae57f9491d8e187ac4d5e5868666714920cb91f17e6423daae95618bad9'
++source=source_tree(S);assert len(source)==55 and source['position/mtf_xyz_hold_control.v']=='b7eef6d33789523cd1e8ff81b05e75db91ab3c67bf76e03483dec356055fa1a6'
+ baseline=all_files(R/'test_baseline');originals={};suite_rows=[]
+ specs=[('numerical',R/'verify_control.py'),('top_safety',R/'verify_top_safety.py'),('contention',R/'review/verify_contention.py')]
+ original_control_init="R=Path(__file__).resolve().parent;O=R/'verification';T=O/'tmp';B=R.parent/'.tools/iverilog/app/bin'"

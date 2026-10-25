@@ -1,0 +1,2 @@
+PASS sik_wire 644 sampled bytes
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\firmware\B0B2\tests\sik_wire_tb.v:43: $finish called at 55948491000 (1ps)

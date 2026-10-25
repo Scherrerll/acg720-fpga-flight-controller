@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-10-25T02:56:53.027407+00:00",
+  "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\physical_donor_live_globals",
+  "donor_sha256": {
+    "impl\\gwsynthesis\\acg720_ano_port.vg": "8635180bab060547770ff57e9c9302c2bb7a057b3d794241c7350adf3da30602",
+    "acg720_ano_port.gprj": "198f6c141bae6b6c297076a05bab2326cf32b8696c589b24daf0d08218feaa76",
+    "acg720_ano_port.cst": "d7ee3fdf8d5109b1d1e0f759b883ea99bc0d49eacf0eaaf90832382d9dd36398",
+    "acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e"
+  },
+  "files_sha256": {
+    "acg720_ano_port.cst": "d7ee3fdf8d5109b1d1e0f759b883ea99bc0d49eacf0eaaf90832382d9dd36398",
+    "acg720_ano_port.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+    "acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e",
+    "build.tcl": "2bff4c46be09f6d8ff8ea4498ddc5700b59845d827ac5e4b07b49396d615cea0",
+    "impl\\gwsynthesis\\acg720_ano_port.vg": "8635180bab060547770ff57e9c9302c2bb7a057b3d794241c7350adf3da30602"
+  },
+  "options": {
+    "top_module": "acg720_ano_port",
+    "output_base_name": "acg720_ano_port",
+    "user_code": "0000B0B2",
+    "place_option": 4,
+    "route_option": 0,
+    "timing_driven": 1,
+    "replicate_resources": 0,
+    "map_option": 2,
+    "global_freq": 50,
+    "max_fanout": 200,
+    "opt_goal": "area",
+    "route_maxfan": 23
+  },
+  "pins": {
+    "clk50": "Y18",
+    "imu_sck": "E17",
+    "imu_mosi": "C20",
+    "imu_miso": "D19",
+    "imu_cs_n": "E18",
+    "rc_ppm_in": "B17",
+    "uart_tx": "M15",
+    "led2": "L21",
+    "led3": "K21",
+    "motor1_pwm": "D17",
+    "motor2_pwm": "C17",
+    "motor3_pwm": "E16",
+    "motor4_pwm": "D16",
+    "range_rx": "C14",
+    "range_tx": "C15",
+    "imu_gyro_cs_n": "F20",
+    "radio_tx": "B15"
+  },
+  "amendment": "",
+  "runner_sha256": "c2db5e7dc523b40eeeb47d9068018e70129553b9c80597c2a7a72b8a8e0dcdcb",
+  "netlist_sha256": "8635180bab060547770ff57e9c9302c2bb7a057b3d794241c7350adf3da30602",
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "release_eligible": false
+}

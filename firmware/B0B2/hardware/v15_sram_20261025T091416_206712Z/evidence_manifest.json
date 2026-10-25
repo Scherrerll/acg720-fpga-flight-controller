@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "utc": "2026-10-25T09:17:50.769580+00:00",
+  "installed_sram": true,
+  "flash_written": false,
+  "flight_ready": false,
+  "artifact_sha256": {
+    "cables_before.txt": "e7aa87730824b49b53b7daa6bda621dda4003895e4a8da13ca48db0aa5ee5328",
+    "cables_prewrite.txt": "9bcf6724c46dafbe5665732f396ce1b024b721a5502bdeed73d3d7f112065561",
+    "identity_after.txt": "7bee5aeadc15ad2f3a2a1b1a935065a9c8706be885d6a4a6386b43452740bfc2",
+    "identity_before.txt": "246fc74cdf4181d7e2bfb4c0c7e573d0d0ba9d48429139764e05d50d61b3dfff",
+    "program_sram.txt": "667c08e81453e481644ff9e9fd021c1412739963b1b40e752682d1d6575422ca",
+    "README.md": "d4e751f64f29c07b8b1a0ca41be04578a16c4b8753d2673385a165ce22ea110f",
+    "report.json": "bf089617ed03b61ab0f71f5dad563bc87e0407f304ed9f0f9583bdb6e0f69ab9",
+    "telemetry_after.json": "962dede67480ec7fc5a6b793bdd214fa7a2fdb5a58caea8484df257dc11486c1",
+    "telemetry_before.json": "0a267bce80635f397daf362a6065c6def51644658acdeed60d4113313858146a",
+    "telemetry_prewrite.json": "0adde442755e52dca1a2701153a3ef53613b2f25f3961eb7f53a551a5a54ba34",
+    "stationary_60s/snapshots.jsonl": "e2135424ff8eacb48c32b7ba2b9cce6e7daa117d387e7d2babf81aa20aead2f6",
+    "stationary_60s/summary.json": "0dc2a7e06c4ea7a63c6c88090f4d640ad6dc3f0e90066d498c0f8649ad8f9633"
+  }
+}

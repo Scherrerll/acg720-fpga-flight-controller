@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "physical_cold_boot_verified": true,
+  "operator_report": {
+    "utc": "2026-10-25T13:30:30.8914941+00:00",
+    "all_power_removed_and_battery_only": true,
+    "props_removed": true,
+    "swa_swc_low_throttle_minimum": true,
+    "operator_report": "User confirmed all power removed and only battery reconnected, board USB/programmer disconnected",
+    "source": "Current chat human answer"
+  },
+  "telemetry_gap_seen": true,
+  "boot_counters_reset": true,
+  "before": {
+    "uptime_ms": 34199,
+    "raw_count": 33602,
+    "pose_count": 31548
+  },
+  "final_boot_counters": [
+    63000,
+    62448,
+    62448,
+    60393
+  ],
+  "stopped_span_seconds": 60.206313400005456,
+  "distinct_stopped_frames": 253,
+  "counter_delta": {
+    "accepted_count": 60295,
+    "rejected_count": 0,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "failures": [],
+  "installation_report_sha256": "de5b8de2741ec7dafd0672624c5e370338735508a56e34ce3e3f4c178bed880e",
+  "snapshots_sha256": "034b23633b9b5cca8b6e802642d9609b5b76e0a4c3dfc661d8872aeae6231603",
+  "observer_sha256": "7dd8d4b0a813657037c7874b24daadbf599a31522ede502b2c6a7270b08fc99f",
+  "image_sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false,
+  "scope": "Battery-only physical boot and stopped telemetry health only; no new loaded-flight/position accuracy acceptance"
+}

@@ -1,0 +1,1346 @@
+{
+  "files": {
+    "baseline_hold": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_syn\\fixture\\position\\mtf_xyz_hold_control.v",
+      "sha256": "78952264bf5a507f2f9e080e53fe0dd41b940cf13c699a134fb5aa12be539258"
+    },
+    "current_hold": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\response_compact\\source\\position\\mtf_xyz_hold_control.v",
+      "sha256": "d79d31b434045b2da0711dd54d801646959b4c17d51b1d3fa8cd10eb284f872e"
+    },
+    "live_hold": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\source\\position\\mtf_xyz_hold_control.v",
+      "sha256": "d79d31b434045b2da0711dd54d801646959b4c17d51b1d3fa8cd10eb284f872e"
+    },
+    "current_bank": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\response_compact\\source\\xy_pi_parameters.v",
+      "sha256": "c3ab65d07c7b664268192a5b0de3acfb510efdac504a7a82cfdfa89e83d1b187"
+    },
+    "baseline_VG": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_syn\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+      "sha256": "15d9f51da52cff0092dcbafd22918b4e97a5ea3e96c223e1a94315b48ceeea2b"
+    },
+    "current_VG": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\response_compact\\source\\impl\\gwsynthesis\\acg720_ano_port.vg",
+      "sha256": "7d815709a3699e3805efadf4a287e388329d5a75ca2f63ef40ea05bbf349b3e9"
+    },
+    "baseline_XML": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_syn\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn_rsc.xml",
+      "sha256": "1a3c10adee406bdefd84d9300be77fa8e9fea919312b9939b5722210da5002a1"
+    },
+    "current_XML": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\response_compact\\source\\impl\\gwsynthesis\\acg720_ano_port_syn_rsc.xml",
+      "sha256": "8e9153e50e84f449f7a3df4b660640cbfb1f866a3addfbc597ce65f6166add1c"
+    }
+  },
+  "controller_FF": {
+    "baseline": 2156,
+    "runtime": 2314
+  },
+  "changed_groups": {
+    "publish_roll": {
+      "baseline": 17,
+      "runtime": 21,
+      "delta": 4
+    },
+    "ux_store": {
+      "baseline": 32,
+      "runtime": 36,
+      "delta": 4
+    },
+    "work_i": {
+      "baseline": 0,
+      "runtime": 16,
+      "delta": 16
+    },
+    "work_p": {
+      "baseline": 0,
+      "runtime": 16,
+      "delta": 16
+    },
+    "publish_pitch": {
+      "baseline": 17,
+      "runtime": 21,
+      "delta": 4
+    },
+    "ix_store": {
+      "baseline": 0,
+      "runtime": 27,
+      "delta": 27
+    },
+    "saved_iy": {
+      "baseline": 0,
+      "runtime": 27,
+      "delta": 27
+    },
+    "return_state": {
+      "baseline": 6,
+      "runtime": 7,
+      "delta": 1
+    },
+    "saved_ix": {
+      "baseline": 0,
+      "runtime": 27,
+      "delta": 27
+    },
+    "nav_xy_payload_roll_14": {
+      "baseline": 0,
+      "runtime": 1,
+      "delta": 1
+    },
+    "uy_store": {
+      "baseline": 32,
+      "runtime": 36,
+      "delta": 4
+    },
+    "iy_store": {
+      "baseline": 0,
+      "runtime": 27,
+      "delta": 27
+    }
+  },
+  "baseline_SR": [
+    {
+      "net": "GND",
+      "SR_pins": 1328,
+      "all_input_pins": 1673,
+      "pin_counts": {
+        "I0": 20,
+        "RESET": 1320,
+        "SET": 8,
+        "CLEAR": 6,
+        "PSEL": 7,
+        "PADDSUB": 7,
+        "ACCSEL": 5,
+        "ASEL": 5,
+        "CSEL": 5,
+        "CASISEL": 5,
+        "I3": 189,
+        "I1": 76,
+        "CIN": 20
+      },
+      "SR_Q_groups": {
+        "pending_h": 32,
+        "pending_vz": 31,
+        "pending_az": 16,
+        "pending_z_speed": 29,
+        "pvx": 31,
+        "pvy": 31,
+        "pax": 16,
+        "pay": 16,
+        "pending_nx": 18,
+        "pending_ny": 18,
+        "base": 13,
+        "sample_vx_store": 31,
+        "held_h": 32,
+        "speed_z_tick_store": 29,
+        "inner_alt_speed": 32,
+        "m_a": 50,
+        "m_b_225": 1,
+        "m_b_218": 1,
+        "m_b_217": 1,
+        "m_b_216": 1,
+        "m_b_215": 1,
+        "m_b_214": 1,
+        "m_b_213": 1,
+        "m_b_212": 1,
+        "m_b_211": 1,
+        "m_b_210": 1,
+        "m_b_209": 1,
+        "m_b_208": 1,
+        "m_b_207": 1,
+        "m_b_206": 1,
+        "m_b_205": 1,
+        "m_b_204": 1,
+        "m_b_203": 1,
+        "m_b_202": 1,
+        "m_b_201": 1,
+        "m_b_200": 1,
+        "m_b_199": 1,
+        "m_b_198": 1,
+        "m_b_197": 1,
+        "m_b_196": 1,
+        "m_b_195": 1,
+        "m_b_194": 1,
+        "m_b_193": 1,
+        "m_b_192": 1,
+        "pending_den": 27,
+        "return_state": 6,
+        "saved_afx": 33,
+        "saved_afy": 33,
+        "sample_vy_store": 31,
+        "world_ax_store": 16,
+        "world_ay_store": 16,
+        "sx_store": 29,
+        "sy_store": 29,
+        "alpha_store": 17,
+        "ex_store": 32,
+        "ey_store": 32,
+        "ux_store": 32,
+        "uy_store": 32,
+        "publish_roll": 17,
+        "publish_pitch": 17,
+        "rot_tmp_store": 33,
+        "fixx_store": 32,
+        "fixy_store": 32,
+        "hx_store": 33,
+        "hy_store": 33,
+        "exz_store": 31,
+        "target_sum_q": 49,
+        "target_lo_store": 28,
+        "target_hi_store": 9,
+        "target_lt_lo_q": 4,
+        "target_eq_lo_q": 1,
+        "target_gt_hi_q": 3,
+        "target_eq_hi_q": 2,
+        "publish_height": 16,
+        "publish_collective": 12,
+        "publish_delta": 18,
+        "d_a": 64,
+        "d_b_223": 1,
+        "d_b_217": 1,
+        "d_b_216": 1,
+        "d_b_215": 1,
+        "d_b_214": 1,
+        "d_b_213": 1,
+        "d_b_212": 1,
+        "d_b_211": 1,
+        "d_b_210": 1,
+        "d_b_209": 1,
+        "d_b_208": 1,
+        "d_b_207": 1,
+        "d_b_206": 1,
+        "d_b_205": 1,
+        "d_b_204": 1,
+        "d_b_203": 1,
+        "d_b_202": 1,
+        "d_b_201": 1,
+        "d_b_200": 1,
+        "d_b_199": 1,
+        "d_b_198": 1,
+        "d_b_197": 1,
+        "d_b_196": 1,
+        "d_b_195": 1,
+        "d_b_194": 1,
+        "d_b_193": 1,
+        "value_store": 48,
+        "d_b_192": 1,
+        "height_stick_captured": 1
+      },
+      "driver": []
+    },
+    {
+      "net": "n52323_6",
+      "SR_pins": 400,
+      "all_input_pins": 403,
+      "pin_counts": {
+        "I0": 3,
+        "RESET": 394,
+        "SET": 6
+      },
+      "SR_Q_groups": {
+        "state": 7,
+        "tracking": 1,
+        "height_due": 1,
+        "position_due": 1,
+        "work_xy": 1,
+        "iz_store": 33,
+        "iz_lower_q": 34,
+        "iz_upper_q": 33,
+        "afx_store": 33,
+        "afy_store": 33,
+        "afz_store": 32,
+        "vsz_store": 28,
+        "nav_xy_payload_roll_15": 1,
+        "nav_xy_payload_roll_11": 1,
+        "nav_xy_payload_roll_10": 1,
+        "nav_xy_payload_roll_9": 1,
+        "nav_xy_payload_roll_8": 1,
+        "nav_xy_payload_roll_7": 1,
+        "nav_xy_payload_roll_6": 1,
+        "nav_xy_payload_roll_5": 1,
+        "nav_xy_payload_roll_4": 1,
+        "nav_xy_payload_roll_3": 1,
+        "nav_xy_payload_roll_2": 1,
+        "nav_xy_payload_roll_1": 1,
+        "nav_xy_payload_roll_0": 1,
+        "nav_xy_payload_pitch_15": 1,
+        "nav_xy_payload_pitch_11": 1,
+        "nav_xy_payload_pitch_10": 1,
+        "nav_xy_payload_pitch_9": 1,
+        "nav_xy_payload_pitch_8": 1,
+        "nav_xy_payload_pitch_7": 1,
+        "nav_xy_payload_pitch_6": 1,
+        "nav_xy_payload_pitch_5": 1,
+        "nav_xy_payload_pitch_4": 1,
+        "nav_xy_payload_pitch_3": 1,
+        "nav_xy_payload_pitch_2": 1,
+        "nav_xy_payload_pitch_1": 1,
+        "nav_xy_payload_pitch_0": 1,
+        "controller_delta_15": 1,
+        "controller_delta_9": 1,
+        "controller_delta_8": 1,
+        "controller_delta_7": 1,
+        "controller_delta_6": 1,
+        "controller_delta_5": 1,
+        "controller_delta_4": 1,
+        "controller_delta_3": 1,
+        "controller_delta_2": 1,
+        "controller_delta_1": 1,
+        "controller_delta_0": 1,
+        "controller_collective_15": 1,
+        "controller_collective_11": 1,
+        "controller_collective_10": 1,
+        "controller_collective_9": 1,
+        "controller_collective_8": 1,
+        "controller_collective_7": 1,
+        "controller_collective_6": 1,
+        "controller_collective_5": 1,
+        "controller_collective_4": 1,
+        "controller_collective_2": 1,
+        "controller_collective_1": 1,
+        "controller_collective_0": 1,
+        "command_seen": 1,
+        "height_command_seen": 1,
+        "height_feedback_old_store": 29,
+        "bias_store": 33,
+        "target_z_q16_store": 31,
+        "controller_target_height_31": 1,
+        "controller_target_height_14": 1,
+        "controller_target_height_13": 1,
+        "controller_target_height_12": 1,
+        "controller_target_height_11": 1,
+        "controller_target_height_10": 1,
+        "controller_target_height_9": 1,
+        "controller_target_height_8": 1,
+        "controller_target_height_7": 1,
+        "controller_target_height_6": 1,
+        "controller_target_height_5": 1,
+        "controller_target_height_4": 1,
+        "controller_target_height_3": 1,
+        "controller_target_height_2": 1,
+        "controller_target_height_1": 1,
+        "controller_target_height_0": 1,
+        "controller_collective_3": 1,
+        "tracking_4": 1,
+        "tracking_5": 1
+      },
+      "driver": [
+        {
+          "cell": "n52323_s2",
+          "type": "LUT4",
+          "pins": {
+            "F": "n52323_6",
+            "I0": "rst_n_ff",
+            "I1": "blocked",
+            "I2": "cancel",
+            "I3": "controller_z_ready_6"
+          },
+          "INIT": "16'hFDFF"
+        }
+      ]
+    },
+    {
+      "net": "n55_5",
+      "SR_pins": 332,
+      "all_input_pins": 332,
+      "pin_counts": {
+        "RESET": 264,
+        "SET": 68
+      },
+      "SR_Q_groups": {
+        "check_collective": 13,
+        "check_ch3": 12,
+        "check_height": 32,
+        "check_vz": 32,
+        "check_az": 16,
+        "check_vx": 31,
+        "check_vy": 31,
+        "check_ax": 32,
+        "check_ay": 32,
+        "check_yaw": 16,
+        "hbounds_q": 1,
+        "xybounds_q": 1,
+        "cancel": 1,
+        "xy_cancel": 1,
+        "fault_reason": 2,
+        "blocked": 1,
+        "controller_reason_10": 1,
+        "controller_reason_9": 1,
+        "controller_reason_7": 1,
+        "controller_reason_6": 1,
+        "controller_reason_2": 1,
+        "controller_reason_1": 1,
+        "controller_reason_0": 1,
+        "controller_z_reason_10": 1,
+        "controller_z_reason_9": 1,
+        "controller_z_reason_7": 1,
+        "controller_z_reason_6": 1,
+        "controller_z_reason_3": 1,
+        "controller_z_reason_1": 1,
+        "controller_z_reason_0": 1,
+        "command_age": 32,
+        "height_command_age": 32
+      },
+      "driver": []
+    },
+    {
+      "net": "n25662_6",
+      "SR_pins": 60,
+      "all_input_pins": 60,
+      "pin_counts": {
+        "RESET": 60
+      },
+      "SR_Q_groups": {
+        "auto_phase": 2,
+        "auto_ms": 16,
+        "alt_speed": 32,
+        "next_auto_speed": 10
+      },
+      "driver": [
+        {
+          "cell": "n25662_s2",
+          "type": "LUT4",
+          "pins": {
+            "F": "n25662_6",
+            "I0": "blocked",
+            "I1": "cancel",
+            "I2": "controller_z_ready_6",
+            "I3": "rst_n_ff"
+          },
+          "INIT": "16'hEF00"
+        }
+      ]
+    },
+    {
+      "net": "n13298_4",
+      "SR_pins": 22,
+      "all_input_pins": 22,
+      "pin_counts": {
+        "RESET": 22
+      },
+      "SR_Q_groups": {
+        "collective_q16_store": 22
+      },
+      "driver": [
+        {
+          "cell": "n13298_s1",
+          "type": "LUT4",
+          "pins": {
+            "F": "n13298_4",
+            "I0": "n13067_2",
+            "I1": "flight_state_flags[0]",
+            "I2": "n13298_5",
+            "I3": "n55695_3"
+          },
+          "INIT": "16'hBF00"
+        }
+      ]
+    },
+    {
+      "net": "n13299_6",
+      "SR_pins": 5,
+      "all_input_pins": 5,
+      "pin_counts": {
+        "RESET": 5
+      },
+      "SR_Q_groups": {
+        "collective_q16_store": 5
+      },
+      "driver": [
+        {
+          "cell": "n13299_s2",
+          "type": "LUT4",
+          "pins": {
+            "F": "n13299_6",
+            "I0": "n13067_2",
+            "I1": "flight_state_flags_0_2",
+            "I2": "n55695_6",
+            "I3": "n54983_6"
+          },
+          "INIT": "16'hB000"
+        }
+      ]
+    },
+    {
+      "net": "n54013_4",
+      "SR_pins": 2,
+      "all_input_pins": 7,
+      "pin_counts": {
+        "I3": 1,
+        "I2": 3,
+        "I1": 1,
+        "RESET": 2
+      },
+      "SR_Q_groups": {
+        "m_request": 1,
+        "trig_start": 1
+      },
+      "driver": [
+        {
+          "cell": "n54013_s1",
+          "type": "LUT3",
+          "pins": {
+            "F": "n54013_4",
+            "I0": "rst_n_ff",
+            "I1": "n22241_8",
+            "I2": "n21168_16"
+          },
+          "INIT": "8'h7F"
+        }
+      ]
+    },
+    {
+      "net": "n30897_4",
+      "SR_pins": 1,
+      "all_input_pins": 1,
+      "pin_counts": {
+        "RESET": 1
+      },
+      "SR_Q_groups": {
+        "d_request": 1
+      },
+      "driver": [
+        {
+          "cell": "n30897_s1",
+          "type": "LUT2",
+          "pins": {
+            "F": "n30897_4",
+            "I0": "n54983_6",
+            "I1": "n30897_8"
+          },
+          "INIT": "4'h7"
+        }
+      ]
+    }
+  ],
+  "runtime_SR": [
+    {
+      "net": "GND",
+      "SR_pins": 1431,
+      "all_input_pins": 1782,
+      "pin_counts": {
+        "I0": 20,
+        "RESET": 1417,
+        "SET": 14,
+        "CLEAR": 6,
+        "PSEL": 7,
+        "PADDSUB": 7,
+        "ACCSEL": 5,
+        "ASEL": 5,
+        "CSEL": 5,
+        "CASISEL": 5,
+        "I3": 189,
+        "I1": 80,
+        "CIN": 22
+      },
+      "SR_Q_groups": {
+        "pending_h": 32,
+        "pending_vz": 31,
+        "pending_az": 16,
+        "pending_z_speed": 29,
+        "pvx": 31,
+        "pvy": 31,
+        "pax": 16,
+        "pay": 16,
+        "pending_nx": 18,
+        "pending_ny": 18,
+        "base": 13,
+        "sample_vx_store": 31,
+        "held_h": 32,
+        "speed_z_tick_store": 29,
+        "inner_alt_speed": 32,
+        "m_a": 50,
+        "m_b_225": 1,
+        "m_b_218": 1,
+        "m_b_217": 1,
+        "m_b_216": 1,
+        "m_b_215": 1,
+        "m_b_214": 1,
+        "m_b_213": 1,
+        "m_b_212": 1,
+        "m_b_211": 1,
+        "m_b_210": 1,
+        "m_b_209": 1,
+        "m_b_208": 1,
+        "m_b_207": 1,
+        "m_b_206": 1,
+        "m_b_205": 1,
+        "m_b_204": 1,
+        "m_b_203": 1,
+        "m_b_202": 1,
+        "m_b_201": 1,
+        "m_b_200": 1,
+        "m_b_199": 1,
+        "m_b_198": 1,
+        "m_b_197": 1,
+        "m_b_196": 1,
+        "m_b_195": 1,
+        "m_b_194": 1,
+        "m_b_193": 1,
+        "m_b_192": 1,
+        "pending_den": 27,
+        "return_state": 7,
+        "work_p": 16,
+        "work_i": 16,
+        "saved_ix": 27,
+        "saved_iy": 27,
+        "saved_afx": 33,
+        "saved_afy": 33,
+        "sample_vy_store": 31,
+        "world_ax_store": 16,
+        "world_ay_store": 16,
+        "sx_store": 29,
+        "sy_store": 29,
+        "alpha_store": 17,
+        "ex_store": 32,
+        "ey_store": 32,
+        "ux_store": 36,
+        "uy_store": 36,
+        "publish_roll": 21,
+        "publish_pitch": 21,
+        "rot_tmp_store": 33,
+        "fixx_store": 32,
+        "fixy_store": 32,
+        "hx_store": 33,
+        "hy_store": 33,
+        "exz_store": 31,
+        "target_sum_q": 49,
+        "target_lo_store": 28,
+        "target_hi_store": 9,
+        "target_lt_lo_q": 4,
+        "target_eq_lo_q": 1,
+        "target_gt_hi_q": 3,
+        "target_eq_hi_q": 2,
+        "publish_height": 16,
+        "publish_collective": 12,
+        "publish_delta": 18,
+        "d_a": 64,
+        "d_b_223": 1,
+        "d_b_217": 1,
+        "d_b_216": 1,
+        "d_b_215": 1,
+        "d_b_214": 1,
+        "d_b_213": 1,
+        "d_b_212": 1,
+        "d_b_211": 1,
+        "d_b_210": 1,
+        "d_b_209": 1,
+        "d_b_208": 1,
+        "d_b_207": 1,
+        "d_b_206": 1,
+        "d_b_205": 1,
+        "d_b_204": 1,
+        "d_b_203": 1,
+        "d_b_202": 1,
+        "d_b_201": 1,
+        "d_b_200": 1,
+        "d_b_199": 1,
+        "d_b_198": 1,
+        "d_b_197": 1,
+        "d_b_196": 1,
+        "d_b_195": 1,
+        "d_b_194": 1,
+        "d_b_193": 1,
+        "value_store": 48,
+        "d_b_192": 1,
+        "height_stick_captured": 1
+      },
+      "driver": []
+    },
+    {
+      "net": "n53888_6",
+      "SR_pins": 455,
+      "all_input_pins": 458,
+      "pin_counts": {
+        "I0": 3,
+        "RESET": 449,
+        "SET": 6
+      },
+      "SR_Q_groups": {
+        "state": 7,
+        "tracking": 1,
+        "height_due": 1,
+        "position_due": 1,
+        "work_xy": 1,
+        "ix_store": 27,
+        "iy_store": 27,
+        "iz_store": 33,
+        "iz_lower_q": 34,
+        "iz_upper_q": 33,
+        "afx_store": 33,
+        "afy_store": 33,
+        "afz_store": 32,
+        "vsz_store": 28,
+        "nav_xy_payload_roll_15": 1,
+        "nav_xy_payload_roll_14": 1,
+        "nav_xy_payload_roll_11": 1,
+        "nav_xy_payload_roll_10": 1,
+        "nav_xy_payload_roll_9": 1,
+        "nav_xy_payload_roll_8": 1,
+        "nav_xy_payload_roll_7": 1,
+        "nav_xy_payload_roll_6": 1,
+        "nav_xy_payload_roll_5": 1,
+        "nav_xy_payload_roll_4": 1,
+        "nav_xy_payload_roll_3": 1,
+        "nav_xy_payload_roll_2": 1,
+        "nav_xy_payload_roll_1": 1,
+        "nav_xy_payload_roll_0": 1,
+        "nav_xy_payload_pitch_15": 1,
+        "nav_xy_payload_pitch_11": 1,
+        "nav_xy_payload_pitch_10": 1,
+        "nav_xy_payload_pitch_9": 1,
+        "nav_xy_payload_pitch_8": 1,
+        "nav_xy_payload_pitch_7": 1,
+        "nav_xy_payload_pitch_6": 1,
+        "nav_xy_payload_pitch_5": 1,
+        "nav_xy_payload_pitch_4": 1,
+        "nav_xy_payload_pitch_3": 1,
+        "nav_xy_payload_pitch_2": 1,
+        "nav_xy_payload_pitch_1": 1,
+        "nav_xy_payload_pitch_0": 1,
+        "controller_delta_15": 1,
+        "controller_delta_9": 1,
+        "controller_delta_8": 1,
+        "controller_delta_7": 1,
+        "controller_delta_6": 1,
+        "controller_delta_5": 1,
+        "controller_delta_4": 1,
+        "controller_delta_3": 1,
+        "controller_delta_2": 1,
+        "controller_delta_1": 1,
+        "controller_delta_0": 1,
+        "controller_collective_15": 1,
+        "controller_collective_11": 1,
+        "controller_collective_10": 1,
+        "controller_collective_9": 1,
+        "controller_collective_8": 1,
+        "controller_collective_7": 1,
+        "controller_collective_6": 1,
+        "controller_collective_5": 1,
+        "controller_collective_4": 1,
+        "controller_collective_2": 1,
+        "controller_collective_1": 1,
+        "controller_collective_0": 1,
+        "command_seen": 1,
+        "height_command_seen": 1,
+        "height_feedback_old_store": 29,
+        "bias_store": 33,
+        "target_z_q16_store": 31,
+        "controller_target_height_31": 1,
+        "controller_target_height_14": 1,
+        "controller_target_height_13": 1,
+        "controller_target_height_12": 1,
+        "controller_target_height_11": 1,
+        "controller_target_height_10": 1,
+        "controller_target_height_9": 1,
+        "controller_target_height_8": 1,
+        "controller_target_height_7": 1,
+        "controller_target_height_6": 1,
+        "controller_target_height_5": 1,
+        "controller_target_height_4": 1,
+        "controller_target_height_3": 1,
+        "controller_target_height_2": 1,
+        "controller_target_height_1": 1,
+        "controller_target_height_0": 1,
+        "controller_collective_3": 1,
+        "tracking_4": 1,
+        "tracking_5": 1
+      },
+      "driver": [
+        {
+          "cell": "n53888_s2",
+          "type": "LUT4",
+          "pins": {
+            "F": "n53888_6",
+            "I0": "rst_n_ff",
+            "I1": "blocked",
+            "I2": "cancel",
+            "I3": "controller_z_ready_6"
+          },
+          "INIT": "16'hFDFF"
+        }
+      ]
+    },
+    {
+      "net": "n322_5",
+      "SR_pins": 332,
+      "all_input_pins": 332,
+      "pin_counts": {
+        "RESET": 264,
+        "SET": 68
+      },
+      "SR_Q_groups": {
+        "check_collective": 13,
+        "check_ch3": 12,
+        "check_height": 32,
+        "check_vz": 32,
+        "check_az": 16,
+        "check_vx": 31,
+        "check_vy": 31,
+        "check_ax": 32,
+        "check_ay": 32,
+        "check_yaw": 16,
+        "hbounds_q": 1,
+        "xybounds_q": 1,
+        "cancel": 1,
+        "xy_cancel": 1,
+        "fault_reason": 2,
+        "blocked": 1,
+        "controller_reason_10": 1,
+        "controller_reason_9": 1,
+        "controller_reason_7": 1,
+        "controller_reason_6": 1,
+        "controller_reason_2": 1,
+        "controller_reason_1": 1,
+        "controller_reason_0": 1,
+        "controller_z_reason_10": 1,
+        "controller_z_reason_9": 1,
+        "controller_z_reason_7": 1,
+        "controller_z_reason_6": 1,
+        "controller_z_reason_3": 1,
+        "controller_z_reason_1": 1,
+        "controller_z_reason_0": 1,
+        "command_age": 32,
+        "height_command_age": 32
+      },
+      "driver": []
+    },
+    {
+      "net": "n26627_6",
+      "SR_pins": 60,
+      "all_input_pins": 60,
+      "pin_counts": {
+        "RESET": 60
+      },
+      "SR_Q_groups": {
+        "auto_phase": 2,
+        "auto_ms": 16,
+        "alt_speed": 32,
+        "next_auto_speed": 10
+      },
+      "driver": [
+        {
+          "cell": "n26627_s2",
+          "type": "LUT4",
+          "pins": {
+            "F": "n26627_6",
+            "I0": "blocked",
+            "I1": "cancel",
+            "I2": "controller_z_ready_6",
+            "I3": "rst_n_ff"
+          },
+          "INIT": "16'hEF00"
+        }
+      ]
+    },
+    {
+      "net": "n14016_4",
+      "SR_pins": 22,
+      "all_input_pins": 22,
+      "pin_counts": {
+        "RESET": 22
+      },
+      "SR_Q_groups": {
+        "collective_q16_store": 22
+      },
+      "driver": [
+        {
+          "cell": "n14016_s1",
+          "type": "LUT4",
+          "pins": {
+            "F": "n14016_4",
+            "I0": "n13785_2",
+            "I1": "flight_state_flags[0]",
+            "I2": "n14016_5",
+            "I3": "n57332_3"
+          },
+          "INIT": "16'hBF00"
+        }
+      ]
+    },
+    {
+      "net": "n14017_6",
+      "SR_pins": 5,
+      "all_input_pins": 5,
+      "pin_counts": {
+        "RESET": 5
+      },
+      "SR_Q_groups": {
+        "collective_q16_store": 5
+      },
+      "driver": [
+        {
+          "cell": "n14017_s2",
+          "type": "LUT4",
+          "pins": {
+            "F": "n14017_6",
+            "I0": "n13785_2",
+            "I1": "flight_state_flags_0_2",
+            "I2": "n57332_6",
+            "I3": "n56612_6"
+          },
+          "INIT": "16'hB000"
+        }
+      ]
+    },
+    {
+      "net": "n55578_4",
+      "SR_pins": 2,
+      "all_input_pins": 8,
+      "pin_counts": {
+        "I3": 1,
+        "I2": 4,
+        "I0": 1,
+        "RESET": 2
+      },
+      "SR_Q_groups": {
+        "m_request": 1,
+        "trig_start": 1
+      },
+      "driver": [
+        {
+          "cell": "n55578_s1",
+          "type": "LUT3",
+          "pins": {
+            "F": "n55578_4",
+            "I0": "rst_n_ff",
+            "I1": "n23166_8",
+            "I2": "n22093_17"
+          },
+          "INIT": "8'h7F"
+        }
+      ]
+    },
+    {
+      "net": "n31942_4",
+      "SR_pins": 1,
+      "all_input_pins": 1,
+      "pin_counts": {
+        "RESET": 1
+      },
+      "SR_Q_groups": {
+        "d_request": 1
+      },
+      "driver": [
+        {
+          "cell": "n31942_s1",
+          "type": "LUT2",
+          "pins": {
+            "F": "n31942_4",
+            "I0": "n56612_6",
+            "I1": "n31942_8"
+          },
+          "INIT": "4'h7"
+        }
+      ]
+    }
+  ],
+  "selected_current": {
+    "ix_store": {
+      "mapped_FF": 27,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "FF_types": {
+        "DFFRE": 27
+      },
+      "SR_pin_nets": {
+        "RESET n53888_6": 27
+      },
+      "CE_nets": {
+        "ix_store_26_17": 27
+      },
+      "CE_total_direct_pins": {
+        "ix_store_26_17": 27
+      },
+      "Q_logical_pin_loads": {
+        "ix_store[26]": 24,
+        "ix_store[25]": 2,
+        "ix_store[24]": 2,
+        "ix_store[23]": 2,
+        "ix_store[22]": 2,
+        "ix_store[21]": 2,
+        "ix_store[20]": 2,
+        "ix_store[19]": 2,
+        "ix_store[18]": 2,
+        "ix_store[17]": 2,
+        "ix_store[16]": 2,
+        "ix_store[15]": 2,
+        "ix_store[14]": 2,
+        "ix_store[13]": 2,
+        "ix_store[12]": 2,
+        "ix_store[11]": 2,
+        "ix_store[10]": 2,
+        "ix_store[9]": 2,
+        "ix_store[8]": 2,
+        "ix_store[7]": 2,
+        "ix_store[6]": 2,
+        "ix_store[5]": 2,
+        "ix_store[4]": 2,
+        "ix_store[3]": 2,
+        "ix_store[2]": 2,
+        "ix_store[1]": 2,
+        "ix_store[0]": 2
+      },
+      "high14_15_cells": [
+        {
+          "cell": "ix_store_15_s0",
+          "type": "DFFRE",
+          "Q": "ix_store[15]",
+          "D": "n18729_3",
+          "CLK": "clk50_d",
+          "RESET": "n53888_6",
+          "CE": "ix_store_26_17"
+        },
+        {
+          "cell": "ix_store_14_s0",
+          "type": "DFFRE",
+          "Q": "ix_store[14]",
+          "D": "n18730_3",
+          "CLK": "clk50_d",
+          "RESET": "n53888_6",
+          "CE": "ix_store_26_17"
+        }
+      ]
+    },
+    "saved_ix": {
+      "mapped_FF": 27,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "FF_types": {
+        "DFFRE": 27
+      },
+      "SR_pin_nets": {
+        "RESET GND": 27
+      },
+      "CE_nets": {
+        "n55704_3": 27
+      },
+      "CE_total_direct_pins": {
+        "n55704_3": 215
+      },
+      "Q_logical_pin_loads": {
+        "saved_ix[26]": 1,
+        "saved_ix[25]": 1,
+        "saved_ix[24]": 1,
+        "saved_ix[23]": 1,
+        "saved_ix[22]": 1,
+        "saved_ix[21]": 1,
+        "saved_ix[20]": 1,
+        "saved_ix[19]": 1,
+        "saved_ix[18]": 1,
+        "saved_ix[17]": 1,
+        "saved_ix[16]": 1,
+        "saved_ix[15]": 1,
+        "saved_ix[14]": 1,
+        "saved_ix[13]": 1,
+        "saved_ix[12]": 1,
+        "saved_ix[11]": 1,
+        "saved_ix[10]": 1,
+        "saved_ix[9]": 1,
+        "saved_ix[8]": 1,
+        "saved_ix[7]": 1,
+        "saved_ix[6]": 1,
+        "saved_ix[5]": 1,
+        "saved_ix[4]": 1,
+        "saved_ix[3]": 1,
+        "saved_ix[2]": 1,
+        "saved_ix[1]": 1,
+        "saved_ix[0]": 1
+      },
+      "high14_15_cells": [
+        {
+          "cell": "saved_ix_15_s0",
+          "type": "DFFRE",
+          "Q": "saved_ix[15]",
+          "D": "ix_store[15]",
+          "CLK": "clk50_d",
+          "RESET": "GND",
+          "CE": "n55704_3"
+        },
+        {
+          "cell": "saved_ix_14_s0",
+          "type": "DFFRE",
+          "Q": "saved_ix[14]",
+          "D": "ix_store[14]",
+          "CLK": "clk50_d",
+          "RESET": "GND",
+          "CE": "n55704_3"
+        }
+      ]
+    },
+    "work_p": {
+      "mapped_FF": 16,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "FF_types": {
+        "DFFRE": 10,
+        "DFFSE": 6
+      },
+      "SR_pin_nets": {
+        "RESET GND": 10,
+        "SET GND": 6
+      },
+      "CE_nets": {
+        "n55704_3": 16
+      },
+      "CE_total_direct_pins": {
+        "n55704_3": 215
+      },
+      "Q_logical_pin_loads": {
+        "work_p[15]": 1,
+        "work_p[14]": 1,
+        "work_p[13]": 1,
+        "work_p[12]": 1,
+        "work_p[11]": 1,
+        "work_p[10]": 1,
+        "work_p[9]": 1,
+        "work_p[3]": 1,
+        "work_p[1]": 1,
+        "work_p[0]": 1,
+        "work_p[2]": 1,
+        "work_p[4]": 1,
+        "work_p[5]": 1,
+        "work_p[6]": 1,
+        "work_p[7]": 1,
+        "work_p[8]": 1
+      },
+      "high14_15_cells": [
+        {
+          "cell": "work_p_15_s0",
+          "type": "DFFRE",
+          "Q": "work_p[15]",
+          "D": "parameter_response[111]",
+          "CLK": "clk50_d",
+          "RESET": "GND",
+          "CE": "n55704_3"
+        },
+        {
+          "cell": "work_p_14_s0",
+          "type": "DFFRE",
+          "Q": "work_p[14]",
+          "D": "parameter_response[110]",
+          "CLK": "clk50_d",
+          "RESET": "GND",
+          "CE": "n55704_3"
+        }
+      ]
+    }
+  },
+  "bank_active": {
+    "active_p": {
+      "mapped_FF": 16,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "FF_types": {
+        "DFFRE": 10,
+        "DFFSE": 6
+      },
+      "SR_pin_nets": {
+        "RESET n322_5": 10,
+        "SET n322_5": 6
+      },
+      "CE_nets": {
+        "n2239_14": 16
+      },
+      "CE_total_direct_pins": {
+        "n2239_14": 63
+      },
+      "Q_logical_pin_loads": {
+        "parameter_response_110": 1,
+        "parameter_response_109": 1,
+        "parameter_response_108": 1,
+        "parameter_response_107": 1,
+        "parameter_response_106": 1,
+        "parameter_response_105": 1,
+        "parameter_response_104": 1,
+        "parameter_response_103": 1,
+        "parameter_response_102": 1,
+        "parameter_response_101": 1,
+        "parameter_response_100": 1,
+        "parameter_response_99": 1,
+        "parameter_response_98": 1,
+        "parameter_response_97": 1,
+        "parameter_response_96": 1,
+        "parameter_response_111": 1
+      },
+      "high14_15_cells": [
+        {
+          "cell": "active_p_14_s0",
+          "type": "DFFRE",
+          "Q": "parameter_response_110",
+          "D": "frame[46]",
+          "CLK": "clk50_d",
+          "RESET": "n322_5",
+          "CE": "n2239_14"
+        },
+        {
+          "cell": "active_p_15_s0",
+          "type": "DFFRE",
+          "Q": "parameter_response_111",
+          "D": "frame[47]",
+          "CLK": "clk50_d",
+          "RESET": "n322_5",
+          "CE": "n2239_14"
+        }
+      ]
+    },
+    "active_i": {
+      "mapped_FF": 16,
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "FF_types": {
+        "DFFRE": 16
+      },
+      "SR_pin_nets": {
+        "RESET n322_5": 16
+      },
+      "CE_nets": {
+        "n2239_14": 16
+      },
+      "CE_total_direct_pins": {
+        "n2239_14": 63
+      },
+      "Q_logical_pin_loads": {
+        "parameter_response_95": 1,
+        "parameter_response_94": 1,
+        "parameter_response_93": 1,
+        "parameter_response_92": 1,
+        "parameter_response_91": 1,
+        "parameter_response_90": 1,
+        "parameter_response_89": 1,
+        "parameter_response_88": 1,
+        "parameter_response_87": 1,
+        "parameter_response_86": 1,
+        "parameter_response_85": 1,
+        "parameter_response_84": 1,
+        "parameter_response_83": 1,
+        "parameter_response_82": 1,
+        "parameter_response_81": 1,
+        "parameter_response_80": 1
+      },
+      "high14_15_cells": [
+        {
+          "cell": "active_i_15_s0",
+          "type": "DFFRE",
+          "Q": "parameter_response_95",
+          "D": "frame[31]",
+          "CLK": "clk50_d",
+          "RESET": "n322_5",
+          "CE": "n2239_14"
+        },
+        {
+          "cell": "active_i_14_s0",
+          "type": "DFFRE",
+          "Q": "parameter_response_94",
+          "D": "frame[30]",
+          "CLK": "clk50_d",
+          "RESET": "n322_5",
+          "CE": "n2239_14"
+        }
+      ]
+    }
+  }
+}

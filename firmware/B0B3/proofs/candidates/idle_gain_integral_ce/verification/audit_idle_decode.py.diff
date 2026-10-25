@@ -1,0 +1,18 @@
+--- C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_ce\audit_idle_decode.py
++++ C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_integral_ce\audit_idle_decode.py
+@@ -7,7 +7,7 @@
+ drivers={net:name for name,c in cells.items()for pin,net in c['pins'].items()if pin in ('F','O','Q')}
+ rows=[c for c in cells.values()if c['type'].startswith('DFF')and c['pins'].get('Q','').startswith(('work_p[','work_i['))]
+ nets={c['pins']['CE']for c in rows};assert len(rows)==32 and len(nets)==1
+-ce=next(iter(nets));cone={};leaves=set()
++ce=next(iter(nets));saved=[c for c in cells.values()if c['type'].startswith('DFF')and c['pins'].get('Q','').startswith(('saved_ix[','saved_iy['))];assert len(saved)==54 and all(c['pins']['CE']==ce for c in saved);cone={};leaves=set()
+ def visit(net):
+  name=drivers[net];c=cells[name]
+  if c['type'].startswith('DFF'):
+@@ -26,5 +26,5 @@
+  c=cone[net];index=sum(evaluate(value,state)<<int(pin[1:])for pin,value in c['pins'].items()if re.fullmatch(r'I\d+',pin))
+  return(c['table']>>index)&1
+ truth=[evaluate(ce,state)for state in range(128)];assert truth==[1]+[0]*127
+-out=dict(passed=True,work_gain_CE=ce,work_gain_FF=32,actual_mapped_boolean='state[6:0] == 0',all_mapped_state_combinations_checked=128,only_asserted_state=0,source_scope='Unchanged reachable source state graph uses states0..101; source state[7] optimized away. This is a small mapped-LUT decode truth-table check, not full sequential netlist equivalence.',cone=cone,state_leaves=sorted(leaves),netlist_sha256=hashlib.sha256(N.read_bytes()).hexdigest(),script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
++out=dict(passed=True,work_gain_CE=ce,work_gain_FF=32,saved_integral_FF=54,idle_CE_FF=86,actual_mapped_boolean='state[6:0] == 0',all_mapped_state_combinations_checked=128,only_asserted_state=0,source_scope='Unchanged reachable source state graph uses states0..101; source state[7] optimized away. This is a small mapped-LUT decode truth-table check, not full sequential netlist equivalence.',cone=cone,state_leaves=sorted(leaves),netlist_sha256=hashlib.sha256(N.read_bytes()).hexdigest(),script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+ (O/'idle_decode_audit.json').write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))

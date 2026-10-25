@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-25T14:39:23.089369+00:00",
+  "operator_pivot_statement": "目前只能悬空手持",
+  "fixed_pivot_test_executed": false,
+  "operator_low_mode_history": "还没做过低档打杆对比",
+  "low_mode_comparison_executed": false,
+  "new_physical_capture_performed": false,
+  "firmware_changed": false,
+  "pid_changed": false,
+  "pnr_started": false,
+  "root_cause_uniquely_identified": false,
+  "evidence": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\aligned_telemetry.csv": "d56fd6eb93df34251a4a87aebef83e6b9d1d2702617376842f22d890d266d641",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timing_closure_20261025\\flow_rotation_protocol_audit\\epoch12_target_pose_lag.json": "1f78aefa58ae0cd8e7ff8a1fa231b8ffac1feaf25aaa70f1ea8b92c65f73fc1e",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timing_closure_20261025\\flow_control_equation_audit\\translation_confound_primary_yaw.json": "c95b19f61bd9915d4e106be6e87124ed9fc2f22b5a28e0b48f8009d0b981b5f7",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\rotation_followup\\dynamic_scope.md": "e34d9e51d9ab84425a265dbcdbd584f654428513106bef7e43e2648d9bca4425",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\rotation_followup\\manual_comparison_plan.md": "d730c0aa710c2bed7bf38aa7624179929cedb171e25378a59689544a5b88d401"
+  },
+  "next_test": "Original V15/SWC-low dynamic input comparison; only when operator prepares next flight"
+}

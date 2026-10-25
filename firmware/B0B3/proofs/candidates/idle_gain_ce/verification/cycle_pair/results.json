@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "Actual immutable old and candidate controllers; all public outputs cycle equal; real one-client shared services; no forced state; injected public divider error only on real done; source induction covers all16-bit gain pairs, simulation is directed/random not exhaustive",
+  "public_output_bits": 450,
+  "private_idle_snapshot_equality": false,
+  "checks": [
+    "PASS all16-bit gain corner values, high bits, XY/Z priority, real math and exact public cycles",
+    "PASS deterministic arbitrary16-bit gain changes each work/idle clock; active snapshots remain frozen",
+    "PASS XY rollback, busy multiply/divide cancel and drain, RC/sensor/origin/stop, XY and Z busy resets",
+    "PASS real service done with injected public divider error, blocked recovery, taking-off changes, age cancellation",
+    "PASS COVERAGE cycles=956519 xy_pubs=79 z_pubs=79 xy_starts=87 z_starts=80 start_checks=87 freeze_checks=528118 idle_differences=320942 priority=79 cancel_mbusy=2 cancel_dbusy=2 rollback=5 fault=1 reset_busy=2 distinct_p=77 distinct_i=76 states=0000000000000000000000000000000000000030000000037ee07ff843f20fff"
+  ],
+  "source_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\verification\\cycle_pair\\old_controller.v": "4e100d67411e9b67c4b227547360a53f35b07ba8db8a457a58c897aceebcd5c9",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\source\\position\\mtf_xyz_hold_control.v": "9bb8eae57f9491d8e187ac4d5e5868666714920cb91f17e6423daae95618bad9",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\source\\nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\source\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\source\\position\\ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\source\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\source\\position\\ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f"
+  },
+  "harness_sha256": "dfdd924e09560ad0f7fa3859e1f882e5e691a3fca5501eb2617a6cf72fab868a",
+  "runner_sha256": "b64300a6dd2ed3af9d425c73b8d701f8c5ded214c5f2be30b753c39e43e473a5",
+  "log_sha256": "b7e34ee957e64ba839967c1443d9f7b401063fec8e53f99800a8690426f1d9cc"
+}

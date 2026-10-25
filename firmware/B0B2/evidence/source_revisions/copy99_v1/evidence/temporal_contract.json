@@ -1,0 +1,55 @@
+{
+  "schema": "b0b2.temporal-contract.v1",
+  "passed": true,
+  "started_utc": "20261024T195340780302Z",
+  "hardware_accessed": false,
+  "serial_opened": false,
+  "flash_changed": false,
+  "flight_ready": false,
+  "programmable_receipt": false,
+  "output": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\temporal_contract_20261024T195340780302Z",
+  "compiler": "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+  "simulator": "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+  "compile_command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+    "-g2012",
+    "-Wall",
+    "-s",
+    "temporal_contract_tb",
+    "-o",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\temporal_contract_20261024T195340780302Z\\temporal_contract.vvp",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\temporal_contract_20261024T195340780302Z\\temporal_contract_tb.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\temporal_contract_20261024T195340780302Z\\temporal_stage.v"
+  ],
+  "compiler_sha256": "803b8844af2cc8ed70b5f08b07ffa749901280e81339617ca3e72cbbb852bd2b",
+  "simulator_sha256": "e2f442f4d5aa76e55c85c3ff77e4446fbfdb9946b7cfe8a2dff87f275da17b62",
+  "compile_returncode": 0,
+  "simulation_returncode": 0,
+  "unknown_parameter_warning": false,
+  "input_sha256": {
+    "temporal_stage.v": "a2574b91272c414219a5fc40f90750a75d39df9d2e4b7f4464f3cc2e7869a1a0",
+    "temporal_contract_tb.v": "552a57b61386f2715dc4cfd23d0d985f82e37546656bd3acedac1b0040227285"
+  },
+  "source_stable_during_simulation": true,
+  "runner_sha256": "395fbaa91bfeee5e0367cd0bd01ee379c2a52e461d9bfa44c4d1721b5db4ef6a",
+  "coverage": {
+    "cases": 7,
+    "checks": 66,
+    "publications": 12,
+    "cycles": 85
+  },
+  "case_markers": [
+    "deprecated_named_parameter_abi",
+    "exact_three_clock_tuple_and_live_input_isolation",
+    "collision_gap_1",
+    "collision_gap_2",
+    "collision_gap_3",
+    "four_clock_minimum_normal_interval",
+    "good_basebad_good_metadata_isolation"
+  ],
+  "limitations": "Actual temporal stage only; no guard/estimator/dt/closed-loop qualification claimed",
+  "logs_sha256": {
+    "compile.log": "8d7dfcc4082ff2a57d9c6e06168f13b7dd516e65a40b16bfe170aa035a5d8e6a",
+    "simulation.log": "4b09bfeac0225e739f3f8189fdff1ffe9bd2b4233fd3b7180ce500766f7ad034"
+  }
+}

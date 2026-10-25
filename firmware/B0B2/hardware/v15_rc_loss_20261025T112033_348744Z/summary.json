@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "safe_off_recovery_observation_passed": false,
+  "rc_input_loss_exercised": false,
+  "recovered": false,
+  "scope": "Transmitter-off/recovery under unarmed low-switch conditions; exact500ms boundary is not measured by human timing/5Hz telemetry",
+  "rc_false_frames": 0,
+  "observed_invalid_span_seconds": null,
+  "receiver_may_continue_ppm": false,
+  "duration_seconds": 0.0003209999995306134,
+  "distinct_frames": 0,
+  "off_marker_elapsed_seconds": null,
+  "on_marker_elapsed_seconds": null,
+  "diagnostic_delta": {},
+  "failures": [
+    {
+      "elapsed_seconds": 0.0003209999995306134,
+      "error": "Live/failsafe throttle,SWA,SWC must remain LOW"
+    }
+  ],
+  "final_rc_us": null,
+  "final_reported_pwm_us": null,
+  "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "samples_sha256": "3501c6bc42b2429221afad3e2bcea2b87a09ff8ca270f2555d66861eddf06808",
+  "observer_sha256": "04ac40589ed4323309f96e6042a3eb0adcd875a01ba04d73fe6bf80f6c365b6a",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

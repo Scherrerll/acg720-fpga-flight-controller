@@ -1,0 +1,70 @@
+{
+  "installed": true,
+  "hardware_accessed": true,
+  "sram_write_attempted": true,
+  "sram_written": true,
+  "flash_written": false,
+  "bench_only": true,
+  "flight_ready": false,
+  "operations": [
+    0,
+    2,
+    0
+  ],
+  "scans": [
+    {
+      "phase": "initial",
+      "selection": {
+        "name": "Gowin USB Cable(FT2CH)",
+        "index": 1,
+        "location": 289
+      }
+    },
+    {
+      "phase": "prewrite",
+      "selection": {
+        "name": "Gowin USB Cable(FT2CH)",
+        "index": 1,
+        "location": 289
+      }
+    }
+  ],
+  "folder": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_sram_20261025T091416_206712Z",
+  "operator_confirmation_flag": true,
+  "confirmation_scope": "Current human confirmed props-off, stable bench, low throttle and SWA/SWC low.",
+  "verification": {
+    "passed": true,
+    "image": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\verified_timing_20261025\\bitstream\\acg720_ano_port.fs",
+    "image_sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306",
+    "manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+    "hardware_helpers_sha256": "6b872ec4ab8c0425f8d477d9e2ac63a21f01f8f0bfe69635cbf3420b796f49b1",
+    "source_files": 54,
+    "evidence_items": 313,
+    "hardware_accessed": false,
+    "flash_written": false
+  },
+  "programmer_selection": {
+    "vid": 1027,
+    "pid": 24596,
+    "serial": "6",
+    "device": "COM21"
+  },
+  "after_identity": {
+    "device_id": 83995,
+    "usercode": 45234
+  },
+  "post_load_telemetry": {
+    "passed": true,
+    "timeout_seconds": 30.0,
+    "attempts": [
+      {
+        "elapsed_seconds": 0.002509499987354502,
+        "build_id": 45234,
+        "fresh": true
+      }
+    ],
+    "elapsed_seconds": 0.0025342000008095056
+  },
+  "utc": "2026-10-25T09:14:23.208592+00:00",
+  "installer_sha256": "908f0e3ded7f424559f2bdcc6d5d0b20c8e549eff0e83adededc43d28d716865"
+}

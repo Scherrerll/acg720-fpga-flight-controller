@@ -1,0 +1,82 @@
+{
+  "passed": false,
+  "checked_utc": "2026-10-25T03:12:32.522130+00:00",
+  "inputs_passed": true,
+  "canonical_source_matches": false,
+  "offline_physical_ready": false,
+  "netlist_sha256": "8635180bab060547770ff57e9c9302c2bb7a057b3d794241c7350adf3da30602",
+  "vendor_returncode": 0,
+  "routing_passed": true,
+  "unrouted_nets": 0,
+  "part_passed": true,
+  "pins_passed": true,
+  "identity_passed": true,
+  "output_freshness_passed": true,
+  "full_timing_passed": false,
+  "sta": {
+    "passed": false,
+    "routing_passed": true,
+    "fmax_mhz": 37.923,
+    "constraint_period_ns": 19.5,
+    "summaries": {
+      "setup": {
+        "tns_ns": -4840.757,
+        "violated_endpoints": 1522
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "worst_reported_slack_ns": {
+      "setup": -6.869,
+      "hold": 0.192,
+      "recovery": 11.684,
+      "removal": 2.948,
+      "minimum_pulse_width": 7.137
+    },
+    "clock_20ns_or_stricter_only": true,
+    "timing_exceptions_added": false,
+    "hardware_accessed": false,
+    "flight_ready": false,
+    "evidence_sha256": {
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.tr": "ebf5265aa4469f8ee2cc018ab656ae78744470e08a8b7e86c6b28b8afe9ae030",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt": "9589852b16526dcc7fd38ed87cce0bda13dd7c640664982f9676dd002e1d4d38",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\acg720_ano_port.cst": "d7ee3fdf8d5109b1d1e0f759b883ea99bc0d49eacf0eaaf90832382d9dd36398",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\console.txt": "18f8535ff2c4f274b95bc4e36530c53526a0941804b6e042b899fd4c0bd84760"
+    },
+    "scope": "Physical timing audit only; does not establish RTL equivalence, electrical health or flight acceptance."
+  },
+  "sta_error": null,
+  "errors": [],
+  "evidence_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\synthesis_final_binding.json": "1b0259bfde78454b6aeec1ae461459b3bb515b7158b82ece52f72e1add282fa6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\audit_final_policy.py": "620b625d84de96b1441f7cdc04f3083a89b5aa0348cebea5d0bbd634b3a2f1ce",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_closure_20261024\\audit_physical.py": "80ddddee870eb18886857389239007a9d6f0451a4f02fd1ee9a93c05778e2d71",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\contract.json": "f2a909b27c12ed7fae54f8a48ada57dd26f87508a0f28e073d4ad30a42f5bd0e",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\run_state.json": "beb4ad3c8f280b5689c28c4888a5f1d01107c6c0736b1b1a0822ef443f547c08",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\console.log": "18f8535ff2c4f274b95bc4e36530c53526a0941804b6e042b899fd4c0bd84760",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.bin": "e29159036c824c2dc328d33f7ee8e395a72fabb2773a9eea45a118e4afa84abf",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.binx": "4266ff45b41f4f9e2644882fd222ece10a1ed923535c1499e7e6a5bb7f7d01f6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.db": "cd9970425bab36b1feab63d8345350dc5e637422f4a0053696f5374989caeb28",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.fs": "76bbc88fba9027f403ed6700da30b7fec9f814a69531164096aae04dcc7107f1",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.log": "86b14638c55cf6109c2ddc032591aecbdabc89fd38b174fe513db4bf1a73a847",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.p": "ab281f744d97383754c759181babcb09df5cd909ec3b7a446616f1098a90804c",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.pin.html": "cc88da8ebe76f01be0d71b99159d7f49d46832d24c871227b85b58fb12705293",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.power.html": "504a92fa79ff632ed9c31a1edee436b9a4028f45953ff7c5e05ad4fe2e229163",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.pr": "b5ee8f8bed2b6726c137446746095623ff14e631d73de27c67931c1f96b55ed7",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.html": "a62a0c8c30f7dc0eb2236c7e4570131b39434aecb0870f3647d791740c53fc57",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt": "9589852b16526dcc7fd38ed87cce0bda13dd7c640664982f9676dd002e1d4d38",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.timing_paths": "2f54640043e16e978a7d53aed9338d7947870707bb181a09863cc3ec08029448",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.tr": "ebf5265aa4469f8ee2cc018ab656ae78744470e08a8b7e86c6b28b8afe9ae030",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.tr.html": "cc2f6fe8f0499921d9dc69545e98f811257bc558d7229ea6ac2eb7031bb63f50",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port_tr_cata.html": "e8b13558a333022685d4566992b5e9133aac7dda11758d265b9ec732fb5e6697",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port_tr_content.html": "f65c6728121462b8919d6609094d93747b2a59b6cfeec8b4764a89fa88a42f7a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\cmd.do": "cc0245d108ea000c5d02cd0c598f0d66389a59c91eaea3de201e4b7cab853091",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\device.cfg": "1c531c08d794d69f6bc0a168f4dd0a94cba8156f0c3cf4f3d07f9a54474df10a"
+  },
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "scope": "Offline source/protocol/behavior binding and physical timing only; no installation or flight authorization"
+}

@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-25T13:44:45.900257+00:00",
+  "baseline": "original V15 / B0B2, Flash default",
+  "result": "本轮稳定定点实飞通过（操作者确认）",
+  "operator_reported_success": true,
+  "image_sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306",
+  "result_record": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\flight_result.json",
+    "sha256": "f085d41e82beb9c20bc6e17b7964bf8d04b0da4cf473a0921cea463e72a86c5d"
+  },
+  "readme": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\README.md",
+    "sha256": "6cbb3778329526c5cc1d3c7fcdda8417200e0d5f71ca466820c3d1482ecb77e1"
+  },
+  "routing_status": "V16/V17 remain paused; no automatic resume",
+  "qualification_flags_changed": false
+}

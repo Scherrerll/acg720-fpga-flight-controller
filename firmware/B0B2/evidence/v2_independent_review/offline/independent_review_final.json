@@ -1,0 +1,187 @@
+{
+  "schema": "b0b2.independent-offline-review.v2",
+  "created_at_utc": "2026-10-24T22:15:55.111890+00:00",
+  "status": "no_open_blocking_finding_in_reviewed_scope",
+  "reviewer": "sensor_evidence",
+  "source_sha256": {
+    "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+    "acg720_ano_port.gprj": "198f6c141bae6b6c297076a05bab2326cf32b8696c589b24daf0d08218feaa76",
+    "acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e",
+    "acg720_ano_port.v": "c4905b092d5d256c0949db67e4ac4c25778cd9ff5c18d4d4ffac362f7515e484",
+    "build.tcl": "437e3b163ca475294dafd8568ca7809d0c4fc5f49fd127992f055c2f0df30629",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "core/ano_attitude_estimator.v": "609f87d404dcd38911b042286543b5e11f7bf233eecf9af57d2f58755b04cfad",
+    "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "727da0d14c2dedbcc1f1b3a8297cd9dbb95a84a4cf8f4c28216dd4d83492a7dc",
+    "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+    "core/imu_checked_guard_pipelined.v": "20bcf23ce4e44d91dc4fb55f9c05d1e8ae654064f57419f83e7c1648697985a1",
+    "core/imu_diagnostic_tap.v": "26c3c5383bffe899fa61382ae06e2c774b56c1df966b54c1ab07f303b5003808",
+    "core/imu_pipeline_pipelined.v": "5197ef78b6987e5150fb1211ead256205695cbe0d6eb4392d4804c4ca5f5df69",
+    "core/imu_temporal_check_pipelined.v": "a2574b91272c414219a5fc40f90750a75d39df9d2e4b7f4464f3cc2e7869a1a0",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+    "mtf_xyz_navigation_control.v": "1de41164505a62139fcabb5469a27cb8f89afa775363f0a1b2d4de1f2e64b45e",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "937fd9b733b8a998a28acc17269657eeb7780faef972edb8a5a86fd9775ab509",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+    "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+    "sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+    "sensor/mtf_shared_geometry.v": "de3276c8cfd68bf963b2438552faae03683539f05702ef5ec46140fd8b8021d0",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "sik_imu_diagnostic.v": "aff3e5a2fc19f045faf01885f23cbe245753c048686982c9d19a97bcc57bc160",
+    "telemetry_tx.v": "3aadbf30852adeb70cb40011d1b57d859c1bf7b4aec1b31625c260580b4b557c"
+  },
+  "source_unchanged_from_initial_review": true,
+  "reviewed_files_sha256": {
+    "tools/verify_offline.py": "ff0f7a779ce5a65f366ec6937bf2159044b1d06bfe648f61e3e43725293e6b06",
+    "tools/install_sram.py": "6b872ec4ab8c0425f8d477d9e2ac63a21f01f8f0bfe69635cbf3420b796f49b1",
+    "tests/test_install_sram.py": "3f5a64bebc796db4c28236aa0ac713bd3c8dd7148c8176211dce767d7029a78c",
+    "tools/build.py": "eb5778f695f0161d779786fea397c705526ddae907483502086ab64f4e10cd86",
+    "tools/analyze_bench.py": "cfa80c90bee2f66c390df8845dfd6a3dc7494d4d9e204f3fd371045993374401",
+    "tests/test_analyze_bench.py": "c36a17329cf040f1fe71c7c2307c286baafa45dc3c5043c278d1e1615e3342c6",
+    "ground/protocol.py": "a8e9bbef3c191d6904cae1e10b000219530cdc78975842875fd5c82ac5757422",
+    "tests/test_protocol.py": "5b2c5e58750db893cb38b531e18a30cc65322c4cddd487e763ac2e486cfc97f8",
+    "tools/prepare_sik_receiver.py": "40d6a60dcfac119828e1a1a8b6c2b7de62236b1389343caef4af730500fe8dec",
+    "tests/run_sik_tests.py": "9229172c0fe1431a408415bd06eaec7297af8b9649203d09f6a9dc4a6422570b",
+    "tests/run_sik_copy_tests.py": "0831c415dfa81d34b36e665c4f57eaf24461d0786e27006aa81b42a32b4d351a",
+    "tests/sik_copy_contract_tb.v": "68845c420c85d325bbd4ced3a568b37b9301b7e9e14756efa47146d6c23c7d12",
+    "tests/sik_summary_tb.v": "4b7424ce29d75e061a7be06a0736fc875770b5ff38b0a6212442437cf1628267",
+    "tests/sik_wire_tb.v": "1c3344abb38ab50c02f6b120b562316642515b90dbdbc7a5113ae187efceac87",
+    "SIK_DIAGNOSTIC_PROTOCOL.md": "604557d06e5eb7851893fe9e8a7d2a067a5e33ff5c000882fc8ead0afe05b494",
+    "ground/README.md": "dfc01d4a0619a265b9a4689ec49751322bdb1a3443d298a050c8447b943d9e07"
+  },
+  "related_evidence_sha256": {
+    "out/B0B2/sik_v2_20261024T220040_056043Z/result.json": "7f96cc15fc0145727ea609b7b5e29800a5cf9c009f8ddaf74a529493ecebc5ba",
+    "out/B0B2/sik_v2_20261024T220040_056043Z/sik_wire.hex": "d28e8f7e0440f2d994fa9fd33512f1c4c3c1a9c7678f37a2a76f6080bf91ecaf",
+    "out/B0B2/sik_v2_20261024T220040_056043Z/legacy_wire.hex": "070a36d359d4892291b7171152374602bbeb93685da11521cd4e47333124047b",
+    "out/B0B2/sik_v2_projection_20261024T220022_086692Z/result.json": "7994f9ecdb6df4165dd95d199e23dde95d3ddef50452445be77a7f0f61ff7d00",
+    "firmware/B0B2/evidence/v2_integration.json": "223a7cf1ae68375609c5579271c9e255c19642498bf87cb212d98b9d6c73a0a7",
+    "firmware/B0B2/evidence/v2_projection_proof/index.json": "7a1ecc37be066433bd7938d4a709d3c533bb1107cce71eff81f13485b41d1221",
+    "out/B0B2/sik_receiver_v3/test_output/offline_validation_final.json": "17bb74609c443f4ae7b643e4d746a47604c9d47d26da373aaf4c3c3d3bddcc91",
+    "out/B0B2/verification_freeze_check_20261024T220737_715842Z/result.json": "0340f8745b25bfeda77b57f787e9ca200f32b94252adf102d16d1af56433a347"
+  },
+  "review_artifacts_sha256": {
+    "accepted_pose_advance_200x_raw_records.fixed.report.json": "84d23d5b7864f3184f9619eda00ec2ba7e4d3e814100a51afd23c1f7a1d87279",
+    "accepted_pose_advance_200x_raw_records.jsonl": "a1731bea2f6e799bf3c3862c4c11ed4cec02bb6a9681a3b6ff80005ee70f791c",
+    "accepted_pose_advance_200x_raw_records.report.json": "66d5e336b0433debf412dc40878579ab10c3cce285f0679d6dba636d685ce8ea",
+    "controller_commands_advance_while_reported_stopped.fixed.report.json": "decbd30c5e706fbaf75467fafab11ec04c97308302169a5e36c12ee51ffa8c9b",
+    "controller_commands_advance_while_reported_stopped.jsonl": "6218c7125a467cd73239ddee1b60ea067011068be30a2ed0efb892273f51dd05",
+    "controller_commands_advance_while_reported_stopped.report.json": "158b130509ed15aa6e1fbf6be0cf5e5ba0cb0003a7d916b1a5c02a2e80259d96",
+    "final_test_analyze_bench.py.log": "f72b209c1cd21f8d54893dec1db5cdf9cfb16edc98ec87cd00c8c1b3b45c97c4",
+    "final_test_protocol.py.log": "15911e022d5ccc028e54feb6cb1acb4d176ac8083d7341e5f880e881e0eae1d2",
+    "final_unit_and_counterexample_replay.json": "85ded5cc712c45f535e5e79f53fa6b50313e7ebb64752bbf6840e65e587fdebf",
+    "receipt_fix_and_initial_findings.json": "398414e6cbd54c5fe8c73074f8a0880c2453a5e4667d955bfe9a4ee672da8658",
+    "results.json": "65fca26eb6225338fffd83be1f7109d345c9fcfbc2c0aed8617e08373c180722",
+    "test_analyze_bench.py.log": "9a09a226a4bb543554a60919600498560bc4d96f6618851be2531d9c06f188e2",
+    "test_protocol.py.log": "12901d58d8c164751b8ad510e1f85e61a3218eae37c824aaf11fdd25493537e0"
+  },
+  "unit_replays": [
+    {
+      "suite": "installer mocks",
+      "tests": 70,
+      "returncode": 0,
+      "record": "receipt_fix_and_initial_findings.json"
+    },
+    {
+      "suite": "protocol",
+      "tests": 18,
+      "returncode": 0,
+      "log": "final_test_protocol.py.log",
+      "fixture": "out/B0B2/sik_v2_20261024T220040_056043Z/sik_wire.hex"
+    },
+    {
+      "suite": "bench evaluator",
+      "tests": 27,
+      "returncode": 0,
+      "log": "final_test_analyze_bench.py.log"
+    }
+  ],
+  "findings": [
+    {
+      "id": "verification_input_toctou",
+      "original": "Scripts were only hashed after the test run",
+      "resolution": "Before/after full scripts+source equality now required; receipt and installer require literal verification_inputs_unchanged=True",
+      "state": "resolved",
+      "lines": [
+        "tools/verify_offline.py:17-29,46,65-67,130-132",
+        "tools/install_sram.py:165-166"
+      ]
+    },
+    {
+      "id": "nested_v2_results_not_bound",
+      "resolution": "Current-run passing schemas/exact53 sources, v2 644/568 wire and 448-bit projection checked; four artifacts bound to the test receipt run and rehashed by installer",
+      "state": "resolved",
+      "lines": [
+        "tools/verify_offline.py:82-102",
+        "tools/install_sram.py:167-180"
+      ]
+    },
+    {
+      "id": "stopped_controller_transactions",
+      "original_status": "acceptable",
+      "counterexample": "controller_commands_advance_while_reported_stopped.jsonl",
+      "fixed_status": "inconclusive",
+      "reason": "300 control transactions observed between otherwise stopped snapshots; not evidence that any motor physically ran",
+      "state": "resolved",
+      "lines": [
+        "tools/analyze_bench.py:357-359"
+      ]
+    },
+    {
+      "id": "raw_decision_conservation",
+      "original_status": "acceptable",
+      "counterexample": "accepted_pose_advance_200x_raw_records.jsonl",
+      "fixed_status": "inconclusive",
+      "reason": "raw delta300 cannot account for accepted delta60000 and rejected delta0; +/-2 endpoint allowance retained",
+      "state": "resolved",
+      "lines": [
+        "tools/analyze_bench.py:433-447"
+      ]
+    }
+  ],
+  "checks": {
+    "decoder": "76 bytes; CRC before interpretation; version1/2 and type1 only; v2 two zero wire slots strictly required then mapped to None; exact24-key capability metadata with two unavailable fields; no fabricated v2 source-id or protection-time",
+    "projection": "Archived v1 strict SHA; current candidate and actual tap compiled directly; 448 retained summary bits plus capture tick compared each cycle, both unavailable slots asserted zero; 120000 cycles and original coverage gates retained; full equivalence explicitly false",
+    "siK_wire": "644 bytes with original568 identical to frozen B0B0 golden; all seven headers and XOR/CRC verified; both nested and direct protocol runs use the actual new v2 fixture",
+    "stable_screen": "At least60 seconds on both host and board, one continuous source epoch, complete same-sequence groups, missing/duplicate/age/stall/saturation gates, publication/acceptance balance plus raw/accept/reject conservation, lowRC and all reported outputs1000; sampled ages and held dt use conservative20ms screen, separate from actual60ms protection",
+    "installer": "Default verify-only; imports shared exact full/derived source auditor; explicit synthesis-only rejection remains; real physical result/FS/UserCode/currentsource/runner/output hashes plus bound tests and current four subartifacts required; no relaxation of hardware operation whitelist"
+  },
+  "limits": [
+    "This review used units, mocked installer operations and synthetic recorder fixtures only; no actual board, serial, API, programmer or vendor call was made.",
+    "No physical acceptance, SRAM installation, flight readiness or loaded-flight reliability conclusion follows from these results.",
+    "5Hz snapshots plus counters/held tuples/max gap do not prove the numerical correctness of every raw/accepted/published sample or exclude every between-snapshot control excursion.",
+    "Decoded JSONL does not retain raw transport CRC/noise error totals; analyzer reports those as unavailable.",
+    "Since-boot maximum gaps and frozen first-cause tuples from before the selected stable window can make that window inconclusive rather than prove a new fault.",
+    "The20ms diagnostic anomaly threshold is not the actual armed60ms protection timeout."
+  ],
+  "hardware_accessed": false,
+  "vendor_called": false,
+  "source_tools_tests_modified_by_reviewer": false
+}

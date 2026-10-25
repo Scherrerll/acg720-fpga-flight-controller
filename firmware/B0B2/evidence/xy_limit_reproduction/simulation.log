@@ -1,0 +1,6 @@
+STAGE target_gt15 t_ns=100129461000 roll_cdeg=0 target_pitch_cdeg=-1848 fused_vx_q16=-89956267 xy=1 z=1
+STAGE tilt_exit t_ns=100130481000 roll_cdeg=1501 xy=0 z=1 reason=4 ix_q16=2203189 fusion_iqx_q16=0
+STAGE angle_return_no_sample xy=0 geometry_flow=0 z=1
+STAGE restored t_ns=160129461000 roll_cdeg=1499 target_pitch_cdeg=-308 xy=1 z=1 retained_ix_before_callback=2203189
+PASS actual frozen navigation RTL: target>15 while geometry eligible; inclusive15/15.01 exit; Z retained; fusion resets but completed XY PI/filter retained; no-sample remains invalid; automatic fresh-callback recovery; origin clears PI
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\B0B2\xy_limit_reproduction\xy_limit_tb.v:59: $finish called at 160130061000 (1ps)

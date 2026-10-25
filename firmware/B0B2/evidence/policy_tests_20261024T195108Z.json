@@ -1,0 +1,45 @@
+{
+  "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot",
+  "baseline_hashes_verified": 51,
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "tests": {
+    "B0B0": {
+      "returncode": 0,
+      "output": "PASS startup_motion: legal vibration cannot complete stationary calibration\nPASS startup: real guard5 + calibration2 + gravity reseed3; poses=32\nREPRODUCED original_failure gravity_qualified_alternation: accepted=16 rejected=74 pose=0 link=0\nPASS dynamic_accel: az=2g gyro_z_delta=164; poses=99 correction_off=97 correction_on=2 yaw_delta_cdeg=88 rejects=1\nPASS explicit_bad_sample rejected without source refresh; next valid dt=100000\nPASS invalid_transport: zero, all-one, wrong-ID rejected; next real dt=200000\nREPRODUCED original_gyro_fill braking rejects=1 pose=9\nPASS true_gap_20ms retained qualified epoch; first real sample dt=1000000\nPASS true_gap_30ms retained qualified epoch; first real sample dt=1500000\nPASS true_gap_60ms revoked; guard needs5 fresh good and estimator gravity reseed before pose\nPASS recovery_gravity: source recovers at2g; pose waits for valid gravity reseed\nPASS overrun: unfinished and colliding frames discarded; detail80; no accepted-count refresh\nPASS integrated_policy_suite sources=406 accepted=316 rejected=89 poses=264\nC:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\tests\\policy_pipeline_tb.v:199: $finish called at 285500340000 (1ps)",
+      "source_stable_during_simulation": true,
+      "source_sha256": {
+        "core/imu_pipeline_pipelined.v": "55220d17d4fd7d3badc12a1283d8ebddbfb4fc953d6a4561e6fddd98696e2509",
+        "core/imu_temporal_check_pipelined.v": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+        "core/imu_checked_guard_pipelined.v": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+        "core/ano_attitude_estimator.v": "878bb041f592691ffd0b33746bd8dd18d5506ddb0bb8ec8695ccd89bdf7c28a8",
+        "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35"
+      }
+    },
+    "B0B2": {
+      "returncode": 0,
+      "output": "PASS startup_motion: legal vibration cannot complete stationary calibration\nPASS startup: real guard5 + calibration2 + gravity reseed3; poses=36\nFIXED gravity_qualified_alternation: accepted=90 rejected=0 pose=90 link=1\nPASS dynamic_accel: az=2g gyro_z_delta=164; poses=100 correction_off=96 correction_on=4 yaw_delta_cdeg=87 rejects=0\nPASS explicit_bad_sample rejected without source refresh; next valid dt=100000\nPASS invalid_transport: zero, all-one, wrong-ID rejected; next real dt=200000\nFIXED gyro_zero_braking accepted=10 rejected=0 pose=10\nPASS true_gap_20ms retained qualified epoch; first real sample dt=1000000\nPASS true_gap_30ms retained qualified epoch; first real sample dt=1500000\nPASS true_gap_60ms revoked; guard needs5 fresh good and estimator gravity reseed before pose\nPASS recovery_gravity: source recovers at2g; pose waits for valid gravity reseed\nPASS overrun: unfinished and colliding frames discarded; detail80; no accepted-count refresh\nPASS integrated_policy_suite sources=406 accepted=400 rejected=5 poses=368\nC:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\tests\\policy_pipeline_tb.v:199: $finish called at 285500340000 (1ps)",
+      "source_stable_during_simulation": true,
+      "source_sha256": {
+        "core/imu_pipeline_pipelined.v": "5197ef78b6987e5150fb1211ead256205695cbe0d6eb4392d4804c4ca5f5df69",
+        "core/imu_temporal_check_pipelined.v": "a2574b91272c414219a5fc40f90750a75d39df9d2e4b7f4464f3cc2e7869a1a0",
+        "core/imu_checked_guard_pipelined.v": "20bcf23ce4e44d91dc4fb55f9c05d1e8ae654064f57419f83e7c1648697985a1",
+        "core/ano_attitude_estimator.v": "609f87d404dcd38911b042286543b5e11f7bf233eecf9af57d2f58755b04cfad",
+        "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/imu_diagnostic_tap.v": "26c3c5383bffe899fa61382ae06e2c774b56c1df966b54c1ab07f303b5003808"
+      }
+    }
+  },
+  "started_utc": "20261024T195108Z",
+  "unchanged_control_projection": [
+    "imu_pipeline_pipelined.v",
+    "imu_checked_guard_pipelined.v",
+    "ano_attitude_estimator.v"
+  ],
+  "testbench_sha256": "8a59b7bfbbaa059cb7299d119a2cb1b951469b5d33919e34453943b3d8e22dec",
+  "passed": true
+}

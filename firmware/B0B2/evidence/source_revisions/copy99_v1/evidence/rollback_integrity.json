@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "files": {
+    "acg720_ano_port.fs": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+    "rollback_B0AC.fs": "212f31daed0c96e71c4cd3f1e56a580cdc1b9d425a15ba391cf2a37e74e92c34"
+  },
+  "modified": false,
+  "scope": "Frozen B0B0 release and B0AC rollback preserved; read-only hashes"
+}

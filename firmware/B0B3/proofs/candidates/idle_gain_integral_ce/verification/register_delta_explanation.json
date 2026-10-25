@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "direct_module": "mtf_position_integrator",
+  "hierarchy": "native_navigation/position",
+  "reference_direct_FF": 408,
+  "candidate_direct_FF": 409,
+  "extra_register": "state_3_s1",
+  "extra_Q": "state_3_8",
+  "classification": "Synthesis duplicate of existing state_3_s0/state[3]; identical D, CLK, RESET, CE and INIT; no RTL register added",
+  "rows": {
+    "reference": [
+      {
+        "type": "DFFRE",
+        "cell": "state_3_s0",
+        "Q": "state[3]",
+        "D": "n3456_35",
+        "CLK": "clk50_d",
+        "RESET": "n9819_5",
+        "CE": "VCC",
+        "INIT": "1'b0"
+      }
+    ],
+    "candidate": [
+      {
+        "type": "DFFRE",
+        "cell": "state_3_s0",
+        "Q": "state[3]",
+        "D": "n3456_35",
+        "CLK": "clk50_d",
+        "RESET": "n9819_5",
+        "CE": "VCC",
+        "INIT": "1'b0"
+      },
+      {
+        "type": "DFFRE",
+        "cell": "state_3_s1",
+        "Q": "state_3_8",
+        "D": "n3456_35",
+        "CLK": "clk50_d",
+        "RESET": "n9819_5",
+        "CE": "VCC",
+        "INIT": "1'b0"
+      }
+    ]
+  },
+  "source_position_sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+  "netlist_sha256": {
+    "reference": "97810a976f2af928c8a6d43a28481202cc6cdec4d85349c9073804188faddd33",
+    "candidate": "4497e28d79a30da7487a40449d0f0ed19735d1859d2601f0d972f51344b9d9eb"
+  }
+}

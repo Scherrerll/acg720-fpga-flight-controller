@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-25T12:58:46.5754624+00:00",
+  "movement_sequence_completed": false,
+  "mapping_passed": false,
+  "rotation_passed": false,
+  "operator_report": "Operator cannot perform the prescribed sequence precisely and asked to reuse earlier tests; root stopped this capture without qualifying it",
+  "source": "Current chat user reply"
+}

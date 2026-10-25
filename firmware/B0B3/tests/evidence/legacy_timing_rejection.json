@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "negative acceptance-parser check only; no build/PNR/hardware; old report cannot qualify",
+  "actual_old_period_ns": 19.5,
+  "observed_timing_passed": false,
+  "old_fmax_mhz": 50.59,
+  "source_report": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_p2r0\\fixture\\impl\\pnr\\acg720_ano_port.tr",
+  "source_report_sha256": "391973f59d0440acec6c25a9e7768878b14ea62683693a6fa4efd32b19a6f9be",
+  "parser_sha256": "a50a8dceeb4874e21873cf6e83689a2433ba5b29d034ca55567da276ae0c3bb0",
+  "source_preserved": true,
+  "all_five_analysis_tables_parsed": true
+}

@@ -1,0 +1,33 @@
+*** GOWIN Tcl Command Line Console  *** 
+Open project C:/Users/ScherrerL/Desktop/apple/timeout_policy_20261025/pwm_timing_candidate_v2/pwm_live_globals_p4r0/fixture/acg720_ano_port.gprj finished
+NOTE (PJ2001) : Skip synthesis, because there is only one netlist file in this project
+Reading netlist file: "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\impl\gwsynthesis\acg720_ano_port.vg"
+Parsing netlist file "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\impl\gwsynthesis\acg720_ano_port.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\acg720_ano_port.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\impl\pnr\acg720_ano_port.power.html" completed
+Generate file "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\impl\pnr\acg720_ano_port.pin.html" completed
+Generate file "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\impl\pnr\acg720_ano_port.rpt.html" completed
+Generate file "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\impl\pnr\acg720_ano_port.rpt.txt" completed
+Generate file "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\impl\pnr\acg720_ano_port.tr.html" completed
+Generate file "C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\pwm_timing_candidate_v2\pwm_live_globals_p4r0\fixture\impl\pnr\acg720_ano_port.tr" completed
+Sun Oct 25 11:07:17 2026
+

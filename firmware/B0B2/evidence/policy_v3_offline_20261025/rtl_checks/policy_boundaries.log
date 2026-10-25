@@ -1,0 +1,4 @@
+C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\candidate\acg720_ano_port.v:212: warning: Anachronistic use of named begin/end to surround generate schemes.
+
+PASS policy_boundaries: control source99/100ms; explicit invalidity; independent request/command2999999/3000000 ticks
+C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\policy_boundaries.v:35: $finish called at 212000 (1ps)

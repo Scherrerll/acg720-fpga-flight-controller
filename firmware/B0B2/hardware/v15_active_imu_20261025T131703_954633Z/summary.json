@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "scope": "Brief props-off active rate/optical XYZ data continuity only; no physical gain, scale, rotation, loaded-flight or stable position-hold acceptance",
+  "duration_seconds": 75.69718909999938,
+  "active_span_seconds": 5.048792399989907,
+  "active_frames": 23,
+  "active_raw_accept_pose_delta": {
+    "raw_count": 5008,
+    "accepted_count": 5008,
+    "pose_count": 5008
+  },
+  "counter_delta": {
+    "accepted_count": 75719,
+    "rejected_count": 0,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 1
+  },
+  "pose_stalls": [],
+  "stopped_after_test": true,
+  "active_motor_pwm_min": 1392,
+  "active_motor_pwm_max": 2000,
+  "active_rail_frames": 5,
+  "maximum_observed_xy_target_cdeg": 16,
+  "communication_delta": {
+    "frames": 370,
+    "missing_frames": 8,
+    "checksum_errors": 0,
+    "discarded_bytes": 205
+  },
+  "failures": [],
+  "operator_report": {
+    "utc": "2026-10-25T13:18:16.2806018+00:00",
+    "short_active_test_completed": true,
+    "operator_report": "User completed brief powered speed-up and returned SWA/SWC LOW and throttle minimum",
+    "props_removed_confirmed_in_current_session": true,
+    "source": "Current chat human answer"
+  },
+  "snapshots_sha256": "befb4a902f730a2da9908719d93d5e0436c71f1f4c5d65d8d2f72b32f58b33b6",
+  "observer_sha256": "8f7eefa897b19d4bc5849f77729a7ae85e3af89654a681a9a6b0afd5935925d7",
+  "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

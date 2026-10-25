@@ -1,0 +1,13 @@
+--- verify_top_safety.py
++++ candidates/idle_gain_integral_ce/verification/regressions/top_safety/run_original_suite.py
+@@ -1,7 +1,9 @@
++import sys
++sys.path.insert(0,'C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026')
+ from pathlib import Path
+ import os,subprocess,json,xml.etree.ElementTree as ET
+ from xy_pi_cli import encode_request
+-R=Path(__file__).resolve().parent;S=R/'source';O=R/'verification';T=O/'tmp';B=R.parent/'.tools/iverilog/app/bin'
++R=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026');S=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_integral_ce\\source');O=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_integral_ce\\verification\\regressions\\top_safety');T=O/'tmp';B=R.parent/'.tools/iverilog/app/bin'
+ tb='''`timescale 1ns/1ps
+ module tb;
+ reg clk=0;always #10 clk=~clk;

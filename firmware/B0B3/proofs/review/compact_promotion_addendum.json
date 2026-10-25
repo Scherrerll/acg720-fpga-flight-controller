@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "holding_contract_review": "no new issue",
+  "telemetry_sha256": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+  "bank_sha256": "bb11794b6a406a9c321e53a24d8751dc74006388063ef538bd5084f3d298886f",
+  "bound_files": {
+    "source/telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "source/xy_pi_parameters.v": "bb11794b6a406a9c321e53a24d8751dc74006388063ef538bd5084f3d298886f",
+    "verification/comm_compact_promotion.json": "1df4ab160b963152726cf189c7eaba1bfcb0f30629a204f62ac2c31e1ab23909",
+    "verification/link_results.json": "628a430fdc9c188ad364f7454f52f9f95ba2c3cfed51da3f0a3e1f100f623ec7",
+    "verification/top_safety_results.json": "9e45bd8fde2bd0092c9da36925f9a3c6ffaa71cc79d9713fae8b66924ede4274",
+    "verification/source_review.json": "6a97f782114f2aafd46da3dffa5600584802307c27af5e6d4a098046c21ce5c8",
+    "verification/netlist_audit.json": "9e194c73f55774018f3f4ad7a0a0218ca1bcbcf5cf32d56467cd5428fdac4f93",
+    "candidates/comm_compact/verification/contract_results.json": "5dbf6e7370c2c12440a532ede6e70bdd8c18b794030bb812cde8cb88be024e14",
+    "review/compact_promotion_addendum.md": "556e09389e77147fe18342c156bb5e68c2fa6e72181e5ddcdec9d60a0b6b8a58",
+    "review/compact_position_mapping.md": "ccd4d5954590b58592c0b8372db0c8c06ffa28bc90239ddf0fa4270a2bd559ed",
+    "review/compact_position_map.json": "cad73ff1734f016dd4aba5e41b0dbedef40cf793aca1ba3c663505ffe1e6305f",
+    "review/compact_position_equivalence.json": "b1ed847f8d846202137a99ec308167ca2b0f0822c3057c4e01daf3789bb1e0db",
+    "review/position_local_comparison.json": "13591b12aee6a22148b3e5a28d71e45877f417ced40a35de911a416d7ab69678"
+  },
+  "scope": "read-only promotion/ownership review and exact position-reset cone mapping; no PNR/STA/hardware claim"
+}

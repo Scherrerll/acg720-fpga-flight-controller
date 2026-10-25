@@ -1,0 +1,37 @@
+{
+  "verification/regressions/run_regressions.py": {
+    "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\verification\\regressions\\run_regressions.py",
+    "baseline_sha256": "180fb407359df2a8ad8855c20cb3289667d1a16e18038fc8c7dcc7c6bc3c85c8",
+    "candidate_sha256": "2c2ef21f08bae1b5dcfabccc9493b25c64796da14a196a82870a2ced41eff467",
+    "initial_generated_candidate_sha256": "2c2ef21f08bae1b5dcfabccc9493b25c64796da14a196a82870a2ced41eff467",
+    "finalization_note": "Final helper bytes are bound here and in freeze manifest; runner EOF/CRLF/sentinel handling was completed before launch. No device RTL changes after preparation."
+  },
+  "verification/regressions/publish_results.py": {
+    "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\verification\\regressions\\publish_results.py",
+    "baseline_sha256": "3cab143befa17b927e660279961e8413fcb950c55a97ec88406a086ab84c0ba7",
+    "candidate_sha256": "bf9c936afbc65faed6764cfdec590c81bf344d1e2ca12bff36c30eeef6964f61",
+    "initial_generated_candidate_sha256": "bf9c936afbc65faed6764cfdec590c81bf344d1e2ca12bff36c30eeef6964f61",
+    "finalization_note": "Final helper bytes are bound here and in freeze manifest; runner EOF/CRLF/sentinel handling was completed before launch. No device RTL changes after preparation."
+  },
+  "audit_synthesis.py": {
+    "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\audit_synthesis.py",
+    "baseline_sha256": "ae263d3832485a851b6c305ce3abe68174a7e7b19b1d6cd045cbd31db5cdcfff",
+    "candidate_sha256": "f454c3a56a67735339e2db9ae50282ed1945993f1429ecc35fe3d59b94f586d4",
+    "initial_generated_candidate_sha256": "f454c3a56a67735339e2db9ae50282ed1945993f1429ecc35fe3d59b94f586d4",
+    "finalization_note": "Final helper bytes are bound here and in freeze manifest; runner EOF/CRLF/sentinel handling was completed before launch. No device RTL changes after preparation."
+  },
+  "audit_idle_decode.py": {
+    "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\audit_idle_decode.py",
+    "baseline_sha256": "9a469e8a12d7017e473b000c39c9c1c537668e86c8a3d8001e43ab9964b7008a",
+    "candidate_sha256": "ea22fab3e6364ea6067b58a56c40edca6ea5f20e7b743a4041248cf8bba6133a",
+    "initial_generated_candidate_sha256": "ea22fab3e6364ea6067b58a56c40edca6ea5f20e7b743a4041248cf8bba6133a",
+    "finalization_note": "Final helper bytes are bound here and in freeze manifest; runner EOF/CRLF/sentinel handling was completed before launch. No device RTL changes after preparation."
+  },
+  "run_synthesis.py": {
+    "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\run_synthesis.py",
+    "baseline_sha256": "ab2cc3ea2982613afee358a27465c84d940ed7316422fa6c6778bf66bff80f9f",
+    "candidate_sha256": "1230a7807025e76dda05dc6f9df69b03580e9145031434914a08ef18f12e3746",
+    "initial_generated_candidate_sha256": "59d9ed8ba601dc47f9fa944b9f1acef3dcb1a581605633d61cf008299f1e96a5",
+    "finalization_note": "Final helper bytes are bound here and in freeze manifest; runner EOF/CRLF/sentinel handling was completed before launch. No device RTL changes after preparation."
+  }
+}

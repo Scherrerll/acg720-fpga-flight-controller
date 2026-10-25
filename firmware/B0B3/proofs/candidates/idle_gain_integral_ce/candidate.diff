@@ -1,0 +1,19 @@
+--- idle_gain_ce/source/position/mtf_xyz_hold_control.v
++++ idle_gain_integral_ce/source/position/mtf_xyz_hold_control.v
+@@ -207,6 +207,7 @@
+  reg [15:0] work_p=500,work_i=0;
+  always @(posedge clk) if(state==0)begin
+   work_p<=xy_p_value;work_i<=xy_i_value;
++  saved_ix<=ix_store;saved_iy<=iy_store;
+  end
+  reg mul_start=0,div_start=0,trig_start=0;
+  reg signed [49:0] ma_store=0;
+@@ -336,7 +337,7 @@
+       position_due<=0;work_xy<=1;
+       // A source callback is atomic. Roll back a cancelled, partly executed
+       // FPGA callback; preserve the last completed OF PI/filter state in ATT_STAB.
+-      saved_ix<=ix_store;saved_iy<=iy_store;saved_afx<=afx_store;saved_afy<=afy_store;
++      saved_afx<=afx_store;saved_afy<=afy_store;
+       position_ex_store<=keep64($signed(target_x)-$signed(px));position_ey_store<=keep64($signed(target_y)-$signed(py));
+       sample_vx_store<=keep64(($signed({{32{pvx[31]}},pvx})<<<(16-VELOCITY_FRAC_BITS)));sample_vy_store<=keep64(($signed({{32{pvy[31]}},pvy})<<<(16-VELOCITY_FRAC_BITS)));
+       world_ax_store<=keep64($signed(pax)*65536);world_ay_store<=keep64($signed(pay)*65536);dt<=pdt;angle_store<=keep64($signed(pyaw)*64'sd183);

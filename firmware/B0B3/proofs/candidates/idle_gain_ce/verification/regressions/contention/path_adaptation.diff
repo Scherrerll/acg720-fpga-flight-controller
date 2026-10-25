@@ -1,0 +1,20 @@
+--- review/verify_contention.py
++++ candidates/idle_gain_ce/verification/regressions/contention/run_original_suite.py
+@@ -1,7 +1,7 @@
+ """Real XY/Z controller against isolated and saturated four-client services."""
+ from pathlib import Path
+ import ast,hashlib,json,os,re,subprocess
+-R=Path(__file__).resolve().parents[1];O=Path(__file__).resolve().parent/'contention';O.mkdir(exist_ok=True)
++R=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026');S=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\source');O=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_ce\\verification\\regressions\\contention');O.mkdir(exist_ok=True)
+ T=O/'tmp';T.mkdir(exist_ok=True);B=R.parent/'.tools/iverilog/app/bin'
+ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+ # Reuse the existing real-controller port contract without importing/running
+@@ -147,7 +147,7 @@
+ endmodule
+ '''
+ (O/'contention_tb.v').write_text(tb+harness('contended',4)+harness('isolated',1))
+-sources=[R/'source/position/mtf_xyz_hold_control.v',R/'source/nav_math_service.v',R/'source/position/position_math.v',R/'source/position/ano_xy_stick.v',R/'source/position/ano_xy_divide36.v',R/'source/position/ano_z_stick.v']
++sources=[S/'position/mtf_xyz_hold_control.v',S/'nav_math_service.v',S/'position/position_math.v',S/'position/ano_xy_stick.v',S/'position/ano_xy_divide36.v',S/'position/ano_z_stick.v']
+ env=dict(os.environ,TMP=str(T),TEMP=str(T),TMPDIR=str(T))
+ c=subprocess.run([str(B/'iverilog.exe'),'-g2012','-s','tb','-o',str(O/'contention.vvp'),str(O/'contention_tb.v'),*map(str,sources)],env=env,capture_output=True,text=True)
+ (O/'compile.log').write_text(c.stdout+c.stderr);assert c.returncode==0,c.stdout+c.stderr

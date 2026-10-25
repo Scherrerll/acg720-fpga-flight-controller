@@ -7,5 +7,14 @@ firmware/B0AE/tests/* linguist-generated=true
 firmware/B0B0/provenance/** linguist-generated=true
 firmware/B0B0/selected_netlist/** linguist-generated=true
 firmware/B0B0/release/*.fs binary
+firmware/B0B2/verified_timing_20261025/bitstream/*.fs binary
+firmware/B0B3/release/*.fs binary
+firmware/B0B1/evidence/** linguist-generated=true
+firmware/B0B2/evidence/** linguist-generated=true
+firmware/B0B2/hardware/** linguist-generated=true
+firmware/B0B2/verified_timing_20261025/** linguist-generated=true
+firmware/B0B3/physical/** linguist-generated=true
+firmware/B0B3/provenance/** linguist-generated=true
+firmware/B0B3/tests/evidence/** linguist-generated=true
 validation/** linguist-generated=true
 

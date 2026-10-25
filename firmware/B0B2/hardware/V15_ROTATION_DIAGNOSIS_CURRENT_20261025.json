@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-25T14:27:53.709705+00:00",
+  "current_report": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\rotation_followup\\README.md",
+  "report_sha256": "d07e60bd3e22c939a23b4d8343b05f3c6b696bf486f1e77a23db8eb6c94590b7",
+  "receipt": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\rotation_followup\\followup.json",
+  "dynamic_stick_test": "failed; unresolved",
+  "unique_root_cause_identified": false,
+  "firmware_changed": false,
+  "routing": "paused"
+}

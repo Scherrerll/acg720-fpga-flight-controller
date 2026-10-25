@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "netlist_sha256": "4497e28d79a30da7487a40449d0f0ed19735d1859d2601f0d972f51344b9d9eb",
+  "parser_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "cells": 72870,
+  "flipflops": 27765,
+  "asynchronous_pad": "radio_rx_d",
+  "direct_pad_loads": [
+    [
+      "parameter_uart/rx_meta_s0",
+      "D",
+      "DFFCE"
+    ],
+    [
+      "parameter_uart/rx_meta_s1",
+      "D",
+      "DFFSE"
+    ]
+  ],
+  "first_stage_Q_loads": [
+    [
+      "parameter_uart/rx_sync_s0",
+      "D"
+    ],
+    [
+      "parameter_uart/rx_sync_s1",
+      "D"
+    ]
+  ],
+  "exception": "set_false_path -from radio_rx applies only to first-stage D pins; meta-Q -> sync-D and downstream remain timed",
+  "single_clock": "clk50 through one IBUF; all clock pins checked",
+  "gain_register_counts": {
+    "parameters/active_p_": 16,
+    "parameters/active_i_": 16,
+    "native_navigation/controller_proof/work_p_": 16,
+    "native_navigation/controller_proof/work_i_": 16
+  },
+  "note": "Gowin syn_preserve retains INIT0 shadow flops alongside functional INIT1 meta/sync flops; both first-stage pad loads enumerated. No downstream logic is on the raw pad."
+}

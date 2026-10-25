@@ -1,0 +1,19 @@
+{
+  "source_files_bound": 53,
+  "source_unchanged": true,
+  "synthesized_netlist_sha256": "29e7a58e6b84eaae03cbe9fb806f1d1186933ec1150844839c2c11b58a7473ed",
+  "usb_high_rate_sender_in_netlist": false,
+  "netlist": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "reported_synthesis_resources": {
+    "T_Register": "27816(2020)",
+    "T_Alu": "9206(146)",
+    "T_Lut": "36025(150)",
+    "T_MULTALU27X18": "30(0)",
+    "T_MULT12X12": "7(0)",
+    "T_MULT27X36": "13(0)",
+    "T_Bsram": "2(0)"
+  },
+  "resource_report_sha256": "bd5a22ccaa2b4e94ae5825ffefa1770b490f89d1774f8f382b7e5d01a4c3da2d"
+}

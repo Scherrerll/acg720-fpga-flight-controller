@@ -1,0 +1,4 @@
+CASE controller_input_mmps=-1200 dt_us=20000 target_roll_cdeg=0 target_pitch_cdeg=-1810 ix_q16=655360 active=1 z=1
+CASE controller_input_mmps=-2000 dt_us=20000 target_roll_cdeg=0 target_pitch_cdeg=-2500 ix_q16=1310720 active=1 z=1
+PASS actual XY controller at real 50MHz/1ms-stick/11ms-height/20ms-XY callbacks; synthetic controller-input velocity, no MTF/plant model
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\B0B2\xy_limit_reproduction\controller_limits_tb.v:43: $finish called at 40096801000 (1ps)

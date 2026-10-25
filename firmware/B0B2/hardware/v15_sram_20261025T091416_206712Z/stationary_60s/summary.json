@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "scope": "60-second read-only stopped stationary observation",
+  "duration_seconds": 60.03078910001204,
+  "samples": 61,
+  "build_id": 45234,
+  "stopped_all_samples": true,
+  "protocol_identity_version": 5,
+  "diagnostic_version": 3,
+  "stats_delta": {
+    "frames": 296,
+    "checksum_errors": 0,
+    "discarded_bytes": 171,
+    "acceleration_checksum_errors": 0,
+    "acceleration_discarded_bytes": 0,
+    "sequence_gap_events": 4,
+    "missing_frames": 4,
+    "sequence_resets": 0
+  },
+  "diagnostic_delta": {
+    "accepted_count": 60094,
+    "rejected_count": 0,
+    "command_count": 0,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "final_data": {
+    "sensor_ok": true,
+    "attitude_valid": true,
+    "calibrated": true,
+    "rc_valid": true,
+    "armed": false,
+    "controller_enabled": false,
+    "physical_output_active": false,
+    "pwm_us": [
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "command_us": [
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "roll_deg": 0.89,
+    "pitch_deg": 3.37,
+    "yaw_relative_deg": 0.03,
+    "range_valid": false,
+    "flow_valid": false,
+    "height_valid": false,
+    "pose_age_ms": null
+  },
+  "failures": [],
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false,
+  "snapshots_sha256": "e2135424ff8eacb48c32b7ba2b9cce6e7daa117d387e7d2babf81aa20aead2f6",
+  "observer_sha256": "c3433dcfdabdd7aac236efbc86990925d5151f8d2fee7f75fe8e06c07ffae78a"
+}

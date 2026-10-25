@@ -1,0 +1,77 @@
+--- C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_ce\verify_cycle_pair.py
++++ C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\idle_gain_integral_ce\verify_cycle_pair.py
+@@ -7,7 +7,9 @@
+ record=json.loads((C/'change.json').read_text())
+ for rel,digest in record['baseline_source_sha256'].items():assert sha(Path(record['baseline'])/rel)==digest
+ for rel,digest in record['candidate_source_sha256'].items():assert sha(S/rel)==digest
+-old=(Path(record['baseline'])/'position/mtf_xyz_hold_control.v').read_bytes()
++idle_old=(Path(record['baseline'])/'position/mtf_xyz_hold_control.v').read_bytes()
++idlefile=O/'idle_base_controller.v';idlefile.write_bytes(idle_old.replace(b'module mtf_xyz_hold_control #(',b'module mtf_xyz_hold_control_idle_base #('))
++old=(Path(record['additional_equivalence_reference'])/'position/mtf_xyz_hold_control.v').read_bytes();assert hashlib.sha256(old).hexdigest()=='d79d31b434045b2da0711dd54d801646959b4c17d51b1d3fa8cd10eb284f872e'
+ assert old.count(b'module mtf_xyz_hold_control #(')==1
+ oldfile=O/'old_controller.v';oldfile.write_bytes(old.replace(b'module mtf_xyz_hold_control #(',b'module mtf_xyz_hold_control_old #('))
+ outs=[('requested',1),('ready',1),('active',1),('height_requested',1),('height_ready',1),('height_active',1),('auto_takeoff',1),('reason',16),('height_reason',16),('collective_target_us',16),('roll_target',16),('pitch_target',16),('throttle_delta',16),('requested_climb_mmps',32),('target_height_mm',32),('pilot_norm_x',18),('pilot_norm_y',18),('pilot_norm_update',1),('pilot_norm_valid',1),('pilot_norm_dt_us',16),('math_mul_start',1),('math_mul_cancel',1),('math_mul_a',64),('math_mul_b',64),('math_div_start',1),('math_div_cancel',1),('math_div_numerator',64),('math_div_denominator',32)]
+@@ -45,9 +47,11 @@
+ reg sample_update=0,position_update=0,height_update=0,inject_error=0;
+ reg[31:0]position_dt=20000,position_age=0;
+ reg signed[31:0]vx=0,vy=0,height=1000,vz=0,ax=0,ay=0,az=0;reg signed[15:0]yaw=0;
+-wire[@WIDTH@:0]old_public,new_public;
+-old_wrapper a(@COMMON@,old_public);new_wrapper b(@COMMON@,new_public);
++wire[@WIDTH@:0]old_public,new_public,idle_public;
++old_wrapper a(@COMMON@,old_public);new_wrapper b(@COMMON@,new_public);idle_base_wrapper c(@COMMON@,idle_public);
+ always #10 clk=~clk;
++integer saved_freeze=0,saved_captures=0,saved_rollbacks=0,partial_I_rollbacks=0,saved_idle_differences=0;
++reg[26:0]pre_sx,pre_sy,pre_ix,pre_iy;reg restore_edge,partial_I;
+ integer cycles=0,xy_pubs=0,z_pubs=0,xy_starts=0,z_starts=0,idle_differences=0,freeze_checks=0,start_checks=0;
+ integer cancel_mbusy=0,cancel_dbusy=0,error_hits=0,rollback_hits=0,priority_checks=0,reset_busy=0;
+ reg[255:0]states=0;reg[31:0]rng=32'h49a173ed;reg random_gains=0,pause_samples=0;integer sample_clock=0;
+@@ -67,6 +71,9 @@
+ always @(posedge clk)begin
+  prestate=b.dut.state;pre_work=b.dut.work_xy;pre_cancel=b.dut.xy_cancel;pre_rst=rst_n;
+  prev_bp=b.dut.work_p;prev_bi=b.dut.work_i;admit_p=pval;admit_i=ival;
++ pre_sx=b.dut.saved_ix;pre_sy=b.dut.saved_iy;pre_ix=b.dut.ix_store;pre_iy=b.dut.iy_store;
++ restore_edge=rst_n && !b.dut.cancel && !origin && !b.dut.blocked && b.dut.tracking && pre_work && pre_cancel;
++ partial_I=({pre_ix,pre_iy}!={pre_sx,pre_sy}) && ({pre_ix,pre_iy}!=0);
+  pre_both=b.dut.state==0 && b.dut.tracking && !b.dut.cancel && !origin && !b.dut.blocked && b.dut.height_due && b.dut.height_stick_captured && b.dut.position_due && b.dut.position_stick_captured && !b.dut.xy_cancel;
+  if(!rst_n && b.dut.state!=0)reset_busy=reset_busy+1;
+  if(b.math_mul_cancel && b.mbusy)cancel_mbusy=cancel_mbusy+1;
+@@ -74,8 +81,15 @@
+  if(rst_n && b.dut.state==101 && b.ddone && inject_error)error_hits=error_hits+1;
+  if(rst_n && pre_work && pre_cancel)rollback_hits=rollback_hits+1;
+  #2;cycles=cycles+1;
++ if(idle_public!==new_public)$fatal(1,"immediate frozen idle baseline public mismatch cycle=%0d",cycles);
+  if(old_public!==new_public)$fatal(1,"public cycle mismatch cycle=%0d phase=%0d states=%0d/%0d",cycles,phase,a.dut.state,b.dut.state);
+  if(a.dut.state!==b.dut.state || a.dut.work_xy!==b.dut.work_xy)$fatal(1,"FSM mismatch");
++ if(c.dut.state!==b.dut.state || c.dut.work_xy!==b.dut.work_xy)$fatal(1,"immediate baseline FSM mismatch");
++ if(prestate!=0)begin if(b.dut.saved_ix!==pre_sx || b.dut.saved_iy!==pre_sy)$fatal(1,"saved I changed during nonidle work");saved_freeze=saved_freeze+1;end
++ if(b.dut.work_xy && b.dut.state!=0 && ({b.dut.saved_ix,b.dut.saved_iy}!=={c.dut.saved_ix,c.dut.saved_iy} || {b.dut.saved_ix,b.dut.saved_iy}!=={a.dut.saved_ix,a.dut.saved_iy}))$fatal(1,"active saved I pair differs from actual baselines");
++ if(prestate==0 && b.dut.state==43 && b.dut.work_xy)begin if(b.dut.saved_ix!==pre_ix || b.dut.saved_iy!==pre_iy)$fatal(1,"saved I admission edge changed");saved_captures=saved_captures+1;end
++ if(restore_edge)begin if(b.dut.ix_store!==pre_sx || b.dut.iy_store!==pre_sy)$fatal(1,"saved I rollback value/edge changed");saved_rollbacks=saved_rollbacks+1;if(partial_I)partial_I_rollbacks=partial_I_rollbacks+1;end
++ if(b.dut.state==0 && {b.dut.saved_ix,b.dut.saved_iy}!=={c.dut.saved_ix,c.dut.saved_iy})saved_idle_differences=saved_idle_differences+1;
+  states[b.dut.state]=1;
+  if(prestate!=0)begin
+   if(b.dut.work_p!==prev_bp || b.dut.work_i!==prev_bi)$fatal(1,"candidate gain changed while pre-edge state!=0");
+@@ -150,18 +164,20 @@
+  if(xy_pubs<70 || z_pubs<70 || priority_checks<60 || freeze_checks<100000 || idle_differences<100 || cancel_mbusy==0 || cancel_dbusy==0 || rollback_hits==0 || error_hits==0 || reset_busy<2)$fatal(1,"coverage incomplete xy=%0d z=%0d priority=%0d freeze=%0d idle=%0d cm=%0d cd=%0d rb=%0d err=%0d resets=%0d",xy_pubs,z_pubs,priority_checks,freeze_checks,idle_differences,cancel_mbusy,cancel_dbusy,rollback_hits,error_hits,reset_busy);
+  if(!p_seen[65535] || !p_seen[32768] || !p_seen[16384] || !i_seen[65535] || !i_seen[32768] || !i_seen[16384])$fatal(1,"full-width high-bit corners missing");
+  $display("PASS COVERAGE cycles=%0d xy_pubs=%0d z_pubs=%0d xy_starts=%0d z_starts=%0d start_checks=%0d freeze_checks=%0d idle_differences=%0d priority=%0d cancel_mbusy=%0d cancel_dbusy=%0d rollback=%0d fault=%0d reset_busy=%0d distinct_p=%0d distinct_i=%0d states=%h",cycles,xy_pubs,z_pubs,xy_starts,z_starts,start_checks,freeze_checks,idle_differences,priority_checks,cancel_mbusy,cancel_dbusy,rollback_hits,error_hits,reset_busy,seen_p_count,seen_i_count,states);
++ if(saved_freeze<100000 || saved_captures!=xy_starts || saved_rollbacks<1 || partial_I_rollbacks<1 || saved_idle_differences<100)$fatal(1,"saved I coverage incomplete freeze=%0d captures=%0d rollback=%0d partial=%0d idle=%0d",saved_freeze,saved_captures,saved_rollbacks,partial_I_rollbacks,saved_idle_differences);
++ $display("PASS SAVED_I freeze=%0d captures=%0d rollbacks=%0d nonzero_partial_I_rollbacks=%0d private_idle_differences=%0d; both actual response and immediate idle baselines public450bits cycle equal",saved_freeze,saved_captures,saved_rollbacks,partial_I_rollbacks,saved_idle_differences);
+  $finish;
+ end
+ initial begin #100000000;$fatal(1,"pair timeout phase=%0d state=%0d",phase,b.dut.state);end
+ endmodule
+ '''.replace('@WIDTH@',str(sum(n for _,n in outs))).replace('@COMMON@',common)
+-bench=O/'pair_tb.v';bench.write_text(tb+wrapper('old_wrapper','mtf_xyz_hold_control_old')+wrapper('new_wrapper','mtf_xyz_hold_control'))
+-sources=[oldfile,S/'position/mtf_xyz_hold_control.v',S/'nav_math_service.v',S/'position/position_math.v',S/'position/ano_xy_stick.v',S/'position/ano_xy_divide36.v',S/'position/ano_z_stick.v']
++bench=O/'pair_tb.v';bench.write_text(tb+wrapper('old_wrapper','mtf_xyz_hold_control_old')+wrapper('new_wrapper','mtf_xyz_hold_control')+wrapper('idle_base_wrapper','mtf_xyz_hold_control_idle_base'))
++sources=[oldfile,idlefile,S/'position/mtf_xyz_hold_control.v',S/'nav_math_service.v',S/'position/position_math.v',S/'position/ano_xy_stick.v',S/'position/ano_xy_divide36.v',S/'position/ano_z_stick.v']
+ env=dict(os.environ,TMP=str(T),TEMP=str(T),TMPDIR=str(T))
+ c=subprocess.run([str(B/'iverilog.exe'),'-g2012','-s','tb','-o',str(O/'pair.vvp'),str(bench),*map(str,sources)],env=env,capture_output=True,text=True)
+ (O/'compile.log').write_text(c.stdout+c.stderr);assert c.returncode==0,c.stdout+c.stderr
+ with (O/'pair.log').open('w')as log:c=subprocess.run([str(B/'vvp.exe'),str(O/'pair.vvp')],env=env,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,timeout=600,creationflags=subprocess.CREATE_NO_WINDOW)
+ output=(O/'pair.log').read_text();print(output,flush=True);assert c.returncode==0,output
+ for rel,digest in record['candidate_source_sha256'].items():assert sha(S/rel)==digest
+-out=dict(passed=True,scope='Actual immutable old and candidate controllers; all public outputs cycle equal; real one-client shared services; no forced state; injected public divider error only on real done; source induction covers all16-bit gain pairs, simulation is directed/random not exhaustive',public_output_bits=sum(n for _,n in outs)+1,private_idle_snapshot_equality=False,checks=[x for x in output.splitlines()if x.startswith('PASS')],source_sha256={str(p):sha(p)for p in sources},harness_sha256=sha(bench),runner_sha256=sha(Path(__file__)),log_sha256=sha(O/'pair.log'))
++out=dict(passed=True,scope='Actual immutable response controller, immediate frozen idle baseline and candidate; all public outputs cycle equal; real one-client shared services; no forced state; injected public divider error only on real done; source induction covers all16-bit gain pairs, simulation is directed/random not exhaustive',public_output_bits=sum(n for _,n in outs)+1,private_idle_snapshot_equality=False,private_saved_integral_idle_equality=False,immediate_baseline_controller_sha256=hashlib.sha256(idle_old).hexdigest(),response_reference_controller_sha256=hashlib.sha256(old).hexdigest(),checks=[x for x in output.splitlines()if x.startswith('PASS')],source_sha256={str(p):sha(p)for p in sources},harness_sha256=sha(bench),runner_sha256=sha(Path(__file__)),log_sha256=sha(O/'pair.log'))
+ (O/'results.json').write_text(json.dumps(out,indent=2))

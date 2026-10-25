@@ -1,0 +1,450 @@
+{
+  "capture_completed": true,
+  "distinct_receipt_pairs": 778,
+  "motion_segments": [
+    {
+      "start_s": 86.82341019998421,
+      "end_s": 89.81610450000153,
+      "n": 14,
+      "roll_deg": [
+        0.73,
+        10.29
+      ],
+      "pitch_deg": [
+        3.2,
+        3.85
+      ],
+      "range_mm": [
+        221,
+        274
+      ],
+      "gyro_x_deg_s": [
+        -7.575251881669208,
+        14.56468535632622
+      ],
+      "gyro_y_deg_s": [
+        -1.743238495617378,
+        0.942159513147866
+      ],
+      "velocity_x_mm_s": [
+        -52.8,
+        45.2
+      ],
+      "velocity_y_mm_s": [
+        -356.8,
+        221.0
+      ],
+      "cumulative_x_span_mm": 3.824,
+      "cumulative_y_span_mm": 59.38799999999992,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        58,
+        74
+      ]
+    },
+    {
+      "start_s": 91.92196939999121,
+      "end_s": 94.58691250000265,
+      "n": 14,
+      "roll_deg": [
+        0.98,
+        9.69
+      ],
+      "pitch_deg": [
+        3.2,
+        3.75
+      ],
+      "range_mm": [
+        214,
+        271
+      ],
+      "gyro_x_deg_s": [
+        -21.75738078791921,
+        2.3795076695884148
+      ],
+      "gyro_y_deg_s": [
+        -5.077112709603659,
+        3.2275241758765247
+      ],
+      "velocity_x_mm_s": [
+        -53.4,
+        387.0
+      ],
+      "velocity_y_mm_s": [
+        -85.6,
+        430.0
+      ],
+      "cumulative_x_span_mm": 31.394000000000002,
+      "cumulative_y_span_mm": 30.690000000000055,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        57,
+        73
+      ]
+    },
+    {
+      "start_s": 96.06118089999654,
+      "end_s": 99.0408208000008,
+      "n": 14,
+      "roll_deg": [
+        -8.33,
+        0.95
+      ],
+      "pitch_deg": [
+        3.53,
+        3.87
+      ],
+      "range_mm": [
+        220,
+        257
+      ],
+      "gyro_x_deg_s": [
+        -15.037276105182928,
+        1.237688762385671
+      ],
+      "gyro_y_deg_s": [
+        -0.6987929925685976,
+        1.1054806592987805
+      ],
+      "velocity_x_mm_s": [
+        0.0,
+        265.2
+      ],
+      "velocity_y_mm_s": [
+        -91.2,
+        221.0
+      ],
+      "cumulative_x_span_mm": 64.316,
+      "cumulative_y_span_mm": 74.71199999999999,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        66,
+        78
+      ]
+    },
+    {
+      "start_s": 100.69779700000072,
+      "end_s": 103.02872919998481,
+      "n": 9,
+      "roll_deg": [
+        -8.08,
+        0.97
+      ],
+      "pitch_deg": [
+        3.29,
+        3.77
+      ],
+      "range_mm": [
+        227,
+        262
+      ],
+      "gyro_x_deg_s": [
+        -1.3101717320884148,
+        21.370462557164636
+      ],
+      "gyro_y_deg_s": [
+        -2.4252244902820124,
+        1.1460615948932928
+      ],
+      "velocity_x_mm_s": [
+        -104.4,
+        285.6
+      ],
+      "velocity_y_mm_s": [
+        -272.4,
+        307.2
+      ],
+      "cumulative_x_span_mm": 41.742,
+      "cumulative_y_span_mm": 72.89000000000033,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        66,
+        91
+      ]
+    },
+    {
+      "start_s": 115.85082949997741,
+      "end_s": 118.67480799998157,
+      "n": 13,
+      "roll_deg": [
+        0.79,
+        9.46
+      ],
+      "pitch_deg": [
+        3.4,
+        3.48
+      ],
+      "range_mm": [
+        215,
+        270
+      ],
+      "gyro_x_deg_s": [
+        -0.06715355849847561,
+        11.345810308689025
+      ],
+      "gyro_y_deg_s": [
+        -1.3866889767530488,
+        0.881541182355183
+      ],
+      "velocity_x_mm_s": [
+        -47.8,
+        261.6
+      ],
+      "velocity_y_mm_s": [
+        -131.4,
+        348.8
+      ],
+      "cumulative_x_span_mm": 39.35400000000004,
+      "cumulative_y_span_mm": 92.03800000000001,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        55,
+        82
+      ]
+    },
+    {
+      "start_s": 122.6454835999757,
+      "end_s": 125.31791579999845,
+      "n": 13,
+      "roll_deg": [
+        0.81,
+        9.44
+      ],
+      "pitch_deg": [
+        3.34,
+        3.59
+      ],
+      "range_mm": [
+        218,
+        258
+      ],
+      "gyro_x_deg_s": [
+        -13.915435046684452,
+        6.954301043254574
+      ],
+      "gyro_y_deg_s": [
+        -6.430946908346037,
+        0.5380323456554879
+      ],
+      "velocity_x_mm_s": [
+        -50.4,
+        50.2
+      ],
+      "velocity_y_mm_s": [
+        -99.6,
+        552.2
+      ],
+      "cumulative_x_span_mm": 13.330000000000041,
+      "cumulative_y_span_mm": 39.603999999999814,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        50,
+        79
+      ]
+    },
+    {
+      "start_s": 128.4597118999809,
+      "end_s": 132.46650419998332,
+      "n": 18,
+      "roll_deg": [
+        -7.72,
+        0.8
+      ],
+      "pitch_deg": [
+        2.77,
+        3.42
+      ],
+      "range_mm": [
+        221,
+        261
+      ],
+      "gyro_x_deg_s": [
+        -12.428916372903965,
+        0.9588325314405489
+      ],
+      "gyro_y_deg_s": [
+        -3.1792021960746952,
+        9.034989519817074
+      ],
+      "velocity_x_mm_s": [
+        -309.4,
+        611.0
+      ],
+      "velocity_y_mm_s": [
+        -486.2,
+        148.8
+      ],
+      "cumulative_x_span_mm": 64.05599999999998,
+      "cumulative_y_span_mm": 149.42399999999998,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        65,
+        88
+      ]
+    },
+    {
+      "start_s": 133.58718959998805,
+      "end_s": 136.75351670000236,
+      "n": 13,
+      "roll_deg": [
+        -7.69,
+        0.84
+      ],
+      "pitch_deg": [
+        2.04,
+        3.71
+      ],
+      "range_mm": [
+        233,
+        255
+      ],
+      "gyro_x_deg_s": [
+        -0.19206721608231708,
+        17.939646651105186
+      ],
+      "gyro_y_deg_s": [
+        -14.365651200457318,
+        2.272755692644817
+      ],
+      "velocity_x_mm_s": [
+        -195.2,
+        514.8
+      ],
+      "velocity_y_mm_s": [
+        -512.6,
+        605.8
+      ],
+      "cumulative_x_span_mm": 61.190000000000055,
+      "cumulative_y_span_mm": 96.6279999999997,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        72,
+        88
+      ]
+    },
+    {
+      "start_s": 142.100400299998,
+      "end_s": 146.59022610000102,
+      "n": 19,
+      "roll_deg": [
+        0.79,
+        1.24
+      ],
+      "pitch_deg": [
+        -8.04,
+        16.38
+      ],
+      "range_mm": [
+        219,
+        291
+      ],
+      "gyro_x_deg_s": [
+        -0.8107999475990855,
+        1.1136980754573171
+      ],
+      "gyro_y_deg_s": [
+        -23.320178520388723,
+        1.9777474752286588
+      ],
+      "velocity_x_mm_s": [
+        -592.8,
+        492.8
+      ],
+      "velocity_y_mm_s": [
+        -700.8,
+        282.0
+      ],
+      "cumulative_x_span_mm": 74.63000000000005,
+      "cumulative_y_span_mm": 405.66799999999967,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        69,
+        87
+      ]
+    },
+    {
+      "start_s": 146.72784879998653,
+      "end_s": 158.09371180000016,
+      "n": 49,
+      "roll_deg": [
+        0.74,
+        1.15
+      ],
+      "pitch_deg": [
+        -7.54,
+        13.93
+      ],
+      "range_mm": [
+        211,
+        273
+      ],
+      "gyro_x_deg_s": [
+        -1.4334032012195124,
+        1.919600323932927
+      ],
+      "gyro_y_deg_s": [
+        -18.92601943597561,
+        21.90382050304878
+      ],
+      "velocity_x_mm_s": [
+        -284.4,
+        518.4
+      ],
+      "velocity_y_mm_s": [
+        -648.0,
+        1051.2
+      ],
+      "cumulative_x_span_mm": 143.63399999999996,
+      "cumulative_y_span_mm": 340.634,
+      "integration_breaks": [
+        1,
+        1
+      ],
+      "quality": [
+        67,
+        90
+      ]
+    }
+  ],
+  "baseline_roll_deg": 0.72,
+  "baseline_pitch_deg": 3.39,
+  "counter_delta": {
+    "accepted_count": 177285,
+    "rejected_count": 0,
+    "controller_fault_count": 0
+  },
+  "failures": [],
+  "scope": "Handheld response; optical center translation and lever arm not independently constrained. Pair and module accumulators are separately cached telemetry snapshots.",
+  "rotation_compensation_verified": false,
+  "calibrated_coefficient": null,
+  "exposure_time_aligned": false,
+  "firmware_changed": false,
+  "pnr_started": false
+}

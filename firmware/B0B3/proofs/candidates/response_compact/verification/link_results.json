@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "baseline_telemetry_bytes_equal": 644,
+  "response_rows": [
+    {
+      "protocol": 1,
+      "opcode": 1,
+      "status": 0,
+      "status_name": "OK",
+      "sequence": 100,
+      "p": 0.05,
+      "i": 0.0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3",
+      "persistence": "this power cycle only"
+    },
+    {
+      "protocol": 1,
+      "opcode": 2,
+      "status": 0,
+      "status_name": "OK",
+      "sequence": 101,
+      "p": 0.15,
+      "i": 0.1,
+      "p_wire": 1500,
+      "i_wire": 1000,
+      "generation": 1,
+      "build": "0000B0B3",
+      "persistence": "this power cycle only"
+    }
+  ],
+  "actual_serial_bit_sampling": true,
+  "scope": "real UART RX, bank, TX arbiter and serial output; no hardware"
+}

@@ -57,7 +57,7 @@ class PacketReceiver:
         for decoder in expanded:
             if not isinstance(decoder.HEADER, bytes) or len(decoder.HEADER) != 2 or not 4 <= decoder.SIZE <= 4096 or not callable(decoder.decode):
                 raise ValueError("Decoder must provide two-byte HEADER, SIZE and decode(packet)")
-            if decoder.HEADER == ACCEL_HEADER and decoder.SIZE != 32:
+            if decoder.HEADER in (ACCEL_HEADER,b'\xa5\x87') and decoder.SIZE != 32:
                 raise ValueError("A57A acceleration metadata must be32bytes")
             if decoder.HEADER==RANGE_HEADER and decoder.SIZE!=48:raise ValueError("A57B range metadata must be48bytes")
             self.protocols[decoder.HEADER] = (decoder.SIZE, decoder.decode)
@@ -99,8 +99,8 @@ class PacketReceiver:
             try:
                 row = decode(bytes(self.buffer[:size]))
             except (ValueError, OverflowError):
-                if header in (ACCEL_HEADER,RANGE_HEADER):
-                    if header==ACCEL_HEADER:
+                if header in (ACCEL_HEADER,b'\xa5\x87',RANGE_HEADER):
+                    if header in (ACCEL_HEADER,b'\xa5\x87'):
                         self.acceleration_checksum_errors += 1
                         self.acceleration_discarded_bytes += 1
                     else:
@@ -110,13 +110,14 @@ class PacketReceiver:
                     self.metadata_reject_remaining = size - 1
                     # Retain rejection order within a mixed receive chunk. This
                     # invalidates display metadata, never publishes a main frame.
-                    rows.append({"_protocol": header.hex(), "_acceleration_invalid" if header==ACCEL_HEADER else "_range_invalid": True})
+                    rows.append({"_protocol": ACCEL_HEADER.hex() if header==b'\xa5\x87' else header.hex(), "_acceleration_invalid" if header in (ACCEL_HEADER,b'\xa5\x87') else "_range_invalid": True})
                 else:
                     self.checksum_errors += 1
                     self.metadata_reject_remaining = 0
                 del self.buffer[0]
                 continue
-            rows.append({**row, "_protocol": header.hex()})
+            canonical=row.pop('_canonical_protocol',header.hex())
+            rows.append({**row,"_protocol":canonical,**({'_wire_protocol':header.hex()}if canonical!=header.hex()else{})})
             del self.buffer[:size]
             self.metadata_reject_remaining = 0
         return rows
@@ -166,13 +167,18 @@ def acceleration_fields(metadata=None, primary=None, frame_age_seconds=0.0):
     linear = [metadata.get(name) for name in ("world_ax_mmps2", "world_ay_mmps2", "world_az_up_mmps2")]
     raw = [metadata.get(name) for name in ("raw_ax", "raw_ay", "raw_az")]
     # Both packets share one FPGA snapshot, including its pose-age value.
-    coherent_pose = type(primary.get("pose_age_ticks")) is int and pose_age == primary["pose_age_ticks"]
+    age_free=metadata.get('_age_policy')=='no_pose_age_v3' and primary.get('_age_policy')=='no_pose_age_v3'
+    coherent_pose = (metadata.get('sequence')==primary.get('sequence')) if age_free else (type(primary.get("pose_age_ticks")) is int and pose_age == primary["pose_age_ticks"])
     primary_flags = primary.get("flags", 0)
     linear_valid = (type(primary_flags) is int and primary_flags & 6 == 6 and flags & 1 and
-                    coherent_pose and fresh_age(pose_age) and
+                    coherent_pose and (age_free or fresh_age(pose_age)) and
                     all(type(value) is int and -(1 << 31) <= value < (1 << 31) for value in linear))
-    sensor_valid = (flags & 2 and fresh_age(raw_age) and
+    sensor_valid = (flags & 2 and (age_free or fresh_age(raw_age)) and
                     all(type(value) is int and -32768 <= value <= 32767 for value in raw))
+    if age_free:
+        fields.update(pose_age_available=False,measurement_freshness_known=False,
+                      acceleration_age_basis='姿态年龄未提供；有效位表示固件资格，不代表产生了新样本')
+        if raw_age==0xffffffff:fields['sensor_accel_age_ms']=None
     fields["linear_accel_valid"] = bool(linear_valid)
     fields["sensor_accel_valid"] = bool(sensor_valid)
     if linear_valid:
@@ -267,7 +273,8 @@ def normalize(row):
     """Map supported raw fields; never integrate flow counts into metric position."""
     flags = row.get("flags", 0)
     pose_age = row.get("pose_age_ticks")
-    pose_valid = bool(flags & 4) and pose_age is not None and pose_age < POSE_FRESH_TICKS
+    age_free=row.get('_age_policy')=='no_pose_age_v3'
+    pose_valid = bool(flags & 4) and (age_free or pose_age is not None and pose_age < POSE_FRESH_TICKS)
     distance_valid = valid_flag(first(row, "range_valid", "range_fresh", default=False))
     flow_valid = valid_flag(first(row, "flow_valid", "flow_fresh", default=False))
     flow_calibrated = valid_flag(first(row, "flow_calibrated", "calibration_valid", default=False))
@@ -341,6 +348,7 @@ def normalize(row):
     for key, value in data.items():
         if isinstance(value, float) and not math.isfinite(value):
             data[key] = None
+    if age_free:data.update(pose_age_available=False,pose_measurement_fresh=None,pose_age_qualification_enabled=False)
     diagnostics = {name: row.get(name) for name in [
         "accepted_count", "rejected_count", "command_count", "controller_fault_count",
         "imu_reason", "attitude_fault", "last_controller_fault", "who", "pwr", "cal_count",

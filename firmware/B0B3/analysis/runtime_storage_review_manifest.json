@@ -1,0 +1,13 @@
+{
+  "scope": "read-only width review, no source or builds changed",
+  "evidence_sha256": {
+    "analysis_flights\\RUNTIME_STORAGE_WIDTH_REVIEW.md": "95ffbbb027d27b8d4fedd2d251df0ea9f4d8a140a3b20d2c00da598434d7a9c6",
+    "analysis_flights\\audit_runtime_storage.py": "6cfc7c08780239712f78cedfba3d030b6e707ceb1abe35a0430c7cd4627d3f55",
+    "analysis_flights\\runtime_storage_audit.json": "734b48aa551a2e8b9b8fc86d4f3a3ad57bd78cc3d1ba15f5e353da70e61df44e",
+    "analysis_flights\\runtime_storage_controller.diff": "be15df0b06c5f87903ebe41c074b94b021458424eb5bd9a22c94ae6ca6f404d7",
+    "verify_control.py": "65638f2f06560e8b444d1167e89909897ace5c6438089d801153d85bc5255571",
+    "verification\\control_results.json": "61c1688babe942d79088f39095a7f14b8e6c6ce63d574734641b36f67d0a4033"
+  },
+  "serial_CRC_STOP_report_unchanged": true,
+  "serial_CRC_STOP_manifest_unchanged": true
+}

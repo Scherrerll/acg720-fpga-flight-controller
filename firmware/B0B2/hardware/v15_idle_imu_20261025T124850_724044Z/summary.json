@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "scope": "Human-confirmed props-off minimum-throttle idle only; not loaded-flight or active rate-controller performance",
+  "idle_span_seconds": 22.241526199999498,
+  "idle_frames": 90,
+  "duration_seconds": 78.15141500000027,
+  "operator_report": {
+    "utc": "2026-10-25T12:50:05.7174816+00:00",
+    "motors_observed_running": true,
+    "operator_report": "All four motors idled for about15seconds, then SWA low stopped them",
+    "props_removed_confirmed_in_current_session": true,
+    "source": "Current chat human answer"
+  },
+  "stopped_after_test": true,
+  "counter_delta": {
+    "accepted_count": 78123,
+    "rejected_count": 0,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 1
+  },
+  "idle_raw_accept_pose_delta": {
+    "raw_count": 22235,
+    "accepted_count": 22235,
+    "pose_count": 22235
+  },
+  "pose_progress_stalls": [],
+  "angles": {
+    "roll_deg": {
+      "mean": 0.947,
+      "standard_deviation": 0.015595583420386088,
+      "minimum": 0.92,
+      "maximum": 0.97
+    },
+    "pitch_deg": {
+      "mean": 3.281111111111111,
+      "standard_deviation": 0.013779569775935573,
+      "minimum": 3.25,
+      "maximum": 3.31
+    }
+  },
+  "observed_idle_dt_ms": {
+    "minimum": 0.88944,
+    "maximum": 1.1226
+  },
+  "completed_pose_gap_max_before_ms": 1.1226,
+  "completed_pose_gap_max_after_ms": 1.1226,
+  "communication_delta": {
+    "frames": 380,
+    "missing_frames": 10,
+    "checksum_errors": 0,
+    "discarded_bytes": 756
+  },
+  "failures": [],
+  "snapshots_sha256": "73ae147c9a5ea0ad537732e40c87c04ce4c19da57e3202b01631316064fd47e4",
+  "observer_sha256": "41e2b12e757193a6c601ce00f0232df9f08caab46220f8155651d6cc40ff26d5",
+  "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

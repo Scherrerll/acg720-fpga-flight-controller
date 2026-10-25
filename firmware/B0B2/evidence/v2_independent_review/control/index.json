@@ -1,0 +1,29 @@
+{
+  "schema": "b0b2.independent-v2-review-index.v1",
+  "created_utc": "2026-10-24T22:11:47.485196+00:00",
+  "scope": "Read-only source and existing evidence review; no new simulation/vendor/hardware",
+  "files": {
+    "audit.py": {
+      "sha256": "1affa5366c8c4019eeddf8521bf99dea2dd0e839c703336dde57226d9ebf2cec",
+      "bytes": 8062
+    },
+    "audit_result.json": {
+      "sha256": "ba3d57af6bc97ee1ee2333524fd5479cf1b59d34bf860070f3be54c298354d94",
+      "bytes": 14357
+    },
+    "review.md": {
+      "sha256": "c097d08f7f18fd4d44a0fe7eb21238e58c9dec9f5f21291d5c59034536b75271",
+      "bytes": 6138
+    },
+    "source_delta.diff": {
+      "sha256": "735d2e8df9a9f06744d51b1b7ecb440752c4d6a5e52885ab94cd1143c77e3697",
+      "bytes": 5231
+    }
+  },
+  "audit_passed": true,
+  "hardware_accessed": false,
+  "physical_acceptance": false,
+  "full_512_equivalence": false,
+  "full_netlist_equivalence": false,
+  "flight_ready": false
+}

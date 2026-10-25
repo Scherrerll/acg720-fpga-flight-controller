@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "physical_cold_boot_verified": true,
+  "operator_report": {
+    "all_power_removed_and_battery_only": true,
+    "operator_confirmation": "Current user confirmed all board power removed, then battery only. Props off, throttle/SWA/SWC low.",
+    "utc": "2026-10-25T15:59:02.792621+00:00"
+  },
+  "telemetry_gap_seen": true,
+  "boot_counters_reset": true,
+  "before": {
+    "uptime_ms": 31799,
+    "raw_count": 31199,
+    "pose_count": 29145
+  },
+  "final_boot_counters": [
+    13999,
+    13371,
+    13371,
+    11317
+  ],
+  "stopped_span_seconds": 11.252790400001686,
+  "distinct_stopped_frames": 50,
+  "counter_delta": {
+    "accepted_count": 11418,
+    "rejected_count": 0,
+    "controller_fault_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "failures": [],
+  "installation_report_sha256": "8b5f76ab044614f092fc05b28e417c7cb95bd31a4336d45f11a573ec11c1be0b",
+  "snapshots_sha256": "1c9a0479dbea811d51dc320eaa67e4708ec9d9d1373a79b2a7681597946a76a4",
+  "observer_sha256": "73a878cf03603584317cedf35bde41409958d131040736cbfd0941530af2d4a5",
+  "image_sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false,
+  "scope": "Battery-only physical boot and stopped telemetry health only; no new loaded-flight/position accuracy acceptance"
+}

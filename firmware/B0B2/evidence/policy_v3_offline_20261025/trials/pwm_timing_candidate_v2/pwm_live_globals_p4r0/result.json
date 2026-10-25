@@ -1,0 +1,49 @@
+{
+  "routing_passed": true,
+  "unrouted_nets": 0,
+  "timing_summary_passed": false,
+  "fmax_mhz": 37.923,
+  "summaries": {
+    "setup": {
+      "tns_ns": -4840.757,
+      "violated_endpoints": 1522
+    },
+    "hold": {
+      "tns_ns": 0.0,
+      "violated_endpoints": 0
+    }
+  },
+  "pins_passed": true,
+  "identity_passed": true,
+  "errors": [],
+  "vendor_returncode": 0,
+  "netlist_sha256": "8635180bab060547770ff57e9c9302c2bb7a057b3d794241c7350adf3da30602",
+  "outputs_sha256": {
+    "fixture\\impl\\pnr\\acg720_ano_port.bin": "e29159036c824c2dc328d33f7ee8e395a72fabb2773a9eea45a118e4afa84abf",
+    "fixture\\impl\\pnr\\acg720_ano_port.binx": "4266ff45b41f4f9e2644882fd222ece10a1ed923535c1499e7e6a5bb7f7d01f6",
+    "fixture\\impl\\pnr\\acg720_ano_port.db": "cd9970425bab36b1feab63d8345350dc5e637422f4a0053696f5374989caeb28",
+    "fixture\\impl\\pnr\\acg720_ano_port.fs": "76bbc88fba9027f403ed6700da30b7fec9f814a69531164096aae04dcc7107f1",
+    "fixture\\impl\\pnr\\acg720_ano_port.log": "86b14638c55cf6109c2ddc032591aecbdabc89fd38b174fe513db4bf1a73a847",
+    "fixture\\impl\\pnr\\acg720_ano_port.p": "ab281f744d97383754c759181babcb09df5cd909ec3b7a446616f1098a90804c",
+    "fixture\\impl\\pnr\\acg720_ano_port.pin.html": "cc88da8ebe76f01be0d71b99159d7f49d46832d24c871227b85b58fb12705293",
+    "fixture\\impl\\pnr\\acg720_ano_port.power.html": "504a92fa79ff632ed9c31a1edee436b9a4028f45953ff7c5e05ad4fe2e229163",
+    "fixture\\impl\\pnr\\acg720_ano_port.pr": "b5ee8f8bed2b6726c137446746095623ff14e631d73de27c67931c1f96b55ed7",
+    "fixture\\impl\\pnr\\acg720_ano_port.rpt.html": "a62a0c8c30f7dc0eb2236c7e4570131b39434aecb0870f3647d791740c53fc57",
+    "fixture\\impl\\pnr\\acg720_ano_port.rpt.txt": "9589852b16526dcc7fd38ed87cce0bda13dd7c640664982f9676dd002e1d4d38",
+    "fixture\\impl\\pnr\\acg720_ano_port.timing_paths": "2f54640043e16e978a7d53aed9338d7947870707bb181a09863cc3ec08029448",
+    "fixture\\impl\\pnr\\acg720_ano_port.tr": "ebf5265aa4469f8ee2cc018ab656ae78744470e08a8b7e86c6b28b8afe9ae030",
+    "fixture\\impl\\pnr\\acg720_ano_port.tr.html": "cc2f6fe8f0499921d9dc69545e98f811257bc558d7229ea6ac2eb7031bb63f50",
+    "fixture\\impl\\pnr\\acg720_ano_port_tr_cata.html": "e8b13558a333022685d4566992b5e9133aac7dda11758d265b9ec732fb5e6697",
+    "fixture\\impl\\pnr\\acg720_ano_port_tr_content.html": "f65c6728121462b8919d6609094d93747b2a59b6cfeec8b4764a89fa88a42f7a",
+    "fixture\\impl\\pnr\\cmd.do": "cc0245d108ea000c5d02cd0c598f0d66389a59c91eaea3de201e4b7cab853091",
+    "fixture\\impl\\pnr\\device.cfg": "1c531c08d794d69f6bc0a168f4dd0a94cba8156f0c3cf4f3d07f9a54474df10a"
+  },
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "release_eligible": false,
+  "scope": "Physical feasibility only; complete STA audit and functional/source binding required separately",
+  "bitstream": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.fs",
+    "sha256": "76bbc88fba9027f403ed6700da30b7fec9f814a69531164096aae04dcc7107f1"
+  }
+}

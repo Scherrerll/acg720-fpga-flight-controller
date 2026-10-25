@@ -1,0 +1,33 @@
+{
+  "scope": "Read-only unit replay plus synthetic counterexamples; no live services/hardware/vendor",
+  "unit_results": [
+    {
+      "suite": "test_protocol.py",
+      "returncode": 0
+    },
+    {
+      "suite": "test_analyze_bench.py",
+      "returncode": 0
+    }
+  ],
+  "counterexamples": [
+    {
+      "case": "controller_commands_advance_while_reported_stopped",
+      "status": "acceptable",
+      "issues": {
+        "fail": {},
+        "inconclusive": {}
+      }
+    },
+    {
+      "case": "accepted_pose_advance_200x_raw_records",
+      "status": "acceptable",
+      "issues": {
+        "fail": {},
+        "inconclusive": {}
+      }
+    }
+  ],
+  "hardware_accessed": false,
+  "source_or_tools_modified": false
+}

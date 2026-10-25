@@ -1,0 +1,19 @@
+--- verify_control.py
++++ candidates/idle_gain_integral_ce/verification/regressions/numerical/run_original_suite.py
+@@ -1,6 +1,6 @@
+ from pathlib import Path
+ import os,subprocess,json,hashlib
+-R=Path(__file__).resolve().parent;O=R/'verification';T=O/'tmp';B=R.parent/'.tools/iverilog/app/bin'
++R=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026');S=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_integral_ce\\source');O=Path('C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\candidates\\idle_gain_integral_ce\\verification\\regressions\\numerical');T=O/'tmp';B=R.parent/'.tools/iverilog/app/bin'
+ P=R/'test_baseline'
+ assert hashlib.sha256((P/'source/position/mtf_xyz_hold_control.v').read_bytes()).hexdigest()=='78952264bf5a507f2f9e080e53fe0dd41b940cf13c699a134fb5aa12be539258'
+ assert hashlib.sha256((P/'baseline/mtf_xyz_hold_control.v').read_bytes()).hexdigest()=='41ae4ee0c4129afcc18758d93d960c415f860ca5e2a65dfb8d199129133adff2'
+@@ -131,7 +131,7 @@
+  s=(P/file).read_text().replace('module mtf_xyz_hold_control #(',f'module {module} #(')
+  (O/(module+'.v')).write_text(s)
+ bench=O/'control_tb.v';bench.write_text(tb+harness('new_harness','mtf_xyz_hold_control',True)+harness('base_harness','mtf_xyz_hold_control_p005')+harness('original_harness','mtf_xyz_hold_control_v15'))
+-sources=[R/'source/position/mtf_xyz_hold_control.v',O/'mtf_xyz_hold_control_p005.v',O/'mtf_xyz_hold_control_v15.v',R/'source/nav_math_service.v',R/'source/position/position_math.v',R/'source/position/ano_xy_stick.v',R/'source/position/ano_xy_divide36.v',R/'source/position/ano_z_stick.v']
++sources=[S/'position/mtf_xyz_hold_control.v',O/'mtf_xyz_hold_control_p005.v',O/'mtf_xyz_hold_control_v15.v',S/'nav_math_service.v',S/'position/position_math.v',S/'position/ano_xy_stick.v',S/'position/ano_xy_divide36.v',S/'position/ano_z_stick.v']
+ env=dict(os.environ,TMP=str(T),TEMP=str(T),TMPDIR=str(T))
+ c=subprocess.run([str(B/'iverilog.exe'),'-g2012','-s','tb','-o',str(O/'control.vvp'),str(bench),*map(str,sources)],env=env,capture_output=True,text=True)
+ (O/'control.compile.log').write_text(c.stdout+c.stderr);assert c.returncode==0,c.stdout+c.stderr

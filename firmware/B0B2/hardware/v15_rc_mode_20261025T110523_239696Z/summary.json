@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "stage": "mode",
+  "channel": 7,
+  "scope": "RC input direction/range/return and stopped-output check; no armed controller response tested",
+  "baseline_us": 1000,
+  "minimum_us": 1000,
+  "maximum_us": 2000,
+  "returned_mean_us": 1000,
+  "first_high_seconds": 33.260706600005506,
+  "first_low_seconds": 3.0496622000064235,
+  "first_middle_seconds": 30.224803299992345,
+  "expected_order_passed": true,
+  "other_axes_max_deviation_us": {
+    "1": 1,
+    "2": 1,
+    "4": 1
+  },
+  "isolation_passed": true,
+  "baseline_frames": 11,
+  "return_frames": 15,
+  "distinct_frames": 198,
+  "duration_seconds": 47.5614757000003,
+  "diagnostic_delta": {
+    "accepted_count": 47675,
+    "rejected_count": 0,
+    "controller_fault_count": 0
+  },
+  "failures": [],
+  "mode_labels": {
+    "low": [
+      [
+        "\u81ea\u7a33 + \u9ad8\u5ea6\u63a7\u5236",
+        "\u5f85\u673a"
+      ]
+    ],
+    "middle": [
+      [
+        "\u81ea\u7a33 + \u9ad8\u5ea6\u63a7\u5236",
+        "\u5f85\u673a"
+      ]
+    ],
+    "high": [
+      [
+        "\u5149\u6d41\u901f\u5ea6\u63a7\u5236 + \u9ad8\u5ea6",
+        "\u5f85\u673a"
+      ]
+    ]
+  },
+  "native_mode_requests_passed": true,
+  "native_request_matching_frames": {
+    "low": 143,
+    "middle": 12,
+    "high": 12
+  },
+  "final_reported_pwm_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "samples_sha256": "0532394d559b805c8a724e7050ce2a0153d9ad92323a6baa27b3d6a613b06740",
+  "observer_sha256": "5050e99e0304d0346e34716cceff9867812183d95c2f46bf1e312176a11b2e51",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

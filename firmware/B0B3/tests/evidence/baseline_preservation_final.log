@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "verified_files": 1229,
+  "candidate_source_files": 54,
+  "new_thread_created": false,
+  "scope": "snapshot integrity only; no new build or hardware action"
+}

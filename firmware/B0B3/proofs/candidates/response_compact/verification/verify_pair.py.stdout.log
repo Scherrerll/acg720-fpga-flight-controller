@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "shipping_protocol_cases": 121,
+  "total_checked_responses": 126,
+  "cycle_checks": 12301,
+  "full_192bit_valid_word_checks": 633,
+  "CRC_input_body_cycle_checks": 2672,
+  "extra_cases": [
+    "reset during CRC",
+    "reset while valid/backpressured",
+    "reset while commit boundary pending",
+    "premature complete GET cannot alter held SET response",
+    "fresh GET after release"
+  ],
+  "scope": "two real bank RTL instances driven identically; compare P/I/generation/valid every clock including reset, all192 response bits whenever valid; valid0 response bits intentionally unconstrained",
+  "evidence_sha256": {
+    "verify_pair.py": "74c3848aa1c48a63f952bd53b7df2bcb53523474d36ac469a81250054a414285",
+    "verification/pair_tb.v": "dc7faf6db11c4e09a3141e0fd345eeef086b07a2ebb5bbfed6baf6c4da3298d5",
+    "verification/bank_before.v": "2f5fc934947fe9f3da1213f72b00a9b169f083edc824bc817198b6c47bf5ca30",
+    "verification/pair.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification/pair.log": "9d490226b5c94bab70012cf5bd2dbea1698827631f4b760fb5c6eada4b9aa806",
+    "source/xy_pi_parameters.v": "c3ab65d07c7b664268192a5b0de3acfb510efdac504a7a82cfdfa89e83d1b187"
+  },
+  "shipping_vector_fixture_sha256": "aba5547a33037dcdad5d639581863c0079e94bf5d317a2ff66204a55ac178ccb"
+}

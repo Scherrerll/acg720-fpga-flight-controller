@@ -1,0 +1,36 @@
+{
+  "report_sha256": "198c6974bc25a010d821b50c07ee956fa8f976fd67accdb87373e6925624a2b7",
+  "worst_slack_ns": -5.988,
+  "start": "core/imu/guard/qualified_s0",
+  "end": "core/outputs/latched3_1_s0",
+  "data_cell_delay_ns": 4.462,
+  "data_route_delay_ns": 20.639,
+  "route_percent": 81.112,
+  "longest_data_wires": [
+    {
+      "delay_ns": 4.992,
+      "sink": "n4547_s3/I3"
+    },
+    {
+      "delay_ns": 3.797,
+      "sink": "native_navigation/nav_vertical_ready_s/I1"
+    },
+    {
+      "delay_ns": 2.667,
+      "sink": "core/fallback_control/height_fallback_active_s0/I0"
+    },
+    {
+      "delay_ns": 1.396,
+      "sink": "core/core_body_0_s0/I2"
+    },
+    {
+      "delay_ns": 1.298,
+      "sink": "core/core_body_474_s0/I1"
+    },
+    {
+      "delay_ns": 0.948,
+      "sink": "core/core_body_506_s1/I2"
+    }
+  ],
+  "hardware_accessed": false
+}

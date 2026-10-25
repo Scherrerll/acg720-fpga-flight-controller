@@ -1,0 +1,4 @@
+ Cable found:  USB Debugger A/0/0/null (USB location:0)
+ Cable found:  Gowin USB Cable(FT2CH)/1/289/null (USB location:289)
+ Cost 0.11 second(s)
+  

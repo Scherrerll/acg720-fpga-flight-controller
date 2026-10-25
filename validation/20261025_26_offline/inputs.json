@@ -1,0 +1,51 @@
+{
+  "started_utc": "2026-10-25T23:29:50.986780+00:00",
+  "repository": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "head_before": "036e94207526d6253ff350b76c27587495c05344",
+  "six_inputs_before": {
+    "support/monitor_control.py": {
+      "file_sha256": "bd4127ca9469dbb29804454a278a6d16bf4df003d587f1152d1d7363de7f1d82",
+      "dirty_diff_sha256": "dbba728a199845ea774e4ba6cb0490d48338578e5d40e2048e598b098362c911",
+      "dirty_diff_bytes": 909
+    },
+    "support/server.py": {
+      "file_sha256": "664f4b277f39a45949262b08f853b23234807138d310e702dbd832e763cf2c0b",
+      "dirty_diff_sha256": "6b153713a0696375590074d73f4f39495381157ae74207c03f6e97098ce8c093",
+      "dirty_diff_bytes": 5633
+    },
+    "web/flight-console/local/attitude_tracking.py": {
+      "file_sha256": "d78cac9e6096ac0ecef1362deaa47c8f929e1e2f4ca155d751dca3041b7f0a36",
+      "dirty_diff_sha256": "c0e776d3b0e6293920e0013c27f691badbf825a6ab01515b3d9f2df6400ccbf3",
+      "dirty_diff_bytes": 782
+    },
+    "web/flight-console/local/receiver_setpoints.py": {
+      "file_sha256": "fa13cbf669e94eebf0d93fde526b7b78708d9a3b82722be02b043a8aae859eff",
+      "dirty_diff_sha256": "b1bfe240a34c63d01879d883f6d63f7377c34d546ab972eaca973378a1d53797",
+      "dirty_diff_bytes": 877
+    },
+    "web/flight-console/local/test_attitude_tracking.py": {
+      "file_sha256": "2de91697adb7a000e42d533b078ce22d8900966dfd680399b88ec88793a6320b",
+      "dirty_diff_sha256": "ca87b49b3edfc8edb60506a8ada3b8e521bdec53d340f76dcbe6daf0e0b7af4b",
+      "dirty_diff_bytes": 1346
+    },
+    "web/flight-console/local/test_receiver_setpoints.py": {
+      "file_sha256": "e912a725e650def9417e9b9009a6aadfe3a5fd87966b48e207204ca55ac7b72c",
+      "dirty_diff_sha256": "bcc933e12f0ad6170ee4450193f3d9a9e8527880355c9079879c66d989635e23",
+      "dirty_diff_bytes": 1042
+    }
+  },
+  "test_source_sha256": {
+    "web/flight-console/local/test_attitude_tracking.py": "2de91697adb7a000e42d533b078ce22d8900966dfd680399b88ec88793a6320b",
+    "web/flight-console/local/test_receiver_setpoints.py": "e912a725e650def9417e9b9009a6aadfe3a5fd87966b48e207204ca55ac7b72c",
+    "firmware/B0B2/tests/test_protocol.py": "4c68dc30bd6a5b6250fe1159b057ea6232a6b3008747d0b6f927bfcb0cd9a4c4"
+  },
+  "runner_sha256": "64b5b04159f895bf344ab906ae95ff394062c87fba6b4ac5805aa4a450b41090",
+  "entry_review": {
+    "receiver_wrapper": "Test child explicitly passes --no-serial and --http-port 0; HTTP requests address only its own ephemeral loopback server",
+    "b0b2_protocol": "In-memory decoder/Dashboard/Recorder tests; isolated temporary clone under ignored out/B0B2 with cleanup; prepare_sik_receiver imports no serial/programmer APIs",
+    "attitude_tracking": "Pure field/protocol/identity unit tests",
+    "hardware_or_existing_network_services_requested": false,
+    "B0B3_rejection_unchanged": "Actual legacy telemetry identity remains B0B2; the explicit unknown B0B3 target-tracking test is retained"
+  },
+  "fixture_override_environment_present": false
+}

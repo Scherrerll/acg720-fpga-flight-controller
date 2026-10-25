@@ -1,0 +1,239 @@
+{
+  "schema": "historical-evidence-export.v1",
+  "created_utc": "2026-10-25T23:33:56.608380+00:00",
+  "source_handoff": "handoff_xy_pi_runtime_20261026",
+  "destination_repository_relative": "validation/20261025_p005_i0",
+  "scope": "Historical P005/I0 install and battery-only stopped cold-boot summary export; no new authorization, hardware access, or dynamic acceptance",
+  "historical_only": true,
+  "future_install_authorized": false,
+  "new_b0b3_installed": false,
+  "copied_original_file_count": 14,
+  "copied_original_total_bytes": 146387,
+  "files": [
+    {
+      "export_path": "baseline.json",
+      "handoff_relative": "baseline.json",
+      "sha256": "f4dbd295fa016a358a6e95bcd402b0b81cd219b2cb9d825795b6b021ff31910d",
+      "bytes": 7862,
+      "role": "Dated handoff baseline"
+    },
+    {
+      "export_path": "flash_install.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/hardware/install_20261025T155514_001378Z/flash_install.json",
+      "sha256": "8b5f76ab044614f092fc05b28e417c7cb95bd31a4336d45f11a573ec11c1be0b",
+      "bytes": 14017,
+      "role": "Historical install and independent Flash verification receipt"
+    },
+    {
+      "export_path": "cold_boot/summary.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/hardware/install_20261025T155514_001378Z/cold_boot_20261025T155751_048530Z/summary.json",
+      "sha256": "c20d9b3803168951d1a40a26e930b1fb92daa96c823ede6c618b9f1d69a1a34a",
+      "bytes": 1452,
+      "role": "Historical battery-only cold-boot summary"
+    },
+    {
+      "export_path": "cold_boot/operator_complete.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/hardware/install_20261025T155514_001378Z/cold_boot_20261025T155751_048530Z/operator_complete.json",
+      "sha256": "fea00dcd5040eaa48993722ac26f36d2e146c4ffe57144aa6a17cc3f004c6f72",
+      "bytes": 229,
+      "role": "Dated historical operator confirmation"
+    },
+    {
+      "export_path": "cold_boot/before.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/hardware/install_20261025T155514_001378Z/cold_boot_20261025T155751_048530Z/before.json",
+      "sha256": "67c14a0093c0d0cdf22327cbcdc36ff02aa566a30c0195dbd8d16405353360de",
+      "bytes": 11744,
+      "role": "Pre-reboot stopped telemetry snapshot"
+    },
+    {
+      "export_path": "cold_boot/new_boot.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/hardware/install_20261025T155514_001378Z/cold_boot_20261025T155751_048530Z/new_boot.json",
+      "sha256": "374702b2394de795c55364c67170d6b49454a1c6dfbab1fe3e498fc1411fddff",
+      "bytes": 11692,
+      "role": "New-boot stopped telemetry snapshot"
+    },
+    {
+      "export_path": "timing/qualification.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/qualification.json",
+      "sha256": "0a8da5e4be22b2459d3a59e27191942a3b5a2d8c99469c9e994ff54d0761411d",
+      "bytes": 76495,
+      "role": "Historical analytical 50MHz qualification and original evidence pointers"
+    },
+    {
+      "export_path": "timing/timing_50mhz_review.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/timing_50mhz_review.json",
+      "sha256": "78046f1c0a0fa8a7d05a05d6716d6ed33fd178f6079a5dbfbd009aa41358b65b",
+      "bytes": 10087,
+      "role": "Original failed 19.5ns timing and analytical 20ns distinction"
+    },
+    {
+      "export_path": "timing/complete_audit.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_p2r0/complete_audit.json",
+      "sha256": "45487294ce0a291765ca9929bd47660692244eb3f72b1487bc2d0c9ad7a07b67",
+      "bytes": 6727,
+      "role": "Original physical and STA summary; full timing did not pass"
+    },
+    {
+      "export_path": "flash_preparation/installer_tests.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/installer_tests.json",
+      "sha256": "18649eca72de3df38262cfbe670bf9c759726c0eb8075f106c192227475de99d",
+      "bytes": 865,
+      "role": "Historical installer test summary"
+    },
+    {
+      "export_path": "flash_preparation/plan.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/plan.json",
+      "sha256": "2bbdd0c9c27bae80ab9e5a8bf28b025744e43087f4b58b7fff09c7015cb00cfc",
+      "bytes": 2334,
+      "role": "Dated pre-approval preparation plan"
+    },
+    {
+      "export_path": "flash_preparation/mock_verification.json",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/mock_verification.json",
+      "sha256": "63bed1c8bc2ee9ffc276a85f29cff32974b992615ad6facedf896b2fa8230b8a",
+      "bytes": 2446,
+      "role": "Historical installer mock test summary"
+    },
+    {
+      "export_path": "flash_vendor/14_B0B2_final_reload.txt",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/hardware/install_20261025T155514_001378Z/14_B0B2_final_reload.txt",
+      "sha256": "e9e9abeee02d7ced6ca378e1f2f2bd7e41ff48bdf16985c013e7ddf1a9ea06cc",
+      "bytes": 174,
+      "role": "Small final reload vendor output"
+    },
+    {
+      "export_path": "flash_vendor/16_B0B2_final_identity.txt",
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/hardware/install_20261025T155514_001378Z/16_B0B2_final_identity.txt",
+      "sha256": "a1b63f3ec9215016caa9118e21f0a64e44c351e96c372f74590e2afa8ad192b2",
+      "bytes": 263,
+      "role": "Small final device identity vendor output"
+    }
+  ],
+  "generated_files": [
+    {
+      "export_path": "README.md",
+      "sha256": "e877e94d2c43f0802ea9cffc3740f02b04e23a0a2d25738bd7765e293d45d64f",
+      "bytes": 3963,
+      "role": "New explanatory historical-scope index"
+    }
+  ],
+  "verified_hash_links": [
+    {
+      "check": "cold_boot.summary installation_report_sha256 -> flash_install.json",
+      "passed": true,
+      "sha256": "8b5f76ab044614f092fc05b28e417c7cb95bd31a4336d45f11a573ec11c1be0b"
+    },
+    {
+      "check": "flash_install preparation.plan_sha256 -> plan.json",
+      "passed": true,
+      "sha256": "2bbdd0c9c27bae80ab9e5a8bf28b025744e43087f4b58b7fff09c7015cb00cfc"
+    },
+    {
+      "check": "flash_install preparation.qualification_sha256 -> qualification.json",
+      "passed": true,
+      "sha256": "0a8da5e4be22b2459d3a59e27191942a3b5a2d8c99469c9e994ff54d0761411d"
+    },
+    {
+      "check": "flash_install preparation.mock_verification_sha256 -> mock_verification.json",
+      "passed": true,
+      "sha256": "63bed1c8bc2ee9ffc276a85f29cff32974b992615ad6facedf896b2fa8230b8a"
+    },
+    {
+      "check": "plan qualification_sha256 -> qualification.json",
+      "passed": true,
+      "sha256": "0a8da5e4be22b2459d3a59e27191942a3b5a2d8c99469c9e994ff54d0761411d"
+    },
+    {
+      "check": "qualification timing_review_sha256 -> timing_50mhz_review.json",
+      "passed": true,
+      "sha256": "78046f1c0a0fa8a7d05a05d6716d6ed33fd178f6079a5dbfbd009aa41358b65b"
+    },
+    {
+      "check": "qualification complete_audit_sha256 -> complete_audit.json",
+      "passed": true,
+      "sha256": "45487294ce0a291765ca9929bd47660692244eb3f72b1487bc2d0c9ad7a07b67"
+    },
+    {
+      "check": "qualification installer_tests.sha256 -> installer_tests.json",
+      "passed": true,
+      "sha256": "18649eca72de3df38262cfbe670bf9c759726c0eb8075f106c192227475de99d"
+    },
+    {
+      "check": "flash_install new image",
+      "passed": true,
+      "sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c"
+    },
+    {
+      "check": "cold_boot image",
+      "passed": true,
+      "sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c"
+    },
+    {
+      "check": "qualification bitstream",
+      "passed": true,
+      "sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c"
+    },
+    {
+      "check": "timing review bitstream",
+      "passed": true,
+      "sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c"
+    },
+    {
+      "check": "plan new image",
+      "passed": true,
+      "sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c"
+    },
+    {
+      "check": "flash_install previous image",
+      "passed": true,
+      "sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306"
+    },
+    {
+      "check": "plan previous image",
+      "passed": true,
+      "sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306"
+    }
+  ],
+  "source_hash_map_consistency": {
+    "baseline_and_qualification_equal": true,
+    "file_count": 54,
+    "source_files_exported": false
+  },
+  "excluded_source_leaves_hashed": [
+    {
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_p2r0/fixture/impl/pnr/acg720_ano_port.fs",
+      "sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c",
+      "bytes": 17456595,
+      "copied": false,
+      "verification": "Source bytes hashed during export; not included",
+      "reason": "P005/I0 image intentionally excluded"
+    },
+    {
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/rollback_original_V15_B0B2.fs",
+      "sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306",
+      "bytes": 17456715,
+      "copied": false,
+      "verification": "Source bytes hashed during export; not included",
+      "reason": "Original V15 rollback image intentionally excluded"
+    },
+    {
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/flash/hardware/install_20261025T155514_001378Z/cold_boot_20261025T155751_048530Z/samples.jsonl",
+      "sha256": "1c9a0479dbea811d51dc320eaa67e4708ec9d9d1373a79b2a7681597946a76a4",
+      "bytes": 3165534,
+      "copied": false,
+      "verification": "Source bytes hashed during export; not included",
+      "reason": "Raw cold-boot sample stream intentionally excluded"
+    }
+  ],
+  "omission_scope": "Not a complete evidence closure. No FS, mapped device code, executable scripts/binaries, raw JSONL, videos/photos or large programmer logs copied. Original pointers/hashes remain unchanged.",
+  "historical_timing": {
+    "original_vendor_period_ns": 19.5,
+    "original_vendor_setup_passed": false,
+    "original_setup_wns_ns": -0.267,
+    "original_setup_violated_endpoints": 51,
+    "fmax_mhz": 50.59,
+    "historical_20ns_method": "Analytical review only; no vendor20ns rerun",
+    "derived_setup_slack_20ns": 0.233
+  },
+  "writes_performed": "Only this newly created export subdirectory; no source/H/Git/hardware operations"
+}

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-25T14:02:44.317469+00:00",
+  "build": "original sealed V15 / B0B2",
+  "dynamic_stick_test": "failed",
+  "operator_reported_centered_hover_success": true,
+  "supersedes_broad_flight_success_interpretation": true,
+  "diagnosis": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\diagnosis.json",
+    "sha256": "ed8dc66e230e64506345c947197b2a1b3a0d14583fa9334a0ad0eaf4a089703e"
+  },
+  "report": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\README.md",
+    "sha256": "2774783633d2afd259a69e7e64fa7f84be622dfc090843e3595f7be5acf3946e"
+  },
+  "routing": "paused",
+  "firmware_changed": false,
+  "flight_ready": false
+}

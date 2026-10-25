@@ -1,0 +1,21 @@
+--- response_compact/source/position/mtf_xyz_hold_control.v
++++ idle_gain_ce/source/position/mtf_xyz_hold_control.v
+@@ -205,6 +205,9 @@
+  assign parameter_boundary=state==0 && cancel;
+  // Capture the whole pair once per callback, never between axes.
+  reg [15:0] work_p=500,work_i=0;
++ always @(posedge clk) if(state==0)begin
++  work_p<=xy_p_value;work_i<=xy_i_value;
++ end
+  reg mul_start=0,div_start=0,trig_start=0;
+  reg signed [49:0] ma_store=0;
+  wire signed [63:0] ma={{14{ma_store[49]}},ma_store};
+@@ -330,7 +333,7 @@
+       held_h<=pending_h;held_az<=pending_az;speed_z_tick_store<=keep64(pending_z_speed);
+       inner_alt_speed<=alt_speed;calc($signed(pending_az)*65536-afz,1,5,20);
+      end else if(position_due && position_stick_captured && !xy_cancel)begin
+-      position_due<=0;work_xy<=1;work_p<=xy_p_value;work_i<=xy_i_value;
++      position_due<=0;work_xy<=1;
+       // A source callback is atomic. Roll back a cancelled, partly executed
+       // FPGA callback; preserve the last completed OF PI/filter state in ATT_STAB.
+       saved_ix<=ix_store;saved_iy<=iy_store;saved_afx<=afx_store;saved_afy<=afy_store;

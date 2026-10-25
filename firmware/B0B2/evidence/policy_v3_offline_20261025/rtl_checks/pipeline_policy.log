@@ -1,0 +1,6 @@
+C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\candidate\acg720_ano_port.v:212: warning: Anachronistic use of named begin/end to surround generate schemes.
+
+PASS pipeline normal A/B: accepted=24 poses=16
+PASS pipeline silence boundary: baseline invalid, candidate retains pose, no new sample/pose, diagnostic age=3000008
+PASS pipeline_policy: real startup/math chain; bad ID/sentinel/transport rejection; source silence no longer revokes; real dt and long-gap numerical rejection/recovery retained
+C:\Users\ScherrerL\Desktop\apple\side_imu_timeout_removal_20261025\pipeline_policy.v:54: $finish called at 41000280000 (1ps)

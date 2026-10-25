@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "stage": "pitch",
+  "channel": 2,
+  "scope": "RC input direction/range/return and stopped-output check; no armed controller response tested",
+  "baseline_us": 1501,
+  "minimum_us": 1000,
+  "maximum_us": 2000,
+  "returned_mean_us": 1501,
+  "first_high_seconds": 22.384767500014277,
+  "first_low_seconds": 26.962009700015187,
+  "first_middle_seconds": 3.062387000012677,
+  "expected_order_passed": true,
+  "other_axes_max_deviation_us": {
+    "1": 2,
+    "4": 0
+  },
+  "isolation_passed": true,
+  "baseline_frames": 13,
+  "return_frames": 14,
+  "distinct_frames": 194,
+  "duration_seconds": 46.11930950000533,
+  "diagnostic_delta": {
+    "accepted_count": 46072,
+    "rejected_count": 0,
+    "controller_fault_count": 0
+  },
+  "failures": [],
+  "mode_labels": null,
+  "final_reported_pwm_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "samples_sha256": "64dfc31a5cefd93aa9f0bb5f49aaba0d735e103238e852773892a4636186cbf7",
+  "observer_sha256": "d1b25d41f067596e75da01a79ead293847c754f6e916ffdab6809a526bfe65fb",
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

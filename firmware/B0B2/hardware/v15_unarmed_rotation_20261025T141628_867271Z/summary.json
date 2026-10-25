@@ -1,0 +1,32 @@
+{
+  "capture_completed": true,
+  "distinct_frames": 956,
+  "duration_seconds": 177.07688349997625,
+  "failures": [],
+  "rotation_compensation_verified": false,
+  "optical_center_translation_measured": false,
+  "exposure_alignment_verified": false,
+  "coefficient_fitted": false,
+  "serial_writes": false,
+  "programmer_operations": [],
+  "firmware_changed": false,
+  "pnr_started": false,
+  "samples_sha256": "ee0d3d5632bbd6e57dc5433c166152a44173b0add60046f75bd717253d2fa82e",
+  "observer_sha256": "c56f2e94f9634c4c1ef01d8e7d3268ee6b6eacbfbd73ed9790d434af070515e4",
+  "scope": "Coarse stopped hand-held optical/gyro response only; not a calibration or flight acceptance",
+  "attitude_range_deg": {
+    "roll_deg": [
+      -8.33,
+      10.29
+    ],
+    "pitch_deg": [
+      -8.04,
+      16.73
+    ]
+  },
+  "counter_delta": {
+    "accepted_count": 177285,
+    "rejected_count": 0,
+    "controller_fault_count": 0
+  }
+}

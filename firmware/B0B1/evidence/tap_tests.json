@@ -1,0 +1,26 @@
+{
+  "baseline_hashes_verified": 51,
+  "baseline": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot",
+  "control_token_equivalence": {
+    "imu_pipeline_pipelined.v": true,
+    "imu_temporal_check_pipelined.v": true,
+    "imu_checked_guard_pipelined.v": true,
+    "ano_attitude_estimator.v": true
+  },
+  "tap_simulation": "PASS tap: raw/pose wire contract, coherent reject triple, freeze, simultaneous triggers, rearm\nC:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B1\\tests\\tap_tb.v:52: $finish called at 516000 (1ps)",
+  "tap_temporal_tb": "PASS temporal: source/tick/reader metadata and predecision trusted/candidate belong to exact input\nC:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B1\\tests\\tap_temporal_tb.v:37: $finish called at 230000 (1ps)",
+  "tap_estimator_tb": "PASS estimator: cycle-identical B0B0 outputs; exact consumed ID/dt; stable reject, collision, gravity recovery, first-cause lifetime\nC:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B1\\tests\\tap_estimator_tb.v:50: $finish called at 1000380000 (1ps)",
+  "tap_starvation_tb": "PASS preserved policy: 30ms all-reject gap; tap froze at20ms while guard remained usable; baseline input restored pose\nPASS preserved starvation: norm2=4554304 gravity-qualified +/-600X; accepted_delta=16 rejected_delta=74 pose_delta=0 recovery=1; guard_loss_gap=2999997 freeze_lead=1999996 ticks\nPASS recovery: continuous good input requalified guard and resumed pose; original frozen fault retained\nC:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B1\\tests\\tap_starvation_tb.v:93: $finish called at 80000090000 (1ps)",
+  "pipeline_elaboration": "PASS",
+  "tap_pipeline_tb": "PASS pipeline: 40 coherent raw decisions, 2 temporal rejects, consumed acceptance/dt mapped across rejection gaps; 30 pose packets\nC:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B1\\tests\\tap_pipeline_tb.v:62: $finish called at 4600630000 (1ps)",
+  "source_sha256": {
+    "imu_pipeline_pipelined.v": "5197ef78b6987e5150fb1211ead256205695cbe0d6eb4392d4804c4ca5f5df69",
+    "imu_temporal_check_pipelined.v": "173065d58ed0b232b9c3dc03ecef49153330df61f5ce63478dc6649028006075",
+    "imu_checked_guard_pipelined.v": "20bcf23ce4e44d91dc4fb55f9c05d1e8ae654064f57419f83e7c1648697985a1",
+    "ano_attitude_estimator.v": "609f87d404dcd38911b042286543b5e11f7bf233eecf9af57d2f58755b04cfad",
+    "imu_diagnostic_tap.v": "26c3c5383bffe899fa61382ae06e2c774b56c1df966b54c1ab07f303b5003808",
+    "bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+    "spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35"
+  }
+}

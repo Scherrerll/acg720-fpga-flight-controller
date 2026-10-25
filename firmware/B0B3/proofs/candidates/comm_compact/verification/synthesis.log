@@ -1,0 +1,360 @@
+*** GOWIN Tcl Command Line Console  *** 
+Open project C:/Users/ScherrerL/Desktop/apple/runtime_xy_pi_20261026/candidates/comm_compact/source/acg720_ano_port.gprj finished
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v'
+Analyzing included file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\calibration.vh'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v":1)
+Back to file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v":1)
+Analyzing included file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\level_calibration.vh'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v":2)
+Back to file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v":2)
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\xy_pi_parameters.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\telemetry_tx.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\control_gate.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\cordic_atan2.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_flight_state.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_divide36.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\height_loss_fallback.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v'
+Undeclared symbol 'taking_off', assumed default net type 'wire'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":113)
+Undeclared symbol 'gate_event_pulse', assumed default net type 'wire'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":113)
+WARN  (EX3638) : 'gate_event_pulse' is already implicitly declared on line 113("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":295)
+WARN  (EX3638) : 'taking_off' is already implicitly declared on line 113("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":298)
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\bmi088_reader.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_checked_guard_pipelined.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_pipeline_pipelined.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_temporal_check_pipelined.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\motor_pwm.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rc_ppm.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\spi_uart_modules.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\pid_divide_signed64.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\quad_mixer_feedback.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\position_math.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\relative_position.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\flow_reader.v'
+Analyzing included file 'sensor\pmw3901_init.vh'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\flow_reader.v":36)
+Back to file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\flow_reader.v'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\flow_reader.v":36)
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\range_reader.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\calibration.vh'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v'
+WARN  (EX3261) : Loop variable declaration is not allowed in this mode of Verilog("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":93)
+WARN  (EX3261) : Loop variable declaration is not allowed in this mode of Verilog("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":140)
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_hold_control.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_z_stick.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_yaw_control.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\range_height_estimate.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\pose_time_adapter.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rc_angle_targets.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_manual_angles.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\level_calibration.vh'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf01p_reader.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf_native_geometry.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_position_integrator.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\mtf_navigation_shadow.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\nav_math_service.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf_shared_geometry.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_hold_control.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\mtf_xyz_navigation_control.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_diagnostic_tap.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sik_imu_diagnostic.v'
+Analyzing Verilog file 'C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\gw5_snapshot_bram.v'
+Compiling module 'acg720_ano_port'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v":5)
+Compiling module 'xy_pi_uart_rx'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\xy_pi_parameters.v":102)
+Compiling module 'xy_pi_parameters'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\xy_pi_parameters.v":4)
+Compiling module 'pose_time_adapter'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\pose_time_adapter.v":4)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 6("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\pose_time_adapter.v":43)
+Compiling module 'nav_control_handoff'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v":333)
+Compiling module 'flight_core(diag_startup_only_tap_reset=1,LEVEL_TRIM_ENABLE=1,LEVEL_R01_Q24=43,LEVEL_R02_Q24=-3825,LEVEL_R11_Q24=16776151,LEVEL_R12_Q24=189005,LEVEL_R20_Q24=3826,LEVEL_R21_Q24=-189005,LEVEL_R22_Q24=16776151,RAW_TELEMETRY_COMMANDS=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":3)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":92)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":93)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":94)
+WARN  (EX3073) : Port 'native_raw' remains unconnected for this instance("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_pipeline_pipelined.v":62)
+Compiling module 'imu_pipeline(diag_startup_only_tap_reset=1,LEVEL_TRIM_ENABLE=1,LEVEL_R01_Q24=43,LEVEL_R02_Q24=-3825,LEVEL_R11_Q24=16776151,LEVEL_R12_Q24=189005,LEVEL_R20_Q24=3826,LEVEL_R21_Q24=-189005,LEVEL_R22_Q24=16776151,CAL_SAMPLES=2048)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_pipeline_pipelined.v":3)
+Compiling module 'bmi088_reader'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\bmi088_reader.v":6)
+Compiling module 'spi_mode3_master_1mhz'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\spi_uart_modules.v":1)
+WARN  (EX3791) : Expression size 19 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\bmi088_reader.v":66)
+WARN  (EX3791) : Expression size 27 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\bmi088_reader.v":74)
+Compiling module 'imu_temporal_check'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_temporal_check_pipelined.v":10)
+Compiling module 'imu_checked_guard_pipelined(USE_PRECHECKED=1,BAD_STREAK_REVOKES_LINK=0)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_checked_guard_pipelined.v":3)
+Compiling module 'ano_attitude_estimator(CAL_SAMPLES=2048,LEVEL_TRIM_ENABLE=1,LEVEL_R01_Q24=43,LEVEL_R02_Q24=-3825,LEVEL_R11_Q24=16776151,LEVEL_R12_Q24=189005,LEVEL_R20_Q24=3826,LEVEL_R21_Q24=-189005,LEVEL_R22_Q24=16776151)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":14)
+WARN  (EX3791) : Expression size 33 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":221)
+Compiling module 'ano_attitude_mul32'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":654)
+Compiling module 'ano_attitude_div64'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":667)
+Compiling module 'ano_attitude_sqrt64'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":687)
+Compiling module 'cordic_atan2'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\cordic_atan2.v":3)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":399)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":400)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":401)
+WARN  (EX3791) : Expression size 53 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":89)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":419)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":429)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":442)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":462)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":478)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":486)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":499)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 26("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":506)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 26("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":506)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 25("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":510)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":514)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":66)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":527)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":536)
+WARN  (EX3791) : Expression size 47 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":541)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":564)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":581)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":594)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":627)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":633)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":635)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":637)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":639)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":639)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_attitude_estimator.v":639)
+Compiling module 'imu_diagnostic_tap(STARTUP_ONLY_RESET=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\imu_diagnostic_tap.v":2)
+Compiling module 'rc_ppm'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rc_ppm.v":7)
+Compiling module 'ano_xy_stick'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":5)
+Compiling module 'ano_xy_divide36'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_divide36.v":5)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":53)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":54)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":57)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":57)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":59)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":60)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":63)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":64)
+WARN  (EX3791) : Expression size 18 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":64)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":65)
+WARN  (EX3791) : Expression size 18 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":65)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":80)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_xy_stick.v":81)
+WARN  (EX3073) : Port 'residue' remains unconnected for this instance("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_manual_angles.v":31)
+Compiling module 'ano_manual_angles'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_manual_angles.v":6)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_manual_angles.v":38)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_manual_angles.v":44)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":231)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":232)
+WARN  (EX3791) : Expression size 16 truncated to fit in target size 9("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\flight_core.v":234)
+Compiling module 'ano_yaw_control'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_yaw_control.v":7)
+Compiling module 'ano_multiply_signed64_32'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":284)
+Compiling module 'pid_divide_signed64(DIVISOR_BITS=26)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\pid_divide_signed64.v":4)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_yaw_control.v":148)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_yaw_control.v":153)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_yaw_control.v":153)
+Compiling module 'control_gate'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\control_gate.v":7)
+Compiling module 'ano_rate_control(GYRO_FRAC_BITS=12)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":7)
+WARN  (EX3780) : Using initial value of 'j' since it is never assigned("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":93)
+Compiling module 'pid_divide_signed64(DIVISOR_BITS=36)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\pid_divide_signed64.v":4)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":209)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 36("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":228)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 23("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":233)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 27("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\ano_rate_control.v":263)
+Compiling module 'ano_flight_state'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_flight_state.v":7)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_flight_state.v":49)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_flight_state.v":50)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_flight_state.v":51)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\ano_flight_state.v":52)
+Compiling module 'height_loss_fallback'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\height_loss_fallback.v":5)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\height_loss_fallback.v":74)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\height_loss_fallback.v":75)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\height_loss_fallback.v":83)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\height_loss_fallback.v":84)
+WARN  (EX3791) : Expression size 16 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\height_loss_fallback.v":91)
+Compiling module 'quad_mixer_feedback(MIN_US=1200,MAX_US=2000)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\rtl\quad_mixer_feedback.v":4)
+Compiling module 'motor_pwm(FRAME_US=2500,MAX_US=2000,EXTERNAL_TICKS=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\motor_pwm.v":5)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\motor_pwm.v":44)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\motor_pwm.v":44)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\motor_pwm.v":45)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\motor_pwm.v":45)
+Compiling module 'range_height_estimate(CAL_MASK=8'b00000000)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\range_height_estimate.v":5)
+Compiling module 'position_multiply'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\position_math.v":4)
+Compiling module 'position_sincos'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\position_math.v":146)
+WARN  (EX3791) : Expression size 20 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\position_math.v":182)
+WARN  (EX3791) : Expression size 20 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\position_math.v":182)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\range_height_estimate.v":89)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\range_height_estimate.v":92)
+Compiling module 'ano_flow_fusion(CAL_MASK=8'b00000000)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":11)
+Compiling module 'position_divide'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\position_math.v":66)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":100)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":100)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":103)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":103)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":110)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":111)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":112)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":113)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":114)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 27("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":115)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 27("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":116)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":117)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":118)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":122)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":122)
+Compiling module 'ano_height_fusion(CAL_MASK=8'b00000000)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v":10)
+Extracting RAM for identifier 'fraction_rom'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v":72)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v":1181)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v":1181)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v":1192)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v":1193)
+Compiling module 'mtf01p_reader(EXTERNAL_DIAGNOSTIC_HOLD=1,DIAGNOSTIC_VERSION=3,PHYSICAL_STOP_LOCK=0,CONTROL_PATH=1,STARTUP_ONLY_DIAGNOSTIC_RESET=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf01p_reader.v":161)
+Compiling module 'mtf_uart_rx'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf01p_reader.v":4)
+Compiling module 'micolink_parser'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf01p_reader.v":27)
+Compiling module 'mtf_metric_observer'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf01p_reader.v":100)
+Compiling module 'mtf_xyz_navigation_control(PROOF_CONTROLLER=1,PRECHECKED_YAW_RANGE=1,STARTUP_ONLY_DIAGNOSTIC_RESET=1,PRECHECKED_HEIGHT_TILT4500=1,PRECHECKED_FLOW_TILT1500=1,PRECHECKED_HEIGHT_ORIGIN=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\mtf_xyz_navigation_control.v":9)
+Compiling module 'nav_math_service'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\nav_math_service.v":7)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 2("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\nav_math_service.v":55)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\nav_math_service.v":88)
+Compiling module 'nav_math_service(DIVIDE=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\nav_math_service.v":7)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 2("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\nav_math_service.v":55)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\nav_math_service.v":88)
+Compiling module 'mtf_shared_geometry(HEIGHT_TILT_LIMIT_CDEG=4500,SWAP_AXES=1,NEGATE_Y=1,PRECHECKED_YAW_RANGE=1,PRECHECKED_HEIGHT_TILT4500=1,PRECHECKED_FLOW_TILT1500=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf_shared_geometry.v":6)
+Compiling module 'mtf_divide100'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf_native_geometry.v":228)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 21("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf_shared_geometry.v":190)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 21("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\mtf_shared_geometry.v":192)
+Compiling module 'mtf_shared_flow_fusion(VELOCITY_FRAC_BITS=16,CAL_MASK=8'h3f)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":11)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":122)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":122)
+WARN  (EX3791) : Expression size 43 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":99)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":125)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":125)
+WARN  (EX3791) : Expression size 33 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":99)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":132)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":133)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":134)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":135)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":136)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 27("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":137)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 27("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":138)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":139)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":140)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":144)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":144)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 50("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":146)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_flow_fusion.v":147)
+Compiling module 'mtf_shared_height_fusion(RANGE_AGE_PRECHECKED=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":10)
+Extracting RAM for identifier 'fraction_rom'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":122)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1176)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 20("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1183)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1188)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1191)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 13("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1195)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 14("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1198)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1200)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1212)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 23("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1216)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 14("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1216)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1216)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1231)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1231)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1242)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1243)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1249)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1250)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_shared_height_fusion.v":1257)
+Compiling module 'mtf_position_integrator'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_position_integrator.v":7)
+Compiling module 'mtf_position_divide_constant'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_position_integrator.v":145)
+Compiling module 'mtf_xyz_hold_control(CAL_MASK=8'b11111111,VELOCITY_FRAC_BITS=16)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":6)
+WARN  (EX3780) : Using initial value of 'position_px_store' since it is never assigned("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":155)
+WARN  (EX3780) : Using initial value of 'position_py_store' since it is never assigned("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":156)
+WARN  (EX3780) : Using initial value of 'position_qx_store' since it is never assigned("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":157)
+WARN  (EX3780) : Using initial value of 'position_qy_store' since it is never assigned("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":158)
+Compiling module 'ano_z_stick'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_z_stick.v":7)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 11("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_z_stick.v":51)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_z_stick.v":54)
+WARN  (EX3791) : Expression size 19 truncated to fit in target size 18("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_z_stick.v":70)
+WARN  (EX3791) : Expression size 30 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_z_stick.v":80)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":249)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":329)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 50("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":272)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":337)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":337)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":338)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":338)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":339)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":339)
+WARN  (EX3791) : Expression size 25 truncated to fit in target size 24("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":339)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 34("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":272)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":343)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":344)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 17("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":345)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":346)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":347)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":348)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":349)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 27("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":353)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 27("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":355)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 36("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":356)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 36("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":357)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 36("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":358)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 36("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":359)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":362)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":362)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":365)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":366)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":373)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":374)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":375)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 29("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":376)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":377)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":378)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":379)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":380)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":381)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":382)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":383)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":384)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":386)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":387)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":390)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":393)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 33("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":397)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 27("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":398)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 7("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":268)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 10("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":260)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":419)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":420)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 31("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":435)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 28("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":439)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":441)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":441)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":441)
+WARN  (EX3791) : Expression size 33 truncated to fit in target size 32("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":443)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":445)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 16("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":446)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 48("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\mtf_xyz_hold_control.v":452)
+Compiling module 'sik_imu_diagnostic(STARTUP_ONLY_SNAPSHOT_RESET=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sik_imu_diagnostic.v":4)
+Compiling module 'telemetry_tx(DIAGNOSTIC_INFO=1,ROTATION_INFO=1,NAV_CALLER_SNAPSHOT=1,MTF_CALLER_SNAPSHOT=1,NAV_INFO=1,MTF_INFO=1,FLIGHT_INFO=1,PERIOD=10000000,EXTERNAL_SNAPSHOT=1,INFO_CALLER_SNAPSHOT=1)'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\telemetry_tx.v":4)
+Compiling module 'uart_tx_115200'("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\core\spi_uart_modules.v":74)
+NOTE  (EX0101) : Current top module is "acg720_ano_port"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "ano_flow_fusion" instantiated to "fusion" is swept in optimizing("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\acg720_ano_port.v":196)
+WARN  (NL0002) : The module "position_divide" instantiated to "d" is swept in optimizing("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":70)
+WARN  (NL0002) : The module "position_multiply" instantiated to "m" is swept in optimizing("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_flow_fusion.v":69)
+WARN  (NL0002) : The module "position_divide" instantiated to "d" is swept in optimizing("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v":65)
+WARN  (NL0002) : The module "position_multiply" instantiated to "m" is swept in optimizing("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\position\ano_height_fusion.v":64)
+WARN  (NL0002) : The module "position_multiply" instantiated to "m" is swept in optimizing("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\range_height_estimate.v":55)
+WARN  (NL0002) : The module "position_sincos" instantiated to "trig" is swept in optimizing("C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\sensor\range_height_estimate.v":57)
+[95%] Generate netlist file "C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\impl\gwsynthesis\acg720_ano_port.vg" completed
+[100%] Generate report file "C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\candidates\comm_compact\source\impl\gwsynthesis\acg720_ano_port_syn.rpt.html" completed
+GowinSynthesis finish

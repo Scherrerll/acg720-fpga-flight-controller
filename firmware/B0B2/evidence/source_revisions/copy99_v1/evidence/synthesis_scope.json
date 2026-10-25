@@ -1,0 +1,443 @@
+{
+  "schema": "b0b2.copy99-synthesis-scope.v1",
+  "created_utc": "2026-10-24T21:19:02.854020+00:00",
+  "scope": "Read-only comparison of completed synthesis outputs; no post-PNR resource comparison or physical acceptance",
+  "old": {
+    "build": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1",
+    "phase": "synthesis only, never PNR resource usage",
+    "totals": {
+      "T_Register": 27816,
+      "T_Alu": 9206,
+      "T_Lut": 36025,
+      "T_MULTALU27X18": 30,
+      "T_MULT12X12": 7,
+      "T_MULT27X36": 13,
+      "T_Bsram": 2
+    },
+    "dsp_count_semantics": "Primitive counts by type, not a claim about post-map physical DSP tile occupancy",
+    "bsram_implementation": "2 pROM primitives",
+    "sik": {
+      "name": "sik_diagnostic",
+      "Register": "803",
+      "Alu": "79",
+      "Lut": "359",
+      "T_Register": "803(803)",
+      "T_Alu": "79(79)",
+      "T_Lut": "359(359)"
+    },
+    "telemetry_including_uart": {
+      "name": "telemetry",
+      "Register": "177",
+      "Alu": "46",
+      "Lut": "3075",
+      "T_Register": "200(177)",
+      "T_Alu": "46(46)",
+      "T_Lut": "3115(3075)"
+    },
+    "actual_source_coverage": 53,
+    "source_files_match_manifest": true,
+    "synthesis_xml": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn_rsc.xml",
+      "sha256": "bd5a22ccaa2b4e94ae5825ffefa1770b490f89d1774f8f382b7e5d01a4c3da2d",
+      "bytes": 8105
+    },
+    "synthesis_html": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn_resource.html",
+      "sha256": "383ef7890299da184de04469b63f63e01f2ca05e9f1b19973f6bafc258925d77",
+      "bytes": 27382
+    },
+    "synthesis_report": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn.rpt.html",
+      "sha256": "f59f82f8e806c1e2042d9186588501e5c9d124dfe56e06819a5ad9304fd549f6",
+      "bytes": 260708
+    },
+    "netlist": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+      "sha256": "29e7a58e6b84eaae03cbe9fb806f1d1186933ec1150844839c2c11b58a7473ed",
+      "bytes": 14517774
+    },
+    "inputs": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\inputs.json",
+      "sha256": "285e4ed8c7780ab9c71edf6af102f09f34e0bc6780da7ad7d815757e10103571",
+      "bytes": 6612
+    },
+    "archived_runner": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\build_runner.py",
+      "sha256": "6781a3829eb80e64f531568ffc447bc14d1bfac5b498475aa0dd15f1ceec8c21",
+      "bytes": 13639
+    },
+    "ff_groups": {
+      "accepted_count": 32,
+      "rejected_source_id": 32,
+      "consumed_id": 32,
+      "held_dt": 22,
+      "rejected_reader": 7,
+      "rejected_detail": 1,
+      "rejected_flags": 6,
+      "pose_flags": 5,
+      "pose_fault": 8,
+      "pose_seen_s0": 1,
+      "last_pose_tick": 32,
+      "max_pose_gap": 32,
+      "summary_body": 448,
+      "summary_tick": 32,
+      "previous_taking_off_s0": 1,
+      "previous_event_sequence": 16,
+      "window_open_s0": 1,
+      "protection_time": 32,
+      "protection_age": 32,
+      "protection_code": 6,
+      "protection_mask": 8,
+      "protection_imu": 8,
+      "protection_attitude": 8,
+      "protection_seen_s1": 1
+    },
+    "modules_usb_or_diagnostic_uart": [],
+    "vg_dsp_bsram_counts": {
+      "MULTALU27X18": 30,
+      "MULT12X12": 7,
+      "MULT27X36": 13,
+      "pROM": 2
+    }
+  },
+  "new": {
+    "build": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_syn_p2r2_rep0",
+    "phase": "synthesis only, never PNR resource usage",
+    "totals": {
+      "T_Register": 27716,
+      "T_Alu": 9206,
+      "T_Lut": 35924,
+      "T_MULTALU27X18": 30,
+      "T_MULT12X12": 7,
+      "T_MULT27X36": 13,
+      "T_Bsram": 2
+    },
+    "dsp_count_semantics": "Primitive counts by type, not a claim about post-map physical DSP tile occupancy",
+    "bsram_implementation": "2 pROM primitives",
+    "sik": {
+      "name": "sik_diagnostic",
+      "Register": "703",
+      "Alu": "79",
+      "Lut": "259",
+      "T_Register": "703(703)",
+      "T_Alu": "79(79)",
+      "T_Lut": "259(259)"
+    },
+    "telemetry_including_uart": {
+      "name": "telemetry",
+      "Register": "177",
+      "Alu": "46",
+      "Lut": "3074",
+      "T_Register": "200(177)",
+      "T_Alu": "46(46)",
+      "T_Lut": "3114(3074)"
+    },
+    "actual_source_coverage": 53,
+    "source_files_match_manifest": true,
+    "synthesis_xml": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_syn_p2r2_rep0\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn_rsc.xml",
+      "sha256": "66c8b330acc78f50715aceb6ecea969d50fed9ae978d86efd83e5537e07942a2",
+      "bytes": 8105
+    },
+    "synthesis_html": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_syn_p2r2_rep0\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn_resource.html",
+      "sha256": "18223983dbda471a77903e99dcb373f646c7e5aa42355f61915962188b57c7d0",
+      "bytes": 26812
+    },
+    "synthesis_report": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_syn_p2r2_rep0\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn.rpt.html",
+      "sha256": "ffa706cea5957a02f56a9a2da4d1eecd5ddbd3d0ac78c2998e01008c4b5ea8dd",
+      "bytes": 260226
+    },
+    "netlist": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_syn_p2r2_rep0\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+      "sha256": "cba41971c26a66ffc5f36d8bf4f1ebbbc41974d31e2cdf2307e480da75ed49ea",
+      "bytes": 14478734
+    },
+    "inputs": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_syn_p2r2_rep0\\inputs.json",
+      "sha256": "4b5bbfd2a7ed00d95f3daa8d2cd85db9c6662e91ccfc5d2403efeb72f86e7725",
+      "bytes": 12056
+    },
+    "archived_runner": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_syn_p2r2_rep0\\build_runner.py",
+      "sha256": "eb5778f695f0161d779786fea397c705526ddae907483502086ab64f4e10cd86",
+      "bytes": 30967
+    },
+    "ff_groups": {
+      "rejected_source_id": 32,
+      "rejected_reader": 7,
+      "rejected_detail": 1,
+      "rejected_flags": 6,
+      "pose_seen_s0": 1,
+      "last_pose_tick": 32,
+      "max_pose_gap": 32,
+      "summary_body": 447,
+      "summary_tick": 32,
+      "previous_taking_off_s0": 1,
+      "previous_event_sequence": 16,
+      "window_open_s0": 1,
+      "protection_time": 32,
+      "protection_age": 32,
+      "protection_code": 6,
+      "protection_mask": 8,
+      "protection_imu": 8,
+      "protection_attitude": 8,
+      "protection_seen_s1": 1
+    },
+    "modules_usb_or_diagnostic_uart": [],
+    "vg_dsp_bsram_counts": {
+      "MULTALU27X18": 30,
+      "MULT12X12": 7,
+      "MULT27X36": 13,
+      "pROM": 2
+    }
+  },
+  "delta_new_minus_old": {
+    "T_Register": -100,
+    "T_Alu": 0,
+    "T_Lut": -101,
+    "T_MULTALU27X18": 0,
+    "T_MULT12X12": 0,
+    "T_MULT27X36": 0,
+    "T_Bsram": 0
+  },
+  "changed_local_resource_nodes": {
+    "acg720_ano_port/sik_diagnostic": {
+      "old": {
+        "Register": 803,
+        "Alu": 79,
+        "Lut": 359
+      },
+      "new": {
+        "Register": 703,
+        "Alu": 79,
+        "Lut": 259
+      }
+    },
+    "acg720_ano_port/telemetry": {
+      "old": {
+        "Register": 177,
+        "Alu": 46,
+        "Lut": 3075
+      },
+      "new": {
+        "Register": 177,
+        "Alu": 46,
+        "Lut": 3074
+      }
+    }
+  },
+  "sik_removed_ff_groups": {
+    "consumed_id": 32,
+    "held_dt": 22,
+    "accepted_count": 32,
+    "pose_fault": 8,
+    "summary_body": 1,
+    "pose_flags": 5
+  },
+  "sik_added_ff_instances": [],
+  "extra_1ff": {
+    "instance": "summary_body_131_s0",
+    "old_driver": ".Q(sik_diagnostic_body_131),\n    .D(next_pose_flags[3]),\n    .CLK(clk50_d),\n    .RESET(n13_16),\n    .CE(\\staged_telemetry.core_q_453_16 )",
+    "old_identical_flag_muxes": {
+      "next_pose_flags_4_s0": {
+        "ports": {
+          "F": "next_pose_flags[4]",
+          "I0": "pose_flags[4]",
+          "I1": "diag_pose_body_12",
+          "I2": "diag_pose_valid"
+        },
+        "init": "8'hCA"
+      },
+      "next_pose_flags_3_s0": {
+        "ports": {
+          "F": "next_pose_flags[3]",
+          "I0": "pose_flags[4]",
+          "I1": "diag_pose_body_12",
+          "I2": "diag_pose_valid"
+        },
+        "init": "8'hCA"
+      }
+    },
+    "explanation": "99 local held-field FFs removed plus one redundant summary flag FF. Old summary flags bit3 initialized and bit4 ready have identical mux truth tables/inputs and identical CLK/RESET/CE/INIT. New netlist retains summary_body_132_s0 only. This integrated reduction is 100 FF; the prior isolated constrained prototype measured 99 FF.",
+    "new_retained_driver": ".Q(sik_diagnostic_body_132),\n    .D(diag_pose_body_12),\n    .CLK(clk50_d),\n    .RESET(n13_16),\n    .CE(\\staged_telemetry.core_q_453_16 )",
+    "new_bit131_output_absent": true
+  },
+  "controlled_source": {
+    "count": 53,
+    "sha256": {
+      "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+      "acg720_ano_port.gprj": "198f6c141bae6b6c297076a05bab2326cf32b8696c589b24daf0d08218feaa76",
+      "acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e",
+      "acg720_ano_port.v": "c4905b092d5d256c0949db67e4ac4c25778cd9ff5c18d4d4ffac362f7515e484",
+      "build.tcl": "437e3b163ca475294dafd8568ca7809d0c4fc5f49fd127992f055c2f0df30629",
+      "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "mtf_navigation_shadow.v": "51903cc1b8812b0a4fa8b93bb5abb74cd5674382486d6e18eb241f23a64ce4a2",
+      "mtf_xyz_navigation_control.v": "1de41164505a62139fcabb5469a27cb8f89afa775363f0a1b2d4de1f2e64b45e",
+      "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "sik_imu_diagnostic.v": "7783baba34cc7cdc014d17f38e9e0d5f52210e1d8b02bde49a5f308d8ee3160e",
+      "telemetry_tx.v": "2ae5bd7edf24418c9707add77711789a4f6cbeb339bef6259e9f41c29785796b",
+      "core/ano_attitude_estimator.v": "609f87d404dcd38911b042286543b5e11f7bf233eecf9af57d2f58755b04cfad",
+      "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "core/bmi088_reader.v": "a8592395f3f18ba11b2b1cf88e314394cdda3aeb21211c77f70f507c56f9c0a0",
+      "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "core/flight_core.v": "727da0d14c2dedbcc1f1b3a8297cd9dbb95a84a4cf8f4c28216dd4d83492a7dc",
+      "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+      "core/imu_checked_guard_pipelined.v": "20bcf23ce4e44d91dc4fb55f9c05d1e8ae654064f57419f83e7c1648697985a1",
+      "core/imu_diagnostic_tap.v": "26c3c5383bffe899fa61382ae06e2c774b56c1df966b54c1ab07f303b5003808",
+      "core/imu_pipeline_pipelined.v": "5197ef78b6987e5150fb1211ead256205695cbe0d6eb4392d4804c4ca5f5df69",
+      "core/imu_temporal_check_pipelined.v": "a2574b91272c414219a5fc40f90750a75d39df9d2e4b7f4464f3cc2e7869a1a0",
+      "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+      "core/rc_ppm.v": "568b5bb8c855b9124138015eab5ba93b52c07efb9bbeaf42cd7ab9dc31890873",
+      "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "position/ano_height_fusion.v": "9d0d76a86e4135106ad1a3eab9b0930bb4bae94cf315c6935d8b49c3c0764cae",
+      "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "position/mtf_shared_height_fusion.v": "937fd9b733b8a998a28acc17269657eeb7780faef972edb8a5a86fd9775ab509",
+      "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+      "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "position/relative_position.v": "ddfb928e6f4a33621bac61c7cd92580a93a462c6cb29e01c17dc649e84805cf1",
+      "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "sensor/mtf01p_reader.v": "a2999acee160e936af18013ffd9fd9f9bd3c3649d6a7c5e0439aa0ec96d0f680",
+      "sensor/mtf_native_geometry.v": "6c29599031685ad7843343e28f56a31aa93571e9ac6ca0f09daf3da61ed995e5",
+      "sensor/mtf_shared_geometry.v": "de3276c8cfd68bf963b2438552faae03683539f05702ef5ec46140fd8b8021d0",
+      "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "sensor/range_height_estimate.v": "a0d2f25734667aab4114f9871b58a66f728eba61290c2c9d6dd8d0c2a578d005",
+      "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+      "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+    },
+    "stable_during_review": true,
+    "current_matches_new_logical": true,
+    "old_fixture_to_new_controlled_differences": {
+      "build.tcl": {
+        "old": "25e9c9d68c3c8cd35988a25dc50115d48dbb881124689ccabbde41b1bbfb2047",
+        "new": "437e3b163ca475294dafd8568ca7809d0c4fc5f49fd127992f055c2f0df30629"
+      },
+      "sik_imu_diagnostic.v": {
+        "old": "8bff3d129b80875c4bced236238952ccdee43f8107947ff13489d2c52945dfcc",
+        "new": "7783baba34cc7cdc014d17f38e9e0d5f52210e1d8b02bde49a5f308d8ee3160e"
+      }
+    },
+    "note": "Initial full-build manifest records generated physical build.tcl, not its original logical template. 51 non-Tcl/non-SiK file hashes match; only SiK RTL differs. Current logical map covers all 53 controlled files."
+  },
+  "passive_serial": {
+    "no_high_frequency_usb_module_in_old_or_new_vg": true,
+    "source_top_mirror_lines": [
+      {
+        "line": 17,
+        "text": " assign radio_tx=telemetry_radio_tx;"
+      },
+      {
+        "line": 304,
+        "text": " telemetry_tx #(.DIAGNOSTIC_INFO(1),.ROTATION_INFO(1),.PERIOD(10000000),.MTF_INFO(1),.MTF_CALLER_SNAPSHOT(1),.INFO_CALLER_SNAPSHOT(1),.NAV_INFO(1),.NAV_CALLER_SNAPSHOT(1),.FLIGHT_INFO(1),.RANGE_DIAGNOSTICS(0),.EXTERNAL_SNAPSHOT(1)) telemetry(.clk(clk50),.core_body(core_snapshot),.extension(extension_snapshot),.acceleration_body(acceleration_snapshot),.range_diagnostic_body(range_diagnostic_snapshot),.flight_info_body(flight_info_q),.rotation_body(rotation_pair_q),.mtf_body(mtf_body),.nav_body(navigation_body),.diagnostic_body(sik_diagnostic_body),.diagnostic_tick(sik_diagnostic_tick),.tx(telemetry_radio_tx),.snapshot_hold(telemetry_snapshot_hold));"
+      },
+      {
+        "line": 305,
+        "text": " assign uart_tx=telemetry_radio_tx;"
+      }
+    ],
+    "transmitter": {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\spi_uart_modules.v",
+      "module": "uart_tx_115200",
+      "clock_hz": 50000000,
+      "baud_reload": 433,
+      "cycles_per_bit": 434,
+      "actual_nominal_baud": 115207.3732718894
+    },
+    "uart_clock": "clk50 through telemetry .clk(clk50); no separate fast diagnostic UART instantiated",
+    "pins_equal_17_baseline": true,
+    "single_sdc": "create_clock -name clk50 -period 19.500 [get_ports {clk50}]"
+  },
+  "derived": {
+    "build": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_global_p2r2_rep0",
+    "inputs": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_global_p2r2_rep0\\inputs.json",
+      "sha256": "d659ab471584ad6591ec1bb25f1b987b006008e2fbaf63e331f16095d216910b",
+      "bytes": 13792
+    },
+    "netlist": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_global_p2r2_rep0\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+      "sha256": "cba41971c26a66ffc5f36d8bf4f1ebbbc41974d31e2cdf2307e480da75ed49ea",
+      "bytes": 14478734
+    },
+    "copied_vg_matches_synthesis": true,
+    "observer_reset": {
+      "net": "n4580_8",
+      "nand": {
+        "instance": "n4580_s3",
+        "init": "7FFF",
+        "ports": {
+          "F": "n4580_8",
+          "I0": "n13_13",
+          "I1": "n13_14",
+          "I2": "previous_pose_valid",
+          "I3": "pose_valid"
+        }
+      },
+      "boot_and_halves": [
+        {
+          "instance": "n13_s9",
+          "init": "8000",
+          "ports": {
+            "F": "n13_13",
+            "I0": "boot[4]",
+            "I1": "boot[5]",
+            "I2": "boot[6]",
+            "I3": "boot[7]"
+          }
+        },
+        {
+          "instance": "n13_s10",
+          "init": "8000",
+          "ports": {
+            "F": "n13_14",
+            "I0": "boot[0]",
+            "I1": "boot[1]",
+            "I2": "boot[2]",
+            "I3": "boot[3]"
+          }
+        }
+      ],
+      "boot_value": 255
+    },
+    "cst_requested_global_line": "CLOCK_LOC \"n4580_8\" BUFG = CE|SR|LOGIC;",
+    "global_assignment_in_snapshot": null,
+    "global_assignment_note": "Candidate structure and exact requested CST are proved. Global allocation and STA await the completed physical report; no allocation success is inferred from this precheck.",
+    "console_snapshot": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_global_p2r2_rep0\\console.log",
+      "bytes": 1109,
+      "sha256": "70eccc0077ebcbdf88bc94645350a8bac582d664a3ea07eff6a7ca1810fcf50b",
+      "mutable_while_running": true,
+      "skip_synthesis_observed": true,
+      "synthesis_start_or_finish_observed": false
+    },
+    "shared_source_audit_passed": true,
+    "synthesis_receipt_audit_passed": true,
+    "synthesis_receipt": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_copy99_syn_p2r2_rep0\\synthesis_result.json",
+      "sha256": "8a63fc175e3eb0db22295c749e4e7d109f2096ab37415e54c438c683de59704c",
+      "bytes": 11693
+    }
+  },
+  "builder_sha256": "eb5778f695f0161d779786fea397c705526ddae907483502086ab64f4e10cd86",
+  "hardware_accessed": false,
+  "flash_changed": false,
+  "new_vendor_started": false,
+  "source_or_tools_modified": false,
+  "physical_acceptance": false
+}

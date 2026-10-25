@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-25T14:16:28.867516+00:00",
+  "statement": "已拆桨，机体停机，可以准备采集",
+  "source": "Current chat explicit user confirmation",
+  "props_removed": true,
+  "scope": "Coarse hand-held response observation only; optical-center motion is not independently measured"
+}

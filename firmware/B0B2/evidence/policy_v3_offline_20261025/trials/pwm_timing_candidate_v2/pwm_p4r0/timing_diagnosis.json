@@ -1,0 +1,36 @@
+{
+  "report_sha256": "af64f5f40e2336d2a6327ebb86c4f9891d7bb528635e9b60fda7f7679d7ae0c6",
+  "worst_slack_ns": -13.411,
+  "start": "native_navigation/controller_proof/bias_store_1_s1",
+  "end": "native_navigation/controller_proof/iz_store_4_s0",
+  "data_cell_delay_ns": 6.309,
+  "data_route_delay_ns": 25.755,
+  "route_percent": 79.47,
+  "longest_data_wires": [
+    {
+      "delay_ns": 5.901,
+      "sink": "native_navigation/controller_proof/n13390_s27/I1"
+    },
+    {
+      "delay_ns": 4.397,
+      "sink": "native_navigation/controller_proof/n13379_s3/I1"
+    },
+    {
+      "delay_ns": 4.179,
+      "sink": "native_navigation/controller_proof/n13390_s31/I2"
+    },
+    {
+      "delay_ns": 3.912,
+      "sink": "native_navigation/controller_proof/n13386_s3/I0"
+    },
+    {
+      "delay_ns": 3.54,
+      "sink": "native_navigation/controller_proof/n16999_s80/I1"
+    },
+    {
+      "delay_ns": 0.938,
+      "sink": "native_navigation/controller_proof/n13386_s4/I1"
+    }
+  ],
+  "hardware_accessed": false
+}

@@ -1,0 +1,36 @@
+{
+  "report_sha256": "ebf5265aa4469f8ee2cc018ab656ae78744470e08a8b7e86c6b28b8afe9ae030",
+  "worst_slack_ns": -6.869,
+  "start": "core/imu/estimator/yaw_range_ok_s0",
+  "end": "native_navigation/control_epoch_7_s0",
+  "data_cell_delay_ns": 4.037,
+  "data_route_delay_ns": 21.931,
+  "route_percent": 83.35,
+  "longest_data_wires": [
+    {
+      "delay_ns": 7.932,
+      "sink": "native_navigation/geometry/height_ready_state_numeric_tail_kept_s11/I3"
+    },
+    {
+      "delay_ns": 3.518,
+      "sink": "native_navigation/control_bad_s2/I0"
+    },
+    {
+      "delay_ns": 2.631,
+      "sink": "core/fallback_control/height_fallback_active_s0/I0"
+    },
+    {
+      "delay_ns": 2.11,
+      "sink": "native_navigation/nav_vertical_ready_s0/I3"
+    },
+    {
+      "delay_ns": 1.863,
+      "sink": "n18152_s2/I1"
+    },
+    {
+      "delay_ns": 1.115,
+      "sink": "native_navigation/control_event_s0/I1"
+    }
+  ],
+  "hardware_accessed": false
+}

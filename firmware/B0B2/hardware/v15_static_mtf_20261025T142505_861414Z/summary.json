@@ -1,0 +1,65 @@
+{
+  "capture_completed": true,
+  "operator_confirmed_hands_off_static": true,
+  "operator_preparation": "Current chat: fixed support, props removed, unarmed, hands off; separate from earlier hand-held capture",
+  "distinct_mtf_snapshots": 94,
+  "duration_seconds": 20.15556319997995,
+  "failures": [],
+  "rotation_compensation_verified": false,
+  "calibration_coefficients_changed": false,
+  "firmware_changed": false,
+  "serial_writes": false,
+  "programmer_operations": [],
+  "pnr_started": false,
+  "samples_sha256": "7ec4f0763d3a2a0a182ec5f9524a64ab628936349c66370933bbe055b2108f63",
+  "observer_sha256": "f0adbd68f3dd122001aa96bd0d648dc0dda5a3c8d70c1a6cbcaf7bd2196447d3",
+  "attitude": {
+    "roll_deg": {
+      "min": 0.69,
+      "max": 0.74,
+      "std": 0.011667259464557623
+    },
+    "pitch_deg": {
+      "min": 3.39,
+      "max": 3.44,
+      "std": 0.012459531595089604
+    }
+  },
+  "height_mm": [
+    202,
+    226
+  ],
+  "native_axes": {
+    "forward": {
+      "velocity_min_mm_s": 0.0,
+      "velocity_max_mm_s": 0.0,
+      "velocity_mean_mm_s": 0.0,
+      "velocity_rms_mm_s": 0.0,
+      "integrated_delta_mm": 0.0,
+      "integrated_span_mm": 0.0
+    },
+    "right": {
+      "velocity_min_mm_s": 0.0,
+      "velocity_max_mm_s": 0.0,
+      "velocity_mean_mm_s": 0.0,
+      "velocity_rms_mm_s": 0.0,
+      "integrated_delta_mm": -0.0020000000004074536,
+      "integrated_span_mm": 0.006000000001222361
+    }
+  },
+  "mtf_counter_delta": {
+    "sample_count": 1998,
+    "checksum_errors": 0,
+    "length_errors": 0,
+    "uart_errors": 0,
+    "packet_timeouts": 0,
+    "module_missing": 0,
+    "module_restarts": 0,
+    "integration_breaks": 0
+  },
+  "imu_counter_delta": {
+    "accepted_count": 20032,
+    "rejected_count": 0,
+    "controller_fault_count": 0
+  }
+}

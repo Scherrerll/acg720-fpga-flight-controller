@@ -1,0 +1,23 @@
+{
+  "python": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "pyserial": "3.5",
+  "dependencies": {
+    "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/bin/gw_sh.exe": {
+      "sha256": "585c12968550a960d1021287742672ff9d6bbeaee5623f6811dfc1f907a4af41",
+      "size_bytes": 65600
+    },
+    "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/simlib/gw5a/prim_sim.v": {
+      "sha256": "7109c2568188627465d218bc099cf72f12e90807c21d4d862d2335b499043544",
+      "size_bytes": 710345
+    },
+    "C:/Users/ScherrerL/Desktop/apple/.tools/iverilog/app/bin/iverilog.exe": {
+      "sha256": "803b8844af2cc8ed70b5f08b07ffa749901280e81339617ca3e72cbbb852bd2b",
+      "size_bytes": 88064
+    },
+    "C:/Users/ScherrerL/Desktop/apple/.tools/iverilog/app/bin/vvp.exe": {
+      "sha256": "e2f442f4d5aa76e55c85c3ff77e4446fbfdb9946b7cfe8a2dff87f275da17b62",
+      "size_bytes": 945664
+    }
+  },
+  "hardware_accessed": false
+}

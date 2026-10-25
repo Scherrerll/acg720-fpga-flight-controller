@@ -1,0 +1,17 @@
+--- original V15
++++ P005 I0
+@@ -338,10 +338,10 @@
+      3:begin afy_store<=keep64(afy+value);calc(afx,3,100,4);end
+      4:begin ex_store<=keep64(fixx-value);calc(afy,3,100,5);end
+      5:begin ey_store<=keep64(fixy-value);calc(clip(fixx,-32768000,32768000),$signed({1'b0,dt}),1000000,6);end
+-     6:begin ix_store<=keep64(taking_off ?clip(ix+value,-65536000,65536000):0);calc(clip(fixy,-32768000,32768000),$signed({1'b0,dt}),1000000,7);end
+-     7:begin iy_store<=keep64(taking_off ?clip(iy+value,-65536000,65536000):0);calc(ex,15,10,8);end
+-     8:begin ux_store<=keep64(value+ix);calc(ey,15,10,9);end
+-     9:begin uy_store<=keep64(value+iy);calc(sx,1,5,10);end
++     6:begin ix_store<=keep64(0);calc(clip(fixy,-32768000,32768000),$signed({1'b0,dt}),1000000,7);end
++     7:begin iy_store<=keep64(0);calc(ex,1,2,8);end
++     8:begin ux_store<=keep64(value);calc(ey,1,2,9);end
++     9:begin uy_store<=keep64(value);calc(sx,1,5,10);end
+      10:begin ux_store<=keep64(ux+value);calc(sy,1,5,11);end
+      11:begin uy_store<=keep64(uy+value);state<=17;end
+      17:begin

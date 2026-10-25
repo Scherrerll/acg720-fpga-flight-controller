@@ -1,0 +1,202 @@
+{
+  "schema": "b0ac-b0b0.source-history-readonly-review.v1",
+  "created_utc": "2026-10-24T22:17:00.156100+00:00",
+  "scope": "Read-only selected-source and existing manifest comparison; no new simulation, vendor run, current device access, whole-netlist equivalence or flight acceptance",
+  "selected_b0ac": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\selected_build.json",
+    "sha256": "bf4c2c521f991fc0468d7316e7d04d2b45b39ebef55677c4e02f0c283440f0a0",
+    "selected_fixture": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture"
+  },
+  "b0b0_binding": {
+    "baseline_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B1\\baseline.json",
+    "baseline_sha256": "f8fb8b03db884ce1728682c6cdcc320e717d3112c4ef09e47e1e9bd55482fea2",
+    "frozen_source": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot"
+  },
+  "existing_comparison": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B1\\evidence\\b0ac_to_b0b0.json",
+    "sha256": "c05e39f5a4a345b521ff2ca0aed42d34ddf25dd9b60fcab95b8630fbc22ee2d7",
+    "all_six_original_hash_pairs_reverified": true,
+    "checked": [
+      {
+        "path": "core/imu_temporal_check_pipelined.v",
+        "b0ac_sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+        "b0b0_sha256": "605acde3da8437ddc285191165d6fdeed1e88566d1a5db54b564e3da6651e351",
+        "byte_identical": true
+      },
+      {
+        "path": "core/imu_checked_guard_pipelined.v",
+        "b0ac_sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+        "b0b0_sha256": "8f5370fc8bfecc7a0a326bda4df02d3c57a3b410e36c6cc01b810c464f909fc9",
+        "byte_identical": true
+      },
+      {
+        "path": "core/imu_pipeline_pipelined.v",
+        "b0ac_sha256": "d21b84a4cf4b69c74200cae791a0661b0b40347c894d1a1fc6e0edde272488a6",
+        "b0b0_sha256": "55220d17d4fd7d3badc12a1283d8ebddbfb4fc953d6a4561e6fddd98696e2509",
+        "byte_identical": false
+      },
+      {
+        "path": "core/ano_attitude_estimator.v",
+        "b0ac_sha256": "21d4bb8cf33c4c7d52495a349e120b48d0bea8d894f99e7f4502e84e52cc6736",
+        "b0b0_sha256": "878bb041f592691ffd0b33746bd8dd18d5506ddb0bb8ec8695ccd89bdf7c28a8",
+        "byte_identical": false
+      },
+      {
+        "path": "core/rtl/ano_rate_control.v",
+        "b0ac_sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+        "b0b0_sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "byte_identical": false
+      },
+      {
+        "path": "position/mtf_xyz_hold_control.v",
+        "b0ac_sha256": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14",
+        "b0b0_sha256": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+        "byte_identical": false
+      }
+    ]
+  },
+  "active_control_chains": {
+    "B0AC": {
+      "top_selects_native_proof": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\acg720_ano_port.v",
+        "sha256": "c09da92dd2c3a8556112062c633696d6627c0803c4f1fe32a835b197a26db48a",
+        "line": 238,
+        "text": "mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1)) native_navigation("
+      },
+      "actual_controller": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\mtf_xyz_navigation_control.v",
+        "sha256": "4fb740f542a3956152cab181933fdec606ee33df6c1eddbeba05c15c807837e4",
+        "line": 230,
+        "text": "mtf_xyz_hold_control #(.CAL_MASK(PROOF_CONTROLLER ? 8'hff:8'h00),.VELOCITY_FRAC_BITS(16)) controller_proof("
+      },
+      "core_consumes_handoff": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\acg720_ano_port.v",
+        "sha256": "c09da92dd2c3a8556112062c633696d6627c0803c4f1fe32a835b197a26db48a",
+        "line": 58,
+        "text": ".hold_active(xyz_joint_active),.altitude_active(xyz_joint_active),.hold_roll_cdeg(handoff_roll),.hold_pitch_cdeg(handoff_pitch),.hold_throttle_delta_us(handoff_delta),.hold_collective_us(handoff_collective),"
+      },
+      "active_controller_angle_limit": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\position\\mtf_xyz_hold_control.v",
+        "sha256": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14",
+        "line": 21,
+        "text": "parameter integer MAX_ANGLE=1200,MAX_DELTA_US=1000,"
+      },
+      "output_angle_clamp": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\position\\mtf_xyz_hold_control.v",
+        "sha256": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14",
+        "line": 307,
+        "text": "roll_target<=clip(publish_roll,-MAX_ANGLE,MAX_ANGLE);"
+      },
+      "core_target_mux": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\core\\flight_core.v",
+        "sha256": "b6fae129a912a16bd373fd8b9266633495979a910648546d8749e4c2e5d90cd5",
+        "line": 176,
+        "text": "wire signed [15:0] target_roll=hold_override ? bounded_hold_angle(hold_roll_cdeg) : manual_roll_cdeg;"
+      },
+      "inner_angle_clip": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\core\\rtl\\ano_rate_control.v",
+        "sha256": "202a0fd77a62c58d6062bf1b259327507f3afefc981ab774918b99a34b6cc837",
+        "line": 112,
+        "text": "begin clip_angle=value>2500 ? 16'sd2500 : value < -2500 ? -16'sd2500 : value;end"
+      }
+    },
+    "B0B0": {
+      "top_selects_native_proof": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\acg720_ano_port.v",
+        "sha256": "bef0a3adc8af362b4ed8f0a1eb56ad9c0d1b89f2a1a31c98632da8fe1e7da8fc",
+        "line": 269,
+        "text": "mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1)) native_navigation("
+      },
+      "actual_controller": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\mtf_xyz_navigation_control.v",
+        "sha256": "1de41164505a62139fcabb5469a27cb8f89afa775363f0a1b2d4de1f2e64b45e",
+        "line": 246,
+        "text": "mtf_xyz_hold_control #(.CAL_MASK(PROOF_CONTROLLER ? 8'hff:8'h00),.VELOCITY_FRAC_BITS(16)) controller_proof("
+      },
+      "core_consumes_handoff": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\acg720_ano_port.v",
+        "sha256": "bef0a3adc8af362b4ed8f0a1eb56ad9c0d1b89f2a1a31c98632da8fe1e7da8fc",
+        "line": 70,
+        "text": ".hold_active(xyz_joint_active),.altitude_active(z_handoff_active),.vertical_available(nav_vertical_ready),.auto_takeoff(nav_auto_takeoff),.taking_off_out(taking_off),.height_fallback_active(height_fallback_active),.flight_state_flags(flight_state_flags),.vertical_height_mm(nav_feedback_height),.hold_roll_cdeg(handoff_roll),.hold_pitch_cdeg(handoff_pitch),.hold_throttle_delta_us(handoff_delta),.hold_collective_us(handoff_collective),"
+      },
+      "active_controller_angle_limit": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\position\\mtf_xyz_hold_control.v",
+        "sha256": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+        "line": 10,
+        "text": "parameter integer MAX_ANGLE=2500,MAX_DELTA_US=1000,"
+      },
+      "output_angle_clamp": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\position\\mtf_xyz_hold_control.v",
+        "sha256": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+        "line": 348,
+        "text": "roll_target<=clip(publish_roll,-MAX_ANGLE,MAX_ANGLE);"
+      },
+      "core_target_mux": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\core\\flight_core.v",
+        "sha256": "70cfc8a6618f5dc9ec59c7e60b77011fcd8815fe2ea52ab186243c44ee9a08d4",
+        "line": 196,
+        "text": "wire signed [15:0] target_roll=hold_override ? bounded_hold_angle(hold_roll_cdeg) : manual_roll_cdeg;"
+      },
+      "inner_angle_clip": {
+        "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\core\\rtl\\ano_rate_control.v",
+        "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "line": 112,
+        "text": "begin clip_angle=value>2500 ? 16'sd2500 : value < -2500 ? -16'sd2500 : value;end"
+      }
+    }
+  },
+  "explicit_position_outer_loop": {
+    "b0ac_position_error_to_speed": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\position\\mtf_xyz_hold_control.v",
+      "sha256": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14",
+      "line": 288,
+      "text": "43:begin position_px_store<=keep64(position_ex*POSITION_KP_Q16);position_py_store<=keep64(position_ey*POSITION_KP_Q16);state<=44;end"
+    },
+    "b0ac_clipped_world_velocity_setpoint": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ac_preserve_fsm\\fixture\\position\\mtf_xyz_hold_control.v",
+      "sha256": "d3dbe5260d8e795868fe9d01b8c8e87ebac656566b80ac9b38ff1d6f2f147f14",
+      "line": 290,
+      "text": "45:begin world_sx_store<=keep64(clip(position_qx,-horizontal_speed_limit_q16,horizontal_speed_limit_q16));world_sy_store<=keep64(clip(position_qy,-horizontal_speed_limit_q16,horizontal_speed_limit_q16));calc($signed({1'b0,dt})*314,65536,10000000+dt*314,1);end"
+    },
+    "b0b0_stick_velocity": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\position\\mtf_xyz_hold_control.v",
+      "sha256": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+      "line": 329,
+      "text": "43:calc($signed(pending_nx),horizontal_speed_limit_q16,65536,44);"
+    },
+    "b0b0_no_world_position_setpoint": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\position\\mtf_xyz_hold_control.v",
+      "sha256": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+      "line": 331,
+      "text": "45:begin sy_store<=keep64(value);world_sx_store<=0;world_sy_store<=0;calc($signed({1'b0,dt})*314,65536,10000000+dt*314,1);end"
+    },
+    "b0b0_velocity_feedback_entry": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\source_snapshot\\position\\mtf_xyz_hold_control.v",
+      "sha256": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+      "line": 355,
+      "text": "30:if(trig_done) calc(-sample_vx,cs,65536,35);"
+    }
+  },
+  "findings": [
+    "Both selected tops explicitly instantiate mtf_xyz_navigation_control with PROOF_CONTROLLER=1. That instance instantiates mtf_xyz_hold_control with CAL_MASK=0xff and does not override MAX_ANGLE. Its outputs feed the handoff and flight_core hold target mux; it is an active physical-control path, not unused comments.",
+    "The selected horizontal hold-controller output cap changed from 1200 to 2500 cdeg. Both downstream core/rate angle clips allow 2500, so no hidden 1200 inner clip nullifies the change.",
+    "B0AC actively computes captured relative-position error times POSITION_KP_Q16 in states 43..45 into a world-velocity target. B0B0 actively replaces those states with normalized-stick velocity and zeros world_sx/world_sy, entering velocity feedback directly. The explicit position outer loop was removed.",
+    "Temporal checker and accepted-record guard are byte-identical across the selected versions. The pipeline comparison adds only the tilt4500 output connection. The complete estimator diff consists of that 45-degree publication-synchronous Boolean output, its combinational comparison and reset/publication assignments; estimator numeric recurrences are unchanged.",
+    "The version difference does not establish the image used by an earlier unlogged successful self-stabilized flight or a unique cause of the later optical-flow failures."
+  ],
+  "document_review": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\CHANGE_REVIEW_ZH.md",
+    "sha256": "081a5ad13a76a38eba85f2b7a0afcd96c1f13f85717c250fa95909360a5051a5",
+    "earlier_successful_flight_firmware_explicitly_unknown": true,
+    "verified_version_claims_supported": true,
+    "no_unique_flight_root_cause_claim": true,
+    "optional_precision": "For the statement that velocity PI can provide equivalent position restoration, add near-constant heading and integrator not reset/saturated; continuous valid velocity alone is not a general global-position guarantee.",
+    "limits": "This short check independently verifies only the selected history claims. It does not re-audit every current B0B2 benchmark, website change or physical-build status."
+  },
+  "file_mutation_scope": "Only this new out-only review note was created; historical source, manifests, comparison and CHANGE_REVIEW were not modified",
+  "source_modified": false,
+  "hardware_accessed": false,
+  "vendor_started": false,
+  "new_tests_run": false,
+  "flight_ready": false
+}

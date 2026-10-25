@@ -1,0 +1,786 @@
+{
+  "passed": true,
+  "scope": "Independent raw TR/RPT/log/SDC/CST/VG/FS/PR and process/project identity review; no inspect_timing code or JSON consumed; no source/build/hardware changes",
+  "fixture": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\builds\\idle_integral_p3r0",
+  "actual_process_start_utc": "2026-10-25T22:45:34.204754+00:00",
+  "actual_exit_utc": "2026-10-25T23:07:52.628945+00:00",
+  "actual_exit_code": 0,
+  "physical_options": {
+    "place": 3,
+    "route": 0,
+    "map_option": 2,
+    "replicate_resources": 0
+  },
+  "Tcl_identity_separation": {
+    "inherited_build_input_tcl_sha256": "395828b978a46bacbbb7eca0fcf6888de91898813fafc06065cac1986373a126",
+    "inherited_field_is_exact_donor_synthesis_Tcl": true,
+    "actual_physical_Tcl_sha256": "8cb88e3b7042d5cd6862197e382847727e586a31dbea492ba5da7ecd7a186f41",
+    "actual_physical_project_sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+    "note": "No claim that inherited tcl_sha256 binds physical.tcl. Actual physical Tcl reviewed and hashed separately here; old receipts are not modified."
+  },
+  "clock_period_ns": "20.000",
+  "Fmax_MHz": "50.257",
+  "violated_endpoints": {
+    "setup": 0,
+    "hold": 0
+  },
+  "tables": {
+    "setup": {
+      "reported_rows": 25,
+      "minimum_slack_ns": "0.102",
+      "rows": [
+        {
+          "number": 1,
+          "slack_ns": "0.102",
+          "raw": "1             0.102        mtf/parser/raw_frame_130_s0/Q             core/gate_last_revoke_attitude_fault_2_s0/CE          clk50:[R]    clk50:[R]   20.000     0.017        19.601"
+        },
+        {
+          "number": 2,
+          "slack_ns": "0.104",
+          "raw": "2             0.104        mtf/parser/raw_frame_130_s0/Q             core/gate/last_interruption_code_2_s0/CE              clk50:[R]    clk50:[R]   20.000     0.008        19.608"
+        },
+        {
+          "number": 3,
+          "slack_ns": "0.112",
+          "raw": "3             0.112        mtf/parser/raw_frame_130_s0/Q             staged_telemetry.extension_q_818_s0/D                 clk50:[R]    clk50:[R]   20.000     0.017        19.813"
+        },
+        {
+          "number": 4,
+          "slack_ns": "0.149",
+          "raw": "4             0.149        mtf/parser/raw_frame_130_s0/Q             core/manual_angles/fault_5_s0/D                       clk50:[R]    clk50:[R]   20.000     0.000        19.793"
+        },
+        {
+          "number": 5,
+          "slack_ns": "0.158",
+          "raw": "5             0.158        mtf/parser/raw_frame_130_s0/Q             core/gate_last_revoke_attitude_fault_3_s0/CE          clk50:[R]    clk50:[R]   20.000     0.008        19.554"
+        },
+        {
+          "number": 6,
+          "slack_ns": "0.158",
+          "raw": "6             0.158        mtf/parser/raw_frame_130_s0/Q             core/gate_last_revoke_attitude_fault_7_s0/CE          clk50:[R]    clk50:[R]   20.000     0.008        19.554"
+        },
+        {
+          "number": 7,
+          "slack_ns": "0.184",
+          "raw": "7             0.184        mtf/parser/raw_frame_130_s0/Q             core/gate_last_interruption_attitude_fault_1_s0/CE    clk50:[R]    clk50:[R]   20.000     0.008        19.528"
+        },
+        {
+          "number": 8,
+          "slack_ns": "0.184",
+          "raw": "8             0.184        mtf/parser/raw_frame_130_s0/Q             core/gate_last_interruption_attitude_fault_2_s0/CE    clk50:[R]    clk50:[R]   20.000     0.008        19.528"
+        },
+        {
+          "number": 9,
+          "slack_ns": "0.184",
+          "raw": "9             0.184        mtf/parser/raw_frame_130_s0/Q             core/gate_last_interruption_attitude_fault_7_s0/CE    clk50:[R]    clk50:[R]   20.000     0.008        19.528"
+        },
+        {
+          "number": 10,
+          "slack_ns": "0.203",
+          "raw": "10            0.203        core/imu/estimator/captured_raw_68_s0/Q   core/imu/estimator/high_y_6_s0/CE                     clk50:[R]    clk50:[R]   20.000     -0.008       19.525"
+        },
+        {
+          "number": 11,
+          "slack_ns": "0.203",
+          "raw": "11            0.203        core/imu/estimator/captured_raw_68_s0/Q   core/imu/estimator/high_y_7_s0/CE                     clk50:[R]    clk50:[R]   20.000     -0.008       19.525"
+        },
+        {
+          "number": 12,
+          "slack_ns": "0.203",
+          "raw": "12            0.203        core/imu/estimator/captured_raw_68_s0/Q   core/imu/estimator/high_y_8_s0/CE                     clk50:[R]    clk50:[R]   20.000     -0.008       19.525"
+        },
+        {
+          "number": 13,
+          "slack_ns": "0.203",
+          "raw": "13            0.203        core/imu/estimator/captured_raw_68_s0/Q   core/imu/estimator/high_y_9_s0/CE                     clk50:[R]    clk50:[R]   20.000     -0.008       19.525"
+        },
+        {
+          "number": 14,
+          "slack_ns": "0.203",
+          "raw": "14            0.203        core/imu/estimator/captured_raw_68_s0/Q   core/imu/estimator/high_y_10_s0/CE                    clk50:[R]    clk50:[R]   20.000     -0.008       19.525"
+        },
+        {
+          "number": 15,
+          "slack_ns": "0.297",
+          "raw": "15            0.297        mtf/parser/raw_frame_130_s0/Q             core/gate_last_revoke_imu_reason_2_s0/CE              clk50:[R]    clk50:[R]   20.000     0.017        19.406"
+        },
+        {
+          "number": 16,
+          "slack_ns": "0.297",
+          "raw": "16            0.297        mtf/parser/raw_frame_130_s0/Q             core/gate_last_revoke_sensor_mask_4_s0/CE             clk50:[R]    clk50:[R]   20.000     0.017        19.406"
+        },
+        {
+          "number": 17,
+          "slack_ns": "0.324",
+          "raw": "17            0.324        core/imu/estimator/captured_raw_68_s0/Q   core/imu/estimator/diag_first_cause_latched_3_s0/CE   clk50:[R]    clk50:[R]   20.000     0.000        19.396"
+        },
+        {
+          "number": 18,
+          "slack_ns": "0.342",
+          "raw": "18            0.342        mtf/parser/raw_frame_130_s0/Q             core/outputs/latched4_2_s0/D                          clk50:[R]    clk50:[R]   20.000     0.000        19.601"
+        },
+        {
+          "number": 19,
+          "slack_ns": "0.342",
+          "raw": "19            0.342        mtf/parser/raw_frame_130_s0/Q             core/outputs/latched4_7_s0/D                          clk50:[R]    clk50:[R]   20.000     0.000        19.601"
+        },
+        {
+          "number": 20,
+          "slack_ns": "0.350",
+          "raw": "20            0.350        mtf/parser/raw_frame_130_s0/Q             core/gate_last_interruption_attitude_fault_0_s0/CE    clk50:[R]    clk50:[R]   20.000     0.008        19.361"
+        },
+        {
+          "number": 21,
+          "slack_ns": "0.350",
+          "raw": "21            0.350        mtf/parser/raw_frame_130_s0/Q             core/gate_last_interruption_attitude_fault_4_s0/CE    clk50:[R]    clk50:[R]   20.000     0.008        19.361"
+        },
+        {
+          "number": 22,
+          "slack_ns": "0.356",
+          "raw": "22            0.356        mtf/parser/raw_frame_130_s0/Q             core/manual_angles/numerator_7_s0/CE                  clk50:[R]    clk50:[R]   20.000     0.017        19.347"
+        },
+        {
+          "number": 23,
+          "slack_ns": "0.356",
+          "raw": "23            0.356        mtf/parser/raw_frame_130_s0/Q             core/manual_angles/numerator_26_s0/CE                 clk50:[R]    clk50:[R]   20.000     0.017        19.347"
+        },
+        {
+          "number": 24,
+          "slack_ns": "0.359",
+          "raw": "24            0.359        mtf/parser/raw_frame_130_s0/Q             core/gate_last_interruption_attitude_fault_3_s0/CE    clk50:[R]    clk50:[R]   20.000     0.000        19.361"
+        },
+        {
+          "number": 25,
+          "slack_ns": "0.359",
+          "raw": "25            0.359        mtf/parser/raw_frame_130_s0/Q             core/gate_last_interruption_attitude_fault_6_s0/CE    clk50:[R]    clk50:[R]   20.000     0.000        19.361"
+        }
+      ]
+    },
+    "hold": {
+      "reported_rows": 25,
+      "minimum_slack_ns": "0.145",
+      "rows": [
+        {
+          "number": 1,
+          "slack_ns": "0.145",
+          "raw": "1             0.145        native_navigation/geometry/value_store_13_s0/Q    native_navigation/geometry/angle_q20_13_s0/D            clk50:[R]    clk50:[R]   0.000      -0.170       0.267"
+        },
+        {
+          "number": 2,
+          "slack_ns": "0.193",
+          "raw": "2             0.193        native_navigation/geometry/d/work_7_s1/Q          native_navigation/geometry/d/work_8_s1/D                clk50:[R]    clk50:[R]   0.000      -0.177       0.392"
+        },
+        {
+          "number": 3,
+          "slack_ns": "0.195",
+          "raw": "3             0.195        native_navigation/geometry/d/work_29_s1/Q         native_navigation/geometry/d/work_30_s1/D               clk50:[R]    clk50:[R]   0.000      -0.177       0.395"
+        },
+        {
+          "number": 4,
+          "slack_ns": "0.195",
+          "raw": "4             0.195        native_navigation/p_vy_7_s0/Q                     native_navigation/c_vy_7_s0/D                           clk50:[R]    clk50:[R]   0.000      -0.177       0.325"
+        },
+        {
+          "number": 5,
+          "slack_ns": "0.212",
+          "raw": "5             0.212        native_navigation/p_vy_18_s0/Q                    native_navigation/position/held_vy_18_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.341"
+        },
+        {
+          "number": 6,
+          "slack_ns": "0.213",
+          "raw": "6             0.213        native_navigation/position/mul_start_s0/Q         native_navigation/position/mul_done_s0/D                clk50:[R]    clk50:[R]   0.000      -0.177       0.343"
+        },
+        {
+          "number": 7,
+          "slack_ns": "0.220",
+          "raw": "7             0.220        native_navigation/geometry/world_vx_q16_13_s0/Q   native_navigation/velocity_fusion/pvx_13_s0/D           clk50:[R]    clk50:[R]   0.000      -0.170       0.342"
+        },
+        {
+          "number": 8,
+          "slack_ns": "0.227",
+          "raw": "8             0.227        core/imu/diagnostic_tap/raw_body_54_s0/Q          sik_diagnostic/summary_body_358_s0/D                    clk50:[R]    clk50:[R]   0.000      -0.174       0.353"
+        },
+        {
+          "number": 9,
+          "slack_ns": "0.228",
+          "raw": "9             0.228        native_navigation/geometry/value_store_15_s0/Q    native_navigation/geometry/angle_q20_15_s0/D            clk50:[R]    clk50:[R]   0.000      -0.174       0.354"
+        },
+        {
+          "number": 10,
+          "slack_ns": "0.240",
+          "raw": "10            0.240        native_navigation/velocity_fusion/age_0_s1/Q      native_navigation/velocity_fusion/age_1_s1/D            clk50:[R]    clk50:[R]   0.000      -0.181       0.432"
+        },
+        {
+          "number": 11,
+          "slack_ns": "0.242",
+          "raw": "11            0.242        native_navigation/geometry/d/work_20_s1/Q         native_navigation/geometry/d/work_21_s1/D               clk50:[R]    clk50:[R]   0.000      -0.177       0.442"
+        },
+        {
+          "number": 12,
+          "slack_ns": "0.244",
+          "raw": "12            0.244        native_navigation/geometry/d/work_3_s1/Q          native_navigation/geometry/d/rounded_magnitude_4_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.444"
+        },
+        {
+          "number": 13,
+          "slack_ns": "0.244",
+          "raw": "13            0.244        native_navigation/geometry/d/work_3_s1/Q          native_navigation/geometry/d/rounded_magnitude_5_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.444"
+        },
+        {
+          "number": 14,
+          "slack_ns": "0.245",
+          "raw": "14            0.245        sik_diagnostic/protection_imu_5_s0/Q              sik_diagnostic/protection_imu_5_s0/D                    clk50:[R]    clk50:[R]   0.000      0.000        0.267"
+        },
+        {
+          "number": 15,
+          "slack_ns": "0.245",
+          "raw": "15            0.245        sik_diagnostic/protection_mask_0_s0/Q             sik_diagnostic/protection_mask_0_s0/D                   clk50:[R]    clk50:[R]   0.000      0.000        0.267"
+        },
+        {
+          "number": 16,
+          "slack_ns": "0.245",
+          "raw": "16            0.245        sik_diagnostic/protection_time_5_s0/Q             sik_diagnostic/protection_time_5_s0/D                   clk50:[R]    clk50:[R]   0.000      0.000        0.267"
+        },
+        {
+          "number": 17,
+          "slack_ns": "0.245",
+          "raw": "17            0.245        sik_diagnostic/protection_time_9_s0/Q             sik_diagnostic/protection_time_9_s0/D                   clk50:[R]    clk50:[R]   0.000      0.000        0.267"
+        },
+        {
+          "number": 18,
+          "slack_ns": "0.245",
+          "raw": "18            0.245        sik_diagnostic/protection_time_25_s0/Q            sik_diagnostic/protection_time_25_s0/D                  clk50:[R]    clk50:[R]   0.000      0.000        0.267"
+        },
+        {
+          "number": 19,
+          "slack_ns": "0.245",
+          "raw": "19            0.245        sik_diagnostic/protection_imu_2_s0/Q              sik_diagnostic/protection_imu_2_s0/D                    clk50:[R]    clk50:[R]   0.000      0.000        0.267"
+        },
+        {
+          "number": 20,
+          "slack_ns": "0.245",
+          "raw": "20            0.245        sik_diagnostic/protection_time_4_s0/Q             sik_diagnostic/protection_time_4_s0/D                   clk50:[R]    clk50:[R]   0.000      0.000        0.267"
+        },
+        {
+          "number": 21,
+          "slack_ns": "0.247",
+          "raw": "21            0.247        telemetry/uart/bit_index_2_s1/Q                   telemetry/uart/bit_index_2_s1/D                         clk50:[R]    clk50:[R]   0.000      0.000        0.270"
+        },
+        {
+          "number": 22,
+          "slack_ns": "0.247",
+          "raw": "22            0.247        telemetry/uart/baud_6_s1/Q                        telemetry/uart/baud_6_s1/D                              clk50:[R]    clk50:[R]   0.000      0.000        0.270"
+        },
+        {
+          "number": 23,
+          "slack_ns": "0.247",
+          "raw": "23            0.247        telemetry/checksum_1_s0/Q                         telemetry/checksum_1_s0/D                               clk50:[R]    clk50:[R]   0.000      0.000        0.270"
+        },
+        {
+          "number": 24,
+          "slack_ns": "0.247",
+          "raw": "24            0.247        telemetry/checksum_4_s0/Q                         telemetry/checksum_4_s0/D                               clk50:[R]    clk50:[R]   0.000      0.000        0.270"
+        },
+        {
+          "number": 25,
+          "slack_ns": "0.247",
+          "raw": "25            0.247        telemetry/checksum_6_s0/Q                         telemetry/checksum_6_s0/D                               clk50:[R]    clk50:[R]   0.000      0.000        0.270"
+        }
+      ]
+    },
+    "recovery": {
+      "reported_rows": 25,
+      "minimum_slack_ns": "11.895",
+      "rows": [
+        {
+          "number": 1,
+          "slack_ns": "11.895",
+          "raw": "1             11.895       core/boot_1_s0/Q   core/gate/last_revoke_code_0_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 2,
+          "slack_ns": "11.895",
+          "raw": "2             11.895       core/boot_1_s0/Q   core/gate/last_revoke_code_5_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 3,
+          "slack_ns": "11.895",
+          "raw": "3             11.895       core/boot_1_s0/Q   core/gate/last_interruption_code_5_s2/CLEAR   clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 4,
+          "slack_ns": "11.895",
+          "raw": "4             11.895       core/boot_1_s0/Q   core/gate/low_hold_count_1_s1/CLEAR           clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 5,
+          "slack_ns": "11.895",
+          "raw": "5             11.895       core/boot_1_s0/Q   core/gate/low_hold_count_2_s1/CLEAR           clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 6,
+          "slack_ns": "11.895",
+          "raw": "6             11.895       core/boot_1_s0/Q   core/gate/low_hold_count_3_s1/CLEAR           clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 7,
+          "slack_ns": "11.895",
+          "raw": "7             11.895       core/boot_1_s0/Q   core/gate/low_hold_count_9_s1/CLEAR           clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 8,
+          "slack_ns": "11.895",
+          "raw": "8             11.895       core/boot_1_s0/Q   core/gate/low_hold_count_11_s1/CLEAR          clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 9,
+          "slack_ns": "11.895",
+          "raw": "9             11.895       core/boot_1_s0/Q   core/gate/low_hold_count_23_s1/CLEAR          clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 10,
+          "slack_ns": "11.895",
+          "raw": "10            11.895       core/boot_1_s0/Q   core/gate/low_hold_count_24_s1/CLEAR          clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 11,
+          "slack_ns": "11.895",
+          "raw": "11            11.895       core/boot_1_s0/Q   core/gate/low_hold_count_25_s1/CLEAR          clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 12,
+          "slack_ns": "11.895",
+          "raw": "12            11.895       core/boot_1_s0/Q   core/gate/low_hold_count_26_s1/CLEAR          clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 13,
+          "slack_ns": "11.895",
+          "raw": "13            11.895       core/boot_1_s0/Q   core/gate/high_hold_count_2_s1/CLEAR          clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 14,
+          "slack_ns": "11.895",
+          "raw": "14            11.895       core/boot_1_s0/Q   core/gate/high_hold_count_17_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 15,
+          "slack_ns": "11.895",
+          "raw": "15            11.895       core/boot_1_s0/Q   core/gate/high_hold_count_18_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 16,
+          "slack_ns": "11.895",
+          "raw": "16            11.895       core/boot_1_s0/Q   core/gate/high_hold_count_19_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 17,
+          "slack_ns": "11.895",
+          "raw": "17            11.895       core/boot_1_s0/Q   core/gate/high_hold_count_20_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 18,
+          "slack_ns": "11.895",
+          "raw": "18            11.895       core/boot_1_s0/Q   core/gate/high_hold_count_23_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 19,
+          "slack_ns": "11.895",
+          "raw": "19            11.895       core/boot_1_s0/Q   core/gate/high_hold_count_30_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 20,
+          "slack_ns": "11.895",
+          "raw": "20            11.895       core/boot_1_s0/Q   core/gate/high_hold_count_31_s1/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 21,
+          "slack_ns": "11.895",
+          "raw": "21            11.895       core/boot_1_s0/Q   core/gate/low_hold_count_0_s0/CLEAR           clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 22,
+          "slack_ns": "11.895",
+          "raw": "22            11.895       core/boot_1_s0/Q   core/gate/last_revoke_code_2_s0/CLEAR         clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 23,
+          "slack_ns": "11.895",
+          "raw": "23            11.895       core/boot_1_s0/Q   core/gate/revoke_count_7_s0/CLEAR             clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 24,
+          "slack_ns": "11.895",
+          "raw": "24            11.895       core/boot_1_s0/Q   core/gate/revoke_count_8_s0/CLEAR             clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        },
+        {
+          "number": 25,
+          "slack_ns": "11.895",
+          "raw": "25            11.895       core/boot_1_s0/Q   core/gate/revoke_count_9_s0/CLEAR             clk50:[R]    clk50:[R]   20.000     0.008        7.784"
+        }
+      ]
+    },
+    "removal": {
+      "reported_rows": 25,
+      "minimum_slack_ns": "3.312",
+      "rows": [
+        {
+          "number": 1,
+          "slack_ns": "3.312",
+          "raw": "1             3.312        core/boot_5_s0/Q   core/gate/last_interruption_code_4_s2/CLEAR   clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 2,
+          "slack_ns": "3.312",
+          "raw": "2             3.312        core/boot_5_s0/Q   core/gate/low_hold_count_5_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 3,
+          "slack_ns": "3.312",
+          "raw": "3             3.312        core/boot_5_s0/Q   core/gate/low_hold_count_7_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 4,
+          "slack_ns": "3.312",
+          "raw": "4             3.312        core/boot_5_s0/Q   core/gate/low_hold_count_10_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 5,
+          "slack_ns": "3.312",
+          "raw": "5             3.312        core/boot_5_s0/Q   core/gate/low_hold_count_15_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 6,
+          "slack_ns": "3.312",
+          "raw": "6             3.312        core/boot_5_s0/Q   core/gate/low_hold_count_16_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 7,
+          "slack_ns": "3.312",
+          "raw": "7             3.312        core/boot_5_s0/Q   core/gate/low_hold_count_17_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 8,
+          "slack_ns": "3.312",
+          "raw": "8             3.312        core/boot_5_s0/Q   core/gate/low_hold_count_19_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 9,
+          "slack_ns": "3.312",
+          "raw": "9             3.312        core/boot_5_s0/Q   core/gate/low_hold_count_20_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 10,
+          "slack_ns": "3.312",
+          "raw": "10            3.312        core/boot_5_s0/Q   core/gate/low_hold_count_21_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 11,
+          "slack_ns": "3.312",
+          "raw": "11            3.312        core/boot_5_s0/Q   core/gate/low_hold_count_22_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 12,
+          "slack_ns": "3.312",
+          "raw": "12            3.312        core/boot_5_s0/Q   core/gate/low_hold_count_27_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 13,
+          "slack_ns": "3.312",
+          "raw": "13            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_5_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 14,
+          "slack_ns": "3.312",
+          "raw": "14            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_6_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 15,
+          "slack_ns": "3.312",
+          "raw": "15            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_7_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 16,
+          "slack_ns": "3.312",
+          "raw": "16            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_10_s1/CLEAR         clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 17,
+          "slack_ns": "3.312",
+          "raw": "17            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_11_s1/CLEAR         clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 18,
+          "slack_ns": "3.312",
+          "raw": "18            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_13_s1/CLEAR         clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 19,
+          "slack_ns": "3.312",
+          "raw": "19            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_16_s1/CLEAR         clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 20,
+          "slack_ns": "3.312",
+          "raw": "20            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_21_s1/CLEAR         clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 21,
+          "slack_ns": "3.312",
+          "raw": "21            3.312        core/boot_5_s0/Q   core/gate/high_hold_count_22_s1/CLEAR         clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 22,
+          "slack_ns": "3.312",
+          "raw": "22            3.312        core/boot_5_s0/Q   core/gate/low_ready_s1/CLEAR                  clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 23,
+          "slack_ns": "3.312",
+          "raw": "23            3.312        core/boot_5_s0/Q   core/gate/interruption_count_15_s0/CLEAR      clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 24,
+          "slack_ns": "3.312",
+          "raw": "24            3.312        core/boot_5_s0/Q   core/gate/last_revoke_code_3_s0/CLEAR         clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        },
+        {
+          "number": 25,
+          "slack_ns": "3.312",
+          "raw": "25            3.312        core/boot_5_s0/Q   core/gate/last_interruption_code_3_s0/CLEAR   clk50:[R]    clk50:[R]   0.000      0.000        3.264"
+        }
+      ]
+    },
+    "min_pulse": {
+      "reported_rows": 10,
+      "minimum_slack_ns": "7.387",
+      "rows": [
+        {
+          "number": 1,
+          "slack_ns": "7.387",
+          "raw": "1        7.387   8.287          0.900            Low Pulse Width   clk50   core/imu/estimator/cdeg_scaled_0_s"
+        },
+        {
+          "number": 2,
+          "slack_ns": "7.387",
+          "raw": "2        7.387   8.287          0.900            Low Pulse Width   clk50   core/controller/n4769_s"
+        },
+        {
+          "number": 3,
+          "slack_ns": "7.387",
+          "raw": "3        7.387   8.287          0.900            Low Pulse Width   clk50   native_navigation/controller_proof/n3597_s"
+        },
+        {
+          "number": 4,
+          "slack_ns": "7.387",
+          "raw": "4        7.387   8.287          0.900            Low Pulse Width   clk50   core/imu/estimator/angle/compensated_0_s"
+        },
+        {
+          "number": 5,
+          "slack_ns": "7.387",
+          "raw": "5        7.387   8.287          0.900            Low Pulse Width   clk50   native_navigation/velocity_fusion/n2039_s"
+        },
+        {
+          "number": 6,
+          "slack_ns": "7.387",
+          "raw": "6        7.387   8.287          0.900            Low Pulse Width   clk50   native_navigation/position/n893_s"
+        },
+        {
+          "number": 7,
+          "slack_ns": "7.387",
+          "raw": "7        7.387   8.287          0.900            Low Pulse Width   clk50   native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s"
+        },
+        {
+          "number": 8,
+          "slack_ns": "7.391",
+          "raw": "8        7.391   8.291          0.900            Low Pulse Width   clk50   native_navigation/height_fusion/n3014_s"
+        },
+        {
+          "number": 9,
+          "slack_ns": "7.391",
+          "raw": "9        7.391   8.291          0.900            Low Pulse Width   clk50   core/fallback_sticks/n1034_s"
+        },
+        {
+          "number": 10,
+          "slack_ns": "7.391",
+          "raw": "10       7.391   8.291          0.900            Low Pulse Width   clk50   core/n3262_s"
+        }
+      ]
+    }
+  },
+  "fresh_outputs": {
+    "FS": {
+      "bytes": 17456619,
+      "creation_utc": "2026-10-25T23:07:45.496195+00:00",
+      "mtime_utc": "2026-10-25T23:07:48.772102+00:00"
+    },
+    "TR": {
+      "bytes": 387728,
+      "creation_utc": "2026-10-25T23:07:49.593470+00:00",
+      "mtime_utc": "2026-10-25T23:07:51.530738+00:00"
+    },
+    "RPT": {
+      "bytes": 99178,
+      "creation_utc": "2026-10-25T23:07:49.492350+00:00",
+      "mtime_utc": "2026-10-25T23:07:49.499522+00:00"
+    },
+    "PR": {
+      "bytes": 125760627,
+      "creation_utc": "2026-10-25T23:07:30.699824+00:00",
+      "mtime_utc": "2026-10-25T23:07:40.254998+00:00"
+    }
+  },
+  "embedded_created_local": {
+    "TR": "2026-10-26T07:07:51+08:00",
+    "RPT": "2026-10-26T07:07:49+08:00",
+    "FS": "2026-10-26T07:07:45+08:00"
+  },
+  "FS_header": "//Copyright (C)2014-2026 Gowin Semiconductor Corporation.\n//All rights reserved.\n//File Title: Bitstream file\n//Tool Version: V1.9.12.04 (64-bit) (89079)\n//Device: GW5AT-60\n//Device Version: B\n//Part Number: GW5AT-LV60PG484AC1/I0\n//Device-package: GW5AT-60B-PBGA484A\n//BackgroundProgramming: OFF\n//CheckSum: 0xB26F\n//UserCode: 0x0000b0b3\n//LoadingRate: 2.500MHz\n//CRCCheck: ON\n//Compress: OFF\n//Encryption: OFF\n//SecurityBit: ON\n//SecureMode: OFF\n//JTAGAsRegularIO: OFF\n//SEUHandler: OFF\n//MultiBootAddrWidth: 24\n//MultiBootSPIAddr: 0x00000000\n//MspiJumpAddrWidth: 24\n//MspiJumpSPIAddr: 0x000000\n//Created Time: Mon Oct 26 07:07:45 2026\n",
+  "pins18": {
+    "range_rx": {
+      "location": "C14/1",
+      "direction": "in",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "OFF",
+      "pull": "NONE"
+    },
+    "range_tx": {
+      "location": "C15/1",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "motor3_pwm": {
+      "location": "E16/1",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "motor4_pwm": {
+      "location": "D16/1",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "imu_sck": {
+      "location": "E17/1",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "radio_tx": {
+      "location": "B15/1",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "radio_rx": {
+      "location": "B16/1",
+      "direction": "in",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "OFF",
+      "pull": "UP"
+    },
+    "rc_ppm_in": {
+      "location": "B17/1",
+      "direction": "in",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "OFF",
+      "pull": "NONE"
+    },
+    "motor1_pwm": {
+      "location": "D17/1",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "motor2_pwm": {
+      "location": "C17/1",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "imu_cs_n": {
+      "location": "E18/2",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "imu_miso": {
+      "location": "D19/2",
+      "direction": "in",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "OFF",
+      "pull": "NONE"
+    },
+    "imu_gyro_cs_n": {
+      "location": "F20/2",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "imu_mosi": {
+      "location": "C20/2",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "clk50": {
+      "location": "Y18/8",
+      "direction": "in",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "OFF",
+      "pull": "NONE"
+    },
+    "uart_tx": {
+      "location": "M15/5",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "led3": {
+      "location": "K21/5",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    },
+    "led2": {
+      "location": "L21/5",
+      "direction": "out",
+      "IO_TYPE": "LVCMOS33",
+      "drive": "8",
+      "pull": "NONE"
+    }
+  },
+  "all_pin_sources_agree": "CST locations + raw RPT active rows + raw VG top directions",
+  "stable_before_after_hashes": true,
+  "evidence_sha256": {
+    "builds\\idle_integral_p3r0\\source\\impl\\pnr\\acg720_ano_port.tr": "e155cdef595756f4b5033fe752cc230186cae259803e1ee2b3cb179abe570ea3",
+    "builds\\idle_integral_p3r0\\source\\impl\\pnr\\acg720_ano_port.rpt.txt": "89c76d873c201984b6acb320535d77d6c649f95ce8531879f8973c5908f4246f",
+    "builds\\idle_integral_p3r0\\source\\impl\\pnr\\acg720_ano_port.fs": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+    "builds\\idle_integral_p3r0\\source\\impl\\pnr\\acg720_ano_port.pr": "cf1f4230147cc0393ccbe76d90d911d95b2a7c4b3f866769ace2114985ed1892",
+    "builds\\idle_integral_p3r0\\source\\impl\\gwsynthesis\\acg720_ano_port.vg": "4497e28d79a30da7487a40449d0f0ed19735d1859d2601f0d972f51344b9d9eb",
+    "builds\\idle_integral_p3r0\\source\\acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "builds\\idle_integral_p3r0\\source\\acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "builds\\idle_integral_p3r0\\physical.tcl": "8cb88e3b7042d5cd6862197e382847727e586a31dbea492ba5da7ecd7a186f41",
+    "builds\\idle_integral_p3r0\\source\\physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+    "builds\\idle_integral_p3r0\\verification\\gowin.log": "d1167a751d7f60f24b56e50e613e3958e5f0b4efc404d0fbceaa608dcdbf9602",
+    "builds\\idle_integral_p3r0\\verification\\build_input.json": "906c60e803eabf3b73e7bad2d7e6cd527c566cdf392b174ca4a3035446787a6b",
+    "builds\\idle_integral_p3r0\\verification\\process.json": "78b472292f297a179d00cce6d68f8b3ac9d03a3122b359697f549d4b78418dee",
+    "builds\\idle_integral_p3r0\\verification\\process_exit.json": "6fd3fbcf9fdd01c8502d742497e6e7cedb2e2748040dc2bd846d325537b46d7e",
+    "candidates\\idle_gain_integral_ce\\synth_only.tcl": "395828b978a46bacbbb7eca0fcf6888de91898813fafc06065cac1986373a126",
+    "candidates\\idle_gain_integral_ce\\verification\\synthesis_input.json": "132978ec86c7d42d19a4249fa1d6d295845df59c4de135bd5d9905761f4acec6"
+  },
+  "reviewer_script_sha256": "b337495e90ce14e43eb98f29d9c37d2e0122f8d32b9e187a9d1f4d7916092206",
+  "limitation": "Reported five worst-path tables and explicit setup/hold zero-violation summary verified; not a new STA run, complete functional equivalence proof, hardware download, wiring check, flight or closed-loop acceptance."
+}

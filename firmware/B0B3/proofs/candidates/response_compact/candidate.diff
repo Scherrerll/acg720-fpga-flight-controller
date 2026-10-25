@@ -1,0 +1,50 @@
+--- canonical/source/xy_pi_parameters.v
++++ response_compact/source/xy_pi_parameters.v
+@@ -6,10 +6,10 @@
+  input wire write_safe,control_boundary,
+  output reg [15:0] active_p,active_i,
+  output reg [31:0] generation,
+- output reg response_valid,output reg [191:0] response,
++ output reg response_valid,output wire [191:0] response,
+  input wire response_ready
+ );
+- initial begin active_p=500;active_i=0;generation=0;response_valid=0;response=0;end
++ initial begin active_p=500;active_i=0;generation=0;response_valid=0;end
+  function [15:0] crc_byte;
+  input [15:0] previous;input [7:0] octet;
+  reg [15:0] c;integer k;
+@@ -25,9 +25,13 @@
+  wire [7:0] opcode=frame[103:96];
+  wire [31:0] sequence_id=frame[79:48];
+  wire [15:0] proposed_p=frame[47:32],proposed_i=frame[31:16];
++ // Body fields are frozen from state3 through valid/ready ownership. The
++ // CRC scans bytes2..21 only; its own changing tail is never consumed.
++ assign response={16'ha591,8'd1,opcode,8'd24,status,sequence_id,
++  active_p,active_i,generation,32'h0000b0b3,reply_crc};
+  always @(posedge clk)begin
+   if(!rst_n)begin
+-   active_p<=500;active_i<=0;generation<=0;response_valid<=0;response<=0;
++   active_p<=500;active_i<=0;generation<=0;response_valid<=0;
+    count<=0;age<=0;highwater<=0;seen_set<=0;frame<=0;crc<=16'hffff;
+    reply_crc<=16'hffff;crc_index<=0;state<=0;status<=0;
+   end else begin
+@@ -81,16 +85,15 @@
+      end
+     end
+     3:begin
+-     // This snapshot is taken after commit, before ACK is advertised.
+-     response<={16'ha591,8'd1,opcode,8'd24,status,sequence_id,
+-      active_p,active_i,generation,32'h0000b0b3,16'd0};
++     // Preserve the original post-commit CRC/valid schedule; no second
++     // copy of fields already frozen by the bank state is needed.
+      reply_crc<=16'hffff;crc_index<=2;state<=4;
+     end
+     4:begin
+      reply_crc<=crc_byte(reply_crc,response[191-crc_index*8 -:8]);
+      if(crc_index==21)state<=5;else crc_index<=crc_index+1'b1;
+     end
+-    5:begin response[15:0]<=reply_crc;response_valid<=1;state<=0;end
++    5:begin response_valid<=1;state<=0;end
+     default:state<=0;
+    endcase
+   end

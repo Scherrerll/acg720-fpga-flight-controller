@@ -1,0 +1,36 @@
+{
+  "report_sha256": "c9dd81a1b4b71830fef6ece8c237f7da37978328fd10cc06c2cbfd378e090035",
+  "worst_slack_ns": 0.045,
+  "start": "mtf/parser/raw_frame_129_s0",
+  "end": "core/manual_angles/fault_0_s0",
+  "data_cell_delay_ns": 7.215,
+  "data_route_delay_ns": 11.385,
+  "route_percent": 60.099,
+  "longest_data_wires": [
+    {
+      "delay_ns": 2.763,
+      "sink": "native_navigation/geometry/height_ready_state_numeric_tail_without_live_flags_kept_s14/I1"
+    },
+    {
+      "delay_ns": 2.474,
+      "sink": "core/fallback_control/height_fallback_active_s1/I0"
+    },
+    {
+      "delay_ns": 0.979,
+      "sink": "core/manual_angles/pending_nr_17_s15/I3"
+    },
+    {
+      "delay_ns": 0.973,
+      "sink": "core/selected_norm_x_3_s0/I2"
+    },
+    {
+      "delay_ns": 0.757,
+      "sink": "native_navigation/geometry/height_ready_state_numeric_tail_without_live_flags_kept_s9/I0"
+    },
+    {
+      "delay_ns": 0.678,
+      "sink": "native_navigation/geometry/height_ready_state_numeric_tail_without_live_flags_kept_s3/I1"
+    }
+  ],
+  "hardware_accessed": false
+}

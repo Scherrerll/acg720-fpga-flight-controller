@@ -1,0 +1,32 @@
+test_accepted_grows_but_pose_and_consumed_source_stop (test_analyze_bench.BenchTests.test_accepted_grows_but_pose_and_consumed_source_stop) ... ok
+test_bench_20ms_age_and_exclusive_held_dt_bounds (test_analyze_bench.BenchTests.test_bench_20ms_age_and_exclusive_held_dt_bounds) ... ok
+test_cli_explicit_selection_settling_and_no_overwrite (test_analyze_bench.BenchTests.test_cli_explicit_selection_settling_and_no_overwrite) ... ok
+test_controller_commands_advancing_while_stopped_cannot_pass (test_analyze_bench.BenchTests.test_controller_commands_advancing_while_stopped_cannot_pass) ... ok
+test_dashboard_or_missing_row_schema_cannot_pass (test_analyze_bench.BenchTests.test_dashboard_or_missing_row_schema_cannot_pass) ... ok
+test_duplicate_protocol_is_ambiguous_even_with_complete_fields (test_analyze_bench.BenchTests.test_duplicate_protocol_is_ambiguous_even_with_complete_fields) ... ok
+test_duplicates_and_intragroup_epoch_boundary (test_analyze_bench.BenchTests.test_duplicates_and_intragroup_epoch_boundary) ... ok
+test_idle_armed_pwm_rc_and_missing_ch7 (test_analyze_bench.BenchTests.test_idle_armed_pwm_rc_and_missing_ch7) ... ok
+test_live_age_invalidity_and_no_interpolation (test_analyze_bench.BenchTests.test_live_age_invalidity_and_no_interpolation) ... ok
+test_missing_protocol_is_inconclusive (test_analyze_bench.BenchTests.test_missing_protocol_is_inconclusive) ... ok
+test_new_mask_zero_gate_event_needs_context_not_invented_imu_fault (test_analyze_bench.BenchTests.test_new_mask_zero_gate_event_needs_context_not_invented_imu_fault) ... ok
+test_new_max_gap_or_fault_is_an_observed_failure (test_analyze_bench.BenchTests.test_new_max_gap_or_fault_is_an_observed_failure) ... ok
+test_normal_60s_and_retained_event_age_is_not_live (test_analyze_bench.BenchTests.test_normal_60s_and_retained_event_age_is_not_live) ... ok
+test_old_sticky_max_gap_masks_later_healthy_interval (test_analyze_bench.BenchTests.test_old_sticky_max_gap_masks_later_healthy_interval) ... ok
+test_raw_accept_reject_totals_cannot_lose_or_invent_records (test_analyze_bench.BenchTests.test_raw_accept_reject_totals_cannot_lose_or_invent_records) ... ok
+test_raw_decision_two_endpoint_samples_are_allowed (test_analyze_bench.BenchTests.test_raw_decision_two_endpoint_samples_are_allowed) ... ok
+test_restart_separates_counters_and_cannot_pass_aggregate_60s (test_analyze_bench.BenchTests.test_restart_separates_counters_and_cannot_pass_aggregate_60s) ... ok
+test_retained_first_cause_is_not_a_live_fault (test_analyze_bench.BenchTests.test_retained_first_cause_is_not_a_live_fault) ... ok
+test_saturating_counter_drop_is_not_wrap (test_analyze_bench.BenchTests.test_saturating_counter_drop_is_not_wrap) ... ok
+test_sequence_and_diagnostic_tick_wrap_are_not_reboots (test_analyze_bench.BenchTests.test_sequence_and_diagnostic_tick_wrap_are_not_reboots) ... ok
+test_slow_pose_count_is_not_rescued_by_fresh_sampled_ages (test_analyze_bench.BenchTests.test_slow_pose_count_is_not_rescued_by_fresh_sampled_ages) ... ok
+test_stale_protocol_and_wrong_identity_cannot_join (test_analyze_bench.BenchTests.test_stale_protocol_and_wrong_identity_cannot_join) ... ok
+test_total_publications_cannot_silently_drop_or_duplicate_accepts (test_analyze_bench.BenchTests.test_total_publications_cannot_silently_drop_or_duplicate_accepts) ... ok
+test_v2_new_rejection_uses_primary_saturating_count (test_analyze_bench.BenchTests.test_v2_new_rejection_uses_primary_saturating_count) ... ok
+test_v2_normal_null_capabilities_and_v1_metadata_compatibility (test_analyze_bench.BenchTests.test_v2_normal_null_capabilities_and_v1_metadata_compatibility) ... ok
+test_v2_retained_or_new_protection_has_no_fabricated_time (test_analyze_bench.BenchTests.test_v2_retained_or_new_protection_has_no_fabricated_time) ... ok
+test_v2_zero_missing_or_inconsistent_capabilities_cannot_pass (test_analyze_bench.BenchTests.test_v2_zero_missing_or_inconsistent_capabilities_cannot_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 2.380s
+
+OK

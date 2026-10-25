@@ -1,0 +1,111 @@
+{
+  "scope": "Read-only flight/P2 investigation artifacts. Main line source/build not modified by this branch.",
+  "inputs": {
+    "latest": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\hardware\\response_20261025T160009_877779Z\\telemetry_clip.jsonl",
+      "sha256": "73df2c5c9b36e3e6d8f8afee94b6c3e508ab8d4112982055e7ac9fb8d96a0649"
+    },
+    "dynamic": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\recent_telemetry.jsonl",
+      "sha256": "487ef24eeaf9b330f4524e7a8e3d3a985b36cea933e05120fe0f2193ff9a5ed8"
+    },
+    "rotation": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_unarmed_rotation_20261025T141628_867271Z\\samples.jsonl",
+      "sha256": "ee0d3d5632bbd6e57dc5433c166152a44173b0add60046f75bd717253d2fa82e"
+    },
+    "flow_motion": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flow_motion_20261025T125704_865917Z\\samples.jsonl",
+      "sha256": "31db4eb878a30c9af8a1b39fb11f53e3e59eb5e5deb952e946b230654a1e9c50"
+    },
+    "surface_plain": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\hardware\\static_20261025T153755_949338Z\\samples.jsonl",
+      "sha256": "13e2243a6500b81c75840adc78ec0693d7fb7c571d3f2f23fdc3b57744da1007"
+    },
+    "surface_texture": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\hardware\\static_20261025T154302_137183Z\\samples.jsonl",
+      "sha256": "7dd2a9f753aef901f2bdfc6075dfa62428c1e30da9c2f59865d7027f478945c6"
+    },
+    "early1": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\flight_review_20261025_two_trials\\timeline_agent\\trial_1.jsonl",
+      "sha256": "4aa43312ba505d1863b42b6867255ee8a2c65048a06bce7b69052118ba0cb8a2"
+    },
+    "early2": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\flight_review_20261025_two_trials\\timeline_agent\\trial_2.jsonl",
+      "sha256": "93d9b210ffa3b99d65afa4285d1757f5830f46444c95e0ab40b024289685620c"
+    }
+  },
+  "outputs": {
+    "analyze_evidence.py": {
+      "sha256": "5a437c9abeb580fd612299e0d778016c1ffe53386d62b4d6cbc07f5d465660dd",
+      "size_bytes": 11240
+    },
+    "analyze_evidence_stdout.txt": {
+      "sha256": "74e93d8b88f9b468b499bdbde3f35cc41d5ffac29d8c93b77f3f0756a6c19846",
+      "size_bytes": 13745
+    },
+    "audit_sources.py": {
+      "sha256": "0f4736c008fba29ede39d725184b831b9fe16ece8475fef93b694842b81a7aac",
+      "size_bytes": 3696
+    },
+    "audit_sources_stdout.txt": {
+      "sha256": "58c77d01bcb68cc433f5b100e77a461e396f081b07471c3bec64c3f42f03e0e1",
+      "size_bytes": 5432
+    },
+    "dynamic_paired.csv": {
+      "sha256": "cf5738e6ab0ceb5d62a27efe66761afdc935a243710e29e5c9f2e2f58366ee0c",
+      "size_bytes": 1033473
+    },
+    "early1_paired.csv": {
+      "sha256": "33b582022ea4b26d037fbe10c049e900341457c78c92968a30e9cac9cbdab827",
+      "size_bytes": 18345
+    },
+    "early2_paired.csv": {
+      "sha256": "8dd5e765dbb60d708fb5c56afe1907649410c7579589259904bbb20bd4b06a6f",
+      "size_bytes": 17192
+    },
+    "equation_audit.json": {
+      "sha256": "3278223d2591f374a08a7acc84024fab52ad89fb3647b3b445573140d621edba",
+      "size_bytes": 4825
+    },
+    "evidence_summary.json": {
+      "sha256": "45a91709f8e8fdbbed488a8249efd88dc368a8584a4ba3c5e7adc3a6c4b2dd02",
+      "size_bytes": 109672
+    },
+    "FINDINGS.md": {
+      "sha256": "66958810ec8030fe3c722956cacfda6a7eebed7bcb5f8228e62b5d02c72a29a4",
+      "size_bytes": 30982
+    },
+    "flow_motion_paired.csv": {
+      "sha256": "d01e81db4d8cc12964ff27e7be53ff4fe5824a1e2a1301e6df427a531c7bf890",
+      "size_bytes": 153397
+    },
+    "latest_paired.csv": {
+      "sha256": "7ad60b894a16aed3d16c03f3449105633cc6a29ec64e0fdb35740a3290fce003",
+      "size_bytes": 604665
+    },
+    "original_to_p005i0.diff": {
+      "sha256": "710bf748ee1064c115b3bdc90b91d434c56be0a00764e3b74f97f35d5b25618a",
+      "size_bytes": 1101
+    },
+    "read_numbered.py": {
+      "sha256": "f5138ebad2302a6aae2a558a12f0be1427caa018d6638553cd4abcc48d5c105f",
+      "size_bytes": 851
+    },
+    "rotation_paired.csv": {
+      "sha256": "5b7c39832f5fd8da4553b4c6ec9a65db9d89bbd470ddcbd4721e5f2bc533efa8",
+      "size_bytes": 285617
+    },
+    "source_audit.json": {
+      "sha256": "24e92dde46b2e84315a03ea6271332fb1830879619b77fc58f0faca43a6cd94d",
+      "size_bytes": 603
+    },
+    "surface_plain_paired.csv": {
+      "sha256": "9442561febbd16224e4136a6dfd1dcfea371e0a55102d3f0f8ae53acdeac9e6d",
+      "size_bytes": 108247
+    },
+    "surface_texture_paired.csv": {
+      "sha256": "15cd99be8e87859db80ad10d1d2017d86ae5c3e291638b8828802ed05e347f9e",
+      "size_bytes": 54623
+    }
+  }
+}

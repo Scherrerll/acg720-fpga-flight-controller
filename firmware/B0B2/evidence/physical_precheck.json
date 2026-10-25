@@ -1,0 +1,351 @@
+{
+  "schema": "b0b2.physical-precheck.v1",
+  "captured_utc": "2026-10-24T20:09:04.648115+00:00",
+  "scope": "Read-only precheck during active existing PNR; no final physical result or programming acceptance",
+  "build": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1",
+  "hardware_accessed": false,
+  "new_vendor_build_started": false,
+  "controlled_files_modified": false,
+  "constraints_modified": false,
+  "current": {
+    "vg": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+      "sha256": "29e7a58e6b84eaae03cbe9fb806f1d1186933ec1150844839c2c11b58a7473ed",
+      "bytes": 14517774
+    },
+    "primitive_counts": {
+      "ALU": 9206,
+      "DFFCE": 423,
+      "DFFRE": 26855,
+      "DFFSE": 538,
+      "GND": 57,
+      "GSR": 1,
+      "IBUF": 4,
+      "INV": 208,
+      "LUT2": 3956,
+      "LUT3": 9052,
+      "LUT4": 20299,
+      "LUT5": 1255,
+      "MULT12X12": 7,
+      "MULT27X36": 13,
+      "MULTALU27X18": 30,
+      "MUX2_LUT5": 578,
+      "MUX2_LUT6": 167,
+      "OBUF": 13,
+      "VCC": 57,
+      "pROM": 2
+    },
+    "ff_total": 27816,
+    "lut_instance_total": 34562,
+    "observer_reset": {
+      "nand": {
+        "type": "LUT4",
+        "instance": "n4580_s3",
+        "ports": {
+          "F": "n4580_8",
+          "I0": "n13_13",
+          "I1": "n13_14",
+          "I2": "previous_pose_valid",
+          "I3": "pose_valid"
+        },
+        "init": "16'h7FFF",
+        "line": 635436
+      },
+      "boot_halves": [
+        {
+          "type": "LUT4",
+          "instance": "n13_s9",
+          "ports": {
+            "F": "n13_13",
+            "I0": "boot[4]",
+            "I1": "boot[5]",
+            "I2": "boot[6]",
+            "I3": "boot[7]"
+          },
+          "init": "16'h8000",
+          "line": 634963
+        },
+        {
+          "type": "LUT4",
+          "instance": "n13_s10",
+          "ports": {
+            "F": "n13_14",
+            "I0": "boot[0]",
+            "I1": "boot[1]",
+            "I2": "boot[2]",
+            "I3": "boot[3]"
+          },
+          "init": "16'h8000",
+          "line": 634971
+        }
+      ],
+      "expression": "~((&boot[7:4]) & (&boot[3:0]) & previous_pose_valid & pose_valid)",
+      "fanout": {
+        "direct_primitive_sink_pins": 151,
+        "by_type_port": {
+          "LUT4.I3": 5,
+          "DFFRE.RESET": 143,
+          "LUT3.I2": 1,
+          "LUT2.I0": 1,
+          "LUT4.I0": 1
+        }
+      }
+    },
+    "boot_reset": {
+      "definition": {
+        "type": "LUT2",
+        "instance": "n13_s11",
+        "ports": {
+          "F": "n13_16",
+          "I0": "n13_13",
+          "I1": "n13_14"
+        },
+        "init": "4'h7",
+        "line": 635451
+      },
+      "expression": "~((&boot[7:4]) & (&boot[3:0]))",
+      "fanout": {
+        "direct_primitive_sink_pins": 3955,
+        "by_type_port": {
+          "DFFRE.CE": 7,
+          "DFFRE.RESET": 3815,
+          "DFFSE.SET": 129,
+          "LUT4.I1": 1,
+          "LUT4.I0": 1,
+          "LUT4.I3": 1,
+          "LUT4.I2": 1
+        }
+      }
+    }
+  },
+  "baseline_selected": {
+    "vg": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\selected_netlist\\acg720_ano_port.vg",
+      "sha256": "0be62a85bf094d9102a6488b792c77c8cb9296d9a5b4aaa3e05a72ea96fd3500",
+      "bytes": 14160236
+    },
+    "primitive_counts": {
+      "ALU": 9293,
+      "DFFCE": 423,
+      "DFFRE": 26392,
+      "DFFSE": 548,
+      "GND": 55,
+      "GSR": 1,
+      "IBUF": 4,
+      "INV": 204,
+      "LUT2": 4176,
+      "LUT3": 9121,
+      "LUT4": 19854,
+      "LUT5": 1269,
+      "MULT12X12": 7,
+      "MULT27X36": 13,
+      "MULTALU27X18": 33,
+      "MUX2_LUT5": 578,
+      "MUX2_LUT6": 167,
+      "OBUF": 13,
+      "VCC": 55,
+      "pROM": 2
+    },
+    "ff_total": 27363,
+    "lut_instance_total": 34420,
+    "observer_reset": {
+      "nand": {
+        "type": "LUT4",
+        "instance": "n3217_s3",
+        "ports": {
+          "F": "n3217_8",
+          "I0": "n13_13",
+          "I1": "n13_14",
+          "I2": "previous_pose_valid",
+          "I3": "pose_valid"
+        },
+        "init": "16'h7FFF",
+        "line": 627673
+      },
+      "boot_halves": [
+        {
+          "type": "LUT4",
+          "instance": "n13_s9",
+          "ports": {
+            "F": "n13_13",
+            "I0": "boot[4]",
+            "I1": "boot[5]",
+            "I2": "boot[6]",
+            "I3": "boot[7]"
+          },
+          "init": "16'h8000",
+          "line": 627199
+        },
+        {
+          "type": "LUT4",
+          "instance": "n13_s10",
+          "ports": {
+            "F": "n13_14",
+            "I0": "boot[0]",
+            "I1": "boot[1]",
+            "I2": "boot[2]",
+            "I3": "boot[3]"
+          },
+          "init": "16'h8000",
+          "line": 627207
+        }
+      ],
+      "expression": "~((&boot[7:4]) & (&boot[3:0]) & previous_pose_valid & pose_valid)",
+      "fanout": {
+        "direct_primitive_sink_pins": 150,
+        "by_type_port": {
+          "LUT4.I3": 4,
+          "DFFRE.RESET": 143,
+          "LUT3.I0": 1,
+          "LUT2.I0": 1,
+          "LUT4.I0": 1
+        }
+      }
+    },
+    "boot_reset": {
+      "definition": {
+        "type": "LUT2",
+        "instance": "n13_s11",
+        "ports": {
+          "F": "n13_16",
+          "I0": "n13_13",
+          "I1": "n13_14"
+        },
+        "init": "4'h7",
+        "line": 627688
+      },
+      "expression": "~((&boot[7:4]) & (&boot[3:0]))",
+      "fanout": {
+        "direct_primitive_sink_pins": 3152,
+        "by_type_port": {
+          "DFFRE.CE": 7,
+          "DFFRE.RESET": 3012,
+          "DFFSE.SET": 129,
+          "LUT4.I1": 1,
+          "LUT4.I0": 1,
+          "LUT4.I3": 1,
+          "LUT4.I2": 1
+        }
+      }
+    }
+  },
+  "synthesis": {
+    "resource_xml": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn_rsc.xml",
+      "sha256": "bd5a22ccaa2b4e94ae5825ffefa1770b490f89d1774f8f382b7e5d01a4c3da2d",
+      "bytes": 8105
+    },
+    "report_html": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn.rpt.html",
+      "sha256": "f59f82f8e806c1e2042d9186588501e5c9d124dfe56e06819a5ad9304fd549f6",
+      "bytes": 260708
+    },
+    "root_totals_reported": {
+      "name": "acg720_ano_port",
+      "Register": "2020",
+      "Alu": "146",
+      "Lut": "150",
+      "T_Register": "27816(2020)",
+      "T_Alu": "9206(146)",
+      "T_Lut": "36025(150)",
+      "T_MULTALU27X18": "30(0)",
+      "T_MULT12X12": "7(0)",
+      "T_MULT27X36": "13(0)",
+      "T_Bsram": "2(0)"
+    },
+    "logic_reported": {
+      "used": 45231,
+      "available": 59904,
+      "percent": 76
+    },
+    "register_reported": {
+      "used": 27816,
+      "available": 60780,
+      "percent": 46
+    },
+    "bsram_reported": {
+      "used": 2,
+      "available": 118,
+      "percent": 2
+    }
+  },
+  "old_selected_physical": {
+    "report": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\provenance\\build_reports\\acg720_ano_port.rpt.txt",
+      "sha256": "f4313d32d077ee67fda563577b67ad570ff99dd2a8325c6eb20da1e5131eb060",
+      "bytes": 98884
+    },
+    "resources": {
+      "Logic": {
+        "used": 45207,
+        "available": 59904,
+        "percent": 76
+      },
+      "Register": {
+        "used": 27363,
+        "available": 60780,
+        "percent": 46
+      },
+      "CLS": {
+        "used": 26314,
+        "available": 29952,
+        "percent": 88
+      },
+      "BSRAM": {
+        "used": 2,
+        "available": 118,
+        "percent": 2
+      }
+    },
+    "global_assignments_reported": {
+      "n3217_8": "LW",
+      "n13_16": "LW"
+    },
+    "global_capacity_reported": {
+      "PRIMARY": "8/8",
+      "LW": "8/8"
+    },
+    "selected_cst": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B0\\selected_physical\\acg720_ano_port.cst",
+      "sha256": "87483c421b5cbee4353047e7829a8e81115e807e0ba918574a22ac7acdbda886",
+      "bytes": 1712
+    }
+  },
+  "current_physical_constraints": {
+    "cst": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\acg720_ano_port.cst",
+      "sha256": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+      "bytes": 1672
+    },
+    "cst_exact_baseline_source_bytes": true,
+    "explicit_CLOCK_LOC_lines": [],
+    "sdc": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\build_policy_sik_windowfix_p2r2_rep1\\fixture\\acg720_ano_port.sdc",
+      "sha256": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e",
+      "bytes": 61
+    },
+    "constraint_period_ns": 19.5,
+    "hardware_clock_hz": 50000000,
+    "io_count": 17
+  },
+  "stage_at_last_read": "Running routing; Routing Phase 0 completed (60% vendor phase marker, not overall completion)",
+  "current_sta_available": false,
+  "current_global_assignment_table_available": false,
+  "current_global_assignments": null,
+  "routing_passed": null,
+  "timing_passed": null,
+  "flight_ready": false,
+  "measurement_notes": [
+    "VG primitive counts use in-memory hierarchical traversal from top through named-port instances, not raw text occurrence counts.",
+    "Current VG per-primitive counts agree with current synthesis resource report.",
+    "Old physical Logic/CLS accounting and new synthesis Logic accounting are different flow stages; their near-equal size does not establish equal packing or routability.",
+    "n13_16 direct primitive sink increase 803 equals current sik_diagnostic register count; this is fanout evidence, not a timing-failure diagnosis.",
+    "Current .p is protected and .db is vendor binary; neither is treated as a substitute for an official global-routing table."
+  ],
+  "optional_actions_not_implemented": [
+    "Wait for actual route and all STA classes, inspect global assignment for n13_16 and n4580_8 plus failed/unrouted/critical paths.",
+    "Only if needed by actual failure evidence, evaluate a separate bound PNR-only fixture reusing this exact VG with CLOCK_LOC \"n4580_8\" BUFG = CE|SR|LOGIC; preserve the 19.500ns SDC and all17 pin/electrical lines.",
+    "If the observer-reset is already global, adding the same constraint has no demonstrated benefit; inspect other critical nets/placement before choosing another physical trial.",
+    "Old successful design used all8 PRIMARY and all8 LW resources; forcing another net may displace a different useful global and must be measured independently."
+  ]
+}

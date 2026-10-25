@@ -13,6 +13,15 @@ class TrackingTests(unittest.TestCase):
         self.assertEqual(values, dict(roll_sp_deg=7.25, pitch_sp_deg=-8.5,
                                      yaw_rate_sp_dps=12.34, yaw_rate_dps=-10))
 
+    def test_b0b1_compatible_wire_keeps_reported_targets_and_identity_checks(self):
+        snapshot = dict(fresh=True, flight_info_fresh=True, sequence=42,
+                        flight_info=dict(build_id=0xb0b1, sequence=42))
+        self.assertEqual(snapshot_tracking(snapshot, self.row), tracking_fields(self.row, 0xb0b0))
+        snapshot['flight_info']['build_id'] = 0xb0b2
+        self.assertEqual(snapshot_tracking(snapshot, self.row), tracking_fields(self.row, 0xb0b0))
+        snapshot['flight_info']['build_id'] = 0xb0b3
+        self.assertTrue(all(v is None for v in snapshot_tracking(snapshot, self.row).values()))
+
     def test_unknown_firmware_protocol_missing_values_and_invalid_flags_stay_null(self):
         for row, build in [(self.row, None), (self.row, 0xb0ac),
                            ({**self.row, '_protocol': 'a582'}, 0xb0b0),

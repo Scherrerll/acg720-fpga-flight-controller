@@ -1,0 +1,36 @@
+{
+  "report_sha256": "bb957fd986106ecf54c3d6a725004bdf5e430a9415526010b633ec9424ea487f",
+  "worst_slack_ns": -12.746,
+  "start": "telemetry/index_3_s1",
+  "end": "telemetry/byte_bank_5_s0",
+  "data_cell_delay_ns": 2.64,
+  "data_route_delay_ns": 29.213,
+  "route_percent": 90.73,
+  "longest_data_wires": [
+    {
+      "delay_ns": 10.411,
+      "sink": "telemetry/decoded_bank_10_s4/I3"
+    },
+    {
+      "delay_ns": 7.509,
+      "sink": "telemetry/decoded_bank_5_s6/I0"
+    },
+    {
+      "delay_ns": 6.205,
+      "sink": "telemetry/decoded_bank_5_s0/I0"
+    },
+    {
+      "delay_ns": 2.575,
+      "sink": "telemetry/decoded_bank_7_s49/I4"
+    },
+    {
+      "delay_ns": 1.663,
+      "sink": "telemetry/n20227_s14/I0"
+    },
+    {
+      "delay_ns": 0.663,
+      "sink": "telemetry/decoded_bank_5_s1/I2"
+    }
+  ],
+  "hardware_accessed": false
+}

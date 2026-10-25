@@ -1,0 +1,587 @@
+{
+  "schema": "b0b0.physical-replay-comparison.v1",
+  "created_utc": "2026-10-24T21:09:59.069725+00:00",
+  "comparison_passed": true,
+  "scope": "Compare one exact B0B0 selected-netlist PNR-only replay with the manifest-bound original B0B0 physical/timing reports; not B0B2 release acceptance or new hardware qualification.",
+  "bound_artifact_sha256": {
+    "firmware/B0B0/provenance/manifest.json": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+    "firmware/B0B0/provenance/result.json": "cacefa207de39cf7eba6d9efdd7df36bd259aece1fc6b63832e08bad032548cb",
+    "firmware/B0B0/provenance/timing_audit.json": "91af060c187de049fad711e5d521f9c4f1c70411afe621b0e229278945b739f5",
+    "out/B0B2/b0b0_physical_replay_20261025/inputs.json": "85456cfc93e0ba79c40f54b388e763e474e9800210feaa8ed87a9970a13d26e5",
+    "out/B0B2/b0b0_physical_replay_20261025/original_manifest.json": "3169a3a24c1944f5560efc9f4d4f3fbef735d2a236aa1bb81717d13a11ff07c9",
+    "out/B0B2/b0b0_physical_replay_20261025/replay_runner.py": "decc0ab258d8499cc122f75c45f54137a89df4cc625ca2426fde980288d9824a",
+    "out/B0B2/b0b0_physical_replay_20261025/process_start.json": "be74f131bb5acda208d4545cdd39886b3bc236ee8634c00682b9c647613a9c0c",
+    "out/B0B2/b0b0_physical_replay_20261025/replay_complete.json": "917b1061b738c7e9565bed991e6e591ad66096d15a3465883303ae5234feaf1e",
+    "out/B0B2/b0b0_physical_replay_20261025/vendor_exit_code.json": "efedf7e1c58c29fa08d5a66e5d3253dfb313011a3b12a23fbdd1729ce56e910f",
+    "out/B0B2/b0b0_physical_replay_20261025/console.log": "fbde1cdfadb4e6317674692a060cd85fb4b24d63c5ce1f3046e886d4b605f77b",
+    "out/B0B2/b0b0_physical_replay_20261025/fixture/impl/pnr/cmd.do": "6c330c89f9b88f75d95a61afebca1f81798df5a4f044a89ec33c5c5dc4fcc345",
+    "firmware/B0B0/provenance/build_reports/acg720_ano_port.rpt.txt": "f4313d32d077ee67fda563577b67ad570ff99dd2a8325c6eb20da1e5131eb060",
+    "firmware/B0B0/provenance/build_reports/acg720_ano_port.tr": "2cb4b5269fb2709349f746705e83f9c1a9795eac0133a5b3525df2edea92b5b8",
+    "firmware/B0B0/provenance/build_reports/acg720_ano_port.timing_paths": "56b28fdcda64c1a4bdb811fb042efd28be97c436548148134fda4821b987bd00",
+    "out/B0B2/b0b0_physical_replay_20261025/fixture/impl/pnr/acg720_ano_port.rpt.txt": "c4908c19da89bda9b0066df22f6e78f29a6a1a0400684c0ed7816238b9fae2ce",
+    "out/B0B2/b0b0_physical_replay_20261025/fixture/impl/pnr/acg720_ano_port.tr": "e3a38096e5a38cef9ddec4acf7286b77ac81ed955de939b89fe57ccf25487f9b",
+    "out/B0B2/b0b0_physical_replay_20261025/fixture/impl/pnr/acg720_ano_port.timing_paths": "56b28fdcda64c1a4bdb811fb042efd28be97c436548148134fda4821b987bd00"
+  },
+  "original_report_sha256": {
+    "acg720_ano_port.rpt.txt": "f4313d32d077ee67fda563577b67ad570ff99dd2a8325c6eb20da1e5131eb060",
+    "acg720_ano_port.tr": "2cb4b5269fb2709349f746705e83f9c1a9795eac0133a5b3525df2edea92b5b8",
+    "acg720_ano_port.timing_paths": "56b28fdcda64c1a4bdb811fb042efd28be97c436548148134fda4821b987bd00"
+  },
+  "replay_report_sha256": {
+    "acg720_ano_port.rpt.txt": "c4908c19da89bda9b0066df22f6e78f29a6a1a0400684c0ed7816238b9fae2ce",
+    "acg720_ano_port.tr": "e3a38096e5a38cef9ddec4acf7286b77ac81ed955de939b89fe57ccf25487f9b",
+    "acg720_ano_port.timing_paths": "56b28fdcda64c1a4bdb811fb042efd28be97c436548148134fda4821b987bd00"
+  },
+  "original_metrics": {
+    "pins": {
+      "clk50": "Y18",
+      "imu_miso": "D19",
+      "rc_ppm_in": "B17",
+      "range_rx": "C14",
+      "imu_sck": "E17",
+      "imu_mosi": "C20",
+      "imu_cs_n": "E18",
+      "imu_gyro_cs_n": "F20",
+      "range_tx": "C15",
+      "uart_tx": "M15",
+      "radio_tx": "B15",
+      "led2": "L21",
+      "led3": "K21",
+      "motor1_pwm": "D17",
+      "motor2_pwm": "C17",
+      "motor3_pwm": "E16",
+      "motor4_pwm": "D16"
+    },
+    "clock_rows": [
+      {
+        "name": "clk50",
+        "type": "Base",
+        "period_ns": 19.5
+      }
+    ],
+    "fmax_mhz": 51.608,
+    "setup_hold": {
+      "setup": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "timing_categories": {
+      "setup": {
+        "worst_reported_slack_ns": 0.123,
+        "reported_paths": 25
+      },
+      "hold": {
+        "worst_reported_slack_ns": 0.192,
+        "reported_paths": 25
+      },
+      "recovery": {
+        "worst_reported_slack_ns": 14.646,
+        "reported_paths": 25
+      },
+      "removal": {
+        "worst_reported_slack_ns": 1.713,
+        "reported_paths": 25
+      },
+      "minimum_pulse_width": {
+        "worst_reported_slack_ns": 7.137,
+        "reported_paths": 10
+      }
+    },
+    "resources": {
+      "Logic": [
+        "45207/59904",
+        "76%"
+      ],
+      "--LUT,ALU,ROM16": [
+        "45207(35740 LUT, 9467 ALU, 0 ROM16)",
+        "-"
+      ],
+      "--SSRAM(RAM16)": [
+        "0",
+        "-"
+      ],
+      "Register": [
+        "27363/60780",
+        "46%"
+      ],
+      "--Logic Register as Latch": [
+        "0/59904",
+        "0%"
+      ],
+      "--Logic Register as FF": [
+        "27359/59904",
+        "46%"
+      ],
+      "--I/O Register as Latch": [
+        "0/876",
+        "0%"
+      ],
+      "--I/O Register as FF": [
+        "4/876",
+        "<1%"
+      ],
+      "CLS": [
+        "26314/29952",
+        "88%"
+      ],
+      "I/O Port": [
+        "17/297",
+        "6%"
+      ],
+      "I/O Buf": [
+        "17",
+        "-"
+      ],
+      "--Input Buf": [
+        "4",
+        "-"
+      ],
+      "--Output Buf": [
+        "13",
+        "-"
+      ],
+      "--Inout Buf": [
+        "0",
+        "-"
+      ],
+      "BSRAM": [
+        "2/118",
+        "2%"
+      ],
+      "--pROM": [
+        "2"
+      ],
+      "DSP": [
+        "62.5/118",
+        "53%"
+      ],
+      "--MULT12X12": [
+        "7"
+      ],
+      "--MULT27X36": [
+        "13"
+      ],
+      "--MULTALU27X18": [
+        "33"
+      ]
+    },
+    "clock_resource_usage": {
+      "PRIMARY": {
+        "usage": "8/8",
+        "utilization": "100%"
+      },
+      "LW": {
+        "usage": "8/8",
+        "utilization": "100%"
+      },
+      "GCLK_PIN": {
+        "usage": "5/40",
+        "utilization": "13%"
+      }
+    },
+    "global_signals": [
+      {
+        "signal": "clk50_d",
+        "resource": "PRIMARY",
+        "location": "TR BR BL"
+      },
+      {
+        "signal": "mtf_sample",
+        "resource": "PRIMARY",
+        "location": "BR BL"
+      },
+      {
+        "signal": "core/n4852_7",
+        "resource": "PRIMARY",
+        "location": "BR"
+      },
+      {
+        "signal": "core/imu/temporal/held_raw_95_21",
+        "resource": "PRIMARY",
+        "location": "TR"
+      },
+      {
+        "signal": "core/imu/estimator/n73960_9",
+        "resource": "PRIMARY",
+        "location": "TR"
+      },
+      {
+        "signal": "core/imu/estimator/n1740_5",
+        "resource": "PRIMARY",
+        "location": "TR BR"
+      },
+      {
+        "signal": "native_navigation/controller_proof/n51700_6",
+        "resource": "PRIMARY",
+        "location": "BL"
+      },
+      {
+        "signal": "native_navigation/controller_proof/n164_7",
+        "resource": "PRIMARY",
+        "location": "BR BL"
+      },
+      {
+        "signal": "staged_telemetry.core_q_453_16",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "n3217_8",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "n13_16",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "core/n49_6",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "core/controller/n27065_3",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "mtf/n1510_6",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "native_navigation/diagnostic_q_32_20",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "native_navigation/height_fusion/n1002_6",
+        "resource": "LW",
+        "location": "-"
+      }
+    ]
+  },
+  "replay_metrics": {
+    "pins": {
+      "clk50": "Y18",
+      "imu_miso": "D19",
+      "rc_ppm_in": "B17",
+      "range_rx": "C14",
+      "imu_sck": "E17",
+      "imu_mosi": "C20",
+      "imu_cs_n": "E18",
+      "imu_gyro_cs_n": "F20",
+      "range_tx": "C15",
+      "uart_tx": "M15",
+      "radio_tx": "B15",
+      "led2": "L21",
+      "led3": "K21",
+      "motor1_pwm": "D17",
+      "motor2_pwm": "C17",
+      "motor3_pwm": "E16",
+      "motor4_pwm": "D16"
+    },
+    "clock_rows": [
+      {
+        "name": "clk50",
+        "type": "Base",
+        "period_ns": 19.5
+      }
+    ],
+    "fmax_mhz": 51.608,
+    "setup_hold": {
+      "setup": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      },
+      "hold": {
+        "tns_ns": 0.0,
+        "violated_endpoints": 0
+      }
+    },
+    "timing_categories": {
+      "setup": {
+        "worst_reported_slack_ns": 0.123,
+        "reported_paths": 25
+      },
+      "hold": {
+        "worst_reported_slack_ns": 0.192,
+        "reported_paths": 25
+      },
+      "recovery": {
+        "worst_reported_slack_ns": 14.646,
+        "reported_paths": 25
+      },
+      "removal": {
+        "worst_reported_slack_ns": 1.713,
+        "reported_paths": 25
+      },
+      "minimum_pulse_width": {
+        "worst_reported_slack_ns": 7.137,
+        "reported_paths": 10
+      }
+    },
+    "resources": {
+      "Logic": [
+        "45207/59904",
+        "76%"
+      ],
+      "--LUT,ALU,ROM16": [
+        "45207(35740 LUT, 9467 ALU, 0 ROM16)",
+        "-"
+      ],
+      "--SSRAM(RAM16)": [
+        "0",
+        "-"
+      ],
+      "Register": [
+        "27363/60780",
+        "46%"
+      ],
+      "--Logic Register as Latch": [
+        "0/59904",
+        "0%"
+      ],
+      "--Logic Register as FF": [
+        "27359/59904",
+        "46%"
+      ],
+      "--I/O Register as Latch": [
+        "0/876",
+        "0%"
+      ],
+      "--I/O Register as FF": [
+        "4/876",
+        "<1%"
+      ],
+      "CLS": [
+        "26314/29952",
+        "88%"
+      ],
+      "I/O Port": [
+        "17/297",
+        "6%"
+      ],
+      "I/O Buf": [
+        "17",
+        "-"
+      ],
+      "--Input Buf": [
+        "4",
+        "-"
+      ],
+      "--Output Buf": [
+        "13",
+        "-"
+      ],
+      "--Inout Buf": [
+        "0",
+        "-"
+      ],
+      "BSRAM": [
+        "2/118",
+        "2%"
+      ],
+      "--pROM": [
+        "2"
+      ],
+      "DSP": [
+        "62.5/118",
+        "53%"
+      ],
+      "--MULT12X12": [
+        "7"
+      ],
+      "--MULT27X36": [
+        "13"
+      ],
+      "--MULTALU27X18": [
+        "33"
+      ]
+    },
+    "clock_resource_usage": {
+      "PRIMARY": {
+        "usage": "8/8",
+        "utilization": "100%"
+      },
+      "LW": {
+        "usage": "8/8",
+        "utilization": "100%"
+      },
+      "GCLK_PIN": {
+        "usage": "5/40",
+        "utilization": "13%"
+      }
+    },
+    "global_signals": [
+      {
+        "signal": "clk50_d",
+        "resource": "PRIMARY",
+        "location": "TR BR BL"
+      },
+      {
+        "signal": "mtf_sample",
+        "resource": "PRIMARY",
+        "location": "BR BL"
+      },
+      {
+        "signal": "core/n4852_7",
+        "resource": "PRIMARY",
+        "location": "BR"
+      },
+      {
+        "signal": "core/imu/temporal/held_raw_95_21",
+        "resource": "PRIMARY",
+        "location": "TR"
+      },
+      {
+        "signal": "core/imu/estimator/n73960_9",
+        "resource": "PRIMARY",
+        "location": "TR"
+      },
+      {
+        "signal": "core/imu/estimator/n1740_5",
+        "resource": "PRIMARY",
+        "location": "TR BR"
+      },
+      {
+        "signal": "native_navigation/controller_proof/n51700_6",
+        "resource": "PRIMARY",
+        "location": "BL"
+      },
+      {
+        "signal": "native_navigation/controller_proof/n164_7",
+        "resource": "PRIMARY",
+        "location": "BR BL"
+      },
+      {
+        "signal": "staged_telemetry.core_q_453_16",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "n3217_8",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "n13_16",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "core/n49_6",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "core/controller/n27065_3",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "mtf/n1510_6",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "native_navigation/diagnostic_q_32_20",
+        "resource": "LW",
+        "location": "-"
+      },
+      {
+        "signal": "native_navigation/height_fusion/n1002_6",
+        "resource": "LW",
+        "location": "-"
+      }
+    ]
+  },
+  "all_parsed_metrics_equal": true,
+  "report_section_comparisons": {
+    "resource_usage": {
+      "equal": true,
+      "normalized_content_sha256": "a48bd007ec55f06329eeb8e02a6ea6f00ba063bc392770d5574e27dca612dc80"
+    },
+    "io_bank_usage": {
+      "equal": true,
+      "normalized_content_sha256": "60cfd0d8bf1aed16af09081ea864b0ebc28dd92d3d4cc2bd061234de3d12ed56"
+    },
+    "clock_resource_usage": {
+      "equal": true,
+      "normalized_content_sha256": "78e735e69273a4c46640d6933c07a979a84523f2feb48b70ffbf11fc88e337df"
+    },
+    "global_signals": {
+      "equal": true,
+      "normalized_content_sha256": "7bd77709ee32a4a59fb5b58024b5dbece380bc88a4011a33ae1ef86c783c5130"
+    },
+    "full_pinout_and_electrical": {
+      "equal": true,
+      "normalized_content_sha256": "67d0e8ade74e79a1a2cbf3b578668cda67fe9f0f8188672c3204173bbfde4c27"
+    }
+  },
+  "full_timing_report_equal_except_three_input_paths_and_creation_time": true,
+  "timing_paths_byte_equal": true,
+  "pnr_report_differences": "Input paths, creation time, CPU/elapsed times and peak memory only; resource, I/O bank, clock resource, global signal and full pinout/electrical tables equal.",
+  "vendor_returncode": 0,
+  "skip_synthesis_observed": true,
+  "unexpected_synthesis": false,
+  "actual_command_input_paths_verified": true,
+  "selected_options": {
+    "top_module": "acg720_ano_port",
+    "output_base_name": "acg720_ano_port",
+    "user_code": "0000B0B0",
+    "place_option": "2",
+    "route_option": "2",
+    "timing_driven": "1",
+    "replicate_resources": "0",
+    "map_option": "2",
+    "global_freq": "50",
+    "max_fanout": "200",
+    "opt_goal": "area",
+    "route_maxfan": "23"
+  },
+  "original_selected_inputs_unchanged": true,
+  "source_snapshot_files_verified": 51,
+  "original_release_fs": {
+    "path": "firmware/B0B0/release/acg720_ano_port.fs",
+    "sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+    "unchanged": true,
+    "replaced": false
+  },
+  "new_replay_fs": {
+    "path": "out/B0B2/b0b0_physical_replay_20261025/fixture/impl/pnr/acg720_ano_port.fs",
+    "sha256": "f010a9c9587519f77fc0b881561f81192266135971bad4217f2d81fc173b7d20",
+    "newly_generated": true,
+    "hardware_qualified": false,
+    "installed": false,
+    "not_a_replacement_for_original_release": true,
+    "only_fs_text_difference": [
+      {
+        "line": 24,
+        "original": "//Created Time: Sat Oct 24 10:47:29 2026",
+        "replay": "//Created Time: Sun Oct 25 05:06:35 2026"
+      }
+    ]
+  },
+  "matching_configuration_bin_sha256": "9fa97561f176077beca069895f1319f932ee7a58ee70edd4d9d7ec0f9b5d856d",
+  "matching_physical_database_sha256": "d2b67b123b8a4cd2bafb503bca4735a42bd251985052822b2243a3c961c5ef76",
+  "interpretation": "The same tool successfully reproduces this frozen B0B0 baseline with identical physical metrics and configuration binary. This establishes that the selected netlist-only flow works for the baseline; it does not prove congestion is the unique cause of B0B2 failure, whose netlist and physical choices differ.",
+  "limitations": [
+    "The five timing minima are worst reported path-table values, alongside the tool setup/hold summaries.",
+    "Successful baseline replay does not establish new RTL functional equivalence, electrical behavior or flight acceptance.",
+    "The newly generated FS remains uninstalled and unverified on hardware even though its only text difference is creation-time metadata and the .bin matches the original.",
+    "No hardware, programmer, serial port, new build or original-release replacement was performed during this analysis."
+  ],
+  "hardware_accessed": false,
+  "new_build_started": false,
+  "original_release_modified": false,
+  "b0b2_acceptance_created": false,
+  "new_bitstream_hardware_qualified": false,
+  "flight_acceptance_performed": false
+}

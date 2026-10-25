@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-25T13:30:30.8914941+00:00",
+  "all_power_removed_and_battery_only": true,
+  "props_removed": true,
+  "swa_swc_low_throttle_minimum": true,
+  "operator_report": "User confirmed all power removed and only battery reconnected, board USB/programmer disconnected",
+  "source": "Current chat human answer"
+}

@@ -1,0 +1,30 @@
+{
+  "prepared": true,
+  "created_utc": "2026-10-25T15:53:30.527658+00:00",
+  "intended_default": "B0B2 XY P0.05 I0",
+  "expected_previous_default": "Original V15 B0B2 XY P0.15 I0.10",
+  "new_image": "C:\\Users\\ScherrerL\\Desktop\\apple\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\flash\\new_P005_I0_B0B2.fs",
+  "new_image_sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c",
+  "previous_image": "C:\\Users\\ScherrerL\\Desktop\\apple\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\flash\\rollback_original_V15_B0B2.fs",
+  "previous_image_sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306",
+  "qualification": "C:\\Users\\ScherrerL\\Desktop\\apple\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\qualification.json",
+  "qualification_sha256": "0a8da5e4be22b2459d3a59e27191942a3b5a2d8c99469c9e994ff54d0761411d",
+  "previous_flash_receipt": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flash_install_20261025T132659_439750Z\\flash_install.json",
+  "previous_flash_receipt_sha256": "de5b8de2741ec7dafd0672624c5e370338735508a56e34ce3e3f4c178bed880e",
+  "programmer_executable_sha256": "ca28fe178b04fd99780267787f61b0e0ec3729d579fe237ff454c1a0353e8ef6",
+  "flash_address": "0x000000",
+  "requires_explicit_flash_approval": true,
+  "approval_reason": "Existing user authorization selected SRAM; replacing persistent power-on firmware requires explicit approval.",
+  "flash_approval_received": false,
+  "hardware_accessed": false,
+  "flash_written": false,
+  "flight_ready": false,
+  "operations": [
+    "Current props-off/stopped low RC and unique programmer/cable/device checks",
+    "Reload and independently verify existing Flash against originalV15 before erasing",
+    "Program-and-verify exact new gain image, independently verifyFlash, reload and verify a new stopped boot",
+    "Operator battery-only cold boot; short hover/stick-return response test"
+  ],
+  "rollback": "If writing starts and validation fails, restore originalV15 and independently verify it. Explicit unsafe activity stops automatic recovery.",
+  "timing_scope": "Actual50MHz criterion; analytical review of the unchanged routed19.5ns report, not a new vendor20ns STA report."
+}

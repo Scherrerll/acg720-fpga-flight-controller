@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "scope": "V15 static stopped read-only test after user paused routing; no new calibration applied",
+  "duration_seconds": 60.02636290001101,
+  "samples": 60,
+  "angles": {
+    "roll_deg": {
+      "mean": 0.912,
+      "standard_deviation": 0.009273618495495711,
+      "minimum": 0.89,
+      "maximum": 0.93
+    },
+    "pitch_deg": {
+      "mean": 3.3081666666666667,
+      "standard_deviation": 0.014432794447214861,
+      "minimum": 3.28,
+      "maximum": 3.34
+    }
+  },
+  "diagnostic_delta": {
+    "accepted_count": 60094,
+    "rejected_count": 0,
+    "controller_fault_count": 0,
+    "command_count": 0,
+    "gate_interruption_count": 0,
+    "gate_revoke_count": 0
+  },
+  "stats_delta": {
+    "frames": 298,
+    "checksum_errors": 0,
+    "discarded_bytes": 136,
+    "missing_frames": 2,
+    "sequence_resets": 0
+  },
+  "final_state": {
+    "sensor_ok": true,
+    "attitude_valid": true,
+    "calibrated": true,
+    "rc_valid": true,
+    "armed": false,
+    "controller_enabled": false,
+    "physical_output_active": false,
+    "command_us": [
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "pwm_us": [
+      1000,
+      1000,
+      1000,
+      1000
+    ]
+  },
+  "final_boot_uptime_ms": 5607200,
+  "build_id": 45234,
+  "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "installation_report_sha256": "bf089617ed03b61ab0f71f5dad563bc87e0407f304ed9f0f9583bdb6e0f69ab9",
+  "snapshots_sha256": "a0d1ef49e4a36c3427f5d4b242784fb56e4d881d4f7b55664fb087400b0a0aa2",
+  "observer_sha256": "8708dc3bffdf7082b58fb44c66bc55571ce5a112b205df3c83eb52f62cd55768",
+  "failures": [],
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

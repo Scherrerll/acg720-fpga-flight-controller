@@ -1,0 +1,4 @@
+C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\candidate\acg720_ano_port.v:212: warning: Anachronistic use of named begin/end to surround generate schemes.
+
+PASS reader_policy: baseline resets at silence threshold; candidate waits without inventing samples; actual ID/config rejection retained
+C:\Users\ScherrerL\Desktop\apple\side_imu_timeout_removal_20261025\reader_policy.v:24: $finish called at 171000 (1ps)

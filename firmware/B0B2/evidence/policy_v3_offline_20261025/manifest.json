@@ -1,0 +1,727 @@
+{
+  "scope": "Offline evidence snapshot; integrity verification is not physical or flight qualification",
+  "physical_qualification_passed": false,
+  "netlist_sha256": "5bf484f5e473e49e7ebca62582043132d8fcb7a1aca68eb56981db51e2d7cbdd",
+  "source_sha256": {
+    "acg720_ano_port.cst": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73",
+    "acg720_ano_port.gprj": "198f6c141bae6b6c297076a05bab2326cf32b8696c589b24daf0d08218feaa76",
+    "acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e",
+    "acg720_ano_port.v": "2a0fd4d871e90715f6ee959f6d3f641bb7b106c920d432c3002208a5d9aacaec",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "c62d1e1158f692e2f9bb344a6c29455e4489dd566ee34f8503ae616d0bb5704f",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "adddefed0065e900468aff43d6a5581e3321e139db7b5955b0cc08315991304c",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "16f8849ad893906618899e2db66de93c838de701a18901ff53d6b4b3f973c296",
+    "core/height_loss_fallback.v": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682",
+    "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "5251e59f1ca21d93130bed29c7a91c09864cdb2f3cffaabe314106589d0d795c",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "bitstream_included": false,
+  "hardware_accessed": false,
+  "files": {
+    "source_snapshot/acg720_ano_port.cst": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\acg720_ano_port.cst",
+      "sha256": "3fd81d93e436249ffa126365919301c2a0cc56108aba59900056fa9837efda73"
+    },
+    "source_snapshot/acg720_ano_port.gprj": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\acg720_ano_port.gprj",
+      "sha256": "198f6c141bae6b6c297076a05bab2326cf32b8696c589b24daf0d08218feaa76"
+    },
+    "source_snapshot/acg720_ano_port.sdc": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\acg720_ano_port.sdc",
+      "sha256": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e"
+    },
+    "source_snapshot/acg720_ano_port.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\acg720_ano_port.v",
+      "sha256": "2a0fd4d871e90715f6ee959f6d3f641bb7b106c920d432c3002208a5d9aacaec"
+    },
+    "source_snapshot/build.tcl": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\build.tcl",
+      "sha256": "437e3b163ca475294dafd8568ca7809d0c4fc5f49fd127992f055c2f0df30629"
+    },
+    "source_snapshot/calibration.vh": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635"
+    },
+    "source_snapshot/level_calibration.vh": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b"
+    },
+    "source_snapshot/mtf_navigation_shadow.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\mtf_navigation_shadow.v",
+      "sha256": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb"
+    },
+    "source_snapshot/mtf_xyz_navigation_control.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\mtf_xyz_navigation_control.v",
+      "sha256": "c62d1e1158f692e2f9bb344a6c29455e4489dd566ee34f8503ae616d0bb5704f"
+    },
+    "source_snapshot/nav_math_service.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\nav_math_service.v",
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7"
+    },
+    "source_snapshot/sik_imu_diagnostic.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\sik_imu_diagnostic.v",
+      "sha256": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d"
+    },
+    "source_snapshot/telemetry_tx.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\telemetry_tx.v",
+      "sha256": "adddefed0065e900468aff43d6a5581e3321e139db7b5955b0cc08315991304c"
+    },
+    "source_snapshot/core/ano_attitude_estimator.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\ano_attitude_estimator.v",
+      "sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a"
+    },
+    "source_snapshot/core/ano_flight_state.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\ano_flight_state.v",
+      "sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4"
+    },
+    "source_snapshot/core/bmi088_reader.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\bmi088_reader.v",
+      "sha256": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b"
+    },
+    "source_snapshot/core/control_gate.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622"
+    },
+    "source_snapshot/core/cordic_atan2.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35"
+    },
+    "source_snapshot/core/flight_core.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\flight_core.v",
+      "sha256": "16f8849ad893906618899e2db66de93c838de701a18901ff53d6b4b3f973c296"
+    },
+    "source_snapshot/core/height_loss_fallback.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\height_loss_fallback.v",
+      "sha256": "b15d47621c02d50c5e69d29de68c8b75b3a64a111d83d2beccfab487095458b6"
+    },
+    "source_snapshot/core/imu_checked_guard_pipelined.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\imu_checked_guard_pipelined.v",
+      "sha256": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65"
+    },
+    "source_snapshot/core/imu_diagnostic_tap.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\imu_diagnostic_tap.v",
+      "sha256": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d"
+    },
+    "source_snapshot/core/imu_pipeline_pipelined.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\imu_pipeline_pipelined.v",
+      "sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9"
+    },
+    "source_snapshot/core/imu_temporal_check_pipelined.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\imu_temporal_check_pipelined.v",
+      "sha256": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1"
+    },
+    "source_snapshot/core/motor_pwm.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\motor_pwm.v",
+      "sha256": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84"
+    },
+    "source_snapshot/core/rc_ppm.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\rc_ppm.v",
+      "sha256": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6"
+    },
+    "source_snapshot/core/spi_uart_modules.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3"
+    },
+    "source_snapshot/position/ano_flow_fusion.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36"
+    },
+    "source_snapshot/position/ano_height_fusion.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\ano_height_fusion.v",
+      "sha256": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7"
+    },
+    "source_snapshot/position/ano_hold_control.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3"
+    },
+    "source_snapshot/position/ano_xy_divide36.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\ano_xy_divide36.v",
+      "sha256": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace"
+    },
+    "source_snapshot/position/ano_xy_stick.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\ano_xy_stick.v",
+      "sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68"
+    },
+    "source_snapshot/position/ano_z_stick.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\ano_z_stick.v",
+      "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f"
+    },
+    "source_snapshot/position/mtf_position_integrator.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\mtf_position_integrator.v",
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28"
+    },
+    "source_snapshot/position/mtf_shared_flow_fusion.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\mtf_shared_flow_fusion.v",
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8"
+    },
+    "source_snapshot/position/mtf_shared_height_fusion.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\mtf_shared_height_fusion.v",
+      "sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7"
+    },
+    "source_snapshot/position/mtf_shared_hold_control.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\mtf_shared_hold_control.v",
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5"
+    },
+    "source_snapshot/position/mtf_xyz_hold_control.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\mtf_xyz_hold_control.v",
+      "sha256": "6c403265c468288f360ca65dcd99f110f0e57d32f19b368603e4469ed3d04682"
+    },
+    "source_snapshot/position/pose_time_adapter.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35"
+    },
+    "source_snapshot/position/position_math.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635"
+    },
+    "source_snapshot/position/relative_position.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\relative_position.v",
+      "sha256": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850"
+    },
+    "source_snapshot/sensor/flow_reader.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\sensor\\flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709"
+    },
+    "source_snapshot/sensor/mtf01p_reader.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\sensor\\mtf01p_reader.v",
+      "sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923"
+    },
+    "source_snapshot/sensor/mtf_native_geometry.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\sensor\\mtf_native_geometry.v",
+      "sha256": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c"
+    },
+    "source_snapshot/sensor/mtf_shared_geometry.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\sensor\\mtf_shared_geometry.v",
+      "sha256": "5251e59f1ca21d93130bed29c7a91c09864cdb2f3cffaabe314106589d0d795c"
+    },
+    "source_snapshot/sensor/pmw3901_init.vh": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\sensor\\pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389"
+    },
+    "source_snapshot/sensor/range_height_estimate.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\sensor\\range_height_estimate.v",
+      "sha256": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4"
+    },
+    "source_snapshot/sensor/range_reader.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\sensor\\range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04"
+    },
+    "source_snapshot/core/rtl/ano_manual_angles.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\rtl\\ano_manual_angles.v",
+      "sha256": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17"
+    },
+    "source_snapshot/core/rtl/ano_rate_control.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\rtl\\ano_rate_control.v",
+      "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9"
+    },
+    "source_snapshot/core/rtl/ano_rc_angle_targets.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\rtl\\ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509"
+    },
+    "source_snapshot/core/rtl/ano_yaw_control.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\rtl\\ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55"
+    },
+    "source_snapshot/core/rtl/pid_divide_signed64.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\rtl\\pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403"
+    },
+    "source_snapshot/core/rtl/quad_mixer_feedback.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\core\\rtl\\quad_mixer_feedback.v",
+      "sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+    },
+    "receipts/FINAL_RESULT.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\FINAL_RESULT.json",
+      "sha256": "f093fb848210a4befdd34c6e614d5162a949502776e5df9b3769305ee2afe626"
+    },
+    "FINAL_RESULT.md": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\FINAL_RESULT.md",
+      "sha256": "6c7b15441101ae5d664f3f9de947a2d7855845d3c9a1e261d7fd1a6504fca536"
+    },
+    "receipts/synthesis_final_binding.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\synthesis_final_binding.json",
+      "sha256": "bd0a8c0b9028d1f57ee66fae7ee46591ab21e6d313101502ad80c158a1306b33"
+    },
+    "receipts/merge_receipt.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\merge_receipt.json",
+      "sha256": "882b1e65ca146ff4de45716d9f9b05b23e767ee6196d6dd1d364e92040778c42"
+    },
+    "receipts/behavior_verification.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\behavior_verification.json",
+      "sha256": "2740bd40504b22cf7d0bc957abb499b5ecebda5b6ae0a14e66e487e265349585"
+    },
+    "receipts/protocol_verification.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\protocol_verification.json",
+      "sha256": "cafd37e83c559990cc3ea547b7de21be894ec567d657808955d9d02cb5f6685f"
+    },
+    "wire.hex": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\wire.hex",
+      "sha256": "cb4c447295abfdf95e23448f155b1c3df2759f9641ed6194ebe1eb5a4aee429b"
+    },
+    "receipts/top_compile.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\top_compile.json",
+      "sha256": "50c14a892f25ff8a40d69d8c8dfde88eb1e5a4e3b1c0c3c564fd94a46539c50b"
+    },
+    "authorized_policy_final.patch": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\authorized_policy_final.patch",
+      "sha256": "cd4f898d07dd3385f7f1f696463ff9a17447defbf96139a5c50c1de2ca5a85b3"
+    },
+    "physical_trial.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\physical_trial.py",
+      "sha256": "c2db5e7dc523b40eeeb47d9068018e70129553b9c80597c2a7a72b8a8e0dcdcb"
+    },
+    "audit_final_policy.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\audit_final_policy.py",
+      "sha256": "0eeab249d5fb5915af2335c3b63f80ad5fba000edd9edb842dfb068a5f44b4da"
+    },
+    "verify_behavior.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\verify_behavior.py",
+      "sha256": "ff209c42c1fe4a6b7ec93e51cdb4a1d131715b39a7b166d2ba536da44bbce185"
+    },
+    "verify_ground.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\verify_ground.py",
+      "sha256": "fe32a3ed86475321282ccc3613d4aeb17ebbf75fe2518d5af354e87586c869de"
+    },
+    "capture_protocol.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\capture_protocol.py",
+      "sha256": "4170cecd7a7f04f74115a6739648d107790ecd52df0210711d659a9abe503b51"
+    },
+    "capture_protocol_tb.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\capture_protocol_tb.v",
+      "sha256": "2b8ae7d73b297a57eab774b4469bb7a1276ac795da966c31205130f67f997bc9"
+    },
+    "finalize_offline_report.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\finalize_offline_report.py",
+      "sha256": "99af0b7c63e79b951486ae3d50198b808c21869326d223ff2b6165ee45df9118"
+    },
+    "rtl_checks/reader_policy.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\reader_policy.log",
+      "sha256": "1d12ac1a5b0d6da486fe945b77ff93507b43ea0e7d5d26d00270e1fd20bbe113"
+    },
+    "rtl_checks/reader_policy_commands.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\reader_policy_commands.json",
+      "sha256": "04f6c6c8786606fa66db462268aa973e19ad885ddaa5c9ee3b3c092be10b8bb0"
+    },
+    "rtl_checks/pipeline_policy.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pipeline_policy.log",
+      "sha256": "b925b297ef5c7c856eb48c6bb47144c45c381adcc51dd0eeb4c252dedd55e588"
+    },
+    "rtl_checks/pipeline_policy_commands.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pipeline_policy_commands.json",
+      "sha256": "74c21576001f5d27be4dcedf5cfd7faa86591114e7849a65e1d64648bce30684"
+    },
+    "rtl_checks/timeout_boundaries.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\timeout_boundaries.log",
+      "sha256": "c1d8152f46e95d0753d0764f2d8bbbe648308880a9a2596c33bcc0bbc825b149"
+    },
+    "rtl_checks/timeout_boundaries_commands.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\timeout_boundaries_commands.json",
+      "sha256": "5356d6bd3b63d63f519e680925615fddf9f9b1a947f425cd6756ab9ceb11cf26"
+    },
+    "rtl_checks/policy_boundaries.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\policy_boundaries.log",
+      "sha256": "dee89b5dd84c9497043ed85653f34555fa5460efd78e26bcc478b00a905c2579"
+    },
+    "rtl_checks/policy_boundaries_commands.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\policy_boundaries_commands.json",
+      "sha256": "d42d070fd0335fa8af41d66b30a1cca3b8d11344fd82afdad6209fafb68c5995"
+    },
+    "rtl_checks/range_geometry_policy.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\range_geometry_policy.log",
+      "sha256": "43a71c641d8f003aff66b702ecb681ad90e5a53dc642ce2f076899d59b5af19f"
+    },
+    "rtl_checks/range_geometry_policy_commands.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\range_geometry_policy_commands.json",
+      "sha256": "844f7b543f53a3dc3682dee808f58e80e3b8f0dc6f32020cad3619e69ef8fb74"
+    },
+    "rtl_checks/baseline/bmi088_reader_baseline.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\baseline_simulation\\bmi088_reader_baseline.v",
+      "sha256": "dbdb22dec40bfd51efeb8b2500eae91aa136deffaf35678e6fdea050915a4e41"
+    },
+    "rtl_checks/baseline/imu_checked_guard_baseline.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\baseline_simulation\\imu_checked_guard_baseline.v",
+      "sha256": "b3d099d34b1f8549899a2f18f1800c23153a063957981f8ed8972e81b88f575e"
+    },
+    "rtl_checks/baseline/imu_pipeline_baseline.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\baseline_simulation\\imu_pipeline_baseline.v",
+      "sha256": "2059b5eb624231618be902a8109518c206f259d3a7f8eeab739671f8cb6bf3ff"
+    },
+    "rtl_checks/baseline/imu_temporal_check_baseline.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\baseline_simulation\\imu_temporal_check_baseline.v",
+      "sha256": "8602e8fef0d4d8401d6108b61ac8d5ad76106ce6dd8285786f973f7e3cf02d80"
+    },
+    "rtl_checks/policy_boundaries.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\policy_boundaries.v",
+      "sha256": "8dda4a89f8b7a5f1b0ee98c0e89506d6555a9d6c232e9095d6015cd6eab9da87"
+    },
+    "rtl_checks/range_geometry_policy.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\range_geometry_policy.v",
+      "sha256": "b33d1512c603b5f451fc5955f6ff473f1c177075a85a9bbc40961f8cb2bc71f0"
+    },
+    "rtl_checks/legacy_geometry_before_removal.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\legacy_geometry_before_removal.v",
+      "sha256": "1e5035731dbdd7ae3fb6ef2952bcebaee0008bb0f71e4a33caee395c9a6c8fa7"
+    },
+    "rtl_checks/reader_policy.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\side_imu_timeout_removal_20261025\\reader_policy.v",
+      "sha256": "dd21d0a7d3ea8cfb7c329e97109f96ce27775f05108fb9b1cdc803e23cff9f8e"
+    },
+    "rtl_checks/pipeline_policy.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\side_imu_timeout_removal_20261025\\pipeline_policy.v",
+      "sha256": "999980d8b1077bed39b3a0df5b70119cbe4c7b9c0b430aec1137260cc690b2c4"
+    },
+    "rtl_checks/timeout_boundaries.v": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\side_timeout_alignment_20261025\\timeout_boundaries.v",
+      "sha256": "0491597761696b193aea7d27daf792e8b9f5ec64c2ec06278c54b9375a8d545c"
+    },
+    "trials/final_p1r0/result.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p1r0\\result.json",
+      "sha256": "57d27da17625d31efa979616fb00be51fd20b2e5b1998422d2afee4a8420f205"
+    },
+    "trials/final_p1r0/final_policy_audit.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p1r0\\final_policy_audit.json",
+      "sha256": "dd0f6bd36f26f60ccf7b50557194c49f2c84d5573c45e724728f44288b93bdbb"
+    },
+    "trials/final_p1r0/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p1r0\\contract.json",
+      "sha256": "5ce2f9a190ddc8cbd2489ff17d1815709089fd76cc33a71255ed4f5eff387fdf"
+    },
+    "trials/final_p1r0/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p1r0\\run_state.json",
+      "sha256": "206a7f391f18e4b7467e82aceb2d94a3952d0ab9687f7b68faa5de90ccae58a0"
+    },
+    "trials/final_p1r0/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p1r0\\console.log",
+      "sha256": "5b468583125bcbe7b9f9d4fc23806ad7576fa13a1a8366c67fabfeb2a6512ee6"
+    },
+    "trials/final_p1r0/acg720_ano_port.rpt.txt": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p1r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "sha256": "74540bc9cc8d2183c9f9b8350f7e1aad7c29ae171d1e23581faa4fb3c040ef03"
+    },
+    "trials/final_p3r0/result.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p3r0\\result.json",
+      "sha256": "3b1bdffc63498a716db204f285b418d68a37d11721df0abec5d4d9599416a93d"
+    },
+    "trials/final_p3r0/final_policy_audit.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p3r0\\final_policy_audit.json",
+      "sha256": "6b84ed61710fe3a456c26ba2dcc6189a9b931cf6163d770ada56ebf8ac27d542"
+    },
+    "trials/final_p3r0/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p3r0\\contract.json",
+      "sha256": "430bf0e12d0bbb233b9e3fd8c8da733a83795db71e58df9c63e648d4a79699a4"
+    },
+    "trials/final_p3r0/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p3r0\\run_state.json",
+      "sha256": "d71f8a518958d4d1fd114fc7735cf62da861b97e7e24b9ab61c83dae0407a50c"
+    },
+    "trials/final_p3r0/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p3r0\\console.log",
+      "sha256": "8bbc5a11414fff6186e5295b1ad28c065c66d0ef3147cc1a686f9d06cf036b17"
+    },
+    "trials/final_p3r0/acg720_ano_port.rpt.txt": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p3r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "sha256": "a943e0e5bb5b54976dadaa8a386e9fee7ea46d62b50dbcff346ebed088a30275"
+    },
+    "trials/final_p4r0/result.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\result.json",
+      "sha256": "f4c798609ce5ab16b92a41d2044282c9f83999f16d955fd7bf449cee3a40e5b2"
+    },
+    "trials/final_p4r0/final_policy_audit.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\final_policy_audit.json",
+      "sha256": "f4efe237ded8353fd613212241a983d0aa8b606d265377822267fd3c07810fd2"
+    },
+    "trials/final_p4r0/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\contract.json",
+      "sha256": "d007dfb90e98072b1d012f799ee51a078365dcc141bb6e66c8c9c02e60016bb5"
+    },
+    "trials/final_p4r0/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\run_state.json",
+      "sha256": "5daceb232f234ca4e739628d2ded312bce420fd560f2a17d76db1bfbd120080e"
+    },
+    "trials/final_p4r0/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\console.log",
+      "sha256": "b616c2b0a4643f6c2af105d674514ec99b826f4d60cfe7550e12852eaa965e2b"
+    },
+    "trials/final_p4r0/timing_diagnosis.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\timing_diagnosis.json",
+      "sha256": "64163f17cd44b13a9ac9c2c00f211397b316fbfd3caa4e1894cc4a5fef0f69a3"
+    },
+    "trials/final_p4r0/acg720_ano_port.tr": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.tr",
+      "sha256": "198c6974bc25a010d821b50c07ee956fa8f976fd67accdb87373e6925624a2b7"
+    },
+    "trials/final_p4r0/acg720_ano_port.rpt.txt": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "sha256": "4038cc9c5170ed3eb66bdb614b73831b406b81f5f3d26468c9c7329ab68bba5f"
+    },
+    "trials/final_logic_globals_p2r0/result.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_logic_globals_p2r0\\result.json",
+      "sha256": "c52ae676e889119b0c9beb750fb701bf9252cd9f10bfca116a9b806e89ac53cd"
+    },
+    "trials/final_logic_globals_p2r0/final_policy_audit.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_logic_globals_p2r0\\final_policy_audit.json",
+      "sha256": "ce1c30d8beb74bfd16177788ea1741857081cf76b813027fe39c2e21d72e465d"
+    },
+    "trials/final_logic_globals_p2r0/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_logic_globals_p2r0\\contract.json",
+      "sha256": "3fc9f25d367a9a0f1c9e0654933632fbe2c27fb96990322c7b263157bc7a22b3"
+    },
+    "trials/final_logic_globals_p2r0/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_logic_globals_p2r0\\run_state.json",
+      "sha256": "7a92b79d22219bb0c13dc53d989b5ed88d67a9fc913a46cf9431ca7036e9b5fb"
+    },
+    "trials/final_logic_globals_p2r0/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_logic_globals_p2r0\\console.log",
+      "sha256": "b8fa2d756d0f9bc4a94263e55f958578d7ba1a203d1fa745c7e0f308be447259"
+    },
+    "trials/final_logic_globals_p2r0/acg720_ano_port.rpt.txt": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_logic_globals_p2r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "sha256": "ed9c11a227f3df4507f5e3813ad9354dc425c1a9acc491a5a4fb5bb13006a6b1"
+    },
+    "trials/final_live_globals_p4r0/result.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_live_globals_p4r0\\result.json",
+      "sha256": "c2a36eeff0c4713efb71f62bafc943174fa95831819bc4bdb03afaa0084ab7f4"
+    },
+    "trials/final_live_globals_p4r0/final_policy_audit.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_live_globals_p4r0\\final_policy_audit.json",
+      "sha256": "8588a6c0200478fd0a0c6d51924fa2d69d1c33b8dc4bc1de978eaf1a535e9913"
+    },
+    "trials/final_live_globals_p4r0/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_live_globals_p4r0\\contract.json",
+      "sha256": "46af2f7b928bc08310bb46cf8538a10d96008f8f78f2494314af051359f84766"
+    },
+    "trials/final_live_globals_p4r0/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_live_globals_p4r0\\run_state.json",
+      "sha256": "c107614aeed1f21928ea0a8ab2543ce4e2adcc8452e037e14c9b2d0eaf135e98"
+    },
+    "trials/final_live_globals_p4r0/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_live_globals_p4r0\\console.log",
+      "sha256": "fb655f5b5bce35f770b184e88ab58f969eb374726333c0b1fed6ffe1798014b7"
+    },
+    "trials/final_live_globals_p4r0/acg720_ano_port.rpt.txt": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "sha256": "36ad15bb479b07950d28930296537a9ba1c90293a209bb816edad3a0913baca7"
+    },
+    "trials/final_replicated_p4r0/result.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_replicated_p4r0\\result.json",
+      "sha256": "c255602ed72dd20fd1abb869ef71a81514db865bc8208f72dd2b3c70d73ac566"
+    },
+    "trials/final_replicated_p4r0/final_policy_audit.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_replicated_p4r0\\final_policy_audit.json",
+      "sha256": "aeaa772a2719fbecafeba044e7a55f55a79bb029244dc1776329bf5086432b34"
+    },
+    "trials/final_replicated_p4r0/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_replicated_p4r0\\contract.json",
+      "sha256": "6670666107de6707d3bec36c322d6cfee2452af12f1f3174d9ff6d315b5937db"
+    },
+    "trials/final_replicated_p4r0/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_replicated_p4r0\\run_state.json",
+      "sha256": "5041b7a7959e9dc48e0cf49c0775a3e8a6c95581cda0e9a96b3698b272915bd4"
+    },
+    "trials/final_replicated_p4r0/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_replicated_p4r0\\console.log",
+      "sha256": "783a59e6c05dd09d1a4812791d3de3ceaa6d84ab124b4e9dad55c842609151fb"
+    },
+    "trials/final_replicated_p4r0/timing_diagnosis.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_replicated_p4r0\\timing_diagnosis.json",
+      "sha256": "5e592f253f0a1f2c9bfc9bb4d3ea82b0795e884ecaedc81189965ecdeaaaed22"
+    },
+    "trials/final_replicated_p4r0/acg720_ano_port.tr": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_replicated_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.tr",
+      "sha256": "bb957fd986106ecf54c3d6a725004bdf5e430a9415526010b633ec9424ea487f"
+    },
+    "trials/final_replicated_p4r0/acg720_ano_port.rpt.txt": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_replicated_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "sha256": "45aaf4a5780b49c54e012ca0d6e2c7e38aaceb25e2465c02513e464285863a17"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_p4r0/result.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_p4r0\\result.json",
+      "sha256": "e3519ea3823bfa0a0435c55076c5fa0989b69415d6cc3ee67c45181c9fc4b684"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_p4r0/final_policy_audit.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_p4r0\\final_policy_audit.json",
+      "sha256": "1dff82529ec8dcb95bdd52bd9683cf6dc4c4bdafc5124c92b55d49186efb5081"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_p4r0/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_p4r0\\contract.json",
+      "sha256": "9ce037a96a6204912fda7f3b8e989cc4582239fc0569dec2a7fb6882d87b3862"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_p4r0/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_p4r0\\run_state.json",
+      "sha256": "cefe111a86effba4cb5a5474531daa4a07a867555fabdf256e414e22665388e2"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_p4r0/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_p4r0\\console.log",
+      "sha256": "46f142a14de1f4db298697a0e33ab27d0ff3bbc2e561b7f1279c2be62f42cb4f"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_p4r0/timing_diagnosis.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_p4r0\\timing_diagnosis.json",
+      "sha256": "10bdbba63c994977a328f2c21c4121d37ab2317180c7faa87a825472c48977aa"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_p4r0/acg720_ano_port.tr": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.tr",
+      "sha256": "af64f5f40e2336d2a6327ebb86c4f9891d7bb528635e9b60fda7f7679d7ae0c6"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_p4r0/acg720_ano_port.rpt.txt": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "sha256": "ad80c6e11bbb6f7253d6519a8232d130b4004b2e2b0732b5abf333fab1e4969b"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_live_globals_p4r0/result.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\result.json",
+      "sha256": "3bf584ea11f649cecbeba414f9513fb6874b362ea36b8db1389c1b45ef1f2ae5"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_live_globals_p4r0/final_policy_audit.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\final_policy_audit.json",
+      "sha256": "70c513dbfbf0be7847fa7c1ac16cdd4dc32b7a795ece7d274490857b5e69110f"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_live_globals_p4r0/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\contract.json",
+      "sha256": "f2a909b27c12ed7fae54f8a48ada57dd26f87508a0f28e073d4ad30a42f5bd0e"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_live_globals_p4r0/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\run_state.json",
+      "sha256": "beb4ad3c8f280b5689c28c4888a5f1d01107c6c0736b1b1a0822ef443f547c08"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_live_globals_p4r0/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\console.log",
+      "sha256": "18f8535ff2c4f274b95bc4e36530c53526a0941804b6e042b899fd4c0bd84760"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_live_globals_p4r0/timing_diagnosis.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\timing_diagnosis.json",
+      "sha256": "fb1db75375bbca1b578291760b7f993521d5305b2cd601a3361d8272efbac2e4"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_live_globals_p4r0/acg720_ano_port.tr": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.tr",
+      "sha256": "ebf5265aa4469f8ee2cc018ab656ae78744470e08a8b7e86c6b28b8afe9ae030"
+    },
+    "trials/pwm_timing_candidate_v2/pwm_live_globals_p4r0/acg720_ano_port.rpt.txt": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\pwm_timing_candidate_v2\\pwm_live_globals_p4r0\\fixture\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "sha256": "9589852b16526dcc7fd38ed87cce0bda13dd7c640664982f9676dd002e1d4d38"
+    },
+    "best/fixture/acg720_ano_port.gprj": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\fixture\\acg720_ano_port.gprj",
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081"
+    },
+    "best/fixture/acg720_ano_port.cst": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\fixture\\acg720_ano_port.cst",
+      "sha256": "53a2e688189b85b6a54a236e6d69f66f29dd3ba16ed320fd9dc5d68a1dcd2f38"
+    },
+    "best/fixture/acg720_ano_port.sdc": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\fixture\\acg720_ano_port.sdc",
+      "sha256": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e"
+    },
+    "best/fixture/build.tcl": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\fixture\\build.tcl",
+      "sha256": "2bff4c46be09f6d8ff8ea4498ddc5700b59845d827ac5e4b07b49396d615cea0"
+    },
+    "best/fixture/impl/gwsynthesis/acg720_ano_port.vg": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\final_p4r0\\fixture\\impl\\gwsynthesis\\acg720_ano_port.vg",
+      "sha256": "5bf484f5e473e49e7ebca62582043132d8fcb7a1aca68eb56981db51e2d7cbdd"
+    },
+    "synthesis/contract.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\synthesis_final\\contract.json",
+      "sha256": "9f4f2ee4571acddc2b28ded700ecbf1f6ec4b2a18db100aba64ac3b33e3e59c9"
+    },
+    "synthesis/run_state.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\synthesis_final\\run_state.json",
+      "sha256": "7ce6f9fb9f42973b5996562a1692cf1d5ee3bbd822d6295f19b99359573a4a4c"
+    },
+    "synthesis/console.log": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\synthesis_final\\console.log",
+      "sha256": "835ce8c889056edfa8c4e38c2dce40111c6caeb02020f173d2e35f8fe39ef649"
+    },
+    "synthesis/resource.xml": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\synthesis_final\\fixture\\impl\\gwsynthesis\\acg720_ano_port_syn_rsc.xml",
+      "sha256": "404633a74f49d3a60caa6550b6527d76dee5a031bdeb50222c6650ced45584b7"
+    },
+    "parser_and_test_snapshot/support/server.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\support\\server.py",
+      "sha256": "664f4b277f39a45949262b08f853b23234807138d310e702dbd832e763cf2c0b"
+    },
+    "parser_and_test_snapshot/support/monitor_control.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\support\\monitor_control.py",
+      "sha256": "bd4127ca9469dbb29804454a278a6d16bf4df003d587f1152d1d7363de7f1d82"
+    },
+    "parser_and_test_snapshot/firmware/B0B2/ground/protocol.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\ground\\protocol.py",
+      "sha256": "d78588b39507e1cf62b0d3816fd9bd2b38280cb39667d3b07257df812be40b51"
+    },
+    "parser_and_test_snapshot/firmware/B0B2/ground/policy_protocol.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\ground\\policy_protocol.py",
+      "sha256": "27d9e63e12f67d85f54379b38811ad333903768f59e9a0a8591a6c346b18df27"
+    },
+    "parser_and_test_snapshot/firmware/B0B2/tools/build.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\tools\\build.py",
+      "sha256": "eb5778f695f0161d779786fea397c705526ddae907483502086ab64f4e10cd86"
+    },
+    "parser_and_test_snapshot/firmware/B0B2/tools/analyze_bench.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\tools\\analyze_bench.py",
+      "sha256": "e9adb46834982cf377fd2fdf79dbb60bbe215c58eeb124c3d74eb815e7b2a77f"
+    },
+    "parser_and_test_snapshot/firmware/B0B2/tools/prepare_sik_receiver.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\tools\\prepare_sik_receiver.py",
+      "sha256": "9e1a650da31a3dfb12a0f97e0c6274f745ec93b7eace94f41b6d482ff61b67ef"
+    },
+    "parser_and_test_snapshot/firmware/B0B2/tests/run_policy_v3.py": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\tests\\run_policy_v3.py",
+      "sha256": "b0f998e3ffe05f4cf4873d2cce077a94e64e5339b5b251223355dbb74290527a"
+    },
+    "receipts/portable_rtl_verification.json": {
+      "original": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\policy_v3_checks_final_20261025\\verification.json",
+      "sha256": "3ea1bb0697125bb0a377df05e197a9c9a5eb5ff4306c8bf4b4c6f010fccb0ad9"
+    },
+    "README.md": {
+      "original": "Generated archival metadata",
+      "sha256": "2fcba4070e66250a86f490f132a1b1710666c7a34bb8f25c22148c9f61ea61d3"
+    },
+    "DO_NOT_PROGRAM": {
+      "original": "Generated archival metadata",
+      "sha256": "0c85cbbefae129859688276ba3b6064896c1dcfd23f5539a93821bc402351941"
+    },
+    "verify_archive.py": {
+      "original": "Generated archival metadata",
+      "sha256": "e7d2882bd0cf27021f93ecfa816d57e4f9b0bd7681b82501d728cf2bb6cae1ab"
+    }
+  }
+}

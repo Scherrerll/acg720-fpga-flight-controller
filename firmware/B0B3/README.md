@@ -1,0 +1,27 @@
+# B0B3：XY P/I runtime parameters — offline qualified, NOT installed
+
+This is a lightweight export of the selected `idle_gain_integral_ce` (B7) result, not the full original delivery tree. No hardware, SRAM/Flash programming or flight verification was performed for this image. Python verifier command: `python -B verify_export.py`. It checks this export layout using only the standard library; it does not invoke the original full-delivery verifier or claim its2,347-file archive is present.
+
+## Selected result
+
+GW5AT-LV60PG484AC1/I0, UserCodeB0B3. Physical options are **place3 / route0 / map2 / replicate0**, exactly matching the archived physical driver/project. The unchanged source `build.tcl` defaults to place2/route0; this default is not the selected physical profile. The selected exact VG, full-route PR, raw TR/pin/report/log/process receipts and three FS files are supplied. VG/PR are deterministic gzip streams (mtime0, no embedded filename); their original sizes/hashes are recorded in export_manifest.json. Decompress only into a separate scratch copy when a tool needs the raw files.
+
+Actual clock20.000ns, Fmax50.257MHz, zero setup/hold violated endpoints. Raw worst slacks (ns): setup+0.102, hold+0.145, recovery+11.895, removal+3.312, minimum pulse+7.387. Full route and bitstream completed with actual process exit0. The verifier independently parses all five raw summary tables and18pin assignments, checks clocks/constraints and binds source55, selected VG/PR/FS/TR to qualification and original timing receipts. This verifies supplied offline evidence, not a fresh STA run or external IO/aircraft dynamics.
+
+## Scope and changes
+
+Relative to the frozen P005/I0 source:45files byte-identical,9existing files changed,1new bank module. Only the XY optical-flow velocity P/I become live shared parameters; default P=.05/I=0. Public units remain deg/(cm/s) and deg/(cm/s·s), range0..1 in .0001 steps. The runtime I path preserves original error/dt/clamp/reset/retention semantics. P+I+FF uses signed36 Q16 before the existing angle clamp, fixing legal high-P overflow. A real stopped-output/pre-arm-intent gate, cancelled-idle atomic commit and coherent per-callback pair prevent arm/commit and half-pair races.
+
+New B16 RX is115200 8N1 with synchronization, fixed framing/CRC/timeouts, GET/SET, replay/range/status checks. Existing single-UART telemetry stays intact; bank holds a response until the final byte completes. Compact response storage and state0 work/saved-I sampling change internal structure while public outputs remain cycle-equivalent; private idle snapshots can differ. B7's real450-bit comparison spans1,002,843cycles, including2nonzero partial-I rollbacks. Focused numerical, protocol121/extended126, safety13, complete692-byte wire and four-client contention evidence are included. Shared math adds latency: measured contention XY maximum355.84us at50MHz, with accelerated arrivals and original dt; this is not flight dynamics evidence.
+
+Parameters are **volatile for this power cycle only**. One request in flight; extra requests while held are ignored, and SET is not automatically retried. Valid CH5-high pre-arm intent rejects writes; successful SET ACK is followed by independent GET. See PROTOCOL.md. CLI requires pyserial and a separately authorized stopped maintenance window with one serial owner; COM numbers and physical wiring must be rechecked. No interface use is authorized by this export itself.
+
+`release/B0B3_selected_P3R0.fs` is the qualified new image; `current_P005_I0.fs` and `original_V15.fs` are the preserved fallbacks. No automatic installer/programmer is supplied. Keep the selected image uninstalled until the user's specific hardware action is authorized. No new flight acceptance is implied: height-loss first cause and rotation/surface/loop dynamics remain open, as explained in analysis/FINDINGS.md.
+
+## Evidence and omission boundaries
+
+Every copied byte has an original runtime-relative path, SHA256 and size in export_manifest.json; gzip records additionally bind decompressed identity. Generated export files are separately labelled. `provenance/full_delivery/` contains only the original full manifest and sidecar for provenance, not all its files. Its historical scripts/manifests retain original paths, statuses and omitted VVP references; they are evidence, not a promise that the original full finalizer can run here. The final selected source/qualification/promotion/B7 raw review take precedence over earlier unselected/checkpoint wording. Original focused drivers/TBs/references are preserved without edits; rerunning them requires path/tool adaptation in a fresh scratch tree (Icarus/Gowin libraries are external dependencies), not writes into this frozen export.
+
+Unselected reset, map1, serial-CRC, body-only and bounded-counter experiments and huge failed implementation copies are omitted; the small map1 promotion receipt is retained only as B7's working-restoration history. No .db/.p, vendor manuals/reference libraries, third-party P2 reference code, raw flight JSONL/video or full delivery ZIP is redistributed. Derived flight CSV/JSON and reports are included. Analysis scripts still require the original external handoff/H/P2/raw-log inputs listed in analysis/DEPENDENCIES.md; they are not standalone data collectors or reproducible without those separately held inputs.
+
+The original runtime delivery manifest and ZIP remain untouched. Git staging/commit/publication, repository-wide progress documentation and hardware operations are outside this exporter.

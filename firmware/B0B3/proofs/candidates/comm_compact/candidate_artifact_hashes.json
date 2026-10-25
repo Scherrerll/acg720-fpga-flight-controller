@@ -1,0 +1,22 @@
+{
+  "status": "fallback_not_selected_not_promoted",
+  "canonical_unchanged": true,
+  "source_files": 55,
+  "files": {
+    "change.json": "cbb9217a16bd141484e1c92975ce82d994f4ebe9d7986b16b5d8908a5e75229a",
+    "candidate.diff": "44ce5569e625de76ab93bfd80328b7316b4fc5a611ff36ac6e8c15ecf8b059ef",
+    "CANDIDATE_REPORT.md": "e05cf2ed57222e89978f228a513ece7ed6fa7f468402c40ebf27017ce60724ea",
+    "run_checks.py": "9bb26228fc0cb59f7ba85a42b5c5572cc53991d81ae33e5867ed634455704b8f",
+    "verify_link.py": "8a92126e1f4eed5fff30305e75a9ebf15a4faa06e55b5391edfa6617ae612e19",
+    "verify_contract.py": "7c31e8be90912baee0b1c7e569cfe49337addfd74a732236abcc41fc33bdba2c",
+    "run_synthesis.py": "6d11e42bb36c0d42e51010aa7a9d6b93fad6acd495a278c2aee67516d0778ad2",
+    "verification/link_results.json": "628a430fdc9c188ad364f7454f52f9f95ba2c3cfed51da3f0a3e1f100f623ec7",
+    "verification/contract_results.json": "5dbf6e7370c2c12440a532ede6e70bdd8c18b794030bb812cde8cb88be024e14",
+    "verification/synthesis_input.json": "7d8c1cfba9531ebe94895ddc0fc55b831cf632e66b44ef26f5dd97f4168954f1",
+    "verification/synthesis_exit.json": "735df45510846f22c8f7477a0776d541b2590345fafd42396a5300599fb2ded1",
+    "verification/synthesis_comparison.json": "b130194611e8a971dcf67cd2754da3145d3ce8466f9888341449aef0cc2f4c2d",
+    "verification/synthesis.log": "8a8874dba4867f1b1669f4e48b10aa59808bedd4bdae8371ab1a2f113fa32b69",
+    "source/impl/gwsynthesis/acg720_ano_port.vg": "9b2cee37e4f0ed0e68c9abb2895228c455a12f50cc5e9ba2d741a36350f404dc",
+    "source/impl/gwsynthesis/acg720_ano_port_syn_rsc.xml": "a3746005312be52bd84546d7c0e2d304f52a64ca692a670d4379581dff1b1e66"
+  }
+}

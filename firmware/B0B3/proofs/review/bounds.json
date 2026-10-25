@@ -1,0 +1,18 @@
+{
+  "scope": "read-only integer recurrence of source position_sincos for every legal cdeg yaw; not a standalone RTL simulation",
+  "yaw_cases": 36001,
+  "max_abs_sin_plus_abs_cos_q16": 92692,
+  "max_at_yaw_cdeg": 13497,
+  "max_individual_q16": 65541,
+  "rotation_l1_factor": 1.41436767578125,
+  "velocity_plus_stick_bound_mmps": 15643.6767578125,
+  "rotated_acceleration_bound_mmps2": 42431.0302734375,
+  "P_error_bound_mmps": 16916.607666015625,
+  "P_I_FF_bound_cdeg": 170466.07666015625,
+  "reviewed_source_sha256": {
+    "xy_pi_parameters.v": "bb11794b6a406a9c321e53a24d8751dc74006388063ef538bd5084f3d298886f",
+    "position\\mtf_xyz_hold_control.v": "d79d31b434045b2da0711dd54d801646959b4c17d51b1d3fa8cd10eb284f872e",
+    "core\\flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+    "telemetry_tx.v": "7d7f791c46b9f3898955cab4b31c5ef8a14a96def6a80194a5f3ae5a15504a05"
+  }
+}

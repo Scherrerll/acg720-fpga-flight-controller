@@ -1,0 +1,78 @@
+{
+  "schema": "b0b2.reference-policy.v1",
+  "sources": [
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_general\\Ano_Sensor_Basic.c",
+      "sha256": "4c48a55c1af3fe5a120fb718282a4f86d0070dfcdc02acf6b20573308b9816d3",
+      "lines": [
+        320,
+        332
+      ],
+      "excerpt": [
+        "\t/*软件低通滤波*/",
+        "\tfor(u8 i=0;i<3;i++)",
+        "\t{\t",
+        "\t\t//",
+        "\t\tgyr_f[4][X +i] = (sensor_val_ref[G_X + i] );",
+        "\t\tacc_f[4][X +i] = (sensor_val_ref[A_X + i] );",
+        "\t\t//",
+        "\t\tfor(u8 j=4;j>0;j--)",
+        "\t\t{",
+        "\t\t\t//",
+        "\t\t\tgyr_f[j-1][X +i] += GYR_ACC_FILTER *(gyr_f[j][X +i] - gyr_f[j-1][X +i]);",
+        "\t\t\tacc_f[j-1][X +i] += GYR_ACC_FILTER *(acc_f[j][X +i] - acc_f[j-1][X +i]);",
+        "\t\t}"
+      ]
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_general\\Ano_Imu.c",
+      "sha256": "e11e30c3272516a0fe1298c848c8cf0ae6ab76d7fea8a6f4b4b33106a8bab34d",
+      "lines": [
+        249,
+        287
+      ],
+      "excerpt": [
+        "#ifdef USE_LENGTH_LIM\t\t\t",
+        "\t\t\tif(acc_norm_l>1060 || acc_norm_l<900)",
+        "\t\t\t{",
+        "\t\t\t\tvec_err[X] = vec_err[Y] = vec_err[Z] = 0;",
+        "\t\t\t}",
+        "#endif",
+        "\t\t//璇樊绉垎",
+        "\t\tvec_err_i[i] +=  LIMIT(vec_err[i],-0.1f,0.1f) *dT *ki_use;",
+        "",
+        "\t\t",
+        "\t// 鏋勯�犲閲忔棆杞紙鍚瀺鍚堢籂姝ｏ級銆�\t",
+        "\t//    d_angle[X] = (gyr[X] + (vec_err[X]  + vec_err_i[X]) * kp_use - mag_yaw_err *imu->z_vec[X] *kmp_use *RAD_PER_DEG) * dT / 2 ;",
+        "\t//    d_angle[Y] = (gyr[Y] + (vec_err[Y]  + vec_err_i[Y]) * kp_use - mag_yaw_err *imu->z_vec[Y] *kmp_use *RAD_PER_DEG) * dT / 2 ;",
+        "\t//    d_angle[Z] = (gyr[Z] + (vec_err[Z]  + vec_err_i[Z]) * kp_use - mag_yaw_err *imu->z_vec[Z] *kmp_use *RAD_PER_DEG) * dT / 2 ;",
+        "\t\t\t",
+        "\t\t\t",
+        "#ifdef USE_MAG",
+        "\t\t\td_angle[i] = (gyr[i] + (vec_err[i]  + vec_err_i[i]) * kp_use + mag_yaw_err *imu->z_vec[i] *mkp_use) * dT / 2 ;",
+        "#else",
+        "\t\t\td_angle[i] = (gyr[i] + (vec_err[i]  + vec_err_i[i]) * kp_use ) * dT / 2 ;",
+        "#endif",
+        "\t\t}",
+        "    // 璁＄畻濮挎�併��",
+        "",
+        "    imu->w = imu->w            - imu->x*d_angle[X] - imu->y*d_angle[Y] - imu->z*d_angle[Z];",
+        "    imu->x = imu->w*d_angle[X] + imu->x            + imu->y*d_angle[Z] - imu->z*d_angle[Y];",
+        "    imu->y = imu->w*d_angle[Y] - imu->x*d_angle[Z] + imu->y            + imu->z*d_angle[X];",
+        "    imu->z = imu->w*d_angle[Z] + imu->x*d_angle[Y] - imu->y*d_angle[X] + imu->z;",
+        "\t\t",
+        "\t\tq_norm_l = my_sqrt_reciprocal(imu->w*imu->w + imu->x*imu->x + imu->y*imu->y + imu->z*imu->z);",
+        "    imu->w *= q_norm_l;",
+        "    imu->x *= q_norm_l;",
+        "    imu->y *= q_norm_l;",
+        "    imu->z *= q_norm_l;",
+        "\t\t",
+        "",
+        "  ",
+        "  /////////////////////淇寮�鍏�///////////////////////////",
+        "#ifdef USE_MAG"
+      ]
+    }
+  ],
+  "hardware_accessed": false
+}

@@ -1,0 +1,2 @@
+PASS frozen V15 metric contract: 19 cases; manufacturer rate units, signs, distance scaling, dt independence, invalid inputs, duplicate/restart continuity
+C:\Users\ScherrerL\Desktop\apple\timing_closure_20261025\v15_stick_oscillation_20261025\metric_contract_tb.v:65: $finish called at 811000 (1ps)

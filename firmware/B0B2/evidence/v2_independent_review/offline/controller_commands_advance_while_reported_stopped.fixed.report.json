@@ -1,0 +1,653 @@
+{
+  "status": "inconclusive",
+  "bench_data_acceptable": false,
+  "flight_ready": false,
+  "installation_authorized": false,
+  "scope": "Screening of complete decoded B0B2 v1/v2 snapshot groups only; no transport-integrity or flight acceptance",
+  "coverage": {
+    "candidate_snapshots": 301,
+    "complete_unique_snapshots": 301,
+    "diagnostic_version_counts": {
+      "2": 301
+    },
+    "original_v1_snapshots_with_capabilities_inferred": 0,
+    "protocol_counts": {
+      "a579": 301,
+      "a57a": 301,
+      "a580": 301,
+      "a585": 301
+    },
+    "duplicate_snapshots": 0,
+    "missing_protocol_records": {},
+    "duplicate_protocol_records": {},
+    "primary_sequence_gaps_lower_bound": 0,
+    "duplicate_primary_sequences": 0,
+    "missing_complete_snapshot_sequences_lower_bound": 0,
+    "sequence_wraps": 0,
+    "observed_host_span_s": 60.0,
+    "onboard_spans_s": [
+      60.0
+    ],
+    "maximum_onboard_report_interval_ms": 200
+  },
+  "source_epochs": {
+    "receiver:0/source:0/build:b0b2": {
+      "samples": 301,
+      "first_uptime_ms": 1000,
+      "last_uptime_ms": 61000,
+      "counters": {
+        "a579.accepted_count": {
+          "first": 1000,
+          "last": 61000,
+          "known_delta": 60000,
+          "wraps": 0,
+          "unknown_intervals": 0
+        },
+        "a579.rejected_count": {
+          "first": 2,
+          "last": 2,
+          "known_delta": 0,
+          "wraps": 0,
+          "unknown_intervals": 0
+        },
+        "a579.command_count": {
+          "first": 0,
+          "last": 300,
+          "known_delta": 300,
+          "wraps": 0,
+          "unknown_intervals": 0
+        },
+        "a579.controller_fault_count": {
+          "first": 0,
+          "last": 0,
+          "known_delta": 0,
+          "wraps": 0,
+          "unknown_intervals": 0
+        },
+        "a585.raw_count": {
+          "first": 1100,
+          "last": 61100,
+          "known_delta": 60000,
+          "wraps": 0,
+          "unknown_intervals": 0
+        },
+        "a585.accepted_count": {
+          "first": 1000,
+          "last": 61000,
+          "known_delta": 60000,
+          "wraps": 0,
+          "unknown_intervals": 0
+        },
+        "a585.pose_count": {
+          "first": 950,
+          "last": 60950,
+          "known_delta": 60000,
+          "wraps": 0,
+          "unknown_intervals": 0
+        },
+        "a585.consumed_accepted_id": {
+          "first": 999,
+          "last": 60999,
+          "known_delta": 60000,
+          "wraps": 0,
+          "unknown_intervals": 0
+        }
+      },
+      "first_max_pose_gap_ticks": 50001,
+      "maximum_pose_gap_ticks": 50001,
+      "accepted_minus_consumed_id": {
+        "min": 1,
+        "max": 1
+      },
+      "primary_minus_diagnostic_accepted": {
+        "min": 0,
+        "max": 0
+      },
+      "pose_to_accepted_known_delta_ratio": 1.0,
+      "publication_acceptance_balance": {
+        "accepted_delta": 60000,
+        "pose_delta": 60000,
+        "endpoint_sample_allowance": 2,
+        "relative_limit": 0.01,
+        "absolute_difference": 0,
+        "relative_difference_after_allowance": 0.0,
+        "assessed": true
+      },
+      "raw_accept_reject_balance": {
+        "raw_delta": 60000,
+        "accepted_delta": 60000,
+        "rejected_delta": 0,
+        "endpoint_sample_allowance": 2,
+        "raw_minus_decisions": 0,
+        "accepted_excess_over_raw_after_allowance": 0,
+        "unaccounted_raw_after_allowance": 0,
+        "assessed": true
+      }
+    }
+  },
+  "maximum_live_age_ticks": {
+    "primary_pose": 5000,
+    "acceleration_pose": 5000,
+    "accepted_raw": 5000
+  },
+  "maximum_live_age_ms": {
+    "primary_pose": 0.1,
+    "acceleration_pose": 0.1,
+    "accepted_raw": 0.1
+  },
+  "valid_age_sample_counts": {
+    "primary_pose": 301,
+    "acceleration_pose": 301,
+    "accepted_raw": 301
+  },
+  "flags": {
+    "primary": {
+      "15": 301
+    },
+    "acceleration": {
+      "3": 301
+    },
+    "pose": {
+      "31": 301
+    },
+    "retained_rejected_raw": {
+      "0": 301
+    }
+  },
+  "maximum_held_dt_ticks": 50000,
+  "reported_idle_state": {
+    "checked_snapshots": 301,
+    "rc_channels": {
+      "ch3": {
+        "min": 1000,
+        "max": 1000
+      },
+      "ch5": {
+        "min": 1000,
+        "max": 1000
+      },
+      "ch7": {
+        "min": 1000,
+        "max": 1000
+      }
+    },
+    "scheduled_pwm_us": {
+      "m1_us": {
+        "min": 1000,
+        "max": 1000
+      },
+      "m2_us": {
+        "min": 1000,
+        "max": 1000
+      },
+      "m3_us": {
+        "min": 1000,
+        "max": 1000
+      },
+      "m4_us": {
+        "min": 1000,
+        "max": 1000
+      },
+      "physical_m1_us": {
+        "min": 1000,
+        "max": 1000
+      },
+      "physical_m2_us": {
+        "min": 1000,
+        "max": 1000
+      },
+      "physical_m3_us": {
+        "min": 1000,
+        "max": 1000
+      },
+      "physical_m4_us": {
+        "min": 1000,
+        "max": 1000
+      }
+    }
+  },
+  "retained_first_causes": [
+    {
+      "boot": "receiver:0/source:0/build:b0b2",
+      "first_diagnostic": {
+        "first_diagnostic_tick": 0,
+        "first_diagnostic_trigger": 0,
+        "first_diagnostic_cause": 0,
+        "first_diagnostic_attitude_fault": 0
+      },
+      "first_protection": {
+        "first_protection_time_ms_low32": null,
+        "first_protection_code": 0,
+        "first_protection_sensor_mask": 0,
+        "first_protection_imu_reason": 0,
+        "first_protection_attitude_fault": 0,
+        "first_protection_pose_age_ticks": 0
+      },
+      "diagnostic_version": 2,
+      "unavailable_fields": [
+        "latest_rejected_source_id",
+        "first_protection_time_ms_low32"
+      ],
+      "capabilities_source": "decoded metadata",
+      "last_controller_fault": 0,
+      "controller_fault_count": 0,
+      "last_rejected_tuple": {
+        "latest_rejected_source_id": null,
+        "latest_reader_fault": 64,
+        "latest_temporal_detail": 0,
+        "latest_rejected_raw_flags": 0
+      },
+      "sticky_yaw_fault": 0,
+      "event_sequence": 4,
+      "event_code": 34,
+      "event_pose_age_ticks": 4294967295,
+      "event_age_scope": "retained gate event, NEVER live pose age"
+    }
+  ],
+  "newly_observed_first_cause_changes": [],
+  "issues": {
+    "fail": {},
+    "inconclusive": {
+      "new_control_transactions_while_reported_stopped": 300
+    }
+  },
+  "examples": [
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 11,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 12,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 13,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 14,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 15,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 16,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 17,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 18,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 19,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 20,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 21,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 22,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 23,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 24,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 25,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 26,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 27,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 28,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 29,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 30,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 31,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 32,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 33,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 34,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 35,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 36,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 37,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 38,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 39,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 40,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 41,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 42,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 43,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 44,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 45,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 46,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 47,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 48,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 49,
+        "command_delta": 1
+      }
+    },
+    {
+      "severity": "inconclusive",
+      "reason": "new_control_transactions_while_reported_stopped",
+      "detail": {
+        "sequence": 50,
+        "command_delta": 1
+      }
+    }
+  ],
+  "schema": "b0b2.offline-bench-data-evaluation.v1",
+  "input": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\B0B2\\independent_offline_review_20261024T220919_233063Z\\controller_commands_advance_while_reported_stopped.jsonl",
+    "sha256": "6218c7125a467cd73239ddee1b60ea067011068be30a2ed0efb892273f51dd05",
+    "bytes_hashed": 903431,
+    "initial_stat_bytes": 903431,
+    "final_stat_bytes": 903431,
+    "lines": 1204,
+    "malformed_records": 0,
+    "orphan_protocol_records": 0,
+    "observed_A580_identity_or_uptime_rollbacks": 0
+  },
+  "tool": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\tools\\analyze_bench.py",
+    "sha256": "cfa80c90bee2f66c390df8845dfd6a3dc7494d4d9e204f3fd371045993374401"
+  },
+  "selection": {
+    "start_utc": "2026-10-25T00:00:00+00:00",
+    "end_utc": "2026-10-25T00:01:00+00:00",
+    "stable_after_s": 0,
+    "evaluation_start_utc": "2026-10-25T00:00:00+00:00"
+  },
+  "policy": {
+    "required_protocols": [
+      "a579",
+      "a57a",
+      "a580",
+      "a585"
+    ],
+    "identity": 45234,
+    "minimum_stable_seconds": 60,
+    "supported_diagnostic_versions": [
+      1,
+      2
+    ],
+    "v2_unavailable_fields": [
+      "latest_rejected_source_id",
+      "first_protection_time_ms_low32"
+    ],
+    "new_rejection_source": "A579 rejected_count; v1 additionally retains rejected source ID",
+    "publication_acceptance_relative_tolerance": 0.01,
+    "publication_acceptance_endpoint_sample_allowance": 2,
+    "raw_accept_reject_endpoint_sample_allowance": 2,
+    "stopped_control_transaction_increment_limit": 0,
+    "expected_snapshot_period_ms": 200,
+    "bench_live_age_limit_ms": 20,
+    "hardware_pose_age_protection_limit_ms": 60.0,
+    "held_dt_exclusive_bounds_ms": [
+      0,
+      20
+    ],
+    "global_pose_gap_limit_ms": 20,
+    "maximum_protocol_group_span_ms": 500,
+    "accepted_counter_alone_sufficient": false
+  },
+  "transport_integrity": {
+    "crc_error_count": null,
+    "length_error_count": null,
+    "discarded_noise_bytes": null,
+    "recorder_dropped_chunks": null,
+    "scope": "Unknown from decoded JSONL alone; bad/noise/nonrequired frames may produce no row"
+  },
+  "limitations": [
+    "Decoded JSONL integrity is hash-bound; this tool does not revalidate raw.bin CRCs.",
+    "A579/A57A carry no identity/uptime: only their contiguous same-sequence recorder group is joined to exact-matching A580/A585 uptime/build, within one receiver epoch.",
+    "A580 event_pose_age_ticks and A585 first-protection age are retained event fields, never current pose age.",
+    "A57A raw fields are latest accepted raw, not an independent native reader stream; A585 rejected-raw flags are retained rejection metadata.",
+    "A585 v2 has no latest rejected source ID or first-protection exact source time. Its mandatory capability metadata marks both null, not zero; new rejects are detected from A579 rejected_count and a protection change is bracketed only by surrounding snapshots.",
+    "The 5Hz snapshots do not reconstruct or interpolate 1kHz data. A585 maximum publication gap is global since boot and includes invalid publications.",
+    "Missing decoded protocol coverage and sequence gaps do not identify RF loss versus CRC failure, source omission or host drop; raw/chunk/recorder diagnostics are not assessed here.",
+    "The settling trim is explicitly selected by the operator; telemetry alone does not verify physical stillness or that propellers were removed.",
+    "New controller transactions conflict with the selected stopped interval. Raw records must account for accepts plus rejects over the stable total, allowing two endpoint pipeline samples; these are consistency checks, not assumed sample rates.",
+    "Idle command and physical/effective motor widths are reported schedules, not oscilloscope measurements or observed motor motion. CH3/CH5/CH7 are original A579 fields, including its extension.",
+    "An already excessive sticky global maximum or retained first cause at entry cannot certify this later interval; the result stays inconclusive unless a direct new anomaly makes it fail.",
+    "Bench observations do not prove vibration/load coverage, motor waveform, electrical health or flight readiness."
+  ],
+  "hardware_accessed": false
+}

@@ -40,7 +40,7 @@ def install(receiver_dir):
     def recorder_init(self, *args, **kwargs):
         original_recorder_init(self, *args, **kwargs)
         self.meta['reported_attitude_tracking'] = {
-            'version': 1, 'firmware': 'B0B0', 'fields': FIELDS,
+            'version': 1, 'firmware_builds': ['B0B0', 'B0B1', 'B0B2'], 'fields': FIELDS,
             'yaw_comparison': 'body rate deg/s, not heading angle',
             'software_sha256': {name: hashlib.sha256((Path(__file__).parent / name).read_bytes()).hexdigest()
                                 for name in ('receiver_setpoints.py', 'attitude_tracking.py')}}

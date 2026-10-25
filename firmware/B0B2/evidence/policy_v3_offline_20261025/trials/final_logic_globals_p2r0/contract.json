@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-10-25T02:17:10.592344+00:00",
+  "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\physical_donor_logic_globals",
+  "donor_sha256": {
+    "impl\\gwsynthesis\\acg720_ano_port.vg": "5bf484f5e473e49e7ebca62582043132d8fcb7a1aca68eb56981db51e2d7cbdd",
+    "acg720_ano_port.gprj": "198f6c141bae6b6c297076a05bab2326cf32b8696c589b24daf0d08218feaa76",
+    "acg720_ano_port.cst": "d29fb4cc930f2f4113026f10e9ab5b9aa6dc23541966054ac1dec88f38422fa1",
+    "acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e"
+  },
+  "files_sha256": {
+    "acg720_ano_port.cst": "d29fb4cc930f2f4113026f10e9ab5b9aa6dc23541966054ac1dec88f38422fa1",
+    "acg720_ano_port.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+    "acg720_ano_port.sdc": "74dc5cc8ec6835c3b2cd90ffddce728c6c6e517eed8c52aba15913d7866cf35e",
+    "build.tcl": "fdd1d56b5681843567bb4379a05087241529c54aa4107041d7789e6549ad1c92",
+    "impl\\gwsynthesis\\acg720_ano_port.vg": "5bf484f5e473e49e7ebca62582043132d8fcb7a1aca68eb56981db51e2d7cbdd"
+  },
+  "options": {
+    "top_module": "acg720_ano_port",
+    "output_base_name": "acg720_ano_port",
+    "user_code": "0000B0B2",
+    "place_option": 2,
+    "route_option": 0,
+    "timing_driven": 1,
+    "replicate_resources": 0,
+    "map_option": 2,
+    "global_freq": 50,
+    "max_fanout": 200,
+    "opt_goal": "area",
+    "route_maxfan": 23
+  },
+  "pins": {
+    "clk50": "Y18",
+    "imu_sck": "E17",
+    "imu_mosi": "C20",
+    "imu_miso": "D19",
+    "imu_cs_n": "E18",
+    "rc_ppm_in": "B17",
+    "uart_tx": "M15",
+    "led2": "L21",
+    "led3": "K21",
+    "motor1_pwm": "D17",
+    "motor2_pwm": "C17",
+    "motor3_pwm": "E16",
+    "motor4_pwm": "D16",
+    "range_rx": "C14",
+    "range_tx": "C15",
+    "imu_gyro_cs_n": "F20",
+    "radio_tx": "B15"
+  },
+  "amendment": "",
+  "runner_sha256": "c2db5e7dc523b40eeeb47d9068018e70129553b9c80597c2a7a72b8a8e0dcdcb",
+  "netlist_sha256": "5bf484f5e473e49e7ebca62582043132d8fcb7a1aca68eb56981db51e2d7cbdd",
+  "hardware_accessed": false,
+  "flight_ready": false,
+  "release_eligible": false
+}

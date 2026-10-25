@@ -1,0 +1,3 @@
+# External analysis inputs (not redistributed)
+
+The copied analysis scripts are original evidence readers. read_numbered.py resolves the original handoff workspace/H snapshot, its P2/ANO reference tree and frozen RTL/baseline; analyze_evidence.py additionally reads the original hardware/recent_telemetry.jsonl/samples.jsonl/telemetry_clip.jsonl files listed in its DATA dictionary. audit_sources.py needs the original source index/reference files. None of that third-party code, source package, raw JSONL or video is included here. Derived CSV/JSON/report outputs are preserved as generated evidence, with original hashes/path references, not claimed independently regenerable from this lightweight export. See FINDINGS.md for scope, epochs/sequences and unresolved causes.

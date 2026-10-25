@@ -1,0 +1,6 @@
+test_existing_receiver_exports_additive_schema_and_records_wrapper_provenance (test_receiver_setpoints.ReceiverWrapperTests.test_existing_receiver_exports_additive_schema_and_records_wrapper_provenance) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.715s
+
+OK

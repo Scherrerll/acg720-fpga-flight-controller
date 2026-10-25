@@ -1,0 +1,4 @@
+C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\candidate\acg720_ano_port.v:212: warning: Anachronistic use of named begin/end to surround generate schemes.
+
+PASS range_geometry_policy: removed derived pose-publication60ms watchdog; no fake update; source range4999999/5000000 ticks and explicit validity preserved
+C:\Users\ScherrerL\Desktop\apple\timeout_policy_20261025\range_geometry_policy.v:19: $finish called at 192000 (1ps)

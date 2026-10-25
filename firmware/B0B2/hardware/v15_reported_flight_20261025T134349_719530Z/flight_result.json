@@ -1,0 +1,33 @@
+{
+  "recorded_utc": "2026-10-25T13:44:45.900257+00:00",
+  "build": "B0B2",
+  "version": "original sealed V15",
+  "test_outcome": "operator_confirmed_stable_hold",
+  "operator_reported_success": true,
+  "operator_statement_verbatim": "测试完了，可以稳定定点了，没问题了",
+  "visual_review": {
+    "method": "12 timestamped, uniformly spaced original-video frames inspected",
+    "observations": [
+      "Indoor flight visible",
+      "Airborne hover visible in multiple samples",
+      "Aircraft back on the mat near the end"
+    ],
+    "video_duration_seconds": 79.24166666666666,
+    "quantitative_position_error_measured": false,
+    "synchronized_rc_or_navigation_mode_verified": false
+  },
+  "video": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\operator_flight.mp4",
+    "sha256": "27d2c72a7b99d84a01b2e0cce1552e0e85b4bf378dd111ebb1c474b341423ed3",
+    "source_path": "D:\\software\\QQ\\Tecent Files\\Tencent Files\\1783865172\\nt_qq\\nt_data\\Video\\2026-10\\Ori\\34ca3119f7cb49537d6ed6203068fff4.mp4"
+  },
+  "prior_flash_and_ground_record": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\V15_FLASH_CURRENT_20261025.json",
+    "sha256": "981c9ea343895f3b53c0d31536cdfb051edd31deb6d9779d6ca8dea8c5f6a5f6"
+  },
+  "image_sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306",
+  "firmware_changes": [],
+  "qualification_flags_changed": false,
+  "routing_status": "V16/V17 remain paused; no automatic resume",
+  "scope": "This operator-reported successful flight; no quantified accuracy, duration envelope, wind envelope or expanded firmware qualification inferred"
+}

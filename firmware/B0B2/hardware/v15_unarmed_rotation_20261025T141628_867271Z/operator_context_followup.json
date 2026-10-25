@@ -1,0 +1,8 @@
+{
+  "operator_statement": "没放稳",
+  "source": "Current chat answer to static-condition question",
+  "pre_motion_interval_qualified_static": false,
+  "handheld_translation_unmeasured": true,
+  "cannot_infer_static_sensor_noise_from_pre_motion_interval": true,
+  "cannot_identify_rotation_compensation_coefficient": true
+}

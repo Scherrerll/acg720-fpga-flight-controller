@@ -1,0 +1,38 @@
+{
+  "prepared": true,
+  "utc": "2026-10-25T13:22:07.850651+00:00",
+  "intended_default": "V15 B0B2",
+  "new_image": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flash_plan_20261025T132207_545161Z\\V15_B0B2.fs",
+  "new_image_sha256": "3b9920acc1abecf6e0ef50465f5bc408d9b74af2ac6d046cb151137a375b4306",
+  "expected_previous_default": "B0B0, historical independently verified receipt; must be checked again before erase",
+  "previous_image": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_flash_plan_20261025T132207_545161Z\\rollback_B0B0.fs",
+  "previous_image_sha256": "83653a2f405cc467ac553fd81ac57d2981c5a9f52543afbbd3368881ab4ac111",
+  "manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "active_test_summary_sha256": "fa729fa34953ee13270493344bdc889ae29a6994be8eb178d1ed4cf930d5edb7",
+  "prior_flash_receipt_sha256": "30206126903dfa9d9fdc9643cfac0c2eff89c4e8c2f86d66fda1f0c561d627d9",
+  "preparer_sha256": "1a6b5ea2e056f6fab0e904471a41bf02f9c587046ecf95356e16796644b51297",
+  "programmer_help_sha256": "b9a32e0bad95b157a22ad7c000cadf8815bbc2da48607a498c35317395209f13",
+  "programmer_executable_sha256": "ca28fe178b04fd99780267787f61b0e0ec3729d579fe237ff454c1a0353e8ef6",
+  "flash_address": "0x000000",
+  "operations": [
+    "Fresh stopped low-RC state and unique known programmer/cable/device checks",
+    "Confirm running V15 identity; verify expected old Flash against rollback image before erasing",
+    "Program-and-verify the exact existing V15 image using vendor operation54",
+    "Independently verify Flash using operation66, then reload and establish a fresh stopped B0B2 boot epoch",
+    "Operator removes all board power including USB; verify battery-only cold boot and stopped healthy telemetry"
+  ],
+  "rollback": "Preserve exact previous B0B0 image. If writing has started and validation fails, restore and independently verify previous image; never mark Flash certified after an uncertain operation.",
+  "requires_explicit_flash_approval": true,
+  "approval_reason": "Earlier authorization explicitly selected SRAM; this would change persistent power-on firmware from B0B0 to V15 B0B2.",
+  "approval_received": false,
+  "hardware_accessed": false,
+  "serial_writes": false,
+  "flash_written": false,
+  "physical_cold_boot_verified": false,
+  "flight_ready": false,
+  "limitations": [
+    "V15 retains original mounting offset and optical25deg-target/15deg-observer policy.",
+    "Ground checks do not accept loaded flight, fixed-point precision, optical scale or rotation compensation.",
+    "No new synthesis or routing is needed to persist this already qualified V15 image."
+  ]
+}

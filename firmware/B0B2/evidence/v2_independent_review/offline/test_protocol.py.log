@@ -1,0 +1,23 @@
+test_actual_rtl_wire_fixture (test_protocol.DecoderTests.test_actual_rtl_wire_fixture) ... ok
+test_build_identity (test_protocol.DecoderTests.test_build_identity) ... ok
+test_crc_corruption (test_protocol.DecoderTests.test_crc_corruption) ... ok
+test_exact_fields_and_units (test_protocol.DecoderTests.test_exact_fields_and_units) ... ok
+test_length_and_header (test_protocol.DecoderTests.test_length_and_header) ... ok
+test_protection_predicate (test_protocol.DecoderTests.test_protection_predicate) ... ok
+test_reserved_and_invalid_diagnostic (test_protocol.DecoderTests.test_reserved_and_invalid_diagnostic) ... ok
+test_v2_explicitly_unavailable_slots_and_retained_fields (test_protocol.DecoderTests.test_v2_explicitly_unavailable_slots_and_retained_fields) ... ok
+test_v2_nonzero_unavailable_slots_rejected_even_with_valid_crc (test_protocol.DecoderTests.test_v2_nonzero_unavailable_slots_rejected_even_with_valid_crc) ... ok
+test_version_and_removed_usb_profile (test_protocol.DecoderTests.test_version_and_removed_usb_profile) ... ok
+test_auxiliary_does_not_replace_primary (test_protocol.ReceiverTests.test_auxiliary_does_not_replace_primary) ... ok
+test_bad_crc_resynchronizes (test_protocol.ReceiverTests.test_bad_crc_resynchronizes) ... ok
+test_identity_and_mixed_fragmented_stream (test_protocol.ReceiverTests.test_identity_and_mixed_fragmented_stream) ... ok
+test_mixed_versions_and_invalid_v2_resynchronize (test_protocol.ReceiverTests.test_mixed_versions_and_invalid_v2_resynchronize) ... ok
+test_preparation_hashes_and_no_overwrite (test_protocol.ReceiverTests.test_preparation_hashes_and_no_overwrite) ... ok
+test_recorder_keeps_diagnostic_jsonl (test_protocol.ReceiverTests.test_recorder_keeps_diagnostic_jsonl) ... ok
+test_source_clear_between_snapshot_lock_regions (test_protocol.ReceiverTests.test_source_clear_between_snapshot_lock_regions) ... ok
+test_source_switch_and_firmware_reset_clear_freshness (test_protocol.ReceiverTests.test_source_switch_and_firmware_reset_clear_freshness) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.373s
+
+OK

@@ -1,4 +1,4 @@
-"""Read already transmitted B0B0 targets; never reconstruct targets from RC."""
+"""Read the compatible B0B0/B0B1/B0B2 target fields transmitted in A579."""
 import math
 
 FIELDS = {
@@ -15,7 +15,7 @@ def numeric(value):
 
 def tracking_fields(row, build=None):
     values = dict.fromkeys(FIELDS)
-    if build != 0xb0b0 or row.get('_protocol') != 'a579':
+    if build not in (0xb0b0, 0xb0b1, 0xb0b2) or row.get('_protocol') != 'a579':
         return values
     flags = row.get('flags')
     if type(flags) is not int:

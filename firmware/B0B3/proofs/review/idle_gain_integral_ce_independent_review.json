@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "scope": "Independent source/finite-proof integrity review only; no simulation/SYN/PNR/qualification execution",
+  "blocking_findings": [],
+  "source55_checked": true,
+  "byte_identical_files": 54,
+  "private_idle_reset_saved_I_equality_required": false,
+  "all450_public_outputs_pair_cycles": 1002843,
+  "original956519_stimulus_and_all_original_fatal_assertions_retained": true,
+  "nonzero_changed_partial_I_rollback_checks": 2,
+  "regression_original_AST_and_receipt_hashes_passed": true,
+  "regression_evidence_files": 38,
+  "notes": [
+    "state65/state17 identify CH7 stimulus trigger states; registered xy_cancel causes actual restore later, and restore_edge monitor verifies that actual read edge",
+    "Regression aggregate retains old idle_gain_ce wording in scope; actual source55 manifest/adapters bind b7eef and fresh results; do not rewrite a synthesis-bound historical receipt for this cosmetic label"
+  ],
+  "evidence_sha256": {
+    "candidates/idle_gain_integral_ce/candidate.diff": "f96e5af2227d499ce2a4fadab0868ccbe495d88e2b7108b2cdbcd56448b46712",
+    "candidates/idle_gain_integral_ce/SOURCE_PROOF.md": "050dfc56efdc567d201dd754c526c82e2884f31341d5c3d5bcdcc1c5acb199cf",
+    "candidates/idle_gain_integral_ce/change.json": "39aa1441fae42f991728cb527709b2b8d9fc9bccb64561a9f4581168b7ee0011",
+    "candidates/idle_gain_integral_ce/verify_cycle_pair.py": "9ce4ca3c9b271011ea16057fb3090973471a60cd6658f1fb48f966616c357226",
+    "candidates/idle_gain_integral_ce/verification/cycle_pair/results.json": "b97e37e93c6212e81b574476160c0eddecb7d09eff25c37b39d06c37774cc3a3",
+    "candidates/idle_gain_integral_ce/verification/cycle_pair/pair_tb.v": "7be939229090274968be1f40341992bab471e480941751042f216730ca426d3c",
+    "candidates/idle_gain_integral_ce/verification/cycle_pair/pair.log": "863fe705ea7f1723a1c25f84539e6edf31f684a9599e000f1963a6e5aee07547",
+    "candidates/idle_gain_integral_ce/verification/regressions/results.json": "5ec7f549f1ab2d04c5e345f54e8c1ba44a44a96a6c53e9e89403a88430b231dc",
+    "candidates/idle_gain_integral_ce/verification/regressions/regression_input.json": "48d45f498297441c1ea701909418bdf66a33bb824e3616d1fbec4e5df384f46a",
+    "review/review_idle_gain_integral_ce.py": "5f2b93db3b608b53c04faf92f757118d05a0f8ce0ced514f226a230ca663bc43"
+  }
+}

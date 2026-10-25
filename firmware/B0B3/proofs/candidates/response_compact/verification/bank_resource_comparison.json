@@ -1,0 +1,18 @@
+{
+  "reference": {
+    "T_Register": 414,
+    "T_Alu": 79,
+    "T_Lut": 456
+  },
+  "candidate": {
+    "T_Register": 290,
+    "T_Alu": 79,
+    "T_Lut": 435
+  },
+  "delta": {
+    "T_Register": -124,
+    "T_Alu": 0,
+    "T_Lut": -21
+  },
+  "source": "real Gowin synthesis XML, parameter bank module only"
+}

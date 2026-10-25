@@ -1,0 +1,46 @@
+{
+  "passed": false,
+  "vendor_returncode": 1,
+  "routing_passed": false,
+  "unrouted_nets": 292,
+  "routing_status_proof": "vendor exit zero, completed router and bitstream generation, full physical report; tool omits explicit zero-unrouted count",
+  "timing_passed": false,
+  "summaries": {
+    "setup": null,
+    "hold": null
+  },
+  "fmax_mhz": null,
+  "worst_reported_slack_ns": {
+    "setup": null,
+    "hold": null,
+    "recovery": null,
+    "removal": null,
+    "minimum_pulse_width": null
+  },
+  "report_clock_contract_passed": false,
+  "actual_input_paths_passed": true,
+  "timing_exceptions_added": false,
+  "logical_source_sha256": null,
+  "derived_netlist": null,
+  "audit_runner_sha256": "6781a3829eb80e64f531568ffc447bc14d1bfac5b498475aa0dd15f1ceec8c21",
+  "identity_passed": false,
+  "pin_contract_passed": true,
+  "errors": [
+    "ERROR  (PR0004) : There are total 292 unrouted nets",
+    "    ERROR  (PR0004) : There are total 292 unrouted nets"
+  ],
+  "hardware_accessed": false,
+  "flash_changed": false,
+  "flight_ready": false,
+  "inputs_sha256": "285e4ed8c7780ab9c71edf6af102f09f34e0bc6780da7ad7d815757e10103571",
+  "outputs_sha256": {
+    "fixture/impl/pnr/acg720_ano_port.db": "bb7d20e8df8b887ca906ea84245a97fd9331c51987098faf384fe3e19fa225b3",
+    "fixture/impl/pnr/acg720_ano_port.log": "13c80ffe50734f6383db64321f0ea3324548b7a4a6406e0fce2a272560c552be",
+    "fixture/impl/pnr/acg720_ano_port.p": "0781caaa0be506978a0f3ca8311944edcb6e24805a0c7836a5f3a700f8f18859",
+    "fixture/impl/pnr/acg720_ano_port.pin.html": "4b890fdc3c34d1101464daf0f036a58a2070ebd4d86f55f2ff14a81f59fbe1e0",
+    "fixture/impl/pnr/acg720_ano_port.rpt.html": "dc58a6fa2be01e2f0890b3c6975cce959e6919cfe42912fcda7fc9b6535f3527",
+    "fixture/impl/pnr/acg720_ano_port.rpt.txt": "5595a17d667ef5e8a344680be93c709c7bd17c23e5666e56dd313fbe324e9738",
+    "fixture/impl/pnr/cmd.do": "1bb27fb3e268e9735732fda824c5470e307b59a160e2a1b7c8d77848bff23209",
+    "fixture/impl/pnr/device.cfg": "1c531c08d794d69f6bc0a168f4dd0a94cba8156f0c3cf4f3d07f9a54474df10a"
+  }
+}

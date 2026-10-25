@@ -1,0 +1,30 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+      "-g2012",
+      "-I",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\candidate",
+      "-s",
+      "timeout_boundaries",
+      "-o",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\tmp\\timeout_boundaries.vvp",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\side_timeout_alignment_20261025\\timeout_boundaries.v",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\candidate\\core\\rc_ppm.v",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\candidate\\sensor\\mtf01p_reader.v"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+      "-n",
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\timeout_policy_20261025\\tmp\\timeout_boundaries.vvp"
+    ],
+    "returncode": 0,
+    "stdout": "PASS timeout_alignment: RC default=500ms, accepted frame/recovery, countdown boundary, invalid-frame rejection; module offline=1000ms boundary/recovery, duplicate timestamp rejected, metric freshness remains 200ms\nC:\\Users\\ScherrerL\\Desktop\\apple\\side_timeout_alignment_20261025\\timeout_boundaries.v:46: $finish called at 27700331000 (1ps)\n",
+    "stderr": ""
+  }
+]

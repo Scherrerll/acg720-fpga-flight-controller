@@ -1,0 +1,14 @@
+{
+  "issue": "Executed helper retained trailing explicit exit while initial mode label incorrectly said EOF. Do not relabel this run as strict EOF.",
+  "source_proofs_affected": false,
+  "actual_stdin": "DEVNULL",
+  "actual_creationflags": "CREATE_NO_WINDOW",
+  "actual_tcl_exit": "explicit exit",
+  "strict_EOF": false,
+  "executed_helper_copy": "candidates\\idle_gain_ce\\verification\\executed_run_synthesis.py",
+  "executed_helper_sha256": "ab2cc3ea2982613afee358a27465c84d940ed7316422fa6c6778bf66bff80f9f",
+  "executed_tcl_sha256": "a224e11384b3b9f5d4bb20066ceeb8082c92c9088ffa0f7b44cf487d48b79857",
+  "synthesis_invocations": 1,
+  "rerun_performed": false,
+  "root_notified": true
+}

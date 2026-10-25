@@ -1,0 +1,2 @@
+PASS UART physical 434 clocks/bit 115200 false-start bad-stop
+C:\Users\ScherrerL\Desktop\apple\runtime_xy_pi_20261026\verification\uart_tb.v:20: $finish called at 282360000 (1ps)

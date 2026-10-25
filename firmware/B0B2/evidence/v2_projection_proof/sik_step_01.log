@@ -1,0 +1,2 @@
+PASS sik_summary v2 zero slots, same-cycle tuple, hold, ongoing gap, first diagnostic/protection, window, event wrap
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\firmware\B0B2\tests\sik_summary_tb.v:57: $finish called at 360000 (1ps)

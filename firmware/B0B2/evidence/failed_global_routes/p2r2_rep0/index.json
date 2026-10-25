@@ -1,0 +1,17 @@
+{
+  "schema": "b0b2.failed-physical-evidence.v1",
+  "build": "p2r2_rep0",
+  "passed": false,
+  "unrouted_nets": 210,
+  "hardware_accessed": false,
+  "flash_changed": false,
+  "artifact_sha256": {
+    "inputs.json": "77233e16ba5afb430ee24ffe9c9f3fe970c7d351debebf520ad2e485df136c37",
+    "result.json": "1c52a9b2667e07ec87095f213baa8ce39245e0fc514dd58a505c895779bff39a",
+    "console.log": "be96816b48ac158f5464eb1bf18f24108df4e9beaf8116941c80af322fe60207",
+    "build_runner.py": "9a5b5a0233fcd187a9889b5505da33d847b4b2540b907a665366c6b12e8d823b",
+    "physical.cst": "5f197981aaed34014151d9f571a5e741464d8a0f891a6dfee8336c1af54a3ecd",
+    "physical.gprj": "95b1c20bea7dbba9162b6cfe79603e4711be65894d9b6de0ffb0b4c053d1a61e",
+    "physical_report.txt": "410bd6ccbb8ac72c3f4a384f84ef253c1689d4ec392bf77e74feaddf84b8a264"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "last_byte_ack_count": 2,
+  "request_starts": 2,
+  "max_held_packet_clocks": 2832005,
+  "canonical_wire_bytes_identical": 692,
+  "scope": "real UART, unchanged parameter bank, candidate TX; stable-bank ownership and final-byte ready contract",
+  "evidence_sha256": {
+    "verify_contract.py": "7c31e8be90912baee0b1c7e569cfe49337addfd74a732236abcc41fc33bdba2c",
+    "verification\\contract_tb.v": "b87f725130430d467aaee0c44d9a950818a185a5f954f89e4e456c2c0d63e2f3",
+    "verification\\contract.log": "cf67c1f33bb8d8c4c620c7c8086393536874608de707ea6bab6eae7a7fd655cd",
+    "verification\\contract.compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source\\telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "source\\xy_pi_parameters.v": "c3ab65d07c7b664268192a5b0de3acfb510efdac504a7a82cfdfa89e83d1b187"
+  },
+  "canonical_link_log_sha256": "6bfb9a2766f27cc3d8b9a8ee57abbdcfc4172bebad9c2e7a02d993a9ac0a5d50"
+}

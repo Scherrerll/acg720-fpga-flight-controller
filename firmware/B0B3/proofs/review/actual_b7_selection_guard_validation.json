@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "scope": "Actual promoted B7 strict source/donor/composition/timing guards extracted by AST and invoked read-only; no main finalizer, state writes, promotion or ZIP",
+  "fixture": "builds/idle_integral_p3r0",
+  "actual_selected_source55": true,
+  "actual_promotion_guard_passed": true,
+  "actual_composition_guard_passed": true,
+  "actual_exact_donor_guard_passed": true,
+  "actual20ns_all5_timing_guard_passed": true,
+  "actual_process_exit": 0,
+  "vendor_full_route_and_bitstream_completed": true,
+  "bitstream_sha256": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+  "fmax_mhz": 50.257,
+  "unchanged_guard_AST_sha256": {
+    "verify_timing_review": "4c390fd9457e6391e72dc1a7a0aa426e52ecf5e2be58fda763f4e8d88ec19f21",
+    "verify_idle_gain_ce_donor": "fb83660221dd947e8246ce02f7be5051298c4290177600ce2c5a0d1b0125fc69",
+    "verify_idle_gain_integral_ce_donor": "aa0640e60e6c0d514eb7803a6ef30ca8d5f0c825ce0140311d44fa3aefaf6dde",
+    "verify_idle_gain_integral_ce_review": "0fb70ceffa77f6e521afefd35ed30fc296338e77298d4292238e585b97ca6131",
+    "verify_idle_gain_integral_ce_physical_binding": "8b7d91353c0f01f05febb92a6187ac5ed0868493627f6f8532ef8fcdc11acf70"
+  },
+  "evidence_sha256": {
+    "finalize_release.py": "c25730c8a9308d71ccec4f71ae6ef0848facc4a186d46f4c283eaf1654963c5a",
+    "review/verify_actual_b7_selection.py": "fef8d07b197b11c07c090ca0c7dd0cc7ae93e47ea7558fa6dbaa5d83efd7a965",
+    "verification/promote_selected_b7.py": "30b2fc7f2856ae412b87695047d9a39ba6cbe80c722620ddb9eb06e3955af8db",
+    "verification/idle_gain_integral_ce_promotion.json": "a53f76dab40d7f7be52d1ca32e27370d96c4a98d30a07f31f22772f54611e5cb",
+    "verification/source_review.json": "d288dd559c5ec71573bb9d84d8d822229fcb30456dff946f3c2813dc7e6fd80d",
+    "builds/idle_integral_p3r0/verification/build_input.json": "906c60e803eabf3b73e7bad2d7e6cd527c566cdf392b174ca4a3035446787a6b",
+    "builds/idle_integral_p3r0/verification/process_exit.json": "6fd3fbcf9fdd01c8502d742497e6e7cedb2e2748040dc2bd846d325537b46d7e",
+    "builds/idle_integral_p3r0/verification/timing_review.json": "8d9c52b4afc301c53d6c3cd478520763d3d6c6b2fda3b827c7182cf67a458b28",
+    "builds/idle_integral_p3r0/source/impl/gwsynthesis/acg720_ano_port.vg": "4497e28d79a30da7487a40449d0f0ed19735d1859d2601f0d972f51344b9d9eb",
+    "builds/idle_integral_p3r0/source/impl/pnr/acg720_ano_port.fs": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd"
+  }
+}

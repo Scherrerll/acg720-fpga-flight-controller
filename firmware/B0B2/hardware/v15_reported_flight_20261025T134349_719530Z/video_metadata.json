@@ -1,0 +1,77 @@
+{
+  "source_path": "D:\\software\\QQ\\Tecent Files\\Tencent Files\\1783865172\\nt_qq\\nt_data\\Video\\2026-10\\Ori\\34ca3119f7cb49537d6ed6203068fff4.mp4",
+  "archived_clip": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\operator_flight.mp4",
+  "sha256": "27d2c72a7b99d84a01b2e0cce1552e0e85b4bf378dd111ebb1c474b341423ed3",
+  "bytes": 20827187,
+  "fps": 28.999894836470713,
+  "frame_count": 2298,
+  "width": 1280,
+  "height": 720,
+  "duration_seconds": 79.24166666666666,
+  "extracted_frames": [
+    {
+      "seconds": 1.6551784160139251,
+      "frame_index": 48,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_00_000048.jpg"
+    },
+    {
+      "seconds": 8.24140919640267,
+      "frame_index": 239,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_01_000239.jpg"
+    },
+    {
+      "seconds": 14.862122860458369,
+      "frame_index": 431,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_02_000431.jpg"
+    },
+    {
+      "seconds": 21.448353640847113,
+      "frame_index": 622,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_03_000622.jpg"
+    },
+    {
+      "seconds": 28.069067304902813,
+      "frame_index": 814,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_04_000814.jpg"
+    },
+    {
+      "seconds": 34.655298085291555,
+      "frame_index": 1005,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_05_001005.jpg"
+    },
+    {
+      "seconds": 41.2415288656803,
+      "frame_index": 1196,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_06_001196.jpg"
+    },
+    {
+      "seconds": 47.862242529736,
+      "frame_index": 1388,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_07_001388.jpg"
+    },
+    {
+      "seconds": 54.44847331012475,
+      "frame_index": 1579,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_08_001579.jpg"
+    },
+    {
+      "seconds": 61.06918697418045,
+      "frame_index": 1771,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_09_001771.jpg"
+    },
+    {
+      "seconds": 67.65541775456919,
+      "frame_index": 1962,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_10_001962.jpg"
+    },
+    {
+      "seconds": 74.24164853495793,
+      "frame_index": 2153,
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\frame_11_002153.jpg"
+    }
+  ],
+  "contact_sheet": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_reported_flight_20261025T134349_719530Z\\review_contact_sheet.jpg",
+  "operator_statement": "测试完了，可以稳定定点了，没问题了",
+  "operator_reported_stable_hold": true,
+  "evidence_scope": "Operator report and supplied clip; no quantitative drift, wind envelope or synchronized flight telemetry acceptance inferred"
+}

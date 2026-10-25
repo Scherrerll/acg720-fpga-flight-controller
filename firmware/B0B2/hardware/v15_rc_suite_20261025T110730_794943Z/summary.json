@@ -1,0 +1,311 @@
+{
+  "passed": true,
+  "scope": "V15 RC input direction/range/return, SWC FPGA mode-request selection, and stopped output checks only",
+  "tests": {
+    "roll": {
+      "summary": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_rc_roll_20261025T105851_445334Z\\summary.json",
+      "summary_sha256": "41be4512a5d141204becdf1fcbdb6fac00335141fe4b5113110c0fa6327cab0d",
+      "sample_sha256": "4946dd41a7f1777798f9fd926a2111d3b63acaf9898394b9219e0f6a62b8b07a",
+      "result": {
+        "passed": true,
+        "stage": "roll",
+        "channel": 1,
+        "scope": "RC input direction/range/return and stopped-output check; no armed controller response tested",
+        "baseline_us": 1499,
+        "minimum_us": 1000,
+        "maximum_us": 2000,
+        "returned_mean_us": 1499,
+        "first_high_seconds": 53.65174129998195,
+        "first_low_seconds": 60.01981239998713,
+        "first_middle_seconds": 3.068532699981006,
+        "expected_order_passed": true,
+        "other_axes_max_deviation_us": {
+          "2": 1,
+          "4": 1
+        },
+        "isolation_passed": true,
+        "baseline_frames": 13,
+        "return_frames": 14,
+        "distinct_frames": 319,
+        "duration_seconds": 77.31256749999011,
+        "diagnostic_delta": {
+          "accepted_count": 77522,
+          "rejected_count": 0,
+          "controller_fault_count": 0
+        },
+        "failures": [],
+        "mode_labels": null,
+        "final_reported_pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+        "samples_sha256": "4946dd41a7f1777798f9fd926a2111d3b63acaf9898394b9219e0f6a62b8b07a",
+        "observer_sha256": "d1b25d41f067596e75da01a79ead293847c754f6e916ffdab6809a526bfe65fb",
+        "serial_writes": false,
+        "programmer_operations": [],
+        "flash_written": false,
+        "flight_ready": false
+      },
+      "communication_delta": {
+        "frames": 377,
+        "missing_frames": 10,
+        "checksum_errors": 0,
+        "discarded_bytes": 494
+      }
+    },
+    "pitch": {
+      "summary": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_rc_pitch_20261025T110024_066742Z\\summary.json",
+      "summary_sha256": "98c71467ee5bc135dd12ebf24b100c5fb419cb5db69ae6710c2927f5171f7ae3",
+      "sample_sha256": "64dfc31a5cefd93aa9f0bb5f49aaba0d735e103238e852773892a4636186cbf7",
+      "result": {
+        "passed": true,
+        "stage": "pitch",
+        "channel": 2,
+        "scope": "RC input direction/range/return and stopped-output check; no armed controller response tested",
+        "baseline_us": 1501,
+        "minimum_us": 1000,
+        "maximum_us": 2000,
+        "returned_mean_us": 1501,
+        "first_high_seconds": 22.384767500014277,
+        "first_low_seconds": 26.962009700015187,
+        "first_middle_seconds": 3.062387000012677,
+        "expected_order_passed": true,
+        "other_axes_max_deviation_us": {
+          "1": 2,
+          "4": 0
+        },
+        "isolation_passed": true,
+        "baseline_frames": 13,
+        "return_frames": 14,
+        "distinct_frames": 194,
+        "duration_seconds": 46.11930950000533,
+        "diagnostic_delta": {
+          "accepted_count": 46072,
+          "rejected_count": 0,
+          "controller_fault_count": 0
+        },
+        "failures": [],
+        "mode_labels": null,
+        "final_reported_pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+        "samples_sha256": "64dfc31a5cefd93aa9f0bb5f49aaba0d735e103238e852773892a4636186cbf7",
+        "observer_sha256": "d1b25d41f067596e75da01a79ead293847c754f6e916ffdab6809a526bfe65fb",
+        "serial_writes": false,
+        "programmer_operations": [],
+        "flash_written": false,
+        "flight_ready": false
+      },
+      "communication_delta": {
+        "frames": 229,
+        "missing_frames": 1,
+        "checksum_errors": 0,
+        "discarded_bytes": 12
+      }
+    },
+    "yaw": {
+      "summary": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_rc_yaw_20261025T110119_738867Z\\summary.json",
+      "summary_sha256": "4448ec5fd46811628e5b8fc9a717b61c8d85b2de0940a3014f8bc8170f8b113b",
+      "sample_sha256": "4c78ac19cf492ac1e546a0185301fdcccb183bfac747d79303852325d142553c",
+      "result": {
+        "passed": true,
+        "stage": "yaw",
+        "channel": 4,
+        "scope": "RC input direction/range/return and stopped-output check; no armed controller response tested",
+        "baseline_us": 1500,
+        "minimum_us": 1000,
+        "maximum_us": 1995,
+        "returned_mean_us": 1500,
+        "first_high_seconds": 104.25836089998484,
+        "first_low_seconds": 107.30251710000448,
+        "first_middle_seconds": 3.322022200009087,
+        "expected_order_passed": true,
+        "other_axes_max_deviation_us": {
+          "1": 1,
+          "2": 1
+        },
+        "isolation_passed": true,
+        "baseline_frames": 13,
+        "return_frames": 14,
+        "distinct_frames": 509,
+        "duration_seconds": 121.64950480000698,
+        "diagnostic_delta": {
+          "accepted_count": 121792,
+          "rejected_count": 0,
+          "controller_fault_count": 0
+        },
+        "failures": [],
+        "mode_labels": null,
+        "final_reported_pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+        "samples_sha256": "4c78ac19cf492ac1e546a0185301fdcccb183bfac747d79303852325d142553c",
+        "observer_sha256": "d1b25d41f067596e75da01a79ead293847c754f6e916ffdab6809a526bfe65fb",
+        "serial_writes": false,
+        "programmer_operations": [],
+        "flash_written": false,
+        "flight_ready": false
+      },
+      "communication_delta": {
+        "frames": 598,
+        "missing_frames": 10,
+        "checksum_errors": 0,
+        "discarded_bytes": 702
+      }
+    },
+    "throttle": {
+      "summary": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_rc_throttle_20261025T110336_661519Z\\summary.json",
+      "summary_sha256": "2891e5117a73df6d9e82141aff3be81a04d0d95389dd7b0902cb5691ae194cd0",
+      "sample_sha256": "33df699164246811ffc2e96d5101686b32037b26ae4ca16ed2975694e1b6743e",
+      "result": {
+        "passed": true,
+        "stage": "throttle",
+        "channel": 3,
+        "scope": "RC input direction/range/return and stopped-output check; no armed controller response tested",
+        "baseline_us": 1001,
+        "minimum_us": 1001,
+        "maximum_us": 2000,
+        "returned_mean_us": 1004.8571428571429,
+        "first_high_seconds": 48.75223869999172,
+        "first_low_seconds": 3.0487164999940433,
+        "first_middle_seconds": 52.26570299998275,
+        "expected_order_passed": true,
+        "other_axes_max_deviation_us": {
+          "1": 1,
+          "2": 1,
+          "4": 2
+        },
+        "isolation_passed": true,
+        "baseline_frames": 12,
+        "return_frames": 14,
+        "distinct_frames": 272,
+        "duration_seconds": 65.12249619999784,
+        "diagnostic_delta": {
+          "accepted_count": 65303,
+          "rejected_count": 0,
+          "controller_fault_count": 0
+        },
+        "failures": [],
+        "mode_labels": null,
+        "final_reported_pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+        "samples_sha256": "33df699164246811ffc2e96d5101686b32037b26ae4ca16ed2975694e1b6743e",
+        "observer_sha256": "d1b25d41f067596e75da01a79ead293847c754f6e916ffdab6809a526bfe65fb",
+        "serial_writes": false,
+        "programmer_operations": [],
+        "flash_written": false,
+        "flight_ready": false
+      },
+      "communication_delta": {
+        "frames": 318,
+        "missing_frames": 8,
+        "checksum_errors": 1,
+        "discarded_bytes": 323
+      }
+    },
+    "mode": {
+      "summary": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_rc_mode_20261025T110523_239696Z\\summary.json",
+      "summary_sha256": "40211981218785311d9a685d1032b49828f09da79e82d16a0c80eda9895c01eb",
+      "sample_sha256": "0532394d559b805c8a724e7050ce2a0153d9ad92323a6baa27b3d6a613b06740",
+      "result": {
+        "passed": true,
+        "stage": "mode",
+        "channel": 7,
+        "scope": "RC input direction/range/return and stopped-output check; no armed controller response tested",
+        "baseline_us": 1000,
+        "minimum_us": 1000,
+        "maximum_us": 2000,
+        "returned_mean_us": 1000,
+        "first_high_seconds": 33.260706600005506,
+        "first_low_seconds": 3.0496622000064235,
+        "first_middle_seconds": 30.224803299992345,
+        "expected_order_passed": true,
+        "other_axes_max_deviation_us": {
+          "1": 1,
+          "2": 1,
+          "4": 1
+        },
+        "isolation_passed": true,
+        "baseline_frames": 11,
+        "return_frames": 15,
+        "distinct_frames": 198,
+        "duration_seconds": 47.5614757000003,
+        "diagnostic_delta": {
+          "accepted_count": 47675,
+          "rejected_count": 0,
+          "controller_fault_count": 0
+        },
+        "failures": [],
+        "mode_labels": {
+          "low": [
+            [
+              "自稳 + 高度控制",
+              "待机"
+            ]
+          ],
+          "middle": [
+            [
+              "自稳 + 高度控制",
+              "待机"
+            ]
+          ],
+          "high": [
+            [
+              "光流速度控制 + 高度",
+              "待机"
+            ]
+          ]
+        },
+        "native_mode_requests_passed": true,
+        "native_request_matching_frames": {
+          "low": 143,
+          "middle": 12,
+          "high": 12
+        },
+        "final_reported_pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+        "samples_sha256": "0532394d559b805c8a724e7050ce2a0153d9ad92323a6baa27b3d6a613b06740",
+        "observer_sha256": "5050e99e0304d0346e34716cceff9867812183d95c2f46bf1e312176a11b2e51",
+        "serial_writes": false,
+        "programmer_operations": [],
+        "flash_written": false,
+        "flight_ready": false
+      },
+      "communication_delta": {
+        "frames": 234,
+        "missing_frames": 4,
+        "checksum_errors": 1,
+        "discarded_bytes": 221
+      }
+    }
+  },
+  "v15_manifest_sha256": "c0827d5331af3055770dd999aee89e82ee5074ee20cae3aa076a0956155edca1",
+  "installed_image_unchanged": true,
+  "calibration_not_applied": true,
+  "routing_remains_paused": true,
+  "serial_writes": false,
+  "programmer_operations": [],
+  "flash_written": false,
+  "flight_ready": false
+}

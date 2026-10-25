@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "mode": "synthesis only",
+  "selected_for_canonical": false,
+  "canonical_unchanged": true,
+  "candidate_netlist_sha256": "7d815709a3699e3805efadf4a287e388329d5a75ca2f63ef40ea05bbf349b3e9",
+  "candidate_resources_xml_sha256": "8e9153e50e84f449f7a3df4b660640cbfb1f866a3addfbc597ce65f6166add1c",
+  "reference_netlist_sha256": "9b2cee37e4f0ed0e68c9abb2895228c455a12f50cc5e9ba2d741a36350f404dc",
+  "reference_resources_xml_sha256": "a3746005312be52bd84546d7c0e2d304f52a64ca692a670d4379581dff1b1e66",
+  "reference": {
+    "top": {
+      "T_Register": 27890,
+      "T_Alu": 9565,
+      "T_Lut": 36135,
+      "T_MULTALU27X18": 30,
+      "T_MULT12X12": 7,
+      "T_MULT27X36": 13,
+      "T_Bsram": 2
+    },
+    "telemetry": {
+      "T_Register": 238,
+      "T_Alu": 46,
+      "T_Lut": 3061
+    }
+  },
+  "candidate": {
+    "top": {
+      "T_Register": 27764,
+      "T_Alu": 9565,
+      "T_Lut": 35999,
+      "T_MULTALU27X18": 30,
+      "T_MULT12X12": 7,
+      "T_MULT27X36": 13,
+      "T_Bsram": 2
+    },
+    "telemetry": {
+      "T_Register": 238,
+      "T_Alu": 46,
+      "T_Lut": 3061
+    }
+  },
+  "delta": {
+    "top": {
+      "T_MULT12X12": 0,
+      "T_MULT27X36": 0,
+      "T_Lut": -136,
+      "T_Bsram": 0,
+      "T_MULTALU27X18": 0,
+      "T_Register": -126,
+      "T_Alu": 0
+    },
+    "telemetry": {
+      "T_Register": 0,
+      "T_Alu": 0,
+      "T_Lut": 0
+    }
+  },
+  "CLS": "Not reported by synthesis; cannot claim actual packed CLS reduction without PNR",
+  "timing_closed": false,
+  "PNR_started": false
+}
