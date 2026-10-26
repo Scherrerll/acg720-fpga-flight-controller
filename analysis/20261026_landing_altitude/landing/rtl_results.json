@@ -1,0 +1,26 @@
+{
+  "scope": "Directed real RTL witnesses, accelerated callback wall-clock cadence; original 11ms Z/1ms stick dt; no plant model or flight replay; no forced private state. Flight-state TICKS_PER_MS=1 timer boundary test.",
+  "results": [
+    {
+      "name": "z_windup",
+      "exit_code": 0,
+      "seconds": 152.41102814674377,
+      "checks": [
+        "PASS reachable real Z RTL: low-stick high-clamp callbacks=419/419 over first 4600ms; negative_target_ms=1199 below1850_ms=6182 below1250_ms=12188; no forced state or arithmetic fault"
+      ],
+      "log_sha256": "726949766eee136ca9a688ab564ee3c3f9eb14cd7ded7d3a0e546e54a12a9bdd",
+      "compiled_local_omitted_sha256": "c4b6358e9a035e47ee5440d65dfe85fd65259b3b8be53f9c40dd282a182db936"
+    },
+    {
+      "name": "flight_state_boundary",
+      "exit_code": 0,
+      "seconds": 0.04727005958557129,
+      "checks": [
+        "PASS low-stick 5000 logical ms at collective1850 does not land; landing_ms=0",
+        "PASS collective1250 excluded;1249 triggers land_lock at1501 logical ms; post-mixer1200 floor is not consumed by this module"
+      ],
+      "log_sha256": "adbc704e6c6795b37c0c8cb9ea0b8f27f98c3e6b4e30b8cac40d5291f4def8e6",
+      "compiled_local_omitted_sha256": "c9d26b1294e247c1dadc253641e92b7d45aaef49ab41f855d926f42310b91c3e"
+    }
+  ]
+}

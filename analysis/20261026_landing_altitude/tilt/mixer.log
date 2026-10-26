@@ -1,0 +1,10 @@
+PASS mixer case0: t=1658 r=0 p=0 y=0 motors=1658,1658,1658,1658 sat=0 pos=0 neg=0
+PASS mixer case1: t=1658 r=0 p=100 y=0 motors=1758,1758,1558,1558 sat=0 pos=0 neg=0
+PASS mixer case2: t=1658 r=0 p=300 y=0 motors=1958,1958,1358,1358 sat=0 pos=0 neg=0
+PASS mixer case3: t=1658 r=0 p=400 y=0 motors=2000,2000,1258,1258 sat=1 pos=7 neg=5
+PASS mixer case4: t=1850 r=0 p=150 y=0 motors=2000,2000,1700,1700 sat=0 pos=7 neg=5
+PASS mixer case5: t=1850 r=0 p=300 y=0 motors=2000,2000,1550,1550 sat=1 pos=7 neg=5
+PASS mixer case6: t=1350 r=0 p=300 y=0 motors=1650,1650,1200,1200 sat=1 pos=7 neg=5
+PASS mixer case7: t=1850 r=200 p=200 y=100 motors=2000,1950,1350,1950 sat=1 pos=3 neg=4
+PASS disabled mixer outputs1000, feedback0
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_landing_altitude\tilt\mixer_tb.v:33: $finish called at 90000 (1ps)

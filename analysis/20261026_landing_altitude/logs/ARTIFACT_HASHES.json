@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-26T03:13:27.664813+00:00",
+  "input": {
+    "snapshot_sha256": "c46a8f81344b5af33060c216fd0446383a6b65c477680b73e0668d7df18b469c",
+    "bytes": 72327699,
+    "rows": 47013,
+    "producer_receipt_sha256": "985a2081ed81da19d22cacea0c0e37fbc73cc69679b417f117f121244e173382",
+    "source_prefix_sha256": "e45208069ea22826ddd29cdf3370f335a06a726b79d0790d8de2caaab3b0b13c",
+    "source_prefix_bytes": 164936617
+  },
+  "scope": "Frozen-window data analysis only; no hardware/HTTP/serial/Git; writes confined to this logs directory",
+  "actual_script_exit": 0,
+  "files": {
+    "analysis_stdout.txt": {
+      "sha256": "5c6e2e2432c34fac4a4c086207e20fbc397dca49fe33ec75f1bd7205d3b130bf",
+      "bytes": 7265
+    },
+    "analyze_landing_log.py": {
+      "sha256": "dd73334ff49a2c7b776ebd5f96b9a9f9d9003f8920ba79df50672f14a4f66b4a",
+      "bytes": 11858
+    },
+    "FINDINGS.md": {
+      "sha256": "7d67e0b74f48ca1d0d8ecabd1ddb455333eb3abb889fb80dd8a7ec812e012e31",
+      "bytes": 6006
+    },
+    "joined_rows.csv": {
+      "sha256": "51d70972e3218f6d6917f6eb2ec5a6c4a0738e37f5c07235aa5cdd923a3c2086",
+      "bytes": 3137901
+    },
+    "log_summary.json": {
+      "sha256": "aebdc6aa657a5a3100b5b011712a878c602b5e0ec9af060608812a1739b1c49b",
+      "bytes": 1931108
+    },
+    "parameter_events.json": {
+      "sha256": "21e8a5a9fb97a93f791937675079cca744cac7ac5745e76971bb8ec77e71ce35",
+      "bytes": 9270
+    }
+  },
+  "self_binding_excluded": true
+}

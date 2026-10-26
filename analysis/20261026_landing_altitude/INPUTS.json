@@ -1,0 +1,467 @@
+{
+  "created_utc": "2026-10-26T03:21:55.336330+00:00",
+  "scope": "Read-only diagnosis. No firmware/parameter/hardware change. Height-drop work deferred by user; ground effect is a user hypothesis, not a verified root cause.",
+  "telemetry_snapshot": {
+    "captured_utc": "2026-10-26T02:53:45.959931+00:00",
+    "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\runtime\\B0B3\\20261026T002929Z_9ccb8279\\telemetry.jsonl",
+    "source_prefix_bytes": 164936617,
+    "source_prefix_sha256": "e45208069ea22826ddd29cdf3370f335a06a726b79d0790d8de2caaab3b0b13c",
+    "cutoff_utc": "2026-10-26T02:30:00Z",
+    "snapshot": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\landing_altitude_20261026\\snapshot_0253Z\\recent_telemetry.jsonl",
+    "snapshot_bytes": 72327699,
+    "snapshot_sha256": "c46a8f81344b5af33060c216fd0446383a6b65c477680b73e0668d7df18b469c",
+    "rows": 47013,
+    "invalid_complete_rows": 0,
+    "first_utc": "2026-10-26T02:31:09.119024+00:00",
+    "last_utc": "2026-10-26T02:53:44.270821+00:00"
+  },
+  "dependencies": [
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+      "sha256": "803b8844af2cc8ed70b5f08b07ffa749901280e81339617ca3e72cbbb852bd2b",
+      "bytes": 88064,
+      "kind": "simulation_tool"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+      "sha256": "e2f442f4d5aa76e55c85c3ff77e4446fbfdb9946b7cfe8a2dff87f275da17b62",
+      "bytes": 945664,
+      "kind": "simulation_tool"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\Application\\Ano_Parameter.c",
+      "sha256": "3e225dcd429db0d1f6855960a395b6f80172862143757792cf76b45e68d061eb",
+      "bytes": 7735,
+      "kind": "external_P2_source"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\Application\\Ano_RC.c",
+      "sha256": "c4012cfb561447b25583028700caea7afb4d02ce80b5be34edfd5ba3875fd028",
+      "bytes": 10854,
+      "kind": "external_P2_source"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\Application\\Ano_Scheduler.c",
+      "sha256": "75b87206cce7a278367936ee33bfd4f6689cb64d3aca4554d333353367cb8943",
+      "bytes": 6219,
+      "kind": "source"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_general\\Ano_Pid.c",
+      "sha256": "3ccab514ed143cbafbbb75e221e12ab51af91ff30c67bf607f55e7dd41608e12",
+      "bytes": 2029,
+      "kind": "external_P2_source"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_AltCtrl.c",
+      "sha256": "c419219ab052e4a2d07697682be01cd1d32d1dc3950eeeee0af9188891c297a3",
+      "bytes": 4922,
+      "kind": "source"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_FlightCtrl.c",
+      "sha256": "0a490f64fc17aefb932b3223b96c8c2f21bc30de735bbe07339fb0d958cc8691",
+      "bytes": 11611,
+      "kind": "external_P2_source"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_FlightDataCal.c",
+      "sha256": "a78f3d1571ee8602038041ab57a616f329af18e9457e4cff57ec7b9f5fd86dcf",
+      "bytes": 5380,
+      "kind": "source"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_MotorCtrl.c",
+      "sha256": "c7760c114997134141d05d5023b1be46b88abde85d0cdd929d3ea8997f908c16",
+      "bytes": 2451,
+      "kind": "source"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\config.h",
+      "sha256": "97c8a336edbb71cdf51a0f8ef89d1e695e608e2802b978bcbb06e6e891b68d0d",
+      "bytes": 2818,
+      "kind": "source"
+    },
+    {
+      "path": "analysis/20261026_flight_followup/MANIFEST.json",
+      "sha256": "834f197f37b2ba777f7a5c35e64aa5172f6226b5fa8ea689fe1bdee29a6fc87e",
+      "bytes": 13547,
+      "kind": "prior_frozen_artifact"
+    },
+    {
+      "path": "firmware/B0B3/export_manifest.json",
+      "sha256": "23374b5c3aca40e8e71a8ae7ad037541484416a752c683b378083a78a3d4f7a7",
+      "bytes": 371376,
+      "kind": "prior_frozen_artifact"
+    },
+    {
+      "path": "firmware/B0B3/release/B0B3_selected_P3R0.fs",
+      "sha256": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+      "bytes": 17456619,
+      "kind": "prior_frozen_artifact"
+    },
+    {
+      "path": "firmware/B0B3/source/acg720_ano_port.cst",
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "bytes": 1891,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/acg720_ano_port.gprj",
+      "sha256": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+      "bytes": 4014,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/acg720_ano_port.sdc",
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "bytes": 254,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/acg720_ano_port.v",
+      "sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "bytes": 27206,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/build.tcl",
+      "sha256": "08b71ffd40b4172ce85e99134a90155a5a1e5457d6687bd692b09e63d7ede091",
+      "bytes": 426,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/calibration.vh",
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/ano_attitude_estimator.v",
+      "sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "bytes": 41227,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/ano_flight_state.v",
+      "sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "bytes": 2990,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/bmi088_reader.v",
+      "sha256": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+      "bytes": 12475,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/control_gate.v",
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/cordic_atan2.v",
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/flight_core.v",
+      "sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "bytes": 39115,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/height_loss_fallback.v",
+      "sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "bytes": 5460,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/imu_checked_guard_pipelined.v",
+      "sha256": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+      "bytes": 6024,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/imu_diagnostic_tap.v",
+      "sha256": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+      "bytes": 6036,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/imu_pipeline_pipelined.v",
+      "sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+      "bytes": 9700,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/imu_temporal_check_pipelined.v",
+      "sha256": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+      "bytes": 3958,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/motor_pwm.v",
+      "sha256": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+      "bytes": 3583,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/rc_ppm.v",
+      "sha256": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+      "bytes": 5660,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/rtl/ano_manual_angles.v",
+      "sha256": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+      "bytes": 5795,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/rtl/ano_rate_control.v",
+      "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "bytes": 16946,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/rtl/ano_rc_angle_targets.v",
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/rtl/ano_yaw_control.v",
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/rtl/pid_divide_signed64.v",
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/rtl/quad_mixer_feedback.v",
+      "sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+      "bytes": 1912,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/core/spi_uart_modules.v",
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/gw5_snapshot_bram.v",
+      "sha256": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+      "bytes": 1368,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/level_calibration.vh",
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/mtf_navigation_shadow.v",
+      "sha256": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+      "bytes": 10740,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/mtf_xyz_navigation_control.v",
+      "sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "bytes": 26370,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/nav_math_service.v",
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "bytes": 4106,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/ano_flow_fusion.v",
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/ano_height_fusion.v",
+      "sha256": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+      "bytes": 44836,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/ano_hold_control.v",
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/ano_xy_divide36.v",
+      "sha256": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "bytes": 1823,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/ano_xy_stick.v",
+      "sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "bytes": 4785,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/ano_z_stick.v",
+      "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "bytes": 3700,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/mtf_position_integrator.v",
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "bytes": 9147,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/mtf_shared_flow_fusion.v",
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "bytes": 9359,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/mtf_shared_height_fusion.v",
+      "sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "bytes": 47581,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/mtf_shared_hold_control.v",
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "bytes": 23874,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/mtf_xyz_hold_control.v",
+      "sha256": "b7eef6d33789523cd1e8ff81b05e75db91ab3c67bf76e03483dec356055fa1a6",
+      "bytes": 28451,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/pose_time_adapter.v",
+      "sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "bytes": 2024,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/position_math.v",
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/position/relative_position.v",
+      "sha256": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+      "bytes": 13807,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/sensor/flow_reader.v",
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/sensor/mtf01p_reader.v",
+      "sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "bytes": 13098,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/sensor/mtf_native_geometry.v",
+      "sha256": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+      "bytes": 14083,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/sensor/mtf_shared_geometry.v",
+      "sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "bytes": 14436,
+      "kind": "source"
+    },
+    {
+      "path": "firmware/B0B3/source/sensor/pmw3901_init.vh",
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/sensor/range_height_estimate.v",
+      "sha256": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+      "bytes": 5710,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/sensor/range_reader.v",
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/sik_imu_diagnostic.v",
+      "sha256": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+      "bytes": 5403,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/telemetry_tx.v",
+      "sha256": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+      "bytes": 20760,
+      "kind": "frozen_B3_source"
+    },
+    {
+      "path": "firmware/B0B3/source/xy_pi_parameters.v",
+      "sha256": "c3ab65d07c7b664268192a5b0de3acfb510efdac504a7a82cfdfa89e83d1b187",
+      "bytes": 5202,
+      "kind": "frozen_B3_source"
+    }
+  ],
+  "verification": {
+    "B3_export": {
+      "passed": true,
+      "files": 641,
+      "manifest_sha256": "23374b5c3aca40e8e71a8ae7ad037541484416a752c683b378083a78a3d4f7a7"
+    },
+    "prior_followup": {
+      "passed": true,
+      "artifact_files": 64,
+      "frozen_source_files": 55,
+      "external_sources": 8
+    },
+    "landing_rtl": {
+      "tests": 2,
+      "exit_codes": [
+        0,
+        0
+      ]
+    },
+    "mixer_rtl": {
+      "checks": 9,
+      "compile_exit": 0,
+      "run_exit": 0
+    }
+  },
+  "not_claimed": [
+    "new implementation or place and route",
+    "programming/Flash operations",
+    "whole-flight replay",
+    "unique historical Z integral reconstruction",
+    "external altitude truth or ground-effect confirmation",
+    "flight acceptance"
+  ]
+}

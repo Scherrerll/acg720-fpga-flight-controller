@@ -1,0 +1,64 @@
+{
+  "scope": "Actual RTL directed witness and finite observed telemetry, not plant simulation or exact flight replay. No measured private Z integral in the historical trace.",
+  "telemetry": {
+    "source": "analysis/20261026_landing_altitude/logs/joined_rows.csv",
+    "sha256": "51d70972e3218f6d6917f6eb2ec5a6c4a0738e37f5c07235aa5cdd923a3c2086",
+    "count": 24,
+    "sequences": [
+      4259,
+      4282
+    ],
+    "ch3_values": [
+      "1002"
+    ],
+    "collective_values": [
+      "1850"
+    ],
+    "target_first_last_mm": [
+      1284,
+      -1740
+    ],
+    "fused_height_min_max_mm": [
+      260,
+      318
+    ]
+  },
+  "rtl": {
+    "trace_rows": 3182,
+    "low_stick_first_logical_ms": 20009,
+    "early_4600ms_callbacks": 419,
+    "early_4600ms_collective_values": [
+      1850
+    ],
+    "negative_target_elapsed_ms": 1199,
+    "below1850_elapsed_ms": 6182,
+    "below1250_elapsed_ms": 12188,
+    "first_low": {
+      "logical_ms": "20009",
+      "ch3": "1002",
+      "height_mm": "300",
+      "target_mm": "2300",
+      "requested_climb_mmps": "990",
+      "collective_us": "1850",
+      "iz_q16": "108134407",
+      "bias_q16": "22937593",
+      "exz_q16": "140378112",
+      "vsz_q16": "98304000",
+      "auto_takeoff": "0"
+    },
+    "last_low": {
+      "logical_ms": "35013",
+      "ch3": "1002",
+      "height_mm": "300",
+      "target_mm": "-1700",
+      "requested_climb_mmps": "-2500",
+      "collective_us": "1000",
+      "iz_q16": "14264929",
+      "bias_q16": "22937593",
+      "exz_q16": "-196608000",
+      "vsz_q16": "-98304000",
+      "auto_takeoff": "0"
+    },
+    "timing_warning": "These logical elapsed times belong only to this fixed-sensor accelerated-callback witness; they are not aircraft flight waiting times or operating advice."
+  }
+}

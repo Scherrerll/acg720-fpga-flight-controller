@@ -1,0 +1,95 @@
+{
+  "scope": "Landing analysis only. Original product/source unchanged; bounded real RTL directed witnesses, not flight replay. Compiled *.vvp and tmp/cache omitted; local compiled hashes are optional diagnostics in rtl_results.json.",
+  "files": [
+    {
+      "path": "evidence_summary.json",
+      "bytes": 1839,
+      "sha256": "9574258e7d995f4386dd78acf7654e6198ce55717e973c8fa9d41e4f725424d0"
+    },
+    {
+      "path": "flight_state_boundary.compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "flight_state_boundary.log",
+      "bytes": 390,
+      "sha256": "adbc704e6c6795b37c0c8cb9ea0b8f27f98c3e6b4e30b8cac40d5291f4def8e6"
+    },
+    {
+      "path": "flight_state_boundary_tb.v",
+      "bytes": 1551,
+      "sha256": "cf5bb95ce739b69eef273cbc4062942a2799952b38c44dbfc8a7123c21130866"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 6228,
+      "sha256": "9729c94eece8bf7b98aeca52162fbbce22ed75f7aecd6b7e4df4aeca6cd85133"
+    },
+    {
+      "path": "LANDING_FINDINGS.md",
+      "bytes": 7580,
+      "sha256": "709a147f86578290976a5d22294ce6e653752ede8141349424f1a8aa0490f5ff"
+    },
+    {
+      "path": "landing_witness_tb.v",
+      "bytes": 4803,
+      "sha256": "2805ca52a40588fa800e31c43baa4067c74d83fcdaee84877937aec57ca79d72"
+    },
+    {
+      "path": "low_stick_excerpt.csv",
+      "bytes": 2885,
+      "sha256": "7a0524abfd3b01e4252b54c7b01ab5db8599bef3c057713f8567ef188cca14be"
+    },
+    {
+      "path": "rtl_results.json",
+      "bytes": 1336,
+      "sha256": "9d797edcb9dd5c3716fff1e0edf6f159c505aaa3dd9d4a8261127eef38d82e68"
+    },
+    {
+      "path": "run_witness.py",
+      "bytes": 2373,
+      "sha256": "d6f15283a0074cdd98c25edc8ea551f6b58a22d12be72db65cc3ea6baf8b0acf"
+    },
+    {
+      "path": "runner.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runner.stdout.log",
+      "bytes": 762,
+      "sha256": "95c9a2b6123719fbc571bfeb7781dd792cc123f875a17a0aabcc3b84723f1bc1"
+    },
+    {
+      "path": "runner_process.json",
+      "bytes": 232,
+      "sha256": "d5bcd56b8f03dfd1480e16ff443cd8483474c20b8b3adba674fec5144af924ea"
+    },
+    {
+      "path": "source_references.json",
+      "bytes": 8305,
+      "sha256": "fa899938660c214e21fb4717fb1055ac43a4cfb6654dfa00792e706569e1e699"
+    },
+    {
+      "path": "summarize.py",
+      "bytes": 3391,
+      "sha256": "9d633122fc217829e94355c85ec3ff6eeaf22a2641ac0671fc34cfe41973a94c"
+    },
+    {
+      "path": "z_trace.csv",
+      "bytes": 227090,
+      "sha256": "5ffa7694cbbb39257d32def927814cbc191f6871dc75bd2406fcfd7846aa77ec"
+    },
+    {
+      "path": "z_windup.compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "z_windup.log",
+      "bytes": 368,
+      "sha256": "726949766eee136ca9a688ab564ee3c3f9eb14cd7ded7d3a0e546e54a12a9bdd"
+    }
+  ]
+}

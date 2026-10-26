@@ -1,0 +1,2 @@
+PASS reachable real Z RTL: low-stick high-clamp callbacks=419/419 over first 4600ms; negative_target_ms=1199 below1850_ms=6182 below1250_ms=12188; no forced state or arithmetic fault
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_landing_altitude\landing\landing_witness_tb.v:68: $finish called at 159183211000 (1ps)

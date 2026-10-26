@@ -1,0 +1,313 @@
+{
+  "passed": true,
+  "scope": "Derived pose projections from a frozen, same-key telemetry table; no plant proof.",
+  "source_inputs": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\acg720_ano_port.v": {
+      "sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "bytes": 27206
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\mtf_xyz_navigation_control.v": {
+      "sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "bytes": 26370
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\flight_core.v": {
+      "sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "bytes": 39115
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\rtl\\quad_mixer_feedback.v": {
+      "sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+      "bytes": 1912
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\rtl\\ano_rate_control.v": {
+      "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "bytes": 16946
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\mtf_xyz_hold_control.v": {
+      "sha256": "b7eef6d33789523cd1e8ff81b05e75db91ab3c67bf76e03483dec356055fa1a6",
+      "bytes": 28451
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\mtf_shared_height_fusion.v": {
+      "sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "bytes": 47581
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\ano_z_stick.v": {
+      "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "bytes": 3700
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\sensor\\mtf_shared_geometry.v": {
+      "sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "bytes": 14436
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\height_loss_fallback.v": {
+      "sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "bytes": 5460
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_AltCtrl.c": {
+      "sha256": "c419219ab052e4a2d07697682be01cd1d32d1dc3950eeeee0af9188891c297a3",
+      "bytes": 4922
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_MotorCtrl.c": {
+      "sha256": "c7760c114997134141d05d5023b1be46b88abde85d0cdd929d3ea8997f908c16",
+      "bytes": 2451
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_FlightDataCal.c": {
+      "sha256": "a78f3d1571ee8602038041ab57a616f329af18e9457e4cff57ec7b9f5fd86dcf",
+      "bytes": 5380
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\config.h": {
+      "sha256": "97c8a336edbb71cdf51a0f8ef89d1e695e608e2802b978bcbb06e6e891b68d0d",
+      "bytes": 2818
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\Application\\Ano_Scheduler.c": {
+      "sha256": "75b87206cce7a278367936ee33bfd4f6689cb64d3aca4554d333353367cb8943",
+      "bytes": 6219
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_general\\Ano_Pid.c": {
+      "sha256": "3ccab514ed143cbafbbb75e221e12ab51af91ff30c67bf607f55e7dd41608e12",
+      "bytes": 2029
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_AttCtrl.c": {
+      "sha256": "81e9f6dfdcefe73495a4f03d8bcffcfb07aec73ae82b263c6affa8ce16c25667",
+      "bytes": 9242
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\Driver\\Drv_PwmOut.c": {
+      "sha256": "e0bacc06c8c59c19f18122bd781301bf1831d25393b6f66cfb48dbb0b6fb9402",
+      "bytes": 4839
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\Application\\Ano_Parameter.c": {
+      "sha256": "3e225dcd429db0d1f6855960a395b6f80172862143757792cf76b45e68d061eb",
+      "bytes": 7735
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_FlightCtrl.c": {
+      "sha256": "0a490f64fc17aefb932b3223b96c8c2f21bc30de735bbe07339fb0d958cc8691",
+      "bytes": 11611
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_landing_altitude\\logs\\joined_rows.csv": {
+      "sha256": "51d70972e3218f6d6917f6eb2ec5a6c4a0738e37f5c07235aa5cdd923a3c2086",
+      "bytes": 3137901
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\landing_altitude_20261026\\snapshot_0253Z\\recent_telemetry.jsonl": {
+      "sha256": "c46a8f81344b5af33060c216fd0446383a6b65c477680b73e0668d7df18b469c",
+      "bytes": 72327699
+    }
+  },
+  "source_inputs_unchanged": true,
+  "windows": [
+    {
+      "first": 3579,
+      "last": 3595,
+      "all_groups": 17,
+      "all_six_packet_groups": 17,
+      "nav_groups": 17,
+      "nav_at1850": 17,
+      "first_utc": "2026-10-26T02:43:04.909288+00:00",
+      "last_utc": "2026-10-26T02:43:08.198707+00:00",
+      "ranges": {
+        "roll_cdeg": [
+          -70.0,
+          67.0
+        ],
+        "pitch_cdeg": [
+          -106.0,
+          395.0
+        ],
+        "fused_vz_mmps": [
+          -106.79072570800781,
+          -34.45616149902344
+        ],
+        "world_az_up_mmps2": [
+          -686.0,
+          837.0
+        ],
+        "target_height_mm": [
+          1400.0,
+          1400.0
+        ],
+        "fused_height_mm": [
+          941.0,
+          1214.0
+        ],
+        "raw_distance_mm": [
+          873.0,
+          1154.0
+        ],
+        "ch3": [
+          1488.0,
+          1498.0
+        ]
+      },
+      "force_deficit_percent_range": [
+        0.0010539742537507557,
+        0.2378433742942665
+      ],
+      "physical_pwm_mean_minus_z_collective_us_range": [
+        0.0,
+        0.0
+      ],
+      "groups_with_motor_touching_2000": 0,
+      "fallback_true": 0
+    },
+    {
+      "first": 3602,
+      "last": 3610,
+      "all_groups": 9,
+      "all_six_packet_groups": 9,
+      "nav_groups": 9,
+      "nav_at1850": 9,
+      "first_utc": "2026-10-26T02:43:09.520472+00:00",
+      "last_utc": "2026-10-26T02:43:11.197393+00:00",
+      "ranges": {
+        "roll_cdeg": [
+          -29.0,
+          173.0
+        ],
+        "pitch_cdeg": [
+          24.0,
+          405.0
+        ],
+        "fused_vz_mmps": [
+          -151.91207885742188,
+          185.41708374023438
+        ],
+        "world_az_up_mmps2": [
+          88.0,
+          1454.0
+        ],
+        "target_height_mm": [
+          1400.0,
+          1400.0
+        ],
+        "fused_height_mm": [
+          631.0,
+          718.0
+        ],
+        "raw_distance_mm": [
+          492.0,
+          637.0
+        ],
+        "ch3": [
+          1498.0,
+          1498.0
+        ]
+      },
+      "force_deficit_percent_range": [
+        0.002248060117793216,
+        0.2723325217080297
+      ],
+      "physical_pwm_mean_minus_z_collective_us_range": [
+        -13.75,
+        0.0
+      ],
+      "groups_with_motor_touching_2000": 3,
+      "fallback_true": 0
+    },
+    {
+      "first": 4041,
+      "last": 4282,
+      "all_groups": 242,
+      "all_six_packet_groups": 237,
+      "nav_groups": 242,
+      "nav_at1850": 242,
+      "first_utc": "2026-10-26T02:44:37.287125+00:00",
+      "last_utc": "2026-10-26T02:45:25.492256+00:00",
+      "ranges": {
+        "roll_cdeg": [
+          -311.0,
+          833.0
+        ],
+        "pitch_cdeg": [
+          -117.0,
+          428.0
+        ],
+        "fused_vz_mmps": [
+          -164.1684112548828,
+          239.82254028320312
+        ],
+        "world_az_up_mmps2": [
+          -1409.0,
+          1963.0
+        ],
+        "target_height_mm": [
+          -1740.0,
+          2570.0
+        ],
+        "fused_height_mm": [
+          235.0,
+          781.0
+        ],
+        "raw_distance_mm": [
+          334.0,
+          657.0
+        ],
+        "ch3": [
+          1002.0,
+          1685.0
+        ]
+      },
+      "force_deficit_percent_range": [
+        0.0010006658335615093,
+        1.1071253681006477
+      ],
+      "physical_pwm_mean_minus_z_collective_us_range": [
+        -8.5,
+        0.0
+      ],
+      "groups_with_motor_touching_2000": 5,
+      "fallback_true": 0
+    },
+    {
+      "first": 4259,
+      "last": 4282,
+      "all_groups": 24,
+      "all_six_packet_groups": 24,
+      "nav_groups": 24,
+      "nav_at1850": 24,
+      "first_utc": "2026-10-26T02:45:20.881352+00:00",
+      "last_utc": "2026-10-26T02:45:25.492256+00:00",
+      "ranges": {
+        "roll_cdeg": [
+          74.0,
+          371.0
+        ],
+        "pitch_cdeg": [
+          -6.0,
+          249.0
+        ],
+        "fused_vz_mmps": [
+          -105.22200012207031,
+          36.005157470703125
+        ],
+        "world_az_up_mmps2": [
+          -1153.0,
+          1074.0
+        ],
+        "target_height_mm": [
+          -1740.0,
+          1284.0
+        ],
+        "fused_height_mm": [
+          260.0,
+          318.0
+        ],
+        "raw_distance_mm": [
+          354.0,
+          412.0
+        ],
+        "ch3": [
+          1002.0,
+          1002.0
+        ]
+      },
+      "force_deficit_percent_range": [
+        0.0335318456801903,
+        0.20978485877428676
+      ],
+      "physical_pwm_mean_minus_z_collective_us_range": [
+        -2.75,
+        0.0
+      ],
+      "groups_with_motor_touching_2000": 1,
+      "fallback_true": 0
+    }
+  ]
+}

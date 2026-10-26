@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "scope": "Read frozen B3/P2, derive force projection, and check the actual mixer only.\n\nNo plant/ESC identification, no aircraft simulation, no HTTP/serial/hardware.\nThe force table follows the Euler rotation derivation in TILT_FINDINGS.md;\nit is not a claim that PWM is proportional to thrust.\n",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-s",
+        "tb",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_landing_altitude\\tilt\\tmp\\mixer.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_landing_altitude\\tilt\\mixer_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\rtl\\quad_mixer_feedback.v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_landing_altitude\\tilt\\tmp\\mixer.vvp"
+      ],
+      "pid": 36708,
+      "actual_wait_return": 0
+    }
+  ],
+  "source_inputs": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\acg720_ano_port.v": {
+      "sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "bytes": 27206
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\mtf_xyz_navigation_control.v": {
+      "sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "bytes": 26370
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\flight_core.v": {
+      "sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "bytes": 39115
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\rtl\\quad_mixer_feedback.v": {
+      "sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+      "bytes": 1912
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\rtl\\ano_rate_control.v": {
+      "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "bytes": 16946
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\mtf_xyz_hold_control.v": {
+      "sha256": "b7eef6d33789523cd1e8ff81b05e75db91ab3c67bf76e03483dec356055fa1a6",
+      "bytes": 28451
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\mtf_shared_height_fusion.v": {
+      "sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "bytes": 47581
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\ano_z_stick.v": {
+      "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "bytes": 3700
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\sensor\\mtf_shared_geometry.v": {
+      "sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "bytes": 14436
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\height_loss_fallback.v": {
+      "sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "bytes": 5460
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_AltCtrl.c": {
+      "sha256": "c419219ab052e4a2d07697682be01cd1d32d1dc3950eeeee0af9188891c297a3",
+      "bytes": 4922
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_MotorCtrl.c": {
+      "sha256": "c7760c114997134141d05d5023b1be46b88abde85d0cdd929d3ea8997f908c16",
+      "bytes": 2451
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_FlightDataCal.c": {
+      "sha256": "a78f3d1571ee8602038041ab57a616f329af18e9457e4cff57ec7b9f5fd86dcf",
+      "bytes": 5380
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\config.h": {
+      "sha256": "97c8a336edbb71cdf51a0f8ef89d1e695e608e2802b978bcbb06e6e891b68d0d",
+      "bytes": 2818
+    },
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\Application\\Ano_Scheduler.c": {
+      "sha256": "75b87206cce7a278367936ee33bfd4f6689cb64d3aca4554d333353367cb8943",
+      "bytes": 6219
+    }
+  },
+  "source_inputs_unchanged": true,
+  "checks": [
+    "PASS mixer case0: t=1658 r=0 p=0 y=0 motors=1658,1658,1658,1658 sat=0 pos=0 neg=0",
+    "PASS mixer case1: t=1658 r=0 p=100 y=0 motors=1758,1758,1558,1558 sat=0 pos=0 neg=0",
+    "PASS mixer case2: t=1658 r=0 p=300 y=0 motors=1958,1958,1358,1358 sat=0 pos=0 neg=0",
+    "PASS mixer case3: t=1658 r=0 p=400 y=0 motors=2000,2000,1258,1258 sat=1 pos=7 neg=5",
+    "PASS mixer case4: t=1850 r=0 p=150 y=0 motors=2000,2000,1700,1700 sat=0 pos=7 neg=5",
+    "PASS mixer case5: t=1850 r=0 p=300 y=0 motors=2000,2000,1550,1550 sat=1 pos=7 neg=5",
+    "PASS mixer case6: t=1350 r=0 p=300 y=0 motors=1650,1650,1200,1200 sat=1 pos=7 neg=5",
+    "PASS mixer case7: t=1850 r=200 p=200 y=100 motors=2000,1950,1350,1950 sat=1 pos=3 neg=4",
+    "PASS disabled mixer outputs1000, feedback0"
+  ],
+  "generated": {
+    "mixer_tb.v": "6ab123a18e3fcb3165a30d34c5e575f71819ba663d0879c633644a4e19ed2185",
+    "force_geometry_reference.csv": "05539d51e2a8e36f24b21418e944e5abbddea3ab9e9f0624b832133a194273ea",
+    "mixer_reference.csv": "83946a76944cae97127b0b83aa814cdf0e3134ce34cd061401cec9627a374ff4",
+    "mixer.log": "fb1b1bc09e798818c73c107a2e58e3fbd384e6b13c6bce01b181db470bc12556"
+  }
+}
