@@ -1,0 +1,20 @@
+test_failed_new54_runs_exact_preserved_p005_recovery_sequence (test_flash_b0b3.FlashTests.test_failed_new54_runs_exact_preserved_p005_recovery_sequence) ... ok
+test_fixed_images_zero_address_and_old_only_sram (test_flash_b0b3.FlashTests.test_fixed_images_zero_address_and_old_only_sram) ... ok
+test_fresh_unsafe_activity_is_a_distinct_stop_signal (test_flash_b0b3.FlashTests.test_fresh_unsafe_activity_is_a_distinct_stop_signal) ... ok
+test_fresh_unsafe_after_failed54_immediately_skips_automatic_recovery (test_flash_b0b3.FlashTests.test_fresh_unsafe_after_failed54_immediately_skips_automatic_recovery) ... ok
+test_full_transaction_verifies_old_flash_first_b3_identity_and_two_new_reloads (test_flash_b0b3.FlashTests.test_full_transaction_verifies_old_flash_first_b3_identity_and_two_new_reloads) ... ok
+test_import_and_default_cli_never_install (test_flash_b0b3.FlashTests.test_import_and_default_cli_never_install) ... ok
+test_initial_preflight_rejection_never_reloads_or_erases_flash (test_flash_b0b3.FlashTests.test_initial_preflight_rejection_never_reloads_or_erases_flash) ... ok
+test_new_image_hash_rejected_before_write_never_programs_flash (test_flash_b0b3.FlashTests.test_new_image_hash_rejected_before_write_never_programs_flash) ... ok
+test_operation_whitelist_rejects_bool_approval_location_and_arbitrary_image (test_flash_b0b3.FlashTests.test_operation_whitelist_rejects_bool_approval_location_and_arbitrary_image) ... ok
+test_programmer_timeout_keeps_bytes_or_text_receipts_and_propagates (test_flash_b0b3.FlashTests.test_programmer_timeout_keeps_bytes_or_text_receipts_and_propagates) ... ok
+test_stopped_missing_fields_and_rc_bounds_fail_closed (test_flash_b0b3.FlashTests.test_stopped_missing_fields_and_rc_bounds_fail_closed) ... ok
+test_verify_checks_every_pinned_hash_and_qualification_without_hardware (test_flash_b0b3.FlashTests.test_verify_checks_every_pinned_hash_and_qualification_without_hardware) ... ok
+test_wait_rejects_old_epoch_unhealthy_and_nonprogressing_counters (test_flash_b0b3.FlashTests.test_wait_rejects_old_epoch_unhealthy_and_nonprogressing_counters) ... ok
+test_wait_requires_five_distinct_new_epoch_healthy_frames_and_progressing_counters (test_flash_b0b3.FlashTests.test_wait_requires_five_distinct_new_epoch_healthy_frames_and_progressing_counters) ... ok
+test_wait_uptime_regression_discards_the_previous_partial_window (test_flash_b0b3.FlashTests.test_wait_uptime_regression_discards_the_previous_partial_window) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.249s
+
+OK

@@ -1,0 +1,5 @@
+{
+  "source": "Direct current-chat response",
+  "answer": "已完全断电等待5秒，现已仅电池重新上电",
+  "expected_action": "Battery, board USB and programmer disconnected from board; LEDs off plus five seconds; battery-only reconnect; computer SiK remains connected"
+}

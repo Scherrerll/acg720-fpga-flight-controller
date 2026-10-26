@@ -1,0 +1,9 @@
+{
+  "source": "Direct user messages in this chat",
+  "flash_authorization": "长期呗，反正其他的都一样吧",
+  "prior_explanation": "Permanent B0B3 Flash boot; P/I still volatile with .05/0 defaults; exact same qualified image as SRAM test",
+  "bench_confirmation": "已将 CH5/SWA 拨到低位，其他条件保持",
+  "first_attempt_rejected_ch5_us": 1507,
+  "first_attempt_device_operations": 0,
+  "scope": "Program B0B3 persistent boot firmware and verify; preserve P005 fallback; no motor/flight commands"
+}

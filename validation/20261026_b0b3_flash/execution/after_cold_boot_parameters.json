@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "stage": "after_cold_boot",
+  "started_utc": "2026-10-26T00:59:30.208874+00:00",
+  "request_type": "GET only",
+  "parameter_values_written": false,
+  "script_sha256": "bfb1a56c721f6c6875ebefe180dfecf6972988e6b89bf0e5da8cea45a6a96f10",
+  "request": {
+    "request_id": "84d9abe3-03dd-4fff-8b32-2731578f8e3b",
+    "epoch": 8
+  },
+  "accepted": {
+    "operation_id": 16
+  },
+  "response": {
+    "enabled": true,
+    "connected": true,
+    "source": "SiK",
+    "baud": 115200,
+    "epoch": 8,
+    "supported": true,
+    "busy": false,
+    "phase": "idle",
+    "operation_id": 16,
+    "active": {
+      "p_text": "0.0500",
+      "i_text": "0.0000",
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3",
+      "age_ms": 16.6
+    },
+    "result": {
+      "code": "queried",
+      "message": "Active parameters queried; valid for this power cycle only.",
+      "operation_id": 16,
+      "sequence": 1973207166
+    },
+    "can_query": true,
+    "can_set": true,
+    "block_reason": "",
+    "persistence": "本次上电有效，重启恢复 P=0.05 / I=0",
+    "scope": "共享 XY 速度外环；FPGA 是最终写入裁决者"
+  },
+  "finished_utc": "2026-10-26T00:59:30.483023+00:00"
+}

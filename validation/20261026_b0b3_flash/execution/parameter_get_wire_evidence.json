@@ -1,0 +1,113 @@
+{
+  "scope": "Only the two agent GET probes, not concurrent user page operations",
+  "sequences": [
+    1973207165,
+    1973207166
+  ],
+  "events": [
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:57:13.546887+00:00",
+      "host_ns": 253655364850200,
+      "elapsed_s": 1663.9643106000149,
+      "epoch": 6,
+      "detail": {
+        "transport_epoch": 7,
+        "opcode": 1,
+        "sequence": 1973207165,
+        "packet_hex": "a59001011000759cc07d000000007fc4"
+      },
+      "record_order": 53858
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:57:13.547093+00:00",
+      "host_ns": 253655365050700,
+      "elapsed_s": 1663.964511099999,
+      "epoch": 6,
+      "detail": {
+        "transport_epoch": 7,
+        "opcode": 1,
+        "sequence": 1973207165,
+        "packet_hex": "a59001011000759cc07d000000007fc4",
+        "bytes_written": 16
+      },
+      "record_order": 53859
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:59:30.273817+00:00",
+      "host_ns": 253792091780900,
+      "elapsed_s": 1800.6912412999955,
+      "epoch": 7,
+      "detail": {
+        "transport_epoch": 8,
+        "opcode": 1,
+        "sequence": 1973207166,
+        "packet_hex": "a59001011000759cc07e000000009116"
+      },
+      "record_order": 58233
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:59:30.274012+00:00",
+      "host_ns": 253792091970200,
+      "elapsed_s": 1800.6914306000108,
+      "epoch": 7,
+      "detail": {
+        "transport_epoch": 8,
+        "opcode": 1,
+        "sequence": 1973207166,
+        "packet_hex": "a59001011000759cc07e000000009116",
+        "bytes_written": 16
+      },
+      "record_order": 58234
+    }
+  ],
+  "responses": [
+    {
+      "utc": "2026-10-26T00:57:13.829213+00:00",
+      "host_ns": 253655647167200,
+      "elapsed_s": 1664.2466275999905,
+      "epoch": 6,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207165,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 0,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 53867
+    },
+    {
+      "utc": "2026-10-26T00:59:30.446294+00:00",
+      "host_ns": 253792264250700,
+      "elapsed_s": 1800.8637111000135,
+      "epoch": 7,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207166,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 0,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 58242
+    }
+  ]
+}

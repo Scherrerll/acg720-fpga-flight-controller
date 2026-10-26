@@ -1,0 +1,76 @@
+{
+  "installed": false,
+  "device_change_started": false,
+  "flash_write_started": false,
+  "flash_written": false,
+  "flash_contents_certified": false,
+  "independent_flash_verify_passed": false,
+  "physical_cold_boot_verified": false,
+  "flight_ready": false,
+  "previous_default": "P005/I0 B0B2",
+  "intended_default": "B0B3 .05/0",
+  "operations": [],
+  "authorization": "Direct user chose permanent B0B3 after SRAM-vs-Flash explanation; prior props-off/low CH5 bench confirmation retained, live stopped checks required.",
+  "new_sha256": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+  "previous_sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c",
+  "operator_flash_approval": true,
+  "qualification": {
+    "passed": true,
+    "scope": "This lightweight export only; offline artifact/identity/raw-table verification; no original full2347-file verification, fresh synthesis/STA, programming or flight claim",
+    "manifest_sha256": "23374b5c3aca40e8e71a8ae7ad037541484416a752c683b378083a78a3d4f7a7",
+    "files_verified": 641,
+    "bytes_verified": 132809565,
+    "copied_sources_bound_to_full_delivery_manifest": 632,
+    "deterministic_gzip_files_verified": 6,
+    "selected_source_files": 55,
+    "release_bitstreams": 3,
+    "selected_physical_options": {
+      "place": 3,
+      "route": 0,
+      "replicate_resources": 0,
+      "map_option": 2
+    },
+    "raw_timing_tables": {
+      "setup": {
+        "worst_slack_ns": 0.102,
+        "reported_paths": 25
+      },
+      "hold": {
+        "worst_slack_ns": 0.145,
+        "reported_paths": 25
+      },
+      "recovery": {
+        "worst_slack_ns": 11.895,
+        "reported_paths": 25
+      },
+      "removal": {
+        "worst_slack_ns": 3.312,
+        "reported_paths": 25
+      },
+      "minimum_pulse_width": {
+        "worst_slack_ns": 7.387,
+        "reported_paths": 10
+      }
+    },
+    "actual_fmax_mhz": 50.257,
+    "actual_pin_rows": 18,
+    "old19p5_rejected": true,
+    "installed": false,
+    "flash_written": false
+  },
+  "script_sha256": "4a4adf876cc3912124fcb17f4a696962d6a4f1772e9af0c9e9bea9121cc77057",
+  "programmer": {
+    "vid": 1027,
+    "pid": 24596,
+    "serial": "6",
+    "device": "COM22"
+  },
+  "cable": {
+    "name": "Gowin USB Cable(FT2CH)",
+    "index": 1,
+    "location": 292
+  },
+  "updated_utc": "2026-10-26T00:54:12.061327+00:00",
+  "error": "ValueError: CH3/CH5/CH7 low and centered sticks required",
+  "preflight_rejected_no_device_change": true
+}

@@ -1,0 +1,24 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "out\\xy_pi_ground_20261026\\flash_20261026_0850",
+    "-p",
+    "test_flash_b0b3.py",
+    "-v"
+  ],
+  "pid": 38904,
+  "actual_wait_return": 0,
+  "script_sha256_before": "4a4adf876cc3912124fcb17f4a696962d6a4f1772e9af0c9e9bea9121cc77057",
+  "script_sha256_after": "4a4adf876cc3912124fcb17f4a696962d6a4f1772e9af0c9e9bea9121cc77057",
+  "script_unchanged": true,
+  "test_sha256": "d9f6f38c8c249ea314c5b87260a5baa492e78a55b12809dd72897d8431fc4dc6",
+  "log": "out/xy_pi_ground_20261026/flash_20261026_0850/20261026T005353_593760Z_offline_tests.log",
+  "log_sha256": "3e4fe4d63fb008afda0135c67ce490743df1d849808052a99eac7434c699f3df",
+  "scope": "Pure mocks only; subprocess/HTTP/inventory/helper mocked; no programmer, serial, real HTTP or hardware",
+  "passed": true
+}

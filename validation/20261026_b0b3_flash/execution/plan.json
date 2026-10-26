@@ -1,0 +1,33 @@
+{
+  "prepared_utc": "2026-10-26T00:54:01.579724+00:00",
+  "operator_request": "长期呗，反正其他的都一样吧",
+  "explicit_flash_authorization": true,
+  "ground_session_only": true,
+  "new_image": "firmware/B0B3/release/B0B3_selected_P3R0.fs",
+  "new_sha256": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+  "rollback_image": "firmware/B0B3/release/current_P005_I0.fs",
+  "rollback_sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c",
+  "installer_sha256": "4a4adf876cc3912124fcb17f4a696962d6a4f1772e9af0c9e9bea9121cc77057",
+  "programmer_sha256": "ca28fe178b04fd99780267787f61b0e0ec3729d579fe237ff454c1a0353e8ef6",
+  "exact_same_image_as_sram_test": true,
+  "parameter_persistence": "volatile; power-on P=.05/I=0",
+  "operations": [
+    0,
+    1,
+    0,
+    66,
+    1,
+    0,
+    54,
+    1,
+    0,
+    66,
+    1,
+    0
+  ],
+  "flash_address": "0x000000",
+  "require_previous_flash_verified_before_new_erase": true,
+  "require_independent_new_verify": true,
+  "cold_boot_requires_operator_power_cycle": true,
+  "flight_qualified": false
+}

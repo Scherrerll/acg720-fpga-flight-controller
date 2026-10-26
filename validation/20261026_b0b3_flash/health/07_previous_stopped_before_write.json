@@ -1,0 +1,286 @@
+{
+  "source": "out/xy_pi_ground_20261026/flash_20261026_0855/07_previous_stopped_before_write.json",
+  "source_sha256": "aa2030a6300b898d5546cd69bbf2da53846779a1a319e2fcc50950df97ff3f5c",
+  "selected_fields": [
+    {
+      "connected": true,
+      "fresh": true,
+      "status": "live",
+      "sequence": 13,
+      "port": "COM17",
+      "flight_info_fresh": true,
+      "imu_diagnostic_fresh": true,
+      "navigation_fresh": true,
+      "mtf_fresh": true,
+      "data": {
+        "armed": false,
+        "controller_enabled": false,
+        "command_fresh": false,
+        "physical_output_active": false,
+        "pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "command_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "rc_valid": true,
+        "rc_us": [
+          1500,
+          1501,
+          1003,
+          1500,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "calibrated": true,
+        "attitude_valid": true,
+        "sensor_ok": true
+      },
+      "flight_info": {
+        "build_id": 45234,
+        "sequence": 13,
+        "uptime_ms": 2799,
+        "taking_off": false,
+        "controller_fault": 0
+      },
+      "imu_diagnostic": {
+        "raw_count": 2153,
+        "pose_count": 99,
+        "accepted_count": 2153,
+        "latest_reader_fault": 0
+      }
+    },
+    {
+      "connected": true,
+      "fresh": true,
+      "status": "live",
+      "sequence": 14,
+      "port": "COM17",
+      "flight_info_fresh": true,
+      "imu_diagnostic_fresh": true,
+      "navigation_fresh": true,
+      "mtf_fresh": true,
+      "data": {
+        "armed": false,
+        "controller_enabled": false,
+        "command_fresh": false,
+        "physical_output_active": false,
+        "pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "command_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "rc_valid": true,
+        "rc_us": [
+          1500,
+          1501,
+          1003,
+          1500,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "calibrated": true,
+        "attitude_valid": true,
+        "sensor_ok": true
+      },
+      "flight_info": {
+        "build_id": 45234,
+        "sequence": 14,
+        "uptime_ms": 2999,
+        "taking_off": false,
+        "controller_fault": 0
+      },
+      "imu_diagnostic": {
+        "raw_count": 2353,
+        "pose_count": 299,
+        "accepted_count": 2353,
+        "latest_reader_fault": 0
+      }
+    },
+    {
+      "connected": true,
+      "fresh": true,
+      "status": "live",
+      "sequence": 15,
+      "port": "COM17",
+      "flight_info_fresh": true,
+      "imu_diagnostic_fresh": true,
+      "navigation_fresh": true,
+      "mtf_fresh": true,
+      "data": {
+        "armed": false,
+        "controller_enabled": false,
+        "command_fresh": false,
+        "physical_output_active": false,
+        "pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "command_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "rc_valid": true,
+        "rc_us": [
+          1500,
+          1501,
+          1003,
+          1500,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "calibrated": true,
+        "attitude_valid": true,
+        "sensor_ok": true
+      },
+      "flight_info": {
+        "build_id": 45234,
+        "sequence": 15,
+        "uptime_ms": 3199,
+        "taking_off": false,
+        "controller_fault": 0
+      },
+      "imu_diagnostic": {
+        "raw_count": 2553,
+        "pose_count": 499,
+        "accepted_count": 2553,
+        "latest_reader_fault": 0
+      }
+    },
+    {
+      "connected": true,
+      "fresh": true,
+      "status": "live",
+      "sequence": 16,
+      "port": "COM17",
+      "flight_info_fresh": true,
+      "imu_diagnostic_fresh": true,
+      "navigation_fresh": true,
+      "mtf_fresh": true,
+      "data": {
+        "armed": false,
+        "controller_enabled": false,
+        "command_fresh": false,
+        "physical_output_active": false,
+        "pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "command_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "rc_valid": true,
+        "rc_us": [
+          1500,
+          1501,
+          1003,
+          1500,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "calibrated": true,
+        "attitude_valid": true,
+        "sensor_ok": true
+      },
+      "flight_info": {
+        "build_id": 45234,
+        "sequence": 16,
+        "uptime_ms": 3399,
+        "taking_off": false,
+        "controller_fault": 0
+      },
+      "imu_diagnostic": {
+        "raw_count": 2754,
+        "pose_count": 700,
+        "accepted_count": 2754,
+        "latest_reader_fault": 0
+      }
+    },
+    {
+      "connected": true,
+      "fresh": true,
+      "status": "live",
+      "sequence": 17,
+      "port": "COM17",
+      "flight_info_fresh": true,
+      "imu_diagnostic_fresh": true,
+      "navigation_fresh": true,
+      "mtf_fresh": true,
+      "data": {
+        "armed": false,
+        "controller_enabled": false,
+        "command_fresh": false,
+        "physical_output_active": false,
+        "pwm_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "command_us": [
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "rc_valid": true,
+        "rc_us": [
+          1500,
+          1501,
+          1003,
+          1500,
+          1000,
+          1000,
+          1000,
+          1000
+        ],
+        "calibrated": true,
+        "attitude_valid": true,
+        "sensor_ok": true
+      },
+      "flight_info": {
+        "build_id": 45234,
+        "sequence": 17,
+        "uptime_ms": 3599,
+        "taking_off": false,
+        "controller_fault": 0
+      },
+      "imu_diagnostic": {
+        "raw_count": 2954,
+        "pose_count": 900,
+        "accepted_count": 2954,
+        "latest_reader_fault": 0
+      }
+    }
+  ]
+}

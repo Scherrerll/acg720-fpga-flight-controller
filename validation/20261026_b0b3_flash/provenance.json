@@ -1,0 +1,216 @@
+{
+  "created_utc": "2026-10-26T01:02:59.787465+00:00",
+  "copied": [
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/completion.json",
+      "export": "validation/20261026_b0b3_flash/completion.json",
+      "sha256": "64fa27e8adcbc7544b66dbb25b5421af2e2807df0af0a4ef954e23eae0d409d2"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0850/flash_install_report.json",
+      "export": "validation/20261026_b0b3_flash/first_preflight/flash_install_report.json",
+      "sha256": "31b8ba05f8e8f1ea9a300d67b9ce947c98ea3620f99ea7f5f69dfc10972790dd"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/flash_b0b3.py",
+      "export": "validation/20261026_b0b3_flash/scripts/flash_b0b3.py",
+      "sha256": "4a4adf876cc3912124fcb17f4a696962d6a4f1772e9af0c9e9bea9121cc77057"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/observe_cold_boot.py",
+      "export": "validation/20261026_b0b3_flash/scripts/observe_cold_boot.py",
+      "sha256": "e7fa7a23241574377bd96c7f52e6f0ef3dc24d432ab8098a27e6788641a64c7b"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/probe_parameters.py",
+      "export": "validation/20261026_b0b3_flash/scripts/probe_parameters.py",
+      "sha256": "bfb1a56c721f6c6875ebefe180dfecf6972988e6b89bf0e5da8cea45a6a96f10"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/test_flash_b0b3.py",
+      "export": "validation/20261026_b0b3_flash/scripts/test_flash_b0b3.py",
+      "sha256": "d9f6f38c8c249ea314c5b87260a5baa492e78a55b12809dd72897d8431fc4dc6"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/plan.json",
+      "export": "validation/20261026_b0b3_flash/execution/plan.json",
+      "sha256": "f71d86c687a04c114529f9a4fb5d15b9790673879a782eae543103da71b12c2f"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/operator_authorization.json",
+      "export": "validation/20261026_b0b3_flash/execution/operator_authorization.json",
+      "sha256": "58594f1642e4e56bf4446206aff9981629432c58f5059cc205998d52f8093cb9"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/flash_install_report.json",
+      "export": "validation/20261026_b0b3_flash/execution/flash_install_report.json",
+      "sha256": "c5080da3b622bb7a8cf19d8fe5d36fca7ccd64c80fcbc4630da7d6eefd74b2c2"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/after_flash_parameters.json",
+      "export": "validation/20261026_b0b3_flash/execution/after_flash_parameters.json",
+      "sha256": "e8ed4a4ce845fd3c5804214cab5c8ed83c1ae0806e937aa4c9810abc61c0cd82"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/after_cold_boot_parameters.json",
+      "export": "validation/20261026_b0b3_flash/execution/after_cold_boot_parameters.json",
+      "sha256": "6cc9fb54f6b6dc72f7a36152c687b78951cdac098ba77a07a02b7fc5af11d004"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/20261026T005353_593760Z_offline_tests.json",
+      "export": "validation/20261026_b0b3_flash/offline/20261026T005353_593760Z_offline_tests.json",
+      "sha256": "7bc240ba155cbda3954451da1fa3bb953bca95f32d797a2e37f1021f6c0e6b9b"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/20261026T005353_593760Z_offline_tests.log",
+      "export": "validation/20261026_b0b3_flash/offline/20261026T005353_593760Z_offline_tests.log",
+      "sha256": "3e4fe4d63fb008afda0135c67ce490743df1d849808052a99eac7434c699f3df"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/cold_boot/summary.json",
+      "export": "validation/20261026_b0b3_flash/cold_boot/summary.json",
+      "sha256": "d81a850fe6953260ccc45893aca4eaaa800bad43239bcb441e01f35840bd8cf5"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/cold_boot/operator_confirmation.json",
+      "export": "validation/20261026_b0b3_flash/cold_boot/operator_confirmation.json",
+      "sha256": "69aa62ba34a9b7b9db4a6349c3cbcbd1c0518f7858690959b7da53779a837ee0"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/01_previous_identity.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/01_previous_identity.txt",
+      "sha256": "0083f8ccfcafcd9b079a67a5875241dc321a661bcb3369fe2f7b25c7fbb96fbf"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/01_previous_identity_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/01_previous_identity_cable.txt",
+      "sha256": "147a76adc3813d78eba9d16fe232ee1ffff26e2a26c1c3c5f5ef4e932f0af85a"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/02_previous_flash_reload.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/02_previous_flash_reload.txt",
+      "sha256": "2cffd8d815d7f1873c761dd1f0c0d8b31113ccf5767f92fb1f587759f794f246"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/02_previous_flash_reload_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/02_previous_flash_reload_cable.txt",
+      "sha256": "64b6954d2842672b0c4161648613ba02af9f4e786975dbc965b48b0749f19f14"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/04_previous_loaded_identity.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/04_previous_loaded_identity.txt",
+      "sha256": "102b559449cd14d061f6d932adb55f368f1aa1cca457500104627597446846cf"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/04_previous_loaded_identity_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/04_previous_loaded_identity_cable.txt",
+      "sha256": "d1d7a2ba75275a7c1a01680ae2aa95392d866797fb17416d35c0257ad876fa72"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/05_previous_flash_verify_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/05_previous_flash_verify_cable.txt",
+      "sha256": "147a76adc3813d78eba9d16fe232ee1ffff26e2a26c1c3c5f5ef4e932f0af85a"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/06_previous_reload_after_verify.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/06_previous_reload_after_verify.txt",
+      "sha256": "ea030540433f0750e70a7a8d69647aa387b0698285acae8cdc6df11a831848df"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/06_previous_reload_after_verify_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/06_previous_reload_after_verify_cable.txt",
+      "sha256": "64b6954d2842672b0c4161648613ba02af9f4e786975dbc965b48b0749f19f14"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/08_write_boundary_identity.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/08_write_boundary_identity.txt",
+      "sha256": "a1b63f3ec9215016caa9118e21f0a64e44c351e96c372f74590e2afa8ad192b2"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/08_write_boundary_identity_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/08_write_boundary_identity_cable.txt",
+      "sha256": "147a76adc3813d78eba9d16fe232ee1ffff26e2a26c1c3c5f5ef4e932f0af85a"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/09_B0B3_program_verify_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/09_B0B3_program_verify_cable.txt",
+      "sha256": "64b6954d2842672b0c4161648613ba02af9f4e786975dbc965b48b0749f19f14"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/10_B0B3_reload.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/10_B0B3_reload.txt",
+      "sha256": "3f85a08718e867c0a2be6194f732e3518dac75f7f6fd2ec2ac7ccb27a7531aac"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/10_B0B3_reload_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/10_B0B3_reload_cable.txt",
+      "sha256": "64b6954d2842672b0c4161648613ba02af9f4e786975dbc965b48b0749f19f14"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/12_B0B3_identity.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/12_B0B3_identity.txt",
+      "sha256": "0a862c476f562735f58ab07bf4e7736b16f5548e9b0108f8d131ae5c55c79c49"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/12_B0B3_identity_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/12_B0B3_identity_cable.txt",
+      "sha256": "64b6954d2842672b0c4161648613ba02af9f4e786975dbc965b48b0749f19f14"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/13_B0B3_independent_verify_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/13_B0B3_independent_verify_cable.txt",
+      "sha256": "d1d7a2ba75275a7c1a01680ae2aa95392d866797fb17416d35c0257ad876fa72"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/14_B0B3_final_reload.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/14_B0B3_final_reload.txt",
+      "sha256": "e9e9abeee02d7ced6ca378e1f2f2bd7e41ff48bdf16985c013e7ddf1a9ea06cc"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/14_B0B3_final_reload_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/14_B0B3_final_reload_cable.txt",
+      "sha256": "64b6954d2842672b0c4161648613ba02af9f4e786975dbc965b48b0749f19f14"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/16_B0B3_final_identity.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/16_B0B3_final_identity.txt",
+      "sha256": "5fc15d9bf9802a0bea7e9f2910c704dacf814e83f4db033f4c214a7de3a4790c"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/16_B0B3_final_identity_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/16_B0B3_final_identity_cable.txt",
+      "sha256": "d1d7a2ba75275a7c1a01680ae2aa95392d866797fb17416d35c0257ad876fa72"
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/initial_cable.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/initial_cable.txt",
+      "sha256": "d1d7a2ba75275a7c1a01680ae2aa95392d866797fb17416d35c0257ad876fa72"
+    }
+  ],
+  "deterministic_gzip": [
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/05_previous_flash_verify.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/05_previous_flash_verify.txt.gz",
+      "sha256": "5e28f97d613b149cf460088e21aa133859a2cded06aee56b608f69454e490562",
+      "decompressed_sha256": "ab56f09ab91d985f16500073603cf7f2b01ef0f95251c650a74775720ba1f010",
+      "decompressed_bytes": 577912
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/09_B0B3_program_verify.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/09_B0B3_program_verify.txt.gz",
+      "sha256": "06557b58d2d166dfd1c58d2ebcaf9b19e103cae3b506473715e51fd06cc729e8",
+      "decompressed_sha256": "28a2b989badda4ab09231cf03835469acd39da157db14dd41dc7b9786c6f5b45",
+      "decompressed_bytes": 620774
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/flash_20261026_0855/13_B0B3_independent_verify.txt",
+      "export": "validation/20261026_b0b3_flash/vendor/13_B0B3_independent_verify.txt.gz",
+      "sha256": "5e28f97d613b149cf460088e21aa133859a2cded06aee56b608f69454e490562",
+      "decompressed_sha256": "ab56f09ab91d985f16500073603cf7f2b01ef0f95251c650a74775720ba1f010",
+      "decompressed_bytes": 577912
+    }
+  ],
+  "raw_flight_logs_uploaded": false,
+  "original_session": "out/xy_pi_ground_20261026/flash_20261026_0855",
+  "note": "Original source telemetry is trimmed for health snapshots; selected cold-boot observer records contain stopped/RC/uptime/counter fields only. Historical scripts are not generic installers."
+}

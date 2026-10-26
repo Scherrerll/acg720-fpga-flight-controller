@@ -1,0 +1,6985 @@
+{
+  "source": "out/xy_pi_ground_20261026/flash_20261026_0855/cold_boot/samples.jsonl",
+  "source_sha256": "b0d938fe149b447556ea6ae897ef2ba3946b11b89abadf5ca5d5509ad7ea9803",
+  "samples": [
+    {
+      "sequence": 171,
+      "fresh": true,
+      "uptime_ms": 34399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        999
+      ],
+      "taking_off": false,
+      "raw_count": 33804,
+      "pose_count": 31750,
+      "utc": "2026-10-26T00:57:30.489721+00:00"
+    },
+    {
+      "sequence": 172,
+      "fresh": true,
+      "uptime_ms": 34599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 34004,
+      "pose_count": 31950,
+      "utc": "2026-10-26T00:57:30.692979+00:00"
+    },
+    {
+      "sequence": 173,
+      "fresh": true,
+      "uptime_ms": 34799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 34204,
+      "pose_count": 32150,
+      "utc": "2026-10-26T00:57:30.896497+00:00"
+    },
+    {
+      "sequence": 174,
+      "fresh": true,
+      "uptime_ms": 34999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 34405,
+      "pose_count": 32351,
+      "utc": "2026-10-26T00:57:31.099835+00:00"
+    },
+    {
+      "sequence": 175,
+      "fresh": true,
+      "uptime_ms": 35199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 34605,
+      "pose_count": 32551,
+      "utc": "2026-10-26T00:57:31.303027+00:00"
+    },
+    {
+      "sequence": 176,
+      "fresh": true,
+      "uptime_ms": 35399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 34805,
+      "pose_count": 32751,
+      "utc": "2026-10-26T00:57:31.506514+00:00"
+    },
+    {
+      "sequence": 177,
+      "fresh": true,
+      "uptime_ms": 35599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 35006,
+      "pose_count": 32952,
+      "utc": "2026-10-26T00:57:31.710090+00:00"
+    },
+    {
+      "sequence": 178,
+      "fresh": true,
+      "uptime_ms": 35799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 35206,
+      "pose_count": 33152,
+      "utc": "2026-10-26T00:57:31.930886+00:00"
+    },
+    {
+      "sequence": 179,
+      "fresh": true,
+      "uptime_ms": 35999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 35406,
+      "pose_count": 33352,
+      "utc": "2026-10-26T00:57:32.147689+00:00"
+    },
+    {
+      "sequence": 180,
+      "fresh": true,
+      "uptime_ms": 36199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 35607,
+      "pose_count": 33553,
+      "utc": "2026-10-26T00:57:32.363459+00:00"
+    },
+    {
+      "sequence": 181,
+      "fresh": true,
+      "uptime_ms": 36399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 35807,
+      "pose_count": 33753,
+      "utc": "2026-10-26T00:57:32.566881+00:00"
+    },
+    {
+      "sequence": 182,
+      "fresh": true,
+      "uptime_ms": 36599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 36007,
+      "pose_count": 33953,
+      "utc": "2026-10-26T00:57:32.770488+00:00"
+    },
+    {
+      "sequence": 183,
+      "fresh": true,
+      "uptime_ms": 36799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 36208,
+      "pose_count": 34154,
+      "utc": "2026-10-26T00:57:32.973735+00:00"
+    },
+    {
+      "sequence": 184,
+      "fresh": true,
+      "uptime_ms": 36999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 36408,
+      "pose_count": 34354,
+      "utc": "2026-10-26T00:57:33.177300+00:00"
+    },
+    {
+      "sequence": 185,
+      "fresh": true,
+      "uptime_ms": 37199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 36608,
+      "pose_count": 34554,
+      "utc": "2026-10-26T00:57:33.402692+00:00"
+    },
+    {
+      "sequence": 187,
+      "fresh": true,
+      "uptime_ms": 37599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 37009,
+      "pose_count": 34955,
+      "utc": "2026-10-26T00:57:33.605748+00:00"
+    },
+    {
+      "sequence": 188,
+      "fresh": true,
+      "uptime_ms": 37599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 37009,
+      "pose_count": 34955,
+      "utc": "2026-10-26T00:57:33.821146+00:00"
+    },
+    {
+      "sequence": 189,
+      "fresh": true,
+      "uptime_ms": 37799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 37209,
+      "pose_count": 35155,
+      "utc": "2026-10-26T00:57:34.024982+00:00"
+    },
+    {
+      "sequence": 189,
+      "fresh": true,
+      "uptime_ms": 37999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 37410,
+      "pose_count": 35355,
+      "utc": "2026-10-26T00:57:34.242639+00:00"
+    },
+    {
+      "sequence": 191,
+      "fresh": true,
+      "uptime_ms": 38399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 37810,
+      "pose_count": 35756,
+      "utc": "2026-10-26T00:57:34.459607+00:00"
+    },
+    {
+      "sequence": 192,
+      "fresh": true,
+      "uptime_ms": 38599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 38011,
+      "pose_count": 35956,
+      "utc": "2026-10-26T00:57:34.662987+00:00"
+    },
+    {
+      "sequence": 192,
+      "fresh": true,
+      "uptime_ms": 38599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 38011,
+      "pose_count": 35956,
+      "utc": "2026-10-26T00:57:34.866864+00:00"
+    },
+    {
+      "sequence": 194,
+      "fresh": true,
+      "uptime_ms": 38799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 38211,
+      "pose_count": 36157,
+      "utc": "2026-10-26T00:57:35.080345+00:00"
+    },
+    {
+      "sequence": 195,
+      "fresh": true,
+      "uptime_ms": 39199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 38612,
+      "pose_count": 36557,
+      "utc": "2026-10-26T00:57:35.298757+00:00"
+    },
+    {
+      "sequence": 196,
+      "fresh": true,
+      "uptime_ms": 39399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 38812,
+      "pose_count": 36758,
+      "utc": "2026-10-26T00:57:35.502610+00:00"
+    },
+    {
+      "sequence": 197,
+      "fresh": true,
+      "uptime_ms": 39599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 39012,
+      "pose_count": 36958,
+      "utc": "2026-10-26T00:57:35.706306+00:00"
+    },
+    {
+      "sequence": 198,
+      "fresh": true,
+      "uptime_ms": 39799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 39212,
+      "pose_count": 37158,
+      "utc": "2026-10-26T00:57:35.933276+00:00"
+    },
+    {
+      "sequence": 199,
+      "fresh": true,
+      "uptime_ms": 39999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 39413,
+      "pose_count": 37359,
+      "utc": "2026-10-26T00:57:36.151592+00:00"
+    },
+    {
+      "sequence": 200,
+      "fresh": true,
+      "uptime_ms": 40199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 39613,
+      "pose_count": 37559,
+      "utc": "2026-10-26T00:57:36.355154+00:00"
+    },
+    {
+      "sequence": 202,
+      "fresh": true,
+      "uptime_ms": 40399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 39813,
+      "pose_count": 37759,
+      "utc": "2026-10-26T00:57:36.569646+00:00"
+    },
+    {
+      "sequence": 202,
+      "fresh": true,
+      "uptime_ms": 40599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 40014,
+      "pose_count": 37960,
+      "utc": "2026-10-26T00:57:36.773831+00:00"
+    },
+    {
+      "sequence": 203,
+      "fresh": true,
+      "uptime_ms": 40799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 40214,
+      "pose_count": 38160,
+      "utc": "2026-10-26T00:57:36.977854+00:00"
+    },
+    {
+      "sequence": 204,
+      "fresh": true,
+      "uptime_ms": 40999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 40414,
+      "pose_count": 38360,
+      "utc": "2026-10-26T00:57:37.199607+00:00"
+    },
+    {
+      "sequence": 205,
+      "fresh": true,
+      "uptime_ms": 41199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 40615,
+      "pose_count": 38561,
+      "utc": "2026-10-26T00:57:37.403407+00:00"
+    },
+    {
+      "sequence": 207,
+      "fresh": true,
+      "uptime_ms": 41399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 40815,
+      "pose_count": 38761,
+      "utc": "2026-10-26T00:57:37.617214+00:00"
+    },
+    {
+      "sequence": 207,
+      "fresh": true,
+      "uptime_ms": 41599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 41015,
+      "pose_count": 38961,
+      "utc": "2026-10-26T00:57:37.832697+00:00"
+    },
+    {
+      "sequence": 208,
+      "fresh": true,
+      "uptime_ms": 41799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 41216,
+      "pose_count": 39162,
+      "utc": "2026-10-26T00:57:38.036176+00:00"
+    },
+    {
+      "sequence": 210,
+      "fresh": true,
+      "uptime_ms": 42199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 41616,
+      "pose_count": 39562,
+      "utc": "2026-10-26T00:57:38.251926+00:00"
+    },
+    {
+      "sequence": 211,
+      "fresh": true,
+      "uptime_ms": 42399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 41817,
+      "pose_count": 39763,
+      "utc": "2026-10-26T00:57:38.456007+00:00"
+    },
+    {
+      "sequence": 212,
+      "fresh": true,
+      "uptime_ms": 42399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 41817,
+      "pose_count": 39763,
+      "utc": "2026-10-26T00:57:38.675044+00:00"
+    },
+    {
+      "sequence": 213,
+      "fresh": true,
+      "uptime_ms": 42799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 42217,
+      "pose_count": 40163,
+      "utc": "2026-10-26T00:57:38.878436+00:00"
+    },
+    {
+      "sequence": 214,
+      "fresh": true,
+      "uptime_ms": 42999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 42418,
+      "pose_count": 40364,
+      "utc": "2026-10-26T00:57:39.106639+00:00"
+    },
+    {
+      "sequence": 215,
+      "fresh": true,
+      "uptime_ms": 43199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 42618,
+      "pose_count": 40564,
+      "utc": "2026-10-26T00:57:39.310355+00:00"
+    },
+    {
+      "sequence": 216,
+      "fresh": true,
+      "uptime_ms": 43399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 42818,
+      "pose_count": 40764,
+      "utc": "2026-10-26T00:57:39.514071+00:00"
+    },
+    {
+      "sequence": 217,
+      "fresh": true,
+      "uptime_ms": 43599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 43019,
+      "pose_count": 40964,
+      "utc": "2026-10-26T00:57:39.730653+00:00"
+    },
+    {
+      "sequence": 218,
+      "fresh": true,
+      "uptime_ms": 43799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 43219,
+      "pose_count": 41165,
+      "utc": "2026-10-26T00:57:39.934327+00:00"
+    },
+    {
+      "sequence": 219,
+      "fresh": true,
+      "uptime_ms": 43999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 43419,
+      "pose_count": 41365,
+      "utc": "2026-10-26T00:57:40.150060+00:00"
+    },
+    {
+      "sequence": 220,
+      "fresh": true,
+      "uptime_ms": 44199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 43619,
+      "pose_count": 41565,
+      "utc": "2026-10-26T00:57:40.366370+00:00"
+    },
+    {
+      "sequence": 221,
+      "fresh": true,
+      "uptime_ms": 44399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 43820,
+      "pose_count": 41766,
+      "utc": "2026-10-26T00:57:40.570129+00:00"
+    },
+    {
+      "sequence": 222,
+      "fresh": true,
+      "uptime_ms": 44599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 44020,
+      "pose_count": 41966,
+      "utc": "2026-10-26T00:57:40.775744+00:00"
+    },
+    {
+      "sequence": 223,
+      "fresh": true,
+      "uptime_ms": 44799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 44221,
+      "pose_count": 42166,
+      "utc": "2026-10-26T00:57:40.979128+00:00"
+    },
+    {
+      "sequence": 225,
+      "fresh": true,
+      "uptime_ms": 45199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 44421,
+      "pose_count": 42367,
+      "utc": "2026-10-26T00:57:41.203230+00:00"
+    },
+    {
+      "sequence": 226,
+      "fresh": true,
+      "uptime_ms": 45199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 44621,
+      "pose_count": 42567,
+      "utc": "2026-10-26T00:57:41.407053+00:00"
+    },
+    {
+      "sequence": 226,
+      "fresh": true,
+      "uptime_ms": 45399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 44822,
+      "pose_count": 42767,
+      "utc": "2026-10-26T00:57:41.622710+00:00"
+    },
+    {
+      "sequence": 228,
+      "fresh": true,
+      "uptime_ms": 45799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 45222,
+      "pose_count": 43168,
+      "utc": "2026-10-26T00:57:41.838498+00:00"
+    },
+    {
+      "sequence": 229,
+      "fresh": true,
+      "uptime_ms": 45999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 45423,
+      "pose_count": 43368,
+      "utc": "2026-10-26T00:57:42.043421+00:00"
+    },
+    {
+      "sequence": 230,
+      "fresh": true,
+      "uptime_ms": 45999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 45423,
+      "pose_count": 43368,
+      "utc": "2026-10-26T00:57:42.246943+00:00"
+    },
+    {
+      "sequence": 230,
+      "fresh": true,
+      "uptime_ms": 46199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 45623,
+      "pose_count": 43569,
+      "utc": "2026-10-26T00:57:42.450567+00:00"
+    },
+    {
+      "sequence": 232,
+      "fresh": true,
+      "uptime_ms": 46599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 46023,
+      "pose_count": 43969,
+      "utc": "2026-10-26T00:57:42.654527+00:00"
+    },
+    {
+      "sequence": 233,
+      "fresh": true,
+      "uptime_ms": 46799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 46224,
+      "pose_count": 44170,
+      "utc": "2026-10-26T00:57:42.859166+00:00"
+    },
+    {
+      "sequence": 234,
+      "fresh": true,
+      "uptime_ms": 46999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 46424,
+      "pose_count": 44370,
+      "utc": "2026-10-26T00:57:43.063024+00:00"
+    },
+    {
+      "sequence": 235,
+      "fresh": true,
+      "uptime_ms": 46999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 46424,
+      "pose_count": 44370,
+      "utc": "2026-10-26T00:57:43.266671+00:00"
+    },
+    {
+      "sequence": 236,
+      "fresh": true,
+      "uptime_ms": 47399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 46825,
+      "pose_count": 44771,
+      "utc": "2026-10-26T00:57:43.470893+00:00"
+    },
+    {
+      "sequence": 237,
+      "fresh": true,
+      "uptime_ms": 47599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 47025,
+      "pose_count": 44971,
+      "utc": "2026-10-26T00:57:43.674205+00:00"
+    },
+    {
+      "sequence": 238,
+      "fresh": true,
+      "uptime_ms": 47799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 47225,
+      "pose_count": 45171,
+      "utc": "2026-10-26T00:57:43.878375+00:00"
+    },
+    {
+      "sequence": 238,
+      "fresh": true,
+      "uptime_ms": 47799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 47225,
+      "pose_count": 45171,
+      "utc": "2026-10-26T00:57:44.082596+00:00"
+    },
+    {
+      "sequence": 240,
+      "fresh": true,
+      "uptime_ms": 48199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 47626,
+      "pose_count": 45572,
+      "utc": "2026-10-26T00:57:44.286886+00:00"
+    },
+    {
+      "sequence": 241,
+      "fresh": true,
+      "uptime_ms": 48399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 47826,
+      "pose_count": 45772,
+      "utc": "2026-10-26T00:57:44.490875+00:00"
+    },
+    {
+      "sequence": 242,
+      "fresh": true,
+      "uptime_ms": 48599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 48027,
+      "pose_count": 45973,
+      "utc": "2026-10-26T00:57:44.694643+00:00"
+    },
+    {
+      "sequence": 243,
+      "fresh": true,
+      "uptime_ms": 48599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 48027,
+      "pose_count": 45973,
+      "utc": "2026-10-26T00:57:44.898876+00:00"
+    },
+    {
+      "sequence": 244,
+      "fresh": true,
+      "uptime_ms": 48999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 48427,
+      "pose_count": 46373,
+      "utc": "2026-10-26T00:57:45.103541+00:00"
+    },
+    {
+      "sequence": 245,
+      "fresh": true,
+      "uptime_ms": 49199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 48628,
+      "pose_count": 46574,
+      "utc": "2026-10-26T00:57:45.319765+00:00"
+    },
+    {
+      "sequence": 246,
+      "fresh": true,
+      "uptime_ms": 49399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 48828,
+      "pose_count": 46774,
+      "utc": "2026-10-26T00:57:45.536350+00:00"
+    },
+    {
+      "sequence": 247,
+      "fresh": true,
+      "uptime_ms": 49599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 49028,
+      "pose_count": 46974,
+      "utc": "2026-10-26T00:57:45.753126+00:00"
+    },
+    {
+      "sequence": 248,
+      "fresh": true,
+      "uptime_ms": 49799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 49229,
+      "pose_count": 47175,
+      "utc": "2026-10-26T00:57:45.957304+00:00"
+    },
+    {
+      "sequence": 249,
+      "fresh": true,
+      "uptime_ms": 49999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 49429,
+      "pose_count": 47375,
+      "utc": "2026-10-26T00:57:46.160897+00:00"
+    },
+    {
+      "sequence": 251,
+      "fresh": true,
+      "uptime_ms": 50199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 49629,
+      "pose_count": 47575,
+      "utc": "2026-10-26T00:57:46.365048+00:00"
+    },
+    {
+      "sequence": 251,
+      "fresh": true,
+      "uptime_ms": 50399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 49830,
+      "pose_count": 47775,
+      "utc": "2026-10-26T00:57:46.568889+00:00"
+    },
+    {
+      "sequence": 252,
+      "fresh": true,
+      "uptime_ms": 50599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 50030,
+      "pose_count": 47976,
+      "utc": "2026-10-26T00:57:46.772610+00:00"
+    },
+    {
+      "sequence": 253,
+      "fresh": true,
+      "uptime_ms": 50799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1005,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 50230,
+      "pose_count": 48176,
+      "utc": "2026-10-26T00:57:46.976516+00:00"
+    },
+    {
+      "sequence": 255,
+      "fresh": true,
+      "uptime_ms": 50999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1012,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 50431,
+      "pose_count": 48376,
+      "utc": "2026-10-26T00:57:47.199818+00:00"
+    },
+    {
+      "sequence": 256,
+      "fresh": true,
+      "uptime_ms": 51199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1004,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 50631,
+      "pose_count": 48577,
+      "utc": "2026-10-26T00:57:47.416384+00:00"
+    },
+    {
+      "sequence": 257,
+      "fresh": true,
+      "uptime_ms": 51400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 50831,
+      "pose_count": 48777,
+      "utc": "2026-10-26T00:57:47.634844+00:00"
+    },
+    {
+      "sequence": 257,
+      "fresh": true,
+      "uptime_ms": 51600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 51032,
+      "pose_count": 48977,
+      "utc": "2026-10-26T00:57:47.839020+00:00"
+    },
+    {
+      "sequence": 259,
+      "fresh": true,
+      "uptime_ms": 52000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 51432,
+      "pose_count": 49378,
+      "utc": "2026-10-26T00:57:48.042665+00:00"
+    },
+    {
+      "sequence": 260,
+      "fresh": true,
+      "uptime_ms": 52200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 51632,
+      "pose_count": 49578,
+      "utc": "2026-10-26T00:57:48.256173+00:00"
+    },
+    {
+      "sequence": 260,
+      "fresh": true,
+      "uptime_ms": 52200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 51632,
+      "pose_count": 49578,
+      "utc": "2026-10-26T00:57:48.459946+00:00"
+    },
+    {
+      "sequence": 262,
+      "fresh": true,
+      "uptime_ms": 52600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 52033,
+      "pose_count": 49979,
+      "utc": "2026-10-26T00:57:48.664014+00:00"
+    },
+    {
+      "sequence": 263,
+      "fresh": true,
+      "uptime_ms": 52800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1002,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 52234,
+      "pose_count": 50179,
+      "utc": "2026-10-26T00:57:48.868155+00:00"
+    },
+    {
+      "sequence": 264,
+      "fresh": true,
+      "uptime_ms": 53000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 52434,
+      "pose_count": 50380,
+      "utc": "2026-10-26T00:57:49.072214+00:00"
+    },
+    {
+      "sequence": 265,
+      "fresh": true,
+      "uptime_ms": 53200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 52634,
+      "pose_count": 50580,
+      "utc": "2026-10-26T00:57:49.298804+00:00"
+    },
+    {
+      "sequence": 266,
+      "fresh": true,
+      "uptime_ms": 53400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 52834,
+      "pose_count": 50780,
+      "utc": "2026-10-26T00:57:49.517197+00:00"
+    },
+    {
+      "sequence": 267,
+      "fresh": true,
+      "uptime_ms": 53600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 53035,
+      "pose_count": 50981,
+      "utc": "2026-10-26T00:57:49.733860+00:00"
+    },
+    {
+      "sequence": 268,
+      "fresh": true,
+      "uptime_ms": 53800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 53235,
+      "pose_count": 51181,
+      "utc": "2026-10-26T00:57:49.951860+00:00"
+    },
+    {
+      "sequence": 270,
+      "fresh": true,
+      "uptime_ms": 54000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 53435,
+      "pose_count": 51381,
+      "utc": "2026-10-26T00:57:50.156320+00:00"
+    },
+    {
+      "sequence": 270,
+      "fresh": true,
+      "uptime_ms": 54200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 53636,
+      "pose_count": 51582,
+      "utc": "2026-10-26T00:57:50.372846+00:00"
+    },
+    {
+      "sequence": 271,
+      "fresh": true,
+      "uptime_ms": 54400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 53836,
+      "pose_count": 51782,
+      "utc": "2026-10-26T00:57:50.578893+00:00"
+    },
+    {
+      "sequence": 272,
+      "fresh": true,
+      "uptime_ms": 54600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 54036,
+      "pose_count": 51982,
+      "utc": "2026-10-26T00:57:50.782707+00:00"
+    },
+    {
+      "sequence": 274,
+      "fresh": true,
+      "uptime_ms": 55000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 54237,
+      "pose_count": 52183,
+      "utc": "2026-10-26T00:57:50.986851+00:00"
+    },
+    {
+      "sequence": 274,
+      "fresh": true,
+      "uptime_ms": 55000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 54437,
+      "pose_count": 52383,
+      "utc": "2026-10-26T00:57:51.191321+00:00"
+    },
+    {
+      "sequence": 275,
+      "fresh": true,
+      "uptime_ms": 55200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 54637,
+      "pose_count": 52583,
+      "utc": "2026-10-26T00:57:51.395245+00:00"
+    },
+    {
+      "sequence": 276,
+      "fresh": true,
+      "uptime_ms": 55400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 54838,
+      "pose_count": 52784,
+      "utc": "2026-10-26T00:57:51.599237+00:00"
+    },
+    {
+      "sequence": 278,
+      "fresh": true,
+      "uptime_ms": 55600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 55038,
+      "pose_count": 52984,
+      "utc": "2026-10-26T00:57:51.819614+00:00"
+    },
+    {
+      "sequence": 279,
+      "fresh": true,
+      "uptime_ms": 55800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 55238,
+      "pose_count": 53184,
+      "utc": "2026-10-26T00:57:52.023715+00:00"
+    },
+    {
+      "sequence": 279,
+      "fresh": true,
+      "uptime_ms": 56000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 55439,
+      "pose_count": 53385,
+      "utc": "2026-10-26T00:57:52.227909+00:00"
+    },
+    {
+      "sequence": 281,
+      "fresh": true,
+      "uptime_ms": 56400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 55839,
+      "pose_count": 53785,
+      "utc": "2026-10-26T00:57:52.457384+00:00"
+    },
+    {
+      "sequence": 282,
+      "fresh": true,
+      "uptime_ms": 56600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 56040,
+      "pose_count": 53985,
+      "utc": "2026-10-26T00:57:52.661445+00:00"
+    },
+    {
+      "sequence": 283,
+      "fresh": true,
+      "uptime_ms": 56800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 56240,
+      "pose_count": 54186,
+      "utc": "2026-10-26T00:57:52.865893+00:00"
+    },
+    {
+      "sequence": 283,
+      "fresh": true,
+      "uptime_ms": 56800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 56240,
+      "pose_count": 54186,
+      "utc": "2026-10-26T00:57:53.070151+00:00"
+    },
+    {
+      "sequence": 285,
+      "fresh": true,
+      "uptime_ms": 57200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 56641,
+      "pose_count": 54586,
+      "utc": "2026-10-26T00:57:53.274987+00:00"
+    },
+    {
+      "sequence": 286,
+      "fresh": true,
+      "uptime_ms": 57400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 56841,
+      "pose_count": 54787,
+      "utc": "2026-10-26T00:57:53.479023+00:00"
+    },
+    {
+      "sequence": 287,
+      "fresh": true,
+      "uptime_ms": 57600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 57041,
+      "pose_count": 54987,
+      "utc": "2026-10-26T00:57:53.683284+00:00"
+    },
+    {
+      "sequence": 288,
+      "fresh": true,
+      "uptime_ms": 57800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 57242,
+      "pose_count": 55187,
+      "utc": "2026-10-26T00:57:53.904923+00:00"
+    },
+    {
+      "sequence": 289,
+      "fresh": true,
+      "uptime_ms": 58000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 57442,
+      "pose_count": 55388,
+      "utc": "2026-10-26T00:57:54.122550+00:00"
+    },
+    {
+      "sequence": 290,
+      "fresh": true,
+      "uptime_ms": 58200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 57642,
+      "pose_count": 55588,
+      "utc": "2026-10-26T00:57:54.326551+00:00"
+    },
+    {
+      "sequence": 291,
+      "fresh": true,
+      "uptime_ms": 58400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 57843,
+      "pose_count": 55788,
+      "utc": "2026-10-26T00:57:54.531518+00:00"
+    },
+    {
+      "sequence": 292,
+      "fresh": true,
+      "uptime_ms": 58600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 58043,
+      "pose_count": 55989,
+      "utc": "2026-10-26T00:57:54.735976+00:00"
+    },
+    {
+      "sequence": 292,
+      "fresh": true,
+      "uptime_ms": 58600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 58243,
+      "pose_count": 56189,
+      "utc": "2026-10-26T00:57:54.958318+00:00"
+    },
+    {
+      "sequence": 294,
+      "fresh": true,
+      "uptime_ms": 59000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 58443,
+      "pose_count": 56389,
+      "utc": "2026-10-26T00:57:55.163459+00:00"
+    },
+    {
+      "sequence": 296,
+      "fresh": true,
+      "uptime_ms": 59200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 58644,
+      "pose_count": 56590,
+      "utc": "2026-10-26T00:57:55.367826+00:00"
+    },
+    {
+      "sequence": 296,
+      "fresh": true,
+      "uptime_ms": 59400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 58844,
+      "pose_count": 56790,
+      "utc": "2026-10-26T00:57:55.572144+00:00"
+    },
+    {
+      "sequence": 297,
+      "fresh": true,
+      "uptime_ms": 59600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 59044,
+      "pose_count": 56990,
+      "utc": "2026-10-26T00:57:55.777014+00:00"
+    },
+    {
+      "sequence": 298,
+      "fresh": true,
+      "uptime_ms": 59800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 59245,
+      "pose_count": 57191,
+      "utc": "2026-10-26T00:57:55.982020+00:00"
+    },
+    {
+      "sequence": 300,
+      "fresh": true,
+      "uptime_ms": 60000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 59445,
+      "pose_count": 57391,
+      "utc": "2026-10-26T00:57:56.199177+00:00"
+    },
+    {
+      "sequence": 301,
+      "fresh": true,
+      "uptime_ms": 60200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 59645,
+      "pose_count": 57591,
+      "utc": "2026-10-26T00:57:56.404258+00:00"
+    },
+    {
+      "sequence": 302,
+      "fresh": true,
+      "uptime_ms": 60400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 59846,
+      "pose_count": 57792,
+      "utc": "2026-10-26T00:57:56.632115+00:00"
+    },
+    {
+      "sequence": 302,
+      "fresh": true,
+      "uptime_ms": 60600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 60046,
+      "pose_count": 57992,
+      "utc": "2026-10-26T00:57:56.846229+00:00"
+    },
+    {
+      "sequence": 304,
+      "fresh": true,
+      "uptime_ms": 61000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 60447,
+      "pose_count": 58393,
+      "utc": "2026-10-26T00:57:57.050355+00:00"
+    },
+    {
+      "sequence": 305,
+      "fresh": true,
+      "uptime_ms": 61200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 60647,
+      "pose_count": 58593,
+      "utc": "2026-10-26T00:57:57.254796+00:00"
+    },
+    {
+      "sequence": 306,
+      "fresh": true,
+      "uptime_ms": 61200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 60647,
+      "pose_count": 58593,
+      "utc": "2026-10-26T00:57:57.459150+00:00"
+    },
+    {
+      "sequence": 306,
+      "fresh": true,
+      "uptime_ms": 61400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 60847,
+      "pose_count": 58793,
+      "utc": "2026-10-26T00:57:57.674241+00:00"
+    },
+    {
+      "sequence": 307,
+      "fresh": true,
+      "uptime_ms": 61600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 61248,
+      "pose_count": 59194,
+      "utc": "2026-10-26T00:57:57.891768+00:00"
+    },
+    {
+      "sequence": 309,
+      "fresh": true,
+      "uptime_ms": 62000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 61448,
+      "pose_count": 59394,
+      "utc": "2026-10-26T00:57:58.107576+00:00"
+    },
+    {
+      "sequence": 310,
+      "fresh": true,
+      "uptime_ms": 62200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 61649,
+      "pose_count": 59595,
+      "utc": "2026-10-26T00:57:58.312107+00:00"
+    },
+    {
+      "sequence": 311,
+      "fresh": true,
+      "uptime_ms": 62400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 61849,
+      "pose_count": 59795,
+      "utc": "2026-10-26T00:57:58.516606+00:00"
+    },
+    {
+      "sequence": 312,
+      "fresh": true,
+      "uptime_ms": 62600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 62049,
+      "pose_count": 59995,
+      "utc": "2026-10-26T00:57:58.743534+00:00"
+    },
+    {
+      "sequence": 313,
+      "fresh": true,
+      "uptime_ms": 62800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 62250,
+      "pose_count": 60195,
+      "utc": "2026-10-26T00:57:58.947703+00:00"
+    },
+    {
+      "sequence": 315,
+      "fresh": true,
+      "uptime_ms": 63000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 62450,
+      "pose_count": 60396,
+      "utc": "2026-10-26T00:57:59.151707+00:00"
+    },
+    {
+      "sequence": 315,
+      "fresh": true,
+      "uptime_ms": 63200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 62650,
+      "pose_count": 60596,
+      "utc": "2026-10-26T00:57:59.356048+00:00"
+    },
+    {
+      "sequence": 316,
+      "fresh": true,
+      "uptime_ms": 63400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 62851,
+      "pose_count": 60797,
+      "utc": "2026-10-26T00:57:59.560533+00:00"
+    },
+    {
+      "sequence": 317,
+      "fresh": true,
+      "uptime_ms": 63600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 63051,
+      "pose_count": 60997,
+      "utc": "2026-10-26T00:57:59.765514+00:00"
+    },
+    {
+      "sequence": 319,
+      "fresh": true,
+      "uptime_ms": 63800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 63251,
+      "pose_count": 61197,
+      "utc": "2026-10-26T00:57:59.971195+00:00"
+    },
+    {
+      "sequence": 319,
+      "fresh": true,
+      "uptime_ms": 64000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 63452,
+      "pose_count": 61397,
+      "utc": "2026-10-26T00:58:00.175824+00:00"
+    },
+    {
+      "sequence": 320,
+      "fresh": true,
+      "uptime_ms": 64200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 63652,
+      "pose_count": 61598,
+      "utc": "2026-10-26T00:58:00.379990+00:00"
+    },
+    {
+      "sequence": 321,
+      "fresh": true,
+      "uptime_ms": 64400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 63852,
+      "pose_count": 61798,
+      "utc": "2026-10-26T00:58:00.584610+00:00"
+    },
+    {
+      "sequence": 323,
+      "fresh": true,
+      "uptime_ms": 64800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 64052,
+      "pose_count": 61998,
+      "utc": "2026-10-26T00:58:00.788935+00:00"
+    },
+    {
+      "sequence": 323,
+      "fresh": true,
+      "uptime_ms": 64800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 64253,
+      "pose_count": 62199,
+      "utc": "2026-10-26T00:58:00.993919+00:00"
+    },
+    {
+      "sequence": 324,
+      "fresh": true,
+      "uptime_ms": 65000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 64453,
+      "pose_count": 62399,
+      "utc": "2026-10-26T00:58:01.216980+00:00"
+    },
+    {
+      "sequence": 326,
+      "fresh": true,
+      "uptime_ms": 65400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 64854,
+      "pose_count": 62800,
+      "utc": "2026-10-26T00:58:01.434449+00:00"
+    },
+    {
+      "sequence": 327,
+      "fresh": true,
+      "uptime_ms": 65600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 65054,
+      "pose_count": 63000,
+      "utc": "2026-10-26T00:58:01.651691+00:00"
+    },
+    {
+      "sequence": 327,
+      "fresh": true,
+      "uptime_ms": 65600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 65054,
+      "pose_count": 63000,
+      "utc": "2026-10-26T00:58:01.856133+00:00"
+    },
+    {
+      "sequence": 329,
+      "fresh": true,
+      "uptime_ms": 65800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 65254,
+      "pose_count": 63200,
+      "utc": "2026-10-26T00:58:02.069974+00:00"
+    },
+    {
+      "sequence": 330,
+      "fresh": true,
+      "uptime_ms": 66200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 65655,
+      "pose_count": 63601,
+      "utc": "2026-10-26T00:58:02.288235+00:00"
+    },
+    {
+      "sequence": 331,
+      "fresh": true,
+      "uptime_ms": 66400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 65855,
+      "pose_count": 63801,
+      "utc": "2026-10-26T00:58:02.492830+00:00"
+    },
+    {
+      "sequence": 332,
+      "fresh": true,
+      "uptime_ms": 66600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 66056,
+      "pose_count": 64002,
+      "utc": "2026-10-26T00:58:02.697478+00:00"
+    },
+    {
+      "sequence": 333,
+      "fresh": true,
+      "uptime_ms": 66800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 66256,
+      "pose_count": 64202,
+      "utc": "2026-10-26T00:58:02.902155+00:00"
+    },
+    {
+      "sequence": 334,
+      "fresh": true,
+      "uptime_ms": 67000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 66456,
+      "pose_count": 64402,
+      "utc": "2026-10-26T00:58:03.107064+00:00"
+    },
+    {
+      "sequence": 335,
+      "fresh": true,
+      "uptime_ms": 67200,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 66657,
+      "pose_count": 64603,
+      "utc": "2026-10-26T00:58:03.312478+00:00"
+    },
+    {
+      "sequence": 336,
+      "fresh": true,
+      "uptime_ms": 67400,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 66857,
+      "pose_count": 64803,
+      "utc": "2026-10-26T00:58:03.526868+00:00"
+    },
+    {
+      "sequence": 337,
+      "fresh": true,
+      "uptime_ms": 67600,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 67057,
+      "pose_count": 65003,
+      "utc": "2026-10-26T00:58:03.743959+00:00"
+    },
+    {
+      "sequence": 338,
+      "fresh": true,
+      "uptime_ms": 67800,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 67258,
+      "pose_count": 65204,
+      "utc": "2026-10-26T00:58:03.963015+00:00"
+    },
+    {
+      "sequence": 339,
+      "fresh": true,
+      "uptime_ms": 68000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:04.180604+00:00"
+    },
+    {
+      "sequence": 339,
+      "fresh": true,
+      "uptime_ms": 68000,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:04.385472+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": 68000,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": false,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:04.603678+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": 68000,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": false,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:04.820201+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": 68000,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": false,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:05.025209+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:05.241562+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:05.460009+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:05.676140+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:05.893382+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:06.110893+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:06.329937+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:06.534098+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:06.749043+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:06.953725+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:07.157962+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:07.384490+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:07.588843+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:07.793671+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:08.019793+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:08.224389+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:08.428939+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:08.633355+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:08.837506+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:09.065202+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:09.269337+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:09.484613+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:09.704807+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:09.922157+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:10.126490+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:10.344024+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:10.550101+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:10.777277+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:10.995248+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:11.200913+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:11.405433+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:11.610123+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:11.814865+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:12.019268+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:12.223475+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:12.439457+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:12.657406+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:12.861675+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:13.065956+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:13.270184+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:13.474791+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:13.695771+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:13.900601+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:14.106308+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:14.310563+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:14.515092+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:14.738229+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:14.942998+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:15.147539+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:15.352559+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:15.557157+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:15.761522+00:00"
+    },
+    {
+      "sequence": null,
+      "fresh": false,
+      "uptime_ms": null,
+      "armed": null,
+      "controller_enabled": null,
+      "pwm_us": null,
+      "rc_us": null,
+      "taking_off": null,
+      "raw_count": 67458,
+      "pose_count": 65404,
+      "utc": "2026-10-26T00:58:15.978176+00:00"
+    },
+    {
+      "sequence": 1,
+      "fresh": true,
+      "uptime_ms": 399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 0,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:16.180016+00:00"
+    },
+    {
+      "sequence": 2,
+      "fresh": true,
+      "uptime_ms": 399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 0,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:16.381727+00:00"
+    },
+    {
+      "sequence": 2,
+      "fresh": true,
+      "uptime_ms": 599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 0,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:16.583408+00:00"
+    },
+    {
+      "sequence": 3,
+      "fresh": true,
+      "uptime_ms": 799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 150,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:16.785512+00:00"
+    },
+    {
+      "sequence": 5,
+      "fresh": true,
+      "uptime_ms": 1199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 550,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:16.987282+00:00"
+    },
+    {
+      "sequence": 6,
+      "fresh": true,
+      "uptime_ms": 1199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 550,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:17.189281+00:00"
+    },
+    {
+      "sequence": 7,
+      "fresh": true,
+      "uptime_ms": 1399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 750,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:17.416181+00:00"
+    },
+    {
+      "sequence": 8,
+      "fresh": true,
+      "uptime_ms": 1599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 951,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:17.633574+00:00"
+    },
+    {
+      "sequence": 9,
+      "fresh": true,
+      "uptime_ms": 1999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 1351,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:17.853447+00:00"
+    },
+    {
+      "sequence": 10,
+      "fresh": true,
+      "uptime_ms": 2199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 1552,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:18.055923+00:00"
+    },
+    {
+      "sequence": 11,
+      "fresh": true,
+      "uptime_ms": 2399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 1752,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:18.269810+00:00"
+    },
+    {
+      "sequence": 12,
+      "fresh": true,
+      "uptime_ms": 2399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 1752,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:18.471563+00:00"
+    },
+    {
+      "sequence": 13,
+      "fresh": true,
+      "uptime_ms": 2799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 2153,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:18.691224+00:00"
+    },
+    {
+      "sequence": 14,
+      "fresh": true,
+      "uptime_ms": 2999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 2353,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:18.893281+00:00"
+    },
+    {
+      "sequence": 15,
+      "fresh": true,
+      "uptime_ms": 3199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 2553,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:19.095583+00:00"
+    },
+    {
+      "sequence": 16,
+      "fresh": true,
+      "uptime_ms": 3399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 2754,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:19.297422+00:00"
+    },
+    {
+      "sequence": 17,
+      "fresh": true,
+      "uptime_ms": 3599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 2954,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:19.499268+00:00"
+    },
+    {
+      "sequence": 18,
+      "fresh": true,
+      "uptime_ms": 3799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 3154,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:19.701580+00:00"
+    },
+    {
+      "sequence": 19,
+      "fresh": true,
+      "uptime_ms": 3999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 3355,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:19.903323+00:00"
+    },
+    {
+      "sequence": 20,
+      "fresh": true,
+      "uptime_ms": 4199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 3555,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:20.105286+00:00"
+    },
+    {
+      "sequence": 21,
+      "fresh": true,
+      "uptime_ms": 4399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 3755,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:20.307262+00:00"
+    },
+    {
+      "sequence": 22,
+      "fresh": true,
+      "uptime_ms": 4599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 3956,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:20.509027+00:00"
+    },
+    {
+      "sequence": 23,
+      "fresh": true,
+      "uptime_ms": 4799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 4156,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:20.710875+00:00"
+    },
+    {
+      "sequence": 24,
+      "fresh": true,
+      "uptime_ms": 4999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 4356,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:20.913789+00:00"
+    },
+    {
+      "sequence": 25,
+      "fresh": true,
+      "uptime_ms": 5199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 4557,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:21.116400+00:00"
+    },
+    {
+      "sequence": 26,
+      "fresh": true,
+      "uptime_ms": 5399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 4757,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:21.318698+00:00"
+    },
+    {
+      "sequence": 27,
+      "fresh": true,
+      "uptime_ms": 5599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 4957,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:21.520414+00:00"
+    },
+    {
+      "sequence": 28,
+      "fresh": true,
+      "uptime_ms": 5799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 5158,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:21.722633+00:00"
+    },
+    {
+      "sequence": 29,
+      "fresh": true,
+      "uptime_ms": 5999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 5358,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:21.924882+00:00"
+    },
+    {
+      "sequence": 30,
+      "fresh": true,
+      "uptime_ms": 6199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 5558,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:22.127202+00:00"
+    },
+    {
+      "sequence": 32,
+      "fresh": true,
+      "uptime_ms": 6399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 5759,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:22.348511+00:00"
+    },
+    {
+      "sequence": 32,
+      "fresh": true,
+      "uptime_ms": 6599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 5959,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:22.550431+00:00"
+    },
+    {
+      "sequence": 33,
+      "fresh": true,
+      "uptime_ms": 6799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 6159,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:22.752561+00:00"
+    },
+    {
+      "sequence": 34,
+      "fresh": true,
+      "uptime_ms": 6999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 6359,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:22.954658+00:00"
+    },
+    {
+      "sequence": 36,
+      "fresh": true,
+      "uptime_ms": 7199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 6560,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:23.170622+00:00"
+    },
+    {
+      "sequence": 37,
+      "fresh": true,
+      "uptime_ms": 7399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 6760,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:23.390506+00:00"
+    },
+    {
+      "sequence": 37,
+      "fresh": true,
+      "uptime_ms": 7599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 6960,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:23.606432+00:00"
+    },
+    {
+      "sequence": 39,
+      "fresh": true,
+      "uptime_ms": 7999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 7361,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:23.826094+00:00"
+    },
+    {
+      "sequence": 40,
+      "fresh": true,
+      "uptime_ms": 8199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 7561,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:24.043871+00:00"
+    },
+    {
+      "sequence": 41,
+      "fresh": true,
+      "uptime_ms": 8399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 7762,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:24.245751+00:00"
+    },
+    {
+      "sequence": 41,
+      "fresh": true,
+      "uptime_ms": 8399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 7762,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:24.465828+00:00"
+    },
+    {
+      "sequence": 43,
+      "fresh": true,
+      "uptime_ms": 8799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 8162,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:24.667795+00:00"
+    },
+    {
+      "sequence": 44,
+      "fresh": true,
+      "uptime_ms": 8999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 8363,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:24.869805+00:00"
+    },
+    {
+      "sequence": 45,
+      "fresh": true,
+      "uptime_ms": 9199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 8563,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:25.072149+00:00"
+    },
+    {
+      "sequence": 46,
+      "fresh": true,
+      "uptime_ms": 9199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 8563,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:25.274471+00:00"
+    },
+    {
+      "sequence": 47,
+      "fresh": true,
+      "uptime_ms": 9599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 8964,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:25.476634+00:00"
+    },
+    {
+      "sequence": 48,
+      "fresh": true,
+      "uptime_ms": 9799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 9164,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:25.678793+00:00"
+    },
+    {
+      "sequence": 49,
+      "fresh": true,
+      "uptime_ms": 9999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 9364,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:25.881003+00:00"
+    },
+    {
+      "sequence": 50,
+      "fresh": true,
+      "uptime_ms": 10199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 9565,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:26.083232+00:00"
+    },
+    {
+      "sequence": 51,
+      "fresh": true,
+      "uptime_ms": 10399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 9765,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:26.285545+00:00"
+    },
+    {
+      "sequence": 52,
+      "fresh": true,
+      "uptime_ms": 10599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 9965,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:26.487549+00:00"
+    },
+    {
+      "sequence": 53,
+      "fresh": true,
+      "uptime_ms": 10799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 10166,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:26.689708+00:00"
+    },
+    {
+      "sequence": 54,
+      "fresh": true,
+      "uptime_ms": 10999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 10366,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:26.892138+00:00"
+    },
+    {
+      "sequence": 55,
+      "fresh": true,
+      "uptime_ms": 11199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 10566,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:27.094282+00:00"
+    },
+    {
+      "sequence": 56,
+      "fresh": true,
+      "uptime_ms": 11399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 10767,
+      "pose_count": 0,
+      "utc": "2026-10-26T00:58:27.310673+00:00"
+    },
+    {
+      "sequence": 58,
+      "fresh": true,
+      "uptime_ms": 11599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 10967,
+      "pose_count": 56,
+      "utc": "2026-10-26T00:58:27.526308+00:00"
+    },
+    {
+      "sequence": 58,
+      "fresh": true,
+      "uptime_ms": 11799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 11167,
+      "pose_count": 256,
+      "utc": "2026-10-26T00:58:27.728361+00:00"
+    },
+    {
+      "sequence": 59,
+      "fresh": true,
+      "uptime_ms": 11999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 11368,
+      "pose_count": 456,
+      "utc": "2026-10-26T00:58:27.930396+00:00"
+    },
+    {
+      "sequence": 60,
+      "fresh": true,
+      "uptime_ms": 12199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 11568,
+      "pose_count": 657,
+      "utc": "2026-10-26T00:58:28.133057+00:00"
+    },
+    {
+      "sequence": 62,
+      "fresh": true,
+      "uptime_ms": 12399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 11768,
+      "pose_count": 857,
+      "utc": "2026-10-26T00:58:28.349373+00:00"
+    },
+    {
+      "sequence": 62,
+      "fresh": true,
+      "uptime_ms": 12599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 11969,
+      "pose_count": 1057,
+      "utc": "2026-10-26T00:58:28.551734+00:00"
+    },
+    {
+      "sequence": 63,
+      "fresh": true,
+      "uptime_ms": 12799,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 12169,
+      "pose_count": 1258,
+      "utc": "2026-10-26T00:58:28.754354+00:00"
+    },
+    {
+      "sequence": 64,
+      "fresh": true,
+      "uptime_ms": 12999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 12369,
+      "pose_count": 1458,
+      "utc": "2026-10-26T00:58:28.957060+00:00"
+    },
+    {
+      "sequence": 66,
+      "fresh": true,
+      "uptime_ms": 13199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 12570,
+      "pose_count": 1658,
+      "utc": "2026-10-26T00:58:29.174388+00:00"
+    },
+    {
+      "sequence": 66,
+      "fresh": true,
+      "uptime_ms": 13399,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 12770,
+      "pose_count": 1859,
+      "utc": "2026-10-26T00:58:29.376815+00:00"
+    },
+    {
+      "sequence": 67,
+      "fresh": true,
+      "uptime_ms": 13599,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 12970,
+      "pose_count": 2059,
+      "utc": "2026-10-26T00:58:29.579176+00:00"
+    },
+    {
+      "sequence": 69,
+      "fresh": true,
+      "uptime_ms": 13999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 13371,
+      "pose_count": 2460,
+      "utc": "2026-10-26T00:58:29.781625+00:00"
+    },
+    {
+      "sequence": 69,
+      "fresh": true,
+      "uptime_ms": 13999,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 13371,
+      "pose_count": 2460,
+      "utc": "2026-10-26T00:58:29.984029+00:00"
+    },
+    {
+      "sequence": 71,
+      "fresh": true,
+      "uptime_ms": 14199,
+      "armed": false,
+      "controller_enabled": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "taking_off": false,
+      "raw_count": 13571,
+      "pose_count": 2660,
+      "utc": "2026-10-26T00:58:30.198688+00:00"
+    }
+  ]
+}

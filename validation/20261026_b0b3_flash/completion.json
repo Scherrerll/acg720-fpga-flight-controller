@@ -1,0 +1,25 @@
+{
+  "completed_utc": "2026-10-26T01:00:12.778177+00:00",
+  "installed": true,
+  "flash_written": true,
+  "independent_flash_verify_passed": true,
+  "physical_cold_boot_verified": true,
+  "boot_parameter_capability_verified": true,
+  "default_after": "B0B3",
+  "p_default": "0.0500",
+  "i_default": "0.0000",
+  "generation": 0,
+  "parameter_values_persistent": false,
+  "parameter_set_sent_in_flash_task": false,
+  "flight_qualified": false,
+  "new_image_sha256": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+  "rollback_image_sha256": "a876c8ed073588e17b6289f8aac7573334a5d5e9c992d394d0d14f61ed17db7c",
+  "sources_sha256": {
+    "flash_install_report.json": "c5080da3b622bb7a8cf19d8fe5d36fca7ccd64c80fcbc4630da7d6eefd74b2c2",
+    "after_flash_parameters.json": "e8ed4a4ce845fd3c5804214cab5c8ed83c1ae0806e937aa4c9810abc61c0cd82",
+    "after_cold_boot_parameters.json": "6cc9fb54f6b6dc72f7a36152c687b78951cdac098ba77a07a02b7fc5af11d004",
+    "cold_boot/summary.json": "d81a850fe6953260ccc45893aca4eaaa800bad43239bcb441e01f35840bd8cf5",
+    "cold_boot/operator_confirmation.json": "69aa62ba34a9b7b9db4a6349c3cbcbd1c0518f7858690959b7da53779a837ee0"
+  },
+  "original_flash_receipt_cold_boot_flag": "False at time of programming; later physical evidence is recorded here, original receipt preserved"
+}

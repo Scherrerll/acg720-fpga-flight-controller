@@ -1,0 +1,60 @@
+{
+  "source": "out/xy_pi_ground_20261026/flash_20261026_0855/05_previous_flash_verify_preflight.json",
+  "source_sha256": "e603e9aa72b8384de1aa29606dc63b2037f34b5bc431e430c0562f38bacfad26",
+  "selected_fields": {
+    "connected": true,
+    "fresh": true,
+    "status": "live",
+    "sequence": 23,
+    "port": "COM17",
+    "flight_info_fresh": true,
+    "imu_diagnostic_fresh": true,
+    "navigation_fresh": true,
+    "mtf_fresh": true,
+    "data": {
+      "armed": false,
+      "controller_enabled": false,
+      "command_fresh": false,
+      "physical_output_active": false,
+      "pwm_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "command_us": [
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "rc_valid": true,
+      "rc_us": [
+        1500,
+        1501,
+        1003,
+        1500,
+        1000,
+        1000,
+        1000,
+        1000
+      ],
+      "calibrated": true,
+      "attitude_valid": true,
+      "sensor_ok": true
+    },
+    "flight_info": {
+      "build_id": 45234,
+      "sequence": 23,
+      "uptime_ms": 4799,
+      "taking_off": false,
+      "controller_fault": 0
+    },
+    "imu_diagnostic": {
+      "raw_count": 4156,
+      "pose_count": 2102,
+      "accepted_count": 4156,
+      "latest_reader_fault": 0
+    }
+  }
+}
