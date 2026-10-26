@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-26",
+  "source": "Direct user response in the current chat",
+  "question": "我刚读到当前参数已变为 P=0.0750、I=0.0000，generation=2，且写入与独立读回成功；这是否是你刚在地面站手动设置的？我没有继续发写入，也不会覆盖当前值。",
+  "answer": "是，我刚手动设置为 P=0.0750、I=0",
+  "p_wire": 750,
+  "i_wire": 0,
+  "generation": 2,
+  "set_sequence": 1973207158,
+  "independent_get_sequence": 1973207159,
+  "agent_issued_this_set": false,
+  "control_effect_or_flight_qualified": false
+}

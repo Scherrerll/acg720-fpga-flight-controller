@@ -1,0 +1,88 @@
+{
+  "started_utc": "2026-10-26T00:31:18.350055+00:00",
+  "passed": false,
+  "scope": "Default P=.05/I=0 bench GET, one SET, independent automatic GET; no gain change or Flash",
+  "script_sha256": "145b2ffa427b6be21d00d0863d0658768f73956b8382d0a288ea153e5d0781e2",
+  "posts": [
+    {
+      "path": "/api/xy-pi/query",
+      "body": {
+        "request_id": "04acac2b-2aa6-4ef6-9cac-afe3a27ed5ca",
+        "epoch": 2
+      },
+      "accepted": {
+        "operation_id": 2
+      }
+    },
+    {
+      "path": "/api/xy-pi/set",
+      "body": {
+        "request_id": "77fc7770-b753-4bfe-a8a9-efb51989ecf2",
+        "epoch": 2,
+        "expected_generation": 0,
+        "p": "0.0500",
+        "i": "0.0000",
+        "confirmed_stopped": true
+      },
+      "accepted": {
+        "operation_id": 3
+      }
+    }
+  ],
+  "queried": {
+    "enabled": true,
+    "connected": true,
+    "source": "SiK",
+    "baud": 115200,
+    "epoch": 2,
+    "supported": true,
+    "busy": false,
+    "phase": "idle",
+    "operation_id": 2,
+    "active": {
+      "p_text": "0.0500",
+      "i_text": "0.0000",
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3",
+      "age_ms": 72.4
+    },
+    "result": {
+      "code": "queried",
+      "message": "Active parameters queried; valid for this power cycle only.",
+      "operation_id": 2,
+      "sequence": 1973207149
+    },
+    "can_query": true,
+    "can_set": true,
+    "block_reason": "",
+    "persistence": "本次上电有效，重启恢复 P=0.05 / I=0",
+    "scope": "共享 XY 速度外环；FPGA 是最终写入裁决者"
+  },
+  "verified": {
+    "enabled": true,
+    "connected": true,
+    "source": "SiK",
+    "baud": 115200,
+    "epoch": 2,
+    "supported": false,
+    "busy": false,
+    "phase": "idle",
+    "operation_id": 3,
+    "active": null,
+    "result": {
+      "code": "unknown",
+      "message": "SET outcome or readback is unknown; query before a new SET.",
+      "operation_id": 3,
+      "sequence": 1973207150
+    },
+    "can_query": true,
+    "can_set": false,
+    "block_reason": "先查询并确认设备的 B0B3 参数功能",
+    "persistence": "本次上电有效，重启恢复 P=0.05 / I=0",
+    "scope": "共享 XY 速度外环；FPGA 是最终写入裁决者"
+  },
+  "error": "AssertionError: SET not independently verified; do not retry",
+  "finished_utc": "2026-10-26T00:31:21.721633+00:00"
+}

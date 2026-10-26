@@ -1,0 +1,170 @@
+{
+  "created_utc": "2026-10-26T00:42:45.217861+00:00",
+  "copied": [
+    {
+      "source": "out/xy_pi_ground_20261026/final_checks/20261026T002927_295546Z_input_hashes.json",
+      "export": "validation/20261026_xy_pi_ground/offline/20261026T002927_295546Z_input_hashes.json",
+      "sha256": "3e8a64b1163808959e6e5e75e25dd49fe51537470ed73e022c1468000b8ef173",
+      "bytes": 4513
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/final_checks/20261026T002927_295546Z_node_ui.log",
+      "export": "validation/20261026_xy_pi_ground/offline/20261026T002927_295546Z_node_ui.log",
+      "sha256": "997a33a857d0c1c9a08fbc2f921eba8236e1a66ed615d607bec141a4a7eef19e",
+      "bytes": 427
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/final_checks/20261026T002927_295546Z_python_unittest.log",
+      "export": "validation/20261026_xy_pi_ground/offline/20261026T002927_295546Z_python_unittest.log",
+      "sha256": "2585f80fc16c859f3e30c4e533879b2c2de399915af7ea22f7a517dc4978ce86",
+      "bytes": 8098
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/final_checks/20261026T002927_295546Z_results.json",
+      "export": "validation/20261026_xy_pi_ground/offline/20261026T002927_295546Z_results.json",
+      "sha256": "a140c66b3c08415a74c01f4c6f3874b79883b251c00b86da3c7870c4649c09b2",
+      "bytes": 3429
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/install_authorized_sram.py",
+      "export": "validation/20261026_xy_pi_ground/bench/install_authorized_sram.py",
+      "sha256": "548fd1b8ef06721a6394de39dacfb70d5e41ef8067ae10ba364b51a183f4c34c",
+      "bytes": 4750
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/sram_install_report.json",
+      "export": "validation/20261026_xy_pi_ground/bench/sram_install_report.json",
+      "sha256": "31dcaaf37b7dae6c5e17010603294a325d7677cec719ef4ce071a4009b2e4f30",
+      "bytes": 2400
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/cables_before.txt",
+      "export": "validation/20261026_xy_pi_ground/bench/cables_before.txt",
+      "sha256": "64b6954d2842672b0c4161648613ba02af9f4e786975dbc965b48b0749f19f14",
+      "bytes": 152
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/cables_prewrite.txt",
+      "export": "validation/20261026_xy_pi_ground/bench/cables_prewrite.txt",
+      "sha256": "64b6954d2842672b0c4161648613ba02af9f4e786975dbc965b48b0749f19f14",
+      "bytes": 152
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/identity_before.txt",
+      "export": "validation/20261026_xy_pi_ground/bench/identity_before.txt",
+      "sha256": "102b559449cd14d061f6d932adb55f368f1aa1cca457500104627597446846cf",
+      "bytes": 263
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/identity_after.txt",
+      "export": "validation/20261026_xy_pi_ground/bench/identity_after.txt",
+      "sha256": "5fc15d9bf9802a0bea7e9f2910c704dacf814e83f4db033f4c214a7de3a4790c",
+      "bytes": 263
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/program_sram.txt",
+      "export": "validation/20261026_xy_pi_ground/bench/program_sram.txt",
+      "sha256": "324e75da01896f7c119a6e5b60783b145acda56d229fb89616080f4b868a7157",
+      "bytes": 6560
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/first_get_script.py",
+      "export": "validation/20261026_xy_pi_ground/bench/first_get_script.py",
+      "sha256": "004377cc828c30e69a0e99b637bf31f459fe9c1136b988c48cf1f873f539b490",
+      "bytes": 4078
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/first_get_report_type_assertion.json",
+      "export": "validation/20261026_xy_pi_ground/bench/first_get_report_type_assertion.json",
+      "sha256": "02927d78c17f7a9bf945b95834e6c2d12b2198713661f0072ecd14a153909e65",
+      "bytes": 1442
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/first_set_script.py",
+      "export": "validation/20261026_xy_pi_ground/bench/first_set_script.py",
+      "sha256": "145b2ffa427b6be21d00d0863d0658768f73956b8382d0a288ea153e5d0781e2",
+      "bytes": 4086
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/default_pi_bench_report.json",
+      "export": "validation/20261026_xy_pi_ground/bench/default_pi_bench_report.json",
+      "sha256": "6a49266b25f06391377fe966371c8cb657a7bb3d38bb07228e76e8c9cd80e4bc",
+      "bytes": 2472
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/pi_query_result.json",
+      "export": "validation/20261026_xy_pi_ground/bench/pi_query_result.json",
+      "sha256": "cbc29d5f924baab8999c52b5f400a350070936aaa989f58c6c06f782c3573529",
+      "bytes": 739
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/pi_set_and_independent_readback.json",
+      "export": "validation/20261026_xy_pi_ground/bench/pi_set_and_independent_readback.json",
+      "sha256": "b96cc1095da4e7d0b9947abcad02347de15dbdb8847bf852540475b1aed82d11",
+      "bytes": 628
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/recovery_query_acceptance.json",
+      "export": "validation/20261026_xy_pi_ground/bench/recovery_query_acceptance.json",
+      "sha256": "0907924a654a36ece4aa583d9fd7215232280edb02a5401e97a8fb0d6a054368",
+      "bytes": 27
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/recovery_query_result.json",
+      "export": "validation/20261026_xy_pi_ground/bench/recovery_query_result.json",
+      "sha256": "afba8e808643dacd7d9f51d2997be3832c7c98235d5e347f9f89c8f6aaa64f54",
+      "bytes": 742
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/verify_default_pi.py",
+      "export": "validation/20261026_xy_pi_ground/bench/verify_default_pi.py",
+      "sha256": "144842202ae54523ba84d802ea21c709272b52b925e35ae4b6f82a17a622a14d",
+      "bytes": 4135
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/live_ground_station.png",
+      "export": "validation/20261026_xy_pi_ground/bench/live_ground_station.png",
+      "sha256": "960a0fe29c1f3d4b9db2016815d32a7d0b4fb5ec9b737599157431bc4dd3ec10",
+      "bytes": 78558
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/pi_panel_verified.png",
+      "export": "validation/20261026_xy_pi_ground/bench/pi_panel_verified.png",
+      "sha256": "3ca65f81830859db4f59718a4a39091818c3a71bfadaa5e0efcb52333946246b",
+      "bytes": 80725
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/user_pi_0075_verified.png",
+      "export": "validation/20261026_xy_pi_ground/bench/user_pi_0075_verified.png",
+      "sha256": "ffb85b35da8fb41471944a76283b064dced9d601b801f77c47fa4de7272ee305",
+      "bytes": 71104
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/second_transaction/default_pi_bench_report.json",
+      "export": "validation/20261026_xy_pi_ground/bench/second_transaction/default_pi_bench_report.json",
+      "sha256": "7d437a2163c145a6dfa084aa7375d32d01d2e12fd65fed41d76b55a897c05719",
+      "bytes": 2524
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/second_transaction/pi_query_result.json",
+      "export": "validation/20261026_xy_pi_ground/bench/second_transaction/pi_query_result.json",
+      "sha256": "4d87ea0177b9b68a5a6d22fdae15edcf1360eaf348159e0755cda0a23edc178c",
+      "bytes": 739
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/second_transaction/pi_set_and_independent_readback.json",
+      "export": "validation/20261026_xy_pi_ground/bench/second_transaction/pi_set_and_independent_readback.json",
+      "sha256": "9511a90a360664ac6b0849395b94c5eacaebd7a1d4910e3cc4b989e30503c52d",
+      "bytes": 741
+    },
+    {
+      "source": "out/xy_pi_ground_20261026/hardware_20261026_0829/second_transaction/pi_status_before.json",
+      "export": "validation/20261026_xy_pi_ground/bench/second_transaction/pi_status_before.json",
+      "sha256": "572d13e67cfd74cadf87261694e759f47a82732a385f2b04aa3aad54229d72d6",
+      "bytes": 742
+    }
+  ],
+  "raw_logs_uploaded": false,
+  "local_source_session": "ground/runtime/B0B3/20261026T002929Z_9ccb8279",
+  "frozen_firmware_manifest_sha256": "23374b5c3aca40e8e71a8ae7ad037541484416a752c683b378083a78a3d4f7a7"
+}

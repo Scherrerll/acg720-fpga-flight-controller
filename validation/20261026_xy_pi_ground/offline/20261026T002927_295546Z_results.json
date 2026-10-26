@@ -1,0 +1,77 @@
+{
+  "scope": "Final offline pure controller, mock ephemeral HTTP/serial transport, and fake DOM contract checks only; no real serial/hardware, fixed services or Git actions",
+  "created_utc": "2026-10-26T00:29:31.777186+00:00",
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "input_files": 44,
+  "input_hashes": "out/xy_pi_ground_20261026/final_checks/20261026T002927_295546Z_input_hashes.json",
+  "input_hashes_sha256": "3e8a64b1163808959e6e5e75e25dd49fe51537470ed73e022c1468000b8ef173",
+  "input_hashes_stable": true,
+  "changed_inputs": [],
+  "commands": [
+    {
+      "name": "python_unittest",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "ground/B0B3",
+        "-p",
+        "test_xy_pi_*.py",
+        "-v"
+      ],
+      "resolved_executable": "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.EXE",
+      "pid": 64332,
+      "started_utc": "2026-10-26T00:29:27.339874+00:00",
+      "finished_utc": "2026-10-26T00:29:31.765076+00:00",
+      "exit_code": 0,
+      "actual_wait_return": 0,
+      "wall_seconds": 4.425,
+      "test_count": 53,
+      "test_report_seconds": 4.075,
+      "pass_marker": true,
+      "log": "out/xy_pi_ground_20261026/final_checks/20261026T002927_295546Z_python_unittest.log",
+      "log_bytes": 8098,
+      "log_sha256": "2585f80fc16c859f3e30c4e533879b2c2de399915af7ea22f7a517dc4978ce86",
+      "tail": [
+        "test_reconnect_rejects_old_epoch_queued_reply (test_xy_pi_transport.TransportTests.test_reconnect_rejects_old_epoch_queued_reply) ... ok",
+        "test_stop_revoked_after_queue_before_owner_write (test_xy_pi_transport.TransportTests.test_stop_revoked_after_queue_before_owner_write) ... ok",
+        "test_usb_and_offline_never_send_or_enumerate_real_devices (test_xy_pi_transport.TransportTests.test_usb_and_offline_never_send_or_enumerate_real_devices) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 53 tests in 4.075s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "name": "node_ui",
+      "command": [
+        "node",
+        "ground/B0B3/test_xy_pi_ui.cjs"
+      ],
+      "resolved_executable": "C:\\Program Files\\nodejs\\node.EXE",
+      "pid": 62892,
+      "started_utc": "2026-10-26T00:29:27.346000+00:00",
+      "finished_utc": "2026-10-26T00:29:31.773765+00:00",
+      "exit_code": 0,
+      "actual_wait_return": 0,
+      "wall_seconds": 4.428,
+      "test_count": null,
+      "test_report_seconds": null,
+      "pass_marker": true,
+      "log": "out/xy_pi_ground_20261026/final_checks/20261026T002927_295546Z_node_ui.log",
+      "log_bytes": 427,
+      "log_sha256": "997a33a857d0c1c9a08fbc2f921eba8236e1a66ed615d607bec141a4a7eef19e",
+      "tail": [
+        "PASS: real HTML/JS wiring; actual queried/verified result contract; all seven phases; numeric operation IDs;",
+        "decimal boundaries; dirty drafts; token/UUID/epoch/generation paired SET; one in flight; defaults no write;",
+        "unknown query-only recovery; no POST retry; status/epoch/USB/old-build guards; HTTP errors; stale poll race.",
+        "Scope: in-memory DOM/API/timers only. No network, serial, browser rendering, or hardware acceptance."
+      ]
+    }
+  ],
+  "passed": true
+}

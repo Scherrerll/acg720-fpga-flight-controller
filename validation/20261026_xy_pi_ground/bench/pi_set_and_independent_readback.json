@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "connected": true,
+  "source": "SiK",
+  "baud": 115200,
+  "epoch": 2,
+  "supported": false,
+  "busy": false,
+  "phase": "idle",
+  "operation_id": 3,
+  "active": null,
+  "result": {
+    "code": "unknown",
+    "message": "SET outcome or readback is unknown; query before a new SET.",
+    "operation_id": 3,
+    "sequence": 1973207150
+  },
+  "can_query": true,
+  "can_set": false,
+  "block_reason": "先查询并确认设备的 B0B3 参数功能",
+  "persistence": "本次上电有效，重启恢复 P=0.05 / I=0",
+  "scope": "共享 XY 速度外环；FPGA 是最终写入裁决者"
+}

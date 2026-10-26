@@ -1,0 +1,49 @@
+{
+  "connected": true,
+  "fresh": true,
+  "status": "live",
+  "sequence": 1007,
+  "flight_info_fresh": true,
+  "port": "COM17",
+  "serial_writes": false,
+  "data": {
+    "armed": false,
+    "controller_enabled": false,
+    "command_fresh": false,
+    "physical_output_active": false,
+    "pwm_us": [
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "command_us": [
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "rc_valid": true,
+    "rc_us": [
+      1500,
+      1501,
+      1002,
+      1500,
+      1000,
+      1000,
+      1000,
+      1000
+    ]
+  },
+  "flight_info": {
+    "build_id": 45234,
+    "sequence": 1007,
+    "uptime_ms": 201600,
+    "taking_off": false
+  },
+  "source": {
+    "path": "out/xy_pi_ground_20261026/hardware_20261026_0829/telemetry_prewrite.json",
+    "sha256": "641240e02ecb4e3feee3a350551e551c42643b636e072747047cffe5c1017b7d",
+    "derivation": "Selected stopped-state fields only"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "raw_file": "ground/runtime/B0B3/20261026T002929Z_9ccb8279/raw.bin",
+  "prefix_bytes": 626766,
+  "prefix_sha256": "47edf558535eeb5493ab2a29819aebbcc10f677069c276a07df30f53e50ac55c",
+  "raw_uploaded": false,
+  "first_set_sequence": 1973207150,
+  "request_hex": "a59001021000759cc06e01f40000a490",
+  "request_crc_valid": true,
+  "complete_local_bytes_written": 16,
+  "complete_matching_raw_responses": 0,
+  "get_rtt_ms": [
+    170.154,
+    173.199,
+    186.616
+  ],
+  "recovery_generation": 0,
+  "raw_replay_agrees_with_logged_a591": true,
+  "known_code_defect_identified": false,
+  "precise_loss_location": "not established; local serial write success does not prove complete FPGA receipt",
+  "subsequent_independent_transaction": "SET 1973207153 ACK and GET 1973207154 both generation1/P500/I0"
+}

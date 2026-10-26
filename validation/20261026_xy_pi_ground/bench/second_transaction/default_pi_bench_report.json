@@ -1,0 +1,95 @@
+{
+  "started_utc": "2026-10-26T00:32:56.154892+00:00",
+  "passed": true,
+  "scope": "Default P=.05/I=0 bench GET, one SET, independent automatic GET; no gain change or Flash",
+  "script_sha256": "144842202ae54523ba84d802ea21c709272b52b925e35ae4b6f82a17a622a14d",
+  "posts": [
+    {
+      "path": "/api/xy-pi/query",
+      "body": {
+        "request_id": "fa77d21b-b483-4da0-9173-7ce0ae09a5f4",
+        "epoch": 2
+      },
+      "accepted": {
+        "operation_id": 5
+      }
+    },
+    {
+      "path": "/api/xy-pi/set",
+      "body": {
+        "request_id": "34fe7a45-0f86-446d-91a5-32e32c5950ab",
+        "epoch": 2,
+        "expected_generation": 0,
+        "p": "0.0500",
+        "i": "0.0000",
+        "confirmed_stopped": true
+      },
+      "accepted": {
+        "operation_id": 6
+      }
+    }
+  ],
+  "queried": {
+    "enabled": true,
+    "connected": true,
+    "source": "SiK",
+    "baud": 115200,
+    "epoch": 2,
+    "supported": true,
+    "busy": false,
+    "phase": "idle",
+    "operation_id": 5,
+    "active": {
+      "p_text": "0.0500",
+      "i_text": "0.0000",
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3",
+      "age_ms": 19.1
+    },
+    "result": {
+      "code": "queried",
+      "message": "Active parameters queried; valid for this power cycle only.",
+      "operation_id": 5,
+      "sequence": 1973207152
+    },
+    "can_query": true,
+    "can_set": true,
+    "block_reason": "",
+    "persistence": "本次上电有效，重启恢复 P=0.05 / I=0",
+    "scope": "共享 XY 速度外环；FPGA 是最终写入裁决者"
+  },
+  "verified": {
+    "enabled": true,
+    "connected": true,
+    "source": "SiK",
+    "baud": 115200,
+    "epoch": 2,
+    "supported": true,
+    "busy": false,
+    "phase": "idle",
+    "operation_id": 6,
+    "active": {
+      "p_text": "0.0500",
+      "i_text": "0.0000",
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 1,
+      "build": "0000B0B3",
+      "age_ms": 16.6
+    },
+    "result": {
+      "code": "verified",
+      "message": "SET ACK and independent GET verified; this power cycle only.",
+      "operation_id": 6,
+      "sequence": 1973207153
+    },
+    "can_query": true,
+    "can_set": true,
+    "block_reason": "",
+    "persistence": "本次上电有效，重启恢复 P=0.05 / I=0",
+    "scope": "共享 XY 速度外环；FPGA 是最终写入裁决者"
+  },
+  "finished_utc": "2026-10-26T00:32:56.864813+00:00"
+}

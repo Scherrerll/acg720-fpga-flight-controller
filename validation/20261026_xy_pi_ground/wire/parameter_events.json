@@ -1,0 +1,575 @@
+{
+  "source": "ground/runtime/B0B3/20261026T002929Z_9ccb8279",
+  "events": [
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:31:05.032951+00:00",
+      "host_ns": 252086850913600,
+      "elapsed_s": 95.45037400000729,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207148,
+        "packet_hex": "a59001011000759cc06c00000000d1cf"
+      },
+      "record_order": 3233
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:31:05.033159+00:00",
+      "host_ns": 252086851116600,
+      "elapsed_s": 95.45057700001053,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207148,
+        "packet_hex": "a59001011000759cc06c00000000d1cf",
+        "bytes_written": 16
+      },
+      "record_order": 3234
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:31:18.400712+00:00",
+      "host_ns": 252100218665800,
+      "elapsed_s": 108.81812619999982,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207149,
+        "packet_hex": "a59001011000759cc06d000000007b9e"
+      },
+      "record_order": 3695
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:31:18.400797+00:00",
+      "host_ns": 252100218750600,
+      "elapsed_s": 108.81821100000525,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207149,
+        "packet_hex": "a59001011000759cc06d000000007b9e",
+        "bytes_written": 16
+      },
+      "record_order": 3696
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:31:18.692782+00:00",
+      "host_ns": 252100510740800,
+      "elapsed_s": 109.11020120000467,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 2,
+        "sequence": 1973207150,
+        "packet_hex": "a59001021000759cc06e01f40000a490"
+      },
+      "record_order": 3712
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:31:18.692938+00:00",
+      "host_ns": 252100510896200,
+      "elapsed_s": 109.1103565999947,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 2,
+        "sequence": 1973207150,
+        "packet_hex": "a59001021000759cc06e01f40000a490",
+        "bytes_written": 16
+      },
+      "record_order": 3713
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:31:34.655180+00:00",
+      "host_ns": 252116473144100,
+      "elapsed_s": 125.07260449999012,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207151,
+        "packet_hex": "a59001011000759cc06f000000003f1d"
+      },
+      "record_order": 4271
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:31:34.655363+00:00",
+      "host_ns": 252116473318700,
+      "elapsed_s": 125.07277910000994,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207151,
+        "packet_hex": "a59001011000759cc06f000000003f1d",
+        "bytes_written": 16
+      },
+      "record_order": 4272
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:32:56.191524+00:00",
+      "host_ns": 252198009486500,
+      "elapsed_s": 206.60894689999986,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207152,
+        "packet_hex": "a59001011000759cc070000000005ebe"
+      },
+      "record_order": 7097
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:32:56.191700+00:00",
+      "host_ns": 252198009658300,
+      "elapsed_s": 206.60911869999836,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207152,
+        "packet_hex": "a59001011000759cc070000000005ebe",
+        "bytes_written": 16
+      },
+      "record_order": 7098
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:32:56.424440+00:00",
+      "host_ns": 252198242400800,
+      "elapsed_s": 206.84186119999504,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 2,
+        "sequence": 1973207153,
+        "packet_hex": "a59001021000759cc07101f40000c533"
+      },
+      "record_order": 7114
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:32:56.424630+00:00",
+      "host_ns": 252198242587800,
+      "elapsed_s": 206.84204819999286,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 2,
+        "sequence": 1973207153,
+        "packet_hex": "a59001021000759cc07101f40000c533",
+        "bytes_written": 16
+      },
+      "record_order": 7115
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:32:56.671543+00:00",
+      "host_ns": 252198489506000,
+      "elapsed_s": 207.0889664000133,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207154,
+        "packet_hex": "a59001011000759cc072000000001a3d"
+      },
+      "record_order": 7124
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:32:56.671748+00:00",
+      "host_ns": 252198489706400,
+      "elapsed_s": 207.08916679999675,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207154,
+        "packet_hex": "a59001011000759cc072000000001a3d",
+        "bytes_written": 16
+      },
+      "record_order": 7125
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:35:25.715226+00:00",
+      "host_ns": 252347533188400,
+      "elapsed_s": 356.132648800005,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207155,
+        "packet_hex": "a59001011000759cc07300000000b06c"
+      },
+      "record_order": 12318
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:35:25.715395+00:00",
+      "host_ns": 252347533349800,
+      "elapsed_s": 356.1328102000116,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207155,
+        "packet_hex": "a59001011000759cc07300000000b06c",
+        "bytes_written": 16
+      },
+      "record_order": 12319
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:38:23.140934+00:00",
+      "host_ns": 252524958888400,
+      "elapsed_s": 533.5583487999975,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 2,
+        "sequence": 1973207156,
+        "packet_hex": "a59001021000759cc07402ee0000f91a"
+      },
+      "record_order": 18492
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:38:23.141027+00:00",
+      "host_ns": 252524958985300,
+      "elapsed_s": 533.5584457000077,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 2,
+        "sequence": 1973207156,
+        "packet_hex": "a59001021000759cc07402ee0000f91a",
+        "bytes_written": 16
+      },
+      "record_order": 18493
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:38:32.423948+00:00",
+      "host_ns": 252534241912900,
+      "elapsed_s": 542.8413733000052,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207157,
+        "packet_hex": "a59001011000759cc075000000007de9"
+      },
+      "record_order": 18816
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:38:32.424150+00:00",
+      "host_ns": 252534242108600,
+      "elapsed_s": 542.8415690000111,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207157,
+        "packet_hex": "a59001011000759cc075000000007de9",
+        "bytes_written": 16
+      },
+      "record_order": 18817
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:38:34.555574+00:00",
+      "host_ns": 252536373535100,
+      "elapsed_s": 544.972995499993,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 2,
+        "sequence": 1973207158,
+        "packet_hex": "a59001021000759cc07602ee0000bd99"
+      },
+      "record_order": 18894
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:38:34.555760+00:00",
+      "host_ns": 252536373718800,
+      "elapsed_s": 544.9731791999948,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 2,
+        "sequence": 1973207158,
+        "packet_hex": "a59001021000759cc07602ee0000bd99",
+        "bytes_written": 16
+      },
+      "record_order": 18895
+    },
+    {
+      "kind": "xy_pi_tx_attempt",
+      "utc": "2026-10-26T00:38:34.679937+00:00",
+      "host_ns": 252536497899900,
+      "elapsed_s": 545.0973602999875,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207159,
+        "packet_hex": "a59001011000759cc07700000000396a"
+      },
+      "record_order": 18904
+    },
+    {
+      "kind": "xy_pi_tx",
+      "utc": "2026-10-26T00:38:34.680101+00:00",
+      "host_ns": 252536498056300,
+      "elapsed_s": 545.0975167000142,
+      "epoch": 1,
+      "detail": {
+        "transport_epoch": 2,
+        "opcode": 1,
+        "sequence": 1973207159,
+        "packet_hex": "a59001011000759cc07700000000396a",
+        "bytes_written": 16
+      },
+      "record_order": 18905
+    }
+  ],
+  "responses": [
+    {
+      "utc": "2026-10-26T00:31:05.203316+00:00",
+      "host_ns": 252087021270800,
+      "elapsed_s": 95.62073120000423,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207148,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 0,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 3242
+    },
+    {
+      "utc": "2026-10-26T00:31:18.573995+00:00",
+      "host_ns": 252100391949100,
+      "elapsed_s": 108.9914095000131,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207149,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 0,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 3711
+    },
+    {
+      "utc": "2026-10-26T00:31:34.841981+00:00",
+      "host_ns": 252116659935100,
+      "elapsed_s": 125.25939550000476,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207151,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 0,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 4280
+    },
+    {
+      "utc": "2026-10-26T00:32:56.369764+00:00",
+      "host_ns": 252198187719100,
+      "elapsed_s": 206.7871795000101,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207152,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 0,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 7113
+    },
+    {
+      "utc": "2026-10-26T00:32:56.608870+00:00",
+      "host_ns": 252198426826800,
+      "elapsed_s": 207.02628719998756,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 2,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207153,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 1,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 7123
+    },
+    {
+      "utc": "2026-10-26T00:32:56.835985+00:00",
+      "host_ns": 252198653939400,
+      "elapsed_s": 207.25339980001445,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207154,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 1,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 7133
+    },
+    {
+      "utc": "2026-10-26T00:35:26.059406+00:00",
+      "host_ns": 252347877360700,
+      "elapsed_s": 356.47682109999005,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207155,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 1,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 12334
+    },
+    {
+      "utc": "2026-10-26T00:38:32.663743+00:00",
+      "host_ns": 252534481700000,
+      "elapsed_s": 543.0811604000046,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207157,
+        "p": 0.05,
+        "i": 0.0,
+        "p_wire": 500,
+        "i_wire": 0,
+        "generation": 1,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 18832
+    },
+    {
+      "utc": "2026-10-26T00:38:34.625768+00:00",
+      "host_ns": 252536443725700,
+      "elapsed_s": 545.0431860999961,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 2,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207158,
+        "p": 0.075,
+        "i": 0.0,
+        "p_wire": 750,
+        "i_wire": 0,
+        "generation": 2,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 18903
+    },
+    {
+      "utc": "2026-10-26T00:38:34.966893+00:00",
+      "host_ns": 252536784848200,
+      "elapsed_s": 545.3843086000124,
+      "epoch": 1,
+      "row": {
+        "protocol": 1,
+        "opcode": 1,
+        "status": 0,
+        "status_name": "OK",
+        "sequence": 1973207159,
+        "p": 0.075,
+        "i": 0.0,
+        "p_wire": 750,
+        "i_wire": 0,
+        "generation": 2,
+        "build": "0000B0B3",
+        "persistence": "this power cycle only",
+        "_protocol": "a591"
+      },
+      "record_order": 18920
+    }
+  ]
+}
