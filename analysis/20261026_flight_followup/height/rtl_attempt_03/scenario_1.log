@@ -1,0 +1,2 @@
+PASS scenario=1 cycles=4000000 first_ready=602833 first_drop=2500032 recovered=3102387 low_stick_cycles=2000000 adapter_drops=0 normal_drops=0 metric_breaks=1 fallback_latched=1 z_reason=2
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\height_path_tb.v:74: $finish called at 80000100000 (1ps)

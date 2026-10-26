@@ -1,0 +1,262 @@
+{
+  "scope": "Exact-key frozen packet analysis; no invented high-rate samples",
+  "input": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\hardware\\response_20261025T160009_877779Z\\telemetry_clip.jsonl",
+    "sha256": "73df2c5c9b36e3e6d8f8afee94b6c3e508ab8d4112982055e7ac9fb8d96a0649"
+  },
+  "protocol_counts": {
+    "a579": 1505,
+    "a57a": 1507,
+    "a580": 1512,
+    "a581": 1524,
+    "a582": 1528,
+    "a583": 1528,
+    "a585": 1528
+  },
+  "duplicate_protocol_keys": [],
+  "transition_brackets": [
+    {
+      "epoch": 22,
+      "last_false_sequence": 230,
+      "first_true_sequence": 231,
+      "last_false_uptime_ms": 46199,
+      "first_true_uptime_ms": 46399,
+      "false_info_line": 7822,
+      "true_info_line": 7829,
+      "first_true_primary_missing": false,
+      "counters": {
+        "sample_count": {
+          "before": 4614,
+          "after": 4634,
+          "delta": 20
+        },
+        "module_time_ms": {
+          "before": 52988,
+          "after": 53188,
+          "delta": 200
+        },
+        "module_missing": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "module_duplicates": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "module_restarts": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "integration_breaks": {
+          "before": 1,
+          "after": 1,
+          "delta": 0
+        },
+        "checksum_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "length_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "uart_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "packet_timeouts": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "epoch": 22,
+      "last_false_sequence": 374,
+      "first_true_sequence": 375,
+      "last_false_uptime_ms": 75000,
+      "first_true_uptime_ms": 75200,
+      "false_info_line": 8825,
+      "true_info_line": 8831,
+      "first_true_primary_missing": true,
+      "counters": {
+        "sample_count": {
+          "before": 7489,
+          "after": 7509,
+          "delta": 20
+        },
+        "module_time_ms": {
+          "before": 81738,
+          "after": 81938,
+          "delta": 200
+        },
+        "module_missing": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "module_duplicates": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "module_restarts": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "integration_breaks": {
+          "before": 1,
+          "after": 1,
+          "delta": 0
+        },
+        "checksum_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "length_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "uart_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "packet_timeouts": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        }
+      }
+    }
+  ],
+  "geometry_counter_anchors": [
+    {
+      "sequence": 227,
+      "mtf_line": 7802,
+      "nav_line": 7803,
+      "source_age_ms": 1,
+      "mtf_samples": 4554,
+      "geometry_publications": 4284,
+      "counter_difference": 270,
+      "geometry_height_ready": true
+    },
+    {
+      "sequence": 230,
+      "mtf_line": 7823,
+      "nav_line": 7824,
+      "source_age_ms": 0,
+      "mtf_samples": 4614,
+      "geometry_publications": 4344,
+      "counter_difference": 270,
+      "geometry_height_ready": true
+    },
+    {
+      "sequence": 231,
+      "mtf_line": 7830,
+      "nav_line": 7831,
+      "source_age_ms": 0,
+      "mtf_samples": 4634,
+      "geometry_publications": 4364,
+      "counter_difference": 270,
+      "geometry_height_ready": true
+    },
+    {
+      "sequence": 232,
+      "mtf_line": 7837,
+      "nav_line": 7838,
+      "source_age_ms": 9,
+      "mtf_samples": 4653,
+      "geometry_publications": 4383,
+      "counter_difference": 270,
+      "geometry_height_ready": true
+    },
+    {
+      "sequence": 374,
+      "mtf_line": 8826,
+      "nav_line": 8827,
+      "source_age_ms": 9,
+      "mtf_samples": 7489,
+      "geometry_publications": 7219,
+      "counter_difference": 270,
+      "geometry_height_ready": true
+    },
+    {
+      "sequence": 375,
+      "mtf_line": 8832,
+      "nav_line": 8833,
+      "source_age_ms": 9,
+      "mtf_samples": 7509,
+      "geometry_publications": 7239,
+      "counter_difference": 270,
+      "geometry_height_ready": true
+    }
+  ],
+  "source_comparison": {
+    "acg720_ano_port.v": {
+      "p005_sha256": "03616e9c7bbf0dedec4dd4347b5f9ebbee458c84c47cbe85c3a36c1433ffe777",
+      "b3_sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "byte_identical": false
+    },
+    "core/flight_core.v": {
+      "p005_sha256": "316863afe337dc6513779c16ab007792896a57b411bebb5fce30ec30e8bccf06",
+      "b3_sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "byte_identical": false
+    },
+    "core/height_loss_fallback.v": {
+      "p005_sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "b3_sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "byte_identical": true
+    },
+    "core/ano_flight_state.v": {
+      "p005_sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "b3_sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "byte_identical": true
+    },
+    "core/ano_attitude_estimator.v": {
+      "p005_sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "b3_sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "byte_identical": true
+    },
+    "core/imu_pipeline_pipelined.v": {
+      "p005_sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+      "b3_sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+      "byte_identical": true
+    },
+    "sensor/mtf01p_reader.v": {
+      "p005_sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "b3_sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "byte_identical": true
+    },
+    "sensor/mtf_shared_geometry.v": {
+      "p005_sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "b3_sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "byte_identical": true
+    },
+    "position/pose_time_adapter.v": {
+      "p005_sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "b3_sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "byte_identical": true
+    },
+    "position/mtf_shared_height_fusion.v": {
+      "p005_sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "b3_sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "byte_identical": true
+    },
+    "mtf_xyz_navigation_control.v": {
+      "p005_sha256": "4b799a700be7e33b337f5c735bf93c8a738a32a2e446dce230fe5ea2ab060c6b",
+      "b3_sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "byte_identical": false
+    }
+  }
+}

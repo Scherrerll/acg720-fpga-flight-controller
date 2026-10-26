@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\run_height_rtl.py", line 59, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\run_height_rtl.py", line 44, in main
+    run('compile', [BIN/'iverilog.exe', '-g2012', '-s', 'height_path_tb', '-o', OUT/'height_path.vvp',
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    HERE/'height_path_tb.v', *sources])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\run_height_rtl.py", line 40, in run
+    raise RuntimeError(name + ' failed; see ' + str(path))
+RuntimeError: compile failed; see C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\rtl_attempt_02\compile.log

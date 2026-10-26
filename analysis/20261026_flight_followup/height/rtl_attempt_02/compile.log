@@ -1,0 +1,12 @@
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\firmware\B0B3\source\acg720_ano_port.v:2: Include file calibration.vh not found
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\height_path_tb.v:14: error: Unknown module type: pose_time_adapter
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\height_path_tb.v:19: error: Unknown module type: mtf_metric_observer
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\height_path_tb.v:33: error: Unknown module type: mtf_xyz_navigation_control
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\height\height_path_tb.v:46: error: Unknown module type: height_loss_fallback
+5 error(s) during elaboration.
+*** These modules were missing:
+        height_loss_fallback referenced 1 times.
+        mtf_metric_observer referenced 1 times.
+        mtf_xyz_navigation_control referenced 1 times.
+        pose_time_adapter referenced 1 times.
+***

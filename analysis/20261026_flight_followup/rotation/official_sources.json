@@ -1,0 +1,27 @@
+{
+  "checked_date": "2026-10-26",
+  "scope": "Primary manufacturer sources only; no device connection, configuration read or firmware update was performed.",
+  "sources": [
+    {
+      "title": "Decoding Micolink Messages from MTF-01",
+      "url": "https://micoair.com/docs/decoding-micolink-messages-from-mtf-01/",
+      "page_updated": "2024-07-03",
+      "supports": ["0x51 payload layout", "time_ms is system time", "flow unit cm/s@1m", "velocity equals flow times height(m)"],
+      "does_not_establish": ["Installed sensor firmware version", "internal gyro compensation", "exposure start/end or midpoint", "filter group delay or timestamp phase", "firmware-specific compensation parameters"]
+    },
+    {
+      "title": "MTF-01P optical flow/range sensor user manual",
+      "url": "https://micoair.cn/zh/docs/sensors/sensors/mtf-01p-sensors",
+      "access_note": "Direct open redirected with a fetch error; primary-domain search returned the manual content on 2026-10-26.",
+      "supports": ["100Hz output", "115200 UART", "multiple selectable protocols", "minimum optical flow working distance 8cm", "optical-flow illumination specification greater than60Lux"],
+      "does_not_establish": ["Actual installed module firmware", "a particular Micolink derotation contract", "20-count official fixed resolution"]
+    },
+    {
+      "title": "MicoAssistant user guide",
+      "url": "https://micoair.cn/zh/docs/software-tutorial/micoassistant-guide",
+      "supports": ["Manufacturer tool can identify device and read configuration", "Auto protocol was introduced in MTF firmware1.1.0"],
+      "does_not_establish": ["This aircraft runs firmware1.1.0 or any other specific version", "Auto or another protocol implies gyro compensation"]
+    }
+  ],
+  "copyright_scope": "Only concise factual summaries and URLs are retained; no full manual or manufacturer code is copied."
+}

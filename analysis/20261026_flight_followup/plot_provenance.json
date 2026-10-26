@@ -1,0 +1,65 @@
+{
+  "inputs": {
+    "response\\response_rows.csv": "a6ac3dc30060712b9bab22f19096808ec64bf89362a5c07e8f56e861851e6308",
+    "height\\boundary_packets.csv": "729a9cd968537080468dc8300c3cdd58366e760f050768b220d0a582e85f785c"
+  },
+  "windows": [
+    {
+      "kind": "response",
+      "epoch": 12,
+      "axis": "pitch",
+      "sequences": [
+        280,
+        295
+      ],
+      "points": 16,
+      "centered": [
+        285,
+        292
+      ],
+      "withdrawal": 293
+    },
+    {
+      "kind": "response",
+      "epoch": 12,
+      "axis": "roll",
+      "sequences": [
+        482,
+        502
+      ],
+      "points": 21,
+      "centered": [
+        487,
+        494
+      ],
+      "withdrawal": 500
+    },
+    {
+      "kind": "height",
+      "epoch": 22,
+      "sequences": [
+        225,
+        234
+      ],
+      "points": 10,
+      "trigger_bracket": [
+        230,
+        231
+      ]
+    },
+    {
+      "kind": "height",
+      "epoch": 22,
+      "sequences": [
+        369,
+        378
+      ],
+      "points": 10,
+      "trigger_bracket": [
+        374,
+        375
+      ]
+    }
+  ],
+  "scope": "Actual recorded telemetry snapshots only; no reconstructed P/I components, exposure alignment, interpolation or flight acceptance"
+}

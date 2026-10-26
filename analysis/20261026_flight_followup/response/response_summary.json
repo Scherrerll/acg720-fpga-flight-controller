@@ -1,0 +1,3171 @@
+{
+  "scope": "Exact epoch/sequence visible-state evidence; no interpolation, no external position truth, no new flight samples.",
+  "datasets": {
+    "p005": {
+      "primary_frames": 1505,
+      "protocol_counts": {
+        "a579": 1505,
+        "a57a": 1507,
+        "a580": 1512,
+        "a581": 1524,
+        "a582": 1528,
+        "a583": 1528,
+        "a585": 1528
+      },
+      "duplicate_protocol_keys": 0,
+      "visible_qualified_xy": 46,
+      "visible_xy_with_target_mismatch": 0,
+      "same_key_missing_info": 0,
+      "same_key_missing_nav": 0,
+      "release_windows": []
+    },
+    "v15": {
+      "primary_frames": 2616,
+      "protocol_counts": {
+        "a579": 2616,
+        "a57a": 2621,
+        "a580": 2638,
+        "a581": 2662,
+        "a582": 2676,
+        "a583": 2680,
+        "a585": 2680
+      },
+      "duplicate_protocol_keys": 0,
+      "visible_qualified_xy": 345,
+      "visible_xy_with_target_mismatch": 0,
+      "same_key_missing_info": 2,
+      "same_key_missing_nav": 5,
+      "release_windows": [
+        {
+          "category": "xy_center",
+          "dataset": "v15",
+          "epoch": 12,
+          "first_sequence": 285,
+          "last_sequence": 292,
+          "samples": 8,
+          "utc_start": "2026-10-25T13:47:52.275161+00:00",
+          "utc_end": "2026-10-25T13:47:53.596833+00:00",
+          "duration_s": 1.321672,
+          "prior_primary_sequence": 284,
+          "prior_active_outside_deadzone": true,
+          "visible_target_matches_nav": 8,
+          "all_xyz_yaw_center": true,
+          "all_hover_qualified": true,
+          "ranges": {
+            "ch1": [
+              1499,
+              1499
+            ],
+            "ch2": [
+              1501,
+              1504
+            ],
+            "ch3": [
+              1500,
+              1500
+            ],
+            "ch4": [
+              1500,
+              1500
+            ],
+            "roll_actual_deg": [
+              -4.29,
+              9.36
+            ],
+            "pitch_actual_deg": [
+              -11.95,
+              14.15
+            ],
+            "roll_target_deg": [
+              -1.39,
+              7.81
+            ],
+            "pitch_target_deg": [
+              -11.87,
+              11.51
+            ],
+            "fused_height_mm": [
+              1039,
+              1160
+            ],
+            "target_height_mm": [
+              1273,
+              1273
+            ],
+            "heading_forward_velocity_est_mmps": [
+              -873.9470690438679,
+              774.0496365433585
+            ],
+            "heading_right_velocity_est_mmps": [
+              -487.04290273608814,
+              94.9874895351901
+            ]
+          },
+          "target_sign_reversals_over_0p25deg": {
+            "roll": 1,
+            "pitch": 2
+          },
+          "tracking_rms_deg": {
+            "roll": 3.912789925360164,
+            "pitch": 7.891944468887246
+          },
+          "visible_displacement_from_velocity_integrator_mm": {
+            "x": -637.51953125,
+            "y": -189.01953125
+          }
+        },
+        {
+          "category": "xy_center",
+          "dataset": "v15",
+          "epoch": 12,
+          "first_sequence": 482,
+          "last_sequence": 483,
+          "samples": 2,
+          "utc_start": "2026-10-25T13:48:31.718715+00:00",
+          "utc_end": "2026-10-25T13:48:31.766833+00:00",
+          "duration_s": 0.048118,
+          "prior_primary_sequence": 481,
+          "prior_active_outside_deadzone": true,
+          "visible_target_matches_nav": 2,
+          "all_xyz_yaw_center": true,
+          "all_hover_qualified": true,
+          "ranges": {
+            "ch1": [
+              1510,
+              1530
+            ],
+            "ch2": [
+              1501,
+              1501
+            ],
+            "ch3": [
+              1474,
+              1474
+            ],
+            "ch4": [
+              1500,
+              1500
+            ],
+            "roll_actual_deg": [
+              -5.22,
+              -3.58
+            ],
+            "pitch_actual_deg": [
+              0.79,
+              1.47
+            ],
+            "roll_target_deg": [
+              -4.8,
+              -3.3
+            ],
+            "pitch_target_deg": [
+              1.89,
+              2.38
+            ],
+            "fused_height_mm": [
+              1117,
+              1119
+            ],
+            "target_height_mm": [
+              1220,
+              1220
+            ],
+            "heading_forward_velocity_est_mmps": [
+              24.813730960399184,
+              56.29820110184797
+            ],
+            "heading_right_velocity_est_mmps": [
+              234.9042405342846,
+              382.96213056844425
+            ]
+          },
+          "target_sign_reversals_over_0p25deg": {
+            "roll": 0,
+            "pitch": 0
+          },
+          "tracking_rms_deg": {
+            "roll": 1.6085397104206036,
+            "pitch": 1.009480064191463
+          },
+          "visible_displacement_from_velocity_integrator_mm": {
+            "x": 21.9375,
+            "y": 62.26171875
+          }
+        },
+        {
+          "category": "xy_center",
+          "dataset": "v15",
+          "epoch": 12,
+          "first_sequence": 487,
+          "last_sequence": 499,
+          "samples": 13,
+          "utc_start": "2026-10-25T13:48:32.579200+00:00",
+          "utc_end": "2026-10-25T13:48:35.007302+00:00",
+          "duration_s": 2.428102,
+          "prior_primary_sequence": 486,
+          "prior_active_outside_deadzone": true,
+          "visible_target_matches_nav": 13,
+          "all_xyz_yaw_center": false,
+          "all_hover_qualified": false,
+          "ranges": {
+            "ch1": [
+              1497,
+              1520
+            ],
+            "ch2": [
+              1501,
+              1501
+            ],
+            "ch3": [
+              1314,
+              1453
+            ],
+            "ch4": [
+              1500,
+              1500
+            ],
+            "roll_actual_deg": [
+              -13.14,
+              11.31
+            ],
+            "pitch_actual_deg": [
+              -1.48,
+              3.96
+            ],
+            "roll_target_deg": [
+              -11.0,
+              10.89
+            ],
+            "pitch_target_deg": [
+              -1.08,
+              4.02
+            ],
+            "fused_height_mm": [
+              981,
+              1176
+            ],
+            "target_height_mm": [
+              722,
+              1220
+            ],
+            "heading_forward_velocity_est_mmps": [
+              -185.39947729714046,
+              144.63065882675536
+            ],
+            "heading_right_velocity_est_mmps": [
+              -778.6594087142782,
+              784.1409176748053
+            ]
+          },
+          "target_sign_reversals_over_0p25deg": {
+            "roll": 4,
+            "pitch": 2
+          },
+          "tracking_rms_deg": {
+            "roll": 6.060177072812819,
+            "pitch": 1.507636969157108
+          },
+          "visible_displacement_from_velocity_integrator_mm": {
+            "x": 3.1171875,
+            "y": 198.7578125
+          }
+        }
+      ]
+    }
+  },
+  "windows": [
+    {
+      "category": "xy_center",
+      "dataset": "p005",
+      "epoch": 22,
+      "first_sequence": 211,
+      "last_sequence": 230,
+      "samples": 20,
+      "utc_start": "2026-10-25T16:05:32.431096+00:00",
+      "utc_end": "2026-10-25T16:05:36.293881+00:00",
+      "duration_s": 3.862785,
+      "prior_primary_sequence": 210,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 20,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1500,
+          1541
+        ],
+        "ch2": [
+          1497,
+          1501
+        ],
+        "ch3": [
+          1141,
+          1591
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.2,
+          3.09
+        ],
+        "pitch_actual_deg": [
+          -0.61,
+          2.51
+        ],
+        "roll_target_deg": [
+          -0.06,
+          2.25
+        ],
+        "pitch_target_deg": [
+          -0.01,
+          1.6
+        ],
+        "fused_height_mm": [
+          210,
+          401
+        ],
+        "target_height_mm": [
+          307,
+          1376
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -2.320185546877333,
+          321.0841488378207
+        ],
+        "heading_right_velocity_est_mmps": [
+          -446.6297241181326,
+          18.822113758896993
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.5196537308631586,
+        "pitch": 1.290387538687506
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 447.1953125,
+        "y": -677.03515625
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "p005",
+      "epoch": 22,
+      "first_sequence": 349,
+      "last_sequence": 366,
+      "samples": 18,
+      "utc_start": "2026-10-25T16:05:59.986625+00:00",
+      "utc_end": "2026-10-25T16:06:03.508326+00:00",
+      "duration_s": 3.521701,
+      "prior_primary_sequence": 348,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 18,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1500,
+          1500
+        ],
+        "ch2": [
+          1500,
+          1501
+        ],
+        "ch3": [
+          1560,
+          1571
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -1.75,
+          1.34
+        ],
+        "pitch_actual_deg": [
+          -0.42,
+          2.0
+        ],
+        "roll_target_deg": [
+          -0.03,
+          1.84
+        ],
+        "pitch_target_deg": [
+          -0.05,
+          0.45
+        ],
+        "fused_height_mm": [
+          260,
+          300
+        ],
+        "target_height_mm": [
+          267,
+          1063
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -7.848592331031913,
+          80.66821896169245
+        ],
+        "heading_right_velocity_est_mmps": [
+          -355.23585757087767,
+          1.2446753749044805
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.9513937145051989,
+        "pitch": 1.2466599821567672
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 24.5078125,
+        "y": -130.0
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "p005",
+      "epoch": 22,
+      "first_sequence": 225,
+      "last_sequence": 226,
+      "samples": 2,
+      "utc_start": "2026-10-25T16:05:35.195962+00:00",
+      "utc_end": "2026-10-25T16:05:35.429392+00:00",
+      "duration_s": 0.23343,
+      "prior_primary_sequence": 224,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 2,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1500,
+          1531
+        ],
+        "ch2": [
+          1500,
+          1501
+        ],
+        "ch3": [
+          1479,
+          1541
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          2.53,
+          3.09
+        ],
+        "pitch_actual_deg": [
+          0.88,
+          1.05
+        ],
+        "roll_target_deg": [
+          2.2,
+          2.25
+        ],
+        "pitch_target_deg": [
+          1.3,
+          1.31
+        ],
+        "fused_height_mm": [
+          328,
+          366
+        ],
+        "target_height_mm": [
+          1376,
+          1376
+        ],
+        "heading_forward_velocity_est_mmps": [
+          262.88504817702716,
+          263.14168964421594
+        ],
+        "heading_right_velocity_est_mmps": [
+          -446.6297241181326,
+          -444.61503765271567
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.6597347952018295,
+        "pitch": 0.35171010790137947
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 57.89453125,
+        "y": -86.8359375
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 549,
+      "last_sequence": 562,
+      "samples": 14,
+      "utc_start": "2026-10-25T13:39:49.704063+00:00",
+      "utc_end": "2026-10-25T13:39:52.413399+00:00",
+      "duration_s": 2.709336,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 14,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1585,
+          1598
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.37,
+          3.64
+        ],
+        "pitch_actual_deg": [
+          0.36,
+          2.2
+        ],
+        "roll_target_deg": [
+          0.04,
+          3.34
+        ],
+        "pitch_target_deg": [
+          -0.09,
+          1.85
+        ],
+        "fused_height_mm": [
+          276,
+          408
+        ],
+        "target_height_mm": [
+          463,
+          1402
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -6.702559601839881,
+          91.29921564920393
+        ],
+        "heading_right_velocity_est_mmps": [
+          -165.33140978881133,
+          -2.933104644774477
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.8837945785887448,
+        "pitch": 1.342348687934696
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 46.890625,
+        "y": -136.34375
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 564,
+      "last_sequence": 577,
+      "samples": 14,
+      "utc_start": "2026-10-25T13:39:52.702573+00:00",
+      "utc_end": "2026-10-25T13:39:55.411981+00:00",
+      "duration_s": 2.709408,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 14,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1419,
+          1546
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.74,
+          2.75
+        ],
+        "pitch_actual_deg": [
+          0.29,
+          2.62
+        ],
+        "roll_target_deg": [
+          -0.16,
+          2.45
+        ],
+        "pitch_target_deg": [
+          0.24,
+          2.69
+        ],
+        "fused_height_mm": [
+          512,
+          942
+        ],
+        "target_height_mm": [
+          1375,
+          1537
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -102.17070926020389,
+          113.5251490418373
+        ],
+        "heading_right_velocity_est_mmps": [
+          -72.38995602363045,
+          97.6722269051815
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.7990708890419458,
+        "pitch": 0.2458512907081375
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 57.01953125,
+        "y": 16.69140625
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 579,
+      "last_sequence": 633,
+      "samples": 55,
+      "utc_start": "2026-10-25T13:39:55.701129+00:00",
+      "utc_end": "2026-10-25T13:40:06.540661+00:00",
+      "duration_s": 10.839532,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 55,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1433,
+          1466
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -1.68,
+          2.72
+        ],
+        "pitch_actual_deg": [
+          0.65,
+          3.17
+        ],
+        "roll_target_deg": [
+          -1.46,
+          2.75
+        ],
+        "pitch_target_deg": [
+          0.65,
+          2.84
+        ],
+        "fused_height_mm": [
+          662,
+          982
+        ],
+        "target_height_mm": [
+          698,
+          1314
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -43.03741535367999,
+          61.63376154353459
+        ],
+        "heading_right_velocity_est_mmps": [
+          -102.62624173421185,
+          123.40880416054556
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 4,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.4868712728880565,
+        "pitch": 0.3246284589552129
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 61.69140625,
+        "y": -69.53125
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 635,
+      "last_sequence": 679,
+      "samples": 45,
+      "utc_start": "2026-10-25T13:40:06.881656+00:00",
+      "utc_end": "2026-10-25T13:40:15.711225+00:00",
+      "duration_s": 8.829569,
+      "prior_primary_sequence": 634,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 45,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1466,
+          1466
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.48,
+          2.78
+        ],
+        "pitch_actual_deg": [
+          0.02,
+          2.96
+        ],
+        "roll_target_deg": [
+          -0.35,
+          2.82
+        ],
+        "pitch_target_deg": [
+          0.35,
+          3.0
+        ],
+        "fused_height_mm": [
+          671,
+          725
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -94.11545404448117,
+          91.51849372740067
+        ],
+        "heading_right_velocity_est_mmps": [
+          -123.6630695832775,
+          97.20437308685783
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 2,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.5073547958666489,
+        "pitch": 0.462740628094064
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -70.2890625,
+        "y": -0.37109375
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 683,
+      "last_sequence": 685,
+      "samples": 3,
+      "utc_start": "2026-10-25T13:40:16.447623+00:00",
+      "utc_end": "2026-10-25T13:40:16.918712+00:00",
+      "duration_s": 0.471089,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 3,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1466,
+          1466
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          1.55,
+          1.74
+        ],
+        "pitch_actual_deg": [
+          0.17,
+          1.44
+        ],
+        "roll_target_deg": [
+          1.49,
+          2.34
+        ],
+        "pitch_target_deg": [
+          0.88,
+          1.2
+        ],
+        "fused_height_mm": [
+          709,
+          714
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -48.96680229071906,
+          -16.49649123250245
+        ],
+        "heading_right_velocity_est_mmps": [
+          -17.880388344950767,
+          37.29273982965961
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.4873397172404482,
+        "pitch": 0.6621681558838862
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -15.20703125,
+        "y": 2.45703125
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 689,
+      "last_sequence": 690,
+      "samples": 2,
+      "utc_start": "2026-10-25T13:40:17.723227+00:00",
+      "utc_end": "2026-10-25T13:40:18.014277+00:00",
+      "duration_s": 0.29105,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 2,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1466,
+          1466
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          1.94,
+          2.43
+        ],
+        "pitch_actual_deg": [
+          1.72,
+          3.52
+        ],
+        "roll_target_deg": [
+          2.83,
+          2.96
+        ],
+        "pitch_target_deg": [
+          0.16,
+          1.67
+        ],
+        "fused_height_mm": [
+          717,
+          723
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -104.77017409933686,
+          -1.2339150130544114
+        ],
+        "heading_right_velocity_est_mmps": [
+          -33.01322437922692,
+          -19.138374370740813
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.7324616030891995,
+        "pitch": 1.7111545809774171
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -11.46484375,
+        "y": -1.43359375
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 698,
+      "last_sequence": 705,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:40:19.446175+00:00",
+      "utc_end": "2026-10-25T13:40:21.012839+00:00",
+      "duration_s": 1.566664,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1464,
+          1465
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          0.73,
+          2.68
+        ],
+        "pitch_actual_deg": [
+          0.78,
+          1.68
+        ],
+        "roll_target_deg": [
+          0.86,
+          2.4
+        ],
+        "pitch_target_deg": [
+          0.64,
+          1.8
+        ],
+        "fused_height_mm": [
+          703,
+          728
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -58.960452019562226,
+          34.31450016162769
+        ],
+        "heading_right_velocity_est_mmps": [
+          -7.107134954282578,
+          117.5303020561292
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.476300850303671,
+        "pitch": 0.3239984567864483
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -6.8203125,
+        "y": 76.0234375
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 707,
+      "last_sequence": 714,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:40:21.302011+00:00",
+      "utc_end": "2026-10-25T13:40:22.685749+00:00",
+      "duration_s": 1.383738,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1464,
+          1465
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          0.4,
+          4.97
+        ],
+        "pitch_actual_deg": [
+          -0.89,
+          2.6
+        ],
+        "roll_target_deg": [
+          1.05,
+          4.83
+        ],
+        "pitch_target_deg": [
+          -1.2,
+          1.56
+        ],
+        "fused_height_mm": [
+          703,
+          732
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -137.83610455553062,
+          68.46858020533087
+        ],
+        "heading_right_velocity_est_mmps": [
+          -187.07703529916782,
+          46.428767854957414
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 2
+      },
+      "tracking_rms_deg": {
+        "roll": 1.0052114205479363,
+        "pitch": 1.059669759878048
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -96.53515625,
+        "y": -52.48046875
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 727,
+      "last_sequence": 742,
+      "samples": 16,
+      "utc_start": "2026-10-25T13:40:25.334132+00:00",
+      "utc_end": "2026-10-25T13:40:28.331504+00:00",
+      "duration_s": 2.997372,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 16,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1500
+        ],
+        "ch2": [
+          1500,
+          1501
+        ],
+        "ch3": [
+          1000,
+          1398
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.34,
+          5.92
+        ],
+        "pitch_actual_deg": [
+          1.11,
+          2.56
+        ],
+        "roll_target_deg": [
+          -0.36,
+          3.91
+        ],
+        "pitch_target_deg": [
+          1.47,
+          3.71
+        ],
+        "fused_height_mm": [
+          161,
+          710
+        ],
+        "target_height_mm": [
+          -1830,
+          592
+        ],
+        "heading_forward_velocity_est_mmps": [
+          4.723093128796421,
+          114.17827749043262
+        ],
+        "heading_right_velocity_est_mmps": [
+          -147.04974093040445,
+          149.24846327710392
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 2,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 1.22079891874133,
+        "pitch": 0.5489478572687938
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 134.75,
+        "y": 81.125
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 223,
+      "last_sequence": 234,
+      "samples": 12,
+      "utc_start": "2026-10-25T13:47:39.763801+00:00",
+      "utc_end": "2026-10-25T13:47:42.124924+00:00",
+      "duration_s": 2.361123,
+      "prior_primary_sequence": 222,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 12,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1500
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1558,
+          1573
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.16,
+          -0.07
+        ],
+        "pitch_actual_deg": [
+          0.61,
+          2.65
+        ],
+        "roll_target_deg": [
+          -0.14,
+          0.15
+        ],
+        "pitch_target_deg": [
+          0.0,
+          0.23
+        ],
+        "fused_height_mm": [
+          212,
+          222
+        ],
+        "target_height_mm": [
+          376,
+          774
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -1.2924892572435989,
+          9.22918663278456
+        ],
+        "heading_right_velocity_est_mmps": [
+          -6.702832178891467,
+          7.806789525709316
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.1832802953584118,
+        "pitch": 1.768327835366885
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 8.671875,
+        "y": -3.59375
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 236,
+      "last_sequence": 249,
+      "samples": 14,
+      "utc_start": "2026-10-25T13:47:42.414062+00:00",
+      "utc_end": "2026-10-25T13:47:45.123501+00:00",
+      "duration_s": 2.709439,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 14,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1500
+        ],
+        "ch2": [
+          1500,
+          1501
+        ],
+        "ch3": [
+          1561,
+          1562
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.08,
+          2.61
+        ],
+        "pitch_actual_deg": [
+          -0.26,
+          2.53
+        ],
+        "roll_target_deg": [
+          0.6,
+          2.24
+        ],
+        "pitch_target_deg": [
+          0.32,
+          3.07
+        ],
+        "fused_height_mm": [
+          219,
+          399
+        ],
+        "target_height_mm": [
+          810,
+          1024
+        ],
+        "heading_forward_velocity_est_mmps": [
+          13.088716970075387,
+          140.3387227520428
+        ],
+        "heading_right_velocity_est_mmps": [
+          -113.25984656142236,
+          22.73910979321405
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.6851433635170295,
+        "pitch": 0.8519473491444678
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 205.27734375,
+        "y": -87.49609375
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 251,
+      "last_sequence": 279,
+      "samples": 29,
+      "utc_start": "2026-10-25T13:47:45.412646+00:00",
+      "utc_end": "2026-10-25T13:47:51.059454+00:00",
+      "duration_s": 5.646808,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 29,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1510
+        ],
+        "ch3": [
+          1500,
+          1562
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -2.39,
+          1.86
+        ],
+        "pitch_actual_deg": [
+          -0.57,
+          3.94
+        ],
+        "roll_target_deg": [
+          -1.96,
+          1.74
+        ],
+        "pitch_target_deg": [
+          -0.48,
+          3.35
+        ],
+        "fused_height_mm": [
+          454,
+          1139
+        ],
+        "target_height_mm": [
+          1057,
+          1273
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -155.25779377072402,
+          72.27548029748476
+        ],
+        "heading_right_velocity_est_mmps": [
+          -68.90104688098417,
+          138.7593996214041
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 4,
+        "pitch": 2
+      },
+      "tracking_rms_deg": {
+        "roll": 0.5404053395688118,
+        "pitch": 0.5418168668852782
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -65.24609375,
+        "y": 121.35546875
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 285,
+      "last_sequence": 292,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:47:52.275161+00:00",
+      "utc_end": "2026-10-25T13:47:53.596833+00:00",
+      "duration_s": 1.321672,
+      "prior_primary_sequence": 284,
+      "prior_active_outside_deadzone": true,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1504
+        ],
+        "ch3": [
+          1500,
+          1500
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -4.29,
+          9.36
+        ],
+        "pitch_actual_deg": [
+          -11.95,
+          14.15
+        ],
+        "roll_target_deg": [
+          -1.39,
+          7.81
+        ],
+        "pitch_target_deg": [
+          -11.87,
+          11.51
+        ],
+        "fused_height_mm": [
+          1039,
+          1160
+        ],
+        "target_height_mm": [
+          1273,
+          1273
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -873.9470690438679,
+          774.0496365433585
+        ],
+        "heading_right_velocity_est_mmps": [
+          -487.04290273608814,
+          94.9874895351901
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 1,
+        "pitch": 2
+      },
+      "tracking_rms_deg": {
+        "roll": 3.912789925360164,
+        "pitch": 7.891944468887246
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -637.51953125,
+        "y": -189.01953125
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 294,
+      "last_sequence": 308,
+      "samples": 15,
+      "utc_start": "2026-10-25T13:47:54.058137+00:00",
+      "utc_end": "2026-10-25T13:47:56.888295+00:00",
+      "duration_s": 2.830158,
+      "prior_primary_sequence": 293,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 15,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1502
+        ],
+        "ch3": [
+          1000,
+          1366
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -12.25,
+          10.75
+        ],
+        "pitch_actual_deg": [
+          -7.24,
+          12.45
+        ],
+        "roll_target_deg": [
+          -7.46,
+          11.25
+        ],
+        "pitch_target_deg": [
+          -10.23,
+          6.14
+        ],
+        "fused_height_mm": [
+          65,
+          973
+        ],
+        "target_height_mm": [
+          -1940,
+          1221
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -668.0088678735583,
+          434.1569359060736
+        ],
+        "heading_right_velocity_est_mmps": [
+          -560.6675286981401,
+          715.7313760118031
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 2,
+        "pitch": 1
+      },
+      "tracking_rms_deg": {
+        "roll": 8.608625132195424,
+        "pitch": 5.347744695975429
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -28.78125,
+        "y": 93.0625
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 409,
+      "last_sequence": 452,
+      "samples": 44,
+      "utc_start": "2026-10-25T13:48:17.014537+00:00",
+      "utc_end": "2026-10-25T13:48:25.721775+00:00",
+      "duration_s": 8.707238,
+      "prior_primary_sequence": 408,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 44,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1427,
+          1579
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -2.82,
+          3.08
+        ],
+        "pitch_actual_deg": [
+          -0.39,
+          3.31
+        ],
+        "roll_target_deg": [
+          -2.61,
+          2.74
+        ],
+        "pitch_target_deg": [
+          -0.42,
+          3.59
+        ],
+        "fused_height_mm": [
+          267,
+          1205
+        ],
+        "target_height_mm": [
+          283,
+          1543
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -135.13051314780998,
+          167.06488420672218
+        ],
+        "heading_right_velocity_est_mmps": [
+          -172.05573106637507,
+          215.05623165839242
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 3,
+        "pitch": 3
+      },
+      "tracking_rms_deg": {
+        "roll": 0.7820035456790113,
+        "pitch": 1.1326176438996203
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 140.56640625,
+        "y": -71.71484375
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 454,
+      "last_sequence": 467,
+      "samples": 14,
+      "utc_start": "2026-10-25T13:48:26.010798+00:00",
+      "utc_end": "2026-10-25T13:48:28.720263+00:00",
+      "duration_s": 2.709465,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 14,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1429,
+          1474
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -2.78,
+          3.95
+        ],
+        "pitch_actual_deg": [
+          0.2,
+          2.11
+        ],
+        "roll_target_deg": [
+          -2.58,
+          3.7
+        ],
+        "pitch_target_deg": [
+          0.17,
+          2.14
+        ],
+        "fused_height_mm": [
+          1069,
+          1124
+        ],
+        "target_height_mm": [
+          1220,
+          1242
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -83.8128514129428,
+          55.75899524756382
+        ],
+        "heading_right_velocity_est_mmps": [
+          -215.68961136131946,
+          219.82483600313253
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 4,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 1.6112661392298204,
+        "pitch": 0.3791060914459547
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -9.4296875,
+        "y": -75.6875
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 469,
+      "last_sequence": 476,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:48:29.009460+00:00",
+      "utc_end": "2026-10-25T13:48:30.392038+00:00",
+      "duration_s": 1.382578,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1537
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1473,
+          1474
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -2.72,
+          4.13
+        ],
+        "pitch_actual_deg": [
+          0.71,
+          2.16
+        ],
+        "roll_target_deg": [
+          -2.37,
+          3.5
+        ],
+        "pitch_target_deg": [
+          0.93,
+          1.88
+        ],
+        "fused_height_mm": [
+          1102,
+          1119
+        ],
+        "target_height_mm": [
+          1220,
+          1220
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -48.57082604535282,
+          26.312197797872408
+        ],
+        "heading_right_velocity_est_mmps": [
+          -197.1752599113777,
+          222.96881051171516
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 1,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 1.6074669514487694,
+        "pitch": 0.23819634757905084
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -5.6953125,
+        "y": 2.76953125
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 482,
+      "last_sequence": 483,
+      "samples": 2,
+      "utc_start": "2026-10-25T13:48:31.718715+00:00",
+      "utc_end": "2026-10-25T13:48:31.766833+00:00",
+      "duration_s": 0.048118,
+      "prior_primary_sequence": 481,
+      "prior_active_outside_deadzone": true,
+      "visible_target_matches_nav": 2,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1510,
+          1530
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1474,
+          1474
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -5.22,
+          -3.58
+        ],
+        "pitch_actual_deg": [
+          0.79,
+          1.47
+        ],
+        "roll_target_deg": [
+          -4.8,
+          -3.3
+        ],
+        "pitch_target_deg": [
+          1.89,
+          2.38
+        ],
+        "fused_height_mm": [
+          1117,
+          1119
+        ],
+        "target_height_mm": [
+          1220,
+          1220
+        ],
+        "heading_forward_velocity_est_mmps": [
+          24.813730960399184,
+          56.29820110184797
+        ],
+        "heading_right_velocity_est_mmps": [
+          234.9042405342846,
+          382.96213056844425
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 1.6085397104206036,
+        "pitch": 1.009480064191463
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 21.9375,
+        "y": 62.26171875
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 487,
+      "last_sequence": 499,
+      "samples": 13,
+      "utc_start": "2026-10-25T13:48:32.579200+00:00",
+      "utc_end": "2026-10-25T13:48:35.007302+00:00",
+      "duration_s": 2.428102,
+      "prior_primary_sequence": 486,
+      "prior_active_outside_deadzone": true,
+      "visible_target_matches_nav": 13,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1497,
+          1520
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1314,
+          1453
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -13.14,
+          11.31
+        ],
+        "pitch_actual_deg": [
+          -1.48,
+          3.96
+        ],
+        "roll_target_deg": [
+          -11.0,
+          10.89
+        ],
+        "pitch_target_deg": [
+          -1.08,
+          4.02
+        ],
+        "fused_height_mm": [
+          981,
+          1176
+        ],
+        "target_height_mm": [
+          722,
+          1220
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -185.39947729714046,
+          144.63065882675536
+        ],
+        "heading_right_velocity_est_mmps": [
+          -778.6594087142782,
+          784.1409176748053
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 4,
+        "pitch": 2
+      },
+      "tracking_rms_deg": {
+        "roll": 6.060177072812819,
+        "pitch": 1.507636969157108
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 3.1171875,
+        "y": 198.7578125
+      }
+    },
+    {
+      "category": "xy_center",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 501,
+      "last_sequence": 504,
+      "samples": 4,
+      "utc_start": "2026-10-25T13:48:35.374565+00:00",
+      "utc_end": "2026-10-25T13:48:36.039729+00:00",
+      "duration_s": 0.665164,
+      "prior_primary_sequence": 500,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 4,
+      "all_xyz_yaw_center": false,
+      "all_hover_qualified": false,
+      "ranges": {
+        "ch1": [
+          1499,
+          1500
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1000,
+          1280
+        ],
+        "ch4": [
+          1496,
+          1500
+        ],
+        "roll_actual_deg": [
+          -13.62,
+          8.0
+        ],
+        "pitch_actual_deg": [
+          -0.28,
+          2.44
+        ],
+        "roll_target_deg": [
+          -11.24,
+          1.77
+        ],
+        "pitch_target_deg": [
+          1.09,
+          1.89
+        ],
+        "fused_height_mm": [
+          275,
+          774
+        ],
+        "target_height_mm": [
+          -433,
+          369
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -30.274963694689077,
+          25.289674153308518
+        ],
+        "heading_right_velocity_est_mmps": [
+          -167.0647441256103,
+          765.9539895505868
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 1,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 7.697881201993183,
+        "pitch": 1.2380932921230128
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 54.55859375,
+        "y": 260.5859375
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 564,
+      "last_sequence": 571,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:39:52.702573+00:00",
+      "utc_end": "2026-10-25T13:39:54.086281+00:00",
+      "duration_s": 1.383708,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1469,
+          1546
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.74,
+          2.37
+        ],
+        "pitch_actual_deg": [
+          1.97,
+          2.62
+        ],
+        "roll_target_deg": [
+          0.37,
+          2.2
+        ],
+        "pitch_target_deg": [
+          2.17,
+          2.69
+        ],
+        "fused_height_mm": [
+          512,
+          774
+        ],
+        "target_height_mm": [
+          1536,
+          1537
+        ],
+        "heading_forward_velocity_est_mmps": [
+          26.131163367951736,
+          113.5251490418373
+        ],
+        "heading_right_velocity_est_mmps": [
+          -59.59385346255747,
+          69.65693426192279
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.8821847878987712,
+        "pitch": 0.2743856774687775
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 95.21484375,
+        "y": -6.54296875
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 614,
+      "last_sequence": 633,
+      "samples": 20,
+      "utc_start": "2026-10-25T13:40:02.730609+00:00",
+      "utc_end": "2026-10-25T13:40:06.540661+00:00",
+      "duration_s": 3.810052,
+      "prior_primary_sequence": 613,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 20,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1465,
+          1466
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          0.04,
+          2.72
+        ],
+        "pitch_actual_deg": [
+          1.71,
+          3.17
+        ],
+        "roll_target_deg": [
+          0.54,
+          2.75
+        ],
+        "pitch_target_deg": [
+          1.72,
+          2.84
+        ],
+        "fused_height_mm": [
+          662,
+          686
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -28.761706814214122,
+          61.63376154353459
+        ],
+        "heading_right_velocity_est_mmps": [
+          -102.62624173421185,
+          6.265552066862388
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.43598738513860696,
+        "pitch": 0.29259186591564706
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 7.91796875,
+        "y": -168.44921875
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 635,
+      "last_sequence": 679,
+      "samples": 45,
+      "utc_start": "2026-10-25T13:40:06.881656+00:00",
+      "utc_end": "2026-10-25T13:40:15.711225+00:00",
+      "duration_s": 8.829569,
+      "prior_primary_sequence": 634,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 45,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1466,
+          1466
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.48,
+          2.78
+        ],
+        "pitch_actual_deg": [
+          0.02,
+          2.96
+        ],
+        "roll_target_deg": [
+          -0.35,
+          2.82
+        ],
+        "pitch_target_deg": [
+          0.35,
+          3.0
+        ],
+        "fused_height_mm": [
+          671,
+          725
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -94.11545404448117,
+          91.51849372740067
+        ],
+        "heading_right_velocity_est_mmps": [
+          -123.6630695832775,
+          97.20437308685783
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 2,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.5073547958666489,
+        "pitch": 0.462740628094064
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -70.2890625,
+        "y": -0.37109375
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 683,
+      "last_sequence": 685,
+      "samples": 3,
+      "utc_start": "2026-10-25T13:40:16.447623+00:00",
+      "utc_end": "2026-10-25T13:40:16.918712+00:00",
+      "duration_s": 0.471089,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 3,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1466,
+          1466
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          1.55,
+          1.74
+        ],
+        "pitch_actual_deg": [
+          0.17,
+          1.44
+        ],
+        "roll_target_deg": [
+          1.49,
+          2.34
+        ],
+        "pitch_target_deg": [
+          0.88,
+          1.2
+        ],
+        "fused_height_mm": [
+          709,
+          714
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -48.96680229071906,
+          -16.49649123250245
+        ],
+        "heading_right_velocity_est_mmps": [
+          -17.880388344950767,
+          37.29273982965961
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.4873397172404482,
+        "pitch": 0.6621681558838862
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -15.20703125,
+        "y": 2.45703125
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 689,
+      "last_sequence": 690,
+      "samples": 2,
+      "utc_start": "2026-10-25T13:40:17.723227+00:00",
+      "utc_end": "2026-10-25T13:40:18.014277+00:00",
+      "duration_s": 0.29105,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 2,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1466,
+          1466
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          1.94,
+          2.43
+        ],
+        "pitch_actual_deg": [
+          1.72,
+          3.52
+        ],
+        "roll_target_deg": [
+          2.83,
+          2.96
+        ],
+        "pitch_target_deg": [
+          0.16,
+          1.67
+        ],
+        "fused_height_mm": [
+          717,
+          723
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -104.77017409933686,
+          -1.2339150130544114
+        ],
+        "heading_right_velocity_est_mmps": [
+          -33.01322437922692,
+          -19.138374370740813
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.7324616030891995,
+        "pitch": 1.7111545809774171
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -11.46484375,
+        "y": -1.43359375
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 698,
+      "last_sequence": 705,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:40:19.446175+00:00",
+      "utc_end": "2026-10-25T13:40:21.012839+00:00",
+      "duration_s": 1.566664,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1464,
+          1465
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          0.73,
+          2.68
+        ],
+        "pitch_actual_deg": [
+          0.78,
+          1.68
+        ],
+        "roll_target_deg": [
+          0.86,
+          2.4
+        ],
+        "pitch_target_deg": [
+          0.64,
+          1.8
+        ],
+        "fused_height_mm": [
+          703,
+          728
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -58.960452019562226,
+          34.31450016162769
+        ],
+        "heading_right_velocity_est_mmps": [
+          -7.107134954282578,
+          117.5303020561292
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.476300850303671,
+        "pitch": 0.3239984567864483
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -6.8203125,
+        "y": 76.0234375
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 10,
+      "first_sequence": 707,
+      "last_sequence": 714,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:40:21.302011+00:00",
+      "utc_end": "2026-10-25T13:40:22.685749+00:00",
+      "duration_s": 1.383738,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1500,
+          1500
+        ],
+        "ch3": [
+          1464,
+          1465
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          0.4,
+          4.97
+        ],
+        "pitch_actual_deg": [
+          -0.89,
+          2.6
+        ],
+        "roll_target_deg": [
+          1.05,
+          4.83
+        ],
+        "pitch_target_deg": [
+          -1.2,
+          1.56
+        ],
+        "fused_height_mm": [
+          703,
+          732
+        ],
+        "target_height_mm": [
+          698,
+          698
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -137.83610455553062,
+          68.46858020533087
+        ],
+        "heading_right_velocity_est_mmps": [
+          -187.07703529916782,
+          46.428767854957414
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 2
+      },
+      "tracking_rms_deg": {
+        "roll": 1.0052114205479363,
+        "pitch": 1.059669759878048
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -96.53515625,
+        "y": -52.48046875
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 265,
+      "last_sequence": 279,
+      "samples": 15,
+      "utc_start": "2026-10-25T13:47:48.168222+00:00",
+      "utc_end": "2026-10-25T13:47:51.059454+00:00",
+      "duration_s": 2.891232,
+      "prior_primary_sequence": 264,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 15,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1510
+        ],
+        "ch3": [
+          1500,
+          1526
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -2.39,
+          1.65
+        ],
+        "pitch_actual_deg": [
+          -0.57,
+          2.6
+        ],
+        "roll_target_deg": [
+          -1.96,
+          1.25
+        ],
+        "pitch_target_deg": [
+          -0.48,
+          2.54
+        ],
+        "fused_height_mm": [
+          929,
+          1139
+        ],
+        "target_height_mm": [
+          1273,
+          1273
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -155.25779377072402,
+          43.94599778968029
+        ],
+        "heading_right_velocity_est_mmps": [
+          -68.90104688098417,
+          138.7593996214041
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 2,
+        "pitch": 2
+      },
+      "tracking_rms_deg": {
+        "roll": 0.6029096117993143,
+        "pitch": 0.5948221022569129
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -85.73046875,
+        "y": 106.265625
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 285,
+      "last_sequence": 292,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:47:52.275161+00:00",
+      "utc_end": "2026-10-25T13:47:53.596833+00:00",
+      "duration_s": 1.321672,
+      "prior_primary_sequence": 284,
+      "prior_active_outside_deadzone": true,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1504
+        ],
+        "ch3": [
+          1500,
+          1500
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -4.29,
+          9.36
+        ],
+        "pitch_actual_deg": [
+          -11.95,
+          14.15
+        ],
+        "roll_target_deg": [
+          -1.39,
+          7.81
+        ],
+        "pitch_target_deg": [
+          -11.87,
+          11.51
+        ],
+        "fused_height_mm": [
+          1039,
+          1160
+        ],
+        "target_height_mm": [
+          1273,
+          1273
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -873.9470690438679,
+          774.0496365433585
+        ],
+        "heading_right_velocity_est_mmps": [
+          -487.04290273608814,
+          94.9874895351901
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 1,
+        "pitch": 2
+      },
+      "tracking_rms_deg": {
+        "roll": 3.912789925360164,
+        "pitch": 7.891944468887246
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -637.51953125,
+        "y": -189.01953125
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 434,
+      "last_sequence": 441,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:48:22.031948+00:00",
+      "utc_end": "2026-10-25T13:48:23.388505+00:00",
+      "duration_s": 1.356557,
+      "prior_primary_sequence": 433,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1469,
+          1537
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -0.09,
+          1.73
+        ],
+        "pitch_actual_deg": [
+          0.7,
+          2.71
+        ],
+        "roll_target_deg": [
+          0.35,
+          1.68
+        ],
+        "pitch_target_deg": [
+          0.59,
+          2.59
+        ],
+        "fused_height_mm": [
+          705,
+          1068
+        ],
+        "target_height_mm": [
+          1543,
+          1543
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -88.90554967880286,
+          14.344253274359776
+        ],
+        "heading_right_velocity_est_mmps": [
+          -41.78848166793337,
+          46.298284068180564
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 0.5040213289137673,
+        "pitch": 0.2674883175019051
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -56.48828125,
+        "y": 12.1015625
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 456,
+      "last_sequence": 467,
+      "samples": 12,
+      "utc_start": "2026-10-25T13:48:26.381017+00:00",
+      "utc_end": "2026-10-25T13:48:28.720263+00:00",
+      "duration_s": 2.339246,
+      "prior_primary_sequence": 455,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 12,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1499
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1450,
+          1474
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -2.78,
+          3.95
+        ],
+        "pitch_actual_deg": [
+          0.2,
+          2.11
+        ],
+        "roll_target_deg": [
+          -2.58,
+          3.7
+        ],
+        "pitch_target_deg": [
+          0.58,
+          2.14
+        ],
+        "fused_height_mm": [
+          1069,
+          1112
+        ],
+        "target_height_mm": [
+          1220,
+          1220
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -39.500906057320215,
+          55.75899524756382
+        ],
+        "heading_right_velocity_est_mmps": [
+          -215.68961136131946,
+          219.82483600313253
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 3,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 1.495013935275075,
+        "pitch": 0.2497832393629858
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 29.796875,
+        "y": -42.0
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 469,
+      "last_sequence": 476,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:48:29.009460+00:00",
+      "utc_end": "2026-10-25T13:48:30.392038+00:00",
+      "duration_s": 1.382578,
+      "prior_primary_sequence": null,
+      "prior_active_outside_deadzone": false,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1499,
+          1537
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1473,
+          1474
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -2.72,
+          4.13
+        ],
+        "pitch_actual_deg": [
+          0.71,
+          2.16
+        ],
+        "roll_target_deg": [
+          -2.37,
+          3.5
+        ],
+        "pitch_target_deg": [
+          0.93,
+          1.88
+        ],
+        "fused_height_mm": [
+          1102,
+          1119
+        ],
+        "target_height_mm": [
+          1220,
+          1220
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -48.57082604535282,
+          26.312197797872408
+        ],
+        "heading_right_velocity_est_mmps": [
+          -197.1752599113777,
+          222.96881051171516
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 1,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 1.6074669514487694,
+        "pitch": 0.23819634757905084
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -5.6953125,
+        "y": 2.76953125
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 482,
+      "last_sequence": 483,
+      "samples": 2,
+      "utc_start": "2026-10-25T13:48:31.718715+00:00",
+      "utc_end": "2026-10-25T13:48:31.766833+00:00",
+      "duration_s": 0.048118,
+      "prior_primary_sequence": 481,
+      "prior_active_outside_deadzone": true,
+      "visible_target_matches_nav": 2,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1510,
+          1530
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1474,
+          1474
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -5.22,
+          -3.58
+        ],
+        "pitch_actual_deg": [
+          0.79,
+          1.47
+        ],
+        "roll_target_deg": [
+          -4.8,
+          -3.3
+        ],
+        "pitch_target_deg": [
+          1.89,
+          2.38
+        ],
+        "fused_height_mm": [
+          1117,
+          1119
+        ],
+        "target_height_mm": [
+          1220,
+          1220
+        ],
+        "heading_forward_velocity_est_mmps": [
+          24.813730960399184,
+          56.29820110184797
+        ],
+        "heading_right_velocity_est_mmps": [
+          234.9042405342846,
+          382.96213056844425
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 0,
+        "pitch": 0
+      },
+      "tracking_rms_deg": {
+        "roll": 1.6085397104206036,
+        "pitch": 1.009480064191463
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": 21.9375,
+        "y": 62.26171875
+      }
+    },
+    {
+      "category": "all_sticks_center_hover_context",
+      "dataset": "v15",
+      "epoch": 12,
+      "first_sequence": 487,
+      "last_sequence": 494,
+      "samples": 8,
+      "utc_start": "2026-10-25T13:48:32.579200+00:00",
+      "utc_end": "2026-10-25T13:48:33.968779+00:00",
+      "duration_s": 1.389579,
+      "prior_primary_sequence": 486,
+      "prior_active_outside_deadzone": true,
+      "visible_target_matches_nav": 8,
+      "all_xyz_yaw_center": true,
+      "all_hover_qualified": true,
+      "ranges": {
+        "ch1": [
+          1500,
+          1520
+        ],
+        "ch2": [
+          1501,
+          1501
+        ],
+        "ch3": [
+          1452,
+          1453
+        ],
+        "ch4": [
+          1500,
+          1500
+        ],
+        "roll_actual_deg": [
+          -10.82,
+          11.31
+        ],
+        "pitch_actual_deg": [
+          -1.3,
+          3.96
+        ],
+        "roll_target_deg": [
+          -9.51,
+          10.75
+        ],
+        "pitch_target_deg": [
+          -1.08,
+          4.02
+        ],
+        "fused_height_mm": [
+          1138,
+          1176
+        ],
+        "target_height_mm": [
+          1220,
+          1220
+        ],
+        "heading_forward_velocity_est_mmps": [
+          -185.39947729714046,
+          144.63065882675536
+        ],
+        "heading_right_velocity_est_mmps": [
+          -699.3393799222057,
+          688.0252340840749
+        ]
+      },
+      "target_sign_reversals_over_0p25deg": {
+        "roll": 2,
+        "pitch": 1
+      },
+      "tracking_rms_deg": {
+        "roll": 5.598830234968729,
+        "pitch": 1.3327415353323389
+      },
+      "visible_displacement_from_velocity_integrator_mm": {
+        "x": -10.9921875,
+        "y": -14.046875
+      }
+    }
+  ],
+  "unobserved_internal_fields": [
+    "completed 1ms filtered pilot target",
+    "20ms callback captured target/feedback/yaw",
+    "5Hz LPF internal acceleration",
+    "individual P/I/FF contributions",
+    "saved/live I and cancellation transactions"
+  ]
+}

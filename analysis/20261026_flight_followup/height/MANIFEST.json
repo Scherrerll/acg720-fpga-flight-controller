@@ -1,0 +1,141 @@
+{
+  "schema": "height-followup.artifacts.v1",
+  "created_utc": "2026-10-26T01:43:54.729486+00:00",
+  "scope": "Read-only historical packet evidence, source audit, 3 constructed actual RTL cases and first-cause diagnostic proposal",
+  "files": {
+    "analyze_height.py": {
+      "sha256": "a68801c9e10bca2eff356d810c089accd7d9702a2e071f0654200a0708538b13",
+      "bytes": 8147
+    },
+    "ARTIFACTS.md": {
+      "sha256": "5c9ff1b217b34d4af82fa6c54bb8945e85c7d9eab544bbb5d0453fd70dec7c62",
+      "bytes": 2034
+    },
+    "boundary_packets.csv": {
+      "sha256": "729a9cd968537080468dc8300c3cdd58366e760f050768b220d0a582e85f785c",
+      "bytes": 66641
+    },
+    "compile.log": {
+      "sha256": "2f4e722a72e92b9ca6031fe590cf0bfb32486aa4669373be4fb7e98090a88f1c",
+      "bytes": 248
+    },
+    "height_chain_source_changes.diff": {
+      "sha256": "f70b2968321d3c537547fe2d3c148369e12bfa098554c289aeed3de2f3d2bdaf",
+      "bytes": 9014
+    },
+    "HEIGHT_FINDINGS.md": {
+      "sha256": "fb0cce7ebd8716610c03bb20b021120cc600aa96c71a4ccc734432f472ddc3de",
+      "bytes": 12514
+    },
+    "height_path_tb.v": {
+      "sha256": "2e68b52b8cb3d63d004df537114de754026501d7c03eb43579728dffeb206109",
+      "bytes": 6076
+    },
+    "INPUTS.json": {
+      "sha256": "af4ceeb54aa75c6a2cc0f0c9e092f3e66f1104bc634d9b2b1d50feeff70e5d9d",
+      "bytes": 9668
+    },
+    "packet_analysis_stdout.log": {
+      "sha256": "9aa27c815cfc80e1fd0d4193b9478af7da35a6ec74aad7b630120f65efb22336",
+      "bytes": 3271
+    },
+    "packet_evidence.json": {
+      "sha256": "de8e3c817efa99894da96d13432a4562dffee09bec332eefbe81b585636be724",
+      "bytes": 7889
+    },
+    "rtl_attempt_02/compile.log": {
+      "sha256": "642599c17dcea33c2826f42dd0b3468f73a48886a0ef735544fa4aec98616cad",
+      "bytes": 1193
+    },
+    "rtl_attempt_02/rtl_results.json": {
+      "sha256": "7858337fdd2ed90f68201fe809b50da7642e98622da935f76bb3fdafd02443b0",
+      "bytes": 14283
+    },
+    "rtl_attempt_03/compile.log": {
+      "sha256": "10ac22fc8c394ebbc419cdac6cb616e3967bf69bd993e846d8fa46023f651789",
+      "bytes": 199
+    },
+    "rtl_attempt_03/rtl_results.json": {
+      "sha256": "2bb7840f3f9c2e999bfff1cde13cfa1046796449ad35b8410dc47138e9f39d3c",
+      "bytes": 16587
+    },
+    "rtl_attempt_03/scenario_0.log": {
+      "sha256": "63c08ae47ad4cddf93209df90a6a6ffc5e251bdf2f268c6f2e31285bbdd9e94e",
+      "bytes": 357
+    },
+    "rtl_attempt_03/scenario_1.log": {
+      "sha256": "c3bdd162c7c67b3a330be7004cd16ad23a859f9313bc39aa671a97abae818369",
+      "bytes": 367
+    },
+    "rtl_attempt_03/scenario_2.log": {
+      "sha256": "550f8ae1c8022dd92b9053ceeeb288784941f264664a8fda735e25c68c8b617b",
+      "bytes": 367
+    },
+    "rtl_results.json": {
+      "sha256": "22c4a91cc0383e1f5013adee818974e1988ec1d506bbbbf53391903314097301",
+      "bytes": 14132
+    },
+    "rtl_runner_02_process.json": {
+      "sha256": "10e0db4f5ab6996ceb61de04729b8303b77bb1dba963f47ee04d6a676ebd789e",
+      "bytes": 332
+    },
+    "rtl_runner_02_stderr.log": {
+      "sha256": "d9e0655136a23a543579ff7ea0688dca3bb60022bdac120b15868e5699ccb8f0",
+      "bytes": 1121
+    },
+    "rtl_runner_02_stdout.log": {
+      "sha256": "3f32425481b71a223ab215a282f57bbc6f9522928e21e3eb11e525e5562effcc",
+      "bytes": 73
+    },
+    "rtl_runner_03_process.json": {
+      "sha256": "54e20b430d4ce5f61d91c1eb127fa04828267bd8204a9bb5bcf066688bfbdfb5",
+      "bytes": 321
+    },
+    "rtl_runner_03_stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "rtl_runner_03_stdout.log": {
+      "sha256": "a557c17d3c91dd1e8c11684eb57018609bf69d648104e1fce59987a8f8d14c6e",
+      "bytes": 866
+    },
+    "rtl_runner_process.json": {
+      "sha256": "8ccec6cf7530938410610b395c9cb5210a1e987b2e28befdb1150c3f94ca1ead",
+      "bytes": 299
+    },
+    "rtl_runner_stderr.log": {
+      "sha256": "739f0f989baad5e78418c91c8851ebc6f1ea9de88605aaeba87ee72e10898c00",
+      "bytes": 1108
+    },
+    "rtl_runner_stdout.log": {
+      "sha256": "a75c5e72d6e6c6bc07f7d07cf14269259212309cf4d59060ff01b465b0ddb2f9",
+      "bytes": 7264
+    },
+    "run_height_rtl.py": {
+      "sha256": "4a7b84692d5286ea89b799cb08b986619c5fd859e6ac1a2585a8dfe83abcb78a",
+      "bytes": 2946
+    }
+  },
+  "authoritative_success_receipt": "rtl_attempt_03/rtl_results.json",
+  "historical_failed_setup_receipts": [
+    "rtl_results.json",
+    "rtl_attempt_02/rtl_results.json"
+  ],
+  "explicit_exclusions": [
+    "MANIFEST.json",
+    "MANIFEST.sha256",
+    "**/*.vvp",
+    "**/tmp/**",
+    "**/__pycache__/**",
+    "**/*.pyc"
+  ],
+  "omitted_local_compiled": [
+    {
+      "path": "rtl_attempt_03/height_path.vvp",
+      "sha256": "7a2d5438dd8bb1850849f6d9461c2225ad45b7d0f4b18c86e726f9d2ba680073",
+      "bytes": 1009525,
+      "required_for_archive_verification": false
+    }
+  ],
+  "external_dependencies": "INPUTS.json; original H packet/source files and Icarus are not redistributed"
+}

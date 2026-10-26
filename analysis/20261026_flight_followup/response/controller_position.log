@@ -1,0 +1,4 @@
+PASS actual controller: centered after500ms, rightward500mmps commands opposing roll=-249cdeg withI0
+PASS actual controller: changed x/y and POSITION_KP never affect roll/pitch/activity; 49 callback publications,50 position changes
+PASS actual controller: zero velocity after recenter yields zero command despite nonzero position offset; no position restoration
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_flight_followup\response\controller_position_tb.v:49: $finish called at 40000180000 (1ps)

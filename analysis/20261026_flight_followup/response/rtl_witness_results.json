@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "scope": "Two new narrow actual-RTL witnesses; never writes frozen sources.\n\nThe stick test advances accepted semantic dt after each completed transaction.\nThe controller test accelerates arrivals (2000 clocks per semantic 1ms), with\noriginal dt values. It proves dependency/response arithmetic, not aircraft\ndynamics, real sensor validity or real-time scheduling at that accelerated rate.\n",
+  "actual_RTL_results": [
+    {
+      "name": "stick_tail",
+      "compile_exit": 0,
+      "actual_wait_return": 0,
+      "pid": 61720,
+      "bench_sha256": "9e0825e60e5984022632f51b825b20f12387a42118e1f87337a7d51a77f768bf",
+      "trace_sha256": "517b6b850cf94412c243c851b4cdaa960af3c1a4d5b1ad65ce1e6f2824c0db8a",
+      "checks": [
+        "PASS actual stick: recenter tail 1pct=247ms 0.1pct=371ms residual500ms=6Q16",
+        "PASS actual stick: inclusive1450/1550 deadzone;1551 target144Q16 retained with LPF residue"
+      ]
+    },
+    {
+      "name": "controller_position",
+      "compile_exit": 0,
+      "actual_wait_return": 0,
+      "pid": 56704,
+      "bench_sha256": "26006813a16b528ab1c9502d840dd2896de24910ae3c8ea313a6ec0e292c9b8a",
+      "trace_sha256": "c346ed9781a55a2522e8d2b4b921acc00eef7f5c4b347977bfa5ea5f23f47614",
+      "checks": [
+        "PASS actual controller: centered after500ms, rightward500mmps commands opposing roll=-249cdeg withI0",
+        "PASS actual controller: changed x/y and POSITION_KP never affect roll/pitch/activity; 49 callback publications,50 position changes",
+        "PASS actual controller: zero velocity after recenter yields zero command despite nonzero position offset; no position restoration"
+      ]
+    }
+  ],
+  "python_float_equation_comparison": {
+    "execution": "Python model of source LPF equation; P2 C not compiled or executed",
+    "max_abs_norm_error": 1.3571929108890934e-05,
+    "max_error_q16_lsb": 0.8894499460802763
+  },
+  "immutable_source_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\mtf_xyz_hold_control.v": "b7eef6d33789523cd1e8ff81b05e75db91ab3c67bf76e03483dec356055fa1a6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f"
+  },
+  "immutable_sources_unchanged": true
+}

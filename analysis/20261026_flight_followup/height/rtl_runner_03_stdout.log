@@ -1,0 +1,4 @@
+{"name": "compile", "exit_code": 0, "seconds": 0.17, "pass_lines": []}
+{"name": "scenario_0", "exit_code": 0, "seconds": 130.913, "pass_lines": ["PASS scenario=0 cycles=4000000 first_ready=602833 first_drop=-1 recovered=-1 low_stick_cycles=2000000 adapter_drops=0 normal_drops=0 metric_breaks=1 fallback_latched=0 z_reason=0"]}
+{"name": "scenario_1", "exit_code": 0, "seconds": 142.801, "pass_lines": ["PASS scenario=1 cycles=4000000 first_ready=602833 first_drop=2500032 recovered=3102387 low_stick_cycles=2000000 adapter_drops=0 normal_drops=0 metric_breaks=1 fallback_latched=1 z_reason=2"]}
+{"name": "scenario_2", "exit_code": 0, "seconds": 144.801, "pass_lines": ["PASS scenario=2 cycles=4000000 first_ready=602833 first_drop=2550000 recovered=3602833 low_stick_cycles=2000000 adapter_drops=0 normal_drops=0 metric_breaks=1 fallback_latched=1 z_reason=2"]}

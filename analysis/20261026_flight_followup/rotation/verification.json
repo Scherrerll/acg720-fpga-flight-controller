@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-10-26T01:28:20.940402+00:00",
+  "passed": true,
+  "scope": "Derived artifact/source binding and arithmetic invariants only; no product execution or hardware",
+  "distinct_downlinked_native_snapshots": 6118,
+  "raw_inputs_hash_bound": 7,
+  "coherent_receipt_age_pairs": 5635,
+  "script_exit_code": 0,
+  "raw_checksum_field_metric_pair_errors": 0,
+  "all_sampled_flow_words_multiple_of20": true,
+  "official_fixed_resolution_claimed": false,
+  "hardware_accessed": false,
+  "http_or_serial_accessed": false,
+  "source_edited": false
+}

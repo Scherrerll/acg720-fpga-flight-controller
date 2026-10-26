@@ -1,0 +1,57 @@
+{
+  "inputs": [
+    {
+      "handoff_relative": "workspace_snapshot/github_publish/acg720-fpga-flight-controller/firmware/B0B2/hardware/v15_stick_oscillation_20261025/recent_telemetry.jsonl",
+      "sha256": "487ef24eeaf9b330f4524e7a8e3d3a985b36cea933e05120fe0f2193ff9a5ed8",
+      "bytes": 28465195
+    },
+    {
+      "handoff_relative": "workspace_snapshot/github_publish/acg720-fpga-flight-controller/firmware/B0B2/hardware/v15_unarmed_rotation_20261025T141628_867271Z/samples.jsonl",
+      "sha256": "ee0d3d5632bbd6e57dc5433c166152a44173b0add60046f75bd717253d2fa82e",
+      "bytes": 7788398
+    },
+    {
+      "handoff_relative": "workspace_snapshot/github_publish/acg720-fpga-flight-controller/firmware/B0B2/hardware/v15_flow_motion_20261025T125704_865917Z/samples.jsonl",
+      "sha256": "31db4eb878a30c9af8a1b39fb11f53e3e59eb5e5deb952e946b230654a1e9c50",
+      "bytes": 5197610
+    },
+    {
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/hardware/response_20261025T160009_877779Z/telemetry_clip.jsonl",
+      "sha256": "73df2c5c9b36e3e6d8f8afee94b6c3e508ab8d4112982055e7ac9fb8d96a0649",
+      "bytes": 16301655
+    },
+    {
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/hardware/static_20261025T153755_949338Z/samples.jsonl",
+      "sha256": "13e2243a6500b81c75840adc78ec0693d7fb7c571d3f2f23fdc3b57744da1007",
+      "bytes": 3677930
+    },
+    {
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/hardware/static_20261025T154302_137183Z/samples.jsonl",
+      "sha256": "7dd2a9f753aef901f2bdfc6075dfa62428c1e30da9c2f59865d7027f478945c6",
+      "bytes": 1870769
+    },
+    {
+      "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/hardware/unarmed_actions_20261025T154419_128573Z/samples.jsonl",
+      "sha256": "6d12139f8e6dc7d8c665fea8d1664be1a7f1f5720dda783b4c1e7d8907560719",
+      "bytes": 4508661
+    }
+  ],
+  "all_raw_inputs_match_handoff_index": true,
+  "context_sources": [
+    {
+      "handoff_relative": "workspace_snapshot/github_publish/acg720-fpga-flight-controller/firmware/B0B2/hardware/v15_unarmed_rotation_20261025T141628_867271Z/operator_context_followup.json",
+      "sha256": "fdf3f8967af8d05a6945aa740f30a5c4ac1d9796e0860353c45288dea20692e6"
+    },
+    {
+      "handoff_relative": "workspace_snapshot/github_publish/acg720-fpga-flight-controller/firmware/B0B2/hardware/v15_unarmed_rotation_20261025T141628_867271Z/operator_complete.json",
+      "sha256": "c5521b9e2b9de01aad07779e92ed3182ed40044b5ebb8d9260f99e2031447378"
+    },
+    {
+      "handoff_relative": "workspace_snapshot/reference_ano/quadrotor_tm_v1_20261012/Quadrotor_TM_V1/Application/Ano_OF_DecoFusion.c",
+      "sha256": "f328a4720b3abef542f9ec8e51d5b36ba6bd5cc83a250345940baacbbca2cf24"
+    }
+  ],
+  "script_sha256": "1d0fbbacea96df04e6e10cdcf7f9bb846c88a3ef2ecc5f3eac5d3f702d558abe",
+  "writes_scope": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_flight_followup\\rotation",
+  "hardware_accessed": false
+}

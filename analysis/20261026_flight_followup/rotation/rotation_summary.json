@@ -1,0 +1,6281 @@
+{
+  "created_utc": "2026-10-26T01:23:47.613748+00:00",
+  "scope": "Sparse module-payload/receipt-gyro observations only; descriptive fits are not compensation coefficients.",
+  "datasets": {
+    "dynamic": {
+      "input": {
+        "handoff_relative": "workspace_snapshot/github_publish/acg720-fpga-flight-controller/firmware/B0B2/hardware/v15_stick_oscillation_20261025/recent_telemetry.jsonl",
+        "sha256": "487ef24eeaf9b330f4524e7a8e3d3a985b36cea933e05120fe0f2193ff9a5ed8",
+        "bytes": 28465195
+      },
+      "duplicate_protocol_keys": 0,
+      "arithmetic_and_pair_errors": {},
+      "mismatch_examples": [],
+      "timing": {
+        "snapshots": 2662,
+        "per_epoch": [
+          {
+            "epoch": 9,
+            "snapshots": 242,
+            "unique_native": 242,
+            "module_span_ms": 48360,
+            "nominal_100hz_coverage": 0.05003101095720488,
+            "affine_clock_fit": {
+              "n": 241,
+              "intercept": 6871.088289392705,
+              "coefficients": {
+                "fpga_received_ms": 0.9992282190970365
+              },
+              "rmse": 0.4305135706566826,
+              "r_squared": 0.9999999990476568
+            }
+          },
+          {
+            "epoch": 10,
+            "snapshots": 826,
+            "unique_native": 826,
+            "module_span_ms": 168020,
+            "nominal_100hz_coverage": 0.049157888472296615,
+            "affine_clock_fit": {
+              "n": 821,
+              "intercept": 6854.443931694288,
+              "coefficients": {
+                "fpga_received_ms": 0.998960080780891
+              },
+              "rmse": 1.5987567168467522,
+              "r_squared": 0.9999999989109571
+            }
+          },
+          {
+            "epoch": 11,
+            "snapshots": 842,
+            "unique_native": 842,
+            "module_span_ms": 231950,
+            "nominal_100hz_coverage": 0.03629936195895844,
+            "affine_clock_fit": {
+              "n": 841,
+              "intercept": 6849.836240244636,
+              "coefficients": {
+                "fpga_received_ms": 0.9989421825183352
+              },
+              "rmse": 3.97777221881915,
+              "r_squared": 0.9999999952759314
+            }
+          },
+          {
+            "epoch": 12,
+            "snapshots": 752,
+            "unique_native": 752,
+            "module_span_ms": 152030,
+            "nominal_100hz_coverage": 0.04946066824519863,
+            "affine_clock_fit": {
+              "n": 751,
+              "intercept": 6860.112539445501,
+              "coefficients": {
+                "fpga_received_ms": 0.9988538431462302
+              },
+              "rmse": 2.163550754685764,
+              "r_squared": 0.9999999975575844
+            }
+          }
+        ],
+        "native_snapshot_spacing_ms": {
+          "n": 2656,
+          "min": 190,
+          "median": 200.0,
+          "max": 600,
+          "mean": 202.19503012048193,
+          "p90": 200
+        },
+        "sample_count_steps": {
+          "n": 2656,
+          "min": 19,
+          "median": 20.0,
+          "max": 60,
+          "mean": 20.219503012048193,
+          "p90": 20
+        },
+        "module_seq_matches_10ms_lattice": 2656,
+        "forward_intervals": 2656,
+        "interval_integrated_dt_ms": {
+          "n": 2662,
+          "min": 10,
+          "median": 10.0,
+          "max": 10,
+          "mean": 10,
+          "p90": 10
+        },
+        "source_age_ms": {
+          "n": 2662,
+          "min": 0,
+          "median": 5.0,
+          "max": 11,
+          "mean": 5.301277235161533,
+          "p90": 9
+        },
+        "age_pair_residual_ms": {
+          "n": 2654,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_minus_fpga_clock_ms": {
+          "n": 2654,
+          "min": 6614,
+          "median": 6742.0,
+          "max": 6864,
+          "mean": 6742.194423511681,
+          "p90": 6837
+        },
+        "exposure_time_aligned_counts": {
+          "False": 2654,
+          "None": 8
+        },
+        "last_error_counters": {
+          "module_missing": {
+            "n": 2662,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "module_restarts": {
+            "n": 2662,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "uart_errors": {
+            "n": 2662,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "checksum_errors": {
+            "n": 2662,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          }
+        },
+        "headers_and_reserved": {
+          "device_id": [
+            15
+          ],
+          "system_id": [
+            0
+          ],
+          "reserved1": [
+            255
+          ],
+          "reserved2": [
+            65535
+          ]
+        }
+      },
+      "observed_raw_quantization": {
+        "flow_x": {
+          "n": 2662,
+          "nonzero": 678,
+          "zero": 1984,
+          "unique_values": [
+            -340,
+            -200,
+            -180,
+            -160,
+            -140,
+            -100,
+            -80,
+            -60,
+            -40,
+            -20,
+            0,
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            140,
+            180,
+            280,
+            340
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        },
+        "flow_y": {
+          "n": 2662,
+          "nonzero": 332,
+          "zero": 2330,
+          "unique_values": [
+            -340,
+            -280,
+            -220,
+            -200,
+            -160,
+            -140,
+            -120,
+            -100,
+            -80,
+            -60,
+            -40,
+            -20,
+            0,
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            180,
+            220
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        }
+      },
+      "all_valid": {
+        "n": 2616,
+        "height_mm": {
+          "n": 2616,
+          "min": 172,
+          "median": 211.0,
+          "max": 1255,
+          "mean": 277.30160550458714,
+          "p90": 566
+        },
+        "gyro_peak_degps": {
+          "gx": 256.82903010670736,
+          "gy": 64.11942644817074,
+          "gz": 44.598760837461896
+        },
+        "forward": {
+          "r_raw_gyro": 0.6492535852610076,
+          "r_raw_height_gyro": 0.7821429307239866,
+          "r_angular_gyro": 0.45192872617296276,
+          "raw_rms_mmps": 109.28534571931785,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 84,
+            "min": 0.0,
+            "median": 1034.380772445488,
+            "max": 6362.886983900754,
+            "mean": 1239.362237859273,
+            "p90": 2767.9739492360773
+          },
+          "raw_zero_count": 2291,
+          "feature_collinearity_r": 0.8699940715348892,
+          "fits": {
+            "lever_only": {
+              "n": 2616,
+              "intercept": 0.9392291358766953,
+              "coefficients": {
+                "omega_radps": 936.9059961994014
+              },
+              "rmse": 83.11910287276676,
+              "r_squared": 0.42153021797427237
+            },
+            "height_only": {
+              "n": 2616,
+              "intercept": 0.559979791459248,
+              "coefficients": {
+                "height_mm_times_omega_radps": 1.3615559118139826
+              },
+              "rmse": 68.09537299114103,
+              "r_squared": 0.6117475640815069
+            },
+            "both": {
+              "n": 2616,
+              "intercept": 0.4696025213747411,
+              "coefficients": {
+                "omega_radps": -185.23291208506305,
+                "height_mm_times_omega_radps": 1.5559585442723611
+              },
+              "rmse": 67.74318517653238,
+              "r_squared": 0.6157532451873167
+            },
+            "all_axes_height": {
+              "n": 2616,
+              "intercept": 0.8660631851523726,
+              "coefficients": {
+                "h_gx": -0.004483110915437364,
+                "h_gy": 1.3674950153151437,
+                "h_gz": 0.25497528267376357
+              },
+              "rmse": 67.61402116805084,
+              "r_squared": 0.6172171130612834
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 14.38391382310486,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 2565,
+              "r": -0.6486385164567956,
+              "measured_shift_ms": {
+                "n": 2565,
+                "min": -601,
+                "median": -601,
+                "max": -590,
+                "mean": -599.9785575048733,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 2574,
+              "r": -0.22866150812143707,
+              "measured_shift_ms": {
+                "n": 2574,
+                "min": -401,
+                "median": -400.0,
+                "max": -390,
+                "mean": -399.99028749028747,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 2580,
+              "r": 0.34361170442106614,
+              "measured_shift_ms": {
+                "n": 2580,
+                "min": -201,
+                "median": -200.0,
+                "max": -190,
+                "mean": -199.99418604651163,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 2616,
+              "r": 0.7821429307239866,
+              "measured_shift_ms": {
+                "n": 2616,
+                "min": 0,
+                "median": 0.0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 2580,
+              "r": 0.47333775135264883,
+              "measured_shift_ms": {
+                "n": 2580,
+                "min": 190,
+                "median": 200.0,
+                "max": 201,
+                "mean": 199.99418604651163,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 2574,
+              "r": -0.14385326828248424,
+              "measured_shift_ms": {
+                "n": 2574,
+                "min": 390,
+                "median": 400.0,
+                "max": 401,
+                "mean": 399.99028749028747,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 2565,
+              "r": -0.6103952693730951,
+              "measured_shift_ms": {
+                "n": 2565,
+                "min": 590,
+                "median": 601,
+                "max": 601,
+                "mean": 599.9785575048733,
+                "p90": 601
+              }
+            }
+          }
+        },
+        "right": {
+          "r_raw_gyro": 0.4932874099222993,
+          "r_raw_height_gyro": 0.8069995243767183,
+          "r_angular_gyro": 0.28448261951229364,
+          "raw_rms_mmps": 143.05117131529855,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 140,
+            "min": 0.0,
+            "median": 1160.7390428517456,
+            "max": 5018.943414638756,
+            "mean": 1286.9346826459932,
+            "p90": 2684.0541669857444
+          },
+          "raw_zero_count": 1950,
+          "feature_collinearity_r": 0.7832329752087698,
+          "fits": {
+            "lever_only": {
+              "n": 2616,
+              "intercept": -2.6423189592506886,
+              "coefficients": {
+                "omega_radps": 531.4526895186829
+              },
+              "rmse": 124.42490968727046,
+              "r_squared": 0.24333246878785064
+            },
+            "height_only": {
+              "n": 2616,
+              "intercept": -2.2001265942627084,
+              "coefficients": {
+                "height_mm_times_omega_radps": 1.366520093095161
+              },
+              "rmse": 84.47204215537151,
+              "r_squared": 0.6512482323442496
+            },
+            "both": {
+              "n": 2616,
+              "intercept": -1.748473733214755,
+              "coefficients": {
+                "omega_radps": -386.8067129109455,
+                "height_mm_times_omega_radps": 1.8426913002424035
+              },
+              "rmse": 78.20528757924733,
+              "r_squared": 0.7010747060066767
+            },
+            "all_axes_height": {
+              "n": 2616,
+              "intercept": -2.2065469687371095,
+              "coefficients": {
+                "h_gx": -1.3863872636632946,
+                "h_gy": -0.10464687803542423,
+                "h_gz": 0.016748440871282542
+              },
+              "rmse": 84.22883028377416,
+              "r_squared": 0.6532535931783594
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 8.226495597871555,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 2565,
+              "r": -0.688642274190821,
+              "measured_shift_ms": {
+                "n": 2565,
+                "min": -601,
+                "median": -601,
+                "max": -590,
+                "mean": -599.9785575048733,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 2574,
+              "r": -0.24400193587370378,
+              "measured_shift_ms": {
+                "n": 2574,
+                "min": -401,
+                "median": -400.0,
+                "max": -390,
+                "mean": -399.99028749028747,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 2580,
+              "r": 0.39905427968174656,
+              "measured_shift_ms": {
+                "n": 2580,
+                "min": -201,
+                "median": -200.0,
+                "max": -190,
+                "mean": -199.99418604651163,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 2616,
+              "r": 0.8069995243767183,
+              "measured_shift_ms": {
+                "n": 2616,
+                "min": 0,
+                "median": 0.0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 2580,
+              "r": 0.4057569832508765,
+              "measured_shift_ms": {
+                "n": 2580,
+                "min": 190,
+                "median": 200.0,
+                "max": 201,
+                "mean": 199.99418604651163,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 2574,
+              "r": -0.32669308397424707,
+              "measured_shift_ms": {
+                "n": 2574,
+                "min": 390,
+                "median": 400.0,
+                "max": 401,
+                "mean": 399.99028749028747,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 2565,
+              "r": -0.6742420349359499,
+              "measured_shift_ms": {
+                "n": 2565,
+                "min": 590,
+                "median": 601,
+                "max": 601,
+                "mean": 599.9785575048733,
+                "p90": 601
+              }
+            }
+          }
+        }
+      }
+    },
+    "rotation": {
+      "input": {
+        "handoff_relative": "workspace_snapshot/github_publish/acg720-fpga-flight-controller/firmware/B0B2/hardware/v15_unarmed_rotation_20261025T141628_867271Z/samples.jsonl",
+        "sha256": "ee0d3d5632bbd6e57dc5433c166152a44173b0add60046f75bd717253d2fa82e",
+        "bytes": 7788398
+      },
+      "duplicate_protocol_keys": 148,
+      "arithmetic_and_pair_errors": {},
+      "mismatch_examples": [],
+      "timing": {
+        "snapshots": 740,
+        "per_epoch": [
+          {
+            "epoch": 0,
+            "snapshots": 740,
+            "unique_native": 740,
+            "module_span_ms": 176760,
+            "nominal_100hz_coverage": 0.0418623069525372,
+            "affine_clock_fit": {
+              "n": 732,
+              "intercept": 6802.643182875996,
+              "coefficients": {
+                "fpga_received_ms": 0.998658762951632
+              },
+              "rmse": 4.017943883222704,
+              "r_squared": 0.9999999938517635
+            }
+          }
+        ],
+        "native_snapshot_spacing_ms": {
+          "n": 739,
+          "min": 190,
+          "median": 200,
+          "max": 600,
+          "mean": 239.18809201623816,
+          "p90": 400
+        },
+        "sample_count_steps": {
+          "n": 739,
+          "min": 19,
+          "median": 20,
+          "max": 60,
+          "mean": 23.918809201623816,
+          "p90": 40
+        },
+        "module_seq_matches_10ms_lattice": 739,
+        "forward_intervals": 739,
+        "interval_integrated_dt_ms": {
+          "n": 740,
+          "min": 10,
+          "median": 10.0,
+          "max": 10,
+          "mean": 10,
+          "p90": 10
+        },
+        "source_age_ms": {
+          "n": 740,
+          "min": 1,
+          "median": 5.0,
+          "max": 10,
+          "mean": 5.481081081081081,
+          "p90": 9
+        },
+        "age_pair_residual_ms": {
+          "n": 732,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_minus_fpga_clock_ms": {
+          "n": 732,
+          "min": 6463,
+          "median": 6571.5,
+          "max": 6706,
+          "mean": 6575.601092896175,
+          "p90": 6673
+        },
+        "exposure_time_aligned_counts": {
+          "False": 732,
+          "None": 8
+        },
+        "last_error_counters": {
+          "module_missing": {
+            "n": 740,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "module_restarts": {
+            "n": 740,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "uart_errors": {
+            "n": 740,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "checksum_errors": {
+            "n": 740,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          }
+        },
+        "headers_and_reserved": {
+          "device_id": [
+            15
+          ],
+          "system_id": [
+            0
+          ],
+          "reserved1": [
+            255
+          ],
+          "reserved2": [
+            65535
+          ]
+        }
+      },
+      "observed_raw_quantization": {
+        "flow_x": {
+          "n": 740,
+          "nonzero": 494,
+          "zero": 246,
+          "unique_values": [
+            -540,
+            -480,
+            -460,
+            -420,
+            -380,
+            -340,
+            -320,
+            -300,
+            -280,
+            -260,
+            -240,
+            -220,
+            -200,
+            -180,
+            -160,
+            -140,
+            -120,
+            -100,
+            -80,
+            -60,
+            -40,
+            -20,
+            0,
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            140,
+            160,
+            180,
+            200,
+            220,
+            240,
+            260,
+            280,
+            300,
+            320,
+            400,
+            420,
+            460,
+            500,
+            520,
+            540,
+            1180
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        },
+        "flow_y": {
+          "n": 740,
+          "nonzero": 287,
+          "zero": 453,
+          "unique_values": [
+            -260,
+            -140,
+            -120,
+            -100,
+            -80,
+            -60,
+            -40,
+            -20,
+            0,
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            180,
+            220,
+            240,
+            260
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        }
+      },
+      "all_valid": {
+        "n": 732,
+        "height_mm": {
+          "n": 732,
+          "min": 206,
+          "median": 231.0,
+          "max": 281,
+          "mean": 232.53551912568307,
+          "p90": 251
+        },
+        "gyro_peak_degps": {
+          "gx": 21.75738078791921,
+          "gy": 26.716234160632624,
+          "gz": 11.022666372903965
+        },
+        "forward": {
+          "r_raw_gyro": 0.2028079878282966,
+          "r_raw_height_gyro": 0.19746297482005204,
+          "r_angular_gyro": 0.2030661464825184,
+          "raw_rms_mmps": 86.24313831896323,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 26,
+            "min": 0.0,
+            "median": 256.11323649488173,
+            "max": 3874.6831090073115,
+            "mean": 558.0966607946402,
+            "p90": 1356.025178139478
+          },
+          "raw_zero_count": 450,
+          "feature_collinearity_r": 0.9983076948874248,
+          "fits": {
+            "lever_only": {
+              "n": 732,
+              "intercept": 8.986975476372722,
+              "coefficients": {
+                "omega_radps": 341.0996999696014
+              },
+              "rmse": 83.98741515721204,
+              "r_squared": 0.04113107992696252
+            },
+            "height_only": {
+              "n": 732,
+              "intercept": 9.001583278845436,
+              "coefficients": {
+                "height_mm_times_omega_radps": 1.422135180174072
+              },
+              "rmse": 84.08106041294943,
+              "r_squared": 0.038991626424784376
+            },
+            "both": {
+              "n": 732,
+              "intercept": 8.885104348909763,
+              "coefficients": {
+                "omega_radps": 2824.4958073273874,
+                "height_mm_times_omega_radps": -10.652229157300093
+              },
+              "rmse": 83.66279408451543,
+              "r_squared": 0.04852903380792217
+            },
+            "all_axes_height": {
+              "n": 732,
+              "intercept": 8.724316416264536,
+              "coefficients": {
+                "h_gx": 0.2370075842215238,
+                "h_gy": 1.3594143281044557,
+                "h_gz": -1.9138429498271747
+              },
+              "rmse": 83.83588530708062,
+              "r_squared": 0.04458793571975728
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 1180.8199833696297,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 592,
+              "r": -0.01923103500809134,
+              "measured_shift_ms": {
+                "n": 592,
+                "min": -602,
+                "median": -601.0,
+                "max": -591,
+                "mean": -599.9932432432432,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 587,
+              "r": 0.05814456618354803,
+              "measured_shift_ms": {
+                "n": 587,
+                "min": -401,
+                "median": -400,
+                "max": -391,
+                "mean": -400,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 595,
+              "r": 0.13555015904178425,
+              "measured_shift_ms": {
+                "n": 595,
+                "min": -201,
+                "median": -200,
+                "max": -191,
+                "mean": -200.01176470588234,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 732,
+              "r": 0.19746297482005204,
+              "measured_shift_ms": {
+                "n": 732,
+                "min": 0,
+                "median": 0.0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 595,
+              "r": 0.09810495852616315,
+              "measured_shift_ms": {
+                "n": 595,
+                "min": 191,
+                "median": 200,
+                "max": 201,
+                "mean": 200.01176470588234,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 587,
+              "r": 0.1288906518893486,
+              "measured_shift_ms": {
+                "n": 587,
+                "min": 391,
+                "median": 400,
+                "max": 401,
+                "mean": 400,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 592,
+              "r": 0.06183856058970384,
+              "measured_shift_ms": {
+                "n": 592,
+                "min": 591,
+                "median": 601.0,
+                "max": 602,
+                "mean": 599.9932432432432,
+                "p90": 601
+              }
+            }
+          }
+        },
+        "right": {
+          "r_raw_gyro": -0.006885600574162377,
+          "r_raw_height_gyro": -0.006627254413367872,
+          "r_angular_gyro": -0.006715224118072919,
+          "raw_rms_mmps": 275.25417761603904,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 27,
+            "min": 0.0,
+            "median": 0.0,
+            "max": 1747.8410027037723,
+            "mean": 276.6281974694103,
+            "p90": 837.1537185863842
+          },
+          "raw_zero_count": 243,
+          "feature_collinearity_r": 0.9989191248240213,
+          "fits": {
+            "lever_only": {
+              "n": 732,
+              "intercept": -20.876812883518273,
+              "coefficients": {
+                "omega_radps": -46.508528952552034
+              },
+              "rmse": 274.45733781005583,
+              "r_squared": 4.7411495266880266e-05
+            },
+            "height_only": {
+              "n": 732,
+              "intercept": -20.873288402865526,
+              "coefficients": {
+                "height_mm_times_omega_radps": -0.18307139270280218
+              },
+              "rmse": 274.45781689684014,
+              "r_squared": 4.392050105950229e-05
+            },
+            "both": {
+              "n": 732,
+              "intercept": -20.916208542271537,
+              "coefficients": {
+                "omega_radps": -830.0416885199315,
+                "height_mm_times_omega_radps": 3.2079169641427687
+              },
+              "rmse": 274.45333917358363,
+              "r_squared": 7.654839352277953e-05
+            },
+            "all_axes_height": {
+              "n": 732,
+              "intercept": -21.01841823679047,
+              "coefficients": {
+                "h_gx": 0.2652685509449095,
+                "h_gy": 0.4891932787305697,
+                "h_gz": -0.9931357722317488
+              },
+              "rmse": 274.3675715762797,
+              "r_squared": 0.0007014096678212844
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 1849.3524222296428,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 592,
+              "r": 0.0496124342567482,
+              "measured_shift_ms": {
+                "n": 592,
+                "min": -602,
+                "median": -601.0,
+                "max": -591,
+                "mean": -599.9932432432432,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 587,
+              "r": -0.006726884939014331,
+              "measured_shift_ms": {
+                "n": 587,
+                "min": -401,
+                "median": -400,
+                "max": -391,
+                "mean": -400,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 595,
+              "r": 0.010707733046053712,
+              "measured_shift_ms": {
+                "n": 595,
+                "min": -201,
+                "median": -200,
+                "max": -191,
+                "mean": -200.01176470588234,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 732,
+              "r": -0.006627254413367872,
+              "measured_shift_ms": {
+                "n": 732,
+                "min": 0,
+                "median": 0.0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 595,
+              "r": -0.01038761569175079,
+              "measured_shift_ms": {
+                "n": 595,
+                "min": 191,
+                "median": 200,
+                "max": 201,
+                "mean": 200.01176470588234,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 587,
+              "r": -0.024493293418911304,
+              "measured_shift_ms": {
+                "n": 587,
+                "min": 391,
+                "median": 400,
+                "max": 401,
+                "mean": 400,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 592,
+              "r": -0.02218007293795686,
+              "measured_shift_ms": {
+                "n": 592,
+                "min": 591,
+                "median": 601.0,
+                "max": 602,
+                "mean": 599.9932432432432,
+                "p90": 601
+              }
+            }
+          }
+        }
+      }
+    },
+    "flow_motion": {
+      "input": {
+        "handoff_relative": "workspace_snapshot/github_publish/acg720-fpga-flight-controller/firmware/B0B2/hardware/v15_flow_motion_20261025T125704_865917Z/samples.jsonl",
+        "sha256": "31db4eb878a30c9af8a1b39fb11f53e3e59eb5e5deb952e946b230654a1e9c50",
+        "bytes": 5197610
+      },
+      "duplicate_protocol_keys": 361,
+      "arithmetic_and_pair_errors": {},
+      "mismatch_examples": [],
+      "timing": {
+        "snapshots": 459,
+        "per_epoch": [
+          {
+            "epoch": 0,
+            "snapshots": 459,
+            "unique_native": 459,
+            "module_span_ms": 106730,
+            "nominal_100hz_coverage": 0.04300168634064081,
+            "affine_clock_fit": null
+          }
+        ],
+        "native_snapshot_spacing_ms": {
+          "n": 458,
+          "min": 190,
+          "median": 200.0,
+          "max": 400,
+          "mean": 233.0349344978166,
+          "p90": 400
+        },
+        "sample_count_steps": {
+          "n": 458,
+          "min": 19,
+          "median": 20.0,
+          "max": 40,
+          "mean": 23.30349344978166,
+          "p90": 40
+        },
+        "module_seq_matches_10ms_lattice": 458,
+        "forward_intervals": 458,
+        "interval_integrated_dt_ms": {
+          "n": 459,
+          "min": 10,
+          "median": 10,
+          "max": 10,
+          "mean": 10,
+          "p90": 10
+        },
+        "source_age_ms": {
+          "n": 459,
+          "min": 0,
+          "median": 5,
+          "max": 10,
+          "mean": 5.150326797385621,
+          "p90": 9
+        },
+        "age_pair_residual_ms": {
+          "n": 0
+        },
+        "module_minus_fpga_clock_ms": {
+          "n": 0
+        },
+        "exposure_time_aligned_counts": {
+          "None": 459
+        },
+        "last_error_counters": {
+          "module_missing": {
+            "n": 459,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "module_restarts": {
+            "n": 459,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "uart_errors": {
+            "n": 459,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "checksum_errors": {
+            "n": 459,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          }
+        },
+        "headers_and_reserved": {
+          "device_id": [
+            15
+          ],
+          "system_id": [
+            0
+          ],
+          "reserved1": [
+            255
+          ],
+          "reserved2": [
+            65535
+          ]
+        }
+      },
+      "observed_raw_quantization": {
+        "flow_x": {
+          "n": 459,
+          "nonzero": 1,
+          "zero": 458,
+          "unique_values": [
+            0,
+            20
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        },
+        "flow_y": {
+          "n": 459,
+          "nonzero": 26,
+          "zero": 433,
+          "unique_values": [
+            -20,
+            0,
+            20,
+            40
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        }
+      },
+      "all_valid": {
+        "n": 0,
+        "height_mm": {
+          "n": 0
+        },
+        "gyro_peak_degps": {
+          "gx": null,
+          "gy": null,
+          "gz": null
+        }
+      }
+    },
+    "latest": {
+      "input": {
+        "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/hardware/response_20261025T160009_877779Z/telemetry_clip.jsonl",
+        "sha256": "73df2c5c9b36e3e6d8f8afee94b6c3e508ab8d4112982055e7ac9fb8d96a0649",
+        "bytes": 16301655
+      },
+      "duplicate_protocol_keys": 0,
+      "arithmetic_and_pair_errors": {},
+      "mismatch_examples": [],
+      "timing": {
+        "snapshots": 1524,
+        "per_epoch": [
+          {
+            "epoch": 20,
+            "snapshots": 628,
+            "unique_native": 628,
+            "module_span_ms": 125470,
+            "nominal_100hz_coverage": 0.05004781638508129,
+            "affine_clock_fit": {
+              "n": 628,
+              "intercept": 6865.927122007881,
+              "coefficients": {
+                "fpga_received_ms": 0.998989322589336
+              },
+              "rmse": 0.7695450875662321,
+              "r_squared": 0.999999999550079
+            }
+          },
+          {
+            "epoch": 21,
+            "snapshots": 263,
+            "unique_native": 263,
+            "module_span_ms": 52550,
+            "nominal_100hz_coverage": 0.050038051750380515,
+            "affine_clock_fit": {
+              "n": 263,
+              "intercept": 6862.3197192337975,
+              "coefficients": {
+                "fpga_received_ms": 0.9990846036268747
+              },
+              "rmse": 0.3519811648536905,
+              "r_squared": 0.9999999994663746
+            }
+          },
+          {
+            "epoch": 22,
+            "snapshots": 633,
+            "unique_native": 633,
+            "module_span_ms": 126620,
+            "nominal_100hz_coverage": 0.049988154465766405,
+            "affine_clock_fit": {
+              "n": 633,
+              "intercept": 6854.006648598028,
+              "coefficients": {
+                "fpga_received_ms": 0.9985778743816416
+              },
+              "rmse": 0.5352754319821972,
+              "r_squared": 0.999999999785128
+            }
+          }
+        ],
+        "native_snapshot_spacing_ms": {
+          "n": 1521,
+          "min": 190,
+          "median": 200,
+          "max": 400,
+          "mean": 200.28928336620643,
+          "p90": 200
+        },
+        "sample_count_steps": {
+          "n": 1521,
+          "min": 19,
+          "median": 20,
+          "max": 40,
+          "mean": 20.028928336620645,
+          "p90": 20
+        },
+        "module_seq_matches_10ms_lattice": 1521,
+        "forward_intervals": 1521,
+        "interval_integrated_dt_ms": {
+          "n": 1524,
+          "min": 10,
+          "median": 10.0,
+          "max": 10,
+          "mean": 10,
+          "p90": 10
+        },
+        "source_age_ms": {
+          "n": 1524,
+          "min": 0,
+          "median": 5.0,
+          "max": 10,
+          "mean": 5.183070866141732,
+          "p90": 9
+        },
+        "age_pair_residual_ms": {
+          "n": 1524,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_minus_fpga_clock_ms": {
+          "n": 1524,
+          "min": 6655,
+          "median": 6754.0,
+          "max": 6862,
+          "mean": 6758.471128608924,
+          "p90": 6842
+        },
+        "exposure_time_aligned_counts": {
+          "False": 1524
+        },
+        "last_error_counters": {
+          "module_missing": {
+            "n": 1524,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "module_restarts": {
+            "n": 1524,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "uart_errors": {
+            "n": 1524,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "checksum_errors": {
+            "n": 1524,
+            "min": 0,
+            "median": 0.0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          }
+        },
+        "headers_and_reserved": {
+          "device_id": [
+            15
+          ],
+          "system_id": [
+            0
+          ],
+          "reserved1": [
+            255
+          ],
+          "reserved2": [
+            65535
+          ]
+        }
+      },
+      "observed_raw_quantization": {
+        "flow_x": {
+          "n": 1524,
+          "nonzero": 279,
+          "zero": 1245,
+          "unique_values": [
+            -380,
+            -240,
+            -180,
+            -160,
+            -140,
+            -120,
+            -80,
+            -60,
+            -40,
+            -20,
+            0,
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            140,
+            160,
+            180,
+            260,
+            280
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        },
+        "flow_y": {
+          "n": 1524,
+          "nonzero": 120,
+          "zero": 1404,
+          "unique_values": [
+            -100,
+            -60,
+            -40,
+            -20,
+            0,
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            140,
+            160
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        }
+      },
+      "all_valid": {
+        "n": 1498,
+        "height_mm": {
+          "n": 1498,
+          "min": 197,
+          "median": 224.0,
+          "max": 457,
+          "mean": 223.62016021361816,
+          "p90": 232
+        },
+        "gyro_peak_degps": {
+          "gx": 57.533941501524396,
+          "gy": 30.148196336699698,
+          "gz": 26.862882288490855
+        },
+        "forward": {
+          "r_raw_gyro": 0.08055879780073488,
+          "r_raw_height_gyro": 0.07976893224106914,
+          "r_angular_gyro": 0.09787625924066877,
+          "raw_rms_mmps": 33.910523904957266,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 19,
+            "min": 0.0,
+            "median": 180.16467178264375,
+            "max": 1650.3689157144665,
+            "mean": 426.1357939796891,
+            "p90": 1273.9771300425311
+          },
+          "raw_zero_count": 1381,
+          "feature_collinearity_r": 0.9864483294977355,
+          "fits": {
+            "lever_only": {
+              "n": 1498,
+              "intercept": 1.2338864586404483,
+              "coefficients": {
+                "omega_radps": 101.665463293342
+              },
+              "rmse": 33.77707502838691,
+              "r_squared": 0.0064897199030997665
+            },
+            "height_only": {
+              "n": 1498,
+              "intercept": 1.2379384384854457,
+              "coefficients": {
+                "height_mm_times_omega_radps": 0.4070279166540723
+              },
+              "rmse": 33.77922764982234,
+              "r_squared": 0.006363082550880361
+            },
+            "both": {
+              "n": 1498,
+              "intercept": 1.2343801026155603,
+              "coefficients": {
+                "omega_radps": 87.70684160668803,
+                "height_mm_times_omega_radps": 0.0572134512113079
+              },
+              "rmse": 33.77701749689857,
+              "r_squared": 0.006493104333300859
+            },
+            "all_axes_height": {
+              "n": 1498,
+              "intercept": 1.220130980400162,
+              "coefficients": {
+                "h_gx": 0.2892897553017023,
+                "h_gy": 0.4941645155392217,
+                "h_gz": -0.17923761099668487
+              },
+              "rmse": 33.56618250114838,
+              "r_squared": 0.018857267761747565
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 146.58328131323753,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 1486,
+              "r": 0.17981657038981935,
+              "measured_shift_ms": {
+                "n": 1486,
+                "min": -601,
+                "median": -601.0,
+                "max": -590,
+                "mean": -599.9730820995962,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 1489,
+              "r": 0.07461819517615542,
+              "measured_shift_ms": {
+                "n": 1489,
+                "min": -401,
+                "median": -400,
+                "max": -390,
+                "mean": -399.9818670248489,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 1491,
+              "r": 0.13296656053639172,
+              "measured_shift_ms": {
+                "n": 1491,
+                "min": -201,
+                "median": -200,
+                "max": -190,
+                "mean": -199.99195171026156,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 1498,
+              "r": 0.07976893224106914,
+              "measured_shift_ms": {
+                "n": 1498,
+                "min": 0,
+                "median": 0.0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 1491,
+              "r": 0.10308728502695387,
+              "measured_shift_ms": {
+                "n": 1491,
+                "min": 190,
+                "median": 200,
+                "max": 201,
+                "mean": 199.99195171026156,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 1489,
+              "r": 0.09648096804283934,
+              "measured_shift_ms": {
+                "n": 1489,
+                "min": 390,
+                "median": 400,
+                "max": 401,
+                "mean": 399.9818670248489,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 1486,
+              "r": 0.1708010043856361,
+              "measured_shift_ms": {
+                "n": 1486,
+                "min": 590,
+                "median": 601.0,
+                "max": 601,
+                "mean": 599.9730820995962,
+                "p90": 601
+              }
+            }
+          }
+        },
+        "right": {
+          "r_raw_gyro": 0.16651391416576322,
+          "r_raw_height_gyro": 0.2489006328733917,
+          "r_angular_gyro": 0.11159532430618066,
+          "raw_rms_mmps": 80.5208883330526,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 25,
+            "min": 0.0,
+            "median": 1455.7147222137355,
+            "max": 8689.480445548283,
+            "mean": 2087.0358337666667,
+            "p90": 4351.627289736102
+          },
+          "raw_zero_count": 1222,
+          "feature_collinearity_r": 0.9760388232257688,
+          "fits": {
+            "lever_only": {
+              "n": 1498,
+              "intercept": -4.4367557839911,
+              "coefficients": {
+                "omega_radps": 298.9934295344979
+              },
+              "rmse": 79.27873590270032,
+              "r_squared": 0.02772688361080311
+            },
+            "height_only": {
+              "n": 1498,
+              "intercept": -4.555775225555851,
+              "coefficients": {
+                "height_mm_times_omega_radps": 1.5788816348588974
+              },
+              "rmse": 77.87090442521135,
+              "r_squared": 0.06195152504477497
+            },
+            "both": {
+              "n": 1498,
+              "intercept": -5.146827521822825,
+              "coefficients": {
+                "omega_radps": -2898.2126972171573,
+                "height_mm_times_omega_radps": 11.57220187359798
+              },
+              "rmse": 72.57061809448348,
+              "r_squared": 0.18530230380070722
+            },
+            "all_axes_height": {
+              "n": 1498,
+              "intercept": -4.494276048449824,
+              "coefficients": {
+                "h_gx": -1.8186475280316634,
+                "h_gy": -2.5845580489837308,
+                "h_gz": -0.14166340371193495
+              },
+              "rmse": 76.02388791353238,
+              "r_squared": 0.10592284938000651
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 82.46835461565824,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 1486,
+              "r": -0.11300014904915466,
+              "measured_shift_ms": {
+                "n": 1486,
+                "min": -601,
+                "median": -601.0,
+                "max": -590,
+                "mean": -599.9730820995962,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 1489,
+              "r": -0.1683913261017507,
+              "measured_shift_ms": {
+                "n": 1489,
+                "min": -401,
+                "median": -400,
+                "max": -390,
+                "mean": -399.9818670248489,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 1491,
+              "r": 0.14494721181765988,
+              "measured_shift_ms": {
+                "n": 1491,
+                "min": -201,
+                "median": -200,
+                "max": -190,
+                "mean": -199.99195171026156,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 1498,
+              "r": 0.2489006328733917,
+              "measured_shift_ms": {
+                "n": 1498,
+                "min": 0,
+                "median": 0.0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 1491,
+              "r": -0.028711678122600698,
+              "measured_shift_ms": {
+                "n": 1491,
+                "min": 190,
+                "median": 200,
+                "max": 201,
+                "mean": 199.99195171026156,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 1489,
+              "r": 0.042211463759505075,
+              "measured_shift_ms": {
+                "n": 1489,
+                "min": 390,
+                "median": 400,
+                "max": 401,
+                "mean": 399.9818670248489,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 1486,
+              "r": -0.17860434976357703,
+              "measured_shift_ms": {
+                "n": 1486,
+                "min": 590,
+                "median": 601.0,
+                "max": 601,
+                "mean": 599.9730820995962,
+                "p90": 601
+              }
+            }
+          }
+        }
+      }
+    },
+    "surface_plain": {
+      "input": {
+        "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/hardware/static_20261025T153755_949338Z/samples.jsonl",
+        "sha256": "13e2243a6500b81c75840adc78ec0693d7fb7c571d3f2f23fdc3b57744da1007",
+        "bytes": 3677930
+      },
+      "duplicate_protocol_keys": 270,
+      "arithmetic_and_pair_errors": {},
+      "mismatch_examples": [],
+      "timing": {
+        "snapshots": 269,
+        "per_epoch": [
+          {
+            "epoch": 0,
+            "snapshots": 269,
+            "unique_native": 269,
+            "module_span_ms": 59740,
+            "nominal_100hz_coverage": 0.04502092050209205,
+            "affine_clock_fit": {
+              "n": 265,
+              "intercept": 325624.2972090795,
+              "coefficients": {
+                "fpga_received_ms": 0.9990417918146758
+              },
+              "rmse": 0.6901419890112159,
+              "r_squared": 0.999999998373851
+            }
+          }
+        ],
+        "native_snapshot_spacing_ms": {
+          "n": 268,
+          "min": 190,
+          "median": 200.0,
+          "max": 600,
+          "mean": 222.91044776119404,
+          "p90": 200
+        },
+        "sample_count_steps": {
+          "n": 268,
+          "min": 19,
+          "median": 20.0,
+          "max": 60,
+          "mean": 22.291044776119403,
+          "p90": 20
+        },
+        "module_seq_matches_10ms_lattice": 268,
+        "forward_intervals": 268,
+        "interval_integrated_dt_ms": {
+          "n": 269,
+          "min": 10,
+          "median": 10,
+          "max": 10,
+          "mean": 10,
+          "p90": 10
+        },
+        "source_age_ms": {
+          "n": 269,
+          "min": 1,
+          "median": 5,
+          "max": 10,
+          "mean": 5.405204460966543,
+          "p90": 10
+        },
+        "age_pair_residual_ms": {
+          "n": 265,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_minus_fpga_clock_ms": {
+          "n": 265,
+          "min": 325477,
+          "median": 325503,
+          "max": 325534,
+          "mean": 325504.43018867925,
+          "p90": 325528
+        },
+        "exposure_time_aligned_counts": {
+          "False": 265,
+          "None": 4
+        },
+        "last_error_counters": {
+          "module_missing": {
+            "n": 269,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "module_restarts": {
+            "n": 269,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "uart_errors": {
+            "n": 269,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "checksum_errors": {
+            "n": 269,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          }
+        },
+        "headers_and_reserved": {
+          "device_id": [
+            15
+          ],
+          "system_id": [
+            0
+          ],
+          "reserved1": [
+            255
+          ],
+          "reserved2": [
+            65535
+          ]
+        }
+      },
+      "observed_raw_quantization": {
+        "flow_x": {
+          "n": 269,
+          "nonzero": 151,
+          "zero": 118,
+          "unique_values": [
+            -460,
+            -260,
+            -180,
+            -160,
+            -140,
+            -120,
+            -100,
+            -80,
+            -60,
+            -40,
+            -20,
+            0,
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            140,
+            160,
+            180,
+            200,
+            220,
+            240
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        },
+        "flow_y": {
+          "n": 269,
+          "nonzero": 131,
+          "zero": 138,
+          "unique_values": [
+            -280,
+            -220,
+            -200,
+            -180,
+            -120,
+            -100,
+            -80,
+            -60,
+            -40,
+            -20,
+            0,
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            140,
+            160,
+            180,
+            220
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        }
+      },
+      "all_valid": {
+        "n": 265,
+        "height_mm": {
+          "n": 265,
+          "min": 206,
+          "median": 215,
+          "max": 224,
+          "mean": 215.35849056603774,
+          "p90": 220
+        },
+        "gyro_peak_degps": {
+          "gx": 0.15202219893292684,
+          "gy": 0.2465671446265244,
+          "gz": 0.1860976800685976
+        },
+        "forward": {
+          "r_raw_gyro": 0.0816956327243061,
+          "r_raw_height_gyro": 0.08100603768629971,
+          "r_angular_gyro": 0.08216206247786409,
+          "raw_rms_mmps": 127.9885372225863,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 0
+          },
+          "raw_zero_count": 136,
+          "feature_collinearity_r": 0.9998935182038937,
+          "fits": {
+            "lever_only": {
+              "n": 265,
+              "intercept": -6.981720966052234,
+              "coefficients": {
+                "omega_radps": 7467.63538307286
+              },
+              "rmse": 127.3757140405821,
+              "r_squared": 0.006674176406224586
+            },
+            "height_only": {
+              "n": 265,
+              "intercept": -6.974186241990636,
+              "coefficients": {
+                "height_mm_times_omega_radps": 34.278527170218716
+              },
+              "rmse": 127.38290751637348,
+              "r_squared": 0.006561978141634173
+            },
+            "both": {
+              "n": 265,
+              "intercept": -7.248375393186883,
+              "coefficients": {
+                "omega_radps": 299705.52372634044,
+                "height_mm_times_omega_radps": -1353.017044796839
+              },
+              "rmse": 127.23605073438357,
+              "r_squared": 0.008851280771909664
+            },
+            "all_axes_height": {
+              "n": 265,
+              "intercept": -6.844550347980219,
+              "coefficients": {
+                "h_gx": -6.870799027298127,
+                "h_gy": 36.66426830896412,
+                "h_gz": -7.9649462115404015
+              },
+              "rmse": 127.3672651376611,
+              "r_squared": 0.0068059477595880935
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 18781.553198142174,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 233,
+              "r": 0.044653715916106944,
+              "measured_shift_ms": {
+                "n": 233,
+                "min": -601,
+                "median": -601,
+                "max": -591,
+                "mean": -600.0600858369098,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 229,
+              "r": -0.04363512530868113,
+              "measured_shift_ms": {
+                "n": 229,
+                "min": -401,
+                "median": -400,
+                "max": -391,
+                "mean": -399.9868995633188,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 239,
+              "r": -0.019842119385671396,
+              "measured_shift_ms": {
+                "n": 239,
+                "min": -201,
+                "median": -200,
+                "max": -191,
+                "mean": -199.98326359832635,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 265,
+              "r": 0.08100603768629971,
+              "measured_shift_ms": {
+                "n": 265,
+                "min": 0,
+                "median": 0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 239,
+              "r": 0.02005253202680685,
+              "measured_shift_ms": {
+                "n": 239,
+                "min": 191,
+                "median": 200,
+                "max": 201,
+                "mean": 199.98326359832635,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 229,
+              "r": 0.09318919988833103,
+              "measured_shift_ms": {
+                "n": 229,
+                "min": 391,
+                "median": 400,
+                "max": 401,
+                "mean": 399.9868995633188,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 233,
+              "r": 0.07148305924759113,
+              "measured_shift_ms": {
+                "n": 233,
+                "min": 591,
+                "median": 601,
+                "max": 601,
+                "mean": 600.0600858369098,
+                "p90": 601
+              }
+            }
+          }
+        },
+        "right": {
+          "r_raw_gyro": -0.03587052317215457,
+          "r_raw_height_gyro": -0.03497199037853503,
+          "r_angular_gyro": -0.03651324193290758,
+          "raw_rms_mmps": 159.0523198599448,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 0
+          },
+          "raw_zero_count": 115,
+          "feature_collinearity_r": 0.9998539613469913,
+          "fits": {
+            "lever_only": {
+              "n": 265,
+              "intercept": -28.1300318495977,
+              "coefficients": {
+                "omega_radps": -6077.517377176602
+              },
+              "rmse": 156.63350159579193,
+              "r_squared": 0.0012866944326439533
+            },
+            "height_only": {
+              "n": 265,
+              "intercept": -28.102131127159858,
+              "coefficients": {
+                "height_mm_times_omega_radps": -27.48756272492124
+              },
+              "rmse": 156.6384931385928,
+              "r_squared": 0.0012230401110362443
+            },
+            "both": {
+              "n": 265,
+              "intercept": -28.201853887978817,
+              "coefficients": {
+                "omega_radps": -524225.1721485499,
+                "height_mm_times_omega_radps": 2404.0547275522727
+              },
+              "rmse": 156.41909694602595,
+              "r_squared": 0.00401896079151054
+            },
+            "all_axes_height": {
+              "n": 265,
+              "intercept": -28.144249814354396,
+              "coefficients": {
+                "h_gx": 12.818691648829168,
+                "h_gy": 42.25557715102078,
+                "h_gz": -31.402296288011247
+              },
+              "rmse": 156.14537898421582,
+              "r_squared": 0.0075016477290986705
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 13694.004430651465,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 233,
+              "r": 0.15475712442949835,
+              "measured_shift_ms": {
+                "n": 233,
+                "min": -601,
+                "median": -601,
+                "max": -591,
+                "mean": -600.0600858369098,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 229,
+              "r": 0.16186324859929377,
+              "measured_shift_ms": {
+                "n": 229,
+                "min": -401,
+                "median": -400,
+                "max": -391,
+                "mean": -399.9868995633188,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 239,
+              "r": 0.05858430109104879,
+              "measured_shift_ms": {
+                "n": 239,
+                "min": -201,
+                "median": -200,
+                "max": -191,
+                "mean": -199.98326359832635,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 265,
+              "r": -0.03497199037853503,
+              "measured_shift_ms": {
+                "n": 265,
+                "min": 0,
+                "median": 0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 239,
+              "r": -0.0566743736109717,
+              "measured_shift_ms": {
+                "n": 239,
+                "min": 191,
+                "median": 200,
+                "max": 201,
+                "mean": 199.98326359832635,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 229,
+              "r": -0.016853031552329752,
+              "measured_shift_ms": {
+                "n": 229,
+                "min": 391,
+                "median": 400,
+                "max": 401,
+                "mean": 399.9868995633188,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 233,
+              "r": -0.007205296617413711,
+              "measured_shift_ms": {
+                "n": 233,
+                "min": 591,
+                "median": 601,
+                "max": 601,
+                "mean": 600.0600858369098,
+                "p90": 601
+              }
+            }
+          }
+        }
+      }
+    },
+    "surface_texture": {
+      "input": {
+        "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/hardware/static_20261025T154302_137183Z/samples.jsonl",
+        "sha256": "7dd2a9f753aef901f2bdfc6075dfa62428c1e30da9c2f59865d7027f478945c6",
+        "bytes": 1870769
+      },
+      "duplicate_protocol_keys": 125,
+      "arithmetic_and_pair_errors": {},
+      "mismatch_examples": [],
+      "timing": {
+        "snapshots": 141,
+        "per_epoch": [
+          {
+            "epoch": 0,
+            "snapshots": 141,
+            "unique_native": 141,
+            "module_span_ms": 29970,
+            "nominal_100hz_coverage": 0.04703135423615744,
+            "affine_clock_fit": {
+              "n": 139,
+              "intercept": 325683.8437530997,
+              "coefficients": {
+                "fpga_received_ms": 0.9988835666761248
+              },
+              "rmse": 0.29921472089342954,
+              "r_squared": 0.9999999988132349
+            }
+          }
+        ],
+        "native_snapshot_spacing_ms": {
+          "n": 140,
+          "min": 190,
+          "median": 200.0,
+          "max": 600,
+          "mean": 214.07142857142858,
+          "p90": 200
+        },
+        "sample_count_steps": {
+          "n": 140,
+          "min": 19,
+          "median": 20.0,
+          "max": 60,
+          "mean": 21.40714285714286,
+          "p90": 20
+        },
+        "module_seq_matches_10ms_lattice": 140,
+        "forward_intervals": 140,
+        "interval_integrated_dt_ms": {
+          "n": 141,
+          "min": 10,
+          "median": 10,
+          "max": 10,
+          "mean": 10,
+          "p90": 10
+        },
+        "source_age_ms": {
+          "n": 141,
+          "min": 1,
+          "median": 6,
+          "max": 10,
+          "mean": 5.50354609929078,
+          "p90": 9
+        },
+        "age_pair_residual_ms": {
+          "n": 139,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_minus_fpga_clock_ms": {
+          "n": 139,
+          "min": 325203,
+          "median": 325219,
+          "max": 325236,
+          "mean": 325219.1726618705,
+          "p90": 325232
+        },
+        "exposure_time_aligned_counts": {
+          "None": 2,
+          "False": 139
+        },
+        "last_error_counters": {
+          "module_missing": {
+            "n": 141,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "module_restarts": {
+            "n": 141,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "uart_errors": {
+            "n": 141,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "checksum_errors": {
+            "n": 141,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          }
+        },
+        "headers_and_reserved": {
+          "device_id": [
+            15
+          ],
+          "system_id": [
+            0
+          ],
+          "reserved1": [
+            255
+          ],
+          "reserved2": [
+            65535
+          ]
+        }
+      },
+      "observed_raw_quantization": {
+        "flow_x": {
+          "n": 141,
+          "nonzero": 2,
+          "zero": 139,
+          "unique_values": [
+            -20,
+            0,
+            20
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        },
+        "flow_y": {
+          "n": 141,
+          "nonzero": 3,
+          "zero": 138,
+          "unique_values": [
+            -20,
+            0,
+            20
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        }
+      },
+      "all_valid": {
+        "n": 139,
+        "height_mm": {
+          "n": 139,
+          "min": 209,
+          "median": 221,
+          "max": 232,
+          "mean": 221.26618705035972,
+          "p90": 228
+        },
+        "gyro_peak_degps": {
+          "gx": 0.16979682736280488,
+          "gy": 0.21383145960365854,
+          "gz": 0.11678556116615854
+        },
+        "forward": {
+          "r_raw_gyro": -0.2022728232170409,
+          "r_raw_height_gyro": -0.19770054612585894,
+          "r_angular_gyro": -0.20290042323500582,
+          "raw_rms_mmps": 6.3864514865399284,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 0
+          },
+          "raw_zero_count": 136,
+          "feature_collinearity_r": 0.9997047563210686,
+          "fits": {
+            "lever_only": {
+              "n": 139,
+              "intercept": 0.3996571239813858,
+              "coefficients": {
+                "omega_radps": -948.7265273989212
+              },
+              "rmse": 6.246610563624254,
+              "r_squared": 0.04091429501219235
+            },
+            "height_only": {
+              "n": 139,
+              "intercept": 0.39987285411046464,
+              "coefficients": {
+                "height_mm_times_omega_radps": -4.180414913604811
+              },
+              "rmse": 6.2525632603259895,
+              "r_squared": 0.03908550593846283
+            },
+            "both": {
+              "n": 139,
+              "intercept": 0.32030618443182923,
+              "coefficients": {
+                "omega_radps": -36787.365623898004,
+                "height_mm_times_omega_radps": 161.6172686692551
+              },
+              "rmse": 6.13326246771814,
+              "r_squared": 0.07540475408196312
+            },
+            "all_axes_height": {
+              "n": 139,
+              "intercept": 0.41090289861399143,
+              "coefficients": {
+                "h_gx": -0.2662032060304283,
+                "h_gy": -4.152444325598628,
+                "h_gz": 0.12833990675614027
+              },
+              "rmse": 6.252288019210459,
+              "r_squared": 0.03917010399686527
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 6773.065433809412,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 126,
+              "r": -0.10038955754581068,
+              "measured_shift_ms": {
+                "n": 126,
+                "min": -601,
+                "median": -601.0,
+                "max": -591,
+                "mean": -600.0396825396825,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 127,
+              "r": 0.035145776308625046,
+              "measured_shift_ms": {
+                "n": 127,
+                "min": -401,
+                "median": -400,
+                "max": -391,
+                "mean": -400.0472440944882,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 131,
+              "r": 0.1264312410936537,
+              "measured_shift_ms": {
+                "n": 131,
+                "min": -201,
+                "median": -200,
+                "max": -191,
+                "mean": -200.06106870229007,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 139,
+              "r": -0.19770054612585894,
+              "measured_shift_ms": {
+                "n": 139,
+                "min": 0,
+                "median": 0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 131,
+              "r": 0.003386438274685307,
+              "measured_shift_ms": {
+                "n": 131,
+                "min": 191,
+                "median": 200,
+                "max": 201,
+                "mean": 200.06106870229007,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 127,
+              "r": 0.06372237018152736,
+              "measured_shift_ms": {
+                "n": 127,
+                "min": 391,
+                "median": 400,
+                "max": 401,
+                "mean": 400.0472440944882,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 126,
+              "r": 0.01112961324467203,
+              "measured_shift_ms": {
+                "n": 126,
+                "min": 591,
+                "median": 601.0,
+                "max": 601,
+                "mean": 600.0396825396825,
+                "p90": 601
+              }
+            }
+          }
+        },
+        "right": {
+          "r_raw_gyro": 0.03171592226047817,
+          "r_raw_height_gyro": 0.03296047050271094,
+          "r_angular_gyro": 0.03128672384741959,
+          "raw_rms_mmps": 5.445874948695988,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 0
+          },
+          "raw_zero_count": 137,
+          "feature_collinearity_r": 0.9997190135827688,
+          "fits": {
+            "lever_only": {
+              "n": 139,
+              "intercept": 0.028692502801376904,
+              "coefficients": {
+                "omega_radps": 181.65524231969735
+              },
+              "rmse": 5.443134497571714,
+              "r_squared": 0.0010058997248328927
+            },
+            "height_only": {
+              "n": 139,
+              "intercept": 0.029596254279806937,
+              "coefficients": {
+                "height_mm_times_omega_radps": 0.8548813482782714
+              },
+              "rmse": 5.442915205757483,
+              "r_squared": 0.0010863926157602677
+            },
+            "both": {
+              "n": 139,
+              "intercept": 0.02180969264836863,
+              "coefficients": {
+                "omega_radps": -12591.691881532837,
+                "height_mm_times_omega_radps": 57.85869194328127
+              },
+              "rmse": 5.435511478428593,
+              "r_squared": 0.0038020895185912895
+            },
+            "all_axes_height": {
+              "n": 139,
+              "intercept": -0.09681464922175152,
+              "coefficients": {
+                "h_gx": -1.2639718269273168,
+                "h_gy": 2.4637255182604907,
+                "h_gz": -3.626313886224087
+              },
+              "rmse": 5.356014855864138,
+              "r_squared": 0.03272861989547482
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 7116.7817764569445,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 126,
+              "r": 0.013724046984559547,
+              "measured_shift_ms": {
+                "n": 126,
+                "min": -601,
+                "median": -601.0,
+                "max": -591,
+                "mean": -600.0396825396825,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 127,
+              "r": -0.0527187812817351,
+              "measured_shift_ms": {
+                "n": 127,
+                "min": -401,
+                "median": -400,
+                "max": -391,
+                "mean": -400.0472440944882,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 131,
+              "r": 0.17925889155312458,
+              "measured_shift_ms": {
+                "n": 131,
+                "min": -201,
+                "median": -200,
+                "max": -191,
+                "mean": -200.06106870229007,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 139,
+              "r": 0.03296047050271094,
+              "measured_shift_ms": {
+                "n": 139,
+                "min": 0,
+                "median": 0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 131,
+              "r": -0.10968077604399785,
+              "measured_shift_ms": {
+                "n": 131,
+                "min": 191,
+                "median": 200,
+                "max": 201,
+                "mean": 200.06106870229007,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 127,
+              "r": -0.042140340819278775,
+              "measured_shift_ms": {
+                "n": 127,
+                "min": 391,
+                "median": 400,
+                "max": 401,
+                "mean": 400.0472440944882,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 126,
+              "r": -0.06452895806130471,
+              "measured_shift_ms": {
+                "n": 126,
+                "min": 591,
+                "median": 601.0,
+                "max": 601,
+                "mean": 600.0396825396825,
+                "p90": 601
+              }
+            }
+          }
+        }
+      }
+    },
+    "p005_actions": {
+      "input": {
+        "handoff_relative": "workspace_snapshot/timing_closure_20261025/v15_xy_p005_i0_review_20261025/hardware/unarmed_actions_20261025T154419_128573Z/samples.jsonl",
+        "sha256": "6d12139f8e6dc7d8c665fea8d1664be1a7f1f5720dda783b4c1e7d8907560719",
+        "bytes": 4508661
+      },
+      "duplicate_protocol_keys": 385,
+      "arithmetic_and_pair_errors": {},
+      "mismatch_examples": [],
+      "timing": {
+        "snapshots": 323,
+        "per_epoch": [
+          {
+            "epoch": 0,
+            "snapshots": 323,
+            "unique_native": 323,
+            "module_span_ms": 70920,
+            "nominal_100hz_coverage": 0.04553785422247286,
+            "affine_clock_fit": {
+              "n": 321,
+              "intercept": 325680.41848688596,
+              "coefficients": {
+                "fpga_received_ms": 0.9988985361354333
+              },
+              "rmse": 0.5302292359723073,
+              "r_squared": 0.9999999993282717
+            }
+          }
+        ],
+        "native_snapshot_spacing_ms": {
+          "n": 322,
+          "min": 190,
+          "median": 200.0,
+          "max": 600,
+          "mean": 220.24844720496895,
+          "p90": 200
+        },
+        "sample_count_steps": {
+          "n": 322,
+          "min": 19,
+          "median": 20.0,
+          "max": 60,
+          "mean": 22.024844720496894,
+          "p90": 20
+        },
+        "module_seq_matches_10ms_lattice": 322,
+        "forward_intervals": 322,
+        "interval_integrated_dt_ms": {
+          "n": 323,
+          "min": 10,
+          "median": 10,
+          "max": 10,
+          "mean": 10,
+          "p90": 10
+        },
+        "source_age_ms": {
+          "n": 323,
+          "min": 0,
+          "median": 5,
+          "max": 10,
+          "mean": 5.492260061919505,
+          "p90": 9
+        },
+        "age_pair_residual_ms": {
+          "n": 321,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_minus_fpga_clock_ms": {
+          "n": 321,
+          "min": 325075,
+          "median": 325115,
+          "max": 325153,
+          "mean": 325114.39563862927,
+          "p90": 325146
+        },
+        "exposure_time_aligned_counts": {
+          "False": 321,
+          "None": 2
+        },
+        "last_error_counters": {
+          "module_missing": {
+            "n": 323,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "module_restarts": {
+            "n": 323,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "uart_errors": {
+            "n": 323,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          },
+          "checksum_errors": {
+            "n": 323,
+            "min": 0,
+            "median": 0,
+            "max": 0,
+            "mean": 0,
+            "p90": 0
+          }
+        },
+        "headers_and_reserved": {
+          "device_id": [
+            15
+          ],
+          "system_id": [
+            0
+          ],
+          "reserved1": [
+            255
+          ],
+          "reserved2": [
+            65535
+          ]
+        }
+      },
+      "observed_raw_quantization": {
+        "flow_x": {
+          "n": 323,
+          "nonzero": 11,
+          "zero": 312,
+          "unique_values": [
+            -20,
+            0,
+            20
+          ],
+          "observed_gcd": 20,
+          "minimum_observed_nonzero_gap": 20
+        },
+        "flow_y": {
+          "n": 323,
+          "nonzero": 1,
+          "zero": 322,
+          "unique_values": [
+            0,
+            40
+          ],
+          "observed_gcd": 40,
+          "minimum_observed_nonzero_gap": 40
+        }
+      },
+      "all_valid": {
+        "n": 321,
+        "height_mm": {
+          "n": 321,
+          "min": 200,
+          "median": 215,
+          "max": 242,
+          "mean": 216.01869158878506,
+          "p90": 225
+        },
+        "gyro_peak_degps": {
+          "gx": 8.215168278391769,
+          "gy": 10.739641887385671,
+          "gz": 0.7522806307164634
+        },
+        "forward": {
+          "r_raw_gyro": -0.02291270437793811,
+          "r_raw_height_gyro": -0.024622627247497406,
+          "r_angular_gyro": -0.02291270437793811,
+          "raw_rms_mmps": 5.11261344122328,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 4,
+            "min": 0.0,
+            "median": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "p90": 0.0
+          },
+          "raw_zero_count": 320,
+          "feature_collinearity_r": 0.999773977575841,
+          "fits": {
+            "lever_only": {
+              "n": 321,
+              "intercept": 0.28957629030433235,
+              "coefficients": {
+                "omega_radps": -6.698596201110555
+              },
+              "rmse": 5.103303532537165,
+              "r_squared": 0.0005249920219109194
+            },
+            "height_only": {
+              "n": 321,
+              "intercept": 0.28980325564277004,
+              "coefficients": {
+                "height_mm_times_omega_radps": -0.03406544241128186
+              },
+              "rmse": 5.103096016653449,
+              "r_squared": 0.0006062737725694989
+            },
+            "both": {
+              "n": 321,
+              "intercept": 0.276200943482739,
+              "coefficients": {
+                "omega_radps": 1102.3911756611042,
+                "height_mm_times_omega_radps": -5.249731207925651
+              },
+              "rmse": 5.086661534894736,
+              "r_squared": 0.007032988219091485
+            },
+            "all_axes_height": {
+              "n": 321,
+              "intercept": 0.3204468908887881,
+              "coefficients": {
+                "h_gx": 0.03839261917451414,
+                "h_gy": -0.04443955354683911,
+                "h_gz": -1.0516084388072762
+              },
+              "rmse": 5.081701326145716,
+              "r_squared": 0.008968608344280704
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 8847.679538950359,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 286,
+              "r": -0.008165972881931598,
+              "measured_shift_ms": {
+                "n": 286,
+                "min": -601,
+                "median": -601.0,
+                "max": -590,
+                "mean": -599.9615384615385,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 286,
+              "r": 0.03773772030271431,
+              "measured_shift_ms": {
+                "n": 286,
+                "min": -401,
+                "median": -400.0,
+                "max": -390,
+                "mean": -399.9230769230769,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 293,
+              "r": 0.006952483438994164,
+              "measured_shift_ms": {
+                "n": 293,
+                "min": -201,
+                "median": -200,
+                "max": -190,
+                "mean": -199.94880546075086,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 321,
+              "r": -0.024622627247497406,
+              "measured_shift_ms": {
+                "n": 321,
+                "min": 0,
+                "median": 0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 293,
+              "r": -0.008453739651463428,
+              "measured_shift_ms": {
+                "n": 293,
+                "min": 190,
+                "median": 200,
+                "max": 201,
+                "mean": 199.94880546075086,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 286,
+              "r": 0.02802193717339334,
+              "measured_shift_ms": {
+                "n": 286,
+                "min": 390,
+                "median": 400.0,
+                "max": 401,
+                "mean": 399.9230769230769,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 286,
+              "r": 0.008908712895178679,
+              "measured_shift_ms": {
+                "n": 286,
+                "min": 590,
+                "median": 601.0,
+                "max": 601,
+                "mean": 599.9615384615385,
+                "p90": 601
+              }
+            }
+          }
+        },
+        "right": {
+          "r_raw_gyro": -0.012336387194957693,
+          "r_raw_height_gyro": -0.013008860592491206,
+          "r_angular_gyro": -0.011524660415766148,
+          "raw_rms_mmps": 8.063888195832762,
+          "apparent_radius_mm_if_all_motion_were_rotation": {
+            "n": 4,
+            "min": 0.0,
+            "median": 0.0,
+            "max": 0.0,
+            "mean": 0.0,
+            "p90": 0.0
+          },
+          "raw_zero_count": 310,
+          "feature_collinearity_r": 0.9994201549693413,
+          "fits": {
+            "lever_only": {
+              "n": 321,
+              "intercept": 0.4288747432773616,
+              "coefficients": {
+                "omega_radps": -6.573257437189693
+              },
+              "rmse": 8.051940232421874,
+              "r_squared": 0.00015218644902392775
+            },
+            "height_only": {
+              "n": 321,
+              "intercept": 0.4291530712034049,
+              "coefficients": {
+                "height_mm_times_omega_radps": -0.03110316033456054
+              },
+              "rmse": 8.051871603030627,
+              "r_squared": 0.00016923045391481484
+            },
+            "both": {
+              "n": 321,
+              "intercept": 0.4378697452883163,
+              "coefficients": {
+                "omega_radps": 305.5995787568636,
+                "height_mm_times_omega_radps": -1.401585566591246
+              },
+              "rmse": 8.050335862045927,
+              "r_squared": 0.0005505913931799222
+            },
+            "all_axes_height": {
+              "n": 321,
+              "intercept": 0.43819361029559123,
+              "coefficients": {
+                "h_gx": 0.03850096931776558,
+                "h_gy": -0.08846819802196906,
+                "h_gz": 0.11299992510284552
+              },
+              "rmse": 8.04502183710502,
+              "r_squared": 0.0018696285731986118
+            }
+          },
+          "standardized_two_feature_gram_condition_number": 3448.197448028713,
+          "lags_telemetry_steps": {
+            "-3": {
+              "n": 286,
+              "r": -0.051538744974692234,
+              "measured_shift_ms": {
+                "n": 286,
+                "min": -601,
+                "median": -601.0,
+                "max": -590,
+                "mean": -599.9615384615385,
+                "p90": -600
+              }
+            },
+            "-2": {
+              "n": 286,
+              "r": -0.056396093714836636,
+              "measured_shift_ms": {
+                "n": 286,
+                "min": -401,
+                "median": -400.0,
+                "max": -390,
+                "mean": -399.9230769230769,
+                "p90": -400
+              }
+            },
+            "-1": {
+              "n": 293,
+              "r": -0.0252351625956139,
+              "measured_shift_ms": {
+                "n": 293,
+                "min": -201,
+                "median": -200,
+                "max": -190,
+                "mean": -199.94880546075086,
+                "p90": -200
+              }
+            },
+            "0": {
+              "n": 321,
+              "r": -0.013008860592491206,
+              "measured_shift_ms": {
+                "n": 321,
+                "min": 0,
+                "median": 0,
+                "max": 0,
+                "mean": 0,
+                "p90": 0
+              }
+            },
+            "1": {
+              "n": 293,
+              "r": -0.04957609167033289,
+              "measured_shift_ms": {
+                "n": 293,
+                "min": 190,
+                "median": 200,
+                "max": 201,
+                "mean": 199.94880546075086,
+                "p90": 201
+              }
+            },
+            "2": {
+              "n": 286,
+              "r": -0.1245409603144131,
+              "measured_shift_ms": {
+                "n": 286,
+                "min": 390,
+                "median": 400.0,
+                "max": 401,
+                "mean": 399.9230769230769,
+                "p90": 401
+              }
+            },
+            "3": {
+              "n": 286,
+              "r": 0.1796660172206225,
+              "measured_shift_ms": {
+                "n": 286,
+                "min": 590,
+                "median": 601.0,
+                "max": 601,
+                "mean": 599.9615384615385,
+                "p90": 601
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "windows": {
+    "dynamic_pitch_223_308": {
+      "n": 39,
+      "height_mm": {
+        "n": 39,
+        "min": 615,
+        "median": 997,
+        "max": 1210,
+        "mean": 958.5128205128206,
+        "p90": 1136
+      },
+      "gyro_peak_degps": {
+        "gx": 39.67131824028201,
+        "gy": 64.11942644817074,
+        "gz": 17.55985911299543
+      },
+      "forward": {
+        "r_raw_gyro": 0.9365575553214001,
+        "r_raw_height_gyro": 0.9256422689120533,
+        "r_angular_gyro": 0.9215988047921203,
+        "raw_rms_mmps": 723.4061603418323,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 21,
+          "min": 0.0,
+          "median": 1428.7791177332472,
+          "max": 2665.873971164564,
+          "mean": 1376.878948604425,
+          "p90": 2174.347282218728
+        },
+        "raw_zero_count": 18,
+        "feature_collinearity_r": 0.9967740714288684,
+        "fits": {
+          "lever_only": {
+            "n": 39,
+            "intercept": 37.19824099138444,
+            "coefficients": {
+              "omega_radps": 1554.8478165585473
+            },
+            "rmse": 253.55987808060468,
+            "r_squared": 0.8771400544295975
+          },
+          "height_only": {
+            "n": 39,
+            "intercept": 35.97107326555016,
+            "coefficients": {
+              "height_mm_times_omega_radps": 1.4372848679891137
+            },
+            "rmse": 273.73242503790027,
+            "r_squared": 0.856813609996654
+          },
+          "both": {
+            "n": 39,
+            "intercept": 38.01223684618308,
+            "coefficients": {
+              "omega_radps": 3582.8322653268933,
+              "height_mm_times_omega_radps": -1.9028920278714039
+            },
+            "rmse": 243.372412589958,
+            "r_squared": 0.8868142000149452
+          },
+          "all_axes_height": {
+            "n": 39,
+            "intercept": 43.47187564640281,
+            "coefficients": {
+              "h_gx": 0.02214588798980341,
+              "h_gy": 1.4414595438824795,
+              "h_gz": 0.11311779491864495
+            },
+            "rmse": 273.45240166163603,
+            "r_squared": 0.8571064143865605
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 618.9765295170345,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 35,
+            "r": -0.7736759750627874,
+            "measured_shift_ms": {
+              "n": 35,
+              "min": -601,
+              "median": -601,
+              "max": -591,
+              "mean": -600.2285714285714,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 36,
+            "r": -0.3297253769365976,
+            "measured_shift_ms": {
+              "n": 36,
+              "min": -401,
+              "median": -400.0,
+              "max": -391,
+              "mean": -399.97222222222223,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 37,
+            "r": 0.5590629891508616,
+            "measured_shift_ms": {
+              "n": 37,
+              "min": -201,
+              "median": -200,
+              "max": -191,
+              "mean": -199.72972972972974,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 39,
+            "r": 0.9256422689120533,
+            "measured_shift_ms": {
+              "n": 39,
+              "min": 0,
+              "median": 0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 37,
+            "r": 0.6274173178568369,
+            "measured_shift_ms": {
+              "n": 37,
+              "min": 191,
+              "median": 200,
+              "max": 201,
+              "mean": 199.72972972972974,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 36,
+            "r": -0.22401586064250217,
+            "measured_shift_ms": {
+              "n": 36,
+              "min": 391,
+              "median": 400.0,
+              "max": 401,
+              "mean": 399.97222222222223,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 35,
+            "r": -0.7642977153988948,
+            "measured_shift_ms": {
+              "n": 35,
+              "min": 591,
+              "median": 601,
+              "max": 601,
+              "mean": 600.2285714285714,
+              "p90": 601
+            }
+          }
+        }
+      },
+      "right": {
+        "r_raw_gyro": 0.8577456669708197,
+        "r_raw_height_gyro": 0.85999856588753,
+        "r_angular_gyro": 0.8376203823365505,
+        "raw_rms_mmps": 371.10512713329007,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 17,
+          "min": 0.0,
+          "median": 1602.2601906160562,
+          "max": 3058.15607083013,
+          "mean": 1421.988725159087,
+          "p90": 2285.5190758318554
+        },
+        "raw_zero_count": 19,
+        "feature_collinearity_r": 0.9924561965943676,
+        "fits": {
+          "lever_only": {
+            "n": 39,
+            "intercept": 57.81256638621981,
+            "coefficients": {
+              "omega_radps": 1459.7086644410463
+            },
+            "rmse": 190.74795379556042,
+            "r_squared": 0.7357276292072162
+          },
+          "height_only": {
+            "n": 39,
+            "intercept": 58.48133658763512,
+            "coefficients": {
+              "height_mm_times_omega_radps": 1.4267346868834017
+            },
+            "rmse": 189.3461828632869,
+            "r_squared": 0.7395975333286082
+          },
+          "both": {
+            "n": 39,
+            "intercept": 58.47757039545008,
+            "coefficients": {
+              "omega_radps": 479.4655777272648,
+              "height_mm_times_omega_radps": 0.9628536482372106
+            },
+            "rmse": 188.91191420547514,
+            "r_squared": 0.740790638436229
+          },
+          "all_axes_height": {
+            "n": 39,
+            "intercept": 54.002573330313474,
+            "coefficients": {
+              "h_gx": -1.5362853901203053,
+              "h_gy": -0.15648995434048957,
+              "h_gz": -0.06870604596258521
+            },
+            "rmse": 176.38883733106317,
+            "r_squared": 0.7740178270947564
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 264.11825566752435,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 35,
+            "r": -0.5436633155370636,
+            "measured_shift_ms": {
+              "n": 35,
+              "min": -601,
+              "median": -601,
+              "max": -591,
+              "mean": -600.2285714285714,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 36,
+            "r": -0.042719693500165905,
+            "measured_shift_ms": {
+              "n": 36,
+              "min": -401,
+              "median": -400.0,
+              "max": -391,
+              "mean": -399.97222222222223,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 37,
+            "r": 0.4985501983703086,
+            "measured_shift_ms": {
+              "n": 37,
+              "min": -201,
+              "median": -200,
+              "max": -191,
+              "mean": -199.72972972972974,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 39,
+            "r": 0.85999856588753,
+            "measured_shift_ms": {
+              "n": 39,
+              "min": 0,
+              "median": 0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 37,
+            "r": 0.1371501096942782,
+            "measured_shift_ms": {
+              "n": 37,
+              "min": 191,
+              "median": 200,
+              "max": 201,
+              "mean": 199.72972972972974,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 36,
+            "r": -0.2512911750737864,
+            "measured_shift_ms": {
+              "n": 36,
+              "min": 391,
+              "median": 400.0,
+              "max": 401,
+              "mean": 399.97222222222223,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 35,
+            "r": -0.5553070930920165,
+            "measured_shift_ms": {
+              "n": 35,
+              "min": 591,
+              "median": 601,
+              "max": 601,
+              "mean": 600.2285714285714,
+              "p90": 601
+            }
+          }
+        }
+      }
+    },
+    "dynamic_roll_409_505": {
+      "n": 69,
+      "height_mm": {
+        "n": 69,
+        "min": 611,
+        "median": 1020,
+        "max": 1255,
+        "mean": 1018.304347826087,
+        "p90": 1175
+      },
+      "gyro_peak_degps": {
+        "gx": 85.471504025343,
+        "gy": 16.829982850609756,
+        "gz": 17.756660275342988
+      },
+      "forward": {
+        "r_raw_gyro": 0.5923755161891178,
+        "r_raw_height_gyro": 0.5816923677390634,
+        "r_angular_gyro": 0.5653065739404793,
+        "raw_rms_mmps": 177.95331581259074,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 15,
+          "min": 0.0,
+          "median": 890.6029054829518,
+          "max": 4134.473453558302,
+          "mean": 1235.441941187188,
+          "p90": 2198.431186286704
+        },
+        "raw_zero_count": 39,
+        "feature_collinearity_r": 0.9909805260122619,
+        "fits": {
+          "lever_only": {
+            "n": 69,
+            "intercept": -21.738051103855984,
+            "coefficients": {
+              "omega_radps": 1199.6647395829923
+            },
+            "rmse": 142.78426028704115,
+            "r_squared": 0.3509087521803237
+          },
+          "height_only": {
+            "n": 69,
+            "intercept": -20.720946290556657,
+            "coefficients": {
+              "height_mm_times_omega_radps": 1.0558981033242392
+            },
+            "rmse": 144.15720823906676,
+            "r_squared": 0.3383660106858778
+          },
+          "both": {
+            "n": 69,
+            "intercept": -22.180139661348758,
+            "coefficients": {
+              "omega_radps": 1796.4799582571693,
+              "height_mm_times_omega_radps": -0.5398096188228526
+            },
+            "rmse": 142.60948394667395,
+            "r_squared": 0.35249683143311883
+          },
+          "all_axes_height": {
+            "n": 69,
+            "intercept": -19.623443193051735,
+            "coefficients": {
+              "h_gx": -0.07513446581820364,
+              "h_gy": 1.007772949758103,
+              "h_gz": 0.40616178677996195
+            },
+            "rmse": 131.0910413108086,
+            "r_squared": 0.45286927009970046
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 220.74242120094726,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 66,
+            "r": -0.6089185115964064,
+            "measured_shift_ms": {
+              "n": 66,
+              "min": -601,
+              "median": -601.0,
+              "max": -591,
+              "mean": -600.1818181818181,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 66,
+            "r": -0.24327029500187852,
+            "measured_shift_ms": {
+              "n": 66,
+              "min": -401,
+              "median": -400.0,
+              "max": -391,
+              "mean": -400.1212121212121,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 67,
+            "r": 0.23164593968770084,
+            "measured_shift_ms": {
+              "n": 67,
+              "min": -201,
+              "median": -200,
+              "max": -191,
+              "mean": -200.0597014925373,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 69,
+            "r": 0.5816923677390634,
+            "measured_shift_ms": {
+              "n": 69,
+              "min": 0,
+              "median": 0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 67,
+            "r": 0.35941937701544663,
+            "measured_shift_ms": {
+              "n": 67,
+              "min": 191,
+              "median": 200,
+              "max": 201,
+              "mean": 200.0597014925373,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 66,
+            "r": -0.19481957529218732,
+            "measured_shift_ms": {
+              "n": 66,
+              "min": 391,
+              "median": 400.0,
+              "max": 401,
+              "mean": 400.1212121212121,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 66,
+            "r": -0.4447157542467183,
+            "measured_shift_ms": {
+              "n": 66,
+              "min": 591,
+              "median": 601.0,
+              "max": 601,
+              "mean": 600.1818181818181,
+              "p90": 601
+            }
+          }
+        }
+      },
+      "right": {
+        "r_raw_gyro": 0.9153498278195739,
+        "r_raw_height_gyro": 0.9147917507763291,
+        "r_angular_gyro": 0.9116133684781308,
+        "raw_rms_mmps": 730.9240405428448,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 47,
+          "min": 0.0,
+          "median": 1573.8789904911944,
+          "max": 3708.357885770568,
+          "mean": 1649.0918098245716,
+          "p90": 2684.0541669857444
+        },
+        "raw_zero_count": 17,
+        "feature_collinearity_r": 0.9869694110108854,
+        "fits": {
+          "lever_only": {
+            "n": 69,
+            "intercept": -22.751760574422434,
+            "coefficients": {
+              "omega_radps": 1609.4813198383529
+            },
+            "rmse": 294.1991028984624,
+            "r_squared": 0.8378653072893236
+          },
+          "height_only": {
+            "n": 69,
+            "intercept": -12.869220023764004,
+            "coefficients": {
+              "height_mm_times_omega_radps": 1.5180636514553678
+            },
+            "rmse": 295.1242949583999,
+            "r_squared": 0.8368439472884213
+          },
+          "both": {
+            "n": 69,
+            "intercept": -18.290151554065076,
+            "coefficients": {
+              "omega_radps": 847.4241831739503,
+              "height_mm_times_omega_radps": 0.7287066745123607
+            },
+            "rmse": 289.6340774711558,
+            "r_squared": 0.8428578896576355
+          },
+          "all_axes_height": {
+            "n": 69,
+            "intercept": -10.312115127848887,
+            "coefficients": {
+              "h_gx": -1.5417260608461902,
+              "h_gy": -0.19560226127834182,
+              "h_gz": 0.35529589101130216
+            },
+            "rmse": 290.62805845988896,
+            "r_squared": 0.841777462294003
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 152.4850037608238,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 66,
+            "r": -0.8020401857175308,
+            "measured_shift_ms": {
+              "n": 66,
+              "min": -601,
+              "median": -601.0,
+              "max": -591,
+              "mean": -600.1818181818181,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 66,
+            "r": -0.31983967212416403,
+            "measured_shift_ms": {
+              "n": 66,
+              "min": -401,
+              "median": -400.0,
+              "max": -391,
+              "mean": -400.1212121212121,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 67,
+            "r": 0.5881587660842443,
+            "measured_shift_ms": {
+              "n": 67,
+              "min": -201,
+              "median": -200,
+              "max": -191,
+              "mean": -200.0597014925373,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 69,
+            "r": 0.9147917507763291,
+            "measured_shift_ms": {
+              "n": 69,
+              "min": 0,
+              "median": 0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 67,
+            "r": 0.6292239757029036,
+            "measured_shift_ms": {
+              "n": 67,
+              "min": 191,
+              "median": 200,
+              "max": 201,
+              "mean": 200.0597014925373,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 66,
+            "r": -0.40442973357825346,
+            "measured_shift_ms": {
+              "n": 66,
+              "min": 391,
+              "median": 400.0,
+              "max": 401,
+              "mean": 400.1212121212121,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 66,
+            "r": -0.8289374796661945,
+            "measured_shift_ms": {
+              "n": 66,
+              "min": 591,
+              "median": 601.0,
+              "max": 601,
+              "mean": 600.1818181818181,
+              "p90": 601
+            }
+          }
+        }
+      }
+    },
+    "rotation_motion_gt5": {
+      "n": 53,
+      "height_mm": {
+        "n": 53,
+        "min": 211,
+        "median": 239,
+        "max": 269,
+        "mean": 238.9433962264151,
+        "p90": 262
+      },
+      "gyro_peak_degps": {
+        "gx": 21.75738078791921,
+        "gy": 26.716234160632624,
+        "gz": 11.022666372903965
+      },
+      "forward": {
+        "r_raw_gyro": 0.40468252602983246,
+        "r_raw_height_gyro": 0.39536761553138683,
+        "r_angular_gyro": 0.4085607048128845,
+        "raw_rms_mmps": 155.42578159657316,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 26,
+          "min": 0.0,
+          "median": 256.11323649488173,
+          "max": 3874.6831090073115,
+          "mean": 558.0966607946402,
+          "p90": 1356.025178139478
+        },
+        "raw_zero_count": 26,
+        "feature_collinearity_r": 0.998339490331003,
+        "fits": {
+          "lever_only": {
+            "n": 53,
+            "intercept": 13.861698080321096,
+            "coefficients": {
+              "omega_radps": 337.0284921855682
+            },
+            "rmse": 141.60400257482718,
+            "r_squared": 0.16376794687388607
+          },
+          "height_only": {
+            "n": 53,
+            "intercept": 14.07510212931419,
+            "coefficients": {
+              "height_mm_times_omega_radps": 1.410455907780728
+            },
+            "rmse": 142.23358158344075,
+            "r_squared": 0.15631555141097453
+          },
+          "both": {
+            "n": 53,
+            "intercept": 12.374734310664774,
+            "coefficients": {
+              "omega_radps": 2502.6412164643,
+              "height_mm_times_omega_radps": -9.291991409973363
+            },
+            "rmse": 139.68496718745925,
+            "r_squared": 0.18627980988649118
+          },
+          "all_axes_height": {
+            "n": 53,
+            "intercept": 12.364781443766024,
+            "coefficients": {
+              "h_gx": 0.2659955405187701,
+              "h_gy": 1.3533122573476073,
+              "h_gz": -1.678937458190761
+            },
+            "rmse": 140.74767944575507,
+            "r_squared": 0.17385127280089396
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 1203.4494755685835,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 10,
+            "r": -0.7168585081968368,
+            "measured_shift_ms": {
+              "n": 10,
+              "min": -601,
+              "median": -601.0,
+              "max": -600,
+              "mean": -600.7,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 22,
+            "r": 0.0019220135783842812,
+            "measured_shift_ms": {
+              "n": 22,
+              "min": -401,
+              "median": -401.0,
+              "max": -400,
+              "mean": -400.54545454545456,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 32,
+            "r": 0.25451412095511117,
+            "measured_shift_ms": {
+              "n": 32,
+              "min": -201,
+              "median": -200.0,
+              "max": -200,
+              "mean": -200.3125,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 53,
+            "r": 0.39536761553138683,
+            "measured_shift_ms": {
+              "n": 53,
+              "min": 0,
+              "median": 0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 32,
+            "r": 0.2219753013027545,
+            "measured_shift_ms": {
+              "n": 32,
+              "min": 200,
+              "median": 200.0,
+              "max": 201,
+              "mean": 200.3125,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 22,
+            "r": 0.21870712237224713,
+            "measured_shift_ms": {
+              "n": 22,
+              "min": 400,
+              "median": 401.0,
+              "max": 401,
+              "mean": 400.54545454545456,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 10,
+            "r": 0.5240224681583612,
+            "measured_shift_ms": {
+              "n": 10,
+              "min": 600,
+              "median": 601.0,
+              "max": 601,
+              "mean": 600.7,
+              "p90": 601
+            }
+          }
+        }
+      },
+      "right": {
+        "r_raw_gyro": -0.0761657358803943,
+        "r_raw_height_gyro": -0.07217059541449496,
+        "r_angular_gyro": -0.07397737717311823,
+        "raw_rms_mmps": 190.38943208344472,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 27,
+          "min": 0.0,
+          "median": 0.0,
+          "max": 1747.8410027037723,
+          "mean": 276.6281974694103,
+          "p90": 837.1537185863842
+        },
+        "raw_zero_count": 21,
+        "feature_collinearity_r": 0.9989702465048265,
+        "fits": {
+          "lever_only": {
+            "n": 53,
+            "intercept": -33.002255872152,
+            "coefficients": {
+              "omega_radps": -96.1649014691232
+            },
+            "rmse": 187.03473332687983,
+            "r_squared": 0.005801219322202011
+          },
+          "height_only": {
+            "n": 53,
+            "intercept": -32.91065577149179,
+            "coefficients": {
+              "height_mm_times_omega_radps": -0.37270762923077805
+            },
+            "rmse": 187.09046908664627,
+            "r_squared": 0.0052085948424827055
+          },
+          "both": {
+            "n": 53,
+            "intercept": -34.83467853827929,
+            "coefficients": {
+              "omega_radps": -2496.0538808376627,
+              "height_mm_times_omega_radps": 9.82629151147958
+            },
+            "rmse": 186.332408352456,
+            "r_squared": 0.013253735092115693
+          },
+          "all_axes_height": {
+            "n": 53,
+            "intercept": -34.5195960044071,
+            "coefficients": {
+              "h_gx": 0.49810437089564213,
+              "h_gy": 0.1139210805935029,
+              "h_gz": -1.802153992717231
+            },
+            "rmse": 185.72649912460082,
+            "r_squared": 0.01966063545084662
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 1941.2123929406594,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 10,
+            "r": -0.1518822700867883,
+            "measured_shift_ms": {
+              "n": 10,
+              "min": -601,
+              "median": -601.0,
+              "max": -600,
+              "mean": -600.7,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 22,
+            "r": -0.25518846660167416,
+            "measured_shift_ms": {
+              "n": 22,
+              "min": -401,
+              "median": -401.0,
+              "max": -400,
+              "mean": -400.54545454545456,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 32,
+            "r": -0.08295271203505886,
+            "measured_shift_ms": {
+              "n": 32,
+              "min": -201,
+              "median": -200.0,
+              "max": -200,
+              "mean": -200.3125,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 53,
+            "r": -0.07217059541449496,
+            "measured_shift_ms": {
+              "n": 53,
+              "min": 0,
+              "median": 0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 32,
+            "r": -0.06502538598266726,
+            "measured_shift_ms": {
+              "n": 32,
+              "min": 200,
+              "median": 200.0,
+              "max": 201,
+              "mean": 200.3125,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 22,
+            "r": -0.1414350201509437,
+            "measured_shift_ms": {
+              "n": 22,
+              "min": 400,
+              "median": 401.0,
+              "max": 401,
+              "mean": 400.54545454545456,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 10,
+            "r": -0.419607107112249,
+            "measured_shift_ms": {
+              "n": 10,
+              "min": 600,
+              "median": 601.0,
+              "max": 601,
+              "mean": 600.7,
+              "p90": 601
+            }
+          }
+        }
+      }
+    },
+    "rotation_pitch_dominant": {
+      "n": 25,
+      "height_mm": {
+        "n": 25,
+        "min": 211,
+        "median": 228,
+        "max": 269,
+        "mean": 233.08,
+        "p90": 250
+      },
+      "gyro_peak_degps": {
+        "gx": 3.3130031678734757,
+        "gy": 26.716234160632624,
+        "gz": 3.0132610041920733
+      },
+      "forward": {
+        "r_raw_gyro": 0.41896345296850945,
+        "r_raw_height_gyro": 0.4086036499492847,
+        "r_angular_gyro": 0.42202044915419273,
+        "raw_rms_mmps": 212.8341852240847,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 25,
+          "min": 0.0,
+          "median": 237.50273536469857,
+          "max": 3874.6831090073115,
+          "mean": 564.9136777534432,
+          "p90": 1356.025178139478
+        },
+        "raw_zero_count": 9,
+        "feature_collinearity_r": 0.9983180163959061,
+        "fits": {
+          "lever_only": {
+            "n": 25,
+            "intercept": 8.178102656792056,
+            "coefficients": {
+              "omega_radps": 336.5238272736754
+            },
+            "rmse": 192.95725797743296,
+            "r_squared": 0.17553037492329637
+          },
+          "height_only": {
+            "n": 25,
+            "intercept": 8.637725702479695,
+            "coefficients": {
+              "height_mm_times_omega_radps": 1.408344460970399
+            },
+            "rmse": 193.95791795427743,
+            "r_squared": 0.16695694275187767
+          },
+          "both": {
+            "n": 25,
+            "intercept": 5.616761041880348,
+            "coefficients": {
+              "omega_radps": 2639.9781430310923,
+              "height_mm_times_omega_radps": -9.90096815296526
+            },
+            "rmse": 189.68397005069127,
+            "r_squared": 0.20326538911839165
+          },
+          "all_axes_height": {
+            "n": 25,
+            "intercept": -23.096712639932917,
+            "coefficients": {
+              "h_gx": 17.622596326507946,
+              "h_gy": -0.2531110595760379,
+              "h_gz": -63.591511462055145
+            },
+            "rmse": 160.60140293190994,
+            "r_squared": 0.4288488025473285
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 1188.07223300636,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 1,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 1,
+              "min": -600,
+              "median": -600,
+              "max": -600,
+              "mean": -600,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 7,
+            "r": 0.22541031608924378,
+            "measured_shift_ms": {
+              "n": 7,
+              "min": -401,
+              "median": -401,
+              "max": -400,
+              "mean": -400.57142857142856,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 12,
+            "r": 0.38643641336523504,
+            "measured_shift_ms": {
+              "n": 12,
+              "min": -201,
+              "median": -200.0,
+              "max": -200,
+              "mean": -200.41666666666666,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 25,
+            "r": 0.4086036499492847,
+            "measured_shift_ms": {
+              "n": 25,
+              "min": 0,
+              "median": 0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 12,
+            "r": 0.3168893141834228,
+            "measured_shift_ms": {
+              "n": 12,
+              "min": 200,
+              "median": 200.0,
+              "max": 201,
+              "mean": 200.41666666666666,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 7,
+            "r": 0.4806763145283841,
+            "measured_shift_ms": {
+              "n": 7,
+              "min": 400,
+              "median": 401,
+              "max": 401,
+              "mean": 400.57142857142856,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 1,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 1,
+              "min": 600,
+              "median": 600,
+              "max": 600,
+              "mean": 600,
+              "p90": 600
+            }
+          }
+        }
+      },
+      "right": {
+        "r_raw_gyro": 0.09443433780670561,
+        "r_raw_height_gyro": 0.08337536894398158,
+        "r_angular_gyro": 0.10735021912717395,
+        "raw_rms_mmps": 260.9775224037503,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 0
+        },
+        "raw_zero_count": 4,
+        "feature_collinearity_r": 0.9993859565552183,
+        "fits": {
+          "lever_only": {
+            "n": 25,
+            "intercept": -76.18810875982199,
+            "coefficients": {
+              "omega_radps": 1194.7358136920654
+            },
+            "rmse": 248.12945317129834,
+            "r_squared": 0.00891784415699115
+          },
+          "height_only": {
+            "n": 25,
+            "intercept": -76.51133000346553,
+            "coefficients": {
+              "height_mm_times_omega_radps": 4.658914991455129
+            },
+            "rmse": 248.37548625368288,
+            "r_squared": 0.006951452146545023
+          },
+          "both": {
+            "n": 25,
+            "intercept": -56.470501947968984,
+            "coefficients": {
+              "omega_radps": 114489.77810072993,
+              "height_mm_times_omega_radps": -500.7059333578511
+            },
+            "rmse": 235.46660483327815,
+            "r_squared": 0.10749293306359164
+          },
+          "all_axes_height": {
+            "n": 25,
+            "intercept": -45.4720233569027,
+            "coefficients": {
+              "h_gx": -36.61259019106314,
+              "h_gy": 2.199258547467969,
+              "h_gz": 59.34274813706979
+            },
+            "rmse": 233.61516129310664,
+            "r_squared": 0.12147308992545436
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 3256.098527794137,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 1,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 1,
+              "min": -600,
+              "median": -600,
+              "max": -600,
+              "mean": -600,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 7,
+            "r": -0.7373860082405906,
+            "measured_shift_ms": {
+              "n": 7,
+              "min": -401,
+              "median": -401,
+              "max": -400,
+              "mean": -400.57142857142856,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 12,
+            "r": 0.037430047097202455,
+            "measured_shift_ms": {
+              "n": 12,
+              "min": -201,
+              "median": -200.0,
+              "max": -200,
+              "mean": -200.41666666666666,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 25,
+            "r": 0.08337536894398158,
+            "measured_shift_ms": {
+              "n": 25,
+              "min": 0,
+              "median": 0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 12,
+            "r": 0.4534196800824515,
+            "measured_shift_ms": {
+              "n": 12,
+              "min": 200,
+              "median": 200.0,
+              "max": 201,
+              "mean": 200.41666666666666,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 7,
+            "r": -0.3115622498707222,
+            "measured_shift_ms": {
+              "n": 7,
+              "min": 400,
+              "median": 401,
+              "max": 401,
+              "mean": 400.57142857142856,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 1,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 1,
+              "min": 600,
+              "median": 600,
+              "max": 600,
+              "mean": 600,
+              "p90": 600
+            }
+          }
+        }
+      }
+    },
+    "rotation_roll_dominant": {
+      "n": 20,
+      "height_mm": {
+        "n": 20,
+        "min": 227,
+        "median": 244.5,
+        "max": 268,
+        "mean": 247.15,
+        "p90": 264
+      },
+      "gyro_peak_degps": {
+        "gx": 21.75738078791921,
+        "gy": 3.1792021960746952,
+        "gz": 6.7978575171493905
+      },
+      "forward": {
+        "r_raw_gyro": -0.06352348707659848,
+        "r_raw_height_gyro": -0.06517037074914232,
+        "r_angular_gyro": -0.05894389671280529,
+        "raw_rms_mmps": 69.48432916852548,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 0
+        },
+        "raw_zero_count": 13,
+        "feature_collinearity_r": 0.9979175117564447,
+        "fits": {
+          "lever_only": {
+            "n": 20,
+            "intercept": 8.102205221535018,
+            "coefficients": {
+              "omega_radps": -195.54525954411642
+            },
+            "rmse": 68.75984625102186,
+            "r_squared": 0.00403523341037082
+          },
+          "height_only": {
+            "n": 20,
+            "intercept": 8.123662066227194,
+            "coefficients": {
+              "height_mm_times_omega_radps": -0.8087752387887224
+            },
+            "rmse": 68.75252972744279,
+            "r_squared": 0.004247177223580589
+          },
+          "both": {
+            "n": 20,
+            "intercept": 8.383135790227797,
+            "coefficients": {
+              "omega_radps": 1118.0606216888877,
+              "height_mm_times_omega_radps": -5.306829485488598
+            },
+            "rmse": 68.73357873793245,
+            "r_squared": 0.00479604140751233
+          },
+          "all_axes_height": {
+            "n": 20,
+            "intercept": 8.512216610006742,
+            "coefficients": {
+              "h_gx": 0.18714636887438446,
+              "h_gy": -0.9301571808217368,
+              "h_gz": 0.1668427438729527
+            },
+            "rmse": 67.90640221774059,
+            "r_squared": 0.02860553575813407
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 959.3895753982964,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 4,
+            "r": 0.38760281468175284,
+            "measured_shift_ms": {
+              "n": 4,
+              "min": -601,
+              "median": -600.5,
+              "max": -600,
+              "mean": -600.5,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 6,
+            "r": -0.7295992143158574,
+            "measured_shift_ms": {
+              "n": 6,
+              "min": -401,
+              "median": -401.0,
+              "max": -400,
+              "mean": -400.6666666666667,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 10,
+            "r": 0.007043629572085322,
+            "measured_shift_ms": {
+              "n": 10,
+              "min": -201,
+              "median": -200.0,
+              "max": -200,
+              "mean": -200.3,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 20,
+            "r": -0.06517037074914232,
+            "measured_shift_ms": {
+              "n": 20,
+              "min": 0,
+              "median": 0.0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 10,
+            "r": -0.2394118491828975,
+            "measured_shift_ms": {
+              "n": 10,
+              "min": 200,
+              "median": 200.0,
+              "max": 201,
+              "mean": 200.3,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 6,
+            "r": 0.4651604611823332,
+            "measured_shift_ms": {
+              "n": 6,
+              "min": 400,
+              "median": 401.0,
+              "max": 401,
+              "mean": 400.6666666666667,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 4,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 4,
+              "min": 600,
+              "median": 600.5,
+              "max": 601,
+              "mean": 600.5,
+              "p90": 601
+            }
+          }
+        }
+      },
+      "right": {
+        "r_raw_gyro": -0.17508377807888742,
+        "r_raw_height_gyro": -0.16367800179235076,
+        "r_angular_gyro": -0.180278236075144,
+        "raw_rms_mmps": 60.532107182882704,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 20,
+          "min": 0.0,
+          "median": 0.0,
+          "max": 837.1537185863842,
+          "mean": 125.99291541305064,
+          "p90": 401.42689585685343
+        },
+        "raw_zero_count": 15,
+        "feature_collinearity_r": 0.998968710194811,
+        "fits": {
+          "lever_only": {
+            "n": 20,
+            "intercept": 11.648663015143924,
+            "coefficients": {
+              "omega_radps": -48.007264624033155
+            },
+            "rmse": 58.60844364503986,
+            "r_squared": 0.03065432934637702
+          },
+          "height_only": {
+            "n": 20,
+            "intercept": 11.621446419064593,
+            "coefficients": {
+              "height_mm_times_omega_radps": -0.18261728389732007
+            },
+            "rmse": 58.72513498879105,
+            "r_squared": 0.026790488270736823
+          },
+          "both": {
+            "n": 20,
+            "intercept": 11.08352128837886,
+            "coefficients": {
+              "omega_radps": -1539.4990037376938,
+              "height_mm_times_omega_radps": 6.075184612835655
+            },
+            "rmse": 56.730562731477974,
+            "r_squared": 0.09177703226363843
+          },
+          "all_axes_height": {
+            "n": 20,
+            "intercept": 18.265094521384697,
+            "coefficients": {
+              "h_gx": 0.24585872827546762,
+              "h_gy": 4.816753302904065,
+              "h_gz": -1.4613246477373656
+            },
+            "rmse": 48.92764077445612,
+            "r_squared": 0.32443545673070406
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 1938.319083672647,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 4,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 4,
+              "min": -601,
+              "median": -600.5,
+              "max": -600,
+              "mean": -600.5,
+              "p90": -600
+            }
+          },
+          "-2": {
+            "n": 6,
+            "r": -0.11932811805101778,
+            "measured_shift_ms": {
+              "n": 6,
+              "min": -401,
+              "median": -401.0,
+              "max": -400,
+              "mean": -400.6666666666667,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 10,
+            "r": -0.1818588175178478,
+            "measured_shift_ms": {
+              "n": 10,
+              "min": -201,
+              "median": -200.0,
+              "max": -200,
+              "mean": -200.3,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 20,
+            "r": -0.16367800179235076,
+            "measured_shift_ms": {
+              "n": 20,
+              "min": 0,
+              "median": 0.0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 10,
+            "r": 0.23694877843990844,
+            "measured_shift_ms": {
+              "n": 10,
+              "min": 200,
+              "median": 200.0,
+              "max": 201,
+              "mean": 200.3,
+              "p90": 201
+            }
+          },
+          "2": {
+            "n": 6,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 6,
+              "min": 400,
+              "median": 401.0,
+              "max": 401,
+              "mean": 400.6666666666667,
+              "p90": 401
+            }
+          },
+          "3": {
+            "n": 4,
+            "r": -0.25237453331355986,
+            "measured_shift_ms": {
+              "n": 4,
+              "min": 600,
+              "median": 600.5,
+              "max": 601,
+              "mean": 600.5,
+              "p90": 601
+            }
+          }
+        }
+      }
+    },
+    "p005_actions_motion_gt5": {
+      "n": 8,
+      "height_mm": {
+        "n": 8,
+        "min": 209,
+        "median": 213.0,
+        "max": 232,
+        "mean": 217.25,
+        "p90": 225
+      },
+      "gyro_peak_degps": {
+        "gx": 8.215168278391769,
+        "gy": 10.739641887385671,
+        "gz": 0.6758080459222562
+      },
+      "forward": {
+        "r_raw_gyro": null,
+        "r_raw_height_gyro": null,
+        "r_angular_gyro": null,
+        "raw_rms_mmps": 0.0,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 4,
+          "min": 0.0,
+          "median": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "p90": 0.0
+        },
+        "raw_zero_count": 8,
+        "feature_collinearity_r": 0.9999795546240419,
+        "fits": {
+          "lever_only": {
+            "n": 8,
+            "intercept": 0.0,
+            "coefficients": {
+              "omega_radps": 0.0
+            },
+            "rmse": 0.0,
+            "r_squared": null
+          },
+          "height_only": {
+            "n": 8,
+            "intercept": 0.0,
+            "coefficients": {
+              "height_mm_times_omega_radps": 0.0
+            },
+            "rmse": 0.0,
+            "r_squared": null
+          },
+          "both": {
+            "n": 8,
+            "intercept": 0.0,
+            "coefficients": {
+              "omega_radps": 0.0,
+              "height_mm_times_omega_radps": 0.0
+            },
+            "rmse": 0.0,
+            "r_squared": null
+          },
+          "all_axes_height": {
+            "n": 8,
+            "intercept": 0.0,
+            "coefficients": {
+              "h_gx": 0.0,
+              "h_gy": 0.0,
+              "h_gz": 0.0
+            },
+            "rmse": 0.0,
+            "r_squared": null
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 97820.6298930107,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 0,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 0
+            }
+          },
+          "-2": {
+            "n": 1,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 1,
+              "min": -400,
+              "median": -400,
+              "max": -400,
+              "mean": -400,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 4,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 4,
+              "min": -200,
+              "median": -200.0,
+              "max": -200,
+              "mean": -200,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 8,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 8,
+              "min": 0,
+              "median": 0.0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 4,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 4,
+              "min": 200,
+              "median": 200.0,
+              "max": 200,
+              "mean": 200,
+              "p90": 200
+            }
+          },
+          "2": {
+            "n": 1,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 1,
+              "min": 400,
+              "median": 400,
+              "max": 400,
+              "mean": 400,
+              "p90": 400
+            }
+          },
+          "3": {
+            "n": 0,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 0
+            }
+          }
+        }
+      },
+      "right": {
+        "r_raw_gyro": null,
+        "r_raw_height_gyro": null,
+        "r_angular_gyro": null,
+        "raw_rms_mmps": 0.0,
+        "apparent_radius_mm_if_all_motion_were_rotation": {
+          "n": 4,
+          "min": 0.0,
+          "median": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "p90": 0.0
+        },
+        "raw_zero_count": 8,
+        "feature_collinearity_r": 0.9995735917543144,
+        "fits": {
+          "lever_only": {
+            "n": 8,
+            "intercept": 0.0,
+            "coefficients": {
+              "omega_radps": 0.0
+            },
+            "rmse": 0.0,
+            "r_squared": null
+          },
+          "height_only": {
+            "n": 8,
+            "intercept": 0.0,
+            "coefficients": {
+              "height_mm_times_omega_radps": 0.0
+            },
+            "rmse": 0.0,
+            "r_squared": null
+          },
+          "both": {
+            "n": 8,
+            "intercept": 0.0,
+            "coefficients": {
+              "omega_radps": 0.0,
+              "height_mm_times_omega_radps": 0.0
+            },
+            "rmse": 0.0,
+            "r_squared": null
+          },
+          "all_axes_height": {
+            "n": 8,
+            "intercept": 0.0,
+            "coefficients": {
+              "h_gx": 0.0,
+              "h_gy": 0.0,
+              "h_gz": 0.0
+            },
+            "rmse": 0.0,
+            "r_squared": null
+          }
+        },
+        "standardized_two_feature_gram_condition_number": 4689.340818302358,
+        "lags_telemetry_steps": {
+          "-3": {
+            "n": 0,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 0
+            }
+          },
+          "-2": {
+            "n": 1,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 1,
+              "min": -400,
+              "median": -400,
+              "max": -400,
+              "mean": -400,
+              "p90": -400
+            }
+          },
+          "-1": {
+            "n": 4,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 4,
+              "min": -200,
+              "median": -200.0,
+              "max": -200,
+              "mean": -200,
+              "p90": -200
+            }
+          },
+          "0": {
+            "n": 8,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 8,
+              "min": 0,
+              "median": 0.0,
+              "max": 0,
+              "mean": 0,
+              "p90": 0
+            }
+          },
+          "1": {
+            "n": 4,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 4,
+              "min": 200,
+              "median": 200.0,
+              "max": 200,
+              "mean": 200,
+              "p90": 200
+            }
+          },
+          "2": {
+            "n": 1,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 1,
+              "min": 400,
+              "median": 400,
+              "max": 400,
+              "mean": 400,
+              "p90": 400
+            }
+          },
+          "3": {
+            "n": 0,
+            "r": null,
+            "measured_shift_ms": {
+              "n": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "windows_timing": {
+    "dynamic_pitch_223_308": {
+      "snapshots": 39,
+      "per_epoch": [
+        {
+          "epoch": 12,
+          "snapshots": 39,
+          "unique_native": 39,
+          "module_span_ms": 7780,
+          "nominal_100hz_coverage": 0.05006418485237484,
+          "affine_clock_fit": {
+            "n": 39,
+            "intercept": 6866.143698764681,
+            "coefficients": {
+              "fpga_received_ms": 0.9986970057029123
+            },
+            "rmse": 0.298245524882602,
+            "r_squared": 0.999999983029597
+          }
+        }
+      ],
+      "native_snapshot_spacing_ms": {
+        "n": 38,
+        "min": 190,
+        "median": 200.0,
+        "max": 400,
+        "mean": 204.73684210526315,
+        "p90": 200
+      },
+      "sample_count_steps": {
+        "n": 38,
+        "min": 19,
+        "median": 20.0,
+        "max": 40,
+        "mean": 20.473684210526315,
+        "p90": 20
+      },
+      "module_seq_matches_10ms_lattice": 38,
+      "forward_intervals": 38,
+      "interval_integrated_dt_ms": {
+        "n": 39,
+        "min": 10,
+        "median": 10,
+        "max": 10,
+        "mean": 10,
+        "p90": 10
+      },
+      "source_age_ms": {
+        "n": 39,
+        "min": 1,
+        "median": 5,
+        "max": 10,
+        "mean": 5.410256410256411,
+        "p90": 9
+      },
+      "age_pair_residual_ms": {
+        "n": 39,
+        "min": 0,
+        "median": 0,
+        "max": 0,
+        "mean": 0,
+        "p90": 0
+      },
+      "module_minus_fpga_clock_ms": {
+        "n": 39,
+        "min": 6788,
+        "median": 6793,
+        "max": 6799,
+        "mean": 6793.410256410257,
+        "p90": 6797
+      },
+      "exposure_time_aligned_counts": {
+        "False": 39
+      },
+      "last_error_counters": {
+        "module_missing": {
+          "n": 39,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_restarts": {
+          "n": 39,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "uart_errors": {
+          "n": 39,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "checksum_errors": {
+          "n": 39,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        }
+      },
+      "headers_and_reserved": {
+        "device_id": [
+          15
+        ],
+        "system_id": [
+          0
+        ],
+        "reserved1": [
+          255
+        ],
+        "reserved2": [
+          65535
+        ]
+      }
+    },
+    "dynamic_roll_409_505": {
+      "snapshots": 69,
+      "per_epoch": [
+        {
+          "epoch": 12,
+          "snapshots": 69,
+          "unique_native": 69,
+          "module_span_ms": 13790,
+          "nominal_100hz_coverage": 0.05,
+          "affine_clock_fit": {
+            "n": 69,
+            "intercept": 6849.40194456793,
+            "coefficients": {
+              "fpga_received_ms": 0.9989524066136324
+            },
+            "rmse": 0.2919706173133412,
+            "r_squared": 0.9999999946440193
+          }
+        }
+      ],
+      "native_snapshot_spacing_ms": {
+        "n": 68,
+        "min": 190,
+        "median": 200.0,
+        "max": 400,
+        "mean": 202.7941176470588,
+        "p90": 200
+      },
+      "sample_count_steps": {
+        "n": 68,
+        "min": 19,
+        "median": 20.0,
+        "max": 40,
+        "mean": 20.279411764705884,
+        "p90": 20
+      },
+      "module_seq_matches_10ms_lattice": 68,
+      "forward_intervals": 68,
+      "interval_integrated_dt_ms": {
+        "n": 69,
+        "min": 10,
+        "median": 10,
+        "max": 10,
+        "mean": 10,
+        "p90": 10
+      },
+      "source_age_ms": {
+        "n": 69,
+        "min": 1,
+        "median": 7,
+        "max": 11,
+        "mean": 6.391304347826087,
+        "p90": 10
+      },
+      "age_pair_residual_ms": {
+        "n": 69,
+        "min": 0,
+        "median": 0,
+        "max": 0,
+        "mean": 0,
+        "p90": 0
+      },
+      "module_minus_fpga_clock_ms": {
+        "n": 69,
+        "min": 6744,
+        "median": 6751,
+        "max": 6759,
+        "mean": 6751.347826086957,
+        "p90": 6757
+      },
+      "exposure_time_aligned_counts": {
+        "False": 69
+      },
+      "last_error_counters": {
+        "module_missing": {
+          "n": 69,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_restarts": {
+          "n": 69,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "uart_errors": {
+          "n": 69,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "checksum_errors": {
+          "n": 69,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        }
+      },
+      "headers_and_reserved": {
+        "device_id": [
+          15
+        ],
+        "system_id": [
+          0
+        ],
+        "reserved1": [
+          255
+        ],
+        "reserved2": [
+          65535
+        ]
+      }
+    },
+    "rotation_motion_gt5": {
+      "snapshots": 53,
+      "per_epoch": [
+        {
+          "epoch": 0,
+          "snapshots": 53,
+          "unique_native": 53,
+          "module_span_ms": 68910,
+          "nominal_100hz_coverage": 0.007690075449796866,
+          "affine_clock_fit": {
+            "n": 53,
+            "intercept": 6780.993147500441,
+            "coefficients": {
+              "fpga_received_ms": 0.9987606786451595
+            },
+            "rmse": 0.4114032408170303,
+            "r_squared": 0.9999999996961709
+          }
+        }
+      ],
+      "native_snapshot_spacing_ms": {
+        "n": 48,
+        "min": 200,
+        "median": 200.0,
+        "max": 4590,
+        "mean": 786.4583333333334,
+        "p90": 2190
+      },
+      "sample_count_steps": {
+        "n": 48,
+        "min": 20,
+        "median": 20.0,
+        "max": 459,
+        "mean": 78.64583333333333,
+        "p90": 219
+      },
+      "module_seq_matches_10ms_lattice": 48,
+      "forward_intervals": 48,
+      "interval_integrated_dt_ms": {
+        "n": 53,
+        "min": 10,
+        "median": 10,
+        "max": 10,
+        "mean": 10,
+        "p90": 10
+      },
+      "source_age_ms": {
+        "n": 53,
+        "min": 1,
+        "median": 5,
+        "max": 10,
+        "mean": 5.471698113207547,
+        "p90": 9
+      },
+      "age_pair_residual_ms": {
+        "n": 53,
+        "min": 0,
+        "median": 0,
+        "max": 0,
+        "mean": 0,
+        "p90": 0
+      },
+      "module_minus_fpga_clock_ms": {
+        "n": 53,
+        "min": 6487,
+        "median": 6520,
+        "max": 6573,
+        "mean": 6524.792452830188,
+        "p90": 6565
+      },
+      "exposure_time_aligned_counts": {
+        "False": 53
+      },
+      "last_error_counters": {
+        "module_missing": {
+          "n": 53,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_restarts": {
+          "n": 53,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "uart_errors": {
+          "n": 53,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "checksum_errors": {
+          "n": 53,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        }
+      },
+      "headers_and_reserved": {
+        "device_id": [
+          15
+        ],
+        "system_id": [
+          0
+        ],
+        "reserved1": [
+          255
+        ],
+        "reserved2": [
+          65535
+        ]
+      }
+    },
+    "rotation_pitch_dominant": {
+      "snapshots": 25,
+      "per_epoch": [
+        {
+          "epoch": 0,
+          "snapshots": 25,
+          "unique_native": 25,
+          "module_span_ms": 63120,
+          "nominal_100hz_coverage": 0.00396008236971329,
+          "affine_clock_fit": {
+            "n": 25,
+            "intercept": 6778.718041126587,
+            "coefficients": {
+              "fpga_received_ms": 0.9987710405644147
+            },
+            "rmse": 0.3792849785792565,
+            "r_squared": 0.9999999991579231
+          }
+        }
+      ],
+      "native_snapshot_spacing_ms": {
+        "n": 21,
+        "min": 200,
+        "median": 200,
+        "max": 2400,
+        "mean": 780,
+        "p90": 2000
+      },
+      "sample_count_steps": {
+        "n": 21,
+        "min": 20,
+        "median": 20,
+        "max": 240,
+        "mean": 78,
+        "p90": 200
+      },
+      "module_seq_matches_10ms_lattice": 21,
+      "forward_intervals": 21,
+      "interval_integrated_dt_ms": {
+        "n": 25,
+        "min": 10,
+        "median": 10,
+        "max": 10,
+        "mean": 10,
+        "p90": 10
+      },
+      "source_age_ms": {
+        "n": 25,
+        "min": 1,
+        "median": 6,
+        "max": 10,
+        "mean": 5.8,
+        "p90": 9
+      },
+      "age_pair_residual_ms": {
+        "n": 25,
+        "min": 0,
+        "median": 0,
+        "max": 0,
+        "mean": 0,
+        "p90": 0
+      },
+      "module_minus_fpga_clock_ms": {
+        "n": 25,
+        "min": 6487,
+        "median": 6498,
+        "max": 6565,
+        "mean": 6501,
+        "p90": 6507
+      },
+      "exposure_time_aligned_counts": {
+        "False": 25
+      },
+      "last_error_counters": {
+        "module_missing": {
+          "n": 25,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_restarts": {
+          "n": 25,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "uart_errors": {
+          "n": 25,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "checksum_errors": {
+          "n": 25,
+          "min": 0,
+          "median": 0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        }
+      },
+      "headers_and_reserved": {
+        "device_id": [
+          15
+        ],
+        "system_id": [
+          0
+        ],
+        "reserved1": [
+          255
+        ],
+        "reserved2": [
+          65535
+        ]
+      }
+    },
+    "rotation_roll_dominant": {
+      "snapshots": 20,
+      "per_epoch": [
+        {
+          "epoch": 0,
+          "snapshots": 20,
+          "unique_native": 20,
+          "module_span_ms": 42150,
+          "nominal_100hz_coverage": 0.004743833017077799,
+          "affine_clock_fit": {
+            "n": 20,
+            "intercept": 6783.991628520307,
+            "coefficients": {
+              "fpga_received_ms": 0.9987443264505349
+            },
+            "rmse": 0.366860726162553,
+            "r_squared": 0.999999999378706
+          }
+        }
+      ],
+      "native_snapshot_spacing_ms": {
+        "n": 16,
+        "min": 200,
+        "median": 200.0,
+        "max": 4190,
+        "mean": 973.75,
+        "p90": 3800
+      },
+      "sample_count_steps": {
+        "n": 16,
+        "min": 20,
+        "median": 20.0,
+        "max": 419,
+        "mean": 97.375,
+        "p90": 380
+      },
+      "module_seq_matches_10ms_lattice": 16,
+      "forward_intervals": 16,
+      "interval_integrated_dt_ms": {
+        "n": 20,
+        "min": 10,
+        "median": 10.0,
+        "max": 10,
+        "mean": 10,
+        "p90": 10
+      },
+      "source_age_ms": {
+        "n": 20,
+        "min": 2,
+        "median": 6.5,
+        "max": 9,
+        "mean": 5.45,
+        "p90": 8
+      },
+      "age_pair_residual_ms": {
+        "n": 20,
+        "min": 0,
+        "median": 0.0,
+        "max": 0,
+        "mean": 0,
+        "p90": 0
+      },
+      "module_minus_fpga_clock_ms": {
+        "n": 20,
+        "min": 6520,
+        "median": 6557.5,
+        "max": 6573,
+        "mean": 6551.95,
+        "p90": 6572
+      },
+      "exposure_time_aligned_counts": {
+        "False": 20
+      },
+      "last_error_counters": {
+        "module_missing": {
+          "n": 20,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_restarts": {
+          "n": 20,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "uart_errors": {
+          "n": 20,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "checksum_errors": {
+          "n": 20,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        }
+      },
+      "headers_and_reserved": {
+        "device_id": [
+          15
+        ],
+        "system_id": [
+          0
+        ],
+        "reserved1": [
+          255
+        ],
+        "reserved2": [
+          65535
+        ]
+      }
+    },
+    "p005_actions_motion_gt5": {
+      "snapshots": 8,
+      "per_epoch": [
+        {
+          "epoch": 0,
+          "snapshots": 8,
+          "unique_native": 8,
+          "module_span_ms": 18780,
+          "nominal_100hz_coverage": 0.004257583821181479,
+          "affine_clock_fit": {
+            "n": 8,
+            "intercept": 325696.3038840459,
+            "coefficients": {
+              "fpga_received_ms": 0.9988686190275019
+            },
+            "rmse": 0.15094794461606284,
+            "r_squared": 0.9999999996356375
+          }
+        }
+      ],
+      "native_snapshot_spacing_ms": {
+        "n": 5,
+        "min": 200,
+        "median": 200,
+        "max": 3200,
+        "mean": 800,
+        "p90": 200
+      },
+      "sample_count_steps": {
+        "n": 5,
+        "min": 20,
+        "median": 20,
+        "max": 320,
+        "mean": 80,
+        "p90": 20
+      },
+      "module_seq_matches_10ms_lattice": 5,
+      "forward_intervals": 5,
+      "interval_integrated_dt_ms": {
+        "n": 8,
+        "min": 10,
+        "median": 10.0,
+        "max": 10,
+        "mean": 10,
+        "p90": 10
+      },
+      "source_age_ms": {
+        "n": 8,
+        "min": 3,
+        "median": 6.0,
+        "max": 7,
+        "mean": 5.25,
+        "p90": 7
+      },
+      "age_pair_residual_ms": {
+        "n": 8,
+        "min": 0,
+        "median": 0.0,
+        "max": 0,
+        "mean": 0,
+        "p90": 0
+      },
+      "module_minus_fpga_clock_ms": {
+        "n": 8,
+        "min": 325084,
+        "median": 325096.5,
+        "max": 325105,
+        "mean": 325094.5,
+        "p90": 325105
+      },
+      "exposure_time_aligned_counts": {
+        "False": 8
+      },
+      "last_error_counters": {
+        "module_missing": {
+          "n": 8,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "module_restarts": {
+          "n": 8,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "uart_errors": {
+          "n": 8,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        },
+        "checksum_errors": {
+          "n": 8,
+          "min": 0,
+          "median": 0.0,
+          "max": 0,
+          "mean": 0,
+          "p90": 0
+        }
+      },
+      "headers_and_reserved": {
+        "device_id": [
+          15
+        ],
+        "system_id": [
+          0
+        ],
+        "reserved1": [
+          255
+        ],
+        "reserved2": [
+          65535
+        ]
+      }
+    }
+  },
+  "recovery_rows": [
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 291,
+      "utc": "2026-10-25T13:47:53.428624+00:00",
+      "module_ms": 65188,
+      "distance_mm": 1143,
+      "flow_x": 40,
+      "flow_y": 120,
+      "native_seq": 115,
+      "quality": 93,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 5833,
+      "fpga_snapshot_ms": 58400,
+      "source_age_ms": 2,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 5833,
+      "received_ms": 58398,
+      "gx": 10.737855492568599,
+      "gy": 47.84959746570122,
+      "gz": -4.470482802972561,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": 936,
+      "pitch_cdeg": -637,
+      "yaw_cdeg": -1613,
+      "xy_active": true,
+      "nav_ready": true,
+      "native_height_ready": true,
+      "velocity_fusion_ready": true,
+      "xy_reason": 0,
+      "taking_off": true,
+      "target_roll": 740,
+      "target_pitch": 243,
+      "nav_body_x": 89889178,
+      "nav_body_y": -29963059,
+      "fused_x": 8183987,
+      "fused_y": -29557394,
+      "raw_forward_mmps": 1371.6,
+      "raw_right_mmps": -457.2,
+      "forward_normalized_radps": 1.2,
+      "right_normalized_radps": -0.4,
+      "module_minus_fpga_clock_ms": 6790,
+      "snapshot_minus_pair_ms": 2,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 292,
+      "utc": "2026-10-25T13:47:53.596833+00:00",
+      "module_ms": 65388,
+      "distance_mm": 1074,
+      "flow_x": -40,
+      "flow_y": 120,
+      "native_seq": 135,
+      "quality": 98,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 5853,
+      "fpga_snapshot_ms": 58600,
+      "source_age_ms": 2,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 5853,
+      "received_ms": 58598,
+      "gx": -23.170419088224087,
+      "gy": 64.11942644817074,
+      "gz": -8.40634229706555,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": 774,
+      "pitch_cdeg": 536,
+      "yaw_cdeg": -1534,
+      "xy_active": true,
+      "nav_ready": true,
+      "native_height_ready": true,
+      "velocity_fusion_ready": true,
+      "xy_reason": 0,
+      "taking_off": true,
+      "target_roll": 245,
+      "target_pitch": 1132,
+      "nav_body_x": 84462797,
+      "nav_body_y": 28154266,
+      "fused_x": 48868174,
+      "fused_y": -13611871,
+      "raw_forward_mmps": 1288.8,
+      "raw_right_mmps": 429.6,
+      "forward_normalized_radps": 1.2,
+      "right_normalized_radps": 0.4,
+      "module_minus_fpga_clock_ms": 6790,
+      "snapshot_minus_pair_ms": 2,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 293,
+      "utc": "2026-10-25T13:47:53.889886+00:00",
+      "module_ms": 65588,
+      "distance_mm": 1038,
+      "flow_x": -100,
+      "flow_y": 60,
+      "native_seq": 155,
+      "quality": 100,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 5873,
+      "fpga_snapshot_ms": 58800,
+      "source_age_ms": 2,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 5873,
+      "received_ms": 58798,
+      "gx": -49.910471846417686,
+      "gy": 37.298717963986284,
+      "gz": -10.544761099466465,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": -40,
+      "pitch_cdeg": 1615,
+      "yaw_cdeg": -1656,
+      "xy_active": false,
+      "nav_ready": false,
+      "native_height_ready": true,
+      "velocity_fusion_ready": false,
+      "xy_reason": 4,
+      "taking_off": true,
+      "target_roll": 0,
+      "target_pitch": 0,
+      "nav_body_x": 0,
+      "nav_body_y": 0,
+      "fused_x": 0,
+      "fused_y": 0,
+      "raw_forward_mmps": 622.8,
+      "raw_right_mmps": 1038.0,
+      "forward_normalized_radps": 0.6,
+      "right_normalized_radps": 1.0,
+      "module_minus_fpga_clock_ms": 6790,
+      "snapshot_minus_pair_ms": 2,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 294,
+      "utc": "2026-10-25T13:47:54.058137+00:00",
+      "module_ms": 65788,
+      "distance_mm": 1005,
+      "flow_x": -100,
+      "flow_y": -200,
+      "native_seq": 175,
+      "quality": 104,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 5893,
+      "fpga_snapshot_ms": 59000,
+      "source_age_ms": 1,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 5893,
+      "received_ms": 58999,
+      "gx": -18.82907774390244,
+      "gy": -55.805277010289636,
+      "gz": -9.112295755525915,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": -880,
+      "pitch_cdeg": 1245,
+      "yaw_cdeg": -1818,
+      "xy_active": true,
+      "nav_ready": true,
+      "native_height_ready": true,
+      "velocity_fusion_ready": true,
+      "xy_reason": 0,
+      "taking_off": true,
+      "target_roll": 234,
+      "target_pitch": -33,
+      "nav_body_x": -131727360,
+      "nav_body_y": 65863680,
+      "fused_x": -5836784,
+      "fused_y": 2972567,
+      "raw_forward_mmps": -2010.0,
+      "raw_right_mmps": 1005.0,
+      "forward_normalized_radps": -2.0,
+      "right_normalized_radps": 1.0,
+      "module_minus_fpga_clock_ms": 6789,
+      "snapshot_minus_pair_ms": 1,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 295,
+      "utc": "2026-10-25T13:47:54.165206+00:00",
+      "module_ms": 65988,
+      "distance_mm": 941,
+      "flow_x": 40,
+      "flow_y": -100,
+      "native_seq": 195,
+      "quality": 102,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 5913,
+      "fpga_snapshot_ms": 59200,
+      "source_age_ms": 1,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 5913,
+      "received_ms": 59199,
+      "gx": 36.17855909394055,
+      "gy": -45.897380549733235,
+      "gz": -10.481463176448171,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": -588,
+      "pitch_cdeg": 182,
+      "yaw_cdeg": -1856,
+      "xy_active": true,
+      "nav_ready": true,
+      "native_height_ready": true,
+      "velocity_fusion_ready": true,
+      "xy_reason": 0,
+      "taking_off": true,
+      "target_roll": 643,
+      "target_pitch": -915,
+      "nav_body_x": -61669376,
+      "nav_body_y": -24667750,
+      "fused_x": -45262070,
+      "fused_y": -3168650,
+      "raw_forward_mmps": -941.0,
+      "raw_right_mmps": -376.4,
+      "forward_normalized_radps": -1.0,
+      "right_normalized_radps": -0.4,
+      "module_minus_fpga_clock_ms": 6789,
+      "snapshot_minus_pair_ms": 1,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 498,
+      "utc": "2026-10-25T13:48:34.766200+00:00",
+      "module_ms": 106538,
+      "distance_mm": 1132,
+      "flow_x": 120,
+      "flow_y": -20,
+      "native_seq": 154,
+      "quality": 89,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 9968,
+      "fpga_snapshot_ms": 99800,
+      "source_age_ms": 7,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 9968,
+      "received_ms": 99793,
+      "gx": 49.45144281154726,
+      "gy": -0.032810118140243906,
+      "gz": -9.415446955983233,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": -662,
+      "pitch_cdeg": 346,
+      "yaw_cdeg": -885,
+      "xy_active": true,
+      "nav_ready": true,
+      "native_height_ready": true,
+      "velocity_fusion_ready": true,
+      "xy_reason": 0,
+      "taking_off": true,
+      "target_roll": 306,
+      "target_pitch": 218,
+      "nav_body_x": -14837350,
+      "nav_body_y": -89024102,
+      "fused_x": -1073595,
+      "fused_y": -16964963,
+      "raw_forward_mmps": -226.4,
+      "raw_right_mmps": -1358.4,
+      "forward_normalized_radps": -0.2,
+      "right_normalized_radps": -1.2,
+      "module_minus_fpga_clock_ms": 6745,
+      "snapshot_minus_pair_ms": 7,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 499,
+      "utc": "2026-10-25T13:48:35.007302+00:00",
+      "module_ms": 106738,
+      "distance_mm": 1082,
+      "flow_x": 280,
+      "flow_y": -60,
+      "native_seq": 174,
+      "quality": 89,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 9988,
+      "fpga_snapshot_ms": 100000,
+      "source_age_ms": 7,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 9988,
+      "received_ms": 99993,
+      "gx": 64.95932974466464,
+      "gy": -10.254903653772868,
+      "gz": -3.4565251048018295,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": 556,
+      "pitch_cdeg": 216,
+      "yaw_cdeg": -1016,
+      "xy_active": true,
+      "nav_ready": true,
+      "native_height_ready": true,
+      "velocity_fusion_ready": true,
+      "xy_reason": 0,
+      "taking_off": true,
+      "target_roll": 1089,
+      "target_pitch": 33,
+      "nav_body_x": -42545971,
+      "nav_body_y": -198547866,
+      "fused_x": -15723689,
+      "fused_y": -49025369,
+      "raw_forward_mmps": -649.2,
+      "raw_right_mmps": -3029.6,
+      "forward_normalized_radps": -0.6,
+      "right_normalized_radps": -2.8,
+      "module_minus_fpga_clock_ms": 6745,
+      "snapshot_minus_pair_ms": 7,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 500,
+      "utc": "2026-10-25T13:48:35.237436+00:00",
+      "module_ms": 106938,
+      "distance_mm": 1012,
+      "flow_x": 40,
+      "flow_y": -20,
+      "native_seq": 194,
+      "quality": 91,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 10008,
+      "fpga_snapshot_ms": 100200,
+      "source_age_ms": 6,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 10008,
+      "received_ms": 100194,
+      "gx": 25.496602872522868,
+      "gy": -9.48706650152439,
+      "gz": 1.0243783346036586,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": 1513,
+      "pitch_cdeg": 4,
+      "yaw_cdeg": -1066,
+      "xy_active": false,
+      "nav_ready": false,
+      "native_height_ready": true,
+      "velocity_fusion_ready": false,
+      "xy_reason": 4,
+      "taking_off": true,
+      "target_roll": 1132,
+      "target_pitch": -124,
+      "nav_body_x": 0,
+      "nav_body_y": 0,
+      "fused_x": 0,
+      "fused_y": 0,
+      "raw_forward_mmps": -202.4,
+      "raw_right_mmps": -404.8,
+      "forward_normalized_radps": -0.2,
+      "right_normalized_radps": -0.4,
+      "module_minus_fpga_clock_ms": 6744,
+      "snapshot_minus_pair_ms": 6,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 501,
+      "utc": "2026-10-25T13:48:35.374565+00:00",
+      "module_ms": 107138,
+      "distance_mm": 873,
+      "flow_x": -340,
+      "flow_y": 0,
+      "native_seq": 214,
+      "quality": 94,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 10028,
+      "fpga_snapshot_ms": 100400,
+      "source_age_ms": 6,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 10028,
+      "received_ms": 100394,
+      "gx": -85.471504025343,
+      "gy": 7.227574790396342,
+      "gz": 0.01161156631097561,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": 800,
+      "pitch_cdeg": -28,
+      "yaw_cdeg": -1039,
+      "xy_active": true,
+      "nav_ready": true,
+      "native_height_ready": true,
+      "velocity_fusion_ready": true,
+      "xy_reason": 0,
+      "taking_off": true,
+      "target_roll": -359,
+      "target_pitch": 189,
+      "nav_body_x": 0,
+      "nav_body_y": 194523955,
+      "fused_x": 5431184,
+      "fused_y": 20431362,
+      "raw_forward_mmps": 0.0,
+      "raw_right_mmps": 2968.2,
+      "forward_normalized_radps": 0.0,
+      "right_normalized_radps": 3.4,
+      "module_minus_fpga_clock_ms": 6744,
+      "snapshot_minus_pair_ms": 6,
+      "age_pair_residual_ms": 0
+    },
+    {
+      "dataset": "dynamic",
+      "epoch": 12,
+      "seq": 502,
+      "utc": "2026-10-25T13:48:35.581609+00:00",
+      "module_ms": 107338,
+      "distance_mm": 711,
+      "flow_x": -100,
+      "flow_y": 20,
+      "native_seq": 234,
+      "quality": 84,
+      "flow_status": 1,
+      "tof_status": 1,
+      "device_id": 15,
+      "system_id": 0,
+      "reserved1": 255,
+      "reserved2": 65535,
+      "sample_count": 10048,
+      "fpga_snapshot_ms": 100600,
+      "source_age_ms": 6,
+      "dt_ms": 10,
+      "module_missing": 0,
+      "module_restarts": 0,
+      "module_duplicates": 0,
+      "uart_errors": 0,
+      "checksum_errors": 0,
+      "pair_sequence": 10048,
+      "received_ms": 100594,
+      "gx": -65.5918623761433,
+      "gy": 11.894069764672258,
+      "gz": -5.610292016006098,
+      "receipt_pair_valid": true,
+      "exposure_time_aligned": false,
+      "roll_cdeg": -837,
+      "pitch_cdeg": 221,
+      "yaw_cdeg": -1108,
+      "xy_active": true,
+      "nav_ready": true,
+      "native_height_ready": true,
+      "velocity_fusion_ready": true,
+      "xy_reason": 0,
+      "taking_off": true,
+      "target_roll": -1124,
+      "target_pitch": 177,
+      "nav_body_x": 9319219,
+      "nav_body_y": 46596096,
+      "fused_x": 11059014,
+      "fused_y": 48985342,
+      "raw_forward_mmps": 142.2,
+      "raw_right_mmps": 711.0,
+      "forward_normalized_radps": 0.2,
+      "right_normalized_radps": 1.0,
+      "module_minus_fpga_clock_ms": 6744,
+      "snapshot_minus_pair_ms": 6,
+      "age_pair_residual_ms": 0
+    }
+  ],
+  "max_tilt_distance_projection_factor_at_15deg_both_axes": 0.9330127018922194,
+  "visible_20_count_velocity_steps_mmps": {
+    "250": 50.0,
+    "500": 100.0,
+    "1000": 200.0
+  },
+  "nominal_native_packet_uart_duration_ms": 2.34375,
+  "source_bindings": [
+    {
+      "current_repo_relative": "firmware/B0B3/source/sensor/mtf01p_reader.v",
+      "sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "frozen_p005_sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "byte_identical": true
+    },
+    {
+      "current_repo_relative": "firmware/B0B3/source/sensor/mtf_shared_geometry.v",
+      "sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "frozen_p005_sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "byte_identical": true
+    },
+    {
+      "current_repo_relative": "firmware/B0B3/source/position/mtf_shared_flow_fusion.v",
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "frozen_p005_sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "byte_identical": true
+    },
+    {
+      "current_repo_relative": "firmware/B0B3/source/acg720_ano_port.v",
+      "sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "frozen_p005_sha256": "03616e9c7bbf0dedec4dd4347b5f9ebbee458c84c47cbe85c3a36c1433ffe777",
+      "byte_identical": false
+    }
+  ]
+}

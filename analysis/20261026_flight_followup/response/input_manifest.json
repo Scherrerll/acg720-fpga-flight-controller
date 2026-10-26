@@ -1,0 +1,58 @@
+{
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\hardware\\response_20261025T160009_877779Z\\telemetry_clip.jsonl": {
+    "sha256": "73df2c5c9b36e3e6d8f8afee94b6c3e508ab8d4112982055e7ac9fb8d96a0649",
+    "bytes": 16301655
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\hardware\\v15_stick_oscillation_20261025\\recent_telemetry.jsonl": {
+    "sha256": "487ef24eeaf9b330f4524e7a8e3d3a985b36cea933e05120fe0f2193ff9a5ed8",
+    "bytes": 28465195
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\analysis\\analyze_evidence.py": {
+    "sha256": "5a437c9abeb580fd612299e0d778016c1ffe53386d62b4d6cbc07f5d465660dd",
+    "bytes": 11240
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\analysis\\read_numbered.py": {
+    "sha256": "f5138ebad2302a6aae2a558a12f0be1427caa018d6638553cd4abcc48d5c105f",
+    "bytes": 851
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\mtf_xyz_hold_control.v": {
+    "sha256": "b7eef6d33789523cd1e8ff81b05e75db91ab3c67bf76e03483dec356055fa1a6",
+    "bytes": 28451
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\position\\ano_xy_stick.v": {
+    "sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "bytes": 4785
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\mtf_xyz_navigation_control.v": {
+    "sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+    "bytes": 26370
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\flight_core.v": {
+    "sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+    "bytes": 39115
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\timing_closure_20261025\\v15_xy_p005_i0_review_20261025\\source\\position\\mtf_xyz_hold_control.v": {
+    "sha256": "78952264bf5a507f2f9e080e53fe0dd41b940cf13c699a134fb5aa12be539258",
+    "bytes": 27891
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B2\\source\\position\\mtf_xyz_hold_control.v": {
+    "sha256": "41ae4ee0c4129afcc18758d93d960c415f860ca5e2a65dfb8d199129133adff2",
+    "bytes": 27993
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_LocCtrl.c": {
+    "sha256": "6e38baf1774b1961a29af324560c7e18317555b080f0bddbbd74c4a4dd3cdef2",
+    "bytes": 11801
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_specific\\Ano_FlightCtrl.c": {
+    "sha256": "0a490f64fc17aefb932b3223b96c8c2f21bc30de735bbe07339fb0d958cc8691",
+    "bytes": 11611
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\SRC\\fc_general\\Ano_Pid.c": {
+    "sha256": "3ccab514ed143cbafbbb75e221e12ab51af91ff30c67bf607f55e7dd41608e12",
+    "bytes": 2029
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\handoff_xy_pi_runtime_20261026\\workspace_snapshot\\reference_ano\\quadrotor_tm_v1_20261012\\Quadrotor_TM_V1\\Application\\Ano_Scheduler.c": {
+    "sha256": "75b87206cce7a278367936ee33bfd4f6689cb64d3aca4554d333353367cb8943",
+    "bytes": 6219
+  }
+}

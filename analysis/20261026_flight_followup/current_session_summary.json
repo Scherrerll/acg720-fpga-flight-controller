@@ -1,0 +1,341 @@
+{
+  "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\runtime\\B0B3\\20261026T002929Z_9ccb8279\\telemetry.jsonl",
+  "captured_bytes": 92608918,
+  "initial_size": 92608918,
+  "prefix_sha256": "ca5bbf19bcf27ca17ec1c602054939b0d0b721559b5c4c574466874bfb6cd77c",
+  "partial_final_lines_not_parsed": 0,
+  "protocol_counts": {
+    "a579": 8529,
+    "a580": 8569,
+    "a591": 22
+  },
+  "first_utc": "2026-10-26T00:29:29.654017+00:00",
+  "last_utc": "2026-10-26T01:00:37.792562+00:00",
+  "epochs": {
+    "0": {
+      "primary": 251,
+      "armed": 0,
+      "controller_enabled": 0,
+      "taking_off": 0,
+      "first_utc": "2026-10-26T00:29:29.654017+00:00",
+      "last_utc": "2026-10-26T00:30:20.907249+00:00",
+      "first_sequence": 755,
+      "last_sequence": 1011
+    },
+    "1": {
+      "primary": 4434,
+      "armed": 0,
+      "controller_enabled": 0,
+      "taking_off": 0,
+      "first_utc": "2026-10-26T00:30:23.972402+00:00",
+      "last_utc": "2026-10-26T00:45:27.592528+00:00",
+      "first_sequence": 0,
+      "last_sequence": 4518
+    },
+    "2": {
+      "primary": 2723,
+      "armed": 0,
+      "controller_enabled": 0,
+      "taking_off": 0,
+      "first_utc": "2026-10-26T00:45:37.815379+00:00",
+      "last_utc": "2026-10-26T00:54:53.281636+00:00",
+      "first_sequence": 0,
+      "last_sequence": 2777
+    },
+    "3": {
+      "primary": 27,
+      "armed": 0,
+      "controller_enabled": 0,
+      "taking_off": 0,
+      "first_utc": "2026-10-26T00:55:00.385148+00:00",
+      "last_utc": "2026-10-26T00:55:05.851761+00:00",
+      "first_sequence": 0,
+      "last_sequence": 27
+    },
+    "4": {
+      "primary": 33,
+      "armed": 0,
+      "controller_enabled": 0,
+      "taking_off": 0,
+      "first_utc": "2026-10-26T00:55:26.101413+00:00",
+      "last_utc": "2026-10-26T00:55:32.497642+00:00",
+      "first_sequence": 0,
+      "last_sequence": 32
+    },
+    "5": {
+      "primary": 27,
+      "armed": 0,
+      "controller_enabled": 0,
+      "taking_off": 0,
+      "first_utc": "2026-10-26T00:56:30.587082+00:00",
+      "last_utc": "2026-10-26T00:56:35.936647+00:00",
+      "first_sequence": 0,
+      "last_sequence": 26
+    },
+    "6": {
+      "primary": 335,
+      "armed": 0,
+      "controller_enabled": 0,
+      "taking_off": 0,
+      "first_utc": "2026-10-26T00:56:56.186522+00:00",
+      "last_utc": "2026-10-26T00:58:04.046416+00:00",
+      "first_sequence": 0,
+      "last_sequence": 339
+    },
+    "7": {
+      "primary": 699,
+      "armed": 0,
+      "controller_enabled": 0,
+      "taking_off": 0,
+      "first_utc": "2026-10-26T00:58:15.998068+00:00",
+      "last_utc": "2026-10-26T01:00:37.792562+00:00",
+      "first_sequence": 0,
+      "last_sequence": 709
+    }
+  },
+  "parameter_responses": [
+    {
+      "utc": "2026-10-26T00:31:05.203316+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207148,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:31:18.573995+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207149,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:31:34.841981+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207151,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:32:56.369764+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207152,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:32:56.608870+00:00",
+      "epoch": 1,
+      "opcode": 2,
+      "sequence": 1973207153,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 1,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:32:56.835985+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207154,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 1,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:35:26.059406+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207155,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 1,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:38:32.663743+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207157,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 1,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:38:34.625768+00:00",
+      "epoch": 1,
+      "opcode": 2,
+      "sequence": 1973207158,
+      "status": 0,
+      "p_wire": 750,
+      "i_wire": 0,
+      "generation": 2,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:38:34.966893+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207159,
+      "status": 0,
+      "p_wire": 750,
+      "i_wire": 0,
+      "generation": 2,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:45:00.156798+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207160,
+      "status": 0,
+      "p_wire": 750,
+      "i_wire": 0,
+      "generation": 2,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:45:09.960624+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207161,
+      "status": 0,
+      "p_wire": 750,
+      "i_wire": 0,
+      "generation": 2,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:45:13.424306+00:00",
+      "epoch": 1,
+      "opcode": 2,
+      "sequence": 1973207162,
+      "status": 0,
+      "p_wire": 1500,
+      "i_wire": 1000,
+      "generation": 3,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:45:13.701432+00:00",
+      "epoch": 1,
+      "opcode": 1,
+      "sequence": 1973207163,
+      "status": 0,
+      "p_wire": 1500,
+      "i_wire": 1000,
+      "generation": 3,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:57:13.829213+00:00",
+      "epoch": 6,
+      "opcode": 1,
+      "sequence": 1973207165,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:59:30.446294+00:00",
+      "epoch": 7,
+      "opcode": 1,
+      "sequence": 1973207166,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:59:54.786352+00:00",
+      "epoch": 7,
+      "opcode": 1,
+      "sequence": 1973207167,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 0,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:59:58.010923+00:00",
+      "epoch": 7,
+      "opcode": 2,
+      "sequence": 1973207168,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 1,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T00:59:58.240981+00:00",
+      "epoch": 7,
+      "opcode": 1,
+      "sequence": 1973207169,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 1,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T01:00:17.282502+00:00",
+      "epoch": 7,
+      "opcode": 1,
+      "sequence": 1973207170,
+      "status": 0,
+      "p_wire": 500,
+      "i_wire": 0,
+      "generation": 1,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T01:00:26.842190+00:00",
+      "epoch": 7,
+      "opcode": 2,
+      "sequence": 1973207171,
+      "status": 0,
+      "p_wire": 150,
+      "i_wire": 100,
+      "generation": 2,
+      "build": "0000B0B3"
+    },
+    {
+      "utc": "2026-10-26T01:00:27.111308+00:00",
+      "epoch": 7,
+      "opcode": 1,
+      "sequence": 1973207172,
+      "status": 0,
+      "p_wire": 150,
+      "i_wire": 100,
+      "generation": 2,
+      "build": "0000B0B3"
+    }
+  ],
+  "interpretation": "Only this fixed prefix. Protocol semantics checked via normalized a579 flags and a580 taking_off; current source telemetry is not a flight truth sensor."
+}

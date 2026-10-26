@@ -1,0 +1,79 @@
+{
+  "scope": "Read-only response investigation; two new focused actual RTL witnesses and exact raw-log joins; no hardware, HTTP, serial, programmer or Git",
+  "input_files_rechecked": 14,
+  "immutable_inputs_unchanged": true,
+  "files": {
+    "analyze_response.py": {
+      "bytes": 11345,
+      "sha256": "fe7cb8e4a06047689f06df6f53259dfe376e174c7f34e73ebb3a7d2358aa475b"
+    },
+    "controller_position.log": {
+      "bytes": 552,
+      "sha256": "a7d030ab6e867875535fa07433921ea28ee00065ce03abfeb50aae09386f2366"
+    },
+    "controller_position_compile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controller_position_tb.v": {
+      "bytes": 5226,
+      "sha256": "26006813a16b528ab1c9502d840dd2896de24910ae3c8ea313a6ec0e292c9b8a"
+    },
+    "controller_position_trace.csv": {
+      "bytes": 3481,
+      "sha256": "c346ed9781a55a2522e8d2b4b921acc00eef7f5c4b347977bfa5ea5f23f47614"
+    },
+    "input_manifest.json": {
+      "bytes": 3971,
+      "sha256": "d0cd82d9118fe21cc26d7f81a9996d84140f2fb2705910d60a813cf37b2639cd"
+    },
+    "RESPONSE_FINDINGS.md": {
+      "bytes": 11701,
+      "sha256": "6d9059f84df406af06999f42b8cc1de694809a12b3f26f9a97b0d6787cd23e3c"
+    },
+    "response_rows.csv": {
+      "bytes": 1810490,
+      "sha256": "a6ac3dc30060712b9bab22f19096808ec64bf89362a5c07e8f56e861851e6308"
+    },
+    "response_summary.json": {
+      "bytes": 75236,
+      "sha256": "d8d62e69e5c1cbe70652e5528d39bdb54a0afa9f83e08466bb2a256522941a0d"
+    },
+    "rtl_tmp/controller_position.vvp": {
+      "bytes": 706645,
+      "sha256": "9b2bbd53ad033a63f335c7c8c41df2f983890bc50c8f54dcb1fd611d84dfdfc5"
+    },
+    "rtl_tmp/stick_tail.vvp": {
+      "bytes": 48987,
+      "sha256": "d0fd49330d9d6075a98050a7acbbb75cab597d241c8bcb0f9bbd7848fc7cd491"
+    },
+    "rtl_witness_results.json": {
+      "bytes": 3291,
+      "sha256": "5dca196c4a0a95224d0808470831744e5e4e29e0b031cee85dec8e288577f653"
+    },
+    "run_rtl_witness.py": {
+      "bytes": 10640,
+      "sha256": "8d349ba5b7b074e4c13c57bddbd8d35871d866e96de73f4964d0837468726ef0"
+    },
+    "state_events.csv": {
+      "bytes": 12212,
+      "sha256": "87f793afd8cc1c011da6eea2b3728b677d6b56b75afa40c1168f55202fb9a5c8"
+    },
+    "stick_tail.log": {
+      "bytes": 346,
+      "sha256": "9f950402c8a465d5145666427b628369a582f61f8f0109b33bc46772b5006b84"
+    },
+    "stick_tail_compile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stick_tail_tb.v": {
+      "bytes": 2186,
+      "sha256": "9e0825e60e5984022632f51b825b20f12387a42118e1f87337a7d51a77f768bf"
+    },
+    "stick_tail_trace.csv": {
+      "bytes": 30641,
+      "sha256": "517b6b850cf94412c243c851b4cdaa960af3c1a4d5b1ad65ce1e6f2824c0db8a"
+    }
+  }
+}

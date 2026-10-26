@@ -1,0 +1,38 @@
+{
+  "schema": "rotation-followup-artifacts.v1",
+  "files": {
+    "analysis_stdout.txt": {
+      "sha256": "4d14e3d33d29a97633c5023855e825b98123774cd32906e339fea253abb9fce3",
+      "bytes": 6407
+    },
+    "analyze_rotation.py": {
+      "sha256": "1d0fbbacea96df04e6e10cdcf7f9bb846c88a3ef2ecc5f3eac5d3f702d558abe",
+      "bytes": 18271
+    },
+    "FINDINGS.md": {
+      "sha256": "3f50c11089d02f0cc71043bb99587649cd1bad2ba87426514e0567ae1d0ca3a2",
+      "bytes": 14537
+    },
+    "input_manifest.json": {
+      "sha256": "04829f5e531b78583534c2d933d45a323b2c867dab770a2f3064e0db943df3b2",
+      "bytes": 3219
+    },
+    "official_sources.json": {
+      "sha256": "0f38f28911f6fd1583b089d08862b24b37132dab6e4257c1eb68927fa227b204",
+      "bytes": 1881
+    },
+    "paired_native_rotation.csv": {
+      "sha256": "73948f8f8f990eb8261b556f00fbb4f7cf1afde08105e501b34fbfd13c573408",
+      "bytes": 1774479
+    },
+    "rotation_summary.json": {
+      "sha256": "2b9965d2b534c1436fdaaa3b2b6bf67695cdce498da5e479c3eb28ff76cb8df1",
+      "bytes": 176118
+    },
+    "verification.json": {
+      "sha256": "6a005804f7ed868121c4ae15771fca96c3ff3f02a721107c21772808defb5a0f",
+      "bytes": 573
+    }
+  },
+  "self_binding_excluded": true
+}

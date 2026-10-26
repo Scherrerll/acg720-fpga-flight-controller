@@ -1,0 +1,299 @@
+{
+  "schema": "acg720.flight-followup.v1",
+  "created_utc": "2026-10-26T01:47:16.391082+00:00",
+  "scope": "Read-only historical flight investigation plus five focused actual RTL witnesses. No active firmware/parameters/hardware changed; no whole-P2 equivalence or flight performance qualification.",
+  "files": {
+    "analysis/20261026_flight_followup/current_session_summary.json": {
+      "sha256": "5c4e071715313968b7642b74ee4caafce68303c76d72a251bae7dca21602bdd1",
+      "bytes": 8524
+    },
+    "analysis/20261026_flight_followup/evidence_overview.png": {
+      "sha256": "85bad1a535f5b25209a07015f642a965d19f8b7a188a9ba25ca297b98407233a",
+      "bytes": 309744
+    },
+    "analysis/20261026_flight_followup/height/analyze_height.py": {
+      "sha256": "a68801c9e10bca2eff356d810c089accd7d9702a2e071f0654200a0708538b13",
+      "bytes": 8147
+    },
+    "analysis/20261026_flight_followup/height/ARTIFACTS.md": {
+      "sha256": "5c9ff1b217b34d4af82fa6c54bb8945e85c7d9eab544bbb5d0453fd70dec7c62",
+      "bytes": 2034
+    },
+    "analysis/20261026_flight_followup/height/boundary_packets.csv": {
+      "sha256": "729a9cd968537080468dc8300c3cdd58366e760f050768b220d0a582e85f785c",
+      "bytes": 66641
+    },
+    "analysis/20261026_flight_followup/height/compile.log": {
+      "sha256": "2f4e722a72e92b9ca6031fe590cf0bfb32486aa4669373be4fb7e98090a88f1c",
+      "bytes": 248
+    },
+    "analysis/20261026_flight_followup/height/height_chain_source_changes.diff": {
+      "sha256": "f70b2968321d3c537547fe2d3c148369e12bfa098554c289aeed3de2f3d2bdaf",
+      "bytes": 9014
+    },
+    "analysis/20261026_flight_followup/height/HEIGHT_FINDINGS.md": {
+      "sha256": "fb0cce7ebd8716610c03bb20b021120cc600aa96c71a4ccc734432f472ddc3de",
+      "bytes": 12514
+    },
+    "analysis/20261026_flight_followup/height/height_path_tb.v": {
+      "sha256": "2e68b52b8cb3d63d004df537114de754026501d7c03eb43579728dffeb206109",
+      "bytes": 6076
+    },
+    "analysis/20261026_flight_followup/height/INPUTS.json": {
+      "sha256": "af4ceeb54aa75c6a2cc0f0c9e092f3e66f1104bc634d9b2b1d50feeff70e5d9d",
+      "bytes": 9668
+    },
+    "analysis/20261026_flight_followup/height/MANIFEST.json": {
+      "sha256": "69e962ac4b2564f042229193277f86f41f547db94dd17c52fe0fbf724975f9b0",
+      "bytes": 5085
+    },
+    "analysis/20261026_flight_followup/height/MANIFEST.sha256": {
+      "sha256": "1496e528a480370c41a1e86b77096f5fee1bae012e9ecf80ff3c60ee8c515fcc",
+      "bytes": 81
+    },
+    "analysis/20261026_flight_followup/height/packet_analysis_stdout.log": {
+      "sha256": "9aa27c815cfc80e1fd0d4193b9478af7da35a6ec74aad7b630120f65efb22336",
+      "bytes": 3271
+    },
+    "analysis/20261026_flight_followup/height/packet_evidence.json": {
+      "sha256": "de8e3c817efa99894da96d13432a4562dffee09bec332eefbe81b585636be724",
+      "bytes": 7889
+    },
+    "analysis/20261026_flight_followup/height/rtl_attempt_02/compile.log": {
+      "sha256": "642599c17dcea33c2826f42dd0b3468f73a48886a0ef735544fa4aec98616cad",
+      "bytes": 1193
+    },
+    "analysis/20261026_flight_followup/height/rtl_attempt_02/rtl_results.json": {
+      "sha256": "7858337fdd2ed90f68201fe809b50da7642e98622da935f76bb3fdafd02443b0",
+      "bytes": 14283
+    },
+    "analysis/20261026_flight_followup/height/rtl_attempt_03/compile.log": {
+      "sha256": "10ac22fc8c394ebbc419cdac6cb616e3967bf69bd993e846d8fa46023f651789",
+      "bytes": 199
+    },
+    "analysis/20261026_flight_followup/height/rtl_attempt_03/rtl_results.json": {
+      "sha256": "2bb7840f3f9c2e999bfff1cde13cfa1046796449ad35b8410dc47138e9f39d3c",
+      "bytes": 16587
+    },
+    "analysis/20261026_flight_followup/height/rtl_attempt_03/scenario_0.log": {
+      "sha256": "63c08ae47ad4cddf93209df90a6a6ffc5e251bdf2f268c6f2e31285bbdd9e94e",
+      "bytes": 357
+    },
+    "analysis/20261026_flight_followup/height/rtl_attempt_03/scenario_1.log": {
+      "sha256": "c3bdd162c7c67b3a330be7004cd16ad23a859f9313bc39aa671a97abae818369",
+      "bytes": 367
+    },
+    "analysis/20261026_flight_followup/height/rtl_attempt_03/scenario_2.log": {
+      "sha256": "550f8ae1c8022dd92b9053ceeeb288784941f264664a8fda735e25c68c8b617b",
+      "bytes": 367
+    },
+    "analysis/20261026_flight_followup/height/rtl_results.json": {
+      "sha256": "22c4a91cc0383e1f5013adee818974e1988ec1d506bbbbf53391903314097301",
+      "bytes": 14132
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_02_process.json": {
+      "sha256": "10e0db4f5ab6996ceb61de04729b8303b77bb1dba963f47ee04d6a676ebd789e",
+      "bytes": 332
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_02_stderr.log": {
+      "sha256": "d9e0655136a23a543579ff7ea0688dca3bb60022bdac120b15868e5699ccb8f0",
+      "bytes": 1121
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_02_stdout.log": {
+      "sha256": "3f32425481b71a223ab215a282f57bbc6f9522928e21e3eb11e525e5562effcc",
+      "bytes": 73
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_03_process.json": {
+      "sha256": "54e20b430d4ce5f61d91c1eb127fa04828267bd8204a9bb5bcf066688bfbdfb5",
+      "bytes": 321
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_03_stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_03_stdout.log": {
+      "sha256": "a557c17d3c91dd1e8c11684eb57018609bf69d648104e1fce59987a8f8d14c6e",
+      "bytes": 866
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_process.json": {
+      "sha256": "8ccec6cf7530938410610b395c9cb5210a1e987b2e28befdb1150c3f94ca1ead",
+      "bytes": 299
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_stderr.log": {
+      "sha256": "739f0f989baad5e78418c91c8851ebc6f1ea9de88605aaeba87ee72e10898c00",
+      "bytes": 1108
+    },
+    "analysis/20261026_flight_followup/height/rtl_runner_stdout.log": {
+      "sha256": "a75c5e72d6e6c6bc07f7d07cf14269259212309cf4d59060ff01b465b0ddb2f9",
+      "bytes": 7264
+    },
+    "analysis/20261026_flight_followup/height/run_height_rtl.py": {
+      "sha256": "4a7b84692d5286ea89b799cb08b986619c5fd859e6ac1a2585a8dfe83abcb78a",
+      "bytes": 2946
+    },
+    "analysis/20261026_flight_followup/input_ledger.json": {
+      "sha256": "897ac1d06fb6f2cf1e5476f4cfef5c7c2d2cde2a47bc4db657806162bdd57cd7",
+      "bytes": 9318
+    },
+    "analysis/20261026_flight_followup/inspect_inputs.py": {
+      "sha256": "4ee1d3a74af03cf44039239cc3c1aa62ceaae3e9314acb19196f7cf6105a9008",
+      "bytes": 4285
+    },
+    "analysis/20261026_flight_followup/plot_evidence.py": {
+      "sha256": "c11bea9ee74a5a046c469711a00676e9d1e3836101dcbc944899886b5b73aef4",
+      "bytes": 4883
+    },
+    "analysis/20261026_flight_followup/plot_provenance.json": {
+      "sha256": "130e5b12bb1e9314eed5c77dca9252c632f438612bf95d3cc046623dbabe5d87",
+      "bytes": 1305
+    },
+    "analysis/20261026_flight_followup/README.md": {
+      "sha256": "d0dd2a69b0debc58619ac6e4f0f8b202e898fdce5421dec5fb4d3b121da4b1a1",
+      "bytes": 11178
+    },
+    "analysis/20261026_flight_followup/response/analyze_response.py": {
+      "sha256": "fe7cb8e4a06047689f06df6f53259dfe376e174c7f34e73ebb3a7d2358aa475b",
+      "bytes": 11345
+    },
+    "analysis/20261026_flight_followup/response/ARTIFACTS.json": {
+      "sha256": "4807945710f68f44deb1ccc52bbc5c3eb52220ae605707613350f3b2ca00aef2",
+      "bytes": 2888
+    },
+    "analysis/20261026_flight_followup/response/controller_position.log": {
+      "sha256": "a7d030ab6e867875535fa07433921ea28ee00065ce03abfeb50aae09386f2366",
+      "bytes": 552
+    },
+    "analysis/20261026_flight_followup/response/controller_position_compile.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/20261026_flight_followup/response/controller_position_tb.v": {
+      "sha256": "26006813a16b528ab1c9502d840dd2896de24910ae3c8ea313a6ec0e292c9b8a",
+      "bytes": 5226
+    },
+    "analysis/20261026_flight_followup/response/controller_position_trace.csv": {
+      "sha256": "c346ed9781a55a2522e8d2b4b921acc00eef7f5c4b347977bfa5ea5f23f47614",
+      "bytes": 3481
+    },
+    "analysis/20261026_flight_followup/response/input_manifest.json": {
+      "sha256": "d0cd82d9118fe21cc26d7f81a9996d84140f2fb2705910d60a813cf37b2639cd",
+      "bytes": 3971
+    },
+    "analysis/20261026_flight_followup/response/RESPONSE_FINDINGS.md": {
+      "sha256": "6d9059f84df406af06999f42b8cc1de694809a12b3f26f9a97b0d6787cd23e3c",
+      "bytes": 11701
+    },
+    "analysis/20261026_flight_followup/response/response_rows.csv": {
+      "sha256": "a6ac3dc30060712b9bab22f19096808ec64bf89362a5c07e8f56e861851e6308",
+      "bytes": 1810490
+    },
+    "analysis/20261026_flight_followup/response/response_summary.json": {
+      "sha256": "d8d62e69e5c1cbe70652e5528d39bdb54a0afa9f83e08466bb2a256522941a0d",
+      "bytes": 75236
+    },
+    "analysis/20261026_flight_followup/response/rtl_witness_results.json": {
+      "sha256": "5dca196c4a0a95224d0808470831744e5e4e29e0b031cee85dec8e288577f653",
+      "bytes": 3291
+    },
+    "analysis/20261026_flight_followup/response/run_rtl_witness.py": {
+      "sha256": "8d349ba5b7b074e4c13c57bddbd8d35871d866e96de73f4964d0837468726ef0",
+      "bytes": 10640
+    },
+    "analysis/20261026_flight_followup/response/state_events.csv": {
+      "sha256": "87f793afd8cc1c011da6eea2b3728b677d6b56b75afa40c1168f55202fb9a5c8",
+      "bytes": 12212
+    },
+    "analysis/20261026_flight_followup/response/stick_tail.log": {
+      "sha256": "9f950402c8a465d5145666427b628369a582f61f8f0109b33bc46772b5006b84",
+      "bytes": 346
+    },
+    "analysis/20261026_flight_followup/response/stick_tail_compile.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/20261026_flight_followup/response/stick_tail_tb.v": {
+      "sha256": "9e0825e60e5984022632f51b825b20f12387a42118e1f87337a7d51a77f768bf",
+      "bytes": 2186
+    },
+    "analysis/20261026_flight_followup/response/stick_tail_trace.csv": {
+      "sha256": "517b6b850cf94412c243c851b4cdaa960af3c1a4d5b1ad65ce1e6f2824c0db8a",
+      "bytes": 30641
+    },
+    "analysis/20261026_flight_followup/rotation/analysis_stdout.txt": {
+      "sha256": "4d14e3d33d29a97633c5023855e825b98123774cd32906e339fea253abb9fce3",
+      "bytes": 6407
+    },
+    "analysis/20261026_flight_followup/rotation/analyze_rotation.py": {
+      "sha256": "1d0fbbacea96df04e6e10cdcf7f9bb846c88a3ef2ecc5f3eac5d3f702d558abe",
+      "bytes": 18271
+    },
+    "analysis/20261026_flight_followup/rotation/ARTIFACT_HASHES.json": {
+      "sha256": "32491fb81922418beb954deac3dbdbacd7b415fd90edc6d5174adf1ceefe32f8",
+      "bytes": 1264
+    },
+    "analysis/20261026_flight_followup/rotation/FINDINGS.md": {
+      "sha256": "3f50c11089d02f0cc71043bb99587649cd1bad2ba87426514e0567ae1d0ca3a2",
+      "bytes": 14537
+    },
+    "analysis/20261026_flight_followup/rotation/input_manifest.json": {
+      "sha256": "04829f5e531b78583534c2d933d45a323b2c867dab770a2f3064e0db943df3b2",
+      "bytes": 3219
+    },
+    "analysis/20261026_flight_followup/rotation/official_sources.json": {
+      "sha256": "0f38f28911f6fd1583b089d08862b24b37132dab6e4257c1eb68927fa227b204",
+      "bytes": 1881
+    },
+    "analysis/20261026_flight_followup/rotation/paired_native_rotation.csv": {
+      "sha256": "73948f8f8f990eb8261b556f00fbb4f7cf1afde08105e501b34fbfd13c573408",
+      "bytes": 1774479
+    },
+    "analysis/20261026_flight_followup/rotation/rotation_summary.json": {
+      "sha256": "2b9965d2b534c1436fdaaa3b2b6bf67695cdce498da5e479c3eb28ff76cb8df1",
+      "bytes": 176118
+    },
+    "analysis/20261026_flight_followup/rotation/verification.json": {
+      "sha256": "6a005804f7ed868121c4ae15771fca96c3ff3f02a721107c21772808defb5a0f",
+      "bytes": 573
+    },
+    "analysis/20261026_flight_followup/verify_followup.py": {
+      "sha256": "e339edd3c1928157964b9bcdc9fe25d7ef2b79467cd3971d8a9b6858877f8d25",
+      "bytes": 2281
+    }
+  },
+  "existing_dependencies": {
+    "firmware/B0B3/export_manifest.json": {
+      "sha256": "23374b5c3aca40e8e71a8ae7ad037541484416a752c683b378083a78a3d4f7a7",
+      "bytes": 371376
+    },
+    "validation/20261026_b0b3_flash/manifest.json": {
+      "sha256": "0469f1c0d81bc85b4dd701142d8c4eaafe418ea2641cc978c6394b0efa1b94e5",
+      "bytes": 12458
+    },
+    "validation/20261026_xy_pi_ground/manifest.json": {
+      "sha256": "5ef64387374b5b5792d7f4abf7a3d7e2a1f922a933689bef8fd18e6b525c52bf",
+      "bytes": 13254
+    },
+    "firmware/B0B3/analysis/FINDINGS.md": {
+      "sha256": "66958810ec8030fe3c722956cacfda6a7eebed7bcb5f8228e62b5d02c72a29a4",
+      "bytes": 30982
+    }
+  },
+  "not_delivered": [
+    {
+      "path": "height/rtl_attempt_03/height_path.vvp",
+      "reason": "Local compiled/cache/temp output; not delivered"
+    },
+    {
+      "path": "response/rtl_tmp/controller_position.vvp",
+      "reason": "Local compiled/cache/temp output; not delivered"
+    },
+    {
+      "path": "response/rtl_tmp/stick_tail.vvp",
+      "reason": "Local compiled/cache/temp output; not delivered"
+    }
+  ],
+  "self_exclusions": [
+    "analysis/20261026_flight_followup/manifest.json",
+    "analysis/20261026_flight_followup/manifest.sha256"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "derived_rows": 114,
+  "transition_brackets": [
+    {
+      "epoch": 22,
+      "last_false_sequence": 230,
+      "first_true_sequence": 231,
+      "last_false_uptime_ms": 46199,
+      "first_true_uptime_ms": 46399,
+      "false_info_line": 7822,
+      "true_info_line": 7829,
+      "first_true_primary_missing": false,
+      "counters": {
+        "sample_count": {
+          "before": 4614,
+          "after": 4634,
+          "delta": 20
+        },
+        "module_time_ms": {
+          "before": 52988,
+          "after": 53188,
+          "delta": 200
+        },
+        "module_missing": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "module_duplicates": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "module_restarts": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "integration_breaks": {
+          "before": 1,
+          "after": 1,
+          "delta": 0
+        },
+        "checksum_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "length_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "uart_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "packet_timeouts": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        }
+      }
+    },
+    {
+      "epoch": 22,
+      "last_false_sequence": 374,
+      "first_true_sequence": 375,
+      "last_false_uptime_ms": 75000,
+      "first_true_uptime_ms": 75200,
+      "false_info_line": 8825,
+      "true_info_line": 8831,
+      "first_true_primary_missing": true,
+      "counters": {
+        "sample_count": {
+          "before": 7489,
+          "after": 7509,
+          "delta": 20
+        },
+        "module_time_ms": {
+          "before": 81738,
+          "after": 81938,
+          "delta": 200
+        },
+        "module_missing": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "module_duplicates": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "module_restarts": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "integration_breaks": {
+          "before": 1,
+          "after": 1,
+          "delta": 0
+        },
+        "checksum_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "length_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "uart_errors": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        "packet_timeouts": {
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        }
+      }
+    }
+  ],
+  "height_chain_byte_identical": [
+    "core/height_loss_fallback.v",
+    "core/ano_flight_state.v",
+    "core/ano_attitude_estimator.v",
+    "core/imu_pipeline_pipelined.v",
+    "sensor/mtf01p_reader.v",
+    "sensor/mtf_shared_geometry.v",
+    "position/pose_time_adapter.v",
+    "position/mtf_shared_height_fusion.v"
+  ]
+}
