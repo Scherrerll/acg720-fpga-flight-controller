@@ -1,0 +1,29 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\validation\\20261028_b0b4_install\\scripts\\flash_b0b4.py",
+    "--execute",
+    "--bench-confirmed-current",
+    "--flash-approved-current",
+    "--sram-receipt",
+    "out/b0b4_install_20261028/sram_20261027T225302_793263Z/stage_report.json",
+    "--sram-completion-receipt",
+    "out/b0b4_install_20261028/sram_completion_20261027T225728_816894Z/stage_report.json",
+    "--completion-root-receipt",
+    "out/b0b4_install_20261028/root_completion_20261027T225728_627518Z/exit.json"
+  ],
+  "script_sha256": "0a50b2c822659b4efc5951ed781dc582bc4c4f874bc56dbdd6fc7d434b1d5a28",
+  "launcher_sha256": "ff057c5dbd699121da52dc64b9fb997e6decfe7078d2428496a4dc4493261ba8",
+  "started_utc": "2026-10-27T22:59:00.901895+00:00",
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "pid": 34796,
+  "stage_report": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\flash_20261027T225901_092572Z\\stage_report.json",
+  "stage_report_sha256": "af0d295abfa42dad13e1fb9f8936ca111a653941b4d5758e401415c395a210d8",
+  "finished_utc": "2026-10-27T23:00:40.118187+00:00",
+  "stdout_sha256": "6ebdc46b935c7490140a7a807e0f8992c577679efc1a460d2ab298d9172f6f73",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

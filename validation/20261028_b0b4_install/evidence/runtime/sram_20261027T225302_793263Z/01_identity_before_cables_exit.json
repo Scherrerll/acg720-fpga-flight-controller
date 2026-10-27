@@ -1,0 +1,16 @@
+{
+  "args": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+    "--scan-cables",
+    "F"
+  ],
+  "started_utc": "2026-10-27T22:53:16.024514+00:00",
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "timeout": false,
+  "pid": 39312,
+  "elapsed_s": 1.045,
+  "stdout_sha256": "713dd5a272151bfc8c0a8ecf1f1be0c00d6c54c7613006b977d2c93c73fc3295",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "finished_utc": "2026-10-27T22:53:17.077576+00:00"
+}

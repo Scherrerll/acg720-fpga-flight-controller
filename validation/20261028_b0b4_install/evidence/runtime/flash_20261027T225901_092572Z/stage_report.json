@@ -1,0 +1,172 @@
+{
+  "schema": "b0b4.bench-stage.v1",
+  "stage": "flash",
+  "passed": true,
+  "started_utc": "2026-10-27T22:59:01.092862+00:00",
+  "script_sha256": "0a50b2c822659b4efc5951ed781dc582bc4c4f874bc56dbdd6fc7d434b1d5a28",
+  "image_sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+  "manifest_sha256": "c8e03412ff44cbe929f5d8ce6fed6eb3c61078a2028df466a340a61894893a2d",
+  "hardware_accessed": true,
+  "sram_write_attempted": false,
+  "sram_written": false,
+  "flash_written": true,
+  "physical_cold_boot_verified": false,
+  "flight_ready": false,
+  "automatic_recovery": false,
+  "operations": [
+    {
+      "operation": 0,
+      "label": "01_before_flash_B4",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "0"
+      ]
+    },
+    {
+      "operation": 54,
+      "label": "04_B0B4_program_verify",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "54",
+        "--spiaddr",
+        "0x000000",
+        "--fsFile",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\release\\acg720_ano_port.fs"
+      ]
+    },
+    {
+      "operation": 1,
+      "label": "05_B0B4_reload",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "1"
+      ]
+    },
+    {
+      "operation": 0,
+      "label": "07_B0B4_identity",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "0"
+      ]
+    },
+    {
+      "operation": 66,
+      "label": "08_B0B4_independent_verify",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "66",
+        "--spiaddr",
+        "0x000000",
+        "--fsFile",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\release\\acg720_ano_port.fs"
+      ]
+    },
+    {
+      "operation": 1,
+      "label": "09_B0B4_final_reload",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "1"
+      ]
+    },
+    {
+      "operation": 0,
+      "label": "11_B0B4_final_identity",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "0"
+      ]
+    }
+  ],
+  "current_operator_bench_assertion": true,
+  "frozen_bench_sha256": "24e10d00c7321ba9141c86812df05a6c9a0753404124c861c24879fe5ff01a67",
+  "frozen_completion_sha256": "522e7e0bbe6780c44877512338b45f7697788274b1511953ea88ff61f96628f8",
+  "flash_write_attempted": true,
+  "flash_contents_certified": true,
+  "independent_flash_verify_passed": true,
+  "current_operator_flash_assertion": true,
+  "updated_utc": "2026-10-27T23:00:40.081067+00:00",
+  "pins": {
+    "passed": true,
+    "image_sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+    "manifest_sha256": "c8e03412ff44cbe929f5d8ce6fed6eb3c61078a2028df466a340a61894893a2d",
+    "helper_sha256": "6b872ec4ab8c0425f8d477d9e2ac63a21f01f8f0bfe69635cbf3420b796f49b1",
+    "cli_sha256": "ca28fe178b04fd99780267787f61b0e0ec3729d579fe237ff454c1a0353e8ef6",
+    "previous_readonly_sha256": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+    "hardware_accessed": false,
+    "scope": "Pinned inputs only; full verifier runs in an explicit live stage."
+  },
+  "prior_sram": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\sram_20261027T225302_793263Z\\stage_report.json",
+    "sha256": "760ff62cffb413022bad9dd1d4e5171435c07f16edfd9312e40c7043314e5457",
+    "original_root_actual_p_wait": 1,
+    "completion_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\sram_completion_20261027T225728_816894Z\\stage_report.json",
+    "completion_sha256": "a9a9c60a13a3d89d0a3f9bb17f2e8b6dd61f89bcfacee978a1fa6cf0b1da4d55",
+    "completion_root": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\root_completion_20261027T225728_627518Z\\exit.json",
+    "completion_root_sha256": "1c03c7e080128275a1d9df206cffb6ad7643657b3f16cac6f2c58a12515c0fb4",
+    "completion_actual_p_wait": 0,
+    "default_GET_sha256": "5a1a5b580b8110aa126312de90fd8e4d50997c2fe3b829de54932d46cbe7d61a",
+    "health_sha256": "5ab170f0d0d39b70a0548f3ea72fa78f18f598a9ff6928f06a041a83ad9775ea"
+  },
+  "programmer": {
+    "vid": 1027,
+    "pid": 24596,
+    "serial": "6",
+    "device": "COM22"
+  },
+  "cable": {
+    "name": "Gowin USB Cable(FT2CH)",
+    "index": 1,
+    "location": 292
+  }
+}

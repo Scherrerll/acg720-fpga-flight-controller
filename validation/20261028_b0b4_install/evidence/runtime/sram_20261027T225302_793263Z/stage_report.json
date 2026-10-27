@@ -1,0 +1,93 @@
+{
+  "schema": "b0b4.bench-stage.v1",
+  "stage": "sram",
+  "passed": false,
+  "started_utc": "2026-10-27T22:53:02.793523+00:00",
+  "script_sha256": "24e10d00c7321ba9141c86812df05a6c9a0753404124c861c24879fe5ff01a67",
+  "image_sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+  "manifest_sha256": "c8e03412ff44cbe929f5d8ce6fed6eb3c61078a2028df466a340a61894893a2d",
+  "hardware_accessed": true,
+  "sram_write_attempted": true,
+  "sram_written": true,
+  "flash_written": false,
+  "physical_cold_boot_verified": false,
+  "flight_ready": false,
+  "automatic_recovery": false,
+  "operations": [
+    {
+      "operation": 0,
+      "label": "01_identity_before",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "0"
+      ]
+    },
+    {
+      "operation": 2,
+      "label": "02_B0B4_sram",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "2",
+        "--fsFile",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\release\\acg720_ano_port.fs"
+      ]
+    },
+    {
+      "operation": 0,
+      "label": "04_identity_B0B4",
+      "args": [
+        "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+        "--device",
+        "GW5AT-60B",
+        "--cable-index",
+        "1",
+        "--location",
+        "292",
+        "--run",
+        "0"
+      ]
+    }
+  ],
+  "current_operator_bench_assertion": true,
+  "updated_utc": "2026-10-27T22:53:27.119001+00:00",
+  "pins": {
+    "passed": true,
+    "image_sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+    "manifest_sha256": "c8e03412ff44cbe929f5d8ce6fed6eb3c61078a2028df466a340a61894893a2d",
+    "helper_sha256": "6b872ec4ab8c0425f8d477d9e2ac63a21f01f8f0bfe69635cbf3420b796f49b1",
+    "cli_sha256": "ca28fe178b04fd99780267787f61b0e0ec3729d579fe237ff454c1a0353e8ef6",
+    "previous_readonly_sha256": "a5b893b25a5e510348c8a4ac75c914b8a14473bbfb054b4cc4040b86800f64dd",
+    "hardware_accessed": false,
+    "scope": "Pinned inputs only; full verifier runs in an explicit live stage."
+  },
+  "programmer": {
+    "vid": 1027,
+    "pid": 24596,
+    "serial": "6",
+    "device": "COM22"
+  },
+  "cable": {
+    "name": "Gowin USB Cable(FT2CH)",
+    "index": 1,
+    "location": 292
+  },
+  "initial_identity": [
+    83995,
+    45235
+  ],
+  "error": "ValueError: Same-group telemetry required"
+}

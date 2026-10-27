@@ -1,0 +1,17 @@
+{
+  "schema": "b0b4.observed-tool-exit.v1",
+  "source": "Completed functions.write_stdin result, exec session 79869, chunk c11b96",
+  "process_kind": "PowerShell wrapper exits with the invoked Python LASTEXITCODE",
+  "normal_wait_return": true,
+  "actual_p_wait": 1,
+  "tool_exit_code": 1,
+  "tool_session_id": 79869,
+  "tool_chunk_id": "c11b96",
+  "original_stage_report": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/b0b4_install_20261028/sram_20261027T225302_793263Z/stage_report.json",
+  "original_stage_report_sha256": "760ff62cffb413022bad9dd1d4e5171435c07f16edfd9312e40c7043314e5457",
+  "observed_error": "ValueError: Same-group telemetry required",
+  "root_output_saved_in_chat_transcript": true,
+  "directly_captured_root_stdout_file": false,
+  "hardware_repeated": false,
+  "observed_recorded_utc": "2026-10-27T22:55:30.2381766Z"
+}

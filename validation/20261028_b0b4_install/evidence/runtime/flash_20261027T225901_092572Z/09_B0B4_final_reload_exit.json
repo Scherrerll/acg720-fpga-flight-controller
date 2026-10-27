@@ -1,0 +1,22 @@
+{
+  "args": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+    "--device",
+    "GW5AT-60B",
+    "--cable-index",
+    "1",
+    "--location",
+    "292",
+    "--run",
+    "1"
+  ],
+  "started_utc": "2026-10-27T23:00:27.702491+00:00",
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "timeout": false,
+  "pid": 12644,
+  "elapsed_s": 0.399,
+  "stdout_sha256": "3f85a08718e867c0a2be6194f732e3518dac75f7f6fd2ec2ac7ccb27a7531aac",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "finished_utc": "2026-10-27T23:00:28.110025+00:00"
+}

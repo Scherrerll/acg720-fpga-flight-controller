@@ -1,0 +1,26 @@
+{
+  "args": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+    "--device",
+    "GW5AT-60B",
+    "--cable-index",
+    "1",
+    "--location",
+    "292",
+    "--run",
+    "54",
+    "--spiaddr",
+    "0x000000",
+    "--fsFile",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\release\\acg720_ano_port.fs"
+  ],
+  "started_utc": "2026-10-27T22:59:10.545186+00:00",
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "timeout": false,
+  "pid": 21532,
+  "elapsed_s": 50.998,
+  "stdout_sha256": "fe75f55e25a3e5e4bf357a5dc702c4828df0d8359735dc6d02af25e615ed4133",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "finished_utc": "2026-10-27T23:00:01.550273+00:00"
+}

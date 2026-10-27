@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\validation\\20261028_b0b4_install\\scripts\\sram_completion_b0b4.py",
+    "--execute",
+    "--bench-confirmed-current",
+    "--original-stage",
+    "out/b0b4_install_20261028/sram_20261027T225302_793263Z/stage_report.json",
+    "--original-root-receipt",
+    "out/b0b4_install_20261028/sram_original_root_observed_exit.json"
+  ],
+  "script_sha256": "522e7e0bbe6780c44877512338b45f7697788274b1511953ea88ff61f96628f8",
+  "launcher_sha256": "ff057c5dbd699121da52dc64b9fb997e6decfe7078d2428496a4dc4493261ba8",
+  "started_utc": "2026-10-27T22:57:28.628103+00:00",
+  "normal_wait_return": false,
+  "actual_p_wait": null,
+  "pid": 8040
+}

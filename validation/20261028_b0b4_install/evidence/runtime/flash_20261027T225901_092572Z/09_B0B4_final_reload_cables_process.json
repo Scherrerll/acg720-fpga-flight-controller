@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\Programmer\\bin\\programmer_cli.exe",
+    "--scan-cables",
+    "F"
+  ],
+  "started_utc": "2026-10-27T23:00:27.371930+00:00",
+  "normal_wait_return": false,
+  "actual_p_wait": null,
+  "timeout": false,
+  "pid": 44936
+}

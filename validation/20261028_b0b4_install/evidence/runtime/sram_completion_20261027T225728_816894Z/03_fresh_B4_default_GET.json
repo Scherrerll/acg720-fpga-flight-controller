@@ -1,0 +1,31 @@
+{
+  "enabled": true,
+  "connected": true,
+  "source": "SiK",
+  "baud": 115200,
+  "epoch": 2,
+  "supported": true,
+  "busy": false,
+  "phase": "idle",
+  "operation_id": 3,
+  "active": {
+    "p_text": "0.1000",
+    "i_text": "0.0350",
+    "p_wire": 1000,
+    "i_wire": 350,
+    "generation": 0,
+    "build": "0000B0B4",
+    "age_ms": 142.5
+  },
+  "result": {
+    "code": "queried",
+    "message": "Active parameters queried; valid for this power cycle only.",
+    "operation_id": 3,
+    "sequence": 2139846698
+  },
+  "can_query": true,
+  "can_set": true,
+  "block_reason": "",
+  "persistence": "本次上电有效，重启恢复 P=0.1000 / I=0.0350",
+  "scope": "共享 XY 速度外环；FPGA 是最终写入裁决者"
+}

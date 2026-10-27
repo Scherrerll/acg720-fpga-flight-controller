@@ -1,0 +1,13 @@
+{
+  "args": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+    "--external-build"
+  ],
+  "started_utc": "2026-10-27T22:53:02.935940+00:00",
+  "normal_wait_return": false,
+  "actual_p_wait": null,
+  "timeout": false,
+  "pid": 43632
+}

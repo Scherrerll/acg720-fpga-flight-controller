@@ -1,0 +1,17 @@
+{
+  "args": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+    "--external-build"
+  ],
+  "started_utc": "2026-10-27T22:59:01.130009+00:00",
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "timeout": false,
+  "pid": 16676,
+  "elapsed_s": 6.845,
+  "stdout_sha256": "8a5b18648bea089d4feb410804d10ca9736e47471ef483c0bbd2b43946a77336",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "finished_utc": "2026-10-27T22:59:07.977333+00:00"
+}
