@@ -1,0 +1,10 @@
+{
+  "observed_utc": "2026-10-27T04:49:52.828208+00:00",
+  "observation": "exec_command returned exit_code1 before any child Popen or source mutation",
+  "exception": "KeyError: passed; independent review actual field is approved_lifecycle_fix",
+  "executed_script_sha256": "2af1c10ff3ab5298dd1c2b7cb8a77ebcf64058c0018250e2c59d3766cf97a5c2",
+  "preserved_script": "analysis\\20261026_z_aw_fix\\build\\export_selected_v22_once.precheck01.py",
+  "export_child_started": false,
+  "source_promoted": false,
+  "qualification_created": false
+}

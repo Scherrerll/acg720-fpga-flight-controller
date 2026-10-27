@@ -1,0 +1,185 @@
+{
+  "sealed_utc": "2026-10-27T00:09:15.457602+00:00",
+  "profile": "physical_p3r0_01",
+  "classification": "route_failure",
+  "vendor_actual_p_wait": 1,
+  "runner_actual_p_wait": 1,
+  "passed": false,
+  "source55_unchanged": true,
+  "vg_sha256": "bb2d4a6d20184a0c38739b550d2fc04adf9fe9ce219106064a2051edbc26274f",
+  "donor_evidence_unchanged": true,
+  "source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+    "core/height_loss_fallback.v": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+    "position/pose_time_adapter.v": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "unrouted_reports": [
+    813
+  ],
+  "criteria": null,
+  "fmax_mhz": null,
+  "checks": null,
+  "setup_endpoints": null,
+  "hold_endpoints": null,
+  "failure": {
+    "passed": false,
+    "exception": "AssertionError(('physical', 'nonzero real process exit', 1, 'C:\\\\Users\\\\ScherrerL\\\\Desktop\\\\apple\\\\github_publish\\\\acg720-fpga-flight-controller\\\\out\\\\z_aw_fix_20261026\\\\compact_aw_v20\\\\physical_p3r0_01\\\\verification\\\\physical.log'))",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\run_physical.py\", line 91, in <module>\n    try:main()\n        ~~~~^^\n  File \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\run_physical.py\", line 80, in main\n    helper.run_phase('physical',[str(helper.GOWIN),str(execution)],SOURCE,expected)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\build_candidate.py\", line 61, in run_phase\n    assert code == 0, (name, 'nonzero real process exit', code, str(log))\n           ^^^^^^^^^\nAssertionError: ('physical', 'nonzero real process exit', 1, 'C:\\\\Users\\\\ScherrerL\\\\Desktop\\\\apple\\\\github_publish\\\\acg720-fpga-flight-controller\\\\out\\\\z_aw_fix_20261026\\\\compact_aw_v20\\\\physical_p3r0_01\\\\verification\\\\physical.log')\n"
+  },
+  "artifacts": {
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\runner_exit.json": {
+      "sha256": "edf27e5fa810d61c0bc7e7146fb34288b71f5beed933c33424e30848201be3aa",
+      "bytes": 1074,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\runner_exit.json",
+      "preserved_sha256": "edf27e5fa810d61c0bc7e7146fb34288b71f5beed933c33424e30848201be3aa"
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\runner_process.json": {
+      "sha256": "bfcecad03f18f4cba195972b486e3c2f389db71942820a1764d2d4666c5754de",
+      "bytes": 792,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\runner_process.json",
+      "preserved_sha256": "bfcecad03f18f4cba195972b486e3c2f389db71942820a1764d2d4666c5754de"
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\runner.stdout.log": {
+      "sha256": "41039ab4b6b0b8b6bf3226d34c0b547e27170dd05f16d496de85b0d26a13b99d",
+      "bytes": 211,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\runner.stdout.log.gz",
+      "preserved_sha256": "972c62f53eab3f20a1c9091fba17d60a0d538aa2f9930df66cd66f4d15583732"
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\runner.stderr.log": {
+      "sha256": "51b28cefec1eadf33c07585e0842f7c4e62cd1c29769a5eca7ae8deaf211f953",
+      "bytes": 1058,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\runner.stderr.log.gz",
+      "preserved_sha256": "2e0ee4d23929cffbe0c50a1f7697f100b3ae33ad9a4b90584e2fa0dabc22a924"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\physical_exit.json": {
+      "sha256": "85d7cf789b7db8f61cff590a3e6eec1a9a9af43f2b7f099a7e0bed409b56fbfe",
+      "bytes": 1045,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\physical_exit.json",
+      "preserved_sha256": "85d7cf789b7db8f61cff590a3e6eec1a9a9af43f2b7f099a7e0bed409b56fbfe"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\physical_process.json": {
+      "sha256": "0987024260f460f4af141a69507743675cf85669e57f1be4baa59c4859856fc8",
+      "bytes": 854,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\physical_process.json",
+      "preserved_sha256": "0987024260f460f4af141a69507743675cf85669e57f1be4baa59c4859856fc8"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\physical_input.json": {
+      "sha256": "6d17ca5de546f73f450b1ec6e5c9c19625f510b88ca9338f9894e231c5b9a8f6",
+      "bytes": 6125,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\physical_input.json",
+      "preserved_sha256": "6d17ca5de546f73f450b1ec6e5c9c19625f510b88ca9338f9894e231c5b9a8f6"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\build_input.json": {
+      "sha256": "8790f1c930dca1a17a3c30cee7564a0f4295cb28dc9f6a2dbc111e6440616ce7",
+      "bytes": 18379,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\build_input.json",
+      "preserved_sha256": "8790f1c930dca1a17a3c30cee7564a0f4295cb28dc9f6a2dbc111e6440616ce7"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\physical.log": {
+      "sha256": "828b6076d0f343057a10e7a03f2db433bdbd61a8d264166864d5c802687bece4",
+      "bytes": 2196,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\physical.log.gz",
+      "preserved_sha256": "9fe130674026673861fced200fb7d4bf718dae751033a7aecad968e2986a71f7"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\build_failure.json": {
+      "sha256": "3518375f8eb136376e89f4c48bf21612b665e6f34b497e269797f49b2ed02747",
+      "bytes": 1441,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\build_failure.json",
+      "preserved_sha256": "3518375f8eb136376e89f4c48bf21612b665e6f34b497e269797f49b2ed02747"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\project_serialization_check.json": {
+      "sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a",
+      "bytes": 185,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\project_serialization_check.json",
+      "preserved_sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\donor_evidence_binding.json": {
+      "sha256": "823982a23f5c3debc32c159eeae5f000232699c9ef1bd7a84a04c59ffd4e9ab7",
+      "bytes": 205974,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\donor_evidence_binding.json",
+      "preserved_sha256": "823982a23f5c3debc32c159eeae5f000232699c9ef1bd7a84a04c59ffd4e9ab7"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\verification\\functional_evidence_binding.json": {
+      "sha256": "f362a6c298f0e7a88e20d5a494d4cb3f99b7010367a90415aa5e6d7eb42127a5",
+      "bytes": 1747,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\functional_evidence_binding.json",
+      "preserved_sha256": "f362a6c298f0e7a88e20d5a494d4cb3f99b7010367a90415aa5e6d7eb42127a5"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\physical.tcl": {
+      "sha256": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f",
+      "bytes": 463,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\physical.tcl",
+      "preserved_sha256": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\source\\physical.gprj": {
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+      "bytes": 434,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\physical.gprj",
+      "preserved_sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.rpt.txt": {
+      "sha256": "4829dee65d51d43a3951cbd995c5ffd0bb89611702a648f4653ae8b782c3ff64",
+      "bytes": 99906,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\acg720_ano_port.rpt.txt.gz",
+      "preserved_sha256": "aae3a641c71e39486162dfb129050fcbe76e62ecd6d5cbf2eae880a719a886b7"
+    },
+    "out\\z_aw_fix_20261026\\compact_aw_v20\\physical_p3r0_01\\source\\impl\\pnr\\device.cfg": {
+      "sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+      "bytes": 600,
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\terminal_receipts\\device.cfg",
+      "preserved_sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187"
+    }
+  }
+}

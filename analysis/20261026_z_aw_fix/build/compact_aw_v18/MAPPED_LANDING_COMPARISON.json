@@ -1,0 +1,294 @@
+{
+  "scope": "Actual mapped graph overapproximate depth and loads only, not timing or routability. Original20ns/50MHz physical gates remain mandatory.",
+  "results": {
+    "v4": {
+      "vg_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+      "FF_count": 27766,
+      "selected_cells": [
+        {
+          "cell": "previous_pose_valid_s0",
+          "primitive": "DFFRE",
+          "output": "Q",
+          "loads": 21
+        },
+        {
+          "cell": "core/fallback_control/height_fallback_active_s",
+          "primitive": "LUT3",
+          "output": "F",
+          "loads": 115
+        },
+        {
+          "cell": "core/fallback_control/height_fallback_active_s0",
+          "primitive": "LUT4",
+          "output": "F",
+          "loads": 45
+        }
+      ],
+      "selected_paths": [
+        {
+          "source": "mtf/metric/vy_x100_28_s0",
+          "target": "staged_telemetry.extension_q_814_s0/D",
+          "missing_original_instance_name": true
+        },
+        {
+          "source": "mtf/metric/velocity_range_ok_s0",
+          "target": "staged_telemetry.extension_q_814_s0/D",
+          "missing_original_instance_name": true
+        },
+        {
+          "source": "acc_time/output_az_3_s0",
+          "target": "core/flight_state/flying_ms_3_s0/D",
+          "trace": {
+            "depth": 19,
+            "cells": [
+              "native_navigation/nav_xy_ready_s111",
+              "native_navigation/nav_xy_ready_s91",
+              "native_navigation/nav_xy_ready_s72",
+              "native_navigation/nav_xy_ready_s44",
+              "native_navigation/nav_xy_ready_s18",
+              "native_navigation/nav_xy_ready_s7",
+              "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s17",
+              "native_navigation/nav_vertical_ready_s0",
+              "native_navigation/core_height_state_tail_kept_s1",
+              "core_vertical_available_s3",
+              "core/fallback_control/height_fallback_active_s0",
+              "core/fallback_control/height_fallback_active_s",
+              "core/selected_throttle_4_s0",
+              "core/flight_state/n740_s10",
+              "core/flight_state/n740_s7",
+              "core/flight_state/n740_s5",
+              "core/flight_state/n740_s2",
+              "core/flight_state/n740_s0",
+              "core/flight_state/n56_s3"
+            ]
+          }
+        },
+        {
+          "source": "acc_time/output_az_3_s0",
+          "target": "core/flight_state/landing_ms_3_s0/D",
+          "trace": {
+            "depth": 19,
+            "cells": [
+              "native_navigation/nav_xy_ready_s111",
+              "native_navigation/nav_xy_ready_s91",
+              "native_navigation/nav_xy_ready_s72",
+              "native_navigation/nav_xy_ready_s44",
+              "native_navigation/nav_xy_ready_s18",
+              "native_navigation/nav_xy_ready_s7",
+              "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s17",
+              "native_navigation/nav_vertical_ready_s0",
+              "native_navigation/core_height_state_tail_kept_s1",
+              "core_vertical_available_s3",
+              "core/fallback_control/height_fallback_active_s0",
+              "core/fallback_control/height_fallback_active_s",
+              "core/selected_throttle_4_s0",
+              "core/flight_state/n740_s10",
+              "core/flight_state/n740_s7",
+              "core/flight_state/n740_s5",
+              "core/flight_state/n740_s2",
+              "core/flight_state/n190_s2",
+              "core/flight_state/n187_s3"
+            ]
+          }
+        },
+        {
+          "source": "previous_pose_valid_s0",
+          "target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "trace": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n595_s7"
+            ]
+          }
+        }
+      ]
+    },
+    "v18": {
+      "vg_sha256": "64e76270fe35298e698bfe5b14b9d9e267469f746d3c2382a8a15284c5942d4f",
+      "FF_count": 27748,
+      "selected_cells": [
+        {
+          "cell": "previous_pose_valid_s1",
+          "primitive": "DFFRE",
+          "output": "Q",
+          "loads": 10
+        },
+        {
+          "cell": "previous_pose_valid_s2",
+          "primitive": "DFFRE",
+          "output": "Q",
+          "loads": 9
+        },
+        {
+          "cell": "core/fallback_control/active_fanout_limited_s1",
+          "primitive": "LUT3",
+          "output": "F",
+          "loads": 10
+        },
+        {
+          "cell": "core/fallback_control/active_fanout_limited_s2",
+          "primitive": "LUT4",
+          "output": "F",
+          "loads": 34
+        },
+        {
+          "cell": "core/fallback_control/active_fanout_limited_s3",
+          "primitive": "LUT3",
+          "output": "F",
+          "loads": 40
+        },
+        {
+          "cell": "core/fallback_control/active_fanout_limited_s4",
+          "primitive": "LUT3",
+          "output": "F",
+          "loads": 29
+        },
+        {
+          "cell": "core/fallback_control/active_fanout_limited_s5",
+          "primitive": "LUT3",
+          "output": "F",
+          "loads": 50
+        },
+        {
+          "cell": "core/fallback_control/active_fanout_limited_s6",
+          "primitive": "LUT3",
+          "output": "F",
+          "loads": 50
+        },
+        {
+          "cell": "mtf/metric/velocity_range_ok_s0",
+          "primitive": "DFFSE",
+          "output": "Q",
+          "loads": 3
+        }
+      ],
+      "selected_paths": [
+        {
+          "source": "mtf/metric/vy_x100_28_s0",
+          "target": "staged_telemetry.extension_q_814_s0/D",
+          "missing_original_instance_name": true
+        },
+        {
+          "source": "mtf/metric/velocity_range_ok_s0",
+          "target": "staged_telemetry.extension_q_814_s0/D",
+          "missing_original_instance_name": true
+        },
+        {
+          "source": "acc_time/output_az_3_s0",
+          "target": "core/flight_state/flying_ms_3_s0/D",
+          "trace": {
+            "depth": 12,
+            "cells": [
+              "native_navigation/nav_xy_ready_s111",
+              "native_navigation/nav_xy_ready_s92",
+              "native_navigation/nav_xy_ready_s72",
+              "native_navigation/nav_xy_ready_s44",
+              "native_navigation/nav_xy_ready_s18",
+              "native_navigation/nav_xy_ready_s7",
+              "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s17",
+              "native_navigation/nav_vertical_ready_s0",
+              "native_navigation/core_height_state_tail_kept_s1",
+              "core_vertical_available_s3",
+              "core/core_body_860_s",
+              "core/flight_state/n57_s3"
+            ]
+          }
+        },
+        {
+          "source": "acc_time/output_az_3_s0",
+          "target": "core/flight_state/landing_ms_3_s0/D",
+          "missing_original_instance_name": true
+        },
+        {
+          "source": "previous_pose_valid_s0",
+          "target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "missing_original_instance_name": true
+        }
+      ]
+    }
+  },
+  "resources": {
+    "acg720_ano_port": {
+      "parent_v4_map2": {
+        "T_Register": 27766,
+        "T_Alu": 9544,
+        "T_Lut": 36213,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "local_fanout_map2": {
+        "T_Register": 27748,
+        "T_Alu": 9544,
+        "T_Lut": 36129,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "delta": {
+        "T_MULT12X12": 0,
+        "T_Alu": 0,
+        "T_Lut": -84,
+        "T_MULTALU27X18": 0,
+        "T_MULT27X36": 0,
+        "T_Register": -18,
+        "T_Bsram": 0
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "parent_v4_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4953,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "local_fanout_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4954,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_MULT12X12": 0,
+        "T_Alu": 0,
+        "T_Lut": 1,
+        "T_MULTALU27X18": 0,
+        "T_MULT27X36": 0,
+        "T_Register": 0
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "parent_v4_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "local_fanout_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "delta": {
+        "T_Register": 0,
+        "T_Alu": 0,
+        "T_Lut": 0
+      }
+    }
+  },
+  "resource_label_correction": "The inherited local_fanout_map2 key denotes v18: v15 pre-mux landing predicate plus active-driver syn_maxfan50 and previous_pose_valid syn_maxfan10 hints. Actual mapped drivers must be checked below."
+}

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+    "-g2012",
+    "-s",
+    "metric_tb",
+    "-o",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\vy_proofs\\attempt01\\metric.vvp",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\vy_proofs\\attempt01\\old_reader.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\vy_proofs\\attempt01\\new_reader.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\vy_proofs\\attempt01\\metric_tb.v"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\vy_proofs\\attempt01",
+  "started_utc": "2026-10-26T22:00:26.970654+00:00",
+  "parent_pid": 60124,
+  "pid": 63568,
+  "actual_child_p_wait": 0,
+  "normal_wait_return": true,
+  "elapsed_seconds": 0.11593799997353926,
+  "ended_utc": "2026-10-26T22:00:27.086614+00:00",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

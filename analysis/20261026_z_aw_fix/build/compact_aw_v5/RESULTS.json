@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "scope": "Unselected SYN-only backup, not a bitstream/STA/hardware qualification",
+  "source55_unchanged": true,
+  "actual_elaboration_p_wait": 0,
+  "actual_synthesis_p_wait": 0,
+  "freeze_manifest_sha256": "677dcfbdcc9fc448e3313b83cfef6f43729c521f738676d46cef2ad1a92a9b12",
+  "artifact_count": 78,
+  "artifact_bytes": 18156051,
+  "netlist_sha256": "2d670218e97041bb3d4cc7c67218f4bef12e5bf96261225b9b97203ce3b4a1c9",
+  "synthesis_summary_sha256": "8d5395423e6cb5f648d4ec0be0be775805ecdc4157586d3ce26a96d357887b6d",
+  "resource_comparison_sha256": "90ac07ee5ccafb38de7a97afb0d8cc494bda5e7841712e2d922a1345ba5553ec",
+  "strict_ff_clock_sha256": "6ce8fc21c4d88a798fe3e5de6d1688161719591054cec9c18d12f24438f04fda",
+  "gain_port_audit_sha256": "e11eddff2d35faf0d753a57e69da373367920fb48fc64fefee1a2d37deb6a6bd",
+  "resources": {
+    "acg720_ano_port": {
+      "baseline_v4_map2": {
+        "T_Register": 27766,
+        "T_Alu": 9544,
+        "T_Lut": 36213,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "candidate_v5_map2": {
+        "T_Register": 27725,
+        "T_Alu": 9461,
+        "T_Lut": 36150,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "delta": {
+        "T_MULTALU27X18": 0,
+        "T_MULT27X36": 0,
+        "T_Alu": -83,
+        "T_Register": -41,
+        "T_Bsram": 0,
+        "T_MULT12X12": 0,
+        "T_Lut": -63
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "baseline_v4_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4953,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "candidate_v5_map2": {
+        "T_Register": 3241,
+        "T_Alu": 1478,
+        "T_Lut": 4910,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_MULTALU27X18": 0,
+        "T_MULT27X36": 0,
+        "T_Alu": -83,
+        "T_Register": -41,
+        "T_MULT12X12": 0,
+        "T_Lut": -43
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "baseline_v4_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "candidate_v5_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 433
+      },
+      "delta": {
+        "T_Alu": 0,
+        "T_Register": 0,
+        "T_Lut": -4
+      }
+    }
+  },
+  "PNR_started": false
+}

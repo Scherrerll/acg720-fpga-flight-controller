@@ -1,0 +1,13 @@
+{
+  "actual_truth_child_wait": 1,
+  "cause": "Reviewer fixture incorrectly required exactly one passed= keyword in sealer AST; both manifest and print summary validly use passed. No status DUT failure or runtime execution. Correction permits one or more such outputs only when every value is the exact passed name.",
+  "artifacts": {
+    "test_terminal_diagnostics.py": "26a24525991a782a2b77aab4ca62c1ebb77259cb0c9f6be8b97f6594a2b1d047",
+    "terminal_diagnostics.py": "4b003923cd0c1f0e5d99d79b9e04f0b35320f6f484b253eaf261e4b1590f387f",
+    "seal_terminal.py": "8219db9546e4104a8668937f46eee3d46c88a5bd31ca4be939c2ce1037660419",
+    "physical_snapshot.py": "37beec2d3604bba470ab90a3ccfcb5cac903c0d270792e87bc57b1393ee63be6",
+    "DIAGNOSTIC_TRUTH_EXIT.json": "20070715c77494512f70bb5020fe73bb5745e80f558de018f8792eebf14a1b2e",
+    "diagnostic_truth.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "diagnostic_truth.stderr.log": "d7c42463145180afb621f9ff3772bb25dced641da70580dbd28e309b813a30df"
+  }
+}

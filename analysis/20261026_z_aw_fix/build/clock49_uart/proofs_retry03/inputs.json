@@ -1,0 +1,19 @@
+{
+  "scope": "Actual UART TX/RX components and ideal49/50MHz clock models only. No full aircraft clock integration or hardware. Nominal-host bit periods are independently8680.555556ns; TX425 bit width must be8650..8700ns, so retaining434 at49MHz fails that check.",
+  "input_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_working\\source\\core\\spi_uart_modules.v": "c3725268455388f13a294d376fb5c8f0c56a17e138757d4b0f6b8b8402aa38cf",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_working\\source\\telemetry_tx.v": "2e1baf8b647d9fd716337502f0423ffc0b597f058a7315b87a7def7f29f6057a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\canonical\\source\\xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_uart\\proofs_retry03\\old_tx.v": "ae9efea0cbfb042cfa18ffb0769f128c8f0e9f2f597c95ad5d1a243576914276",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_uart\\proofs_retry03\\tb.v": "741069f378f6f128fbccc45203bb4ae58461afcc60f43e4fbcb7bcf1c89d40e4",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_uart\\SOURCE_BINDING.json": "2a37155320927b2446a91bac5e0eadacd884081f60af3895cb0db5fb250d273b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\verify_clock49_uart_retry03.py": "67e903b6aea3826e1941485c0c6e0d2f4e93aab4a97864c1c011032c0faf70d7",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe": "803b8844af2cc8ed70b5f08b07ffa749901280e81339617ca3e72cbbb852bd2b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe": "e2f442f4d5aa76e55c85c3ff77e4446fbfdb9946b7cfe8a2dff87f275da17b62"
+  },
+  "no_DUT_force_or_preload": true,
+  "default50_TX_bytes": 256,
+  "clock49_loopback_bytes": 256,
+  "external_host_good_frames": 256,
+  "external_host_bad_stop_frames": 16
+}

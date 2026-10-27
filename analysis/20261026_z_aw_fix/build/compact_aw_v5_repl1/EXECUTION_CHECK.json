@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "Static actual launched execution checks; not terminal or qualification.",
+  "only_actual_tcl_delta": "set_option -replicate_resources 0 -> 1",
+  "actual_tcl_sha256": "2fcbe54f1ab25e2468380efcc88f39f49bb50ef2ce7d17b0b7f772304a4061fa",
+  "baseline_actual_tcl_sha256": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f",
+  "actual_physical_options": {
+    "place": 3,
+    "route": 0,
+    "map_option": 2,
+    "replicate_resources": 1,
+    "timing_driven": 1
+  },
+  "donor_synthesis_options": {
+    "map_option": 2,
+    "replicate_resources": 0
+  },
+  "exact_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "exact_donor_vg_sha256": "2d670218e97041bb3d4cc7c67218f4bef12e5bf96261225b9b97203ce3b4a1c9",
+  "executed_vg_sha256": "2d670218e97041bb3d4cc7c67218f4bef12e5bf96261225b9b97203ce3b4a1c9",
+  "physical_input_sha256": "91250976df025ce40d1a46495821c01f1fd3a7828b7840fa6afac04de113d09d",
+  "build_input_sha256": "8f364fe9e3d7abd7c757d50b4f981421df6195bfac63b4b50fd27dfeda7262b2",
+  "one_utf8_xml_declaration_three_file_project": true,
+  "source_build_tcl_unchanged": true
+}

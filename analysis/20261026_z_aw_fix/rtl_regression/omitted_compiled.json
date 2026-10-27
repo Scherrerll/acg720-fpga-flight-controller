@@ -1,0 +1,23 @@
+{
+  "scope": "Optional local rebuildable binaries, excluded from the retained-file manifest and upload.",
+  "files": [
+    {
+      "path": "regression.vvp",
+      "bytes": 757259,
+      "sha256": "d00fa4dba2a250a9ac07a15abbfc920172c09298e5e9e50996ee92c0c3881437",
+      "required_for_archive_verification": false
+    },
+    {
+      "path": "xy_i0_attempt02/corrected_xy_i0/simulation.vvp",
+      "bytes": 757595,
+      "sha256": "78bcb704e6992e13ac250f527720d2a54d4dde70f93085212220cf1610184684",
+      "required_for_archive_verification": false
+    },
+    {
+      "path": "xy_i0_attempt02/diagnose_original_cadence/simulation.vvp",
+      "bytes": 757607,
+      "sha256": "760e1e43a911fd1484e3204a90d6c35074048c1498840a5c84e82e40a2290c1c",
+      "required_for_archive_verification": false
+    }
+  ]
+}

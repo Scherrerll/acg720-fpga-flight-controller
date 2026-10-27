@@ -1,0 +1,20 @@
+predicate_compile actual_wait 0
+predicate_simulation actual_wait 0
+fusion_pre0_compile actual_wait 0
+fusion_pre0_simulation actual_wait 0
+expiry_pre0_age1_compile actual_wait 0
+expiry_pre0_age1_simulation actual_wait 0
+expiry_pre0_age31_compile actual_wait 0
+expiry_pre0_age31_simulation actual_wait 0
+expiry_pre0_age65536_compile actual_wait 0
+expiry_pre0_age65536_simulation actual_wait 0
+fusion_pre1_compile actual_wait 0
+fusion_pre1_simulation actual_wait 0
+expiry_pre1_age1_compile actual_wait 0
+expiry_pre1_age1_simulation actual_wait 0
+expiry_pre1_age31_compile actual_wait 0
+expiry_pre1_age31_simulation actual_wait 0
+expiry_pre1_age65536_compile actual_wait 0
+expiry_pre1_age65536_simulation actual_wait 0
+top13 actual_wait 0
+PASS v12 predicate/full fusion/expiry/top13; controller proofs reused by exact dependency hashes.

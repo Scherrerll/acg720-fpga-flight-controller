@@ -1,0 +1,23 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py",
+    "v22_p3",
+    "--independent-review-sha256",
+    "dafa8ed37f1d3912dc2d8e988030645fa880ace0d79f26b56f2bf83f586f2117"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "started_utc": "2026-10-27T04:49:53.193393+00:00",
+  "supervisor_pid": 57956,
+  "runner_sha256": "4582fd3feaddb8d91c2bba2f8183990bb5a9652b63cf1e81dac526c61c7064d1",
+  "exporter_sha256": "cab893924c892327dc4168254064dfade00c2a4db3c19908dd34c5f58f6552f1",
+  "verifier_sha256": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf",
+  "lifecycle_review_sha256": "b14d71c4ee9bc33198ceeb9855e15b1638be08b8f38f59ea3597036ab6d2585f",
+  "lifecycle_seal_sha256": "676f0fda2eda9460dd6c6553ff622572f14f057f9a008789203f8caf8eebc2f1",
+  "stdin": "DEVNULL",
+  "create_no_window": true,
+  "pid": 64156
+}

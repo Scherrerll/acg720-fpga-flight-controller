@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\inspect_prepared_followup.py"
+  ],
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "pid": 47188,
+  "script_sha256": "2b7408fab748074b3ee3d9d8385ee751a3fc0d5d1f4c0cf18b1e60fb0b6a4141",
+  "stdout_sha256": "510f3221dbbef2bd91f1bce829f735a75dc8615b5d28e71c50dbafc584ca6a51",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

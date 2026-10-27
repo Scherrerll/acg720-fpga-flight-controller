@@ -1,0 +1,2 @@
+PASS diagnostic cycles=160001 public_bits_per_mode=720 modes=2 active=33118 inactive=33116 unknown=66237 held=22622 reset=2255
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs_retry02\tb.v:42: $finish called at 3200020000 (1ps)

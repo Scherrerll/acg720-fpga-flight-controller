@@ -1,0 +1,8 @@
+{
+  "actual_foreground_tool_exit_code": 1,
+  "scope": "Read-only static export inspection; no physical build or constraint application",
+  "failed_lookup": "native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s",
+  "cause": "Graph helper retains the leading Verilog escaped-identifier marker in generate-block names. Vendor CST emits the semantic identifier without that lexical marker.",
+  "correction": "Strip exactly one leading escape marker per hierarchy segment, reject normalization collisions, retain original vendor CST lines unchanged. Do not infer generated-number renames.",
+  "old_export_bytes_preserved": true
+}

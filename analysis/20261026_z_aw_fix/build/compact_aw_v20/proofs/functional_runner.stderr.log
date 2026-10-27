@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v20\run_proofs.py", line 42, in <module>
+    run('integration_compile',[str(IV),'-g2012','-s','guard_integration_tb','-I',str(S),'-o',str(D/'integration.vvp'),str(tb),*map(str,files),str(primitive)])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v20\run_proofs.py", line 33, in run
+    assert code==0 and not j.get('terminated_after_timeout'),(name,code)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('integration_compile', 1)

@@ -1,0 +1,6 @@
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v21\proofs\top_before.v:235: warning: Anachronistic use of named begin/end to surround generate schemes.
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v21\canonical\source\acg720_ano_port.v:235: warning: Anachronistic use of named begin/end to surround generate schemes.
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v21\canonical\source\acg720_ano_port.v:334: error: 'nav_control_handoff' has already been declared in this scope.
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v21\proofs\top_before.v:333:      : It was declared here as a module.
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v21\canonical\source\acg720_ano_port.v:339: Module nav_control_handoff was already declared here: C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v21\proofs\top_before.v:333
+

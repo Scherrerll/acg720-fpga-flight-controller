@@ -1,0 +1,19 @@
+{
+  "stage": "physical",
+  "command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v13_map1\\physical_p3r0_01\\physical.tcl"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v13_map1\\physical_p3r0_01\\source",
+  "started_utc": "2026-10-26T17:40:37.891406+00:00",
+  "stdin": "DEVNULL",
+  "create_no_window": true,
+  "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v13_map1\\physical_p3r0_01\\verification\\physical.log",
+  "runner_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "parent_pid": 44440,
+  "pid": 2780,
+  "ended_utc": "2026-10-26T18:23:43.023988+00:00",
+  "actual_p_wait": 1,
+  "normal_wait_return": true,
+  "log_sha256": "ea06e5295b1d8ac12bdc77ac56b1d087c10fb75546a95129305446fe7e1fd842"
+}

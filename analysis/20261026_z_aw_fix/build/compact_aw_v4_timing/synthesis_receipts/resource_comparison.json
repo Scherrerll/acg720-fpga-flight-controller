@@ -1,0 +1,81 @@
+{
+  "scope": "Actual map2 vs map2 resources only; no route/STA claim.",
+  "baseline_v4_xml_sha256": "a322aac69685ef1eb12a6e6421e8551147a0f1c8da670db816c110f92707ee20",
+  "candidate_v4_timing_xml_sha256": "f2fbcb66929619ad80a1f974eb5f0d0e933010054d7f19980d8ec7279e2dee1c",
+  "reference_v4_map2_build_input_sha256": "7a965f73a5fe35ab5cbcc22a017a2fb768cd5eca92d65ca85a0dc91310679ebb",
+  "candidate_v4_timing_vg_sha256": "f7a3acad9b1630dc7702bdff55a47bab6a766ef3415c8932d8be84a9962e2f00",
+  "resources": {
+    "acg720_ano_port": {
+      "baseline_v4_map2": {
+        "T_Register": 27766,
+        "T_Alu": 9544,
+        "T_Lut": 36213,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "candidate_v4_timing_map2": {
+        "T_Register": 27847,
+        "T_Alu": 9550,
+        "T_Lut": 40879,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "delta": {
+        "T_Register": 81,
+        "T_MULT27X36": 0,
+        "T_MULTALU27X18": 0,
+        "T_Bsram": 0,
+        "T_Lut": 4666,
+        "T_Alu": 6,
+        "T_MULT12X12": 0
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "baseline_v4_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4953,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "candidate_v4_timing_map2": {
+        "T_Register": 3281,
+        "T_Alu": 1559,
+        "T_Lut": 5986,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_Register": -1,
+        "T_MULT27X36": 0,
+        "T_MULTALU27X18": 0,
+        "T_Lut": 1033,
+        "T_Alu": -2,
+        "T_MULT12X12": 0
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "baseline_v4_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "candidate_v4_timing_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 514
+      },
+      "delta": {
+        "T_Register": 0,
+        "T_Alu": 0,
+        "T_Lut": 77
+      }
+    }
+  }
+}

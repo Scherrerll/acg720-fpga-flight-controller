@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-u",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v9\\proofs_retry02\\boundary\\run.py",
+    "--expected-hold-sha256",
+    "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642"
+  ],
+  "started_utc": "2026-10-26T10:51:50.043167+00:00",
+  "pid": 41300,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-26T10:52:33.844144+00:00",
+  "stdout_sha256": "bfbd875f5ea083fa716afa0bb3fd84d657f768adb95dfb85e2e43caec67148b3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

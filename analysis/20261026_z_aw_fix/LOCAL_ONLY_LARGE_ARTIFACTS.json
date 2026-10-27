@@ -1,0 +1,42 @@
+{
+  "recorded_utc": "2026-10-26T12:50:22.632051+00:00",
+  "scope": "Existing failed/unqualified physical PR and FS in terminal receipts only; no deletion or byte changes. Source/log/TR/actual exits/manifests are curated for repository review. A future qualified FS is exported separately and explicitly included.",
+  "files": {
+    "analysis/20261026_z_aw_fix/build/compact_aw_v4_p3mf60_followup/physical_p3r0_mf60_01/terminal_receipts/acg720_ano_port.fs": {
+      "bytes": 17456627,
+      "sha256": "02f04a977ba1ee71f06ea4a004dc69e4b0b53c3a761f9a0181ee03b9c6a379a6",
+      "kept_local": true,
+      "uploaded_by_this_index": false
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v4_p3mf60_followup/physical_p3r0_mf60_01/terminal_receipts/acg720_ano_port.pr": {
+      "bytes": 125634282,
+      "sha256": "9806f88c774b820d50f033ae9797e8b43a355c1e88734894563993865a6db152",
+      "kept_local": true,
+      "uploaded_by_this_index": false
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/terminal_receipts/acg720_ano_port.fs": {
+      "bytes": 17456635,
+      "sha256": "f2d66602e8b93a0320a0323f1c28c7bf420e9a0a01d7ed156b2c59737b1d5b6f",
+      "kept_local": true,
+      "uploaded_by_this_index": false
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/terminal_receipts/acg720_ano_port.pr": {
+      "bytes": 125852158,
+      "sha256": "0d945763aaca00c47934171ea2159ad7b3263ff5a4f950726eb2723529fda42a",
+      "kept_local": true,
+      "uploaded_by_this_index": false
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/terminal_receipts/acg720_ano_port.fs": {
+      "bytes": 17456683,
+      "sha256": "fdebf55c3536176092b5f111835e178cd4370427e2b057fb733356d58d4eedfc",
+      "kept_local": true,
+      "uploaded_by_this_index": false
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/terminal_receipts/acg720_ano_port.pr": {
+      "bytes": 125868552,
+      "sha256": "0da495083d1730d651f7644fc6b11da7eb4d1a4bd47d9a05272250525dd03f97",
+      "kept_local": true,
+      "uploaded_by_this_index": false
+    }
+  }
+}

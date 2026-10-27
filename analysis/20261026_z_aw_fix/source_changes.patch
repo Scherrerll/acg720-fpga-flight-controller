@@ -1,0 +1,122 @@
+--- B0B3/build.tcl
++++ B0B4/build.tcl
+@@ -1,8 +1,8 @@
+ open_project acg720_ano_port.gprj
+ set_option -top_module acg720_ano_port
+ set_option -output_base_name acg720_ano_port
+-set_option -user_code 0000B0B3
+-set_option -place_option 2
++set_option -user_code 0000B0B4
++set_option -place_option 3
+ set_option -route_option 0
+ set_option -timing_driven 1
+ set_option -replicate_resources 0
+--- B0B3/position/mtf_xyz_hold_control.v
++++ B0B4/position/mtf_xyz_hold_control.v
+@@ -113,10 +113,24 @@
+  reg signed [26:0] saved_ix=0,saved_iy=0;
+  reg signed [32:0] saved_afx=0,saved_afy=0;
+  reg signed [33-1:0] iz_store=0;
++ // Conditional Z integration uses the same final 0..850 motor-unit range
++ // as the collective output. Keep the candidate private until the P term
++ // and updated bias are known; cancellation cannot commit a partial step.
++ reg signed [32:0] candidate_iz_store=0,p_bias_store=0;
++ reg signed [32:0] candidate_collective_store=0,current_collective_store=0;
++ reg candidate_i_up=0,candidate_i_down=0;
++ wire signed [63:0] candidate_iz={{31{candidate_iz_store[32]}},candidate_iz_store};
++ wire signed [63:0] p_bias={{31{p_bias_store[32]}},p_bias_store};
++ wire signed [63:0] candidate_collective={{31{candidate_collective_store[32]}},candidate_collective_store};
++ wire signed [63:0] current_collective={{31{current_collective_store[32]}},current_collective_store};
++ wire reject_z_i=(candidate_collective>64'sd55705600 && candidate_i_up) ||
++                 (candidate_collective<0 && candidate_i_down);
++ wire signed [63:0] selected_z_i=reject_z_i ? iz:candidate_iz;
++ wire signed [63:0] selected_z_collective=reject_z_i ? current_collective:candidate_collective;
+  reg signed [33-1:0] bias_store=0;
+- // Bias does not change between state53 and the state22 commit. Schedule
+- // both signed64 rails during the existing shared-math wait, preserving
+- // the complete arithmetic, state22 commit edge, and live safety masks.
++ // Capture the original signed64 candidate rails in the shared-math wait.
++ // State22 stages the candidate; state67 commits only after the final
++ // P+bias+I saturation test. Live safety masks can cancel either phase.
+  reg signed [63:0] iz_lower_q=0,iz_upper_q=0;
+  reg signed [33-1:0] afx_store=0;
+  reg signed [33-1:0] afy_store=0;
+@@ -204,7 +218,7 @@
+  // callback on the same edge as the bank commits a new pair.
+  assign parameter_boundary=state==0 && cancel;
+  // Capture the whole pair once per callback, never between axes.
+- reg [15:0] work_p=500,work_i=0;
++ reg [15:0] work_p=1000,work_i=350;
+  always @(posedge clk) if(state==0)begin
+   work_p<=xy_p_value;work_i<=xy_i_value;
+   saved_ix<=ix_store;saved_iy<=iy_store;
+@@ -281,7 +295,7 @@
+    state<=0;tracking<=0;xy_tracking<=0;command_seen<=0;height_command_seen<=0;blocked<=0;xy_blocked<=0;
+    prepare<=0;xy_prepare<=0;height_due<=0;position_due<=0;work_xy<=0;command_age<=32'hffffffff;height_command_age<=32'hffffffff;fault_reason<=0;
+    target_x<=0;target_y<=0;height_feedback_old_store<=keep64(0);
+-   ix_store<=keep64(0);iy_store<=keep64(0);iz_store<=keep64(0);bias_store<=keep64(0);iz_lower_q<=0;iz_upper_q<=0;afx_store<=keep64(0);afy_store<=keep64(0);afz_store<=keep64(0);vsz_store<=keep64(0);target_z_q16_store<=keep64(0);
++   ix_store<=keep64(0);iy_store<=keep64(0);iz_store<=keep64(0);bias_store<=keep64(0);iz_lower_q<=0;iz_upper_q<=0;candidate_iz_store<=0;p_bias_store<=0;candidate_collective_store<=0;current_collective_store<=0;candidate_i_up<=0;candidate_i_down<=0;afx_store<=keep64(0);afy_store<=keep64(0);afz_store<=keep64(0);vsz_store<=keep64(0);target_z_q16_store<=keep64(0);
+    roll_target<=0;pitch_target<=0;throttle_delta<=0;collective_target_us<=1000;reason<=1;height_reason<=1;requested_climb_mmps<=0;target_height_mm<=0;
+   end else begin
+    if(command_age!=32'hffffffff)command_age<=command_age+1'b1;
+@@ -291,7 +305,7 @@
+    if(!enabled || origin_reset)begin blocked<=0;xy_blocked<=0;fault_reason<=0;end
+    if(cancel || origin_reset || blocked)begin
+     state<=0;tracking<=0;xy_tracking<=0;command_seen<=0;height_command_seen<=0;prepare<=0;xy_prepare<=0;height_due<=0;position_due<=0;work_xy<=0;
+-    ix_store<=keep64(0);iy_store<=keep64(0);iz_store<=keep64(0);bias_store<=keep64(0);iz_lower_q<=0;iz_upper_q<=0;afx_store<=keep64(0);afy_store<=keep64(0);afz_store<=keep64(0);vsz_store<=keep64(0);target_z_q16_store<=keep64(0);
++    ix_store<=keep64(0);iy_store<=keep64(0);iz_store<=keep64(0);bias_store<=keep64(0);iz_lower_q<=0;iz_upper_q<=0;candidate_iz_store<=0;p_bias_store<=0;candidate_collective_store<=0;current_collective_store<=0;candidate_i_up<=0;candidate_i_down<=0;afx_store<=keep64(0);afy_store<=keep64(0);afz_store<=keep64(0);vsz_store<=keep64(0);target_z_q16_store<=keep64(0);
+     target_x<=0;target_y<=0;height_feedback_old_store<=keep64(0);
+     roll_target<=0;pitch_target<=0;throttle_delta<=0;collective_target_us<=1000;requested_climb_mmps<=0;target_height_mm<=0;
+     reason<=origin_reset ?1024:!rc_valid ?1:!enabled ?2:!ready ?4:blocked ?fault_reason:64;
+@@ -394,12 +408,25 @@
+       exz_store<=keep64(exz+value);calc(clip(exz+value,-65536000,65536000),11,10000,22);
+      end
+      22:begin
+-      iz_store<=keep64(taking_off ?clip(iz+value,iz_lower_q,iz_upper_q):0);
++      candidate_iz_store<=keep64(taking_off ?clip(iz+value,iz_lower_q,iz_upper_q):0);
+       calc(22937600-bias,6908,106908,23);
+      end
+      // Source1Hz THR_START35 bias relaxation, never captured stick PWM.
+      23:begin bias_store<=keep64(taking_off ?bias+value:0);calc(exz,1,5,24);end
+-     24:begin collective_q16_store<=keep64(taking_off ?clip(value+iz+bias,0,55705600):0);state<=60;end
++     // Split the candidate test from adders so the 50MHz path stays bounded.
++     // Each 11ms callback gains only two clocks; all live masks still cancel.
++     24:begin p_bias_store<=keep64(value+bias);state<=66;end
++     66:begin
++      candidate_collective_store<=keep64(p_bias+candidate_iz);
++      current_collective_store<=keep64(p_bias+iz);
++      candidate_i_up<=candidate_iz>iz;candidate_i_down<=candidate_iz<iz;
++      state<=67;
++     end
++     67:begin
++      iz_store<=keep64(taking_off ?selected_z_i:0);
++      collective_q16_store<=keep64(taking_off ?clip(selected_z_collective,0,55705600):0);
++      state<=60;
++     end
+      // Auto_Take_Off_Land_Task executes after Alt1, before Alt2 (11ms).
+      60:begin
+       if(!taking_off)begin auto_phase<=0;auto_ms<=0;next_auto_speed<=0;end
+--- B0B3/xy_pi_parameters.v
++++ B0B4/xy_pi_parameters.v
+@@ -9,7 +9,7 @@
+  output reg response_valid,output wire [191:0] response,
+  input wire response_ready
+ );
+- initial begin active_p=500;active_i=0;generation=0;response_valid=0;end
++ initial begin active_p=1000;active_i=350;generation=0;response_valid=0;end
+  function [15:0] crc_byte;
+  input [15:0] previous;input [7:0] octet;
+  reg [15:0] c;integer k;
+@@ -28,10 +28,10 @@
+  // Body fields are frozen from state3 through valid/ready ownership. The
+  // CRC scans bytes2..21 only; its own changing tail is never consumed.
+  assign response={16'ha591,8'd1,opcode,8'd24,status,sequence_id,
+-  active_p,active_i,generation,32'h0000b0b3,reply_crc};
++  active_p,active_i,generation,32'h0000b0b4,reply_crc};
+  always @(posedge clk)begin
+   if(!rst_n)begin
+-   active_p<=500;active_i<=0;generation<=0;response_valid<=0;
++   active_p<=1000;active_i<=350;generation<=0;response_valid<=0;
+    count<=0;age<=0;highwater<=0;seen_set<=0;frame<=0;crc<=16'hffff;
+    reply_crc<=16'hffff;crc_index<=0;state<=0;status<=0;
+   end else begin

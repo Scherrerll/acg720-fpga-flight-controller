@@ -1,0 +1,1 @@
+No actionable issues found in the prepared v21 audit_retry02 scripts. Independent read-only review only; original SYN0/audit1/root1 are preserved. The retry keeps the strict CE same-net gate and records two new actual process waits separately. Main approval remains required before running the Python-only retry. No physical qualification.

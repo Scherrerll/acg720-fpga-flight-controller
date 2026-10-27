@@ -1,0 +1,55 @@
+{
+  "scope": "Actual B3/B4 controller/shared-math RTL; legal fixed sensor boundary stimuli, no plant or flight replay. Callback cadence2500clocks forZ-only and20000 forXY/I0, original11ms/1ms dt. Compact vsB4-v1 module outputs/integrals are checked everycycle. No private force/preload. Publication comparison allows exactly2newclocks.",
+  "completed": 4,
+  "passed": false,
+  "results": [
+    {
+      "case": 1,
+      "name": "natural_upper_and_low_stick",
+      "exit_code": 0,
+      "seconds": 298.350711107254,
+      "checks": [
+        "PASS natural upper windup: old1850=419/419 first4600ms; new below1850=44ms below1250=924ms upper_rejects=1716 accepted_down=77",
+        "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+        "PASS commit contract checked 2237 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "5c4be72919969882cc6301ef1d6e0cddcfae80f2715f04b9e84550142fb1c6eb",
+      "trace_sha256": "a74da8058e2ca2d3ca625d1656faaa23795ec246e9d233e489f217721be88182"
+    },
+    {
+      "case": 2,
+      "name": "unsaturated_equivalence",
+      "exit_code": 0,
+      "seconds": 58.13191628456116,
+      "checks": [
+        "PASS unsaturated old/new publication equivalence: publications=400 positiveI=100 negativeI=150 delay=2clocks",
+        "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+        "PASS commit contract checked 400 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "115672110265acc1451a0bbecedcb13c9ef25c875e8a682ba3b2c3d1fe95b1d5",
+      "trace_sha256": "605b40f120d434f9cb4f03b70bdb1d7242c37dae7e8cd102b6623adee6a8f7b3"
+    },
+    {
+      "case": 3,
+      "name": "natural_lower_and_positive_recovery",
+      "exit_code": 0,
+      "seconds": 96.77077555656433,
+      "checks": [
+        "PASS natural lower saturation and positive recovery: lower_rejects=406 accepted_up=52 final_collective=1850",
+        "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+        "PASS commit contract checked 650 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "336db550c9d3db3a46e44bc2370c69c753aba558803e64ba3a72e45fe723ad68",
+      "trace_sha256": "474abff8632bdabfc857841abc149843894c6a547c8ab0f3a073e970548c6b94"
+    },
+    {
+      "case": 4,
+      "name": "cancel_and_takingoff",
+      "exit_code": 1,
+      "seconds": 1.0673584938049316,
+      "checks": [],
+      "log_sha256": "74881c0f62f8e978a24092eceec491f38ce7319b10a5e81bcd9615ca3001db28",
+      "trace_sha256": "acc43326ac1916b6c0e366c1742fe292807d3ab758be9ce1a0d9df30e612d5f2"
+    }
+  ]
+}

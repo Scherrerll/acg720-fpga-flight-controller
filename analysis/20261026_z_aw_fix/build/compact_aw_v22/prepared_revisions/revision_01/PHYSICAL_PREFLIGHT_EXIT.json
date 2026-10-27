@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\preflight_physical_recipe.py"
+  ],
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "stdout_sha256": "d233ef05e6fd2e0a0d75f305cfbe9c70e1234b7777b2722f055dacf9739e48ef",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

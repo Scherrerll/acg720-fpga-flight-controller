@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v9\verify_candidate.py", line 22, in <module>
+    print(kind,'actual_wait',code,flush=True);assert code==0,(kind,'see stdout/stderr')
+                                                     ^^^^^^^
+AssertionError: ('five', 'see stdout/stderr')

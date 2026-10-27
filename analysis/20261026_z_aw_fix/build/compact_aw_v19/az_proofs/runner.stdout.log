@@ -1,0 +1,3 @@
+PASS actual top/core stopped-width arm/controller/fresh/takeoff gates; actual simultaneous arm-FF/commit rejected; bank through real controller ports; cancelled-idle boundary
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v19\az_proofs\top_safety_tb.v:62: $finish called at 4180853000 (1ps)
+

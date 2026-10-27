@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\rtl_regression\run_regression.py", line 66, in <module>
+    assert p.returncode==0 and len(row['checks'])>=2,output
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: FATAL: C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\rtl_regression\aw_tb.v:67: unexpected arithmetic/stick/controller fault
+       Time: 200171000  Scope: tb
+

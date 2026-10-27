@@ -1,0 +1,737 @@
+{
+  "passed": true,
+  "netlist_sha256": "607efaa6573e13c53802c7db227bc831a34778a6358de6da6b79962a413dc680",
+  "scope": "Actual mapped top18scalar ports and live16bit gain FF/INIT; no functional or physical-timing claim",
+  "top_ports": {
+    "clk50": [
+      "clk50"
+    ],
+    "imu_miso": [
+      "imu_miso"
+    ],
+    "rc_ppm_in": [
+      "rc_ppm_in"
+    ],
+    "range_rx": [
+      "range_rx"
+    ],
+    "radio_rx": [
+      "radio_rx"
+    ],
+    "imu_sck": [
+      "imu_sck"
+    ],
+    "imu_mosi": [
+      "imu_mosi"
+    ],
+    "imu_cs_n": [
+      "imu_cs_n"
+    ],
+    "imu_gyro_cs_n": [
+      "imu_gyro_cs_n"
+    ],
+    "range_tx": [
+      "range_tx"
+    ],
+    "uart_tx": [
+      "uart_tx"
+    ],
+    "radio_tx": [
+      "radio_tx"
+    ],
+    "led2": [
+      "led2"
+    ],
+    "led3": [
+      "led3"
+    ],
+    "motor1_pwm": [
+      "motor1_pwm"
+    ],
+    "motor2_pwm": [
+      "motor2_pwm"
+    ],
+    "motor3_pwm": [
+      "motor3_pwm"
+    ],
+    "motor4_pwm": [
+      "motor4_pwm"
+    ]
+  },
+  "gains": {
+    "p": {
+      "ff_count": 16,
+      "init_wire": 1000,
+      "mapped_cells": {
+        "parameters/active_p_14_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_110"
+            ],
+            "D": [
+              "parameters/frame[46]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_13_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_109"
+            ],
+            "D": [
+              "parameters/frame[45]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_12_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_108"
+            ],
+            "D": [
+              "parameters/frame[44]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_11_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_107"
+            ],
+            "D": [
+              "parameters/frame[43]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_10_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_106"
+            ],
+            "D": [
+              "parameters/frame[42]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_9_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_105"
+            ],
+            "D": [
+              "parameters/frame[41]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_8_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_104"
+            ],
+            "D": [
+              "parameters/frame[40]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_7_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_103"
+            ],
+            "D": [
+              "parameters/frame[39]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_6_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_102"
+            ],
+            "D": [
+              "parameters/frame[38]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_5_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_101"
+            ],
+            "D": [
+              "parameters/frame[37]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_4_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_100"
+            ],
+            "D": [
+              "parameters/frame[36]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_3_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_99"
+            ],
+            "D": [
+              "parameters/frame[35]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_2_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_98"
+            ],
+            "D": [
+              "parameters/frame[34]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_1_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_97"
+            ],
+            "D": [
+              "parameters/frame[33]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_0_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_96"
+            ],
+            "D": [
+              "parameters/frame[32]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_p_15_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_111"
+            ],
+            "D": [
+              "parameters/frame[47]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        }
+      }
+    },
+    "i": {
+      "ff_count": 16,
+      "init_wire": 350,
+      "mapped_cells": {
+        "parameters/active_i_15_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_95"
+            ],
+            "D": [
+              "parameters/frame[31]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_14_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_94"
+            ],
+            "D": [
+              "parameters/frame[30]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_13_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_93"
+            ],
+            "D": [
+              "parameters/frame[29]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_12_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_92"
+            ],
+            "D": [
+              "parameters/frame[28]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_11_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_91"
+            ],
+            "D": [
+              "parameters/frame[27]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_10_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_90"
+            ],
+            "D": [
+              "parameters/frame[26]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_9_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_89"
+            ],
+            "D": [
+              "parameters/frame[25]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_8_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_88"
+            ],
+            "D": [
+              "parameters/frame[24]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_7_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_87"
+            ],
+            "D": [
+              "parameters/frame[23]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_6_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_86"
+            ],
+            "D": [
+              "parameters/frame[22]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_5_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_85"
+            ],
+            "D": [
+              "parameters/frame[21]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_4_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_84"
+            ],
+            "D": [
+              "parameters/frame[20]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_3_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_83"
+            ],
+            "D": [
+              "parameters/frame[19]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_2_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_82"
+            ],
+            "D": [
+              "parameters/frame[18]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_1_s0": {
+          "type": "DFFSE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_81"
+            ],
+            "D": [
+              "parameters/frame[17]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "SET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        },
+        "parameters/active_i_0_s0": {
+          "type": "DFFRE",
+          "pins": {
+            "Q": [
+              "parameters/parameter_response_80"
+            ],
+            "D": [
+              "parameters/frame[16]"
+            ],
+            "CLK": [
+              "parameters/clk50_d"
+            ],
+            "RESET": [
+              "parameters/n322_5"
+            ],
+            "CE": [
+              "parameters/n2239_14"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "primitive_histogram": {
+    "ALU": 9544,
+    "DFFCE": 429,
+    "DFFRE": 26734,
+    "DFFSE": 588,
+    "GND": 60,
+    "GSR": 1,
+    "IBUF": 5,
+    "INV": 211,
+    "LUT2": 4002,
+    "LUT3": 8837,
+    "LUT4": 20386,
+    "LUT5": 1381,
+    "MULT12X12": 7,
+    "MULT27X36": 13,
+    "MULTALU27X18": 30,
+    "MUX2_LUT5": 578,
+    "MUX2_LUT6": 167,
+    "OBUF": 13,
+    "VCC": 60,
+    "pROM": 2
+  }
+}

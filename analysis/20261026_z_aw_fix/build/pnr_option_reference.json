@@ -1,0 +1,34 @@
+{
+  "source": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+  "sha256": "c8ee7e8cb8486220a8639424f71debe9f4c3dff0d4c365860474c24782ded08c",
+  "document": "SUG1220-2.1E installed with Gowin1.9.12.04",
+  "PDF_pages": [
+    42,
+    44,
+    49
+  ],
+  "options": {
+    "place_option": {
+      "0": "default, compilation-speed priority",
+      "1": "routability priority",
+      "2": "timing priority",
+      "3/4": "attempt better placement"
+    },
+    "route_option": {
+      "0": "default",
+      "1": "slower search for routing quality",
+      "2": "routing-speed priority"
+    },
+    "timing_driven": "Optimization policy0/1; unchanged20ns SDC and final STA/Fmax acceptance are separately mandatory",
+    "route_maxfan": {
+      "allowed": [
+        1,
+        100
+      ],
+      "this_family_default": 23
+    }
+  },
+  "online_primary": "https://www.gowinsemi.com/upload/database_doc/3262/document/68b8a001a6a92.pdf",
+  "use": "Guide strategy selection only; none of these settings proves connectivity/timing; keep original all-gates acceptance",
+  "not_redistributed": "No guide PDF or bulk extracted text is included"
+}

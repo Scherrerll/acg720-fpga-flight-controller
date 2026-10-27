@@ -1,0 +1,11 @@
+{
+  "scope": "Read-only future composition note, no new candidate source or build created",
+  "parent_guard_candidate": "compact_aw_v9",
+  "guard_source_changes_from_v4": ["position/pose_time_adapter.v", "acg720_ano_port.v", "mtf_xyz_navigation_control.v", "position/mtf_shared_height_fusion.v"],
+  "exact_predicate": "published output_az >= -30000 && output_az <= 30000; reset/cancel output_az0 and predicate1; publish predicate beside the same held_az, no extra public cycle",
+  "already_existing_proof_basis": "v8 producer444003cycles and complete height-fusion3194862cycles, v9 full suite/top13 and actual successful proof roots; rehash all actual parent inputs and result receipts before any reuse",
+  "composition_if_fresh_results_require_it": "v17 differs from v4 at top only by previous_pose_valid synthesis comment; a future candidate can merge that comment into exact v9 top, copy the other three exact guarded v9 modules, and retain v17 core landing comparator/fanout changes. Must create a new source55 freeze, new exact top13, explicit parent proof and unchanged-six controller bindings, actual new SYN and full50MHz physical qualification. Do not pretend a whole-file reverse substitution proves new guard logic.",
+  "six_controller_files_currently_unchanged": ["position/mtf_xyz_hold_control.v", "nav_math_service.v", "position/position_math.v", "position/ano_xy_stick.v", "position/ano_xy_divide36.v", "position/ano_z_stick.v"],
+  "reason_to_wait": "v15 real physical result is pending; v16/v17 already proven and synthesized. Parent v9 route failed2228unrouted, so guard-combination has no physical qualification and is not automatically preferable. Original raw reports and actual next outcomes should guide selection.",
+  "hardware_actions": false
+}

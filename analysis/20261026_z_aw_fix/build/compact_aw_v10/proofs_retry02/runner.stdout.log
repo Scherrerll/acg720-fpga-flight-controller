@@ -1,0 +1,4 @@
+diagnostic_compile actual_wait 0
+diagnostic_simulation actual_wait 0
+top13 actual_wait 0
+PASS v10 diagnostic equivalence and actual top13

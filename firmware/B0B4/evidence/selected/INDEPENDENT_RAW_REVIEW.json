@@ -1,0 +1,141 @@
+{
+  "reviewed_utc": "2026-10-27T03:22:16.843021+00:00",
+  "scope": "Direct independent parsing of raw reports, actual exits, source and bitstream. No imported gate parser.",
+  "passed": true,
+  "checks": {
+    "vendor_wait0": true,
+    "runner_wait0": true,
+    "source55": true,
+    "canonical_source55": true,
+    "VG": true,
+    "v22_original_TEMP_compile1_root1_alias_retry0_completion0": true,
+    "v22_new_controller_fresh_five_fraction_four_top": true,
+    "v22_22_actual_successful_receipts": true,
+    "v22_components_and_no_new_cycle": true,
+    "unchanged_bound_inputs": true,
+    "actual_local_hint_effect_bound": true,
+    "raw_log_hash": true,
+    "normal_eof": true,
+    "fullroute_and_bitstream": true,
+    "no_unrouted_nets": true,
+    "netlist_only": true,
+    "period20": true,
+    "constraint50_and_fmax50": true,
+    "five_slacks_nonnegative": true,
+    "setup_hold_zero": true,
+    "physical_artifacts": true,
+    "pins18_all_directions": true,
+    "FS_B4": true,
+    "cfg_B4": true,
+    "unchanged_constraints": true
+  },
+  "period_ns": 20.0,
+  "fmax_mhz": 50.075,
+  "slacks_ns": {
+    "setup": 0.03,
+    "hold": 0.2,
+    "recovery": 12.073,
+    "removal": 2.646,
+    "minimum_pulse_width": 7.387
+  },
+  "violated_endpoints": {
+    "setup": 0,
+    "hold": 0
+  },
+  "worst_setup_row": [
+    "1",
+    "0.030",
+    "core/imu/guard/qualified_s0/Q",
+    "core/manual_angles/fault_4_s0/D",
+    "clk50:[R]",
+    "clk50:[R]",
+    "20.000",
+    "0.000",
+    "19.913"
+  ],
+  "pins": {
+    "clk50": [
+      "Y18",
+      "in"
+    ],
+    "imu_miso": [
+      "D19",
+      "in"
+    ],
+    "rc_ppm_in": [
+      "B17",
+      "in"
+    ],
+    "range_rx": [
+      "C14",
+      "in"
+    ],
+    "radio_rx": [
+      "B16",
+      "in"
+    ],
+    "imu_sck": [
+      "E17",
+      "out"
+    ],
+    "imu_mosi": [
+      "C20",
+      "out"
+    ],
+    "imu_cs_n": [
+      "E18",
+      "out"
+    ],
+    "imu_gyro_cs_n": [
+      "F20",
+      "out"
+    ],
+    "range_tx": [
+      "C15",
+      "out"
+    ],
+    "uart_tx": [
+      "M15",
+      "out"
+    ],
+    "radio_tx": [
+      "B15",
+      "out"
+    ],
+    "led2": [
+      "L21",
+      "out"
+    ],
+    "led3": [
+      "K21",
+      "out"
+    ],
+    "motor1_pwm": [
+      "D17",
+      "out"
+    ],
+    "motor2_pwm": [
+      "C17",
+      "out"
+    ],
+    "motor3_pwm": [
+      "E16",
+      "out"
+    ],
+    "motor4_pwm": [
+      "D16",
+      "out"
+    ]
+  },
+  "raw_sha256": {
+    "out\\z_aw_fix_20261026\\compact_aw_v22\\physical_p3r0_01\\verification\\physical.log": "b3f60a8254afa53fe123d528f1f905dfca11416151241e671091cd013d0ec0db",
+    "out\\z_aw_fix_20261026\\compact_aw_v22\\physical_p3r0_01\\verification\\physical_exit.json": "6f75186bd5819d873df5eae522101b2efc6ff86c9ff559bb757792d91992203c",
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\physical_p3r0_01\\runner_exit.json": "a77e34c2415256c0e0afca5c694835be6d503ffe90a6e0e126a00dd87fcb83ad",
+    "out\\z_aw_fix_20261026\\compact_aw_v22\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.tr": "4ad1c8b9e6be1e70d0e9e2bec4285e145ffcf501667ba0825f778b863b6ac045",
+    "out\\z_aw_fix_20261026\\compact_aw_v22\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.rpt.txt": "afe8a7eed8c9da340851ea3cf48bca081dab060645d32dc46940a5cb2bf2314a",
+    "out\\z_aw_fix_20261026\\compact_aw_v22\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.fs": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+    "out\\z_aw_fix_20261026\\compact_aw_v22\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.pr": "335fea03d91cf54c2de8d8ecc8e72063e07c662156d4f2c6f7c57927e6d8f371",
+    "out\\z_aw_fix_20261026\\compact_aw_v22\\physical_p3r0_01\\source\\impl\\pnr\\device.cfg": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187"
+  },
+  "review_script_sha256": "2b08e32bfdb1d1071b50124dc9a4d7e1e5dfda9e067a2961667a15427568a8e3"
+}

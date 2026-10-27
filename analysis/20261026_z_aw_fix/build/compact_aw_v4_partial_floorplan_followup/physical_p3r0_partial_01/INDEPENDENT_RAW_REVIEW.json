@@ -1,0 +1,141 @@
+{
+  "reviewed_utc": "2026-10-26T13:39:04.071614+00:00",
+  "scope": "Direct independent parsing of raw reports, actual exits, source and bitstream. No imported gate parser.",
+  "passed": false,
+  "checks": {
+    "vendor_wait0": true,
+    "runner_wait0": false,
+    "source55": true,
+    "canonical_source55": true,
+    "VG": true,
+    "raw_log_hash": true,
+    "normal_eof": true,
+    "fullroute_and_bitstream": true,
+    "no_unrouted_nets": true,
+    "netlist_only": true,
+    "period20": true,
+    "constraint50_and_fmax50": false,
+    "five_slacks_nonnegative": false,
+    "setup_hold_zero": false,
+    "physical_artifacts": true,
+    "pins18_all_directions": true,
+    "FS_B4": true,
+    "cfg_B4": true,
+    "unchanged_constraints": true,
+    "combined_CST_bound": true,
+    "only_declared_INS_LOC_added": true,
+    "combined_CST_prefix": true,
+    "declared109_locations": true,
+    "combined_CST_used": true
+  },
+  "period_ns": 20.0,
+  "fmax_mhz": 45.46,
+  "slacks_ns": {
+    "setup": -1.997,
+    "hold": 0.196,
+    "recovery": 14.67,
+    "removal": 1.832,
+    "minimum_pulse_width": 7.387
+  },
+  "violated_endpoints": {
+    "setup": 255,
+    "hold": 0
+  },
+  "worst_setup_row": [
+    "1",
+    "-1.997",
+    "native_navigation/height_fusion/publication_age_10_s1/Q",
+    "core/manual_angles/pending_np_7_s0/CE",
+    "clk50:[R]",
+    "clk50:[R]",
+    "20.000",
+    "0.000",
+    "21.717"
+  ],
+  "pins": {
+    "clk50": [
+      "Y18",
+      "in"
+    ],
+    "imu_miso": [
+      "D19",
+      "in"
+    ],
+    "rc_ppm_in": [
+      "B17",
+      "in"
+    ],
+    "range_rx": [
+      "C14",
+      "in"
+    ],
+    "radio_rx": [
+      "B16",
+      "in"
+    ],
+    "imu_sck": [
+      "E17",
+      "out"
+    ],
+    "imu_mosi": [
+      "C20",
+      "out"
+    ],
+    "imu_cs_n": [
+      "E18",
+      "out"
+    ],
+    "imu_gyro_cs_n": [
+      "F20",
+      "out"
+    ],
+    "range_tx": [
+      "C15",
+      "out"
+    ],
+    "uart_tx": [
+      "M15",
+      "out"
+    ],
+    "radio_tx": [
+      "B15",
+      "out"
+    ],
+    "led2": [
+      "L21",
+      "out"
+    ],
+    "led3": [
+      "K21",
+      "out"
+    ],
+    "motor1_pwm": [
+      "D17",
+      "out"
+    ],
+    "motor2_pwm": [
+      "C17",
+      "out"
+    ],
+    "motor3_pwm": [
+      "E16",
+      "out"
+    ],
+    "motor4_pwm": [
+      "D16",
+      "out"
+    ]
+  },
+  "raw_sha256": {
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_partial_01\\verification\\physical.log": "0ff235e6e43eeedf8eaee1220d549dadcc66f63383001d3551e0f6402dbc93c0",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_partial_01\\verification\\physical_exit.json": "6f26155142c1abb1194182a58b5150ae0ba7833ca7369c9f3fbd08b1f6817a60",
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_partial_floorplan_followup\\physical_p3r0_partial_01\\runner_exit.json": "19326326835d9ed30962f3af2a29b7c16a0b5d1009aed48ce6f2e5fdd7494035",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_partial_01\\source\\impl\\pnr\\acg720_ano_port.tr": "1983408010396a54a2a8a6da175d52497034982600afdbf6db52128a7187f4fd",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_partial_01\\source\\impl\\pnr\\acg720_ano_port.rpt.txt": "ba06a1daf13139642fc080e800c733337838f143482d170c1e79377292ea3d54",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_partial_01\\source\\impl\\pnr\\acg720_ano_port.fs": "13af42145688c1309a60e4970d0a77c9944403738c61e0c0252370766efe3631",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_partial_01\\source\\impl\\pnr\\acg720_ano_port.pr": "cf797017e8396ecf12b95e36cf1f1d2b31bd04dce923661a6ec12e9612a0958f",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_partial_01\\source\\impl\\pnr\\device.cfg": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_partial_01\\source\\physical_constraints.cst": "fd07bf4bdaf371457f67f89f08a29f9c505a330cd77d46135b91358acb987b7d"
+  },
+  "review_script_sha256": "ded82adf514dd50ea3d42bc5a711182b6ffcf2b204de43781fc7ac9595c464d0"
+}

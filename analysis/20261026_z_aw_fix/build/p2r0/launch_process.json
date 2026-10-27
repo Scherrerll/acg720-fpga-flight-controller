@@ -1,0 +1,18 @@
+{
+  "helper_pid": 15404,
+  "started_utc": "2026-10-26T04:03:12.9905018Z",
+  "helper_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\retry_physical.py",
+  "helper_sha256": "2bb616de1bdd860222434f89702acdfe56726bcfb80f583efac169fb23c282f1",
+  "original_runner_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "python": "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "stdout": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\p2r0\\runner.stdout.log",
+  "stderr": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\p2r0\\runner.stderr.log",
+  "physical_options": {
+    "map_option": 2,
+    "route": 0,
+    "place": 2,
+    "replicate_resources": 0
+  },
+  "no_synthesis": true,
+  "creates_hidden_window": true
+}

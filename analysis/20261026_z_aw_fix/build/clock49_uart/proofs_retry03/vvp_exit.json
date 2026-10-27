@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_uart\\proofs_retry03\\test.vvp"
+  ],
+  "started_utc": "2026-10-26T20:48:08.819738+00:00",
+  "pid": 66276,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-26T20:48:14.199130+00:00",
+  "log_sha256": "4783a4938b0d2e87093d416d82511ad9f5748f40f1db692dd43444780d3e4420"
+}

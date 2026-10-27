@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\top13\\top_safety.vvp"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "started_utc": "2026-10-26T23:34:39.601903+00:00",
+  "normal_return": true,
+  "actual_completedprocess_returncode": 0,
+  "ended_utc": "2026-10-26T23:35:03.607474+00:00",
+  "stdout_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\top13\\actual_child_receipts\\02.stdout.log",
+  "stdout_sha256": "d457f9a6f21910886e51cc493171db57737cf3e14aaf2590e0072514c8d25b05",
+  "stderr_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\top13\\actual_child_receipts\\02.stderr.log",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

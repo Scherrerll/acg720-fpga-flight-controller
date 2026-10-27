@@ -1,0 +1,145 @@
+--- v4/position/pose_time_adapter.v
++++ v9/position/pose_time_adapter.v
+@@ -10,6 +10,8 @@
+  output reg signed [31:0] output_ax=0,
+  output reg signed [31:0] output_ay=0,
+  output reg signed [31:0] output_az=0,
++ // Exact original numeric predicate, registered beside its matching tuple.
++ output reg output_az_range_ok=1,
+  output reg output_acc_valid=0,
+  output reg busy=0,
+  output reg [7:0] fault=0
+@@ -29,7 +31,7 @@
+   update<=0;
+   if(!rst_n || cancel) begin
+    busy<=0;fault<=0;dt_us<=0;output_acc_valid<=0;index<=0;remainder<=0;tick_fraction<=0;
+-   output_ax<=0;output_ay<=0;output_az<=0;
++   output_ax<=0;output_ay<=0;output_az<=0;output_az_range_ok<=1;
+   end else if(fault!=0) begin busy<=0;output_acc_valid<=0;tick_fraction<=0;end
+   else if(start && busy) begin busy<=0;output_acc_valid<=0;fault<=1;tick_fraction<=0;end
+   else if(start) begin
+@@ -42,6 +44,7 @@
+     busy<=0;update<=1;dt_us<=next_quotient+(carry_microsecond ? 32'd1:32'd0);
+     tick_fraction<=held_valid ? (carry_microsecond ? carried_ticks-7'd50:carried_ticks):0;
+     output_ax<=held_ax;output_ay<=held_ay;output_az<=held_az;output_acc_valid<=held_valid;
++    output_az_range_ok<=held_az>=-30000 && held_az<=30000;
+    end else index<=index+1'b1;
+   end
+  end
+--- v4/acg720_ano_port.v
++++ v9/acg720_ano_port.v
+@@ -49,10 +49,11 @@
+  wire acceleration_update,converted_acc_valid;
+  wire [31:0] converted_dt_us;wire [7:0] time_adapter_fault;
+  wire signed [31:0] converted_ax,converted_ay,converted_az;
++ wire converted_az_range_ok;
+  pose_time_adapter acc_time(.clk(clk50),.rst_n(rst_n),.cancel(observer_reset),.start(pose_update),
+   .acc_valid(accel_valid),.ticks(pose_dt),.ax(world_ax),.ay(world_ay),.az(world_azup),
+   .update(acceleration_update),.dt_us(converted_dt_us),.output_ax(converted_ax),.output_ay(converted_ay),.output_az(converted_az),
+-  .output_acc_valid(converted_acc_valid),.busy(),.fault(time_adapter_fault));
++  .output_az_range_ok(converted_az_range_ok),.output_acc_valid(converted_acc_valid),.busy(),.fault(time_adapter_fault));
+  wire body_yaw_range_ok;
+  wire body_tilt4500_ok,body_tilt1500_ok;
+  wire signed [15:0] roll,pitch,body_yaw;
+@@ -299,14 +300,14 @@
+  end
+  assign native_range_fresh=mtf_range_ok && mtf_age_ms<100;
+  wire [719:0] navigation_body;
+- mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1),.PRECHECKED_FLOW_TILT1500(1),.PRECHECKED_HEIGHT_ORIGIN(1)) native_navigation(
++ mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1),.PRECHECKED_FLOW_TILT1500(1),.PRECHECKED_HEIGHT_ORIGIN(1),.PRECHECKED_AZ_RANGE(1)) native_navigation(
+   .xy_p_value(xy_p_value),.xy_i_value(xy_i_value),.parameter_boundary(parameter_boundary),
+   .clk(clk50),.rst_n(rst_n),.origin_reset(observer_reset),.height_origin_ok(previous_pose_valid),.sample_valid(mtf_sample),
+   .range_valid(mtf_range_ok),.flow_valid(mtf_flow_ok && mtf_integrated),
+   .distance_mm(mtf_distance_mm),.dt_ms(mtf_dt_ms),.source_age_ms(mtf_age_ms),
+   .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),
+   .pose_valid(pose_valid),.roll_cdeg(roll),.pitch_cdeg(pitch),.yaw_cdeg(body_yaw),.yaw_range_ok(body_yaw_range_ok),.height_tilt4500_ok(body_tilt4500_ok),.flow_tilt1500_ok(body_tilt1500_ok),
+-  .acc_valid(native_acc_valid),
++  .acc_valid(native_acc_valid),.az_range_ok(converted_az_range_ok),
+   .acc_update(acceleration_update),.acc_dt_us(converted_dt_us),.ax_mmps2(converted_ax),.ay_mmps2(converted_ay),.az_up_mmps2(converted_az),
+   .rc_valid(rc_valid),.enabled(navigation_enabled),.taking_off(taking_off),.channel_count(channels),.ch1(ch1),.ch2(ch2),.ch3(ch3),.ch4(ch4),.ch7(ch7),
+   .collective_us(base_throttle_us),.uptime_ms(uptime_ms),.diagnostic_hold(telemetry_snapshot_hold),.diagnostic_body(navigation_body),
+--- v4/mtf_xyz_navigation_control.v
++++ v9/mtf_xyz_navigation_control.v
+@@ -6,7 +6,7 @@
+ // PROOF_CONTROLLER permits the existing numeric controller, never installation acceptance.
+ // control_permission reports active calculation only, not physical release authority.
+ // This isolated candidate remains DO_NOT_PROGRAM; it has no physical stop lock.
+-module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0)(
++module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0,PRECHECKED_AZ_RANGE=0)(
+  input wire clk,rst_n,origin_reset,diagnostic_hold,
+  input wire [15:0] xy_p_value,xy_i_value,
+  output wire parameter_boundary,
+@@ -21,6 +21,8 @@
+  input wire signed [15:0] roll_cdeg,pitch_cdeg,yaw_cdeg,
+  input wire yaw_range_ok,
+  input wire acc_valid,acc_update,input wire [31:0] acc_dt_us,
++ // If enabled, caller guarantees exact same-tuple original az range predicate.
++ input wire az_range_ok,
+  input wire signed [31:0] ax_mmps2,ay_mmps2,az_up_mmps2,
+  input wire rc_valid,enabled,taking_off,input wire [3:0] channel_count,
+  input wire [15:0] ch1,ch2,ch3,ch4,ch7,collective_us,
+@@ -90,6 +92,7 @@
+   .math_mul_busy(m_busy[0]),.math_mul_done(m_done[0]),.math_mul_result(m_result));
+ 
+  wire live_acc=acc_valid && pose_valid && !origin_reset;
++ wire live_az_range_ok=PRECHECKED_AZ_RANGE ?az_range_ok:(az_up_mmps2>=-30000 && az_up_mmps2<=30000);
+  wire module_fresh=source_age_ms<100 && range_valid;
+  wire [31:0] range_age_ticks=source_age_ms<100 ?source_age_ms[6:0]*32'd50000:32'hffffffff;
+  wire flow_fusion_valid,flow_fusion_qualified,flow_fusion_update,flow_correction_update;
+@@ -116,10 +119,10 @@
+  wire signed [31:0] fused_height,fused_vz,fused_vz_q16,height_sample_az;
+  wire fused_vz_q16_valid;wire [15:0] height_reason;
+  wire height_vz_q16_range_raw;
+- mtf_shared_height_fusion #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.CAL_MASK(0),.RANGE_AGE_PRECHECKED(1)) height_fusion(
++ mtf_shared_height_fusion #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.CAL_MASK(0),.RANGE_AGE_PRECHECKED(1),.PRECHECKED_AZ_RANGE(PRECHECKED_AZ_RANGE)) height_fusion(
+   .clk(clk),.rst_n(rst_n),.origin_reset(origin_reset),.range_valid(geometry_height_ready && module_fresh),
+   .acc_valid(live_acc),.acc_update(acc_update),.acc_dt_us(acc_dt_us),
+-  .range_age_ticks(range_age_ticks),
++  .range_age_ticks(range_age_ticks),.az_range_ok(az_range_ok),
+   .ref_height_mm(height_mm),.az_up_mmps2(az_up_mmps2),.valid(),.estimate_ready(height_estimate_ready),.estimate_ready_state_numeric_tail(height_estimate_state_numeric_tail),
+   .qualified_ready(height_qualified_ready),.qualified_valid(),.update(height_fusion_update),
+   .fused_height_mm(fused_height),.vz_mmps(fused_vz),.sample_az_mmps2(height_sample_az),
+@@ -169,7 +172,7 @@
+   height_sample_az>=-30000 && height_sample_az<=30000 &&
+   raw_fvx>=-655360000 && raw_fvx<=655360000 && raw_fvy>=-655360000 && raw_fvy<=655360000 &&
+   ax_mmps2>=-30000 && ax_mmps2<=30000 && ay_mmps2>=-30000 && ay_mmps2<=30000 &&
+-  az_up_mmps2>=-30000 && az_up_mmps2<=30000 && live_yaw_range_ok;
++  live_az_range_ok && live_yaw_range_ok;
+  wire observation_bad=!height_ready || !height_vz_q16_range_raw;
+  wire control_bad=observation_bad || !rc_valid || !enabled;
+  reg observation_bad_d=1,control_bad_d=1,origin_d=0,manual_d=0;
+--- v4/position/mtf_shared_height_fusion.v
++++ v9/position/mtf_shared_height_fusion.v
+@@ -10,10 +10,11 @@
+ module mtf_shared_height_fusion #(
+  parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,
+  parameter [7:0] CAL_MASK=0,
+- parameter integer RANGE_AGE_PRECHECKED=0
++ parameter integer RANGE_AGE_PRECHECKED=0,PRECHECKED_AZ_RANGE=0
+ )(
+  input wire clk,rst_n,origin_reset,
+  input wire range_valid,acc_valid,acc_update,
++ input wire az_range_ok,
+  input wire [31:0] acc_dt_us,
+  input wire [31:0] range_age_ticks,
+  input wire signed [31:0] ref_height_mm,az_up_mmps2,
+@@ -84,8 +85,9 @@
+  assign vz_q16_valid=estimate_ready && v_q16_range;
+  reg [31:0] den=1,pending_den=1;
+  wire md,mbusy,dd,dbusy,derr;wire signed [63:0] product,quotient;
++ wire az_numeric_ok=PRECHECKED_AZ_RANGE ?az_range_ok:(az_up_mmps2>=-30000 && az_up_mmps2<=30000);
+  wire sources_ok=range_valid && acc_valid && ((RANGE_AGE_PRECHECKED && AGE_LIMIT==5000000) || range_age_ticks<AGE_LIMIT) &&
+-     ref_height_mm>=0 && ref_height_mm<=5000 && az_up_mmps2>=-30000 && az_up_mmps2<=30000;
++     ref_height_mm>=0 && ref_height_mm<=5000 && az_numeric_ok;
+  reg cleanup=1;
+  always @(posedge clk) if(!rst_n) cleanup<=1;else cleanup<=origin_reset || !sources_ok || fault;
+  assign estimate_ready=sources_ok && !origin_reset && !cleanup && seeded && seen && publication_age<AGE_LIMIT && !fault;
+@@ -93,7 +95,7 @@
+  (* syn_keep = 1 *) wire estimate_ready_state_numeric_tail_kept=
+   ((RANGE_AGE_PRECHECKED && AGE_LIMIT==5000000) || range_age_ticks<AGE_LIMIT) &&
+   ref_height_mm>=0 && ref_height_mm<=5000 &&
+-  az_up_mmps2>=-30000 && az_up_mmps2<=30000 && !cleanup && seeded && seen &&
++  az_numeric_ok && !cleanup && seeded && seen &&
+   publication_age<AGE_LIMIT && !fault;
+  assign estimate_ready_state_numeric_tail=estimate_ready_state_numeric_tail_kept;
+  assign valid=CAL_MASK[3] && CAL_MASK[4] && estimate_ready;

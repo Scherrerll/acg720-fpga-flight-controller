@@ -1,0 +1,1 @@
+{"independent_preparation_review_passed": true, "measured_counts": {"official_export_rows": 52, "kept": 41, "excluded": 11, "DSP": 39, "BSRAM": 2}, "review_sha256": "f393e6597de0b7818908f76bf56923eafb6e793abf6a4b1d263fa43562905ec9", "vendor_started": false, "runtime_attempt_absent": true}

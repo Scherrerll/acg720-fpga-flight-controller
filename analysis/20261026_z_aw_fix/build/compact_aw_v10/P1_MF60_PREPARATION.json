@@ -1,0 +1,23 @@
+{
+  "scope": "No source/SYN change. One physical scheme to address dense CLS/routing usage.",
+  "reason": "Official P1 prioritizes routability; Route Maxfan1..100 and default23, smaller can cause route failure;60 is documented example.50MHz and every gate unchanged.",
+  "manual": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+  "manual_sha256": "c8ee7e8cb8486220a8639424f71debe9f4c3dff0d4c365860474c24782ded08c",
+  "manual_pdf_pages": [
+    44,
+    49
+  ],
+  "VG_sha256": "607efaa6573e13c53802c7db227bc831a34778a6358de6da6b79962a413dc680",
+  "physical_options": {
+    "place": 1,
+    "route": 0,
+    "map_option": 2,
+    "replicate_resources": 0,
+    "timing_driven": 1,
+    "route_maxfan": 60
+  },
+  "period_ns": 20,
+  "template_runner_sha256": "33338d74193b67b63f8316ad92da199b76feca1df5bc933cf4de1e7dcb28418c",
+  "new_runner_sha256": "cb99d98520b4f7c02319dd71bd1099fbb9e3503fb28635f916f227c7ca5554ea",
+  "PNR_started": false
+}

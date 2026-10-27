@@ -1,0 +1,10 @@
+{
+  "original_attempt": "proofs",
+  "original_root_exit_sha256": "608f1692f2affcd94ab04fb5029f349b9bd991202dd049bb4a52ef93a9bdfc3f",
+  "original_actual_root_wait": 1,
+  "actual_iverilog_return": 2,
+  "cause": "Actual top file also declares nav_control_handoff. Renaming only the top module left duplicate helper declarations when old/new actual top files were compiled together.",
+  "correction": "New retry fixture renames only the old top and its same-file nav_control_handoff helper identifiers; candidate source55 and all test assertions/stimulus unchanged.",
+  "candidate_source_edited": false,
+  "failed_attempt_preserved": true
+}

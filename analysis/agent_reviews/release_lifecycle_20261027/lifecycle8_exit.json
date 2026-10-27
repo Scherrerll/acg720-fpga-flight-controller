@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-u",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_lifecycle_20261027\\test_lifecycle.py"
+  ],
+  "started_utc": "2026-10-27T03:40:19.397109+00:00",
+  "parent_pid": 59012,
+  "source_script_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "cab893924c892327dc4168254064dfade00c2a4db3c19908dd34c5f58f6552f1",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\build_candidate.py": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_lifecycle_20261027\\test_lifecycle.py": "76c1f0d81ed75748d39b2070b5edfb7c418bb2e7ef3a6bbc3cd0876e68e3a8c2",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_lifecycle_20261027\\run_validation.py": "19651cb2c0973f9cbed8330b90e22f6ed7c1d5f926d96f017a3e092ca69b65b7",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_wait_types_20261027\\test_wait_types_retry02.py": "90f1564ed11d31a74d2508d6bbc089eae900ffc32da9a76804b582ec557ff27f"
+  },
+  "scope": "Temporary-root real55 lifecycle archives and scalar rejection only; never modifies real B4 source or creates real qualification/release.",
+  "pid": 46996,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-27T03:40:31.089180+00:00",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "f71513109046e557412be067824e8ea43d8c35751b7d6e491fc1a995406fa1ac"
+}

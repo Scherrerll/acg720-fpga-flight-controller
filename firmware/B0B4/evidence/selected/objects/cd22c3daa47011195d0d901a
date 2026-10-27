@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "target_sha256": "ab9cacbbcdc10d6129c72740acb4945f8ba629091f2fac81462a2fee80cd2fff",
+  "recorder_sha256": "58337383513f1802e7a00bcc40be56377ceb99f43deadab67cb048228b4383a5",
+  "receipts": [
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\contention\\actual_child_receipts\\01_exit.json",
+      "sha256": "6eb35cee374a018794c0ab5cf95ddac69e1a24ee3ef41c9c3d911433f14321c9"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\contention\\actual_child_receipts\\02_exit.json",
+      "sha256": "f927d7051d24d7a2fc574f7f90e7a1e0153bc2d48ecf0fd5a7ec49fc8200b18f"
+    }
+  ]
+}

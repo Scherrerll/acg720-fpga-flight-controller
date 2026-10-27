@@ -1,0 +1,200 @@
+{
+  "scope": "Frozen bounded Z antiwindup regressions only. Cases1-4 plus corrected-cadenceCASE5PASS; artificial-overrun failures retained. No source changes or hardware. Excludes *.vvp, tmp and caches.",
+  "files": [
+    {
+      "path": "aw_tb.v",
+      "bytes": 10688,
+      "sha256": "f43ca284dec68382a376a179173dff6819d510752c1474579f285aaf85febe56"
+    },
+    {
+      "path": "b3_controller_reference.v",
+      "bytes": 28917,
+      "sha256": "5f1d287e7cdda445f5c6850ea93513492f421e46b5029efd474d5d8afd35f986"
+    },
+    {
+      "path": "cancel_and_takingoff/simulation.log",
+      "bytes": 368,
+      "sha256": "178911075374cb7f3351a2299016962eac740e2cb78b880519ed63574ce401b1"
+    },
+    {
+      "path": "cancel_and_takingoff/trace.csv",
+      "bytes": 3690,
+      "sha256": "f8cb999e0df582b138794d66ec3aab721f8e63cd4c5c409c6dfcca0abbcb7792"
+    },
+    {
+      "path": "compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "final_results.json",
+      "bytes": 4155,
+      "sha256": "e356c86092dc3337bc0218fef912ebc863cc8cbad1d7c9575097c8c215dc13ff"
+    },
+    {
+      "path": "freeze.py",
+      "bytes": 2584,
+      "sha256": "43007b61e7a01726eea47e1ebbb2a13d997f062f25a8e152a19771ecf81e12d2"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 11978,
+      "sha256": "2ca37bc54f571cf2762e1efbf9f01f00af633f8dc95fd3c167283bf64781a11e"
+    },
+    {
+      "path": "natural_lower_and_positive_recovery/simulation.log",
+      "bytes": 363,
+      "sha256": "cdd101777f39b79abe63384a1622b97fc31dc7d81cf20016156616f661a79158"
+    },
+    {
+      "path": "natural_lower_and_positive_recovery/trace.csv",
+      "bytes": 42005,
+      "sha256": "474abff8632bdabfc857841abc149843894c6a547c8ab0f3a073e970548c6b94"
+    },
+    {
+      "path": "natural_upper_and_low_stick/simulation.log",
+      "bytes": 384,
+      "sha256": "0b6fb9133ceefa7cd8e32fc893ede9e230aff133c560d43783193effeb05d281"
+    },
+    {
+      "path": "natural_upper_and_low_stick/trace.csv",
+      "bytes": 144554,
+      "sha256": "a74da8058e2ca2d3ca625d1656faaa23795ec246e9d233e489f217721be88182"
+    },
+    {
+      "path": "omitted_compiled.json",
+      "bytes": 824,
+      "sha256": "9b81019e93b9a0d9f937f6bbcb80bd489b2e27af9e1c9970b1a32101145c5ca1"
+    },
+    {
+      "path": "pair_harness.v",
+      "bytes": 4834,
+      "sha256": "59b5b19ef8bccedeb6e2ce2e66460f26352df970ee39c7b7af592d47c694e27a"
+    },
+    {
+      "path": "REGRESSION_REPORT.md",
+      "bytes": 5022,
+      "sha256": "34487c476f7a0422232d139482dcc81abfd3ccd0fd124f528e31e673d4cc73de"
+    },
+    {
+      "path": "results.json",
+      "bytes": 2937,
+      "sha256": "e253712df5b3cdad9ba838968c3d911a928fc59b18d72b8ccd9a377bd50a0745"
+    },
+    {
+      "path": "retry.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "retry.stdout.log",
+      "bytes": 679,
+      "sha256": "4ffac135bb6b0dee77d66295b61014a2679f15a9be5934e1f8ed60792b4ad538"
+    },
+    {
+      "path": "retry_process.json",
+      "bytes": 231,
+      "sha256": "1b50926724b1a3ed8235d3cd06f47bffcbdbf6645ca672691138508cdae625eb"
+    },
+    {
+      "path": "retry_xy_i0.py",
+      "bytes": 5041,
+      "sha256": "242362dff73505c045ef01939417dee99d323e67a73f864acd407777a7f87a81"
+    },
+    {
+      "path": "run_regression.py",
+      "bytes": 6002,
+      "sha256": "ae35441dd4e75c2d439de879b77e583a61d44779775186a5ba86385fb2390cf7"
+    },
+    {
+      "path": "runner.stderr.log",
+      "bytes": 559,
+      "sha256": "88bd3ee2273a9f693d41ac3a94ebad2f8d6ebda38b3dd1006ad4bf3790fab6f3"
+    },
+    {
+      "path": "runner.stdout.log",
+      "bytes": 1709,
+      "sha256": "dc43bddbd6b39551813c54f6a345b40b90c0fa16707967e0d755bd8d22c8e399"
+    },
+    {
+      "path": "runner_process.json",
+      "bytes": 234,
+      "sha256": "b6063c9cf7cc38691cb57907e031947f06d16fe1450fa295c5f1f761a40b7c8a"
+    },
+    {
+      "path": "source_stability.json",
+      "bytes": 439,
+      "sha256": "213035dd64acb0bb0249f34b2d6accf49237b37a57410f50969503d5b8dd7f7b"
+    },
+    {
+      "path": "unsaturated_equivalence/simulation.log",
+      "bytes": 364,
+      "sha256": "dbdca538e9f703e4112cf7c972abedd78a860cb855551b4b490fef06bf1784e1"
+    },
+    {
+      "path": "unsaturated_equivalence/trace.csv",
+      "bytes": 21127,
+      "sha256": "605b40f120d434f9cb4f03b70bdb1d7242c37dae7e8cd102b6623adee6a8f7b3"
+    },
+    {
+      "path": "xy_i0_attempt02/corrected_xy_i0/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "xy_i0_attempt02/corrected_xy_i0/simulation.log",
+      "bytes": 375,
+      "sha256": "83ae5498ef0fe0fdb7fca286499adc08a77b4e40772931765137a85a8704ccac"
+    },
+    {
+      "path": "xy_i0_attempt02/corrected_xy_i0/trace.csv",
+      "bytes": 7243,
+      "sha256": "0814732ae58a4b0a80780b61927b0588b2a1ef792020e064bc96fd60c5892efe"
+    },
+    {
+      "path": "xy_i0_attempt02/diagnose_original_cadence/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "xy_i0_attempt02/diagnose_original_cadence/simulation.log",
+      "bytes": 300,
+      "sha256": "405284309edb2501c496b23296cd1ad2f289fc4cd75e1eb687ed848d4447d4b3"
+    },
+    {
+      "path": "xy_i0_attempt02/diagnose_original_cadence/trace.csv",
+      "bytes": 168,
+      "sha256": "cf800781df16fca1d6dc083097efc3d1148f60a73477f7b4bf52e1d4b18b63f0"
+    },
+    {
+      "path": "xy_i0_attempt02/diagnostic_original_cadence_tb.v",
+      "bytes": 11200,
+      "sha256": "2b1c50bbe57f022852e2cc1ab151458c8234684cc5207c1ce4bd0fe4f2747df7"
+    },
+    {
+      "path": "xy_i0_attempt02/inputs.json",
+      "bytes": 12074,
+      "sha256": "a139d8414f57e9a779acb793a59be54b40cd20d4b0f2f1490192158c1ff07f77"
+    },
+    {
+      "path": "xy_i0_attempt02/results.json",
+      "bytes": 1218,
+      "sha256": "52c1ef0ce5f5b593a14834511558e23cd7d49e2081462868428659c833ffca3e"
+    },
+    {
+      "path": "xy_i0_attempt02/slower_cadence_tb.v",
+      "bytes": 11201,
+      "sha256": "391f010177df4ba532c83c2083212fb550479f5b66ce1d193113d29392f53f0c"
+    },
+    {
+      "path": "xy_i0_independence/simulation.log",
+      "bytes": 220,
+      "sha256": "a3e87b9431e732dfd07e7d38eab129dc73f980894cdd800e455473245133d623"
+    },
+    {
+      "path": "xy_i0_independence/trace.csv",
+      "bytes": 168,
+      "sha256": "cf800781df16fca1d6dc083097efc3d1148f60a73477f7b4bf52e1d4b18b63f0"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "parent_script_sha256": "01a64c7cd551c1b0c95052b3d1a745163853cb75536e3f192b1fd38f36852ed1",
+  "new_script_sha256": "ab17250efd2c3fee957b9bc76e540d87aa5e34e27da86c4577ebdd7817057c37",
+  "scope": "Read-only mapped topology/fanout; paths select actual SYN-only build and additionally inspect the local alias driver. Not executed by this preparation."
+}

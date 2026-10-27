@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\vy_proofs\\attempt01\\geometry.vvp"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\vy_proofs\\attempt01",
+  "started_utc": "2026-10-26T22:02:08.921323+00:00",
+  "parent_pid": 60124,
+  "pid": 54376
+}

@@ -1,0 +1,8 @@
+inductive_compile actual_wait 0
+inductive_simulation actual_wait 0
+uart_mode0_compile actual_wait 0
+uart_mode0_simulation actual_wait 0
+uart_mode1_compile actual_wait 0
+uart_mode1_simulation actual_wait 0
+top13 actual_wait 0
+PASS v13 full UART reader/inductive age/top13; v12 dependencies reused by exact hashes.

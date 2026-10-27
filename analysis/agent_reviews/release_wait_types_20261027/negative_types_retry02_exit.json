@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-u",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_wait_types_20261027\\test_wait_types_retry02.py"
+  ],
+  "started_utc": "2026-10-27T03:26:43.279291+00:00",
+  "parent_pid": 46728,
+  "source_script_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "c52c889b913f9b5d1d0bfcd8d15bd50475b3550175c9245767efbff4dd26e3d2",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\build_candidate.py": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_wait_types_20261027\\test_wait_types_retry02.py": "90f1564ed11d31a74d2508d6bbc089eae900ffc32da9a76804b582ec557ff27f",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_wait_types_20261027\\run_validation_retry02.py": "ac688d8123acd1f561e7d39db6d5a57e27fd666a43866738ca94f56e7250eb44",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\test_release_evidence.py": "3e33c18c65b549a8afdd08e79191138c7d8f8cfc311e05e75a40d0a4c43d60c6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\check_existing_archives.py": "dc06c09f20f62c45c347de059ce376fe356092cb80ffdc394840ca667acde2d5"
+  },
+  "scope": "Offline receipt rejection and existing proof/SYN/preparation archives only; no export, promotion, vendor or hardware.",
+  "pid": 36660,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-27T03:26:43.473938+00:00",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "353a6b97f0a06b645a16ebad7c455c1f6d45584dcecf99dfbae1f7c6ccf0064d"
+}

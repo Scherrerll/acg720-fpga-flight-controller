@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "target_sha256": "a1171bf1bcd8de4b795ac9109ea11b413876e39fab148bf256bc711f13d51311",
+  "recorder_sha256": "58337383513f1802e7a00bcc40be56377ceb99f43deadab67cb048228b4383a5",
+  "receipts": [
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\boundary\\actual_child_receipts\\01_exit.json",
+      "sha256": "6c321680a1d38f13af26ae6d5e4e346740bf0a0634e910ba143da7facffdb680"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\boundary\\actual_child_receipts\\02_exit.json",
+      "sha256": "d4c5f7cc633846fbb98bcdcb42300a81899dab11e86bf850d6a746b81b9e0cae"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\boundary\\actual_child_receipts\\03_exit.json",
+      "sha256": "7c5369087dcb4bd686a15db8ba04ec783279bceaa67b80a9308aa367f6bcce91"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\boundary\\actual_child_receipts\\04_exit.json",
+      "sha256": "f3b87cd132e72c3001b8c61a711395c182426ea49d8e6f529cbfcabc5183b82c"
+    }
+  ]
+}

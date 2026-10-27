@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_probe\\query_properties.tcl"
+  ],
+  "started_utc": "2026-10-26T20:13:49.602827+00:00",
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_probe",
+  "tool_sha256": "585c12968550a960d1021287742672ff9d6bbeaee5623f6811dfc1f907a4af41",
+  "script_sha256": "5dec28901b312675428941a7cb818876d2756c94a07511db64737946f181a0a3",
+  "scope": "Official IP property query only; scratch project/IPC creation, no FPGA SYN/PNR or programmer.",
+  "pid": 60360
+}

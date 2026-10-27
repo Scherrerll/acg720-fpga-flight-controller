@@ -1,0 +1,7 @@
+{
+  "parent_runner_sha256": "56aff641c7167b871e15b23662ae96920419d9dcd6ccf1c0053f9b15956dd1bb",
+  "new_runner_sha256": "4e57f8ddf3025edcf2a88b69f8225c73d31646d2f5ab97ce3eb8af7316199965",
+  "test_stimulus_text_unchanged": true,
+  "changes": "Output directory only and use the one-line RX candidate with a source-hash assertion. Testbench bytes and all expected values remain unchanged.",
+  "RX_review_sha256": "3daec8737589fcdfaf2a054ed598a0ef8ea7d9de1b58d94ccca8161de995d572"
+}

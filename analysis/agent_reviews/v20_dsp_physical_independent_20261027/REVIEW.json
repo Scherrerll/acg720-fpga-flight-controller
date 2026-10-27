@@ -1,0 +1,41 @@
+{
+  "reviewed_utc": "2026-10-27T00:07:52.547691+00:00",
+  "reviewer": "/root/review_50mhz",
+  "approved_preparation": true,
+  "findings": [],
+  "initial_finding_resolved": true,
+  "prepared_revision": "02",
+  "actual_pure_expression_checks": 2366,
+  "actual_distinct_truth_vectors": 1183,
+  "archived_revision_file_counts": {
+    "revision_01": 20,
+    "revision_02": 34
+  },
+  "thin_bound_inputs_rehashed": 737,
+  "original_helper_and_raw_physical_gates_unchanged": true,
+  "physical_runtime_created": false,
+  "vendor_executed": false,
+  "hardware_accessed": false,
+  "standard_attempt_running_at_initial_review": true,
+  "thin_runtime_absent": true,
+  "thin_receipt_directory_empty": true,
+  "initial_review_sha256": "c94deed1b3f7316da5d5e10b126e18dbbc8e6446e5c7f9229fcaa4a836c7d48c",
+  "preparation_sha256": "052a4c1b8f497334ae1782bac40299a3020d1ef10a35aa4136acbb8f385df71f",
+  "constraint_binding_sha256": "38068eb9c1282df08f889f1d4575f83a9b5c3b32e7d1b25218e77a627dddff39",
+  "revision_note_sha256": "7aea2dec6cdf0ca522beb868c85259ef376906c815aa10c6723b569865019780",
+  "reviewed_script_hashes": {
+    "run_physical.py": "e847cc54b31edfb08d16cf92065606d699c5cd265278550440495ef8872024a2",
+    "launch_physical_hidden.py": "404e7325169f169f3734838932bfe41c78e301fff275ada690c8a8bebde49c6a",
+    "seal_terminal.py": "8219db9546e4104a8668937f46eee3d46c88a5bd31ca4be939c2ce1037660419",
+    "independent_raw_review.py": "ef682cc0898374ad82f7a65e60f23c119c3698fbd75952f960e3f36e97597ef2",
+    "physical_snapshot.py": "37beec2d3604bba470ab90a3ccfcb5cac903c0d270792e87bc57b1393ee63be6",
+    "preflight_physical_recipe.py": "3af97b79f517c9954483b2573166e43a0faddc79d3d065778ab3645dd5e011ac",
+    "portable_constraints.py": "c9b93df8401fe75c5159d9562f81dc10e1d454e0c7a31d70909893f7afbb3e2a",
+    "terminal_diagnostics.py": "4b003923cd0c1f0e5d99d79b9e04f0b35320f6f484b253eaf261e4b1590f387f",
+    "test_terminal_diagnostics.py": "59fbc8a357c63b7ced8ab2b6768fb3ce98ce086cc2203fc40313e72355105e43",
+    "inspect_prepared_followup.py": "2b7408fab748074b3ee3d9d8385ee751a3fc0d5d1f4c0cf18b1e60fb0b6a4141",
+    "update_preparation_revision02.py": "0444fcbc7647c6fe28b4a10cf62e4a9e6e5dc7fa174f27cb035adc2a4409e542"
+  },
+  "checker_sha256": "3bcc6235ac1ee8aa205d8e3e6a5f694963489f0ddc5d00f4e8bdd13c548f2bc6",
+  "scope": "Prepared physical-only standard-v20 DSP41 recipe review. Independent macro/source/constraint inspection is recorded in INITIAL_REVIEW. Pure revision02 truth checks execute only audited function definitions and AST-selected call expressions; no bound script top-level, vendor or runtime action. No physical qualification."
+}

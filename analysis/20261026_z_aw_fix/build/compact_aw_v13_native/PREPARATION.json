@@ -1,0 +1,28 @@
+{
+  "prepared_utc": "2026-10-26T18:15:19.980909+00:00",
+  "prepared_not_started": true,
+  "script_sha256": {
+    "run_physical.py": "e89b4f3a308f546e9b5b78fc24bd207e50edea0d8c1fc0b73b51dc303c147eca",
+    "audit_synthesis.py": "c1c2435ef6c77166319a445e66a756ffc2434f1511ccaa0f3e8ad91054fdac92",
+    "native_physical_audit.py": "c8a9932acd0db039de9a34a00c07e2aa84f8dfbf3df9c787ae704e36cd49f13f",
+    "seal_terminal.py": "c8d1485b87849c9a43ed5e058999e080448bd42f8b3c1f23b32dc071b6ea8999",
+    "independent_raw_review.py": "6ad743f0381d0757fbc46149fbd4da739cb535bad0ea2ed2aca106d7be0d9828",
+    "launch_physical_hidden.py": "568ff1803e759cc350100f1b73e8ebf819b13554b903d35b96c4d138dda68168",
+    "physical_snapshot.py": "e34cc01ecd6bcde71f506e721fbe157df06ea06d3e5d38861262de9d03e82b90"
+  },
+  "Tcl_parse_preflight": {
+    "2": {
+      "Tcl_complete": true,
+      "phase_order_valid": true,
+      "tcl_sha256": "7d250ac7f3d582463d54206d85931a77c83fefbc757cbfbe4b3417a277df4b74"
+    },
+    "3": {
+      "Tcl_complete": true,
+      "phase_order_valid": true,
+      "tcl_sha256": "be9bb812d8c26ad7b7abf6351f3ed47786716960d657fa4726d3559bffaf69f3"
+    }
+  },
+  "original_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "gate_adaptation_sha256": "00adef043931ab59e33031a182da7823e93530ef1edf4fc9d74cd417e660445d",
+  "scope": "Tcl info-complete parses only; no Tcl evaluation, vendor, hook, simulation or hardware action. At most two physical jobs before launch."
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "Same original eight full-fusion/expiry cases andtop13, plus exact-expression unsigned32 rewrite check over9 integer limits/200040vectors. No DUT-state force; source module arithmetic unchanged.",
+  "template_runner_sha256": "52e3a0256aa9c04dc43dad151f1850acc6b95a85f54e56b8fe2ecb040232a4e8",
+  "derived_runner_sha256": "8f2ea221d5f8fddf6079c271cc0e107a9afc1f308202abb16e5c7b9a6d132d27",
+  "expected_immutable_stimuli": 6,
+  "new_flag_expression": "publication_fresh<=((AGE_LIMIT!=0)&&(publication_age<(AGE_LIMIT-32'd1)))",
+  "proof_started": false
+}

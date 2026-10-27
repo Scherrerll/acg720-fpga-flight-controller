@@ -1,0 +1,23 @@
+{
+  "main_review_passed": true,
+  "independent_agent_review_passed": true,
+  "reviewed_utc": "2026-10-26T23:52:11.236201+00:00",
+  "reviewers": [
+    "/root",
+    "/root/dsp_export_scout"
+  ],
+  "source_freeze_sha256": "798c6443805d56556dbaeb9a4b43531159267b24e473283c6ef362fc00ddf5d6",
+  "proof_binding_sha256": "dd63ff4b218a10ae7f1fcf146e7f045e4057b3a4ef1caa1559cca412db8f47c0",
+  "reviewed_scripts_sha256": {
+    "run_synthesis.py": "98f5449e3789d1522ad8036c8eaa69eb226117c6988a1342c7faac8f5fa71925",
+    "audit_synthesis_only.py": "909e6ab9862546a56f586d75e4f492f342be3de10ed702c5036a220cfebc3f06",
+    "seal_synthesis.py": "17f897d1a5de47bb956bc7c8bf0a925833c87f71224b1c55392101810c4fc65f",
+    "launch_synthesis_hidden.py": "7e0a6f50f01cb37dae41f08d422d35d36aab4dddbb148fab5450ac251179d3f1",
+    "validation_contract.py": "0241257c9decc337b32033110a96330a1864701bfcb73a5b62ccbdb72bedc136"
+  },
+  "review_records": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\v22_root_20261027\\REVIEW.json": "7771535e1b3295db7e5a6667ecd55639fd2e8ec0412998f6797373cdc26d6ea8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\v22_independent_20261027\\FINAL_REVIEW.json": "81ac6c850199ded2612bbfe06a1ffe7346991a276970ecd385e19675cb5b3bf6"
+  },
+  "scope": "Actual two-reviewer source/proof/prepared SYN_ONLY approval; new mapped DSP effect remains unknown; no physical/hardware qualification."
+}

@@ -1,0 +1,2146 @@
+{
+  "audit_utc": "2026-10-27T03:30:11.026482+00:00",
+  "stage": "pre-export scope/size/ignore audit; final package manifest not yet present at initial observation",
+  "repository": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "method": "Name screening before stat/read. File sizes from metadata only; no source/blob/database/zip content read or hashed. Only .gitignore and explicit release test-seal JSON read; no credential/environment contents accessed. No Git mutation.",
+  "allowed_roots": [
+    "firmware/B0B4",
+    "ground/B0B4",
+    "analysis/20261026_z_aw_fix",
+    "analysis/agent_reviews"
+  ],
+  "excluded_before_stat_or_read_counts": {},
+  "unrelated_copy99_proof_zip_always_excluded": true,
+  "out_not_enumerated_or_recommended_wholesale": true,
+  "total": {
+    "files": 10883,
+    "bytes": 1698010813,
+    "MiB": 1619.349,
+    "tracked_files": 0,
+    "ignored_files": 129,
+    "ignored_MiB": 1211.087
+  },
+  "roots": {
+    "firmware/B0B4": {
+      "files": 64,
+      "bytes": 809749,
+      "MiB": 0.772,
+      "tracked_files": 0,
+      "ignored_files": 1,
+      "ignored_MiB": 0.027
+    },
+    "ground/B0B4": {
+      "files": 46,
+      "bytes": 344378,
+      "MiB": 0.328,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    "analysis/20261026_z_aw_fix": {
+      "files": 4229,
+      "bytes": 1313270917,
+      "MiB": 1252.433,
+      "tracked_files": 0,
+      "ignored_files": 127,
+      "ignored_MiB": 1209.412
+    },
+    "analysis/agent_reviews": {
+      "files": 6544,
+      "bytes": 383585769,
+      "MiB": 365.816,
+      "tracked_files": 0,
+      "ignored_files": 1,
+      "ignored_MiB": 1.649
+    }
+  },
+  "categories": {
+    "cache_or_scratch": {
+      "files": 4,
+      "bytes": 56596,
+      "MiB": 0.054,
+      "tracked_files": 0,
+      "ignored_files": 4,
+      "ignored_MiB": 0.054
+    },
+    "raw_simulation_executable": {
+      "files": 107,
+      "bytes": 123653906,
+      "MiB": 117.926,
+      "tracked_files": 0,
+      "ignored_files": 107,
+      "ignored_MiB": 117.926
+    },
+    "raw_route_database": {
+      "files": 8,
+      "bytes": 1006552281,
+      "MiB": 959.923,
+      "tracked_files": 0,
+      "ignored_files": 8,
+      "ignored_MiB": 959.923
+    }
+  },
+  "over90MiB": [
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18_dsp_followup/physical_p3r0_dsploc_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 126107205,
+      "root": "analysis/20261026_z_aw_fix",
+      "cache_or_scratch": false,
+      "raw_simulation_executable": false,
+      "raw_route_database": true,
+      "temporary_test_archive_directory": null,
+      "ignored": true,
+      "tracked": false,
+      "MiB": 120.265,
+      "ignore_rule": {
+        "source": "analysis/20261026_z_aw_fix/.gitignore",
+        "line": 8,
+        "pattern": "build/**/terminal_receipts/*.pr"
+      }
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_partial_floorplan_followup/physical_p3r0_partial_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 126063203,
+      "root": "analysis/20261026_z_aw_fix",
+      "cache_or_scratch": false,
+      "raw_simulation_executable": false,
+      "raw_route_database": true,
+      "temporary_test_archive_directory": null,
+      "ignored": true,
+      "tracked": false,
+      "MiB": 120.223,
+      "ignore_rule": {
+        "source": "analysis/20261026_z_aw_fix/.gitignore",
+        "line": 8,
+        "pattern": "build/**/terminal_receipts/*.pr"
+      }
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125868552,
+      "root": "analysis/20261026_z_aw_fix",
+      "cache_or_scratch": false,
+      "raw_simulation_executable": false,
+      "raw_route_database": true,
+      "temporary_test_archive_directory": null,
+      "ignored": true,
+      "tracked": false,
+      "MiB": 120.038,
+      "ignore_rule": {
+        "source": "analysis/20261026_z_aw_fix/.gitignore",
+        "line": 8,
+        "pattern": "build/**/terminal_receipts/*.pr"
+      }
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125852158,
+      "root": "analysis/20261026_z_aw_fix",
+      "cache_or_scratch": false,
+      "raw_simulation_executable": false,
+      "raw_route_database": true,
+      "temporary_test_archive_directory": null,
+      "ignored": true,
+      "tracked": false,
+      "MiB": 120.022,
+      "ignore_rule": {
+        "source": "analysis/20261026_z_aw_fix/.gitignore",
+        "line": 8,
+        "pattern": "build/**/terminal_receipts/*.pr"
+      }
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125775436,
+      "root": "analysis/20261026_z_aw_fix",
+      "cache_or_scratch": false,
+      "raw_simulation_executable": false,
+      "raw_route_database": true,
+      "temporary_test_archive_directory": null,
+      "ignored": true,
+      "tracked": false,
+      "MiB": 119.949,
+      "ignore_rule": {
+        "source": "analysis/20261026_z_aw_fix/.gitignore",
+        "line": 8,
+        "pattern": "build/**/terminal_receipts/*.pr"
+      }
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_p3mf60_followup/physical_p3r0_mf60_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125634282,
+      "root": "analysis/20261026_z_aw_fix",
+      "cache_or_scratch": false,
+      "raw_simulation_executable": false,
+      "raw_route_database": true,
+      "temporary_test_archive_directory": null,
+      "ignored": true,
+      "tracked": false,
+      "MiB": 119.814,
+      "ignore_rule": {
+        "source": "analysis/20261026_z_aw_fix/.gitignore",
+        "line": 8,
+        "pattern": "build/**/terminal_receipts/*.pr"
+      }
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_native/physical_p3r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125634282,
+      "root": "analysis/20261026_z_aw_fix",
+      "cache_or_scratch": false,
+      "raw_simulation_executable": false,
+      "raw_route_database": true,
+      "temporary_test_archive_directory": null,
+      "ignored": true,
+      "tracked": false,
+      "MiB": 119.814,
+      "ignore_rule": {
+        "source": "analysis/20261026_z_aw_fix/.gitignore",
+        "line": 8,
+        "pattern": "build/**/terminal_receipts/*.pr"
+      }
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_clockbuf1_followup/physical_p3r0_clkbuf1_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125617163,
+      "root": "analysis/20261026_z_aw_fix",
+      "cache_or_scratch": false,
+      "raw_simulation_executable": false,
+      "raw_route_database": true,
+      "temporary_test_archive_directory": null,
+      "ignored": true,
+      "tracked": false,
+      "MiB": 119.798,
+      "ignore_rule": {
+        "source": "analysis/20261026_z_aw_fix/.gitignore",
+        "line": 8,
+        "pattern": "build/**/terminal_receipts/*.pr"
+      }
+    }
+  ],
+  "largest40_safe_files": [
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18_dsp_followup/physical_p3r0_dsploc_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 126107205,
+      "MiB": 120.265,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_partial_floorplan_followup/physical_p3r0_partial_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 126063203,
+      "MiB": 120.223,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125868552,
+      "MiB": 120.038,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125852158,
+      "MiB": 120.022,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125775436,
+      "MiB": 119.949,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_p3mf60_followup/physical_p3r0_mf60_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125634282,
+      "MiB": 119.814,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_native/physical_p3r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125634282,
+      "MiB": 119.814,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_clockbuf1_followup/physical_p3r0_clkbuf1_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125617163,
+      "MiB": 119.798,
+      "ignored": true
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_qw2nbxjg/evidence/selected/objects/0639ef878839e8b76ffa05f9.gz",
+      "bytes": 62326361,
+      "MiB": 59.439,
+      "ignored": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_l0fk7f6k/evidence/selected/objects/0639ef878839e8b76ffa05f9.gz",
+      "bytes": 62326361,
+      "MiB": 59.439,
+      "ignored": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_jpyb8upg/evidence/selected/objects/0639ef878839e8b76ffa05f9.gz",
+      "bytes": 62326361,
+      "MiB": 59.439,
+      "ignored": false
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456683,
+      "MiB": 16.648,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456635,
+      "MiB": 16.648,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_p3mf60_followup/physical_p3r0_mf60_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456627,
+      "MiB": 16.648,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_native/physical_p3r0_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456627,
+      "MiB": 16.648,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_clockbuf1_followup/physical_p3r0_clkbuf1_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456627,
+      "MiB": 16.648,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18_dsp_followup/physical_p3r0_dsploc_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456627,
+      "MiB": 16.648,
+      "ignored": true
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_qw2nbxjg/evidence/selected/objects/e53d40e150bdfe898d2d9bd9",
+      "bytes": 17456627,
+      "MiB": 16.648,
+      "ignored": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_l0fk7f6k/evidence/selected/objects/e53d40e150bdfe898d2d9bd9",
+      "bytes": 17456627,
+      "MiB": 16.648,
+      "ignored": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_jpyb8upg/evidence/selected/objects/e53d40e150bdfe898d2d9bd9",
+      "bytes": 17456627,
+      "MiB": 16.648,
+      "ignored": false
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456619,
+      "MiB": 16.648,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_partial_floorplan_followup/physical_p3r0_partial_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456595,
+      "MiB": 16.648,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/proofs_retry02/period12000/top.vvp",
+      "bytes": 6645968,
+      "MiB": 6.338,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/proofs_retry02/period8/top.vvp",
+      "bytes": 6645952,
+      "MiB": 6.338,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/proofs_retry02/top13_vendor/top.vvp",
+      "bytes": 4168735,
+      "MiB": 3.976,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/proofs_retry02/top13_default/top.vvp",
+      "bytes": 2488996,
+      "MiB": 2.374,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18/proofs/top_safety.vvp",
+      "bytes": 2473165,
+      "MiB": 2.359,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_attempt01/top13/top_safety.vvp",
+      "bytes": 2472277,
+      "MiB": 2.358,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v20/proofs/top13/top_safety.vvp",
+      "bytes": 2472157,
+      "MiB": 2.358,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/aw_storage_integration/top_safety.vvp",
+      "bytes": 2472055,
+      "MiB": 2.358,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/top_safety.vvp",
+      "bytes": 2471327,
+      "MiB": 2.357,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v16/proofs/top_safety.vvp",
+      "bytes": 2471327,
+      "MiB": 2.357,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v15/proofs_retry02/top_safety.vvp",
+      "bytes": 2471169,
+      "MiB": 2.357,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v8/proofs_completion02/top/top_safety.vvp",
+      "bytes": 2471062,
+      "MiB": 2.357,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/result_width_integration/top_safety.vvp",
+      "bytes": 2471033,
+      "MiB": 2.357,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v10/proofs_retry02/top/top_safety.vvp",
+      "bytes": 2470458,
+      "MiB": 2.356,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v19/az_proofs/top_safety.vvp",
+      "bytes": 2470316,
+      "MiB": 2.356,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/numeric_guard_top/top_safety.vvp",
+      "bytes": 2469465,
+      "MiB": 2.355,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v14/proofs/top_safety.vvp",
+      "bytes": 2469455,
+      "MiB": 2.355,
+      "ignored": true
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/v4_release_proofs/top_safety.vvp",
+      "bytes": 2469245,
+      "MiB": 2.355,
+      "ignored": true
+    }
+  ],
+  "largest35_owned_subtrees": [
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6",
+      "files": 106,
+      "bytes": 287189714,
+      "MiB": 273.885,
+      "tracked_files": 0,
+      "ignored_files": 4,
+      "ignored_MiB": 273.356
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22",
+      "files": 235,
+      "bytes": 151409263,
+      "MiB": 144.395,
+      "tracked_files": 0,
+      "ignored_files": 8,
+      "ignored_MiB": 142.235
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_native",
+      "files": 60,
+      "bytes": 144901287,
+      "MiB": 138.189,
+      "tracked_files": 0,
+      "ignored_files": 4,
+      "ignored_MiB": 136.468
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18_dsp_followup",
+      "files": 51,
+      "bytes": 143858134,
+      "MiB": 137.194,
+      "tracked_files": 0,
+      "ignored_files": 2,
+      "ignored_MiB": 136.913
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_partial_floorplan_followup",
+      "files": 40,
+      "bytes": 143716219,
+      "MiB": 137.058,
+      "tracked_files": 0,
+      "ignored_files": 2,
+      "ignored_MiB": 136.871
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_p3mf60_followup",
+      "files": 37,
+      "bytes": 143233131,
+      "MiB": 136.598,
+      "tracked_files": 0,
+      "ignored_files": 2,
+      "ignored_MiB": 136.462
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_clockbuf1_followup",
+      "files": 38,
+      "bytes": 143219277,
+      "MiB": 136.585,
+      "tracked_files": 0,
+      "ignored_files": 2,
+      "ignored_MiB": 136.446
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_qw2nbxjg",
+      "files": 577,
+      "bytes": 94121324,
+      "MiB": 89.761,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_l0fk7f6k",
+      "files": 577,
+      "bytes": 94121324,
+      "MiB": 89.761,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_jpyb8upg",
+      "files": 577,
+      "bytes": 94121324,
+      "MiB": 89.761,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21",
+      "files": 124,
+      "bytes": 21802244,
+      "MiB": 20.792,
+      "tracked_files": 0,
+      "ignored_files": 4,
+      "ignored_MiB": 19.025
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_proof_SYN_archive_9p9vli81",
+      "files": 517,
+      "bytes": 10587818,
+      "MiB": 10.097,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_s6vavpxo",
+      "files": 435,
+      "bytes": 9852096,
+      "MiB": 9.396,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_crw9pbpo",
+      "files": 435,
+      "bytes": 9852096,
+      "MiB": 9.396,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12",
+      "files": 178,
+      "bytes": 9110677,
+      "MiB": 8.689,
+      "tracked_files": 0,
+      "ignored_files": 10,
+      "ignored_MiB": 6.666
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11",
+      "files": 148,
+      "bytes": 9009534,
+      "MiB": 8.592,
+      "tracked_files": 0,
+      "ignored_files": 9,
+      "ignored_MiB": 6.639
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v9",
+      "files": 189,
+      "bytes": 8335708,
+      "MiB": 7.95,
+      "tracked_files": 0,
+      "ignored_files": 5,
+      "ignored_MiB": 5.619
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_xlbn8lj7",
+      "files": 406,
+      "bytes": 7671656,
+      "MiB": 7.316,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_pf0u20_3",
+      "files": 406,
+      "bytes": 7671656,
+      "MiB": 7.316,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v8",
+      "files": 156,
+      "bytes": 5853053,
+      "MiB": 5.582,
+      "tracked_files": 0,
+      "ignored_files": 4,
+      "ignored_MiB": 3.483
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v20",
+      "files": 117,
+      "bytes": 5538897,
+      "MiB": 5.282,
+      "tracked_files": 0,
+      "ignored_files": 2,
+      "ignored_MiB": 4.239
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_whngxwnx",
+      "files": 267,
+      "bytes": 5463127,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_gy7pq4_v",
+      "files": 267,
+      "bytes": 5463127,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_dbii7ss7",
+      "files": 267,
+      "bytes": 5463097,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_18_sw4qf",
+      "files": 267,
+      "bytes": 5463097,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_nuqtp3su",
+      "files": 267,
+      "bytes": 5462951,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_esx_04so",
+      "files": 267,
+      "bytes": 5437474,
+      "MiB": 5.186,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_hz8nst6w",
+      "files": 265,
+      "bytes": 5434062,
+      "MiB": 5.182,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_er1swheo",
+      "files": 265,
+      "bytes": 5434062,
+      "MiB": 5.182,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_c62j28kk",
+      "files": 265,
+      "bytes": 5434062,
+      "MiB": 5.182,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22_fan100",
+      "files": 117,
+      "bytes": 5326852,
+      "MiB": 5.08,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18",
+      "files": 122,
+      "bytes": 4968824,
+      "MiB": 4.739,
+      "tracked_files": 0,
+      "ignored_files": 6,
+      "ignored_MiB": 4.302
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v10",
+      "files": 141,
+      "bytes": 4525148,
+      "MiB": 4.316,
+      "tracked_files": 0,
+      "ignored_files": 2,
+      "ignored_MiB": 2.423
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v13",
+      "files": 125,
+      "bytes": 3167309,
+      "MiB": 3.021,
+      "tracked_files": 0,
+      "ignored_files": 4,
+      "ignored_MiB": 2.65
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v19",
+      "files": 77,
+      "bytes": 3130311,
+      "MiB": 2.985,
+      "tracked_files": 0,
+      "ignored_files": 2,
+      "ignored_MiB": 2.522
+    }
+  ],
+  "agent_review_subtrees": [
+    {
+      "path": "analysis/agent_reviews/extension_bram_20261027",
+      "files": 20,
+      "bytes": 1767936,
+      "MiB": 1.686,
+      "tracked_files": 0,
+      "ignored_files": 1,
+      "ignored_MiB": 1.649
+    },
+    {
+      "path": "analysis/agent_reviews/imu_index_20261027",
+      "files": 2,
+      "bytes": 13423,
+      "MiB": 0.013,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/imu_local_optimization_20261027",
+      "files": 6,
+      "bytes": 19235,
+      "MiB": 0.018,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/physical_v19_root_20261027",
+      "files": 1,
+      "bytes": 1128,
+      "MiB": 0.001,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/placement_export_20261027",
+      "files": 2,
+      "bytes": 11712,
+      "MiB": 0.011,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027",
+      "files": 6438,
+      "bytes": 379664964,
+      "MiB": 362.077,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/release_wait_types_20261027",
+      "files": 17,
+      "bytes": 448352,
+      "MiB": 0.428,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v20_dsp_physical_independent_20261027",
+      "files": 4,
+      "bytes": 15641,
+      "MiB": 0.015,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v20_independent_20261027",
+      "files": 1,
+      "bytes": 7899,
+      "MiB": 0.008,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v20_root_20261027",
+      "files": 1,
+      "bytes": 1009,
+      "MiB": 0.001,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v20_second_independent_20261027",
+      "files": 4,
+      "bytes": 217106,
+      "MiB": 0.207,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v20_v21_release_independent_20261027",
+      "files": 6,
+      "bytes": 24846,
+      "MiB": 0.024,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v21_audit_retry02_independent_20261027",
+      "files": 2,
+      "bytes": 8485,
+      "MiB": 0.008,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v21_audit_retry02_root_20261027",
+      "files": 4,
+      "bytes": 8896,
+      "MiB": 0.008,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v21_independent_20261027",
+      "files": 1,
+      "bytes": 7487,
+      "MiB": 0.007,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v21_root_20261027",
+      "files": 1,
+      "bytes": 7307,
+      "MiB": 0.007,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_dsp_physical_independent_20261027",
+      "files": 5,
+      "bytes": 305624,
+      "MiB": 0.291,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_dsp_physical_root_20261027",
+      "files": 1,
+      "bytes": 7302,
+      "MiB": 0.007,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_fan100_independent_20261027",
+      "files": 3,
+      "bytes": 278460,
+      "MiB": 0.266,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_fan100_result_20261027",
+      "files": 2,
+      "bytes": 292127,
+      "MiB": 0.279,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_fan100_root_20261027",
+      "files": 2,
+      "bytes": 14306,
+      "MiB": 0.014,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_independent_20261027",
+      "files": 9,
+      "bytes": 263476,
+      "MiB": 0.251,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_release_independent_20261027",
+      "files": 10,
+      "bytes": 185238,
+      "MiB": 0.177,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_root_20261027",
+      "files": 1,
+      "bytes": 6840,
+      "MiB": 0.007,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    },
+    {
+      "path": "analysis/agent_reviews/v22_standard_physical_root_20261027",
+      "files": 1,
+      "bytes": 6970,
+      "MiB": 0.007,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0
+    }
+  ],
+  "test_archive_subtrees": [
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_qw2nbxjg",
+      "files": 577,
+      "bytes": 94121324,
+      "MiB": 89.761,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": true
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_l0fk7f6k",
+      "files": 577,
+      "bytes": 94121324,
+      "MiB": 89.761,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_jpyb8upg",
+      "files": 577,
+      "bytes": 94121324,
+      "MiB": 89.761,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_proof_SYN_archive_9p9vli81",
+      "files": 517,
+      "bytes": 10587818,
+      "MiB": 10.097,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": true
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_s6vavpxo",
+      "files": 435,
+      "bytes": 9852096,
+      "MiB": 9.396,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_crw9pbpo",
+      "files": 435,
+      "bytes": 9852096,
+      "MiB": 9.396,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": true
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_xlbn8lj7",
+      "files": 406,
+      "bytes": 7671656,
+      "MiB": 7.316,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_pf0u20_3",
+      "files": 406,
+      "bytes": 7671656,
+      "MiB": 7.316,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": true
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_whngxwnx",
+      "files": 267,
+      "bytes": 5463127,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": true
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_gy7pq4_v",
+      "files": 267,
+      "bytes": 5463127,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_dbii7ss7",
+      "files": 267,
+      "bytes": 5463097,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_18_sw4qf",
+      "files": 267,
+      "bytes": 5463097,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_nuqtp3su",
+      "files": 267,
+      "bytes": 5462951,
+      "MiB": 5.21,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_esx_04so",
+      "files": 267,
+      "bytes": 5437474,
+      "MiB": 5.186,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_hz8nst6w",
+      "files": 265,
+      "bytes": 5434062,
+      "MiB": 5.182,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_er1swheo",
+      "files": 265,
+      "bytes": 5434062,
+      "MiB": 5.182,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_c62j28kk",
+      "files": 265,
+      "bytes": 5434062,
+      "MiB": 5.182,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy",
+      "files": 93,
+      "bytes": 2534768,
+      "MiB": 2.417,
+      "tracked_files": 0,
+      "ignored_files": 0,
+      "ignored_MiB": 0.0,
+      "cited_in_explicit_sealed_test_metadata": false
+    }
+  ],
+  "sealed_test_metadata_inspected": [
+    "analysis/agent_reviews/release_20261027/V20_V21_VALIDATION_SEALED.json",
+    "analysis/agent_reviews/release_20261027/V22_RELEASE_VALIDATION_SEALED.json",
+    "analysis/agent_reviews/release_20261027/validation_sealed.json",
+    "analysis/agent_reviews/release_20261027/hardening_dsp_validation_sealed.json"
+  ],
+  "nested_ignore_files": [
+    "firmware/B0B4/.gitignore",
+    "ground/B0B4/.gitignore",
+    "analysis/20261026_z_aw_fix/.gitignore"
+  ],
+  "ignored_relevant_files": [
+    {
+      "path": "analysis/20261026_z_aw_fix/width_regression/regression.vvp",
+      "bytes": 1125807,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/width_integration/top_safety.vvp",
+      "bytes": 2469239,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/width_integration/contention/contention.vvp",
+      "bytes": 788060,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/width_boundary/fraction_16/boundary.vvp",
+      "bytes": 747769,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/width_boundary/fraction_0/boundary.vvp",
+      "bytes": 748131,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/sign_step_regression/regression.vvp",
+      "bytes": 1123973,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/sign_step_integration/top_safety.vvp",
+      "bytes": 2467393,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/sign_step_integration/contention/contention.vvp",
+      "bytes": 784364,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/shared_add_regression/regression.vvp",
+      "bytes": 1124815,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/shared_add_integration/top_safety.vvp",
+      "bytes": 2468232,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/shared_add_integration/contention/contention.vvp",
+      "bytes": 786041,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/rtl_regression/regression.vvp",
+      "bytes": 757259,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/rtl_regression/xy_i0_attempt02/diagnose_original_cadence/simulation.vvp",
+      "bytes": 757607,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/rtl_regression/xy_i0_attempt02/corrected_xy_i0/simulation.vvp",
+      "bytes": 757595,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/result_width_regression/regression.vvp",
+      "bytes": 1128278,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/result_width_integration/top_safety.vvp",
+      "bytes": 2471033,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/result_width_integration/contention/contention.vvp",
+      "bytes": 791639,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/result_width_boundary/fraction_16/boundary.vvp",
+      "bytes": 751366,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/result_width_boundary/fraction_0/boundary.vvp",
+      "bytes": 751728,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/parameter_tests/protocol_tb.vvp",
+      "bytes": 102677,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/parameter_tests/top_safety.vvp",
+      "bytes": 2465199,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/parameter_tests/uart_tb.vvp",
+      "bytes": 13482,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/parameter_tests/contention/contention.vvp",
+      "bytes": 781911,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/numeric_guard_top/top_safety.vvp",
+      "bytes": 2469465,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/numeric_guard_predicate/predicate.vvp",
+      "bytes": 13942,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/numeric_guard_fusion/completion03/pre1.vvp",
+      "bytes": 569280,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/numeric_guard_fusion/attempt02/pre0.vvp",
+      "bytes": 571953,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/compact_regression/regression.vvp",
+      "bytes": 1122398,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/compact_regression/cancel_diagnostic_attempt01/diagnostic.vvp",
+      "bytes": 1122837,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/compact_regression/cancel_and_i0_attempt02/regression.vvp",
+      "bytes": 1122513,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/compact_integration/top_safety.vvp",
+      "bytes": 2466811,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/compact_integration/contention/contention.vvp",
+      "bytes": 782814,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/v4_release_proofs/top_safety.vvp",
+      "bytes": 2469245,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/native_v4_DSP_export/copy_cache_changes_02/source/impl/pnr/device.cfg",
+      "bytes": 572,
+      "source": ".gitignore",
+      "line": 2,
+      "pattern": "**/impl/"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v9/proofs_retry02/top/top_safety.vvp",
+      "bytes": 2468246,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v9/proofs_retry02/five/regression.vvp",
+      "bytes": 1126822,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v9/proofs_retry02/contention/contention/contention.vvp",
+      "bytes": 788088,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v9/proofs_retry02/boundary/fraction_16/boundary.vvp",
+      "bytes": 754046,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v9/proofs_retry02/boundary/fraction_0/boundary.vvp",
+      "bytes": 754408,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v8/proofs_completion02/fusion_pre1.vvp",
+      "bytes": 569101,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v8/proofs_completion02/top/top_safety.vvp",
+      "bytes": 2471062,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v8/proofs/adapter.vvp",
+      "bytes": 40236,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v8/proofs/fusion_pre0.vvp",
+      "bytes": 571736,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456683,
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125868552,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 8,
+      "pattern": "build/**/terminal_receipts/*.pr"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456635,
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125852158,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 8,
+      "pattern": "build/**/terminal_receipts/*.pr"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_partial_floorplan_followup/physical_p3r0_partial_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456595,
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_partial_floorplan_followup/physical_p3r0_partial_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 126063203,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 8,
+      "pattern": "build/**/terminal_receipts/*.pr"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_p3mf60_followup/physical_p3r0_mf60_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456627,
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_p3mf60_followup/physical_p3r0_mf60_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125634282,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 8,
+      "pattern": "build/**/terminal_receipts/*.pr"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_native/physical_p3r0_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456627,
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_native/physical_p3r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125634282,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 8,
+      "pattern": "build/**/terminal_receipts/*.pr"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_native/gui_cache_changes/source/impl/pnr/device.cfg",
+      "bytes": 572,
+      "source": ".gitignore",
+      "line": 2,
+      "pattern": "**/impl/"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_clockbuf1_followup/physical_p3r0_clkbuf1_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456627,
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_clockbuf1_followup/physical_p3r0_clkbuf1_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125617163,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 8,
+      "pattern": "build/**/terminal_receipts/*.pr"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_attempt01/top13/top_safety.vvp",
+      "bytes": 2472277,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_attempt01/five/regression.vvp",
+      "bytes": 1126950,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_attempt01/contention/contention/contention.vvp",
+      "bytes": 788317,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_attempt01/boundary/fraction_16/boundary.vvp",
+      "bytes": 752651,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_attempt01/boundary/fraction_0/boundary.vvp",
+      "bytes": 753013,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_alias_retry02/alias.vvp",
+      "bytes": 19409,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456619,
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 125775436,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 8,
+      "pattern": "build/**/terminal_receipts/*.pr"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/proofs_retry02/top13_vendor/top.vvp",
+      "bytes": 4168735,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/proofs_retry02/top13_default/top.vvp",
+      "bytes": 2488996,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/proofs_retry02/period8/top.vvp",
+      "bytes": 6645952,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/proofs_retry02/period12000/top.vvp",
+      "bytes": 6645968,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v20/proofs_retry02/integration.vvp",
+      "bytes": 1972309,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v20/proofs/top13/top_safety.vvp",
+      "bytes": 2472157,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v19/proofs/flight_state_miter.vvp",
+      "bytes": 174032,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v19/az_proofs/top_safety.vvp",
+      "bytes": 2470316,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18_dsp_followup/physical_p3r0_dsploc_01/terminal_receipts/acg720_ano_port.fs",
+      "bytes": 17456627,
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18_dsp_followup/physical_p3r0_dsploc_01/terminal_receipts/acg720_ano_port.pr",
+      "bytes": 126107205,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 8,
+      "pattern": "build/**/terminal_receipts/*.pr"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18/vy_proofs/attempt01/geometry.vvp",
+      "bytes": 1434116,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18/vy_proofs/attempt01/metric.vvp",
+      "bytes": 91457,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18/vy_proofs/attempt01/uart_mode0.vvp",
+      "bytes": 168991,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18/vy_proofs/attempt01/uart_mode1.vvp",
+      "bytes": 169113,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18/proofs/flight_state_miter.vvp",
+      "bytes": 174032,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v18/proofs/top_safety.vvp",
+      "bytes": 2473165,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/flight_state_miter.vvp",
+      "bytes": 174032,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/top_safety.vvp",
+      "bytes": 2471327,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v16/proofs/flight_state_miter.vvp",
+      "bytes": 174032,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v16/proofs/top_safety.vvp",
+      "bytes": 2471327,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v15/proofs_retry02/flight_state_miter.vvp",
+      "bytes": 173882,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v15/proofs_retry02/top_safety.vvp",
+      "bytes": 2471169,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v14/proofs/top_safety.vvp",
+      "bytes": 2469455,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v13/proofs/age.vvp",
+      "bytes": 21628,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v13/proofs/uart_mode0.vvp",
+      "bytes": 144403,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v13/proofs/uart_mode1.vvp",
+      "bytes": 144525,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v13/proofs/top/top_safety.vvp",
+      "bytes": 2468107,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/expiry_pre0_age1.vvp",
+      "bytes": 558849,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/expiry_pre0_age31.vvp",
+      "bytes": 558854,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/expiry_pre0_age65536.vvp",
+      "bytes": 558939,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/expiry_pre1_age1.vvp",
+      "bytes": 558616,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/expiry_pre1_age31.vvp",
+      "bytes": 558621,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/expiry_pre1_age65536.vvp",
+      "bytes": 558706,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/fusion_pre0.vvp",
+      "bytes": 571341,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/fusion_pre1.vvp",
+      "bytes": 568667,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/predicate.vvp",
+      "bytes": 29029,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/proofs/top/top_safety.vvp",
+      "bytes": 2468145,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/expiry_pre0_age1.vvp",
+      "bytes": 558991,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/expiry_pre0_age31.vvp",
+      "bytes": 558995,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/expiry_pre0_age65536.vvp",
+      "bytes": 559077,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/expiry_pre1_age1.vvp",
+      "bytes": 558758,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/expiry_pre1_age31.vvp",
+      "bytes": 558762,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/expiry_pre1_age65536.vvp",
+      "bytes": 558844,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/fusion_pre0.vvp",
+      "bytes": 571477,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/fusion_pre1.vvp",
+      "bytes": 568803,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/proofs/top/top_safety.vvp",
+      "bytes": 2468045,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v10/proofs_retry02/diagnostic.vvp",
+      "bytes": 70018,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v10/proofs_retry02/top/top_safety.vvp",
+      "bytes": 2470458,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/clock49_uart/recovery_diagnostic/trace.vvp",
+      "bytes": 17654,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/clock49_uart/proofs_retry03/test.vvp",
+      "bytes": 37796,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/clock49_uart/proofs_retry02/test.vvp",
+      "bytes": 37788,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/clock49_uart/proofs/test.vvp",
+      "bytes": 37780,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/clock49_time_adapter/proofs/test.vvp",
+      "bytes": 54152,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/clock49_pwm/proofs/test.vvp",
+      "bytes": 99341,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/clock49_generate/simulation/clock49.vvp",
+      "bytes": 175863,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/aw_storage_regression/regression.vvp",
+      "bytes": 1129294,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/aw_storage_integration/top_safety.vvp",
+      "bytes": 2472055,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/aw_storage_integration/contention/contention.vvp",
+      "bytes": 793685,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/aw_storage_boundary/fraction_16/boundary.vvp",
+      "bytes": 756518,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/aw_storage_boundary/fraction_0/boundary.vvp",
+      "bytes": 756880,
+      "source": "analysis/20261026_z_aw_fix/.gitignore",
+      "line": 3,
+      "pattern": "*.vvp"
+    },
+    {
+      "path": "analysis/agent_reviews/extension_bram_20261027/attempt01/extension_bram.vvp",
+      "bytes": 1728661,
+      "source": ".gitignore",
+      "line": 5,
+      "pattern": "*.vvp"
+    }
+  ],
+  "future_package_ignore_matches": [
+    {
+      "source": ".gitignore",
+      "line": 8,
+      "pattern": "*.fs",
+      "path": "firmware/B0B4/release/acg720_ano_port.fs"
+    }
+  ],
+  "future_package_paths_checked_not_ignored": [
+    "firmware/B0B4/evidence/selected/acg720_ano_port.pr.gz",
+    "firmware/B0B4/evidence/selected/top_safety.vvp.gz"
+  ],
+  "recommendations": [
+    {
+      "action": "include",
+      "paths": [
+        "firmware/B0B4/source/**",
+        "firmware/B0B4/release/**",
+        "firmware/B0B4/evidence/selected/**",
+        "firmware/B0B4/qualification.json",
+        "firmware/B0B4/release_manifest.json",
+        "firmware/B0B4/release_manifest.sha256",
+        "firmware/B0B4/*.py",
+        "firmware/B0B4/*.md"
+      ],
+      "reason": "After export, include the complete manifest/index-bound qualified package, including compressed proof/SYN/physical objects and exact accepted FS. Check ignored paths explicitly; current *.fs rule has no B0B4 exception."
+    },
+    {
+      "action": "include",
+      "paths": [
+        "ground/B0B4/**",
+        "analysis/20261026_z_aw_fix/**"
+      ],
+      "exceptions": [
+        "name-screened environment/credentials",
+        "cache/scratch directories",
+        "raw ignored .vvp",
+        "ignored terminal_receipts/*.pr",
+        "unqualified historical .fs unless explicitly required"
+      ],
+      "reason": "Preserve source/protocol/operation docs, scripts, source-change history, success and genuine failed receipts/logs/reports. Do not blanket force ignored raw build products."
+    },
+    {
+      "action": "include_review_evidence",
+      "paths": [
+        "analysis/agent_reviews/*20261027/**"
+      ],
+      "reason": "Include relevant review code, reports, real test receipts/logs, and sealed cited archives. Additional test archive copies not cited in sealed metadata are candidates to omit only after final EVIDENCE_INDEX closure review."
+    },
+    {
+      "action": "exclude",
+      "paths": [
+        "out/**",
+        "firmware/B0B2/evidence/copy99_proof/proof.zip",
+        "**/__pycache__/**",
+        "**/tmp/**",
+        "**/fsm_tmp/**",
+        "environment/credential named paths"
+      ],
+      "reason": "Out stays local; selected artifacts must be present in the qualified portable archive. Unrelated B0B2 zip is outside the task and was never opened or hashed."
+    }
+  ],
+  "needs_post_export_check": [
+    "Read final release_manifest and EVIDENCE_INDEX; verify all declared paths exist and determine Git ignore status for every required archive/release item.",
+    "Confirm final package per-file size and 90MiB threshold after compression.",
+    "Reconcile closure dependencies before omitting any cited test archive; preserve historical failures and source provenance."
+  ],
+  "git_stage_commit_push_performed": false,
+  "existing_files_modified": false
+}

@@ -1,0 +1,4 @@
+{"top13_reused_from_actual_attempt01_root0": true, "new_top13_runs_in_retry": 0}
+{"stage": "integration_compile", "actual_p_wait": 0}
+{"stage": "integration_vvp", "actual_p_wait": 0}
+{"passed": true, "fresh_top13": 13, "integration": "PASS combined_guard cycles=423 checks=423 AZ_publications=10 metric_publications=15 combinations=1111 default_wrong_flags_ignored=1 no_DUT_force_preload=1", "core_FSM_rerun": false}

@@ -1,0 +1,65 @@
+{
+  "recommended_first_step": "Obtain documented report-only interface before large per-object report_timing batches; no PNR or candidate authorized",
+  "inventory": [
+    {
+      "sha256": "7cfceb6cb12e13d8dc98791f016b999ea84153a87646437e8c98435c7700b33e",
+      "path": "C:/Users/ScherrerL/Desktop/apple/timeout_policy_20261025/vendor_manuals/SUG1220-2.1E_Gowin Software Tcl Commands User Guide.txt",
+      "bytes": 91701
+    },
+    {
+      "sha256": "3d482ebc6c8d094b1e088abc7740c2f1c534a974fdb713652a4d1e92a0ad446f",
+      "path": "C:/Users/ScherrerL/Desktop/apple/timeout_policy_20261025/vendor_manuals/SUG1541-1.0E_Gowin Software Physical Constraints User Guide.txt",
+      "bytes": 118141
+    },
+    {
+      "sha256": "5ecab4ba12e7e6f1446fa809ea91a90a2bdebea997cd2c5e7e7798b0f2af7594",
+      "path": "C:/Users/ScherrerL/Desktop/apple/routing_rescue_20261015/mtf01p_b0b0_synthesis_fix/hardware/doc_diagnostics/SUG940.txt",
+      "bytes": 126337
+    },
+    {
+      "sha256": "d9367ac1ef9a0e4e549855a7ec8cb4fb5b5f2abdae174ac1d42d162ccf9d1628",
+      "path": "C:/Users/ScherrerL/Desktop/apple/routing_rescue_20261015/mtf01p_b0ae_ano_control/tools_notes/SUG100-4.4.7E_Gowin Software User Guide.txt",
+      "bytes": 147131
+    },
+    {
+      "sha256": "c62307f8f84c2a0b742e1b5ba09211ad17158d9b6e6807e0c59146775ba80b82",
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v4/physical_p3r0_01/source/impl/pnr/acg720_ano_port.tr",
+      "bytes": 407726
+    },
+    {
+      "sha256": "eb4991e4198f3867b1cdfd935c3658f63e530d89c643a1e73be6ea32fe37ed70",
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v4_native/GUI_VIEW_RESULT.json",
+      "bytes": 727
+    },
+    {
+      "sha256": "cdfec43d4ceb45a2d8d2ff2fff6606fe17559809d9b08fe39d3253015059bf3d",
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/native_v4_DSP_export/EXPORT_VALIDATION.json",
+      "bytes": 79699
+    },
+    {
+      "sha256": "dec37a2856d243e374efc64572c75075fec012b061400471e013d679bff10ab4",
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v4_incplace_native/OBSERVATION_CORRECTION.json",
+      "bytes": 849
+    },
+    {
+      "sha256": "48a424941d89f0809039c77d020187e37b729e537d39744f75626045796a2d47",
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v4_incplace_loc3_followup/PREPARATION.json",
+      "bytes": 1463
+    },
+    {
+      "sha256": "b3d3e88741e1cf0c4d62fe7ec3f88e74cd2f1242b0319f59b0c4f92cfe26a714",
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/placement_export_20261027/REPORT.md",
+      "bytes": 7809
+    }
+  ],
+  "created_utc": "2026-10-27T03:12:19.8124902Z",
+  "unresolved": "Official existing routed-database report-only STA entry point not documented in searched guides",
+  "observed": "Exact v4 report_timing has LUT F/FF D/CLK LOC; detailed MPW report has no LOC column",
+  "qualification": false,
+  "production_and_original_helper_unchanged": {
+    "firmware/B0B4/build_candidate.py": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+    "analysis/20261026_z_aw_fix/build/export_qualified_v4.py": "e008e5f35ec0d8fed612c4773b87c57c21dbcb8d447affc54f5e966ec17e860f",
+    "firmware/B0B4/verify_release.py": "ce54d5e501769bf6450f4a17a3e71211353efc5d33fec56957bcc07396b178eb"
+  },
+  "scope": "Read-only official documentation and existing plaintext STA/JSON investigation; no vendor/UI/hardware, no protected placement database read or decode"
+}

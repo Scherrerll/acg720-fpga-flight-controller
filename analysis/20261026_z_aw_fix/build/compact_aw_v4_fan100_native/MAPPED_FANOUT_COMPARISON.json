@@ -1,0 +1,235 @@
+{
+  "scope": "Actual SYN netlist pin-load counts and overapproximate combinational topology only. No physical timing or routability claim. Selected families come from the original v4 raw setup paths; new physical reports remain mandatory.",
+  "raw_basis_TR_sha256": "c62307f8f84c2a0b742e1b5ba09211ad17158d9b6e6807e0c59146775ba80b82",
+  "new_actual_SYN_audit_sha256": "f41568019783f75ad7a11e66e86b9bd7dd59ef44cb2d4977e5e0d16b38b3f7c7",
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "runs": {
+    "original_max200": {
+      "vg_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+      "FF_count": 27766,
+      "selected_fanout": {
+        "core/fallback_control/height_fallback_active_s": [
+          {
+            "cell": "core/fallback_control/height_fallback_active_s",
+            "primitive": "LUT3",
+            "output_pin": "F",
+            "mapped_pin_loads": 115,
+            "clock_pin_loads": 0
+          },
+          {
+            "cell": "core/fallback_control/height_fallback_active_s0",
+            "primitive": "LUT4",
+            "output_pin": "F",
+            "mapped_pin_loads": 45,
+            "clock_pin_loads": 0
+          }
+        ],
+        "native_navigation/nav_vertical_ready_s": [
+          {
+            "cell": "native_navigation/nav_vertical_ready_s",
+            "primitive": "LUT4",
+            "output_pin": "F",
+            "mapped_pin_loads": 9,
+            "clock_pin_loads": 0
+          },
+          {
+            "cell": "native_navigation/nav_vertical_ready_s0",
+            "primitive": "LUT4",
+            "output_pin": "F",
+            "mapped_pin_loads": 2,
+            "clock_pin_loads": 0
+          }
+        ],
+        "core_vertical_available_s": [
+          {
+            "cell": "core_vertical_available_s3",
+            "primitive": "LUT5",
+            "output_pin": "F",
+            "mapped_pin_loads": 10,
+            "clock_pin_loads": 0
+          }
+        ],
+        "previous_pose_valid_s": [
+          {
+            "cell": "previous_pose_valid_s0",
+            "primitive": "DFFRE",
+            "output_pin": "Q",
+            "mapped_pin_loads": 21,
+            "clock_pin_loads": 0
+          }
+        ]
+      },
+      "selected_topology": [
+        {
+          "source": "acc_time/output_az_3_s0",
+          "target": "core/flight_state/flying_ms_3_s0/D",
+          "overapprox_combinational_path": {
+            "depth": 19,
+            "cells": [
+              "native_navigation/nav_xy_ready_s111",
+              "native_navigation/nav_xy_ready_s91",
+              "native_navigation/nav_xy_ready_s72",
+              "native_navigation/nav_xy_ready_s44",
+              "native_navigation/nav_xy_ready_s18",
+              "native_navigation/nav_xy_ready_s7",
+              "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s17",
+              "native_navigation/nav_vertical_ready_s0",
+              "native_navigation/core_height_state_tail_kept_s1",
+              "core_vertical_available_s3",
+              "core/fallback_control/height_fallback_active_s0",
+              "core/fallback_control/height_fallback_active_s",
+              "core/selected_throttle_4_s0",
+              "core/flight_state/n740_s10",
+              "core/flight_state/n740_s7",
+              "core/flight_state/n740_s5",
+              "core/flight_state/n740_s2",
+              "core/flight_state/n740_s0",
+              "core/flight_state/n56_s3"
+            ]
+          }
+        },
+        {
+          "source": "mtf/metric/vy_x100_28_s0",
+          "target": "staged_telemetry.extension_q_814_s0/D",
+          "not_present_under_original_name": true
+        },
+        {
+          "source": "previous_pose_valid_s0",
+          "target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "overapprox_combinational_path": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n595_s7"
+            ]
+          }
+        }
+      ]
+    },
+    "new_max100": {
+      "vg_sha256": "ee563db30b106af8d2621a8a24ec4476a080aac73095a2b5348cad7ba1878f80",
+      "FF_count": 27847,
+      "selected_fanout": {
+        "core/fallback_control/height_fallback_active_s": [
+          {
+            "cell": "core/fallback_control/height_fallback_active_s",
+            "primitive": "LUT3",
+            "output_pin": "F",
+            "mapped_pin_loads": 58,
+            "clock_pin_loads": 0
+          },
+          {
+            "cell": "core/fallback_control/height_fallback_active_s0",
+            "primitive": "LUT4",
+            "output_pin": "F",
+            "mapped_pin_loads": 46,
+            "clock_pin_loads": 0
+          },
+          {
+            "cell": "core/fallback_control/height_fallback_active_s1",
+            "primitive": "LUT3",
+            "output_pin": "F",
+            "mapped_pin_loads": 57,
+            "clock_pin_loads": 0
+          }
+        ],
+        "native_navigation/nav_vertical_ready_s": [
+          {
+            "cell": "native_navigation/nav_vertical_ready_s",
+            "primitive": "LUT4",
+            "output_pin": "F",
+            "mapped_pin_loads": 9,
+            "clock_pin_loads": 0
+          },
+          {
+            "cell": "native_navigation/nav_vertical_ready_s0",
+            "primitive": "LUT4",
+            "output_pin": "F",
+            "mapped_pin_loads": 2,
+            "clock_pin_loads": 0
+          }
+        ],
+        "core_vertical_available_s": [
+          {
+            "cell": "core_vertical_available_s3",
+            "primitive": "LUT5",
+            "output_pin": "F",
+            "mapped_pin_loads": 10,
+            "clock_pin_loads": 0
+          }
+        ],
+        "previous_pose_valid_s": [
+          {
+            "cell": "previous_pose_valid_s0",
+            "primitive": "DFFRE",
+            "output_pin": "Q",
+            "mapped_pin_loads": 21,
+            "clock_pin_loads": 0
+          }
+        ]
+      },
+      "selected_topology": [
+        {
+          "source": "acc_time/output_az_3_s0",
+          "target": "core/flight_state/flying_ms_3_s0/D",
+          "overapprox_combinational_path": {
+            "depth": 19,
+            "cells": [
+              "native_navigation/nav_xy_ready_s111",
+              "native_navigation/nav_xy_ready_s91",
+              "native_navigation/nav_xy_ready_s72",
+              "native_navigation/nav_xy_ready_s44",
+              "native_navigation/nav_xy_ready_s18",
+              "native_navigation/nav_xy_ready_s7",
+              "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s17",
+              "native_navigation/nav_vertical_ready_s0",
+              "native_navigation/core_height_state_tail_kept_s1",
+              "core_vertical_available_s3",
+              "core/fallback_control/height_fallback_active_s0",
+              "core/fallback_control/height_fallback_active_s1",
+              "core/selected_throttle_4_s0",
+              "core/flight_state/n740_s10",
+              "core/flight_state/n740_s7",
+              "core/flight_state/n740_s5",
+              "core/flight_state/n740_s2",
+              "core/flight_state/n740_s0",
+              "core/flight_state/n56_s3"
+            ]
+          }
+        },
+        {
+          "source": "mtf/metric/vy_x100_28_s0",
+          "target": "staged_telemetry.extension_q_814_s0/D",
+          "not_present_under_original_name": true
+        },
+        {
+          "source": "previous_pose_valid_s0",
+          "target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "overapprox_combinational_path": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n595_s7"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

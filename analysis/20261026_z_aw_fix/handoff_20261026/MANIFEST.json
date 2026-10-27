@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-26T08:47:40.742910+00:00",
+  "scope": "Localhandoff snapshot only, no qualified B0B4 release/no new conversation; waiting user approval",
+  "files": [
+    {
+      "path": "candidate_v7_mtf_xyz_hold_control.v",
+      "bytes": 31374,
+      "sha256": "2109595a24c6f15a553ea8a0958b8313c3f19d56b4371c827cd428976489daad"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 8627,
+      "sha256": "7ac252efd6e07847ea1b5dc7508b321c77f3675e6854ea5e7ac193e2a386c965"
+    },
+    {
+      "path": "NEW_CHAT_PROMPT.txt",
+      "bytes": 2681,
+      "sha256": "651a16601e5356ad7d58f98d99974ca91fc3dde1280090018cbd7caba3ebf501"
+    },
+    {
+      "path": "NEXT_PLAN.md",
+      "bytes": 1718,
+      "sha256": "ddc2a1a8e9e87573b3e0ed194d0eba2777b28bb82308fd3930750f67212a9a81"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 35153,
+      "sha256": "03a4edee32f152f667bf6c60e3cbe4d78e2475e155ed21542aebdd22ee80c4fc"
+    },
+    {
+      "path": "STATE.json",
+      "bytes": 8882,
+      "sha256": "3033dd0e50e1ba290256e70f9ea29be9eef617a534b3b31ece8783f87fd260bd"
+    }
+  ]
+}

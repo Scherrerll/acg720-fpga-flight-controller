@@ -1,0 +1,17 @@
+{
+  "files": {
+    "export_qualified_v4.py": {
+      "source": "analysis/20261026_z_aw_fix/build/export_qualified_v4.py",
+      "sha256": "c52c889b913f9b5d1d0bfcd8d15bd50475b3550175c9245767efbff4dd26e3d2",
+      "bytes": 38425
+    },
+    "verify_release.py": {
+      "source": "firmware/B0B4/verify_release.py",
+      "sha256": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf",
+      "bytes": 124681
+    }
+  },
+  "scope": "Readonly source snapshot of previous48 seal before lifecycle fix",
+  "created_utc": "2026-10-27T03:37:28.7924993Z",
+  "previous48_seal_sha256": "f8b71b3bf9fe0bde8f30e434da0b9bb30c94c5c1459d941b97e01098f7c37bde"
+}

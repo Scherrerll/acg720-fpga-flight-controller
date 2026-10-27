@@ -1,0 +1,64 @@
+{
+  "scope": "Raw resource occupancy only. The v13 report is from a route failure and contains no qualified TR/bitstream. PRIMARY/LW are global resources and are not additional logical FF clocks.",
+  "reports": {
+    "v4_fullroute_timing_failed": {
+      "manifest_sha256": "fabf9f3492b2708e5d94046c98650c3010c2d56908eb5c6f3e1d35023caa855f",
+      "report_sha256": "b7420bbee4e2898c7a6e5ed1493af8080511d08464d0450739ab314af5ef473f",
+      "resources": {
+        "Logic": {
+          "usage": "45803/59904",
+          "utilization": "77%"
+        },
+        "--Logic Register as FF": {
+          "usage": "27762/59904",
+          "utilization": "47%"
+        },
+        "CLS": {
+          "usage": "26439/29952",
+          "utilization": "89%"
+        },
+        "PRIMARY": {
+          "usage": "8/8",
+          "utilization": "100%"
+        },
+        "LW": {
+          "usage": "8/8",
+          "utilization": "100%"
+        }
+      },
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 1,
+      "classification": "completed_full_route_timing_failure"
+    },
+    "v13_p2_route_failed": {
+      "manifest_sha256": "7dd9dbb6e9fe23529caad32072250b12557d34787c4d7322fa7c15ce8e28a37c",
+      "report_sha256": "48a79d2e8dee1ed4a6000f8fccd88f083bf79e66f7b23aa7adc7acf4d63a74cd",
+      "resources": {
+        "Logic": {
+          "usage": "45814/59904",
+          "utilization": "77%"
+        },
+        "--Logic Register as FF": {
+          "usage": "27752/59904",
+          "utilization": "47%"
+        },
+        "CLS": {
+          "usage": "26683/29952",
+          "utilization": "90%"
+        },
+        "PRIMARY": {
+          "usage": "8/8",
+          "utilization": "100%"
+        },
+        "LW": {
+          "usage": "8/8",
+          "utilization": "100%"
+        }
+      },
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "classification": "route_failure"
+    }
+  },
+  "decision_basis": "Retain the exact-source map1 alternative with no LUT5 definitions to test placement/packing. No routing or timing benefit is inferred from occupancy."
+}

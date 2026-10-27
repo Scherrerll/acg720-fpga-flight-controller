@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "PWM component proof only; whole49MHz firmware remains incomplete and unqualified.",
+  "actual_waits": [
+    0,
+    0
+  ],
+  "inputs_sha256": "9a084e92fddb88d215660e64bd6d46b8e1f914020b697ba1d062d6e30a7f3de1",
+  "vvp_log_sha256": "170452c307e30fff433ddfa43a080ab073cc17702a4b87acdff6a02229cfa857",
+  "all_eight_channel_monitors_passed": true,
+  "stop_boundaries_per_channel": 2
+}

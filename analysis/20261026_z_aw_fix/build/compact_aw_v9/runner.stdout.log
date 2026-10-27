@@ -1,0 +1,159 @@
+elaboration PID 51616; log C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v9\build_attempt_01\verification\elaboration.log
+elaboration actual p.wait()=0
+synthesis PID 34148; log C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v9\build_attempt_01\verification\synthesis.log
+synthesis actual p.wait()=0
+{
+  "mapped_audit_pass": true,
+  "resources": {
+    "acg720_ano_port": {
+      "baseline": {
+        "T_Register": 27765,
+        "T_Alu": 9564,
+        "T_Lut": 36040,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "candidate": {
+        "T_Register": 27751,
+        "T_Alu": 9544,
+        "T_Lut": 36223,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "delta": {
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_Bsram": 0,
+        "T_MULTALU27X18": 0,
+        "T_Lut": 183,
+        "T_Register": -14,
+        "T_Alu": -20
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "baseline": {
+        "T_Register": 3280,
+        "T_Alu": 1581,
+        "T_Lut": 4757,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "candidate": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4952,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_MULTALU27X18": 0,
+        "T_Lut": 195,
+        "T_Register": 2,
+        "T_Alu": -20
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "baseline": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 441
+      },
+      "candidate": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 438
+      },
+      "delta": {
+        "T_Lut": -3,
+        "T_Register": 0,
+        "T_Alu": 0
+      }
+    }
+  }
+}
+{
+  "synthesis_only_pass": true,
+  "vg_sha256": "e99d1ec0928fa9c1650cbc6a7ac9c08d4b2ef0758cdb3a9eec11b04af5d0eb20",
+  "resources": {
+    "acg720_ano_port": {
+      "baseline_v4_map2": {
+        "T_Register": 27766,
+        "T_Alu": 9544,
+        "T_Lut": 36213,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "candidate_v9_map2": {
+        "T_Register": 27751,
+        "T_Alu": 9544,
+        "T_Lut": 36223,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "delta": {
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_Bsram": 0,
+        "T_MULTALU27X18": 0,
+        "T_Lut": 10,
+        "T_Register": -15,
+        "T_Alu": 0
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "baseline_v4_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4953,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "candidate_v9_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4952,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_MULTALU27X18": 0,
+        "T_Lut": -1,
+        "T_Register": 0,
+        "T_Alu": 0
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "baseline_v4_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "candidate_v9_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 438
+      },
+      "delta": {
+        "T_Lut": 1,
+        "T_Register": 0,
+        "T_Alu": 0
+      }
+    }
+  }
+}

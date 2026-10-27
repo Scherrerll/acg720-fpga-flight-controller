@@ -1,0 +1,49 @@
+{
+  "scope": "New physical-only P3R1 with unchanged v4 source55 and exact SYN VG; frozen source/evidence not modified.",
+  "reason": "v4 P3R0 full route49.456MHz/setup−0.220ns; preserve P3 and change route0 to route1 for greater routing search time.",
+  "official_manuals": {
+    "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/doc/EN/SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf": {
+      "pages_pdf": [
+        44,
+        49,
+        51
+      ],
+      "sha256": "c8ee7e8cb8486220a8639424f71debe9f4c3dff0d4c365860474c24782ded08c"
+    },
+    "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/doc/EN/SUG100-4.4.7E_Gowin Software User Guide.pdf": {
+      "pages_pdf": [
+        51,
+        52,
+        55
+      ],
+      "sha256": "b4e8891ffecdfcd8f60f060cb6025e0ab09e7e177759e3fb6570ade8c1c20d1f"
+    }
+  },
+  "manual_summary": {
+    "place1": "routability priority",
+    "place2": "timing priority",
+    "route1": "trades compilation time for a better route",
+    "route2": "routing speed priority",
+    "route_maxfan": "1..100; default23 here; smaller values may cause route failure; no long-wire/clock-route control"
+  },
+  "source_freeze_sha256": "933482eff5ff7ab4e9dffa69b06d358c61dc422ef92977ac0e51bd5e4d7ae7d7",
+  "VG_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+  "physical_options": {
+    "place": 3,
+    "route": 1,
+    "map_option": 2,
+    "replicate_resources": 0,
+    "timing_driven": 1,
+    "route_maxfan": 23
+  },
+  "new_scripts": {
+    "independent_raw_review.py": "6418d03c0f4b99d77e4b638e66ead4ddb1acdf4fb7a20a8d83e0224354df26fd",
+    "launch_physical_hidden.py": "727e1144f0dfe06856406e0fbf2f01e45c318eedb5c5f6a020b7e55b1e63b568",
+    "physical_snapshot.py": "0c991ee7c80abbf30c5f399e9fc157aee2ca2fbbb18ae1dbb3876c1fea93b6f6",
+    "prepare.py": "8f829c2b1f3168cd4f0740ed6f40c9e50dee9ee3464ff1c5ad4919b9c746d29f",
+    "run_physical.py": "bd17ee3ed8541370a3c90a3ee0639580623175a6d53a25efe0ad1ae28f91bd29",
+    "seal_terminal.py": "1742f79cffc058fd1322f70a8258f6ef60f413472845068276a8059e1e623ff3"
+  },
+  "period_ns": 20,
+  "PNR_started": false
+}

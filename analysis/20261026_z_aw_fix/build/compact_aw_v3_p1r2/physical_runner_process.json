@@ -1,0 +1,25 @@
+{
+  "helper_pid": 47552,
+  "started_utc": "2026-10-26T05:41:26.7969460Z",
+  "runner_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v3_p1r2\\run_physical_p1r2.py",
+  "runner_sha256": "389cca7a94f4aa428034c4910b68086056fdc8c122b648041168a8bb40f33c97",
+  "imported_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "python": "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "physical_options": {
+    "route": 2,
+    "place": 1,
+    "global_freq": 50,
+    "timing_driven": 1,
+    "replicate_resources": 0,
+    "map_option": 2
+  },
+  "scope": "Authorized exact-VG P1R2; strict20ns/50MHz/all5/route/exit/pins gates unchanged",
+  "installed_guide": {
+    "printed_page": 37,
+    "pdf_page": 44,
+    "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+    "sha256": "c8ee7e8cb8486220a8639424f71debe9f4c3dff0d4c365860474c24782ded08c"
+  },
+  "stdout": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v3_p1r2\\physical_runner.stdout.log",
+  "stderr": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v3_p1r2\\physical_runner.stderr.log"
+}

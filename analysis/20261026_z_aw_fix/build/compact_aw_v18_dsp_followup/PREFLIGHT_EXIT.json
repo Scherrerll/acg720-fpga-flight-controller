@@ -1,0 +1,13 @@
+{
+  "actual_completedprocess_returncode": 0,
+  "normal_return": true,
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18_dsp_followup\\preflight_physical_recipe.py"
+  ],
+  "stdout_sha256": "6a35cdf10fc12cd4d10b12e72a6ee387d9303da089fbbc1bb378c699e38b768e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-10-26T20:18:26.633023+00:00",
+  "scope": "Exact manufacturer-generated reference only. Not integrated, synthesized, physically implemented or programmed into the aircraft.",
+  "actual_generator_exit_sha256": "b21661c27b9b8852d147fa955fe6c5fbbbae6b67c062fabe7b2a18ac83c349ef",
+  "actual_generator_wait": 0,
+  "input_MHz": 50,
+  "requested_output_MHz": 49,
+  "generated_integer_ratio": {
+    "input": 50,
+    "MDIV": 49,
+    "IDIV": 2,
+    "ODIV0": 25,
+    "ratio_output_MHz": 49
+  },
+  "phase_coarse_and_fine": 0,
+  "spread_spectrum": false,
+  "manufacturer_init_clock_MHz": 50,
+  "files": {
+    "clock49.v": {
+      "sha256": "f8892770f22d3c9c2ce3801df37d907b36e39bfee02dcb9b226642bebcd74163",
+      "bytes": 1037,
+      "actual_generated_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_generate\\ip\\clock49\\clock49.v"
+    },
+    "clock49_mod.v": {
+      "sha256": "388092c787d2644f3537719bee4cd02e1145617800000722b64603936c9b29ca",
+      "bytes": 4542,
+      "actual_generated_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_generate\\ip\\clock49\\clock49_mod.v"
+    },
+    "clock49.ipc": {
+      "sha256": "0af96d25bf3629eef74efa41ad95d607b0e4fd59862e2ce7e53c3a92850491f3",
+      "bytes": 3961,
+      "actual_generated_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_generate\\ip\\clock49\\clock49.ipc"
+    },
+    "pll_init.v": {
+      "sha256": "3fc6bef9a7086f0920bfa47265b1766854a53f6ca1c0f75084eaf6b6ef4d6258",
+      "bytes": 15848,
+      "actual_generated_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_generate\\project\\clock49_generate\\src\\pll_init.v"
+    }
+  }
+}

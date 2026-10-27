@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "Isolated unmodified vendor49MHz PLLA model only. No FPGA synthesis/route, flight-controller tests or hardware action.",
+  "actual_waits": [
+    0,
+    0
+  ],
+  "inputs_sha256": "4170e6ede33668b8027d68a1403bab9b818cd8e41aee9d5eea58daae350497fb",
+  "compile_exit_sha256": "92b5c3157bc199ee436c757591e054ef569b5b1a266127ebe03b9933ec8c1ad1",
+  "vvp_exit_sha256": "8c6839741858e68d3b712687f5067df70e6834afa04f721d5259b88fa4b64e18",
+  "vvp_log_sha256": "500e33ff59cd419692727a6ecbc4e043f6b4451b0e2f38821dd09d579f67fe77"
+}

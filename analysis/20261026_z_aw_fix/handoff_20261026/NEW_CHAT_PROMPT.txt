@@ -1,0 +1,20 @@
+【草案：只有用户确认规划后才用于创建新会话】
+
+继续现有B0B4着陆修正和P/I默认值任务。先进入原仓库：
+C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller
+先完整读取：
+analysis/20261026_z_aw_fix/handoff_20261026/HANDOFF.md
+analysis/20261026_z_aw_fix/handoff_20261026/STATE.json
+analysis/20261026_z_aw_fix/handoff_20261026/NEXT_PLAN.md
+并用MANIFEST核对归档。以最新实际终态为准，不把历史运行快照当成当前状态。
+
+用户要修正定点最低油门仍悬停，并把共享水平启动默认值设P=.1000/I=.0350；低空掉高暂不处理。B0B3已实际固化使用；本轮B0B4没有安装、没有通过完整50MHz物理门，不能烧任何失败候选。不要覆盖用户当前实机参数。
+firmware/B0B4/source仍是初版5a候选，未promote；不要拿它当最新v7。候选在out/.../compact_aw_v*/canonical/source。最新v7hold2109595a24c6f15a553ea8a0958b8313c3f19d56b4371c827cd428976489daad、VGdc20d15cec4471df8679960fb05660349caaa19dfaee40604b419ca6450cf0e0，SYN全部过，尚无PNR。先核对最后的aw_storage_regression completed5+真实exit0；其他v7边界/top13/四client已过，现有证据不要无理由重复跑。
+
+按用户确认的NEXT_PLAN执行：复用精确source55/VG和已有综合，每轮1～2个针对性物理方案，读真实关键路径后逐项等价优化，持续到完整布通且50MHz/五类slack非负/setup-hold0/18pins/B4身份/normalexit全过。独立raw复核之后选中和promote，正确停止或等待其他自有任务，保存真实失败和取消记录。长构建Hidden独立后台并保存vendor/runner实际wait，不能靠会话存活。禁止降低时钟或伪造falsepath、返回码、PASS。
+
+冻结B0B3、R/H和旧proof不改。不要终止旧R的gw_sh41448；只管理精确身份核实的自有PID。当前全部本轮构建状态见STATE，接续先检查不要重复启动。地面站B3最后已知COM17/8765，禁止第二串口所有者。禁止读取/打印/上传deployment.env凭证。
+
+最终离线包完成后再确认现在的拆桨/CH5、油门、CH7低位与下载连接；先SRAM地面验证，随后固化并彻底断电验证默认值。不沿用用户实飞前的拆桨确认。不要把固定传感器仿真时间当着陆等待指令，或声称所有实飞问题已解决。
+
+原仓库未提交的新三目录需要保留，不使用git clean/reset或新worktree丢弃工作。完成后按授权提交并推送配套代码/说明/证据，排除无关B0B2 proof.zip。用户希望简短清晰的中文进展，并解释最终代码、P2差异、取舍、问题与及时修复证据。

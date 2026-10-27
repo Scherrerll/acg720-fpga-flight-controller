@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_generate\\generate_clock49.tcl"
+  ],
+  "started_utc": "2026-10-26T20:14:41.982824+00:00",
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_generate",
+  "tool_sha256": "585c12968550a960d1021287742672ff9d6bbeaee5623f6811dfc1f907a4af41",
+  "script_sha256": "663490cfa1ad6574121507118a3d67d69689f66f3b67c450e243802172644bd2",
+  "scope": "Official PLL_ADV IP generation only, input50MHz/output49MHz exact tolerance0, phase/duty defaults unchanged. No top-source integration, FPGA SYN/PNR or programmer.",
+  "pid": 1584,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-26T20:14:43.132947+00:00",
+  "log_sha256": "05145614542cd0c033495060666379320ae49940da0802c821ce34163292feb9"
+}

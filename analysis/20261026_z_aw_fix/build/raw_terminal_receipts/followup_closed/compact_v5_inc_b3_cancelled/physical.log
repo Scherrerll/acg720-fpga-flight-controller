@@ -1,0 +1,18 @@
+*** GOWIN Tcl Command Line Console  *** 
+Open project C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_inc_b3_01/source/physical.gprj finished
+NOTE (PJ2001) : Skip synthesis, because there is only one netlist file in this project
+Reading netlist file: "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_inc_b3_01\source\impl\gwsynthesis\acg720_ano_port.vg"
+Parsing netlist file "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_inc_b3_01\source\impl\gwsynthesis\acg720_ano_port.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_inc_b3_01\source\acg720_ano_port.cst"
+Physical Constraint parsed completed
+Reading pr file: "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_inc_b3_01/donor/B0B3_selected_P3R0.pr"
+WARN  (PA2136) : Placement and routing matching(2.81) is less than the threshold value(80) needed to run incremental flow, the default placement and routing flow will be run.
+Parsing file "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_inc_b3_01/donor/B0B3_selected_P3R0.pr" completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed

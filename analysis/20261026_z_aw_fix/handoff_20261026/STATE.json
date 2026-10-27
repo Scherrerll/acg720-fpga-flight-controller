@@ -1,0 +1,217 @@
+{
+  "snapshot_utc": "2026-10-26T08:47:40.638516+00:00",
+  "timezone": "Asia/Shanghai",
+  "status": "archived_awaiting_user_approval_before_new_chat",
+  "new_chat_created": false,
+  "approval_required_before_create": true,
+  "repo": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "project": {
+    "projectId": "0b8bb271-3e8c-4da5-86a1-3b303407e9ed",
+    "label": "apple",
+    "path": "C:/Users/ScherrerL/Desktop/apple",
+    "environment": "local",
+    "new_worktree": false,
+    "model_override": null
+  },
+  "git": {
+    "HEAD": "ddd887da55b7b0841a100a61deebbfe61cebe76e",
+    "remote": "https://github.com/Scherrerll/acg720-fpga-flight-controller.git",
+    "uncommitted_owned_directories": [
+      "firmware/B0B4",
+      "ground/B0B4",
+      "analysis/20261026_z_aw_fix"
+    ],
+    "exclude_unrelated": "firmware/B0B2/evidence/copy99_proof/proof.zip",
+    "this_archive_not_committed_or_pushed": true
+  },
+  "release": {
+    "qualified_B0B4": false,
+    "installed_B0B4": false,
+    "hardware_action_this_turn": false,
+    "main_B0B4_source_still_prototype": true,
+    "planned_XY_boot_defaults": {
+      "P": 0.1,
+      "I": 0.035,
+      "wireP": 1000,
+      "wireI": 350,
+      "generation": 0
+    },
+    "manual_SET_persistence": "volatile only; new firmware boot constants persist after firmware Flash installation"
+  },
+  "best_fullroute_reference": {
+    "variant": "v4",
+    "profile": "P3R0",
+    "fmax_mhz": 49.456,
+    "setup_slack_ns": -0.22,
+    "setup_violated_endpoints": 32,
+    "qualified": false
+  },
+  "v6_closed": {
+    "P1R0": {
+      "vendor_wait": 0,
+      "runner_wait": 1,
+      "fmax_mhz": 44.286,
+      "setup_slack_ns": -2.58,
+      "setup_violated_endpoints": 862,
+      "qualified": false
+    },
+    "P2R0": {
+      "vendor_wait": 0,
+      "runner_wait": 1,
+      "fmax_mhz": 47.942,
+      "setup_slack_ns": -0.859,
+      "setup_violated_endpoints": 189,
+      "qualified": false
+    },
+    "P3R0": {
+      "vendor_wait": 1,
+      "runner_wait": 1,
+      "unrouted_nets": 389,
+      "qualified": false
+    }
+  },
+  "v7": {
+    "source_root": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v7\\canonical\\source",
+    "hold_sha256": "2109595a24c6f15a553ea8a0958b8313c3f19d56b4371c827cd428976489daad",
+    "VG": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v7\\build_attempt_01\\source\\impl\\gwsynthesis\\acg720_ano_port.vg",
+    "VG_sha256": "dc20d15cec4471df8679960fb05660349caaa19dfaee40604b419ca6450cf0e0",
+    "synthesis_actual_vendor_wait": 0,
+    "synthesis_actual_runner_wait": 0,
+    "mapped_clock_radio_gain_18ports_passed": true,
+    "resources": {
+      "FF": 27704,
+      "ALU": 9458,
+      "LUT": 36079,
+      "delta_vs_v5": {
+        "FF": -21,
+        "ALU": -3,
+        "LUT": -71,
+        "DSP": 0,
+        "BSRAM": 0
+      }
+    },
+    "PNR_started": false,
+    "physical_qualified": false,
+    "AW5": {
+      "completed": 5,
+      "passed": true,
+      "actual_root_batch_exit_code": 0
+    },
+    "boundary_FRAC0_FRAC16_actual0": true,
+    "top13_actual0": true,
+    "four_client_nonzero_XY_Z_I_actual0": true
+  },
+  "own_running_compute_processes_at_snapshot": [],
+  "unrelated_existing_processes_do_not_terminate": [
+    {
+      "ProcessId": 41448,
+      "ParentProcessId": 67044,
+      "Name": "gw_sh.exe",
+      "CommandLine": "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/bin/gw_sh.exe C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\builds\\map1_p2r2\\physical.tcl"
+    }
+  ],
+  "last_known_services_not_reverified": {
+    "B3_receiver_pid": 49948,
+    "COM": "COM17",
+    "baud": 115200,
+    "HTTP": 8765,
+    "public_bridge_pid": 40224,
+    "no_serial_or_service_changes_in_this_turn": true
+  },
+  "physical_confirmation": "Old props-off confirmation was before subsequent flight; reconfirm current props removed/CH5+throttle+CH7low and programmer connection after qualified package is concrete.",
+  "evidence_refs": {
+    "analysis/20261026_z_aw_fix/build/compact_aw_v7/RESULTS.json": {
+      "sha256": "de8cd78666a3cdb731d3a5a70f64a1256b6b382c61996b40f8a892e591f1408c",
+      "bytes": 10426
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v7/SYNTHESIS_REPORT.md": {
+      "sha256": "986fb42236d6888e78979d2885c500a46b5266b0f4dd544cc954c1867f7fd78f",
+      "bytes": 2695
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v7/source_freeze.json": {
+      "sha256": "bf2f7d0765d53f06207a786afaee99cc3cdf673e1d05f38bd51fa11d9e9a1113",
+      "bytes": 11805
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v7/source_changes.diff": {
+      "sha256": "a71c292b2df5de0a2906bde7fae9fca8b8e096b872ce8a5029739368807923e3",
+      "bytes": 4116
+    },
+    "analysis/20261026_z_aw_fix/build/aw_storage_width_independent_review.md": {
+      "sha256": "3bbdfc3c0430df0507a291d20f2d70870ec1450ad94afafd68c53d90da2ebbcd",
+      "bytes": 6856
+    },
+    "analysis/20261026_z_aw_fix/build/aw_storage_width_independent_review_candidate_addendum.md": {
+      "sha256": "ba7b6ef17bfb52722d9e46314cbfe201f68c63b778f7ec67425fac755c80e9f9",
+      "bytes": 3880
+    },
+    "analysis/20261026_z_aw_fix/aw_storage_regression/results.json": {
+      "sha256": "f082b3128ee14d6d90952307b58aff8bd4606d25d41f92afa4b20ea2948f903d",
+      "bytes": 4078
+    },
+    "analysis/20261026_z_aw_fix/aw_storage_regression/source_stability.json": {
+      "sha256": "4dbb7ad879594b355ba0d54f3bd45e542fce44120c3484076a8ed5a55606406a",
+      "bytes": 265
+    },
+    "analysis/20261026_z_aw_fix/aw_storage_boundary/results.json": {
+      "sha256": "969cd74f1f0477ff583b4c658ea83485037fee47056b18cfb40de6900a01014c",
+      "bytes": 1124
+    },
+    "analysis/20261026_z_aw_fix/aw_storage_boundary/source_stability.json": {
+      "sha256": "03410015f2a6f18ee8e69e9d99b34e255c7dd7222626f306efe251ec1fc845c8",
+      "bytes": 212
+    },
+    "analysis/20261026_z_aw_fix/aw_storage_integration/top_safety_results.json": {
+      "sha256": "9e45bd8fde2bd0092c9da36925f9a3c6ffaa71cc79d9713fae8b66924ede4274",
+      "bytes": 245
+    },
+    "analysis/20261026_z_aw_fix/aw_storage_integration/contention/results.json": {
+      "sha256": "2014c95c97a13f5a697136df0b0d209d0f75c8576b63f3aa16e6fad5987699b0",
+      "bytes": 1968
+    },
+    "analysis/20261026_z_aw_fix/numeric_guard_fusion/completion03/results.json": {
+      "sha256": "eb0295ca89af3ac66db0a65d923d30097c1c9bdd6c8fd99a1b9954f48b825e39",
+      "bytes": 18677
+    },
+    "analysis/20261026_z_aw_fix/build/raw_terminal_receipts/frozen_11_terminal_20261026/MANIFEST.json": {
+      "sha256": "09cad00012dc933877840bba15ca09bff2f4878180bd5f7b2052500a06d03af7",
+      "bytes": 75628
+    },
+    "analysis/20261026_z_aw_fix/build/raw_terminal_receipts/followup_closed/MANIFEST.json": {
+      "sha256": "f72ba14bede4de6492cbbf407b83c2bf1af11d0974ad7789f3065dfb94582889",
+      "bytes": 80301
+    },
+    "analysis/20261026_z_aw_fix/implementation_history/HISTORY.json": {
+      "sha256": "80b50c00d987735890e10485f1aa8e82a4d274803363336d0761cbf6a52c8fcf",
+      "bytes": 38899
+    },
+    "analysis/20261026_z_aw_fix/implementation_history/v5_v6_addendum/HISTORY.json": {
+      "sha256": "f361081528cf2e8751330cef7161582ab830c53717ef23af569841b717ea8ace",
+      "bytes": 27902
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/TERMINAL_MANIFEST.json": {
+      "sha256": "7cc245fa7e62aa6df5107baac1a5c6dfc636ac7810057395a8bcc66ab60eca51",
+      "bytes": 18889
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/TERMINAL_MANIFEST.json": {
+      "sha256": "f437e80cee5cf6ecf58e75e11e32611875c03cdfe2da1a05dda8d7d3f4932596",
+      "bytes": 18915
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p3r0_01/TERMINAL_MANIFEST.json": {
+      "sha256": "7b67ef7ebe0f715a529d26ea348174d53502f4f03063db68d317cf08f06fe72f",
+      "bytes": 14605
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_p2r0/interruption_observation.json": {
+      "sha256": "799660893d76ab488841938a016db3056e65578689abbd107a9c90cd563ed7e6",
+      "bytes": 1389
+    },
+    "ground/B0B4/²Ù×÷ËµÃ÷.md": {
+      "sha256": "a895e81b1d94c9085a194a2047329f0861d4789167e5d4d19512b72ec32be2ff",
+      "bytes": 2297
+    },
+    "ground/B0B4/test_results/verification.json": {
+      "sha256": "770fa8e15ca39ce511f21e5b5b470e08edd34f358a3038d961ed9a08c4a633ea",
+      "bytes": 6233
+    }
+  },
+  "safety_scope": "Do not print/deposit deployment.env; do not alter frozen B3/R/H; no clock relaxation/falsepath tricks/fabricated wait/PASS; do not burn any currently failed FS."
+}

@@ -1,0 +1,2 @@
+FATAL: C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\compact_regression\cancel_diagnostic_attempt01\aw_tb.v:128: cancel diagnostic state=22 kind=0 active=0/0 I=0/0 candidateI=0/0 privateU=15377139/15377139 publicU=1000/1000 seen=0/0 FSM=0/0 pubs=5/5
+       Time: 370000000  Scope: tb.cancellation

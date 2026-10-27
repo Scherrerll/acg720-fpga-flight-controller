@@ -1,0 +1,11 @@
+{
+  "reason": "Preserve successful initial revision02 inspection before explicitly binding all saved revision01 and prior failed truth-fixture files into evidence closure. No runtime or script change.",
+  "artifacts": {
+    "PHYSICAL_PREPARATION.json": "1bb129786caa026f19682225ba66ca706eb65947ab9fc54ce13f0cd29bb2af02",
+    "PORTABLE_CONSTRAINT_BINDING.json": "404b7b5a20fcdf4259ec6a6fad860d4094f363e0565e0cc3987c34ef4cf5971a",
+    "INDEPENDENT_PREPARATION_REVIEW.json": "868158197f174323fa9aededa10c69efd6de9c32b430879a5c66e0b88e6a4d55",
+    "INSPECTION_REVISION02_EXIT.json": "3dd115b379aaf6a5b201f85b168b0d80cb524bbe9a0592738ad401211adb9e7f",
+    "inspection_revision02.stdout.log": "510f3221dbbef2bd91f1bce829f735a75dc8615b5d28e71c50dbafc584ca6a51",
+    "inspection_revision02.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

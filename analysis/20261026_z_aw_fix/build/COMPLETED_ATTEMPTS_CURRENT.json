@@ -1,0 +1,853 @@
+{
+  "generated_utc": "2026-10-27T04:52:13.678420+00:00",
+  "scope": "Recorded physical trials only. Unknown exit remains unknown; cancellation is separate; running trials omitted. Original manifests unchanged.",
+  "recorded_attempts": 59,
+  "classification_counts": {
+    "route_failure": 42,
+    "project_XML_failure": 1,
+    "fullroute_timing_failure": 8,
+    "cancelled_duplicate_fallback": 3,
+    "unknown_exit": 1,
+    "cancelled_resource_priority": 1,
+    "vendor_failure_unclassified": 1,
+    "cancelled_orphan_after_runner_assertion": 1,
+    "qualified_physical_pass": 1
+  },
+  "qualified_attempts": 1,
+  "attempts": [
+    {
+      "id": "first_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 1416,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "first_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 721,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "first_p3r1",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 10483,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v1_project01",
+      "classification": "project_XML_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": null,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v1_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 746,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v2_map2_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 792,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v2_map1_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 667,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v3_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 898,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v3_p2r0_nt0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 1073,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v3_p1r2",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 1096,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_p3r0",
+      "classification": "fullroute_timing_failure",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": null,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_p4r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 7273,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\followup_closed\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v5_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": 648,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\followup_closed\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v5_inc_b3_cancelled",
+      "classification": "cancelled_duplicate_fallback",
+      "vendor_actual_wait": 4294967295,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": null,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\followup_closed\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v5_p2r0_interrupted",
+      "classification": "unknown_exit",
+      "vendor_actual_wait": null,
+      "runner_actual_wait": null,
+      "runner_wait_note": "See original per-attempt evidence; not reconstructed in this derived catalogue.",
+      "unrouted_nets": null,
+      "fmax_mhz": null,
+      "source_manifest": "raw_terminal_receipts\\followup_closed\\MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v5_repl1_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": null,
+      "unrouted_nets": 2670,
+      "source_manifest": "compact_aw_v5_repl1\\final\\FINAL_STATUS.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v6_p1r0",
+      "classification": "fullroute_timing_failure",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": 44.286,
+      "setup_slack_ns": -2.58,
+      "source_manifest": "compact_aw_v6\\physical_p1r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v6_p2r0",
+      "classification": "fullroute_timing_failure",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": 47.942,
+      "setup_slack_ns": -0.859,
+      "source_manifest": "compact_aw_v6\\physical_p2r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v6_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 389,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v6\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v7_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 447,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v7\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v7_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 568,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v7\\physical_p2r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v8_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 1271,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v8\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v8_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 294,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v8\\physical_p2r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v9_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 2228,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v9\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v9_inc_v4_p3r0",
+      "classification": "cancelled_duplicate_fallback",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v9\\physical_p3r0_inc_v4_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_p2_followup_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 640,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_p2_followup\\physical_p2r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_p3r1_followup_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 4609,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_p3r1_followup\\physical_p3r1_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v10_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 2496,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v10\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v10_pp1mf60r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 655,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v10\\physical_p1r0_mf60_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_p3mf60_followup_p3r0",
+      "classification": "fullroute_timing_failure",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": 49.456,
+      "setup_slack_ns": -0.22,
+      "source_manifest": "compact_aw_v4_p3mf60_followup\\physical_p3r0_mf60_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_timing_p3r0",
+      "classification": "cancelled_resource_priority",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_timing\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_loc3_followup_p3r0",
+      "classification": "vendor_failure_unclassified",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 0,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_loc3_followup\\physical_p3r0_inc_loc3_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_incplace_loc3_followup_p3r0",
+      "classification": "cancelled_duplicate_fallback",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_incplace_loc3_followup\\physical_p3r0_incplace_loc3_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_p1_followup_p1r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 1069,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_p1_followup\\physical_p1r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_partial_floorplan_followup_p3r0",
+      "classification": "fullroute_timing_failure",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": 45.46,
+      "setup_slack_ns": -1.997,
+      "source_manifest": "compact_aw_v4_partial_floorplan_followup\\physical_p3r0_partial_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_data_routing_followup_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 306,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_data_routing_followup\\physical_p3r0_data_route_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_data_routing_followup_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 1042,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_data_routing_followup\\physical_p2r0_data_route_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v11_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 1012,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v11\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v12_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 941,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v12\\physical_p2r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v12_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 1620,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v12\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v13_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 2903,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v13\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v13_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 1032,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v13\\physical_p2r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v13_map1_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 2959,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v13_map1\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v13_map1_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 713,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v13_map1\\physical_p2r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v13_native_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 2903,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v13_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_native_p3r0",
+      "classification": "fullroute_timing_failure",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": 49.456,
+      "setup_slack_ns": -0.22,
+      "source_manifest": "compact_aw_v4_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_clockbuf1_followup_p3r0",
+      "classification": "fullroute_timing_failure",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": 49.283,
+      "setup_slack_ns": -0.291,
+      "source_manifest": "compact_aw_v4_clockbuf1_followup\\physical_p3r0_clkbuf1_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_rep1_followup_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 1117,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_rep1_followup\\physical_p3r0_rep1_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_fan100_native_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 707,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_fan100_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v14_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 480,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v14\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v14_p2r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 778,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v14\\physical_p2r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v4_incplace_native_p3r0",
+      "classification": "cancelled_orphan_after_runner_assertion",
+      "vendor_actual_wait": null,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v4_incplace_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v15_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 314,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v15\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v16_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 507,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v16\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v17_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 546,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v17\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v18_dsp_followup_p3r0",
+      "classification": "fullroute_timing_failure",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 1,
+      "unrouted_nets": null,
+      "fmax_mhz": 48.148,
+      "setup_slack_ns": -0.769,
+      "source_manifest": "compact_aw_v18_dsp_followup\\physical_p3r0_dsploc_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v20_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 813,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v20\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    },
+    {
+      "id": "compact_v22_p3r0",
+      "classification": "qualified_physical_pass",
+      "vendor_actual_wait": 0,
+      "runner_actual_wait": 0,
+      "unrouted_nets": null,
+      "fmax_mhz": 50.075,
+      "setup_slack_ns": 0.03,
+      "source_manifest": "compact_aw_v22\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+      "qualified": true
+    },
+    {
+      "id": "compact_v22_dsp_followup_p3r0",
+      "classification": "route_failure",
+      "vendor_actual_wait": 1,
+      "runner_actual_wait": 1,
+      "unrouted_nets": 2033,
+      "fmax_mhz": null,
+      "setup_slack_ns": null,
+      "source_manifest": "compact_aw_v22_dsp_followup\\physical_p3r0_dsploc_01\\TERMINAL_MANIFEST.json",
+      "qualified": false
+    }
+  ],
+  "source_manifests": {
+    "analysis\\20261026_z_aw_fix\\build\\raw_terminal_receipts\\frozen_11_terminal_20261026\\MANIFEST.json": {
+      "sha256": "09cad00012dc933877840bba15ca09bff2f4878180bd5f7b2052500a06d03af7",
+      "bytes": 75628
+    },
+    "analysis\\20261026_z_aw_fix\\build\\raw_terminal_receipts\\followup_closed\\MANIFEST.json": {
+      "sha256": "f72ba14bede4de6492cbbf407b83c2bf1af11d0974ad7789f3065dfb94582889",
+      "bytes": 80301
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v5_repl1\\final\\FINAL_STATUS.json": {
+      "sha256": "bc0aa8a7c12810543bfee3083fbde0d96b9e96e7c81f98a740407073187ab378",
+      "bytes": 22921
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\physical_p1r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "7cc245fa7e62aa6df5107baac1a5c6dfc636ac7810057395a8bcc66ab60eca51",
+      "bytes": 18889
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\physical_p2r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "f437e80cee5cf6ecf58e75e11e32611875c03cdfe2da1a05dda8d7d3f4932596",
+      "bytes": 18915
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "7b67ef7ebe0f715a529d26ea348174d53502f4f03063db68d317cf08f06fe72f",
+      "bytes": 14605
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "fb0fcc6065e570682fed1b6eea506d5eb04d7c125ec886b8efba62aa81424016",
+      "bytes": 14605
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\physical_p2r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "6a054b82989f4009fb4047f429b700a6342ba3f8f63ea6b038b26ced9acbe683",
+      "bytes": 14605
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v8\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "373800259e405014a4dad7381462a723a3fcec904a686a95dc5977107d4b192d",
+      "bytes": 14606
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v8\\physical_p2r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "0a8410c1faf2692940d5b5502c72d39893a34bd5bf28081fc5e8fe0cb5eebcb6",
+      "bytes": 14605
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v9\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "3cee97ace755bb334ed3437a5260f6b2b8c6cb61bf2983d1abf064e3b1173061",
+      "bytes": 14606
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v9\\physical_p3r0_inc_v4_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "e052add78d119392cce77855c3250a83bccc543fa774b0518e90bde325d88865",
+      "bytes": 15548
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_p2_followup\\physical_p2r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "d5595fb6d7c3bff562cae9f3ee973b879dae9d8e4c9c9371aa7bd47648dae8be",
+      "bytes": 14868
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_p3r1_followup\\physical_p3r1_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "2638324e344f1412ee1b1dd3544c353fade132fdb058fcc66d6ddac5111d2c37",
+      "bytes": 14913
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v10\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "cb853606c17218fdc27fc752912f513d72c3ca804e1ee078b38e4d40571da73b",
+      "bytes": 14642
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v10\\physical_p1r0_mf60_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "a4ead872b7bbb6dac11a03c4f4ebf8ca9c46d055447e6c128d07545e011b5088",
+      "bytes": 14814
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_p3mf60_followup\\physical_p3r0_mf60_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "fabf9f3492b2708e5d94046c98650c3010c2d56908eb5c6f3e1d35023caa855f",
+      "bytes": 19550
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_timing\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "0db290471858c94be6677ce995ec15836be43ccfcfd81524ff4af15f554ead51",
+      "bytes": 14868
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_loc3_followup\\physical_p3r0_inc_loc3_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "e6fd862ecd95df8577e398c4f8063045b397b64efabc413247b31bf7fb57a04c",
+      "bytes": 16216
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_incplace_loc3_followup\\physical_p3r0_incplace_loc3_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "c09d8d92a6f9e074739185c1a476450d5f283afcfc7319ee33fe678a4d1674fe",
+      "bytes": 16877
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_p1_followup\\physical_p1r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "f7f09c6ed93e349d71bf7cd747cb7c477de7e9b2caa258f061898ff3a2c01392",
+      "bytes": 14869
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_partial_floorplan_followup\\physical_p3r0_partial_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "32ba3ed5d358cc3f033135b3a052d3f4813ec052dda0e5d2a5e56a1a4eeebd02",
+      "bytes": 21465
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_data_routing_followup\\physical_p3r0_data_route_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "0c924c3d2d89332d3c2ccfa6cfcdc2d9c9c5f31683428a4f30db2e181e56551f",
+      "bytes": 16950
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_data_routing_followup\\physical_p2r0_data_route_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "2a3d8a114bb8debf35e397a19002f636a2cac336e144e64677b6536949940e88",
+      "bytes": 16939
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "923f5431b8cb5fb9ca72754f492d415823efbdab3b596729cbfba328dcb06e14",
+      "bytes": 14642
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v12\\physical_p2r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "58d20d87aacf15dd6098d87428972228fc30c57aea9de4371fff60ec4a41fe1c",
+      "bytes": 14641
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v12\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "7a7e6d6500bd5e491ee7948fcfa474be6342329fa32249439c932ce7c0af7c40",
+      "bytes": 14642
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v13\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "fa3669e8b9ba657d0cb79298511928c21f15840995609b6412df5c2d1a11734f",
+      "bytes": 14642
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v13\\physical_p2r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "7dd9dbb6e9fe23529caad32072250b12557d34787c4d7322fa7c15ce8e28a37c",
+      "bytes": 14642
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v13_map1\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "01ee862af9d598457aa5e88f2de26cd937d6743252faefd52cf2700ac882ea56",
+      "bytes": 14823
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v13_map1\\physical_p2r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "e27e23fb590a5e2c3660a960aa54bccf5c494881adb03f96345c19ba8e324e03",
+      "bytes": 14822
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v13_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "9781c7607013fa4c96dde52cc389f3f672cb8961405db90e77b6cf2f1fa18ce9",
+      "bytes": 19972
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "4fef5f16e768b45675ff27ea0349499a467878659c37c06172980c9e2dc4eab3",
+      "bytes": 24896
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_clockbuf1_followup\\physical_p3r0_clkbuf1_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "bdb8d08bf53bce4ea2e01782d5b87e64739beb6226c53d97a0cfafbd1d899fe4",
+      "bytes": 20701
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_rep1_followup\\physical_p3r0_rep1_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "671c2fde5ca2f2fbf1e1c914c2ce9bcdbe3f66377d9ebadcb6bdb22e01de32d4",
+      "bytes": 15088
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_fan100_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "c11fe792a426317a752984dd200449d3185d63767d5cba5b8214b02b4b451ca3",
+      "bytes": 20313
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v14\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "3a804d6bd38e5ee6a94e3826e97afed5d9706b036d2c9040973be37c72832cd5",
+      "bytes": 14640
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v14\\physical_p2r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "7872868104513a7da6b829ba6bcd5cc24bfe5bf5b753ef52ac3b08e7dc7bf89f",
+      "bytes": 14640
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_incplace_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "f63267a19e30ddee50d73bf716e3a83939718acf64d50b74483d9637530d5b7f",
+      "bytes": 14992
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v15\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "dd2f0b780af73e675d462d405672a8a346d813f85ba5a814fe07e6fd90e98f7b",
+      "bytes": 14640
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v16\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "ccc9fb727ddb43a92c3ff3919678a7b2c4e8f46ea2e6e6410821fc55183ba72a",
+      "bytes": 14640
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v17\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "4a15d8899c0aba5ba594c043b149ee608a3f367090259a5166defca4193884d9",
+      "bytes": 14640
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v18_dsp_followup\\physical_p3r0_dsploc_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "c522928de0ad199a0588beff93341436289f83336d75892fd2f7ac3f6865289f",
+      "bytes": 21963
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "2cc1cf7ec6315ea90d2f2b30eb87e2762bf2d6e2288187887656299af36368fa",
+      "bytes": 15111
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\physical_p3r0_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "e2b8f9dbda0ecd2f16f45e485e9c7add75d99c6e7271a8dfeb6e8d798acf3b94",
+      "bytes": 17679
+    },
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_dsp_followup\\physical_p3r0_dsploc_01\\TERMINAL_MANIFEST.json": {
+      "sha256": "a493ca15ec48708212bee6ef2f645a53febb1014a0da508708ff1fb26112aec1",
+      "bytes": 19268
+    }
+  },
+  "note": "The frozen11 manifest is authority for legacy v4 full-route timing detail; fmax fields not present there remain null here. No fabricated historical runner waits."
+}

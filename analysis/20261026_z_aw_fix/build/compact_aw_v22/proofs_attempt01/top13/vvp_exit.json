@@ -1,0 +1,8 @@
+{
+  "actual_completedprocess_returncode": 0,
+  "normal_return": true,
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\top13\\top_safety.vvp"
+  ]
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v4_incplace_native\run_physical.py", line 129, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v4_incplace_native\run_physical.py", line 113, in main
+    monitored_native_run(helper,[str(helper.GOWIN),str(execution)],S,expected)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v4_incplace_native\run_physical.py", line 37, in monitored_native_run
+    assert read(V/'native_synthesis_audit.json')['netlist_sha256']==read(parent/'native_synthesis_audit.json')['netlist_sha256']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

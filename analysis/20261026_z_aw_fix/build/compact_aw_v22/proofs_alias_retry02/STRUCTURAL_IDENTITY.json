@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "source_controller_sha256": {
+    "v20": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+    "v22": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976"
+  },
+  "actual_function_byte_identical": true,
+  "function_sha256": "1e03b0a57d5bb2b7a8cb75b66bc50880ae43fedc2655749d735b3352ac0427bc",
+  "actual_wire_declaration_and_assignment": " wire signed [31:0] quantized_climb_logic_q16 /* synthesis syn_dspstyle=\"logic\" */;\n assign quantized_climb_logic_q16=quantized_climb_q16(speed_z_tick_store);",
+  "actual_old_alt_rhs": "taking_off ?quantized_climb_q16(speed_z_tick_store)+next_auto_speed*32'sd65536:0",
+  "actual_new_alt_rhs": "taking_off ?quantized_climb_logic_q16+next_auto_speed*32'sd65536:0",
+  "signed_widths": {
+    "input": 29,
+    "whole_mm": 14,
+    "cm": 10,
+    "result_and_alias": 32,
+    "next_auto_speed": 32,
+    "constant": 32
+  },
+  "universal_argument": "For every 29-bit four-state input and every four-state next_auto_speed/taking_off, substituting the exact continuous signed32 alias into the new sampled expression reconstructs the exact old signed32 expression. The function text and sizing context are identical. This is a structural universal identity, not a claim that simulation enumerates 4**29 inputs.",
+  "simulation_two_state_partition": "Function depends on all upper13 bits and only zero/nonzero of lower16. Every upper13 pattern and both lower reduction classes tested against independent signed64 truncation arithmetic; X/Z samples additionally test exact actual-function propagation.",
+  "sampling": "speed_z_tick_store is only captured in state0, never assigned in state61 where alias is sampled; no new FF, delay or edge."
+}

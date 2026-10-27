@@ -1,0 +1,15 @@
+"""Detached hidden supervisor recording the verification runner's real wait."""
+from pathlib import Path
+import datetime,hashlib,json,os,subprocess,sys
+BASE=Path(__file__).resolve().parent;O=BASE/'proofs_completion02';O.mkdir(exist_ok=False)
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+utc=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat()
+runner=BASE/'verify_completion02.py';command=[sys.executable,'-B','-u',str(runner)]
+record=dict(command=command,cwd=str(O),started_utc=utc(),supervisor_pid=os.getpid(),runner_sha256=sha(runner),supervisor_sha256=sha(Path(__file__)),create_no_window=True,stdin='DEVNULL')
+with (O/'runner.stdout.log').open('wb') as output,(O/'runner.stderr.log').open('wb') as errors:
+    p=subprocess.Popen(command,cwd=O,stdin=subprocess.DEVNULL,stdout=output,stderr=errors,creationflags=subprocess.CREATE_NO_WINDOW,close_fds=True)
+    record['pid']=p.pid;(O/'runner_process.json').write_text(json.dumps(record,indent=2)+'\n')
+    code=p.wait()
+record.update(ended_utc=utc(),actual_p_wait=code,normal_wait_return=True,stdout_sha256=sha(O/'runner.stdout.log'),stderr_sha256=sha(O/'runner.stderr.log'))
+(O/'runner_exit.json').write_text(json.dumps(record,indent=2)+'\n')
+raise SystemExit(code)

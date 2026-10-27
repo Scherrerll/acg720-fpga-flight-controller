@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "reviewed_utc": "2026-10-26T23:10:21.178453+00:00",
+  "source_freeze_sha256": "3350f4b8824da7a207ce956482d21244b99912e870b8e4337778bcda3a5ad1e9",
+  "proof_binding_sha256": "a8d32a820ada0a3908ecf1fba8e6288f55454bcbb7be4b57548f14cb39b9e9fd",
+  "reviewed_scripts_sha256": {
+    "run_synthesis.py": "9bfd8da72e5d68ee573d93d199ebe0125abc9f0fee4d8c3d53ef121b6e9a880c",
+    "audit_synthesis_only.py": "b1c0bc500c1cb9c2fa999b3a4ed3fa4b6a73ee8ac92b65a4e8788dae8e96712a",
+    "seal_synthesis.py": "41301a597ce4a0943c565c9e91e7113d65691569c1b293f8002c1caf5c7e1148",
+    "launch_synthesis_hidden.py": "7e0a6f50f01cb37dae41f08d422d35d36aab4dddbb148fab5450ac251179d3f1",
+    "validation_contract.py": "384b50b810822791ca3e995c62396c585dd62cdef14153787a4e5e8c8ad21bfa"
+  },
+  "component_contract_passed": true,
+  "scope": "Root source composition/tuple/default-call review and read-only complete saved source/proof contract recheck; no SYN permission until independent review closes."
+}

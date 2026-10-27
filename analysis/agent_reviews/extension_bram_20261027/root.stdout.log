@@ -1,0 +1,3 @@
+{"stage": "compile", "actual_p_wait": 0, "seconds": 0.23883980000391603}
+{"stage": "vvp", "actual_p_wait": 0, "seconds": 16.11347779998323}
+{"passed": true, "elaboration": {"passed": true, "actual_SP_instances": 28, "actual_GSR_instances": 1, "portable_FF_branch_absent": true, "vvp_sha256": "5a478b2f235a4f5cc5b0fe3b9c969d769a2e65d42e670956f550c30d7e54b20c"}, "pass_lines": ["PASS WIDTH=888 actual_SP=28 GSR=1 SIMULATION_BYPASS=0 CLK_HZ=50000000 initial_before_first_clock=0 same_edge_capture=1 cycles=19282 writes=12189 holds=7093 unknown_enable_holds=2918 walking_bits=888 random_vectors=16000 X_payload_writes=1 Z_payload_writes=1 checks=77127 offedge_checks=38562 no_DUT_force_or_preload=1"]}

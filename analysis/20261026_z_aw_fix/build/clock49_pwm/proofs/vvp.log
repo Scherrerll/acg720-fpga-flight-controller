@@ -1,0 +1,2 @@
+PASS actual motor_pwm RTL:50/49MHz physical1000/1200/1500/1850/2000us pulses,2500us frames, all8 monitors, two stop/re-enable boundaries each; width tolerance60ns
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\clock49_pwm\proofs\tb.v:68: $finish called at 32250000000 (1ps)

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v13\\launch_physical_hidden.py",
+    "2"
+  ],
+  "pid": 67068,
+  "started_utc": "2026-10-26T15:30:46.994201+00:00",
+  "scope": "Exact-v13-VG P2/R0 hidden supervisor; actual waits only from original runner/vendor."
+}

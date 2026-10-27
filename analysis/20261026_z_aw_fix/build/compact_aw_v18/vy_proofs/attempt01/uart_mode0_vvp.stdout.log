@@ -1,0 +1,2 @@
+PASS UART MODE=0 cycles=1272993 public_bits=1140 new_predicate_invariant=1 independent_signed64=1 expiry200=1 expiry1000=1 commits=61 boundaries=fff invalid_zero=8 stale_hold_cycles=934690 no_DUT_force=1 CLOCK_HZ=1152000
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v18\vy_proofs\attempt01\uart_reader_tb.v:107: $finish called at 12729930000 (1ps)

@@ -1,0 +1,9 @@
+# compact_aw_v4：操作数存储缩位实现核对
+
+v3 hold为9aa6a51a6cb2168ef46f3f5a61a23e3c4db8546601be7c0e562d4d16ab2cd6aa；v4为ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642。仅4条原字节替换：ma_store signed50变34、ma恢复64位时符号扩展30；mb_store signed34变28、mb恢复64位时符号扩展36。其他54文件及RTL表达式、reset/cancel、状态/周期、协议范围、结果/分母和math服务未改。
+
+闭合34调用及取消消费隔离证明见../operand_width_design.md（SHA1fb152c8962d633b9e8c953134d4b43f6a060c49cb1b810e1a1a939e02ad04ee）。合法消费a/b全位保留；非法az窗口及其后idle算口可以不同，不能声称全部算术端口无条件逐拍一致。没有增加清零或改变ready/cancel时序来掩盖差异。
+
+root已另行运行width_boundary，报告F0/F16各816534控制cycle、870合法service grant、29Z发布、4非法一拍az取消；本文件不冒充自己执行该测试，权威结果以root该夹具/日志/输入SHA为准。旧owner/其他client占用时的非法窗口仍依服务pending/cancel/epoch结构证明，不称此仿真已穷尽。
+
+本runner只做full-top elaboration及一次map2综合/原clock-radio-gain-port与全FF clk50审计。资源须实测，不依据源码减少22位预报DSP/FF收益；没有PNR授权，不启动物理实现。

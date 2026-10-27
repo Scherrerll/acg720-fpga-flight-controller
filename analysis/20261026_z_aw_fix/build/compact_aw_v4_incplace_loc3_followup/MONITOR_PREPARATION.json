@@ -1,0 +1,8 @@
+{
+  "scope": "Own live Popen child only; reject duplicate ordinary fallback after .p interface test. Preserve actual waits; no other process touched.",
+  "runner_before_sha256": "eac849943f774ec098c42747e87bbec55edfd458f823bb938d26edea56141ad3",
+  "runner_after_sha256": "eb8240ad091c900b2008262d2264ac8b76a886b832609bf66bfa2a3d79974bf3",
+  "seal_script_sha256": "a61ad57893f24ec195fb6a0673ae78b18a6f1a04339cbacf1ce6f22f9a5fa091",
+  "PNR_started": false,
+  "preflight_note": "Initialize fallback observation before polling, including immediate vendor exit."
+}

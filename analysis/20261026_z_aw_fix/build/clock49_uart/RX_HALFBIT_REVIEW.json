@@ -1,0 +1,15 @@
+{
+  "prepared_utc": "2026-10-26T20:45:47.552335+00:00",
+  "scope": "Only the isolated49MHz fallback RX candidate changes; frozen50MHz/v14/prototype sources remain untouched. Original UART failure and diagnostic retained.",
+  "actual_first_vvp_wait": 1,
+  "first_failure_exit_sha256": "1f1cf15e763d59c43fe68fd0aeda803e60bc59a5b9230fb8bc91b7c29f1e4a3e",
+  "actual_diagnostic_log_sha256": "f13048fb57ca3be27cb0d8d5ec35fe5ccaf3a22437c442b9c22a0547130584ac",
+  "root_cause": "At nominal115200 input the425 odd-divisor floor half-bit sample starts one clock early; the short bad-stop recovery trace rejects the next valid byte and later emitsfc, while the original434/50MHz receiver accepts00. Round half-bit up instead; even434 remains217 before the minus1, odd425 becomes213 instead of212.",
+  "original_source_sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+  "new_source_sha256": "8c0ab4e9844637a796d7fb6ba3200c74c814cce3db065849dd08caf247f76aa3",
+  "default434_half_bit_constant_unchanged": true,
+  "candidate425_half_bit_ticks": 213,
+  "old425_half_bit_ticks": 212,
+  "test_policy": "Keep the exact original short-idle, bad-stop, false-start and all256-byte expectations. No larger idle gap, no discarded-junk waiver, no lowered acceptance.",
+  "full_firmware_or_hardware_qualified": false
+}

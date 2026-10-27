@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-26T09:30:08.076580+00:00",
+  "scope": "Reuse exact frozen physical gates, change only variant identity, source binding and provenance copy. No gate relaxation.",
+  "profiles": {
+    "P3R0": "v4 nearest full-route 49.456MHz reference; v7 storage reduction changes mapped topology",
+    "P2R0": "v6 P2R0 routed and outperformed P1; alternative placement for unchanged v7 netlist"
+  },
+  "items": {
+    "run_physical.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\run_physical.py",
+      "donor_sha256": "a25b6377c37014b7f6d6f92e2bd766c644d7a2363527118b3666bdf93edb24e0",
+      "derived_sha256": "332d4759a8e12124dd226f82465720cd1b0afca7853f4f9ac9c1ae8e37181e55"
+    },
+    "launch_physical_hidden.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\launch_physical_hidden.py",
+      "donor_sha256": "bf50260a5a7c2489739d038043f64972047369d8c1ccf01c68ebaebc3dfeb194",
+      "derived_sha256": "c0d348b5097efe52c42f907f34d4d263ef8f0acdfc9fce20e945b653ed84343e"
+    },
+    "seal_terminal.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\seal_terminal.py",
+      "donor_sha256": "1946a08b6633408d62a6563710c77af9da61abe6adbbf508989d0e07798b4879",
+      "derived_sha256": "ff155285c72ece40f4a140c22f65e5a89cc7d12f9f00dfec95e552e42cbfdd26"
+    },
+    "physical_snapshot.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\physical_snapshot.py",
+      "donor_sha256": "7d3dc5e931b05a47b6939f826fb20ad454d53601a189561ba79d8b8655d0fc36",
+      "derived_sha256": "836fec0d49d601913d7e9bd6a9284bbb26ec1313c34b6930b1976ca8f7df4b11"
+    }
+  }
+}

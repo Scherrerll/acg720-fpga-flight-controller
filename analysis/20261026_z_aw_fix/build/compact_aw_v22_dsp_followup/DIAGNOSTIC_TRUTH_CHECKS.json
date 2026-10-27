@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checked_utc": "2026-10-27T00:25:54.302084+00:00",
+  "distinct_truth_vectors": 1183,
+  "actual_script_expression_checks": 2366,
+  "functions_AST_identical_between_status_scripts": true,
+  "strict_receipt_exact_true_int_zero_only": true,
+  "physical_pass_runner1_classified_runner_failure": true,
+  "missing_receipts_never_PASS_or_early_seal": true,
+  "scripts_sha256": {
+    "seal_terminal.py": "f233175aaf49f8ec5e6cd9db1aa10220780856055a3fda3c8a6326a31fa0882d",
+    "physical_snapshot.py": "93353047c6e69d96903a79816b795800a27e11e225d9a0e03e87ada356f08d51",
+    "test_terminal_diagnostics.py": "fbde675c159b85f3511a80d8b2a4e1460fdd91d516453a3d69556c89fe991913"
+  },
+  "scope": "Only extracted pure functions and actual terminal_status call AST expressions evaluated; status script top-level, preparer, vendor and runtime not executed."
+}

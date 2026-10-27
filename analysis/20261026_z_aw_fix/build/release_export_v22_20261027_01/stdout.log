@@ -1,0 +1,1 @@
+{"exported": true, "source_files": 55, "fmax_mhz": 50.075, "installed": false, "release_manifest_next": "Update final docs, then seal all exported files and run verify_release.py."}

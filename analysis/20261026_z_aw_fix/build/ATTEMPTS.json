@@ -1,0 +1,1102 @@
+{
+  "schema_version": 1,
+  "index_created_utc": "2026-10-26T06:31:50.270988+00:00",
+  "scope": "Archive/navigation index of original physical terminal evidence only; no source/proof edits or build/process actions.",
+  "history_policy": {
+    "terminal_attempts": "Append-only immutable facts; never overwrite receipts or previously indexed results. Record corrections as new correction events.",
+    "pending_snapshots": "Historical snapshots only; retain old snapshots when later adding a new terminal attempt record. They are never terminal evidence.",
+    "selection": "A later reviewer may update current_selected_attempt_id and append selection_events with reason/evidence; preserve all attempts and prior selection events."
+  },
+  "current_selected_attempt_id": null,
+  "selection_events": [],
+  "correction_events": [],
+  "summary": {
+    "terminal_count": 10,
+    "route_failed_count": 9,
+    "project_parse_failed_count": 1,
+    "qualified_count": 0,
+    "pending_snapshot_count": 2,
+    "all_terminal_TR_FS_absent": true
+  },
+  "implementation_history": {
+    "path": "analysis/20261026_z_aw_fix/implementation_history/HISTORY.json",
+    "sha256": "80b50c00d987735890e10485f1aa8e82a4d274803363336d0761cbf6a52c8fcf",
+    "source_variants": 5,
+    "each_source_count": 55,
+    "common54_byte_identical": true,
+    "copied_files": 8,
+    "copied_bytes": 199290
+  },
+  "attempts": [
+    {
+      "id": "first_p3r0",
+      "label": "first AW P3R0",
+      "fixture": "out/z_aw_fix_20261026/build_attempt_01",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T03:36:58.672096+00:00",
+      "ended_utc": "2026-10-26T04:01:46.942057+00:00",
+      "elapsed_seconds": 1488.269961,
+      "vendor_pid": 15128,
+      "helper_pid": 65620,
+      "profile_from_executed_tcl": {
+        "place": 3,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 1416,
+      "reported_unrouted_values": [
+        1416
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "first_aw_5a928e0a",
+      "hold_sha256": "5a928e0a68db70974049a4debb0b841ca06fa00598a4ffb4cb506997cfed657c",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "581f7fc2a5d757abf5641bbabe97f7caa49dbc5857b3d317022b648072517955",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/build_attempt_01/verification/physical_input.json",
+        "sha256": "2829cacd8bcb2c920934b73af21ca088763c5affe19231a34570e47b969bcbda",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "f63ae79edcd75c9905a0e55b53c3d8d9d94c239d8e67038a73fade80ffaa958a",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46473,
+          "capacity": 59904,
+          "reported_utilization": "78%"
+        },
+        "Register": {
+          "used": 27905,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26746,
+          "capacity": 29952,
+          "reported_utilization": "90%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36631,
+        "ALU": 9842
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/attempt_01_failure.json",
+          "sha256": "206c8755d7a3ec532d573a943261411812480599f79590f6150fdc9a7c9df9f5"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "out/z_aw_fix_20261026/build_attempt_01/failure_freeze_manifest.json",
+          "sha256": "42ed3ccd0cd6f8c7b4501bb014836f9a3d5a95df664e387eca4c4d2448739fa4"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/build_attempt_01/verification/physical_exit.json": "59d0f1dd282e7e7fe09632f7ee8a81672bc36bd1e710f7287314a722eb578619",
+        "out/z_aw_fix_20261026/build_attempt_01/verification/physical_input.json": "2829cacd8bcb2c920934b73af21ca088763c5affe19231a34570e47b969bcbda",
+        "out/z_aw_fix_20261026/build_attempt_01/verification/physical.log": "fb94d9008150f3095152a180f157d09ad54b73c28207166c99b7f02e9792c126",
+        "out/z_aw_fix_20261026/build_attempt_01/physical.tcl": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f",
+        "out/z_aw_fix_20261026/build_attempt_01/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/build_attempt_01/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/build_attempt_01/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/build_attempt_01/verification/build_input.json": "f9ecd09e05d150eeaf5dc89f8f87516bdf3e3886c1be31c97732c708e53adf9d",
+        "out/z_aw_fix_20261026/build_attempt_01/verification/physical_process.json": "1ac073cc7bf67c2c93722483b63bbdb09fa42466f5e29d0939436c21ffbb2c01",
+        "out/z_aw_fix_20261026/build_attempt_01/verification/build_failure.json": "3dc8d32635924b3d5dd07529ae27797174ba1bd83acea0973a78de1d4b9b1771",
+        "out/z_aw_fix_20261026/build_attempt_01/source/impl/pnr/acg720_ano_port.rpt.txt": "1cfe2b679189c1e00a74573010d222788d2193b2cdb07089349360c1b6fa255c"
+      }
+    },
+    {
+      "id": "first_p2r0",
+      "label": "first AW P2R0",
+      "fixture": "out/z_aw_fix_20261026/build_attempt_02",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T04:03:13.658492+00:00",
+      "ended_utc": "2026-10-26T04:37:46.566395+00:00",
+      "elapsed_seconds": 2072.907903,
+      "vendor_pid": 7440,
+      "helper_pid": 15404,
+      "profile_from_executed_tcl": {
+        "place": 2,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 721,
+      "reported_unrouted_values": [
+        721
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "first_aw_5a928e0a",
+      "hold_sha256": "5a928e0a68db70974049a4debb0b841ca06fa00598a4ffb4cb506997cfed657c",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "581f7fc2a5d757abf5641bbabe97f7caa49dbc5857b3d317022b648072517955",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/build_attempt_02/verification/physical_input.json",
+        "sha256": "aba920c909060338a447bc43177920917f06318f2e029c0f4d381a8b5b2bfdfd",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "f63ae79edcd75c9905a0e55b53c3d8d9d94c239d8e67038a73fade80ffaa958a",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46478,
+          "capacity": 59904,
+          "reported_utilization": "78%"
+        },
+        "Register": {
+          "used": 27905,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26302,
+          "capacity": 29952,
+          "reported_utilization": "88%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36631,
+        "ALU": 9847
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/p2r0/PHYSICAL_RESULT.md",
+          "sha256": "3dc61816bebe4d5a063add82b6cc74f9c27f8f215c3a6ada0053bbc8b2c7cef7"
+        },
+        {
+          "path": "analysis/20261026_z_aw_fix/build/p2r0/RESULT.json",
+          "sha256": "b7dba4c73c8dab2c1fb4cdeff603f833fffdcf4471838ab8b3b4a721219b1b86"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/p2r0/ARTIFACT_HASHES.json",
+          "sha256": "d128f56ef5c2f71cd4ea50caf23251b40688ea13614b84a81f9a5c9377720a22"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/build_attempt_02/verification/physical_exit.json": "24c8878b9a753bfb6d1676f188098b15636259c2e54cd858e4939a0ad25ca625",
+        "out/z_aw_fix_20261026/build_attempt_02/verification/physical_input.json": "aba920c909060338a447bc43177920917f06318f2e029c0f4d381a8b5b2bfdfd",
+        "out/z_aw_fix_20261026/build_attempt_02/verification/physical.log": "b42bd989d6d96bdcd745ca3b77e9b1f6de115aa02b576e7c96c43d4850440f15",
+        "out/z_aw_fix_20261026/build_attempt_02/physical.tcl": "9873825636c469ca74dc6d12c84f6ef930a8318b4b736408f4f168a5c1832947",
+        "out/z_aw_fix_20261026/build_attempt_02/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/build_attempt_02/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/build_attempt_02/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/build_attempt_02/verification/build_input.json": "aba920c909060338a447bc43177920917f06318f2e029c0f4d381a8b5b2bfdfd",
+        "out/z_aw_fix_20261026/build_attempt_02/verification/physical_process.json": "d7cba36a211cde2df993d1bcb9545d365e9d470fa8b3ca974811fec853424bbf",
+        "out/z_aw_fix_20261026/build_attempt_02/verification/build_failure.json": "7a0974e3e5a9358a86fc97df6a763753d6123b1f31208ad0a8b6a98648b9a0c2",
+        "out/z_aw_fix_20261026/build_attempt_02/source/impl/pnr/acg720_ano_port.rpt.txt": "09611a274d381f9ad7c0246c239a068b3370ad6e9eed3958f576e6db0fbd7204"
+      }
+    },
+    {
+      "id": "first_p3r1",
+      "label": "first AW P3R1",
+      "fixture": "out/z_aw_fix_20261026/build_attempt_03",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T04:04:13.144701+00:00",
+      "ended_utc": "2026-10-26T04:58:45.841848+00:00",
+      "elapsed_seconds": 3272.697147,
+      "vendor_pid": 20408,
+      "helper_pid": 19452,
+      "profile_from_executed_tcl": {
+        "place": 3,
+        "route": 1,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 10483,
+      "reported_unrouted_values": [
+        10483
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "first_aw_5a928e0a",
+      "hold_sha256": "5a928e0a68db70974049a4debb0b841ca06fa00598a4ffb4cb506997cfed657c",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "581f7fc2a5d757abf5641bbabe97f7caa49dbc5857b3d317022b648072517955",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/build_attempt_03/verification/physical_input.json",
+        "sha256": "5b397c97c8d3ecc5b1318b27ddc7679225ce686d4a83243e628c745769ecb1ff",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "f63ae79edcd75c9905a0e55b53c3d8d9d94c239d8e67038a73fade80ffaa958a",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46473,
+          "capacity": 59904,
+          "reported_utilization": "78%"
+        },
+        "Register": {
+          "used": 27905,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26746,
+          "capacity": 29952,
+          "reported_utilization": "90%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36631,
+        "ALU": 9842
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/attempt_03_failure.json",
+          "sha256": "a371392b1b457e333d54974412732fc4d4bc78d59cdd13a0b3b001f9314a3044"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "out/z_aw_fix_20261026/build_attempt_03/failure_freeze_manifest.json",
+          "sha256": "4368e4d1d251980c212306f29f6b7f3a9bde6c11377a32ddc29e2af0b80d3d4c"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/build_attempt_03/verification/physical_exit.json": "0d2df22fe7aa99289a14fdcb19b3a4c5c13fd9485ea8a7b013f59c4bf6076db1",
+        "out/z_aw_fix_20261026/build_attempt_03/verification/physical_input.json": "5b397c97c8d3ecc5b1318b27ddc7679225ce686d4a83243e628c745769ecb1ff",
+        "out/z_aw_fix_20261026/build_attempt_03/verification/physical.log": "fb63b6958650ca43b9b3cacf32880779e7ad01b2e864a583b87c5006fe4505cb",
+        "out/z_aw_fix_20261026/build_attempt_03/physical.tcl": "56d268ff8c76b27db5879389dfc5a9834da77d517a94cda3c37001f4426fc630",
+        "out/z_aw_fix_20261026/build_attempt_03/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/build_attempt_03/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/build_attempt_03/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/build_attempt_03/verification/build_input.json": "5b397c97c8d3ecc5b1318b27ddc7679225ce686d4a83243e628c745769ecb1ff",
+        "out/z_aw_fix_20261026/build_attempt_03/verification/physical_process.json": "22c53c5d71b5d05b762ebf25f24abf1ab1ce65af9dd3e715c5ce99b14ab166ba",
+        "out/z_aw_fix_20261026/build_attempt_03/verification/build_failure.json": "167b0578d01805e3385a3671a7c4934a4f4961cdad63d7ab7b10e5aa510c441f",
+        "out/z_aw_fix_20261026/build_attempt_03/source/impl/pnr/acg720_ano_port.rpt.txt": "244c0b62d598d6be245d297b7fbe3a829f59b41f5f9572223fe096753cda4b3d"
+      }
+    },
+    {
+      "id": "compact_v1_project01",
+      "label": "compact v1 XML rejected",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01",
+      "outcome": "project_parse_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T04:22:16.528325+00:00",
+      "ended_utc": "2026-10-26T04:22:17.495109+00:00",
+      "elapsed_seconds": 0.966784,
+      "vendor_pid": 35900,
+      "helper_pid": 12016,
+      "profile_from_executed_tcl": {
+        "place": 3,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": false,
+      "profile_note": "Requested Tcl settings only; open_project failed before placement/options",
+      "unrouted_nets": null,
+      "reported_unrouted_values": [],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "compact_v1_479f7571",
+      "hold_sha256": "479f757149a57ac0b5f9e0334dab80cae475a5345b834fde9c5130c701057ac3",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "1837916605147c8f1e0e6d9cf60b39bdb7a4d5b9cba109578e71342fb9172b6c",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/physical_input.json",
+        "sha256": "562341cf78ff5c9d707006d8b34c9a7b1fddd3cd813dce3ef8ffaf6ac40d7d7b",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "b7691fd2d04abfc95e1fa458b0cb22e1c8ebcb2eb810db16e7a706fa8e73a87b",
+      "VG_verified_against_input": true,
+      "physical_resources": {},
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw/project_retry_provenance.json",
+          "sha256": "c6a74a5b352055a1e95eab6f8a8bb829bbce15aac5948caae67e46a5b5d1ffbe"
+        },
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw/FINAL_STATUS.json",
+          "sha256": "b03e4e36b149144ead857365b0de65b90b9ad7d28a819fb72f44e4c1c8b1fdd8"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw/MANIFEST.json",
+          "sha256": "ff52d60de805a55f90b2b2eb3a281a0f674fd589aea32731112b6e0e3cf08238"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/physical_exit.json": "d61901d4e8c0891b7c8924de74f1010b06fecf426851888eb8a079177385bcaa",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/physical_input.json": "562341cf78ff5c9d707006d8b34c9a7b1fddd3cd813dce3ef8ffaf6ac40d7d7b",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/physical.log": "a787fdf3cdf69b8bc60a884feb1fce7d895ba433780c335a679eb420b973d302",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/physical.tcl": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/source/physical.gprj": "d8423913c93cba3ab2f3565b14126a0098b3ada60770ddaeb0f7d5cb23ff1b75",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/build_input.json": "6ee57c4df5517b5aa2ac8ce72bb13ae127944399c74264bc5849a23de786fe5a",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/physical_process.json": "0a7041f091b7aab4d6bd46414331ab49a5560947dc97b23b154074dbafa021a9",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/build_failure.json": "b7c889dfa266486d99279017a24e70b73664122af0deef08dd2235cfc92b19c6"
+      }
+    },
+    {
+      "id": "compact_v1_p3r0",
+      "label": "compact v1 P3R0",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T04:24:18.035622+00:00",
+      "ended_utc": "2026-10-26T05:07:10.260251+00:00",
+      "elapsed_seconds": 2572.224629,
+      "vendor_pid": 20076,
+      "helper_pid": 54068,
+      "profile_from_executed_tcl": {
+        "place": 3,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 746,
+      "reported_unrouted_values": [
+        746
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "compact_v1_479f7571",
+      "hold_sha256": "479f757149a57ac0b5f9e0334dab80cae475a5345b834fde9c5130c701057ac3",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "1837916605147c8f1e0e6d9cf60b39bdb7a4d5b9cba109578e71342fb9172b6c",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/physical_input.json",
+        "sha256": "571b045ae1a15ef3dac38dc6961f2369f5f101c911fe6aa4d4a916941e99b8db",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "b7691fd2d04abfc95e1fa458b0cb22e1c8ebcb2eb810db16e7a706fa8e73a87b",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46035,
+          "capacity": 59904,
+          "reported_utilization": "77%"
+        },
+        "Register": {
+          "used": 27786,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26581,
+          "capacity": 29952,
+          "reported_utilization": "89%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36179,
+        "ALU": 9856
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw/FINAL_STATUS.json",
+          "sha256": "b03e4e36b149144ead857365b0de65b90b9ad7d28a819fb72f44e4c1c8b1fdd8"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw/MANIFEST.json",
+          "sha256": "ff52d60de805a55f90b2b2eb3a281a0f674fd589aea32731112b6e0e3cf08238"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/physical_exit.json": "8e3dc6434b6c0f674a9bf39c6566b3a2a993f005de5264c5b5e51d939220fe44",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/physical_input.json": "571b045ae1a15ef3dac38dc6961f2369f5f101c911fe6aa4d4a916941e99b8db",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/physical.log": "6db422b922c77c65a49c5fdd63c740913a27547195ebfdd295f0374bb39374a1",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/physical.tcl": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/build_input.json": "a1f99ad23cb25c518d610f715937b529511863664757b0b4bf6599ba5a31298f",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/physical_process.json": "3577207bde63ba6c56d33f936cb6abf00894a0ebb6daa434ff52b739ce3860de",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/build_failure.json": "a3ec2a5faf14023dc153da68958cff900483bf0db62836a09ae77cb5a0effc87",
+        "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/source/impl/pnr/acg720_ano_port.rpt.txt": "7c99b075eff1662647ff88d07a976b537a84a9f6ef9fd28dde5f95d151ac0cc6"
+      }
+    },
+    {
+      "id": "compact_v2_map2_p2r0",
+      "label": "compact v2 map2 P2R0",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T04:52:50.255769+00:00",
+      "ended_utc": "2026-10-26T05:46:45.387162+00:00",
+      "elapsed_seconds": 3235.131393,
+      "vendor_pid": 53456,
+      "helper_pid": 38552,
+      "profile_from_executed_tcl": {
+        "place": 2,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 792,
+      "reported_unrouted_values": [
+        792
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "compact_v2_afc65682",
+      "hold_sha256": "afc656820788d8cbf7c61d8c4e7526bec3dceb950673de9df18cb68a7d0632f3",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "3c9715561bf9ebcd135894378dd4c8117c78b318b4f478b124981eae3fac78b1",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/verification/physical_input.json",
+        "sha256": "a525412c2c178181578f5dc67dbfade20fa67c0295b9d78a3db89c23c01c6a14",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "497200b2627194c9047d459402f239592fa75e16c491e39251d20c6b4238a39f",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46003,
+          "capacity": 59904,
+          "reported_utilization": "77%"
+        },
+        "Register": {
+          "used": 27786,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26562,
+          "capacity": 29952,
+          "reported_utilization": "89%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36216,
+        "ALU": 9787
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v2/PHYSICAL_RESULT.md",
+          "sha256": "53c75e7a393e5470c5d89d081cd52e9b3ee02c62b931a989385f232f8924abeb"
+        },
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v2/PHYSICAL_RESULT.json",
+          "sha256": "dfe8ebe854deb4981f664fdd8e50037fc21ce997b6ecaa08d3169dce98d5aa6b"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v2/PHYSICAL_EVIDENCE_MANIFEST.json",
+          "sha256": "c1311c9c23a71067d0a342ba290e78b23508102447dacae7dc60fd58f4567c37"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/verification/physical_exit.json": "583d80fb7837d022dd8b55237d0d9ed371303e8072ca76fe2c1a68e5b2475c49",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/verification/physical_input.json": "a525412c2c178181578f5dc67dbfade20fa67c0295b9d78a3db89c23c01c6a14",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/verification/physical.log": "959b0e765de7a6835657444aed7154d425d1a86df18f26c1218819382b811956",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/physical.tcl": "9873825636c469ca74dc6d12c84f6ef930a8318b4b736408f4f168a5c1832947",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/verification/build_input.json": "a525412c2c178181578f5dc67dbfade20fa67c0295b9d78a3db89c23c01c6a14",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/verification/physical_process.json": "9be464dabad9961d9cde14547a8ef5c7cd561bd6ffffba8d368c9e317c1c9e1a",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/verification/build_failure.json": "e6c4beb5baade90991bbc7d28f8c4305ac680d2b906dd4ef660f979f3f72a20a",
+        "out/z_aw_fix_20261026/compact_aw_v2/physical_p2r0_01/source/impl/pnr/acg720_ano_port.rpt.txt": "aba90ee2d4082e1d39dd2415bdf891949385652662106e738f16938b40424c23"
+      }
+    },
+    {
+      "id": "compact_v2_map1_p3r0",
+      "label": "compact v2 map1 P3R0",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T05:05:16.799287+00:00",
+      "ended_utc": "2026-10-26T05:43:21.095120+00:00",
+      "elapsed_seconds": 2284.295833,
+      "vendor_pid": 57168,
+      "helper_pid": 49852,
+      "profile_from_executed_tcl": {
+        "place": 3,
+        "route": 0,
+        "map_option": 1,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 667,
+      "reported_unrouted_values": [
+        667
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "compact_v2_afc65682",
+      "hold_sha256": "afc656820788d8cbf7c61d8c4e7526bec3dceb950673de9df18cb68a7d0632f3",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "3c9715561bf9ebcd135894378dd4c8117c78b318b4f478b124981eae3fac78b1",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/verification/physical_input.json",
+        "sha256": "20e6fee21a0d42156a4804e81bef398ed89652a51e8693ff79ee382d523e382d",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "3b90c12efcd48a1ce9b778194f4be6c7985e0fa99e3d3f456a3a06c593900d49",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46005,
+          "capacity": 59904,
+          "reported_utilization": "77%"
+        },
+        "Register": {
+          "used": 27786,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26531,
+          "capacity": 29952,
+          "reported_utilization": "89%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36217,
+        "ALU": 9788
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v2_map1/physical_failure.json",
+          "sha256": "217e476f9d37afe80e1bf72a5e57fd52951b0a951df8cbd89004a13aaf9e0b90"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/failure_freeze_manifest.json",
+          "sha256": "95d903d135df69c3e42dea90187bc78ce0f5f3ff7c7854e9eee0080075a5f5ca"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/verification/physical_exit.json": "197d615ce55da6f58e41214b17a115db54289e958d975bae5d6ce24b0e2c7777",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/verification/physical_input.json": "20e6fee21a0d42156a4804e81bef398ed89652a51e8693ff79ee382d523e382d",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/verification/physical.log": "bd1a2aeb9fc9240dcc5f781a64ec03ef68a7601c454bbc5d0de8d00f11a5a084",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/physical.tcl": "64c6b1454134c17d8176836429d2cefc527b5a4e78813e666ded08334178f783",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/verification/build_input.json": "20e6fee21a0d42156a4804e81bef398ed89652a51e8693ff79ee382d523e382d",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/verification/physical_process.json": "141dea1cb8817d5f6dd5b1784d366bb07ddaa2a0c5112f2e9a7db11c00f71108",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/verification/build_failure.json": "e9a3529fdc425872f7b5c0ec9065a548eb643579309f12561793f54c30ab3b09",
+        "out/z_aw_fix_20261026/compact_aw_v2/map1_physical_p3r0_01/source/impl/pnr/acg720_ano_port.rpt.txt": "9f984650a4b3aec03ae308edb9570340fbc6e3ee1e5e9c2793a9deb2a66dcef9"
+      }
+    },
+    {
+      "id": "compact_v3_p3r0",
+      "label": "compact v3 P3R0",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T05:27:30.441550+00:00",
+      "ended_utc": "2026-10-26T06:06:03.746083+00:00",
+      "elapsed_seconds": 2313.304533,
+      "vendor_pid": 19176,
+      "helper_pid": 49960,
+      "profile_from_executed_tcl": {
+        "place": 3,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 898,
+      "reported_unrouted_values": [
+        898
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "compact_v3_9aa6a51a",
+      "hold_sha256": "9aa6a51a6cb2168ef46f3f5a61a23e3c4db8546601be7c0e562d4d16ab2cd6aa",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "03d0523599732971eab45d4fddbaa1434acc1b674f92cd0bcb9dcfa419206903",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/verification/physical_input.json",
+        "sha256": "d455a47e265f27c0acc375da24ea1aacf35e33cc952bdb44e770351b789d61c4",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "4f329e5313eba5966394828734c61867a3483b3eed8c3c37c724a453285c8a0c",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46002,
+          "capacity": 59904,
+          "reported_utilization": "77%"
+        },
+        "Register": {
+          "used": 27786,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26565,
+          "capacity": 29952,
+          "reported_utilization": "89%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36252,
+        "ALU": 9750
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v3/FINAL_STATUS.json",
+          "sha256": "81d86b72f1aa49d3a030a4edebbdaf40f857d23120cffb6695849daafb0d4acc"
+        }
+      ],
+      "sealed_manifests": [],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/verification/physical_exit.json": "606f7d837c907f916d0c52c0ebe5b362ee1c61b6aaac63e4da786a810c7c76c8",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/verification/physical_input.json": "d455a47e265f27c0acc375da24ea1aacf35e33cc952bdb44e770351b789d61c4",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/verification/physical.log": "0d68c37894b3fa7949aab86f09d72018a1354329f90c22f23bce750256c5a034",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/physical.tcl": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/verification/build_input.json": "4965efdec005176d3d1fb4b47402e38987e90880462ebf20cb9883740e1c8e99",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/verification/physical_process.json": "8b49221cf0f601124afd3f88575c2353ec44a36fb06e5369f07d5bee834ebf8d",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/verification/build_failure.json": "5b082305ab087e1ee5defc3dcf84dd9be43e5916426efc5581e04e00529401f2",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p3r0_01/source/impl/pnr/acg720_ano_port.rpt.txt": "504a3d9b35344b19fb86f507f28e59fb5572c0b24ea413d58a0eba5464c35223"
+      }
+    },
+    {
+      "id": "compact_v3_p2r0_nt0",
+      "label": "compact v3 P2R0 TD0",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T05:34:12.793524+00:00",
+      "ended_utc": "2026-10-26T06:11:50.443011+00:00",
+      "elapsed_seconds": 2257.649487,
+      "vendor_pid": 49580,
+      "helper_pid": 41472,
+      "profile_from_executed_tcl": {
+        "place": 2,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 0,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 1073,
+      "reported_unrouted_values": [
+        1073
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "compact_v3_9aa6a51a",
+      "hold_sha256": "9aa6a51a6cb2168ef46f3f5a61a23e3c4db8546601be7c0e562d4d16ab2cd6aa",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "03d0523599732971eab45d4fddbaa1434acc1b674f92cd0bcb9dcfa419206903",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/verification/physical_input.json",
+        "sha256": "b2326c2884c453be8a77a395a73bcc92f2cac28a5864020ec2e7a41fede0f2a9",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "4f329e5313eba5966394828734c61867a3483b3eed8c3c37c724a453285c8a0c",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46009,
+          "capacity": 59904,
+          "reported_utilization": "77%"
+        },
+        "Register": {
+          "used": 27786,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26689,
+          "capacity": 29952,
+          "reported_utilization": "90%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36252,
+        "ALU": 9757
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v3_nt0/RESULT.md",
+          "sha256": "d96d32d3a9124ea973db682e5e1ef775141f819ef00f8cd7c9e924759c118f65"
+        },
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v3_nt0/RESULT.json",
+          "sha256": "43954c76b409224f22367d7a14b0a1f6d163e8137eecfd669c2a78b2681397e2"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v3_nt0/EVIDENCE_MANIFEST.json",
+          "sha256": "4df146917e18e8d083218f8f7275843b4bcd475a11ef3b1c4d275e162d449b8c"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/verification/physical_exit.json": "4b15ec49b6e5a8c9ffbd6f58bc5d8abe9931f2f1e8a8ce1bba2589cd9cf99435",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/verification/physical_input.json": "b2326c2884c453be8a77a395a73bcc92f2cac28a5864020ec2e7a41fede0f2a9",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/verification/physical.log": "e6cc3b47f74373c12ddf8ce9b09be2f048f875f2a93ddd601a8a0f3b05ca29ba",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/physical.tcl": "913d4a5d6ff4a35fad2795d3646d4f0f5640d252f09951fe977bc66cb3bcf9b8",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/verification/build_input.json": "b2326c2884c453be8a77a395a73bcc92f2cac28a5864020ec2e7a41fede0f2a9",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/verification/physical_process.json": "3f44049c8c8beaf3eaece9250bdd354c1e0e893d46e96aa6c676d133c2ba0a20",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/verification/build_failure.json": "ba0e4a47e1e604243268409c137795ca16b7c66221a11d69c673231194d003ee",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p2r0_nt0_01/source/impl/pnr/acg720_ano_port.rpt.txt": "facb7b85e19a709adfd8cb2b098c7727fa8977e7f37ae82d1998ae9bad57ea0f"
+      }
+    },
+    {
+      "id": "compact_v3_p1r2",
+      "label": "compact v3 P1R2",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01",
+      "outcome": "route_failed",
+      "terminal": true,
+      "actual_p_wait": 1,
+      "normal_wait_return": true,
+      "started_utc": "2026-10-26T05:41:27.578470+00:00",
+      "ended_utc": "2026-10-26T06:16:42.057750+00:00",
+      "elapsed_seconds": 2114.47928,
+      "vendor_pid": 15024,
+      "helper_pid": 47552,
+      "profile_from_executed_tcl": {
+        "place": 1,
+        "route": 2,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "profile_reached": true,
+      "profile_note": "Actual execution Tcl; source build.tcl remains unchanged",
+      "unrouted_nets": 1096,
+      "reported_unrouted_values": [
+        1096
+      ],
+      "TR_exists": false,
+      "FS_exists": false,
+      "qualified": false,
+      "timing_results": null,
+      "source_variant_id": "compact_v3_9aa6a51a",
+      "hold_sha256": "9aa6a51a6cb2168ef46f3f5a61a23e3c4db8546601be7c0e562d4d16ab2cd6aa",
+      "source55_file_count": 55,
+      "source55_verified_unchanged": true,
+      "source55_fingerprint_sha256": "03d0523599732971eab45d4fddbaa1434acc1b674f92cd0bcb9dcfa419206903",
+      "source55_receipt_reference": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/verification/physical_input.json",
+        "sha256": "3bd3499fe7782047ef57e8661b9c7c4568e06ed5fa19e6d599ee8fa6a9c573da",
+        "json_field": "source_sha256"
+      },
+      "VG_sha256": "4f329e5313eba5966394828734c61867a3483b3eed8c3c37c724a453285c8a0c",
+      "VG_verified_against_input": true,
+      "physical_resources": {
+        "Logic": {
+          "used": 46001,
+          "capacity": 59904,
+          "reported_utilization": "77%"
+        },
+        "Register": {
+          "used": 27786,
+          "capacity": 60780,
+          "reported_utilization": "46%"
+        },
+        "CLS": {
+          "used": 26475,
+          "capacity": 29952,
+          "reported_utilization": "89%"
+        },
+        "PRIMARY": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LW": {
+          "used": 8,
+          "capacity": 8,
+          "reported_utilization": "100%"
+        },
+        "LUT": 36252,
+        "ALU": 9749
+      },
+      "terminal_reports": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v3_p1r2/RESULT.md",
+          "sha256": "d0b493095c7a017dca5554b777fd727cd1b077b054a9180b518cf82a6ae3a3b9"
+        },
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v3_p1r2/RESULT.json",
+          "sha256": "ce1489bd2032f3b25009dfa64d5acc29da33cb779026d031dcfb712826a12d12"
+        }
+      ],
+      "sealed_manifests": [
+        {
+          "path": "analysis/20261026_z_aw_fix/build/compact_aw_v3_p1r2/EVIDENCE_MANIFEST.json",
+          "sha256": "a985ee67d3ed7c1085092da4b569790eee27b9b48021b5a907af54428581dc92"
+        }
+      ],
+      "raw_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/verification/physical_exit.json": "69d9b4786c7f2d4b7da9f8b3b536824a5baa082c7370e75b403520a2fde9f17a",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/verification/physical_input.json": "3bd3499fe7782047ef57e8661b9c7c4568e06ed5fa19e6d599ee8fa6a9c573da",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/verification/physical.log": "7bc96987b5d23cd072393e381ae423a0aaca13373db0488b654b0483b0378c95",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/physical.tcl": "91453e3c8d576f40de6dddab1d7354e8c7cfd3f79e543e289b81bd6e8aa4ac57",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/source/physical.gprj": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/source/acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/source/acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/verification/build_input.json": "3bd3499fe7782047ef57e8661b9c7c4568e06ed5fa19e6d599ee8fa6a9c573da",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/verification/physical_process.json": "08dbe6af28374bba0b1b47abec5408253a0c57ed76f51fb9a2e2ac71b90588dc",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/verification/build_failure.json": "3ae9e1dfb7e4e41d01f29e48e446d883b82ff1751f26a907d502add6a3f4ea17",
+        "out/z_aw_fix_20261026/compact_aw_v3/physical_p1r2_01/source/impl/pnr/acg720_ano_port.rpt.txt": "4361847368e1c0c8c43992e78cb99bdb8aaec8633fda2a462d5a2b0753df8fd5"
+      }
+    }
+  ],
+  "pending_snapshots": [
+    {
+      "snapshot_utc": "2026-10-26T06:31:50.237291+00:00",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v4/physical_p3r0_01",
+      "status_at_snapshot": "pending_no_exit_receipt",
+      "terminal": false,
+      "process_receipt_vendor_pid": 27944,
+      "process_receipt_helper_pid": 61420,
+      "process_liveness_not_queried": true,
+      "started_utc": "2026-10-26T06:20:22.701275+00:00",
+      "profile_from_tcl": {
+        "place": 3,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "hold_sha256": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+      "VG_declared_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+      "physical_exit_absent_at_snapshot": true,
+      "TR_exists_at_snapshot": false,
+      "FS_exists_at_snapshot": false,
+      "last_vendor_event_at_snapshot": "[70%] Routing Phase 1 completed",
+      "mutable_log_prefix": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v4/physical_p3r0_01/verification/physical.log",
+        "read_prefix_bytes": 1220,
+        "prefix_sha256": "7c62a74006c3f409283022885b752f38a0723f4b5080402c48e1f84608bf2dec",
+        "note": "Historical read snapshot only; log remains mutable and is not sealed by this index"
+      },
+      "stable_input_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v4/physical_p3r0_01/verification/physical_input.json": "e5c643fdcf67c6aef3046e1abdef00a970a59010e7ec827cc8464627c2466bce",
+        "out/z_aw_fix_20261026/compact_aw_v4/physical_p3r0_01/verification/physical_process.json": "1ca661d92b49e277f1843067052d67ce4b932b53163add9eb025da0fe2d231d3",
+        "out/z_aw_fix_20261026/compact_aw_v4/physical_p3r0_01/physical.tcl": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f"
+      }
+    },
+    {
+      "snapshot_utc": "2026-10-26T06:31:50.237291+00:00",
+      "fixture": "out/z_aw_fix_20261026/compact_aw_v4/physical_p4r0_01",
+      "status_at_snapshot": "pending_no_exit_receipt",
+      "terminal": false,
+      "process_receipt_vendor_pid": 9908,
+      "process_receipt_helper_pid": 61780,
+      "process_liveness_not_queried": true,
+      "started_utc": "2026-10-26T06:18:01.501016+00:00",
+      "profile_from_tcl": {
+        "place": 4,
+        "route": 0,
+        "map_option": 2,
+        "replicate_resources": 0,
+        "timing_driven": 1,
+        "global_freq": 50,
+        "user_code": "0000B0B4"
+      },
+      "hold_sha256": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+      "VG_declared_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+      "physical_exit_absent_at_snapshot": true,
+      "TR_exists_at_snapshot": false,
+      "FS_exists_at_snapshot": false,
+      "last_vendor_event_at_snapshot": "[60%] Routing Phase 0 completed",
+      "mutable_log_prefix": {
+        "path": "out/z_aw_fix_20261026/compact_aw_v4/physical_p4r0_01/verification/physical.log",
+        "read_prefix_bytes": 1187,
+        "prefix_sha256": "189a75bea5d8283c0be0fb156d059eff59100ff1ba00389adb97820adfdaf3d4",
+        "note": "Historical read snapshot only; log remains mutable and is not sealed by this index"
+      },
+      "stable_input_evidence_sha256": {
+        "out/z_aw_fix_20261026/compact_aw_v4/physical_p4r0_01/verification/physical_input.json": "d359741383e8b556aefbb82e6cfd9f8d90bba8619d48d64a8b826dd366c89a8a",
+        "out/z_aw_fix_20261026/compact_aw_v4/physical_p4r0_01/verification/physical_process.json": "73a82ae787f8aa547dcf6fb17d8eeae9a21a6c56c506a5113491f8595061b912",
+        "out/z_aw_fix_20261026/compact_aw_v4/physical_p4r0_01/physical.tcl": "559e7cf6fb74e54734a08ed904c9b15283e8cc5570269cceae196601827a0c39"
+      }
+    }
+  ],
+  "index_update_events": [
+    {
+      "utc": "2026-10-26T06:31:50.272009+00:00",
+      "action": "created",
+      "terminal_attempt_ids": [
+        "first_p3r0",
+        "first_p2r0",
+        "first_p3r1",
+        "compact_v1_project01",
+        "compact_v1_p3r0",
+        "compact_v2_map2_p2r0",
+        "compact_v2_map1_p3r0",
+        "compact_v3_p3r0",
+        "compact_v3_p2r0_nt0",
+        "compact_v3_p1r2"
+      ],
+      "pending_snapshot_fixtures": [
+        "out/z_aw_fix_20261026/compact_aw_v4/physical_p3r0_01",
+        "out/z_aw_fix_20261026/compact_aw_v4/physical_p4r0_01"
+      ]
+    }
+  ]
+}

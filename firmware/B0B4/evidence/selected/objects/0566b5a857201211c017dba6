@@ -1,0 +1,154 @@
+--- v17/acg720_ano_port.v
++++ v18/acg720_ano_port.v
+@@ -274,13 +274,13 @@
+  reg [271:0] flight_info_q=0;
+  always @(posedge clk50) if(!telemetry_snapshot_hold) flight_info_q<=flight_info;
+  wire [975:0] mtf_body;
+- wire mtf_sample,mtf_range_ok,mtf_flow_ok,mtf_integrated;
++ wire mtf_sample,mtf_range_ok,mtf_flow_ok,mtf_integrated,mtf_velocity_range_ok;
+  wire [31:0] mtf_distance_mm,mtf_dt_ms,mtf_age_ms;
+  wire signed [31:0] mtf_vx_x100,mtf_vy_x100;
+  mtf01p_reader #(.EXTERNAL_DIAGNOSTIC_HOLD(1),.DIAGNOSTIC_VERSION(3),.PHYSICAL_STOP_LOCK(0),.CONTROL_PATH(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1)) mtf(.clk(clk50),.rst_n(rst_n),.rx(range_rx),.uptime_ms(uptime_ms),.diagnostic_hold(telemetry_snapshot_hold),.diagnostic_body(mtf_body),
+   .metric_sample_valid(mtf_sample),.metric_range_valid(mtf_range_ok),.metric_flow_valid(mtf_flow_ok),
+   .metric_interval_integrated(mtf_integrated),.metric_distance_mm(mtf_distance_mm),.metric_dt_ms(mtf_dt_ms),
+-  .module_age_ms(mtf_age_ms),.metric_vx_x100(mtf_vx_x100),.metric_vy_x100(mtf_vy_x100));
++  .module_age_ms(mtf_age_ms),.metric_vx_x100(mtf_vx_x100),.metric_vy_x100(mtf_vy_x100),.metric_velocity_range_ok(mtf_velocity_range_ok));
+  // A583 pairs factory metric values with latest valid body gyro at HOST
+  // receive time. It is a diagnostic snapshot, NOT an exposure-time gyro
+  // integral and NOT permission to apply unverified rotation compensation.
+@@ -299,12 +299,12 @@
+  end
+  assign native_range_fresh=mtf_range_ok && mtf_age_ms<100;
+  wire [719:0] navigation_body;
+- mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1),.PRECHECKED_FLOW_TILT1500(1),.PRECHECKED_HEIGHT_ORIGIN(1)) native_navigation(
++ mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1),.PRECHECKED_FLOW_TILT1500(1),.PRECHECKED_HEIGHT_ORIGIN(1),.PRECHECKED_INPUT_VELOCITY(1)) native_navigation(
+   .xy_p_value(xy_p_value),.xy_i_value(xy_i_value),.parameter_boundary(parameter_boundary),
+   .clk(clk50),.rst_n(rst_n),.origin_reset(observer_reset),.height_origin_ok(previous_pose_valid),.sample_valid(mtf_sample),
+   .range_valid(mtf_range_ok),.flow_valid(mtf_flow_ok && mtf_integrated),
+   .distance_mm(mtf_distance_mm),.dt_ms(mtf_dt_ms),.source_age_ms(mtf_age_ms),
+-  .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),
++  .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),.velocity_range_ok(mtf_velocity_range_ok),
+   .pose_valid(pose_valid),.roll_cdeg(roll),.pitch_cdeg(pitch),.yaw_cdeg(body_yaw),.yaw_range_ok(body_yaw_range_ok),.height_tilt4500_ok(body_tilt4500_ok),.flow_tilt1500_ok(body_tilt1500_ok),
+   .acc_valid(native_acc_valid),
+   .acc_update(acceleration_update),.acc_dt_us(converted_dt_us),.ax_mmps2(converted_ax),.ay_mmps2(converted_ay),.az_up_mmps2(converted_az),
+--- v17/mtf_xyz_navigation_control.v
++++ v18/mtf_xyz_navigation_control.v
+@@ -6,7 +6,7 @@
+ // PROOF_CONTROLLER permits the existing numeric controller, never installation acceptance.
+ // control_permission reports active calculation only, not physical release authority.
+ // This isolated candidate remains DO_NOT_PROGRAM; it has no physical stop lock.
+-module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0)(
++module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0,PRECHECKED_INPUT_VELOCITY=0)(
+  input wire clk,rst_n,origin_reset,diagnostic_hold,
+  input wire [15:0] xy_p_value,xy_i_value,
+  output wire parameter_boundary,
+@@ -17,6 +17,7 @@
+  input wire sample_valid,range_valid,flow_valid,
+  input wire [31:0] distance_mm,dt_ms,source_age_ms,
+  input wire signed [31:0] vx_x100,vy_x100,
++ input wire velocity_range_ok,
+  input wire pose_valid,
+  input wire signed [15:0] roll_cdeg,pitch_cdeg,yaw_cdeg,
+  input wire yaw_range_ok,
+@@ -75,10 +76,10 @@
+  // Height cosine correction stays valid through the core's45deg stop bound.
+  // The provisional optical-flow qualification retains its tighter15deg bound;
+  // leaving that bound withdraws XY, without cancelling the vertical reference.
+- mtf_shared_geometry #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.HEIGHT_TILT_LIMIT_CDEG(4500),.FLOW_TILT_LIMIT_CDEG(1500),.SWAP_AXES(1),.NEGATE_X(0),.NEGATE_Y(1),.MAPPING_VERIFIED(0),.PRECHECKED_YAW_RANGE(PRECHECKED_YAW_RANGE),.PRECHECKED_HEIGHT_TILT4500(PRECHECKED_HEIGHT_TILT4500),.PRECHECKED_FLOW_TILT1500(PRECHECKED_FLOW_TILT1500)) geometry(
++ mtf_shared_geometry #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.HEIGHT_TILT_LIMIT_CDEG(4500),.FLOW_TILT_LIMIT_CDEG(1500),.SWAP_AXES(1),.NEGATE_X(0),.NEGATE_Y(1),.MAPPING_VERIFIED(0),.PRECHECKED_YAW_RANGE(PRECHECKED_YAW_RANGE),.PRECHECKED_HEIGHT_TILT4500(PRECHECKED_HEIGHT_TILT4500),.PRECHECKED_FLOW_TILT1500(PRECHECKED_FLOW_TILT1500),.PRECHECKED_INPUT_VELOCITY(PRECHECKED_INPUT_VELOCITY)) geometry(
+   .clk(clk),.rst_n(rst_n),.origin_reset(origin_reset),.sample_valid(sample_valid),
+   .range_valid(range_valid),.flow_valid(flow_valid),.distance_mm(distance_mm),.dt_ms(dt_ms),
+-  .vx_x100(vx_x100),.vy_x100(vy_x100),.pose_valid(pose_valid),
++  .vx_x100(vx_x100),.vy_x100(vy_x100),.velocity_range_ok(velocity_range_ok),.pose_valid(pose_valid),
+   .roll_cdeg(roll_cdeg),.pitch_cdeg(pitch_cdeg),.body_yaw_cdeg(yaw_cdeg),.body_yaw_range_ok(yaw_range_ok),.body_tilt4500_ok(height_tilt4500_ok),.body_tilt1500_ok(flow_tilt1500_ok),
+   .update(geometry_update),.height_ready(geometry_height_ready),.height_ready_state_numeric_tail(geometry_height_state_numeric_tail),.flow_ready(geometry_flow_ready),
+   .height_ready_state_numeric_tail_without_live_flags(geometry_height_state_numeric_tail_without_live_flags),
+--- v17/sensor/mtf01p_reader.v
++++ v18/sensor/mtf01p_reader.v
+@@ -105,6 +105,7 @@
+  output reg [31:0] dt_ms=0,output reg [31:0] missing=0,output reg [31:0] duplicates=0,
+  output reg [31:0] restarts=0,output reg [31:0] integration_breaks=0,
+  output reg signed [31:0] vx_x100=0,output reg signed [31:0] vy_x100=0,
++ output reg velocity_range_ok=1,
+  output reg signed [63:0] x_x100000=0,output reg signed [63:0] y_x100000=0,
+  output reg integrated=0,output reg saturated=0
+ );
+@@ -119,6 +120,12 @@
+  // Both operands are explicitly signed; 15 bits covers the permitted 12000mm.
+  wire signed [30:0] product_x=$signed(flow_x)*$signed({1'b0,distance_mm[13:0]});
+  wire signed [30:0] product_y=$signed(flow_y)*$signed({1'b0,distance_mm[13:0]});
++ // Cache the range of the exact signed words published on this same sample edge.
++ // Invalid numeric observations publish zero; reset and holds match the words.
++ wire signed [31:0] next_vx_x100=flow_numeric_ok ? {product_x[30],product_x}:32'sd0;
++ wire signed [31:0] next_vy_x100=flow_numeric_ok ? {product_y[30],product_y}:32'sd0;
++ wire next_velocity_range_ok=next_vx_x100>=-32'sd1000000 && next_vx_x100<=32'sd1000000 &&
++  next_vy_x100>=-32'sd1000000 && next_vy_x100<=32'sd1000000;
+  wire signed [38:0] dx=$signed({product_x[30],product_x})*$signed({1'b0,delta_ms[5:0]});
+  wire signed [38:0] dy=$signed({product_y[30],product_y})*$signed({1'b0,delta_ms[5:0]});
+  wire signed [64:0] sum_x=$signed({x_x100000[63],x_x100000})+$signed({{26{dx[38]}},dx});
+@@ -132,13 +139,13 @@
+   if(!rst_n)begin
+    have_previous<=0;previous_ok<=0;previous_time<=0;previous_seq<=0;
+    dt_ms<=0;missing<=0;duplicates<=0;restarts<=0;integration_breaks<=0;
+-   vx_x100<=0;vy_x100<=0;x_x100000<=0;y_x100000<=0;saturated<=0;integrated<=0;
++   vx_x100<=0;vy_x100<=0;velocity_range_ok<=1;x_x100000<=0;y_x100000<=0;saturated<=0;integrated<=0;
+   end else begin
+    if(!link_fresh)begin previous_ok<=0;integrated<=0;end
+    if(sample_valid)begin
+     integrated<=0;
+-    vx_x100<=flow_numeric_ok ? {{1{product_x[30]}},product_x}:32'sd0;
+-    vy_x100<=flow_numeric_ok ? {{1{product_y[30]}},product_y}:32'sd0;
++    vx_x100<=next_vx_x100;vy_x100<=next_vy_x100;
++    velocity_range_ok<=next_velocity_range_ok;
+     dt_ms<=have_previous && time_forward ? delta_ms:0;
+     if(have_previous && delta_ms==0)duplicates<=duplicates+1'b1;
+     else begin
+@@ -165,7 +172,8 @@
+  output reg [975:0] diagnostic_body=0,
+  output wire metric_sample_valid,metric_range_valid,metric_flow_valid,metric_interval_integrated,
+  output wire [31:0] metric_distance_mm,metric_dt_ms,module_age_ms,
+- output wire signed [31:0] metric_vx_x100,metric_vy_x100
++ output wire signed [31:0] metric_vx_x100,metric_vy_x100,
++ output wire metric_velocity_range_ok
+ );
+  localparam integer MS_TICKS=CLOCK_HZ/1000;
+  reg [31:0] phase=0;wire tick_ms=phase==MS_TICKS-1;
+@@ -199,7 +207,7 @@
+   .time_ms(time_ms),.distance_mm(distance_mm),.module_seq(module_seq),.tof_status(tof_status),.flow_status(flow_status),.quality(quality),
+   .flow_x(flow_x),.flow_y(flow_y),.range_numeric_ok(range_ok),.flow_numeric_ok(flow_ok),.dt_ms(dt_ms),
+   .missing(missing),.duplicates(duplicates),.restarts(restarts),.integration_breaks(integration_breaks),
+-  .vx_x100(vx_x100),.vy_x100(vy_x100),.x_x100000(x_x100000),.y_x100000(y_x100000),.integrated(integrated),.saturated(saturated));
++  .vx_x100(vx_x100),.vy_x100(vy_x100),.velocity_range_ok(metric_velocity_range_ok),.x_x100000(x_x100000),.y_x100000(y_x100000),.integrated(integrated),.saturated(saturated));
+  // Publish only after metric commit, preserving one coherent native tuple.
+  // Parser and integer metric arithmetic are unchanged; only diagnostic ABI is configurable.
+  reg metric_commit=0;
+--- v17/sensor/mtf_shared_geometry.v
++++ v18/sensor/mtf_shared_geometry.v
+@@ -7,11 +7,12 @@
+  parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,
+  parameter integer MAX_COMPUTE_TICKS=10000,
+  parameter integer HEIGHT_TILT_LIMIT_CDEG=1500,FLOW_TILT_LIMIT_CDEG=1500,
+- parameter integer SWAP_AXES=0,NEGATE_X=0,NEGATE_Y=0,MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0
++ parameter integer SWAP_AXES=0,NEGATE_X=0,NEGATE_Y=0,MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_INPUT_VELOCITY=0
+ )(
+  input wire clk,rst_n,origin_reset,sample_valid,range_valid,flow_valid,
+  input wire [31:0] distance_mm,dt_ms,
+  input wire signed [31:0] vx_x100,vy_x100,
++ input wire velocity_range_ok,
+  input wire pose_valid,
+  input wire signed [15:0] roll_cdeg,pitch_cdeg,body_yaw_cdeg,
+  input wire body_yaw_range_ok,
+@@ -46,8 +47,11 @@
+   pitch_cdeg>=-FLOW_TILT_LIMIT_CDEG && pitch_cdeg<=FLOW_TILT_LIMIT_CDEG);
+  wire range_ok=range_valid && distance_mm>=10 && distance_mm<=5000;
+  wire dt_ok=dt_ms>=1 && dt_ms<=50;
+- wire input_velocity_ok=vx_x100>=-1000000 && vx_x100<=1000000 &&
+-  vy_x100>=-1000000 && vy_x100<=1000000;
++ // Default callers retain the original signed32 comparison. The enabled
++ // caller supplies the predicate committed with these exact velocity words.
++ wire input_velocity_ok=PRECHECKED_INPUT_VELOCITY ?velocity_range_ok:
++  (vx_x100>=-1000000 && vx_x100<=1000000 &&
++   vy_x100>=-1000000 && vy_x100<=1000000);
+  wire sources_ok=pose_ok && range_ok;
+  wire live_flow_ok=flow_valid && flow_pose_ok && range_ok && dt_ok && input_velocity_ok;
+  reg seen=0,flow_seen=0,transaction_epoch_ok=0,flow_epoch_ok=0,output_velocity_fault=0,pending_velocity_fault=0;

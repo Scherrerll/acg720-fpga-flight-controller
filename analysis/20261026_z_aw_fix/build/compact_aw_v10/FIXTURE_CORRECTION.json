@@ -1,0 +1,12 @@
+{
+  "failure_class": "extracted_fixture_missing_z_reason_and_explicit_mask_width_declarations",
+  "original_compile_actual_wait": 4,
+  "original_runner_actual_wait": 1,
+  "original_compile_exit_sha256": "a61a15ebd935c0289e7031bc0918fb10084c3bcd4bd9dbe3833a7975ebcd20ca",
+  "original_runner_exit_sha256": "90859fca3b3f684cfb5d399dc36313eb480cc93c7b0a68dc53b488f0c94ada23",
+  "original_driver_sha256": "1a63900dbd74edeadbdbd896e60e6376f0912ca3bf5aaed1a167d383ea53736a",
+  "corrected_driver_sha256": "36b5e6ea9e3c605605482ace14a7ead3d5d52c2e424aad163a2af566c9d40a1e",
+  "RTL_changed": false,
+  "original_failure_preserved": true,
+  "correction": "Declare independent16bit z_reason and explicit16bit Z masked buses; default_nettype none and -Wall; directly inject X/Z into all three raw Z fields."
+}

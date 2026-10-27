@@ -1,0 +1,11 @@
+{
+  "original_cst_sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+  "combined_cst_sha256": "43ee2ad24d85e9575a62c30f4f1618296c5cab5c50d774ab3b010fdbf752f36a",
+  "nets": [
+    "previous_pose_valid",
+    "core/fallback_control/height_fallback_active",
+    "native_navigation/nav_xy_ready"
+  ],
+  "declaration_sha256": "cc7eb18535b851da11f2005baad453094869c5c81523729b43d31ae73e0046b0",
+  "added_commands": "Three CLOCK_LOC BUFG=LOGIC only, no CLK/CE/SR or SDC changes"
+}

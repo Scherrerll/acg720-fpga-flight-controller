@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v20_dsp_followup\test_terminal_diagnostics.py", line 17, in <module>
+    assert len(outputs)==1 and isinstance(outputs[0].value,ast.Name) and outputs[0].value.id=='passed'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

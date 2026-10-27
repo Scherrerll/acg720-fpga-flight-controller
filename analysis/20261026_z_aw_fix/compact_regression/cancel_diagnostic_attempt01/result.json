@@ -1,0 +1,7 @@
+{
+  "expected_failed_fixture": true,
+  "actual_exit": 1,
+  "same_original_assertions": true,
+  "added_diagnostic_only": true,
+  "hold_sha256": "479f757149a57ac0b5f9e0334dab80cae475a5345b834fde9c5130c701057ac3"
+}

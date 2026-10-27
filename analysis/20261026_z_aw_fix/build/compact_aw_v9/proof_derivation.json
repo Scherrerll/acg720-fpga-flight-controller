@@ -1,0 +1,25 @@
+{
+  "scope": "Fixture assertions unchanged. Source/output path identity and expected hold digest only.",
+  "items": {
+    "five": {
+      "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\aw_storage_regression\\run_regression.py",
+      "source_sha256": "c0c186cf579f41fb76f0d29031d7a8e9b8fa455f669422aa68a34618ce7d43f5",
+      "driver_sha256": "2b6dce56eb390c1a3c5f176d5bb057bd563a2f34f5ef341ee3c530e482ba7f40"
+    },
+    "boundary": {
+      "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\aw_storage_boundary\\verify_boundary.py",
+      "source_sha256": "56f8e7eb29fe51b943608407dded8a9fb853fa34fdb3920eaf83aeb66d6f94da",
+      "driver_sha256": "06bde3d5767cbcf11b9f2f875c9d56b11e0de91251df2efebbb8a2992c8da9bd"
+    },
+    "top": {
+      "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\aw_storage_integration\\verify_top_safety.py",
+      "source_sha256": "f22b9b82c1ce4b3d07510407af65d0ba7f01a322c76c901156ccd1e456f01668",
+      "driver_sha256": "137aeec714a608db4e298c5771937c5f4acb43963fc7bbe6a13403175d89f273"
+    },
+    "contention": {
+      "source": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\aw_storage_integration\\verify_contention.py",
+      "source_sha256": "0eaa48a9339149ea9163d204f0907409a1e7eff442007fbc7cfd0f356522fcd5",
+      "driver_sha256": "3f78991532e7ca15597054ce6a44b857ba9df0f04f77882ad7bf195dbf5978ad"
+    }
+  }
+}

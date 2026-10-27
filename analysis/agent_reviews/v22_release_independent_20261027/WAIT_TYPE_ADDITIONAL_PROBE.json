@@ -1,0 +1,71 @@
+{
+  "scope": "In-memory stub gates in exact old42 source only; no artifact/export/vendor execution",
+  "cases": [
+    {
+      "helper": "raw_success_receipt",
+      "value": false,
+      "type": "bool",
+      "accepted": true
+    },
+    {
+      "helper": "raw_success_receipt",
+      "value": 0.0,
+      "type": "float",
+      "accepted": true
+    },
+    {
+      "helper": "raw_success_receipt",
+      "value": 0,
+      "type": "int",
+      "accepted": true
+    },
+    {
+      "helper": "raw_success_receipt",
+      "value": 1,
+      "type": "int",
+      "accepted": false
+    },
+    {
+      "helper": "raw_success_receipt",
+      "value": null,
+      "type": "NoneType",
+      "accepted": false
+    },
+    {
+      "helper": "check_failed_receipt",
+      "value": true,
+      "type": "bool",
+      "accepted": true
+    },
+    {
+      "helper": "check_failed_receipt",
+      "value": 1.0,
+      "type": "float",
+      "accepted": true
+    },
+    {
+      "helper": "check_failed_receipt",
+      "value": 1,
+      "type": "int",
+      "accepted": true
+    },
+    {
+      "helper": "check_failed_receipt",
+      "value": false,
+      "type": "bool",
+      "accepted": false
+    },
+    {
+      "helper": "check_failed_receipt",
+      "value": 0,
+      "type": "int",
+      "accepted": false
+    },
+    {
+      "helper": "check_failed_receipt",
+      "value": null,
+      "type": "NoneType",
+      "accepted": false
+    }
+  ]
+}

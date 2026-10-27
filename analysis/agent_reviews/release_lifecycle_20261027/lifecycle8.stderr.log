@@ -1,0 +1,13 @@
+test_bad_backup_or_changed_original_is_rejected_before_freezing (__main__.Lifecycle.test_bad_backup_or_changed_original_is_rejected_before_freezing) ... ok
+test_corrupt_frozen_bytes_are_rejected (__main__.Lifecycle.test_corrupt_frozen_bytes_are_rejected) ... ok
+test_environment_paths_rejected_before_any_byte_read (__main__.Lifecycle.test_environment_paths_rejected_before_any_byte_read) ... ok
+test_gzip_frozen_bytes_roundtrip (__main__.Lifecycle.test_gzip_frozen_bytes_roundtrip) ... ok
+test_real55_positive_lifecycle_and_old_original_keys (__main__.Lifecycle.test_real55_positive_lifecycle_and_old_original_keys) ... ok
+test_unplanned_dependency_changes_remain_live_errors (__main__.Lifecycle.test_unplanned_dependency_changes_remain_live_errors) ... ok
+test_without_freeze_original_stale_failure_still_reproduces (__main__.Lifecycle.test_without_freeze_original_stale_failure_still_reproduces) ... ok
+test_wrong_requested_digest_cannot_relabel_frozen_history (__main__.Lifecycle.test_wrong_requested_digest_cannot_relabel_frozen_history) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 11.286s
+
+OK

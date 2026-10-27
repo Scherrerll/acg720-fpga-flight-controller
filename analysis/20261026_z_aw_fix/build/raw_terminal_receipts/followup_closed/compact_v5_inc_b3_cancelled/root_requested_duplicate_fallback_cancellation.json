@@ -1,0 +1,16 @@
+{
+  "classification": "root_requested_duplicate_fallback_cancellation",
+  "requested_utc": "2026-10-26T06:57:10.8328179Z",
+  "vendor_pid": 50764,
+  "parent_pid": 9744,
+  "command_line": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_inc_b3_01\\physical.tcl",
+  "executable": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+  "creation_utc": "2026-10-26T06:44:37.0568250Z",
+  "tcl_sha256": "f70aba1fb0f929f3a7f47cf5e966aaecb392a9c20a88362118dc48caf56d9283",
+  "tool_builtin_fallback": true,
+  "matching_percent": 2.81,
+  "threshold_percent": 80,
+  "reason": "Root requested cancellation only of this verified redundant vendor after PA2136 built-in fallback; no normal completion or route/timing result claimed",
+  "termination_method": "Stop-Process -Id 50764 -Force",
+  "actual_p_wait": "pending own Python parent receipt"
+}

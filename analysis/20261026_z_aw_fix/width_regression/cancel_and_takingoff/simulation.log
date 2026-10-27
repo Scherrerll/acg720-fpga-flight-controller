@@ -1,0 +1,5 @@
+PASS eight staged cancel/reentry boundaries plus taking_off false; no stale publication; live safety mask retained
+PASS reachable I[-350,850] and bias[0,350] checked each active cycle
+PASS compact/v1 module outputs and persistent integrals match every active cycle
+PASS commit contract checked 74 times; every Z publication delayed exactly2clocks
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\width_regression\aw_tb.v:180: $finish called at 5099172000 (1ps)

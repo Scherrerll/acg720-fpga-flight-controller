@@ -1,0 +1,2 @@
+{"passed": true, "archived_files": 652, "source_files": 55, "frozen_B3_sources_unchanged": true, "compressed_artifact_contents_checked": 6, "external_build_files_checked": 0, "programming_performed_by_verifier": false, "scope": "Saved artifact/identity acceptance only; no simulation rerun, programming or flight claim."}
+{"verified": true, "source_files": 55, "netlist_sha256": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8", "output_created": false, "vendor_started": false, "hardware_operation": false}

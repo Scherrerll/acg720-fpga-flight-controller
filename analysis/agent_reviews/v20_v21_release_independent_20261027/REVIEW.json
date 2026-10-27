@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "reviewer": "dsp_export_scout",
+  "reviewed_utc": "2026-10-26T23:54:44.479669+00:00",
+  "actionable_findings": [],
+  "production_files_modified": false,
+  "vendor_started": false,
+  "export_or_promotion_performed": false,
+  "scope": "Independent code review of production exporter/verifier; reused the exact sealed actual29-test evidence, without rerunning that suite. Additional read-only demonstration resolves both historical versions from the saved archive by declared SHA.",
+  "production_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "0aca113522b6d125f17edaf10fd95985284d78f74389ae40a7fd80aaac78442a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "645e302458ca6b8f064035c919c30b9931ffd9cbb7bfc42fc7e21105eb9aa041"
+  },
+  "sealed_test_manifest_sha256": "6689f00e52332077d7f91ce82b72d83f63f3a6cc7c6a062e4eee5fc535b6f6f2",
+  "sealed_tests": {
+    "actual_child_wait": 0,
+    "passed": 29,
+    "receipt_sha256": "4749ef6197cef07261408cf804e3025488b55b64dfc2d205ca91b64839a6f0d6"
+  },
+  "actual_archived_history": {
+    "compact_aw_v21": {
+      "original_SYN": 0,
+      "original_audit": 1,
+      "original_root": 1,
+      "new_audit": 0,
+      "new_completion_root": 0,
+      "actual_SP": 28,
+      "SYN_rerun": false
+    },
+    "compact_aw_v20": {
+      "original_functional_root": 1,
+      "functional_retry_root": 0,
+      "unique_top13_root": 0,
+      "fresh_top13_actual_runs": 1
+    }
+  },
+  "historical_resolution": [
+    {
+      "original": "c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v20/guard_integration_tb.v",
+      "declared_historical_sha256": "cbc895b4b7ef3da268c356690dad4f75d5bd40128592025b2a29a4fc3e9a36e1",
+      "saved": "c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v20/proofs/guard_integration_tb_attempt01.v",
+      "current_different_sha256": "ca5bfaec266f6812eedbfc35c3fae510581f683d84f4c6a016f9479ce88c8962",
+      "read_exact_saved_bytes": true
+    },
+    {
+      "original": "c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v20/validation_contract.py",
+      "declared_historical_sha256": "a9f447ff821a4e61e4358e103b4c4eee2771b74abebe8e3376149a8d3edad267",
+      "saved": "c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v20/proofs/validation_contract_attempt01.py",
+      "current_different_sha256": "384b50b810822791ca3e995c62396c585dd62cdef14153787a4e5e8c8ad21bfa",
+      "read_exact_saved_bytes": true
+    }
+  ],
+  "proof_SYN_archives": {
+    "compact_aw_v21": {
+      "index_sha256": "926d5fe42c4e60858f8c7ef8bbb60f0f0243a9345fc3761480d1f21bcccb2642",
+      "indexed_files": 819,
+      "historical_fixture_versions": 0,
+      "accepted_physical_package": false
+    },
+    "compact_aw_v20": {
+      "index_sha256": "ecb19a14ec137220401360c2f6fc47d6ccf47c6f8a167bab7403fbc1c582a879",
+      "indexed_files": 990,
+      "historical_fixture_versions": 2,
+      "accepted_physical_package": false
+    },
+    "compact_aw_v17": {
+      "index_sha256": "6a21fbf833170ba5db1c48b6ecd06c5c20adb36645666a563c286a22ee75abda",
+      "indexed_files": 552,
+      "historical_fixture_versions": 0,
+      "accepted_physical_package": false
+    }
+  },
+  "DSP20_counts": {
+    "official_export_rows": 52,
+    "kept": 41,
+    "excluded": 11,
+    "DSP": 39,
+    "BSRAM": 2
+  },
+  "DSP20_proof_origin": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20",
+  "facts": [
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py",
+      "line": 45,
+      "fact": "Historical versions register immutable in-repo saved copies by expected digest; blob/read/size select that version before checking/reading bytes. Current snapshots and old receipts are not rewritten."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+      "line": 97,
+      "fact": "ArchivedEvidence checks index/origin paths, tool prerequisites and saved version digests; expected-SHA lookup resolves saved bytes before read parses them."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+      "line": 401,
+      "fact": "v20 uses its own source55/B3-relative12, retry functional root0, unique original-byte top13 childroot0, integration/default callers, original root1, exact historic snapshots and named parent components."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+      "line": 481,
+      "fact": "v21 uses source55 distinct from v18 baseline, eight compile/simulation roles plus actual root, official full model, actual28SP/GSR elaboration, standalone vendor proof and preserved initial proof failure."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+      "line": 964,
+      "fact": "v21 preserves original SYN0/audit1/root1 and requires reviewed audit-only completion with successful audit0/completion0 on original VG. Explicit escaped aliases/CE Boolean proof and protected strict SP mode/address/reset/init/padding/CLK50 gates remain required."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+      "line": 706,
+      "fact": "DSP20 thin family uses standardv20 source/proof/SYN origin, fixed actual sealed VG, exact52-to41 filter (39DSP+2BSRAM), complete original CST prefix including observer_reset CLOCK_LOC, suffix-only INS_LOC and cst_warn_to_error1."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py",
+      "line": 275,
+      "fact": "No promotion before successful terminal/raw review, actual physical vendor/root0, full source/VG/raw artifact hashes and nonnegative50MHz timing gates; full evidence closure validates before B4 source replacement."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+      "line": 876,
+      "fact": "Release verification additionally requires exact five finite nonnegative slack types,20ns/50MHz/zero endpoints,18pin raw review, source/VG/fs/project/constraints and actual exits, donor/SYN/functional closure."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\build_candidate.py",
+      "line": 140,
+      "fact": "Unchanged helper criteria retain fullroute/bitstream/no-unrouted, EOF, netlist-only,18pin/B16/B15,B4 fs+cfg and five timing gates; raw review independently parses these."
+    },
+    {
+      "file": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py",
+      "line": 1243,
+      "fact": "v20/v21 archive index and every object must be release-manifest bound before standard evidence validation. These test archives have no qualification.json and cannot qualify a physical release."
+    }
+  ],
+  "limits": [
+    "No release export or source promotion was attempted; standardv20 active physical execution was not inspected or changed.",
+    "Saved artifact verification does not rerun simulation, mapped audit, routing or hardware. Actual29 tests cover positive proof/SYN archive roundtrip and missing/wrong-role/hash/source/SP/history/physical negatives, not a successful50MHz physical package."
+  ],
+  "checked_files": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\V20_V21_VALIDATION_SEALED.json": "6689f00e52332077d7f91ce82b72d83f63f3a6cc7c6a062e4eee5fc535b6f6f2",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "0aca113522b6d125f17edaf10fd95985284d78f74389ae40a7fd80aaac78442a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "645e302458ca6b8f064035c919c30b9931ffd9cbb7bfc42fc7e21105eb9aa041",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\build_candidate.py": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\test_release_evidence.py": "cc2dd754a39ddfcd7f0e99f1b4469551c3756786f56352dc0011e9f3e274840b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\run_v20_v21_validation.py": "1d3adec4c5fc00190940893839a45608616d885493698ecacc4cd60c720c18f0",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\v20_v21_validation_exit.json": "4749ef6197cef07261408cf804e3025488b55b64dfc2d205ca91b64839a6f0d6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\v20_v21_validation.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\v20_v21_validation.stderr.log": "269d16aa8a4bdab9ff363836ceef450fcb65c038296f7bb94226f0df693a36e4",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\v21_proof_SYN_archive_crw9pbpo\\evidence\\selected\\EVIDENCE_INDEX.json": "926d5fe42c4e60858f8c7ef8bbb60f0f0243a9345fc3761480d1f21bcccb2642",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\v20_proof_SYN_archive_pf0u20_3\\evidence\\selected\\EVIDENCE_INDEX.json": "ecb19a14ec137220401360c2f6fc47d6ccf47c6f8a167bab7403fbc1c582a879",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\proof_SYN_archive_whngxwnx\\evidence\\selected\\EVIDENCE_INDEX.json": "6a21fbf833170ba5db1c48b6ecd06c5c20adb36645666a563c286a22ee75abda",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\PORTABLE_CONSTRAINT_BINDING.json": "7c6ef85e798b20d60a2327d35901d26e35ab5a1b4417d22ace25a5729f22891e"
+  }
+}

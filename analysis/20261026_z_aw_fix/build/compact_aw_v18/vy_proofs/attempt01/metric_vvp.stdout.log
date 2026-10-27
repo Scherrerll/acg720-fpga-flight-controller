@@ -1,0 +1,2 @@
+PASS metric actual_old_new=1 independent_signed64=1 exhaustive_signed16_distances=7 samples=468775 cycles=478804 holds=10003 invalid_zero=9768 unknown_payload_trials=3 boundaries=8/18/19 no_DUT_force=1
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v18\vy_proofs\attempt01\metric_tb.v:92: $finish called at 4788040000 (1ps)

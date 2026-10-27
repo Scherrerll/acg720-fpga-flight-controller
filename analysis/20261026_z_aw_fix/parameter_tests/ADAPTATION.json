@@ -1,0 +1,12 @@
+{
+  "source": {
+    "verify_protocol.py": "70f70278cc02c74c44c94c98c3e26ac80c9f7c63b6e40bde0023737b148cb528",
+    "verify_top_safety.py": "832961ead7c8fd9a192cdde6822f89a92354bda2ae964595a4535606adc52e3b"
+  },
+  "changes": [
+    "New B4 source/codec and local output/tool paths",
+    "Boot/reset default expectation1000/350 with generation0",
+    "Explicit INIT and actual top-level default assertions"
+  ],
+  "scope": "Reuse substantive protocol corruption/race/atomicity/UART and real top safety vectors; no hardware"
+}

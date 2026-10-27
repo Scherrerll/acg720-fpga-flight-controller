@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v9\proofs\five\run.py", line 14, in <module>
+    'scripts':{p.name:sha(p) for p in [O/'run_regression.py',O/'aw_tb.v',O/'b4_v1_reference.v']},'tools':{str(p):sha(p) for p in [B/'iverilog.exe',B/'vvp.exe']}}
+                      ~~~^^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v9\proofs\five\run.py", line 6, in sha
+    def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+                                     ~~~~~~~~~~~~^^
+  File "C:\Users\ScherrerL\AppData\Local\Programs\Python\Python313\Lib\pathlib\_abc.py", line 625, in read_bytes
+    with self.open(mode='rb') as f:
+         ~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\ScherrerL\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v9\\proofs\\five\\run_regression.py'

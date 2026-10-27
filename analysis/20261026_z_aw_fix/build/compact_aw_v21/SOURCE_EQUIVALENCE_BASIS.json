@@ -1,0 +1,29 @@
+{
+  "baseline_source_root": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v18\\canonical\\source",
+  "candidate_source_root": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v21\\canonical\\source",
+  "transformations": {
+    "acg720_ano_port.v": {
+      "edits": [
+        [
+          " reg [863:0] core_q=0;reg core_initialized=0;reg [887:0] extension_q=0;reg [215:0] acceleration_q=0;\n always @(posedge clk50) if(!telemetry_snapshot_hold) begin core_initialized<=1;core_q<=core_body;extension_q<=extension;acceleration_q<=acceleration_body;range_diagnostic_q<=range_diagnostic_body;end\n",
+          " reg [863:0] core_q=0;reg core_initialized=0;wire [887:0] extension_q;reg [215:0] acceleration_q=0;\n always @(posedge clk50) if(!telemetry_snapshot_hold) begin core_initialized<=1;core_q<=core_body;acceleration_q<=acceleration_body;range_diagnostic_q<=range_diagnostic_body;end\n gw5_snapshot_bram #(.WIDTH(888)) extension_storage(.clk(clk50),.enable(!telemetry_snapshot_hold),.data(extension),.q(extension_q));\n"
+        ]
+      ],
+      "original_region_byte_start": 18829,
+      "original_region_bytes": 302,
+      "candidate_region_bytes": 411,
+      "prefix_sha256": "a6bdc89930c348d3d3b4665eabde3bce774cc662951ecf91eaf502caab91b4fa",
+      "suffix_sha256": "4198fd50f69c9dd75e89ea5be06bd191537c5b8aa318f627703b2dccbdd46598",
+      "reverse_exact_bytes": true,
+      "outside_region_exact_bytes": true,
+      "baseline_sha256": "41ce429beaf3669019113435802dbb947efa51161e3fb0765f3667ea3ea61d0d",
+      "candidate_sha256": "96422651c9b4b6aadb3928aa1297d56fbcecb92b92a93648447c3a89945055a4"
+    }
+  },
+  "unchanged_files": 54,
+  "zero_added_clock_cycles_intent": true,
+  "physical_SP_banks": 28,
+  "reference_standalone_proof": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\extension_bram_20261027\\RESULT.json",
+  "reference_standalone_proof_sha256": "b4a69c208e64703af4029d5d42104d37a183c3be7c819171510cef1cc053e867",
+  "scope": "Only extension_q888 storage changes. Parent v18 cached velocity, controller/FSM, all other snapshots and every source/config byte outside this one top region remain exact. New integration proofs and physical qualification are separate."
+}

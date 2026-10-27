@@ -1,0 +1,11 @@
+{
+  "actual_python_exit_code": 0,
+  "tests": 18,
+  "export_script_sha256": "ea6befc714c0297363cc231f00daa581e467aa6e90848abbf9e61d31e89b836f",
+  "verifier_sha256": "5098d8435b9f2a1ff606355c249c094f67baed235b0a9e9b56b8d7f8fb633619",
+  "original_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "release_export_performed": false,
+  "promotion_performed": false,
+  "vendor_or_hardware_started": false,
+  "scope": "Windows case-alias and VY full-role rejection tests; genuine functional/SYN/VY chains; official46 DSP input preparation only; portable proof-only archive round-trip"
+}

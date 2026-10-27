@@ -1,0 +1,163 @@
+{
+  "checked_utc": "2026-10-26T09:31:21.816485+00:00",
+  "repo": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "archive_manifest_pass": true,
+  "archive_files": [
+    "candidate_v7_mtf_xyz_hold_control.v",
+    "HANDOFF.md",
+    "NEW_CHAT_PROMPT.txt",
+    "NEXT_PLAN.md",
+    "SOURCE_BINDINGS.json",
+    "STATE.json"
+  ],
+  "evidence_references": [
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/compact_aw_v7/RESULTS.json",
+      "actual_path": "analysis/20261026_z_aw_fix/build/compact_aw_v7/RESULTS.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/compact_aw_v7/SYNTHESIS_REPORT.md",
+      "actual_path": "analysis/20261026_z_aw_fix/build/compact_aw_v7/SYNTHESIS_REPORT.md",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/compact_aw_v7/source_freeze.json",
+      "actual_path": "analysis/20261026_z_aw_fix/build/compact_aw_v7/source_freeze.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/compact_aw_v7/source_changes.diff",
+      "actual_path": "analysis/20261026_z_aw_fix/build/compact_aw_v7/source_changes.diff",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/aw_storage_width_independent_review.md",
+      "actual_path": "analysis/20261026_z_aw_fix/build/aw_storage_width_independent_review.md",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/aw_storage_width_independent_review_candidate_addendum.md",
+      "actual_path": "analysis/20261026_z_aw_fix/build/aw_storage_width_independent_review_candidate_addendum.md",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/aw_storage_regression/results.json",
+      "actual_path": "analysis/20261026_z_aw_fix/aw_storage_regression/results.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/aw_storage_regression/source_stability.json",
+      "actual_path": "analysis/20261026_z_aw_fix/aw_storage_regression/source_stability.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/aw_storage_boundary/results.json",
+      "actual_path": "analysis/20261026_z_aw_fix/aw_storage_boundary/results.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/aw_storage_boundary/source_stability.json",
+      "actual_path": "analysis/20261026_z_aw_fix/aw_storage_boundary/source_stability.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/aw_storage_integration/top_safety_results.json",
+      "actual_path": "analysis/20261026_z_aw_fix/aw_storage_integration/top_safety_results.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/aw_storage_integration/contention/results.json",
+      "actual_path": "analysis/20261026_z_aw_fix/aw_storage_integration/contention/results.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/numeric_guard_fusion/completion03/results.json",
+      "actual_path": "analysis/20261026_z_aw_fix/numeric_guard_fusion/completion03/results.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/raw_terminal_receipts/frozen_11_terminal_20261026/MANIFEST.json",
+      "actual_path": "analysis/20261026_z_aw_fix/build/raw_terminal_receipts/frozen_11_terminal_20261026/MANIFEST.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/raw_terminal_receipts/followup_closed/MANIFEST.json",
+      "actual_path": "analysis/20261026_z_aw_fix/build/raw_terminal_receipts/followup_closed/MANIFEST.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/implementation_history/HISTORY.json",
+      "actual_path": "analysis/20261026_z_aw_fix/implementation_history/HISTORY.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/implementation_history/v5_v6_addendum/HISTORY.json",
+      "actual_path": "analysis/20261026_z_aw_fix/implementation_history/v5_v6_addendum/HISTORY.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/TERMINAL_MANIFEST.json",
+      "actual_path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p1r0_01/TERMINAL_MANIFEST.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/TERMINAL_MANIFEST.json",
+      "actual_path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p2r0_01/TERMINAL_MANIFEST.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p3r0_01/TERMINAL_MANIFEST.json",
+      "actual_path": "analysis/20261026_z_aw_fix/build/compact_aw_v6/physical_p3r0_01/TERMINAL_MANIFEST.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "analysis/20261026_z_aw_fix/build/compact_aw_v5_p2r0/interruption_observation.json",
+      "actual_path": "analysis/20261026_z_aw_fix/build/compact_aw_v5_p2r0/interruption_observation.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    },
+    {
+      "archive_path": "ground/B0B4/����˵��.md",
+      "actual_path": "ground/B0B4/操作说明.md",
+      "matched": true,
+      "resolved_by_unique_hash": true
+    },
+    {
+      "archive_path": "ground/B0B4/test_results/verification.json",
+      "actual_path": "ground/B0B4/test_results/verification.json",
+      "matched": true,
+      "resolved_by_unique_hash": false
+    }
+  ],
+  "source55_matched": true,
+  "hold_sha256": "2109595a24c6f15a553ea8a0958b8313c3f19d56b4371c827cd428976489daad",
+  "VG_sha256": "dc20d15cec4471df8679960fb05660349caaa19dfaee40604b419ca6450cf0e0",
+  "synthesis_vendor_wait": 0,
+  "synthesis_runner_wait": 0,
+  "AW5_completed": 5,
+  "AW5_each_actual_exit0": true,
+  "AW5_root_batch_actual_exit0_provenance": "Inherited original-session completion and hash-bound STATE.json v7.AW5.actual_root_batch_exit_code=0; no standalone batch wait receipt was present. No reconstruction of a historical wait.",
+  "approval": "Original user confirmed continuation; archival awaiting approval fields are historical. See analysis/20261026_z_aw_fix/handoff_20261026_APPROVED.md.",
+  "no_hardware_or_serial_actions": true
+}

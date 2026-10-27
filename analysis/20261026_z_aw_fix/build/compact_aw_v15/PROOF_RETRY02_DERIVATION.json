@@ -1,0 +1,13 @@
+{
+  "first_compile_actual_wait": 3,
+  "first_compile_receipt_sha256": "391cc12779d10d53787120811469df7152f0700f470c6c99f09783dc9653108f",
+  "first_inputs_sha256": "2887e8049627eeea577bfc97126750652861ad26b9815794a9fe12a7a0f5280e",
+  "first_runner_sha256": "f0913547e39d920bc84eb736a5875fea8d1a3d37fb311ef7363fb68ded5215ce",
+  "new_runner_sha256": "eb93ef1edf71e1e42c4ded89eb46b1823e9852737702708e277186f5ce10d468",
+  "changes": [
+    "Bench identifier automatic to auto_value",
+    "Bench initialized output registers declared then initialized explicitly"
+  ],
+  "stimulus_and_all_assertions_unchanged": true,
+  "RTL_unchanged": true
+}

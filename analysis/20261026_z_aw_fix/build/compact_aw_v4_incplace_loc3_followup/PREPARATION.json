@@ -1,0 +1,20 @@
+{
+  "scope": "Same exact v4 VG/source55 and same three LOC commands as prior trial; use documented .p incremental placement instead of .pr incremental place-and-route.",
+  "reason": "Even byte-identical v4 VG with its own .pr reports2.82% match and default fallback. Both local vendor manuals agree that -inc_place accepts .p. Test the placement-only interface; actual matching/fallback and fresh full-route50MHz gates remain required.",
+  "seed": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.p",
+  "seed_sha256": "f61026f1a52bf700951acaa1997494a39c1753a4c836fd89b2c68de499676bbe",
+  "seed_bytes": 7966215,
+  "period_ns": 20,
+  "official_manuals": {
+    "Tcl_SUG1220_PDF51": "inc_place file specifies *.p",
+    "UserGuide_SUG100_PDF55": "Incremental Placement Only specifies *.p"
+  },
+  "PNR_started": false,
+  "scripts": {
+    "independent_raw_review.py": "03cc9bd49868b93463083a80120ef60cba097111b01367d0db364a12bcd8ce66",
+    "launch_physical_hidden.py": "c564ef80d2228f72cc93efb957d85347bb0ae088956c3ccf5e4257ee1fa79db4",
+    "physical_snapshot.py": "44583ddfd5a7beea5cb245b428b80d1f9bfb5988597eb1bf55b8aa23be17aab9",
+    "run_physical.py": "eac849943f774ec098c42747e87bbec55edfd458f823bb938d26edea56141ad3",
+    "seal_terminal.py": "7df07f2d0daf37168da7c84fa063bbe8f3147cfa320d2a165c7098cf945a4884"
+  }
+}

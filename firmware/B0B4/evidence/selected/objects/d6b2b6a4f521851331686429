@@ -1,0 +1,462 @@
+{
+  "scope": "Complete reverse reconstruction establishes change scope only. Added AZ/VY state correctness relies on exact component sources/actual prior receipts and fresh merged-wrapper integration/top13, not reversal.",
+  "transformations": {
+    "acg720_ano_port.v": {
+      "baseline_sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "candidate_sha256": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 45,
+          "old_end": 46,
+          "new_start": 45,
+          "new_end": 46,
+          "old_text": " reg previous_pose_valid=0;\n",
+          "new_text": " reg previous_pose_valid /* synthesis syn_maxfan = 10 */ =0;\n"
+        },
+        {
+          "old_start": 51,
+          "old_end": 51,
+          "new_start": 51,
+          "new_end": 52,
+          "old_text": "",
+          "new_text": " wire converted_az_range_ok;\n"
+        },
+        {
+          "old_start": 54,
+          "old_end": 55,
+          "new_start": 55,
+          "new_end": 56,
+          "old_text": "  .output_acc_valid(converted_acc_valid),.busy(),.fault(time_adapter_fault));\n",
+          "new_text": "  .output_az_range_ok(converted_az_range_ok),.output_acc_valid(converted_acc_valid),.busy(),.fault(time_adapter_fault));\n"
+        },
+        {
+          "old_start": 276,
+          "old_end": 277,
+          "new_start": 277,
+          "new_end": 278,
+          "old_text": " wire mtf_sample,mtf_range_ok,mtf_flow_ok,mtf_integrated;\n",
+          "new_text": " wire mtf_sample,mtf_range_ok,mtf_flow_ok,mtf_integrated,mtf_velocity_range_ok;\n"
+        },
+        {
+          "old_start": 282,
+          "old_end": 283,
+          "new_start": 283,
+          "new_end": 284,
+          "old_text": "  .module_age_ms(mtf_age_ms),.metric_vx_x100(mtf_vx_x100),.metric_vy_x100(mtf_vy_x100));\n",
+          "new_text": "  .module_age_ms(mtf_age_ms),.metric_vx_x100(mtf_vx_x100),.metric_vy_x100(mtf_vy_x100),.metric_velocity_range_ok(mtf_velocity_range_ok));\n"
+        },
+        {
+          "old_start": 301,
+          "old_end": 302,
+          "new_start": 302,
+          "new_end": 303,
+          "old_text": " mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1),.PRECHECKED_FLOW_TILT1500(1),.PRECHECKED_HEIGHT_ORIGIN(1)) native_navigation(\n",
+          "new_text": " mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1),.PRECHECKED_FLOW_TILT1500(1),.PRECHECKED_HEIGHT_ORIGIN(1),.PRECHECKED_AZ_RANGE(1),.PRECHECKED_INPUT_VELOCITY(1)) native_navigation(\n"
+        },
+        {
+          "old_start": 306,
+          "old_end": 307,
+          "new_start": 307,
+          "new_end": 308,
+          "old_text": "  .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),\n",
+          "new_text": "  .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),.velocity_range_ok(mtf_velocity_range_ok),\n"
+        },
+        {
+          "old_start": 308,
+          "old_end": 309,
+          "new_start": 309,
+          "new_end": 310,
+          "old_text": "  .acc_valid(native_acc_valid),\n",
+          "new_text": "  .acc_valid(native_acc_valid),.az_range_ok(converted_az_range_ok),\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    },
+    "mtf_xyz_navigation_control.v": {
+      "baseline_sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "candidate_sha256": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 8,
+          "old_end": 9,
+          "new_start": 8,
+          "new_end": 9,
+          "old_text": "module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0)(\n",
+          "new_text": "module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0,PRECHECKED_AZ_RANGE=0,PRECHECKED_INPUT_VELOCITY=0)(\n"
+        },
+        {
+          "old_start": 19,
+          "old_end": 19,
+          "new_start": 19,
+          "new_end": 20,
+          "old_text": "",
+          "new_text": " input wire velocity_range_ok,\n"
+        },
+        {
+          "old_start": 23,
+          "old_end": 23,
+          "new_start": 24,
+          "new_end": 26,
+          "old_text": "",
+          "new_text": " // If enabled, caller guarantees exact same-tuple original az range predicate.\n input wire az_range_ok,\n"
+        },
+        {
+          "old_start": 77,
+          "old_end": 78,
+          "new_start": 80,
+          "new_end": 81,
+          "old_text": " mtf_shared_geometry #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.HEIGHT_TILT_LIMIT_CDEG(4500),.FLOW_TILT_LIMIT_CDEG(1500),.SWAP_AXES(1),.NEGATE_X(0),.NEGATE_Y(1),.MAPPING_VERIFIED(0),.PRECHECKED_YAW_RANGE(PRECHECKED_YAW_RANGE),.PRECHECKED_HEIGHT_TILT4500(PRECHECKED_HEIGHT_TILT4500),.PRECHECKED_FLOW_TILT1500(PRECHECKED_FLOW_TILT1500)) geometry(\n",
+          "new_text": " mtf_shared_geometry #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.HEIGHT_TILT_LIMIT_CDEG(4500),.FLOW_TILT_LIMIT_CDEG(1500),.SWAP_AXES(1),.NEGATE_X(0),.NEGATE_Y(1),.MAPPING_VERIFIED(0),.PRECHECKED_YAW_RANGE(PRECHECKED_YAW_RANGE),.PRECHECKED_HEIGHT_TILT4500(PRECHECKED_HEIGHT_TILT4500),.PRECHECKED_FLOW_TILT1500(PRECHECKED_FLOW_TILT1500),.PRECHECKED_INPUT_VELOCITY(PRECHECKED_INPUT_VELOCITY)) geometry(\n"
+        },
+        {
+          "old_start": 80,
+          "old_end": 81,
+          "new_start": 83,
+          "new_end": 84,
+          "old_text": "  .vx_x100(vx_x100),.vy_x100(vy_x100),.pose_valid(pose_valid),\n",
+          "new_text": "  .vx_x100(vx_x100),.vy_x100(vy_x100),.velocity_range_ok(velocity_range_ok),.pose_valid(pose_valid),\n"
+        },
+        {
+          "old_start": 92,
+          "old_end": 92,
+          "new_start": 95,
+          "new_end": 96,
+          "old_text": "",
+          "new_text": " wire live_az_range_ok=PRECHECKED_AZ_RANGE ?az_range_ok:(az_up_mmps2>=-30000 && az_up_mmps2<=30000);\n"
+        },
+        {
+          "old_start": 118,
+          "old_end": 119,
+          "new_start": 122,
+          "new_end": 123,
+          "old_text": " mtf_shared_height_fusion #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.CAL_MASK(0),.RANGE_AGE_PRECHECKED(1)) height_fusion(\n",
+          "new_text": " mtf_shared_height_fusion #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.CAL_MASK(0),.RANGE_AGE_PRECHECKED(1),.PRECHECKED_AZ_RANGE(PRECHECKED_AZ_RANGE)) height_fusion(\n"
+        },
+        {
+          "old_start": 121,
+          "old_end": 122,
+          "new_start": 125,
+          "new_end": 126,
+          "old_text": "  .range_age_ticks(range_age_ticks),\n",
+          "new_text": "  .range_age_ticks(range_age_ticks),.az_range_ok(az_range_ok),\n"
+        },
+        {
+          "old_start": 171,
+          "old_end": 172,
+          "new_start": 175,
+          "new_end": 176,
+          "old_text": "  az_up_mmps2>=-30000 && az_up_mmps2<=30000 && live_yaw_range_ok;\n",
+          "new_text": "  live_az_range_ok && live_yaw_range_ok;\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    },
+    "core/ano_flight_state.v": {
+      "baseline_sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "candidate_sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 6,
+          "old_end": 7,
+          "new_start": 6,
+          "new_end": 8,
+          "old_text": "module ano_flight_state #(parameter integer TICKS_PER_MS=50000)(\n",
+          "new_text": "module ano_flight_state #(parameter integer TICKS_PER_MS=50000,\n parameter integer PRECHECKED_COLLECTIVE=0)(\n"
+        },
+        {
+          "old_start": 9,
+          "old_end": 9,
+          "new_start": 10,
+          "new_end": 11,
+          "old_text": "",
+          "new_text": " input wire collective_below_landing,\n"
+        },
+        {
+          "old_start": 19,
+          "old_end": 19,
+          "new_start": 21,
+          "new_end": 22,
+          "old_text": "",
+          "new_text": " wire landing_collective_low=PRECHECKED_COLLECTIVE ?collective_below_landing:(collective_us<1250);\n"
+        },
+        {
+          "old_start": 36,
+          "old_end": 37,
+          "new_start": 39,
+          "new_end": 40,
+          "old_text": "     if(normal_unlock && !positive_stick && landing_delay<=1 && ch3<=1150 && collective_us<1250)begin\n",
+          "new_text": "     if(normal_unlock && !positive_stick && landing_delay<=1 && ch3<=1150 && landing_collective_low)begin\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    },
+    "core/flight_core.v": {
+      "baseline_sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "candidate_sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 421,
+          "old_end": 423,
+          "new_start": 421,
+          "new_end": 423,
+          "old_text": "    ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS)) flight_state(.clk(clk50),.rst_n(rst_n),.armed(armed_usable),\n     .ch3(ch3),.collective_us(selected_throttle),.motor_prepared(motor_prepared),\n",
+          "new_text": "    ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS),.PRECHECKED_COLLECTIVE(1)) flight_state(.clk(clk50),.rst_n(rst_n),.armed(armed_usable),\n     .ch3(ch3),.collective_us(selected_throttle),.collective_below_landing(selected_collective_below_landing),.motor_prepared(motor_prepared),\n"
+        },
+        {
+          "old_start": 428,
+          "old_end": 428,
+          "new_start": 428,
+          "new_end": 433,
+          "old_text": "",
+          "new_text": "    // Compare each numeric branch before the late live availability selection.\n    // No state or cycle is added; active implies public fallback equals unmasked.\n    (* syn_keep = 1 *) wire fallback_collective_below_landing=fallback_unmasked_collective<1250;\n    (* syn_keep = 1 *) wire auto_collective_below_landing=hold_collective_us<1250;\n    wire selected_collective_below_landing=height_fallback_active ?fallback_collective_below_landing:auto_collective_below_landing;\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    },
+    "core/height_loss_fallback.v": {
+      "baseline_sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "candidate_sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 24,
+          "old_end": 25,
+          "new_start": 24,
+          "new_end": 28,
+          "old_text": " assign active=rst_n && healthy && armed && (latched || enter);\n",
+          "new_text": " // Identity wire, with a local synthesis-only fanout limit on this data driver.\n wire active_fanout_limited /* synthesis syn_maxfan = 50 */;\n assign active_fanout_limited=rst_n && healthy && armed && (latched || enter);\n assign active=active_fanout_limited;\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    },
+    "position/mtf_shared_height_fusion.v": {
+      "baseline_sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "candidate_sha256": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 12,
+          "old_end": 13,
+          "new_start": 12,
+          "new_end": 13,
+          "old_text": " parameter integer RANGE_AGE_PRECHECKED=0\n",
+          "new_text": " parameter integer RANGE_AGE_PRECHECKED=0,PRECHECKED_AZ_RANGE=0\n"
+        },
+        {
+          "old_start": 16,
+          "old_end": 16,
+          "new_start": 16,
+          "new_end": 17,
+          "old_text": "",
+          "new_text": " input wire az_range_ok,\n"
+        },
+        {
+          "old_start": 86,
+          "old_end": 86,
+          "new_start": 87,
+          "new_end": 88,
+          "old_text": "",
+          "new_text": " wire az_numeric_ok=PRECHECKED_AZ_RANGE ?az_range_ok:(az_up_mmps2>=-30000 && az_up_mmps2<=30000);\n"
+        },
+        {
+          "old_start": 87,
+          "old_end": 88,
+          "new_start": 89,
+          "new_end": 90,
+          "old_text": "     ref_height_mm>=0 && ref_height_mm<=5000 && az_up_mmps2>=-30000 && az_up_mmps2<=30000;\n",
+          "new_text": "     ref_height_mm>=0 && ref_height_mm<=5000 && az_numeric_ok;\n"
+        },
+        {
+          "old_start": 95,
+          "old_end": 96,
+          "new_start": 97,
+          "new_end": 98,
+          "old_text": "  az_up_mmps2>=-30000 && az_up_mmps2<=30000 && !cleanup && seeded && seen &&\n",
+          "new_text": "  az_numeric_ok && !cleanup && seeded && seen &&\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    },
+    "position/pose_time_adapter.v": {
+      "baseline_sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "candidate_sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 12,
+          "old_end": 12,
+          "new_start": 12,
+          "new_end": 14,
+          "old_text": "",
+          "new_text": " // Exact original numeric predicate, registered beside its matching tuple.\n output reg output_az_range_ok=1,\n"
+        },
+        {
+          "old_start": 31,
+          "old_end": 32,
+          "new_start": 33,
+          "new_end": 34,
+          "old_text": "   output_ax<=0;output_ay<=0;output_az<=0;\n",
+          "new_text": "   output_ax<=0;output_ay<=0;output_az<=0;output_az_range_ok<=1;\n"
+        },
+        {
+          "old_start": 44,
+          "old_end": 44,
+          "new_start": 46,
+          "new_end": 47,
+          "old_text": "",
+          "new_text": "    output_az_range_ok<=held_az>=-30000 && held_az<=30000;\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    },
+    "sensor/mtf01p_reader.v": {
+      "baseline_sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "candidate_sha256": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 107,
+          "old_end": 107,
+          "new_start": 107,
+          "new_end": 108,
+          "old_text": "",
+          "new_text": " output reg velocity_range_ok=1,\n"
+        },
+        {
+          "old_start": 121,
+          "old_end": 121,
+          "new_start": 122,
+          "new_end": 128,
+          "old_text": "",
+          "new_text": " // Cache the range of the exact signed words published on this same sample edge.\n // Invalid numeric observations publish zero; reset and holds match the words.\n wire signed [31:0] next_vx_x100=flow_numeric_ok ? {product_x[30],product_x}:32'sd0;\n wire signed [31:0] next_vy_x100=flow_numeric_ok ? {product_y[30],product_y}:32'sd0;\n wire next_velocity_range_ok=next_vx_x100>=-32'sd1000000 && next_vx_x100<=32'sd1000000 &&\n  next_vy_x100>=-32'sd1000000 && next_vy_x100<=32'sd1000000;\n"
+        },
+        {
+          "old_start": 134,
+          "old_end": 135,
+          "new_start": 141,
+          "new_end": 142,
+          "old_text": "   vx_x100<=0;vy_x100<=0;x_x100000<=0;y_x100000<=0;saturated<=0;integrated<=0;\n",
+          "new_text": "   vx_x100<=0;vy_x100<=0;velocity_range_ok<=1;x_x100000<=0;y_x100000<=0;saturated<=0;integrated<=0;\n"
+        },
+        {
+          "old_start": 139,
+          "old_end": 141,
+          "new_start": 146,
+          "new_end": 148,
+          "old_text": "    vx_x100<=flow_numeric_ok ? {{1{product_x[30]}},product_x}:32'sd0;\n    vy_x100<=flow_numeric_ok ? {{1{product_y[30]}},product_y}:32'sd0;\n",
+          "new_text": "    vx_x100<=next_vx_x100;vy_x100<=next_vy_x100;\n    velocity_range_ok<=next_velocity_range_ok;\n"
+        },
+        {
+          "old_start": 167,
+          "old_end": 168,
+          "new_start": 174,
+          "new_end": 176,
+          "old_text": " output wire signed [31:0] metric_vx_x100,metric_vy_x100\n",
+          "new_text": " output wire signed [31:0] metric_vx_x100,metric_vy_x100,\n output wire metric_velocity_range_ok\n"
+        },
+        {
+          "old_start": 201,
+          "old_end": 202,
+          "new_start": 209,
+          "new_end": 210,
+          "old_text": "  .vx_x100(vx_x100),.vy_x100(vy_x100),.x_x100000(x_x100000),.y_x100000(y_x100000),.integrated(integrated),.saturated(saturated));\n",
+          "new_text": "  .vx_x100(vx_x100),.vy_x100(vy_x100),.velocity_range_ok(metric_velocity_range_ok),.x_x100000(x_x100000),.y_x100000(y_x100000),.integrated(integrated),.saturated(saturated));\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    },
+    "sensor/mtf_shared_geometry.v": {
+      "baseline_sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "candidate_sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 9,
+          "old_end": 10,
+          "new_start": 9,
+          "new_end": 10,
+          "old_text": " parameter integer SWAP_AXES=0,NEGATE_X=0,NEGATE_Y=0,MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0\n",
+          "new_text": " parameter integer SWAP_AXES=0,NEGATE_X=0,NEGATE_Y=0,MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_INPUT_VELOCITY=0\n"
+        },
+        {
+          "old_start": 14,
+          "old_end": 14,
+          "new_start": 14,
+          "new_end": 15,
+          "old_text": "",
+          "new_text": " input wire velocity_range_ok,\n"
+        },
+        {
+          "old_start": 48,
+          "old_end": 50,
+          "new_start": 49,
+          "new_end": 54,
+          "old_text": " wire input_velocity_ok=vx_x100>=-1000000 && vx_x100<=1000000 &&\n  vy_x100>=-1000000 && vy_x100<=1000000;\n",
+          "new_text": " // Default callers retain the original signed32 comparison. The enabled\n // caller supplies the predicate committed with these exact velocity words.\n wire input_velocity_ok=PRECHECKED_INPUT_VELOCITY ?velocity_range_ok:\n  (vx_x100>=-1000000 && vx_x100<=1000000 &&\n   vy_x100>=-1000000 && vy_x100<=1000000);\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true
+    }
+  },
+  "baseline_source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+    "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+    "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "unchanged_v4_files": 46,
+  "new_private_same_publication_predicate_bits": 2,
+  "legacy_public_output_cycle_change": 0,
+  "default_caller_contract": "PRECHECKED_AZ_RANGE=0 and PRECHECKED_INPUT_VELOCITY=0 select the original full signed32 numeric expressions. Native top enables both and routes each same-publication predicate beside its matching words.",
+  "AZ_contract": "initial/reset/cancel AZ0 and flag1; held signed32 AZ and exact inclusive +/-30000 flag publish together; other branches hold public word+flag; original acc validity/fault behavior retained.",
+  "VY_contract": "metric vx/vy signed32 words and exact inclusive +/-1000000 flag publish on every sample edge, before duplicate/integration branches; reset zero words/flag1, no-sample holds including link loss; original full-distance numeric validity controls zero publication.",
+  "component_proof_limits": "Finite actual component traces and real math with disclosed timer/cadence acceleration; top13 uses controlled private gate/controller/RX forces. Fresh integration must use ordinary producer inputs without forcing DUT state.",
+  "core_proof_reuse": "Three retained core files are byte-identical to actual v18 miter inputs. Rehash its real compile/vvp receipts/logs/testbench; no unnecessary new identical FSM run.",
+  "no_general_four_state_landing_algebra_or_full_flight_physical_claim": true
+}

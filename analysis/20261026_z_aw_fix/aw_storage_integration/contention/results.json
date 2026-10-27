@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "XY_callbacks": 12,
+  "Z_callbacks": 20,
+  "max_XY_request_to_publish_clocks": 17792,
+  "max_XY_work_clocks": 13737,
+  "max_Z_request_to_publish_clocks": 12554,
+  "max_XY_request_to_publish_us": 355.84000000000003,
+  "max_XY_work_us": 274.74,
+  "max_Z_request_to_publish_us": 251.08,
+  "P": 0.125,
+  "I": 0.25,
+  "controller_client": 3,
+  "dummy_clients": [
+    0,
+    1,
+    2
+  ],
+  "dummy_request_policy": "reissue immediately when own busy deasserts; constant legal operands; all returned results checked",
+  "comparison": "exact ordinal XY angles/integrals and Z collective/delta/climb/height vs actual controller with CLIENTS=1",
+  "cadence": "50MHz simulation, 10x accelerated arrivals; dt remains 1ms sticks /11ms Z /20ms XY",
+  "scope": "actual RTL and arithmetic service contention; no aircraft dynamics or physical timing proof",
+  "source_sha256": {
+    "source\\position\\mtf_xyz_hold_control.v": "2109595a24c6f15a553ea8a0958b8313c3f19d56b4371c827cd428976489daad",
+    "source\\nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "source\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "source\\position\\ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "source\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "source\\position\\ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f"
+  },
+  "evidence_sha256": {
+    "verify_contention.py": "0eaa48a9339149ea9163d204f0907409a1e7eff442007fbc7cfd0f356522fcd5",
+    "contention_tb.v": "659cb7e587d5341de18f2a9a223c1b50babfd42df5a0940d2abe020fd203f800",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "simulation.log": "3418afc6e1e45028f9779f2f19895e16be4901a3b6a6808c9cc023c7affa661d"
+  }
+}

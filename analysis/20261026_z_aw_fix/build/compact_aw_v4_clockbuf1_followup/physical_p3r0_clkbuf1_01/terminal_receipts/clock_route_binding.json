@@ -1,0 +1,9 @@
+{
+  "original_cst_sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+  "combined_cst_sha256": "c5f0dc912f5e8eab0f51895b9d5f757e2df95c271ba0d17584818436826534fb",
+  "existing_clock_net": "clk50_d",
+  "requested_global_line": 1,
+  "frequency_mhz": 50,
+  "period_ns": 20,
+  "scope": "Only physical line assignment for the same original IBuf clock net. All FF clock connectivity unchanged in exact VG; no generated clock, frequency, phase, SDC or exception change."
+}

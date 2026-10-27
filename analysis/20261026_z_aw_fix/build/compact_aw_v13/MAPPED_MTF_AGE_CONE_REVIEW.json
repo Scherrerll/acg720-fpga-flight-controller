@@ -1,0 +1,242 @@
+{
+  "scope": "All LUT input arcs and other combinational arcs are included. Topological overapproximation only, not sensitized paths or delay. Full physical gates are separate.",
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "variants": {
+    "v12": {
+      "VG_sha256": "f18ac77212a4b17ded9c5a6025a034dda91f8af8d13ca77bbf12caaa033eb0c1",
+      "sources": {
+        "mtf/age_ms_21_s1": {
+          "CLK": [
+            "mtf/clk50_d"
+          ],
+          "paths": {
+            "\\staged_telemetry.extension_q_814_s0/D": {
+              "depth": 14,
+              "cells": [
+                "mtf/module_online_s10",
+                "mtf/module_online_s4",
+                "native_navigation/n3123_s12",
+                "mtf/metric/mtf_range_ok_s19",
+                "mtf/metric/mtf_range_ok_s",
+                "native_navigation/geometry/geometry_reason_1_s0",
+                "native_navigation/geometry/n1136_s1",
+                "native_navigation/geometry/geometry_height_ready_s0",
+                "native_navigation/geometry/geometry_flow_ready_s",
+                "native_navigation/velocity_fusion/n1532_s1",
+                "native_navigation/nav_xy_ready_s121",
+                "native_navigation/n4661_s4",
+                "native_navigation/n4661_s2",
+                "n596_s2"
+              ]
+            },
+            "\\staged_telemetry.extension_q_814_s0/RESET": {
+              "depth": 12,
+              "cells": [
+                "mtf/module_online_s10",
+                "mtf/module_online_s4",
+                "native_navigation/n3123_s12",
+                "mtf/metric/mtf_range_ok_s19",
+                "mtf/metric/mtf_range_ok_s",
+                "native_range_fresh_s2",
+                "core_vertical_available_s3",
+                "core/fallback_control/height_fallback_active_s0",
+                "core/fallback_control/height_fallback_active_s",
+                "core/core_body_861_s0",
+                "mode_reason_15_s5",
+                "mode_reason_15_s3"
+              ]
+            },
+            "\\staged_telemetry.extension_q_97_s6/D": {
+              "depth": 15,
+              "cells": [
+                "mtf/module_online_s10",
+                "mtf/module_online_s4",
+                "native_navigation/n3123_s12",
+                "mtf/metric/mtf_range_ok_s19",
+                "mtf/metric/mtf_range_ok_s",
+                "native_navigation/geometry/geometry_reason_1_s0",
+                "native_navigation/geometry/n1136_s1",
+                "native_navigation/geometry/geometry_height_ready_s0",
+                "native_navigation/geometry/geometry_flow_ready_s",
+                "native_navigation/velocity_fusion/n1532_s1",
+                "native_navigation/nav_xy_ready_s121",
+                "native_navigation/n4666_s2",
+                "native_navigation/n4666_s1",
+                "\\staged_telemetry.extension_q_97_s10",
+                "\\staged_telemetry.extension_q_97_s9"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "v13": {
+      "VG_sha256": "001eca6c8a3e4f21e7d7fe84e33601bef9692d5fba739bff9fccb3b4c6ca639a",
+      "sources": {
+        "mtf/age_ms_21_s1": {
+          "CLK": [
+            "mtf/clk50_d"
+          ],
+          "paths": {
+            "\\staged_telemetry.extension_q_814_s0/D": {
+              "depth": 11,
+              "cells": [
+                "mtf/n784_s7",
+                "mtf/n784_s4",
+                "native_navigation/n3123_s12",
+                "native_range_fresh_s2",
+                "core_vertical_available_s3",
+                "core/fallback_control/height_fallback_active_s0",
+                "core/fallback_control/height_fallback_active_s",
+                "core/core_body_861_s0",
+                "core/hold_consumed_Z_s0",
+                "n600_s3",
+                "n596_s2"
+              ]
+            },
+            "\\staged_telemetry.extension_q_814_s0/RESET": {
+              "depth": 10,
+              "cells": [
+                "mtf/n784_s7",
+                "mtf/n784_s4",
+                "native_navigation/n3123_s12",
+                "native_range_fresh_s2",
+                "core_vertical_available_s3",
+                "core/fallback_control/height_fallback_active_s0",
+                "core/fallback_control/height_fallback_active_s",
+                "core/core_body_861_s0",
+                "mode_reason_15_s5",
+                "mode_reason_15_s3"
+              ]
+            },
+            "\\staged_telemetry.extension_q_97_s6/D": {
+              "depth": 11,
+              "cells": [
+                "mtf/n784_s7",
+                "mtf/n784_s4",
+                "native_navigation/n3123_s12",
+                "native_range_fresh_s2",
+                "core_vertical_available_s3",
+                "core/fallback_control/height_fallback_active_s0",
+                "core/fallback_control/height_fallback_active_s",
+                "core/core_body_861_s0",
+                "core/hold_consumed_Z_s0",
+                "\\staged_telemetry.extension_q_97_s10",
+                "\\staged_telemetry.extension_q_97_s9"
+              ]
+            },
+            "mtf/age_below_1000_s1/D": {
+              "depth": 3,
+              "cells": [
+                "mtf/n784_s7",
+                "mtf/n784_s4",
+                "mtf/n784_s1"
+              ]
+            },
+            "mtf/age_below_1000_s1/CE": {
+              "depth": 11,
+              "cells": [
+                "mtf/n761_s4",
+                "mtf/n760_s3",
+                "mtf/n759_s3",
+                "mtf/n758_s3",
+                "mtf/n757_s3",
+                "mtf/n756_s3",
+                "mtf/n755_s3",
+                "mtf/n754_s3",
+                "mtf/n753_s3",
+                "mtf/age_ms_31_s4",
+                "mtf/age_ms_31_s6"
+              ]
+            },
+            "mtf/age_below_200_s1/D": {
+              "depth": 4,
+              "cells": [
+                "mtf/n784_s7",
+                "mtf/n784_s4",
+                "native_navigation/n3123_s12",
+                "mtf/n785_s1"
+              ]
+            },
+            "mtf/age_below_200_s1/CE": {
+              "depth": 11,
+              "cells": [
+                "mtf/n761_s4",
+                "mtf/n760_s3",
+                "mtf/n759_s3",
+                "mtf/n758_s3",
+                "mtf/n757_s3",
+                "mtf/n756_s3",
+                "mtf/n755_s3",
+                "mtf/n754_s3",
+                "mtf/n753_s3",
+                "mtf/age_ms_31_s4",
+                "mtf/age_ms_31_s6"
+              ]
+            }
+          }
+        },
+        "mtf/age_below_1000_s1": {
+          "CLK": [
+            "mtf/clk50_d"
+          ],
+          "paths": {}
+        },
+        "mtf/age_below_200_s1": {
+          "CLK": [
+            "mtf/clk50_d"
+          ],
+          "paths": {
+            "\\staged_telemetry.extension_q_814_s0/D": {
+              "depth": 11,
+              "cells": [
+                "mtf/metric/mtf_range_ok_s19",
+                "mtf/metric/mtf_range_ok_s",
+                "mtf/metric/flow_ok_s",
+                "native_navigation/geometry/geometry_reason_4_s",
+                "native_navigation/geometry/n5079_s11",
+                "native_navigation/geometry/geometry_flow_ready_s0",
+                "native_navigation/velocity_fusion/n1532_s1",
+                "native_navigation/velocity_fusion/flow_fusion_valid_s10",
+                "native_navigation/nav_xy_active_s15",
+                "native_navigation/n4661_s4",
+                "n596_s2"
+              ]
+            },
+            "\\staged_telemetry.extension_q_814_s0/RESET": {
+              "depth": 9,
+              "cells": [
+                "mtf/metric/mtf_range_ok_s19",
+                "mtf/metric/mtf_range_ok_s",
+                "native_range_fresh_s2",
+                "core_vertical_available_s3",
+                "core/fallback_control/height_fallback_active_s0",
+                "core/fallback_control/height_fallback_active_s",
+                "core/core_body_861_s0",
+                "mode_reason_15_s5",
+                "mode_reason_15_s3"
+              ]
+            },
+            "\\staged_telemetry.extension_q_97_s6/D": {
+              "depth": 12,
+              "cells": [
+                "mtf/metric/mtf_range_ok_s19",
+                "mtf/metric/mtf_range_ok_s",
+                "mtf/metric/flow_ok_s",
+                "native_navigation/geometry/geometry_reason_4_s",
+                "native_navigation/geometry/n5079_s11",
+                "native_navigation/geometry/geometry_flow_ready_s0",
+                "native_navigation/velocity_fusion/n1532_s1",
+                "native_navigation/velocity_fusion/flow_fusion_valid_s10",
+                "native_navigation/n4666_s3",
+                "native_navigation/n4666_s1",
+                "\\staged_telemetry.extension_q_97_s10",
+                "\\staged_telemetry.extension_q_97_s9"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

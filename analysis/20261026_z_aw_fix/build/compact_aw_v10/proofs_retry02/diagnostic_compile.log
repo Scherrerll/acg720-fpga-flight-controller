@@ -1,0 +1,4 @@
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs_retry02\v9_diag.v:2: warning: timescale for diag_v9 inherited from another file.
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs_retry02\tb.v:1: ...: The inherited timescale is here.
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs_retry02\v10_diag.v:2: warning: timescale for diag_v10 inherited from another file.
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs_retry02\tb.v:1: ...: The inherited timescale is here.

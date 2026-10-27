@@ -1,0 +1,15 @@
+{
+  "approved_preparation": false,
+  "reviewed_PHYSICAL_PREPARATION_sha256": "4d964e4d8bf9c10d333f6ad4ff5b583ae35c007268f2ae05a23c63038000e684",
+  "reviewed_seal_terminal_sha256": "ee95451e1589ba03ceeb007bcb3089bbcbd32f2db69a69f70c0c547fddcc8c96",
+  "finding": {
+    "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22_dsp_followup/seal_terminal.py",
+    "line": 45,
+    "symbol": "VG assignment",
+    "statement": "VG=read(O/'SYNTHESIS_RESULT.json')['netlist_sha256']",
+    "impact": "Thin has no SYNTHESIS_RESULT.json by design, and no STANDARD alias. Actual terminal sealing would raise FileNotFoundError before preserving the manifest. Read the real sealed standard22 SYN result or the validated prepared thin VG binding instead.",
+    "confirmed_by": "Read final frozen sealer; Test-Path for thin/SYNTHESIS_RESULT.json returned False. Candidate inspector only checks raw-review metadata aliases, not the sealer reference."
+  },
+  "candidate_files_edited_by_reviewer": false,
+  "vendor_started_by_reviewer": false
+}

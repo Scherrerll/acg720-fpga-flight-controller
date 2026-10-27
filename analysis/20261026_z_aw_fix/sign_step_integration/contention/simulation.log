@@ -1,0 +1,17 @@
+XY n=1 roll=0 pitch=0 I=0,0 total_clocks=13635 work_clocks=13442
+XY n=2 roll=0 pitch=0 I=0,0 total_clocks=13889 work_clocks=13696
+XY n=3 roll=775 pitch=519 I=-1310660,1638400 total_clocks=13702 work_clocks=13509
+XY n=4 roll=800 pitch=539 I=-2621320,3276800 total_clocks=13515 work_clocks=13322
+XY n=5 roll=825 pitch=559 I=-3931980,4915200 total_clocks=13769 work_clocks=13576
+XY n=6 roll=850 pitch=579 I=-5242640,6553600 total_clocks=13435 work_clocks=13242
+XY n=7 roll=-675 pitch=-439 I=-3931980,4915200 total_clocks=13689 work_clocks=13496
+XY n=8 roll=-700 pitch=-459 I=-2621320,3276800 total_clocks=13502 work_clocks=13309
+XY n=9 roll=-725 pitch=-479 I=-1310660,1638400 total_clocks=13756 work_clocks=13563
+XY n=10 roll=-750 pitch=-499 I=0,0 total_clocks=13569 work_clocks=13376
+XY n=11 roll=0 pitch=0 I=0,0 total_clocks=17792 work_clocks=13520
+XY n=12 roll=0 pitch=0 I=0,0 total_clocks=13930 work_clocks=13737
+DUMMY client=0 multiply_completions=5812 divide_completions=2614
+DUMMY client=1 multiply_completions=5812 divide_completions=2614
+DUMMY client=2 multiply_completions=5811 divide_completions=2614
+PASS XY_callbacks=12 Z_callbacks=20 max_XY_request_to_publish_clocks=17792 max_XY_work_clocks=13737 max_Z_request_to_publish_clocks=12554 ns_per_clock=20
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\sign_step_integration\contention\contention_tb.v:84: $finish called at 24278780000 (1ps)

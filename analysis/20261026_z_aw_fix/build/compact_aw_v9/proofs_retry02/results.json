@@ -1,0 +1,278 @@
+{
+  "passed": true,
+  "source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "e53ada1fcd95631a20e2f6649f825013414f99bb562151cce58aa6454c4e988c",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "ce7c2d4199ed518b8a3732aff2a24139bcf8fcdc8fa7bfc9bdb4e93f50b69e8d",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+    "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+    "position/pose_time_adapter.v": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "source55_unchanged": true,
+  "five": {
+    "scope": "Actual B3/B4 controller/shared-math RTL; legal fixed sensor boundary stimuli, no plant or flight replay. Callback cadence2500clocks forZ-only and20000 forXY/I0, original11ms/1ms dt. Compact vsB4-v1 module outputs/integrals are checked everycycle. No private force/preload. Publication comparison allows exactly2newclocks.",
+    "completed": 5,
+    "passed": true,
+    "results": [
+      {
+        "case": 1,
+        "name": "natural_upper_and_low_stick",
+        "exit_code": 0,
+        "seconds": 344.63608026504517,
+        "checks": [
+          "PASS natural upper windup: old1850=419/419 first4600ms; new below1850=44ms below1250=924ms upper_rejects=1716 accepted_down=77",
+          "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+          "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+          "PASS commit contract checked 2237 times; every Z publication delayed exactly2clocks"
+        ],
+        "log_sha256": "4bd54d932f7b975c6ca1d33775aae5fb792cfee5f994fa9f65dc55121cf7a0f7",
+        "trace_sha256": "a74da8058e2ca2d3ca625d1656faaa23795ec246e9d233e489f217721be88182"
+      },
+      {
+        "case": 2,
+        "name": "unsaturated_equivalence",
+        "exit_code": 0,
+        "seconds": 67.81311273574829,
+        "checks": [
+          "PASS unsaturated old/new publication equivalence: publications=400 positiveI=100 negativeI=150 delay=2clocks",
+          "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+          "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+          "PASS commit contract checked 400 times; every Z publication delayed exactly2clocks"
+        ],
+        "log_sha256": "484dae578989c2c5f73cd961771d3ffe5628c239f6a77ac327284e5d46e3319c",
+        "trace_sha256": "605b40f120d434f9cb4f03b70bdb1d7242c37dae7e8cd102b6623adee6a8f7b3"
+      },
+      {
+        "case": 3,
+        "name": "natural_lower_and_positive_recovery",
+        "exit_code": 0,
+        "seconds": 120.2364444732666,
+        "checks": [
+          "PASS natural lower saturation and positive recovery: lower_rejects=406 accepted_up=52 final_collective=1850",
+          "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+          "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+          "PASS commit contract checked 650 times; every Z publication delayed exactly2clocks"
+        ],
+        "log_sha256": "3bba6242a702ed675ad4ccd4f7e4cbbd6f6a260c6758da3341cfb957d8f070b1",
+        "trace_sha256": "474abff8632bdabfc857841abc149843894c6a547c8ab0f3a073e970548c6b94"
+      },
+      {
+        "case": 4,
+        "name": "cancel_and_takingoff",
+        "exit_code": 0,
+        "seconds": 12.598995923995972,
+        "checks": [
+          "PASS eight staged cancel/reentry boundaries plus taking_off false; no stale publication; live safety mask retained",
+          "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+          "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+          "PASS commit contract checked 74 times; every Z publication delayed exactly2clocks"
+        ],
+        "log_sha256": "d508c7aca32ff66fce842b43405eb63bf69d09524660400333422b0003679f6f",
+        "trace_sha256": "f8cb999e0df582b138794d66ec3aab721f8e63cd4c5c409c6dfcca0abbcb7792"
+      },
+      {
+        "case": 5,
+        "name": "xy_i0_independence",
+        "exit_code": 0,
+        "seconds": 159.02254939079285,
+        "checks": [
+          "PASS XY I0 retains exact old angles/zeroXYintegral across 75 callbacks while Z I is nonzero",
+          "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+          "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+          "PASS commit contract checked 150 times; every Z publication delayed exactly2clocks"
+        ],
+        "log_sha256": "7c790fb294711a7bbcb378375f7c2d6da5fed29b7b2e3867551eb5dc80d9ffff",
+        "trace_sha256": "0814732ae58a4b0a80780b61927b0588b2a1ef792020e064bc96fd60c5892efe"
+      }
+    ]
+  },
+  "boundary": {
+    "passed": true,
+    "completed": 2,
+    "results": [
+      {
+        "fraction": 0,
+        "exit_code": 0,
+        "pass_lines": [
+          "PASS fraction=0 control_cycles=816534 legal_grants=870 Z_publications=29 invalid_captures=4 operand_difference_cycles_must_be_zero=0"
+        ],
+        "log_sha256": "1bc5a505c90f26f82dcfd68947f68aa4ff5f0a9e38affec19e2127724c025a2b"
+      },
+      {
+        "fraction": 16,
+        "exit_code": 0,
+        "pass_lines": [
+          "PASS fraction=16 control_cycles=816534 legal_grants=870 Z_publications=29 invalid_captures=4 operand_difference_cycles_must_be_zero=0"
+        ],
+        "log_sha256": "85c1cd3efb8f17483e3e2f64e95d66e8bdd0d9d3dd9af6fe0c92989c3d8b9eff"
+      }
+    ],
+    "scope": "Actual RTL with single-client services. All control/safety/normalization ports every cycle; math requests/cancel/status every cycle and consumed operands/results. All num/value aliases exact every cycle and representable in50/39 bits; all operand differences must be zero. Same MA/MB widths in both sides. Legal boundaries and four single-cycle bad-az captures per fraction. No private force."
+  },
+  "top13": {
+    "passed": true,
+    "scope": "actual top RTL with controlled simulation forces on core gate dependencies and decoded RX bytes, including actual gate armed FF simultaneous with bank commit; physical RX independently tested",
+    "cases": 13
+  },
+  "contention": {
+    "passed": true,
+    "XY_callbacks": 12,
+    "Z_callbacks": 20,
+    "max_XY_request_to_publish_clocks": 17792,
+    "max_XY_work_clocks": 13737,
+    "max_Z_request_to_publish_clocks": 12554,
+    "max_XY_request_to_publish_us": 355.84000000000003,
+    "max_XY_work_us": 274.74,
+    "max_Z_request_to_publish_us": 251.08,
+    "P": 0.125,
+    "I": 0.25,
+    "controller_client": 3,
+    "dummy_clients": [
+      0,
+      1,
+      2
+    ],
+    "dummy_request_policy": "reissue immediately when own busy deasserts; constant legal operands; all returned results checked",
+    "comparison": "exact ordinal XY angles/integrals and Z collective/delta/climb/height vs actual controller with CLIENTS=1",
+    "cadence": "50MHz simulation, 10x accelerated arrivals; dt remains 1ms sticks /11ms Z /20ms XY",
+    "scope": "actual RTL and arithmetic service contention; no aircraft dynamics or physical timing proof",
+    "source_sha256": {
+      "source\\position\\mtf_xyz_hold_control.v": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+      "source\\nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "source\\position\\position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "source\\position\\ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "source\\position\\ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "source\\position\\ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f"
+    },
+    "evidence_sha256": {
+      "run.py": "3f78991532e7ca15597054ce6a44b857ba9df0f04f77882ad7bf195dbf5978ad",
+      "contention_tb.v": "659cb7e587d5341de18f2a9a223c1b50babfd42df5a0940d2abe020fd203f800",
+      "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "simulation.log": "6e0fa0c4003675d3ed0934c57abafde9b6cd723b484d277e1cb77b72bb28e0ec"
+    }
+  },
+  "reused_v8_guard_proofs": {
+    "results_sha256": "edb6acd2c16d82c9410b39aa1fcefb39589d74fed39789fb102ee32ca40ba0b8",
+    "runner_exit_sha256": "08388bb97dd3590ba1fa9fa65d157a8ed299791d082e06f2ffd570c5eeba256c",
+    "identical_dependencies": [
+      "position/pose_time_adapter.v",
+      "position/mtf_shared_height_fusion.v",
+      "mtf_xyz_navigation_control.v",
+      "nav_math_service.v",
+      "position/position_math.v"
+    ]
+  },
+  "stages": [
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "-u",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v9\\proofs_retry02\\five\\run.py"
+      ],
+      "started_utc": "2026-10-26T10:40:05.402475+00:00",
+      "pid": 67064,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "ended_utc": "2026-10-26T10:51:50.034167+00:00",
+      "stdout_sha256": "821cb14780b7222bced880cfc23c459ffaa90c54197c014997d575f91666a261",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "-u",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v9\\proofs_retry02\\boundary\\run.py",
+        "--expected-hold-sha256",
+        "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642"
+      ],
+      "started_utc": "2026-10-26T10:51:50.043167+00:00",
+      "pid": 41300,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "ended_utc": "2026-10-26T10:52:33.844144+00:00",
+      "stdout_sha256": "bfbd875f5ea083fa716afa0bb3fd84d657f768adb95dfb85e2e43caec67148b3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "-u",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v9\\proofs_retry02\\top\\run.py"
+      ],
+      "started_utc": "2026-10-26T10:52:33.851632+00:00",
+      "pid": 41536,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "ended_utc": "2026-10-26T10:52:58.713063+00:00",
+      "stdout_sha256": "a51c768ae6814167d4762444156c6b7f3d2b0002dafa4aa1afb89afc289c2815",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "-u",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v9\\proofs_retry02\\contention\\run.py"
+      ],
+      "started_utc": "2026-10-26T10:52:58.723775+00:00",
+      "pid": 13728,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "ended_utc": "2026-10-26T10:53:56.797534+00:00",
+      "stdout_sha256": "a5fc71c1a4d144512bc41b3f4db6746a8fa4b47a02b79fada14b80df0fe4ec39",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

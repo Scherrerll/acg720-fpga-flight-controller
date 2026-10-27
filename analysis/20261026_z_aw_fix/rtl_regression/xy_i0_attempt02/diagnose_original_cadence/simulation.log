@@ -1,0 +1,2 @@
+FATAL: C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\rtl_regression\xy_i0_attempt02\diagnostic_original_cadence_tb.v:67: fault flags new=1/1 old=1/1 reason=128/128 height_due=1/1 pos_due=1/1 state=100/100
+       Time: 200171000  Scope: tb

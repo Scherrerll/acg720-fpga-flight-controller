@@ -1,0 +1,38 @@
+{
+  "reviewed_utc": "2026-10-26T12:59:04.506263+00:00",
+  "scope": "Direct independent parsing of raw reports, actual exits, source and bitstream. No imported gate parser.",
+  "passed": false,
+  "checks": {
+    "vendor_wait0": false,
+    "runner_wait0": false,
+    "source55": true,
+    "canonical_source55": true,
+    "VG": true,
+    "raw_log_hash": true,
+    "normal_eof": false,
+    "fullroute_and_bitstream": false,
+    "no_unrouted_nets": true,
+    "netlist_only": true,
+    "raw_TR_exists": false,
+    "physical_artifacts": false,
+    "unchanged_constraints": true,
+    "combined_CST_bound": true,
+    "only_three_INS_LOC_added": true,
+    "combined_CST_prefix": true,
+    "same_VG_seed_unchanged": true,
+    "combined_CST_used": true
+  },
+  "period_ns": null,
+  "fmax_mhz": null,
+  "slacks_ns": {},
+  "violated_endpoints": {},
+  "worst_setup_row": null,
+  "pins": {},
+  "raw_sha256": {
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_inc_loc3_01\\verification\\physical.log": "a55e51fbe373f544fb85ef0377f96d9656e8a075854659f909515baceb5f749a",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_inc_loc3_01\\verification\\physical_exit.json": "0a96faff1622a40f5afe4bdb7b0ca0d9cb68e805f527d1cd3a137904dfa7b82b",
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_loc3_followup\\physical_p3r0_inc_loc3_01\\runner_exit.json": "dc7f2da888e9089599619e9224c2c8649f2f5aa1bedb40e08810e251ed521065",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_inc_loc3_01\\source\\physical_constraints.cst": "af2bd1c8bf92630fbba36f8f28438d6b865352c6e3bd24f007dc008df5e3c98e"
+  },
+  "review_script_sha256": "5dbb4e4057a3eb39378e28781acb7eddb49d569a43c8dec08457ca71b6c7a6ea"
+}

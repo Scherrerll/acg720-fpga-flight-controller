@@ -1,0 +1,29 @@
+{
+  "requested_utc": "2026-10-26T13:20:23.941990+00:00",
+  "classification": "cancelled_dense_mapping_deprioritized",
+  "reason": "Dense timing-goal map adds4666LUT; after>40min vendor CPU activity but no stage beyond Routing0, reassign one of two owned physical slots to109 raw-report-based critical-cell placement on the smaller known-fullroute v4 VG. This is scheduling cancellation, not a vendor route/timing failure.",
+  "pid": 57240,
+  "parent_pid": 58968,
+  "command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4_timing\\physical_p3r0_01\\physical.tcl"
+  ],
+  "native_handle_creation_utc": "2026-10-26T12:37:14.775798+00:00",
+  "fresh_CIM_identity": {
+    "ProcessId": 57240,
+    "ParentProcessId": 58968,
+    "CreationUtc": "2026-10-26T12:37:14.7757980Z",
+    "ExecutablePath": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "CommandLine": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4_timing\\physical_p3r0_01\\physical.tcl"
+  },
+  "identity_checks": [
+    "exact recorded PID/parent/command",
+    "native image path",
+    "native creation time matches fresh CIM and original launch"
+  ],
+  "log_prefix_sha256": "667b0771bd315cb2225f252c978c543d7198e03d4a9354314ad3b9822d2b9b19",
+  "process_receipt_sha256": "75885b30b3c3a8f6a1e8e5135ff5cb6607d030098f37041b9efc344fe6978769",
+  "next_preparation_sha256": "230f22ca211b855c20de765b07633a744065abf3681d1bdfe67084f350743a12",
+  "requested_native_exit_code": 1,
+  "actual_vendor_wait": "Must come from original still-running runner physical_exit.json after real p.wait(); never inferred here."
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.vvp
+tmp/
+
+# Full failed-route database files stay local with hashes in terminal manifests.
+# These files exceed GitHub's per-file limit; source/reports/receipts remain reviewable.
+build/**/terminal_receipts/*.pr

@@ -1,0 +1,79 @@
+{
+  "scope": "Actual v22 AZ/VY guards and landing/fanout composition synthesis versus v4; no physical timing claim.",
+  "resources": {
+    "acg720_ano_port": {
+      "parent_v4_map2": {
+        "T_Register": 27766,
+        "T_Alu": 9544,
+        "T_Lut": 36213,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "composed_guard_landing_fanout_map2": {
+        "T_Register": 27717,
+        "T_Alu": 9552,
+        "T_Lut": 36117,
+        "T_MULTALU27X18": 29,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "delta": {
+        "T_MULTALU27X18": -1,
+        "T_Register": -49,
+        "T_Bsram": 0,
+        "T_MULT27X36": 0,
+        "T_Alu": 8,
+        "T_MULT12X12": 0,
+        "T_Lut": -96
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "parent_v4_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4953,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "composed_guard_landing_fanout_map2": {
+        "T_Register": 3266,
+        "T_Alu": 1569,
+        "T_Lut": 4932,
+        "T_MULTALU27X18": 11,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_MULTALU27X18": -1,
+        "T_Register": -16,
+        "T_MULT27X36": 0,
+        "T_Alu": 8,
+        "T_MULT12X12": 0,
+        "T_Lut": -21
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "parent_v4_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "composed_guard_landing_fanout_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 438
+      },
+      "delta": {
+        "T_Alu": 0,
+        "T_Register": 0,
+        "T_Lut": 1
+      }
+    }
+  },
+  "parent_xml_sha256": "a322aac69685ef1eb12a6e6421e8551147a0f1c8da670db816c110f92707ee20",
+  "native_xml_sha256": "9ff7e5bae63db480159878e9fec17a5165b895a1218301e5e64235f6a4d3ee82"
+}

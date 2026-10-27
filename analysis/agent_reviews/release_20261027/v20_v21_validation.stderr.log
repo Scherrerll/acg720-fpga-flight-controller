@@ -1,0 +1,34 @@
+test_DSP20_profile_uses_standard_v20_and_exact_official41 (__main__.EvidenceTests.test_DSP20_profile_uses_standard_v20_and_exact_official41) ... ok
+test_DSP_profile_official46_uses_standard_v18_evidence (__main__.EvidenceTests.test_DSP_profile_official46_uses_standard_v18_evidence) ... ok
+test_DSP_suffix_rejects_extra_clock_or_timing_directives (__main__.EvidenceTests.test_DSP_suffix_rejects_extra_clock_or_timing_directives) ... ok
+test_VY_compile_command_cannot_replace_simulation (__main__.EvidenceTests.test_VY_compile_command_cannot_replace_simulation) ... ok
+test_VY_missing_each_required_role_rejected (__main__.EvidenceTests.test_VY_missing_each_required_role_rejected) ... ok
+test_VY_one_compile_only_missing_eight_roles_rejected (__main__.EvidenceTests.test_VY_one_compile_only_missing_eight_roles_rejected) ... ok
+test_VY_original_log_hash_is_checked (__main__.EvidenceTests.test_VY_original_log_hash_is_checked) ... ok
+test_case_alias_wrong_SHA_cannot_become_prerequisite (__main__.EvidenceTests.test_case_alias_wrong_SHA_cannot_become_prerequisite) ... ok
+test_environment_traversal_and_binary_index_rejected (__main__.EvidenceTests.test_environment_traversal_and_binary_index_rejected) ... ok
+test_genuine_v15_v16_v18_functional_chains (__main__.EvidenceTests.test_genuine_v15_v16_v18_functional_chains) ... ok
+test_missing_SYN_actual_audit_receipt_rejected (__main__.EvidenceTests.test_missing_SYN_actual_audit_receipt_rejected) ... ok
+test_missing_archived_ground_input_rejected (__main__.EvidenceTests.test_missing_archived_ground_input_rejected) ... ok
+test_original_helper_unchanged_and_v18_profiles (__main__.EvidenceTests.test_original_helper_unchanged_and_v18_profiles) ... ok
+test_portable_archive_functional_and_SYN_roundtrip (__main__.EvidenceTests.test_portable_archive_functional_and_SYN_roundtrip) ... ok
+test_real_failed_v15_remains_rejected (__main__.EvidenceTests.test_real_failed_v15_remains_rejected) ... ok
+test_repository_alias_is_rejected_in_archive_toolchain (__main__.EvidenceTests.test_repository_alias_is_rejected_in_archive_toolchain) ... ok
+test_v18_genuine_VY_and_missing_binding_rejected (__main__.EvidenceTests.test_v18_genuine_VY_and_missing_binding_rejected) ... ok
+test_v20_history_requires_preserved_original_fixture_versions (__main__.EvidenceTests.test_v20_history_requires_preserved_original_fixture_versions) ... ok
+test_v20_missing_fresh_and_component_receipts_rejected (__main__.EvidenceTests.test_v20_missing_fresh_and_component_receipts_rejected) ... ok
+test_v20_v21_actual_proof_and_SYN_portable_roundtrips (__main__.EvidenceTests.test_v20_v21_actual_proof_and_SYN_portable_roundtrips) ... ok
+test_v20_v21_compile_cannot_replace_simulation (__main__.EvidenceTests.test_v20_v21_compile_cannot_replace_simulation) ... ok
+test_v20_v21_distinct_source_identity_and_unqualified_physical_rejected (__main__.EvidenceTests.test_v20_v21_distinct_source_identity_and_unqualified_physical_rejected) ... ok
+test_v21_completion_and_strict_SP_dependencies_required (__main__.EvidenceTests.test_v21_completion_and_strict_SP_dependencies_required) ... ok
+test_v21_missing_each_actual_proof_role_rejected (__main__.EvidenceTests.test_v21_missing_each_actual_proof_role_rejected) ... ok
+test_v21_original_failures_and_two_successful_retry_waits_preserved (__main__.EvidenceTests.test_v21_original_failures_and_two_successful_retry_waits_preserved) ... ok
+test_v21_standalone_receipt_and_original_failure_log_required (__main__.EvidenceTests.test_v21_standalone_receipt_and_original_failure_log_required) ... ok
+test_v21_wrong_completion_and_VG_hashes_rejected (__main__.EvidenceTests.test_v21_wrong_completion_and_VG_hashes_rejected) ... ok
+test_wrong_SYN_source_rejected (__main__.EvidenceTests.test_wrong_SYN_source_rejected) ... ok
+test_wrong_functional_hash_rejected (__main__.EvidenceTests.test_wrong_functional_hash_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 77.349s
+
+OK

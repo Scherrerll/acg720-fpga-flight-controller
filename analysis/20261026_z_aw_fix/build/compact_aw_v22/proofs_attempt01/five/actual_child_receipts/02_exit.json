@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\five\\regression.vvp",
+    "+CASE=1"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\five\\natural_upper_and_low_stick",
+  "started_utc": "2026-10-26T23:34:39.375997+00:00",
+  "normal_return": true,
+  "actual_completedprocess_returncode": 0,
+  "ended_utc": "2026-10-26T23:39:42.751932+00:00"
+}

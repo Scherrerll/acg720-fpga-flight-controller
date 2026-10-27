@@ -1,0 +1,16 @@
+{
+  "scope": "Actual old/new module comparison and independent49-divisor/carry reference. Cycle-based clock at50MHz is used to compare FSM steps; the separate unmodified PLL model proves the49MHz physical clock ratio. No DUT force/preload.",
+  "input_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\canonical\\source\\position\\pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_working\\source\\position\\pose_time_adapter.v": "c7945db75c8ebf324a7cc6c446347073218e9f72f578f2d866ed386da7ed09ed",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_time_adapter\\proofs\\old_adapter.v": "19f95f82736f50c3f5f05ded95bf0ea2d4e177ef95ef95688dc1c6feb0f48fcf",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_time_adapter\\proofs\\new_adapter.v": "c7945db75c8ebf324a7cc6c446347073218e9f72f578f2d866ed386da7ed09ed",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_time_adapter\\proofs\\tb.v": "cf7c99d4275fa83a81b0cae4c09bcea8935b38a45e327935e725dcdaf1f8b28d",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_time_adapter\\SOURCE_BINDING.json": "5b444187671cbd79cf6ec9a1b0e5e8208fdc3b8c0804034e6051fce1340f62be",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\verify_clock49_time_adapter.py": "d33097cc0703d242246df94343ccfa744d324218b7b8d7df2bc62e1f89569ed2",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe": "803b8844af2cc8ed70b5f08b07ffa749901280e81339617ca3e72cbbb852bd2b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe": "e2f442f4d5aa76e55c85c3ff77e4446fbfdb9946b7cfe8a2dff87f275da17b62"
+  },
+  "normal_transactions": 12000,
+  "source_or_PLL_not_integrated": true
+}

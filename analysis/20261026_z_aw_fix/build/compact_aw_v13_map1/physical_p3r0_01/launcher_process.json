@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v13_map1\\launch_physical_hidden.py",
+    "3"
+  ],
+  "pid": 46212,
+  "started_utc": "2026-10-26T17:40:36.250017+00:00",
+  "scope": "Exact audited map1 VG P3/R0; original hidden supervisor will record actual vendor/runner waits."
+}

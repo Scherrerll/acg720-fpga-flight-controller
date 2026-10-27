@@ -1,0 +1,2545 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-26T08:23:08.157145+00:00",
+  "scope": "Independent read-only raw physical artifact gate for v6 physical_p1r0_01 only. Raw TR five tables/Fmax/endpoints, raw RPT pins, actual log/exit, FS/CFG, exact source/VG, and donor hash bindings were inspected. No build, process control, source mutation, Git, serial, programming, hardware or flight action. Prior software evidence was not rerun.",
+  "classification": "fullroute_timingfail",
+  "independent_raw_gate_pass": false,
+  "accepted_for_delivery": false,
+  "qualified": false,
+  "terminal": {
+    "actual_p_wait": 0,
+    "normal_wait_return": true,
+    "started_utc": "2026-10-26T08:05:23.350047+00:00",
+    "ended_utc": "2026-10-26T08:20:06.877617+00:00",
+    "log_sha256_matches_actual_exit": true,
+    "physical_audit_present": true,
+    "build_failure_present": true,
+    "build_result_present": false
+  },
+  "criteria": {
+    "actual_vendor_wait_zero": true,
+    "actual_exit_log_hash_matches": true,
+    "actual_period_20ns": true,
+    "fmax_at_least_50": false,
+    "setup_hold_endpoints_zero": false,
+    "all_five_nonnegative": false,
+    "full_route": true,
+    "physical_command_returned": true,
+    "skip_synthesis": true,
+    "only_exact_v6_VG": true,
+    "source55_match_canonical": true,
+    "pins18_CST_locations_directions": true,
+    "radio_rx_B16_in": true,
+    "radio_tx_B15_out": true,
+    "fs_header_B4": true,
+    "FS_nonempty_complete_syntax": true,
+    "cfg_usercode_B4": true,
+    "donor_bindings_valid": true,
+    "donor_audit_hashes_valid": true,
+    "donor_SYN_pass_wait0": true,
+    "donor_mapped_valid": true,
+    "donor_gain_INIT_valid": true,
+    "donor_strict_clock_valid": true,
+    "original_B4_and_v5_source_frozen": true
+  },
+  "failed_criteria": [
+    "fmax_at_least_50",
+    "setup_hold_endpoints_zero",
+    "all_five_nonnegative"
+  ],
+  "timing_raw": {
+    "clock_rows": [
+      {
+        "clock": "clk50",
+        "period_ns": 20.0,
+        "frequency_mhz": 50.0,
+        "raw_row": "1     clk50        Base   20.000   50.000MHz   0.000   10.000                     clk50"
+      }
+    ],
+    "Fmax_rows": [
+      {
+        "clock": "clk50",
+        "constraint_mhz": 50.0,
+        "actual_fmax_mhz": 44.286,
+        "raw_row": "1     clk50        50.000(MHz)   44.286(MHz)   21      TOP"
+      }
+    ],
+    "setup_violated_endpoints": 862,
+    "hold_violated_endpoints": 0,
+    "TNS_rows": [
+      {
+        "analysis": "setup",
+        "TNS_ns": -1255.445,
+        "endpoints": 862,
+        "raw_row": "clk50        setup           -1255.445       862"
+      },
+      {
+        "analysis": "hold",
+        "TNS_ns": 0.0,
+        "endpoints": 0,
+        "raw_row": "clk50        hold            0.000           0"
+      }
+    ],
+    "five_tables": {
+      "setup": {
+        "worst_slack_ns": -2.58,
+        "reported_paths": 25,
+        "worst_path": {
+          "number": 1,
+          "slack_ns": -2.58,
+          "raw_row": "1             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_0_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+          "from_node": "acc_time/output_az_20_s0/Q",
+          "to_node": "core/manual_angles/pending_np_0_s0/CE",
+          "from_clock": "clk50:[R]",
+          "to_clock": "clk50:[R]",
+          "relation_ns": 20.0,
+          "clock_skew_ns": 0.437,
+          "data_delay_ns": 21.863
+        },
+        "all_reported_rows": [
+          {
+            "number": 1,
+            "slack_ns": -2.58,
+            "raw_row": "1             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_0_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_np_0_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.863
+          },
+          {
+            "number": 2,
+            "slack_ns": -2.58,
+            "raw_row": "2             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_1_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_np_1_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.863
+          },
+          {
+            "number": 3,
+            "slack_ns": -2.58,
+            "raw_row": "3             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_2_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_np_2_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.863
+          },
+          {
+            "number": 4,
+            "slack_ns": -2.58,
+            "raw_row": "4             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_3_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_np_3_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.863
+          },
+          {
+            "number": 5,
+            "slack_ns": -2.58,
+            "raw_row": "5             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_4_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_np_4_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.863
+          },
+          {
+            "number": 6,
+            "slack_ns": -2.58,
+            "raw_row": "6             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_5_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_np_5_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.863
+          },
+          {
+            "number": 7,
+            "slack_ns": -2.58,
+            "raw_row": "7             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_6_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_np_6_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.863
+          },
+          {
+            "number": 8,
+            "slack_ns": -2.58,
+            "raw_row": "8             -2.580       acc_time/output_az_20_s0/Q   core/manual_angles/pending_np_7_s0/CE    clk50:[R]    clk50:[R]   20.000     0.437        21.863",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_np_7_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.863
+          },
+          {
+            "number": 9,
+            "slack_ns": -2.573,
+            "raw_row": "9             -2.573       acc_time/output_az_20_s0/Q   core/gate/last_revoke_code_1_s0/CE       clk50:[R]    clk50:[R]   20.000     -0.017       22.310",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/gate/last_revoke_code_1_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": -0.017,
+            "data_delay_ns": 22.31
+          },
+          {
+            "number": 10,
+            "slack_ns": -2.56,
+            "raw_row": "10            -2.560       acc_time/output_az_20_s0/Q   core/manual_angles/held_p_10_s0/CE       clk50:[R]    clk50:[R]   20.000     0.437        21.843",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_p_10_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.843
+          },
+          {
+            "number": 11,
+            "slack_ns": -2.56,
+            "raw_row": "11            -2.560       acc_time/output_az_20_s0/Q   core/manual_angles/held_p_11_s0/CE       clk50:[R]    clk50:[R]   20.000     0.437        21.843",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_p_11_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.843
+          },
+          {
+            "number": 12,
+            "slack_ns": -2.56,
+            "raw_row": "12            -2.560       acc_time/output_az_20_s0/Q   core/manual_angles/held_p_12_s0/CE       clk50:[R]    clk50:[R]   20.000     0.437        21.843",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_p_12_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.843
+          },
+          {
+            "number": 13,
+            "slack_ns": -2.56,
+            "raw_row": "13            -2.560       acc_time/output_az_20_s0/Q   core/manual_angles/held_p_13_s0/CE       clk50:[R]    clk50:[R]   20.000     0.437        21.843",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_p_13_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.843
+          },
+          {
+            "number": 14,
+            "slack_ns": -2.56,
+            "raw_row": "14            -2.560       acc_time/output_az_20_s0/Q   core/manual_angles/held_r_2_s0/CE        clk50:[R]    clk50:[R]   20.000     0.437        21.843",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_r_2_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.843
+          },
+          {
+            "number": 15,
+            "slack_ns": -2.56,
+            "raw_row": "15            -2.560       acc_time/output_az_20_s0/Q   core/manual_angles/held_r_3_s0/CE        clk50:[R]    clk50:[R]   20.000     0.437        21.843",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_r_3_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.843
+          },
+          {
+            "number": 16,
+            "slack_ns": -2.532,
+            "raw_row": "16            -2.532       acc_time/output_az_20_s0/Q   core/manual_angles/fault_5_s0/D          clk50:[R]    clk50:[R]   20.000     0.445        22.029",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/fault_5_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.445,
+            "data_delay_ns": 22.029
+          },
+          {
+            "number": 17,
+            "slack_ns": -2.528,
+            "raw_row": "17            -2.528       acc_time/output_az_20_s0/Q   core/manual_angles/held_r_16_s0/CE       clk50:[R]    clk50:[R]   20.000     0.437        21.810",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_r_16_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.81
+          },
+          {
+            "number": 18,
+            "slack_ns": -2.524,
+            "raw_row": "18            -2.524       acc_time/output_az_20_s0/Q   core/manual_angles/held_p_20_s0/CE       clk50:[R]    clk50:[R]   20.000     0.429        21.815",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_p_20_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.429,
+            "data_delay_ns": 21.815
+          },
+          {
+            "number": 19,
+            "slack_ns": -2.524,
+            "raw_row": "19            -2.524       acc_time/output_az_20_s0/Q   core/manual_angles/held_r_20_s0/CE       clk50:[R]    clk50:[R]   20.000     0.429        21.815",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_r_20_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.429,
+            "data_delay_ns": 21.815
+          },
+          {
+            "number": 20,
+            "slack_ns": -2.524,
+            "raw_row": "20            -2.524       acc_time/output_az_20_s0/Q   core/manual_angles/held_r_24_s0/CE       clk50:[R]    clk50:[R]   20.000     0.429        21.815",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_r_24_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.429,
+            "data_delay_ns": 21.815
+          },
+          {
+            "number": 21,
+            "slack_ns": -2.519,
+            "raw_row": "21            -2.519       acc_time/output_az_20_s0/Q   core/manual_angles/held_r_6_s0/CE        clk50:[R]    clk50:[R]   20.000     0.429        21.810",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_r_6_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.429,
+            "data_delay_ns": 21.81
+          },
+          {
+            "number": 22,
+            "slack_ns": -2.519,
+            "raw_row": "22            -2.519       acc_time/output_az_20_s0/Q   core/manual_angles/held_r_7_s0/CE        clk50:[R]    clk50:[R]   20.000     0.429        21.810",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/held_r_7_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.429,
+            "data_delay_ns": 21.81
+          },
+          {
+            "number": 23,
+            "slack_ns": -2.517,
+            "raw_row": "23            -2.517       acc_time/output_az_20_s0/Q   core/manual_angles/pending_nr_11_s0/CE   clk50:[R]    clk50:[R]   20.000     0.437        21.800",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/pending_nr_11_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.437,
+            "data_delay_ns": 21.8
+          },
+          {
+            "number": 24,
+            "slack_ns": -2.511,
+            "raw_row": "24            -2.511       acc_time/output_az_20_s0/Q   core/manual_angles/next_tr_2_s0/CE       clk50:[R]    clk50:[R]   20.000     0.445        21.786",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/next_tr_2_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.445,
+            "data_delay_ns": 21.786
+          },
+          {
+            "number": 25,
+            "slack_ns": -2.511,
+            "raw_row": "25            -2.511       acc_time/output_az_20_s0/Q   core/manual_angles/next_tr_3_s0/CE       clk50:[R]    clk50:[R]   20.000     0.445        21.786",
+            "from_node": "acc_time/output_az_20_s0/Q",
+            "to_node": "core/manual_angles/next_tr_3_s0/CE",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.445,
+            "data_delay_ns": 21.786
+          }
+        ],
+        "section_sha256": "280e1f308997a90ed948a6ecdf2104832b48c5ac8aa3ea46665d233c94a93545"
+      },
+      "hold": {
+        "worst_slack_ns": 0.138,
+        "reported_paths": 25,
+        "worst_path": {
+          "number": 1,
+          "slack_ns": 0.138,
+          "raw_row": "1             0.138        native_navigation/navigation_sequence_6_s0/Q     native_navigation/diagnostic_q_598_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.267",
+          "from_node": "native_navigation/navigation_sequence_6_s0/Q",
+          "to_node": "native_navigation/diagnostic_q_598_s0/D",
+          "from_clock": "clk50:[R]",
+          "to_clock": "clk50:[R]",
+          "relation_ns": 0.0,
+          "clock_skew_ns": -0.177,
+          "data_delay_ns": 0.267
+        },
+        "all_reported_rows": [
+          {
+            "number": 1,
+            "slack_ns": 0.138,
+            "raw_row": "1             0.138        native_navigation/navigation_sequence_6_s0/Q     native_navigation/diagnostic_q_598_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.267",
+            "from_node": "native_navigation/navigation_sequence_6_s0/Q",
+            "to_node": "native_navigation/diagnostic_q_598_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.267
+          },
+          {
+            "number": 2,
+            "slack_ns": 0.189,
+            "raw_row": "2             0.189        mtf/metric/restarts_2_s0/Q                       mtf/diagnostic_body_610_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.389",
+            "from_node": "mtf/metric/restarts_2_s0/Q",
+            "to_node": "mtf/diagnostic_body_610_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.389
+          },
+          {
+            "number": 3,
+            "slack_ns": 0.193,
+            "raw_row": "3             0.193        native_navigation/navigation_sequence_7_s0/Q     native_navigation/diagnostic_q_599_s0/D   clk50:[R]    clk50:[R]   0.000      -0.181       0.326",
+            "from_node": "native_navigation/navigation_sequence_7_s0/Q",
+            "to_node": "native_navigation/diagnostic_q_599_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.181,
+            "data_delay_ns": 0.326
+          },
+          {
+            "number": 4,
+            "slack_ns": 0.194,
+            "raw_row": "4             0.194        uptime_ms_51_s0/Q                                mtf/diagnostic_body_947_s0/D              clk50:[R]    clk50:[R]   0.000      -0.181       0.328",
+            "from_node": "uptime_ms_51_s0/Q",
+            "to_node": "mtf/diagnostic_body_947_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.181,
+            "data_delay_ns": 0.328
+          },
+          {
+            "number": 5,
+            "slack_ns": 0.194,
+            "raw_row": "5             0.194        mtf/metric/y_x100000_35_s0/Q                     mtf/diagnostic_body_203_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.324",
+            "from_node": "mtf/metric/y_x100000_35_s0/Q",
+            "to_node": "mtf/diagnostic_body_203_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.324
+          },
+          {
+            "number": 6,
+            "slack_ns": 0.196,
+            "raw_row": "6             0.196        mtf/metric/x_x100000_24_s0/Q                     mtf/diagnostic_body_256_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.326",
+            "from_node": "mtf/metric/x_x100000_24_s0/Q",
+            "to_node": "mtf/diagnostic_body_256_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.326
+          },
+          {
+            "number": 7,
+            "slack_ns": 0.196,
+            "raw_row": "7             0.196        mtf/metric/x_x100000_51_s0/Q                     mtf/diagnostic_body_283_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.326",
+            "from_node": "mtf/metric/x_x100000_51_s0/Q",
+            "to_node": "mtf/diagnostic_body_283_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.326
+          },
+          {
+            "number": 8,
+            "slack_ns": 0.196,
+            "raw_row": "8             0.196        rotation_pair_180_s0/Q                           rotation_pair_q_180_s0/D                  clk50:[R]    clk50:[R]   0.000      -0.177       0.385",
+            "from_node": "rotation_pair_180_s0/Q",
+            "to_node": "rotation_pair_q_180_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.385
+          },
+          {
+            "number": 9,
+            "slack_ns": 0.196,
+            "raw_row": "9             0.196        native_navigation/navigation_sequence_29_s0/Q    native_navigation/diagnostic_q_621_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.326",
+            "from_node": "native_navigation/navigation_sequence_29_s0/Q",
+            "to_node": "native_navigation/diagnostic_q_621_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.326
+          },
+          {
+            "number": 10,
+            "slack_ns": 0.196,
+            "raw_row": "10            0.196        mtf/metric/y_x100000_59_s0/Q                     mtf/diagnostic_body_227_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.326",
+            "from_node": "mtf/metric/y_x100000_59_s0/Q",
+            "to_node": "mtf/diagnostic_body_227_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.326
+          },
+          {
+            "number": 11,
+            "slack_ns": 0.198,
+            "raw_row": "11            0.198        event_attitude_6_s0/Q                            flight_info_q_54_s0/D                     clk50:[R]    clk50:[R]   0.000      -0.174       0.394",
+            "from_node": "event_attitude_6_s0/Q",
+            "to_node": "flight_info_q_54_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.174,
+            "data_delay_ns": 0.394
+          },
+          {
+            "number": 12,
+            "slack_ns": 0.198,
+            "raw_row": "12            0.198        rotation_pair_35_s0/Q                            rotation_pair_q_35_s0/D                   clk50:[R]    clk50:[R]   0.000      -0.177       0.387",
+            "from_node": "rotation_pair_35_s0/Q",
+            "to_node": "rotation_pair_q_35_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.387
+          },
+          {
+            "number": 13,
+            "slack_ns": 0.199,
+            "raw_row": "13            0.199        mtf/metric/duplicates_19_s0/Q                    mtf/diagnostic_body_659_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.388",
+            "from_node": "mtf/metric/duplicates_19_s0/Q",
+            "to_node": "mtf/diagnostic_body_659_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.388
+          },
+          {
+            "number": 14,
+            "slack_ns": 0.199,
+            "raw_row": "14            0.199        mtf/metric/duplicates_21_s0/Q                    mtf/diagnostic_body_661_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.388",
+            "from_node": "mtf/metric/duplicates_21_s0/Q",
+            "to_node": "mtf/diagnostic_body_661_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.388
+          },
+          {
+            "number": 15,
+            "slack_ns": 0.199,
+            "raw_row": "15            0.199        mtf/metric/duplicates_23_s0/Q                    mtf/diagnostic_body_663_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.388",
+            "from_node": "mtf/metric/duplicates_23_s0/Q",
+            "to_node": "mtf/diagnostic_body_663_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.388
+          },
+          {
+            "number": 16,
+            "slack_ns": 0.199,
+            "raw_row": "16            0.199        mtf/metric/duplicates_3_s0/Q                     mtf/diagnostic_body_643_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.388",
+            "from_node": "mtf/metric/duplicates_3_s0/Q",
+            "to_node": "mtf/diagnostic_body_643_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.388
+          },
+          {
+            "number": 17,
+            "slack_ns": 0.199,
+            "raw_row": "17            0.199        mtf/metric/duplicates_15_s0/Q                    mtf/diagnostic_body_655_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.388",
+            "from_node": "mtf/metric/duplicates_15_s0/Q",
+            "to_node": "mtf/diagnostic_body_655_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.388
+          },
+          {
+            "number": 18,
+            "slack_ns": 0.2,
+            "raw_row": "18            0.200        uptime_ms_21_s0/Q                                mtf/diagnostic_body_917_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.329",
+            "from_node": "uptime_ms_21_s0/Q",
+            "to_node": "mtf/diagnostic_body_917_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.329
+          },
+          {
+            "number": 19,
+            "slack_ns": 0.201,
+            "raw_row": "19            0.201        native_navigation/geometry/body_vx_q16_16_s0/Q   native_navigation/diagnostic_q_448_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.390",
+            "from_node": "native_navigation/geometry/body_vx_q16_16_s0/Q",
+            "to_node": "native_navigation/diagnostic_q_448_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.39
+          },
+          {
+            "number": 20,
+            "slack_ns": 0.201,
+            "raw_row": "20            0.201        native_navigation/geometry/body_vx_q16_17_s0/Q   native_navigation/diagnostic_q_449_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.390",
+            "from_node": "native_navigation/geometry/body_vx_q16_17_s0/Q",
+            "to_node": "native_navigation/diagnostic_q_449_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.39
+          },
+          {
+            "number": 21,
+            "slack_ns": 0.201,
+            "raw_row": "21            0.201        mtf/metric/x_x100000_1_s0/Q                      mtf/diagnostic_body_233_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.390",
+            "from_node": "mtf/metric/x_x100000_1_s0/Q",
+            "to_node": "mtf/diagnostic_body_233_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.39
+          },
+          {
+            "number": 22,
+            "slack_ns": 0.201,
+            "raw_row": "22            0.201        mtf/metric/restarts_1_s0/Q                       mtf/diagnostic_body_609_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.390",
+            "from_node": "mtf/metric/restarts_1_s0/Q",
+            "to_node": "mtf/diagnostic_body_609_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.39
+          },
+          {
+            "number": 23,
+            "slack_ns": 0.201,
+            "raw_row": "23            0.201        mtf/metric/restarts_14_s0/Q                      mtf/diagnostic_body_622_s0/D              clk50:[R]    clk50:[R]   0.000      -0.177       0.390",
+            "from_node": "mtf/metric/restarts_14_s0/Q",
+            "to_node": "mtf/diagnostic_body_622_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.39
+          },
+          {
+            "number": 24,
+            "slack_ns": 0.201,
+            "raw_row": "24            0.201        native_navigation/geometry/body_vx_q16_11_s0/Q   native_navigation/diagnostic_q_443_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.390",
+            "from_node": "native_navigation/geometry/body_vx_q16_11_s0/Q",
+            "to_node": "native_navigation/diagnostic_q_443_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.39
+          },
+          {
+            "number": 25,
+            "slack_ns": 0.201,
+            "raw_row": "25            0.201        native_navigation/navigation_sequence_25_s0/Q    native_navigation/diagnostic_q_617_s0/D   clk50:[R]    clk50:[R]   0.000      -0.177       0.390",
+            "from_node": "native_navigation/navigation_sequence_25_s0/Q",
+            "to_node": "native_navigation/diagnostic_q_617_s0/D",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.177,
+            "data_delay_ns": 0.39
+          }
+        ],
+        "section_sha256": "e5d2753ec22bffb539ccff54cf1929ad29eccae0e43f8c4aeab885f25538dfcc"
+      },
+      "recovery": {
+        "worst_slack_ns": 12.305,
+        "reported_paths": 25,
+        "worst_path": {
+          "number": 1,
+          "slack_ns": 12.305,
+          "raw_row": "1             12.305       core/boot_1_s0/Q   core/gate/high_hold_count_0_s3/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+          "from_node": "core/boot_1_s0/Q",
+          "to_node": "core/gate/high_hold_count_0_s3/CLEAR",
+          "from_clock": "clk50:[R]",
+          "to_clock": "clk50:[R]",
+          "relation_ns": 20.0,
+          "clock_skew_ns": 0.0,
+          "data_delay_ns": 7.382
+        },
+        "all_reported_rows": [
+          {
+            "number": 1,
+            "slack_ns": 12.305,
+            "raw_row": "1             12.305       core/boot_1_s0/Q   core/gate/high_hold_count_0_s3/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/high_hold_count_0_s3/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 2,
+            "slack_ns": 12.305,
+            "raw_row": "2             12.305       core/boot_1_s0/Q   core/gate/low_hold_count_18_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_18_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 3,
+            "slack_ns": 12.305,
+            "raw_row": "3             12.305       core/boot_1_s0/Q   core/gate/low_hold_count_19_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_19_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 4,
+            "slack_ns": 12.305,
+            "raw_row": "4             12.305       core/boot_1_s0/Q   core/gate/low_hold_count_21_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_21_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 5,
+            "slack_ns": 12.305,
+            "raw_row": "5             12.305       core/boot_1_s0/Q   core/gate/low_hold_count_22_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_22_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 6,
+            "slack_ns": 12.305,
+            "raw_row": "6             12.305       core/boot_1_s0/Q   core/gate/low_hold_count_25_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_25_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 7,
+            "slack_ns": 12.305,
+            "raw_row": "7             12.305       core/boot_1_s0/Q   core/gate/low_hold_count_26_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_26_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 8,
+            "slack_ns": 12.305,
+            "raw_row": "8             12.305       core/boot_1_s0/Q   core/gate/low_hold_count_27_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_27_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 9,
+            "slack_ns": 12.305,
+            "raw_row": "9             12.305       core/boot_1_s0/Q   core/gate/low_hold_count_30_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_30_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 10,
+            "slack_ns": 12.305,
+            "raw_row": "10            12.305       core/boot_1_s0/Q   core/gate/low_hold_count_31_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/low_hold_count_31_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 11,
+            "slack_ns": 12.305,
+            "raw_row": "11            12.305       core/boot_1_s0/Q   core/gate/high_hold_count_1_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/high_hold_count_1_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 12,
+            "slack_ns": 12.305,
+            "raw_row": "12            12.305       core/boot_1_s0/Q   core/gate/high_hold_count_2_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/high_hold_count_2_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 13,
+            "slack_ns": 12.305,
+            "raw_row": "13            12.305       core/boot_1_s0/Q   core/gate/high_hold_count_3_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/high_hold_count_3_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 14,
+            "slack_ns": 12.305,
+            "raw_row": "14            12.305       core/boot_1_s0/Q   core/gate/high_hold_count_4_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/high_hold_count_4_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 15,
+            "slack_ns": 12.305,
+            "raw_row": "15            12.305       core/boot_1_s0/Q   core/gate/high_hold_count_5_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/high_hold_count_5_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 16,
+            "slack_ns": 12.305,
+            "raw_row": "16            12.305       core/boot_1_s0/Q   core/gate/high_hold_count_6_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/high_hold_count_6_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 17,
+            "slack_ns": 12.305,
+            "raw_row": "17            12.305       core/boot_1_s0/Q   core/gate/high_hold_count_7_s1/CLEAR      clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/high_hold_count_7_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 18,
+            "slack_ns": 12.305,
+            "raw_row": "18            12.305       core/boot_1_s0/Q   core/gate/revoke_count_7_s0/CLEAR         clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/revoke_count_7_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 19,
+            "slack_ns": 12.305,
+            "raw_row": "19            12.305       core/boot_1_s0/Q   core/gate/revoke_count_8_s0/CLEAR         clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/revoke_count_8_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 20,
+            "slack_ns": 12.305,
+            "raw_row": "20            12.305       core/boot_1_s0/Q   core/gate/revoke_count_9_s0/CLEAR         clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/revoke_count_9_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 21,
+            "slack_ns": 12.305,
+            "raw_row": "21            12.305       core/boot_1_s0/Q   core/gate/revoke_count_10_s0/CLEAR        clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/revoke_count_10_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 22,
+            "slack_ns": 12.305,
+            "raw_row": "22            12.305       core/boot_1_s0/Q   core/gate/revoke_count_11_s0/CLEAR        clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/revoke_count_11_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 23,
+            "slack_ns": 12.305,
+            "raw_row": "23            12.305       core/boot_1_s0/Q   core/gate/revoke_count_12_s0/CLEAR        clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/revoke_count_12_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 24,
+            "slack_ns": 12.305,
+            "raw_row": "24            12.305       core/boot_1_s0/Q   core/gate/interruption_count_7_s0/CLEAR   clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/interruption_count_7_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          },
+          {
+            "number": 25,
+            "slack_ns": 12.305,
+            "raw_row": "25            12.305       core/boot_1_s0/Q   core/gate/interruption_count_8_s0/CLEAR   clk50:[R]    clk50:[R]   20.000     0.000        7.382",
+            "from_node": "core/boot_1_s0/Q",
+            "to_node": "core/gate/interruption_count_8_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 20.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 7.382
+          }
+        ],
+        "section_sha256": "6e905c9ac17d505132843eae73a59d9521763868c106204d0dcb2f3bbb503615"
+      },
+      "removal": {
+        "worst_slack_ns": 2.469,
+        "reported_paths": 25,
+        "worst_path": {
+          "number": 1,
+          "slack_ns": 2.469,
+          "raw_row": "1             2.469        core/boot_5_s0/Q   core/gate/last_revoke_code_1_s0/CLEAR         clk50:[R]    clk50:[R]   0.000      -0.181       2.602",
+          "from_node": "core/boot_5_s0/Q",
+          "to_node": "core/gate/last_revoke_code_1_s0/CLEAR",
+          "from_clock": "clk50:[R]",
+          "to_clock": "clk50:[R]",
+          "relation_ns": 0.0,
+          "clock_skew_ns": -0.181,
+          "data_delay_ns": 2.602
+        },
+        "all_reported_rows": [
+          {
+            "number": 1,
+            "slack_ns": 2.469,
+            "raw_row": "1             2.469        core/boot_5_s0/Q   core/gate/last_revoke_code_1_s0/CLEAR         clk50:[R]    clk50:[R]   0.000      -0.181       2.602",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/last_revoke_code_1_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.181,
+            "data_delay_ns": 2.602
+          },
+          {
+            "number": 2,
+            "slack_ns": 2.469,
+            "raw_row": "2             2.469        core/boot_5_s0/Q   core/gate/last_interruption_code_1_s0/CLEAR   clk50:[R]    clk50:[R]   0.000      -0.181       2.602",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/last_interruption_code_1_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.181,
+            "data_delay_ns": 2.602
+          },
+          {
+            "number": 3,
+            "slack_ns": 2.48,
+            "raw_row": "3             2.480        core/boot_5_s0/Q   core/gate/last_revoke_code_0_s1/CLEAR         clk50:[R]    clk50:[R]   0.000      -0.181       2.613",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/last_revoke_code_0_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.181,
+            "data_delay_ns": 2.613
+          },
+          {
+            "number": 4,
+            "slack_ns": 2.48,
+            "raw_row": "4             2.480        core/boot_5_s0/Q   core/gate/last_interruption_code_0_s2/CLEAR   clk50:[R]    clk50:[R]   0.000      -0.181       2.613",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/last_interruption_code_0_s2/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.181,
+            "data_delay_ns": 2.613
+          },
+          {
+            "number": 5,
+            "slack_ns": 2.484,
+            "raw_row": "5             2.484        core/boot_5_s0/Q   core/gate/last_revoke_code_2_s0/CLEAR         clk50:[R]    clk50:[R]   0.000      -0.181       2.617",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/last_revoke_code_2_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.181,
+            "data_delay_ns": 2.617
+          },
+          {
+            "number": 6,
+            "slack_ns": 2.484,
+            "raw_row": "6             2.484        core/boot_5_s0/Q   core/gate/last_interruption_code_2_s0/CLEAR   clk50:[R]    clk50:[R]   0.000      -0.181       2.617",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/last_interruption_code_2_s0/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.181,
+            "data_delay_ns": 2.617
+          },
+          {
+            "number": 7,
+            "slack_ns": 2.641,
+            "raw_row": "7             2.641        core/boot_5_s0/Q   core/gate/armed_s14/CLEAR                     clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/armed_s14/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 8,
+            "slack_ns": 2.641,
+            "raw_row": "8             2.641        core/boot_5_s0/Q   core/gate/last_revoke_code_5_s1/CLEAR         clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/last_revoke_code_5_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 9,
+            "slack_ns": 2.641,
+            "raw_row": "9             2.641        core/boot_5_s0/Q   core/gate/revoke_count_0_s1/CLEAR             clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/revoke_count_0_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 10,
+            "slack_ns": 2.641,
+            "raw_row": "10            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_1_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      0.000        2.594",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_1_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 2.594
+          },
+          {
+            "number": 11,
+            "slack_ns": 2.641,
+            "raw_row": "11            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_2_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      0.000        2.594",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_2_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 2.594
+          },
+          {
+            "number": 12,
+            "slack_ns": 2.641,
+            "raw_row": "12            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_3_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      0.000        2.594",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_3_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 2.594
+          },
+          {
+            "number": 13,
+            "slack_ns": 2.641,
+            "raw_row": "13            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_4_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_4_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 14,
+            "slack_ns": 2.641,
+            "raw_row": "14            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_5_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_5_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 15,
+            "slack_ns": 2.641,
+            "raw_row": "15            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_6_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_6_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 16,
+            "slack_ns": 2.641,
+            "raw_row": "16            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_7_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_7_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 17,
+            "slack_ns": 2.641,
+            "raw_row": "17            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_8_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_8_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 18,
+            "slack_ns": 2.641,
+            "raw_row": "18            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_9_s1/CLEAR           clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_9_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 19,
+            "slack_ns": 2.641,
+            "raw_row": "19            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_10_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_10_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 20,
+            "slack_ns": 2.641,
+            "raw_row": "20            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_20_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_20_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 21,
+            "slack_ns": 2.641,
+            "raw_row": "21            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_23_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_23_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 22,
+            "slack_ns": 2.641,
+            "raw_row": "22            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_24_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        2.594",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_24_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 2.594
+          },
+          {
+            "number": 23,
+            "slack_ns": 2.641,
+            "raw_row": "23            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_28_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_28_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 24,
+            "slack_ns": 2.641,
+            "raw_row": "24            2.641        core/boot_5_s0/Q   core/gate/low_hold_count_29_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      -0.004       2.597",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/low_hold_count_29_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": -0.004,
+            "data_delay_ns": 2.597
+          },
+          {
+            "number": 25,
+            "slack_ns": 2.641,
+            "raw_row": "25            2.641        core/boot_5_s0/Q   core/gate/high_hold_count_8_s1/CLEAR          clk50:[R]    clk50:[R]   0.000      0.000        2.594",
+            "from_node": "core/boot_5_s0/Q",
+            "to_node": "core/gate/high_hold_count_8_s1/CLEAR",
+            "from_clock": "clk50:[R]",
+            "to_clock": "clk50:[R]",
+            "relation_ns": 0.0,
+            "clock_skew_ns": 0.0,
+            "data_delay_ns": 2.594
+          }
+        ],
+        "section_sha256": "bd0521fffceed4571b2956c7f57694bf2c28f10bf21099371526151af1dc78f4"
+      },
+      "minimum_pulse_width": {
+        "worst_slack_ns": 7.387,
+        "reported_paths": 10,
+        "worst_path": {
+          "number": 1,
+          "slack_ns": 7.387,
+          "raw_row": "1        7.387   8.287          0.900            Low Pulse Width   clk50   core/imu/estimator/cdeg_scaled_0_s",
+          "actual_width_ns": 8.287,
+          "required_width_ns": 0.9,
+          "pulse_type": "Low Pulse Width",
+          "clock": "clk50",
+          "object": "core/imu/estimator/cdeg_scaled_0_s"
+        },
+        "all_reported_rows": [
+          {
+            "number": 1,
+            "slack_ns": 7.387,
+            "raw_row": "1        7.387   8.287          0.900            Low Pulse Width   clk50   core/imu/estimator/cdeg_scaled_0_s",
+            "actual_width_ns": 8.287,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "core/imu/estimator/cdeg_scaled_0_s"
+          },
+          {
+            "number": 2,
+            "slack_ns": 7.387,
+            "raw_row": "2        7.387   8.287          0.900            Low Pulse Width   clk50   core/controller/n4769_s",
+            "actual_width_ns": 8.287,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "core/controller/n4769_s"
+          },
+          {
+            "number": 3,
+            "slack_ns": 7.387,
+            "raw_row": "3        7.387   8.287          0.900            Low Pulse Width   clk50   native_navigation/velocity_fusion/n2039_s",
+            "actual_width_ns": 8.287,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "native_navigation/velocity_fusion/n2039_s"
+          },
+          {
+            "number": 4,
+            "slack_ns": 7.387,
+            "raw_row": "4        7.387   8.287          0.900            Low Pulse Width   clk50   native_navigation/height_fusion/n2383_s",
+            "actual_width_ns": 8.287,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "native_navigation/height_fusion/n2383_s"
+          },
+          {
+            "number": 5,
+            "slack_ns": 7.387,
+            "raw_row": "5        7.387   8.287          0.900            Low Pulse Width   clk50   native_navigation/position/n893_s",
+            "actual_width_ns": 8.287,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "native_navigation/position/n893_s"
+          },
+          {
+            "number": 6,
+            "slack_ns": 7.391,
+            "raw_row": "6        7.391   8.291          0.900            Low Pulse Width   clk50   core/fallback_sticks/n1034_s",
+            "actual_width_ns": 8.291,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "core/fallback_sticks/n1034_s"
+          },
+          {
+            "number": 7,
+            "slack_ns": 7.391,
+            "raw_row": "7        7.391   8.291          0.900            Low Pulse Width   clk50   native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+            "actual_width_ns": 8.291,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s"
+          },
+          {
+            "number": 8,
+            "slack_ns": 7.391,
+            "raw_row": "8        7.391   8.291          0.900            Low Pulse Width   clk50   native_navigation/height_fusion/n5061_s",
+            "actual_width_ns": 8.291,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "native_navigation/height_fusion/n5061_s"
+          },
+          {
+            "number": 9,
+            "slack_ns": 7.392,
+            "raw_row": "9        7.392   8.292          0.900            Low Pulse Width   clk50   native_navigation/controller_proof/n4214_s",
+            "actual_width_ns": 8.292,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "native_navigation/controller_proof/n4214_s"
+          },
+          {
+            "number": 10,
+            "slack_ns": 7.392,
+            "raw_row": "10       7.392   8.292          0.900            Low Pulse Width   clk50   core/imu/estimator/angle/compensated_0_s",
+            "actual_width_ns": 8.292,
+            "required_width_ns": 0.9,
+            "pulse_type": "Low Pulse Width",
+            "clock": "clk50",
+            "object": "core/imu/estimator/angle/compensated_0_s"
+          }
+        ],
+        "section_sha256": "bfb268baab006c23e08fd7e944340ad395c9121f867d2629be647cb53e925f84"
+      }
+    }
+  },
+  "route_log_raw": {
+    "placement_routing_completed": true,
+    "bitstream_generation_completed": true,
+    "EOF": true,
+    "unrouted_reports": [],
+    "no_positive_unrouted_count": true,
+    "terminal_log_tail": [
+      "Placement and routing completed",
+      "Bitstream generation in progress......",
+      "Bitstream generation completed",
+      "Running power analysis......",
+      "[100%] Power analysis completed",
+      "Generate file \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\physical_p1r0_01\\source\\impl\\pnr\\acg720_ano_port.power.html\" completed",
+      "Generate file \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\physical_p1r0_01\\source\\impl\\pnr\\acg720_ano_port.pin.html\" completed",
+      "Generate file \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\physical_p1r0_01\\source\\impl\\pnr\\acg720_ano_port.rpt.html\" completed",
+      "Generate file \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\physical_p1r0_01\\source\\impl\\pnr\\acg720_ano_port.rpt.txt\" completed",
+      "Generate file \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\physical_p1r0_01\\source\\impl\\pnr\\acg720_ano_port.tr.html\" completed",
+      "Generate file \"C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\physical_p1r0_01\\source\\impl\\pnr\\acg720_ano_port.tr\" completed",
+      "Mon Oct 26 16:20:06 2026",
+      "",
+      "PHYSICAL_COMMAND_RETURNED_EOF"
+    ]
+  },
+  "pins_raw": {
+    "count": 18,
+    "CST_count": 18,
+    "pins": {
+      "clk50": {
+        "pin": "Y18",
+        "direction": "in"
+      },
+      "imu_miso": {
+        "pin": "D19",
+        "direction": "in"
+      },
+      "rc_ppm_in": {
+        "pin": "B17",
+        "direction": "in"
+      },
+      "range_rx": {
+        "pin": "C14",
+        "direction": "in"
+      },
+      "radio_rx": {
+        "pin": "B16",
+        "direction": "in"
+      },
+      "imu_sck": {
+        "pin": "E17",
+        "direction": "out"
+      },
+      "imu_mosi": {
+        "pin": "C20",
+        "direction": "out"
+      },
+      "imu_cs_n": {
+        "pin": "E18",
+        "direction": "out"
+      },
+      "imu_gyro_cs_n": {
+        "pin": "F20",
+        "direction": "out"
+      },
+      "range_tx": {
+        "pin": "C15",
+        "direction": "out"
+      },
+      "uart_tx": {
+        "pin": "M15",
+        "direction": "out"
+      },
+      "radio_tx": {
+        "pin": "B15",
+        "direction": "out"
+      },
+      "led2": {
+        "pin": "L21",
+        "direction": "out"
+      },
+      "led3": {
+        "pin": "K21",
+        "direction": "out"
+      },
+      "motor1_pwm": {
+        "pin": "D17",
+        "direction": "out"
+      },
+      "motor2_pwm": {
+        "pin": "C17",
+        "direction": "out"
+      },
+      "motor3_pwm": {
+        "pin": "E16",
+        "direction": "out"
+      },
+      "motor4_pwm": {
+        "pin": "D16",
+        "direction": "out"
+      }
+    },
+    "CST_pins": {
+      "clk50": "Y18",
+      "imu_sck": "E17",
+      "imu_mosi": "C20",
+      "imu_miso": "D19",
+      "imu_cs_n": "E18",
+      "rc_ppm_in": "B17",
+      "uart_tx": "M15",
+      "led2": "L21",
+      "led3": "K21",
+      "motor1_pwm": "D17",
+      "motor2_pwm": "C17",
+      "motor3_pwm": "E16",
+      "motor4_pwm": "D16",
+      "range_rx": "C14",
+      "range_tx": "C15",
+      "imu_gyro_cs_n": "F20",
+      "radio_tx": "B15",
+      "radio_rx": "B16"
+    },
+    "raw_RPT_rows": [
+      "clk50          | -         | Y18/8         | Y          | in    | IOB87[A] | GCLKT_10        | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | OFF           | bus4",
+      "imu_miso       | -         | D19/2         | Y          | in    | IOT120[B] | GCLKC_2         | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | OFF           | bus1",
+      "rc_ppm_in      | -         | B17/1         | Y          | in    | IOT104[A] | GCLKT_1         | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | OFF           | bus2",
+      "range_rx       | -         | C14/1         | Y          | in    | IOT85[A] | -               | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | OFF           | -",
+      "radio_rx       | -         | B16/1         | Y          | in    | IOT97[B] | -               | LVCMOS33   | OFF   | UP        | OFF       | ON         | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | OFF           | bus2",
+      "imu_sck        | -         | E17/1         | Y          | out   | IOT89[B] | Q0REF_C_IN0     | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus2",
+      "imu_mosi       | -         | C20/2         | Y          | out   | IOT131[B] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus0",
+      "imu_cs_n       | -         | E18/2         | Y          | out   | IOT117[B] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus1",
+      "imu_gyro_cs_n  | -         | F20/2         | Y          | out   | IOT124[B] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus1",
+      "range_tx       | -         | C15/1         | Y          | out   | IOT85[B] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | -",
+      "uart_tx        | -         | M15/5         | Y          | out   | IOR52[A] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus4",
+      "radio_tx       | -         | B15/1         | Y          | out   | IOT97[A] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus2",
+      "led2           | -         | L21/5         | Y          | out   | IOR68[B] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus4",
+      "led3           | -         | K21/5         | Y          | out   | IOR59[A] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus4",
+      "motor1_pwm     | -         | D17/1         | Y          | out   | IOT106[A] | GCLKT_0         | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus2",
+      "motor2_pwm     | -         | C17/1         | Y          | out   | IOT106[B] | GCLKC_0         | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus2",
+      "motor3_pwm     | -         | E16/1         | Y          | out   | IOT87[A] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus2",
+      "motor4_pwm     | -         | D16/1         | Y          | out   | IOT87[B] | -               | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE          | NONE          | bus2"
+    ]
+  },
+  "bitstream_raw": {
+    "sha256": "f2d66602e8b93a0320a0323f1c28c7bf420e9a0a01d7ed156b2c59737b1d5b6f",
+    "bytes": 17456635,
+    "header_lines": [
+      "//Copyright (C)2014-2026 Gowin Semiconductor Corporation.",
+      "//All rights reserved.",
+      "//File Title: Bitstream file",
+      "//Tool Version: V1.9.12.04 (64-bit) (89079)",
+      "//Device: GW5AT-60",
+      "//Device Version: B",
+      "//Part Number: GW5AT-LV60PG484AC1/I0",
+      "//Device-package: GW5AT-60B-PBGA484A",
+      "//BackgroundProgramming: OFF",
+      "//CheckSum: 0xC833",
+      "//UserCode: 0x0000b0b4",
+      "//LoadingRate: 2.500MHz",
+      "//CRCCheck: ON",
+      "//Compress: OFF",
+      "//Encryption: OFF",
+      "//SecurityBit: ON",
+      "//SecureMode: OFF",
+      "//JTAGAsRegularIO: OFF",
+      "//SEUHandler: OFF",
+      "//MultiBootAddrWidth: 24",
+      "//MultiBootSPIAddr: 0x00000000",
+      "//MspiJumpAddrWidth: 24",
+      "//MspiJumpSPIAddr: 0x000000",
+      "//Created Time: Mon Oct 26 16:20:00 2026"
+    ],
+    "header_fields": {
+      "File Title": "Bitstream file",
+      "Tool Version": "V1.9.12.04 (64-bit) (89079)",
+      "Device": "GW5AT-60",
+      "Device Version": "B",
+      "Part Number": "GW5AT-LV60PG484AC1/I0",
+      "Device-package": "GW5AT-60B-PBGA484A",
+      "BackgroundProgramming": "OFF",
+      "CheckSum": "0xC833",
+      "UserCode": "0x0000b0b4",
+      "LoadingRate": "2.500MHz",
+      "CRCCheck": "ON",
+      "Compress": "OFF",
+      "Encryption": "OFF",
+      "SecurityBit": "ON",
+      "SecureMode": "OFF",
+      "JTAGAsRegularIO": "OFF",
+      "SEUHandler": "OFF",
+      "MultiBootAddrWidth": "24",
+      "MultiBootSPIAddr": "0x00000000",
+      "MspiJumpAddrWidth": "24",
+      "MspiJumpSPIAddr": "0x000000",
+      "Created Time": "Mon Oct 26 16:20:00 2026"
+    },
+    "payload_lines": 18103,
+    "payload_total_bits": 17419768,
+    "payload_line_lengths": {
+      "16": 3,
+      "32": 6,
+      "64": 16,
+      "88": 1,
+      "96": 1,
+      "128": 1,
+      "160": 4,
+      "280": 512,
+      "432": 7,
+      "984": 17552
+    },
+    "payload_all_binary": true,
+    "newline_terminated": true,
+    "last_six_payload_records": [
+      "0110100000000000000000000000000000000000000000000000000000000000",
+      "0000101000000000000000000000000000000000000000001011000010110100",
+      "1111111111111111111111111111111111111111111111111111111111111111",
+      "00001000000000000000000000000000",
+      "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "1111111111111111"
+    ],
+    "footer_last_record_16_ones": true,
+    "nonempty": true,
+    "completeness_evidence": "Stable nonempty ASCII bitstream with full header, binary-only payload, final footer record, and vendor bitstream completion plus normal actual wait0. No independent silicon/CRC execution or hardware loading."
+  },
+  "CFG_raw": [
+    "set JTAG regular_io = false",
+    "set SSPI regular_io = false",
+    "set MSPI regular_io = false",
+    "set READY regular_io = false",
+    "set DONE regular_io = false",
+    "set I2C regular_io = false",
+    "set CPU regular_io = false",
+    "set CRC_check = true",
+    "set compress = false",
+    "set encryption = false",
+    "set security_bit_enable = true",
+    "set bsram_init_fuse_print = true",
+    "set secure_mode = false",
+    "set program_done_bypass = false",
+    "set wake_up = 0",
+    "set user_code = 0x0000B0B4",
+    "set format = binary",
+    "set power_on_reset_monitor = true",
+    "set seu_handler = false",
+    "set ext_cclk = false",
+    "set vccx = 3.3",
+    "set vcc = 0.95",
+    "set unused_pin = default"
+  ],
+  "constraints": {
+    "SDC_raw": "create_clock -name clk50 -period 20.000 [get_ports {clk50}]\n# The sole fanout of this pad is the first synchronizer stage (proved from\n# the mapped netlist). All synchronizer-Q -> logic paths remain timed.\nset_false_path -from [get_ports {radio_rx}]\n",
+    "SDC_sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "unchanged_frozen_SDC": true,
+    "sole_existing_falsepath": "radio_rx pad only; fixed original SDC unchanged",
+    "Tcl_raw": "open_project physical.gprj\nset_option -top_module acg720_ano_port\nset_option -output_base_name acg720_ano_port\nset_option -user_code 0000B0B4\nset_option -place_option 1\nset_option -route_option 0\nset_option -timing_driven 1\nset_option -replicate_resources 0\nset_option -map_option 2\nset_option -global_freq 50\nset_option -max_fanout 200\nset_option -opt_goal area\nset_option -route_maxfan 23\nrun pnr\nputs PHYSICAL_COMMAND_RETURNED_EOF\nflush stdout\n",
+    "physical_options": {
+      "place": 1,
+      "route": 0,
+      "map_option": 2,
+      "replicate_resources": 0,
+      "timing_driven": 1
+    },
+    "target_period_ns": 20
+  },
+  "source55": {
+    "count": 55,
+    "expected": {
+      "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+      "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+      "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+      "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+      "mtf_xyz_navigation_control.v": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+      "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+      "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+      "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+      "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+      "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+      "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+      "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+      "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+      "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+      "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+      "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+      "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "position/mtf_shared_height_fusion.v": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+      "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "position/mtf_xyz_hold_control.v": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+      "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+      "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+      "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+      "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+      "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+    },
+    "maps_before": {
+      "physical_attempt": {
+        "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+        "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+        "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+        "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+        "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+        "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+        "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+        "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+        "mtf_xyz_navigation_control.v": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "position/mtf_xyz_hold_control.v": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+        "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+        "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+        "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+        "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392"
+      },
+      "canonical_v6": {
+        "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+        "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+        "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+        "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+        "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+        "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+        "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+        "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+        "mtf_xyz_navigation_control.v": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "position/mtf_xyz_hold_control.v": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+        "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+        "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+        "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+        "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392"
+      },
+      "donor_SYN": {
+        "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+        "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+        "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+        "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+        "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+        "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+        "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+        "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+        "mtf_xyz_navigation_control.v": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "position/mtf_xyz_hold_control.v": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+        "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+        "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+        "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+        "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392"
+      }
+    },
+    "maps_after": {
+      "physical_attempt": {
+        "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+        "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+        "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+        "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+        "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+        "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+        "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+        "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+        "mtf_xyz_navigation_control.v": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "position/mtf_xyz_hold_control.v": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+        "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+        "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+        "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+        "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392"
+      },
+      "canonical_v6": {
+        "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+        "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+        "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+        "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+        "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+        "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+        "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+        "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+        "mtf_xyz_navigation_control.v": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "position/mtf_xyz_hold_control.v": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+        "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+        "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+        "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+        "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392"
+      },
+      "donor_SYN": {
+        "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+        "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+        "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+        "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+        "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+        "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+        "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+        "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+        "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+        "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+        "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+        "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+        "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+        "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+        "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+        "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+        "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+        "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+        "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+        "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+        "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+        "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+        "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+        "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+        "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+        "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+        "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+        "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+        "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+        "mtf_xyz_navigation_control.v": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+        "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+        "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+        "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+        "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+        "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+        "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+        "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+        "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+        "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+        "position/mtf_shared_height_fusion.v": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+        "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+        "position/mtf_xyz_hold_control.v": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+        "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+        "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+        "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+        "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+        "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+        "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+        "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+        "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+        "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+        "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+        "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+        "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+        "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392"
+      }
+    },
+    "fingerprints_before": {
+      "physical_attempt": "aabd06a537a1bf06d36a93b79fc024c0336f335fe34cc285d1939a10d5531cce",
+      "canonical_v6": "aabd06a537a1bf06d36a93b79fc024c0336f335fe34cc285d1939a10d5531cce",
+      "donor_SYN": "aabd06a537a1bf06d36a93b79fc024c0336f335fe34cc285d1939a10d5531cce"
+    },
+    "fingerprints_after": {
+      "physical_attempt": "aabd06a537a1bf06d36a93b79fc024c0336f335fe34cc285d1939a10d5531cce",
+      "canonical_v6": "aabd06a537a1bf06d36a93b79fc024c0336f335fe34cc285d1939a10d5531cce",
+      "donor_SYN": "aabd06a537a1bf06d36a93b79fc024c0336f335fe34cc285d1939a10d5531cce"
+    },
+    "wrapper_sha256": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+    "height_fusion_sha256": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+    "hold_sha256": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+    "original_B4_and_v5_source_unchanged": true
+  },
+  "VG_sha256": "6b169818d5029c45e0a778d74d8d3e90e129caa430e93eb3778661f18fa7cb99",
+  "donor": {
+    "bindings": {
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\verification\\build_input.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "7256dfdb57c4fde10cc1dcc4fe2b64149d5a54392817432f8592c56df34a58b8"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\verification\\synthesis_summary.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "0364db8f8c0e389824b1974c44c1fa58bdbae76cc2a8bdd0c58bc121e1e37268"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\verification\\synthesis_exit.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "7ab519c5b0b7df5013fc2fb0d08ae249c44932c55fc5fe9aed580aa26872bbf9"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\verification\\synthesis.log": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "b279a912baf2e0bd087b7a0cef46486cc77913eda7e80848bd0e1ce21d2ccbaf"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\verification\\mapped_audit.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "a2827457c1356daa3f980c918e19cb5b3ffda5e0b8d4bc1e362b3ed8715383f5"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\verification\\gain_port_audit.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "08945997c82e46929de64faa64dc11ac2d75284fcafb6b9e5fbede1c7349846a"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\verification\\strict_ff_clock_audit.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "062e5ded325fdd81fd1179f8e1126b0323f739c381dc8d0e5921e76f69c5eefd"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\verification\\resource_comparison.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "b2985ee09af09306f568285a119a84866c54cdbfe2e8c4ba4b3991f4bac7b57a"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\source_freeze.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "c611d9b8d678ab0b746df4498c8a654ab70a69bc59cf4329f283025150b6979c"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v6\\runner_exit.json": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "c7344762550da7d0354b045f4deb7d4403e9b0e3044673aa98d723847b7f3961"
+      },
+      "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v6\\build_attempt_01\\source\\impl\\gwsynthesis\\acg720_ano_port.vg": {
+        "sha256_matches": true,
+        "bytes_match": true,
+        "sha256": "6b169818d5029c45e0a778d74d8d3e90e129caa430e93eb3778661f18fa7cb99"
+      }
+    },
+    "summary_audit_hash_checks": {
+      "synthesis_exit.json": true,
+      "mapped_audit.json": true,
+      "gain_port_audit.json": true,
+      "strict_ff_clock_audit.json": true,
+      "resource_comparison.json": true
+    },
+    "actual_SYN_wait": 0,
+    "mapped_pass": true,
+    "gain_p_INIT": 1000,
+    "gain_i_INIT": 350,
+    "gain_p_FF": 16,
+    "gain_i_FF": 16,
+    "strict_clock_FF_count": 27725,
+    "strict_clock_all_CLK50": true,
+    "strict_clock_bad": []
+  },
+  "producer_audit_crosscheck": {
+    "only_checked_after_independent_raw_parsing": true,
+    "producer_pass": false,
+    "all_five_values_and_counts_match": {
+      "setup": true,
+      "hold": true,
+      "recovery": true,
+      "removal": true,
+      "minimum_pulse_width": true
+    },
+    "Fmax_and_violated_endpoints_match": true
+  },
+  "raw_artifacts_before": {
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/physical_exit.json": {
+      "sha256": "cd0aae55befaed9ffbeca7adb40496bfb41bf2da71ccddc83e0444eef3afbd9a",
+      "bytes": 1041,
+      "mtime_ns": 1793002806887556400
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/physical.log": {
+      "sha256": "2cde114dcfebef13247fda735770a5debeac168a1b855df2e6c647aa7d707f1d",
+      "bytes": 2765,
+      "mtime_ns": 1793002806791696100
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/physical_input.json": {
+      "sha256": "ff6db9c7a10fcd740db062c3f59d814c5fad42c884daafcf11e43ac52da835ec",
+      "bytes": 21460,
+      "mtime_ns": 1793001922971175300
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/build_input.json": {
+      "sha256": "ff6db9c7a10fcd740db062c3f59d814c5fad42c884daafcf11e43ac52da835ec",
+      "bytes": 21460,
+      "mtime_ns": 1793001922971175300
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/physical_audit.json": {
+      "sha256": "6d4c3fa48b6cdfbbbd69a96a8b9a66fcdc04555ae15ce9c70b7daee7d059ebb6",
+      "bytes": 10093,
+      "mtime_ns": 1793002807053915700
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/build_failure.json": {
+      "sha256": "e77bbc78f99a5cb390f2907ea0c5a3581450210b9640ab6fb34d8d7706539366",
+      "bytes": 1967,
+      "mtime_ns": 1793002807061932500
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/donor_evidence_binding.json": {
+      "sha256": "073d0c11e10aa0105aae911d50f1776a8e6a5d013b24bf7974dfdbe376650498",
+      "bytes": 8998,
+      "mtime_ns": 1793001922912097400
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/project_serialization_check.json": {
+      "sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a",
+      "bytes": 185,
+      "mtime_ns": 1793001922961098100
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/acg720_ano_port.tr": {
+      "sha256": "672611b39d304c4df7c308da6af1e9bdf88e38b43d00f78ac7287e473d24df2c",
+      "bytes": 487724,
+      "mtime_ns": 1793002806071915000
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/acg720_ano_port.rpt.txt": {
+      "sha256": "ec7625d99e07d36937d5cd9cfde051896794c5a6ee548e4f648ccf005933c74f",
+      "bytes": 99325,
+      "mtime_ns": 1793002804508364000
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/acg720_ano_port.fs": {
+      "sha256": "f2d66602e8b93a0320a0323f1c28c7bf420e9a0a01d7ed156b2c59737b1d5b6f",
+      "bytes": 17456635,
+      "mtime_ns": 1793002803856328200
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/acg720_ano_port.pr": {
+      "sha256": "0d945763aaca00c47934171ea2159ad7b3263ff5a4f950726eb2723529fda42a",
+      "bytes": 125852158,
+      "mtime_ns": 1793002793239740800
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/device.cfg": {
+      "sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+      "bytes": 600,
+      "mtime_ns": 1793001924016387700
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/acg720_ano_port.cst": {
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "bytes": 1891,
+      "mtime_ns": 1792971228190942500
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/acg720_ano_port.sdc": {
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "bytes": 254,
+      "mtime_ns": 1792971228204507200
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/physical.gprj": {
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+      "bytes": 434,
+      "mtime_ns": 1793001922959076100
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "sha256": "6b169818d5029c45e0a778d74d8d3e90e129caa430e93eb3778661f18fa7cb99",
+      "bytes": 14562069,
+      "mtime_ns": 1793001427863689800
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/physical.tcl": {
+      "sha256": "4f45ccbab5c1d8162de32dd380c38963a14dcbaa141f2b7ba01b231927e69041",
+      "bytes": 463,
+      "mtime_ns": 1793001922962110000
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/build_input.json": {
+      "sha256": "7256dfdb57c4fde10cc1dcc4fe2b64149d5a54392817432f8592c56df34a58b8",
+      "bytes": 18751,
+      "mtime_ns": 1793001238773506600
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/synthesis_summary.json": {
+      "sha256": "0364db8f8c0e389824b1974c44c1fa58bdbae76cc2a8bdd0c58bc121e1e37268",
+      "bytes": 9739,
+      "mtime_ns": 1793001435309076900
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/synthesis_exit.json": {
+      "sha256": "7ab519c5b0b7df5013fc2fb0d08ae249c44932c55fc5fe9aed580aa26872bbf9",
+      "bytes": 1046,
+      "mtime_ns": 1793001430957250900
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/synthesis.log": {
+      "sha256": "b279a912baf2e0bd087b7a0cef46486cc77913eda7e80848bd0e1ce21d2ccbaf",
+      "bytes": 82097,
+      "mtime_ns": 1793001430869374800
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/mapped_audit.json": {
+      "sha256": "a2827457c1356daa3f980c918e19cb5b3ffda5e0b8d4bc1e362b3ed8715383f5",
+      "bytes": 8223,
+      "mtime_ns": 1793001432427546900
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/gain_port_audit.json": {
+      "sha256": "08945997c82e46929de64faa64dc11ac2d75284fcafb6b9e5fbede1c7349846a",
+      "bytes": 17538,
+      "mtime_ns": 1793001433975610300
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/strict_ff_clock_audit.json": {
+      "sha256": "062e5ded325fdd81fd1179f8e1126b0323f739c381dc8d0e5921e76f69c5eefd",
+      "bytes": 169,
+      "mtime_ns": 1793001435225559800
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/resource_comparison.json": {
+      "sha256": "b2985ee09af09306f568285a119a84866c54cdbfe2e8c4ba4b3991f4bac7b57a",
+      "bytes": 3619,
+      "mtime_ns": 1793001435238272300
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/source_freeze.json": {
+      "sha256": "c611d9b8d678ab0b746df4498c8a654ab70a69bc59cf4329f283025150b6979c",
+      "bytes": 12135,
+      "mtime_ns": 1793001111255494300
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/runner_exit.json": {
+      "sha256": "c7344762550da7d0354b045f4deb7d4403e9b0e3044673aa98d723847b7f3961",
+      "bytes": 1045,
+      "mtime_ns": 1793001435382708500
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "sha256": "6b169818d5029c45e0a778d74d8d3e90e129caa430e93eb3778661f18fa7cb99",
+      "bytes": 14562069,
+      "mtime_ns": 1793001427863689800
+    }
+  },
+  "raw_artifacts_after": {
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/physical_exit.json": {
+      "sha256": "cd0aae55befaed9ffbeca7adb40496bfb41bf2da71ccddc83e0444eef3afbd9a",
+      "bytes": 1041,
+      "mtime_ns": 1793002806887556400
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/physical.log": {
+      "sha256": "2cde114dcfebef13247fda735770a5debeac168a1b855df2e6c647aa7d707f1d",
+      "bytes": 2765,
+      "mtime_ns": 1793002806791696100
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/physical_input.json": {
+      "sha256": "ff6db9c7a10fcd740db062c3f59d814c5fad42c884daafcf11e43ac52da835ec",
+      "bytes": 21460,
+      "mtime_ns": 1793001922971175300
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/build_input.json": {
+      "sha256": "ff6db9c7a10fcd740db062c3f59d814c5fad42c884daafcf11e43ac52da835ec",
+      "bytes": 21460,
+      "mtime_ns": 1793001922971175300
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/physical_audit.json": {
+      "sha256": "6d4c3fa48b6cdfbbbd69a96a8b9a66fcdc04555ae15ce9c70b7daee7d059ebb6",
+      "bytes": 10093,
+      "mtime_ns": 1793002807053915700
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/build_failure.json": {
+      "sha256": "e77bbc78f99a5cb390f2907ea0c5a3581450210b9640ab6fb34d8d7706539366",
+      "bytes": 1967,
+      "mtime_ns": 1793002807061932500
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/donor_evidence_binding.json": {
+      "sha256": "073d0c11e10aa0105aae911d50f1776a8e6a5d013b24bf7974dfdbe376650498",
+      "bytes": 8998,
+      "mtime_ns": 1793001922912097400
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/verification/project_serialization_check.json": {
+      "sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a",
+      "bytes": 185,
+      "mtime_ns": 1793001922961098100
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/acg720_ano_port.tr": {
+      "sha256": "672611b39d304c4df7c308da6af1e9bdf88e38b43d00f78ac7287e473d24df2c",
+      "bytes": 487724,
+      "mtime_ns": 1793002806071915000
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/acg720_ano_port.rpt.txt": {
+      "sha256": "ec7625d99e07d36937d5cd9cfde051896794c5a6ee548e4f648ccf005933c74f",
+      "bytes": 99325,
+      "mtime_ns": 1793002804508364000
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/acg720_ano_port.fs": {
+      "sha256": "f2d66602e8b93a0320a0323f1c28c7bf420e9a0a01d7ed156b2c59737b1d5b6f",
+      "bytes": 17456635,
+      "mtime_ns": 1793002803856328200
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/acg720_ano_port.pr": {
+      "sha256": "0d945763aaca00c47934171ea2159ad7b3263ff5a4f950726eb2723529fda42a",
+      "bytes": 125852158,
+      "mtime_ns": 1793002793239740800
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/pnr/device.cfg": {
+      "sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+      "bytes": 600,
+      "mtime_ns": 1793001924016387700
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/acg720_ano_port.cst": {
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "bytes": 1891,
+      "mtime_ns": 1792971228190942500
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/acg720_ano_port.sdc": {
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "bytes": 254,
+      "mtime_ns": 1792971228204507200
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/physical.gprj": {
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+      "bytes": 434,
+      "mtime_ns": 1793001922959076100
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "sha256": "6b169818d5029c45e0a778d74d8d3e90e129caa430e93eb3778661f18fa7cb99",
+      "bytes": 14562069,
+      "mtime_ns": 1793001427863689800
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/physical_p1r0_01/physical.tcl": {
+      "sha256": "4f45ccbab5c1d8162de32dd380c38963a14dcbaa141f2b7ba01b231927e69041",
+      "bytes": 463,
+      "mtime_ns": 1793001922962110000
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/build_input.json": {
+      "sha256": "7256dfdb57c4fde10cc1dcc4fe2b64149d5a54392817432f8592c56df34a58b8",
+      "bytes": 18751,
+      "mtime_ns": 1793001238773506600
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/synthesis_summary.json": {
+      "sha256": "0364db8f8c0e389824b1974c44c1fa58bdbae76cc2a8bdd0c58bc121e1e37268",
+      "bytes": 9739,
+      "mtime_ns": 1793001435309076900
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/synthesis_exit.json": {
+      "sha256": "7ab519c5b0b7df5013fc2fb0d08ae249c44932c55fc5fe9aed580aa26872bbf9",
+      "bytes": 1046,
+      "mtime_ns": 1793001430957250900
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/synthesis.log": {
+      "sha256": "b279a912baf2e0bd087b7a0cef46486cc77913eda7e80848bd0e1ce21d2ccbaf",
+      "bytes": 82097,
+      "mtime_ns": 1793001430869374800
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/mapped_audit.json": {
+      "sha256": "a2827457c1356daa3f980c918e19cb5b3ffda5e0b8d4bc1e362b3ed8715383f5",
+      "bytes": 8223,
+      "mtime_ns": 1793001432427546900
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/gain_port_audit.json": {
+      "sha256": "08945997c82e46929de64faa64dc11ac2d75284fcafb6b9e5fbede1c7349846a",
+      "bytes": 17538,
+      "mtime_ns": 1793001433975610300
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/strict_ff_clock_audit.json": {
+      "sha256": "062e5ded325fdd81fd1179f8e1126b0323f739c381dc8d0e5921e76f69c5eefd",
+      "bytes": 169,
+      "mtime_ns": 1793001435225559800
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/verification/resource_comparison.json": {
+      "sha256": "b2985ee09af09306f568285a119a84866c54cdbfe2e8c4ba4b3991f4bac7b57a",
+      "bytes": 3619,
+      "mtime_ns": 1793001435238272300
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/source_freeze.json": {
+      "sha256": "c611d9b8d678ab0b746df4498c8a654ab70a69bc59cf4329f283025150b6979c",
+      "bytes": 12135,
+      "mtime_ns": 1793001111255494300
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v6/runner_exit.json": {
+      "sha256": "c7344762550da7d0354b045f4deb7d4403e9b0e3044673aa98d723847b7f3961",
+      "bytes": 1045,
+      "mtime_ns": 1793001435382708500
+    },
+    "out/z_aw_fix_20261026/compact_aw_v6/build_attempt_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "sha256": "6b169818d5029c45e0a778d74d8d3e90e129caa430e93eb3778661f18fa7cb99",
+      "bytes": 14562069,
+      "mtime_ns": 1793001427863689800
+    }
+  },
+  "raw_artifacts_stable_through_review": true,
+  "disposition": "Preserve as full-route timing failure. Do not deliver or qualify this FS, lower target frequency, add false paths, or infer hardware/flight acceptance."
+}

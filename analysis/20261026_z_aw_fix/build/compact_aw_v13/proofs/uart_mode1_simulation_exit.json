@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v13\\proofs\\uart_mode1.vvp"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v13\\proofs",
+  "started_utc": "2026-10-26T15:22:03.341760+00:00",
+  "pid": 30704,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "seconds": 28.063459157943726,
+  "ended_utc": "2026-10-26T15:22:31.405244+00:00",
+  "log_sha256": "2596063434cc6907557efe3efdc07f544a8c2d3726bc90ad199e09cbda3934fa"
+}

@@ -1,0 +1,82 @@
+3. Resource Usage Summary
+
+  --------------------------------------------------------------------------------
+  Resources                   | Usage                               | Utilization
+  --------------------------------------------------------------------------------
+  Logic                       | 46003/59904                         |  77%
+    --LUT,ALU,ROM16           | 46003(36216 LUT, 9787 ALU, 0 ROM16) | -
+    --SSRAM(RAM16)            | 0                                   | -
+  Register                    | 27786/60780                         |  46%
+    --Logic Register as Latch | 0/59904                             |  0%
+    --Logic Register as FF    | 27782/59904                         |  47%
+    --I/O Register as Latch   | 0/876                               |  0%
+    --I/O Register as FF      | 4/876                               |  <1%
+  CLS                         | 26562/29952                         |  89%
+  I/O Port                    | 18/297                              |  7%
+  I/O Buf                     | 18                                  | -
+    --Input Buf               | 5                                   | -
+    --Output Buf              | 13                                  | -
+    --Inout Buf               | 0                                   | -
+  BSRAM                       | 2/118                               | 2%
+    --pROM                    | 2
+  DSP                         | 59.5/118                            | 51%
+    --MULT12X12               | 7
+    --MULT27X36               | 13
+    --MULTALU27X18            | 30
+  ================================================================================
+
+
+
+4. I/O Bank Usage Summary
+
+  --------------------------------------
+  I/O Bank  | Usage       | Utilization 
+  --------------------------------------
+  bank 1   | 10/25       | 40%         
+  bank 2   | 4/26        | 16%         
+  bank 3   | 0/8         | 0%          
+  bank 4   | 0/16        | 0%          
+  bank 5   | 3/34        | 9%          
+  bank 6   | 0/20        | 0%          
+  bank 7   | 0/24        | 0%          
+  bank 8   | 1/24        | 5%          
+  bank 9   | 0/66        | 0%          
+  bank 10  | 0/25        | 0%          
+  bank 11  | 0/25        | 0%          
+  bank 12  | 0/4         | 0%          
+  ======================================
+
+
+5. Clock Resource Usage Summary
+
+  ------------------------------------------
+  Clock Resource| Usage         | Utilization 
+  ------------------------------------------
+  PRIMARY       | 8/8           | 100%
+  LW            | 8/8           | 100%
+  GCLK_PIN      | 5/40          | 13%
+  ==========================================
+
+
+6. Global Clock Signals
+
+  -------------------------------------------
+  Signal         | Global Clock   | Location
+  -------------------------------------------
+  clk50_d        | PRIMARY        |  TR BR BL
+  mtf_sample     | PRIMARY        |  TR BL
+  n16939_13      | PRIMARY        |  TR BR BL
+  core/n5926_7   | PRIMARY        |  TR
+  core/imu/estimator/n74341_9| PRIMARY        |  TR BR
+  core/imu/estimator/n1740_5| PRIMARY        |  BR
+  native_navigation/controller_proof/n52658_6| PRIMARY        |  BR BL
+  native_navigation/controller_proof/n164_4| PRIMARY        |  TR BR BL
+  observer_reset | LW             |  -
+  staged_telemetry.core_q_453_16| LW             |  -
+  rst_n_ff       | LW             |  -
+  diagnostic_q_32_22| LW             |  -
+  core/n49_10    | LW             |  -
+  core/controller/n27065_3| LW             |  -
+  mtf/n1513_4    | LW             |  -
+  native_navigation/height_fusion/n998_4| LW             |  -
+  ===========================================

@@ -1,0 +1,217 @@
+{
+  "prepared_utc": "2026-10-26T21:56:00.049484+00:00",
+  "both_owned_directories_absent_before_initial_creation": true,
+  "baseline_source_root": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v17\\canonical\\source",
+  "candidate_source_root": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v18\\canonical\\source",
+  "baseline_source_freeze_sha256": "9759cc5ab19e15fc8a921d90ac7672b5eeae8df146f8dcc06762344ab9c206f7",
+  "baseline_source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "b405b11d4d9d96e508794d75bcf3e3320f4c1896adefeadb84752d4abbbd6d7b",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+    "core/height_loss_fallback.v": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+    "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "41ce429beaf3669019113435802dbb947efa51161e3fb0765f3667ea3ea61d0d",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "f979814de5928abe54b9d20c15e042fef51e691573b433e5ef2f51bd181d960f",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+    "core/height_loss_fallback.v": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+    "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "changed_files": [
+    "acg720_ano_port.v",
+    "mtf_xyz_navigation_control.v",
+    "sensor/mtf01p_reader.v",
+    "sensor/mtf_shared_geometry.v"
+  ],
+  "exact_reversible_normalized_text_edits": {
+    "sensor/mtf01p_reader.v": [
+      [
+        " output reg signed [31:0] vx_x100=0,output reg signed [31:0] vy_x100=0,",
+        " output reg signed [31:0] vx_x100=0,output reg signed [31:0] vy_x100=0,\n output reg velocity_range_ok=1,"
+      ],
+      [
+        " wire signed [30:0] product_y=$signed(flow_y)*$signed({1'b0,distance_mm[13:0]});",
+        " wire signed [30:0] product_y=$signed(flow_y)*$signed({1'b0,distance_mm[13:0]});\n // Cache the range of the exact signed words published on this same sample edge.\n // Invalid numeric observations publish zero; reset and holds match the words.\n wire signed [31:0] next_vx_x100=flow_numeric_ok ? {product_x[30],product_x}:32'sd0;\n wire signed [31:0] next_vy_x100=flow_numeric_ok ? {product_y[30],product_y}:32'sd0;\n wire next_velocity_range_ok=next_vx_x100>=-32'sd1000000 && next_vx_x100<=32'sd1000000 &&\n  next_vy_x100>=-32'sd1000000 && next_vy_x100<=32'sd1000000;"
+      ],
+      [
+        "   vx_x100<=0;vy_x100<=0;x_x100000<=0;y_x100000<=0;saturated<=0;integrated<=0;",
+        "   vx_x100<=0;vy_x100<=0;velocity_range_ok<=1;x_x100000<=0;y_x100000<=0;saturated<=0;integrated<=0;"
+      ],
+      [
+        "    vx_x100<=flow_numeric_ok ? {{1{product_x[30]}},product_x}:32'sd0;\n    vy_x100<=flow_numeric_ok ? {{1{product_y[30]}},product_y}:32'sd0;",
+        "    vx_x100<=next_vx_x100;vy_x100<=next_vy_x100;\n    velocity_range_ok<=next_velocity_range_ok;"
+      ],
+      [
+        " output wire signed [31:0] metric_vx_x100,metric_vy_x100\n",
+        " output wire signed [31:0] metric_vx_x100,metric_vy_x100,\n output wire metric_velocity_range_ok\n"
+      ],
+      [
+        "  .vx_x100(vx_x100),.vy_x100(vy_x100),.x_x100000(x_x100000),",
+        "  .vx_x100(vx_x100),.vy_x100(vy_x100),.velocity_range_ok(metric_velocity_range_ok),.x_x100000(x_x100000),"
+      ]
+    ],
+    "sensor/mtf_shared_geometry.v": [
+      [
+        "MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0",
+        "MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_INPUT_VELOCITY=0"
+      ],
+      [
+        " input wire signed [31:0] vx_x100,vy_x100,",
+        " input wire signed [31:0] vx_x100,vy_x100,\n input wire velocity_range_ok,"
+      ],
+      [
+        " wire input_velocity_ok=vx_x100>=-1000000 && vx_x100<=1000000 &&\n  vy_x100>=-1000000 && vy_x100<=1000000;",
+        " // Default callers retain the original signed32 comparison. The enabled\n // caller supplies the predicate committed with these exact velocity words.\n wire input_velocity_ok=PRECHECKED_INPUT_VELOCITY ?velocity_range_ok:\n  (vx_x100>=-1000000 && vx_x100<=1000000 &&\n   vy_x100>=-1000000 && vy_x100<=1000000);"
+      ]
+    ],
+    "mtf_xyz_navigation_control.v": [
+      [
+        "PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0)(",
+        "PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0,PRECHECKED_INPUT_VELOCITY=0)("
+      ],
+      [
+        " input wire signed [31:0] vx_x100,vy_x100,",
+        " input wire signed [31:0] vx_x100,vy_x100,\n input wire velocity_range_ok,"
+      ],
+      [
+        ".PRECHECKED_FLOW_TILT1500(PRECHECKED_FLOW_TILT1500)) geometry(",
+        ".PRECHECKED_FLOW_TILT1500(PRECHECKED_FLOW_TILT1500),.PRECHECKED_INPUT_VELOCITY(PRECHECKED_INPUT_VELOCITY)) geometry("
+      ],
+      [
+        "  .vx_x100(vx_x100),.vy_x100(vy_x100),.pose_valid(pose_valid),",
+        "  .vx_x100(vx_x100),.vy_x100(vy_x100),.velocity_range_ok(velocity_range_ok),.pose_valid(pose_valid),"
+      ]
+    ],
+    "acg720_ano_port.v": [
+      [
+        " wire mtf_sample,mtf_range_ok,mtf_flow_ok,mtf_integrated;",
+        " wire mtf_sample,mtf_range_ok,mtf_flow_ok,mtf_integrated,mtf_velocity_range_ok;"
+      ],
+      [
+        "  .module_age_ms(mtf_age_ms),.metric_vx_x100(mtf_vx_x100),.metric_vy_x100(mtf_vy_x100));",
+        "  .module_age_ms(mtf_age_ms),.metric_vx_x100(mtf_vx_x100),.metric_vy_x100(mtf_vy_x100),.metric_velocity_range_ok(mtf_velocity_range_ok));"
+      ],
+      [
+        ".PRECHECKED_HEIGHT_ORIGIN(1)) native_navigation(",
+        ".PRECHECKED_HEIGHT_ORIGIN(1),.PRECHECKED_INPUT_VELOCITY(1)) native_navigation("
+      ],
+      [
+        "  .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),",
+        "  .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),.velocity_range_ok(mtf_velocity_range_ok),"
+      ]
+    ]
+  },
+  "unchanged_files": 51,
+  "source_changes_diff_sha256": "0566b5a857201211c017dba6a8efc7384a45b19574a4d485f171771fcddb0f3f",
+  "semantics": [
+    "Signed16 flow times explicitly signed positive15 distance produces exact signed31 product.",
+    "Numeric validity bounds full32 distance to80..12000, making low14 distance bits exact; invalid samples publish signed32zero.",
+    "Compare explicit signed32 next words including exact ternary four-state merge; do not compare unsigned concatenations or shortcut numeric validity.",
+    "Predicate initializes and synchronously resets true with both zero words; all three update on every sample_valid edge before duplicate/integration branches and hold otherwise.",
+    "No predicate clear on link loss without sample. Reader metric_commit timing and all existing valid/age/hold/status decisions unchanged.",
+    "Default-off nav/shared-geometry parameter keeps original signed32 comparisons for every non-opted-in caller.",
+    "Parent v17 core/fallback/pose hints and all clocks, SDC, CST, gains and source55 membership preserved."
+  ],
+  "limitations": "Functional candidate only; component proofs and new top13/FSM/SYN/PNR qualification are separate."
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\run_proofs.py"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "started_utc": "2026-10-26T23:03:05.165418+00:00",
+  "runner_sha256": "f059dd25f1ec0616da9e4ab28bad6e2d8021b150529871da0d4d6be37ad29727",
+  "supervisor_sha256": "968ac3f13978ed827a8ac9dc3e7146284e344d3659238f4836532dfe884c0006",
+  "create_no_window": true,
+  "stdin": "DEVNULL",
+  "pid": 36512
+}

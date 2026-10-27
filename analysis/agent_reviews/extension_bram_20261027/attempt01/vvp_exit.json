@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\extension_bram_20261027\\attempt01\\extension_bram.vvp"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\extension_bram_20261027\\attempt01",
+  "started_utc": "2026-10-26T22:50:29.371718+00:00",
+  "parent_pid": 59972,
+  "pid": 66320,
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "ended_utc": "2026-10-26T22:50:45.485192+00:00",
+  "seconds": 16.11347779998323,
+  "stdout_sha256": "81a34ba4ef35aa627a0157df36ecb68337bd85ce54ac15b17faa91dac0da7845",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

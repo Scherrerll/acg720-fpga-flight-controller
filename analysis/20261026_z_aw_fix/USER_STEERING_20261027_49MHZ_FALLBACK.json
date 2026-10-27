@@ -1,0 +1,9 @@
+{
+  "recorded_utc": "2026-10-26T20:10:55.833510+00:00",
+  "user_verbatim": "接着做，直到成功为止，加油！要是实在不行，你就考虑一下稍微降频给那个49MHz的吧",
+  "authorization": "Continue autonomously until success. Genuine50MHz remains first choice; if it proves impractical, a small actual design clock reduction around49MHz is now an authorized fallback to investigate and implement.",
+  "not_hardware_state_confirmation": true,
+  "current_50MHz_trials": "v14 P3/R0 and P2/R0 running; their existing50MHz/20ns gates remain unchanged.",
+  "fallback_integrity": "A lower timing constraint with the actual aircraft logic still clocked50MHz is not a valid frequency reduction. A genuine fallback needs actual clock generation/constraints and timebase/baud/control-dt audit, explicit frequency-specific gates and fresh complete-route and behavior validation. Do not relabel old49.456MHz timing failure as50MHz success.",
+  "hardware_gate": "Offline qualification and concrete package first; fresh current props-off, CH3/CH5/CH7 low and downloader confirmation still required before device actions."
+}

@@ -1,0 +1,110 @@
+{
+  "preserved_utc": "2026-10-27T00:00:28.022937+00:00",
+  "revision": "original_prepared_revision_01",
+  "reason": "Preserve dormant initial thin preparation before tightening seal/snapshot diagnostic PASS to successful actual vendor/root waits. No runtime attempt existed.",
+  "immutable_saved_files": {
+    "INDEPENDENT_PREPARATION_REVIEW.json": {
+      "sha256": "6e34042c9edda8ef200778b074041cc53bca56f1331f5060bd4c56c543208227",
+      "bytes": 1690,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\INDEPENDENT_PREPARATION_REVIEW.json"
+    },
+    "independent_raw_review.py": {
+      "sha256": "ef682cc0898374ad82f7a65e60f23c119c3698fbd75952f960e3f36e97597ef2",
+      "bytes": 8380,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\independent_raw_review.py"
+    },
+    "inspect_prepared_followup.py": {
+      "sha256": "592b41000d1636b1c9743b3379bd71a538e7c4cff1ecc10d81e56acab0d2ed0c",
+      "bytes": 6410,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\inspect_prepared_followup.py"
+    },
+    "launch_physical_hidden.py": {
+      "sha256": "404e7325169f169f3734838932bfe41c78e301fff275ada690c8a8bebde49c6a",
+      "bytes": 1594,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\launch_physical_hidden.py"
+    },
+    "PHYSICAL_PREPARATION.json": {
+      "sha256": "7c5d04cfa5888093777c4476a10fa5346524b07959d5e3e306afe4d3c93773b4",
+      "bytes": 10761,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\PHYSICAL_PREPARATION.json"
+    },
+    "physical_snapshot.py": {
+      "sha256": "ba7f2978ba0ce5817261dcce318c140b961f5e728cd0ca5b617f6cfb8c1baedd",
+      "bytes": 2077,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\physical_snapshot.py"
+    },
+    "PHYSICAL_TCL_PREFLIGHT.json": {
+      "sha256": "eb6d4c28432cfcb04bdb979bddcaaa014486e3b9dbcea4c61738c9b4855473fc",
+      "bytes": 655,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\PHYSICAL_TCL_PREFLIGHT.json"
+    },
+    "portable_constraints.py": {
+      "sha256": "c9b93df8401fe75c5159d9562f81dc10e1d454e0c7a31d70909893f7afbb3e2a",
+      "bytes": 8344,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\portable_constraints.py"
+    },
+    "PORTABLE_CONSTRAINT_BINDING.json": {
+      "sha256": "7c6ef85e798b20d60a2327d35901d26e35ab5a1b4417d22ace25a5729f22891e",
+      "bytes": 176423,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\PORTABLE_CONSTRAINT_BINDING.json"
+    },
+    "PORTABLE_FILTER_VALIDATION.json": {
+      "sha256": "bea0f5b39ad22316b439ce8d301c0b270950f24c92d4102bd25ac03e37862447",
+      "bytes": 40532,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\PORTABLE_FILTER_VALIDATION.json"
+    },
+    "portable_v20_dsp_bsram.cst": {
+      "sha256": "183110343fb268c20503a598d8e214fb470022b9388cfec533e5780b6350ef55",
+      "bytes": 3698,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\portable_v20_dsp_bsram.cst"
+    },
+    "preflight.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\preflight.stderr.log"
+    },
+    "preflight.stdout.log": {
+      "sha256": "6a35cdf10fc12cd4d10b12e72a6ee387d9303da089fbbc1bb378c699e38b768e",
+      "bytes": 82,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\preflight.stdout.log"
+    },
+    "PREFLIGHT_EXIT.json": {
+      "sha256": "66f9fc9382926c47475be558a4c255ffe7779748350a71e1da3720bcc9f88077",
+      "bytes": 567,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\PREFLIGHT_EXIT.json"
+    },
+    "preflight_physical_recipe.py": {
+      "sha256": "3af97b79f517c9954483b2573166e43a0faddc79d3d065778ab3645dd5e011ac",
+      "bytes": 2609,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\preflight_physical_recipe.py"
+    },
+    "run_physical.py": {
+      "sha256": "e847cc54b31edfb08d16cf92065606d699c5cd265278550440495ef8872024a2",
+      "bytes": 12625,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\run_physical.py"
+    },
+    "SCRIPT_DERIVATION.diff": {
+      "sha256": "524772a571f38829e6948a02656d678a1f5ad24ea220e64625b642bb9b3bc38a",
+      "bytes": 23205,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\SCRIPT_DERIVATION.diff"
+    },
+    "seal_terminal.py": {
+      "sha256": "afca236d8b03d4f50c80febafa471078053f70bab820591d52d0498e5b976e9e",
+      "bytes": 4434,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\seal_terminal.py"
+    },
+    "source_freeze.json": {
+      "sha256": "3350f4b8824da7a207ce956482d21244b99912e870b8e4337778bcda3a5ad1e9",
+      "bytes": 24480,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20_dsp_followup\\source_freeze.json"
+    },
+    "prepare_v20_dsp_followup.py": {
+      "sha256": "bad36ba282e4cf36f21e91404e72146d1c86096c6ce232801396aa2c4d7f81ef",
+      "bytes": 16132,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\prepare_v20_dsp_followup.py"
+    }
+  },
+  "runtime_attempt_absent": true,
+  "receipt_directory_empty": true,
+  "vendor_started": false
+}

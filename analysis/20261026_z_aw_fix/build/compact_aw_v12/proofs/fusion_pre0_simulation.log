@@ -1,0 +1,2 @@
+PASS PRE=0 cycles=1686784 public_bits=152 request_bits=228 service_bits=135 publications=26 seeds=14 mul_consumed=2208 div_consumed=2208 acc_div_consumed=1980 numeric_pulses=4 commit_vetoes=4 epoch_pulses=5 age_rejects=3 age_bypasses=0 ready_cycles=886790
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v12\proofs\fusion_tb.v:165: $finish called at 33735680000 (1ps)

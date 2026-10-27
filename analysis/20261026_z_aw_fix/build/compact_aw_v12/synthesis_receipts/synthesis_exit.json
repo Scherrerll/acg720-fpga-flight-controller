@@ -1,0 +1,19 @@
+{
+  "stage": "synthesis",
+  "command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v12\\build_attempt_01\\synth_only.tcl"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v12\\build_attempt_01\\source",
+  "started_utc": "2026-10-26T14:41:47.812900+00:00",
+  "stdin": "DEVNULL",
+  "create_no_window": true,
+  "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v12\\build_attempt_01\\verification\\synthesis.log",
+  "runner_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "parent_pid": 66892,
+  "pid": 48348,
+  "ended_utc": "2026-10-26T14:45:03.060155+00:00",
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "log_sha256": "8478c17b8e7f1f1c96b2a4651c5ea7160bda377090544bd00f0ecd39f7e14b9c"
+}

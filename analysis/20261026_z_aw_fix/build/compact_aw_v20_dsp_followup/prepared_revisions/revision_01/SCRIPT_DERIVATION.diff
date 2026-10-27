@@ -1,0 +1,211 @@
+--- standard_v20/run_physical.py
++++ v20_dsp_followup/run_physical.py
+@@ -1,11 +1,12 @@
+-"""Deferred sealed exact-v20 map2 P3/R0 original full physical gates trial; no resynthesis/hardware."""
++"""Deferred exact standard-v20 P3/R0 official portable DSP/BSRAM physical-only option; no resynthesis/hardware."""
+ from pathlib import Path
+ import datetime,hashlib,importlib.util,json,os,re,shutil,traceback,xml.etree.ElementTree as ET
+ import sys
+ assert len(sys.argv)==2 and sys.argv[1] in ['3'];PLACE=int(sys.argv[1])
+ sys.dont_write_bytecode=True
+ O=Path(__file__).resolve().parent;R=O.parents[3];ROOT=R/'out/z_aw_fix_20261026/compact_aw_v20'
+-CANON=ROOT/'canonical/source';DONOR=ROOT/'build_attempt_01';ATTEMPT=ROOT/'physical_p3r0_01';SOURCE=ATTEMPT/'source';VERIFY=ATTEMPT/'verification'
++STANDARD=O.parent/'compact_aw_v20'
++CANON=ROOT/'canonical/source';DONOR=ROOT/'build_attempt_01';ATTEMPT=ROOT/'physical_p3r0_dsploc_01';SOURCE=ATTEMPT/'source';VERIFY=ATTEMPT/'verification'
+ ORIGINAL=R/'firmware/B0B4/source';PRIOR=R/'out/z_aw_fix_20261026/compact_aw_v4/canonical/source';HELPER=R/'firmware/B0B4/build_candidate.py'
+ HELPER_SHA='abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84'
+ VG_SHA='bb2d4a6d20184a0c38739b550d2fc04adf9fe9ce219106064a2051edbc26274f'
+@@ -15,16 +16,16 @@
+ def hash55(root,paths):return {p:sha(root/p) for p in paths}
+ def main():
+     global OWNED
+-    from physical_input_contract import validate20
+-    functional_contract=validate20(require_preparation=True)
++    from portable_constraints import validate,combined_bytes,verify_attempt
++    constraint_check=validate();functional_contract=constraint_check['standard_contract']
+     assert PLACE==3
+     assert not ATTEMPT.exists(),'Never overwrite physical evidence'
+     assert sha(HELPER)==HELPER_SHA
+     freeze=json.loads((O/'source_freeze.json').read_text());expected=freeze['source55']
+     assert len(expected)==55 and expected['position/mtf_xyz_hold_control.v']=='ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642'
+-    proof=json.loads((O/'PROOF_BINDING.json').read_text(encoding='utf8'))
++    proof=json.loads((STANDARD/'PROOF_BINDING.json').read_text(encoding='utf8'))
+     assert proof['passed'] and proof['source55']==expected and proof['guard_binding_sha256']==functional_contract['guard_binding_sha256']
+-    syn_result=json.loads((O/'SYNTHESIS_RESULT.json').read_text(encoding='utf8'));syn_root=json.loads((O/'runner_exit.json').read_text(encoding='utf8'))
++    syn_result=json.loads((STANDARD/'SYNTHESIS_RESULT.json').read_text(encoding='utf8'));syn_root=json.loads((STANDARD/'runner_exit.json').read_text(encoding='utf8'))
+     assert syn_result['passed_SYN_only'] and syn_result['source55']==expected and syn_result['netlist_sha256']==VG_SHA
+     assert syn_result['vendor_actual_wait']==syn_result['runner_actual_wait']==syn_result['audit_actual_wait']==0
+     assert syn_root['normal_wait_return'] and syn_root['actual_p_wait']==0
+@@ -44,7 +45,8 @@
+     evidence=[DONOR/'verification'/n for n in ['build_input.json','synthesis_summary.json','synthesis_exit.json','synthesis.log','mapped_audit.json','gain_port_audit.json','strict_ff_clock_audit.json']]
+     evidence += [DONOR/'synthesis_freeze_manifest_final.json',donor_vg,O/'source_freeze.json']
+     evidence += [Path(p) for p in functional_contract['bound_inputs']]
+-    evidence += [O/'physical_input_contract.py',O/'PHYSICAL_INPUT_BINDING.json',O/'PHYSICAL_PREPARATION.json',O/'PHYSICAL_TCL_PREFLIGHT.json']
++    evidence += [STANDARD/'physical_input_contract.py',STANDARD/'PHYSICAL_INPUT_BINDING.json',STANDARD/'PHYSICAL_PREPARATION.json',STANDARD/'PHYSICAL_TCL_PREFLIGHT.json',O/'portable_constraints.py',O/'PORTABLE_FILTER_VALIDATION.json',O/'PORTABLE_CONSTRAINT_BINDING.json',O/'portable_v20_dsp_bsram.cst',O/'PHYSICAL_PREPARATION.json',O/'PHYSICAL_TCL_PREFLIGHT.json']
++    evidence += [Path(p) for p in json.loads((O/'PORTABLE_CONSTRAINT_BINDING.json').read_text(encoding='utf8'))['bound_inputs']]
+     evidence=list(dict.fromkeys(evidence))
+     bound={str(p):{'sha256':sha(p),'bytes':p.stat().st_size} for p in evidence}
+     spec=importlib.util.spec_from_file_location('v4_exact_original_physical_gate',HELPER);helper=importlib.util.module_from_spec(spec);spec.loader.exec_module(helper)
+@@ -52,19 +54,23 @@
+     ATTEMPT.mkdir(parents=True);OWNED=True;shutil.copytree(CANON,SOURCE);VERIFY.mkdir()
+     shutil.copy2(Path(__file__),VERIFY/'executed_run_physical.py')
+     write('donor_evidence_binding.json',{'passed':True,'artifacts':bound,'source55':expected,'vg_sha256':VG_SHA})
+-    write('functional_evidence_binding.json',{'passed':True,'schema':'Actual v20 successful retry root0 + unique fresh top13 childroot0; original functional root1 preserved; named AZ/VY/core/controller components only','proof_binding_sha256':sha(O/'PROOF_BINDING.json'),'input_binding_sha256':sha(O/'PHYSICAL_INPUT_BINDING.json'),'guard_binding_sha256':functional_contract['guard_binding_sha256'],'actual_retry_functional_root_wait':functional_contract['actual_retry_functional_root_wait'],'actual_top13_child_root_wait':functional_contract['actual_top13_child_root_wait'],'historical_failed_functional_root_wait':functional_contract['historical_failed_functional_root_wait'],'candidate_top13_total_actual_runs':1,'new_private_same_publication_predicate_bits':2,'legacy_public_output_cycle_change':0,'scope':functional_contract['scope'],'integration_scope':functional_contract['integration_scope'],'component_limitations':functional_contract['component_limitations']})
++    write('functional_evidence_binding.json',{'passed':True,'schema':'Actual v20 successful retry root0 + unique fresh top13 childroot0; original functional root1 preserved; named AZ/VY/core/controller components only','proof_binding_sha256':sha(STANDARD/'PROOF_BINDING.json'),'input_binding_sha256':sha(STANDARD/'PHYSICAL_INPUT_BINDING.json'),'thin_portable_constraint_binding_sha256':sha(O/'PORTABLE_CONSTRAINT_BINDING.json'),'guard_binding_sha256':functional_contract['guard_binding_sha256'],'actual_retry_functional_root_wait':functional_contract['actual_retry_functional_root_wait'],'actual_top13_child_root_wait':functional_contract['actual_top13_child_root_wait'],'historical_failed_functional_root_wait':functional_contract['historical_failed_functional_root_wait'],'candidate_top13_total_actual_runs':1,'new_private_same_publication_predicate_bits':2,'legacy_public_output_cycle_change':0,'scope':functional_contract['scope'],'integration_scope':functional_contract['integration_scope'],'component_limitations':functional_contract['component_limitations']})
+     tmp=VERIFY/'tmp';tmp.mkdir();os.environ.update(TMP=str(tmp),TEMP=str(tmp),TMPDIR=str(tmp))
+     vg=SOURCE/'impl/gwsynthesis/acg720_ano_port.vg';vg.parent.mkdir(parents=True);shutil.copy2(donor_vg,vg);assert sha(vg)==VG_SHA
++    combined=SOURCE/'physical_constraints.cst';assert not combined.exists();combined.write_bytes(combined_bytes())
++    assert sha(combined)==constraint_check['filter']['combined_CST_sha256'] and hash55(SOURCE,expected)==expected
++    write('portable_constraint_binding.json',{'passed':True,'standard_source_proof_origin':str(STANDARD),'standard_proof_binding_sha256':sha(STANDARD/'PROOF_BINDING.json'),'binding_sha256':sha(O/'PORTABLE_CONSTRAINT_BINDING.json'),'filter_validation_sha256':sha(O/'PORTABLE_FILTER_VALIDATION.json'),'original_baseline_CST_sha256':sha(SOURCE/'acg720_ano_port.cst'),'combined_CST_sha256':sha(combined),'resource_rows':constraint_check['filter']['kept'],'DSP':constraint_check['filter']['DSP'],'BSRAM':constraint_check['filter']['BSRAM'],'source55_unchanged':True})
+     project=ET.parse(SOURCE/'acg720_ano_port.gprj');root=project.getroot();filelist=root.find('FileList');filelist.clear()
+-    entries=[('impl/gwsynthesis/acg720_ano_port.vg','file.netlist'),('acg720_ano_port.cst','file.cst'),('acg720_ano_port.sdc','file.sdc')]
++    entries=[('impl/gwsynthesis/acg720_ano_port.vg','file.netlist'),('physical_constraints.cst','file.cst'),('acg720_ano_port.sdc','file.sdc')]
+     for path,kind in entries:ET.SubElement(filelist,'File',dict(path=path,type=kind,enable='1'))
+     physical_project=SOURCE/'physical.gprj';physical_project.write_bytes(b'<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE gowin-fpga-project>\n'+ET.tostring(root,encoding='utf-8'))
+     raw=physical_project.read_bytes();assert raw.count(b'<?xml')==1
+     assert [(f.attrib['path'],f.attrib['type']) for f in ET.fromstring(raw).find('FileList')]==entries
+     write('project_serialization_check.json',{'passed':True,'xml_declarations':1,'exact_netlist_constraints_project':True,'project_sha256':sha(physical_project)})
++    assert verify_attempt(SOURCE)['passed']
+     lines=(SOURCE/'build.tcl').read_text().splitlines();assert lines.count('run all')==1 and lines.count('exit')==1
+-    tcl='\n'.join('run pnr' if line=='run all' else 'open_project physical.gprj' if line=='open_project acg720_ano_port.gprj' else f'set_option -place_option {PLACE}' if line=='set_option -place_option 3' else line for line in lines if line.strip()!='exit')+'\nputs PHYSICAL_COMMAND_RETURNED_EOF\nflush stdout\n'
+-    for option,value in [('place_option',str(PLACE)),('route_option','0'),('map_option','2'),('replicate_resources','0'),('timing_driven','1'),('route_maxfan','23'),('user_code','0000B0B4')]:assert re.findall(r'^set_option -'+option+r'\s+(\S+)\s*$',tcl,re.M)==[value]
++    tcl='\n'.join('set_option -cst_warn_to_error 1\nrun pnr' if line=='run all' else 'open_project physical.gprj' if line=='open_project acg720_ano_port.gprj' else f'set_option -place_option {PLACE}' if line=='set_option -place_option 3' else line for line in lines if line.strip()!='exit')+'\nputs PHYSICAL_COMMAND_RETURNED_EOF\nflush stdout\n'
++    for option,value in [('place_option',str(PLACE)),('route_option','0'),('map_option','2'),('replicate_resources','0'),('timing_driven','1'),('route_maxfan','23'),('user_code','0000B0B4'),('global_freq','50'),('cst_warn_to_error','1')]:assert re.findall(r'^set_option -'+option+r'\s+(\S+)\s*$',tcl,re.M)==[value]
+     assert 'run syn' not in tcl and 'run all' not in tcl
+     execution=ATTEMPT/'physical.tcl';execution.write_text(tcl,encoding='utf8')
+     write('build_input.json',{'scope':'Fresh sealed exact-v20 VG physical-only trial; standard original CST/SDC/logic unchanged; no synthesis/hardware.',
+@@ -76,10 +82,11 @@
+       'donor_strict_ff_clock_audit_sha256':sha(DONOR/'verification/strict_ff_clock_audit.json'),
+       'physical_options':{'place':PLACE,'route':0,'map_option':2,'replicate_resources':0,'route_maxfan':23},'period_ns':20,'usercode':'0000B0B4'})
+     write('physical_input.json',{'source_sha256':expected,'canonical_override':str(CANON),'donor_netlist_sha256':VG_SHA,
+-      'project_sha256':sha(physical_project),'tcl_sha256':sha(execution),'runner_sha256':sha(Path(__file__))})
++      'portable_constraint_binding_sha256':sha(O/'PORTABLE_CONSTRAINT_BINDING.json'),'combined_CST_sha256':sha(combined),'original_baseline_CST_sha256':sha(SOURCE/'acg720_ano_port.cst'),'project_sha256':sha(physical_project),'tcl_sha256':sha(execution),'runner_sha256':sha(Path(__file__))})
+     helper.run_phase('physical',[str(helper.GOWIN),str(execution)],SOURCE,expected)
+     result=helper.physical_audit(VG_SHA,expected);helper.check_sources(expected)
+-    assert validate20(require_preparation=True)['passed']
++    assert validate()['passed'] and verify_attempt(SOURCE)['passed']
++    assert sha(combined)==constraint_check['filter']['combined_CST_sha256']
+     assert {str(p):{'sha256':sha(p),'bytes':p.stat().st_size} for p in evidence}==bound
+     assert hash55(ORIGINAL,expected)==original and hash55(PRIOR,expected)==prior and sha(donor_vg)==VG_SHA and sha(HELPER)==HELPER_SHA
+     write('build_result.json',{'passed':True,'scope':'Physical artifact gate only; functional equivalence/hardware acceptance separate.',
+--- standard_v20/launch_physical_hidden.py
++++ v20_dsp_followup/launch_physical_hidden.py
+@@ -1,9 +1,9 @@
+-"""Independent hidden supervisor for the single deferred v19 P3/R0 profile."""
++"""Independent hidden supervisor for the single deferred standard-v20 portable DSP/BSRAM profile."""
+ from pathlib import Path
+ import datetime,hashlib,json,os,subprocess,sys
+ BASE=Path(__file__).resolve().parent
+ assert len(sys.argv)==2 and sys.argv[1] in ['3']
+-PLACE=sys.argv[1];O=BASE/'physical_p3r0_01'
++PLACE=sys.argv[1];O=BASE/'physical_p3r0_dsploc_01'
+ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+ utc=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat()
+ receipt=O/'runner_process.json';exit_receipt=O/'runner_exit.json'
+--- standard_v20/seal_terminal.py
++++ v20_dsp_followup/seal_terminal.py
+@@ -2,7 +2,7 @@
+ from pathlib import Path
+ import datetime,gzip,hashlib,json,re,shutil,sys
+ O=Path(__file__).resolve().parent;R=O.parents[3];ROOT=R/'out/z_aw_fix_20261026/compact_aw_v20'
+-assert len(sys.argv)==2 and sys.argv[1] in ['3'];label='physical_p3r0_01'
++assert len(sys.argv)==2 and sys.argv[1] in ['3'];label='physical_p3r0_dsploc_01'
+ ATTEMPT=ROOT/label;V=ATTEMPT/'verification';REPORT=O/label
+ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+ read=lambda p:json.loads(p.read_text())
+@@ -10,8 +10,8 @@
+ vendor=read(V/'physical_exit.json');assert vendor['normal_wait_return'] is True
+ manifest=REPORT/'TERMINAL_MANIFEST.json';copies=REPORT/'terminal_receipts'
+ assert not manifest.exists() and not copies.exists()
+-from physical_input_contract import validate20
+-assert validate20(require_preparation=True)['passed']
++from portable_constraints import validate,verify_attempt
++assert validate()['passed'] and verify_attempt(ATTEMPT/'source')['passed']
+ expected=read(O/'source_freeze.json')['source55']
+ assert {p:sha(ATTEMPT/'source'/p) for p in expected}==expected
+ assert {p:sha(ROOT/'canonical/source'/p) for p in expected}==expected
+@@ -26,8 +26,8 @@
+ unrouted=[int(x) for x in re.findall(r'total\s+(\d+)\s+unrouted nets',physical_log,re.I)]
+ classification='full_gate_pass' if passed else 'completed_full_route_timing_failure' if audit and audit['criteria']['full_route'] and vendor['actual_p_wait']==0 else 'route_failure' if vendor['actual_p_wait']!=0 and (any(unrouted) or 'DesRoute failed.' in physical_log) else 'vendor_nonzero_unclassified' if vendor['actual_p_wait']!=0 else 'physical_gate_or_artifact_failure'
+ paths=[REPORT/'runner_exit.json',REPORT/'runner_process.json',REPORT/'runner.stdout.log',REPORT/'runner.stderr.log']
+-paths += [V/n for n in ['physical_exit.json','physical_process.json','physical_input.json','build_input.json','physical.log','physical_audit.json','build_failure.json','build_result.json','project_serialization_check.json','donor_evidence_binding.json','functional_evidence_binding.json']]
+-paths += [ATTEMPT/'physical.tcl',ATTEMPT/'source/physical.gprj']
++paths += [V/n for n in ['physical_exit.json','physical_process.json','physical_input.json','build_input.json','physical.log','physical_audit.json','build_failure.json','build_result.json','project_serialization_check.json','donor_evidence_binding.json','functional_evidence_binding.json','portable_constraint_binding.json']]
++paths += [ATTEMPT/'physical.tcl',ATTEMPT/'source/physical.gprj',ATTEMPT/'source/physical_constraints.cst',O/'PORTABLE_FILTER_VALIDATION.json',O/'PORTABLE_CONSTRAINT_BINDING.json',O/'portable_v20_dsp_bsram.cst',O/'PHYSICAL_PREPARATION.json',O/'PHYSICAL_TCL_PREFLIGHT.json']
+ paths += [ATTEMPT/'source/impl/pnr'/n for n in ['acg720_ano_port.tr','acg720_ano_port.rpt.txt','acg720_ano_port.fs','acg720_ano_port.pr','device.cfg']]
+ paths=[p for p in paths if p.is_file()];copies.mkdir()
+ items={}
+--- standard_v20/independent_raw_review.py
++++ v20_dsp_followup/independent_raw_review.py
+@@ -1,10 +1,11 @@
+ """Independent raw report review. Does not import build_candidate or its audit."""
+ from pathlib import Path
+-import datetime, hashlib, json, math, re, sys
++import datetime, hashlib, json, math, re, sys, xml.etree.ElementTree as ET
+ 
+ O=Path(__file__).resolve().parent; R=O.parents[3]
++STANDARD=O.parent/'compact_aw_v20'
+ assert len(sys.argv)==2 and sys.argv[1] in ['3']
+-label='physical_p3r0_01'; A=R/'out/z_aw_fix_20261026/compact_aw_v20'/label
++label='physical_p3r0_dsploc_01'; A=R/'out/z_aw_fix_20261026/compact_aw_v20'/label
+ S=A/'source'; V=A/'verification'; report=O/label
+ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+ read=lambda p:json.loads(p.read_text(encoding='utf8'))
+@@ -15,11 +16,20 @@
+     'source55':len(expected)==55 and {p:sha(S/p) for p in expected}==expected,
+     'canonical_source55':{p:sha(R/'out/z_aw_fix_20261026/compact_aw_v20/canonical/source'/p) for p in expected}==expected,
+     'VG':sha(S/'impl/gwsynthesis/acg720_ano_port.vg')=='bb2d4a6d20184a0c38739b550d2fc04adf9fe9ce219106064a2051edbc26274f'}
+-proof=read(O/'PROOF_BINDING.json');binding=read(O/'PHYSICAL_INPUT_BINDING.json');retry=read(Path(proof['proof_directory'])/'functional_runner_exit.json');top=read(Path(proof['fresh_top13']['root_exit_path']));old=read(Path(proof['historical_failed_functional_root']['path']))
++proof=read(STANDARD/'PROOF_BINDING.json');binding=read(STANDARD/'PHYSICAL_INPUT_BINDING.json');retry=read(Path(proof['proof_directory'])/'functional_runner_exit.json');top=read(Path(proof['fresh_top13']['root_exit_path']));old=read(Path(proof['historical_failed_functional_root']['path']))
+ checks['v20_real_retry0_top13child0_oldroot1']=proof['passed'] and proof['source55']==expected and retry['normal_wait_return'] and retry['actual_p_wait']==0 and top['normal_wait_return'] and top['actual_p_wait']==0 and old['normal_wait_return'] and old['actual_p_wait']==1 and proof['fresh_top13']['candidate_top13_total_actual_runs']==1
+-checks['v20_components_and_two_private_bits']=proof['guard_binding_sha256']==sha(O/'COMPONENT_REUSE_BINDING.json') and proof['new_private_same_publication_predicate_bits']==2 and proof['legacy_public_output_cycle_change']==0
++checks['v20_components_and_two_private_bits']=proof['guard_binding_sha256']==sha(STANDARD/'COMPONENT_REUSE_BINDING.json') and proof['new_private_same_publication_predicate_bits']==2 and proof['legacy_public_output_cycle_change']==0
+ checks['unchanged_bound_inputs']=all(sha(Path(p))==h for p,h in binding['validation']['bound_inputs'].items())
++portable_binding=read(O/'PORTABLE_CONSTRAINT_BINDING.json');portable=O/'portable_v20_dsp_bsram.cst';combined=S/'physical_constraints.cst';original=S/'acg720_ano_port.cst'
++checks['thin_family_standard_proof_origin']=portable_binding['standard_source_proof_origin']==str(STANDARD) and portable_binding['source55']==expected
++checks['portable_bound_inputs_unchanged']=all(sha(Path(p))==h for p,h in portable_binding['bound_inputs'].items())
++checks['complete_original_prefix_exact_and_portable_suffix']=combined.read_bytes()==original.read_bytes()+portable.read_bytes() and sha(combined)==portable_binding['combined_CST_sha256']
++entries=[(f.attrib['path'],f.attrib['type'],f.attrib.get('enable')) for f in ET.parse(S/'physical.gprj').findall('.//File')]
++checks['combined_CST_selected']=entries==[('impl/gwsynthesis/acg720_ano_port.vg','file.netlist','1'),('physical_constraints.cst','file.cst','1'),('acg720_ano_port.sdc','file.sdc','1')]
++tcl=(A/'physical.tcl').read_text(encoding='utf8')
++checks['constraint_warnings_errors_P3_R0']=re.findall(r'^set_option -cst_warn_to_error\s+(\S+)\s*$',tcl,re.M)==['1'] and re.findall(r'^set_option -place_option\s+(\S+)\s*$',tcl,re.M)==['3'] and re.findall(r'^set_option -route_option\s+(\S+)\s*$',tcl,re.M)==['0']
+ log=(V/'physical.log').read_text(errors='replace'); files={str(p.relative_to(R)):sha(p) for p in [V/'physical.log',V/'physical_exit.json',report/'runner_exit.json']}
++files.update({str(p.relative_to(R)):sha(p) for p in [combined,S/'physical.gprj',A/'physical.tcl',portable,O/'PORTABLE_FILTER_VALIDATION.json',O/'PORTABLE_CONSTRAINT_BINDING.json']})
+ checks['raw_log_hash']=sha(V/'physical.log')==vendor['log_sha256']
+ checks['normal_eof']='PHYSICAL_COMMAND_RETURNED_EOF' in log
+ checks['fullroute_and_bitstream']='Placement and routing completed' in log and 'Bitstream generation completed' in log
+--- standard_v20/physical_snapshot.py
++++ v20_dsp_followup/physical_snapshot.py
+@@ -4,7 +4,7 @@
+ O=Path(__file__).resolve().parent;R=O.parents[3];ROOT=R/'out/z_aw_fix_20261026/compact_aw_v20'
+ def read(p):return json.loads(p.read_text()) if p.is_file() else None
+ rows=[]
+-for label in ['physical_p3r0_01']:
++for label in ['physical_p3r0_dsploc_01']:
+     v=ROOT/label/'verification';a=O/label
+     text=(v/'physical.log').read_text(errors='replace') if (v/'physical.log').is_file() else ''
+     stages=re.findall(r'^.*(?:\[\d+%\]|Running (?:placement|routing)|Placement and routing completed|Bitstream generation completed|PHYSICAL_COMMAND_RETURNED_EOF).*$' ,text,re.M)
+--- standard_v20/preflight_physical_recipe.py
++++ v20_dsp_followup/preflight_physical_recipe.py
+@@ -12,16 +12,18 @@
+     # Tcl is solely passed to info complete, never to eval or any vendor command.
+     tcl=eval(compile(ast.Expression(values[0]),str(runner),'eval'),{'__builtins__':{},'lines':lines,'PLACE':place},{})
+     assert interp.call('info','complete',tcl)==1
+-    for option,value in [('place_option',str(place)),('route_option','0'),('map_option','2'),('replicate_resources','0'),('global_freq','50'),('user_code','0000B0B4')]:
++    for option,value in [('place_option',str(place)),('route_option','0'),('map_option','2'),('replicate_resources','0'),('global_freq','50'),('user_code','0000B0B4'),('cst_warn_to_error','1')]:
+         assert re.findall(r'^set_option -'+option+r'\s+(\S+)\s*$',tcl,re.M)==[value]
+     original_options=re.findall(r'^set_option -(\S+)\s+(\S+)\s*$', '\n'.join(lines),re.M)
+     effective_options=re.findall(r'^set_option -(\S+)\s+(\S+)\s*$',tcl,re.M)
+     assert len(dict(original_options))==len(original_options) and len(dict(effective_options))==len(effective_options)
+-    assert dict(effective_options)==dict(original_options)
++    assert dict(effective_options)==dict(original_options,cst_warn_to_error='1')
+     assert tcl.count('run pnr\n')==1 and 'run syn' not in tcl and 'run all' not in tcl
+     assert 'inc_pnr' not in tcl and 'inc_place' not in tcl
+     checks[str(place)]={'Tcl_complete':True,'options_verified':True,'Tcl_sha256':hashlib.sha256(tcl.encode()).hexdigest()}
++from portable_constraints import validate
++check=validate(check_preparation=False);measured=check['filter']
+ dest=O/'PHYSICAL_TCL_PREFLIGHT.json';assert not dest.exists()
+ dest.write_text(json.dumps({'scope':'Exact prepared Python Tcl expression evaluated as strings and Tcl syntax completeness checked; no Tcl execution or vendor/hardware start.',
+-    'runner_sha256':hashlib.sha256(runner.read_bytes()).hexdigest(),'profiles':checks},indent=2)+'\n',encoding='utf8')
++    'runner_sha256':hashlib.sha256(runner.read_bytes()).hexdigest(),'profiles':checks,'profile_label':'physical_p3r0_dsploc_01','combined_CST_sha256':measured['combined_CST_sha256'],'measured_kept_rows':measured['kept'],'measured_DSP':measured['DSP'],'measured_BSRAM':measured['BSRAM']},indent=2)+'\n',encoding='utf8')
+ print(json.dumps({'physical_Tcl_preflight_passed':True,'profiles':[3],'vendor_started':False}))

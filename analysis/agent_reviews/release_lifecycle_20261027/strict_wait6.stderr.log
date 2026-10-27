@@ -1,0 +1,11 @@
+test_actual_standard_terminal_gate (__main__.WaitTypes.test_actual_standard_terminal_gate) ... ok
+test_check_receipt_actual_wait_and_completed_process (__main__.WaitTypes.test_check_receipt_actual_wait_and_completed_process) ... ok
+test_export_terminal_gate_without_running_export (__main__.WaitTypes.test_export_terminal_gate_without_running_export) ... ok
+test_original_failure_is_integer_one (__main__.WaitTypes.test_original_failure_is_integer_one) ... ok
+test_preserved42_reproduces_boolean_float_acceptance (__main__.WaitTypes.test_preserved42_reproduces_boolean_float_acceptance) ... ok
+test_raw_success_all_actual_fields (__main__.WaitTypes.test_raw_success_all_actual_fields) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.014s
+
+OK

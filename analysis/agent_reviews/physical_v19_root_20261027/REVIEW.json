@@ -1,0 +1,16 @@
+{
+  "reviewed_utc": "2026-10-26T22:53:12.294622+00:00",
+  "passed_preparation_review": true,
+  "preparation_sha256": "f7182ed166e78c3bf60221ac1127a56406a3bfa54b2af28528bd86da4a0dc205",
+  "scripts": {
+    "run_physical.py": "5e3b2ab3910832acc3bf0a8b0c6e2596fb2e3cc9b8f7e373029c68bc5b84d354",
+    "launch_physical_hidden.py": "9baafda09faf535704d7f1f53d28500ad035404396deb24cf2f28f9407a8f240",
+    "physical_snapshot.py": "401b95cad53fa9fb30fe3cb4cfb1cf50b4b0d7eaa57129bb3c7ae3a02dc769b2",
+    "seal_terminal.py": "fc6e8aea5b3693eaa881e823ddaaa0aa261769a6ce5d47c1a8434f3764bcd13d",
+    "independent_raw_review.py": "0a19f9c35681a077fd86874fe466c8a9f112f5e457201eac0372fb2f3f3d29c8"
+  },
+  "source55_exact": true,
+  "original_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "actual_qualified_physical_result": false,
+  "scope": "Root reviewed exact source/VG/proof origin, original helper physical gate invocation, real v19 AZ top13/coreFSM schema, strict unchanged50MHz constraints and no-overwrite single-profile process. Read-only preparation review; no vendor launched."
+}

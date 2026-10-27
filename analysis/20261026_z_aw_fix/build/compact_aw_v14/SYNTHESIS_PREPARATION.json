@@ -1,0 +1,8 @@
+{
+  "prepared_only": true,
+  "scope": "New source SYN_ONLY; no PNR. Exact old helper and cloned strict native mapped/clock/radio/gain/18port auditor with v14 paths and five B3-relative changes.",
+  "parent_audit_sha256": "3922143498e0f3ffc87e4475fbb8d9342a415689f6ec73017b6675d547aa7b9a",
+  "audit_sha256": "6c1ec98d86b508425026b5f279c50042d101f2f3d743b8c1117edc7324abcd7a",
+  "proof_binding_sha256": "b0e223a339733b31398c08045dacaad5bfb76f84432045f8ed1db8f0fb15a435",
+  "reuse_recheck_sha256": "af768cf468598d043fc4073603d88eb6a157d9ff959d12a7546caad341477077"
+}

@@ -1,0 +1,32 @@
+{
+  "reviewed_utc": "2026-10-26T10:44:46.498704+00:00",
+  "scope": "Direct independent parsing of raw reports, actual exits, source and bitstream. No imported gate parser.",
+  "passed": false,
+  "checks": {
+    "vendor_wait0": false,
+    "runner_wait0": false,
+    "source55": true,
+    "canonical_source55": true,
+    "VG": true,
+    "raw_log_hash": true,
+    "normal_eof": false,
+    "fullroute_and_bitstream": false,
+    "no_unrouted_nets": false,
+    "netlist_only": true,
+    "raw_TR_exists": false,
+    "physical_artifacts": false,
+    "unchanged_constraints": true
+  },
+  "period_ns": null,
+  "fmax_mhz": null,
+  "slacks_ns": {},
+  "violated_endpoints": {},
+  "worst_setup_row": null,
+  "pins": {},
+  "raw_sha256": {
+    "out\\z_aw_fix_20261026\\compact_aw_v8\\physical_p2r0_01\\verification\\physical.log": "66b55851c507d47f3bdfa3c33e32512d2b8932e64aa5303b31fd61397338c4bf",
+    "out\\z_aw_fix_20261026\\compact_aw_v8\\physical_p2r0_01\\verification\\physical_exit.json": "bcfe52638f55d7dfde6068e90015fcf7956103e02af3460bc55fbf1c63151972",
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v8\\physical_p2r0_01\\runner_exit.json": "60d230995feae7575fd091cf792db482e96134116ebb58f0ba0a9c8a171ce164"
+  },
+  "review_script_sha256": "00754c440bf2dcbf7a402fdd0d080b9160dd93142b186322532ef39e2bb1b071"
+}

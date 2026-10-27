@@ -1,0 +1,2 @@
+PASS geometry actual_old_prechecked_default=1 real_math_services=9 mappings=3 all_public_and_FSM_state=1 cycles=71241 publications=23/23/23 overlap=6 expiry=1844 random_transitions=20000 no_DUT_force=1 CLK_HZ=50000000
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v18\vy_proofs\attempt01\geometry_tb.v:93: $finish called at 1424820000 (1ps)

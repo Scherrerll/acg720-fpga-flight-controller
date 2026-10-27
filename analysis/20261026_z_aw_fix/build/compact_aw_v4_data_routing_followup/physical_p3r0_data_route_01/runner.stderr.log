@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v4_data_routing_followup\run_physical.py", line 81, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v4_data_routing_followup\run_physical.py", line 71, in main
+    helper.run_phase('physical',[str(helper.GOWIN),str(execution)],SOURCE,expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\firmware\B0B4\build_candidate.py", line 61, in run_phase
+    assert code == 0, (name, 'nonzero real process exit', code, str(log))
+           ^^^^^^^^^
+AssertionError: ('physical', 'nonzero real process exit', 1, 'C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_data_route_01\\verification\\physical.log')

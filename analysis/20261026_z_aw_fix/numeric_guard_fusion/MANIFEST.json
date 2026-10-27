@@ -1,0 +1,185 @@
+{
+  "scope": "Retained finite actual-RTL fusion differential evidence only; no delivery/physical/hardware qualification.",
+  "authoritative_result": "completion03/results.json",
+  "retained_file_count": 40,
+  "retained_bytes": 434490,
+  "files": {
+    "attempt02/inputs.json": {
+      "bytes": 12191,
+      "sha256": "c889504938e0dd831a5558ea772278b86c8ec6690acc554cc697d4d9540faf53"
+    },
+    "attempt02/pre0_compile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "attempt02/pre0_compile_exit.json": {
+      "bytes": 1402,
+      "sha256": "2fb8df7392890d5ed8d8db893c3eb20806d76cca6c7f9171230f7182fe7c4785"
+    },
+    "attempt02/pre0_simulation.log": {
+      "bytes": 440,
+      "sha256": "a28d2324da57b44aa8f9eccd774d522be2e64fbc125c98e6cb0e398f409e077b"
+    },
+    "attempt02/pre0_simulation_exit.json": {
+      "bytes": 496,
+      "sha256": "bfac99e3d8425b75ca57b81fda32b3ac0d90a6e8b5baf66573700084a625a9a2"
+    },
+    "attempt02/tb.v": {
+      "bytes": 9450,
+      "sha256": "001ec6b66be4d7b1389cb7ba1d196c7669b31d5f7a222da286fca23830c14867"
+    },
+    "attempt02/v5_height.v": {
+      "bytes": 47566,
+      "sha256": "26b492d7f759607784e45f716b69c20cd268b4c719b2f0dc1b96a172b0e97168"
+    },
+    "attempt02/v6_height.v": {
+      "bytes": 47858,
+      "sha256": "3aee0ef8d0fe9a1b0e93dee35257de276c157c46a1d5a2af0e99791ec32e36c1"
+    },
+    "attempt02.stderr.log": {
+      "bytes": 722,
+      "sha256": "52ce62a0874e2dd05a1ca05a5e2b92a796f809342886912b049638a816329ca2"
+    },
+    "attempt02.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "attempt02_derivation.json": {
+      "bytes": 545,
+      "sha256": "175982e8d53dde2ec0142dca73a2cd73a3db085c1e36d40edd6542b7e6a88d27"
+    },
+    "attempt02_process.json": {
+      "bytes": 114,
+      "sha256": "62c79d3a31b04e10ee06c15d1d7d3c128d454a1b568271166a84a42ea208e3f1"
+    },
+    "complete_attempt03.py": {
+      "bytes": 6867,
+      "sha256": "287d1aeea0690b40d663f4f65e2dda9f17e4c43854f66c2969345e8de362478b"
+    },
+    "completion03/inputs.json": {
+      "bytes": 14011,
+      "sha256": "01db49744235d90de85fa87f162b0f1bdb0d558f4b808f073ec9ce321e81df7e"
+    },
+    "completion03/pre1_compile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "completion03/pre1_compile_exit.json": {
+      "bytes": 1551,
+      "sha256": "a64ed63e06f1347946f54c4a70e5a644b58024e34846c32ffd47d9e09cd95568"
+    },
+    "completion03/pre1_simulation.log": {
+      "bytes": 443,
+      "sha256": "9e43a213615d66c63d36fb328b9de4cf4ca548cf364a1862608fd0d3dae389e0"
+    },
+    "completion03/pre1_simulation_exit.json": {
+      "bytes": 636,
+      "sha256": "689ee6020cc80cdb1080a00d11f35cf6c9ba060db512e04223059f6f2782b931"
+    },
+    "completion03/results.json": {
+      "bytes": 18677,
+      "sha256": "eb0295ca89af3ac66db0a65d923d30097c1c9bdd6c8fd99a1b9954f48b825e39"
+    },
+    "completion03/tb.v": {
+      "bytes": 9450,
+      "sha256": "001ec6b66be4d7b1389cb7ba1d196c7669b31d5f7a222da286fca23830c14867"
+    },
+    "completion03/v5_height.v": {
+      "bytes": 47566,
+      "sha256": "26b492d7f759607784e45f716b69c20cd268b4c719b2f0dc1b96a172b0e97168"
+    },
+    "completion03/v6_height.v": {
+      "bytes": 47858,
+      "sha256": "3aee0ef8d0fe9a1b0e93dee35257de276c157c46a1d5a2af0e99791ec32e36c1"
+    },
+    "completion03.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "completion03.stdout.log": {
+      "bytes": 1017,
+      "sha256": "ffcd3812cf98b3456209e6fef7f4258f2565862b62337c0ee85345f99a73cf3d"
+    },
+    "completion03_process.json": {
+      "bytes": 109,
+      "sha256": "6316fd2d290674b27179fb3421bec565e4dc0c1fe8fb7a4698ab2d658cc08cf5"
+    },
+    "freeze.py": {
+      "bytes": 2998,
+      "sha256": "7f5952a3f9837b006638f8097d10720c2dfaf966196d703d7cc3652b31031d86"
+    },
+    "inputs.json": {
+      "bytes": 12191,
+      "sha256": "0f16927b8c5d6a11cca3b90dbae67e43df55e50f8e6ab06e8ee942ddabcedbfd"
+    },
+    "pre0_compile.log": {
+      "bytes": 248,
+      "sha256": "61bd96a9611b13aaf84177faa074ced5eb7b4b81d4492261314212be4a439595"
+    },
+    "pre0_compile_exit.json": {
+      "bytes": 1358,
+      "sha256": "9fc914628f2743ce789ef3fe55c0d54834c87d52fd32824b4d9c4a1ad62fa5e7"
+    },
+    "README.md": {
+      "bytes": 4003,
+      "sha256": "712abe430ccfa947c1cd76c73579e2f5f4d7164813fa9254f8bb1c9abd55e837"
+    },
+    "references/nav_math_service.v": {
+      "bytes": 4106,
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7"
+    },
+    "references/position_math.v": {
+      "bytes": 8847,
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635"
+    },
+    "runner.stderr.log": {
+      "bytes": 319,
+      "sha256": "d577883d828e77842567e84f290f9eabc6691304de0c0287d97474829374ff10"
+    },
+    "runner.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runner_process.json": {
+      "bytes": 198,
+      "sha256": "7d74326106cada7a776708d441f31b028545072048135fd68aa28203820f967c"
+    },
+    "tb.v": {
+      "bytes": 9450,
+      "sha256": "001ec6b66be4d7b1389cb7ba1d196c7669b31d5f7a222da286fca23830c14867"
+    },
+    "v5_height.v": {
+      "bytes": 47566,
+      "sha256": "26b492d7f759607784e45f716b69c20cd268b4c719b2f0dc1b96a172b0e97168"
+    },
+    "v6_height.v": {
+      "bytes": 47858,
+      "sha256": "3aee0ef8d0fe9a1b0e93dee35257de276c157c46a1d5a2af0e99791ec32e36c1"
+    },
+    "verify_fusion.py": {
+      "bytes": 12982,
+      "sha256": "5a042608d259ffde8d68fed2a97bdc771328239513f0f1c49f7e8dd84de54f14"
+    },
+    "verify_fusion_attempt02.py": {
+      "bytes": 13397,
+      "sha256": "80f604f0cec84936b858f7804d8304d6c9186abab7afded4805cb3047a8a21e1"
+    }
+  },
+  "explicit_exclusions": [
+    "*.vvp",
+    "*.pyc",
+    "**/tmp/**",
+    "**/__pycache__/**",
+    "MANIFEST.json itself"
+  ],
+  "omitted_local_compiled_or_temp_hashes_not_required_for_retained_verification": {
+    "attempt02/pre0.vvp": {
+      "bytes": 571953,
+      "sha256": "df601b3cc60d01765a8381137d71a77825e195119ee37af6d5fbb78ef73ba3c4"
+    },
+    "completion03/pre1.vvp": {
+      "bytes": 569280,
+      "sha256": "badff17dcfc43353ad7867c41aa6abddb0038240a2f9b07f74d07f10ae8cc0dd"
+    }
+  }
+}

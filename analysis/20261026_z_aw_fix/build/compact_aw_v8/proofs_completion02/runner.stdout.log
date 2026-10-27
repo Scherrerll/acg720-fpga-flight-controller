@@ -1,0 +1,8 @@
+adapter_compile reuse prior actual_wait0
+adapter_simulation reuse prior actual_wait0
+fusion_pre0_compile reuse prior actual_wait0
+fusion_pre0_simulation reuse prior actual_wait0
+fusion_pre1_compile actual_wait 0 seconds 0.116
+fusion_pre1_simulation actual_wait 0 seconds 32.796
+top13 actual_wait 0 seconds 27.696
+PASS v8 focused candidate proofs

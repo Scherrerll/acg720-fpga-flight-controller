@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-26T22:00:26.636498+00:00",
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\run_vy_proofs.py",
+    "attempt01"
+  ],
+  "pid": 60124,
+  "actual_proof_supervisor_child_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-26T22:02:15.604896+00:00",
+  "stdout_sha256": "a0633f08bf426aed10f6908b6be1ec901e794868cfb972b148bb132335f5b1ab",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "supervisor_script_sha256": "8022b983686360e74cba3bbbc055b4c2507c983c1ce19b39670a490dc8779ba6",
+  "runner_sha256": "586eb47f17a780f9e41aaa4a7bf1535cb84e31329db2fd6308cf3ad398bce388"
+}

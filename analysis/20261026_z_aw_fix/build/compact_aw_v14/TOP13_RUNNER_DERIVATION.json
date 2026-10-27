@@ -1,0 +1,6 @@
+{
+  "parent_runner_sha256": "5ad5b7e6519a8a48595b23a7f8fabceb63f0cb56268d0ec9ed36c6ecd54abc61",
+  "new_runner_sha256": "ef843be5f8271bc1c2cc926e837cf7715c27b9a624f56157a93cce6f7865e115",
+  "stimulus_text_unchanged": true,
+  "changes": "Only canonical source root v4 to v14 and actual compile/vvp CompletedProcess return-code receipts. Existing testbench text, expectations and 13 gate stimuli unchanged."
+}

@@ -1,0 +1,64 @@
+{
+  "scope": "Actual B3/B4 controller/shared-math RTL; legal fixed sensor boundary stimuli, no plant or flight replay. Callback cadence accelerated to2500clocks, original11ms/1ms arithmetic dt. No private force/preload. Publication comparison allows exactly2newclocks.",
+  "completed": 5,
+  "passed": false,
+  "results": [
+    {
+      "case": 1,
+      "name": "natural_upper_and_low_stick",
+      "exit_code": 0,
+      "seconds": 180.5609951019287,
+      "checks": [
+        "PASS natural upper windup: old1850=419/419 first4600ms; new below1850=44ms below1250=924ms upper_rejects=1716 accepted_down=77",
+        "PASS commit contract checked 2237 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "0b6fb9133ceefa7cd8e32fc893ede9e230aff133c560d43783193effeb05d281",
+      "trace_sha256": "a74da8058e2ca2d3ca625d1656faaa23795ec246e9d233e489f217721be88182"
+    },
+    {
+      "case": 2,
+      "name": "unsaturated_equivalence",
+      "exit_code": 0,
+      "seconds": 35.217358350753784,
+      "checks": [
+        "PASS unsaturated old/new publication equivalence: publications=400 positiveI=100 negativeI=150 delay=2clocks",
+        "PASS commit contract checked 400 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "dbdca538e9f703e4112cf7c972abedd78a860cb855551b4b490fef06bf1784e1",
+      "trace_sha256": "605b40f120d434f9cb4f03b70bdb1d7242c37dae7e8cd102b6623adee6a8f7b3"
+    },
+    {
+      "case": 3,
+      "name": "natural_lower_and_positive_recovery",
+      "exit_code": 0,
+      "seconds": 55.010321855545044,
+      "checks": [
+        "PASS natural lower saturation and positive recovery: lower_rejects=406 accepted_up=52 final_collective=1850",
+        "PASS commit contract checked 650 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "cdd101777f39b79abe63384a1622b97fc31dc7d81cf20016156616f661a79158",
+      "trace_sha256": "474abff8632bdabfc857841abc149843894c6a547c8ab0f3a073e970548c6b94"
+    },
+    {
+      "case": 4,
+      "name": "cancel_and_takingoff",
+      "exit_code": 0,
+      "seconds": 7.414284706115723,
+      "checks": [
+        "PASS eight staged cancel/reentry boundaries plus taking_off false; no stale publication; live safety mask retained",
+        "PASS commit contract checked 74 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "178911075374cb7f3351a2299016962eac740e2cb78b880519ed63574ce401b1",
+      "trace_sha256": "f8cb999e0df582b138794d66ec3aab721f8e63cd4c5c409c6dfcca0abbcb7792"
+    },
+    {
+      "case": 5,
+      "name": "xy_i0_independence",
+      "exit_code": 1,
+      "seconds": 0.33691883087158203,
+      "checks": [],
+      "log_sha256": "a3e87b9431e732dfd07e7d38eab129dc73f980894cdd800e455473245133d623",
+      "trace_sha256": "cf800781df16fca1d6dc083097efc3d1148f60a73477f7b4bf52e1d4b18b63f0"
+    }
+  ]
+}

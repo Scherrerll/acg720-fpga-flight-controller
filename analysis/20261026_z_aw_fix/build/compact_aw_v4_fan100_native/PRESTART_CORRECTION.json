@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-26T19:27:50.532804+00:00",
+  "issue": "First Start-Process invocation returned supervisor PID61344 but the required empty physical report directories had not been prepared. No runner_process/runner_exit/vendor attempt or vendor process receipt was produced. The launcher asserts O.is_dir() before creating its child.",
+  "first_supervisor_actual_wait": null,
+  "first_supervisor_exit_not_reconstructed": true,
+  "no_vendor_attempt_created": true,
+  "correction": "Created the two missing empty report directories. Frozen source and all runner scripts unchanged. Fresh invocation will capture supervisor stdout/stderr as well as its original child wait receipts.",
+  "preparation_sha256": "636abc4c6fa6925b2948b73fa20183548872084dc38a9ad26a627f1204bbd907"
+}

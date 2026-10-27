@@ -1,0 +1,9 @@
+{
+  "actual_tool_observed_shell_exit_code": 1,
+  "command": ["C:/Users/ScherrerL/AppData/Local/Programs/Python/Python313/python.exe", "-B", "-X", "utf8", "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/prepare_v18_dsp_followup.py"],
+  "phase": "Initial read-only constraint validation, before source-freeze copy or runtime-attempt creation",
+  "error": "Initial checker incorrectly rejected the frozen baseline CLOCK_LOC observer_reset BUFG=CE|SR|LOGIC statement as non-IO.",
+  "correction": "Preserve and explicitly bind the exact original CLOCK_LOC bytes; restrict all newly appended statements to official DSP/BSRAM INS_LOC rows.",
+  "vendor_started": false,
+  "runtime_attempt_created": false
+}

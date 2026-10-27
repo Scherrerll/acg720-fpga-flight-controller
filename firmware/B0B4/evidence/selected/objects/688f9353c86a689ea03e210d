@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5AT-60B" package="PBGA484A" speed="1" partNumber="GW5AT-LV60PG484AC1/I0"/>
+    <FileList>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\acg720_ano_port.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\xy_pi_parameters.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\telemetry_tx.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\control_gate.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\cordic_atan2.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\ano_flight_state.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\ano_xy_stick.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\ano_xy_divide36.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\height_loss_fallback.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\flight_core.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\bmi088_reader.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\imu_checked_guard_pipelined.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\imu_pipeline_pipelined.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\imu_temporal_check_pipelined.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\motor_pwm.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\rc_ppm.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\spi_uart_modules.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\rtl\pid_divide_signed64.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\rtl\quad_mixer_feedback.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\position_math.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\relative_position.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\sensor\flow_reader.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\sensor\range_reader.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\calibration.vh" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\ano_attitude_estimator.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\rtl\ano_rate_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\ano_flow_fusion.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\ano_hold_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\ano_z_stick.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\rtl\ano_yaw_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\ano_height_fusion.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\sensor\range_height_estimate.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\pose_time_adapter.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\rtl\ano_rc_angle_targets.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\rtl\ano_manual_angles.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\level_calibration.vh" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\sensor\mtf01p_reader.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\sensor\mtf_native_geometry.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\mtf_position_integrator.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\mtf_navigation_shadow.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\nav_math_service.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\sensor\mtf_shared_geometry.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\mtf_shared_flow_fusion.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\mtf_shared_height_fusion.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\mtf_shared_hold_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\mtf_xyz_navigation_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\position\mtf_xyz_hold_control.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\core\imu_diagnostic_tap.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\sik_imu_diagnostic.v" type="verilog"/>
+        <File path="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\gw5_snapshot_bram.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_style" value="auto"/>
+        <Option type="enable_dsrm" value="0"/>
+        <Option type="global_freq" value="50.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="map_option" value="2"/>
+        <Option type="max_fanout" value="200"/>
+        <Option type="netlist_hierarchy" value="1"/>
+        <Option type="opt_goal" value="area"/>
+        <Option type="output_file" value="C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v22\build_attempt_01\source\impl\gwsynthesis\acg720_ano_port.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="ram_style" value="auto"/>
+        <Option type="rom_style" value="auto"/>
+        <Option type="shift_reg" value="auto"/>
+        <Option type="top_module" value="acg720_ano_port"/>
+        <Option type="vcc" value="0.95"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

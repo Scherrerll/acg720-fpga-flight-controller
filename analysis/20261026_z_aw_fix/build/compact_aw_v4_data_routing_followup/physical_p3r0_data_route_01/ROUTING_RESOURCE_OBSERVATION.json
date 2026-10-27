@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-26T14:00:40.308811+00:00",
+  "raw_report_sha256": "1bc791f7332bca8a1dd00e50ae5a940baf108664279f29c7954dbea3a30eb032",
+  "raw_global_routing_table": "Global Clock Signals\n\n  -------------------------------------------\n  Signal         | Global Clock   | Location\n  -------------------------------------------\n  clk50_d        | PRIMARY        |  TR BR BL\n  mtf_sample     | PRIMARY        |  TR BR BL\n  core/n5926_7   | PRIMARY        |  TR BR\n  core/controller/n27065_3| PRIMARY        |  BR\n  mtf/n1513_4    | PRIMARY        |  BR BL\n  native_navigation/height_fusion/n998_4| PRIMARY        |  BL\n  native_navigation/controller_proof/n52234_6| PRIMARY        |  BL\n  native_navigation/controller_proof/n164_4| PRIMARY        |  TR BL\n  observer_reset | LW             |  -\n  staged_telemetry.core_q_453_16| LW             |  -\n  previous_pose_valid| LW             |  -\n  rst_n_ff       | LW             |  -\n  height_fallback_active| LW             |  -\n  nav_xy_ready   | LW             |  -\n  diagnostic_q_32_20| LW             |  -\n  core/n49_10    | LW             |  -\n  ===========================================\n\n\n",
+  "actual_requested_data_nets": {
+    "previous_pose_valid": "LW",
+    "height_fallback_active": "LW",
+    "nav_xy_ready": "LW"
+  },
+  "note": "Actual vendor report places requested BUFG=LOGIC data priorities on LW, not PRIMARY. No claim of new FF clocks; exact mapped all-FF clk50 audit and original20ns SDC remain. P3 failed306 unrouted, so no TR/Fmax claim."
+}

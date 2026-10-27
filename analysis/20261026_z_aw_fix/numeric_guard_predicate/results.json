@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "actual_exit_code": 0,
+  "two_actual_source_functions": 2,
+  "known_vectors": 1410720,
+  "source55_before_after_unchanged": true,
+  "scope": "Two-state proof plus finite RTL enumeration; all low16 for8 high words, all high16 for12 boundary lows,100000 deterministic random full32. This is not enumeration of all2^32; algebraic sign-extension proof covers remaining pairs. Four-state X difference deliberately demonstrated, not hidden.",
+  "sha256": {
+    "verify.py": "18a7e1917032640733bbfab3041b311eb15b1f0b436ea446f2bee57efaa9a5fd",
+    "inputs.json": "cae4394bdbca148b7e104a8f5df3ba5137691bdb7ac9ec52d5dcdd33a059b1a2",
+    "actual_functions.v": "34cd9e53c02b6055704e367829bb926b6c639f1a00bb69b9e19a509dba732131",
+    "predicate_tb.v": "ab89365693e15ba2174bed8195b3b7e7d1fd064410cc7bdb47f425cfa8309126",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "simulation.log": "5e3c800628eaeb0abb4e674f38239f0df129b907a881753485769b0413c11676"
+  }
+}

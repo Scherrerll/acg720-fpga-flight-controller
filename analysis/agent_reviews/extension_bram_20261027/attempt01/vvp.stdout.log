@@ -1,0 +1,2 @@
+PASS WIDTH=888 actual_SP=28 GSR=1 SIMULATION_BYPASS=0 CLK_HZ=50000000 initial_before_first_clock=0 same_edge_capture=1 cycles=19282 writes=12189 holds=7093 unknown_enable_holds=2918 walking_bits=888 random_vectors=16000 X_payload_writes=1 Z_payload_writes=1 checks=77127 offedge_checks=38562 no_DUT_force_or_preload=1
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\agent_reviews\extension_bram_20261027\extension_bram_tb.v:96: $finish called at 385632000 (1ps)

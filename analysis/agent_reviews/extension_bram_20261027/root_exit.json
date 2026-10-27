@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\extension_bram_20261027\\run_proof.py"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\extension_bram_20261027",
+  "started_utc": "2026-10-26T22:50:28.995955+00:00",
+  "runner_sha256": "6e10ed7f3c04ff0f2f4e19f882eb181be0d94715f7b8104a54814cbd0e46bd9b",
+  "supervisor_script_sha256": "d0f69b20221e4fdd1cec16962d4a0c63d78f82ae32a88de83aa262f34468a3c7",
+  "pid": 59972,
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "ended_utc": "2026-10-26T22:50:45.565169+00:00",
+  "stdout_sha256": "194be48ffb6126a9630169ad1dd064549c4e3005c1dc7af77444f04466af9d21",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

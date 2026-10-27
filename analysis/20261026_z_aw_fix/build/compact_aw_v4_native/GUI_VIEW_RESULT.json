@@ -1,0 +1,13 @@
+{
+  "closed_utc": "2026-10-26T19:24:03.904305+00:00",
+  "baseline_sha256": "e6a3e7b02662d904e10da4876aae2c119284c9a767371f1cd8ff104a5c9933eb",
+  "baseline_files": 98,
+  "changed_baseline_files": [
+    "source/acg720_ano_port.gprj.user",
+    "source/impl/pnr/device.cfg"
+  ],
+  "all_preserved_bytes_unchanged": false,
+  "original_file_attributes_restored": true,
+  "hardware_operation": false,
+  "observed": "Actual native project opened and FloorPlanner read its native netlist/CST/DB. Back-annotation dialog offers Port, Port Attribute, BSRAM, DSP, PLL, DSPLite only; no ordinary FF/LUT export. Cancelled dialog, closed FloorPlanner and IDE without saving or running any build. No full-placement export claim."
+}

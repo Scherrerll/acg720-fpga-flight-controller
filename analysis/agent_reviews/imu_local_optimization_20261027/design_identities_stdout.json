@@ -1,0 +1,77 @@
+{
+  "passed_binary_design_checks": true,
+  "scope": "Algebra over all 32 known-binary index values and abstract hold/zero/increment actions; source assignment inventory. No X/Z, RTL, protocol, mapped, physical or qualification proof.",
+  "source_sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+  "assignment_inventory": [
+    {
+      "line": 413,
+      "rhs": "0"
+    },
+    {
+      "line": 419,
+      "rhs": "0"
+    },
+    {
+      "line": 443,
+      "rhs": "index+1'b1"
+    },
+    {
+      "line": 458,
+      "rhs": "0"
+    },
+    {
+      "line": 463,
+      "rhs": "0"
+    },
+    {
+      "line": 471,
+      "rhs": "0"
+    },
+    {
+      "line": 474,
+      "rhs": "index+1'b1"
+    },
+    {
+      "line": 476,
+      "rhs": "0"
+    },
+    {
+      "line": 478,
+      "rhs": "0"
+    },
+    {
+      "line": 478,
+      "rhs": "index+1'b1"
+    },
+    {
+      "line": 486,
+      "rhs": "index+1'b1"
+    },
+    {
+      "line": 493,
+      "rhs": "0"
+    },
+    {
+      "line": 499,
+      "rhs": "index+1'b1"
+    },
+    {
+      "line": 571,
+      "rhs": "0"
+    },
+    {
+      "line": 614,
+      "rhs": "0"
+    },
+    {
+      "line": 630,
+      "rhs": "index+1'b1"
+    }
+  ],
+  "zero_count": 10,
+  "increment_count": 6,
+  "binary_identity_checks": 64,
+  "out_of_range_slot_equivalence_checks": 32,
+  "cache_action_checks": 96,
+  "onehot_action_checks": 96
+}

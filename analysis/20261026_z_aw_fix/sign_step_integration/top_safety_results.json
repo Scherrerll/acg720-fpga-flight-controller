@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "actual top RTL with controlled simulation forces on core gate dependencies and decoded RX bytes, including actual gate armed FF simultaneous with bank commit; physical RX independently tested",
+  "cases": 13
+}

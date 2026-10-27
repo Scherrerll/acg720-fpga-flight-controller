@@ -1,0 +1,13 @@
+{
+  "requested": true,
+  "matching_percent_reports": [
+    2.75
+  ],
+  "fallback_detected": true,
+  "incremental_use_proven": false,
+  "seed_read_reported": true,
+  "actual_vendor_wait": 1,
+  "source_seed_unchanged": true,
+  "copied_seed_unchanged": true,
+  "note": "Physical qualification depends on fresh actual route/STA gates even when flow effect is unproven."
+}

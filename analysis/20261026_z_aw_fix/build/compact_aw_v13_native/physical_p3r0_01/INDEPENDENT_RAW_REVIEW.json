@@ -1,0 +1,41 @@
+{
+  "reviewed_utc": "2026-10-26T19:25:31.839207+00:00",
+  "scope": "Direct independent parsing of raw reports, actual exits, source and bitstream. No imported gate parser.",
+  "passed": false,
+  "checks": {
+    "vendor_wait0": false,
+    "runner_wait0": false,
+    "source55": true,
+    "canonical_source55": true,
+    "VG": true,
+    "raw_log_hash": true,
+    "normal_eof": false,
+    "fullroute_and_bitstream": false,
+    "no_unrouted_nets": false,
+    "native_RTL_project": true,
+    "native_SYN_and_hook_eof": true,
+    "native_SYN_source_binding": true,
+    "native_mapped_audits": true,
+    "all_mapped_FF_clk50": true,
+    "raw_TR_exists": false,
+    "physical_artifacts": false,
+    "unchanged_constraints": true
+  },
+  "period_ns": null,
+  "fmax_mhz": null,
+  "slacks_ns": {},
+  "violated_endpoints": {},
+  "worst_setup_row": null,
+  "pins": {},
+  "raw_sha256": {
+    "out\\z_aw_fix_20261026\\compact_aw_v13_native\\physical_p3r0_01\\verification\\physical.log": "0e9d7a3292205f002fb375efeda01fbefd2add22914f2769a3121308584b2b60",
+    "out\\z_aw_fix_20261026\\compact_aw_v13_native\\physical_p3r0_01\\verification\\physical_exit.json": "cffe719910eca6ab3b7457481b689d4d626c30ac9fa301c7c4af25539f87af83",
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v13_native\\physical_p3r0_01\\runner_exit.json": "d49781639bfad93cb3a1e19b8d57cfdfe1435eb365b0d23caa30ebc9f544fca4",
+    "out\\z_aw_fix_20261026\\compact_aw_v13_native\\physical_p3r0_01\\source\\acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "out\\z_aw_fix_20261026\\compact_aw_v13_native\\physical_p3r0_01\\verification\\mapped_audit.json": "9736b0f961e409ad6b7058eff60df342d57d866d8da4e94ebed19c25cd4cebae",
+    "out\\z_aw_fix_20261026\\compact_aw_v13_native\\physical_p3r0_01\\verification\\gain_port_audit.json": "f138186ce9725a12905fcc72ef084643aff319bffde78299b7c9e343e2845a88",
+    "out\\z_aw_fix_20261026\\compact_aw_v13_native\\physical_p3r0_01\\verification\\strict_ff_clock_audit.json": "d10e9adc3d567d12a7c7f4fc77734ae54af5abfdb0de0e9d3b7b43d487159858",
+    "out\\z_aw_fix_20261026\\compact_aw_v13_native\\physical_p3r0_01\\verification\\native_synthesis_audit.json": "254b57ce27e570cbe65160d0cdc5e1553b03b8005f17c3ed4447e9fe8606dfbb"
+  },
+  "review_script_sha256": "6ad743f0381d0757fbc46149fbd4da739cb535bad0ea2ed2aca106d7be0d9828"
+}

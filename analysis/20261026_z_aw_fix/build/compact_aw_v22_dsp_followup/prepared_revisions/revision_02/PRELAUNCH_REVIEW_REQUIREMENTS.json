@@ -1,0 +1,40 @@
+{
+  "scope": "Exact frozen offline thinv22 physical preparation awaiting main and independent reviewer; no vendor start authorized by this file. No thin source/proof/SYN identity.",
+  "metadata_family": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_dsp_followup",
+  "preparer": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\prepare_v22_dsp_followup.py",
+  "preparer_sha256": "2081602fd56048ddc3541efca2e95709147d4d91032788274064874141dcf2a5",
+  "PHYSICAL_PREPARATION_sha256": "3a48867155b10697725aa7fb9fc97e63960d7f671428678f06b8bef3aec68f8b",
+  "PORTABLE_CONSTRAINT_BINDING_sha256": "541fb2aae50868d15b95f0aa08b2de04a390741a2818787534732bb0d06d77c0",
+  "source_freeze_sha256": "798c6443805d56556dbaeb9a4b43531159267b24e473283c6ef362fc00ddf5d6",
+  "standard_source_proof_origin": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22",
+  "standard_proof_binding_sha256": "dd63ff4b218a10ae7f1fcf146e7f045e4057b3a4ef1caa1559cca412db8f47c0",
+  "standard_guard_binding_sha256": "c4007b834724b13066cfbbac3d5119091ccbd3a9e42e4fe84478c5312ecdb3a3",
+  "standard_stability_sha256": "d2b0c801e2f499d98d4eb6fd9028a1b3d0c6c9f54601c965ce3d8855a5730473",
+  "VG_sha256": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8",
+  "scripts_sha256": {
+    "run_physical.py": "c210d559b63e10f557ccf0c5c7df400a8ad428d73eff22a7c6680970537c69dd",
+    "launch_physical_hidden.py": "b97669543654e6e96f60e7dea7cf14ebcc73dc5e8752f5c703321841c749d342",
+    "seal_terminal.py": "f233175aaf49f8ec5e6cd9db1aa10220780856055a3fda3c8a6326a31fa0882d",
+    "independent_raw_review.py": "d2bdeeed1cc7f6dcb771a2e76420b0fb9fdd1aafa92002fc3b12ccdb209de3df",
+    "physical_snapshot.py": "93353047c6e69d96903a79816b795800a27e11e225d9a0e03e87ada356f08d51",
+    "preflight_physical_recipe.py": "b02e612a8e9b9f17f928b559c4132adb65a976d56c41b9f89d089fa496effad4",
+    "portable_constraints.py": "a41f782155031e4b54429d124396d56b5df3d5187fc2ade25c0a2bdba0c4288d",
+    "inspect_prepared_followup.py": "57f7d7d26e3513afbc2a92f8f675515b0610e5018466161e854469e56de2e709",
+    "test_terminal_diagnostics.py": "fbde675c159b85f3511a80d8b2a4e1460fdd91d516453a3d69556c89fe991913"
+  },
+  "counts": {
+    "official_export_rows": 52,
+    "kept": 33,
+    "excluded": 19,
+    "DSP": 31,
+    "BSRAM": 2
+  },
+  "INDEPENDENT_PREPARATION_REVIEW_sha256": "1496affbe7a3d4be136d967aa1c4da412ced0286db1d02b86c1e45bc1ce44f53",
+  "DIAGNOSTIC_TRUTH_CHECKS_sha256": "710bd36b0e4e78b6731a463c8a07cc001a1a97116154f089cefa29bfc0ef43ad",
+  "main_review_passed": false,
+  "independent_agent_review_passed": false,
+  "vendor_started": false,
+  "runtime_attempt_created": false,
+  "prepared_revision": "02",
+  "sealer_standard_SYN_provenance_corrected": true
+}

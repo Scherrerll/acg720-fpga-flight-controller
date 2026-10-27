@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v10\\proofs_retry02\\verify_top.py"
+  ],
+  "started_utc": "2026-10-26T11:29:27.934884+00:00",
+  "pid": 21008,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-26T11:29:50.508423+00:00",
+  "log_sha256": "249884fa609786cd5ea9a086a3e593403ac52050dfe3d38d362cdae28a13cc5e"
+}

@@ -1,0 +1,11 @@
+{
+  "changes": [
+    "Only CASE4 newly added private collective-cache==0 replaced by published collective==1000",
+    "Only CASE4/CASE5 run; already passed1-3not repeated",
+    "All cycle-by-cycle B4-v1 public/integral comparisons and original functional/safety assertions remain"
+  ],
+  "diagnostic": "../cancel_diagnostic_attempt01/simulation.log",
+  "diagnostic_privateQ16_both": 15377139,
+  "diagnostic_public_us_both": 1000,
+  "original_failed_results_preserved": "../results.json"
+}

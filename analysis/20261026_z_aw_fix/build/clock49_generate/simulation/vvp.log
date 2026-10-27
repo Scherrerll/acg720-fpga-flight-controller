@@ -1,0 +1,2 @@
+PASS unmodified vendor PLLA+PLL_INIT model, natural50MHz input, lock held,49000 output periods elapsed_ns=999992.000000
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\clock49_generate\simulation\tb.v:22: $finish called at 2760557116 (1ps)

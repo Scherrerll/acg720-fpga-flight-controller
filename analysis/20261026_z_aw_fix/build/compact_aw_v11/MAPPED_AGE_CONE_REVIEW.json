@@ -1,0 +1,136 @@
+{
+  "scope": "Mapped combinational topology overapproximation only; not STA, sensitization or timing qualification. No physical artifacts modified.",
+  "variants": {
+    "v9": {
+      "VG_sha256": "e99d1ec0928fa9c1650cbc6a7ac9c08d4b2ef0758cdb3a9eec11b04af5d0eb20",
+      "sources": [
+        "native_navigation/height_fusion/publication_age_10_s1"
+      ],
+      "reachable_paths": 36,
+      "deepest": [
+        {
+          "source": "native_navigation/height_fusion/publication_age_10_s1",
+          "endpoint": "core/manual_angles/pending_np_17_s0/CE",
+          "combinational_cells": 18,
+          "cells": [
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s24",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s15",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s6",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s25",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s2",
+            "native_navigation/nav_vertical_ready_s0",
+            "native_navigation/core_height_state_tail_kept_s1",
+            "core_vertical_available_s3",
+            "core/fallback_control/height_fallback_active_s0",
+            "core/fallback_control/height_fallback_active_s",
+            "core/selected_norm_dt_10_s0",
+            "core/manual_angles/pending_nr_17_s26",
+            "core/manual_angles/pending_nr_17_s18",
+            "core/manual_angles/pending_nr_17_s15",
+            "core/manual_angles/pending_nr_17_s7",
+            "core/manual_angles/pending_nr_17_s5",
+            "core/manual_angles/pending_nr_17_s32",
+            "core/manual_angles/pending_nr_17_s2"
+          ]
+        },
+        {
+          "source": "native_navigation/height_fusion/publication_age_10_s1",
+          "endpoint": "core/manual_angles/pending_np_16_s0/CE",
+          "combinational_cells": 18,
+          "cells": [
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s24",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s15",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s6",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s25",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s2",
+            "native_navigation/nav_vertical_ready_s0",
+            "native_navigation/core_height_state_tail_kept_s1",
+            "core_vertical_available_s3",
+            "core/fallback_control/height_fallback_active_s0",
+            "core/fallback_control/height_fallback_active_s",
+            "core/selected_norm_dt_10_s0",
+            "core/manual_angles/pending_nr_17_s26",
+            "core/manual_angles/pending_nr_17_s18",
+            "core/manual_angles/pending_nr_17_s15",
+            "core/manual_angles/pending_nr_17_s7",
+            "core/manual_angles/pending_nr_17_s5",
+            "core/manual_angles/pending_nr_17_s32",
+            "core/manual_angles/pending_nr_17_s2"
+          ]
+        }
+      ]
+    },
+    "v11": {
+      "VG_sha256": "f239c61b25007920c57057d8b5f1a34b3b63b4acfa7e19f60acc8f1f6a489d43",
+      "sources": [
+        "native_navigation/height_fusion/publication_fresh_s1"
+      ],
+      "reachable_paths": 36,
+      "deepest": [
+        {
+          "source": "native_navigation/height_fusion/publication_fresh_s1",
+          "endpoint": "core/manual_angles/pending_np_17_s0/CE",
+          "combinational_cells": 15,
+          "cells": [
+            "native_navigation/height_fusion/height_estimate_ready_s2",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s14",
+            "native_navigation/nav_vertical_ready_s0",
+            "native_navigation/core_height_state_tail_kept_s1",
+            "core_vertical_available_s3",
+            "core/fallback_control/height_fallback_active_s0",
+            "core/fallback_control/height_fallback_active_s",
+            "core/selected_norm_dt_4_s0",
+            "core/manual_angles/pending_nr_17_s24",
+            "core/manual_angles/pending_nr_17_s17",
+            "core/manual_angles/pending_nr_17_s10",
+            "core/manual_angles/pending_nr_17_s6",
+            "core/manual_angles/pending_nr_17_s5",
+            "core/manual_angles/pending_nr_17_s31",
+            "core/manual_angles/pending_nr_17_s33"
+          ]
+        },
+        {
+          "source": "native_navigation/height_fusion/publication_fresh_s1",
+          "endpoint": "core/manual_angles/pending_np_16_s0/CE",
+          "combinational_cells": 15,
+          "cells": [
+            "native_navigation/height_fusion/height_estimate_ready_s2",
+            "native_navigation/height_fusion/estimate_ready_state_numeric_tail_kept_s14",
+            "native_navigation/nav_vertical_ready_s0",
+            "native_navigation/core_height_state_tail_kept_s1",
+            "core_vertical_available_s3",
+            "core/fallback_control/height_fallback_active_s0",
+            "core/fallback_control/height_fallback_active_s",
+            "core/selected_norm_dt_4_s0",
+            "core/manual_angles/pending_nr_17_s24",
+            "core/manual_angles/pending_nr_17_s17",
+            "core/manual_angles/pending_nr_17_s10",
+            "core/manual_angles/pending_nr_17_s6",
+            "core/manual_angles/pending_nr_17_s5",
+            "core/manual_angles/pending_nr_17_s31",
+            "core/manual_angles/pending_nr_17_s33"
+          ]
+        }
+      ],
+      "age10_to_fresh_D": {
+        "depth": 10,
+        "cells": [
+          "native_navigation/height_fusion/n1123_s3",
+          "native_navigation/height_fusion/n1121_s3",
+          "native_navigation/height_fusion/n1120_s2",
+          "native_navigation/height_fusion/n1119_s2",
+          "native_navigation/height_fusion/n1116_s3",
+          "native_navigation/height_fusion/n1115_s2",
+          "native_navigation/height_fusion/n1111_s2",
+          "native_navigation/height_fusion/n1107_s2",
+          "native_navigation/height_fusion/publication_age_31_s4",
+          "native_navigation/height_fusion/n1135_s14"
+        ]
+      },
+      "fresh_clock": [
+        "native_navigation/height_fusion/clk50_d"
+      ]
+    }
+  },
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc"
+}

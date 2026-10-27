@@ -1,0 +1,21 @@
+{
+  "prepared_utc": "2026-10-26T20:40:41.115442+00:00",
+  "scope": "Only UART TX divisor and telemetry parameter forwarding in incomplete isolated working source. Default434 preserves50MHz. Full top still50MHz;425 at49MHz is not wired into the aircraft design yet. No SYN/PNR/device action.",
+  "working_source": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\clock49_working\\source",
+  "changes": {
+    "core/spi_uart_modules.v": {
+      "old_sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "new_sha256": "c3725268455388f13a294d376fb5c8f0c56a17e138757d4b0f6b8b8402aa38cf",
+      "default50_reversion_byte_exact": true
+    },
+    "telemetry_tx.v": {
+      "old_sha256": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+      "new_sha256": "2e1baf8b647d9fd716337502f0423ffc0b597f058a7315b87a7def7f29f6057a",
+      "default50_reversion_byte_exact": true
+    }
+  },
+  "future_49MHz_divisor": 425,
+  "nominal_baud": 115200,
+  "actual_baud_from49MHz": 115294.11764705883,
+  "default50_reversion_byte_exact": true
+}

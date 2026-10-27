@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+    "-g2012",
+    "-Wall",
+    "-s",
+    "tb",
+    "-o",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v10\\proofs_retry02\\diagnostic.vvp",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v10\\proofs_retry02\\tb.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v10\\proofs_retry02\\v9_diag.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v10\\proofs_retry02\\v10_diag.v"
+  ],
+  "started_utc": "2026-10-26T11:28:48.411684+00:00",
+  "pid": 50456
+}

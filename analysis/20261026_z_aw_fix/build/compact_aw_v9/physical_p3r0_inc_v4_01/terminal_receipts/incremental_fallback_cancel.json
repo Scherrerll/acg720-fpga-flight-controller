@@ -1,0 +1,17 @@
+{
+  "requested_utc": "2026-10-26T11:07:25.509869+00:00",
+  "reason": "Vendor PA2136 below80 matching automatically falls back to the same already-launched fresh P3R0 trial.",
+  "pid": 40500,
+  "parent_pid": 44908,
+  "exact_command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v9\\physical_p3r0_inc_v4_01\\physical.tcl"
+  ],
+  "process_identity": "Live handle of this runner own Popen child; no PID/name lookup.",
+  "vendor_message": [
+    "WARN  (PA2136) : Placement and routing matching(2.75) is less than the threshold value(80) needed to run incremental flow, the default placement and routing flow will be run."
+  ],
+  "fresh_input": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v9\\physical_p3r0_01\\verification\\physical_input.json",
+  "fresh_input_sha256": "ad4474df42171e72d63aec850a93e1feea70e0bc42482d51718b2f4b1f16ca53",
+  "log_prefix_sha256": "244c6354c34920aaeb1204f3c1d5ff518d8ec3207700479c231623b9fe8a5b24"
+}

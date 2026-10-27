@@ -1,0 +1,123 @@
+{
+  "status": "historical_stopped_unlaunched",
+  "immutable_saved_files": {
+    "physical_recipe.py": {
+      "sha256": "420c7d4de1ea4f90b7e24b299ae8f85de13d1d9274bc1e71fd0458743b5ea326",
+      "bytes": 1304,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_recipe.py"
+    },
+    "physical_input_contract.py": {
+      "sha256": "79a1833779ea48b5a1e449af354c0124a9136d3c5085710e9008e830278b2456",
+      "bytes": 8721,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_input_contract.py"
+    },
+    "run_physical.py": {
+      "sha256": "2d50c402d930db384a6f51c964d9b7d329c225b88844696a6246b4cd0957382a",
+      "bytes": 5793,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\run_physical.py"
+    },
+    "launch_physical_hidden.py": {
+      "sha256": "8e8c824aa47769be33b09fe52ca9111b250767ec7238154fbbd26ef357a6092f",
+      "bytes": 1386,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\launch_physical_hidden.py"
+    },
+    "seal_terminal.py": {
+      "sha256": "bb99d0f6050e5dfffd0c0cb3fa33bc99b0f4951fe2567074a93944cd930cfaba",
+      "bytes": 6447,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\seal_terminal.py"
+    },
+    "physical_snapshot.py": {
+      "sha256": "8c4fea621ed6e504dbdd27830c6fcebec4c4f025dcbdc119252b348285294e4d",
+      "bytes": 4052,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_snapshot.py"
+    },
+    "independent_raw_review.py": {
+      "sha256": "ffa08eab7e92f8b5a19155faa02cb3e65d568edbbcaffa74488e5a4a686f24f5",
+      "bytes": 8592,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\independent_raw_review.py"
+    },
+    "preflight_physical.py": {
+      "sha256": "74620785affca33c36e9387bab9f36f13619018e883895918d34b2d132f44d99",
+      "bytes": 6144,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\preflight_physical.py"
+    },
+    "prepare_physical.py": {
+      "sha256": "6d877252e3a8e8aa63d8146ab80bb53f9a9fb945ed5bbf6fd8062331f92bd832",
+      "bytes": 5240,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\prepare_physical.py"
+    },
+    "PHYSICAL_INPUT_BINDING.json": {
+      "sha256": "2485476edd3f58a837868ce899ff80966750829fbe59f5d8c3f9355769c690e1",
+      "bytes": 535591,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_INPUT_BINDING.json"
+    },
+    "PHYSICAL_PREPARATION.json": {
+      "sha256": "83cb0b989fd59981e76e534bc4edbce439c6a4d49a1591503957d53bc2a3831e",
+      "bytes": 9495,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_PREPARATION.json"
+    },
+    "PHYSICAL_REVIEW_REQUIREMENTS.json": {
+      "sha256": "ab55ceea0bc6d5f0e0c13fc023177b92ee86121e000508f911cd56d7ebb61888",
+      "bytes": 1605,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_REVIEW_REQUIREMENTS.json"
+    },
+    "PHYSICAL_TCL_PREFLIGHT.json": {
+      "sha256": "ef3dd1002b1cb94cea86bb9f6e72f5e3a7ac452bb131adc02b2929305bed5cec",
+      "bytes": 6609,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_TCL_PREFLIGHT.json"
+    },
+    "PHYSICAL_PREFLIGHT_EXIT.json": {
+      "sha256": "7ff3c8a92a129ca19831d9b4bd77c7173cabc2dfa5648f5ac7f8bf49bab10c6b",
+      "bytes": 656,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_PREFLIGHT_EXIT.json"
+    },
+    "physical_preflight.stdout.log": {
+      "sha256": "d39846c258b00f287511dcf950792796cc78cbe2d7f087fa6d32414c72a0e964",
+      "bytes": 199,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_preflight.stdout.log"
+    },
+    "physical_preflight.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_preflight.stderr.log"
+    },
+    "PHYSICAL_PREPARATION_EXIT.json": {
+      "sha256": "39d8a4fbb9bc8ce9813498248b31a52cd245d052b4ad3593d19e979f4a5719e7",
+      "bytes": 654,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_PREPARATION_EXIT.json"
+    },
+    "physical_prepare.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_prepare.stdout.log"
+    },
+    "physical_prepare.stderr.log": {
+      "sha256": "3fef655a85761159dc54aac38cd105bd54b822bc934cafa26efc4bd0a4df4146",
+      "bytes": 790,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_prepare.stderr.log"
+    },
+    "PHYSICAL_PREPARATION_RETRY02_EXIT.json": {
+      "sha256": "99370cc95d4dd0b893b80f445634ab4db86798b710d3120b7a8dbcdc92d1c17b",
+      "bytes": 654,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_PREPARATION_RETRY02_EXIT.json"
+    },
+    "physical_prepare_retry02.stdout.log": {
+      "sha256": "3ea525dbe24e03af8874e49c51b0c1ed263e407818815aa6583b67f04392ea9e",
+      "bytes": 432,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_prepare_retry02.stdout.log"
+    },
+    "physical_prepare_retry02.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_prepare_retry02.stderr.log"
+    },
+    "PHYSICAL_CLOSEOUT.json": {
+      "sha256": "38d24a8d7b3846b8495243af89feedeac97970b792299c7355592eaba585c26e",
+      "bytes": 4301,
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_CLOSEOUT.json"
+    }
+  },
+  "original_failure_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\physical_preparation_attempt01\\FAILURE_MANIFEST.json",
+  "original_failure_manifest_sha256": "9e454dc962abf7788f7d593ba3bdd090e166f50929ad9995839e18a7f21eec81",
+  "no_vendor_or_test_run_during_closeout": true
+}

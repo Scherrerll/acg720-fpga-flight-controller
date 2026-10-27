@@ -1,0 +1,9 @@
+{
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "original_receipt": "attempt01/uart_mode0_vvp_exit.json",
+  "original_receipt_sha256": "ce16bfc3886dc2d640e557dd90d3fd3cfd0c4c00d00f31387c869b492b38e3c3",
+  "original_actual_wait_field": "actual_child_p_wait",
+  "schema_adapter_only": true,
+  "scope": "The original recorded actual Popen.wait return is preserved. This file maps its descriptive field name to the common release-validator schema; no process is rerun."
+}

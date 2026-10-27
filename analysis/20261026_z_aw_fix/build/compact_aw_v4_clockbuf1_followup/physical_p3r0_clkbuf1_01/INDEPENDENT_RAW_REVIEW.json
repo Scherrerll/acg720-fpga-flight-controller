@@ -1,0 +1,140 @@
+{
+  "reviewed_utc": "2026-10-26T14:51:22.647712+00:00",
+  "scope": "Direct independent parsing of raw reports, actual exits, source and bitstream. No imported gate parser.",
+  "passed": false,
+  "checks": {
+    "vendor_wait0": true,
+    "runner_wait0": false,
+    "source55": true,
+    "canonical_source55": true,
+    "VG": true,
+    "raw_log_hash": true,
+    "normal_eof": true,
+    "fullroute_and_bitstream": true,
+    "no_unrouted_nets": true,
+    "netlist_only": true,
+    "period20": true,
+    "constraint50_and_fmax50": false,
+    "five_slacks_nonnegative": false,
+    "setup_hold_zero": false,
+    "physical_artifacts": true,
+    "pins18_all_directions": true,
+    "FS_B4": true,
+    "cfg_B4": true,
+    "unchanged_constraints": true,
+    "combined_CST_bound": true,
+    "combined_CST_original_prefix": true,
+    "only_existing_clock_physical_line": true,
+    "combined_CST_used": true
+  },
+  "period_ns": 20.0,
+  "fmax_mhz": 49.283,
+  "slacks_ns": {
+    "setup": -0.291,
+    "hold": 0.132,
+    "recovery": 11.583,
+    "removal": 3.456,
+    "minimum_pulse_width": 7.387
+  },
+  "violated_endpoints": {
+    "setup": 20,
+    "hold": 0
+  },
+  "worst_setup_row": [
+    "1",
+    "-0.291",
+    "acc_time/output_az_3_s0/Q",
+    "core/flight_state/flying_ms_3_s0/D",
+    "clk50:[R]",
+    "clk50:[R]",
+    "20.000",
+    "0.454",
+    "19.780"
+  ],
+  "pins": {
+    "clk50": [
+      "Y18",
+      "in"
+    ],
+    "imu_miso": [
+      "D19",
+      "in"
+    ],
+    "rc_ppm_in": [
+      "B17",
+      "in"
+    ],
+    "range_rx": [
+      "C14",
+      "in"
+    ],
+    "radio_rx": [
+      "B16",
+      "in"
+    ],
+    "imu_sck": [
+      "E17",
+      "out"
+    ],
+    "imu_mosi": [
+      "C20",
+      "out"
+    ],
+    "imu_cs_n": [
+      "E18",
+      "out"
+    ],
+    "imu_gyro_cs_n": [
+      "F20",
+      "out"
+    ],
+    "range_tx": [
+      "C15",
+      "out"
+    ],
+    "uart_tx": [
+      "M15",
+      "out"
+    ],
+    "radio_tx": [
+      "B15",
+      "out"
+    ],
+    "led2": [
+      "L21",
+      "out"
+    ],
+    "led3": [
+      "K21",
+      "out"
+    ],
+    "motor1_pwm": [
+      "D17",
+      "out"
+    ],
+    "motor2_pwm": [
+      "C17",
+      "out"
+    ],
+    "motor3_pwm": [
+      "E16",
+      "out"
+    ],
+    "motor4_pwm": [
+      "D16",
+      "out"
+    ]
+  },
+  "raw_sha256": {
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_clkbuf1_01\\verification\\physical.log": "9100a55f63b98e93e6c67802bd1422afa4bf35af78cb28914636bf54d6702ff9",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_clkbuf1_01\\verification\\physical_exit.json": "590a494d352367808b039b24a82e6635c944bce0580eccf0036fe49b7d6eb366",
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_clockbuf1_followup\\physical_p3r0_clkbuf1_01\\runner_exit.json": "16db0723d9c58626f3234d9bc2453599e60c07d15539b5c51e478c77b34b2554",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_clkbuf1_01\\source\\impl\\pnr\\acg720_ano_port.tr": "6bd94db0e33bb437dbcf43ab8412dc625e8fbfa5699e4d3f13f9dc426d7232d4",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_clkbuf1_01\\source\\impl\\pnr\\acg720_ano_port.rpt.txt": "309698e94af8aa41cd34e32dd9a7a628bde07d265dc1f8bf75d8fc9aac0e35ab",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_clkbuf1_01\\source\\impl\\pnr\\acg720_ano_port.fs": "3d41172838ee464d026f2093c02708b7c13e5de34c30cadab53c89f346db32e0",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_clkbuf1_01\\source\\impl\\pnr\\acg720_ano_port.pr": "018adf578a0818abc5a7175ac7cd11f00c6bba2ee7dca03c4d8a8523dc644fd8",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_clkbuf1_01\\source\\impl\\pnr\\device.cfg": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+    "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_clkbuf1_01\\source\\physical_constraints.cst": "c5f0dc912f5e8eab0f51895b9d5f757e2df95c271ba0d17584818436826534fb"
+  },
+  "review_script_sha256": "979162513bd186544bd736e46878b1ce8485c9d17b79651dc4460bff4cbadd19"
+}

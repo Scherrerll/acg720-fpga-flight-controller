@@ -1,0 +1,378 @@
+{
+  "scope": "Frozen owned v5 P3/R0 replication1 actual terminal; physical gate only, no delivery/hardware acceptance.",
+  "sealed_utc": "2026-10-26T08:22:13.781774+00:00",
+  "classification": "routefail",
+  "actual_p_wait": 1,
+  "normal_wait_return": true,
+  "physical_started_utc": "2026-10-26T07:05:34.940944+00:00",
+  "physical_ended_utc": "2026-10-26T08:21:21.081712+00:00",
+  "vendor_pid": 13152,
+  "helper_pid": 39312,
+  "qualified_physical": false,
+  "accepted_for_delivery": false,
+  "physical_options": {
+    "place": 3,
+    "route": 0,
+    "map_option": 2,
+    "replicate_resources": 1,
+    "timing_driven": 1
+  },
+  "donor_synthesis_options": {
+    "map_option": 2,
+    "replicate_resources": 0
+  },
+  "only_tcl_delta": "replicate_resources0->1",
+  "actual_tcl_sha256": "2fcbe54f1ab25e2468380efcc88f39f49bb50ef2ce7d17b0b7f772304a4061fa",
+  "helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "exact_donor_vg_sha256": "2d670218e97041bb3d4cc7c67218f4bef12e5bf96261225b9b97203ce3b4a1c9",
+  "source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+    "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+    "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "source55_checks": [
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\canonical\\source",
+      "file_count": 55,
+      "all_bound_hashes_match": true
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\source",
+      "file_count": 55,
+      "all_bound_hashes_match": true
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\build_attempt_01\\source",
+      "file_count": 55,
+      "all_bound_hashes_match": true
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\source",
+      "file_count": 55,
+      "all_bound_hashes_match": true
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\canonical\\source",
+      "file_count": 55,
+      "all_bound_hashes_match": true
+    }
+  ],
+  "unrouted_reports": [
+    2670
+  ],
+  "archived_raw_files": [
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\verification\\build_input.json",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/build_input.json",
+      "raw_bytes": 18404,
+      "raw_sha256": "8f364fe9e3d7abd7c757d50b4f981421df6195bfac63b4b50fd27dfeda7262b2",
+      "archived_path": "raw/build_input.json",
+      "archived_bytes": 18404,
+      "archived_sha256": "8f364fe9e3d7abd7c757d50b4f981421df6195bfac63b4b50fd27dfeda7262b2",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\verification\\physical_input.json",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/physical_input.json",
+      "raw_bytes": 6124,
+      "raw_sha256": "91250976df025ce40d1a46495821c01f1fd3a7828b7840fa6afac04de113d09d",
+      "archived_path": "raw/physical_input.json",
+      "archived_bytes": 6124,
+      "archived_sha256": "91250976df025ce40d1a46495821c01f1fd3a7828b7840fa6afac04de113d09d",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\verification\\physical_process.json",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/physical_process.json",
+      "raw_bytes": 869,
+      "raw_sha256": "350bad097edaee18039fd8e6f7a8bf022e2cc9b08d17a682f71fc641c16fd420",
+      "archived_path": "raw/physical_process.json",
+      "archived_bytes": 869,
+      "archived_sha256": "350bad097edaee18039fd8e6f7a8bf022e2cc9b08d17a682f71fc641c16fd420",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\verification\\physical_exit.json",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/physical_exit.json",
+      "raw_bytes": 1060,
+      "raw_sha256": "cf7c4b0126344f1840714d37763a3fac9896d33e3ba38a35986265cd95dc1530",
+      "archived_path": "raw/physical_exit.json",
+      "archived_bytes": 1060,
+      "archived_sha256": "cf7c4b0126344f1840714d37763a3fac9896d33e3ba38a35986265cd95dc1530",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\verification\\physical.log",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/physical.log",
+      "raw_bytes": 2237,
+      "raw_sha256": "6bddbd7fe4d925004d730b088f029f2291b4aa1ec1c286474367e2f453f811a8",
+      "archived_path": "raw/physical.log",
+      "archived_bytes": 2237,
+      "archived_sha256": "6bddbd7fe4d925004d730b088f029f2291b4aa1ec1c286474367e2f453f811a8",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\verification\\project_serialization_check.json",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/project_serialization_check.json",
+      "raw_bytes": 185,
+      "raw_sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a",
+      "archived_path": "raw/project_serialization_check.json",
+      "archived_bytes": 185,
+      "archived_sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\verification\\build_failure.json",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/build_failure.json",
+      "raw_bytes": 1483,
+      "raw_sha256": "69ed388c735d8fbc7a420540a8d4d829d863ff2204c01168a79f646bba8a8672",
+      "archived_path": "raw/build_failure.json",
+      "archived_bytes": 1483,
+      "archived_sha256": "69ed388c735d8fbc7a420540a8d4d829d863ff2204c01168a79f646bba8a8672",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\physical.tcl",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/physical.tcl",
+      "raw_bytes": 463,
+      "raw_sha256": "2fcbe54f1ab25e2468380efcc88f39f49bb50ef2ce7d17b0b7f772304a4061fa",
+      "archived_path": "raw/physical.tcl",
+      "archived_bytes": 463,
+      "archived_sha256": "2fcbe54f1ab25e2468380efcc88f39f49bb50ef2ce7d17b0b7f772304a4061fa",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\source\\physical.gprj",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/physical.gprj",
+      "raw_bytes": 434,
+      "raw_sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+      "archived_path": "raw/physical.gprj",
+      "archived_bytes": 434,
+      "archived_sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\source\\acg720_ano_port.sdc",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/acg720_ano_port.sdc",
+      "raw_bytes": 254,
+      "raw_sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "archived_path": "raw/acg720_ano_port.sdc",
+      "archived_bytes": 254,
+      "archived_sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\source\\acg720_ano_port.cst",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/acg720_ano_port.cst",
+      "raw_bytes": 1891,
+      "raw_sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "archived_path": "raw/acg720_ano_port.cst",
+      "archived_bytes": 1891,
+      "archived_sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "compression": "none"
+    },
+    {
+      "original_absolute_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_repl1_01\\source\\impl\\pnr\\acg720_ano_port.rpt.txt",
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/impl/pnr/acg720_ano_port.rpt.txt",
+      "raw_bytes": 99940,
+      "raw_sha256": "df9de3cc9a9a175a363e50dfdefa098baa65f48a77024008cf62fdfd31bc25ee",
+      "archived_path": "raw/acg720_ano_port.rpt.txt.gz",
+      "archived_bytes": 5374,
+      "archived_sha256": "a3032ee0fc64b745d9a872b1bce0dd413279d6c8650ff6162233854091a0ed98",
+      "compression": "gzip.compress(bytes,mtime=0)"
+    }
+  ],
+  "external_evidence": {
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/build_input.json": {
+      "bytes": 18404,
+      "sha256": "8f364fe9e3d7abd7c757d50b4f981421df6195bfac63b4b50fd27dfeda7262b2"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/physical_input.json": {
+      "bytes": 6124,
+      "sha256": "91250976df025ce40d1a46495821c01f1fd3a7828b7840fa6afac04de113d09d"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/physical_process.json": {
+      "bytes": 869,
+      "sha256": "350bad097edaee18039fd8e6f7a8bf022e2cc9b08d17a682f71fc641c16fd420"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/physical_exit.json": {
+      "bytes": 1060,
+      "sha256": "cf7c4b0126344f1840714d37763a3fac9896d33e3ba38a35986265cd95dc1530"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/physical.log": {
+      "bytes": 2237,
+      "sha256": "6bddbd7fe4d925004d730b088f029f2291b4aa1ec1c286474367e2f453f811a8"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/project_serialization_check.json": {
+      "bytes": 185,
+      "sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/verification/build_failure.json": {
+      "bytes": 1483,
+      "sha256": "69ed388c735d8fbc7a420540a8d4d829d863ff2204c01168a79f646bba8a8672"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/physical.tcl": {
+      "bytes": 463,
+      "sha256": "2fcbe54f1ab25e2468380efcc88f39f49bb50ef2ce7d17b0b7f772304a4061fa"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/physical.gprj": {
+      "bytes": 434,
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/acg720_ano_port.sdc": {
+      "bytes": 254,
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/acg720_ano_port.cst": {
+      "bytes": 1891,
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/impl/pnr/acg720_ano_port.rpt.txt": {
+      "bytes": 99940,
+      "sha256": "df9de3cc9a9a175a363e50dfdefa098baa65f48a77024008cf62fdfd31bc25ee"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "bytes": 14541115,
+      "sha256": "2d670218e97041bb3d4cc7c67218f4bef12e5bf96261225b9b97203ce3b4a1c9"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/build_attempt_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "bytes": 14541115,
+      "sha256": "2d670218e97041bb3d4cc7c67218f4bef12e5bf96261225b9b97203ce3b4a1c9"
+    },
+    "firmware/B0B4/build_candidate.py": {
+      "bytes": 14116,
+      "sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/run_physical_p3r0_repl1.py": {
+      "bytes": 8384,
+      "sha256": "b2e0169bdcb1d8b23d21ebb8a0d80ae26e1c38e1ad738b2f4e6df9ba43dedd01"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/source_freeze.json": {
+      "bytes": 11718,
+      "sha256": "a8dc50bb1d0d0f13199b93cedd97de0ec88ba87340f701b81c384ee27365e203"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/runner_changes.diff": {
+      "bytes": 5743,
+      "sha256": "4e35aa9b5f91990449dcbed9249ea586aeb87c11cd317d569e81c9ca7e54c3d6"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/TRIAL_PROVENANCE.json": {
+      "bytes": 1814,
+      "sha256": "a003efc9844de2557cc5f52e70d4cd759d4f7d79887b77b7fde09d16a4ffce01"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/EXECUTION_CHECK.json": {
+      "bytes": 1180,
+      "sha256": "7cf85865ddbc3b133cd4f0fb8d6c051f3af7b50054c3ab38a7e486f86e0666de"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/runner_process.json": {
+      "bytes": 962,
+      "sha256": "b1541968bd90bc8c59be73e5d83155ee940dc720c2c7e449bdea6cfff8fe1d5e"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/runner.stdout.log": {
+      "bytes": 216,
+      "sha256": "0cfde906d6ea4a61d42534104e6408f8fecff247aaac2847d3290b67f64c2330"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/runner.stderr.log": {
+      "bytes": 1095,
+      "sha256": "63688e1653e5f332d017107aa313949c42d0e7924ae2f9d58013f712f10049c4"
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v5_repl1/seal_terminal.py": {
+      "bytes": 10952,
+      "sha256": "ccc7a0e3c99428e6656dc3d74df401423aa0e0b7c1c5638ecc1ccc233e35bd30"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/build_attempt_01/verification/build_input.json": {
+      "bytes": 18602,
+      "sha256": "30d970f3febd3e1a8b722a354947cda656cf0841206b4a0c5fdd036174bd4990"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/build_attempt_01/verification/synthesis_summary.json": {
+      "bytes": 8333,
+      "sha256": "8d5395423e6cb5f648d4ec0be0be775805ecdc4157586d3ce26a96d357887b6d"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/build_attempt_01/verification/synthesis_exit.json": {
+      "bytes": 1046,
+      "sha256": "e37180f866d52154382a91833f02d7ba179d25a416e3178c977bcddd20813593"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/build_attempt_01/verification/synthesis.log": {
+      "bytes": 82097,
+      "sha256": "0e66f0f73e1d97b2c8c591cb352c6ca34f595f0876af1c3095123358bab373b6"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/build_attempt_01/verification/mapped_audit.json": {
+      "bytes": 8224,
+      "sha256": "7fc569de9add5ecb6bb235326091ffef569db368bd8b5f03ccdffcdf22d1c7a8"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/build_attempt_01/verification/gain_port_audit.json": {
+      "bytes": 17538,
+      "sha256": "e11eddff2d35faf0d753a57e69da373367920fb48fc64fefee1a2d37deb6a6bd"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/build_attempt_01/verification/strict_ff_clock_audit.json": {
+      "bytes": 169,
+      "sha256": "6ce8fc21c4d88a798fe3e5de6d1688161719591054cec9c18d12f24438f04fda"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/impl/pnr/device.cfg": {
+      "bytes": 600,
+      "sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_repl1_01/source/impl/pnr/acg720_ano_port.pin.html": {
+      "bytes": 125960,
+      "sha256": "c1b553b6142198cde153e01701dcac003f9b9f65267b88e7ded130950a901ac7"
+    }
+  },
+  "raw_sources_verified_stable_after_copy": true,
+  "FS_PR_VG_not_copied": true,
+  "TR_exists": false,
+  "FS_exists": false,
+  "physical_audit_exists": false,
+  "physical_command_returned_EOF": false,
+  "elapsed_seconds": 4546.140768
+}

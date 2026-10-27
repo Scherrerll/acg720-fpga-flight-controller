@@ -1,0 +1,828 @@
+{
+  "verified_utc": "2026-10-26T23:33:13.727299+00:00",
+  "scope": "New read-only portability computation over original official52 and actual sealed v20 VG; exact instance/type only, no generated-number renames. Does not establish device legality/routability/STA.",
+  "report": {
+    "passed": true,
+    "official_export_rows": 52,
+    "kept": 41,
+    "excluded": 11,
+    "DSP": 39,
+    "BSRAM": 2,
+    "VG_sha256": "bb2d4a6d20184a0c38739b550d2fc04adf9fe9ce219106064a2051edbc26274f",
+    "donor_V4_VG_sha256": "f91ca98e3252020035fa9e012b2c6ad95649bc0fec8cf0f551ed4ef001601727",
+    "official_export_sha256": "a9d20d20d9495e6d351003e2b7f214c5673ce4dea55791b6d2270743b5ec8258",
+    "original_validation_sha256": "cdfec43d4ceb45a2d8d2ff2fff6606fe17559809d9b08fe39d3253015059bf3d",
+    "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+    "kept_rows": [
+      {
+        "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+        "locations": [
+          "BSRAM_R56[3][B]"
+        ],
+        "resource_kind": "BSRAM",
+        "statement": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s\" BSRAM_R56[3][B];",
+        "original_line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s\" BSRAM_R56[3][B];",
+        "original_line_sha256": "7d1365198f6fdef0a397dedc4949b2e6d818ea5d6aaf1daf055d163ff8b34cb8",
+        "line_number": 10,
+        "donor_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+        "target_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+        "primitive": "pROM"
+      },
+      {
+        "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+        "locations": [
+          "BSRAM_R56[4]"
+        ],
+        "resource_kind": "BSRAM",
+        "statement": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s\" BSRAM_R56[4];",
+        "original_line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s\" BSRAM_R56[4];",
+        "original_line_sha256": "20e0872b1492cf711ca925cd04b135cb19e1d8f54f5c17e12f05dcb420d6f328",
+        "line_number": 11,
+        "donor_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+        "target_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+        "primitive": "pROM"
+      },
+      {
+        "instance": "core/controller/n4769_s",
+        "locations": [
+          "DSP_R47[30][A]",
+          "DSP_R47[30][B]",
+          "DSP_R47[31][A]",
+          "DSP_R47[31][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/controller/n4769_s\" DSP_R47[30][A],DSP_R47[30][B],DSP_R47[31][A],DSP_R47[31][B];",
+        "original_line": "INS_LOC \"core/controller/n4769_s\" DSP_R47[30][A],DSP_R47[30][B],DSP_R47[31][A],DSP_R47[31][B];",
+        "original_line_sha256": "4a251e631b07c05e7b3ad4a09e3f88d9095e66f7fa5e5fddc3f73a7e2b7d2286",
+        "line_number": 12,
+        "donor_graph_identifier": "core/controller/n4769_s",
+        "target_graph_identifier": "core/controller/n4769_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "core/fallback_sticks/n1034_s",
+        "locations": [
+          "DSP_R47[47][A]",
+          "DSP_R47[47][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/fallback_sticks/n1034_s\" DSP_R47[47][A],DSP_R47[47][B];",
+        "original_line": "INS_LOC \"core/fallback_sticks/n1034_s\" DSP_R47[47][A],DSP_R47[47][B];",
+        "original_line_sha256": "856015eda752a5b38ddb368b65482b303806a03125857761b09ce6d9293d48ec",
+        "line_number": 14,
+        "donor_graph_identifier": "core/fallback_sticks/n1034_s",
+        "target_graph_identifier": "core/fallback_sticks/n1034_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "core/fallback_sticks/n1702_s",
+        "locations": [
+          "DSP_R47[46][A]",
+          "DSP_R47[46][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/fallback_sticks/n1702_s\" DSP_R47[46][A],DSP_R47[46][B];",
+        "original_line": "INS_LOC \"core/fallback_sticks/n1702_s\" DSP_R47[46][A],DSP_R47[46][B];",
+        "original_line_sha256": "fa297abbf88626c4155f1188f8964e9b53f3a37d0ea89236faa7b8632155794c",
+        "line_number": 15,
+        "donor_graph_identifier": "core/fallback_sticks/n1702_s",
+        "target_graph_identifier": "core/fallback_sticks/n1702_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "core/fallback_sticks/n700_s",
+        "locations": [
+          "DSP_R47[45][A]",
+          "DSP_R47[45][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/fallback_sticks/n700_s\" DSP_R47[45][A],DSP_R47[45][B];",
+        "original_line": "INS_LOC \"core/fallback_sticks/n700_s\" DSP_R47[45][A],DSP_R47[45][B];",
+        "original_line_sha256": "9d5482c5d798d438f25a613744130c78c7c8a14ff10746daa2cce9a0eeef2107",
+        "line_number": 16,
+        "donor_graph_identifier": "core/fallback_sticks/n700_s",
+        "target_graph_identifier": "core/fallback_sticks/n700_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "core/fallback_sticks/n733_s",
+        "locations": [
+          "DSP_R47[44][A]",
+          "DSP_R47[44][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/fallback_sticks/n733_s\" DSP_R47[44][A],DSP_R47[44][B];",
+        "original_line": "INS_LOC \"core/fallback_sticks/n733_s\" DSP_R47[44][A],DSP_R47[44][B];",
+        "original_line_sha256": "bbc5c0f71b2e1eb4c759114910dc2ef5e11bc66e18a8b1e4c5ae2b903883dbd0",
+        "line_number": 17,
+        "donor_graph_identifier": "core/fallback_sticks/n733_s",
+        "target_graph_identifier": "core/fallback_sticks/n733_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "core/fallback_sticks/square_product_0_s",
+        "locations": [
+          "DSP_R65[44][A]",
+          "DSP_R65[44][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/fallback_sticks/square_product_0_s\" DSP_R65[44][A],DSP_R65[44][B];",
+        "original_line": "INS_LOC \"core/fallback_sticks/square_product_0_s\" DSP_R65[44][A],DSP_R65[44][B];",
+        "original_line_sha256": "d842aa1184c850a981d47bb01cd73ee1114f1e46a7cd1a675751cdf1c921666b",
+        "line_number": 18,
+        "donor_graph_identifier": "core/fallback_sticks/square_product_0_s",
+        "target_graph_identifier": "core/fallback_sticks/square_product_0_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "core/imu/estimator/angle/compensated_0_s",
+        "locations": [
+          "DSP_R28[19][A]",
+          "DSP_R28[19][B]",
+          "DSP_R28[20][A]",
+          "DSP_R28[20][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/imu/estimator/angle/compensated_0_s\" DSP_R28[19][A],DSP_R28[19][B],DSP_R28[20][A],DSP_R28[20][B];",
+        "original_line": "INS_LOC \"core/imu/estimator/angle/compensated_0_s\" DSP_R28[19][A],DSP_R28[19][B],DSP_R28[20][A],DSP_R28[20][B];",
+        "original_line_sha256": "9433b6d8e6249c78e4b8afb12bcf08764e34915eb8344be52f7edbd8984461f3",
+        "line_number": 19,
+        "donor_graph_identifier": "core/imu/estimator/angle/compensated_0_s",
+        "target_graph_identifier": "core/imu/estimator/angle/compensated_0_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "core/imu/estimator/cdeg_scaled_0_s",
+        "locations": [
+          "DSP_R28[17][A]",
+          "DSP_R28[17][B]",
+          "DSP_R28[18][A]",
+          "DSP_R28[18][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/imu/estimator/cdeg_scaled_0_s\" DSP_R28[17][A],DSP_R28[17][B],DSP_R28[18][A],DSP_R28[18][B];",
+        "original_line": "INS_LOC \"core/imu/estimator/cdeg_scaled_0_s\" DSP_R28[17][A],DSP_R28[17][B],DSP_R28[18][A],DSP_R28[18][B];",
+        "original_line_sha256": "9530da5e19491a98655c7aa445b0fc7b2d4d3865b7b9d7276fe32a669c22336b",
+        "line_number": 20,
+        "donor_graph_identifier": "core/imu/estimator/cdeg_scaled_0_s",
+        "target_graph_identifier": "core/imu/estimator/cdeg_scaled_0_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "core/imu/estimator/n18439_s",
+        "locations": [
+          "DSP_R28[16][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/imu/estimator/n18439_s\" DSP_R28[16][B];",
+        "original_line": "INS_LOC \"core/imu/estimator/n18439_s\" DSP_R28[16][B];",
+        "original_line_sha256": "310e8e044d22b1e070451e91d9f334021990d3565a6538db633b34c6e1845635",
+        "line_number": 21,
+        "donor_graph_identifier": "core/imu/estimator/n18439_s",
+        "target_graph_identifier": "core/imu/estimator/n18439_s",
+        "primitive": "MULT12X12"
+      },
+      {
+        "instance": "core/imu/estimator/n7173_s0",
+        "locations": [
+          "DSP_R28[22][A]",
+          "DSP_R28[22][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/imu/estimator/n7173_s0\" DSP_R28[22][A],DSP_R28[22][B];",
+        "original_line": "INS_LOC \"core/imu/estimator/n7173_s0\" DSP_R28[22][A],DSP_R28[22][B];",
+        "original_line_sha256": "b92c8d04f7fdac41faf6733f2f1ea1b15ddf584c9176b8d73b8e3c7ccce513c8",
+        "line_number": 22,
+        "donor_graph_identifier": "core/imu/estimator/n7173_s0",
+        "target_graph_identifier": "core/imu/estimator/n7173_s0",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "core/imu/reader/n343_s",
+        "locations": [
+          "DSP_R28[7][A]",
+          "DSP_R28[7][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/imu/reader/n343_s\" DSP_R28[7][A],DSP_R28[7][B];",
+        "original_line": "INS_LOC \"core/imu/reader/n343_s\" DSP_R28[7][A],DSP_R28[7][B];",
+        "original_line_sha256": "2509b0ab56f2e13d89cf63fe4615ed144d186983e21d4631c40fb9357a1218b1",
+        "line_number": 23,
+        "donor_graph_identifier": "core/imu/reader/n343_s",
+        "target_graph_identifier": "core/imu/reader/n343_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "core/imu/reader/n507_s",
+        "locations": [
+          "DSP_R28[8][A]",
+          "DSP_R28[8][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/imu/reader/n507_s\" DSP_R28[8][A],DSP_R28[8][B];",
+        "original_line": "INS_LOC \"core/imu/reader/n507_s\" DSP_R28[8][A],DSP_R28[8][B];",
+        "original_line_sha256": "623bb1ff4a6794314488988d6b1a28811519cacdfdecf0cee4c46e52ff6f0611",
+        "line_number": 24,
+        "donor_graph_identifier": "core/imu/reader/n507_s",
+        "target_graph_identifier": "core/imu/reader/n507_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "core/n3262_s",
+        "locations": [
+          "DSP_R47[43][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/n3262_s\" DSP_R47[43][B];",
+        "original_line": "INS_LOC \"core/n3262_s\" DSP_R47[43][B];",
+        "original_line_sha256": "e063901664449c0df25c26660d740b725b47dea221010b03b2ea7e80cbfe1d40",
+        "line_number": 25,
+        "donor_graph_identifier": "core/n3262_s",
+        "target_graph_identifier": "core/n3262_s",
+        "primitive": "MULT12X12"
+      },
+      {
+        "instance": "core/n3296_s",
+        "locations": [
+          "DSP_R65[40][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/n3296_s\" DSP_R65[40][B];",
+        "original_line": "INS_LOC \"core/n3296_s\" DSP_R65[40][B];",
+        "original_line_sha256": "7591bf2be9e164d4af5987b70c517708b99e00c092d2dcdadcb7c651b5752ffc",
+        "line_number": 26,
+        "donor_graph_identifier": "core/n3296_s",
+        "target_graph_identifier": "core/n3296_s",
+        "primitive": "MULT12X12"
+      },
+      {
+        "instance": "mtf/metric/dx_0_s",
+        "locations": [
+          "DSP_R65[19][A]",
+          "DSP_R65[19][B]",
+          "DSP_R65[20][A]",
+          "DSP_R65[20][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"mtf/metric/dx_0_s\" DSP_R65[19][A],DSP_R65[19][B],DSP_R65[20][A],DSP_R65[20][B];",
+        "original_line": "INS_LOC \"mtf/metric/dx_0_s\" DSP_R65[19][A],DSP_R65[19][B],DSP_R65[20][A],DSP_R65[20][B];",
+        "original_line_sha256": "defe1e4c44de9608267f6061aef912f591698c6d0b6b6cfde4e68f908b565764",
+        "line_number": 31,
+        "donor_graph_identifier": "mtf/metric/dx_0_s",
+        "target_graph_identifier": "mtf/metric/dx_0_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "mtf/metric/dy_0_s",
+        "locations": [
+          "DSP_R65[17][A]",
+          "DSP_R65[17][B]",
+          "DSP_R65[18][A]",
+          "DSP_R65[18][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"mtf/metric/dy_0_s\" DSP_R65[17][A],DSP_R65[17][B],DSP_R65[18][A],DSP_R65[18][B];",
+        "original_line": "INS_LOC \"mtf/metric/dy_0_s\" DSP_R65[17][A],DSP_R65[17][B],DSP_R65[18][A],DSP_R65[18][B];",
+        "original_line_sha256": "ddeb0988704bbbe873b2ae63c91fe84a2aa1ca0e311b17682da610adecbb24d2",
+        "line_number": 32,
+        "donor_graph_identifier": "mtf/metric/dy_0_s",
+        "target_graph_identifier": "mtf/metric/dy_0_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "mtf/metric/product_x_0_s",
+        "locations": [
+          "DSP_R65[16][A]",
+          "DSP_R65[16][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"mtf/metric/product_x_0_s\" DSP_R65[16][A],DSP_R65[16][B];",
+        "original_line": "INS_LOC \"mtf/metric/product_x_0_s\" DSP_R65[16][A],DSP_R65[16][B];",
+        "original_line_sha256": "228c0b9c46cb2f167e70ecc9cb46e16cd85170bb62b65a49b1a5fba2630382b8",
+        "line_number": 33,
+        "donor_graph_identifier": "mtf/metric/product_x_0_s",
+        "target_graph_identifier": "mtf/metric/product_x_0_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "mtf/metric/product_y_0_s",
+        "locations": [
+          "DSP_R65[15][A]",
+          "DSP_R65[15][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"mtf/metric/product_y_0_s\" DSP_R65[15][A],DSP_R65[15][B];",
+        "original_line": "INS_LOC \"mtf/metric/product_y_0_s\" DSP_R65[15][A],DSP_R65[15][B];",
+        "original_line_sha256": "c7263a2d4bb23aa384806803db21d7f144cadaf656ed789e1843e1076212932e",
+        "line_number": 34,
+        "donor_graph_identifier": "mtf/metric/product_y_0_s",
+        "target_graph_identifier": "mtf/metric/product_y_0_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n14695_s",
+        "locations": [
+          "DSP_R65[11][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n14695_s\" DSP_R65[11][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n14695_s\" DSP_R65[11][B];",
+        "original_line_sha256": "95578755415815941edd69a4fb43d052615ea636ad9388bcafd492a2d596b4bf",
+        "line_number": 35,
+        "donor_graph_identifier": "native_navigation/controller_proof/n14695_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n14695_s",
+        "primitive": "MULT12X12"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n15045_s",
+        "locations": [
+          "DSP_R47[10][A]",
+          "DSP_R47[10][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n15045_s\" DSP_R47[10][A],DSP_R47[10][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n15045_s\" DSP_R47[10][A],DSP_R47[10][B];",
+        "original_line_sha256": "cad80104302c516762a40596c5ebe4b31014f61a8a7ed94d6efd6f6824fc8c3b",
+        "line_number": 36,
+        "donor_graph_identifier": "native_navigation/controller_proof/n15045_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n15045_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n15592_s",
+        "locations": [
+          "DSP_R47[11][A]",
+          "DSP_R47[11][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n15592_s\" DSP_R47[11][A],DSP_R47[11][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n15592_s\" DSP_R47[11][A],DSP_R47[11][B];",
+        "original_line_sha256": "eaabc24c2d1cbb3b812b2c93b26f0b10f0298d5ce3dc6dffc774d21dc85b6dfa",
+        "line_number": 37,
+        "donor_graph_identifier": "native_navigation/controller_proof/n15592_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n15592_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n4214_s",
+        "locations": [
+          "DSP_R47[14][A]",
+          "DSP_R47[14][B]",
+          "DSP_R47[15][A]",
+          "DSP_R47[15][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n4214_s\" DSP_R47[14][A],DSP_R47[14][B],DSP_R47[15][A],DSP_R47[15][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n4214_s\" DSP_R47[14][A],DSP_R47[14][B],DSP_R47[15][A],DSP_R47[15][B];",
+        "original_line_sha256": "2ff8c299992dbb0fbbadaf483298f1c3f091a2c3fed0313337f7a7b877207572",
+        "line_number": 38,
+        "donor_graph_identifier": "native_navigation/controller_proof/n4214_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n4214_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n5842_s",
+        "locations": [
+          "DSP_R47[18][A]",
+          "DSP_R47[18][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n5842_s\" DSP_R47[18][A],DSP_R47[18][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n5842_s\" DSP_R47[18][A],DSP_R47[18][B];",
+        "original_line_sha256": "26c1901c0fd5c69a64ed1d46acb067c26240a8d12c49ff3855822bc5e2729ee5",
+        "line_number": 39,
+        "donor_graph_identifier": "native_navigation/controller_proof/n5842_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n5842_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n5968_s",
+        "locations": [
+          "DSP_R28[0][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n5968_s\" DSP_R28[0][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n5968_s\" DSP_R28[0][B];",
+        "original_line_sha256": "489fa75cdd28ab335c791ed28ea80954ffa7ba120580eef1debea03da3758c96",
+        "line_number": 40,
+        "donor_graph_identifier": "native_navigation/controller_proof/n5968_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n5968_s",
+        "primitive": "MULT12X12"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n7947_s",
+        "locations": [
+          "DSP_R65[13][A]",
+          "DSP_R65[13][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n7947_s\" DSP_R65[13][A],DSP_R65[13][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n7947_s\" DSP_R65[13][A],DSP_R65[13][B];",
+        "original_line_sha256": "1d5a57e8fd53d7019395825bb1930b9ae0cb1b839def8e90c71232751484d000",
+        "line_number": 41,
+        "donor_graph_identifier": "native_navigation/controller_proof/n7947_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n7947_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n8931_s",
+        "locations": [
+          "DSP_R47[16][A]",
+          "DSP_R47[16][B]",
+          "DSP_R47[17][A]",
+          "DSP_R47[17][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n8931_s\" DSP_R47[16][A],DSP_R47[16][B],DSP_R47[17][A],DSP_R47[17][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n8931_s\" DSP_R47[16][A],DSP_R47[16][B],DSP_R47[17][A],DSP_R47[17][B];",
+        "original_line_sha256": "f98a5e4a5ae9562f17a43add4a9334302977665d00f7b83d1b620bcd51a7f2d3",
+        "line_number": 42,
+        "donor_graph_identifier": "native_navigation/controller_proof/n8931_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n8931_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "native_navigation/controller_proof/n8972_s",
+        "locations": [
+          "DSP_R65[12][A]",
+          "DSP_R65[12][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/n8972_s\" DSP_R65[12][A],DSP_R65[12][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/n8972_s\" DSP_R65[12][A],DSP_R65[12][B];",
+        "original_line_sha256": "6615500aa1aa104547b635507b01530e90b31eeffd5767c11acbb33e85ab9c58",
+        "line_number": 43,
+        "donor_graph_identifier": "native_navigation/controller_proof/n8972_s",
+        "target_graph_identifier": "native_navigation/controller_proof/n8972_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/xy_stick/n1034_s",
+        "locations": [
+          "DSP_R28[5][A]",
+          "DSP_R28[5][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1034_s\" DSP_R28[5][A],DSP_R28[5][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1034_s\" DSP_R28[5][A],DSP_R28[5][B];",
+        "original_line_sha256": "c192ec5240cc489aee8b2b481d1d45041f28179ca8fa1ba35a67b2baf58bc775",
+        "line_number": 44,
+        "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n1034_s",
+        "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n1034_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/xy_stick/n1702_s",
+        "locations": [
+          "DSP_R28[6][A]",
+          "DSP_R28[6][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1702_s\" DSP_R28[6][A],DSP_R28[6][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1702_s\" DSP_R28[6][A],DSP_R28[6][B];",
+        "original_line_sha256": "ceb2d79450f9205987be7850933a963c017ae430abd14ba43d9a774f22a6f29b",
+        "line_number": 45,
+        "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n1702_s",
+        "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n1702_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/xy_stick/n700_s",
+        "locations": [
+          "DSP_R28[2][A]",
+          "DSP_R28[2][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/xy_stick/n700_s\" DSP_R28[2][A],DSP_R28[2][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n700_s\" DSP_R28[2][A],DSP_R28[2][B];",
+        "original_line_sha256": "4b525c75806235da5062fb0ac197e7211f4da10c678929024b1cc52c55d0c872",
+        "line_number": 46,
+        "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n700_s",
+        "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n700_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/xy_stick/n733_s",
+        "locations": [
+          "DSP_R28[1][A]",
+          "DSP_R28[1][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/xy_stick/n733_s\" DSP_R28[1][A],DSP_R28[1][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n733_s\" DSP_R28[1][A],DSP_R28[1][B];",
+        "original_line_sha256": "f9d4c59c6fd45647ac094124c8b2d99396e6db6577a78c75ba81065d08b2fda1",
+        "line_number": 47,
+        "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n733_s",
+        "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n733_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+        "locations": [
+          "DSP_R47[24][A]",
+          "DSP_R47[24][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/xy_stick/square_product_0_s\" DSP_R47[24][A],DSP_R47[24][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/square_product_0_s\" DSP_R47[24][A],DSP_R47[24][B];",
+        "original_line_sha256": "bd6d22244e32183c9ce1370d74c54e4f5aae165fae618793613084589c2995d3",
+        "line_number": 48,
+        "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+        "target_graph_identifier": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/z_stick/n422_s",
+        "locations": [
+          "DSP_R28[3][A]",
+          "DSP_R28[3][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/z_stick/n422_s\" DSP_R28[3][A],DSP_R28[3][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/z_stick/n422_s\" DSP_R28[3][A],DSP_R28[3][B];",
+        "original_line_sha256": "2c90916f533a1c7e8483ff86edc2cfedb45c2684babd52d282d20e65feb0e96b",
+        "line_number": 49,
+        "donor_graph_identifier": "native_navigation/controller_proof/z_stick/n422_s",
+        "target_graph_identifier": "native_navigation/controller_proof/z_stick/n422_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/controller_proof/z_stick/n705_s",
+        "locations": [
+          "DSP_R28[4][A]",
+          "DSP_R28[4][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/controller_proof/z_stick/n705_s\" DSP_R28[4][A],DSP_R28[4][B];",
+        "original_line": "INS_LOC \"native_navigation/controller_proof/z_stick/n705_s\" DSP_R28[4][A],DSP_R28[4][B];",
+        "original_line_sha256": "c53fd73148e73043bdbb4e09545f9d4dbe388b40c5f51d3b1a94e9b329c73e1c",
+        "line_number": 50,
+        "donor_graph_identifier": "native_navigation/controller_proof/z_stick/n705_s",
+        "target_graph_identifier": "native_navigation/controller_proof/z_stick/n705_s",
+        "primitive": "MULTALU27X18"
+      },
+      {
+        "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s",
+        "locations": [
+          "DSP_R65[7][A]",
+          "DSP_R65[7][B]",
+          "DSP_R65[8][A]",
+          "DSP_R65[8][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s\" DSP_R65[7][A],DSP_R65[7][B],DSP_R65[8][A],DSP_R65[8][B];",
+        "original_line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s\" DSP_R65[7][A],DSP_R65[7][B],DSP_R65[8][A],DSP_R65[8][B];",
+        "original_line_sha256": "bdf17111a87fa53dcb8b0a9502d7cf7e833495d46eaed2ca9e0243f111fcafb2",
+        "line_number": 56,
+        "donor_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s",
+        "target_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s",
+        "locations": [
+          "DSP_R65[5][A]",
+          "DSP_R65[5][B]",
+          "DSP_R65[6][A]",
+          "DSP_R65[6][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s\" DSP_R65[5][A],DSP_R65[5][B],DSP_R65[6][A],DSP_R65[6][B];",
+        "original_line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s\" DSP_R65[5][A],DSP_R65[5][B],DSP_R65[6][A],DSP_R65[6][B];",
+        "original_line_sha256": "7578634f26d4ec84d792ed08f45199a2a642fa8e35068c69c57a6f5a9851b039",
+        "line_number": 57,
+        "donor_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s",
+        "target_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "native_navigation/position/n893_s",
+        "locations": [
+          "DSP_R47[12][A]",
+          "DSP_R47[12][B]",
+          "DSP_R47[13][A]",
+          "DSP_R47[13][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/position/n893_s\" DSP_R47[12][A],DSP_R47[12][B],DSP_R47[13][A],DSP_R47[13][B];",
+        "original_line": "INS_LOC \"native_navigation/position/n893_s\" DSP_R47[12][A],DSP_R47[12][B],DSP_R47[13][A],DSP_R47[13][B];",
+        "original_line_sha256": "78857d0335db196607e1ee5b099d06f905effec75a35aa2537e2de032adf22d8",
+        "line_number": 59,
+        "donor_graph_identifier": "native_navigation/position/n893_s",
+        "target_graph_identifier": "native_navigation/position/n893_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "native_navigation/velocity_fusion/n2039_s",
+        "locations": [
+          "DSP_R47[6][A]",
+          "DSP_R47[6][B]",
+          "DSP_R47[7][A]",
+          "DSP_R47[7][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/velocity_fusion/n2039_s\" DSP_R47[6][A],DSP_R47[6][B],DSP_R47[7][A],DSP_R47[7][B];",
+        "original_line": "INS_LOC \"native_navigation/velocity_fusion/n2039_s\" DSP_R47[6][A],DSP_R47[6][B],DSP_R47[7][A],DSP_R47[7][B];",
+        "original_line_sha256": "3bf34e78afcfd892ad785193ba7a752567fab7b538fdaee711a85d61b09367df",
+        "line_number": 60,
+        "donor_graph_identifier": "native_navigation/velocity_fusion/n2039_s",
+        "target_graph_identifier": "native_navigation/velocity_fusion/n2039_s",
+        "primitive": "MULT27X36"
+      },
+      {
+        "instance": "native_navigation/velocity_fusion/n2080_s",
+        "locations": [
+          "DSP_R47[8][A]",
+          "DSP_R47[8][B]",
+          "DSP_R47[9][A]",
+          "DSP_R47[9][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/velocity_fusion/n2080_s\" DSP_R47[8][A],DSP_R47[8][B],DSP_R47[9][A],DSP_R47[9][B];",
+        "original_line": "INS_LOC \"native_navigation/velocity_fusion/n2080_s\" DSP_R47[8][A],DSP_R47[8][B],DSP_R47[9][A],DSP_R47[9][B];",
+        "original_line_sha256": "c6a3dcf5c88bc3a49c3bf874c3c837732524bc29c857fb799733c6fc592a8e8c",
+        "line_number": 61,
+        "donor_graph_identifier": "native_navigation/velocity_fusion/n2080_s",
+        "target_graph_identifier": "native_navigation/velocity_fusion/n2080_s",
+        "primitive": "MULT27X36"
+      }
+    ],
+    "dropped_rows": [
+      {
+        "instance": "core/fallback_control/n1049_s",
+        "locations": [
+          "DSP_R47[36][A]",
+          "DSP_R47[36][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/fallback_control/n1049_s\" DSP_R47[36][A],DSP_R47[36][B];",
+        "original_line": "INS_LOC \"core/fallback_control/n1049_s\" DSP_R47[36][A],DSP_R47[36][B];",
+        "original_line_sha256": "2a1e8eabe28d669a2bc1bdf6a9c216e56eeabc37de4b83c5164c4b510b1fcef9",
+        "line_number": 13,
+        "donor_primitive": "MULTALU27X18",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "core/n7349_s",
+        "locations": [
+          "DSP_R47[32][A]",
+          "DSP_R47[32][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/n7349_s\" DSP_R47[32][A],DSP_R47[32][B];",
+        "original_line": "INS_LOC \"core/n7349_s\" DSP_R47[32][A],DSP_R47[32][B];",
+        "original_line_sha256": "d21f3cdef2268c25b13a08af311d48ba93de54deb4993a6a4aa81e40a30a0f14",
+        "line_number": 27,
+        "donor_primitive": "MULTALU27X18",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "core/n7443_s",
+        "locations": [
+          "DSP_R47[28][A]",
+          "DSP_R47[28][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/n7443_s\" DSP_R47[28][A],DSP_R47[28][B];",
+        "original_line": "INS_LOC \"core/n7443_s\" DSP_R47[28][A],DSP_R47[28][B];",
+        "original_line_sha256": "1615921adcce95a775366cd6c7955110f3eaabea7a395973435af4c22c07a709",
+        "line_number": 28,
+        "donor_primitive": "MULTALU27X18",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "core/n7537_s",
+        "locations": [
+          "DSP_R47[27][A]",
+          "DSP_R47[27][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/n7537_s\" DSP_R47[27][A],DSP_R47[27][B];",
+        "original_line": "INS_LOC \"core/n7537_s\" DSP_R47[27][A],DSP_R47[27][B];",
+        "original_line_sha256": "9fb7c7e9001f1b25784dc4f2c88a47b328a78f1c523029020f92df6a9aa6cd71",
+        "line_number": 29,
+        "donor_primitive": "MULTALU27X18",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "core/n7631_s",
+        "locations": [
+          "DSP_R47[29][A]",
+          "DSP_R47[29][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"core/n7631_s\" DSP_R47[29][A],DSP_R47[29][B];",
+        "original_line": "INS_LOC \"core/n7631_s\" DSP_R47[29][A],DSP_R47[29][B];",
+        "original_line_sha256": "33a7105f31d919ca2f4d28a466ae01873045bc4b053d3699dedc287ed06623ca",
+        "line_number": 30,
+        "donor_primitive": "MULTALU27X18",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "native_navigation/geometry/n2451_s",
+        "locations": [
+          "DSP_R47[5][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/geometry/n2451_s\" DSP_R47[5][B];",
+        "original_line": "INS_LOC \"native_navigation/geometry/n2451_s\" DSP_R47[5][B];",
+        "original_line_sha256": "582c797efddc0822d6a51dae6d994c1f6fada19e357bcf772b573bf663b888e6",
+        "line_number": 51,
+        "donor_primitive": "MULT12X12",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "native_navigation/height_fusion/n2347_s",
+        "locations": [
+          "DSP_R65[3][A]",
+          "DSP_R65[3][B]",
+          "DSP_R65[4][A]",
+          "DSP_R65[4][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/height_fusion/n2347_s\" DSP_R65[3][A],DSP_R65[3][B],DSP_R65[4][A],DSP_R65[4][B];",
+        "original_line": "INS_LOC \"native_navigation/height_fusion/n2347_s\" DSP_R65[3][A],DSP_R65[3][B],DSP_R65[4][A],DSP_R65[4][B];",
+        "original_line_sha256": "8c34f1e7b8cab4eae626b3bca35d5c871c65e40839336dd61515736b0276d702",
+        "line_number": 52,
+        "donor_primitive": "MULT27X36",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "native_navigation/height_fusion/n3014_s",
+        "locations": [
+          "DSP_R47[3][A]",
+          "DSP_R47[3][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/height_fusion/n3014_s\" DSP_R47[3][A],DSP_R47[3][B];",
+        "original_line": "INS_LOC \"native_navigation/height_fusion/n3014_s\" DSP_R47[3][A],DSP_R47[3][B];",
+        "original_line_sha256": "fd2618a016cff38700f7ebb0789fad6252cdc1f5a5cab494499a789f009471cd",
+        "line_number": 53,
+        "donor_primitive": "MULTALU27X18",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "native_navigation/height_fusion/n3252_s",
+        "locations": [
+          "DSP_R47[4][A]",
+          "DSP_R47[4][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/height_fusion/n3252_s\" DSP_R47[4][A],DSP_R47[4][B];",
+        "original_line": "INS_LOC \"native_navigation/height_fusion/n3252_s\" DSP_R47[4][A],DSP_R47[4][B];",
+        "original_line_sha256": "0d938b58eb186e4b1148e28449cb0c08f20afa9c8abced8ebae0812458cd8cc4",
+        "line_number": 54,
+        "donor_primitive": "MULTALU27X18",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "native_navigation/height_fusion/n5006_s",
+        "locations": [
+          "DSP_R65[2][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/height_fusion/n5006_s\" DSP_R65[2][B];",
+        "original_line": "INS_LOC \"native_navigation/height_fusion/n5006_s\" DSP_R65[2][B];",
+        "original_line_sha256": "625585974489665ad12dde7bf06f00201ad93af012eb442969f874fe1ba3f699",
+        "line_number": 55,
+        "donor_primitive": "MULT12X12",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      },
+      {
+        "instance": "native_navigation/n765_s",
+        "locations": [
+          "DSP_R65[21][A]",
+          "DSP_R65[21][B]"
+        ],
+        "resource_kind": "DSP",
+        "statement": "INS_LOC \"native_navigation/n765_s\" DSP_R65[21][A],DSP_R65[21][B];",
+        "original_line": "INS_LOC \"native_navigation/n765_s\" DSP_R65[21][A],DSP_R65[21][B];",
+        "original_line_sha256": "30fb7faef4dfcc018185bb165f4c50e78e0d1a367a37f563545c8be690190d6e",
+        "line_number": 58,
+        "donor_primitive": "MULTALU27X18",
+        "target_primitive": null,
+        "reason": "Absent exact semantic name or changed exact primitive type; no inferred generated-number rename"
+      }
+    ],
+    "original_baseline_CST_sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "original_baseline_prefix_bytes": 1891,
+    "original_CLOCK_LOC_preserved": [
+      "CLOCK_LOC \"observer_reset\" BUFG = CE|SR|LOGIC;"
+    ],
+    "normalization": "Strip exactly one leading Verilog lexical escape from each hierarchy segment; reject collisions; no numerical generated-instance rename or manufacturer statement rewrite",
+    "source_proof_origin": "Exact existing standard compact_aw_v20 source55, dual-guard/component proof/retry/top13 and actual sealed SYN contract. Thin family adds no source or functional proof.",
+    "portable_CST_sha256": "183110343fb268c20503a598d8e214fb470022b9388cfec533e5780b6350ef55",
+    "combined_CST_sha256": "01c8bc50df1c8303b032c1a6d5c891f21c26b3c16da279234bb18e85eb2cdba1",
+    "combined_CST_bytes": 5589
+  }
+}

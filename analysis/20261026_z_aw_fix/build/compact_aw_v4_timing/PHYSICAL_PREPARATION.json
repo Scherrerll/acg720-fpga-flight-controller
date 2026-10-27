@@ -1,0 +1,20 @@
+{
+  "scope": "Exact audited timing-goal mapped VG, fresh P3/R0 physical-only; no RTL/clock/safety change.",
+  "VG_sha256": "f7a3acad9b1630dc7702bdff55a47bab6a766ef3415c8932d8be84a9962e2f00",
+  "source_freeze_sha256": "f5bf9d245178668cd0b4688e48047a8dbfe5e4a724eaacc2db788a036ba60860",
+  "SYNTHESIS_RESULT_sha256": "618cd7bebfbb376ad3c24c7479449aea92456bcba1fc479330802c35850abcec",
+  "physical_options": {
+    "place": 3,
+    "route": 0,
+    "route_maxfan": 23,
+    "opt_goal": "timing"
+  },
+  "PNR_started": false,
+  "scripts": {
+    "run_physical.py": "7ce91258f0f7e1e792b7561542fcb5fd622724bd3192aff787df26206a8c8e9c",
+    "launch_physical_hidden.py": "f9536a059fbe8ee84f82047a74d72d390ed4077bb4cb1cfed66929e6f565e379",
+    "seal_terminal.py": "c6dc951ce80d2daff6d8651047972405fb7791ccf41ff013f81c0e3efe0e7a2c",
+    "independent_raw_review.py": "8834e8c2616afd2b71ccbfa33f7c127120ed9794b39992fd3a45d981fb1a6444",
+    "physical_snapshot.py": "7ce5deb3c97dfc04b5df7cf5bd93b580616f467425dc6451f208c49ec3ee3784"
+  }
+}

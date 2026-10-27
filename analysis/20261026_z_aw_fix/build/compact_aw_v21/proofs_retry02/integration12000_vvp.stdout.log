@@ -1,0 +1,2 @@
+PASS actual_v18_FF_vs_v21_vendor_SP extension888=1 SP=28 all_public_outputs=13 no_internal_state_force_or_preload=1 forced_boundaries=extension_payload_and_transport_busy period=12000 CLK_HZ=50000000 bytes=1932 captured_releases=2 holds=27169 updates=27627 X_captures=1 Z_captures=1 cycles=54796
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v21\proofs_retry02\extension_top_miter.v:82: $finish called at 1095921000 (1ps)

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+    "-g2012",
+    "-s",
+    "tb",
+    "-o",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\simulation\\clock49.vvp",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\simulation\\tb.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\vendor_generated_reference\\clock49.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\vendor_generated_reference\\clock49_mod.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\vendor_generated_reference\\pll_init.v",
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\simlib\\gw5a\\prim_sim.v"
+  ],
+  "started_utc": "2026-10-26T20:22:47.398059+00:00",
+  "pid": 45348,
+  "ended_utc": "2026-10-26T20:22:47.594408+00:00",
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "log_sha256": "146fea77eebe4b02a3d9fbe5ba7a213af14f24e766dcc13ce64d025946dbae86"
+}

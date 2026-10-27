@@ -1,0 +1,1959 @@
+{
+  "passed_focused_fix_closure": true,
+  "reviewed_utc": "2026-10-27T03:31:47.092253+00:00",
+  "production_script_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "c52c889b913f9b5d1d0bfcd8d15bd50475b3550175c9245767efbff4dd26e3d2"
+  },
+  "old_review_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\v22_release_independent_20261027\\REVIEW_OLD42.json",
+  "old_review_sha256": "f627195f357f8cf00b9c09fa45f0bd65eb430f6b84ef37a80bacca92e2c76275",
+  "old_review_unchanged": true,
+  "closed_finding": "Exact integer success0/failure1 codes with normal flag isTrue; bool/float/string/missing/null are rejected at both common receipt interfaces and raw-success/preserved-failure helpers.",
+  "stub_cases": 270,
+  "expected_acceptances": 6,
+  "per_interface_summary": {
+    "check_receipt_Popen": {
+      "cases": 45,
+      "accepted": 1
+    },
+    "check_receipt_CompletedProcess": {
+      "cases": 45,
+      "accepted": 1
+    },
+    "raw_success_Popen": {
+      "cases": 45,
+      "accepted": 1
+    },
+    "raw_success_child_Popen": {
+      "cases": 45,
+      "accepted": 1
+    },
+    "raw_success_CompletedProcess": {
+      "cases": 45,
+      "accepted": 1
+    },
+    "check_failed_receipt": {
+      "cases": 45,
+      "accepted": 1
+    }
+  },
+  "all_cases": [
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int0",
+      "normal_flag": "true",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "str0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "str0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "str0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "str0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "str0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "null",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "null",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "null",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "null",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "null",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "missing",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "missing",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "missing",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "missing",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "missing",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "int1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_Popen",
+      "wait_value": "float1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "true",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_receipt_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int0",
+      "normal_flag": "true",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "str0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "str0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "str0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "str0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "str0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "null",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "null",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "null",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "null",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "null",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "missing",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "missing",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "missing",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "missing",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "missing",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "int1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_Popen",
+      "wait_value": "float1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int0",
+      "normal_flag": "true",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolFalse",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "str0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "str0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "str0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "str0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "str0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "null",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "null",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "null",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "null",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "null",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "missing",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "missing",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "missing",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "missing",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "missing",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "int1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "boolTrue",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_child_Popen",
+      "wait_value": "float1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "true",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolFalse",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "str0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "null",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "missing",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "int1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "boolTrue",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "raw_success_CompletedProcess",
+      "wait_value": "float1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolFalse",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolFalse",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolFalse",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolFalse",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolFalse",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "str0",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "str0",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "str0",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "str0",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "str0",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "null",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "null",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "null",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "null",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "null",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "missing",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "missing",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "missing",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "missing",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "missing",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int1",
+      "normal_flag": "true",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "int1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolTrue",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolTrue",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolTrue",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolTrue",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "boolTrue",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float1",
+      "normal_flag": "true",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float1",
+      "normal_flag": "false",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float1",
+      "normal_flag": "numeric1",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float1",
+      "normal_flag": "null",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "interface": "check_failed_receipt",
+      "wait_value": "float1",
+      "normal_flag": "missing",
+      "accepted": false,
+      "expected": false
+    }
+  ],
+  "real_standard22_physical_receipts": [
+    {
+      "role": "vendor",
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v22\\physical_p3r0_01\\verification\\physical_exit.json",
+      "sha256": "6f75186bd5819d873df5eae522101b2efc6ff86c9ff559bb757792d91992203c",
+      "actual_p_wait": 0,
+      "actual_p_wait_python_type": "int",
+      "normal_wait_return": true,
+      "pid": 40312
+    },
+    {
+      "role": "runner",
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\physical_p3r0_01\\runner_exit.json",
+      "sha256": "a77e34c2415256c0e0afca5c694835be6d503ffe90a6e0e126a00dd87fcb83ad",
+      "actual_p_wait": 0,
+      "actual_p_wait_python_type": "int",
+      "normal_wait_return": true,
+      "pid": 38900
+    }
+  ],
+  "real_physical_receipt_script_log_hashes_validated": true,
+  "minimal_diff_sha256": "47b3600564659890d7bd6f78156be16888a6d117f385494a9c02ce00b461e47f",
+  "scope": "Only focused read-only/memory-stub fix verification. No full42 suite rerun by this reviewer; owner new suite/seal is independent and is not claimed here. No physical timing re-audit, qualified file, export, promotion or hardware operation.",
+  "qualified_file_created": false,
+  "production_files_edited_by_reviewer": false,
+  "vendor_or_DUT_tests_executed": false,
+  "probe_script_sha256": "c3267c20cea9313169f32ac3566661fb074e4b45759f58ab1ed36550b4af7037"
+}

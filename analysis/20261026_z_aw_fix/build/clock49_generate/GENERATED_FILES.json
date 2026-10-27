@@ -1,0 +1,44 @@
+{
+  "scope": "Manufacturer-generated scratch IP only; not an implemented or qualified firmware clock.",
+  "input_MHz": 50,
+  "requested_output_MHz": 49,
+  "actual_generator_wait": 0,
+  "files": {
+    "generate_clock49.tcl": {
+      "sha256": "663490cfa1ad6574121507118a3d67d69689f66f3b67c450e243802172644bd2",
+      "bytes": 712
+    },
+    "project/clock49_generate/clock49_generate.gprj": {
+      "sha256": "2f2cec748d7cdd80f41ef9125bc313fb417a6961568509e2d7a8eb861167f067",
+      "bytes": 709
+    },
+    "project/clock49_generate/src/pll_init.v": {
+      "sha256": "3fc6bef9a7086f0920bfa47265b1766854a53f6ca1c0f75084eaf6b6ef4d6258",
+      "bytes": 15848
+    },
+    "ip/clock49/clock49.ipc": {
+      "sha256": "0af96d25bf3629eef74efa41ad95d607b0e4fd59862e2ce7e53c3a92850491f3",
+      "bytes": 3961
+    },
+    "ip/clock49/clock49.mod": {
+      "sha256": "473954d84cb80302da3df31c9b71f17dc379a515935cff0382f50b5b2c846ed2",
+      "bytes": 887
+    },
+    "ip/clock49/clock49.v": {
+      "sha256": "f8892770f22d3c9c2ce3801df37d907b36e39bfee02dcb9b226642bebcd74163",
+      "bytes": 1037
+    },
+    "ip/clock49/clock49_mod.v": {
+      "sha256": "388092c787d2644f3537719bee4cd02e1145617800000722b64603936c9b29ca",
+      "bytes": 4542
+    },
+    "ip/clock49/clock49_mod_tmp.v": {
+      "sha256": "81c1378348ccfc3cec83efe8f6261783ea941dce65c3a0dcf23242e5817b5729",
+      "bytes": 873
+    },
+    "ip/clock49/clock49_tmp.v": {
+      "sha256": "7e4c5d3b43b75fcc67ded24b8d45ae72eac3fe057c4d4f9ad774f3c5bfda22c9",
+      "bytes": 561
+    }
+  }
+}

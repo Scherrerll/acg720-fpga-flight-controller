@@ -1,0 +1,9 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\v4_release_proofs\\run_top13.py"
+  ],
+  "started_utc": "2026-10-26T12:49:14.819020+00:00",
+  "pid": 5952
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-u",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v8\\run_synthesis.py"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v8",
+  "started_utc": "2026-10-26T09:43:43.752137+00:00",
+  "supervisor_pid": 40952,
+  "runner_sha256": "37afd0c4718e17e8b039e2861d37d0d86d0f063c442a1b29b1589cdf4e06845b",
+  "supervisor_sha256": "14f27e6dfddfca0d251e5b44ad84ad13b7eb96cbf3a7cc2bb30444d223575e6e",
+  "create_no_window": true,
+  "stdin": "DEVNULL",
+  "pid": 42664,
+  "ended_utc": "2026-10-26T09:48:21.039392+00:00",
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "stdout_sha256": "cd146acb5ffddfeddd190a9ae26af332238dff1671b6fee16c2843825bcd1fe9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

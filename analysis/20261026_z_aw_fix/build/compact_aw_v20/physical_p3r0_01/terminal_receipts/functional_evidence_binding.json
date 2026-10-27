@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "schema": "Actual v20 successful retry root0 + unique fresh top13 childroot0; original functional root1 preserved; named AZ/VY/core/controller components only",
+  "proof_binding_sha256": "a8d32a820ada0a3908ecf1fba8e6288f55454bcbb7be4b57548f14cb39b9e9fd",
+  "input_binding_sha256": "f67a7c927e43ef28bd6004bd1d7c650d14f08ad0422451a9b5e9c96f5e967366",
+  "guard_binding_sha256": "e567477bd2c8df18e579468a86698fbfb371d3d7149f0f6c6c12773d67e567f7",
+  "actual_retry_functional_root_wait": 0,
+  "actual_top13_child_root_wait": 0,
+  "historical_failed_functional_root_wait": 1,
+  "candidate_top13_total_actual_runs": 1,
+  "new_private_same_publication_predicate_bits": 2,
+  "legacy_public_output_cycle_change": 0,
+  "scope": "New complete v20 source55: exact named parent components plus new merged wrapper, fresh complete original top13 and ordinary-input combined-guard integration. Old-new core FSM proof reused only for exact unchanged core/test inputs. No whole-source parent identity, physical timing or hardware acceptance claim.",
+  "integration_scope": "Actual independent AZ adapter + metric producer and merged navigation consumers, all four predicate combinations, deliberately wrong flags on default callers, reset/cancel/busy-fault/link-loss hold/full32 invalid distance. It checks tuple and consumer-gate composition, not unforced full-flight or physical timing.",
+  "component_limitations": {
+    "AZ_fusion_timer_and_admission_accelerated": true,
+    "component_no_private_force_or_preload": true,
+    "fresh_top13_controlled_private_forces_required": true,
+    "new_private_predicate_bits": 2,
+    "legacy_public_output_cycle_change": 0,
+    "no_full_source_parent_identity_claim": true
+  }
+}

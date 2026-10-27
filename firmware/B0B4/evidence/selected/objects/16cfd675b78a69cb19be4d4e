@@ -1,0 +1,8 @@
+{
+  "scope": "Preparation-only correction; original script preserved. Initial inline preparation returned AssertionError because alt_speed<= regex also matched inner_alt_speed<=. No RTL or assertion/stimulus change.",
+  "original_script_sha256": "baef0edadc2b6c6bdebc6b22a7d5b5ea5aee9fad938cef8e32996c4c12324958",
+  "resolved_retry_script_sha256": "c7a751639d6d22603b8d58e51a6eb76fd876d7daab6dee0c2ff919491565f1cd",
+  "correction": "Identifier boundary before alt_speed excludes inner_alt_speed; permit the already-created empty fixture directory.",
+  "original_failure_receipt_available": false,
+  "original_failure_observation": "Initial exec_command output contained AssertionError at prepare_alias.py line14 before writing any fixture; suite had already started independently."
+}

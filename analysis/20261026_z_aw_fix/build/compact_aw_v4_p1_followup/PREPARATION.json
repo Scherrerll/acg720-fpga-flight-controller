@@ -1,0 +1,20 @@
+{
+  "scope": "Exact known full-route v4 VG/source55, original constraints, no seed/LOC/SYN. Change place3 to documented routability-priority place1 only.",
+  "reason": "v4 P3 complete-routed but misses0.220ns; P2/P4/R1 and small LOC trial fail. P1 was not tried on this exact VG. Earlier distinct v6 P1 did complete-route, which motivates trying this placement strategy without claiming transferable timing.",
+  "manual": "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/doc/EN/SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+  "manual_pdf_page": 44,
+  "physical_options": {
+    "place": 1,
+    "route": 0,
+    "route_maxfan": 23
+  },
+  "period_ns": 20,
+  "PNR_started": false,
+  "scripts": {
+    "independent_raw_review.py": "4fd5149b6f5879548fa9c0d9e92642c59588cc82a77c6155cdc8e32a8e8a2fbc",
+    "launch_physical_hidden.py": "2547e2e27d7467e57000832dfc877c24d2d4e86634a86f5c6ead0e16899fad9d",
+    "physical_snapshot.py": "a70a051fc860cec2a82afef727057d031c916398edfa43488920b344a118c0c0",
+    "run_physical.py": "30025dcbeab9ed98ec217a3f8c4ef35b48553e6ea6b97ffe9a86d8bf56dcdfb0",
+    "seal_terminal.py": "14728e3df2810e8c145994e6025551ef5ce182233e6711695c9833ac9789241e"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "source_runner": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\run_synthesis.py",
+  "source_runner_sha256": "f56dc7a472e16a3f8fbf9b34772653a4a06b5f26e37b207b3ebe284fc7da899a",
+  "derived_runner_sha256": "37afd0c4718e17e8b039e2861d37d0d86d0f063c442a1b29b1589cdf4e06845b",
+  "supervisor_source_sha256": "48826f75f97f37d6c641eaff64c89bed15b199c6249753a5281ecfa843ed8fcf",
+  "focused_proof_sha256": "edb6acd2c16d82c9410b39aa1fcefb39589d74fed39789fb102ee32ca40ba0b8",
+  "proof_runner_actual_wait": 0,
+  "scope": "One full-top SYN only; frozen vendor/mapped/clock/radio/gain/18-port gates unchanged. No PNR."
+}

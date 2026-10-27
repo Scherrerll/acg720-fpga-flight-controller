@@ -1,0 +1,7 @@
+{
+  "changes": [
+    "Only v3 source path/frozen9aa6 hash; all five original v2 behavior/each-cycle invariants/equivalence unchanged"
+  ],
+  "original_testbench_sha256": "b74a099372004cffd7013ed4dea9a4731880754eaf0573f0c3624345dd5594ef",
+  "hardware": false
+}

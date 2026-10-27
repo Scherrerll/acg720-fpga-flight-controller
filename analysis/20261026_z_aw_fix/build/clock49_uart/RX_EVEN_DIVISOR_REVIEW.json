@@ -1,0 +1,17 @@
+{
+  "prepared_utc": "2026-10-26T20:48:08.214779+00:00",
+  "scope": "Original receiver logic restored byte-exact. Only49MHz RX divisor changes from425 to426; TX remains425. Frozen50MHz/v14/prototype source never changed.",
+  "ceil_halfbit_failed_wait": 1,
+  "ceil_failure_exit_sha256": "e60ed17e3d4b21394dad16cc8f4af2e78bad879bbc464878cb34329a71f526a6",
+  "failed_ceil_candidate_sha256": "8c0ab4e9844637a796d7fb6ba3200c74c814cce3db065849dd08caf247f76aa3",
+  "restored_original_RX_sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+  "reason": "The odd425 receiver runs slightly faster than nominal115200; a one-clock half-bit shift did not avoid requalifying the remaining low stop interval. Choose nearest-even receive divisor426, preserving the original floor-half FSM and allowing its stop center to arrive later. This is a sampling configuration correction, not a byte/error/gap acceptance waiver.",
+  "clock_Hz": 49000000,
+  "TX_BIT_TICKS": 425,
+  "RX_BIT_TICKS": 426,
+  "TX_baud": 115294.11764705883,
+  "RX_sampling_baud": 115023.47417840376,
+  "nearest_even_formula": "2 * floor((CLOCK_HZ + BAUD)/(2*BAUD)); yields434 at50MHz and426 at49MHz",
+  "test_policy": "All normal256-byte, short3bit idle,16bad-stop, false-start and physical TX-width expectations remain unchanged.",
+  "whole_firmware_or_hardware_qualified": false
+}

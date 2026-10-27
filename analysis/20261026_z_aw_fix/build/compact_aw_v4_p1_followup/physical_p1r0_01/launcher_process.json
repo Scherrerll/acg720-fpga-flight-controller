@@ -1,0 +1,10 @@
+{
+  "pid": 52228,
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-u",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_p1_followup\\launch_physical_hidden.py"
+  ],
+  "started_utc": "2026-10-26T13:00:42.857174+00:00",
+  "create_no_window": true
+}

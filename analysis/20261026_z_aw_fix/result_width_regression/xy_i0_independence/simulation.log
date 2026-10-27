@@ -1,0 +1,5 @@
+PASS XY I0 retains exact old angles/zeroXYintegral across 75 callbacks while Z I is nonzero
+PASS reachable I[-350,850] and bias[0,350] checked each active cycle
+PASS compact/v1 module outputs and persistent integrals match every active cycle
+PASS commit contract checked 150 times; every Z publication delayed exactly2clocks
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\result_width_regression\aw_tb.v:184: $finish called at 60433252000 (1ps)

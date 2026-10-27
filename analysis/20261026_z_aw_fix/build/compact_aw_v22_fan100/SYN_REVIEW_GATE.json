@@ -1,0 +1,27 @@
+{
+  "main_review_passed": true,
+  "independent_agent_review_passed": true,
+  "reviewed_utc": "2026-10-27T03:05:12.717583+00:00",
+  "reviewers": [
+    "/root",
+    "/root/vy_path_scout"
+  ],
+  "preparation_sha256": "b70b6dc61df2367c41f4639d4990a9b26cc96cc3ea3297cf962fbf35e13f74b2",
+  "source_reuse_binding_sha256": "c65bfc6d54e606529cefe41745fecd676b395397b93df5ddd48562156dfcddd4",
+  "reviewed_scripts_sha256": {
+    "input_contract.py": "2fd00f8056c1b922998833cb5dd1a3fd435d07e797d74ffcf3ac7c7d984fca56",
+    "effective_recipe.py": "eff8af1c1ee07f6958ab9507d3091e20efa72cdda85a0fc2213d6bb2f012b6ac",
+    "mapped_fanout.py": "bc8c629edd4c85caf34a29946ed1ab1a09e9f4e8c8187e3d7f0bcff28a1adc89",
+    "run_synthesis.py": "9f0a296e6b2c1f5e183435cd3c4fde8971a7a6bdc2986d4e22d969a488dd0964",
+    "audit_synthesis_only.py": "a4cf938eb5e574ac26b5bd8418520f54bb4b9d7a4e812f74d18cbe07b7974b19",
+    "launch_synthesis_hidden.py": "2043b4e6a8de265f443aca0116f4d98cb1b0c7e25dd9d612c569923dfc2110a6",
+    "seal_synthesis.py": "4d1f1f1c864ea6dd8b5331e7ddf09ca61db7bb5625b98404e5045be4fa683993",
+    "preflight.py": "e31ef1d1504c5766a2d0291509467624d0d68f4174f4bf2007005a66368b1fca",
+    "prepare.py": "ec40cc271c8801a7d7e39d9eda254d66f10bd62689043a6fe0e7fad5abeb1d97"
+  },
+  "review_records": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\v22_fan100_root_20261027\\REVIEW.json": "de2a553648b512ced799f0b5038dba21060713df93fbc71b39b59387b9203afc",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\v22_fan100_independent_20261027\\REVIEW.json": "18f552b195ca93859015b13aee30369bcc7cb775bb5a3ace880edf184a85a1c2"
+  },
+  "scope": "Actual double review permits source-identical SYN_ONLY max_fanout100 experiment; real50MHz unchanged; no PNR or hardware."
+}

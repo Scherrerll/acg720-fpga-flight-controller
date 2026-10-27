@@ -1,0 +1,13 @@
+{
+  "original_runner_sha256": "8ab5cac37ec5fa369e616db305ba81c47d1a9e85da4d74c378e28ae1e5e6fab2",
+  "new_runner_sha256": "dde005a089e5df0b9e409b4779687142c57860936f3b1d18a2ac773ff4c061fc",
+  "changes": [
+    "fresh physical_p3r0_02 path",
+    "ET serialization utf8 -> utf-8 prevents automatic second XML declaration",
+    "assert single XML declaration and exact netlist/CST/SDC project"
+  ],
+  "first_attempt_actual_exit": 1,
+  "first_attempt_log_sha256": "a787fdf3cdf69b8bc60a884feb1fce7d895ba433780c335a679eb420b973d302",
+  "first_attempt_exit_sha256": "d61901d4e8c0891b7c8924de74f1010b06fecf426851888eb8a079177385bcaa",
+  "classification": "Driver-generated project rejected before PNR; not route/RTL/timing failure. First evidence unchanged."
+}

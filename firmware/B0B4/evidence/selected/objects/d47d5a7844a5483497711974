@@ -1,0 +1,8 @@
+{
+  "kind": "reuse_completed_actual_stage",
+  "receipt": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v8\\proofs\\fusion_pre0_simulation_exit.json",
+  "receipt_sha256": "9d74400b197b550ef36db85ae28690847654f157633323ee9a8f4f1283e7a0b1",
+  "actual_p_wait": 0,
+  "log": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v8\\proofs\\fusion_pre0_simulation.log",
+  "log_sha256": "90dc25da335aaa65670b4301f0758f5ab5333f3e0b4162c2c46e63f4a6f1ea51"
+}

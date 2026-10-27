@@ -1,0 +1,2449 @@
+{
+  "passed": true,
+  "actual_SP_count": 28,
+  "remaining_core_snapshot_FF_count": 627,
+  "same_canonical_CE_net": "\\staged_telemetry.core_q_453_20",
+  "strict_same_net_after_explicit_alias": true,
+  "actual_LUT_cone_nodes": {
+    "\\staged_telemetry.core_q_453_20": {
+      "kind": "LUT",
+      "cell": "\\staged_telemetry.core_q_453_s10",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/state[3]",
+        "n6822_6",
+        "telemetry/state[0]",
+        "telemetry/state[1]"
+      ],
+      "INIT": 1,
+      "INIT_hex": "0x1"
+    },
+    "telemetry/state[3]": {
+      "kind": "FF",
+      "cell": "telemetry/state_3_s0"
+    },
+    "n6822_6": {
+      "kind": "LUT",
+      "cell": "n6822_s2",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/uart/busy_Z",
+        "telemetry/n20532_13",
+        "telemetry/n18984_153",
+        "telemetry/state[2]"
+      ],
+      "INIT": 47887,
+      "INIT_hex": "0xbb0f"
+    },
+    "telemetry/uart/busy_Z": {
+      "kind": "FF",
+      "cell": "telemetry/uart/busy_s6"
+    },
+    "telemetry/n20532_13": {
+      "kind": "LUT",
+      "cell": "telemetry/n20532_s6",
+      "type": "LUT2",
+      "input_order": [
+        "I0",
+        "I1"
+      ],
+      "inputs": [
+        "telemetry/sending_diagnostic",
+        "telemetry/n20532_17"
+      ],
+      "INIT": 8,
+      "INIT_hex": "0x8"
+    },
+    "telemetry/sending_diagnostic": {
+      "kind": "FF",
+      "cell": "telemetry/sending_diagnostic_s0"
+    },
+    "telemetry/n20532_17": {
+      "kind": "LUT",
+      "cell": "telemetry/n20532_s9",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/n19906_24",
+        "telemetry/index[4]",
+        "telemetry/index[3]",
+        "telemetry/n20411_13"
+      ],
+      "INIT": 8192,
+      "INIT_hex": "0x2000"
+    },
+    "telemetry/n19906_24": {
+      "kind": "LUT",
+      "cell": "telemetry/n19906_s17",
+      "type": "LUT3",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2"
+      ],
+      "inputs": [
+        "telemetry/index[2]",
+        "telemetry/index[1]",
+        "telemetry/index[0]"
+      ],
+      "INIT": 64,
+      "INIT_hex": "0x40"
+    },
+    "telemetry/index[2]": {
+      "kind": "FF",
+      "cell": "telemetry/index_2_s0"
+    },
+    "telemetry/index[1]": {
+      "kind": "FF",
+      "cell": "telemetry/index_1_s0"
+    },
+    "telemetry/index[0]": {
+      "kind": "FF",
+      "cell": "telemetry/index_0_s0"
+    },
+    "telemetry/index[4]": {
+      "kind": "FF",
+      "cell": "telemetry/index_4_s0"
+    },
+    "telemetry/index[3]": {
+      "kind": "FF",
+      "cell": "telemetry/index_3_s0"
+    },
+    "telemetry/n20411_13": {
+      "kind": "LUT",
+      "cell": "telemetry/n20411_s6",
+      "type": "LUT3",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2"
+      ],
+      "inputs": [
+        "telemetry/index[5]",
+        "telemetry/index[7]",
+        "telemetry/index[6]"
+      ],
+      "INIT": 16,
+      "INIT_hex": "0x10"
+    },
+    "telemetry/index[5]": {
+      "kind": "FF",
+      "cell": "telemetry/index_5_s0"
+    },
+    "telemetry/index[7]": {
+      "kind": "FF",
+      "cell": "telemetry/index_7_s0"
+    },
+    "telemetry/index[6]": {
+      "kind": "FF",
+      "cell": "telemetry/index_6_s0"
+    },
+    "telemetry/n18984_153": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s98",
+      "type": "LUT3",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2"
+      ],
+      "inputs": [
+        "telemetry/n18984_144",
+        "telemetry/n18984_145",
+        "telemetry/n18984_146"
+      ],
+      "INIT": 64,
+      "INIT_hex": "0x40"
+    },
+    "telemetry/n18984_144": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s90",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/ticks[22]",
+        "telemetry/ticks[21]",
+        "telemetry/n18984_147",
+        "telemetry/ticks[23]"
+      ],
+      "INIT": 65024,
+      "INIT_hex": "0xfe00"
+    },
+    "telemetry/ticks[22]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_22_s0"
+    },
+    "telemetry/ticks[21]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_21_s0"
+    },
+    "telemetry/n18984_147": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s93",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/n18984_148",
+        "telemetry/n18984_149",
+        "telemetry/ticks[19]",
+        "telemetry/ticks[20]"
+      ],
+      "INIT": 53248,
+      "INIT_hex": "0xd000"
+    },
+    "telemetry/n18984_148": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s94",
+      "type": "LUT3",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2"
+      ],
+      "inputs": [
+        "telemetry/ticks[16]",
+        "telemetry/ticks[17]",
+        "telemetry/ticks[18]"
+      ],
+      "INIT": 1,
+      "INIT_hex": "0x1"
+    },
+    "telemetry/ticks[16]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_16_s0"
+    },
+    "telemetry/ticks[17]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_17_s0"
+    },
+    "telemetry/ticks[18]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_18_s0"
+    },
+    "telemetry/n18984_149": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s95",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/ticks[14]",
+        "telemetry/ticks[13]",
+        "telemetry/n18984_150",
+        "telemetry/ticks[15]"
+      ],
+      "INIT": 65024,
+      "INIT_hex": "0xfe00"
+    },
+    "telemetry/ticks[14]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_14_s0"
+    },
+    "telemetry/ticks[13]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_13_s0"
+    },
+    "telemetry/n18984_150": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s96",
+      "type": "LUT3",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2"
+      ],
+      "inputs": [
+        "telemetry/n18984_151",
+        "telemetry/ticks[11]",
+        "telemetry/ticks[12]"
+      ],
+      "INIT": 224,
+      "INIT_hex": "0xe0"
+    },
+    "telemetry/n18984_151": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s97",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/ticks[8]",
+        "telemetry/ticks[7]",
+        "telemetry/ticks[9]",
+        "telemetry/ticks[10]"
+      ],
+      "INIT": 57344,
+      "INIT_hex": "0xe000"
+    },
+    "telemetry/ticks[8]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_8_s0"
+    },
+    "telemetry/ticks[7]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_7_s0"
+    },
+    "telemetry/ticks[9]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_9_s0"
+    },
+    "telemetry/ticks[10]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_10_s0"
+    },
+    "telemetry/ticks[11]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_11_s0"
+    },
+    "telemetry/ticks[12]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_12_s0"
+    },
+    "telemetry/ticks[15]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_15_s0"
+    },
+    "telemetry/ticks[19]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_19_s0"
+    },
+    "telemetry/ticks[20]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_20_s0"
+    },
+    "telemetry/ticks[23]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_23_s0"
+    },
+    "telemetry/n18984_145": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s91",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/ticks[28]",
+        "telemetry/ticks[29]",
+        "telemetry/ticks[30]",
+        "telemetry/ticks[31]"
+      ],
+      "INIT": 1,
+      "INIT_hex": "0x1"
+    },
+    "telemetry/ticks[28]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_28_s0"
+    },
+    "telemetry/ticks[29]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_29_s0"
+    },
+    "telemetry/ticks[30]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_30_s0"
+    },
+    "telemetry/ticks[31]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_31_s0"
+    },
+    "telemetry/n18984_146": {
+      "kind": "LUT",
+      "cell": "telemetry/n18984_s92",
+      "type": "LUT4",
+      "input_order": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "inputs": [
+        "telemetry/ticks[24]",
+        "telemetry/ticks[25]",
+        "telemetry/ticks[26]",
+        "telemetry/ticks[27]"
+      ],
+      "INIT": 1,
+      "INIT_hex": "0x1"
+    },
+    "telemetry/ticks[24]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_24_s0"
+    },
+    "telemetry/ticks[25]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_25_s0"
+    },
+    "telemetry/ticks[26]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_26_s0"
+    },
+    "telemetry/ticks[27]": {
+      "kind": "FF",
+      "cell": "telemetry/ticks_27_s0"
+    },
+    "telemetry/state[2]": {
+      "kind": "FF",
+      "cell": "telemetry/state_2_s1"
+    },
+    "telemetry/state[0]": {
+      "kind": "FF",
+      "cell": "telemetry/state_0_s1"
+    },
+    "telemetry/state[1]": {
+      "kind": "FF",
+      "cell": "telemetry/state_1_s1"
+    }
+  },
+  "shared_FF_roots": {
+    "telemetry/state[3]": {
+      "cell": "telemetry/state_3_s0",
+      "type": "DFFCE",
+      "Q_net": "telemetry/state[3]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/uart/busy_Z": {
+      "cell": "telemetry/uart/busy_s6",
+      "type": "DFFCE",
+      "Q_net": "telemetry/uart/busy_Z",
+      "CLK": "telemetry/uart/clk50_d"
+    },
+    "telemetry/sending_diagnostic": {
+      "cell": "telemetry/sending_diagnostic_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/sending_diagnostic",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/index[2]": {
+      "cell": "telemetry/index_2_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/index[2]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/index[1]": {
+      "cell": "telemetry/index_1_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/index[1]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/index[0]": {
+      "cell": "telemetry/index_0_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/index[0]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/index[4]": {
+      "cell": "telemetry/index_4_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/index[4]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/index[3]": {
+      "cell": "telemetry/index_3_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/index[3]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/index[5]": {
+      "cell": "telemetry/index_5_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/index[5]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/index[7]": {
+      "cell": "telemetry/index_7_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/index[7]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/index[6]": {
+      "cell": "telemetry/index_6_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/index[6]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[22]": {
+      "cell": "telemetry/ticks_22_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[22]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[21]": {
+      "cell": "telemetry/ticks_21_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[21]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[16]": {
+      "cell": "telemetry/ticks_16_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[16]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[17]": {
+      "cell": "telemetry/ticks_17_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[17]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[18]": {
+      "cell": "telemetry/ticks_18_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[18]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[14]": {
+      "cell": "telemetry/ticks_14_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[14]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[13]": {
+      "cell": "telemetry/ticks_13_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[13]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[8]": {
+      "cell": "telemetry/ticks_8_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[8]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[7]": {
+      "cell": "telemetry/ticks_7_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[7]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[9]": {
+      "cell": "telemetry/ticks_9_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[9]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[10]": {
+      "cell": "telemetry/ticks_10_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[10]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[11]": {
+      "cell": "telemetry/ticks_11_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[11]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[12]": {
+      "cell": "telemetry/ticks_12_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[12]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[15]": {
+      "cell": "telemetry/ticks_15_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[15]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[19]": {
+      "cell": "telemetry/ticks_19_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[19]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[20]": {
+      "cell": "telemetry/ticks_20_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[20]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[23]": {
+      "cell": "telemetry/ticks_23_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[23]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[28]": {
+      "cell": "telemetry/ticks_28_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[28]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[29]": {
+      "cell": "telemetry/ticks_29_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[29]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[30]": {
+      "cell": "telemetry/ticks_30_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[30]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[31]": {
+      "cell": "telemetry/ticks_31_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[31]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[24]": {
+      "cell": "telemetry/ticks_24_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[24]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[25]": {
+      "cell": "telemetry/ticks_25_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[25]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[26]": {
+      "cell": "telemetry/ticks_26_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[26]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/ticks[27]": {
+      "cell": "telemetry/ticks_27_s0",
+      "type": "DFFRE",
+      "Q_net": "telemetry/ticks[27]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/state[2]": {
+      "cell": "telemetry/state_2_s1",
+      "type": "DFFRE",
+      "Q_net": "telemetry/state[2]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/state[0]": {
+      "cell": "telemetry/state_0_s1",
+      "type": "DFFRE",
+      "Q_net": "telemetry/state[0]",
+      "CLK": "telemetry/clk50_d"
+    },
+    "telemetry/state[1]": {
+      "cell": "telemetry/state_1_s1",
+      "type": "DFFRE",
+      "Q_net": "telemetry/state[1]",
+      "CLK": "telemetry/clk50_d"
+    }
+  },
+  "FF_root_count": 39,
+  "exact_BDD_root": 346,
+  "BDD_allocated_nodes": 345,
+  "BDD_sha256": "d0152de1f2a35b3c803ef2494bc73566e18152890b50befc48cf09bcc5f3be09",
+  "symbolic_all_shared_FF_assignments": true,
+  "BDD": {
+    "variable_order": [
+      "telemetry/index[0]",
+      "telemetry/index[1]",
+      "telemetry/index[2]",
+      "telemetry/index[3]",
+      "telemetry/index[4]",
+      "telemetry/index[5]",
+      "telemetry/index[6]",
+      "telemetry/index[7]",
+      "telemetry/sending_diagnostic",
+      "telemetry/state[0]",
+      "telemetry/state[1]",
+      "telemetry/state[2]",
+      "telemetry/state[3]",
+      "telemetry/ticks[10]",
+      "telemetry/ticks[11]",
+      "telemetry/ticks[12]",
+      "telemetry/ticks[13]",
+      "telemetry/ticks[14]",
+      "telemetry/ticks[15]",
+      "telemetry/ticks[16]",
+      "telemetry/ticks[17]",
+      "telemetry/ticks[18]",
+      "telemetry/ticks[19]",
+      "telemetry/ticks[20]",
+      "telemetry/ticks[21]",
+      "telemetry/ticks[22]",
+      "telemetry/ticks[23]",
+      "telemetry/ticks[24]",
+      "telemetry/ticks[25]",
+      "telemetry/ticks[26]",
+      "telemetry/ticks[27]",
+      "telemetry/ticks[28]",
+      "telemetry/ticks[29]",
+      "telemetry/ticks[30]",
+      "telemetry/ticks[31]",
+      "telemetry/ticks[7]",
+      "telemetry/ticks[8]",
+      "telemetry/ticks[9]",
+      "telemetry/uart/busy_Z"
+    ],
+    "root": 346,
+    "nodes": {
+      "2": [
+        12,
+        0,
+        1
+      ],
+      "3": [
+        38,
+        0,
+        1
+      ],
+      "4": [
+        8,
+        0,
+        1
+      ],
+      "5": [
+        2,
+        0,
+        1
+      ],
+      "6": [
+        1,
+        0,
+        1
+      ],
+      "7": [
+        0,
+        0,
+        1
+      ],
+      "8": [
+        0,
+        0,
+        6
+      ],
+      "9": [
+        2,
+        1,
+        0
+      ],
+      "10": [
+        1,
+        0,
+        9
+      ],
+      "11": [
+        0,
+        0,
+        10
+      ],
+      "12": [
+        4,
+        0,
+        1
+      ],
+      "13": [
+        3,
+        0,
+        1
+      ],
+      "14": [
+        5,
+        0,
+        1
+      ],
+      "15": [
+        7,
+        0,
+        1
+      ],
+      "16": [
+        6,
+        0,
+        1
+      ],
+      "17": [
+        7,
+        1,
+        0
+      ],
+      "18": [
+        6,
+        0,
+        17
+      ],
+      "19": [
+        5,
+        18,
+        0
+      ],
+      "20": [
+        3,
+        0,
+        19
+      ],
+      "21": [
+        4,
+        19,
+        0
+      ],
+      "22": [
+        3,
+        0,
+        21
+      ],
+      "23": [
+        2,
+        22,
+        0
+      ],
+      "24": [
+        1,
+        0,
+        23
+      ],
+      "25": [
+        0,
+        0,
+        24
+      ],
+      "26": [
+        7,
+        4,
+        0
+      ],
+      "27": [
+        6,
+        0,
+        26
+      ],
+      "28": [
+        5,
+        27,
+        0
+      ],
+      "29": [
+        4,
+        28,
+        0
+      ],
+      "30": [
+        3,
+        0,
+        29
+      ],
+      "31": [
+        2,
+        30,
+        0
+      ],
+      "32": [
+        1,
+        0,
+        31
+      ],
+      "33": [
+        0,
+        0,
+        32
+      ],
+      "34": [
+        25,
+        0,
+        1
+      ],
+      "35": [
+        24,
+        0,
+        1
+      ],
+      "36": [
+        19,
+        0,
+        1
+      ],
+      "37": [
+        20,
+        0,
+        1
+      ],
+      "38": [
+        21,
+        0,
+        1
+      ],
+      "39": [
+        21,
+        1,
+        0
+      ],
+      "40": [
+        20,
+        39,
+        0
+      ],
+      "41": [
+        19,
+        40,
+        0
+      ],
+      "42": [
+        17,
+        0,
+        1
+      ],
+      "43": [
+        16,
+        0,
+        1
+      ],
+      "44": [
+        36,
+        0,
+        1
+      ],
+      "45": [
+        35,
+        0,
+        1
+      ],
+      "46": [
+        37,
+        0,
+        1
+      ],
+      "47": [
+        13,
+        0,
+        1
+      ],
+      "48": [
+        13,
+        0,
+        46
+      ],
+      "49": [
+        35,
+        0,
+        46
+      ],
+      "50": [
+        13,
+        0,
+        49
+      ],
+      "51": [
+        36,
+        0,
+        46
+      ],
+      "52": [
+        35,
+        51,
+        46
+      ],
+      "53": [
+        13,
+        0,
+        52
+      ],
+      "54": [
+        14,
+        0,
+        1
+      ],
+      "55": [
+        15,
+        0,
+        1
+      ],
+      "56": [
+        14,
+        0,
+        55
+      ],
+      "57": [
+        15,
+        0,
+        52
+      ],
+      "58": [
+        14,
+        57,
+        55
+      ],
+      "59": [
+        13,
+        56,
+        58
+      ],
+      "60": [
+        18,
+        0,
+        1
+      ],
+      "61": [
+        15,
+        0,
+        60
+      ],
+      "62": [
+        14,
+        0,
+        61
+      ],
+      "63": [
+        18,
+        0,
+        52
+      ],
+      "64": [
+        15,
+        0,
+        63
+      ],
+      "65": [
+        14,
+        64,
+        61
+      ],
+      "66": [
+        13,
+        62,
+        65
+      ],
+      "67": [
+        16,
+        0,
+        60
+      ],
+      "68": [
+        15,
+        67,
+        60
+      ],
+      "69": [
+        14,
+        67,
+        68
+      ],
+      "70": [
+        16,
+        63,
+        60
+      ],
+      "71": [
+        15,
+        67,
+        70
+      ],
+      "72": [
+        14,
+        71,
+        68
+      ],
+      "73": [
+        13,
+        69,
+        72
+      ],
+      "74": [
+        17,
+        0,
+        60
+      ],
+      "75": [
+        16,
+        74,
+        60
+      ],
+      "76": [
+        15,
+        75,
+        60
+      ],
+      "77": [
+        14,
+        75,
+        76
+      ],
+      "78": [
+        17,
+        63,
+        60
+      ],
+      "79": [
+        16,
+        78,
+        60
+      ],
+      "80": [
+        15,
+        75,
+        79
+      ],
+      "81": [
+        14,
+        80,
+        76
+      ],
+      "82": [
+        13,
+        77,
+        81
+      ],
+      "83": [
+        22,
+        0,
+        1
+      ],
+      "84": [
+        23,
+        0,
+        1
+      ],
+      "85": [
+        22,
+        0,
+        84
+      ],
+      "86": [
+        18,
+        0,
+        85
+      ],
+      "87": [
+        17,
+        0,
+        86
+      ],
+      "88": [
+        16,
+        87,
+        86
+      ],
+      "89": [
+        15,
+        88,
+        86
+      ],
+      "90": [
+        14,
+        88,
+        89
+      ],
+      "91": [
+        23,
+        0,
+        52
+      ],
+      "92": [
+        22,
+        0,
+        91
+      ],
+      "93": [
+        18,
+        0,
+        92
+      ],
+      "94": [
+        17,
+        93,
+        86
+      ],
+      "95": [
+        16,
+        94,
+        86
+      ],
+      "96": [
+        15,
+        88,
+        95
+      ],
+      "97": [
+        14,
+        96,
+        89
+      ],
+      "98": [
+        13,
+        90,
+        97
+      ],
+      "99": [
+        21,
+        0,
+        85
+      ],
+      "100": [
+        20,
+        99,
+        85
+      ],
+      "101": [
+        19,
+        100,
+        85
+      ],
+      "102": [
+        18,
+        101,
+        85
+      ],
+      "103": [
+        17,
+        101,
+        102
+      ],
+      "104": [
+        16,
+        103,
+        102
+      ],
+      "105": [
+        15,
+        104,
+        102
+      ],
+      "106": [
+        14,
+        104,
+        105
+      ],
+      "107": [
+        21,
+        92,
+        85
+      ],
+      "108": [
+        20,
+        107,
+        85
+      ],
+      "109": [
+        19,
+        108,
+        85
+      ],
+      "110": [
+        18,
+        101,
+        109
+      ],
+      "111": [
+        17,
+        110,
+        102
+      ],
+      "112": [
+        16,
+        111,
+        102
+      ],
+      "113": [
+        15,
+        104,
+        112
+      ],
+      "114": [
+        14,
+        113,
+        105
+      ],
+      "115": [
+        13,
+        106,
+        114
+      ],
+      "116": [
+        26,
+        0,
+        1
+      ],
+      "117": [
+        23,
+        0,
+        116
+      ],
+      "118": [
+        22,
+        0,
+        117
+      ],
+      "119": [
+        21,
+        0,
+        118
+      ],
+      "120": [
+        20,
+        119,
+        118
+      ],
+      "121": [
+        19,
+        120,
+        118
+      ],
+      "122": [
+        18,
+        121,
+        118
+      ],
+      "123": [
+        17,
+        121,
+        122
+      ],
+      "124": [
+        16,
+        123,
+        122
+      ],
+      "125": [
+        15,
+        124,
+        122
+      ],
+      "126": [
+        14,
+        124,
+        125
+      ],
+      "127": [
+        26,
+        0,
+        52
+      ],
+      "128": [
+        23,
+        0,
+        127
+      ],
+      "129": [
+        22,
+        0,
+        128
+      ],
+      "130": [
+        21,
+        129,
+        118
+      ],
+      "131": [
+        20,
+        130,
+        118
+      ],
+      "132": [
+        19,
+        131,
+        118
+      ],
+      "133": [
+        18,
+        121,
+        132
+      ],
+      "134": [
+        17,
+        133,
+        122
+      ],
+      "135": [
+        16,
+        134,
+        122
+      ],
+      "136": [
+        15,
+        124,
+        135
+      ],
+      "137": [
+        14,
+        136,
+        125
+      ],
+      "138": [
+        13,
+        126,
+        137
+      ],
+      "139": [
+        24,
+        0,
+        116
+      ],
+      "140": [
+        23,
+        139,
+        116
+      ],
+      "141": [
+        22,
+        139,
+        140
+      ],
+      "142": [
+        21,
+        139,
+        141
+      ],
+      "143": [
+        20,
+        142,
+        141
+      ],
+      "144": [
+        19,
+        143,
+        141
+      ],
+      "145": [
+        18,
+        144,
+        141
+      ],
+      "146": [
+        17,
+        144,
+        145
+      ],
+      "147": [
+        16,
+        146,
+        145
+      ],
+      "148": [
+        15,
+        147,
+        145
+      ],
+      "149": [
+        14,
+        147,
+        148
+      ],
+      "150": [
+        24,
+        127,
+        116
+      ],
+      "151": [
+        23,
+        139,
+        150
+      ],
+      "152": [
+        22,
+        139,
+        151
+      ],
+      "153": [
+        21,
+        152,
+        141
+      ],
+      "154": [
+        20,
+        153,
+        141
+      ],
+      "155": [
+        19,
+        154,
+        141
+      ],
+      "156": [
+        18,
+        144,
+        155
+      ],
+      "157": [
+        17,
+        156,
+        145
+      ],
+      "158": [
+        16,
+        157,
+        145
+      ],
+      "159": [
+        15,
+        147,
+        158
+      ],
+      "160": [
+        14,
+        159,
+        148
+      ],
+      "161": [
+        13,
+        149,
+        160
+      ],
+      "162": [
+        25,
+        0,
+        116
+      ],
+      "163": [
+        24,
+        162,
+        116
+      ],
+      "164": [
+        23,
+        163,
+        116
+      ],
+      "165": [
+        22,
+        163,
+        164
+      ],
+      "166": [
+        21,
+        163,
+        165
+      ],
+      "167": [
+        20,
+        166,
+        165
+      ],
+      "168": [
+        19,
+        167,
+        165
+      ],
+      "169": [
+        18,
+        168,
+        165
+      ],
+      "170": [
+        17,
+        168,
+        169
+      ],
+      "171": [
+        16,
+        170,
+        169
+      ],
+      "172": [
+        15,
+        171,
+        169
+      ],
+      "173": [
+        14,
+        171,
+        172
+      ],
+      "174": [
+        25,
+        127,
+        116
+      ],
+      "175": [
+        24,
+        174,
+        116
+      ],
+      "176": [
+        23,
+        163,
+        175
+      ],
+      "177": [
+        22,
+        163,
+        176
+      ],
+      "178": [
+        21,
+        177,
+        165
+      ],
+      "179": [
+        20,
+        178,
+        165
+      ],
+      "180": [
+        19,
+        179,
+        165
+      ],
+      "181": [
+        18,
+        168,
+        180
+      ],
+      "182": [
+        17,
+        181,
+        169
+      ],
+      "183": [
+        16,
+        182,
+        169
+      ],
+      "184": [
+        15,
+        171,
+        183
+      ],
+      "185": [
+        14,
+        184,
+        172
+      ],
+      "186": [
+        13,
+        173,
+        185
+      ],
+      "187": [
+        31,
+        0,
+        1
+      ],
+      "188": [
+        32,
+        0,
+        1
+      ],
+      "189": [
+        33,
+        0,
+        1
+      ],
+      "190": [
+        34,
+        0,
+        1
+      ],
+      "191": [
+        34,
+        1,
+        0
+      ],
+      "192": [
+        33,
+        191,
+        0
+      ],
+      "193": [
+        32,
+        192,
+        0
+      ],
+      "194": [
+        31,
+        193,
+        0
+      ],
+      "195": [
+        27,
+        0,
+        1
+      ],
+      "196": [
+        28,
+        0,
+        1
+      ],
+      "197": [
+        29,
+        0,
+        1
+      ],
+      "198": [
+        30,
+        0,
+        1
+      ],
+      "199": [
+        30,
+        1,
+        0
+      ],
+      "200": [
+        29,
+        199,
+        0
+      ],
+      "201": [
+        28,
+        200,
+        0
+      ],
+      "202": [
+        27,
+        201,
+        0
+      ],
+      "203": [
+        30,
+        194,
+        0
+      ],
+      "204": [
+        29,
+        203,
+        0
+      ],
+      "205": [
+        28,
+        204,
+        0
+      ],
+      "206": [
+        27,
+        205,
+        0
+      ],
+      "207": [
+        26,
+        206,
+        0
+      ],
+      "208": [
+        25,
+        206,
+        207
+      ],
+      "209": [
+        24,
+        208,
+        207
+      ],
+      "210": [
+        23,
+        209,
+        207
+      ],
+      "211": [
+        22,
+        209,
+        210
+      ],
+      "212": [
+        21,
+        209,
+        211
+      ],
+      "213": [
+        20,
+        212,
+        211
+      ],
+      "214": [
+        19,
+        213,
+        211
+      ],
+      "215": [
+        18,
+        214,
+        211
+      ],
+      "216": [
+        17,
+        214,
+        215
+      ],
+      "217": [
+        16,
+        216,
+        215
+      ],
+      "218": [
+        15,
+        217,
+        215
+      ],
+      "219": [
+        14,
+        217,
+        218
+      ],
+      "220": [
+        37,
+        1,
+        0
+      ],
+      "221": [
+        36,
+        1,
+        220
+      ],
+      "222": [
+        35,
+        221,
+        220
+      ],
+      "223": [
+        34,
+        222,
+        0
+      ],
+      "224": [
+        33,
+        223,
+        0
+      ],
+      "225": [
+        32,
+        224,
+        0
+      ],
+      "226": [
+        31,
+        225,
+        0
+      ],
+      "227": [
+        30,
+        226,
+        0
+      ],
+      "228": [
+        29,
+        227,
+        0
+      ],
+      "229": [
+        28,
+        228,
+        0
+      ],
+      "230": [
+        27,
+        229,
+        0
+      ],
+      "231": [
+        26,
+        206,
+        230
+      ],
+      "232": [
+        25,
+        231,
+        207
+      ],
+      "233": [
+        24,
+        232,
+        207
+      ],
+      "234": [
+        23,
+        209,
+        233
+      ],
+      "235": [
+        22,
+        209,
+        234
+      ],
+      "236": [
+        21,
+        235,
+        211
+      ],
+      "237": [
+        20,
+        236,
+        211
+      ],
+      "238": [
+        19,
+        237,
+        211
+      ],
+      "239": [
+        18,
+        214,
+        238
+      ],
+      "240": [
+        17,
+        239,
+        215
+      ],
+      "241": [
+        16,
+        240,
+        215
+      ],
+      "242": [
+        15,
+        217,
+        241
+      ],
+      "243": [
+        14,
+        242,
+        218
+      ],
+      "244": [
+        13,
+        219,
+        243
+      ],
+      "245": [
+        11,
+        0,
+        1
+      ],
+      "246": [
+        33,
+        190,
+        1
+      ],
+      "247": [
+        32,
+        246,
+        1
+      ],
+      "248": [
+        31,
+        247,
+        1
+      ],
+      "249": [
+        30,
+        248,
+        1
+      ],
+      "250": [
+        29,
+        249,
+        1
+      ],
+      "251": [
+        28,
+        250,
+        1
+      ],
+      "252": [
+        27,
+        251,
+        1
+      ],
+      "253": [
+        26,
+        252,
+        1
+      ],
+      "254": [
+        25,
+        252,
+        253
+      ],
+      "255": [
+        24,
+        254,
+        253
+      ],
+      "256": [
+        23,
+        255,
+        253
+      ],
+      "257": [
+        22,
+        255,
+        256
+      ],
+      "258": [
+        21,
+        255,
+        257
+      ],
+      "259": [
+        20,
+        258,
+        257
+      ],
+      "260": [
+        19,
+        259,
+        257
+      ],
+      "261": [
+        18,
+        260,
+        257
+      ],
+      "262": [
+        17,
+        260,
+        261
+      ],
+      "263": [
+        16,
+        262,
+        261
+      ],
+      "264": [
+        15,
+        263,
+        261
+      ],
+      "265": [
+        14,
+        263,
+        264
+      ],
+      "266": [
+        34,
+        52,
+        1
+      ],
+      "267": [
+        33,
+        266,
+        1
+      ],
+      "268": [
+        32,
+        267,
+        1
+      ],
+      "269": [
+        31,
+        268,
+        1
+      ],
+      "270": [
+        30,
+        269,
+        1
+      ],
+      "271": [
+        29,
+        270,
+        1
+      ],
+      "272": [
+        28,
+        271,
+        1
+      ],
+      "273": [
+        27,
+        272,
+        1
+      ],
+      "274": [
+        26,
+        252,
+        273
+      ],
+      "275": [
+        25,
+        274,
+        253
+      ],
+      "276": [
+        24,
+        275,
+        253
+      ],
+      "277": [
+        23,
+        255,
+        276
+      ],
+      "278": [
+        22,
+        255,
+        277
+      ],
+      "279": [
+        21,
+        278,
+        257
+      ],
+      "280": [
+        20,
+        279,
+        257
+      ],
+      "281": [
+        19,
+        280,
+        257
+      ],
+      "282": [
+        18,
+        260,
+        281
+      ],
+      "283": [
+        17,
+        282,
+        261
+      ],
+      "284": [
+        16,
+        283,
+        261
+      ],
+      "285": [
+        15,
+        263,
+        284
+      ],
+      "286": [
+        14,
+        285,
+        264
+      ],
+      "287": [
+        13,
+        265,
+        286
+      ],
+      "288": [
+        11,
+        287,
+        1
+      ],
+      "289": [
+        11,
+        1,
+        0
+      ],
+      "290": [
+        11,
+        287,
+        0
+      ],
+      "291": [
+        8,
+        288,
+        290
+      ],
+      "292": [
+        7,
+        291,
+        288
+      ],
+      "293": [
+        6,
+        288,
+        292
+      ],
+      "294": [
+        5,
+        293,
+        288
+      ],
+      "295": [
+        4,
+        294,
+        288
+      ],
+      "296": [
+        3,
+        288,
+        295
+      ],
+      "297": [
+        2,
+        296,
+        288
+      ],
+      "298": [
+        1,
+        288,
+        297
+      ],
+      "299": [
+        0,
+        288,
+        298
+      ],
+      "300": [
+        11,
+        287,
+        3
+      ],
+      "301": [
+        8,
+        288,
+        300
+      ],
+      "302": [
+        7,
+        301,
+        288
+      ],
+      "303": [
+        6,
+        288,
+        302
+      ],
+      "304": [
+        5,
+        303,
+        288
+      ],
+      "305": [
+        4,
+        304,
+        288
+      ],
+      "306": [
+        3,
+        288,
+        305
+      ],
+      "307": [
+        2,
+        306,
+        288
+      ],
+      "308": [
+        1,
+        288,
+        307
+      ],
+      "309": [
+        0,
+        288,
+        308
+      ],
+      "310": [
+        9,
+        0,
+        1
+      ],
+      "311": [
+        10,
+        0,
+        1
+      ],
+      "312": [
+        10,
+        1,
+        0
+      ],
+      "313": [
+        9,
+        312,
+        0
+      ],
+      "314": [
+        11,
+        244,
+        0
+      ],
+      "315": [
+        10,
+        314,
+        0
+      ],
+      "316": [
+        9,
+        315,
+        0
+      ],
+      "317": [
+        38,
+        1,
+        0
+      ],
+      "318": [
+        11,
+        244,
+        317
+      ],
+      "319": [
+        10,
+        318,
+        0
+      ],
+      "320": [
+        9,
+        319,
+        0
+      ],
+      "321": [
+        8,
+        316,
+        320
+      ],
+      "322": [
+        7,
+        321,
+        316
+      ],
+      "323": [
+        6,
+        316,
+        322
+      ],
+      "324": [
+        5,
+        323,
+        316
+      ],
+      "325": [
+        4,
+        324,
+        316
+      ],
+      "326": [
+        3,
+        316,
+        325
+      ],
+      "327": [
+        2,
+        326,
+        316
+      ],
+      "328": [
+        1,
+        316,
+        327
+      ],
+      "329": [
+        0,
+        316,
+        328
+      ],
+      "330": [
+        12,
+        244,
+        0
+      ],
+      "331": [
+        11,
+        330,
+        0
+      ],
+      "332": [
+        10,
+        331,
+        0
+      ],
+      "333": [
+        9,
+        332,
+        0
+      ],
+      "334": [
+        12,
+        317,
+        0
+      ],
+      "335": [
+        11,
+        330,
+        334
+      ],
+      "336": [
+        10,
+        335,
+        0
+      ],
+      "337": [
+        9,
+        336,
+        0
+      ],
+      "338": [
+        8,
+        333,
+        337
+      ],
+      "339": [
+        7,
+        338,
+        333
+      ],
+      "340": [
+        6,
+        333,
+        339
+      ],
+      "341": [
+        5,
+        340,
+        333
+      ],
+      "342": [
+        4,
+        341,
+        333
+      ],
+      "343": [
+        3,
+        333,
+        342
+      ],
+      "344": [
+        2,
+        343,
+        333
+      ],
+      "345": [
+        1,
+        333,
+        344
+      ],
+      "346": [
+        0,
+        333,
+        345
+      ]
+    }
+  },
+  "scope": "Actual parsed LUT INIT bit I0=least-significant address bit, exact BUF/INV/MUX logic and actual shared CLK50 FF-Q roots. Structural CE identity remains mandatory; Boolean proof does not waive it."
+}

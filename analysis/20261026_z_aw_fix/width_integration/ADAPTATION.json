@@ -1,0 +1,8 @@
+{
+  "sources": {
+    "verify_top_safety.py": "5ea87d7ad6a8f693eebb31b38d3a8dd2963b9ea0685794ef49feaa9123946435",
+    "verify_contention.py": "eebf01991e41389703874289377d075291a8a899108beb54252e88e5040adc1b"
+  },
+  "changes": "Only exact source path v3->v4. Original top13 assertions and nonzeroXYI/nonzeroZI four-client assertions unchanged.",
+  "hardware": false
+}

@@ -1,0 +1,17 @@
+--- compact_aw_v3/position/mtf_xyz_hold_control.v
++++ compact_aw_v4/position/mtf_xyz_hold_control.v
+@@ -232,10 +232,10 @@
+   saved_ix<=ix_store;saved_iy<=iy_store;
+  end
+  reg mul_start=0,div_start=0,trig_start=0;
+- reg signed [49:0] ma_store=0;
+- wire signed [63:0] ma={{14{ma_store[49]}},ma_store};
+- reg signed [33:0] mb_store=0;
+- wire signed [63:0] mb={{30{mb_store[33]}},mb_store};
++ reg signed [33:0] ma_store=0;
++ wire signed [63:0] ma={{30{ma_store[33]}},ma_store};
++ reg signed [27:0] mb_store=0;
++ wire signed [63:0] mb={{36{mb_store[27]}},mb_store};
+  reg signed [63:0] num=0;
+  reg signed [47:0] value_store=0;
+  wire signed [63:0] value={{16{value_store[47]}},value_store};

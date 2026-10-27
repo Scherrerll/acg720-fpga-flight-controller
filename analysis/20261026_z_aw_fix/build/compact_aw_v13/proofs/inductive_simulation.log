@@ -1,0 +1,2 @@
+PASS inductive vectors=105632 known_age32=1 four_state_control=1 arbitrary_invariant_state_fixture=1 no_full_reader_DUT_force=1
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v13\proofs\age_tb.v:27: $finish called at 2112646000 (1ps)

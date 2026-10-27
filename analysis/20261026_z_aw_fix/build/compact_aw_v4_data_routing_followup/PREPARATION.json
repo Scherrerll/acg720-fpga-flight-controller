@@ -1,0 +1,14 @@
+{
+  "scope": "Physical routing only; three data/ready nets use vendor BUFG routing with signal_type LOGIC only. No CLK constraint, no FF clock connection change, no SDC/falsepath/pin/RTL change.",
+  "period_ns": 20,
+  "only_effective_change": "Three physical CLOCK_LOC BUFG=LOGIC priorities, same P3/R0/maxfan23 and exact VG/source55.",
+  "declaration_sha256": "cc7eb18535b851da11f2005baad453094869c5c81523729b43d31ae73e0046b0",
+  "PNR_started": false,
+  "scripts": {
+    "independent_raw_review.py": "1b9ff75afed5c49b2fd1be42de5f1e159798b630485f9d9858a1edc58261e91f",
+    "launch_physical_hidden.py": "dd5f4a13db886e5542f4892e0da0fb4e71b27448a77d8cdd42b055b262ce3fee",
+    "physical_snapshot.py": "978441cd2af242a9e20f9d2c9cbc527b2545f8f74bbe0c832dd253ef689a95b1",
+    "run_physical.py": "7ccaae4cb364ebde8e8a720eb9272cd4f703cb9a0cbb7e2149a2520d6c747fed",
+    "seal_terminal.py": "498b6530cd06f06202140c74c081ca6cfc17c132a874f19f346a0a9fe9d518f3"
+  }
+}

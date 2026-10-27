@@ -1,0 +1,66 @@
+--- B4-v1/position/mtf_xyz_hold_control.v
++++ compact-aw-v1/position/mtf_xyz_hold_control.v
+@@ -116,13 +116,21 @@
+  // Conditional Z integration uses the same final 0..850 motor-unit range
+  // as the collective output. Keep the candidate private until the P term
+  // and updated bias are known; cancellation cannot commit a partial step.
+- reg signed [32:0] candidate_iz_store=0,p_bias_store=0;
+- reg signed [32:0] candidate_collective_store=0,current_collective_store=0;
++ // Lifetime aliases: each value is written before its qualified use.
++ // state22 consumes the old lower rail before reusing it for candidate I.
++ wire signed [32:0] candidate_iz_store=iz_lower_q[32:0];
++ wire signed [32:0] p_bias_store={{2{exz_store[30]}},exz_store};
++ wire signed [32:0] candidate_collective_store=inner_alt_speed[32:0];
++ wire signed [32:0] current_collective_store={{2{sample_vx_store[30]}},sample_vx_store};
+  reg candidate_i_up=0,candidate_i_down=0;
+  wire signed [63:0] candidate_iz={{31{candidate_iz_store[32]}},candidate_iz_store};
+  wire signed [63:0] p_bias={{31{p_bias_store[32]}},p_bias_store};
+  wire signed [63:0] candidate_collective={{31{candidate_collective_store[32]}},candidate_collective_store};
+  wire signed [63:0] current_collective={{31{current_collective_store[32]}},current_collective_store};
++ // Both sums fit signed31 Q16 by the source-level bound; keep the 64-bit
++ // expression semantics, then explicitly retain/sign-extend those bits.
++ wire signed [63:0] compact_candidate_sum=p_bias+candidate_iz;
++ wire signed [30:0] compact_candidate_sum31=compact_candidate_sum[30:0];
+  wire reject_z_i=(candidate_collective>64'sd55705600 && candidate_i_up) ||
+                  (candidate_collective<0 && candidate_i_down);
+  wire signed [63:0] selected_z_i=reject_z_i ? iz:candidate_iz;
+@@ -295,7 +303,7 @@
+    state<=0;tracking<=0;xy_tracking<=0;command_seen<=0;height_command_seen<=0;blocked<=0;xy_blocked<=0;
+    prepare<=0;xy_prepare<=0;height_due<=0;position_due<=0;work_xy<=0;command_age<=32'hffffffff;height_command_age<=32'hffffffff;fault_reason<=0;
+    target_x<=0;target_y<=0;height_feedback_old_store<=keep64(0);
+-   ix_store<=keep64(0);iy_store<=keep64(0);iz_store<=keep64(0);bias_store<=keep64(0);iz_lower_q<=0;iz_upper_q<=0;candidate_iz_store<=0;p_bias_store<=0;candidate_collective_store<=0;current_collective_store<=0;candidate_i_up<=0;candidate_i_down<=0;afx_store<=keep64(0);afy_store<=keep64(0);afz_store<=keep64(0);vsz_store<=keep64(0);target_z_q16_store<=keep64(0);
++   ix_store<=keep64(0);iy_store<=keep64(0);iz_store<=keep64(0);bias_store<=keep64(0);iz_lower_q<=0;iz_upper_q<=0;candidate_i_up<=0;candidate_i_down<=0;afx_store<=keep64(0);afy_store<=keep64(0);afz_store<=keep64(0);vsz_store<=keep64(0);target_z_q16_store<=keep64(0);
+    roll_target<=0;pitch_target<=0;throttle_delta<=0;collective_target_us<=1000;reason<=1;height_reason<=1;requested_climb_mmps<=0;target_height_mm<=0;
+   end else begin
+    if(command_age!=32'hffffffff)command_age<=command_age+1'b1;
+@@ -305,7 +313,7 @@
+    if(!enabled || origin_reset)begin blocked<=0;xy_blocked<=0;fault_reason<=0;end
+    if(cancel || origin_reset || blocked)begin
+     state<=0;tracking<=0;xy_tracking<=0;command_seen<=0;height_command_seen<=0;prepare<=0;xy_prepare<=0;height_due<=0;position_due<=0;work_xy<=0;
+-    ix_store<=keep64(0);iy_store<=keep64(0);iz_store<=keep64(0);bias_store<=keep64(0);iz_lower_q<=0;iz_upper_q<=0;candidate_iz_store<=0;p_bias_store<=0;candidate_collective_store<=0;current_collective_store<=0;candidate_i_up<=0;candidate_i_down<=0;afx_store<=keep64(0);afy_store<=keep64(0);afz_store<=keep64(0);vsz_store<=keep64(0);target_z_q16_store<=keep64(0);
++    ix_store<=keep64(0);iy_store<=keep64(0);iz_store<=keep64(0);bias_store<=keep64(0);iz_lower_q<=0;iz_upper_q<=0;candidate_i_up<=0;candidate_i_down<=0;afx_store<=keep64(0);afy_store<=keep64(0);afz_store<=keep64(0);vsz_store<=keep64(0);target_z_q16_store<=keep64(0);
+     target_x<=0;target_y<=0;height_feedback_old_store<=keep64(0);
+     roll_target<=0;pitch_target<=0;throttle_delta<=0;collective_target_us<=1000;requested_climb_mmps<=0;target_height_mm<=0;
+     reason<=origin_reset ?1024:!rc_valid ?1:!enabled ?2:!ready ?4:blocked ?fault_reason:64;
+@@ -408,17 +416,17 @@
+       exz_store<=keep64(exz+value);calc(clip(exz+value,-65536000,65536000),11,10000,22);
+      end
+      22:begin
+-      candidate_iz_store<=keep64(taking_off ?clip(iz+value,iz_lower_q,iz_upper_q):0);
++      iz_lower_q<=keep64(taking_off ?clip(iz+value,iz_lower_q,iz_upper_q):0);
+       calc(22937600-bias,6908,106908,23);
+      end
+      // Source1Hz THR_START35 bias relaxation, never captured stick PWM.
+      23:begin bias_store<=keep64(taking_off ?bias+value:0);calc(exz,1,5,24);end
+      // Split the candidate test from adders so the 50MHz path stays bounded.
+      // Each 11ms callback gains only two clocks; all live masks still cancel.
+-     24:begin p_bias_store<=keep64(value+bias);state<=66;end
++     24:begin exz_store<=keep64(value+bias);state<=66;end
+      66:begin
+-      candidate_collective_store<=keep64(p_bias+candidate_iz);
+-      current_collective_store<=keep64(p_bias+iz);
++      inner_alt_speed<={{33{compact_candidate_sum31[30]}},compact_candidate_sum31};
++      sample_vx_store<=keep64(p_bias+iz);
+       candidate_i_up<=candidate_iz>iz;candidate_i_down<=candidate_iz<iz;
+       state<=67;
+      end

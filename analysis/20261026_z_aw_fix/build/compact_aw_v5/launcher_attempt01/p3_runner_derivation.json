@@ -1,0 +1,6 @@
+{
+  "base_entry_sha256": "0c767d0b89740bdb62b02709a9f274b9685befbbee5f6027631e59bd41ff9561",
+  "entry_sha256": "de57ec3f0433fb3f80b74247be2407b612032df77f78fbafb31a7aea9651aa78",
+  "scope": "Fresh v5 path/source/VG/donor keys plus explicit TD1 guard; original ABB physical gate unchanged.",
+  "no_vendor_or_profile_created_by_prepare": true
+}

@@ -1,0 +1,144 @@
+{
+  "reviewed_utc": "2026-10-26T19:06:09.408914+00:00",
+  "scope": "Direct independent parsing of raw reports, actual exits, source and bitstream. No imported gate parser.",
+  "passed": false,
+  "checks": {
+    "vendor_wait0": true,
+    "runner_wait0": false,
+    "source55": true,
+    "canonical_source55": true,
+    "VG": true,
+    "raw_log_hash": true,
+    "normal_eof": true,
+    "fullroute_and_bitstream": true,
+    "no_unrouted_nets": true,
+    "native_RTL_project": true,
+    "native_SYN_and_hook_eof": true,
+    "native_SYN_source_binding": true,
+    "native_mapped_audits": true,
+    "all_mapped_FF_clk50": true,
+    "period20": true,
+    "constraint50_and_fmax50": false,
+    "five_slacks_nonnegative": false,
+    "setup_hold_zero": false,
+    "physical_artifacts": true,
+    "pins18_all_directions": true,
+    "FS_B4": true,
+    "cfg_B4": true,
+    "unchanged_constraints": true
+  },
+  "period_ns": 20.0,
+  "fmax_mhz": 49.456,
+  "slacks_ns": {
+    "setup": -0.22,
+    "hold": 0.122,
+    "recovery": 11.288,
+    "removal": 3.092,
+    "minimum_pulse_width": 7.387
+  },
+  "violated_endpoints": {
+    "setup": 32,
+    "hold": 0
+  },
+  "worst_setup_row": [
+    "1",
+    "-0.220",
+    "acc_time/output_az_3_s0/Q",
+    "core/flight_state/flying_ms_3_s0/D",
+    "clk50:[R]",
+    "clk50:[R]",
+    "20.000",
+    "0.437",
+    "19.726"
+  ],
+  "pins": {
+    "clk50": [
+      "Y18",
+      "in"
+    ],
+    "imu_miso": [
+      "D19",
+      "in"
+    ],
+    "rc_ppm_in": [
+      "B17",
+      "in"
+    ],
+    "range_rx": [
+      "C14",
+      "in"
+    ],
+    "radio_rx": [
+      "B16",
+      "in"
+    ],
+    "imu_sck": [
+      "E17",
+      "out"
+    ],
+    "imu_mosi": [
+      "C20",
+      "out"
+    ],
+    "imu_cs_n": [
+      "E18",
+      "out"
+    ],
+    "imu_gyro_cs_n": [
+      "F20",
+      "out"
+    ],
+    "range_tx": [
+      "C15",
+      "out"
+    ],
+    "uart_tx": [
+      "M15",
+      "out"
+    ],
+    "radio_tx": [
+      "B15",
+      "out"
+    ],
+    "led2": [
+      "L21",
+      "out"
+    ],
+    "led3": [
+      "K21",
+      "out"
+    ],
+    "motor1_pwm": [
+      "D17",
+      "out"
+    ],
+    "motor2_pwm": [
+      "C17",
+      "out"
+    ],
+    "motor3_pwm": [
+      "E16",
+      "out"
+    ],
+    "motor4_pwm": [
+      "D16",
+      "out"
+    ]
+  },
+  "raw_sha256": {
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\verification\\physical.log": "dedb6affd58aafa76ab37bf3390369ee71a03091ba032de0f8f9c8d4ad93cabe",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\verification\\physical_exit.json": "358e837fa0b034778de0d5c545e9e7c52cf6aba7fa0d0bb70ebce07bda4d522d",
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_native\\physical_p3r0_01\\runner_exit.json": "1775c5007c89306f0cf6a073073631980f9174c9efb6666f4190e18376f74613",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\source\\acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\verification\\mapped_audit.json": "d7fe7c960c742da367ef3659f73cbd637c16ce0a93786083fe6043c7f87fe8e2",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\verification\\gain_port_audit.json": "0cf64767dcd8c8fd42aa9c2da2e7444a7f6c1f3a8309ba310f05997a67ad5a95",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\verification\\strict_ff_clock_audit.json": "c20187c92d3feacd57fdd4ae9235d6d51eeea09c1bec8756e8d76af0f0591d44",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\verification\\native_synthesis_audit.json": "e81c1ff0a333b0a9b0fcceb188cf2af730bb67c15c1dec625529a0db63a2b42a",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.tr": "457e8b7b912fb38f3cc19e597d065084b845161c7b2a95de8b227aad3046414b",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.rpt.txt": "21ba1dcb7d1795faa0eb1827e51c60560f106c5db1cf83489fd3cb19b3bd2acb",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.fs": "f94191a1d41cdfad9268ed07b72ed9102c303314e5e00c2451a592fcfa83cd01",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.pr": "534977e5e6f155dae5fd182dcbb28e1ff44d87df737da64c275b91c95a45202e",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_native\\physical_p3r0_01\\source\\impl\\pnr\\device.cfg": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187"
+  },
+  "review_script_sha256": "8196091b4497551e9d350ac3bf541053cc9ea1af0da94418103eb09692aa0c9f"
+}

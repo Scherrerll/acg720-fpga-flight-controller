@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:\\Program Files\\nodejs\\node.EXE",
+    "ground/B0B4/test_xy_pi_ui.cjs"
+  ],
+  "started_utc": "2026-10-26T03:37:55.817062+00:00",
+  "finished_utc": "2026-10-26T03:37:55.912734+00:00",
+  "actual_exit_code": 0,
+  "log_sha256": "997a33a857d0c1c9a08fbc2f921eba8236e1a66ed615d607bec141a4a7eef19e",
+  "scope": "In-memory DOM and fetch mock; no network"
+}

@@ -1,0 +1,5 @@
+{
+  "donor_driver_sha256": "af3eb97cfe42702493e284091887e5234634c9e9aaa0bc4484f6adb46574be1d",
+  "changes": "Old=v4/new=v5 source paths and expected old hold; add every-cycle num/value identity and50/39 range assertions; require zero MA/MB differences (these stores unchanged); original control/math/cancel assertions retained.",
+  "hardware": false
+}

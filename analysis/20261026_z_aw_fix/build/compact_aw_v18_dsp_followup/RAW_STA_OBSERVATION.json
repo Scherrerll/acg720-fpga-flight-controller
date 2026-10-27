@@ -1,0 +1,29 @@
+{
+  "observed_utc": "2026-10-26T23:22:14.781356+00:00",
+  "raw_TR_sha256": "4b6d1daa2c528b95f3b4a3d7501f71770dc5f321f49f8ba0db422a53c096f678",
+  "full_route": true,
+  "qualified": false,
+  "fmax_mhz": 48.148,
+  "worst_setup_ns": -0.769,
+  "setup_endpoints": 69,
+  "hold_endpoints": 0,
+  "reported_representative_paths": 25,
+  "reported_source_groups": {
+    "AZ": 22,
+    "IMU_index": 1,
+    "Z_speed": 2
+  },
+  "worst_reported_path": [
+    "1",
+    "-0.769",
+    "acc_time/output_az_22_s0/Q",
+    "core/manual_angles/pending_np_9_s0/CE",
+    "clk50:[R]",
+    "clk50:[R]",
+    "20.000",
+    "0.008",
+    "20.481"
+  ],
+  "next": "v20 adds same-publication AZ predicate to already-proven v18 VY/landing/fanout source; prioritize standard P3 after physical preparation. New actual physical results required.",
+  "scope": "Original raw top25 representative setup paths only; does not enumerate every violated endpoint or prove that an RTL edit resolves STA."
+}

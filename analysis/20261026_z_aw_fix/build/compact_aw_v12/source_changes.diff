@@ -1,0 +1,11 @@
+--- v11/position/mtf_shared_height_fusion.v
++++ v12/position/mtf_shared_height_fusion.v
+@@ -1174,7 +1174,7 @@
+    // Fault recovery starts a new height epoch; no stale interval integration.
+    if(!rst_n || origin_reset || !sources_ok) fault<=0;
+   end else begin
+-   if(publication_age!=32'hffffffff)begin publication_age<=publication_age+1'b1;publication_fresh<=((publication_age+32'd1)<AGE_LIMIT);end
++   if(publication_age!=32'hffffffff)begin publication_age<=publication_age+1'b1;publication_fresh<=((AGE_LIMIT!=0)&&(publication_age<(AGE_LIMIT-32'd1)));end
+    if(acc_update)begin
+     if(acc_pending || acc_dt_us==0 || acc_dt_us>100000)begin fault<=1;reason<=4;end
+     else begin acc_pending<=1;pending_acc<=az_up_mmps2;pending_acc_dt_store<=acc_dt_us;end

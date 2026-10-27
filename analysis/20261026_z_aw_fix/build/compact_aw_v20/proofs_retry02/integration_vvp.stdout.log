@@ -1,0 +1,2 @@
+PASS combined_guard cycles=423 checks=423 AZ_publications=10 metric_publications=15 combinations=1111 default_wrong_flags_ignored=1 no_DUT_force_preload=1
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v20\guard_integration_tb.v:88: $finish called at 8460000 (1ps)

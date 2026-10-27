@@ -1,0 +1,87 @@
+{
+  "source_files": 55,
+  "unchanged_source_files": 52,
+  "changed_source_files": [
+    {
+      "path": "build.tcl",
+      "B3_sha256": "08b71ffd40b4172ce85e99134a90155a5a1e5457d6687bd692b09e63d7ede091",
+      "B4_sha256": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4"
+    },
+    {
+      "path": "position/mtf_xyz_hold_control.v",
+      "B3_sha256": "b7eef6d33789523cd1e8ff81b05e75db91ab3c67bf76e03483dec356055fa1a6",
+      "B4_sha256": "5a928e0a68db70974049a4debb0b841ca06fa00598a4ffb4cb506997cfed657c"
+    },
+    {
+      "path": "xy_pi_parameters.v",
+      "B3_sha256": "c3ab65d07c7b664268192a5b0de3acfb510efdac504a7a82cfdfa89e83d1b187",
+      "B4_sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392"
+    }
+  ],
+  "normalized_line_endings_for_patch_only": true,
+  "ground_changed_from_frozen39": [
+    {
+      "path": "dashboard.html",
+      "old_sha256": "c34107f50dcf73b029bff127fcd1ae9bcc68f5b1a15353bb2af760ccd863f99f",
+      "new_sha256": "746aec928898cb8c57318debed81e148127ec6b1d26481abac54df611f640711"
+    },
+    {
+      "path": "ground_server.py",
+      "old_sha256": "9ef62bc66e78f1d68cbe312a187a556cde9181d808e6bd0846dde819ebdac65e",
+      "new_sha256": "02188013a7c0fa563439b5bfdf1ba52c88d6d7d41389af143cc84e24ab96031b"
+    },
+    {
+      "path": "pi-help.html",
+      "old_sha256": "807b66b80d43e014482b058436ce1cf1a79e115bb5dfbfbcc36d9a167218a53c",
+      "new_sha256": "d77c40834cb46fb9f88274a8775418c4134cea7f3da57f3f00e2f9639143023f"
+    },
+    {
+      "path": "README.md",
+      "old_sha256": "e549e3dd211f4db2b70d14c079fb0dd869e92528c6a01df8c52803b14fe83d83",
+      "new_sha256": "35c1007a3b32d25006ac6457d1a97d77f686e951fb4ad82b6ff7f835a290ad26"
+    },
+    {
+      "path": "test_xy_pi_control.py",
+      "old_sha256": "46d9a2fa0565c9ab4dcf86da4e690adac57593b1d02f4a6a70a2c25e04541689",
+      "new_sha256": "55c759f61ef93d17b4d1cfc1660f32e77273319e3480b1b8bb332323a6f42f27"
+    },
+    {
+      "path": "test_xy_pi_http.py",
+      "old_sha256": "d4346a016756754c534a01e0209fde0d9b757f12f44ff2ec6eb4f09581ea442e",
+      "new_sha256": "b20a99c932f51238a7e9ece3c335dc15d3845404b148fef8f30af740c5d728bc"
+    },
+    {
+      "path": "test_xy_pi_transport.py",
+      "old_sha256": "47603e6ea12961b5fac58c773bffa85c555a5d940f766c213f4ccb5e5aae922c",
+      "new_sha256": "83c9f829801bae9c964b9804dc65513744a989a39b5fb704e214e09295f1be22"
+    },
+    {
+      "path": "test_xy_pi_ui.cjs",
+      "old_sha256": "ea4d10d34c7e3c06b14f2432ff5e7187b496e8676787432be00a1b7a7245e51d",
+      "new_sha256": "4a35474541f6fd94310e359456cdc0d9600c9e87e4f1f0a361d65c90e3e7ec18"
+    },
+    {
+      "path": "xy-pi-ui.js",
+      "old_sha256": "2585ca8c1a0f3a0f61c66f9e421f308369a32674410d7ae9999a90d28491814a",
+      "new_sha256": "d9b195aa47b0a83e222e2d3e45ed6630240d100113e6ac370569d7237bce99b7"
+    },
+    {
+      "path": "xy_pi_control.py",
+      "old_sha256": "698800a56a1afe9c77f6b143619e69b58770878f0f57c457ad7fa52216494f28",
+      "new_sha256": "1c9857497e3cbecdba30c687e004870daeb5cc12cba98b901db370ddb59faf76"
+    },
+    {
+      "path": "xy_pi_service.py",
+      "old_sha256": "74cd00007697acc8df5827346db65d4c51baedf2f1535b3287a3d49ec4055181",
+      "new_sha256": "d0b190e55a9046a7c369c865926bbcffa79f8a31b19a7a036539ce62432779b5"
+    }
+  ],
+  "functional_scope": [
+    "Z conditional integration at final output range",
+    "XY boot defaults1000/350",
+    "B4 identity and matched ground defaults"
+  ],
+  "extra_Z_callback_clocks": 2,
+  "clock_period_ns": 20,
+  "hardware_programmed": false
+}

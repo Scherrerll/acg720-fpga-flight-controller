@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-26T20:25:21.327187+00:00",
+  "scope": "Engineering review notes only. No firmware clock/timebase/source or ground software was changed. Current v14 P3/P2 remain genuine50MHz trials.",
+  "verified": {
+    "vendor_generated_reference_manifest_sha256": "d7630a01185fbf20d60a88eab5b9238c6806c1388560d3633ace025e345b12ed",
+    "isolated_model_result_sha256": "37d315a0fff1bebeadf436a9e67af8bc051f34380f9b125d81da02ffb44ca4be",
+    "model_period_measurement": "49000 output periods elapsed999992ns; quantized vendor model within20ppm tolerance; configured integer ratio50*49/(2*25)=49MHz, phase0, noSSC"
+  },
+  "required_before_a_49MHz_release": [
+    "Integrate the exact generated PLLA wrapper, MOD and PLL_INIT sources. The manufacturer initializer uses original50MHz mdclk; functional data plane should have one49MHz clock, avoiding multiword sensor crossings.",
+    "Hold functional startup/reset and physical outputs until qualified PLL lock; review proper synchronization of the50MHz initializer lock status into49MHz. Any necessary CDC exception must be narrow and explicitly proven, without masking original functional paths.",
+    "Audit all dimensional tick quantities rather than blindly replacing50000: RC/PWM physical microseconds and the raw stopped-output tick comparisons, UART divisors/timeouts, SPI/IMU startup/sample times, ms clocks/ages/watchdogs, estimator/rate-control tick dt denominators and ticks-to-us carry conversion.",
+    "Preserve microsecond-domain constants such as50000us sensor dt bounds. Preserve Q16 precision, ordinary equations, antiwindup/defaults, existing protection/revoke/landing behavior and no new parameter NVS.",
+    "Review ground decoder time conversions from raw FPGA ticks; B3/B2 frozen source remains unchanged, and changed B4 ground inputs require fresh software tests rather than reusing the43-input unchanged receipt.",
+    "The generated IP adds3 RTL files, so a fallback source contract may contain58 files instead of the original55. Hash and validate the full explicit source set; do not pretend the original55-only gate covers a PLL implementation.",
+    "Create explicit frequency-specific clock and raw STA audits: input50MHz/20ns and functional49MHz/20.408163ns, initializer-only50MHz FF allowlist, functional FF clock-root checks, complete real vendor/runner exits0, fullroute/bitstream, all five nonnegative timing tables/zero endpoints,18pins andB4identity.",
+    "Run meaningful49MHz behavior/unit/cadence/reset/UART/PWM/controller equivalence tests and a new complete physical implementation. The historical49.456MHz failure and this isolated PLL model are not installable firmware qualifications.",
+    "Fresh current human bench state confirmation still follows a concrete qualified package; then SRAM/readback, Flash/verify and actual dark power cycle before claiming installation/cold-boot success."
+  ],
+  "not_decided_or_implemented": "Wait for the current50MHz v14 trials while preparing this fallback. Do not claim49MHz complete or relabel a50MHz timing failure."
+}

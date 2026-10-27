@@ -1,0 +1,77 @@
+{
+  "scope": "Actual B3/B4 controller/shared-math RTL; legal fixed sensor boundary stimuli, no plant or flight replay. Callback cadence2500clocks forZ-only and20000 forXY/I0, original11ms/1ms dt. Compact vsB4-v1 module outputs/integrals are checked everycycle. No private force/preload. Publication comparison allows exactly2newclocks.",
+  "completed": 5,
+  "passed": true,
+  "results": [
+    {
+      "case": 1,
+      "name": "natural_upper_and_low_stick",
+      "exit_code": 0,
+      "seconds": 317.000173330307,
+      "checks": [
+        "PASS natural upper windup: old1850=419/419 first4600ms; new below1850=44ms below1250=924ms upper_rejects=1716 accepted_down=77",
+        "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+        "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+        "PASS commit contract checked 2237 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "b3ec184c0a78b083ae225ead8edf741bedf33dfdd6f12c09125be752ddcd9513",
+      "trace_sha256": "a74da8058e2ca2d3ca625d1656faaa23795ec246e9d233e489f217721be88182"
+    },
+    {
+      "case": 2,
+      "name": "unsaturated_equivalence",
+      "exit_code": 0,
+      "seconds": 52.96879315376282,
+      "checks": [
+        "PASS unsaturated old/new publication equivalence: publications=400 positiveI=100 negativeI=150 delay=2clocks",
+        "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+        "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+        "PASS commit contract checked 400 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "acf0b8a7ee3262bb0ed8bd09b9856612e7e984baec2318410d4c7231477f8a7b",
+      "trace_sha256": "605b40f120d434f9cb4f03b70bdb1d7242c37dae7e8cd102b6623adee6a8f7b3"
+    },
+    {
+      "case": 3,
+      "name": "natural_lower_and_positive_recovery",
+      "exit_code": 0,
+      "seconds": 83.12725353240967,
+      "checks": [
+        "PASS natural lower saturation and positive recovery: lower_rejects=406 accepted_up=52 final_collective=1850",
+        "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+        "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+        "PASS commit contract checked 650 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "ad8b42cf7ee69e00b8ba7416be5430edb3f159e9420a912ea2892e137951164a",
+      "trace_sha256": "474abff8632bdabfc857841abc149843894c6a547c8ab0f3a073e970548c6b94"
+    },
+    {
+      "case": 4,
+      "name": "cancel_and_takingoff",
+      "exit_code": 0,
+      "seconds": 14.027339458465576,
+      "checks": [
+        "PASS eight staged cancel/reentry boundaries plus taking_off false; no stale publication; live safety mask retained",
+        "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+        "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+        "PASS commit contract checked 74 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "b8336ea7ef4e5eeba328b68fcf558d3c0d53fe1eb6a43a4600120560ecc6e11c",
+      "trace_sha256": "f8cb999e0df582b138794d66ec3aab721f8e63cd4c5c409c6dfcca0abbcb7792"
+    },
+    {
+      "case": 5,
+      "name": "xy_i0_independence",
+      "exit_code": 0,
+      "seconds": 121.67590761184692,
+      "checks": [
+        "PASS XY I0 retains exact old angles/zeroXYintegral across 75 callbacks while Z I is nonzero",
+        "PASS reachable I[-350,850] and bias[0,350] checked each active cycle",
+        "PASS compact/v1 module outputs and persistent integrals match every active cycle",
+        "PASS commit contract checked 150 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "a09c1aa36e94b66228f54f3054881e519b3dc1210fcb5b9032f869918148c43d",
+      "trace_sha256": "0814732ae58a4b0a80780b61927b0588b2a1ef792020e064bc96fd60c5892efe"
+    }
+  ]
+}

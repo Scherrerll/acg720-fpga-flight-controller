@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "target_sha256": "19d8e437bb3b3f71310b2d172342c271d4ce3258b2164659b5639abcd7ec7f7e",
+  "recorder_sha256": "58337383513f1802e7a00bcc40be56377ceb99f43deadab67cb048228b4383a5",
+  "receipts": [
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\five\\actual_child_receipts\\01_exit.json",
+      "sha256": "79b658f150a9de749ceba265b49877b5c191f286d1b58e409ed63da832920c74"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\five\\actual_child_receipts\\02_exit.json",
+      "sha256": "f0047c2a92e190030947482ee604cf4d5b689e25bd0c713ea59a13d0ae2c9e12"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\five\\actual_child_receipts\\03_exit.json",
+      "sha256": "4958ca681e4d916ced9556c625557bc9aa0b408a9773da6c4c52b089501ffd36"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\five\\actual_child_receipts\\04_exit.json",
+      "sha256": "987127bca26f1f142eb28e047e778203ac407547501ffadb33522fd3a3668a5c"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\five\\actual_child_receipts\\05_exit.json",
+      "sha256": "7d18307fe07c61e25919b696f594e48d0b44b237b9e88ccab5a3a04dd4613705"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\proofs_attempt01\\five\\actual_child_receipts\\06_exit.json",
+      "sha256": "578cb67d04922117677382534f539e6583aceffab75fa211b540a7b10aec9cc4"
+    }
+  ]
+}

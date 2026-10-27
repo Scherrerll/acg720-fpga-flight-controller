@@ -1,0 +1,2 @@
+PASS UART MODE=0 cycles=1200513 public_bits=1140 expiry200=1 expiry1000=1 restores=6 integrations=15451 hold_cycles=375160 no_DUT_force=1 CLOCK_HZ=1152000
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v13\proofs\reader_tb.v:93: $finish called at 12005130000 (1ps)

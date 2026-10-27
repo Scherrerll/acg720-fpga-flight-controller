@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-u",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\test_release_evidence.py"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "started_utc": "2026-10-26T23:42:11.587898+00:00",
+  "parent_pid": 40660,
+  "source_script_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "0aca113522b6d125f17edaf10fd95985284d78f74389ae40a7fd80aaac78442a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "645e302458ca6b8f064035c919c30b9931ffd9cbb7bfc42fc7e21105eb9aa041",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\build_candidate.py": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\test_release_evidence.py": "cc2dd754a39ddfcd7f0e99f1b4469551c3756786f56352dc0011e9f3e274840b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\run_v20_v21_validation.py": "1d3adec4c5fc00190940893839a45608616d885493698ecacc4cd60c720c18f0"
+  },
+  "scope": "Offline source/proof/SYN archive tests only; no export, vendor, audit retry, hardware or promotion.",
+  "pid": 33528,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-26T23:43:29.285639+00:00",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "269d16aa8a4bdab9ff363836ceef450fcb65c038296f7bb94226f0df693a36e4"
+}

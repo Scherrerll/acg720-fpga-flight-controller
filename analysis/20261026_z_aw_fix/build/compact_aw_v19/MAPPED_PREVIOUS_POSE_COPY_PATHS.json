@@ -1,0 +1,178 @@
+{
+  "scope": "Mapped topology only; every actual previous_pose_valid source copy considered, no inferred generated rename, no timing qualification.",
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "results": {
+    "v4": {
+      "VG_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+      "source_copies": [
+        "previous_pose_valid_s0"
+      ],
+      "exact_targets": [
+        "native_navigation/multiply_service/held_a_42_s0",
+        "native_navigation/multiply_service/held_a_38_s0"
+      ],
+      "paths": [
+        {
+          "actual_source": "previous_pose_valid_s0",
+          "actual_target": "native_navigation/multiply_service/held_a_42_s0/D",
+          "trace": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n591_s7"
+            ]
+          }
+        },
+        {
+          "actual_source": "previous_pose_valid_s0",
+          "actual_target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "trace": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n595_s7"
+            ]
+          }
+        }
+      ]
+    },
+    "v17": {
+      "VG_sha256": "9a0194f0f1410b85472bdaddc70e1966f04e73c8ff70706316ccd91d5ea6ef6f",
+      "source_copies": [
+        "previous_pose_valid_s1",
+        "previous_pose_valid_s2"
+      ],
+      "exact_targets": [
+        "native_navigation/multiply_service/held_a_42_s0",
+        "native_navigation/multiply_service/held_a_38_s0"
+      ],
+      "paths": [
+        {
+          "actual_source": "previous_pose_valid_s1",
+          "actual_target": "native_navigation/multiply_service/held_a_42_s0/D",
+          "trace": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n591_s7"
+            ]
+          }
+        },
+        {
+          "actual_source": "previous_pose_valid_s1",
+          "actual_target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "trace": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n595_s7"
+            ]
+          }
+        },
+        {
+          "actual_source": "previous_pose_valid_s2",
+          "actual_target": "native_navigation/multiply_service/held_a_42_s0/D",
+          "trace": null
+        },
+        {
+          "actual_source": "previous_pose_valid_s2",
+          "actual_target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "trace": null
+        }
+      ]
+    },
+    "v19": {
+      "VG_sha256": "72808bc54f1a2b6c199a109cfa6f71e35139508d1573f10abba2bcd2774ae7af",
+      "source_copies": [
+        "previous_pose_valid_s1",
+        "previous_pose_valid_s2"
+      ],
+      "exact_targets": [
+        "native_navigation/multiply_service/held_a_42_s0",
+        "native_navigation/multiply_service/held_a_38_s0"
+      ],
+      "paths": [
+        {
+          "actual_source": "previous_pose_valid_s1",
+          "actual_target": "native_navigation/multiply_service/held_a_42_s0/D",
+          "trace": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n591_s7"
+            ]
+          }
+        },
+        {
+          "actual_source": "previous_pose_valid_s1",
+          "actual_target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "trace": {
+            "depth": 10,
+            "cells": [
+              "native_navigation/controller_proof/controller_z_ready_s2",
+              "native_navigation/controller_proof/d_cancel_3_s1",
+              "native_navigation/multiply_service/n177_s5",
+              "native_navigation/multiply_service/n177_s3",
+              "native_navigation/multiply_service/choice_1_s6",
+              "native_navigation/multiply_service/n726_s4",
+              "native_navigation/multiply_service/choice_1_s9",
+              "native_navigation/multiply_service/choice_1_s0",
+              "native_navigation/multiply_service/n587_s6",
+              "native_navigation/multiply_service/n595_s7"
+            ]
+          }
+        },
+        {
+          "actual_source": "previous_pose_valid_s2",
+          "actual_target": "native_navigation/multiply_service/held_a_42_s0/D",
+          "trace": null
+        },
+        {
+          "actual_source": "previous_pose_valid_s2",
+          "actual_target": "native_navigation/multiply_service/held_a_38_s0/D",
+          "trace": null
+        }
+      ]
+    }
+  }
+}

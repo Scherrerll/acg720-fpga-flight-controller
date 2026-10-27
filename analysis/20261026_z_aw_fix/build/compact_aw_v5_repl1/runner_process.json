@@ -1,0 +1,16 @@
+{
+  "scope": "Owned v5 P3/R0 replication1 runner only",
+  "started_utc": "2026-10-26T07:05:34.263609+00:00",
+  "pid": 39312,
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-u",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v5_repl1\\run_physical_p3r0_repl1.py"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "create_no_window": true,
+  "stdin": "DEVNULL",
+  "stdout": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v5_repl1\\runner.stdout.log",
+  "stderr": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v5_repl1\\runner.stderr.log",
+  "PYTHONDONTWRITEBYTECODE": "1"
+}

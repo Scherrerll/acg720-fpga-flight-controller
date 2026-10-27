@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-10-26T18:42:07.823550+00:00",
+  "prepared_not_started": true,
+  "script_sha256": {
+    "run_physical.py": "9e33796035d4f20da9ed8a79681dad6868e07b8145e6b2f61edad81d1be03ef7",
+    "audit_synthesis.py": "3922143498e0f3ffc87e4475fbb8d9342a415689f6ec73017b6675d547aa7b9a",
+    "native_physical_audit.py": "c8a9932acd0db039de9a34a00c07e2aa84f8dfbf3df9c787ae704e36cd49f13f",
+    "seal_terminal.py": "32214c8a304baa40c21ebd0445233e78702ca1a2e3b4dee1be959ca1f291eb69",
+    "independent_raw_review.py": "8196091b4497551e9d350ac3bf541053cc9ea1af0da94418103eb09692aa0c9f",
+    "launch_physical_hidden.py": "568ff1803e759cc350100f1b73e8ebf819b13554b903d35b96c4d138dda68168",
+    "physical_snapshot.py": "0bfea2d7aa23a5be33cbdda51b95fae8ad49f4c3b95b6d041ca949283faa6320"
+  },
+  "Tcl_parse_preflight": {
+    "2": {
+      "Tcl_complete": true,
+      "phase_order_valid": true,
+      "tcl_sha256": "ac6ce73760c60cb86fec0f47261dcc148e3776666a1ab37202effb33fb827004"
+    },
+    "3": {
+      "Tcl_complete": true,
+      "phase_order_valid": true,
+      "tcl_sha256": "ffab56ee309a0e0d40f54cb7056c8de162849ae9bbf62f7e29721fb99cbb9afa"
+    }
+  },
+  "parent_native_v13_preparation_sha256": "977dc104482021fdb6fc97ec0c48bf5bf89fc27cef68a325a8e4dd7409e70e3f",
+  "scope": "Identical proven v4 RTL55, native flow only. Syntax/Tcl parse only; no vendor/hardware started."
+}

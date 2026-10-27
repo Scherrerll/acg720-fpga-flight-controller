@@ -1,0 +1,12 @@
+{
+  "failed_entry_sha256": "de57ec3f0433fb3f80b74247be2407b612032df77f78fbafb31a7aea9651aa78",
+  "actual_launch02_entry_sha256": "9cac97a876469e2ece03b2a3e44c659e2032ccb492ae494d7fc6e297ce8af435",
+  "correction": "Donor synthesis_options is exactly map2/repl0; TD1 remains an explicit physical Tcl and receipt guard. First launcher failed before profile/vendor creation.",
+  "failed_launcher_evidence": {
+    "p3_runner_derivation.json": "8d7e91a23da16e0b0e8c3f1ce391397d760473ad7be694e1ff937d3f14bb8b60",
+    "physical_p3_runner.stderr.log": "29662031c58922ee536c67e10a6cb5bdefc6e4bb4bdff17cd5063503204cbf9f",
+    "physical_p3_runner.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "physical_p3_runner_process.json": "df84dc26827c79b64de851cdfec7e9ece966b6be54d2b93debb7d34f71a1fc08",
+    "run_physical_p3r0.py": "de57ec3f0433fb3f80b74247be2407b612032df77f78fbafb31a7aea9651aa78"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "xml_declarations": 1,
+  "exact_netlist_constraints_project": true,
+  "combined_cst_sha256": "af2bd1c8bf92630fbba36f8f28438d6b865352c6e3bd24f007dc008df5e3c98e",
+  "incremental_seed_sha256": "ba20959930d4ddac2f4841d3ce4962d4ee1c84c2b65feaf004b9def3a6f76a1e",
+  "project_sha256": "6bc5110e2596ad29e6c6d9e1b63726cb9e7dab43b1a10b7a8def975c76f15b7a"
+}

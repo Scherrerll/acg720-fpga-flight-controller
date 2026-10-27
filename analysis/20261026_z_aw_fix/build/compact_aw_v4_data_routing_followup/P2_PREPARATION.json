@@ -1,0 +1,19 @@
+{
+  "scope": "Exact same v4 VG/source55/three combined-CST LOGIC priorities; place3->2 only. No resynthesis or hardware.",
+  "basis": "P3 normal actual1/306unrouted. Vendor raw report confirms all three prioritized data nets use LW. Try documented timing-priority P2 placement for the same topology; no timing acceptance inferred.",
+  "period_ns": 20,
+  "physical_options": {
+    "place": 2,
+    "route": 0,
+    "route_maxfan": 23
+  },
+  "source_freeze_sha256": "933482eff5ff7ab4e9dffa69b06d358c61dc422ef92977ac0e51bd5e4d7ae7d7",
+  "declaration_sha256": "cc7eb18535b851da11f2005baad453094869c5c81523729b43d31ae73e0046b0",
+  "PNR_started": false,
+  "scripts": {
+    "run_p2.py": "e65c62ac3d580515db2ef990778468a4017fa6e388e4b0f39a55941047c9710a",
+    "launch_p2_hidden.py": "9fec431079c54c87217399379ea559ab54e61e814eaf0376266164e958ef0b11",
+    "seal_p2.py": "150be7f4ab4ba75882d44832ae69b22bcbc8aa53c68f8dee01ea33005645dda3",
+    "independent_p2_raw_review.py": "54ce0104f7a48626ccff7ad7e647ee7e95d9ef9173f8a8b938959845a7e2e44a"
+  }
+}

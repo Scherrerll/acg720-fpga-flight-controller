@@ -1,0 +1,10 @@
+{
+  "scope": "New isolated offline alternative only; no canonical/source/ground/vendor/hardware changes",
+  "base": "actually sealed v20 source55",
+  "changed_files": [
+    "position/mtf_xyz_hold_control.v"
+  ],
+  "source_freeze_sha256": "798c6443805d56556dbaeb9a4b43531159267b24e473283c6ef362fc00ddf5d6",
+  "offline_ready_sha256": "7853eb103ea6bc0fd27e290c9bf4255743f58f8f7196fbb023ffc3c1df65435b",
+  "v21_retry_scripts_and_artifacts_untouched": true
+}

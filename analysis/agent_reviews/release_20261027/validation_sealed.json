@@ -1,0 +1,11 @@
+{
+  "actual_python_exit_code": 0,
+  "tests": 10,
+  "export_script_sha256": "aaa82e9bf4802a6b41832cd5ad3f7c4a3cc71055644226d1342e09992d6175d8",
+  "verifier_sha256": "d9e57263537074c3919608cc286eed6df11ad0f20bcc4f6a3601dd2057b9906f",
+  "original_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "source_export_performed": false,
+  "promotion_performed": false,
+  "vendor_or_hardware_started": false,
+  "scope": "Genuine saved functional/SYN/VY chains, portable proof-only archive and rejection tests"
+}

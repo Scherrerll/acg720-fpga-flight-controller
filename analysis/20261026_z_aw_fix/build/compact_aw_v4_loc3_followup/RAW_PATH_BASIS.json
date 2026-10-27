@@ -1,0 +1,30 @@
+{
+  "scope": "Read-only placement hypothesis. Not STA qualification, all32 endpoints need fresh raw acceptance.",
+  "raw_baseline_TR": "out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_01\\source\\impl\\pnr\\acg720_ano_port.tr",
+  "raw_baseline_TR_sha256": "c62307f8f84c2a0b742e1b5ba09211ad17158d9b6e6807e0c59146775ba80b82",
+  "raw_top25_setup_table": "3.1.1 Setup Paths Table\n<Report Command>:report_timing -setup -max_paths 25 -max_common_paths 1\n  Path Number   Path Slack           From Node                                     To Node                            From Clock   To Clock    Relation   Clock Skew   Data Delay  \n ============= ============ ============================ =========================================================== ============ =========== ========== ============ ============ \n  1             -0.220       acc_time/output_az_3_s0/Q    core/flight_state/flying_ms_3_s0/D                          clk50:[R]    clk50:[R]   20.000     0.437        19.726      \n  2             -0.218       acc_time/output_az_3_s0/Q    core/flight_state/flying_ms_0_s0/CE                         clk50:[R]    clk50:[R]   20.000     0.454        19.484      \n  3             -0.177       mtf/metric/vy_x100_28_s0/Q   staged_telemetry.extension_q_814_s0/D                       clk50:[R]    clk50:[R]   20.000     0.017        20.103      \n  4             -0.169       acc_time/output_az_3_s0/Q    core/gate/low_hold_count_20_s1/CE                           clk50:[R]    clk50:[R]   20.000     0.445        19.443      \n  5             -0.169       acc_time/output_az_3_s0/Q    core/gate/low_hold_count_24_s1/CE                           clk50:[R]    clk50:[R]   20.000     0.445        19.443      \n  6             -0.169       acc_time/output_az_3_s0/Q    core/gate/low_hold_count_28_s1/CE                           clk50:[R]    clk50:[R]   20.000     0.445        19.443      \n  7             -0.144       acc_time/output_az_3_s0/Q    core/manual_angles/tr_6_s0/CE                               clk50:[R]    clk50:[R]   20.000     0.454        19.410      \n  8             -0.140       previous_pose_valid_s0/Q     native_navigation/multiply_service/held_a_38_s0/D           clk50:[R]    clk50:[R]   20.000     0.008        20.143      \n  9             -0.140       previous_pose_valid_s0/Q     native_navigation/multiply_service/held_a_42_s0/D           clk50:[R]    clk50:[R]   20.000     0.008        20.143      \n  10            -0.134       acc_time/output_az_3_s0/Q    core/gate_last_revoke_attitude_fault_0_s0/CE                clk50:[R]    clk50:[R]   20.000     0.437        19.416      \n  11            -0.134       acc_time/output_az_3_s0/Q    core/gate_last_revoke_sensor_mask_7_s0/CE                   clk50:[R]    clk50:[R]   20.000     0.437        19.416      \n  12            -0.118       previous_pose_valid_s0/Q     native_navigation/multiply_service/pending_1_s1/CE          clk50:[R]    clk50:[R]   20.000     0.000        19.838      \n  13            -0.108       acc_time/output_az_3_s0/Q    core/gate/interruption_count_15_s0/CE                       clk50:[R]    clk50:[R]   20.000     0.437        19.391      \n  14            -0.108       acc_time/output_az_3_s0/Q    core/gate/interruption_count_13_s0/CE                       clk50:[R]    clk50:[R]   20.000     0.437        19.391      \n  15            -0.108       acc_time/output_az_3_s0/Q    core/gate/interruption_count_14_s0/CE                       clk50:[R]    clk50:[R]   20.000     0.437        19.391      \n  16            -0.095       acc_time/output_az_3_s0/Q    core/gate_last_revoke_attitude_fault_4_s0/CE                clk50:[R]    clk50:[R]   20.000     0.437        19.378      \n  17            -0.095       acc_time/output_az_3_s0/Q    core/gate_last_revoke_imu_reason_2_s0/CE                    clk50:[R]    clk50:[R]   20.000     0.437        19.378      \n  18            -0.080       previous_pose_valid_s0/Q     native_navigation/controller_proof/num_20_s0/CE             clk50:[R]    clk50:[R]   20.000     0.000        19.800      \n  19            -0.057       previous_pose_valid_s0/Q     native_navigation/multiply_service/pending_2_s1/CE          clk50:[R]    clk50:[R]   20.000     0.008        19.768      \n  20            -0.052       acc_time/output_az_3_s0/Q    core/manual_angles/pending_np_13_s0/CE                      clk50:[R]    clk50:[R]   20.000     0.445        19.326      \n  21            -0.052       acc_time/output_az_3_s0/Q    core/manual_angles/pending_nr_8_s0/CE                       clk50:[R]    clk50:[R]   20.000     0.445        19.326      \n  22            -0.050       acc_time/output_az_3_s0/Q    core/manual_angles/fault_5_s0/D                             clk50:[R]    clk50:[R]   20.000     0.454        19.539      \n  23            -0.044       acc_time/output_az_3_s0/Q    core/manual_angles/pending_nr_11_s0/CE                      clk50:[R]    clk50:[R]   20.000     0.437        19.326      \n  24            -0.014       previous_pose_valid_s0/Q     native_navigation/controller_proof/publish_delta_12_s0/CE   clk50:[R]    clk50:[R]   20.000     0.017        19.717      \n  25            -0.014       previous_pose_valid_s0/Q     native_navigation/controller_proof/publish_delta_13_s0/CE   clk50:[R]    clk50:[R]   20.000     0.017        19.717      \n\n",
+  "manual_sha256": "594fcb9b408b22b82c9a225b979f56dc9f9c529939f66c4adc558a47189dc110",
+  "manual_pdf_pages": [
+    17,
+    18,
+    19
+  ],
+  "three_launch_groups": {
+    "acc_time/output_az_3_s0": {
+      "old": "R33C24[3][A]",
+      "requested": "R34C24[0][A]",
+      "old_first_net_delay_ns": 0.517
+    },
+    "mtf/metric/vy_x100_28_s0": {
+      "old": "R60C57[0][B]",
+      "requested": "R50C56[3][B]",
+      "old_first_net_delay_ns": 1.315
+    },
+    "previous_pose_valid_s0": {
+      "old": "R50C13[0][A]",
+      "requested": "R36C78[0][B]",
+      "old_first_net_delay_ns": 6.92
+    }
+  },
+  "clock_skew_note": "Raw detailed path1 skew is -0.437ns; summary table shows unsigned0.437. No clock/delay exceptions changed."
+}

@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-26T22:08:48.025422+00:00",
+  "original98_unchanged": true,
+  "copy98_unchanged": true,
+  "original_temporary_readonly_modes": {
+    "source/acg720_ano_port.gprj": 438,
+    "source/acg720_ano_port.cst": 438
+  },
+  "target_project": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\native_v4_DSP_export_snapshot\\source\\acg720_ano_port.gprj",
+  "reason": "User clarified mouse interference and will leave input idle; fresh UI session"
+}

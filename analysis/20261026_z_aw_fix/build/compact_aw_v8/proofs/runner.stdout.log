@@ -1,0 +1,4 @@
+adapter_compile actual_wait 0 seconds 0.525
+adapter_simulation actual_wait 0 seconds 4.313
+fusion_pre0_compile actual_wait 0 seconds 0.114
+fusion_pre0_simulation actual_wait 0 seconds 38.011

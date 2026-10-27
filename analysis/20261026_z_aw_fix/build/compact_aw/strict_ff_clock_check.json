@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mapped_ff_count": 27786,
+  "all_ff_CLK50": true,
+  "bad_ff_clock_count": 0,
+  "bad": [],
+  "vg_sha256": "b7691fd2d04abfc95e1fa458b0cb22e1c8ebcb2eb810db16e7a706fa8e73a87b",
+  "reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc"
+}

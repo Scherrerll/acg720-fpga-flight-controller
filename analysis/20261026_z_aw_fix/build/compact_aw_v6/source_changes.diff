@@ -1,0 +1,66 @@
+--- v5/mtf_xyz_navigation_control.v
++++ v6/mtf_xyz_navigation_control.v
+@@ -164,12 +164,21 @@
+  wire signed [31:0] raw_fvx={fused_vx_q16[30],fused_vx_q16};
+  wire signed [31:0] raw_fvy={fused_vy_q16[30],fused_vy_q16};
+  wire live_yaw_range_ok=PRECHECKED_YAW_RANGE ?yaw_range_ok:(yaw_cdeg>=-18000 && yaw_cdeg<=18000);
++ // Exact signed32 +/-30000 predicate for two-state inputs.
++ // Keep the upper-word check: truncation alone accepts invalid values.
++ function accel_in_range;
++  input signed [31:0] x;
++  begin
++   accel_in_range=(x[31:16]=={16{x[15]}}) &&
++    $signed(x[15:0])>=-16'sd30000 && $signed(x[15:0])<=16'sd30000;
++  end
++ endfunction
+  wire raw_numeric_ok=collective_us>=1000 && collective_us<=2000 && ch3>=900 && ch3<=2200 &&
+   fused_height>=0 && fused_height<=5000 && fused_vz_q16>=-655360000 && fused_vz_q16<=655360000 &&
+-  height_sample_az>=-30000 && height_sample_az<=30000 &&
++  accel_in_range(height_sample_az) &&
+   raw_fvx>=-655360000 && raw_fvx<=655360000 && raw_fvy>=-655360000 && raw_fvy<=655360000 &&
+-  ax_mmps2>=-30000 && ax_mmps2<=30000 && ay_mmps2>=-30000 && ay_mmps2<=30000 &&
+-  az_up_mmps2>=-30000 && az_up_mmps2<=30000 && live_yaw_range_ok;
++  accel_in_range(ax_mmps2) && accel_in_range(ay_mmps2) &&
++  accel_in_range(az_up_mmps2) && live_yaw_range_ok;
+  wire observation_bad=!height_ready || !height_vz_q16_range_raw;
+  wire control_bad=observation_bad || !rc_valid || !enabled;
+  reg observation_bad_d=1,control_bad_d=1,origin_d=0,manual_d=0;
+--- v5/position/mtf_shared_height_fusion.v
++++ v6/position/mtf_shared_height_fusion.v
+@@ -84,8 +84,17 @@
+  assign vz_q16_valid=estimate_ready && v_q16_range;
+  reg [31:0] den=1,pending_den=1;
+  wire md,mbusy,dd,dbusy,derr;wire signed [63:0] product,quotient;
++ // Exact signed32 +/-30000 predicate for two-state inputs.
++ // Keep the upper-word check: truncation alone accepts invalid values.
++ function accel_in_range;
++  input signed [31:0] x;
++  begin
++   accel_in_range=(x[31:16]=={16{x[15]}}) &&
++    $signed(x[15:0])>=-16'sd30000 && $signed(x[15:0])<=16'sd30000;
++  end
++ endfunction
+  wire sources_ok=range_valid && acc_valid && ((RANGE_AGE_PRECHECKED && AGE_LIMIT==5000000) || range_age_ticks<AGE_LIMIT) &&
+-     ref_height_mm>=0 && ref_height_mm<=5000 && az_up_mmps2>=-30000 && az_up_mmps2<=30000;
++     ref_height_mm>=0 && ref_height_mm<=5000 && accel_in_range(az_up_mmps2);
+  reg cleanup=1;
+  always @(posedge clk) if(!rst_n) cleanup<=1;else cleanup<=origin_reset || !sources_ok || fault;
+  assign estimate_ready=sources_ok && !origin_reset && !cleanup && seeded && seen && publication_age<AGE_LIMIT && !fault;
+@@ -93,7 +102,7 @@
+  (* syn_keep = 1 *) wire estimate_ready_state_numeric_tail_kept=
+   ((RANGE_AGE_PRECHECKED && AGE_LIMIT==5000000) || range_age_ticks<AGE_LIMIT) &&
+   ref_height_mm>=0 && ref_height_mm<=5000 &&
+-  az_up_mmps2>=-30000 && az_up_mmps2<=30000 && !cleanup && seeded && seen &&
++  accel_in_range(az_up_mmps2) && !cleanup && seeded && seen &&
+   publication_age<AGE_LIMIT && !fault;
+  assign estimate_ready_state_numeric_tail=estimate_ready_state_numeric_tail_kept;
+  assign valid=CAL_MASK[3] && CAL_MASK[4] && estimate_ready;
+@@ -1229,7 +1238,7 @@
+      9:begin hq<=hq+value;calc($signed(held_relative_mm)*65536-hq-value,3,10,10);end
+      10:begin height_e<=value;state<=11;end
+      11:begin publish_h_integer<=integer_q16(hq);publish_v_integer<=integer_q16(vq);publish_v_q16<=vq[31:0];publish_v_q16_range<=vq>=-64'sd655360000 && vq<=64'sd655360000;state<=84;end
+-     84:if(!sources_ok || origin_reset || fault || new_acc_fault || new_height_fault || !height_transaction_epoch_ok || held_rawaz< -30000 || held_rawaz>30000 || held_relative_mm+origin_mm<0 || held_relative_mm+origin_mm>5000)begin
++     84:if(!sources_ok || origin_reset || fault || new_acc_fault || new_height_fault || !height_transaction_epoch_ok || !accel_in_range(held_rawaz) || held_relative_mm+origin_mm<0 || held_relative_mm+origin_mm>5000)begin
+       fault<=sources_ok && !origin_reset;seen<=0;height_transaction_epoch_ok<=0;state<=0;reason<=4;
+      end else begin
+       height_transaction_epoch_ok<=0;fused_height_mm<=origin_mm+publish_h_integer;vz_mmps<=publish_v_integer;vz_q16<=publish_v_q16;v_q16_range<=publish_v_q16_range;

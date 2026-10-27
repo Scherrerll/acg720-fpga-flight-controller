@@ -1,0 +1,7 @@
+{
+  "completed_exec_session": 97859,
+  "actual_tool_observed_shell_exit_code": 0,
+  "last_executed_program": "run_proofs_retry02.py",
+  "reported_result": {"passed": true, "new_top13": 13, "FSM_miter": true, "threshold_vectors": 2097152, "actual_top_runner_wait": 0},
+  "scope": "Observed completion of the actual foreground execution. Does not fabricate a separate Popen wait for the proof supervisor. Each compile/vvp/top child has its own actual wait receipt."
+}

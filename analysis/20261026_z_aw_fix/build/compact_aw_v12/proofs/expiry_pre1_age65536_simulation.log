@@ -1,0 +1,2 @@
+PASS expiry AGE=65536 PRE=1 cycles=189087 same_age_checks=189087 exact_expiry_edges=1 last_good_edges=1 publications=2 no_DUT_state_force=1
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v12\proofs\expiry_tb.v:97: $finish called at 3781740000 (1ps)

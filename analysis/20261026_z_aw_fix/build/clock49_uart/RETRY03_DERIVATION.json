@@ -1,0 +1,6 @@
+{
+  "parent_runner_sha256": "56aff641c7167b871e15b23662ae96920419d9dcd6ccf1c0053f9b15956dd1bb",
+  "new_runner_sha256": "67e903b6aea3826e1941485c0c6e0d2f4e93aab4a97864c1c011032c0faf70d7",
+  "changes": "New output directory, source equality assertion and RX425 to426 only. Transmitter425, stimulus bytes/gaps, expected counts and all assertions unchanged.",
+  "even_divisor_review_sha256": "874c39d0ff085349851356add9e5d58c7e423f374adfdbd5f70b32098bcbb926"
+}

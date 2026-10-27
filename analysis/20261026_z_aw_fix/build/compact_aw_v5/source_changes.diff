@@ -1,0 +1,25 @@
+--- compact_aw_v4/position/mtf_xyz_hold_control.v
++++ compact_aw_v5/position/mtf_xyz_hold_control.v
+@@ -236,9 +236,10 @@
+  wire signed [63:0] ma={{30{ma_store[33]}},ma_store};
+  reg signed [27:0] mb_store=0;
+  wire signed [63:0] mb={{36{mb_store[27]}},mb_store};
+- reg signed [63:0] num=0;
+- reg signed [47:0] value_store=0;
+- wire signed [63:0] value={{16{value_store[47]}},value_store};
++ reg signed [49:0] num_store=0;
++ wire signed [63:0] num={{14{num_store[49]}},num_store};
++ reg signed [38:0] value_store=0;
++ wire signed [63:0] value={{25{value_store[38]}},value_store};
+  // The three Z additions use the same returned value in disjoint states.
+  // Share the full signed64 adder; state22 adds I, states23/24 add bias.
+  wire signed [63:0] z_add_rhs=state==22 ?iz:bias;
+@@ -495,7 +496,7 @@
+       throttle_delta<=clip(publish_delta,-MAX_DELTA_US,MAX_DELTA_US);
+       height_command_seen<=1;height_command_age<=0;height_reason<=0;requested_climb_mmps<=publish_speed;target_height_mm<=publish_height;state<=0;
+      end
+-     100:if(md)begin num<=product;den<=pending_den;div_start<=1;state<=101;end
++     100:if(md)begin num_store<=product;den<=pending_den;div_start<=1;state<=101;end
+      101:if(dd)begin
+       if(derr)begin blocked<=1;xy_blocked<=1;fault_reason<=512;reason<=512;height_reason<=512;state<=0;end
+       else begin value_store<=quotient;state<=return_state;end

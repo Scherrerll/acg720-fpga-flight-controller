@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v21\run_synthesis.py", line 54, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v21\run_synthesis.py", line 42, in main
+    h.run_phase('audit',[sys.executable,'-B','-X','utf8',str(O/'audit_synthesis_only.py')],S,expected)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\firmware\B0B4\build_candidate.py", line 61, in run_phase
+    assert code == 0, (name, 'nonzero real process exit', code, str(log))
+           ^^^^^^^^^
+AssertionError: ('audit', 'nonzero real process exit', 1, 'C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v21\\build_attempt_01\\verification\\audit.log')

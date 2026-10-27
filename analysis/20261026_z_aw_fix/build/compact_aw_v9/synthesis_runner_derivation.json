@@ -1,0 +1,6 @@
+{
+  "scope": "v4 map2 donor; v9 guard change; proof_retry02 required before execution. No synthesis launched by preparation.",
+  "donor_runner_sha256": "37afd0c4718e17e8b039e2861d37d0d86d0f063c442a1b29b1589cdf4e06845b",
+  "derived_runner_sha256": "4bcea1fa4255dab4f0974df080af51bcfd6229397c44913398b74ad5733d2721",
+  "supervisor_sha256": "14f27e6dfddfca0d251e5b44ad84ad13b7eb96cbf3a7cc2bb30444d223575e6e"
+}

@@ -1,0 +1,15 @@
+{
+  "prepared_not_started": true,
+  "netlist_sha256": "f71a16a54abdb1f7cf13b3b943996cd7c4005d4d342de9306fb2566648a79272",
+  "map_option": 1,
+  "proof_origin": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v13\\PROOF_BINDING.json",
+  "proof_origin_sha256": "221e592459f0b1c101cb92842eba05ce8f2bb9b3ac8b2019caf170435c218869",
+  "scripts": {
+    "run_physical.py": "f2a7682875b339302492030d38b09dbfdcd8e7605a6222f941905182957e9ebf",
+    "seal_terminal.py": "d2fb81fb067b47b38e7bc00a3c91e3516465c7d2f4ef8cccd0c6f47607a8b9e4",
+    "independent_raw_review.py": "e2d9f144f954d0390cb67b5357ef8a9010324dfa6de369654cd7225e11cc7cdb",
+    "physical_snapshot.py": "b403937d576343048e9f964ffe4609e65f8e8b38ba4fe0b3e1a6bc28663a3a6a",
+    "launch_physical_hidden.py": "568ff1803e759cc350100f1b73e8ebf819b13554b903d35b96c4d138dda68168"
+  },
+  "scope": "Only prepare exact audited map1 VG P3/R0 or P2/R0. At most two owned PNR jobs; launch only after inspecting a current terminal result."
+}

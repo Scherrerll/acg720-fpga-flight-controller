@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-10-26T22:00:26.636498+00:00",
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v18\\run_vy_proofs.py",
+    "attempt01"
+  ],
+  "pid": 60124
+}

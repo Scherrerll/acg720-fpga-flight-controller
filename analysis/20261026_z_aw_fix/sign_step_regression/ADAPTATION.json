@@ -1,0 +1,10 @@
+{
+  "based_on_corrected_compact_tb": "2523e8a3245e1f2809e4fcb5a714802bdaf0d410b99675d9056e733e6b1df61a",
+  "changes": [
+    "v2 source path and frozen afc656 hash",
+    "Observe I andbias invariant every activecycle",
+    "All5 original behavior scenarios plus percycle B4-v1 output/I equivalence preserved",
+    "No privateforce orpreload; originalrails untouched"
+  ],
+  "bound_proof_sha256": "cf2a9de051973862c68cd2d462678cf6436756c3a65cc4ef2c4f16f933de9c0d"
+}

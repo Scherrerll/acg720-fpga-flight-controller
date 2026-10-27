@@ -1,0 +1,9 @@
+{
+  "scope": "Diagnostic textual comparison after removing only full-line comments; not a functional or physical qualification",
+  "old_raw_sha256": "f91ca98e3252020035fa9e012b2c6ad95649bc0fec8cf0f551ed4ef001601727",
+  "new_raw_sha256": "2f7eee320ed07e05622722f6028691358b50b7b98fa3102ede05fd9b87d8d101",
+  "noncomment_text_equal": false,
+  "old_noncomment_sha256": "cee7a687fb421c8685849d5129a70b221bf14c5e9fa21cf9290a2c605625a692",
+  "new_noncomment_sha256": "5fc41a3a6eab74751232bfae159df983556834ddd13b85ecb883a575db237754",
+  "monitor_error": "Compared whole generated VG hashes, so timestamp/source-index comments caused the assertion before proc.wait; own orphan later identified and closed"
+}

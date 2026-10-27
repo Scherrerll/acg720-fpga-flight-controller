@@ -1,0 +1,150 @@
+--- old42/verify_release.py
++++ strict_wait_fix/verify_release.py
+@@ -21,6 +21,11 @@
+ DSP22_VARIANT = 'v22_dsp_p3'
+ DSP22_VG_SHA = 'e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8'
+ DSP_VARIANTS = {DSP_VARIANT, DSP20_VARIANT, DSP22_VARIANT}
++
++
++def exact_exit(value, expected=0):
++    """JSON booleans and floats are not process exit codes."""
++    return type(value) is int and value == expected
+ 
+ 
+ def evidence_key(value):
+@@ -183,10 +188,10 @@
+ def check_receipt(evidence, path, digest=None):
+     receipt = evidence.read(path, digest)
+     if 'actual_p_wait' in receipt:
+-        require(receipt.get('normal_wait_return') is True and receipt['actual_p_wait'] == 0
++        require(receipt.get('normal_wait_return') is True and exact_exit(receipt['actual_p_wait'])
+                 and not receipt.get('terminated_after_timeout'), 'Actual process wait failed: ' + str(path))
+     else:
+-        require(receipt.get('normal_return') is True and receipt.get('actual_completedprocess_returncode') == 0,
++        require(receipt.get('normal_return') is True and exact_exit(receipt.get('actual_completedprocess_returncode')),
+                 'Actual subprocess result failed: ' + str(path))
+     folder = evidence_key(path).rsplit('/', 1)[0]
+     stem = PurePosixPath(evidence_key(path)).name.removesuffix('_exit.json')
+@@ -347,7 +352,7 @@
+ def raw_success_receipt(e, path, digest, field='actual_p_wait'):
+     receipt = e.read(path, digest)
+     require(field in {'actual_p_wait', 'actual_child_p_wait', 'actual_completedprocess_returncode'}
+-            and receipt.get(field) == 0 and receipt.get('normal_return' if field == 'actual_completedprocess_returncode' else 'normal_wait_return') is True
++            and exact_exit(receipt.get(field)) and receipt.get('normal_return' if field == 'actual_completedprocess_returncode' else 'normal_wait_return') is True
+             and not receipt.get('terminated_after_timeout'), 'Actual successful proof receipt failed')
+     folder = evidence_key(path).rsplit('/', 1)[0]
+     stem = PurePosixPath(evidence_key(path)).name.removesuffix('_exit.json')
+@@ -383,7 +388,7 @@
+ 
+ def check_failed_receipt(e, path, digest):
+     receipt = e.read(path, digest)
+-    require(receipt.get('normal_wait_return') is True and receipt.get('actual_p_wait') == 1,
++    require(receipt.get('normal_wait_return') is True and exact_exit(receipt.get('actual_p_wait'), 1),
+             'Original failed receipt was not preserved')
+     folder = evidence_key(path).rsplit('/', 1)[0]
+     stem = PurePosixPath(evidence_key(path)).name.removesuffix('_exit.json')
+@@ -671,7 +676,7 @@
+             'v20 combined/default-caller integration evidence incomplete')
+     failure = p['historical_failed_functional_root']
+     failed = check_failed_receipt(e, failure['path'], failure['sha256'])
+-    require(failed['actual_p_wait'] == failure['actual_p_wait'] == 1 and failed['normal_wait_return'] is True, 'v20 original failed root was not preserved')
++    require(exact_exit(failed['actual_p_wait'], 1) and exact_exit(failure['actual_p_wait'], 1) and failed['normal_wait_return'] is True, 'v20 original failed root was not preserved')
+     correction = e.read(original_join(meta, 'FUNCTIONAL_CORRECTION_02.json'))
+     require(correction['candidate_source55_unchanged'] == expected, 'v20 fixture retry changed source55')
+     for original, snapshot in correction['changed_original_input_snapshots'].items():
+@@ -830,7 +835,7 @@
+     require(all(line in log for line in standalone_result['pass_lines']), 'v21 standalone actual simulation log differs')
+     failure = p['preserved_failed_attempt'];failed_path = original_join(meta, 'proof_runner_exit.json')
+     failed = check_failed_receipt(e, failed_path, failure['root_exit_sha256'])
+-    require(failed['normal_wait_return'] is True and failed['actual_p_wait'] == failure['actual_root_wait'] == 1,
++    require(failed['normal_wait_return'] is True and exact_exit(failed['actual_p_wait'], 1) and exact_exit(failure['actual_root_wait'], 1),
+             'v21 original failed proof root was not preserved')
+ 
+ 
+@@ -869,7 +874,7 @@
+         actual = e.read(original_path, receipt['original_receipt_sha256'])
+         field = 'actual_proof_supervisor_child_wait' if role == 'root' else 'actual_child_p_wait'
+         require(receipt['original_actual_wait_field'] == field and actual.get('normal_wait_return') is True
+-                and actual[field] == 0 and not actual.get('terminated_after_timeout'), 'Original VY actual Popen wait did not pass')
++                and exact_exit(actual.get(field)) and not actual.get('terminated_after_timeout'), 'Original VY actual Popen wait did not pass')
+         command = actual['command']
+         require(isinstance(command, list) and command, 'VY original command missing')
+         executable = PureWindowsPath(command[0]).name.lower()
+@@ -998,7 +1003,7 @@
+             and (preflight['measured_kept_rows'], preflight['measured_DSP'], preflight['measured_BSRAM']) == (kept_count, dsp_count, 2)
+             and all(item['Tcl_complete'] is item['options_verified'] is True for item in preflight['profiles'].values()), 'Portable portable Tcl preflight differs')
+     preflight_exit = e.read(original_join(thin, 'PREFLIGHT_EXIT.json'))
+-    require((preflight_exit.get('normal_return') is True and preflight_exit.get('actual_completedprocess_returncode') == 0)
++    require((preflight_exit.get('normal_return') is True and exact_exit(preflight_exit.get('actual_completedprocess_returncode')))
+             or (preflight_exit.get('normal_wait_return') is True and type(preflight_exit.get('actual_p_wait')) is int and preflight_exit['actual_p_wait'] == 0),
+             'Portable portable Tcl preflight did not exit successfully')
+     require(original_identity(preflight_exit['command'][-1]) == original_identity(original_join(thin, 'preflight_physical_recipe.py')),
+@@ -1105,7 +1110,7 @@
+     require(preflight['combined_CST_sha256'] == result['combined_CST_sha256'] and preflight['portable_rows'] == 46
+             and preflight['DSP'] == 44 and preflight['BSRAM'] == 2, 'Portable Tcl preflight differs')
+     preflight_exit = e.read(original_join(thin, 'PREFLIGHT_EXIT.json'))
+-    require(preflight_exit['normal_return'] is True and preflight_exit['actual_completedprocess_returncode'] == 0,
++    require(preflight_exit['normal_return'] is True and exact_exit(preflight_exit.get('actual_completedprocess_returncode')),
+             'Portable Tcl preflight did not exit successfully')
+     for channel in ['stdout', 'stderr']:
+         e.check(original_join(thin, 'preflight.' + channel + '.log'), preflight_exit[channel + '_sha256'])
+@@ -1126,7 +1131,7 @@
+     review = e.read(original_join(o['report'], 'INDEPENDENT_RAW_REVIEW.json'))
+     require(terminal['passed'] is True and terminal['source55'] == expected
+             and terminal['vg_sha256'] == qualification['netlist_sha256']
+-            and terminal['vendor_actual_p_wait'] == terminal['runner_actual_p_wait'] == 0,
++            and exact_exit(terminal.get('vendor_actual_p_wait')) and exact_exit(terminal.get('runner_actual_p_wait')),
+             'Selected terminal qualification failed')
+     require(review['passed'] is True and all(review['checks'].values()) and len(review['pins']) == 18,
+             'Independent raw acceptance failed')
+@@ -1242,7 +1247,7 @@
+     check_receipt(e, original_join(syn, 'synthesis_exit.json'), declared[original_join(syn, 'synthesis_exit.json')])
+     # These are preserved failures; they must never be relabeled as successful waits.
+     for name in [original_join(syn, 'audit_exit.json'), original_join(meta, 'runner_exit.json')]:
+-        failed = e.read(name, declared[name]);require(failed['normal_wait_return'] is True and failed['actual_p_wait'] == 1,
++        failed = e.read(name, declared[name]);require(failed['normal_wait_return'] is True and exact_exit(failed.get('actual_p_wait'), 1),
+                                                    'v21 original audit/root failure was not preserved')
+         if 'log_sha256' in failed:e.check(failed['log'], failed['log_sha256'])
+         else:check_failed_receipt(e, name, declared[name])
+@@ -1489,9 +1494,9 @@
+             'Selected terminal or independent raw acceptance failed')
+     require(terminal['source55'] == expected and terminal['vg_sha256'] == qualification['netlist_sha256'],
+             'Selected evidence does not bind the released source and netlist')
+-    require(vendor['normal_wait_return'] and runner['normal_wait_return']
+-            and vendor['actual_p_wait'] == runner['actual_p_wait']
+-            == terminal['vendor_actual_p_wait'] == terminal['runner_actual_p_wait'] == 0,
++    require(vendor['normal_wait_return'] is True and runner['normal_wait_return'] is True
++            and all(exact_exit(value) for value in [vendor.get('actual_p_wait'), runner.get('actual_p_wait'),
++                    terminal.get('vendor_actual_p_wait'), terminal.get('runner_actual_p_wait')]),
+             'Actual selected vendor/runner exit receipts are not both zero')
+     require(review['period_ns'] == 20 and review['fmax_mhz'] >= 50
+             and review['violated_endpoints'] == {'setup': 0, 'hold': 0}
+--- old42/export_qualified_v4.py
++++ strict_wait_fix/export_qualified_v4.py
+@@ -314,7 +314,7 @@
+     manifest=read(report/'TERMINAL_MANIFEST.json');review=read(report/'INDEPENDENT_RAW_REVIEW.json')
+     assert sha(report/'INDEPENDENT_RAW_REVIEW.json')==args.independent_review_sha256
+     assert manifest['passed'] and review['passed'] and all(review['checks'].values())
+-    assert manifest['vendor_actual_p_wait']==manifest['runner_actual_p_wait']==0
++    assert validation.exact_exit(manifest.get('vendor_actual_p_wait')) and validation.exact_exit(manifest.get('runner_actual_p_wait'))
+     physical=read(V/'physical_audit.json');expected=manifest['source55']
+     assert physical['passed'] and all(physical['criteria'].values())
+     assert physical['period_ns']==20 and physical['fmax_mhz']>=50
+@@ -347,7 +347,7 @@
+     mapped_review_name='MAPPED_LANDING_COMPARISON.json' if landing_compare else 'MAPPED_FANOUT_COMPARISON.json'
+     if modern:
+         origin=read(proof_origin/'PROOF_BINDING.json')
+-        assert origin['passed'] and origin['source55']==expected and origin['actual_proof_runner_wait']==0
++        assert origin['passed'] and origin['source55']==expected and validation.exact_exit(origin.get('actual_proof_runner_wait'))
+         if proof_origin!=F:assert proof['parent_proof_sha256']==sha(proof_origin/'PROOF_BINDING.json')
+         top_name='top_safety_results.json' if local_hints else 'top/top_safety_results.json'
+         top_exit_name='runner_exit.json' if local_hints else 'top13_exit.json'
+@@ -365,7 +365,7 @@
+                 assert proof['flight_state_miter']['passed'] and proof['flight_state_miter']['threshold_vectors']==2097152
+                 for phase in ['fsm_compile','fsm_vvp']:
+                     phase_exit=read(proof_directory/(phase+'_exit.json'))
+-                    assert phase_exit['normal_wait_return'] and phase_exit['actual_p_wait']==0
++                    assert phase_exit['normal_wait_return'] is True and validation.exact_exit(phase_exit.get('actual_p_wait'))
+                 extra += [proof_directory/name for name in ['fsm_compile_exit.json','fsm_vvp_exit.json','flight_state_miter.v','legacy_ano_flight_state.v','fsm_compile.stderr.log','fsm_vvp.stdout.log','run_top13.py']]
+         extra += [donor/'synth_only.tcl',donor/'verification/build_input.json',donor/'verification/synthesis_input.json',
+                   donor/'verification/synthesis_process.json',donor/'verification/synthesis.log',F/'runner_exit.json',F/'runner_process.json']

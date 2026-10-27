@@ -1,0 +1,4 @@
+PASS: real HTML/JS wiring; actual queried/verified result contract; all seven phases; numeric operation IDs;
+decimal boundaries; dirty drafts; token/UUID/epoch/generation paired SET; one in flight; defaults no write;
+unknown query-only recovery; no POST retry; status/epoch/USB/old-build guards; HTTP errors; stale poll race.
+Scope: in-memory DOM/API/timers only. No network, serial, browser rendering, or hardware acceptance.

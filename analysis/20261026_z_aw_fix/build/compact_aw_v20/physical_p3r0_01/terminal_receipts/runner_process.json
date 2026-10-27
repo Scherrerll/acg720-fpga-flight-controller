@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-u",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\run_physical.py",
+    "3"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v20\\physical_p3r0_01",
+  "started_utc": "2026-10-26T23:24:20.656013+00:00",
+  "supervisor_pid": 28516,
+  "runner_sha256": "01681e3736148c7c55232559dc19193ccea3e8c51e394e53c8258642ed11013f",
+  "supervisor_sha256": "9baafda09faf535704d7f1f53d28500ad035404396deb24cf2f28f9407a8f240",
+  "create_no_window": true,
+  "stdin": "DEVNULL",
+  "pid": 51152
+}

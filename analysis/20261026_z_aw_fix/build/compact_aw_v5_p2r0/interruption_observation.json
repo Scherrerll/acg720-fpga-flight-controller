@@ -1,0 +1,22 @@
+{
+  "observed_utc": "2026-10-26T08:00:27.042276+00:00",
+  "classification": "orchestration_interruption_unknown_exit",
+  "actual_p_wait": null,
+  "normal_completion_confirmed": false,
+  "vendor_pid_from_receipt": 45484,
+  "parent_pid_from_receipt": 64524,
+  "current_CIM_both_absent": true,
+  "physical_exit_receipt_exists": false,
+  "TR_exists": false,
+  "FS_exists": false,
+  "log_last_event": "Routing Phase0 completed",
+  "root_did_not_terminate_this_task": true,
+  "root_cause": "Unconfirmed; do not infer from an agent/tool error or fabricate an exit code/end time.",
+  "qualification": "Not qualified. Not counted as normal vendor route failure or STA failure. Original partial outputs preserved.",
+  "files_sha256": {
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p2r0_01/verification/physical_process.json": "b81e63177f6b9178d998dda30f06a3382462c9aa3f404312c69d53b7b1763214",
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p2r0_01/verification/physical_input.json": "c3d6512cc3ffe6c5999828b5b043cd6da938e7b5b1b1795ce48af3c48f7f714b",
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p2r0_01/verification/build_input.json": "c3d6512cc3ffe6c5999828b5b043cd6da938e7b5b1b1795ce48af3c48f7f714b",
+    "out/z_aw_fix_20261026/compact_aw_v5/physical_p2r0_01/verification/physical.log": "9176339828d4ec9398144079f4dbc0489d3ab8d267bf355896fcfb417b529589"
+  }
+}

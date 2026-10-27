@@ -1,0 +1,39 @@
+{
+  "reviewed_utc": "2026-10-27T00:14:31.618675+00:00",
+  "passed": true,
+  "profile": "physical_p3r0_dsploc_01",
+  "standard_source_proof_origin": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22",
+  "thin_family_has_no_new_proof_or_SYN_result": true,
+  "source_freeze_standard_byte_exact": true,
+  "measured_counts": {
+    "official_export_rows": 52,
+    "kept": 33,
+    "excluded": 19,
+    "DSP": 31,
+    "BSRAM": 2
+  },
+  "normalization_no_collisions_or_generated_renames": true,
+  "original_manufacturer_statement_bytes_preserved": true,
+  "complete_baseline_CST_prefix_including_CLOCK_LOC_preserved": true,
+  "combined_CST_selected_in_future_project": true,
+  "standard_physical_helper_calls_AST_identical": true,
+  "all_original_independent_raw_checks_AST_identical_after_provenance_alias": true,
+  "metadata_reference_adjustment": "Only standard proof/input/component metadata references change from original O to explicit STANDARD; physical gates are unchanged.",
+  "only_effective_option_delta": {
+    "cst_warn_to_error": 1
+  },
+  "parent_standard_scripts_unchanged": true,
+  "AST_parse_passed": true,
+  "pure_Tcl_preflight_actual_returncode": 0,
+  "diagnostic_truth_checks_sha256": "8ccf64d0d8335a25419531098782c8fd2a70599a78b9920acbdea6255c408bc6",
+  "status_requires_actual_normal_exact_int_vendor_and_runner_wait0": true,
+  "original_TEMP_compile1_root1_exact_alias_retry0_completion0_bound": true,
+  "actual_hint_minus1DSP_bound": true,
+  "preparation_sha256": "4d964e4d8bf9c10d333f6ad4ff5b583ae35c007268f2ae05a23c63038000e684",
+  "constraint_binding_sha256": "4bb8230ff8052e27ff1e323641f8cc239288250a509888dcee477a27154758ec",
+  "prior_v18_route_scope": "Prior fullroute48.148MHz is a failed timing result and gives no v22 timing qualification.",
+  "runtime_attempt_absent": true,
+  "launch_receipt_directory_empty": true,
+  "vendor_started": false,
+  "hardware_actions": false
+}

@@ -1,0 +1,65 @@
+--- v5/position/mtf_xyz_hold_control.v
++++ v7/position/mtf_xyz_hold_control.v
+@@ -112,30 +112,30 @@
+  reg signed [27-1:0] iy_store=0;
+  reg signed [26:0] saved_ix=0,saved_iy=0;
+  reg signed [32:0] saved_afx=0,saved_afy=0;
+- reg signed [33-1:0] iz_store=0;
++ reg signed [27-1:0] iz_store=0;
+  // Conditional Z integration uses the same final 0..850 motor-unit range
+  // as the collective output. Keep the candidate private until the P term
+  // and updated bias are known; cancellation cannot commit a partial step.
+  // Lifetime aliases: each value is written before its qualified use.
+  // state22 consumes the old lower rail before reusing it for candidate I.
+- wire signed [32:0] candidate_iz_store=iz_lower_q[32:0];
+- wire signed [32:0] p_bias_store={{2{exz_store[30]}},exz_store};
+- wire signed [32:0] candidate_collective_store=inner_alt_speed[32:0];
+- wire signed [32:0] current_collective_store={{2{sample_vx_store[30]}},sample_vx_store};
++ wire signed [26:0] candidate_iz_store=iz_lower_q[26:0];
++ wire signed [28:0] p_bias_store=exz_store[28:0];
++ wire signed [29:0] candidate_collective_store=inner_alt_speed[29:0];
++ wire signed [29:0] current_collective_store=sample_vx_store[29:0];
+  reg candidate_i_up=0,candidate_i_down=0;
+- wire signed [63:0] candidate_iz={{31{candidate_iz_store[32]}},candidate_iz_store};
+- wire signed [63:0] p_bias={{31{p_bias_store[32]}},p_bias_store};
+- wire signed [63:0] candidate_collective={{31{candidate_collective_store[32]}},candidate_collective_store};
+- wire signed [63:0] current_collective={{31{current_collective_store[32]}},current_collective_store};
+- // Both sums fit signed31 Q16 by the source-level bound; keep the 64-bit
++ wire signed [63:0] candidate_iz={{37{candidate_iz_store[26]}},candidate_iz_store};
++ wire signed [63:0] p_bias={{35{p_bias_store[28]}},p_bias_store};
++ wire signed [63:0] candidate_collective={{34{candidate_collective_store[29]}},candidate_collective_store};
++ wire signed [63:0] current_collective={{34{current_collective_store[29]}},current_collective_store};
++ // Both sums fit signed30 Q16 by the source-level bound; keep the 64-bit
+  // expression semantics, then explicitly retain/sign-extend those bits.
+  wire signed [63:0] compact_candidate_sum=p_bias+candidate_iz;
+- wire signed [30:0] compact_candidate_sum31=compact_candidate_sum[30:0];
++ wire signed [29:0] compact_candidate_sum30=compact_candidate_sum[29:0];
+  wire reject_z_i=(candidate_collective>64'sd55705600 && candidate_i_up) ||
+                  (candidate_collective<0 && candidate_i_down);
+  wire signed [63:0] selected_z_i=reject_z_i ? iz:candidate_iz;
+  wire signed [63:0] selected_z_collective=reject_z_i ? current_collective:candidate_collective;
+- reg signed [33-1:0] bias_store=0;
++ reg signed [26-1:0] bias_store=0;
+  // Capture the original signed64 candidate rails in the shared-math wait.
+  // State22 stages the candidate; state67 commits only after the final
+  // P+bias+I saturation test. Live safety masks can cancel either phase.
+@@ -184,8 +184,8 @@
+  wire signed [63:0] height_feedback_old={{34{height_feedback_old_store[29]}},height_feedback_old_store};
+  wire signed [63:0] ix={{37{ix_store[26]}},ix_store};
+  wire signed [63:0] iy={{37{iy_store[26]}},iy_store};
+- wire signed [63:0] iz={{31{iz_store[32]}},iz_store};
+- wire signed [63:0] bias={{31{bias_store[32]}},bias_store};
++ wire signed [63:0] iz={{37{iz_store[26]}},iz_store};
++ wire signed [63:0] bias={{38{bias_store[25]}},bias_store};
+  wire signed [63:0] afx={{31{afx_store[32]}},afx_store};
+  wire signed [63:0] afy={{31{afy_store[32]}},afy_store};
+  wire signed [63:0] afz={{32{afz_store[31]}},afz_store};
+@@ -436,7 +436,7 @@
+      // Each 11ms callback gains only two clocks; all live masks still cancel.
+      24:begin exz_store<=keep64(z_shared_sum);state<=66;end
+      66:begin
+-      inner_alt_speed<={{33{compact_candidate_sum31[30]}},compact_candidate_sum31};
++      inner_alt_speed<={{34{compact_candidate_sum30[29]}},compact_candidate_sum30};
+       sample_vx_store<=keep64(p_bias+iz);
+       // Direction was captured with the integral step in state22.
+       state<=67;

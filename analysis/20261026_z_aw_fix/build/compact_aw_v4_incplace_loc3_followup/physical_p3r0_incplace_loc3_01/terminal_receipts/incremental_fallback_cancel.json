@@ -1,0 +1,17 @@
+{
+  "requested_utc": "2026-10-26T12:59:11.875588+00:00",
+  "reason": "Documented .p incremental placement fell back to the same already-executed ordinary exact-VG/three-LOC/P3/R0 flow. Cancel only this duplicate child.",
+  "pid": 61568,
+  "parent_pid": 32236,
+  "exact_command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_incplace_loc3_01\\physical.tcl"
+  ],
+  "process_identity": "Live handle of this runner own Popen child; no PID/name lookup.",
+  "vendor_message": [
+    "WARN  (PA2136) : Placement matching(2.82) is less than the threshold value(80) needed to run incremental flow, the default placement flow will be run."
+  ],
+  "existing_input": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_inc_loc3_01\\verification\\build_input.json",
+  "existing_input_sha256": "815977229fb4f81f8c97ea6070feb5115ee35643591ed9f3a6b698a26a9fa110",
+  "log_prefix_sha256": "11b6bafe5309deb9056b0fba2df4efb1f27ca038b570ad0829f255fdbf415858"
+}

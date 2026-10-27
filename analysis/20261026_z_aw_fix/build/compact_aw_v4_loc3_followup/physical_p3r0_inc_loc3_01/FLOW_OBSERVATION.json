@@ -1,0 +1,12 @@
+{
+  "requested_interface": "inc_pnr copied same-VG .pr",
+  "matching_percent_reports": [
+    2.82
+  ],
+  "fallback_detected": true,
+  "actual_vendor_wait": 1,
+  "actual_log_sha256": "a55e51fbe373f544fb85ef0377f96d9656e8a075854659f909515baceb5f749a",
+  "unrouted_reports": [
+    "0"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "Preflight correction to independent review quote regex only; no executed runner/RTL/physical artifact change.",
+  "before_sha256": "03190e4aba071bba0ad51c96ce34c93f10e438d3ad8a0cb0af9a4a091f2f5a6c",
+  "script_sha256": "5dbb4e4057a3eb39378e28781acb7eddb49d569a43c8dec08457ca71b6c7a6ea",
+  "matched_actual_LOC_commands": [
+    [
+      "acc_time/output_az_3_s0",
+      "R34C24[0][A]"
+    ],
+    [
+      "mtf/metric/vy_x100_28_s0",
+      "R50C56[3][B]"
+    ],
+    [
+      "previous_pose_valid_s0",
+      "R36C78[0][B]"
+    ]
+  ]
+}

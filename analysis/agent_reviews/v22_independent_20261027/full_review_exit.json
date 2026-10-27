@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\v22_independent_20261027\\review_full.py"
+  ],
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "pid": 39264,
+  "script_sha256": "89fe296dc59ebe1b0e7e9df5125b5301fb0a0fa5602ddf706b3db207df55cc21",
+  "stdout_sha256": "88bd75fe63db0dabc9b4eb756fcdc99916dbe0ddf01d5c234401b71b858cae74",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

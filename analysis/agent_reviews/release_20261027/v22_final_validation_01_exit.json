@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-u",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\check_existing_archives.py"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller",
+  "started_utc": "2026-10-27T02:56:35.057261+00:00",
+  "parent_pid": 45084,
+  "source_script_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "e008e5f35ec0d8fed612c4773b87c57c21dbcb8d447affc54f5e966ec17e860f",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "ce54d5e501769bf6450f4a17a3e71211353efc5d33fec56957bcc07396b178eb",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\build_candidate.py": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\test_release_evidence.py": "3e33c18c65b549a8afdd08e79191138c7d8f8cfc311e05e75a40d0a4c43d60c6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\check_existing_archives.py": "dc06c09f20f62c45c347de059ce376fe356092cb80ffdc394840ca667acde2d5",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\run_v22_final_validation_01.py": "0135263624c2b7fa275cf7647550c67c9ec10c08e9c1a30b62e8315c29fb5805"
+  },
+  "scope": "Offline source/proof/SYN/portable archive checks only; no release export/promotion, vendor, simulation, hardware or replacement of prior receipts.",
+  "pid": 18700,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-27T02:59:25.465435+00:00",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "8a2f1939407bbe60fba347b4785f1a1c5b6bc91a8dc70200b612bf1898caa750"
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "Only flow-identity gates adapt from VG-import to actual native RTL SYN+hook+PNR. All genuine timing, endpoints, pin, UserCode, source and actual process acceptance gates remain.",
+  "original_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "original_function_sha256": "4b52f6a4a615f644ea2a34828f3baa767c6130ac75c7f21bd5962fc627605bea",
+  "new_physical_auditor_sha256": "c8a9932acd0db039de9a34a00c07e2aa84f8dfbf3df9c787ae704e36cd49f13f",
+  "parent_independent_parser_sha256": "6ad743f0381d0757fbc46149fbd4da739cb535bad0ea2ed2aca106d7be0d9828",
+  "new_independent_parser_sha256": "5f2a3a545b0739c1344b4a28c312edb48309a9c28675a04ba696de902300c556",
+  "old_flow_identity": "skip_synthesis because one imported netlist file",
+  "new_flow_identity": [
+    "unchanged original RTL project with no netlist FileList",
+    "actual SYN finish and SYN EOF",
+    "successful actual audit-hook exec EOF",
+    "source/project/VG/mapped audits binding"
+  ],
+  "extra_gate": "Raw frequency constraint explicitly50MHz in addition to period20ns.",
+  "cloned_native_v13_preparation_sha256": "977dc104482021fdb6fc97ec0c48bf5bf89fc27cef68a325a8e4dd7409e70e3f",
+  "parent_v4_native_preparation_sha256": "e74bffa9c3a69930d67f509d67b9d7967e3e94e9167f02dc3bf0b166f4da6af6",
+  "option_change": "Only effective SYN max_fanout200 to100; raw50MHz, clock, pin, bitstream, five slack, endpoints and real waits unchanged."
+}

@@ -1,0 +1,2 @@
+FATAL: C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\compact_regression\aw_tb.v:128: cancel did not discard staged work or allowed publication state=22 kind=0
+       Time: 370000000  Scope: tb.cancellation

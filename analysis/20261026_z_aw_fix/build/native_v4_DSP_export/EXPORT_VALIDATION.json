@@ -1,0 +1,1918 @@
+{
+  "scope": "Official GUI backannotation from exact copied native fullroute but timing-failed v4. Only INS_LOC DSP/BSRAM rows, no ports/clocks/timing exceptions. Name/type filter is not device-legality/routability/STA acceptance.",
+  "export_sha256": "a9d20d20d9495e6d351003e2b7f214c5673ce4dea55791b6d2270743b5ec8258",
+  "donor_VG_sha256": "f91ca98e3252020035fa9e012b2c6ad95649bc0fec8cf0f551ed4ef001601727",
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "escaped_identifier_normalization": "Remove one leading Verilog lexical escape prefix per hierarchy segment; require no semantic name collisions. Never change CST lines or infer numerical instance renames.",
+  "exported_rows": 52,
+  "rows": [
+    {
+      "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+      "locations": [
+        "BSRAM_R56[3][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s\" BSRAM_R56[3][B];",
+      "donor_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+      "donor_primitive": "pROM",
+      "resource_kind": "BSRAM"
+    },
+    {
+      "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+      "locations": [
+        "BSRAM_R56[4]"
+      ],
+      "line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s\" BSRAM_R56[4];",
+      "donor_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+      "donor_primitive": "pROM",
+      "resource_kind": "BSRAM"
+    },
+    {
+      "instance": "core/controller/n4769_s",
+      "locations": [
+        "DSP_R47[30][A]",
+        "DSP_R47[30][B]",
+        "DSP_R47[31][A]",
+        "DSP_R47[31][B]"
+      ],
+      "line": "INS_LOC \"core/controller/n4769_s\" DSP_R47[30][A],DSP_R47[30][B],DSP_R47[31][A],DSP_R47[31][B];",
+      "donor_graph_identifier": "core/controller/n4769_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/fallback_control/n1049_s",
+      "locations": [
+        "DSP_R47[36][A]",
+        "DSP_R47[36][B]"
+      ],
+      "line": "INS_LOC \"core/fallback_control/n1049_s\" DSP_R47[36][A],DSP_R47[36][B];",
+      "donor_graph_identifier": "core/fallback_control/n1049_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/fallback_sticks/n1034_s",
+      "locations": [
+        "DSP_R47[47][A]",
+        "DSP_R47[47][B]"
+      ],
+      "line": "INS_LOC \"core/fallback_sticks/n1034_s\" DSP_R47[47][A],DSP_R47[47][B];",
+      "donor_graph_identifier": "core/fallback_sticks/n1034_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/fallback_sticks/n1702_s",
+      "locations": [
+        "DSP_R47[46][A]",
+        "DSP_R47[46][B]"
+      ],
+      "line": "INS_LOC \"core/fallback_sticks/n1702_s\" DSP_R47[46][A],DSP_R47[46][B];",
+      "donor_graph_identifier": "core/fallback_sticks/n1702_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/fallback_sticks/n700_s",
+      "locations": [
+        "DSP_R47[45][A]",
+        "DSP_R47[45][B]"
+      ],
+      "line": "INS_LOC \"core/fallback_sticks/n700_s\" DSP_R47[45][A],DSP_R47[45][B];",
+      "donor_graph_identifier": "core/fallback_sticks/n700_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/fallback_sticks/n733_s",
+      "locations": [
+        "DSP_R47[44][A]",
+        "DSP_R47[44][B]"
+      ],
+      "line": "INS_LOC \"core/fallback_sticks/n733_s\" DSP_R47[44][A],DSP_R47[44][B];",
+      "donor_graph_identifier": "core/fallback_sticks/n733_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/fallback_sticks/square_product_0_s",
+      "locations": [
+        "DSP_R65[44][A]",
+        "DSP_R65[44][B]"
+      ],
+      "line": "INS_LOC \"core/fallback_sticks/square_product_0_s\" DSP_R65[44][A],DSP_R65[44][B];",
+      "donor_graph_identifier": "core/fallback_sticks/square_product_0_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/imu/estimator/angle/compensated_0_s",
+      "locations": [
+        "DSP_R28[19][A]",
+        "DSP_R28[19][B]",
+        "DSP_R28[20][A]",
+        "DSP_R28[20][B]"
+      ],
+      "line": "INS_LOC \"core/imu/estimator/angle/compensated_0_s\" DSP_R28[19][A],DSP_R28[19][B],DSP_R28[20][A],DSP_R28[20][B];",
+      "donor_graph_identifier": "core/imu/estimator/angle/compensated_0_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/imu/estimator/cdeg_scaled_0_s",
+      "locations": [
+        "DSP_R28[17][A]",
+        "DSP_R28[17][B]",
+        "DSP_R28[18][A]",
+        "DSP_R28[18][B]"
+      ],
+      "line": "INS_LOC \"core/imu/estimator/cdeg_scaled_0_s\" DSP_R28[17][A],DSP_R28[17][B],DSP_R28[18][A],DSP_R28[18][B];",
+      "donor_graph_identifier": "core/imu/estimator/cdeg_scaled_0_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/imu/estimator/n18439_s",
+      "locations": [
+        "DSP_R28[16][B]"
+      ],
+      "line": "INS_LOC \"core/imu/estimator/n18439_s\" DSP_R28[16][B];",
+      "donor_graph_identifier": "core/imu/estimator/n18439_s",
+      "donor_primitive": "MULT12X12",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/imu/estimator/n7173_s0",
+      "locations": [
+        "DSP_R28[22][A]",
+        "DSP_R28[22][B]"
+      ],
+      "line": "INS_LOC \"core/imu/estimator/n7173_s0\" DSP_R28[22][A],DSP_R28[22][B];",
+      "donor_graph_identifier": "core/imu/estimator/n7173_s0",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/imu/reader/n343_s",
+      "locations": [
+        "DSP_R28[7][A]",
+        "DSP_R28[7][B]"
+      ],
+      "line": "INS_LOC \"core/imu/reader/n343_s\" DSP_R28[7][A],DSP_R28[7][B];",
+      "donor_graph_identifier": "core/imu/reader/n343_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/imu/reader/n507_s",
+      "locations": [
+        "DSP_R28[8][A]",
+        "DSP_R28[8][B]"
+      ],
+      "line": "INS_LOC \"core/imu/reader/n507_s\" DSP_R28[8][A],DSP_R28[8][B];",
+      "donor_graph_identifier": "core/imu/reader/n507_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/n3262_s",
+      "locations": [
+        "DSP_R47[43][B]"
+      ],
+      "line": "INS_LOC \"core/n3262_s\" DSP_R47[43][B];",
+      "donor_graph_identifier": "core/n3262_s",
+      "donor_primitive": "MULT12X12",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/n3296_s",
+      "locations": [
+        "DSP_R65[40][B]"
+      ],
+      "line": "INS_LOC \"core/n3296_s\" DSP_R65[40][B];",
+      "donor_graph_identifier": "core/n3296_s",
+      "donor_primitive": "MULT12X12",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/n7349_s",
+      "locations": [
+        "DSP_R47[32][A]",
+        "DSP_R47[32][B]"
+      ],
+      "line": "INS_LOC \"core/n7349_s\" DSP_R47[32][A],DSP_R47[32][B];",
+      "donor_graph_identifier": "core/n7349_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/n7443_s",
+      "locations": [
+        "DSP_R47[28][A]",
+        "DSP_R47[28][B]"
+      ],
+      "line": "INS_LOC \"core/n7443_s\" DSP_R47[28][A],DSP_R47[28][B];",
+      "donor_graph_identifier": "core/n7443_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/n7537_s",
+      "locations": [
+        "DSP_R47[27][A]",
+        "DSP_R47[27][B]"
+      ],
+      "line": "INS_LOC \"core/n7537_s\" DSP_R47[27][A],DSP_R47[27][B];",
+      "donor_graph_identifier": "core/n7537_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "core/n7631_s",
+      "locations": [
+        "DSP_R47[29][A]",
+        "DSP_R47[29][B]"
+      ],
+      "line": "INS_LOC \"core/n7631_s\" DSP_R47[29][A],DSP_R47[29][B];",
+      "donor_graph_identifier": "core/n7631_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "mtf/metric/dx_0_s",
+      "locations": [
+        "DSP_R65[19][A]",
+        "DSP_R65[19][B]",
+        "DSP_R65[20][A]",
+        "DSP_R65[20][B]"
+      ],
+      "line": "INS_LOC \"mtf/metric/dx_0_s\" DSP_R65[19][A],DSP_R65[19][B],DSP_R65[20][A],DSP_R65[20][B];",
+      "donor_graph_identifier": "mtf/metric/dx_0_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "mtf/metric/dy_0_s",
+      "locations": [
+        "DSP_R65[17][A]",
+        "DSP_R65[17][B]",
+        "DSP_R65[18][A]",
+        "DSP_R65[18][B]"
+      ],
+      "line": "INS_LOC \"mtf/metric/dy_0_s\" DSP_R65[17][A],DSP_R65[17][B],DSP_R65[18][A],DSP_R65[18][B];",
+      "donor_graph_identifier": "mtf/metric/dy_0_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "mtf/metric/product_x_0_s",
+      "locations": [
+        "DSP_R65[16][A]",
+        "DSP_R65[16][B]"
+      ],
+      "line": "INS_LOC \"mtf/metric/product_x_0_s\" DSP_R65[16][A],DSP_R65[16][B];",
+      "donor_graph_identifier": "mtf/metric/product_x_0_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "mtf/metric/product_y_0_s",
+      "locations": [
+        "DSP_R65[15][A]",
+        "DSP_R65[15][B]"
+      ],
+      "line": "INS_LOC \"mtf/metric/product_y_0_s\" DSP_R65[15][A],DSP_R65[15][B];",
+      "donor_graph_identifier": "mtf/metric/product_y_0_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n14695_s",
+      "locations": [
+        "DSP_R65[11][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n14695_s\" DSP_R65[11][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n14695_s",
+      "donor_primitive": "MULT12X12",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n15045_s",
+      "locations": [
+        "DSP_R47[10][A]",
+        "DSP_R47[10][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n15045_s\" DSP_R47[10][A],DSP_R47[10][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n15045_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n15592_s",
+      "locations": [
+        "DSP_R47[11][A]",
+        "DSP_R47[11][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n15592_s\" DSP_R47[11][A],DSP_R47[11][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n15592_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n4214_s",
+      "locations": [
+        "DSP_R47[14][A]",
+        "DSP_R47[14][B]",
+        "DSP_R47[15][A]",
+        "DSP_R47[15][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n4214_s\" DSP_R47[14][A],DSP_R47[14][B],DSP_R47[15][A],DSP_R47[15][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n4214_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n5842_s",
+      "locations": [
+        "DSP_R47[18][A]",
+        "DSP_R47[18][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n5842_s\" DSP_R47[18][A],DSP_R47[18][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n5842_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n5968_s",
+      "locations": [
+        "DSP_R28[0][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n5968_s\" DSP_R28[0][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n5968_s",
+      "donor_primitive": "MULT12X12",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n7947_s",
+      "locations": [
+        "DSP_R65[13][A]",
+        "DSP_R65[13][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n7947_s\" DSP_R65[13][A],DSP_R65[13][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n7947_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n8931_s",
+      "locations": [
+        "DSP_R47[16][A]",
+        "DSP_R47[16][B]",
+        "DSP_R47[17][A]",
+        "DSP_R47[17][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n8931_s\" DSP_R47[16][A],DSP_R47[16][B],DSP_R47[17][A],DSP_R47[17][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n8931_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n8972_s",
+      "locations": [
+        "DSP_R65[12][A]",
+        "DSP_R65[12][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/n8972_s\" DSP_R65[12][A],DSP_R65[12][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/n8972_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/n1034_s",
+      "locations": [
+        "DSP_R28[5][A]",
+        "DSP_R28[5][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1034_s\" DSP_R28[5][A],DSP_R28[5][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n1034_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/n1702_s",
+      "locations": [
+        "DSP_R28[6][A]",
+        "DSP_R28[6][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1702_s\" DSP_R28[6][A],DSP_R28[6][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n1702_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/n700_s",
+      "locations": [
+        "DSP_R28[2][A]",
+        "DSP_R28[2][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n700_s\" DSP_R28[2][A],DSP_R28[2][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n700_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/n733_s",
+      "locations": [
+        "DSP_R28[1][A]",
+        "DSP_R28[1][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n733_s\" DSP_R28[1][A],DSP_R28[1][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n733_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+      "locations": [
+        "DSP_R47[24][A]",
+        "DSP_R47[24][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/square_product_0_s\" DSP_R47[24][A],DSP_R47[24][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/z_stick/n422_s",
+      "locations": [
+        "DSP_R28[3][A]",
+        "DSP_R28[3][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/z_stick/n422_s\" DSP_R28[3][A],DSP_R28[3][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/z_stick/n422_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/controller_proof/z_stick/n705_s",
+      "locations": [
+        "DSP_R28[4][A]",
+        "DSP_R28[4][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/controller_proof/z_stick/n705_s\" DSP_R28[4][A],DSP_R28[4][B];",
+      "donor_graph_identifier": "native_navigation/controller_proof/z_stick/n705_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/geometry/n2451_s",
+      "locations": [
+        "DSP_R47[5][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/geometry/n2451_s\" DSP_R47[5][B];",
+      "donor_graph_identifier": "native_navigation/geometry/n2451_s",
+      "donor_primitive": "MULT12X12",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/height_fusion/n2347_s",
+      "locations": [
+        "DSP_R65[3][A]",
+        "DSP_R65[3][B]",
+        "DSP_R65[4][A]",
+        "DSP_R65[4][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/height_fusion/n2347_s\" DSP_R65[3][A],DSP_R65[3][B],DSP_R65[4][A],DSP_R65[4][B];",
+      "donor_graph_identifier": "native_navigation/height_fusion/n2347_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/height_fusion/n3014_s",
+      "locations": [
+        "DSP_R47[3][A]",
+        "DSP_R47[3][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/height_fusion/n3014_s\" DSP_R47[3][A],DSP_R47[3][B];",
+      "donor_graph_identifier": "native_navigation/height_fusion/n3014_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/height_fusion/n3252_s",
+      "locations": [
+        "DSP_R47[4][A]",
+        "DSP_R47[4][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/height_fusion/n3252_s\" DSP_R47[4][A],DSP_R47[4][B];",
+      "donor_graph_identifier": "native_navigation/height_fusion/n3252_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/height_fusion/n5006_s",
+      "locations": [
+        "DSP_R65[2][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/height_fusion/n5006_s\" DSP_R65[2][B];",
+      "donor_graph_identifier": "native_navigation/height_fusion/n5006_s",
+      "donor_primitive": "MULT12X12",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s",
+      "locations": [
+        "DSP_R65[7][A]",
+        "DSP_R65[7][B]",
+        "DSP_R65[8][A]",
+        "DSP_R65[8][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s\" DSP_R65[7][A],DSP_R65[7][B],DSP_R65[8][A],DSP_R65[8][B];",
+      "donor_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s",
+      "locations": [
+        "DSP_R65[5][A]",
+        "DSP_R65[5][B]",
+        "DSP_R65[6][A]",
+        "DSP_R65[6][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s\" DSP_R65[5][A],DSP_R65[5][B],DSP_R65[6][A],DSP_R65[6][B];",
+      "donor_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/n765_s",
+      "locations": [
+        "DSP_R65[21][A]",
+        "DSP_R65[21][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/n765_s\" DSP_R65[21][A],DSP_R65[21][B];",
+      "donor_graph_identifier": "native_navigation/n765_s",
+      "donor_primitive": "MULTALU27X18",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/position/n893_s",
+      "locations": [
+        "DSP_R47[12][A]",
+        "DSP_R47[12][B]",
+        "DSP_R47[13][A]",
+        "DSP_R47[13][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/position/n893_s\" DSP_R47[12][A],DSP_R47[12][B],DSP_R47[13][A],DSP_R47[13][B];",
+      "donor_graph_identifier": "native_navigation/position/n893_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/velocity_fusion/n2039_s",
+      "locations": [
+        "DSP_R47[6][A]",
+        "DSP_R47[6][B]",
+        "DSP_R47[7][A]",
+        "DSP_R47[7][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/velocity_fusion/n2039_s\" DSP_R47[6][A],DSP_R47[6][B],DSP_R47[7][A],DSP_R47[7][B];",
+      "donor_graph_identifier": "native_navigation/velocity_fusion/n2039_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    },
+    {
+      "instance": "native_navigation/velocity_fusion/n2080_s",
+      "locations": [
+        "DSP_R47[8][A]",
+        "DSP_R47[8][B]",
+        "DSP_R47[9][A]",
+        "DSP_R47[9][B]"
+      ],
+      "line": "INS_LOC \"native_navigation/velocity_fusion/n2080_s\" DSP_R47[8][A],DSP_R47[8][B],DSP_R47[9][A],DSP_R47[9][B];",
+      "donor_graph_identifier": "native_navigation/velocity_fusion/n2080_s",
+      "donor_primitive": "MULT27X36",
+      "resource_kind": "DSP"
+    }
+  ],
+  "portable": {
+    "v17": {
+      "VG_sha256": "9a0194f0f1410b85472bdaddc70e1966f04e73c8ff70706316ccd91d5ea6ef6f",
+      "kept": 47,
+      "dropped": [
+        {
+          "instance": "core/fallback_control/n1049_s",
+          "locations": [
+            "DSP_R47[36][A]",
+            "DSP_R47[36][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_control/n1049_s\" DSP_R47[36][A],DSP_R47[36][B];",
+          "donor_graph_identifier": "core/fallback_control/n1049_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "core/n7349_s",
+          "locations": [
+            "DSP_R47[32][A]",
+            "DSP_R47[32][B]"
+          ],
+          "line": "INS_LOC \"core/n7349_s\" DSP_R47[32][A],DSP_R47[32][B];",
+          "donor_graph_identifier": "core/n7349_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "core/n7443_s",
+          "locations": [
+            "DSP_R47[28][A]",
+            "DSP_R47[28][B]"
+          ],
+          "line": "INS_LOC \"core/n7443_s\" DSP_R47[28][A],DSP_R47[28][B];",
+          "donor_graph_identifier": "core/n7443_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "core/n7537_s",
+          "locations": [
+            "DSP_R47[27][A]",
+            "DSP_R47[27][B]"
+          ],
+          "line": "INS_LOC \"core/n7537_s\" DSP_R47[27][A],DSP_R47[27][B];",
+          "donor_graph_identifier": "core/n7537_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "core/n7631_s",
+          "locations": [
+            "DSP_R47[29][A]",
+            "DSP_R47[29][B]"
+          ],
+          "line": "INS_LOC \"core/n7631_s\" DSP_R47[29][A],DSP_R47[29][B];",
+          "donor_graph_identifier": "core/n7631_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        }
+      ],
+      "kept_rows": [
+        {
+          "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+          "locations": [
+            "BSRAM_R56[3][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s\" BSRAM_R56[3][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+          "donor_primitive": "pROM",
+          "resource_kind": "BSRAM",
+          "target_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+          "locations": [
+            "BSRAM_R56[4]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s\" BSRAM_R56[4];",
+          "donor_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+          "donor_primitive": "pROM",
+          "resource_kind": "BSRAM",
+          "target_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s"
+        },
+        {
+          "instance": "core/controller/n4769_s",
+          "locations": [
+            "DSP_R47[30][A]",
+            "DSP_R47[30][B]",
+            "DSP_R47[31][A]",
+            "DSP_R47[31][B]"
+          ],
+          "line": "INS_LOC \"core/controller/n4769_s\" DSP_R47[30][A],DSP_R47[30][B],DSP_R47[31][A],DSP_R47[31][B];",
+          "donor_graph_identifier": "core/controller/n4769_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/controller/n4769_s"
+        },
+        {
+          "instance": "core/fallback_sticks/n1034_s",
+          "locations": [
+            "DSP_R47[47][A]",
+            "DSP_R47[47][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/n1034_s\" DSP_R47[47][A],DSP_R47[47][B];",
+          "donor_graph_identifier": "core/fallback_sticks/n1034_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/n1034_s"
+        },
+        {
+          "instance": "core/fallback_sticks/n1702_s",
+          "locations": [
+            "DSP_R47[46][A]",
+            "DSP_R47[46][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/n1702_s\" DSP_R47[46][A],DSP_R47[46][B];",
+          "donor_graph_identifier": "core/fallback_sticks/n1702_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/n1702_s"
+        },
+        {
+          "instance": "core/fallback_sticks/n700_s",
+          "locations": [
+            "DSP_R47[45][A]",
+            "DSP_R47[45][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/n700_s\" DSP_R47[45][A],DSP_R47[45][B];",
+          "donor_graph_identifier": "core/fallback_sticks/n700_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/n700_s"
+        },
+        {
+          "instance": "core/fallback_sticks/n733_s",
+          "locations": [
+            "DSP_R47[44][A]",
+            "DSP_R47[44][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/n733_s\" DSP_R47[44][A],DSP_R47[44][B];",
+          "donor_graph_identifier": "core/fallback_sticks/n733_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/n733_s"
+        },
+        {
+          "instance": "core/fallback_sticks/square_product_0_s",
+          "locations": [
+            "DSP_R65[44][A]",
+            "DSP_R65[44][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/square_product_0_s\" DSP_R65[44][A],DSP_R65[44][B];",
+          "donor_graph_identifier": "core/fallback_sticks/square_product_0_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/square_product_0_s"
+        },
+        {
+          "instance": "core/imu/estimator/angle/compensated_0_s",
+          "locations": [
+            "DSP_R28[19][A]",
+            "DSP_R28[19][B]",
+            "DSP_R28[20][A]",
+            "DSP_R28[20][B]"
+          ],
+          "line": "INS_LOC \"core/imu/estimator/angle/compensated_0_s\" DSP_R28[19][A],DSP_R28[19][B],DSP_R28[20][A],DSP_R28[20][B];",
+          "donor_graph_identifier": "core/imu/estimator/angle/compensated_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/estimator/angle/compensated_0_s"
+        },
+        {
+          "instance": "core/imu/estimator/cdeg_scaled_0_s",
+          "locations": [
+            "DSP_R28[17][A]",
+            "DSP_R28[17][B]",
+            "DSP_R28[18][A]",
+            "DSP_R28[18][B]"
+          ],
+          "line": "INS_LOC \"core/imu/estimator/cdeg_scaled_0_s\" DSP_R28[17][A],DSP_R28[17][B],DSP_R28[18][A],DSP_R28[18][B];",
+          "donor_graph_identifier": "core/imu/estimator/cdeg_scaled_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/estimator/cdeg_scaled_0_s"
+        },
+        {
+          "instance": "core/imu/estimator/n18439_s",
+          "locations": [
+            "DSP_R28[16][B]"
+          ],
+          "line": "INS_LOC \"core/imu/estimator/n18439_s\" DSP_R28[16][B];",
+          "donor_graph_identifier": "core/imu/estimator/n18439_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/estimator/n18439_s"
+        },
+        {
+          "instance": "core/imu/estimator/n7173_s0",
+          "locations": [
+            "DSP_R28[22][A]",
+            "DSP_R28[22][B]"
+          ],
+          "line": "INS_LOC \"core/imu/estimator/n7173_s0\" DSP_R28[22][A],DSP_R28[22][B];",
+          "donor_graph_identifier": "core/imu/estimator/n7173_s0",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/estimator/n7173_s0"
+        },
+        {
+          "instance": "core/imu/reader/n343_s",
+          "locations": [
+            "DSP_R28[7][A]",
+            "DSP_R28[7][B]"
+          ],
+          "line": "INS_LOC \"core/imu/reader/n343_s\" DSP_R28[7][A],DSP_R28[7][B];",
+          "donor_graph_identifier": "core/imu/reader/n343_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/reader/n343_s"
+        },
+        {
+          "instance": "core/imu/reader/n507_s",
+          "locations": [
+            "DSP_R28[8][A]",
+            "DSP_R28[8][B]"
+          ],
+          "line": "INS_LOC \"core/imu/reader/n507_s\" DSP_R28[8][A],DSP_R28[8][B];",
+          "donor_graph_identifier": "core/imu/reader/n507_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/reader/n507_s"
+        },
+        {
+          "instance": "core/n3262_s",
+          "locations": [
+            "DSP_R47[43][B]"
+          ],
+          "line": "INS_LOC \"core/n3262_s\" DSP_R47[43][B];",
+          "donor_graph_identifier": "core/n3262_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/n3262_s"
+        },
+        {
+          "instance": "core/n3296_s",
+          "locations": [
+            "DSP_R65[40][B]"
+          ],
+          "line": "INS_LOC \"core/n3296_s\" DSP_R65[40][B];",
+          "donor_graph_identifier": "core/n3296_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/n3296_s"
+        },
+        {
+          "instance": "mtf/metric/dx_0_s",
+          "locations": [
+            "DSP_R65[19][A]",
+            "DSP_R65[19][B]",
+            "DSP_R65[20][A]",
+            "DSP_R65[20][B]"
+          ],
+          "line": "INS_LOC \"mtf/metric/dx_0_s\" DSP_R65[19][A],DSP_R65[19][B],DSP_R65[20][A],DSP_R65[20][B];",
+          "donor_graph_identifier": "mtf/metric/dx_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "mtf/metric/dx_0_s"
+        },
+        {
+          "instance": "mtf/metric/dy_0_s",
+          "locations": [
+            "DSP_R65[17][A]",
+            "DSP_R65[17][B]",
+            "DSP_R65[18][A]",
+            "DSP_R65[18][B]"
+          ],
+          "line": "INS_LOC \"mtf/metric/dy_0_s\" DSP_R65[17][A],DSP_R65[17][B],DSP_R65[18][A],DSP_R65[18][B];",
+          "donor_graph_identifier": "mtf/metric/dy_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "mtf/metric/dy_0_s"
+        },
+        {
+          "instance": "mtf/metric/product_x_0_s",
+          "locations": [
+            "DSP_R65[16][A]",
+            "DSP_R65[16][B]"
+          ],
+          "line": "INS_LOC \"mtf/metric/product_x_0_s\" DSP_R65[16][A],DSP_R65[16][B];",
+          "donor_graph_identifier": "mtf/metric/product_x_0_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "mtf/metric/product_x_0_s"
+        },
+        {
+          "instance": "mtf/metric/product_y_0_s",
+          "locations": [
+            "DSP_R65[15][A]",
+            "DSP_R65[15][B]"
+          ],
+          "line": "INS_LOC \"mtf/metric/product_y_0_s\" DSP_R65[15][A],DSP_R65[15][B];",
+          "donor_graph_identifier": "mtf/metric/product_y_0_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "mtf/metric/product_y_0_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n14695_s",
+          "locations": [
+            "DSP_R65[11][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n14695_s\" DSP_R65[11][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n14695_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n14695_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n15045_s",
+          "locations": [
+            "DSP_R47[10][A]",
+            "DSP_R47[10][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n15045_s\" DSP_R47[10][A],DSP_R47[10][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n15045_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n15045_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n15592_s",
+          "locations": [
+            "DSP_R47[11][A]",
+            "DSP_R47[11][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n15592_s\" DSP_R47[11][A],DSP_R47[11][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n15592_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n15592_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n4214_s",
+          "locations": [
+            "DSP_R47[14][A]",
+            "DSP_R47[14][B]",
+            "DSP_R47[15][A]",
+            "DSP_R47[15][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n4214_s\" DSP_R47[14][A],DSP_R47[14][B],DSP_R47[15][A],DSP_R47[15][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n4214_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n4214_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n5842_s",
+          "locations": [
+            "DSP_R47[18][A]",
+            "DSP_R47[18][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n5842_s\" DSP_R47[18][A],DSP_R47[18][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n5842_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n5842_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n5968_s",
+          "locations": [
+            "DSP_R28[0][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n5968_s\" DSP_R28[0][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n5968_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n5968_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n7947_s",
+          "locations": [
+            "DSP_R65[13][A]",
+            "DSP_R65[13][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n7947_s\" DSP_R65[13][A],DSP_R65[13][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n7947_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n7947_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n8931_s",
+          "locations": [
+            "DSP_R47[16][A]",
+            "DSP_R47[16][B]",
+            "DSP_R47[17][A]",
+            "DSP_R47[17][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n8931_s\" DSP_R47[16][A],DSP_R47[16][B],DSP_R47[17][A],DSP_R47[17][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n8931_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n8931_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n8972_s",
+          "locations": [
+            "DSP_R65[12][A]",
+            "DSP_R65[12][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n8972_s\" DSP_R65[12][A],DSP_R65[12][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n8972_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n8972_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/n1034_s",
+          "locations": [
+            "DSP_R28[5][A]",
+            "DSP_R28[5][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1034_s\" DSP_R28[5][A],DSP_R28[5][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n1034_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n1034_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/n1702_s",
+          "locations": [
+            "DSP_R28[6][A]",
+            "DSP_R28[6][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1702_s\" DSP_R28[6][A],DSP_R28[6][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n1702_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n1702_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/n700_s",
+          "locations": [
+            "DSP_R28[2][A]",
+            "DSP_R28[2][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n700_s\" DSP_R28[2][A],DSP_R28[2][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n700_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n700_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/n733_s",
+          "locations": [
+            "DSP_R28[1][A]",
+            "DSP_R28[1][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n733_s\" DSP_R28[1][A],DSP_R28[1][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n733_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n733_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+          "locations": [
+            "DSP_R47[24][A]",
+            "DSP_R47[24][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/square_product_0_s\" DSP_R47[24][A],DSP_R47[24][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/square_product_0_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/z_stick/n422_s",
+          "locations": [
+            "DSP_R28[3][A]",
+            "DSP_R28[3][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/z_stick/n422_s\" DSP_R28[3][A],DSP_R28[3][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/z_stick/n422_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/z_stick/n422_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/z_stick/n705_s",
+          "locations": [
+            "DSP_R28[4][A]",
+            "DSP_R28[4][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/z_stick/n705_s\" DSP_R28[4][A],DSP_R28[4][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/z_stick/n705_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/z_stick/n705_s"
+        },
+        {
+          "instance": "native_navigation/geometry/n2451_s",
+          "locations": [
+            "DSP_R47[5][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/geometry/n2451_s\" DSP_R47[5][B];",
+          "donor_graph_identifier": "native_navigation/geometry/n2451_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/geometry/n2451_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/n2347_s",
+          "locations": [
+            "DSP_R65[3][A]",
+            "DSP_R65[3][B]",
+            "DSP_R65[4][A]",
+            "DSP_R65[4][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/n2347_s\" DSP_R65[3][A],DSP_R65[3][B],DSP_R65[4][A],DSP_R65[4][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/n2347_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/height_fusion/n2347_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/n3014_s",
+          "locations": [
+            "DSP_R47[3][A]",
+            "DSP_R47[3][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/n3014_s\" DSP_R47[3][A],DSP_R47[3][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/n3014_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/height_fusion/n3014_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/n3252_s",
+          "locations": [
+            "DSP_R47[4][A]",
+            "DSP_R47[4][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/n3252_s\" DSP_R47[4][A],DSP_R47[4][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/n3252_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/height_fusion/n3252_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/n5006_s",
+          "locations": [
+            "DSP_R65[2][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/n5006_s\" DSP_R65[2][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/n5006_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/height_fusion/n5006_s"
+        },
+        {
+          "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s",
+          "locations": [
+            "DSP_R65[7][A]",
+            "DSP_R65[7][B]",
+            "DSP_R65[8][A]",
+            "DSP_R65[8][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s\" DSP_R65[7][A],DSP_R65[7][B],DSP_R65[8][A],DSP_R65[8][B];",
+          "donor_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s"
+        },
+        {
+          "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s",
+          "locations": [
+            "DSP_R65[5][A]",
+            "DSP_R65[5][B]",
+            "DSP_R65[6][A]",
+            "DSP_R65[6][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s\" DSP_R65[5][A],DSP_R65[5][B],DSP_R65[6][A],DSP_R65[6][B];",
+          "donor_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s"
+        },
+        {
+          "instance": "native_navigation/n765_s",
+          "locations": [
+            "DSP_R65[21][A]",
+            "DSP_R65[21][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/n765_s\" DSP_R65[21][A],DSP_R65[21][B];",
+          "donor_graph_identifier": "native_navigation/n765_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/n765_s"
+        },
+        {
+          "instance": "native_navigation/position/n893_s",
+          "locations": [
+            "DSP_R47[12][A]",
+            "DSP_R47[12][B]",
+            "DSP_R47[13][A]",
+            "DSP_R47[13][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/position/n893_s\" DSP_R47[12][A],DSP_R47[12][B],DSP_R47[13][A],DSP_R47[13][B];",
+          "donor_graph_identifier": "native_navigation/position/n893_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/position/n893_s"
+        },
+        {
+          "instance": "native_navigation/velocity_fusion/n2039_s",
+          "locations": [
+            "DSP_R47[6][A]",
+            "DSP_R47[6][B]",
+            "DSP_R47[7][A]",
+            "DSP_R47[7][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/velocity_fusion/n2039_s\" DSP_R47[6][A],DSP_R47[6][B],DSP_R47[7][A],DSP_R47[7][B];",
+          "donor_graph_identifier": "native_navigation/velocity_fusion/n2039_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/velocity_fusion/n2039_s"
+        },
+        {
+          "instance": "native_navigation/velocity_fusion/n2080_s",
+          "locations": [
+            "DSP_R47[8][A]",
+            "DSP_R47[8][B]",
+            "DSP_R47[9][A]",
+            "DSP_R47[9][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/velocity_fusion/n2080_s\" DSP_R47[8][A],DSP_R47[8][B],DSP_R47[9][A],DSP_R47[9][B];",
+          "donor_graph_identifier": "native_navigation/velocity_fusion/n2080_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/velocity_fusion/n2080_s"
+        }
+      ],
+      "constraint_path": "analysis/20261026_z_aw_fix/build/native_v4_DSP_export/portable_v17_dsp_bsram.cst",
+      "constraint_sha256": "c8a1c37ef414b3b192f30a63c17bf2814155dfb072947cd3fc92da1033fc3cd0",
+      "BSRAM": 2,
+      "DSP": 45
+    },
+    "v18": {
+      "VG_sha256": "64e76270fe35298e698bfe5b14b9d9e267469f746d3c2382a8a15284c5942d4f",
+      "kept": 46,
+      "dropped": [
+        {
+          "instance": "core/fallback_control/n1049_s",
+          "locations": [
+            "DSP_R47[36][A]",
+            "DSP_R47[36][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_control/n1049_s\" DSP_R47[36][A],DSP_R47[36][B];",
+          "donor_graph_identifier": "core/fallback_control/n1049_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "core/n7349_s",
+          "locations": [
+            "DSP_R47[32][A]",
+            "DSP_R47[32][B]"
+          ],
+          "line": "INS_LOC \"core/n7349_s\" DSP_R47[32][A],DSP_R47[32][B];",
+          "donor_graph_identifier": "core/n7349_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "core/n7443_s",
+          "locations": [
+            "DSP_R47[28][A]",
+            "DSP_R47[28][B]"
+          ],
+          "line": "INS_LOC \"core/n7443_s\" DSP_R47[28][A],DSP_R47[28][B];",
+          "donor_graph_identifier": "core/n7443_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "core/n7537_s",
+          "locations": [
+            "DSP_R47[27][A]",
+            "DSP_R47[27][B]"
+          ],
+          "line": "INS_LOC \"core/n7537_s\" DSP_R47[27][A],DSP_R47[27][B];",
+          "donor_graph_identifier": "core/n7537_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "core/n7631_s",
+          "locations": [
+            "DSP_R47[29][A]",
+            "DSP_R47[29][B]"
+          ],
+          "line": "INS_LOC \"core/n7631_s\" DSP_R47[29][A],DSP_R47[29][B];",
+          "donor_graph_identifier": "core/n7631_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        },
+        {
+          "instance": "native_navigation/geometry/n2451_s",
+          "locations": [
+            "DSP_R47[5][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/geometry/n2451_s\" DSP_R47[5][B];",
+          "donor_graph_identifier": "native_navigation/geometry/n2451_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_primitive": null,
+          "reason": "Absent or changed primitive type; no inferred rename"
+        }
+      ],
+      "kept_rows": [
+        {
+          "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+          "locations": [
+            "BSRAM_R56[3][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s\" BSRAM_R56[3][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+          "donor_primitive": "pROM",
+          "resource_kind": "BSRAM",
+          "target_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+          "locations": [
+            "BSRAM_R56[4]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s\" BSRAM_R56[4];",
+          "donor_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+          "donor_primitive": "pROM",
+          "resource_kind": "BSRAM",
+          "target_graph_identifier": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s"
+        },
+        {
+          "instance": "core/controller/n4769_s",
+          "locations": [
+            "DSP_R47[30][A]",
+            "DSP_R47[30][B]",
+            "DSP_R47[31][A]",
+            "DSP_R47[31][B]"
+          ],
+          "line": "INS_LOC \"core/controller/n4769_s\" DSP_R47[30][A],DSP_R47[30][B],DSP_R47[31][A],DSP_R47[31][B];",
+          "donor_graph_identifier": "core/controller/n4769_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/controller/n4769_s"
+        },
+        {
+          "instance": "core/fallback_sticks/n1034_s",
+          "locations": [
+            "DSP_R47[47][A]",
+            "DSP_R47[47][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/n1034_s\" DSP_R47[47][A],DSP_R47[47][B];",
+          "donor_graph_identifier": "core/fallback_sticks/n1034_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/n1034_s"
+        },
+        {
+          "instance": "core/fallback_sticks/n1702_s",
+          "locations": [
+            "DSP_R47[46][A]",
+            "DSP_R47[46][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/n1702_s\" DSP_R47[46][A],DSP_R47[46][B];",
+          "donor_graph_identifier": "core/fallback_sticks/n1702_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/n1702_s"
+        },
+        {
+          "instance": "core/fallback_sticks/n700_s",
+          "locations": [
+            "DSP_R47[45][A]",
+            "DSP_R47[45][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/n700_s\" DSP_R47[45][A],DSP_R47[45][B];",
+          "donor_graph_identifier": "core/fallback_sticks/n700_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/n700_s"
+        },
+        {
+          "instance": "core/fallback_sticks/n733_s",
+          "locations": [
+            "DSP_R47[44][A]",
+            "DSP_R47[44][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/n733_s\" DSP_R47[44][A],DSP_R47[44][B];",
+          "donor_graph_identifier": "core/fallback_sticks/n733_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/n733_s"
+        },
+        {
+          "instance": "core/fallback_sticks/square_product_0_s",
+          "locations": [
+            "DSP_R65[44][A]",
+            "DSP_R65[44][B]"
+          ],
+          "line": "INS_LOC \"core/fallback_sticks/square_product_0_s\" DSP_R65[44][A],DSP_R65[44][B];",
+          "donor_graph_identifier": "core/fallback_sticks/square_product_0_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/fallback_sticks/square_product_0_s"
+        },
+        {
+          "instance": "core/imu/estimator/angle/compensated_0_s",
+          "locations": [
+            "DSP_R28[19][A]",
+            "DSP_R28[19][B]",
+            "DSP_R28[20][A]",
+            "DSP_R28[20][B]"
+          ],
+          "line": "INS_LOC \"core/imu/estimator/angle/compensated_0_s\" DSP_R28[19][A],DSP_R28[19][B],DSP_R28[20][A],DSP_R28[20][B];",
+          "donor_graph_identifier": "core/imu/estimator/angle/compensated_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/estimator/angle/compensated_0_s"
+        },
+        {
+          "instance": "core/imu/estimator/cdeg_scaled_0_s",
+          "locations": [
+            "DSP_R28[17][A]",
+            "DSP_R28[17][B]",
+            "DSP_R28[18][A]",
+            "DSP_R28[18][B]"
+          ],
+          "line": "INS_LOC \"core/imu/estimator/cdeg_scaled_0_s\" DSP_R28[17][A],DSP_R28[17][B],DSP_R28[18][A],DSP_R28[18][B];",
+          "donor_graph_identifier": "core/imu/estimator/cdeg_scaled_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/estimator/cdeg_scaled_0_s"
+        },
+        {
+          "instance": "core/imu/estimator/n18439_s",
+          "locations": [
+            "DSP_R28[16][B]"
+          ],
+          "line": "INS_LOC \"core/imu/estimator/n18439_s\" DSP_R28[16][B];",
+          "donor_graph_identifier": "core/imu/estimator/n18439_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/estimator/n18439_s"
+        },
+        {
+          "instance": "core/imu/estimator/n7173_s0",
+          "locations": [
+            "DSP_R28[22][A]",
+            "DSP_R28[22][B]"
+          ],
+          "line": "INS_LOC \"core/imu/estimator/n7173_s0\" DSP_R28[22][A],DSP_R28[22][B];",
+          "donor_graph_identifier": "core/imu/estimator/n7173_s0",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/estimator/n7173_s0"
+        },
+        {
+          "instance": "core/imu/reader/n343_s",
+          "locations": [
+            "DSP_R28[7][A]",
+            "DSP_R28[7][B]"
+          ],
+          "line": "INS_LOC \"core/imu/reader/n343_s\" DSP_R28[7][A],DSP_R28[7][B];",
+          "donor_graph_identifier": "core/imu/reader/n343_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/reader/n343_s"
+        },
+        {
+          "instance": "core/imu/reader/n507_s",
+          "locations": [
+            "DSP_R28[8][A]",
+            "DSP_R28[8][B]"
+          ],
+          "line": "INS_LOC \"core/imu/reader/n507_s\" DSP_R28[8][A],DSP_R28[8][B];",
+          "donor_graph_identifier": "core/imu/reader/n507_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/imu/reader/n507_s"
+        },
+        {
+          "instance": "core/n3262_s",
+          "locations": [
+            "DSP_R47[43][B]"
+          ],
+          "line": "INS_LOC \"core/n3262_s\" DSP_R47[43][B];",
+          "donor_graph_identifier": "core/n3262_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/n3262_s"
+        },
+        {
+          "instance": "core/n3296_s",
+          "locations": [
+            "DSP_R65[40][B]"
+          ],
+          "line": "INS_LOC \"core/n3296_s\" DSP_R65[40][B];",
+          "donor_graph_identifier": "core/n3296_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "core/n3296_s"
+        },
+        {
+          "instance": "mtf/metric/dx_0_s",
+          "locations": [
+            "DSP_R65[19][A]",
+            "DSP_R65[19][B]",
+            "DSP_R65[20][A]",
+            "DSP_R65[20][B]"
+          ],
+          "line": "INS_LOC \"mtf/metric/dx_0_s\" DSP_R65[19][A],DSP_R65[19][B],DSP_R65[20][A],DSP_R65[20][B];",
+          "donor_graph_identifier": "mtf/metric/dx_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "mtf/metric/dx_0_s"
+        },
+        {
+          "instance": "mtf/metric/dy_0_s",
+          "locations": [
+            "DSP_R65[17][A]",
+            "DSP_R65[17][B]",
+            "DSP_R65[18][A]",
+            "DSP_R65[18][B]"
+          ],
+          "line": "INS_LOC \"mtf/metric/dy_0_s\" DSP_R65[17][A],DSP_R65[17][B],DSP_R65[18][A],DSP_R65[18][B];",
+          "donor_graph_identifier": "mtf/metric/dy_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "mtf/metric/dy_0_s"
+        },
+        {
+          "instance": "mtf/metric/product_x_0_s",
+          "locations": [
+            "DSP_R65[16][A]",
+            "DSP_R65[16][B]"
+          ],
+          "line": "INS_LOC \"mtf/metric/product_x_0_s\" DSP_R65[16][A],DSP_R65[16][B];",
+          "donor_graph_identifier": "mtf/metric/product_x_0_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "mtf/metric/product_x_0_s"
+        },
+        {
+          "instance": "mtf/metric/product_y_0_s",
+          "locations": [
+            "DSP_R65[15][A]",
+            "DSP_R65[15][B]"
+          ],
+          "line": "INS_LOC \"mtf/metric/product_y_0_s\" DSP_R65[15][A],DSP_R65[15][B];",
+          "donor_graph_identifier": "mtf/metric/product_y_0_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "mtf/metric/product_y_0_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n14695_s",
+          "locations": [
+            "DSP_R65[11][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n14695_s\" DSP_R65[11][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n14695_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n14695_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n15045_s",
+          "locations": [
+            "DSP_R47[10][A]",
+            "DSP_R47[10][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n15045_s\" DSP_R47[10][A],DSP_R47[10][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n15045_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n15045_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n15592_s",
+          "locations": [
+            "DSP_R47[11][A]",
+            "DSP_R47[11][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n15592_s\" DSP_R47[11][A],DSP_R47[11][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n15592_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n15592_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n4214_s",
+          "locations": [
+            "DSP_R47[14][A]",
+            "DSP_R47[14][B]",
+            "DSP_R47[15][A]",
+            "DSP_R47[15][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n4214_s\" DSP_R47[14][A],DSP_R47[14][B],DSP_R47[15][A],DSP_R47[15][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n4214_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n4214_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n5842_s",
+          "locations": [
+            "DSP_R47[18][A]",
+            "DSP_R47[18][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n5842_s\" DSP_R47[18][A],DSP_R47[18][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n5842_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n5842_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n5968_s",
+          "locations": [
+            "DSP_R28[0][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n5968_s\" DSP_R28[0][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n5968_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n5968_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n7947_s",
+          "locations": [
+            "DSP_R65[13][A]",
+            "DSP_R65[13][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n7947_s\" DSP_R65[13][A],DSP_R65[13][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n7947_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n7947_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n8931_s",
+          "locations": [
+            "DSP_R47[16][A]",
+            "DSP_R47[16][B]",
+            "DSP_R47[17][A]",
+            "DSP_R47[17][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n8931_s\" DSP_R47[16][A],DSP_R47[16][B],DSP_R47[17][A],DSP_R47[17][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n8931_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n8931_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/n8972_s",
+          "locations": [
+            "DSP_R65[12][A]",
+            "DSP_R65[12][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/n8972_s\" DSP_R65[12][A],DSP_R65[12][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/n8972_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/n8972_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/n1034_s",
+          "locations": [
+            "DSP_R28[5][A]",
+            "DSP_R28[5][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1034_s\" DSP_R28[5][A],DSP_R28[5][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n1034_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n1034_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/n1702_s",
+          "locations": [
+            "DSP_R28[6][A]",
+            "DSP_R28[6][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1702_s\" DSP_R28[6][A],DSP_R28[6][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n1702_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n1702_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/n700_s",
+          "locations": [
+            "DSP_R28[2][A]",
+            "DSP_R28[2][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n700_s\" DSP_R28[2][A],DSP_R28[2][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n700_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n700_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/n733_s",
+          "locations": [
+            "DSP_R28[1][A]",
+            "DSP_R28[1][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n733_s\" DSP_R28[1][A],DSP_R28[1][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/n733_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/n733_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+          "locations": [
+            "DSP_R47[24][A]",
+            "DSP_R47[24][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/xy_stick/square_product_0_s\" DSP_R47[24][A],DSP_R47[24][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/xy_stick/square_product_0_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/z_stick/n422_s",
+          "locations": [
+            "DSP_R28[3][A]",
+            "DSP_R28[3][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/z_stick/n422_s\" DSP_R28[3][A],DSP_R28[3][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/z_stick/n422_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/z_stick/n422_s"
+        },
+        {
+          "instance": "native_navigation/controller_proof/z_stick/n705_s",
+          "locations": [
+            "DSP_R28[4][A]",
+            "DSP_R28[4][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/controller_proof/z_stick/n705_s\" DSP_R28[4][A],DSP_R28[4][B];",
+          "donor_graph_identifier": "native_navigation/controller_proof/z_stick/n705_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/controller_proof/z_stick/n705_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/n2347_s",
+          "locations": [
+            "DSP_R65[3][A]",
+            "DSP_R65[3][B]",
+            "DSP_R65[4][A]",
+            "DSP_R65[4][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/n2347_s\" DSP_R65[3][A],DSP_R65[3][B],DSP_R65[4][A],DSP_R65[4][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/n2347_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/height_fusion/n2347_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/n3014_s",
+          "locations": [
+            "DSP_R47[3][A]",
+            "DSP_R47[3][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/n3014_s\" DSP_R47[3][A],DSP_R47[3][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/n3014_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/height_fusion/n3014_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/n3252_s",
+          "locations": [
+            "DSP_R47[4][A]",
+            "DSP_R47[4][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/n3252_s\" DSP_R47[4][A],DSP_R47[4][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/n3252_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/height_fusion/n3252_s"
+        },
+        {
+          "instance": "native_navigation/height_fusion/n5006_s",
+          "locations": [
+            "DSP_R65[2][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/height_fusion/n5006_s\" DSP_R65[2][B];",
+          "donor_graph_identifier": "native_navigation/height_fusion/n5006_s",
+          "donor_primitive": "MULT12X12",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/height_fusion/n5006_s"
+        },
+        {
+          "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s",
+          "locations": [
+            "DSP_R65[7][A]",
+            "DSP_R65[7][B]",
+            "DSP_R65[8][A]",
+            "DSP_R65[8][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s\" DSP_R65[7][A],DSP_R65[7][B],DSP_R65[8][A],DSP_R65[8][B];",
+          "donor_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s"
+        },
+        {
+          "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s",
+          "locations": [
+            "DSP_R65[5][A]",
+            "DSP_R65[5][B]",
+            "DSP_R65[6][A]",
+            "DSP_R65[6][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s\" DSP_R65[5][A],DSP_R65[5][B],DSP_R65[6][A],DSP_R65[6][B];",
+          "donor_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s"
+        },
+        {
+          "instance": "native_navigation/n765_s",
+          "locations": [
+            "DSP_R65[21][A]",
+            "DSP_R65[21][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/n765_s\" DSP_R65[21][A],DSP_R65[21][B];",
+          "donor_graph_identifier": "native_navigation/n765_s",
+          "donor_primitive": "MULTALU27X18",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/n765_s"
+        },
+        {
+          "instance": "native_navigation/position/n893_s",
+          "locations": [
+            "DSP_R47[12][A]",
+            "DSP_R47[12][B]",
+            "DSP_R47[13][A]",
+            "DSP_R47[13][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/position/n893_s\" DSP_R47[12][A],DSP_R47[12][B],DSP_R47[13][A],DSP_R47[13][B];",
+          "donor_graph_identifier": "native_navigation/position/n893_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/position/n893_s"
+        },
+        {
+          "instance": "native_navigation/velocity_fusion/n2039_s",
+          "locations": [
+            "DSP_R47[6][A]",
+            "DSP_R47[6][B]",
+            "DSP_R47[7][A]",
+            "DSP_R47[7][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/velocity_fusion/n2039_s\" DSP_R47[6][A],DSP_R47[6][B],DSP_R47[7][A],DSP_R47[7][B];",
+          "donor_graph_identifier": "native_navigation/velocity_fusion/n2039_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/velocity_fusion/n2039_s"
+        },
+        {
+          "instance": "native_navigation/velocity_fusion/n2080_s",
+          "locations": [
+            "DSP_R47[8][A]",
+            "DSP_R47[8][B]",
+            "DSP_R47[9][A]",
+            "DSP_R47[9][B]"
+          ],
+          "line": "INS_LOC \"native_navigation/velocity_fusion/n2080_s\" DSP_R47[8][A],DSP_R47[8][B],DSP_R47[9][A],DSP_R47[9][B];",
+          "donor_graph_identifier": "native_navigation/velocity_fusion/n2080_s",
+          "donor_primitive": "MULT27X36",
+          "resource_kind": "DSP",
+          "target_graph_identifier": "native_navigation/velocity_fusion/n2080_s"
+        }
+      ],
+      "constraint_path": "analysis/20261026_z_aw_fix/build/native_v4_DSP_export/portable_v18_dsp_bsram.cst",
+      "constraint_sha256": "24d393ff2837f107cf18fb97edfd404d28cfa2398a07562091e88d0335da282e",
+      "BSRAM": 2,
+      "DSP": 44
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "ground/B0B4",
+    "-p",
+    "test_xy_pi_*.py",
+    "-v"
+  ],
+  "started_utc": "2026-10-26T03:37:51.669282+00:00",
+  "finished_utc": "2026-10-26T03:37:55.804178+00:00",
+  "actual_exit_code": 0,
+  "log_sha256": "765b8ede80f5e6c52b6603c944f283b341ff175e816335316e08a3d628854943",
+  "scope": "Mock serial and owned temporary loopback HTTP fixture only; no hardware",
+  "test_count": 53
+}

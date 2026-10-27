@@ -1,0 +1,55 @@
+{
+  "scope": "Actual SYN graph overapproximate topology, escaped generate-block name resolved exactly; not STA or routability",
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "results": {
+    "v4": {
+      "VG_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+      "actual_target_name": "\\staged_telemetry.extension_q_814_s0",
+      "paths": {
+        "mtf/metric/vy_x100_28_s0": {
+          "depth": 15,
+          "cells": [
+            "native_navigation/geometry/geometry_reason_3_s30",
+            "native_navigation/geometry/geometry_reason_3_s44",
+            "native_navigation/geometry/geometry_reason_3_s6",
+            "native_navigation/geometry/geometry_reason_3_s1",
+            "native_navigation/geometry/geometry_reason_3_s0",
+            "native_navigation/geometry/geometry_flow_ready_s1",
+            "native_navigation/geometry/geometry_flow_ready_s2",
+            "native_navigation/geometry/geometry_flow_ready_s",
+            "native_navigation/velocity_fusion/n1532_s1",
+            "native_navigation/live_velocity_s0",
+            "native_navigation/nav_xy_ready_s",
+            "native_navigation/nav_xy_active_s0",
+            "native_navigation/n4663_s3",
+            "native_navigation/n4663_s2",
+            "n595_s2"
+          ]
+        },
+        "mtf/metric/velocity_range_ok_s0": {
+          "source_or_target_absent": true
+        }
+      }
+    },
+    "v18": {
+      "VG_sha256": "64e76270fe35298e698bfe5b14b9d9e267469f746d3c2382a8a15284c5942d4f",
+      "actual_target_name": "\\staged_telemetry.extension_q_814_s0",
+      "paths": {
+        "mtf/metric/vy_x100_28_s0": null,
+        "mtf/metric/velocity_range_ok_s0": {
+          "depth": 8,
+          "cells": [
+            "native_navigation/geometry/geometry_flow_ready_s1",
+            "native_navigation/geometry/geometry_flow_ready_s2",
+            "native_navigation/velocity_fusion/n1532_s4",
+            "native_navigation/live_velocity_s4",
+            "native_navigation/nav_xy_ready_s",
+            "native_navigation/n4663_s4",
+            "native_navigation/n4663_s2",
+            "n595_s2"
+          ]
+        }
+      }
+    }
+  }
+}

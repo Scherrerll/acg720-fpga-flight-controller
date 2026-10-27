@@ -1,0 +1,4 @@
+synthesis PID 35696; log C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v21\build_attempt_01\verification\synthesis.log
+synthesis actual p.wait()=0
+audit PID 62056; log C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v21\build_attempt_01\verification\audit.log
+audit actual p.wait()=1

@@ -1,0 +1,69 @@
+--- v4/core/ano_flight_state.v
++++ v15/core/ano_flight_state.v
+@@ -4,9 +4,11 @@
+ // SWA unlock/stop and sensor-health gates are the existing hardware adapter.
+ // Module never drives PWM directly. Source motor numbering is remapped to the
+ // already verified project order: source m1,m2,m3,m4 = project M2,M1,M4,M3.
+-module ano_flight_state #(parameter integer TICKS_PER_MS=50000)(
++module ano_flight_state #(parameter integer TICKS_PER_MS=50000,
++ parameter integer PRECHECKED_COLLECTIVE=0)(
+  input wire clk,rst_n,armed,
+  input wire [15:0] ch3,collective_us,
++ input wire collective_below_landing,
+  output reg motor_prepared=0,output reg taking_off=0,output reg flying=0,output reg land_lock=0,
+  output reg [3:0] preparation_mask=0
+ );
+@@ -17,6 +19,7 @@
+  reg normal_unlock=0; // source unlock_sta2 until throttle passes1200
+  wire start_takeoff=motor_prepared && ch3>=1555;
+  wire positive_stick=ch3>=1594;
++ wire landing_collective_low=PRECHECKED_COLLECTIVE ?collective_below_landing:(collective_us<1250);
+  always @(posedge clk)begin
+   if(!rst_n)begin
+    phase<=0;half<=0;motor_prepared<=0;taking_off<=0;flying<=0;
+@@ -34,7 +37,7 @@
+      end
+      if(positive_stick)landing_delay<=200;
+      else if(landing_delay!=0)landing_delay<=landing_delay-1'b1;
+-     if(normal_unlock && !positive_stick && landing_delay<=1 && ch3<=1150 && collective_us<1250)begin
++     if(normal_unlock && !positive_stick && landing_delay<=1 && ch3<=1150 && landing_collective_low)begin
+       if(landing_ms<1500)landing_ms<=landing_ms+1'b1;
+       else begin
+        land_lock<=1;taking_off<=0;flying<=0;flying_ms<=0;landing_ms<=0;
+--- v4/core/flight_core.v
++++ v15/core/flight_core.v
+@@ -419,13 +419,18 @@
+         .saturation_positive(allocation_sat_positive),.saturation_negative(allocation_sat_negative),
+         .update(controller_update),.busy(controller_busy),.roll_us(correction_roll),.pitch_us(correction_pitch),.yaw_us(correction_yaw),.fault(rate_controller_fault));
+     reg [15:0] pending_throttle=1000;
+-    ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS)) flight_state(.clk(clk50),.rst_n(rst_n),.armed(armed_usable),
+-     .ch3(ch3),.collective_us(selected_throttle),.motor_prepared(motor_prepared),
++    ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS),.PRECHECKED_COLLECTIVE(1)) flight_state(.clk(clk50),.rst_n(rst_n),.armed(armed_usable),
++     .ch3(ch3),.collective_us(selected_throttle),.collective_below_landing(selected_collective_below_landing),.motor_prepared(motor_prepared),
+      .taking_off(taking_off),.flying(flying),.land_lock(land_lock),.preparation_mask(preparation_mask));
+     assign taking_off_out=taking_off;
+     assign flight_state_flags={auto_takeoff,flying,motor_prepared,taking_off};
+     assign throttle_takeover_active=1'b0;assign throttle_pickup_us=16'd0;
+     wire [15:0] fallback_collective,fallback_unmasked_collective;
++    // Compare each numeric branch before the late live availability selection.
++    // No state or cycle is added; active implies public fallback equals unmasked.
++    (* syn_keep = 1 *) wire fallback_collective_below_landing=fallback_unmasked_collective<1250;
++    (* syn_keep = 1 *) wire auto_collective_below_landing=hold_collective_us<1250;
++    wire selected_collective_below_landing=height_fallback_active ?fallback_collective_below_landing:auto_collective_below_landing;
+     height_loss_fallback fallback_control(.clk(clk50),.rst_n(rst_n),
+      .healthy(sensor_ok && rc_valid && ch5>=1800 && ch5<=2200 && fallback_norm_valid && !land_lock),
+      .armed(armed),.taking_off(taking_off),.height_available(vertical_available),
+--- v15/core/height_loss_fallback.v
++++ v16/core/height_loss_fallback.v
+@@ -22,7 +22,10 @@
+  reg [15:0] last_good=MIN_US,manual_us=MIN_US,anchor_us=MIN_US;
+  reg [15:0] anchor_stick=1500;
+  wire enter=armed && taking_off && seen && !height_available;
+- assign active=rst_n && healthy && armed && (latched || enter);
++ // Identity wire, with a local synthesis-only fanout limit on this data driver.
++ wire active_fanout_limited /* synthesis syn_maxfan = 50 */;
++ assign active_fanout_limited=rst_n && healthy && armed && (latched || enter);
++ assign active=active_fanout_limited;
+  assign latched_active=rst_n && healthy && armed && latched;
+  assign takeover_ready=rst_n && healthy && armed && (latched || taking_off && seen);
+  assign prior_collective_valid=seen;

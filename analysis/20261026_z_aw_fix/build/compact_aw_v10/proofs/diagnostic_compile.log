@@ -1,0 +1,5 @@
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs\v9_diag.v:21: error: Unable to bind wire/reg/memory `z_reason' in `tb.a'
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs\v10_diag.v:21: error: Unable to bind wire/reg/memory `z_reason' in `tb.b'
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs\v9_diag.v:21: error: Unable to bind wire/reg/memory `z_reason' in `tb.c'
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs\v10_diag.v:21: error: Unable to bind wire/reg/memory `z_reason' in `tb.d'
+4 error(s) during elaboration.

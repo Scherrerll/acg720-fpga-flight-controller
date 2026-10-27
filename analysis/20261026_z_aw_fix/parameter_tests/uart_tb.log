@@ -1,0 +1,2 @@
+PASS UART physical 434 clocks/bit 115200 false-start bad-stop
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\parameter_tests\uart_tb.v:20: $finish called at 282360000 (1ps)

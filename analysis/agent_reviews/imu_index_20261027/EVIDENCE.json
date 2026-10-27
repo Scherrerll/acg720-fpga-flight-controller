@@ -1,0 +1,215 @@
+{
+  "observed_utc": "2026-10-26T23:52:07.830465+00:00",
+  "read_only": true,
+  "source_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B3\\source\\core\\ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\source\\core\\ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\canonical\\source\\core\\ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v18\\canonical\\source\\core\\ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v20\\canonical\\source\\core\\ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a"
+  },
+  "raw_TR": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v18\\physical_p3r0_dsploc_01\\source\\impl\\pnr\\acg720_ano_port.tr",
+    "sha256": "4b6d1daa2c528b95f3b4a3d7501f71770dc5f321f49f8ba0db422a53c096f678",
+    "setup_path9_line": 857,
+    "slack_ns": -0.563,
+    "period_ns": 20.0,
+    "launch": "core/imu/estimator/index_1_s7/Q",
+    "endpoint": "core/imu/estimator/m_a_21_s0/D",
+    "data_delay_ns": 20.505,
+    "route_delay_ns": 14.149,
+    "cell_delay_excluding_C2Q_ns": 6.025,
+    "C2Q_ns": 0.331,
+    "clock_skew_ns": 0.0,
+    "reported_logic_levels": 15,
+    "five_largest_data_routes_ns": [
+      2.959,
+      2.434,
+      2.216,
+      1.994,
+      1.757
+    ]
+  },
+  "actual_v18_DSP_VG": {
+    "VG_sha256": "64e76270fe35298e698bfe5b14b9d9e267469f746d3c2382a8a15284c5942d4f",
+    "index1_replicas": {
+      "index_1_s0": {
+        "Q": "index[1]",
+        "fanout": 129
+      },
+      "index_1_s7": {
+        "Q": "index_1_15",
+        "fanout": 127
+      }
+    },
+    "low_two_bit_XNOR_decoders": {
+      "n8507_s5": {
+        "pins": {
+          "F": "n8507_11",
+          "I0": "index_0_17",
+          "I1": "index_1_15"
+        },
+        "INIT": 9,
+        "fanout": 174
+      },
+      "n8507_s6": {
+        "pins": {
+          "F": "n8507_12",
+          "I0": "index_0_17",
+          "I1": "index_1_15"
+        },
+        "INIT": 9,
+        "fanout": 174
+      }
+    }
+  },
+  "exact_v4_global100_control_VG": {
+    "VG_sha256": "ee563db30b106af8d2621a8a24ec4476a080aac73095a2b5348cad7ba1878f80",
+    "index1_replicas": {
+      "index_1_s0": {
+        "Q": "index[1]",
+        "fanout": 59
+      },
+      "index_1_s7": {
+        "Q": "index_1_17",
+        "fanout": 51
+      },
+      "index_1_s8": {
+        "Q": "index_1_19",
+        "fanout": 100
+      },
+      "index_1_s9": {
+        "Q": "index_1_21",
+        "fanout": 50
+      }
+    },
+    "low_two_bit_XNOR_decoders": {
+      "n8507_s5": {
+        "pins": {
+          "F": "n8507_11",
+          "I0": "index_0_20",
+          "I1": "index_1_17"
+        },
+        "INIT": 9,
+        "fanout": 48
+      },
+      "n8507_s6": {
+        "pins": {
+          "F": "n8507_12",
+          "I0": "index_0_20",
+          "I1": "index_1_17"
+        },
+        "INIT": 9,
+        "fanout": 100
+      },
+      "n8507_s7": {
+        "pins": {
+          "F": "n8507_13",
+          "I0": "index_0_20",
+          "I1": "index_1_17"
+        },
+        "INIT": 9,
+        "fanout": 100
+      },
+      "n8507_s8": {
+        "pins": {
+          "F": "n8507_14",
+          "I0": "index_0_20",
+          "I1": "index_1_17"
+        },
+        "INIT": 9,
+        "fanout": 100
+      }
+    }
+  },
+  "current_family_global100_physical": {
+    "terminal_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_fan100_native\\physical_p3r0_01\\TERMINAL_MANIFEST.json",
+    "terminal_sha256": "c11fe792a426317a752984dd200449d3185d63767d5cba5b8214b02b4b451ca3",
+    "classification": "route_failure",
+    "vendor_actual_p_wait": 1,
+    "runner_actual_p_wait": 1,
+    "passed": false,
+    "resource_delta": {
+      "FF": 81,
+      "LUT": 83
+    },
+    "route_error": "707; see preserved original physical log, not a timing pass"
+  },
+  "earlier_B0AB_global100_study": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ab_control\\fanout100_study\\decision.json",
+    "sha256": "cf3b019b082dcdfa5beeb3276fb4ccc907649b9700039f425abbd2574e4f8741",
+    "critical_probes": {
+      "estimator_index1": {
+        "anchor_sink": "/core/imu/estimator/n8137_s5/I1",
+        "baseline_driver": "/core/imu/estimator/index_1_s7/Q",
+        "baseline_fanout": 125,
+        "candidate_driver": "/core/imu/estimator/index_1_s7/Q",
+        "candidate_fanout": 51,
+        "candidate_same_stem_fanouts": {
+          "/core/imu/estimator/index_1_s0/Q": 56,
+          "/core/imu/estimator/index_1_s7/Q": 51,
+          "/core/imu/estimator/index_1_s8/Q": 100,
+          "/core/imu/estimator/index_1_s9/Q": 51
+        }
+      },
+      "index_decode": {
+        "anchor_sink": "/core/imu/estimator/n8194_s48/I2",
+        "baseline_driver": "/core/imu/estimator/n8137_s5/F",
+        "baseline_fanout": 174,
+        "candidate_driver": "/core/imu/estimator/n8137_s8/F",
+        "candidate_fanout": 100,
+        "candidate_same_stem_fanouts": {
+          "/core/imu/estimator/n8137_s5/F": 48,
+          "/core/imu/estimator/n8137_s6/F": 100,
+          "/core/imu/estimator/n8137_s7/F": 100,
+          "/core/imu/estimator/n8137_s8/F": 100
+        }
+      }
+    },
+    "resource_delta": {
+      "T_Register": 81,
+      "T_Lut": 88,
+      "T_Alu": 0,
+      "T_Bsram": 0,
+      "T_MULT12X12": 0,
+      "T_MULT27X36": 0,
+      "T_MULTALU27X18": 0,
+      "logic": 88
+    },
+    "PNR_runs": 0,
+    "adopted": false
+  },
+  "index_transitions": {
+    "initial_index": 0,
+    "assign_zero_sites": 10,
+    "increment_sites": 6,
+    "other_assignments": 0,
+    "reset_and_invalidate_do_not_assign_index": true
+  },
+  "mapped_previous_LPF_bit8_binary_probe": {
+    "all_23_legal_nonzero_indices": true,
+    "random_arrays_per_index": 20,
+    "previous_word_matches": 460,
+    "total_cases": 460,
+    "current_word_matches": 217,
+    "scope": "Independent direct LUT INIT/MUX evaluation against 24 random29bit words using seed27; diagnostic localization only, not RTL equivalence proof."
+  },
+  "bound_report_inputs": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v20\\canonical\\source\\core\\ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v18\\physical_p3r0_dsploc_01\\source\\impl\\gwsynthesis\\acg720_ano_port.vg": "64e76270fe35298e698bfe5b14b9d9e267469f746d3c2382a8a15284c5942d4f",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\source\\impl\\gwsynthesis\\acg720_ano_port.vg": "ee563db30b106af8d2621a8a24ec4476a080aac73095a2b5348cad7ba1878f80",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\routing_rescue_20261015\\mtf01p_b0ab_control\\fanout100_study\\decision.json": "cf3b019b082dcdfa5beeb3276fb4ccc907649b9700039f425abbd2574e4f8741",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\timing_closure_20261025\\resource_analysis.md": "35a9aaede6c934407c9c38464569cdf5f2ebe214676a7c08bf45484a11f2ca1a",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_fan100_native\\source_review.md": "8d2491297a2ab23a18abc457b6c8ecd735d362c2e744a3dd78fbc273dd4e153b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\verification\\physical.log": "16ed40f0cfd8b8717a0fd57387063c20dd5406ad4b931cc89f41c13e3fdaf1a3",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\verification\\resource_comparison.json": "69509048966a600491e2bb025328df80375384c5a06d80ae2b7dda23d5834063"
+  },
+  "candidate_edited": false,
+  "vendor_executed": false,
+  "hardware_accessed": false,
+  "production_export_verifier_unchanged": {
+    "export_qualified_v4.py": "0aca113522b6d125f17edaf10fd95985284d78f74389ae40a7fd80aaac78442a",
+    "verify_release.py": "645e302458ca6b8f064035c919c30b9931ffd9cbb7bfc42fc7e21105eb9aa041"
+  },
+  "report_sha256": "77f4076bf45f73a1c2e3962eea53b750c7c00b8c17d873845c8f3707b4726aa2"
+}

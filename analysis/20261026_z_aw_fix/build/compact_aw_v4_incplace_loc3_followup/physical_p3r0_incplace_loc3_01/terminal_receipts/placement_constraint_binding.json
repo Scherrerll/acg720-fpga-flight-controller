@@ -1,0 +1,12 @@
+{
+  "original_cst_sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+  "combined_cst_sha256": "af2bd1c8bf92630fbba36f8f28438d6b865352c6e3bd24f007dc008df5e3c98e",
+  "locations": {
+    "acc_time/output_az_3_s0": "R34C24[0][A]",
+    "mtf/metric/vy_x100_28_s0": "R50C56[3][B]",
+    "previous_pose_valid_s0": "R36C78[0][B]"
+  },
+  "copied_seed_sha256": "f61026f1a52bf700951acaa1997494a39c1753a4c836fd89b2c68de499676bbe",
+  "original_seed_sha256": "f61026f1a52bf700951acaa1997494a39c1753a4c836fd89b2c68de499676bbe",
+  "only_added_commands": "INS_LOC, three source DFFs from old raw late paths1/3/8; no SDC changes"
+}

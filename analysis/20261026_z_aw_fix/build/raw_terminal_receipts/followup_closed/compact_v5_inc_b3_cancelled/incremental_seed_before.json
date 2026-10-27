@@ -1,0 +1,19 @@
+{
+  "source_pr": "C:\\Users\\ScherrerL\\Desktop\\apple\\runtime_xy_pi_20261026\\builds\\idle_integral_p3r0\\source\\impl\\pnr\\acg720_ano_port.pr",
+  "source_pr_sha256": "cf1f4230147cc0393ccbe76d90d911d95b2a7c4b3f866769ace2114985ed1892",
+  "copied_pr": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\physical_p3r0_inc_b3_01\\donor\\B0B3_selected_P3R0.pr",
+  "copied_pr_sha256": "cf1f4230147cc0393ccbe76d90d911d95b2a7c4b3f866769ace2114985ed1892",
+  "qualification_sha256": "cc59500cde47fb8ccacf2c929c64a0dc218cf6153fdc80a83ff90b40913b3470",
+  "official_guides_sha256": {
+    "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/doc/EN/SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf": "c8ee7e8cb8486220a8639424f71debe9f4c3dff0d4c365860474c24782ded08c",
+    "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/doc/EN/SUG100-4.4.7E_Gowin Software User Guide.pdf": "b4e8891ffecdfcd8f60f060cb6025e0ab09e7e177759e3fb6570ade8c1c20d1f"
+  },
+  "official_pages": {
+    "Tcl_pdf": 51,
+    "detailed_pdf": [
+      54,
+      55
+    ]
+  },
+  "documentation_note": "Tcl guide says .p; detailed software guide specifies .pr for incremental PNR. Actual tool acceptance decides; no fallback in this attempt."
+}

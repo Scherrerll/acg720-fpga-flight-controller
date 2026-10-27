@@ -1,0 +1,27 @@
+{
+  "scope": "Exact v4 source/SYN/P3/R0 unchanged; one physical routing knob only, no synthesis/hardware.",
+  "reason": "Original v4 P3R0 fully routed49.456MHz/setup−0.220ns. Route Maxfan60 is within documented1..100; smaller values may cause route failure. Keep all other baseline options.",
+  "official_manual": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG100-4.4.7E_Gowin Software User Guide.pdf",
+  "official_manual_sha256": "b4e8891ffecdfcd8f60f060cb6025e0ab09e7e177759e3fb6570ade8c1c20d1f",
+  "pdf_page": 52,
+  "source_freeze_sha256": "933482eff5ff7ab4e9dffa69b06d358c61dc422ef92977ac0e51bd5e4d7ae7d7",
+  "VG_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+  "physical_options": {
+    "place": 3,
+    "route": 0,
+    "map_option": 2,
+    "replicate_resources": 0,
+    "timing_driven": 1,
+    "route_maxfan": 60
+  },
+  "period_ns": 20,
+  "new_scripts": {
+    "independent_raw_review.py": "f3204492feddac889eb839aaee14c86871ebcd2a29c224bfb5f3b1ad4544e730",
+    "launch_physical_hidden.py": "631cb3db51d142285de868c28be055fdca40c26bec999d4c397dad7837f38bbf",
+    "physical_snapshot.py": "22c37e070213f8010eb5dab44b98d05dbc712e877048650e289bd752b1f94f9d",
+    "prepare.py": "e93e544863512e73a2d9a88395d76fdcc238f711b592fee72fb417172dd4e556",
+    "run_physical.py": "7095f9ada86c7fbb01bc88050102dacb4dbfd0219967ca436084ef311f5b769a",
+    "seal_terminal.py": "9bd1b0a65c4df3db56407522f3018297738f85dd309fab1bac3c76e781e3bf20"
+  },
+  "PNR_started": false
+}

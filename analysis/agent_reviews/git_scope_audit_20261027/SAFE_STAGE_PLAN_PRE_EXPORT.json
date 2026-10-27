@@ -1,0 +1,466 @@
+{
+  "created_utc": "2026-10-27T03:39:35.836493+00:00",
+  "stage": "pre-export exact proposed file list; no staging performed",
+  "scope_roots": [
+    "firmware/B0B4",
+    "ground/B0B4",
+    "analysis/20261026_z_aw_fix",
+    "analysis/agent_reviews"
+  ],
+  "filelist": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\git_scope_audit_20261027\\SAFE_STAGE_PATHS_PRE_EXPORT.txt",
+  "literal_NUL_pathspec": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\git_scope_audit_20261027\\SAFE_STAGE_PATHSPEC_PRE_EXPORT.nul",
+  "literal_NUL_pathspec_note": "Each NUL-delimited entry has :(literal), so paths cannot expand to additional files. Parent reviews and stages explicitly; no Git write was executed here.",
+  "existing_included": {
+    "files": 4388,
+    "bytes": 55640065,
+    "MiB": 53.063
+  },
+  "planned_file_count_including_three_generated_plan_files": 4391,
+  "included_roots": {
+    "firmware/B0B4": {
+      "files": 63,
+      "bytes": 781571,
+      "MiB": 0.745
+    },
+    "ground/B0B4": {
+      "files": 46,
+      "bytes": 344378,
+      "MiB": 0.328
+    },
+    "analysis/20261026_z_aw_fix": {
+      "files": 4102,
+      "bytes": 45113134,
+      "MiB": 43.023
+    },
+    "analysis/agent_reviews": {
+      "files": 177,
+      "bytes": 9400982,
+      "MiB": 8.965
+    }
+  },
+  "largest30_included": [
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_timing/synthesis_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1620229,
+      "MiB": 1.545
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v11/synthesis_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1546595,
+      "MiB": 1.475
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_fan100_native/physical_p3r0_01/terminal_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1533583,
+      "MiB": 1.463
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v13_native/physical_p3r0_01/terminal_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1530873,
+      "MiB": 1.46
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v12/synthesis_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1528965,
+      "MiB": 1.458
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v9/synthesis_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1528888,
+      "MiB": 1.458
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v4_native/physical_p3r0_01/terminal_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1528833,
+      "MiB": 1.458
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v10/synthesis_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1527923,
+      "MiB": 1.457
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v8/synthesis_receipts/acg720_ano_port.vg.gz",
+      "bytes": 1522558,
+      "MiB": 1.452
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22_fan100/PARENT_MAPPED_FANOUT.json",
+      "bytes": 1427805,
+      "MiB": 1.362
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22_fan100/prepared_revisions/revision_01/PARENT_MAPPED_FANOUT.json",
+      "bytes": 1427805,
+      "MiB": 1.362
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_qw2nbxjg/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 669875,
+      "MiB": 0.639
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_l0fk7f6k/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 669875,
+      "MiB": 0.639
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_jpyb8upg/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 669875,
+      "MiB": 0.639
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v22_proof_SYN_archive_9p9vli81/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 571265,
+      "MiB": 0.545
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/audit_retry02/CE_TOPOLOGY_INVESTIGATION.json",
+      "bytes": 564272,
+      "MiB": 0.538
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22_fan100/PHYSICAL_INPUT_BINDING.json",
+      "bytes": 535591,
+      "MiB": 0.511
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22_fan100/physical_prepared_revisions/closed_unlaunched_01/PHYSICAL_INPUT_BINDING.json",
+      "bytes": 535591,
+      "MiB": 0.511
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22_fan100/physical_preparation_attempt01/PHYSICAL_INPUT_BINDING.json",
+      "bytes": 535591,
+      "MiB": 0.511
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v21/audit_retry02/results_01/escaped_port_aliases.json",
+      "bytes": 491840,
+      "MiB": 0.469
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_xlbn8lj7/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 467471,
+      "MiB": 0.446
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_pf0u20_3/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 467471,
+      "MiB": 0.446
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_s6vavpxo/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 388780,
+      "MiB": 0.371
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_crw9pbpo/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 388780,
+      "MiB": 0.371
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22_dsp_followup/physical_p3r0_dsploc_01/terminal_receipts/donor_evidence_binding.json",
+      "bytes": 301317,
+      "MiB": 0.287
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/donor_evidence_binding.json",
+      "bytes": 292156,
+      "MiB": 0.279
+    },
+    {
+      "path": "analysis/agent_reviews/v22_fan100_result_20261027/REVIEW.json",
+      "bytes": 278394,
+      "MiB": 0.265
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/PHYSICAL_INPUT_BINDING.json",
+      "bytes": 269000,
+      "MiB": 0.257
+    },
+    {
+      "path": "analysis/20261026_z_aw_fix/build/compact_aw_v22/prepared_revisions/revision_01/PHYSICAL_INPUT_BINDING.json",
+      "bytes": 268855,
+      "MiB": 0.256
+    },
+    {
+      "path": "analysis/agent_reviews/release_20261027/proof_SYN_archive_whngxwnx/evidence/selected/EVIDENCE_INDEX.json",
+      "bytes": 259874,
+      "MiB": 0.248
+    }
+  ],
+  "included_over90MiB": [],
+  "excluded_reasons": {
+    "cache_or_scratch": {
+      "files": 4,
+      "bytes": 56596,
+      "MiB": 0.054
+    },
+    "exact_test_archive_regenerable_payload": {
+      "files": 6380,
+      "bytes": 372863899,
+      "MiB": 355.591
+    },
+    "gitignored_raw_build_artifact": {
+      "files": 117,
+      "bytes": 1130207331,
+      "MiB": 1077.85
+    },
+    "unqualified_or_historical_FS_not_forced": {
+      "files": 8,
+      "bytes": 139653040,
+      "MiB": 133.184
+    }
+  },
+  "exact_test_archive_exclusion_roots": [
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_18_sw4qf",
+      "excluded_payload": {
+        "files": 265,
+        "bytes": 5189251,
+        "MiB": 4.949
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_18_sw4qf/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_18_sw4qf/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_c62j28kk",
+      "excluded_payload": {
+        "files": 263,
+        "bytes": 5186790,
+        "MiB": 4.947
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_c62j28kk/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_c62j28kk/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_dbii7ss7",
+      "excluded_payload": {
+        "files": 265,
+        "bytes": 5189251,
+        "MiB": 4.949
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_dbii7ss7/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_dbii7ss7/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_er1swheo",
+      "excluded_payload": {
+        "files": 263,
+        "bytes": 5186790,
+        "MiB": 4.947
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_er1swheo/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_er1swheo/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_esx_04so",
+      "excluded_payload": {
+        "files": 265,
+        "bytes": 5189251,
+        "MiB": 4.949
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_esx_04so/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_esx_04so/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_gy7pq4_v",
+      "excluded_payload": {
+        "files": 265,
+        "bytes": 5189251,
+        "MiB": 4.949
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_gy7pq4_v/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_gy7pq4_v/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_hz8nst6w",
+      "excluded_payload": {
+        "files": 263,
+        "bytes": 5186790,
+        "MiB": 4.947
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_hz8nst6w/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_hz8nst6w/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy",
+      "excluded_payload": {
+        "files": 79,
+        "bytes": 2462121,
+        "MiB": 2.348
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/functional_proof_inputs.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/PROOF_BINDING.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/REUSED_BINDINGS_RECHECK.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/runner_exit.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/SOURCE_EQUIVALENCE_BASIS.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/source_freeze.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/source_review.md",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/SYNTHESIS_PREPARATION.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/compile_exit.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/fsm_compile_exit.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/fsm_vvp_exit.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/runner_exit.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/top_safety_results.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_koh0g_cy/evidence/selected/dependencies/analysis/20261026_z_aw_fix/build/compact_aw_v17/proofs/vvp_exit.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_nuqtp3su",
+      "excluded_payload": {
+        "files": 265,
+        "bytes": 5189251,
+        "MiB": 4.949
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_nuqtp3su/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_nuqtp3su/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/proof_SYN_archive_whngxwnx",
+      "excluded_payload": {
+        "files": 265,
+        "bytes": 5189251,
+        "MiB": 4.949
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_whngxwnx/evidence/selected/EVIDENCE_INDEX.json",
+        "analysis/agent_reviews/release_20261027/proof_SYN_archive_whngxwnx/evidence/selected/functional_proof_inputs.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_pf0u20_3",
+      "excluded_payload": {
+        "files": 405,
+        "bytes": 7204185,
+        "MiB": 6.87
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_pf0u20_3/evidence/selected/EVIDENCE_INDEX.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_xlbn8lj7",
+      "excluded_payload": {
+        "files": 405,
+        "bytes": 7204185,
+        "MiB": 6.87
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/v20_proof_SYN_archive_xlbn8lj7/evidence/selected/EVIDENCE_INDEX.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_crw9pbpo",
+      "excluded_payload": {
+        "files": 434,
+        "bytes": 9463316,
+        "MiB": 9.025
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_crw9pbpo/evidence/selected/EVIDENCE_INDEX.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_s6vavpxo",
+      "excluded_payload": {
+        "files": 434,
+        "bytes": 9463316,
+        "MiB": 9.025
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/v21_proof_SYN_archive_s6vavpxo/evidence/selected/EVIDENCE_INDEX.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_jpyb8upg",
+      "excluded_payload": {
+        "files": 576,
+        "bytes": 93451449,
+        "MiB": 89.122
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_jpyb8upg/evidence/selected/EVIDENCE_INDEX.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_l0fk7f6k",
+      "excluded_payload": {
+        "files": 576,
+        "bytes": 93451449,
+        "MiB": 89.122
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_l0fk7f6k/evidence/selected/EVIDENCE_INDEX.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_qw2nbxjg",
+      "excluded_payload": {
+        "files": 576,
+        "bytes": 93451449,
+        "MiB": 89.122
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/v22_dsp_preparation_archive_qw2nbxjg/evidence/selected/EVIDENCE_INDEX.json"
+      ]
+    },
+    {
+      "root": "analysis/agent_reviews/release_20261027/v22_proof_SYN_archive_9p9vli81",
+      "excluded_payload": {
+        "files": 516,
+        "bytes": 10016553,
+        "MiB": 9.553
+      },
+      "retained_validation_metadata": [
+        "analysis/agent_reviews/release_20261027/v22_proof_SYN_archive_9p9vli81/evidence/selected/EVIDENCE_INDEX.json"
+      ]
+    }
+  ],
+  "retained_test_archive_metadata_count": 40,
+  "archive_policy": "Owner confirms these exact test archives are cached offline validation copies, not production exporter/verifier dependencies. Retain their EVIDENCE_INDEX and direct JSON/log/checksum validation metadata; omit source/ and content-addressed objects/ and duplicated binary payloads. Local files are retained, not deleted. This rule never applies to formal firmware/B0B4/evidence or release.",
+  "mandatory_after_export": [
+    "Every safe path listed by final firmware/B0B4/release_manifest.json and EVIDENCE_INDEX closure, including formal evidence/selected objects and all release records.",
+    "Explicit qualified firmware/B0B4/release/acg720_ano_port.fs only after final manifest/qualification."
+  ],
+  "expected_force_only": [
+    "firmware/B0B4/release/acg720_ano_port.fs"
+  ],
+  "force_note": "Root .gitignore:8 *.fs matches the future qualified FS. No failed FS, raw .pr/.vvp, cache, whole out or test object directories should be forced. Any unexpected final-manifest ignored path needs explicit review before staging.",
+  "always_excluded_roots": [
+    "out/",
+    "firmware/B0B2/evidence/copy99_proof/proof.zip"
+  ],
+  "name_excluded_counts_before_stat_or_read": {},
+  "secret_contents_opened_hashed_or_printed": false,
+  "unrelated_copy99_zip_statted_or_read_or_hashed": false,
+  "producer_files_changed_during_inventory": [],
+  "source_identity_or_freeze_claimed": false,
+  "requires_post_export_manifest_append_and_refresh": true,
+  "final_release_manifest_exists": false,
+  "git_write_stage_commit_push_performed": false,
+  "existing_files_modified": false,
+  "planned_total_including_generated_records": {
+    "files": 4391,
+    "bytes": 56469087,
+    "MiB": 53.853
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "register_cases": 121,
+  "stream_fragment_sizes": [
+    1,
+    2,
+    7,
+    23,
+    4096
+  ],
+  "physical_uart_passed": true,
+  "scope": "actual RTL and shipping host parser; no hardware"
+}

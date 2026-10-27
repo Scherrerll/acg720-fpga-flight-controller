@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "profile": "physical_p3r0_01",
+  "scripts_AST_and_hashes_passed": true,
+  "parent_scripts_unchanged": true,
+  "actual_AZ_top13_coreFSM_guard_schema_bound": true,
+  "no_invented_VY_binding": true,
+  "no_retiming_or_extra_constraint_option": true,
+  "Tcl_info_complete_returncode": 0,
+  "preparation_sha256": "f7182ed166e78c3bf60221ac1127a56406a3bfa54b2af28528bd86da4a0dc205",
+  "vendor_started": false,
+  "runtime_attempt_absent": true
+}

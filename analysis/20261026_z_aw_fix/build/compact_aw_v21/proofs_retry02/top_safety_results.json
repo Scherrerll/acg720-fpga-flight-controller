@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "cases": 13,
+  "original_stimulus_unchanged": true,
+  "default_branch_passed": true,
+  "vendor_branch_passed": true,
+  "vendor_SP_instances": 28,
+  "scope": "Original top13 bytes and inherited forces unchanged; fixture-only GSR root added outside tb."
+}

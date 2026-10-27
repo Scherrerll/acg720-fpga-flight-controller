@@ -1,0 +1,18 @@
+{
+  "created49_chat": "01a17a00-9d49-7860-ba99-03fe403f6b62",
+  "hostId": "local",
+  "requested_title": "B0B4 49 MHz 降频后备验证",
+  "startup_observed": "active/inProgress",
+  "main50_chat": "01a17788-4242-79e0-9a84-aa5021c9aad4",
+  "user_instruction": "降频这个你开一个新会话去做吧，你就全力做50MHZ的，记得开之前把需求说好",
+  "requirements_written_before_creation": true,
+  "handoff": "analysis/20261026_z_aw_fix/HANDOFF_49MHZ_SEPARATE_CHAT_20261027.md",
+  "handoff_sha256": "e93ad92110825cf1fa635d58b804bbd468da5fc82173744febe80e9f519ab639",
+  "new49_unique_write_root": "C:/Users/ScherrerL/Desktop/apple/runtime_b0b4_49mhz_20261027",
+  "frozen58_source_verified": true,
+  "main_owns": ["canonical repository and Git", "all50MHz work", "serial/programmer/hardware", "formal promotion and release"],
+  "new_chat_owns": ["isolated real49MHz offline implementation and proofs", "at most one owned physical Gowin job"],
+  "main_physical_slots": 1,
+  "new_chat_hardware_actions_authorized": false,
+  "main_must_stop49_implementation": true
+}

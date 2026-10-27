@@ -1,0 +1,5 @@
+{
+  "donor_driver_sha256": "a451e421da29e047eb66e7b16e9a4fb34d7f679c5b435e55611a0ff3bf9f19cd",
+  "changes": "Only source v3->v4 and exact expected hold hash changed; unchanged5 fixture assertions plus per-cycle v1 output/integral/reference checks",
+  "hardware": false
+}

@@ -1,0 +1,13 @@
+{
+  "reference_B4_v1_sha256": "5a928e0a68db70974049a4debb0b841ca06fa00598a4ffb4cb506997cfed657c",
+  "candidate_compact_sha256": "479f757149a57ac0b5f9e0334dab80cae475a5345b834fde9c5130c701057ac3",
+  "frozen_original_driver_sha256": "ae35441dd4e75c2d439de879b77e583a61d44779775186a5ba86385fb2390cf7",
+  "frozen_original_testbench_sha256": "f43ca284dec68382a376a179173dff6819d510752c1474579f285aaf85febe56",
+  "changes": [
+    "New independentcompact path and explicit55sourcehash",
+    "Third actualB4-v1 module for cycle-by-cycle ports and persistent-integral equivalence",
+    "CASE5uses already justified20000clk cadence; originaldt andassertions retained",
+    "Cancel compares actualI/collective/command/state and no publication rather than dead private sum slots zero"
+  ],
+  "not_claimed": "Full formal equivalence or aircraft dynamics; no hardware"
+}

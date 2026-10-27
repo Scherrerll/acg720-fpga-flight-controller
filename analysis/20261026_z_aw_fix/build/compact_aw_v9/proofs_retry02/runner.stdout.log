@@ -1,0 +1,5 @@
+five actual_wait 0
+boundary actual_wait 0
+top actual_wait 0
+contention actual_wait 0
+PASS v9 five/boundary/top13/four-client proofs

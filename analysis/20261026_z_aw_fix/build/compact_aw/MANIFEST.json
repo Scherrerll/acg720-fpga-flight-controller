@@ -1,0 +1,110 @@
+{
+  "scope": "Frozen compact_aw_v1 resource-lifetime build diagnostics. SYN/MAP0; project01 rejected; physical02 realexit1/unrouted746/noSTA. No accepted bitstream. Source55/root snapshots bound in FINAL_STATUS; heavy external build artifacts remain at recorded source paths. Excludes compiled/cache.",
+  "files": [
+    {
+      "path": "candidate.diff",
+      "bytes": 5438,
+      "sha256": "96050cd831fe4eee062cb5d949f12fcde82992f8fec82b80e52c836e3ab199c3"
+    },
+    {
+      "path": "FINAL_STATUS.json",
+      "bytes": 6131,
+      "sha256": "b03e4e36b149144ead857365b0de65b90b9ad7d28a819fb72f44e4c1c8b1fdd8"
+    },
+    {
+      "path": "finish_stage.py",
+      "bytes": 4410,
+      "sha256": "74fc194d889e36526e7c6a9fb7c81d62f73d9bb247580ef2ce186f28cb1c9ad3"
+    },
+    {
+      "path": "physical_retry02.stderr.log",
+      "bytes": 1075,
+      "sha256": "57b03008a676d013c0d53e393793317a936b9a7a240b72d2d521132137a88b26"
+    },
+    {
+      "path": "physical_retry02.stdout.log",
+      "bytes": 210,
+      "sha256": "e358257f0763e386bbf2853ac762651a830fef4763c3c08a1d9b5ed9d2f44780"
+    },
+    {
+      "path": "physical_retry02_process.json",
+      "bytes": 248,
+      "sha256": "30d0aeef61dee2bf1412e388da61b4ea4f0f3b8e7023e2c76f620aacca8d0574"
+    },
+    {
+      "path": "physical_runner.stderr.log",
+      "bytes": 1059,
+      "sha256": "837255904c50e3570f894c9d075f002a595dbda9b2eba73b56b9141b1b6c9824"
+    },
+    {
+      "path": "physical_runner.stdout.log",
+      "bytes": 210,
+      "sha256": "8ba238433c35f91a950c590dad6a1668784b19c621335537b4885641f1121cb0"
+    },
+    {
+      "path": "physical_runner_process.json",
+      "bytes": 240,
+      "sha256": "764d4cc10959a054f1a9cf18f5d5cc55103f84648fc26994b94e1545a438744c"
+    },
+    {
+      "path": "prepare_project_retry.py",
+      "bytes": 2271,
+      "sha256": "a174268dad3d1fe00490fa5b50f298619107e84bdbfdb5afccbbfaf00006fab4"
+    },
+    {
+      "path": "prepare_variant.py",
+      "bytes": 3740,
+      "sha256": "0a7fe6c7bb065d1887b66326d937ce6673b0ba9a43ed837de3f5d22abf77549f"
+    },
+    {
+      "path": "project_retry_provenance.json",
+      "bytes": 764,
+      "sha256": "c6a74a5b352055a1e95eab6f8a8bb829bbce15aac5948caae67e46a5b5d1ffbe"
+    },
+    {
+      "path": "run_physical_p3r0.py",
+      "bytes": 6171,
+      "sha256": "8ab5cac37ec5fa369e616db305ba81c47d1a9e85da4d74c378e28ae1e5e6fab2"
+    },
+    {
+      "path": "run_physical_p3r0_retry02.py",
+      "bytes": 6880,
+      "sha256": "dde005a089e5df0b9e409b4779687142c57860936f3b1d18a2ac773ff4c061fc"
+    },
+    {
+      "path": "run_synthesis.py",
+      "bytes": 6383,
+      "sha256": "fc499a342a5ee83555770e4cfb83507790c00a118c3daa9d5617295e542e442a"
+    },
+    {
+      "path": "source_freeze.json",
+      "bytes": 11870,
+      "sha256": "ac7e467453007878cd6749e3c5c98e70bdbe01b965d4bf0256906d6ae62d63f0"
+    },
+    {
+      "path": "strict_ff_clock_check.json",
+      "bytes": 292,
+      "sha256": "57942c04678a3d0a6492fa6d12dbf8e5356e490366cb835485ba4893dedf1666"
+    },
+    {
+      "path": "SYNTHESIS_REPORT.md",
+      "bytes": 5441,
+      "sha256": "7967d0fd2e4f8461051b5a1bbb7c504639fc7a5872343f74799e4f17c2806666"
+    },
+    {
+      "path": "synthesis_runner.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "synthesis_runner.stdout.log",
+      "bytes": 3945,
+      "sha256": "32f9bc3e96232971e971af9b52377a489db519aa7680608d45c0e54f544a7f86"
+    },
+    {
+      "path": "synthesis_runner_process.json",
+      "bytes": 235,
+      "sha256": "1f99174056348b7010fb505a5ad822a925bc2a1ec3cc82dd45212ffbf0c65fdc"
+    }
+  ]
+}

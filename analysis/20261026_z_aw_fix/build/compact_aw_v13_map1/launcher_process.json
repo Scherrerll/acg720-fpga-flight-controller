@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v13_map1\\launch_synthesis_hidden.py"
+  ],
+  "pid": 54408,
+  "started_utc": "2026-10-26T15:35:35.655801+00:00",
+  "scope": "Hidden map1 SYN-only supervisor launched; actual root wait comes from original p.wait."
+}

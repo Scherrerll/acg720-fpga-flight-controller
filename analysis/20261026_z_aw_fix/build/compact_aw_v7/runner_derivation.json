@@ -1,0 +1,8 @@
+{
+  "baseline_runner": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v5\\run_synthesis.py",
+  "baseline_runner_sha256": "87f36cb27859f379c0bf2eb2909665f729015d33c21ef191410bc47514113904",
+  "source_freeze_sha256": "bf2f7d0765d53f06207a786afaee99cc3cdf673e1d05f38bd51fa11d9e9a1113",
+  "runner_sha256": "f56dc7a472e16a3f8fbf9b34772653a4a06b5f26e37b207b3ebe284fc7da899a",
+  "supervisor_sha256": "48826f75f97f37d6c641eaff64c89bed15b199c6249753a5281ecfa843ed8fcf",
+  "changes": "Paths/labels v5->v7 and baseline v4->v5; hold freeze update; frozen proof/note checks; copied executed runner; no-PNR artifact assertion; final artifact manifest. Original helper and extended gates unchanged."
+}

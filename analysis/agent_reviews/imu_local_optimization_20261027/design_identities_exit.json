@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-10-27T03:19:57.1393070Z",
+  "ended_utc": "2026-10-27T03:19:57.2310300Z",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "7ca9e828dcf4e35d353a3b878ba79386e517f5621ea33217c439ff32b5496396",
+  "actual_child_exit_code": 0,
+  "script_sha256": "ed7889985cde283582b8cfb681ef63b27b1c26d5e138c52e6fb1e58675b74f53",
+  "command": [
+    "python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\imu_local_optimization_20261027\\check_design_identities.py"
+  ],
+  "scope": "Offline binary algebra and frozen source inventory only; not firmware, RTL or physical proof"
+}

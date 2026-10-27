@@ -1,0 +1,7 @@
+v22 is an isolated source55 fork of the actually sealed v20. Only position/mtf_xyz_hold_control.v changes: add a signed32 continuous wire carrying the unchanged signed32 function result, attach local syn_dspstyle="logic", and replace one same-width function call with that wire. Reverse exact byte replacements reconstruct the complete parent controller. Other54 files are byte-identical. No state, clock, latency, arithmetic, precision, SDC, CST, gain or build option changes.
+
+The actual function remains byte-identical: signed29 input; signed14 whole_mm implements truncation toward zero; signed10 cm divides by signed14 decimal10; signed32 result is cm*32'sd655360. Both addition operands at alt_speed remain signed32. Continuous-wire simulation settles after source-store NBA and long before state61 publication; speed_z_tick_store writes occur only on capture, not state61. No shift/add rewrite changes X/Z propagation.
+
+Official SUG550-2.4E pages45-47 allows object /* synthesis syn_dspstyle="logic" */; page31 priority example has signed16 wire mult with local logic hint. Whether Gowin propagates the hint through this function output remains an actual SYN question. No timing improvement is claimed.
+
+New controller bytes invalidate byte-identity reuse of the old six-controller dependency set. Fresh five cases, FRAC0/16 whole-controller miter, four-client contention and source-bound original top13 are required, plus actual-function alias miter. Unchanged guard/FSM/ground evidence is rebound to its exact dependencies only.

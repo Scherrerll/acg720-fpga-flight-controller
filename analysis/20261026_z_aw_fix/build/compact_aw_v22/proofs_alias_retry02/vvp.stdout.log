@@ -1,0 +1,2 @@
+PASS actual_alias vectors=53116 signed64=42768 fourstate=10348 all_upper13=8192 low16_reduction_classes=2 function_byte_identical=1
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v22\proofs_alias_retry02\alias_tb.v:36: $finish called at 53116000 (1ps)

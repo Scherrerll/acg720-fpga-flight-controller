@@ -1,0 +1,81 @@
+{
+  "scope": "Actual map2 vs map2 resources only; no route/STA claim.",
+  "baseline_v4_xml_sha256": "a322aac69685ef1eb12a6e6421e8551147a0f1c8da670db816c110f92707ee20",
+  "candidate_v9_xml_sha256": "1ebb13aeb2a08491e5b39187bcb7d0d9da5b1d023b88f492ae1e7939f9ad48b4",
+  "reference_v4_map2_build_input_sha256": "7a965f73a5fe35ab5cbcc22a017a2fb768cd5eca92d65ca85a0dc91310679ebb",
+  "candidate_v9_vg_sha256": "e99d1ec0928fa9c1650cbc6a7ac9c08d4b2ef0758cdb3a9eec11b04af5d0eb20",
+  "resources": {
+    "acg720_ano_port": {
+      "baseline_v4_map2": {
+        "T_Register": 27766,
+        "T_Alu": 9544,
+        "T_Lut": 36213,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "candidate_v9_map2": {
+        "T_Register": 27751,
+        "T_Alu": 9544,
+        "T_Lut": 36223,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "delta": {
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_Bsram": 0,
+        "T_MULTALU27X18": 0,
+        "T_Lut": 10,
+        "T_Register": -15,
+        "T_Alu": 0
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "baseline_v4_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4953,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "candidate_v9_map2": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4952,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_MULTALU27X18": 0,
+        "T_Lut": -1,
+        "T_Register": 0,
+        "T_Alu": 0
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "baseline_v4_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "candidate_v9_map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 438
+      },
+      "delta": {
+        "T_Lut": 1,
+        "T_Register": 0,
+        "T_Alu": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "case_count": 5,
+  "scope": "Five bounded actual RTL regressions; original cases1-4 plus slower-cadence CASE5. Original failed artificial-overrun case and exact diagnosis retained. No source changes, no private force, no plant/flight replay. Z-only cadence2500clocks and XY+Z cadence20000clocks; arithmeticdt unchanged.",
+  "first_attempt_results_sha256": "e253712df5b3cdad9ba838968c3d911a928fc59b18d72b8ccd9a377bd50a0745",
+  "retry_results_sha256": "52c1ef0ce5f5b593a14834511558e23cd7d49e2081462868428659c833ffca3e",
+  "successful_cases": [
+    {
+      "case": 1,
+      "name": "natural_upper_and_low_stick",
+      "exit_code": 0,
+      "seconds": 180.5609951019287,
+      "checks": [
+        "PASS natural upper windup: old1850=419/419 first4600ms; new below1850=44ms below1250=924ms upper_rejects=1716 accepted_down=77",
+        "PASS commit contract checked 2237 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "0b6fb9133ceefa7cd8e32fc893ede9e230aff133c560d43783193effeb05d281",
+      "trace_sha256": "a74da8058e2ca2d3ca625d1656faaa23795ec246e9d233e489f217721be88182"
+    },
+    {
+      "case": 2,
+      "name": "unsaturated_equivalence",
+      "exit_code": 0,
+      "seconds": 35.217358350753784,
+      "checks": [
+        "PASS unsaturated old/new publication equivalence: publications=400 positiveI=100 negativeI=150 delay=2clocks",
+        "PASS commit contract checked 400 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "dbdca538e9f703e4112cf7c972abedd78a860cb855551b4b490fef06bf1784e1",
+      "trace_sha256": "605b40f120d434f9cb4f03b70bdb1d7242c37dae7e8cd102b6623adee6a8f7b3"
+    },
+    {
+      "case": 3,
+      "name": "natural_lower_and_positive_recovery",
+      "exit_code": 0,
+      "seconds": 55.010321855545044,
+      "checks": [
+        "PASS natural lower saturation and positive recovery: lower_rejects=406 accepted_up=52 final_collective=1850",
+        "PASS commit contract checked 650 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "cdd101777f39b79abe63384a1622b97fc31dc7d81cf20016156616f661a79158",
+      "trace_sha256": "474abff8632bdabfc857841abc149843894c6a547c8ab0f3a073e970548c6b94"
+    },
+    {
+      "case": 4,
+      "name": "cancel_and_takingoff",
+      "exit_code": 0,
+      "seconds": 7.414284706115723,
+      "checks": [
+        "PASS eight staged cancel/reentry boundaries plus taking_off false; no stale publication; live safety mask retained",
+        "PASS commit contract checked 74 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "178911075374cb7f3351a2299016962eac740e2cb78b880519ed63574ce401b1",
+      "trace_sha256": "f8cb999e0df582b138794d66ec3aab721f8e63cd4c5c409c6dfcca0abbcb7792"
+    },
+    {
+      "case": 5,
+      "name": "corrected_xy_i0",
+      "actual_exit_code": 0,
+      "expected_exit_code": 0,
+      "compile_exit_code": 0,
+      "seconds": 91.10868167877197,
+      "checks": [
+        "PASS XY I0 retains exact old angles/zeroXYintegral across 75 callbacks while Z I is nonzero",
+        "PASS commit contract checked 150 times; every Z publication delayed exactly2clocks"
+      ],
+      "log_sha256": "83ae5498ef0fe0fdb7fca286499adc08a77b4e40772931765137a85a8704ccac",
+      "trace_sha256": "0814732ae58a4b0a80780b61927b0588b2a1ef792020e064bc96fd60c5892efe",
+      "local_compiled_omitted_sha256": "78bcb704e6992e13ac250f527720d2a54d4dde70f93085212220cf1610184684"
+    }
+  ],
+  "diagnosed_failure": {
+    "name": "diagnose_original_cadence",
+    "actual_exit_code": 1,
+    "expected_exit_code": 1,
+    "compile_exit_code": 0,
+    "seconds": 0.35029125213623047,
+    "checks": [],
+    "log_sha256": "405284309edb2501c496b23296cd1ad2f289fc4cd75e1eb687ed848d4447d4b3",
+    "trace_sha256": "cf800781df16fca1d6dc083097efc3d1148f60a73477f7b4bf52e1d4b18b63f0",
+    "local_compiled_omitted_sha256": "760e1e43a911fd1484e3204a90d6c35074048c1498840a5c84e82e40a2290c1c"
+  },
+  "source_stability_sha256": "213035dd64acb0bb0249f34b2d6accf49237b37a57410f50969503d5b8dd7f7b"
+}

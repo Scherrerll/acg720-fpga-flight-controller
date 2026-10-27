@@ -1,0 +1,20 @@
+{
+  "scope": "Offline preparation only. Root creates actual gate only after main and another agent independently review these final exact hashes. No vendor launch is authorized by this requirements file.",
+  "actual_gate_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22\\SYN_REVIEW_GATE.json",
+  "required_true_fields": [
+    "main_review_passed",
+    "independent_agent_review_passed"
+  ],
+  "source_freeze_sha256": "798c6443805d56556dbaeb9a4b43531159267b24e473283c6ef362fc00ddf5d6",
+  "proof_binding_sha256": "dd63ff4b218a10ae7f1fcf146e7f045e4057b3a4ef1caa1559cca412db8f47c0",
+  "reviewed_scripts_sha256": {
+    "run_synthesis.py": "98f5449e3789d1522ad8036c8eaa69eb226117c6988a1342c7faac8f5fa71925",
+    "audit_synthesis_only.py": "909e6ab9862546a56f586d75e4f492f342be3de10ed702c5036a220cfebc3f06",
+    "seal_synthesis.py": "17f897d1a5de47bb956bc7c8bf0a925833c87f71224b1c55392101810c4fc65f",
+    "launch_synthesis_hidden.py": "7e0a6f50f01cb37dae41f08d422d35d36aab4dddbb148fab5450ac251179d3f1",
+    "validation_contract.py": "0241257c9decc337b32033110a96330a1864701bfcb73a5b62ccbdb72bedc136"
+  },
+  "main_review_passed": false,
+  "independent_agent_review_passed": false,
+  "vendor_started": false
+}

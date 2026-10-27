@@ -1,0 +1,76 @@
+{
+  "scope": "Only this new terminal seal subtree; external raw evidence is bound in FINAL_STATUS.json.",
+  "files": [
+    {
+      "path": "FINAL_STATUS.json",
+      "bytes": 22921,
+      "sha256": "bc0aa8a7c12810543bfee3083fbde0d96b9e96e7c81f98a740407073187ab378"
+    },
+    {
+      "path": "raw/acg720_ano_port.cst",
+      "bytes": 1891,
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4"
+    },
+    {
+      "path": "raw/acg720_ano_port.rpt.txt.gz",
+      "bytes": 5374,
+      "sha256": "a3032ee0fc64b745d9a872b1bce0dd413279d6c8650ff6162233854091a0ed98"
+    },
+    {
+      "path": "raw/acg720_ano_port.sdc",
+      "bytes": 254,
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87"
+    },
+    {
+      "path": "raw/build_failure.json",
+      "bytes": 1483,
+      "sha256": "69ed388c735d8fbc7a420540a8d4d829d863ff2204c01168a79f646bba8a8672"
+    },
+    {
+      "path": "raw/build_input.json",
+      "bytes": 18404,
+      "sha256": "8f364fe9e3d7abd7c757d50b4f981421df6195bfac63b4b50fd27dfeda7262b2"
+    },
+    {
+      "path": "raw/physical.gprj",
+      "bytes": 434,
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081"
+    },
+    {
+      "path": "raw/physical.log",
+      "bytes": 2237,
+      "sha256": "6bddbd7fe4d925004d730b088f029f2291b4aa1ec1c286474367e2f453f811a8"
+    },
+    {
+      "path": "raw/physical.tcl",
+      "bytes": 463,
+      "sha256": "2fcbe54f1ab25e2468380efcc88f39f49bb50ef2ce7d17b0b7f772304a4061fa"
+    },
+    {
+      "path": "raw/physical_exit.json",
+      "bytes": 1060,
+      "sha256": "cf7c4b0126344f1840714d37763a3fac9896d33e3ba38a35986265cd95dc1530"
+    },
+    {
+      "path": "raw/physical_input.json",
+      "bytes": 6124,
+      "sha256": "91250976df025ce40d1a46495821c01f1fd3a7828b7840fa6afac04de113d09d"
+    },
+    {
+      "path": "raw/physical_process.json",
+      "bytes": 869,
+      "sha256": "350bad097edaee18039fd8e6f7a8bf022e2cc9b08d17a682f71fc641c16fd420"
+    },
+    {
+      "path": "raw/project_serialization_check.json",
+      "bytes": 185,
+      "sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1349,
+      "sha256": "eeb19e0edde839da9263d5a6dbf9a1e04c7b477e42da38307b911510f3f699ae"
+    }
+  ],
+  "manifest_self_hash_policy": "Not included; reported after seal."
+}

@@ -1,0 +1,25 @@
+{
+  "stage": "compile",
+  "command": [
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+    "-g2012",
+    "-s",
+    "tb",
+    "-Ptb.PRE=1",
+    "-o",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\numeric_guard_fusion\\completion03\\pre1.vvp",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\numeric_guard_fusion\\completion03\\tb.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\numeric_guard_fusion\\completion03\\v5_height.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\numeric_guard_fusion\\completion03\\v6_height.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\canonical\\source\\nav_math_service.v",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v5\\canonical\\source\\position\\position_math.v"
+  ],
+  "actual_returncode": 0,
+  "normal_wait_return": true,
+  "timed_out": false,
+  "started_utc": "2026-10-26T08:03:03.109171+00:00",
+  "ended_utc": "2026-10-26T08:03:03.257184+00:00",
+  "elapsed_seconds": 0.148,
+  "log": "pre1_compile.log",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

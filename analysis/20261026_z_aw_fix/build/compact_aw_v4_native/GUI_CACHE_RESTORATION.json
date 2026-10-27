@@ -1,0 +1,20 @@
+{
+  "restored_utc": "2026-10-26T19:24:28.657427+00:00",
+  "scope": "Official GUI automatically saved UI state and regenerated device.cfg while viewing. Both actual changed files preserved before byte-exact restoration from the verified pre-GUI copy. No route/build/device action. Original failed terminal remains failed.",
+  "view_result_sha256": "eb4991e4198f3867b1cdfd935c3658f63e530d89c643a1e73be6ea32fe37ed70",
+  "baseline_sha256": "e6a3e7b02662d904e10da4876aae2c119284c9a767371f1cd8ff104a5c9933eb",
+  "all_98_original_artifact_bytes_restored": true,
+  "items": {
+    "source/acg720_ano_port.gprj.user": {
+      "original_sha256": "80997016f70817c05bbaddf556abc814a940c34f681efb289d1ffe3a94e9563d",
+      "actual_GUI_generated_sha256": "721cbb21b4a7a3ae302d6d7723986aaec11d06fc326503a34f5de0f2dcdc7ef4",
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_native\\gui_cache_changes\\source\\acg720_ano_port.gprj.user"
+    },
+    "source/impl/pnr/device.cfg": {
+      "original_sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+      "actual_GUI_generated_sha256": "ce67f6af6cd5c68ed755ad7b1f1bfd2651ef174da5776291fac932525b2ce05f",
+      "preserved": "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_native\\gui_cache_changes\\source\\impl\\pnr\\device.cfg"
+    }
+  },
+  "diff_sha256": "41a58410ef89c2479d015ef6bc7f3be69ef400e687791f4f757285af6d6582c9"
+}

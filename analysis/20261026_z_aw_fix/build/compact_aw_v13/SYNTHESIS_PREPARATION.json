@@ -1,0 +1,6 @@
+{
+  "prepared_only": true,
+  "parent_recipe_sha256": "a7afe93f2dcb9e36c896cdefe77c761cab429dbec3ac2e244f4b9fa7020e4052",
+  "runner_sha256": "1756e87fe2fb98cce517c863d3d88755bf4c96693fecb8bbc27488e3129f9169",
+  "scope": "Same map2/replicate0/area SYN recipe; extra changed reader allowed by explicit expected source hash. No PNR or vendor launched."
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "Only this terminal evidence directory; external raw artifacts are separately hash-bound in FINAL_STATUS.json. No compiled VVP/cache included.",
+  "files": {
+    "seal.py": {
+      "bytes": 5644,
+      "sha256": "c1d0be56869ee16073e2c86218d6d45346e8068dea1fd57887938096289a349a"
+    },
+    "README.md": {
+      "bytes": 1487,
+      "sha256": "a07d9ed7be299d309aa58e23eb45882e92ab596c62fa8eb721e59f7ea6bf59fb"
+    },
+    "FINAL_STATUS.json": {
+      "bytes": 16181,
+      "sha256": "1b231a9e7739703ba39fd31b74a4f586249c3b2bd86078b0991ce7ee8ff4662a"
+    }
+  }
+}

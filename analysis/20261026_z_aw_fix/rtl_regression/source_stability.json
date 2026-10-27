@@ -1,0 +1,7 @@
+{
+  "B3_source55_unchanged": true,
+  "B4_source55_unchanged": true,
+  "first_attempt_inputs_sha256": "2ca37bc54f571cf2762e1efbf9f01f00af633f8dc95fd3c167283bf64781a11e",
+  "retry_inputs_sha256": "a139d8414f57e9a779acb793a59be54b40cd20d4b0f2f1490192158c1ff07f77",
+  "scope": "Both source55 sets remain equal to original inputs before original compile, after cases1-4, after diagnosed artificial overrun and after corrected I0 run."
+}

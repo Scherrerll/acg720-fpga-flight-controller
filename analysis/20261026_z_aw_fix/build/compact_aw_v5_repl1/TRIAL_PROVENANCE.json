@@ -1,0 +1,34 @@
+{
+  "scope": "Only fresh v5 P3/R0 physical replication1 trial. No resynthesis, other profile, hardware, Git, or archived11 mutation.",
+  "created_utc": "2026-10-26T07:05:17.168260+00:00",
+  "base_executed_runner": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v5\\run_physical_p3r0_launch02.py",
+  "base_executed_runner_sha256": "9cac97a876469e2ece03b2a3e44c659e2032ccb492ae494d7fc6e297ce8af435",
+  "runner_sha256": "b2e0169bdcb1d8b23d21ebb8a0d80ae26e1c38e1ad738b2f4e6df9ba43dedd01",
+  "source_freeze_sha256": "a8dc50bb1d0d0f13199b93cedd97de0ec88ba87340f701b81c384ee27365e203",
+  "copied_source_freeze_byte_identical": true,
+  "manual": {
+    "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+    "sha256": "c8ee7e8cb8486220a8639424f71debe9f4c3dff0d4c365860474c24782ded08c",
+    "pdf_page_1_based": 46,
+    "printed_page": "39(72)",
+    "read_before_mutation": true,
+    "option": "-replicate_resources <0|1>",
+    "primary_description": "Enabling permits Place & Route replication of high-fanout resources to reduce fanout and improve timing; default0.",
+    "authorizes_pnr_scope": true
+  },
+  "donor_synthesis_options_preserved": {
+    "map_option": 2,
+    "replicate_resources": 0
+  },
+  "physical_options": {
+    "place": 3,
+    "route": 0,
+    "map_option": 2,
+    "replicate_resources": 1,
+    "timing_driven": 1
+  },
+  "hold_sha256": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+  "exact_donor_vg_sha256": "2d670218e97041bb3d4cc7c67218f4bef12e5bf96261225b9b97203ce3b4a1c9",
+  "imported_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "gates_unchanged": true
+}

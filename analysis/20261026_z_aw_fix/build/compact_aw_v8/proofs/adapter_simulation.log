@@ -1,0 +1,2 @@
+PASS adapter cycles=444003 publications=11022 invalidpub=6199 unknownpub=2066 faultcycles=7117 cancelcycles=12388 same_tuple_checks=444003
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v8\proofs\adapter_tb.v:51: $finish called at 8880060000 (1ps)

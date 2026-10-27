@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-10-26T13:10:35.315801+00:00",
+  "scope": "Read-only official native GUI inspection using isolated copied source/real SYN/PNR outputs. No SYN/PNR/programming launched through GUI; original bytes untouched.",
+  "manual": "SUG1541-1.0E PDF54: Back-annotate Physical Constraints only available after successful PNR in a project and FloorPlanner launched from that project.",
+  "observed": "IDE physical netlist project and copied full RTL project both show Please run Synthesize first despite genuine copied outputs. Independent FloorPlanner Open accepts Design Files(*.vg) and has no placement-file input. Back-annotate stays disabled.",
+  "result": "No placement export produced; do not fake process status or decrypt protected.p. Continue with raw-report-derived placement constraints/actual builds.",
+  "isolated_view_copy": "out/z_aw_fix_20261026/floorplan_v4_view"
+}

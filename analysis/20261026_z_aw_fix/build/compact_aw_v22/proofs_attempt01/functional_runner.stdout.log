@@ -1,0 +1,5 @@
+{"stage": "top13", "actual_p_wait": 0}
+{"stage": "contention", "actual_p_wait": 0}
+{"stage": "boundary", "actual_p_wait": 0}
+{"stage": "five", "actual_p_wait": 0}
+{"stage": "alias_compile", "actual_p_wait": 1}

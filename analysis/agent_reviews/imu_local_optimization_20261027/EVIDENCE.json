@@ -1,0 +1,89 @@
+{
+  "scope": "Read-only local fanout optimization design study; only this new review directory written",
+  "created_utc": "2026-10-27T03:20:22.9922985Z",
+  "actual_offline_check_exit": 0,
+  "vendor_or_UI_or_hardware_run": false,
+  "inputs": [
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/routing_rescue_20261015/mtf01p_b0ae_ano_control/tools_notes/SUG550-2.4E_GowinSynthesis User Guide.txt",
+      "sha256": "0ce685dd9968b0b53a181b7180a439c0648befd0b202e5c7a1e17c636eb0bc51",
+      "bytes": 128542
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/ano_attitude_estimator.v",
+      "sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "bytes": 41227
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v18/physical_p3r0_dsploc_01/source/impl/pnr/acg720_ano_port.tr",
+      "sha256": "4b6d1daa2c528b95f3b4a3d7501f71770dc5f321f49f8ba0db422a53c096f678",
+      "bytes": 435776
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v18/build_attempt_01/source/impl/gwsynthesis/acg720_ano_port.vg",
+      "sha256": "64e76270fe35298e698bfe5b14b9d9e267469f746d3c2382a8a15284c5942d4f",
+      "bytes": 14551381
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v22_fan100/build_attempt_01/verification/mapped_fanout_comparison.json",
+      "sha256": "98fb4aa6824986273eaa631821eb2d9fc58459e5e7c70555e87a9aac8e26ba94",
+      "bytes": 3108290
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v22_fan100/build_attempt_01/verification/resource_comparison.json",
+      "sha256": "c25c0f04c1539df8c7e8994f5cb42bcfce7b21099231ae7c8c3755c92c6f7365",
+      "bytes": 7815
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v22_fan100/SYNTHESIS_RESULT.json",
+      "sha256": "c9160304a71df5f9b5800d31ed234802e056721b1a010c105ec57ed45a372290",
+      "bytes": 6246
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v22_fan100/runner_exit.json",
+      "sha256": "7e0a29b2439ee97a9fc288c7ecd57c02156bd439a42ddbb10daa99a02dce3551",
+      "bytes": 877
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/imu_local_optimization_20261027/REPORT.md",
+      "sha256": "b30d8f4ed8e3b6f12269e34a01639d966e6c1f4d18b54abc9474ffe0fb5c1509",
+      "bytes": 9023
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/imu_local_optimization_20261027/check_design_identities.py",
+      "sha256": "ed7889985cde283582b8cfb681ef63b27b1c26d5e138c52e6fb1e58675b74f53",
+      "bytes": 2908
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/imu_local_optimization_20261027/design_identities_stdout.json",
+      "sha256": "7ca9e828dcf4e35d353a3b878ba79386e517f5621ea33217c439ff32b5496396",
+      "bytes": 1452
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/imu_local_optimization_20261027/design_identities_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/imu_local_optimization_20261027/design_identities_exit.json",
+      "sha256": "ade6522da198e7dc7a2326dafe04e6647fbe2cbefc0cadd014bc3b9db701a56b",
+      "bytes": 758
+    }
+  ],
+  "offline_check_scope": "288 known-binary algebra/action checks plus static assignment inventory; no RTL/XZ/protocol proof",
+  "recommendation": "Local index maxfan plus explicit consumed previous-address bit1 maxfan first; 1-bit synchronous predecode cache second; full32 onehot only if larger change justified",
+  "index_assignment_counts": {
+    "total": 16,
+    "initial": 0,
+    "zero": 10,
+    "increment": 6,
+    "reset_and_invalidate": "hold"
+  },
+  "candidate_created": false,
+  "production_and_original_helper_unchanged": {
+    "analysis/20261026_z_aw_fix/build/export_qualified_v4.py": "e008e5f35ec0d8fed612c4773b87c57c21dbcb8d447affc54f5e966ec17e860f",
+    "firmware/B0B4/build_candidate.py": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+    "firmware/B0B4/verify_release.py": "ce54d5e501769bf6450f4a17a3e71211353efc5d33fec56957bcc07396b178eb"
+  },
+  "qualification": false
+}

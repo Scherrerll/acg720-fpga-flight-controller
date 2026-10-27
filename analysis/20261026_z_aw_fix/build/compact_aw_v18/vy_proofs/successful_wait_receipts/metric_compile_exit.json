@@ -1,0 +1,9 @@
+{
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "original_receipt": "attempt01/metric_compile_exit.json",
+  "original_receipt_sha256": "14e5d823bf2a13ded257a553d9ad792b78f355679d4b377708569523c7990ca3",
+  "original_actual_wait_field": "actual_child_p_wait",
+  "schema_adapter_only": true,
+  "scope": "The original recorded actual Popen.wait return is preserved. This file maps its descriptive field name to the common release-validator schema; no process is rerun."
+}

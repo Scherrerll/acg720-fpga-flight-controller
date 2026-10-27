@@ -1,0 +1,297 @@
+{
+  "scope": "v4 baseline plus v17 landing/fanout transformations and exact v9/v8 AZ-guard composition. Source reconstruction is not an equivalence proof for the added guard state.",
+  "transformations": {
+    "acg720_ano_port.v": {
+      "baseline_sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "candidate_sha256": "d79f962f6fe75a81431ed69c53313b9378e49fd25a1a2a9b49bd3115cb43d6ff",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 45,
+          "old_end": 46,
+          "new_start": 45,
+          "new_end": 46,
+          "old_text": " reg previous_pose_valid=0;\n",
+          "new_text": " reg previous_pose_valid /* synthesis syn_maxfan = 10 */ =0;\n"
+        },
+        {
+          "old_start": 51,
+          "old_end": 51,
+          "new_start": 51,
+          "new_end": 52,
+          "old_text": "",
+          "new_text": " wire converted_az_range_ok;\n"
+        },
+        {
+          "old_start": 54,
+          "old_end": 55,
+          "new_start": 55,
+          "new_end": 56,
+          "old_text": "  .output_acc_valid(converted_acc_valid),.busy(),.fault(time_adapter_fault));\n",
+          "new_text": "  .output_az_range_ok(converted_az_range_ok),.output_acc_valid(converted_acc_valid),.busy(),.fault(time_adapter_fault));\n"
+        },
+        {
+          "old_start": 301,
+          "old_end": 302,
+          "new_start": 302,
+          "new_end": 303,
+          "old_text": " mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1),.PRECHECKED_FLOW_TILT1500(1),.PRECHECKED_HEIGHT_ORIGIN(1)) native_navigation(\n",
+          "new_text": " mtf_xyz_navigation_control #(.PROOF_CONTROLLER(1),.PRECHECKED_YAW_RANGE(1),.STARTUP_ONLY_DIAGNOSTIC_RESET(1),.PRECHECKED_HEIGHT_TILT4500(1),.PRECHECKED_FLOW_TILT1500(1),.PRECHECKED_HEIGHT_ORIGIN(1),.PRECHECKED_AZ_RANGE(1)) native_navigation(\n"
+        },
+        {
+          "old_start": 308,
+          "old_end": 309,
+          "new_start": 309,
+          "new_end": 310,
+          "old_text": "  .acc_valid(native_acc_valid),\n",
+          "new_text": "  .acc_valid(native_acc_valid),.az_range_ok(converted_az_range_ok),\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true,
+      "meaning": "Edit inventory/source reconstruction only; guard behavior is justified by GUARD_REUSE_RECHECK and same-tuple contract"
+    },
+    "mtf_xyz_navigation_control.v": {
+      "baseline_sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "candidate_sha256": "ce7c2d4199ed518b8a3732aff2a24139bcf8fcdc8fa7bfc9bdb4e93f50b69e8d",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 8,
+          "old_end": 9,
+          "new_start": 8,
+          "new_end": 9,
+          "old_text": "module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0)(\n",
+          "new_text": "module mtf_xyz_navigation_control #(parameter integer PROOF_CONTROLLER=0,PRECHECKED_YAW_RANGE=0,STARTUP_ONLY_DIAGNOSTIC_RESET=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0,PRECHECKED_AZ_RANGE=0)(\n"
+        },
+        {
+          "old_start": 23,
+          "old_end": 23,
+          "new_start": 23,
+          "new_end": 25,
+          "old_text": "",
+          "new_text": " // If enabled, caller guarantees exact same-tuple original az range predicate.\n input wire az_range_ok,\n"
+        },
+        {
+          "old_start": 92,
+          "old_end": 92,
+          "new_start": 94,
+          "new_end": 95,
+          "old_text": "",
+          "new_text": " wire live_az_range_ok=PRECHECKED_AZ_RANGE ?az_range_ok:(az_up_mmps2>=-30000 && az_up_mmps2<=30000);\n"
+        },
+        {
+          "old_start": 118,
+          "old_end": 119,
+          "new_start": 121,
+          "new_end": 122,
+          "old_text": " mtf_shared_height_fusion #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.CAL_MASK(0),.RANGE_AGE_PRECHECKED(1)) height_fusion(\n",
+          "new_text": " mtf_shared_height_fusion #(.AGE_LIMIT(CONTROL_HEIGHT_AGE_LIMIT),.CAL_MASK(0),.RANGE_AGE_PRECHECKED(1),.PRECHECKED_AZ_RANGE(PRECHECKED_AZ_RANGE)) height_fusion(\n"
+        },
+        {
+          "old_start": 121,
+          "old_end": 122,
+          "new_start": 124,
+          "new_end": 125,
+          "old_text": "  .range_age_ticks(range_age_ticks),\n",
+          "new_text": "  .range_age_ticks(range_age_ticks),.az_range_ok(az_range_ok),\n"
+        },
+        {
+          "old_start": 171,
+          "old_end": 172,
+          "new_start": 174,
+          "new_end": 175,
+          "old_text": "  az_up_mmps2>=-30000 && az_up_mmps2<=30000 && live_yaw_range_ok;\n",
+          "new_text": "  live_az_range_ok && live_yaw_range_ok;\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true,
+      "meaning": "Edit inventory/source reconstruction only; guard behavior is justified by GUARD_REUSE_RECHECK and same-tuple contract"
+    },
+    "core/ano_flight_state.v": {
+      "baseline_sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "candidate_sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 6,
+          "old_end": 7,
+          "new_start": 6,
+          "new_end": 8,
+          "old_text": "module ano_flight_state #(parameter integer TICKS_PER_MS=50000)(\n",
+          "new_text": "module ano_flight_state #(parameter integer TICKS_PER_MS=50000,\n parameter integer PRECHECKED_COLLECTIVE=0)(\n"
+        },
+        {
+          "old_start": 9,
+          "old_end": 9,
+          "new_start": 10,
+          "new_end": 11,
+          "old_text": "",
+          "new_text": " input wire collective_below_landing,\n"
+        },
+        {
+          "old_start": 19,
+          "old_end": 19,
+          "new_start": 21,
+          "new_end": 22,
+          "old_text": "",
+          "new_text": " wire landing_collective_low=PRECHECKED_COLLECTIVE ?collective_below_landing:(collective_us<1250);\n"
+        },
+        {
+          "old_start": 36,
+          "old_end": 37,
+          "new_start": 39,
+          "new_end": 40,
+          "old_text": "     if(normal_unlock && !positive_stick && landing_delay<=1 && ch3<=1150 && collective_us<1250)begin\n",
+          "new_text": "     if(normal_unlock && !positive_stick && landing_delay<=1 && ch3<=1150 && landing_collective_low)begin\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true,
+      "meaning": "Retained v17 source transformation; actual fresh old/new/default core FSM proof required"
+    },
+    "core/flight_core.v": {
+      "baseline_sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "candidate_sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 421,
+          "old_end": 423,
+          "new_start": 421,
+          "new_end": 423,
+          "old_text": "    ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS)) flight_state(.clk(clk50),.rst_n(rst_n),.armed(armed_usable),\n     .ch3(ch3),.collective_us(selected_throttle),.motor_prepared(motor_prepared),\n",
+          "new_text": "    ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS),.PRECHECKED_COLLECTIVE(1)) flight_state(.clk(clk50),.rst_n(rst_n),.armed(armed_usable),\n     .ch3(ch3),.collective_us(selected_throttle),.collective_below_landing(selected_collective_below_landing),.motor_prepared(motor_prepared),\n"
+        },
+        {
+          "old_start": 428,
+          "old_end": 428,
+          "new_start": 428,
+          "new_end": 433,
+          "old_text": "",
+          "new_text": "    // Compare each numeric branch before the late live availability selection.\n    // No state or cycle is added; active implies public fallback equals unmasked.\n    (* syn_keep = 1 *) wire fallback_collective_below_landing=fallback_unmasked_collective<1250;\n    (* syn_keep = 1 *) wire auto_collective_below_landing=hold_collective_us<1250;\n    wire selected_collective_below_landing=height_fallback_active ?fallback_collective_below_landing:auto_collective_below_landing;\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true,
+      "meaning": "Retained v17 source transformation; actual fresh old/new/default core FSM proof required"
+    },
+    "core/height_loss_fallback.v": {
+      "baseline_sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "candidate_sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 24,
+          "old_end": 25,
+          "new_start": 24,
+          "new_end": 28,
+          "old_text": " assign active=rst_n && healthy && armed && (latched || enter);\n",
+          "new_text": " // Identity wire, with a local synthesis-only fanout limit on this data driver.\n wire active_fanout_limited /* synthesis syn_maxfan = 50 */;\n assign active_fanout_limited=rst_n && healthy && armed && (latched || enter);\n assign active=active_fanout_limited;\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true,
+      "meaning": "Retained v17 source transformation; actual fresh old/new/default core FSM proof required"
+    },
+    "position/mtf_shared_height_fusion.v": {
+      "baseline_sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "candidate_sha256": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 12,
+          "old_end": 13,
+          "new_start": 12,
+          "new_end": 13,
+          "old_text": " parameter integer RANGE_AGE_PRECHECKED=0\n",
+          "new_text": " parameter integer RANGE_AGE_PRECHECKED=0,PRECHECKED_AZ_RANGE=0\n"
+        },
+        {
+          "old_start": 16,
+          "old_end": 16,
+          "new_start": 16,
+          "new_end": 17,
+          "old_text": "",
+          "new_text": " input wire az_range_ok,\n"
+        },
+        {
+          "old_start": 86,
+          "old_end": 86,
+          "new_start": 87,
+          "new_end": 88,
+          "old_text": "",
+          "new_text": " wire az_numeric_ok=PRECHECKED_AZ_RANGE ?az_range_ok:(az_up_mmps2>=-30000 && az_up_mmps2<=30000);\n"
+        },
+        {
+          "old_start": 87,
+          "old_end": 88,
+          "new_start": 89,
+          "new_end": 90,
+          "old_text": "     ref_height_mm>=0 && ref_height_mm<=5000 && az_up_mmps2>=-30000 && az_up_mmps2<=30000;\n",
+          "new_text": "     ref_height_mm>=0 && ref_height_mm<=5000 && az_numeric_ok;\n"
+        },
+        {
+          "old_start": 95,
+          "old_end": 96,
+          "new_start": 97,
+          "new_end": 98,
+          "old_text": "  az_up_mmps2>=-30000 && az_up_mmps2<=30000 && !cleanup && seeded && seen &&\n",
+          "new_text": "  az_numeric_ok && !cleanup && seeded && seen &&\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true,
+      "meaning": "Edit inventory/source reconstruction only; guard behavior is justified by GUARD_REUSE_RECHECK and same-tuple contract"
+    },
+    "position/pose_time_adapter.v": {
+      "baseline_sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "candidate_sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+      "normalized_line_edit_spans": [
+        {
+          "old_start": 12,
+          "old_end": 12,
+          "new_start": 12,
+          "new_end": 14,
+          "old_text": "",
+          "new_text": " // Exact original numeric predicate, registered beside its matching tuple.\n output reg output_az_range_ok=1,\n"
+        },
+        {
+          "old_start": 31,
+          "old_end": 32,
+          "new_start": 33,
+          "new_end": 34,
+          "old_text": "   output_ax<=0;output_ay<=0;output_az<=0;\n",
+          "new_text": "   output_ax<=0;output_ay<=0;output_az<=0;output_az_range_ok<=1;\n"
+        },
+        {
+          "old_start": 44,
+          "old_end": 44,
+          "new_start": 46,
+          "new_end": 47,
+          "old_text": "",
+          "new_text": "    output_az_range_ok<=held_az>=-30000 && held_az<=30000;\n"
+        }
+      ],
+      "reverse_exact_normalized_text": true,
+      "meaning": "Edit inventory/source reconstruction only; guard behavior is justified by GUARD_REUSE_RECHECK and same-tuple contract"
+    }
+  },
+  "unchanged_files": 48,
+  "line_endings_normalized": [
+    "core/height_loss_fallback.v"
+  ],
+  "scope_delimitation": {
+    "reverse_reconstruction_is_not_guard_correctness_proof": true,
+    "reverse_reconstruction_proves": "Complete textual change inventory and unchanged residual relative to frozen v4, after line-ending normalization",
+    "core_equivalence_basis": "v17 threshold-distribution/default-interface argument plus a fresh full-state old/new/default FSM miter and actual fallback implication",
+    "guard_correctness_basis": "Exact three v9/v8 module bodies, exact v9 wiring with only existing v17 synthesis comment; actual producer invariant/full fusion receipt dependencies bound by GUARD_REUSE_RECHECK",
+    "no_general_four_state_landing_algebra_claim": true,
+    "no_standalone_full_flight_or_physical_claim": true
+  },
+  "guard_contract": {
+    "guard_binding_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v19\\GUARD_REUSE_RECHECK.json",
+    "guard_binding_sha256": "0463af13a2e1583a53ff65b8d403c591071fd59e67efc8ebbe41840e1950060a",
+    "new_same_publication_predicate_bits": 1,
+    "new_bit": "pose_time_adapter.output_az_range_ok",
+    "legacy_output_cycle_change": 0,
+    "predicate": "signed32 published output_az >= -30000 && output_az <= 30000",
+    "reset_cancel": "output_az=0 and predicate=1 on the same edge",
+    "ordinary_publication": "held signed32 AZ and its exact inclusive predicate publish together; no extra public cycle",
+    "fault_busy_idle": "Public AZ and predicate hold together in all branches without publication, including fault and start-while-busy; validity clears independently",
+    "default_callers": "PRECHECKED_AZ_RANGE=0 retains original signed32 numeric compare; native top explicitly enables1 and wires the same tuple flag",
+    "preserved": "All original numeric axes, Q16 precision,64-bit arithmetic and legacy output schedules; no VY changes",
+    "component_limits": "Producer/fusion finite traces, full actual math RTL with accelerated component timing; top13 deliberately forces core/gate/controller dependencies"
+  },
+  "core_state_or_cycle_additions": 0,
+  "new_predicate_register_bits": 1
+}

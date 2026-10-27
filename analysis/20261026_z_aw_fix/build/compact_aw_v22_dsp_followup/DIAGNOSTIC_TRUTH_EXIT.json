@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_dsp_followup\\test_terminal_diagnostics.py"
+  ],
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "pid": 15464,
+  "script_sha256": "fbde675c159b85f3511a80d8b2a4e1460fdd91d516453a3d69556c89fe991913",
+  "stdout_sha256": "0832c194c92910d9108d1fdc45bc484b5f46ee3685d13dcdda50cd48387779bb",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

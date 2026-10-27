@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "approved_final_package": true,
+  "reviewed_utc": "2026-10-27T04:54:30.925510+00:00",
+  "manifest_sha256": "c8e03412ff44cbe929f5d8ce6fed6eb3c61078a2028df466a340a61894893a2d",
+  "manifest_files": 652,
+  "manifest_complete_regular_package_coverage": true,
+  "manifest_files_by_root": {
+    "firmware/B0B4": 606,
+    "ground/B0B4": 46
+  },
+  "excluded_only_manifest_pair_and_cache_runtime_paths": [
+    "firmware/B0B4/release_manifest.json",
+    "firmware/B0B4/release_manifest.sha256",
+    "firmware/B0B4/__pycache__/build_candidate.cpython-313.pyc"
+  ],
+  "qualification_sha256": "a2924826f4462a5dcf27a8720bb247d57f46793e8e2ce2998c31275fe747281a",
+  "offline_passed": true,
+  "installed_B0B4": false,
+  "true_cold_boot_verified": false,
+  "bitstream_sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+  "bitstream_usercode": "0000B0B4",
+  "source55_matches_STD22": true,
+  "source_freeze_sha256": "798c6443805d56556dbaeb9a4b43531159267b24e473283c6ef362fc00ddf5d6",
+  "prototype_backup55_matches_before": true,
+  "before_source_bindings_sha256": "03a4edee32f152f667bf6c60e3cbe4d78e2475e155ed21542aebdd22ee80c4fc",
+  "B3_source55_unchanged": true,
+  "B3_baseline_sha256": "802d9d5b4f5c2d0131051c9bffaa52f941a5cca6a02608f57a1c01bcbb762daf",
+  "physical_criteria_all_true": true,
+  "period_ns": 20.0,
+  "fmax_mhz": 50.075,
+  "all_five_nonnegative": true,
+  "setup_hold_endpoints_zero": true,
+  "archive_index_sha256": "1ade8ec695b3b76c605564ddaf91a71255ff00457fd08de4bc51adb4cc711f14",
+  "archived_original_keys": 1385,
+  "all_indexed_objects_manifest_bound": true,
+  "archived_old_source55_and_selected_source55_independently_retrieved": true,
+  "actual_conflicting_files": {
+    "acg720_ano_port.v": {
+      "prototype_sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "selected_sha256": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd",
+      "old_archive_path": "evidence/selected/objects/78b7443e8de8b0cb29bb3e1a",
+      "new_archive_path": "source/acg720_ano_port.v"
+    },
+    "mtf_xyz_navigation_control.v": {
+      "prototype_sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "selected_sha256": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd",
+      "old_archive_path": "evidence/selected/objects/5b46a541df7a4e99a8de3745",
+      "new_archive_path": "source/mtf_xyz_navigation_control.v"
+    },
+    "core/ano_flight_state.v": {
+      "prototype_sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "selected_sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "old_archive_path": "evidence/selected/objects/34f3559cb4b1cde9991249c4",
+      "new_archive_path": "source/core/ano_flight_state.v"
+    },
+    "core/flight_core.v": {
+      "prototype_sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "selected_sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+      "old_archive_path": "evidence/selected/objects/dabd50476c0c5daaaa889195",
+      "new_archive_path": "source/core/flight_core.v"
+    },
+    "core/height_loss_fallback.v": {
+      "prototype_sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "selected_sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+      "old_archive_path": "evidence/selected/objects/0d29e5cf7e635277ec541728",
+      "new_archive_path": "source/core/height_loss_fallback.v"
+    },
+    "position/mtf_shared_height_fusion.v": {
+      "prototype_sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "selected_sha256": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+      "old_archive_path": "evidence/selected/objects/1205c8f88198e527ac9f272f",
+      "new_archive_path": "source/position/mtf_shared_height_fusion.v"
+    },
+    "position/mtf_xyz_hold_control.v": {
+      "prototype_sha256": "5a928e0a68db70974049a4debb0b841ca06fa00598a4ffb4cb506997cfed657c",
+      "selected_sha256": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976",
+      "old_archive_path": "evidence/selected/objects/5a928e0a68db70974049a4de",
+      "new_archive_path": "source/position/mtf_xyz_hold_control.v"
+    },
+    "position/pose_time_adapter.v": {
+      "prototype_sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "selected_sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+      "old_archive_path": "evidence/selected/objects/8a22d65b72f495e169b4c458",
+      "new_archive_path": "source/position/pose_time_adapter.v"
+    },
+    "sensor/mtf01p_reader.v": {
+      "prototype_sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "selected_sha256": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+      "old_archive_path": "evidence/selected/objects/cff3c15a8fad14b5dd59d2fa",
+      "new_archive_path": "source/sensor/mtf01p_reader.v"
+    },
+    "sensor/mtf_shared_geometry.v": {
+      "prototype_sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "selected_sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+      "old_archive_path": "evidence/selected/objects/b4303406c973c4997efbcceb",
+      "new_archive_path": "source/sensor/mtf_shared_geometry.v"
+    }
+  },
+  "environment_credential_paths_absent_from_manifest_index_and_tools": true,
+  "no_link_paths": true,
+  "actual_child_receipts": {
+    "firmware/B0B4/evidence/export": {
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "exit_sha256": "d8cee8cbe614c984275cf67538af88560a04123157bf8cab03fd24c0e2969116",
+      "process_sha256": "5045e1fd981823a77072e3e23ab2e359624eddb84042e59af91acb1c082b7feb",
+      "stdout_sha256": "d14a03bb393258c8a8a64ae8697131cf5569647974c860b3df984c15922c378d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "analysis/20261026_z_aw_fix/build/release_verify_v22_20261027_01/seal": {
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "exit_sha256": "9090dc8744cca5fb71eb5979296662dd0cbf7bbcc2dbd07b5be777590983cf81",
+      "process_sha256": "7952e26f9cae6405ff5b227aace53a31dffbeab787168877745192e4330de843",
+      "stdout_sha256": "bab865c3bca30a66b6e43d00a08ac0410c18c42b690f207dc9efe429b8a14aad",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "analysis/20261026_z_aw_fix/build/release_verify_v22_20261027_01/verify": {
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "exit_sha256": "184ed15dcbd6c6de51ad0d3c7ed84947808cb12559ffee86e387992b813e7e7c",
+      "process_sha256": "13dfd007ac2a6691b743304422c8238aabafbdc9df31c641bf0321475e82331d",
+      "stdout_sha256": "8a5b18648bea089d4feb410804d10ca9736e47471ef483c0bbd2b43946a77336",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "analysis/20261026_z_aw_fix/build/release_verify_v22_20261027_01/replay_verify_only": {
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "exit_sha256": "2c6c417d4cc7a5385da50496790e4cc32b9b4f182563d544a2f5893125b0b3f9",
+      "process_sha256": "ab14511fe1d5a1b31530396219f3b1743c7562698580f24d22a71c654d76b20b",
+      "stdout_sha256": "21e882cb05d3b1bdfe12356248629595b899b706cef3576a69a920b587f8dd6b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "actual_physical_vendor_root_normal_exact_int0": true,
+  "production_exporter_sha256": "cab893924c892327dc4168254064dfade00c2a4db3c19908dd34c5f58f6552f1",
+  "production_verifier_sha256": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf",
+  "review_script_sha256": "d154f6ad02013f480361242890c8eeea5df566dce6d728cae65eb8d16a550ab6",
+  "findings": [],
+  "scope": "Independent read-only final package inventory, identities, old/new source archive separation and existing actual receipt review. No full48/RTL/vendor rerun, no package edits, programming or hardware operation."
+}

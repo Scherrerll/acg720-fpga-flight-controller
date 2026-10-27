@@ -1,0 +1,78 @@
+Path6						
+Path Summary:
+Slack             : -0.242
+Data Arrival Time : 23.363
+Data Required Time: 23.120
+From              : mtf/age_ms_21_s1
+To                : staged_telemetry.extension_q_814_s0
+Launch Clk        : clk50:[R]
+Latch Clk         : clk50:[R]
+
+Data Arrival Path:
+    AT     DELAY   TYPE   RF   FANOUT       LOC                                 NODE                           
+ ======== ======= ====== ==== ======== ============== ======================================================== 
+  0.000    0.000                                       active clock edge time                                  
+  0.000    0.000                                       clk50                                                   
+  0.000    0.000   tCL    RR   1        IOB87[A]       clk50_ibuf/I                                            
+  1.288    1.288   tINS   RR   27796    IOB87[A]       clk50_ibuf/O                                            
+  3.178    1.889   tNET   RR   1        R67C65[3][A]   mtf/age_ms_21_s1/CLK                                    
+  3.522    0.344   tC2Q   RR   5        R67C65[3][A]   mtf/age_ms_21_s1/Q                                      
+  4.744    1.222   tNET   RR   1        R67C67[0][A]   mtf/module_online_s13/I1                                
+  5.208    0.465   tINS   RR   1        R67C67[0][A]   mtf/module_online_s13/F                                 
+  5.382    0.173   tNET   RR   1        R67C65[0][A]   mtf/module_online_s4/I2                                 
+  5.618    0.236   tINS   RR   2        R67C65[0][A]   mtf/module_online_s4/F                                  
+  5.935    0.317   tNET   RR   1        R67C66[3]      native_navigation/n3125_s17/I1                          
+  6.531    0.596   tINS   RR   20       R67C66[3]      native_navigation/n3125_s17/F                           
+  7.779    1.248   tNET   RR   1        R61C56[0][A]   mtf/metric/previous_ok_s5/I2                            
+  8.244    0.465   tINS   RR   4        R61C56[0][A]   mtf/metric/previous_ok_s5/F                             
+  8.597    0.353   tNET   RR   1        R60C54[1][A]   mtf/metric/mtf_range_ok_s1/I0                           
+  9.071    0.474   tINS   RR   1        R60C54[1][A]   mtf/metric/mtf_range_ok_s1/F                            
+  9.746    0.675   tNET   RR   1        R50C51[3][A]   native_navigation/geometry/geometry_reason_1_s0/I0      
+  10.119   0.373   tINS   RR   3        R50C51[3][A]   native_navigation/geometry/geometry_reason_1_s0/F       
+  12.123   2.004   tNET   RR   1        R45C20[2][B]   native_navigation/geometry/n1136_s3/I0                  
+  12.587   0.465   tINS   RR   3        R45C20[2][B]   native_navigation/geometry/n1136_s3/F                   
+  12.938   0.351   tNET   RR   1        R45C18[0][B]   native_navigation/geometry/n1136_s4/I3                  
+  13.353   0.415   tINS   RR   5        R45C18[0][B]   native_navigation/geometry/n1136_s4/F                   
+  13.707   0.353   tNET   RR   1        R45C20[3][A]   native_navigation/geometry/geometry_height_ready_s0/I0  
+  14.154   0.448   tINS   RR   5        R45C20[3][A]   native_navigation/geometry/geometry_height_ready_s0/F   
+  15.252   1.098   tNET   RR   1        R40C21[3][B]   native_navigation/geometry/geometry_flow_ready_s/I2     
+  15.700   0.448   tINS   RR   5        R40C21[3][B]   native_navigation/geometry/geometry_flow_ready_s/F      
+  16.137   0.436   tNET   RR   1        R40C28[2][A]   native_navigation/velocity_fusion/n1532_s1/I2           
+  16.552   0.415   tINS   RR   4        R40C28[2][A]   native_navigation/velocity_fusion/n1532_s1/F            
+  16.718   0.167   tNET   RR   1        R40C29[0][B]   native_navigation/live_velocity_s0/I1                   
+  17.133   0.415   tINS   RR   4        R40C29[0][B]   native_navigation/live_velocity_s0/F                    
+  17.525   0.391   tNET   RR   1        R36C28[1][B]   native_navigation/nav_xy_ready_s/I2                     
+  17.761   0.236   tINS   RR   6        R36C28[1][B]   native_navigation/nav_xy_ready_s/F                      
+  20.362   2.601   tNET   RR   1        R36C76[0][B]   native_navigation/nav_xy_active_s0/I1                   
+  20.598   0.236   tINS   RR   3        R36C76[0][B]   native_navigation/nav_xy_active_s0/F                    
+  20.742   0.144   tNET   RR   1        R35C76[1][B]   native_navigation/n4663_s3/I1                           
+  21.158   0.415   tINS   RR   5        R35C76[1][B]   native_navigation/n4663_s3/F                            
+  21.546   0.388   tNET   RR   1        R39C75[3][B]   native_navigation/n4663_s2/I1                           
+  21.784   0.238   tINS   RR   2        R39C75[3][B]   native_navigation/n4663_s2/F                            
+  22.889   1.105   tNET   RR   1        R44C76[0][A]   n595_s2/I1                                              
+  23.363   0.474   tINS   RR   1        R44C76[0][A]   n595_s2/F                                               
+  23.363   0.000   tNET   RR   1        R44C76[0][A]   staged_telemetry.extension_q_814_s0/D                   
+
+Data Required Path:
+    AT     DELAY    TYPE   RF   FANOUT       LOC                         NODE                    
+ ======== ======== ====== ==== ======== ============== ========================================= 
+  20.000   20.000                                       active clock edge time                   
+  20.000   0.000                                        clk50                                    
+  20.000   0.000    tCL    RR   1        IOB87[A]       clk50_ibuf/I                             
+  21.288   1.288    tINS   RR   27796    IOB87[A]       clk50_ibuf/O                             
+  23.178   1.889    tNET   RR   1        R44C76[0][A]   staged_telemetry.extension_q_814_s0/CLK  
+  23.120   -0.057   tSu         1        R44C76[0][A]   staged_telemetry.extension_q_814_s0      
+
+Path Statistics:
+Clock Skew: 0.000
+Setup Relationship: 20.000
+Logic Level: 18
+Arrival Clock Path delay: (cell: 1.288 40.542%, 
+                     route: 1.889 59.458%)
+Arrival Data Path Delay: (cell: 6.814 33.759%, 
+                    route: 13.026 64.536%, 
+                    tC2Q: 0.344 1.705%)
+Required Clock Path Delay: (cell: 1.288 40.542%, 
+                     route: 1.889 59.458%)
+
+						

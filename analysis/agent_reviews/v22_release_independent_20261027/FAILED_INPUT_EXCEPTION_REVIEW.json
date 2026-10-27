@@ -1,0 +1,48 @@
+{
+  "passed_exception_boundary_review": true,
+  "reviewed_snapshot_sha256": "ce54d5e501769bf6450f4a17a3e71211353efc5d33fec56957bcc07396b178eb",
+  "sealed_v22_archive_index_sha256": "e09a60d4edae61083684a83109952120a8bf7a22481592ab8480dcbbc82a184c",
+  "existing_real_functional_and_SYN_archive_replay_passed": true,
+  "real_invalid_failed_reference_count": 2,
+  "real_invalid_failed_reference_names": [
+    "c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_attempt01/functional_runner.stderr.log",
+    "c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v22/proofs_attempt01/functional_runner.stdout.log"
+  ],
+  "all_other_original_immutable_inputs_checked": 17,
+  "targeted_in_memory_cases": [
+    {
+      "case": "third_excluded_output",
+      "rejected": true,
+      "reason": "v22 invalid self-output declarations differ"
+    },
+    {
+      "case": "waive_unrelated_old_hash",
+      "rejected": true,
+      "reason": "Declared evidence hash differs: c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v22/run_proofs.py"
+    },
+    {
+      "case": "old_self_log_nonempty_declared_sha",
+      "rejected": true,
+      "reason": "v22 original input path aliases collide"
+    },
+    {
+      "case": "current_terminal_log_empty_sha",
+      "rejected": true,
+      "reason": "v22 invalid self-output declaration/real terminal log binding differs"
+    },
+    {
+      "case": "index_extra_exception",
+      "rejected": true,
+      "reason": "v22 indexed invalid failed-input reference inventory differs"
+    },
+    {
+      "case": "index_omitted_exceptions",
+      "rejected": true,
+      "reason": "v22 indexed invalid failed-input reference inventory differs"
+    }
+  ],
+  "qualified_or_exported_file_created": false,
+  "producer_or_archive_edited": false,
+  "DUT_tests_or_vendor_executed": false,
+  "scope": "Existing nonqualified proof/SYN test archive read-only replay and in-memory semantic mutations only; no full42 suite rerun."
+}

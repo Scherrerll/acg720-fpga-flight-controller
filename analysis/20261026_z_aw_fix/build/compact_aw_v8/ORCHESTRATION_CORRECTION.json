@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-26T09:41:42.400955+00:00",
+  "original_runner_actual_wait": 1,
+  "failure_class": "driver_log_parser_rejected_vvp_finish_informational_line_after_success",
+  "preserved_runner_sha256": "1362a42ff55ce01f52758d63fe0a18ecbe471059191ba7252bdc1bbedeb5c04a",
+  "preserved_exit_sha256": "5dff15d24025f48df6f41f82f766205f0d1b51202fd3953f1152d54abb0b08ee",
+  "completed_stages_reused": [
+    "adapter_compile",
+    "adapter_simulation",
+    "fusion_pre0_compile",
+    "fusion_pre0_simulation"
+  ],
+  "all_reused_actual_wait": 0,
+  "functional_RTL_changed": false,
+  "correction": "Require one exact PASS line while allowing vvp informational finish line; stage exit0 remains mandatory.",
+  "continuation_runner_sha256": "b57d8e7d81ac43ddf744eea37ac80808d7b70361751b01609921dfef607a7579",
+  "continuation_supervisor_sha256": "0e50cb3d1c3be1ab44305817bd7f9b601b00a1be1b215fd827dd5a68d1764223"
+}

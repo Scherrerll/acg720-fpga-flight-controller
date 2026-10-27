@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-10-27T00:03:41.044300+00:00",
+  "passed": true,
+  "distinct_truth_vectors": 1183,
+  "actual_script_expression_checks": 2366,
+  "scripts_sha256": {
+    "terminal_diagnostics.py": "4b003923cd0c1f0e5d99d79b9e04f0b35320f6f484b253eaf261e4b1590f387f",
+    "seal_terminal.py": "8219db9546e4104a8668937f46eee3d46c88a5bd31ca4be939c2ce1037660419",
+    "physical_snapshot.py": "37beec2d3604bba470ab90a3ccfcb5cac903c0d270792e87bc57b1393ee63be6",
+    "test_terminal_diagnostics.py": "59fbc8a357c63b7ced8ab2b6768fb3ce98ce086cc2203fc40313e72355105e43"
+  },
+  "preparer_sha256": "51543f3263b5f13bda9ae692f27b81586a43122384bf3ad8b6c50fa36818991b",
+  "preparer_deterministic_output_parity": true,
+  "exact_true_and_int_zero_only": true,
+  "missing_nonzero_null_boolean_float_string_abnormal_receipts_false": true,
+  "physical_pass_runner_failure_distinct_from_timing_failure": true,
+  "real_fullroute_failed_timing_still_classified": true,
+  "sealer_missing_terminal_file_refuses_early_seal": true,
+  "scope": "Pure function and AST-selected actual script expressions only. No physical scripts or preparer top-level executed, no runtime files/vendor/hardware."
+}

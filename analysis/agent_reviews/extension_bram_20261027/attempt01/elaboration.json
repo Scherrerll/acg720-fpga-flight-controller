@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "actual_SP_instances": 28,
+  "actual_GSR_instances": 1,
+  "portable_FF_branch_absent": true,
+  "vvp_sha256": "5a478b2f235a4f5cc5b0fe3b9c969d769a2e65d42e670956f550c30d7e54b20c"
+}

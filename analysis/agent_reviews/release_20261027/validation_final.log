@@ -1,0 +1,15 @@
+test_environment_traversal_and_binary_index_rejected (__main__.EvidenceTests.test_environment_traversal_and_binary_index_rejected) ... ok
+test_genuine_v15_v16_functional_chains (__main__.EvidenceTests.test_genuine_v15_v16_functional_chains) ... ok
+test_missing_SYN_actual_audit_receipt_rejected (__main__.EvidenceTests.test_missing_SYN_actual_audit_receipt_rejected) ... ok
+test_missing_archived_ground_input_rejected (__main__.EvidenceTests.test_missing_archived_ground_input_rejected) ... ok
+test_original_helper_unchanged_and_v18_profiles (__main__.EvidenceTests.test_original_helper_unchanged_and_v18_profiles) ... ok
+test_portable_archive_functional_and_SYN_roundtrip (__main__.EvidenceTests.test_portable_archive_functional_and_SYN_roundtrip) ... ok
+test_real_failed_v15_remains_rejected (__main__.EvidenceTests.test_real_failed_v15_remains_rejected) ... ok
+test_v18_genuine_VY_and_missing_binding_rejected (__main__.EvidenceTests.test_v18_genuine_VY_and_missing_binding_rejected) ... ok
+test_wrong_SYN_source_rejected (__main__.EvidenceTests.test_wrong_SYN_source_rejected) ... ok
+test_wrong_functional_hash_rejected (__main__.EvidenceTests.test_wrong_functional_hash_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 13.434s
+
+OK

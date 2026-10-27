@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "completed": 2,
+  "results": [
+    {
+      "fraction": 0,
+      "exit_code": 0,
+      "pass_lines": [
+        "PASS fraction=0 control_cycles=816534 legal_grants=870 Z_publications=29 invalid_captures=4 operand_difference_cycles_must_be_zero=0"
+      ],
+      "log_sha256": "c018068d9e515482dbbced56eebc6312b31f7428b343b9f6567f2b979a260bcc"
+    },
+    {
+      "fraction": 16,
+      "exit_code": 0,
+      "pass_lines": [
+        "PASS fraction=16 control_cycles=816534 legal_grants=870 Z_publications=29 invalid_captures=4 operand_difference_cycles_must_be_zero=0"
+      ],
+      "log_sha256": "da61da79ffcaad2d93140b3eff4021e55f2d00d9377fcefb27d65a20f234b04f"
+    }
+  ],
+  "scope": "Actual RTL with single-client services. All control/safety/normalization ports every cycle; math requests/cancel/status every cycle and consumed operands/results. All num/value aliases exact every cycle and representable in50/39 bits; all operand differences must be zero. Same MA/MB widths in both sides. Legal boundaries and four single-cycle bad-az captures per fraction. No private force."
+}

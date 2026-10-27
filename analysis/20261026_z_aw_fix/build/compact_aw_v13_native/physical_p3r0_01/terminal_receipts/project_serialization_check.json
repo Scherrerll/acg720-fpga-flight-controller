@@ -1,0 +1,273 @@
+{
+  "passed": true,
+  "native_original_RTL_project": true,
+  "rewritten_FileList": false,
+  "project_sha256": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+  "files": [
+    {
+      "path": "acg720_ano_port.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "xy_pi_parameters.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "telemetry_tx.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/control_gate.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/cordic_atan2.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/ano_flight_state.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/ano_xy_stick.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/ano_xy_divide36.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/height_loss_fallback.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/flight_core.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/bmi088_reader.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/imu_checked_guard_pipelined.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/imu_pipeline_pipelined.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/imu_temporal_check_pipelined.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/motor_pwm.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/rc_ppm.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/spi_uart_modules.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/rtl/pid_divide_signed64.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/rtl/quad_mixer_feedback.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/position_math.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/relative_position.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "sensor/flow_reader.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "sensor/range_reader.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "acg720_ano_port.cst",
+      "type": "file.cst",
+      "enable": "1"
+    },
+    {
+      "path": "acg720_ano_port.sdc",
+      "type": "file.sdc",
+      "enable": "1"
+    },
+    {
+      "path": "sensor/pmw3901_init.vh",
+      "type": "file.verilog",
+      "enable": "0"
+    },
+    {
+      "path": "calibration.vh",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/ano_attitude_estimator.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/rtl/ano_rate_control.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/ano_flow_fusion.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/ano_hold_control.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/ano_z_stick.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/rtl/ano_yaw_control.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/ano_height_fusion.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "sensor/range_height_estimate.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/pose_time_adapter.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/rtl/ano_rc_angle_targets.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/rtl/ano_manual_angles.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "level_calibration.vh",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "sensor/mtf01p_reader.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "sensor/mtf_native_geometry.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/mtf_position_integrator.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "mtf_navigation_shadow.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "nav_math_service.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "sensor/mtf_shared_geometry.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/mtf_shared_flow_fusion.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/mtf_shared_height_fusion.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/mtf_shared_hold_control.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "mtf_xyz_navigation_control.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "position/mtf_xyz_hold_control.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "core/imu_diagnostic_tap.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "sik_imu_diagnostic.v",
+      "type": "file.verilog",
+      "enable": "1"
+    },
+    {
+      "path": "gw5_snapshot_bram.v",
+      "type": "file.verilog",
+      "enable": "1"
+    }
+  ]
+}

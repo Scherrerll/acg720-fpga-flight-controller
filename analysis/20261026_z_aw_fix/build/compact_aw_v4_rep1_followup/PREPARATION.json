@@ -1,0 +1,24 @@
+{
+  "prepared_utc": "2026-10-26T19:24:15.680639+00:00",
+  "scope": "Exact v4 canonical55 and frozen SYN VG e67bcab6. Change only PNR replicate_resources0 to1; no RTL, resynthesis, seed, LOC, clock or exception changes.",
+  "basis": "Full-route v4 raw worst setup misses0.220ns and contains fanout115/long control nets. Official PNR replication targets high-fanout timing. Distinct v5 rep1 previously failed route, so no transferable success claim.",
+  "manual": "SUG1220-2.1E PDF46, replicate_resources0/1; physical optimization may duplicate resources without modifying source-cycle behavior.",
+  "physical_options": {
+    "place": 3,
+    "route": 0,
+    "replicate_resources": 1,
+    "route_maxfan": 23
+  },
+  "period_ns": 20,
+  "script_sha256": {
+    "run_physical.py": "b2a38896c79950b9e532d66e7f364ece3834ff6e4aa530bbe40b3846accdfb22",
+    "launch_physical_hidden.py": "a7ac8b4e56fabd746cc2c2a910ba5b0b64fbf9c56e14c96cad69b51c4a9f6f19",
+    "seal_terminal.py": "31b96725013f5d416dd5a37a43790e34466c11f79a059d4c9a5ce8527b7a9057",
+    "independent_raw_review.py": "8c3cf75ed5f6560854f2e1f4670354e05e0cbe4d11a4e187d106b9b45442b3d2",
+    "physical_snapshot.py": "be6d273676b5c351f406acc82e6611c08e23fb975dc25579568c1fd6bdebc09c"
+  },
+  "parent_preparation_sha256": "c6c085cfcb621646c4dd6aa3fdfa8eba14983afe262b12ae2942e8cc8a45093d",
+  "effective_Tcl_sha256": "b04878c564abbcc93cbc10efab5a9e06a6fd228d6c240649d816674d061a7434",
+  "syntax_and_Tcl_parse_only": true,
+  "PNR_started": false
+}

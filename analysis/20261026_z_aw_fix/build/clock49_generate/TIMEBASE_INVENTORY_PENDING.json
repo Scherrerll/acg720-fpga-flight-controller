@@ -1,0 +1,531 @@
+{
+  "scope": "First-pass source-literal inventory only, not a complete dimensional audit or an approved replacement list. 50000 may mean a clock count or50000us; microsecond/domain constants must never be blindly scaled. No source changed.",
+  "source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+    "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+    "position/pose_time_adapter.v": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "candidate_clock_Hz": 49000000,
+  "basis_clock_Hz": 50000000,
+  "hits": [
+    {
+      "file": "acg720_ano_port.v",
+      "line": 138,
+      "text": "range_age<5000000 && !observer_reset;"
+    },
+    {
+      "file": "acg720_ano_port.v",
+      "line": 140,
+      "text": "wire live_xy_ok=live_height_ok && flow_link && flow_age<5000000 && quality>=30;"
+    },
+    {
+      "file": "acg720_ano_port.v",
+      "line": 327,
+      "text": "telemetry_tx #(.DIAGNOSTIC_INFO(1),.ROTATION_INFO(1),.PERIOD(10000000),.MTF_INFO(1),.MTF_CALLER_SNAPSHOT(1),.INFO_CALLER_SNAPSHOT(1),.NAV_INFO(1),.NAV_CALLER_SNAPSHOT(1),.FLIGHT_INFO(1),.RANGE_DIAGNOSTICS(0),.EXTERNAL_SNAPSHOT(1)) telemetry(.parameter_valid(parameter_response_valid),.parameter_packet(parameter_response),.parameter_ready(parameter_response_ready),.clk(clk50),.core_body(core_snapshot),.extension(extension_snapshot),.acceleration_body(acceleration_snapshot),.range_diagnostic_body(range_diagnostic_snapshot),.flight_info_body(flight_info_q),.rotation_body(rotation_pair_q),.mtf_body(mtf_body),.nav_body(navigation_body),.diagnostic_body(sik_diagnostic_body),.diagnostic_tick(sik_diagnostic_tick),.tx(telemetry_radio_tx),.snapshot_hold(telemetry_snapshot_hold));"
+    },
+    {
+      "file": "mtf_xyz_navigation_control.v",
+      "line": 63,
+      "text": "localparam integer CONTROL_HEIGHT_AGE_LIMIT=5000000;"
+    },
+    {
+      "file": "telemetry_tx.v",
+      "line": 4,
+      "text": "module telemetry_tx #(parameter integer DIAGNOSTIC_INFO=0,parameter integer ROTATION_INFO=0,parameter integer NAV_CALLER_SNAPSHOT=0,parameter integer MTF_CALLER_SNAPSHOT=0,parameter integer NAV_INFO=0,parameter integer MTF_INFO=0,parameter integer FLIGHT_INFO=0,parameter integer PERIOD=5000000,parameter integer RANGE_DIAGNOSTICS=0,parameter integer EXTERNAL_SNAPSHOT=0,parameter integer INFO_CALLER_SNAPSHOT=0)("
+    },
+    {
+      "file": "xy_pi_parameters.v",
+      "line": 105,
+      "text": "module xy_pi_uart_rx #(parameter integer BIT_TICKS=434)("
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "line": 415,
+      "text": "reseed<=0;alpha_remaining<=held_dt+25000;alpha_factor<=65536;state<=ALPHA;"
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "line": 418,
+      "text": "ALPHA:if(alpha_remaining>=50000) begin alpha_remaining<=alpha_remaining-50000;alpha_factor<=(alpha_factor*3)>>2;end"
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "line": 510,
+      "text": "if(aligned_ticks+held_dt>10000000) begin alignment<=0;aligned_ticks<=0;end else aligned_ticks<=aligned_ticks+held_dt;"
+    },
+    {
+      "file": "core/ano_flight_state.v",
+      "line": 7,
+      "text": "module ano_flight_state #(parameter integer TICKS_PER_MS=50000)("
+    },
+    {
+      "file": "core/bmi088_reader.v",
+      "line": 7,
+      "text": "parameter integer BOOT_TICKS=5000000,"
+    },
+    {
+      "file": "core/bmi088_reader.v",
+      "line": 8,
+      "text": "parameter integer RESET_TICKS=2500000,"
+    },
+    {
+      "file": "core/bmi088_reader.v",
+      "line": 9,
+      "text": "parameter integer SETTLE_TICKS=2500000,"
+    },
+    {
+      "file": "core/bmi088_reader.v",
+      "line": 10,
+      "text": "parameter integer WRITE_WAIT_TICKS=2500000,"
+    },
+    {
+      "file": "core/control_gate.v",
+      "line": 8,
+      "text": "parameter integer LOW_HOLD_TICKS = 25000000,"
+    },
+    {
+      "file": "core/control_gate.v",
+      "line": 9,
+      "text": "parameter integer HIGH_HOLD_TICKS = 25000000"
+    },
+    {
+      "file": "core/flight_core.v",
+      "line": 21,
+      "text": "parameter integer ARM_LOW_TICKS=25000000,"
+    },
+    {
+      "file": "core/flight_core.v",
+      "line": 22,
+      "text": "parameter integer ARM_HIGH_TICKS=25000000,"
+    },
+    {
+      "file": "core/flight_core.v",
+      "line": 23,
+      "text": "parameter integer FLIGHT_STATE_TICKS_PER_MS=50000,"
+    },
+    {
+      "file": "core/flight_core.v",
+      "line": 26,
+      "text": "parameter integer TAKEOVER_PICKUP_TICKS=5000000,"
+    },
+    {
+      "file": "core/flight_core.v",
+      "line": 558,
+      "text": "!command_fresh && pwm_ticks1==50000 && pwm_ticks2==50000 && pwm_ticks3==50000 && pwm_ticks4==50000;"
+    },
+    {
+      "file": "core/height_loss_fallback.v",
+      "line": 6,
+      "text": "parameter integer SLEW_TICKS=50000,"
+    },
+    {
+      "file": "core/rc_ppm.v",
+      "line": 8,
+      "text": "parameter integer CLK_HZ = 50000000,"
+    },
+    {
+      "file": "core/rc_ppm.v",
+      "line": 9,
+      "text": "parameter integer FRESH_TICKS = 25000000 // 500 ms at 50 MHz; P2 reference"
+    },
+    {
+      "file": "core/rc_ppm.v",
+      "line": 22,
+      "text": "localparam integer TICKS_PER_US = CLK_HZ / 1000000;"
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "line": 12,
+      "text": "parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,"
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "line": 101,
+      "text": "calc($signed({1'b0,padt})*314,65536,10000000+padt*314,1);"
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "line": 108,
+      "text": "end else calc(($signed({{32{pvx[31]}},pvx})<<<(16-VELOCITY_FRAC_BITS))-vqx,$signed({1'b0,pfdt}),1000000,10);"
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "line": 112,
+      "text": "3:begin aqy_store<=keep64(aqy+value);calc(aqx,$signed({1'b0,dt}),1000000,4);end"
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "line": 113,
+      "text": "4:begin vqx_store<=keep64(clip(vqx+value,-655360000,655360000));calc(aqy,$signed({1'b0,dt}),1000000,5);end"
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "line": 115,
+      "text": "10:begin iqx_store<=keep64(clip(iqx+value,-65536000,65536000));calc(erry,$signed({1'b0,dt}),1000000,11);end"
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "line": 116,
+      "text": "11:begin iqy_store<=keep64(clip(iqy+value,-65536000,65536000));calc(errx*2+iqx,$signed({1'b0,dt}),1000000,12);end"
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "line": 117,
+      "text": "12:begin vqx_store<=keep64(clip(vqx+value,-655360000,655360000));calc(erry*2+iqy,$signed({1'b0,dt}),1000000,13);end"
+    },
+    {
+      "file": "position/ano_height_fusion.v",
+      "line": 11,
+      "text": "parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,"
+    },
+    {
+      "file": "position/ano_height_fusion.v",
+      "line": 509,
+      "text": "fraction_rom[434]=24'd220324;"
+    },
+    {
+      "file": "position/ano_hold_control.v",
+      "line": 17,
+      "text": "parameter integer ENTRY_TICKS=10000000,CLK_HZ=50000000,"
+    },
+    {
+      "file": "position/ano_hold_control.v",
+      "line": 264,
+      "text": "45:begin world_sx_store<=keep64(clip(position_qx,-horizontal_speed_limit_q16,horizontal_speed_limit_q16));world_sy_store<=keep64(clip(position_qy,-horizontal_speed_limit_q16,horizontal_speed_limit_q16));calc($signed({1'b0,dt})*314,65536,10000000+dt*314,1);end"
+    },
+    {
+      "file": "position/ano_hold_control.v",
+      "line": 269,
+      "text": "5:begin ey_store<=keep64(fixy-value);calc(clip(fixx,-32768000,32768000),$signed({1'b0,dt}),1000000,6);end"
+    },
+    {
+      "file": "position/ano_hold_control.v",
+      "line": 270,
+      "text": "6:begin ix_store<=keep64(clip(ix+value,-65536000,65536000));calc(clip(fixy,-32768000,32768000),$signed({1'b0,dt}),1000000,7);end"
+    },
+    {
+      "file": "position/mtf_position_integrator.v",
+      "line": 4,
+      "text": "// Public position is mm Q8: accumulated / (1000000*256), nearest/ties away."
+    },
+    {
+      "file": "position/mtf_position_integrator.v",
+      "line": 8,
+      "text": "parameter integer AGE_LIMIT=5000000"
+    },
+    {
+      "file": "position/mtf_position_integrator.v",
+      "line": 47,
+      "text": "wire bad_dt=dt_us<1000 || dt_us>50000;"
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "line": 12,
+      "text": "parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,"
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "line": 123,
+      "text": "calc($signed({1'b0,padt})*314,65536,10000000+padt*314,1);"
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "line": 130,
+      "text": "end else calc(($signed({{32{pvx[31]}},pvx})<<<(16-VELOCITY_FRAC_BITS))-vqx,$signed({1'b0,pfdt}),1000000,10);"
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "line": 134,
+      "text": "3:begin aqy_store<=keep64(aqy+value);calc(aqx,$signed({1'b0,dt}),1000000,4);end"
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "line": 135,
+      "text": "4:begin vqx_store<=keep64(clip(vqx+value,-655360000,655360000));calc(aqy,$signed({1'b0,dt}),1000000,5);end"
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "line": 137,
+      "text": "10:begin iqx_store<=keep64(clip(iqx+value,-65536000,65536000));calc(erry,$signed({1'b0,dt}),1000000,11);end"
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "line": 138,
+      "text": "11:begin iqy_store<=keep64(clip(iqy+value,-65536000,65536000));calc(errx*2+iqx,$signed({1'b0,dt}),1000000,12);end"
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "line": 139,
+      "text": "12:begin vqx_store<=keep64(clip(vqx+value,-655360000,655360000));calc(erry*2+iqy,$signed({1'b0,dt}),1000000,13);end"
+    },
+    {
+      "file": "position/mtf_shared_height_fusion.v",
+      "line": 11,
+      "text": "parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,"
+    },
+    {
+      "file": "position/mtf_shared_height_fusion.v",
+      "line": 39,
+      "text": "localparam integer TIMER_STORAGE_BITS=(CLK_HZ==50000000) ? 20:32;"
+    },
+    {
+      "file": "position/mtf_shared_height_fusion.v",
+      "line": 87,
+      "text": "wire sources_ok=range_valid && acc_valid && ((RANGE_AGE_PRECHECKED && AGE_LIMIT==5000000) || range_age_ticks<AGE_LIMIT) &&"
+    },
+    {
+      "file": "position/mtf_shared_height_fusion.v",
+      "line": 94,
+      "text": "((RANGE_AGE_PRECHECKED && AGE_LIMIT==5000000) || range_age_ticks<AGE_LIMIT) &&"
+    },
+    {
+      "file": "position/mtf_shared_height_fusion.v",
+      "line": 559,
+      "text": "fraction_rom[434]=24'd220324;"
+    },
+    {
+      "file": "position/mtf_shared_hold_control.v",
+      "line": 18,
+      "text": "parameter integer ENTRY_TICKS=10000000,CLK_HZ=50000000,"
+    },
+    {
+      "file": "position/mtf_shared_hold_control.v",
+      "line": 279,
+      "text": "45:begin world_sx_store<=keep64(clip(position_qx,-horizontal_speed_limit_q16,horizontal_speed_limit_q16));world_sy_store<=keep64(clip(position_qy,-horizontal_speed_limit_q16,horizontal_speed_limit_q16));calc($signed({1'b0,dt})*314,65536,10000000+dt*314,1);end"
+    },
+    {
+      "file": "position/mtf_shared_hold_control.v",
+      "line": 284,
+      "text": "5:begin ey_store<=keep64(fixy-value);calc(clip(fixx,-32768000,32768000),$signed({1'b0,dt}),1000000,6);end"
+    },
+    {
+      "file": "position/mtf_shared_hold_control.v",
+      "line": 285,
+      "text": "6:begin ix_store<=keep64(clip(ix+value,-65536000,65536000));calc(clip(fixy,-32768000,32768000),$signed({1'b0,dt}),1000000,7);end"
+    },
+    {
+      "file": "position/mtf_xyz_hold_control.v",
+      "line": 7,
+      "text": "parameter integer ENTRY_TICKS=10000000,CLK_HZ=50000000,"
+    },
+    {
+      "file": "position/mtf_xyz_hold_control.v",
+      "line": 374,
+      "text": "45:begin sy_store<=keep64(value);world_sx_store<=0;world_sy_store<=0;calc($signed({1'b0,dt})*314,65536,10000000+dt*314,1);end"
+    },
+    {
+      "file": "position/mtf_xyz_hold_control.v",
+      "line": 379,
+      "text": "5:begin ey_store<=keep64(fixy-value);calc(clip(fixx,-32768000,32768000),$signed({1'b0,dt}),1000000,6);end"
+    },
+    {
+      "file": "position/mtf_xyz_hold_control.v",
+      "line": 383,
+      "text": "64:begin ix_store<=keep64(taking_off && work_i!=0 ?clip(ix+value,-65536000,65536000):0);calc(clip(fixy,-32768000,32768000),$signed({1'b0,dt}),1000000,7);end"
+    },
+    {
+      "file": "position/relative_position.v",
+      "line": 12,
+      "text": "parameter integer AGE_LIMIT=5000000,MIN_QUALITY=30,EXTERNAL_YAW=0"
+    },
+    {
+      "file": "position/relative_position.v",
+      "line": 47,
+      "text": "dx>=-2000 && dx<=2000 && dy>=-2000 && dy<=2000 && flow_dt>=50000 && flow_dt<=AGE_LIMIT;"
+    },
+    {
+      "file": "position/relative_position.v",
+      "line": 94,
+      "text": "quality<MIN_QUALITY || flow_dt<50000 || flow_dt>AGE_LIMIT ||"
+    },
+    {
+      "file": "position/relative_position.v",
+      "line": 151,
+      "text": "if(held_quality<MIN_QUALITY || held_dt<50000 || held_dt>AGE_LIMIT || held_dx>2000 || held_dx< -2000 || held_dy>2000 || held_dy< -2000) begin"
+    },
+    {
+      "file": "position/relative_position.v",
+      "line": 201,
+      "text": "7:begin mul_a<=lx;mul_b<=50000000;mul_start<=1;state<=21;end"
+    },
+    {
+      "file": "position/relative_position.v",
+      "line": 203,
+      "text": "8:if(div_done) begin nvx<=div_result/256;mul_a<=ly;mul_b<=50000000;mul_start<=1;state<=22;end"
+    },
+    {
+      "file": "position/relative_position.v",
+      "line": 205,
+      "text": "9:if(div_done) begin nvy<=div_result/256;mul_a<=$signed(height_mm)-$signed(previous_height);mul_b<=50000000;mul_start<=1;state<=23;end"
+    },
+    {
+      "file": "position/relative_position.v",
+      "line": 210,
+      "text": "if(!sources_ok || origin_reset || gyro_overrun || !transaction_epoch_ok || quality<MIN_QUALITY || held_quality<MIN_QUALITY || held_dt<50000 || held_dt>AGE_LIMIT || held_dx>2000 || held_dx< -2000 || held_dy>2000 || held_dy< -2000)begin"
+    },
+    {
+      "file": "sensor/mtf01p_reader.v",
+      "line": 4,
+      "text": "module mtf_uart_rx #(parameter integer CLOCK_HZ=50000000, BAUD=115200)("
+    },
+    {
+      "file": "sensor/mtf01p_reader.v",
+      "line": 161,
+      "text": "module mtf01p_reader #(parameter integer CLOCK_HZ=50000000,EXTERNAL_DIAGNOSTIC_HOLD=0,"
+    },
+    {
+      "file": "sensor/mtf_native_geometry.v",
+      "line": 6,
+      "text": "parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,"
+    },
+    {
+      "file": "sensor/mtf_native_geometry.v",
+      "line": 34,
+      "text": "wire input_velocity_ok=vx_x100>=-1000000 && vx_x100<=1000000 &&"
+    },
+    {
+      "file": "sensor/mtf_native_geometry.v",
+      "line": 35,
+      "text": "vy_x100>=-1000000 && vy_x100<=1000000;"
+    },
+    {
+      "file": "sensor/mtf_native_geometry.v",
+      "line": 134,
+      "text": "if(CLK_HZ!=50000000 || AGE_LIMIT<1 || MAX_COMPUTE_TICKS<4000 ||"
+    },
+    {
+      "file": "sensor/mtf_shared_geometry.v",
+      "line": 7,
+      "text": "parameter integer CLK_HZ=50000000,AGE_LIMIT=5000000,"
+    },
+    {
+      "file": "sensor/mtf_shared_geometry.v",
+      "line": 49,
+      "text": "wire input_velocity_ok=vx_x100>=-1000000 && vx_x100<=1000000 &&"
+    },
+    {
+      "file": "sensor/mtf_shared_geometry.v",
+      "line": 50,
+      "text": "vy_x100>=-1000000 && vy_x100<=1000000;"
+    },
+    {
+      "file": "sensor/mtf_shared_geometry.v",
+      "line": 166,
+      "text": "if(CLK_HZ!=50000000 || AGE_LIMIT<1 || MAX_COMPUTE_TICKS<4000 ||"
+    },
+    {
+      "file": "sensor/range_height_estimate.v",
+      "line": 6,
+      "text": "parameter integer CLK_HZ=50000000,"
+    },
+    {
+      "file": "sensor/range_height_estimate.v",
+      "line": 8,
+      "text": "parameter integer RANGE_AGE_LIMIT=5000000,"
+    },
+    {
+      "file": "sensor/range_height_estimate.v",
+      "line": 72,
+      "text": "if(CLK_HZ!=50000000 || RANGE_AGE_LIMIT<1 ||"
+    },
+    {
+      "file": "sensor/range_reader.v",
+      "line": 161,
+      "text": "// Original 434-clock bit timing is retained; explicit reset and a bad-stop"
+    },
+    {
+      "file": "core/rtl/ano_rate_control.v",
+      "line": 8,
+      "text": "parameter integer CLK_HZ=50000000,"
+    },
+    {
+      "file": "core/rtl/ano_rate_control.v",
+      "line": 96,
+      "text": "if((GYRO_FRAC_BITS!=0 && GYRO_FRAC_BITS!=12) || CLK_HZ!=50000000 || MAX_DT_TICKS<1 || MAX_DT_TICKS>3000000 ||"
+    },
+    {
+      "file": "core/rtl/ano_rc_angle_targets.v",
+      "line": 8,
+      "text": "parameter integer CLK_HZ=50000000,"
+    },
+    {
+      "file": "core/rtl/ano_rc_angle_targets.v",
+      "line": 76,
+      "text": "if(CLK_HZ!=50000000 || MAX_DT_TICKS<1 || MAX_DT_TICKS>3000000 ||"
+    },
+    {
+      "file": "core/rtl/ano_yaw_control.v",
+      "line": 8,
+      "text": "parameter integer CLK_HZ=50000000,"
+    },
+    {
+      "file": "core/rtl/ano_yaw_control.v",
+      "line": 60,
+      "text": "if(CLK_HZ!=50000000 || MAX_DT_TICKS<1 || MAX_DT_TICKS>3000000 ||"
+    },
+    {
+      "file": "core/rtl/ano_yaw_control.v",
+      "line": 62,
+      "text": "MAX_STICK_RATE_CDEG_S<1 || MAX_STICK_RATE_CDEG_S>25000 ||"
+    }
+  ],
+  "required_review": [
+    "All functional logic in one actual49MHz data clock domain; manufacturer PLL initializer remains50MHz as generated.",
+    "Actual UART bit timing, SPI/IMU periods, RC/PWM units and pulse stop checks.",
+    "Tick-to-microsecond carry conversion, estimator/rate-control dt denominators, ms ages and watchdogs.",
+    "Control wall-time periods, numerical precision, original protection and stop/landing behavior.",
+    "Explicit49MHz-specific clock/source/STA/CDC gates and new full behavioral/physical validation; existing50MHz gates are not silently relaxed."
+  ]
+}

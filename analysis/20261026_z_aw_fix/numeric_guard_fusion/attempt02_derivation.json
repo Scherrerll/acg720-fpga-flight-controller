@@ -1,0 +1,8 @@
+{
+  "scope": "Compiler TMP environment repair only; preserved attempt01. Real RTL source and TB/assertions unchanged.",
+  "old_entry_sha256": "5a042608d259ffde8d68fed2a97bdc771328239513f0f1c49f7e8dd84de54f14",
+  "new_entry_sha256": "80f604f0cec84936b858f7804d8304d6c9186abab7afded4805cb3047a8a21e1",
+  "first_compile_exit_sha256": "9fc914628f2743ce789ef3fe55c0d54834c87d52fd32824b4d9c4a1ad62fa5e7",
+  "first_compile_log_sha256": "61bd96a9611b13aaf84177faa074ced5eb7b4b81d4492261314212be4a439595",
+  "temp_environment": "attempt02/tmp"
+}

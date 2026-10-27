@@ -1,0 +1,387 @@
+{
+  "sealed_utc": "2026-10-26T23:58:58.367983+00:00",
+  "scope": "Actual v22 successful SYN_ONLY plus strict mapped audit, temporary compiler scratch excluded; no physical qualification.",
+  "source_sha256": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+    "core/height_loss_fallback.v": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976",
+    "position/pose_time_adapter.v": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "artifacts": {
+    "source/acg720_ano_port.cst": {
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "bytes": 1891
+    },
+    "source/acg720_ano_port.gprj": {
+      "sha256": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+      "bytes": 4014
+    },
+    "source/acg720_ano_port.gprj.user": {
+      "sha256": "01e4c8091584245ef8b5bbf2c032888c3d632c9d3758a9654570c30718f23f86",
+      "bytes": 806
+    },
+    "source/acg720_ano_port.sdc": {
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "bytes": 254
+    },
+    "source/acg720_ano_port.v": {
+      "sha256": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd",
+      "bytes": 27514
+    },
+    "source/build.tcl": {
+      "sha256": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+      "bytes": 411
+    },
+    "source/calibration.vh": {
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    "source/core/ano_attitude_estimator.v": {
+      "sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "bytes": 41227
+    },
+    "source/core/ano_flight_state.v": {
+      "sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "bytes": 3175
+    },
+    "source/core/bmi088_reader.v": {
+      "sha256": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+      "bytes": 12475
+    },
+    "source/core/control_gate.v": {
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    "source/core/cordic_atan2.v": {
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    "source/core/flight_core.v": {
+      "sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+      "bytes": 39677
+    },
+    "source/core/height_loss_fallback.v": {
+      "sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+      "bytes": 5536
+    },
+    "source/core/imu_checked_guard_pipelined.v": {
+      "sha256": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+      "bytes": 6024
+    },
+    "source/core/imu_diagnostic_tap.v": {
+      "sha256": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+      "bytes": 6036
+    },
+    "source/core/imu_pipeline_pipelined.v": {
+      "sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+      "bytes": 9700
+    },
+    "source/core/imu_temporal_check_pipelined.v": {
+      "sha256": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+      "bytes": 3958
+    },
+    "source/core/motor_pwm.v": {
+      "sha256": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+      "bytes": 3583
+    },
+    "source/core/rc_ppm.v": {
+      "sha256": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+      "bytes": 5660
+    },
+    "source/core/rtl/ano_manual_angles.v": {
+      "sha256": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+      "bytes": 5795
+    },
+    "source/core/rtl/ano_rate_control.v": {
+      "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "bytes": 16946
+    },
+    "source/core/rtl/ano_rc_angle_targets.v": {
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    "source/core/rtl/ano_yaw_control.v": {
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    "source/core/rtl/pid_divide_signed64.v": {
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    "source/core/rtl/quad_mixer_feedback.v": {
+      "sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+      "bytes": 1912
+    },
+    "source/core/spi_uart_modules.v": {
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    "source/gw5_snapshot_bram.v": {
+      "sha256": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+      "bytes": 1368
+    },
+    "source/impl/gwsynthesis/acg720_ano_port.log": {
+      "sha256": "0b4fd2e9b1f3a7c5462e97081ce35f57a44caa9d89f5e75ba19dc1bf4c1cad9f",
+      "bytes": 82823
+    },
+    "source/impl/gwsynthesis/acg720_ano_port.prj": {
+      "sha256": "688f9353c86a689ea03e210d5c0d92780fdf8e0c52d38e150994f71d27a2b587",
+      "bytes": 11563
+    },
+    "source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "sha256": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8",
+      "bytes": 14538895
+    },
+    "source/impl/gwsynthesis/acg720_ano_port_syn.rpt.html": {
+      "sha256": "68fc735b9fb56ad42a1e2c44e7183d491fac2a9bc494a092af5d4477108fb47b",
+      "bytes": 246002
+    },
+    "source/impl/gwsynthesis/acg720_ano_port_syn_resource.html": {
+      "sha256": "71e899f40559d4d59b30219829cfbbdc4d010936431b51f5e5a0d28f7c148f5c",
+      "bytes": 29105
+    },
+    "source/impl/gwsynthesis/acg720_ano_port_syn_rsc.xml": {
+      "sha256": "9ff7e5bae63db480159878e9fec17a5165b895a1218301e5e64235f6a4d3ee82",
+      "bytes": 8382
+    },
+    "source/level_calibration.vh": {
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    "source/mtf_navigation_shadow.v": {
+      "sha256": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+      "bytes": 10740
+    },
+    "source/mtf_xyz_navigation_control.v": {
+      "sha256": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd",
+      "bytes": 26792
+    },
+    "source/nav_math_service.v": {
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "bytes": 4106
+    },
+    "source/position/ano_flow_fusion.v": {
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    "source/position/ano_height_fusion.v": {
+      "sha256": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+      "bytes": 44836
+    },
+    "source/position/ano_hold_control.v": {
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    "source/position/ano_xy_divide36.v": {
+      "sha256": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "bytes": 1823
+    },
+    "source/position/ano_xy_stick.v": {
+      "sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "bytes": 4785
+    },
+    "source/position/ano_z_stick.v": {
+      "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "bytes": 3700
+    },
+    "source/position/mtf_position_integrator.v": {
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "bytes": 9147
+    },
+    "source/position/mtf_shared_flow_fusion.v": {
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "bytes": 9359
+    },
+    "source/position/mtf_shared_height_fusion.v": {
+      "sha256": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+      "bytes": 47670
+    },
+    "source/position/mtf_shared_hold_control.v": {
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "bytes": 23874
+    },
+    "source/position/mtf_xyz_hold_control.v": {
+      "sha256": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976",
+      "bytes": 31486
+    },
+    "source/position/pose_time_adapter.v": {
+      "sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+      "bytes": 2215
+    },
+    "source/position/position_math.v": {
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    "source/position/relative_position.v": {
+      "sha256": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+      "bytes": 13807
+    },
+    "source/sensor/flow_reader.v": {
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    "source/sensor/mtf01p_reader.v": {
+      "sha256": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+      "bytes": 13438
+    },
+    "source/sensor/mtf_native_geometry.v": {
+      "sha256": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+      "bytes": 14083
+    },
+    "source/sensor/mtf_shared_geometry.v": {
+      "sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+      "bytes": 14441
+    },
+    "source/sensor/pmw3901_init.vh": {
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    "source/sensor/range_height_estimate.v": {
+      "sha256": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+      "bytes": 5710
+    },
+    "source/sensor/range_reader.v": {
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    "source/sik_imu_diagnostic.v": {
+      "sha256": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+      "bytes": 5403
+    },
+    "source/telemetry_tx.v": {
+      "sha256": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+      "bytes": 20760
+    },
+    "source/xy_pi_parameters.v": {
+      "sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+      "bytes": 5208
+    },
+    "synth_only.tcl": {
+      "sha256": "c9371f71245a91d3d8f8ad8a27f144ce2afc30a8f80a39b801d511f01b558511",
+      "bytes": 471
+    },
+    "verification/audit.log": {
+      "sha256": "2c92fbbcdef1e5a1c0fa7519f80d160f5ecb8a25efc19a8cba8f8110360168f9",
+      "bytes": 1816
+    },
+    "verification/audit_exit.json": {
+      "sha256": "999e211a502db7092dc4ebcecc4b92d77382991966795a115ee1802558c1cece",
+      "bytes": 1104
+    },
+    "verification/audit_process.json": {
+      "sha256": "8cd9e7410c196690d5af28fbc549fc0baa45c0a0e4ac3c0b2bf0aef58071ddd6",
+      "bytes": 913
+    },
+    "verification/build_input.json": {
+      "sha256": "0ce746c89d7e57b370167db732786957f6fad7bcbb67e63dc2a85124ff6337ed",
+      "bytes": 15168
+    },
+    "verification/executed_audit_synthesis_only.py": {
+      "sha256": "909e6ab9862546a56f586d75e4f492f342be3de10ed702c5036a220cfebc3f06",
+      "bytes": 6315
+    },
+    "verification/executed_run_synthesis.py": {
+      "sha256": "98f5449e3789d1522ad8036c8eaa69eb226117c6988a1342c7faac8f5fa71925",
+      "bytes": 5356
+    },
+    "verification/gain_port_audit.json": {
+      "sha256": "95c7568b43d80e794061c0b70b2244495793173a5871f99d95805a6602e52c5e",
+      "bytes": 17506
+    },
+    "verification/local_hint_effect_audit.json": {
+      "sha256": "c9b201d2240e6cd1d560464723d007996bf7ee9cc5f87ab4112718760300a7ca",
+      "bytes": 8129
+    },
+    "verification/mapped_audit.json": {
+      "sha256": "349dcb548a0000ec08f830a65f65fd9b36dd077a85a2e385e919bd628f416e83",
+      "bytes": 8223
+    },
+    "verification/native_synthesis_audit.json": {
+      "sha256": "e9c92506bb92c12eb9705563aa30d9a99480ac9e2f118dc54a6e883dc0a572ff",
+      "bytes": 12579
+    },
+    "verification/resource_comparison.json": {
+      "sha256": "106868e45548cb4631bfe810819f3d73c5f381d85ee726e66a2438dd0a2bcb04",
+      "bytes": 2082
+    },
+    "verification/strict_ff_clock_audit.json": {
+      "sha256": "288f5e03d4a4bf11112ed46b3b19ed2183e14cb75976d76fb3bef098df4fdebc",
+      "bytes": 169
+    },
+    "verification/synthesis.log": {
+      "sha256": "205ae37fed0ab9cbdbe7f231552f5fda1687d1ece3cf9cf99e8f9f258a8bd277",
+      "bytes": 83080
+    },
+    "verification/synthesis_exit.json": {
+      "sha256": "8d3799ad62893fc0ed78468068118411ef73b3391a18f128a7b6e43ee901da13",
+      "bytes": 1049
+    },
+    "verification/synthesis_input.json": {
+      "sha256": "d425255c668b254a1d1afcd5a3e5c7bf80dfc4e84b5b9b88e48ddabe44c42d87",
+      "bytes": 5780
+    },
+    "verification/synthesis_process.json": {
+      "sha256": "c32801fe686ae8348df918e687b30ab0773acc3245cda7a6e328dcb698765319",
+      "bytes": 858
+    },
+    "verification/synthesis_summary.json": {
+      "sha256": "a9f6477cdb1a827628cda8be31e453e329f7c097d60e0d4b0cfcda399da27006",
+      "bytes": 6451
+    }
+  },
+  "runner_actual_wait": 0,
+  "vendor_actual_wait": 0,
+  "audit_actual_wait": 0,
+  "root_exit_sha256": "bb10abaed1ccccf0c9b324d22cba950e3536d2836e5e5f818817c72d87c6acf8"
+}

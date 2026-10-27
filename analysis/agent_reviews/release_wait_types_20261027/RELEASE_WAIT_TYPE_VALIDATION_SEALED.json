@@ -1,0 +1,36 @@
+{
+  "sealed_utc": "2026-10-27T03:32:05.306144+00:00",
+  "passed": true,
+  "tests": 48,
+  "test_groups": {
+    "new_receipt_scalar_negative_groups": 6,
+    "unchanged_existing_suite": 42
+  },
+  "actual_child_waits": {
+    "negative_types_retry02": 0,
+    "existing42_retry02": 0
+  },
+  "source_script_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "c52c889b913f9b5d1d0bfcd8d15bd50475b3550175c9245767efbff4dd26e3d2",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\build_candidate.py": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_wait_types_20261027\\test_wait_types_retry02.py": "90f1564ed11d31a74d2508d6bbc089eae900ffc32da9a76804b582ec557ff27f",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_wait_types_20261027\\run_validation_retry02.py": "ac688d8123acd1f561e7d39db6d5a57e27fd666a43866738ca94f56e7250eb44",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\test_release_evidence.py": "3e33c18c65b549a8afdd08e79191138c7d8f8cfc311e05e75a40d0a4c43d60c6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\agent_reviews\\release_20261027\\check_existing_archives.py": "dc06c09f20f62c45c347de059ce376fe356092cb80ffdc394840ca667acde2d5"
+  },
+  "previous42_seal_unchanged": "5eb911a1fffe723212237b1478384aa797501833368427cb5c892b107b8d832a",
+  "previous42_readonly_snapshot_manifest_sha256": "023b07e430455ec461d6afd1042eafa98bdfa006c030f6aebacb90ae622fbeea",
+  "first_fixture_failure_preserved": {
+    "actual_wait": 1,
+    "reason": "Fixture expected AssertionError; verifier require deliberately raises SystemExit; retry changes only test expectations.",
+    "receipt_sha256": "cdef9a11155efad4ddf32e92bbf2ee0c0b08d22d4741aee991c159d6f3e30ccc"
+  },
+  "scope": "Receipt exit-code type hardening only. Offline proofs/SYN/preparation test archives; no vendor, hardware, release export/promotion or qualified package generated.",
+  "bindings": {
+    "VALIDATION_RESULT_RETRY02.json": "2bdec3766b6d8cfd32510ffdb031b2b1705eecabc61bab7c3fd28287bc1c19bd",
+    "negative_types_retry02_exit.json": "ed793a1bdf8f3415d1863cd1f003e32cbd434e246017939dc5674e9831d0a205",
+    "existing42_retry02_exit.json": "c9d60dab3902b03f8151961553f1f44f7b70e4d7468360b46938f63f358d2ea0",
+    "seal_validation.py": "3fe4efd70fd2be4a771f6040ece20f4b042ed967dd7de28b4a10649002428529"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "scope": "Exact prepared Python Tcl expression evaluated as strings and Tcl syntax completeness checked; no Tcl execution or vendor/hardware start.",
+  "runner_sha256": "504048caddded454b585efabd1601eac7311ea3db44bb01e96d0ba4186acf719",
+  "profiles": {
+    "3": {
+      "Tcl_complete": true,
+      "options_verified": true,
+      "Tcl_sha256": "6eafd6a26b350a8e59b01a509aa77527135652ac68d46e3e644c450248a19b78"
+    }
+  },
+  "profile_label": "physical_p3r0_dsploc_01",
+  "combined_CST_sha256": "794db7888509514d1394d5f1bc25954445717eeefaabd353464a047713cfadef",
+  "portable_rows": 46,
+  "DSP": 44,
+  "BSRAM": 2
+}

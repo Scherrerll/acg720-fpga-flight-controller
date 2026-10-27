@@ -1,0 +1,50 @@
+{
+  "approved_lifecycle_fix": true,
+  "reviewed_utc": "2026-10-27T04:47:14.564000+00:00",
+  "production_script_hashes": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\export_qualified_v4.py": "cab893924c892327dc4168254064dfade00c2a4db3c19908dd34c5f58f6552f1",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\firmware\\B0B4\\verify_release.py": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf"
+  },
+  "owner_lifecycle_seal_sha256": "676f0fda2eda9460dd6c6553ff622572f14f057f9a008789203f8caf8eebc2f1",
+  "prepatch_export_sha256": "c52c889b913f9b5d1d0bfcd8d15bd50475b3550175c9245767efbff4dd26e3d2",
+  "confirmed_prepatch_cause": "The old implementation copied selected55 over B4/source before late finish reread10 differing original-key files. verify_release.py and export script are outside the promoted source directory and are not written by main.",
+  "patch_scope": "Only explicit55 planned overwrite paths freeze validated backup bytes after complete backup55 hash validation and before promotion. Original-key hash/index is unchanged; selected origins stay separate; blob/_write rehash cached bytes and byte counts; every other input remains live-strict.",
+  "main_other_statements_AST_unchanged": true,
+  "all_other_collector_methods_AST_unchanged": true,
+  "owner_actual_test_groups_wait0": {
+    "lifecycle8": 0,
+    "strict_wait6": 0
+  },
+  "independent_temporary_real55_roundtrip_passed": true,
+  "independent_fixture_counts": {
+    "original_keys": 55,
+    "selected_keys": 55,
+    "extra_control_key": 1,
+    "indexed_keys": 111,
+    "frozen_keys": 55,
+    "actual_conflicts": 10
+  },
+  "independent_rejected_cases": [
+    {
+      "case": "relabel_old_original_key_as_selected",
+      "reason": "('Declared frozen evidence changed', 'c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/v22_export_lifecycle_independent_20261027/independent_lifecycle_19zqhmq5/initial/source/acg720_ano_port.v')"
+    },
+    {
+      "case": "unplanned_input_late_drift",
+      "reason": "('Evidence changed before archiving', 'c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/v22_export_lifecycle_independent_20261027/independent_lifecycle_19zqhmq5/unplanned_input.v')"
+    },
+    {
+      "case": "frozen_bytes_tampering",
+      "reason": "('Frozen evidence changed before archiving', 'c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/agent_reviews/v22_export_lifecycle_independent_20261027/independent_lifecycle_19zqhmq5/initial/source/acg720_ano_port.v')"
+    }
+  ],
+  "real_B4_source55_unchanged": true,
+  "real_source_or_production_files_edited": false,
+  "real_qualified_file_or_release_created": false,
+  "vendor_or_hardware_run": false,
+  "full48_suite_rerun_by_reviewer": false,
+  "temporary_archive_cleaned_by_context": true,
+  "review_script_sha256": "964f0b5c4f39f9c40210de8b5263292a9f4a09790e19f09ccdc9f285b0bcedb9",
+  "findings": [],
+  "scope": "Approval of the exact lifecycle patch and focused genuine-byte temporary archive test. This reviewer does not execute real export/promotion or manufacture physical qualification."
+}

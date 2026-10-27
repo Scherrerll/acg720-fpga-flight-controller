@@ -1,0 +1,70 @@
+{
+  "scope": "Frozen v3 SYN+ownP3R0 realwait1/898unrouted/noSTA. Explicit files only; other active profiles excluded. External build output hashes in FINAL_STATUS.",
+  "files": [
+    {
+      "path": "source_freeze.json",
+      "bytes": 6080,
+      "sha256": "252b420d455f5d2d6501b1db5fde7cba86a96044cbeb6b64085b9469badd21ff"
+    },
+    {
+      "path": "source_review.md",
+      "bytes": 1487,
+      "sha256": "9ae5e4b145432e04b09f845a9fa94a0ca9854a81284142711b330b83f51e9355"
+    },
+    {
+      "path": "run_synthesis.py",
+      "bytes": 8182,
+      "sha256": "2187011320d8981b6cbfef35bc6f8d86d16b33a290adb718528a001c55b3f982"
+    },
+    {
+      "path": "synthesis_runner.stdout.log",
+      "bytes": 3989,
+      "sha256": "1854394c2500cb09a9973823b524b6590fd2c8515d35495a140e2423458c5081"
+    },
+    {
+      "path": "synthesis_runner.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "synthesis_runner_process.json",
+      "bytes": 239,
+      "sha256": "8496087ac3061c6812355a34b1ef6906da7df593d0c9e32082b4c29d832ce65e"
+    },
+    {
+      "path": "run_physical_p3r0.py",
+      "bytes": 7747,
+      "sha256": "f2a1a00c9e1bd688cb1df05facb7e8efd26c81949d0a60559aa6ba7093be1d5a"
+    },
+    {
+      "path": "physical_runner.stdout.log",
+      "bytes": 210,
+      "sha256": "2bcd25a76ebf82b8378d859c8052cfc67f42dcd74c0435c416d9521df27929b1"
+    },
+    {
+      "path": "physical_runner.stderr.log",
+      "bytes": 1065,
+      "sha256": "9a7979a79a015a8f01e64124c0db8ba9b4d20d6a775af42d5bef4caf7b6cd968"
+    },
+    {
+      "path": "physical_runner_process.json",
+      "bytes": 243,
+      "sha256": "8fc9634b468e84c095edba4a1f66d10b6ece401cf193d43991b537d286f88dd4"
+    },
+    {
+      "path": "SYNTHESIS_REPORT.md",
+      "bytes": 4234,
+      "sha256": "c549bb997b55e0453c9213b081e89e97d293261d22614699d58e52fd2d1f8ba0"
+    },
+    {
+      "path": "finish_stage.py",
+      "bytes": 3194,
+      "sha256": "d61fc832f479bbf8bde9ecfbb0466752dfa7f8dc3c86a6b986016f417b3a2e10"
+    },
+    {
+      "path": "FINAL_STATUS.json",
+      "bytes": 6441,
+      "sha256": "81d86b72f1aa49d3a030a4edebbdaf40f857d23120cffb6695849daafb0d4acc"
+    }
+  ]
+}

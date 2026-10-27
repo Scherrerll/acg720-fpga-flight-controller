@@ -1,0 +1,78 @@
+{
+  "mapped_audit_pass": true,
+  "resources": {
+    "acg720_ano_port": {
+      "baseline": {
+        "T_Register": 27765,
+        "T_Alu": 9564,
+        "T_Lut": 36040,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "candidate": {
+        "T_Register": 27680,
+        "T_Alu": 9544,
+        "T_Lut": 36672,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 30
+      },
+      "delta": {
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_Alu": -20,
+        "T_Lut": 632,
+        "T_Bsram": 28,
+        "T_MULTALU27X18": 0,
+        "T_Register": -85
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "baseline": {
+        "T_Register": 3280,
+        "T_Alu": 1581,
+        "T_Lut": 4757,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "candidate": {
+        "T_Register": 3282,
+        "T_Alu": 1561,
+        "T_Lut": 4954,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_Alu": -20,
+        "T_Lut": 197,
+        "T_MULTALU27X18": 0,
+        "T_Register": 2
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "baseline": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 441
+      },
+      "candidate": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 434
+      },
+      "delta": {
+        "T_Alu": 0,
+        "T_Lut": -7,
+        "T_Register": 0
+      }
+    }
+  }
+}
+{"passed_checks": true, "VG": "7688e42487e39171b73a81d8b799da26bf884eabd72f21534aa352207d2b1ee3", "SP": 28, "CLK50": true, "original_waits": {"vendor": 0, "audit": 1, "root": 1}, "SYN_rerun": false}

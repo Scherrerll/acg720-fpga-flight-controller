@@ -1,0 +1,25 @@
+--- v4/acg720_ano_port.v
++++ v14/acg720_ano_port.v
+@@ -43,7 +43,7 @@
+  wire pilot_norm_update,pilot_norm_valid;wire [15:0] pilot_norm_dt_us;
+  wire signed [31:0] world_ax,world_ay,world_azup;wire accel_valid;
+  wire signed [15:0] raw_ax,raw_ay,raw_az;wire raw_accel_valid;wire [31:0] raw_accel_age;
+- reg previous_pose_valid=0;
++ reg previous_pose_valid /* synthesis syn_maxfan = 10 */ =0;
+  always @(posedge clk50) if(!rst_n) previous_pose_valid<=0;else previous_pose_valid<=pose_valid;
+  wire observer_reset=!pose_valid || !previous_pose_valid;
+  wire acceleration_update,converted_acc_valid;
+--- v4/core/height_loss_fallback.v
++++ v14/core/height_loss_fallback.v
+@@ -22,7 +22,10 @@
+  reg [15:0] last_good=MIN_US,manual_us=MIN_US,anchor_us=MIN_US;
+  reg [15:0] anchor_stick=1500;
+  wire enter=armed && taking_off && seen && !height_available;
+- assign active=rst_n && healthy && armed && (latched || enter);
++ // Same live expression, locally constrain only its combinational driver.
++ wire active_fanout_limited /* synthesis syn_maxfan = 50 */;
++ assign active_fanout_limited=rst_n && healthy && armed && (latched || enter);
++ assign active=active_fanout_limited;
+  assign latched_active=rst_n && healthy && armed && latched;
+  assign takeover_ready=rst_n && healthy && armed && (latched || taking_off && seen);
+  assign prior_collective_valid=seen;

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v13\\proofs\\top\\run.py"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v13\\proofs",
+  "started_utc": "2026-10-26T15:22:31.420707+00:00",
+  "pid": 56456,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "seconds": 30.99439001083374,
+  "ended_utc": "2026-10-26T15:23:02.415114+00:00",
+  "log_sha256": "e85ae32f3446093df366d2d63e26ac440f750dabef4550bcb196b4badf34ab48"
+}

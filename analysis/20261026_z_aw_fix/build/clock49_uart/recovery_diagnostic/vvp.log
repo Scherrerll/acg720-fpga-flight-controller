@@ -1,0 +1,16 @@
+HOST t_ns=28700.000 byte=5a goodStop=0
+RX49 t_ns=111131.765 valid=0 error=1 data=00 state=0
+RX50 t_ns=111210.001 valid=0 error=1 data=00 state=0
+HOST t_ns=141547.227 byte=00 goodStop=1
+RX49 t_ns=193539.269 valid=0 error=1 data=00 state=0
+RX50 t_ns=224050.001 valid=1 error=0 data=00 state=0
+RX49 t_ns=275946.773 valid=1 error=0 data=fc state=0
+LONG_IDLE_CASE
+HOST t_ns=412163.898 byte=5a goodStop=0
+RX49 t_ns=494598.085 valid=0 error=1 data=00 state=0
+RX50 t_ns=494670.001 valid=0 error=1 data=00 state=0
+RX49 t_ns=577005.589 valid=1 error=0 data=ff state=0
+HOST t_ns=620497.236 byte=00 goodStop=1
+RX49 t_ns=702943.357 valid=1 error=0 data=00 state=0
+RX50 t_ns=703010.001 valid=1 error=0 data=00 state=0
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\clock49_uart\recovery_diagnostic\tb.v:24: $finish called at 880913907 (1ps)

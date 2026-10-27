@@ -1,0 +1,20 @@
+{
+  "scope": "Same exact v4 VG/source55, source clock and20ns constraints. Assign existing clk50_d to physical BUFG[1] only; no new clock/phase/period or falsepath.",
+  "basis": "Closest complete-route v4 Fmax49.456/setup\u22120.220ns; raw detailed worst path has launch-clock3.623ns/capture-clock3.186ns, skew\u22120.437ns. Test a different physical global line, keeping full five-table and setup/hold0 acceptance mandatory.",
+  "manual": "SUG1541-1.0E PDF29-30 documents CLOCK_LOC net BUFG[n]=CLK. Native parser/device must accept it; no success inferred.",
+  "period_ns": 20,
+  "physical_options": {
+    "place": 3,
+    "route": 0,
+    "route_maxfan": 23,
+    "existing_clk50_global_line": 1
+  },
+  "PNR_started": false,
+  "scripts": {
+    "independent_raw_review.py": "979162513bd186544bd736e46878b1ce8485c9d17b79651dc4460bff4cbadd19",
+    "launch_physical_hidden.py": "3886abfd342456236d9a1b51160af3a81bcccfd7a3082f6c9ffc3555619d5d3d",
+    "physical_snapshot.py": "e313b91940b9992f048d4039652353d086eefca6f1d4a7e79b729b06ca44fae9",
+    "run_physical.py": "41126e2daba3aacd4b99506037c6f9ba44a2cf54c7dda60074ff5f251c56ceae",
+    "seal_terminal.py": "485bf77af043bbab3c63d9244edf6dc8dee150a26f9dbeeac4381377a6c65efe"
+  }
+}

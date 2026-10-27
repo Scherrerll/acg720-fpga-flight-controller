@@ -1,0 +1,35 @@
+{
+  "scope": "Exact unchanged physical gates; v8 source/VG and focused proof binding only. No physical run started by preparation.",
+  "VG_sha256": "5f3637446527bd5b1c83b20c5493027ca7101d664b845630104d9a51b035a33e",
+  "items": {
+    "run_physical.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\run_physical.py",
+      "donor_sha256": "332d4759a8e12124dd226f82465720cd1b0afca7853f4f9ac9c1ae8e37181e55",
+      "derived_sha256": "8316b570c668fc4f39dfe495c66992891188905f6dc0d73d2d9abecfd009c08b"
+    },
+    "launch_physical_hidden.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\launch_physical_hidden.py",
+      "donor_sha256": "c0d348b5097efe52c42f907f34d4d263ef8f0acdfc9fce20e945b653ed84343e",
+      "derived_sha256": "5a27207f40d7cc3df28150a5a2edc172f6f3280183308b37050477c4a177ccdb"
+    },
+    "physical_snapshot.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\physical_snapshot.py",
+      "donor_sha256": "836fec0d49d601913d7e9bd6a9284bbb26ec1313c34b6930b1976ca8f7df4b11",
+      "derived_sha256": "b07899d27aa75c8e332fdb9452b38f1ad4140ec05e81ee981cf446a36e4df05f"
+    },
+    "seal_terminal.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\seal_terminal.py",
+      "donor_sha256": "ff155285c72ece40f4a140c22f65e5a89cc7d12f9f00dfec95e552e42cbfdd26",
+      "derived_sha256": "be8eb632a154061df91f655b69e3124e7fce2581810329cbcbc11872e6bdf5a5"
+    },
+    "independent_raw_review.py": {
+      "donor": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\independent_raw_review.py",
+      "donor_sha256": "ed44e5e1083d24dd94e9017dd596dbb1909eff5f5e3ef38a0b15773aa5b99720",
+      "derived_sha256": "00754c440bf2dcbf7a402fdd0d080b9160dd93142b186322532ef39e2bb1b071"
+    }
+  },
+  "planned_profiles": [
+    3,
+    2
+  ]
+}

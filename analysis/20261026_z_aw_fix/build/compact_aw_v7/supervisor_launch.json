@@ -1,0 +1,7 @@
+{
+  "pid": 31448,
+  "started_utc": "2026-10-26T08:33:13.6737282Z",
+  "script": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v7\\launch_synthesis_hidden.py",
+  "window_style": "Hidden",
+  "method": "Start-Process asynchronous independent supervisor; supervisor waits on runner; original helper waits on vendor"
+}

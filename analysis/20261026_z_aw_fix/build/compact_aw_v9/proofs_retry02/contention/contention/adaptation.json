@@ -1,0 +1,5 @@
+{
+  "frozen_fixture_sha256": "dcbd626491c62de5ec7878ffff3db5a36334781bcfd2af4e98e1f7bd4b8cb902",
+  "changes": "Original four-client assertions retained; bothCH3=1600 and require nonzeroZintegral in addition to nonzeroXYI; newv2 source and output paths",
+  "hardware": false
+}

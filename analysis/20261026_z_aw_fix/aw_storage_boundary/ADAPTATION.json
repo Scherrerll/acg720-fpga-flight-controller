@@ -1,0 +1,5 @@
+{
+  "donor_sha256": "4b88654542608e54975c397819de095c3163ae88e7dde7e137af6338b7d73c24",
+  "changes": "Old=v5/new=v7 and expectedoldhash; keep all control/math/cancel/num/value assertions; add everycycle oldI/bias27/26 and valid-use candidate/Pbias27/29/collective30 identity+range. No private preload/force.",
+  "hardware": false
+}

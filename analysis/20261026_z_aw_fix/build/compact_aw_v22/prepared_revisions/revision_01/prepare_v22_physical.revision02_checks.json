@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "preparer_sha256": "df307304a7d6f7dc453ed37d565f94b675a0d8c90d988d57c91b63f3a4b8c879",
+  "immutable_revision01_sha256": "2c140bc47c971b48a32c51bf74e8f04dff042131bcbf7d612b1d4d3201009c2d",
+  "all7_deferred_scripts_AST_compile_only_passed": true,
+  "identical_pure_helpers_in_both_scripts": true,
+  "truth_cases_total": 2704,
+  "checks": {
+    "seal_terminal.py": {
+      "truth_cases": 1352,
+      "runner1_after_actual_gate_pass_separate": true,
+      "genuine_fullroute_timing_failure_retained": true
+    },
+    "physical_snapshot.py": {
+      "truth_cases": 1352,
+      "runner1_after_actual_gate_pass_separate": true,
+      "genuine_fullroute_timing_failure_retained": true
+    }
+  },
+  "main_not_executed": true,
+  "no_runtime_generated": true,
+  "vendor_started": false
+}

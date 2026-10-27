@@ -1,0 +1,820 @@
+{
+  "passed": true,
+  "independent_parser": "Only module/instance declaration hierarchy, not shared Graph or candidate portable_constraints parser; exact primitive type and literal semantic-name match; no renumbering.",
+  "official_sha256": "a9d20d20d9495e6d351003e2b7f214c5673ce4dea55791b6d2270743b5ec8258",
+  "donor_sha256": "f91ca98e3252020035fa9e012b2c6ad95649bc0fec8cf0f551ed4ef001601727",
+  "target_sha256": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8",
+  "module_counts": {
+    "donor": 60,
+    "target": 60
+  },
+  "leaf_counts": {
+    "donor": 73051,
+    "target": 72962
+  },
+  "official52": 52,
+  "kept": 33,
+  "dropped": 19,
+  "DSP": 31,
+  "BSRAM": 2,
+  "rows": [
+    {
+      "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+      "primitive": "pROM",
+      "target_primitive": "pROM",
+      "resource_kind": "BSRAM",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s\" BSRAM_R56[3][B];",
+      "line_number": 10,
+      "locations": [
+        "BSRAM_R56[3][B]"
+      ],
+      "donor_raw": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s",
+      "target_raw": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_0_s"
+    },
+    {
+      "instance": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+      "primitive": "pROM",
+      "target_primitive": "pROM",
+      "resource_kind": "BSRAM",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s\" BSRAM_R56[4];",
+      "line_number": 11,
+      "locations": [
+        "BSRAM_R56[4]"
+      ],
+      "donor_raw": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s",
+      "target_raw": "native_navigation/height_fusion/fraction_rom_fraction_rom_0_1_s"
+    },
+    {
+      "instance": "core/controller/n4769_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/controller/n4769_s\" DSP_R47[30][A],DSP_R47[30][B],DSP_R47[31][A],DSP_R47[31][B];",
+      "line_number": 12,
+      "locations": [
+        "DSP_R47[30][A]",
+        "DSP_R47[30][B]",
+        "DSP_R47[31][A]",
+        "DSP_R47[31][B]"
+      ],
+      "donor_raw": "core/controller/n4769_s",
+      "target_raw": "core/controller/n4769_s"
+    },
+    {
+      "instance": "core/fallback_control/n1049_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"core/fallback_control/n1049_s\" DSP_R47[36][A],DSP_R47[36][B];",
+      "line_number": 13,
+      "locations": [
+        "DSP_R47[36][A]",
+        "DSP_R47[36][B]"
+      ],
+      "donor_raw": "core/fallback_control/n1049_s",
+      "target_raw": null
+    },
+    {
+      "instance": "core/fallback_sticks/n1034_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/fallback_sticks/n1034_s\" DSP_R47[47][A],DSP_R47[47][B];",
+      "line_number": 14,
+      "locations": [
+        "DSP_R47[47][A]",
+        "DSP_R47[47][B]"
+      ],
+      "donor_raw": "core/fallback_sticks/n1034_s",
+      "target_raw": "core/fallback_sticks/n1034_s"
+    },
+    {
+      "instance": "core/fallback_sticks/n1702_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/fallback_sticks/n1702_s\" DSP_R47[46][A],DSP_R47[46][B];",
+      "line_number": 15,
+      "locations": [
+        "DSP_R47[46][A]",
+        "DSP_R47[46][B]"
+      ],
+      "donor_raw": "core/fallback_sticks/n1702_s",
+      "target_raw": "core/fallback_sticks/n1702_s"
+    },
+    {
+      "instance": "core/fallback_sticks/n700_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/fallback_sticks/n700_s\" DSP_R47[45][A],DSP_R47[45][B];",
+      "line_number": 16,
+      "locations": [
+        "DSP_R47[45][A]",
+        "DSP_R47[45][B]"
+      ],
+      "donor_raw": "core/fallback_sticks/n700_s",
+      "target_raw": "core/fallback_sticks/n700_s"
+    },
+    {
+      "instance": "core/fallback_sticks/n733_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/fallback_sticks/n733_s\" DSP_R47[44][A],DSP_R47[44][B];",
+      "line_number": 17,
+      "locations": [
+        "DSP_R47[44][A]",
+        "DSP_R47[44][B]"
+      ],
+      "donor_raw": "core/fallback_sticks/n733_s",
+      "target_raw": "core/fallback_sticks/n733_s"
+    },
+    {
+      "instance": "core/fallback_sticks/square_product_0_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/fallback_sticks/square_product_0_s\" DSP_R65[44][A],DSP_R65[44][B];",
+      "line_number": 18,
+      "locations": [
+        "DSP_R65[44][A]",
+        "DSP_R65[44][B]"
+      ],
+      "donor_raw": "core/fallback_sticks/square_product_0_s",
+      "target_raw": "core/fallback_sticks/square_product_0_s"
+    },
+    {
+      "instance": "core/imu/estimator/angle/compensated_0_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/imu/estimator/angle/compensated_0_s\" DSP_R28[19][A],DSP_R28[19][B],DSP_R28[20][A],DSP_R28[20][B];",
+      "line_number": 19,
+      "locations": [
+        "DSP_R28[19][A]",
+        "DSP_R28[19][B]",
+        "DSP_R28[20][A]",
+        "DSP_R28[20][B]"
+      ],
+      "donor_raw": "core/imu/estimator/angle/compensated_0_s",
+      "target_raw": "core/imu/estimator/angle/compensated_0_s"
+    },
+    {
+      "instance": "core/imu/estimator/cdeg_scaled_0_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/imu/estimator/cdeg_scaled_0_s\" DSP_R28[17][A],DSP_R28[17][B],DSP_R28[18][A],DSP_R28[18][B];",
+      "line_number": 20,
+      "locations": [
+        "DSP_R28[17][A]",
+        "DSP_R28[17][B]",
+        "DSP_R28[18][A]",
+        "DSP_R28[18][B]"
+      ],
+      "donor_raw": "core/imu/estimator/cdeg_scaled_0_s",
+      "target_raw": "core/imu/estimator/cdeg_scaled_0_s"
+    },
+    {
+      "instance": "core/imu/estimator/n18439_s",
+      "primitive": "MULT12X12",
+      "target_primitive": "MULT12X12",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/imu/estimator/n18439_s\" DSP_R28[16][B];",
+      "line_number": 21,
+      "locations": [
+        "DSP_R28[16][B]"
+      ],
+      "donor_raw": "core/imu/estimator/n18439_s",
+      "target_raw": "core/imu/estimator/n18439_s"
+    },
+    {
+      "instance": "core/imu/estimator/n7173_s0",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/imu/estimator/n7173_s0\" DSP_R28[22][A],DSP_R28[22][B];",
+      "line_number": 22,
+      "locations": [
+        "DSP_R28[22][A]",
+        "DSP_R28[22][B]"
+      ],
+      "donor_raw": "core/imu/estimator/n7173_s0",
+      "target_raw": "core/imu/estimator/n7173_s0"
+    },
+    {
+      "instance": "core/imu/reader/n343_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/imu/reader/n343_s\" DSP_R28[7][A],DSP_R28[7][B];",
+      "line_number": 23,
+      "locations": [
+        "DSP_R28[7][A]",
+        "DSP_R28[7][B]"
+      ],
+      "donor_raw": "core/imu/reader/n343_s",
+      "target_raw": "core/imu/reader/n343_s"
+    },
+    {
+      "instance": "core/imu/reader/n507_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/imu/reader/n507_s\" DSP_R28[8][A],DSP_R28[8][B];",
+      "line_number": 24,
+      "locations": [
+        "DSP_R28[8][A]",
+        "DSP_R28[8][B]"
+      ],
+      "donor_raw": "core/imu/reader/n507_s",
+      "target_raw": "core/imu/reader/n507_s"
+    },
+    {
+      "instance": "core/n3262_s",
+      "primitive": "MULT12X12",
+      "target_primitive": "MULT12X12",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/n3262_s\" DSP_R47[43][B];",
+      "line_number": 25,
+      "locations": [
+        "DSP_R47[43][B]"
+      ],
+      "donor_raw": "core/n3262_s",
+      "target_raw": "core/n3262_s"
+    },
+    {
+      "instance": "core/n3296_s",
+      "primitive": "MULT12X12",
+      "target_primitive": "MULT12X12",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"core/n3296_s\" DSP_R65[40][B];",
+      "line_number": 26,
+      "locations": [
+        "DSP_R65[40][B]"
+      ],
+      "donor_raw": "core/n3296_s",
+      "target_raw": "core/n3296_s"
+    },
+    {
+      "instance": "core/n7349_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"core/n7349_s\" DSP_R47[32][A],DSP_R47[32][B];",
+      "line_number": 27,
+      "locations": [
+        "DSP_R47[32][A]",
+        "DSP_R47[32][B]"
+      ],
+      "donor_raw": "core/n7349_s",
+      "target_raw": null
+    },
+    {
+      "instance": "core/n7443_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"core/n7443_s\" DSP_R47[28][A],DSP_R47[28][B];",
+      "line_number": 28,
+      "locations": [
+        "DSP_R47[28][A]",
+        "DSP_R47[28][B]"
+      ],
+      "donor_raw": "core/n7443_s",
+      "target_raw": null
+    },
+    {
+      "instance": "core/n7537_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"core/n7537_s\" DSP_R47[27][A],DSP_R47[27][B];",
+      "line_number": 29,
+      "locations": [
+        "DSP_R47[27][A]",
+        "DSP_R47[27][B]"
+      ],
+      "donor_raw": "core/n7537_s",
+      "target_raw": null
+    },
+    {
+      "instance": "core/n7631_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"core/n7631_s\" DSP_R47[29][A],DSP_R47[29][B];",
+      "line_number": 30,
+      "locations": [
+        "DSP_R47[29][A]",
+        "DSP_R47[29][B]"
+      ],
+      "donor_raw": "core/n7631_s",
+      "target_raw": null
+    },
+    {
+      "instance": "mtf/metric/dx_0_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"mtf/metric/dx_0_s\" DSP_R65[19][A],DSP_R65[19][B],DSP_R65[20][A],DSP_R65[20][B];",
+      "line_number": 31,
+      "locations": [
+        "DSP_R65[19][A]",
+        "DSP_R65[19][B]",
+        "DSP_R65[20][A]",
+        "DSP_R65[20][B]"
+      ],
+      "donor_raw": "mtf/metric/dx_0_s",
+      "target_raw": "mtf/metric/dx_0_s"
+    },
+    {
+      "instance": "mtf/metric/dy_0_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"mtf/metric/dy_0_s\" DSP_R65[17][A],DSP_R65[17][B],DSP_R65[18][A],DSP_R65[18][B];",
+      "line_number": 32,
+      "locations": [
+        "DSP_R65[17][A]",
+        "DSP_R65[17][B]",
+        "DSP_R65[18][A]",
+        "DSP_R65[18][B]"
+      ],
+      "donor_raw": "mtf/metric/dy_0_s",
+      "target_raw": "mtf/metric/dy_0_s"
+    },
+    {
+      "instance": "mtf/metric/product_x_0_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"mtf/metric/product_x_0_s\" DSP_R65[16][A],DSP_R65[16][B];",
+      "line_number": 33,
+      "locations": [
+        "DSP_R65[16][A]",
+        "DSP_R65[16][B]"
+      ],
+      "donor_raw": "mtf/metric/product_x_0_s",
+      "target_raw": "mtf/metric/product_x_0_s"
+    },
+    {
+      "instance": "mtf/metric/product_y_0_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"mtf/metric/product_y_0_s\" DSP_R65[15][A],DSP_R65[15][B];",
+      "line_number": 34,
+      "locations": [
+        "DSP_R65[15][A]",
+        "DSP_R65[15][B]"
+      ],
+      "donor_raw": "mtf/metric/product_y_0_s",
+      "target_raw": "mtf/metric/product_y_0_s"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n14695_s",
+      "primitive": "MULT12X12",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n14695_s\" DSP_R65[11][B];",
+      "line_number": 35,
+      "locations": [
+        "DSP_R65[11][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n14695_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/controller_proof/n15045_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n15045_s\" DSP_R47[10][A],DSP_R47[10][B];",
+      "line_number": 36,
+      "locations": [
+        "DSP_R47[10][A]",
+        "DSP_R47[10][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n15045_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/controller_proof/n15592_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n15592_s\" DSP_R47[11][A],DSP_R47[11][B];",
+      "line_number": 37,
+      "locations": [
+        "DSP_R47[11][A]",
+        "DSP_R47[11][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n15592_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/controller_proof/n4214_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n4214_s\" DSP_R47[14][A],DSP_R47[14][B],DSP_R47[15][A],DSP_R47[15][B];",
+      "line_number": 38,
+      "locations": [
+        "DSP_R47[14][A]",
+        "DSP_R47[14][B]",
+        "DSP_R47[15][A]",
+        "DSP_R47[15][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n4214_s",
+      "target_raw": "native_navigation/controller_proof/n4214_s"
+    },
+    {
+      "instance": "native_navigation/controller_proof/n5842_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n5842_s\" DSP_R47[18][A],DSP_R47[18][B];",
+      "line_number": 39,
+      "locations": [
+        "DSP_R47[18][A]",
+        "DSP_R47[18][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n5842_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/controller_proof/n5968_s",
+      "primitive": "MULT12X12",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n5968_s\" DSP_R28[0][B];",
+      "line_number": 40,
+      "locations": [
+        "DSP_R28[0][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n5968_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/controller_proof/n7947_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n7947_s\" DSP_R65[13][A],DSP_R65[13][B];",
+      "line_number": 41,
+      "locations": [
+        "DSP_R65[13][A]",
+        "DSP_R65[13][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n7947_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/controller_proof/n8931_s",
+      "primitive": "MULT27X36",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n8931_s\" DSP_R47[16][A],DSP_R47[16][B],DSP_R47[17][A],DSP_R47[17][B];",
+      "line_number": 42,
+      "locations": [
+        "DSP_R47[16][A]",
+        "DSP_R47[16][B]",
+        "DSP_R47[17][A]",
+        "DSP_R47[17][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n8931_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/controller_proof/n8972_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/n8972_s\" DSP_R65[12][A],DSP_R65[12][B];",
+      "line_number": 43,
+      "locations": [
+        "DSP_R65[12][A]",
+        "DSP_R65[12][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/n8972_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/n1034_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1034_s\" DSP_R28[5][A],DSP_R28[5][B];",
+      "line_number": 44,
+      "locations": [
+        "DSP_R28[5][A]",
+        "DSP_R28[5][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/xy_stick/n1034_s",
+      "target_raw": "native_navigation/controller_proof/xy_stick/n1034_s"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/n1702_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n1702_s\" DSP_R28[6][A],DSP_R28[6][B];",
+      "line_number": 45,
+      "locations": [
+        "DSP_R28[6][A]",
+        "DSP_R28[6][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/xy_stick/n1702_s",
+      "target_raw": "native_navigation/controller_proof/xy_stick/n1702_s"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/n700_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n700_s\" DSP_R28[2][A],DSP_R28[2][B];",
+      "line_number": 46,
+      "locations": [
+        "DSP_R28[2][A]",
+        "DSP_R28[2][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/xy_stick/n700_s",
+      "target_raw": "native_navigation/controller_proof/xy_stick/n700_s"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/n733_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/n733_s\" DSP_R28[1][A],DSP_R28[1][B];",
+      "line_number": 47,
+      "locations": [
+        "DSP_R28[1][A]",
+        "DSP_R28[1][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/xy_stick/n733_s",
+      "target_raw": "native_navigation/controller_proof/xy_stick/n733_s"
+    },
+    {
+      "instance": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/xy_stick/square_product_0_s\" DSP_R47[24][A],DSP_R47[24][B];",
+      "line_number": 48,
+      "locations": [
+        "DSP_R47[24][A]",
+        "DSP_R47[24][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/xy_stick/square_product_0_s",
+      "target_raw": "native_navigation/controller_proof/xy_stick/square_product_0_s"
+    },
+    {
+      "instance": "native_navigation/controller_proof/z_stick/n422_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/z_stick/n422_s\" DSP_R28[3][A],DSP_R28[3][B];",
+      "line_number": 49,
+      "locations": [
+        "DSP_R28[3][A]",
+        "DSP_R28[3][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/z_stick/n422_s",
+      "target_raw": "native_navigation/controller_proof/z_stick/n422_s"
+    },
+    {
+      "instance": "native_navigation/controller_proof/z_stick/n705_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": "MULTALU27X18",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/controller_proof/z_stick/n705_s\" DSP_R28[4][A],DSP_R28[4][B];",
+      "line_number": 50,
+      "locations": [
+        "DSP_R28[4][A]",
+        "DSP_R28[4][B]"
+      ],
+      "donor_raw": "native_navigation/controller_proof/z_stick/n705_s",
+      "target_raw": "native_navigation/controller_proof/z_stick/n705_s"
+    },
+    {
+      "instance": "native_navigation/geometry/n2451_s",
+      "primitive": "MULT12X12",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/geometry/n2451_s\" DSP_R47[5][B];",
+      "line_number": 51,
+      "locations": [
+        "DSP_R47[5][B]"
+      ],
+      "donor_raw": "native_navigation/geometry/n2451_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/height_fusion/n2347_s",
+      "primitive": "MULT27X36",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/height_fusion/n2347_s\" DSP_R65[3][A],DSP_R65[3][B],DSP_R65[4][A],DSP_R65[4][B];",
+      "line_number": 52,
+      "locations": [
+        "DSP_R65[3][A]",
+        "DSP_R65[3][B]",
+        "DSP_R65[4][A]",
+        "DSP_R65[4][B]"
+      ],
+      "donor_raw": "native_navigation/height_fusion/n2347_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/height_fusion/n3014_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/height_fusion/n3014_s\" DSP_R47[3][A],DSP_R47[3][B];",
+      "line_number": 53,
+      "locations": [
+        "DSP_R47[3][A]",
+        "DSP_R47[3][B]"
+      ],
+      "donor_raw": "native_navigation/height_fusion/n3014_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/height_fusion/n3252_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/height_fusion/n3252_s\" DSP_R47[4][A],DSP_R47[4][B];",
+      "line_number": 54,
+      "locations": [
+        "DSP_R47[4][A]",
+        "DSP_R47[4][B]"
+      ],
+      "donor_raw": "native_navigation/height_fusion/n3252_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/height_fusion/n5006_s",
+      "primitive": "MULT12X12",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/height_fusion/n5006_s\" DSP_R65[2][B];",
+      "line_number": 55,
+      "locations": [
+        "DSP_R65[2][B]"
+      ],
+      "donor_raw": "native_navigation/height_fusion/n5006_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product1_0_s\" DSP_R65[7][A],DSP_R65[7][B],DSP_R65[8][A],DSP_R65[8][B];",
+      "line_number": 56,
+      "locations": [
+        "DSP_R65[7][A]",
+        "DSP_R65[7][B]",
+        "DSP_R65[8][A]",
+        "DSP_R65[8][B]"
+      ],
+      "donor_raw": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s",
+      "target_raw": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product1_0_s"
+    },
+    {
+      "instance": "native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/multiply_service/multiplication_engine.engine/partial_product2_0_s\" DSP_R65[5][A],DSP_R65[5][B],DSP_R65[6][A],DSP_R65[6][B];",
+      "line_number": 57,
+      "locations": [
+        "DSP_R65[5][A]",
+        "DSP_R65[5][B]",
+        "DSP_R65[6][A]",
+        "DSP_R65[6][B]"
+      ],
+      "donor_raw": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s",
+      "target_raw": "native_navigation/multiply_service/\\multiplication_engine.engine/partial_product2_0_s"
+    },
+    {
+      "instance": "native_navigation/n765_s",
+      "primitive": "MULTALU27X18",
+      "target_primitive": null,
+      "resource_kind": "DSP",
+      "kept": false,
+      "original_line": "INS_LOC \"native_navigation/n765_s\" DSP_R65[21][A],DSP_R65[21][B];",
+      "line_number": 58,
+      "locations": [
+        "DSP_R65[21][A]",
+        "DSP_R65[21][B]"
+      ],
+      "donor_raw": "native_navigation/n765_s",
+      "target_raw": null
+    },
+    {
+      "instance": "native_navigation/position/n893_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/position/n893_s\" DSP_R47[12][A],DSP_R47[12][B],DSP_R47[13][A],DSP_R47[13][B];",
+      "line_number": 59,
+      "locations": [
+        "DSP_R47[12][A]",
+        "DSP_R47[12][B]",
+        "DSP_R47[13][A]",
+        "DSP_R47[13][B]"
+      ],
+      "donor_raw": "native_navigation/position/n893_s",
+      "target_raw": "native_navigation/position/n893_s"
+    },
+    {
+      "instance": "native_navigation/velocity_fusion/n2039_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/velocity_fusion/n2039_s\" DSP_R47[6][A],DSP_R47[6][B],DSP_R47[7][A],DSP_R47[7][B];",
+      "line_number": 60,
+      "locations": [
+        "DSP_R47[6][A]",
+        "DSP_R47[6][B]",
+        "DSP_R47[7][A]",
+        "DSP_R47[7][B]"
+      ],
+      "donor_raw": "native_navigation/velocity_fusion/n2039_s",
+      "target_raw": "native_navigation/velocity_fusion/n2039_s"
+    },
+    {
+      "instance": "native_navigation/velocity_fusion/n2080_s",
+      "primitive": "MULT27X36",
+      "target_primitive": "MULT27X36",
+      "resource_kind": "DSP",
+      "kept": true,
+      "original_line": "INS_LOC \"native_navigation/velocity_fusion/n2080_s\" DSP_R47[8][A],DSP_R47[8][B],DSP_R47[9][A],DSP_R47[9][B];",
+      "line_number": 61,
+      "locations": [
+        "DSP_R47[8][A]",
+        "DSP_R47[8][B]",
+        "DSP_R47[9][A]",
+        "DSP_R47[9][B]"
+      ],
+      "donor_raw": "native_navigation/velocity_fusion/n2080_s",
+      "target_raw": "native_navigation/velocity_fusion/n2080_s"
+    }
+  ],
+  "script_sha256": "6bc08ed5d6257972281b89f3db92a5d8c366edf385b627fbb248586db4bb3321"
+}

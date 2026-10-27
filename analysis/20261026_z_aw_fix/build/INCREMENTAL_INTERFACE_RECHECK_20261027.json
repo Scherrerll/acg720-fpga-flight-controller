@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-10-26T20:02:22.285729+00:00",
+  "scope": "Read-only official-document and existing-real-log recheck; no new vendor job or protected payload interpretation.",
+  "evidence": {
+    "Tcl_manual": {
+      "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG1220-2.1E_Gowin Software Tcl Commands User Guide.pdf",
+      "sha256": "c8ee7e8cb8486220a8639424f71debe9f4c3dff0d4c365860474c24782ded08c"
+    },
+    "User_Guide": {
+      "path": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\doc\\EN\\SUG100-4.4.7E_Gowin Software User Guide.pdf",
+      "sha256": "b4e8891ffecdfcd8f60f060cb6025e0ab09e7e177759e3fb6570ade8c1c20d1f"
+    },
+    "actual_inc_place_log": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_incplace_loc3_01\\verification\\physical.log",
+      "sha256": "11b6bafe5309deb9056b0fba2df4efb1f27ca038b570ad0829f255fdbf415858"
+    },
+    "actual_inc_place_recipe": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_incplace_loc3_01\\physical.tcl",
+      "sha256": "cb8ec75d039bdd5aacfc2a5bf78a026990288d5a68500d24b97b98cef8f02a8a"
+    }
+  },
+  "findings": [
+    "Tcl manual PDF51 documents inc_place with .p and lists .p also for inc_pnr; User Guide PDF55/98 explicitly documents .p for placement and .pr for placement-and-routing.",
+    "Existing same-VG actual inc_place trial did use .p yet reported matching2.82 below80 and fell back; suffix alone cannot explain the low match.",
+    "Native full RTL-project incremental matching remains untested. It is a possible future hypothesis, not established cause or an accepted layout reuse.",
+    "Both protected .p/.pr remain opaque; only native tools may read their payloads."
+  ]
+}

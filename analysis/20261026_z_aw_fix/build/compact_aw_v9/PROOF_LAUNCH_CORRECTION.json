@@ -1,0 +1,11 @@
+{
+  "failure_class": "fixture_self_filename_missing_before_compile_or_simulation",
+  "original_runner_actual_wait": 1,
+  "original_five_actual_wait": 1,
+  "original_exit_sha256": "776adfc5ca7305647c2ed8d1e4be7e9602e6689621591d5abd33f5de31aec0a9",
+  "original_driver_sha256": "2b6dce56eb390c1a3c5f176d5bb057bd563a2f34f5ef341ee3c530e482ba7f40",
+  "corrected_driver_sha256": "0d7ef3648f7c917faac039544f474bddb39d250bb35e7dec4df2ad5dfed611cf",
+  "change": "Copied driver references its new run.py filename; no assertions/RTL changed.",
+  "no_original_receipts_overwritten": true,
+  "no_completed_simulations_to_repeat": true
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Stop the GUI-only DSP/BSRAM backannotation investigation in this turn",
+  "reported_signal": "Computer Use stopped by user physical Escape",
+  "stage": "sky.list_apps during target inventory; no application target selected and no app input sent",
+  "no_more_Computer_Use_this_turn": true,
+  "UI_export_created": false,
+  "original98_input_bytes_verified_before_copy": true,
+  "isolated_snapshot_preserved": true,
+  "main50_CLI_PNR": "Already running independent background vendor job; does not depend on GUI",
+  "qualification_claimed": false
+}

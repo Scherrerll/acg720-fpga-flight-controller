@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v9\run_incremental.py", line 138, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v9\run_incremental.py", line 128, in main
+    monitored_run_phase(helper,[str(helper.GOWIN),str(execution)],SOURCE,expected)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v9\run_incremental.py", line 59, in monitored_run_phase
+    assert code==0 and 'PA2136' not in text,('incremental vendor nonzero/cancelled fallback',code,cancelled)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('incremental vendor nonzero/cancelled fallback', 1, True)

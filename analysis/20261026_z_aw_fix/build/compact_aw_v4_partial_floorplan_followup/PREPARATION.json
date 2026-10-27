@@ -1,0 +1,14 @@
+{
+  "scope": "All109 mapped cells on the raw top25 setup representatives; preserve106 old locations and give3 source FFs small regions near their old first LUT. Not an enumeration of every violated endpoint and not a timing proof.",
+  "period_ns": 20,
+  "only_effective_change": "Additional109 INS_LOC outside immutable55; no RTL/SYN/SDC/IO changes, ordinary P3/R0/maxfan23.",
+  "floorplan_sha256": "de7c7d7804bab34c7f084a395cb2ee0f9918a4b9090e8ee256a36018ad2aacf6",
+  "PNR_started": false,
+  "scripts": {
+    "independent_raw_review.py": "ded82adf514dd50ea3d42bc5a711182b6ffcf2b204de43781fc7ac9595c464d0",
+    "launch_physical_hidden.py": "86f6a816a80988b5333b2cc09a95e2b1bf53a362dc348e9207b0b998fb2079ae",
+    "physical_snapshot.py": "ff82ffb323b3c9a5eb3a3bef7d6bcf8903594c328d843f27317aa777fb19d5bb",
+    "run_physical.py": "566d2b65cd671cc48a291418da009c4b9c9ba4e4a49f5f1132d0b49f634f2edc",
+    "seal_terminal.py": "c6c47177dc83e16b2629d921bc5753febfbe58eaf5d45423b24fb7ff0c86cc0c"
+  }
+}

@@ -1,0 +1,7 @@
+Source-only review: no actionable source issue found. This is not SYN approval; fresh proof and SYN preparation review remains pending.
+
+The complete new controller equals the frozen v20 controller plus exactly the attributed signed32 wire/continuous assignment and the single same-width alt_speed call replacement. Inverting those edits restores the parent bytes. All other54 files match the parent. The function body, signed29 input, signed14 truncation, signed10 division and signed32 constant multiply remain exact. The only speed_z_tick_store write is a nonblocking accepted state0 capture; state61 consumes the settled alias. No new state, clock or output cycle appears in source.
+
+Primary local SUG550-2.4E supports wire/reg/signal syn_dspstyle and the logic value (text2334/2344/2355, manual45), with attributed wire examples (text1879 and2428, manual34/47). The bound candidate review says31 for the priority example; that citation-only erratum is recorded here. Actual synthesis must show whether the hint reaches the multiply inside the function; documentation and source equivalence do not prove mapping or STA improvement.
+
+The controller digest changed, so the prior exact-six controller result cannot be reused as new-controller proof. Fresh five cases, FRAC0/16, contention, exact top13 and actual-function alias evidence must be audited before approval. Unchanged guard/FSM/ground reuse must retain its parent source identities and exact dependencies.

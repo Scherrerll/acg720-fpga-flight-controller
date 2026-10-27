@@ -1,0 +1,16 @@
+{
+  "scope": "Metadata/launcher preparation only; original successful simulations/root receipts unchanged. No vendor SYN was started by this failed outer launch.",
+  "seal_issue": "Initial filter expected top/run.py; Windows input index stores top\\run.py, so only four .v stimuli were selected and len==5 assertion failed. Correct by normalizing path separators, keep the same assertions on five actual stimulus hashes.",
+  "seal_script_before_sha256": "4a3f2e748d0257f1291ba2291e27ba846102f64ce296e9dae1367de902542604",
+  "actual_initial_stimulus_keys": [
+    "expiry_tb.v",
+    "fusion_tb.v",
+    "new_height.v",
+    "old_height.v",
+    "top\\run.py"
+  ],
+  "outer_launch_issue": "Native Python preflight failures were followed by another command in the same PowerShell block. launch_synthesis_hidden.py did not yet exist. Outer launcher_process.json and supervisor logs preserved; no standalone p.wait receipt was retained for that outer launch, do not reconstruct its exit.",
+  "outer_launcher_receipt_sha256": "5ee5bbe7338202da821779f8f8ebd063d7396ac709462faa896a22f34d1f12c8",
+  "outer_stderr_sha256": "87e63126325179ab4bff873263087a5bd8bcaac678bca69cc2a4d116fd35cfb9",
+  "repair": "Check each command actual tool exit before the dependent next step; use separate retry02 outer launch receipt/logs. Never overwrite existing receipts."
+}

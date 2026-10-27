@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\verify_candidate.py", line 95, in <module>
+    run('diagnostic_compile',[str(IV),'-g2012','-s','tb','-o',str(D/'diagnostic.vvp'),str(D/'tb.v'),str(D/'v9_diag.v'),str(D/'v10_diag.v')])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\verify_candidate.py", line 21, in run
+    print(name,'actual_wait',code,flush=True);assert code==0,log.read_text(errors='replace')
+                                                     ^^^^^^^
+AssertionError: C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs\v9_diag.v:21: error: Unable to bind wire/reg/memory `z_reason' in `tb.a'
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs\v10_diag.v:21: error: Unable to bind wire/reg/memory `z_reason' in `tb.b'
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs\v9_diag.v:21: error: Unable to bind wire/reg/memory `z_reason' in `tb.c'
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v10\proofs\v10_diag.v:21: error: Unable to bind wire/reg/memory `z_reason' in `tb.d'
+4 error(s) during elaboration.
+

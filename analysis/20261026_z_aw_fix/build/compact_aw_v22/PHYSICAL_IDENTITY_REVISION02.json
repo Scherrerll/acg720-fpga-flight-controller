@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "scope": "Identity wording only; precise reverse text edits reconstruct both old generated scripts. Five other generated scripts and all source/proof/SYN/standard-v20 inputs unchanged. No runtime physical or vendor launch.",
+  "preparer_sha256": "3267acebea47a591ee3ab679e50929e91ad381227d3f04ec913c24a598845946",
+  "PHYSICAL_PREPARATION_sha256": "643b37d7789951e2e777b01d554cf9e2a67125cf7113df597d721b304df14cec",
+  "PHYSICAL_INPUT_BINDING_sha256": "53d1c9087592329c9c6fcfca5a2af3e7a64e4c0b55864989863fb0e16d42f27f",
+  "immutable_prior_manifest_sha256": "ca47e0766a55d2d637674b5d3426167cf079dadbc4c844d763e193f61025b4c0",
+  "exact_generated_text_edits": {
+    "run_physical.py": [
+      [
+        "\"\"\"Deferred sealed exact-v20 map2",
+        "\"\"\"Deferred sealed exact-v22 map2"
+      ],
+      [
+        "'scope':'Fresh sealed exact-v20 VG physical-only trial;",
+        "'scope':'Fresh sealed exact-v22 VG physical-only trial;"
+      ],
+      [
+        "'scope':'Physical artifact gate only;",
+        "'scope':'v22 physical artifact gate only;"
+      ]
+    ],
+    "launch_physical_hidden.py": [
+      [
+        "single deferred v19 P3/R0 profile.",
+        "single deferred v22 P3/R0 profile."
+      ]
+    ]
+  },
+  "changed_generated_scripts": [
+    "run_physical.py",
+    "launch_physical_hidden.py"
+  ],
+  "all7_AST_compile_only_passed": true,
+  "status_helpers_scripts_byte_exact": true,
+  "previous_truth_check_sha256": "874f9404b86dcfcb1d5ce911c10b86e04cd6ab8f7ce79f387698e23912b37157",
+  "source55_unchanged": true,
+  "baseline_v20_unchanged": true,
+  "protected_v4_unchanged": true,
+  "VG_unchanged": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8",
+  "actual_Python_preflight_wait": 0,
+  "Tcl_profiles_byte_identical": true,
+  "protected_inputs_rehashed": 154,
+  "runtime22_absent": true,
+  "profile_receipt_directory_empty": true,
+  "vendor_started": false,
+  "rebind_script_sha256": "03ec812dc8eb10fb4f34bb9343e90d6527465f4120764f0b74a1e6c81987de00"
+}

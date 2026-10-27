@@ -1,0 +1,167 @@
+{
+  "scope": "v17 exact original transformations plus same-publication velocity-range predicate. New private predicate FF is real state; all legacy words/cadence and default callers are preserved by separately bound full component proofs. Reverse edits delimit scope, not a replacement for behavioral proof.",
+  "transformations": {
+    "core/ano_flight_state.v": {
+      "edits": [
+        [
+          "module ano_flight_state #(parameter integer TICKS_PER_MS=50000)(",
+          "module ano_flight_state #(parameter integer TICKS_PER_MS=50000,\n parameter integer PRECHECKED_COLLECTIVE=0)("
+        ],
+        [
+          " input wire [15:0] ch3,collective_us,",
+          " input wire [15:0] ch3,collective_us,\n input wire collective_below_landing,"
+        ],
+        [
+          " wire positive_stick=ch3>=1594;",
+          " wire positive_stick=ch3>=1594;\n wire landing_collective_low=PRECHECKED_COLLECTIVE ?collective_below_landing:(collective_us<1250);"
+        ],
+        [
+          "ch3<=1150 && collective_us<1250",
+          "ch3<=1150 && landing_collective_low"
+        ]
+      ],
+      "baseline_sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "candidate_sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "reverse_exact_normalized_text": true
+    },
+    "core/flight_core.v": {
+      "edits": [
+        [
+          "ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS)) flight_state",
+          "ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS),.PRECHECKED_COLLECTIVE(1)) flight_state"
+        ],
+        [
+          ".ch3(ch3),.collective_us(selected_throttle),.motor_prepared(motor_prepared),",
+          ".ch3(ch3),.collective_us(selected_throttle),.collective_below_landing(selected_collective_below_landing),.motor_prepared(motor_prepared),"
+        ],
+        [
+          "    wire [15:0] fallback_collective,fallback_unmasked_collective;",
+          "    wire [15:0] fallback_collective,fallback_unmasked_collective;\n    // Compare each numeric branch before the late live availability selection.\n    // No state or cycle is added; active implies public fallback equals unmasked.\n    (* syn_keep = 1 *) wire fallback_collective_below_landing=fallback_unmasked_collective<1250;\n    (* syn_keep = 1 *) wire auto_collective_below_landing=hold_collective_us<1250;\n    wire selected_collective_below_landing=height_fallback_active ?fallback_collective_below_landing:auto_collective_below_landing;"
+        ]
+      ],
+      "baseline_sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "candidate_sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+      "reverse_exact_normalized_text": true
+    },
+    "core/height_loss_fallback.v": {
+      "edits": [
+        [
+          " assign active=rst_n && healthy && armed && (latched || enter);",
+          " // Identity wire, with a local synthesis-only fanout limit on this data driver.\n wire active_fanout_limited /* synthesis syn_maxfan = 50 */;\n assign active_fanout_limited=rst_n && healthy && armed && (latched || enter);\n assign active=active_fanout_limited;"
+        ]
+      ],
+      "baseline_sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "candidate_sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+      "reverse_exact_normalized_text": true
+    },
+    "acg720_ano_port.v": {
+      "edits": [
+        [
+          " reg previous_pose_valid=0;",
+          " reg previous_pose_valid /* synthesis syn_maxfan = 10 */ =0;"
+        ],
+        [
+          " wire mtf_sample,mtf_range_ok,mtf_flow_ok,mtf_integrated;",
+          " wire mtf_sample,mtf_range_ok,mtf_flow_ok,mtf_integrated,mtf_velocity_range_ok;"
+        ],
+        [
+          "  .module_age_ms(mtf_age_ms),.metric_vx_x100(mtf_vx_x100),.metric_vy_x100(mtf_vy_x100));",
+          "  .module_age_ms(mtf_age_ms),.metric_vx_x100(mtf_vx_x100),.metric_vy_x100(mtf_vy_x100),.metric_velocity_range_ok(mtf_velocity_range_ok));"
+        ],
+        [
+          ".PRECHECKED_HEIGHT_ORIGIN(1)) native_navigation(",
+          ".PRECHECKED_HEIGHT_ORIGIN(1),.PRECHECKED_INPUT_VELOCITY(1)) native_navigation("
+        ],
+        [
+          "  .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),",
+          "  .vx_x100(mtf_vx_x100),.vy_x100(mtf_vy_x100),.velocity_range_ok(mtf_velocity_range_ok),"
+        ]
+      ],
+      "baseline_sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "candidate_sha256": "41ce429beaf3669019113435802dbb947efa51161e3fb0765f3667ea3ea61d0d",
+      "reverse_exact_normalized_text": true
+    },
+    "sensor/mtf01p_reader.v": {
+      "edits": [
+        [
+          " output reg signed [31:0] vx_x100=0,output reg signed [31:0] vy_x100=0,",
+          " output reg signed [31:0] vx_x100=0,output reg signed [31:0] vy_x100=0,\n output reg velocity_range_ok=1,"
+        ],
+        [
+          " wire signed [30:0] product_y=$signed(flow_y)*$signed({1'b0,distance_mm[13:0]});",
+          " wire signed [30:0] product_y=$signed(flow_y)*$signed({1'b0,distance_mm[13:0]});\n // Cache the range of the exact signed words published on this same sample edge.\n // Invalid numeric observations publish zero; reset and holds match the words.\n wire signed [31:0] next_vx_x100=flow_numeric_ok ? {product_x[30],product_x}:32'sd0;\n wire signed [31:0] next_vy_x100=flow_numeric_ok ? {product_y[30],product_y}:32'sd0;\n wire next_velocity_range_ok=next_vx_x100>=-32'sd1000000 && next_vx_x100<=32'sd1000000 &&\n  next_vy_x100>=-32'sd1000000 && next_vy_x100<=32'sd1000000;"
+        ],
+        [
+          "   vx_x100<=0;vy_x100<=0;x_x100000<=0;y_x100000<=0;saturated<=0;integrated<=0;",
+          "   vx_x100<=0;vy_x100<=0;velocity_range_ok<=1;x_x100000<=0;y_x100000<=0;saturated<=0;integrated<=0;"
+        ],
+        [
+          "    vx_x100<=flow_numeric_ok ? {{1{product_x[30]}},product_x}:32'sd0;\n    vy_x100<=flow_numeric_ok ? {{1{product_y[30]}},product_y}:32'sd0;",
+          "    vx_x100<=next_vx_x100;vy_x100<=next_vy_x100;\n    velocity_range_ok<=next_velocity_range_ok;"
+        ],
+        [
+          " output wire signed [31:0] metric_vx_x100,metric_vy_x100\n",
+          " output wire signed [31:0] metric_vx_x100,metric_vy_x100,\n output wire metric_velocity_range_ok\n"
+        ],
+        [
+          "  .vx_x100(vx_x100),.vy_x100(vy_x100),.x_x100000(x_x100000),",
+          "  .vx_x100(vx_x100),.vy_x100(vy_x100),.velocity_range_ok(metric_velocity_range_ok),.x_x100000(x_x100000),"
+        ]
+      ],
+      "baseline_sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "reverse_exact_normalized_text": true,
+      "candidate_sha256": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2"
+    },
+    "sensor/mtf_shared_geometry.v": {
+      "edits": [
+        [
+          "MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0",
+          "MAPPING_VERIFIED=0,PRECHECKED_YAW_RANGE=0,PRECHECKED_HEIGHT_TILT4500=0,PRECHECKED_FLOW_TILT1500=0,PRECHECKED_INPUT_VELOCITY=0"
+        ],
+        [
+          " input wire signed [31:0] vx_x100,vy_x100,",
+          " input wire signed [31:0] vx_x100,vy_x100,\n input wire velocity_range_ok,"
+        ],
+        [
+          " wire input_velocity_ok=vx_x100>=-1000000 && vx_x100<=1000000 &&\n  vy_x100>=-1000000 && vy_x100<=1000000;",
+          " // Default callers retain the original signed32 comparison. The enabled\n // caller supplies the predicate committed with these exact velocity words.\n wire input_velocity_ok=PRECHECKED_INPUT_VELOCITY ?velocity_range_ok:\n  (vx_x100>=-1000000 && vx_x100<=1000000 &&\n   vy_x100>=-1000000 && vy_x100<=1000000);"
+        ]
+      ],
+      "baseline_sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "reverse_exact_normalized_text": true,
+      "candidate_sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a"
+    },
+    "mtf_xyz_navigation_control.v": {
+      "edits": [
+        [
+          "PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0)(",
+          "PRECHECKED_FLOW_TILT1500=0,PRECHECKED_HEIGHT_ORIGIN=0,PRECHECKED_INPUT_VELOCITY=0)("
+        ],
+        [
+          " input wire signed [31:0] vx_x100,vy_x100,",
+          " input wire signed [31:0] vx_x100,vy_x100,\n input wire velocity_range_ok,"
+        ],
+        [
+          ".PRECHECKED_FLOW_TILT1500(PRECHECKED_FLOW_TILT1500)) geometry(",
+          ".PRECHECKED_FLOW_TILT1500(PRECHECKED_FLOW_TILT1500),.PRECHECKED_INPUT_VELOCITY(PRECHECKED_INPUT_VELOCITY)) geometry("
+        ],
+        [
+          "  .vx_x100(vx_x100),.vy_x100(vy_x100),.pose_valid(pose_valid),",
+          "  .vx_x100(vx_x100),.vy_x100(vy_x100),.velocity_range_ok(velocity_range_ok),.pose_valid(pose_valid),"
+        ]
+      ],
+      "baseline_sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "reverse_exact_normalized_text": true,
+      "candidate_sha256": "f979814de5928abe54b9d20c15e042fef51e691573b433e5ef2f51bd181d960f"
+    }
+  },
+  "unchanged_files": 48,
+  "line_endings_normalized": [
+    "core/height_loss_fallback.v",
+    "sensor/mtf01p_reader.v",
+    "sensor/mtf_shared_geometry.v"
+  ],
+  "threshold": 1250,
+  "new_private_same_tuple_predicate_bits": 1,
+  "no_new_legacy_output_cycle": true
+}

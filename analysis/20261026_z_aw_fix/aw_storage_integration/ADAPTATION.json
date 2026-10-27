@@ -1,0 +1,8 @@
+{
+  "donors": {
+    "verify_top_safety.py": "3db82cc3a004b2eba431726be308a8156dfe121a126af233411174eb2e0d8c8e",
+    "verify_contention.py": "e278d86c6ed70a2402f3b97d8bb7e8cda3a07feb5aa27392e701f3324e30330d"
+  },
+  "changes": "Only source v5->v7; top13 and nonzeroXY/ZI fourclient all assertions retained.",
+  "hardware": false
+}

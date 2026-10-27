@@ -1,0 +1,126 @@
+{
+  "scope": "Final frozen independent compact AW v1 build status; no physical qualification, no hardware. Original B4 and all source55 copies unchanged.",
+  "hold_sha256": "479f757149a57ac0b5f9e0334dab80cae475a5345b834fde9c5130c701057ac3",
+  "vg_sha256": "b7691fd2d04abfc95e1fa458b0cb22e1c8ebcb2eb810db16e7a706fa8e73a87b",
+  "source55_count": 55,
+  "all_source55_checks_passed": true,
+  "synthesis_actual_p_wait": 0,
+  "mapped_ff_clock_check_sha256": "57942c04678a3d0a6492fa6d12dbf8e5356e490366cb835485ba4893dedf1666",
+  "physical_01": {
+    "actual_p_wait": 1,
+    "classification": "duplicate-XML project generation error; rejected before placement, not routing/timing failure"
+  },
+  "physical_02": {
+    "actual_p_wait": 1,
+    "ended_utc": "2026-10-26T05:07:10.260251+00:00",
+    "physical_options": {
+      "place": 3,
+      "route": 0,
+      "map_option": 2,
+      "replicate_resources": 0
+    },
+    "classification": "route failure",
+    "unrouted": 746,
+    "tr_fs_pr_present": false,
+    "timing_qualification": "unavailable; no TR",
+    "accepted_for_delivery": false
+  },
+  "external_evidence": {
+    "out/z_aw_fix_20261026/compact_aw_v1/build_attempt_01/verification/synthesis_input.json": {
+      "bytes": 6133,
+      "sha256": "ff5f17dd0fc9fc1dddd54b8718f94c8d7aba53491bff28026cc4ded715534b1f"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/build_attempt_01/verification/synthesis_exit.json": {
+      "bytes": 1045,
+      "sha256": "00fe4f6e92495cffe93ea6ad2cd20458d32a34fe6fe46bb0c9650cdf9bace7eb"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/build_attempt_01/verification/synthesis.log": {
+      "bytes": 81848,
+      "sha256": "5e85794869a4e9e40e7b696af8f9fb62dfeeeea8759dce037e740935a8ee40f4"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/build_attempt_01/verification/synthesis_summary.json": {
+      "bytes": 8107,
+      "sha256": "df9566845e0f375154ac16a5df92f60eb78d4d4587d32ed6c5be9a42e8a86788"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/build_attempt_01/verification/mapped_audit.json": {
+      "bytes": 8218,
+      "sha256": "4f245ca892f544153198cd86800d48835a7c110c2d763f76c6935d9218e7d363"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/build_attempt_01/verification/resource_comparison.json": {
+      "bytes": 2141,
+      "sha256": "1eae13fa59c008265a1e066713c9666bf3431701fac44049503dca7cbcfa184f"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/build_attempt_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "bytes": 14633322,
+      "sha256": "b7691fd2d04abfc95e1fa458b0cb22e1c8ebcb2eb810db16e7a706fa8e73a87b"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/build_attempt_01/source/impl/gwsynthesis/acg720_ano_port_syn_rsc.xml": {
+      "bytes": 8385,
+      "sha256": "a5c5ebc201cdb1c6ca5f58527998915e4d6a84914e8985b658e38a08a7118084"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/build_input.json": {
+      "bytes": 12674,
+      "sha256": "6ee57c4df5517b5aa2ac8ce72bb13ae127944399c74264bc5849a23de786fe5a"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/physical_input.json": {
+      "bytes": 6124,
+      "sha256": "562341cf78ff5c9d707006d8b34c9a7b1fddd3cd813dce3ef8ffaf6ac40d7d7b"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/physical_exit.json": {
+      "bytes": 1042,
+      "sha256": "d61901d4e8c0891b7c8924de74f1010b06fecf426851888eb8a079177385bcaa"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/physical.log": {
+      "bytes": 435,
+      "sha256": "a787fdf3cdf69b8bc60a884feb1fce7d895ba433780c335a679eb420b973d302"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/verification/build_failure.json": {
+      "bytes": 1487,
+      "sha256": "b7c889dfa266486d99279017a24e70b73664122af0deef08dd2235cfc92b19c6"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/physical.tcl": {
+      "bytes": 463,
+      "sha256": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_01/source/physical.gprj": {
+      "bytes": 472,
+      "sha256": "d8423913c93cba3ab2f3565b14126a0098b3ada60770ddaeb0f7d5cb23ff1b75"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/build_input.json": {
+      "bytes": 12674,
+      "sha256": "a1f99ad23cb25c518d610f715937b529511863664757b0b4bf6599ba5a31298f"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/physical_input.json": {
+      "bytes": 6124,
+      "sha256": "571b045ae1a15ef3dac38dc6961f2369f5f101c911fe6aa4d4a916941e99b8db"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/physical_exit.json": {
+      "bytes": 1042,
+      "sha256": "8e3dc6434b6c0f674a9bf39c6566b3a2a993f005de5264c5b5e51d939220fe44"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/physical.log": {
+      "bytes": 2188,
+      "sha256": "6db422b922c77c65a49c5fdd63c740913a27547195ebfdd295f0374bb39374a1"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/verification/build_failure.json": {
+      "bytes": 1503,
+      "sha256": "a3ec2a5faf14023dc153da68958cff900483bf0db62836a09ae77cb5a0effc87"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/physical.tcl": {
+      "bytes": 463,
+      "sha256": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/source/physical.gprj": {
+      "bytes": 434,
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/source/impl/pnr/acg720_ano_port.rpt.txt": {
+      "bytes": 99935,
+      "sha256": "7c99b075eff1662647ff88d07a976b537a84a9f6ef9fd28dde5f95d151ac0cc6"
+    },
+    "out/z_aw_fix_20261026/compact_aw_v1/physical_p3r0_02/source/impl/pnr/device.cfg": {
+      "bytes": 600,
+      "sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187"
+    }
+  }
+}

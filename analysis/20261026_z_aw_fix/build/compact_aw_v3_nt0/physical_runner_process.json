@@ -1,0 +1,19 @@
+{
+  "helper_pid": 41472,
+  "started_utc": "2026-10-26T05:34:12.0711140Z",
+  "runner_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v3_nt0\\run_physical_p2r0_nt0.py",
+  "runner_sha256": "cdb7e9b5e947a308f9e8c297406b77bf836db67973f2a4062475b1a7c16cbbec",
+  "imported_helper_sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+  "python": "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "physical_options": {
+    "map_option": 2,
+    "replicate_resources": 0,
+    "global_freq": 50,
+    "timing_driven": 0,
+    "route": 0,
+    "place": 2
+  },
+  "scope": "Authorized v3 diagnostic exact-VG physical-only; strict20ns/50MHz/all5/route/exit/pins gates unchanged",
+  "stdout": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v3_nt0\\physical_runner.stdout.log",
+  "stderr": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v3_nt0\\physical_runner.stderr.log"
+}

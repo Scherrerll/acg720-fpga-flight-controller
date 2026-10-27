@@ -1,0 +1,8 @@
+{
+  "donors": {
+    "verify_top_safety.py": "5a324d0ff6186ef7649c143322241ea2331d001c295bed89b7949587f1329ab7",
+    "verify_contention.py": "70dbe73469fed5974707693dd342b17b547726a72b8675bd66b4dfc39a10b0b4"
+  },
+  "changes": "Only v4->v5 source path; all13 top and nonzeroXYI/ZI four-client assertions retained.",
+  "hardware": false
+}

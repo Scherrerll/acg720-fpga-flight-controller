@@ -1,0 +1,51 @@
+{
+  "observed_export_sha256": "c52c889b913f9b5d1d0bfcd8d15bd50475b3550175c9245767efbff4dd26e3d2",
+  "before_lifecycle_fix_export_preserved": true,
+  "real_B4_source55_unchanged_prototype": true,
+  "changed_original_source_paths": {
+    "acg720_ano_port.v": {
+      "prototype_sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "selected_sha256": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd"
+    },
+    "mtf_xyz_navigation_control.v": {
+      "prototype_sha256": "5b46a541df7a4e99a8de3745e0360b0ffa7a7e0b05834452a9406ef7c2b2d3db",
+      "selected_sha256": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd"
+    },
+    "core/ano_flight_state.v": {
+      "prototype_sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "selected_sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736"
+    },
+    "core/flight_core.v": {
+      "prototype_sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "selected_sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60"
+    },
+    "core/height_loss_fallback.v": {
+      "prototype_sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "selected_sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d"
+    },
+    "position/mtf_shared_height_fusion.v": {
+      "prototype_sha256": "1205c8f88198e527ac9f272f829e1e58d996b61db8e9a67d6af865e19e320cf7",
+      "selected_sha256": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de"
+    },
+    "position/mtf_xyz_hold_control.v": {
+      "prototype_sha256": "5a928e0a68db70974049a4debb0b841ca06fa00598a4ffb4cb506997cfed657c",
+      "selected_sha256": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976"
+    },
+    "position/pose_time_adapter.v": {
+      "prototype_sha256": "8a22d65b72f495e169b4c4582f92418eb29cadef0767d19303bed7055157cb35",
+      "selected_sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b"
+    },
+    "sensor/mtf01p_reader.v": {
+      "prototype_sha256": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+      "selected_sha256": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2"
+    },
+    "sensor/mtf_shared_geometry.v": {
+      "prototype_sha256": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+      "selected_sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a"
+    }
+  },
+  "changed_count": 10,
+  "verifier_source_outside_promoted_source_directory": true,
+  "verify_release_sha256": "0ba2c0cdca20b7bcf60b34c4d7f2c059762e7f1723f78fa977b0ad4884353cbf",
+  "scope": "Read-only scope/cause localization; real source/qualification/backup untouched"
+}

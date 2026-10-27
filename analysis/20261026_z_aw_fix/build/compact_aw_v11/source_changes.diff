@@ -1,0 +1,54 @@
+--- v9/position/mtf_shared_height_fusion.v
++++ v11/position/mtf_shared_height_fusion.v
+@@ -41,6 +41,8 @@
+  reg [TIMER_STORAGE_BITS-1:0] timer_store=0;
+  wire [31:0] timer={{(32-TIMER_STORAGE_BITS){1'b0}},timer_store};
+  reg [31:0] publication_age=32'hffffffff;
++ // Exact predicate of the same published age, including the expiry clock.
++ reg publication_fresh=(32'hffffffff < AGE_LIMIT);
+  reg seeded=0,seen=0,fault=0;
+  reg [2:0] cycle5=0;
+  reg acc_pending=0,height_pending=0;
+@@ -90,13 +92,13 @@
+      ref_height_mm>=0 && ref_height_mm<=5000 && az_numeric_ok;
+  reg cleanup=1;
+  always @(posedge clk) if(!rst_n) cleanup<=1;else cleanup<=origin_reset || !sources_ok || fault;
+- assign estimate_ready=sources_ok && !origin_reset && !cleanup && seeded && seen && publication_age<AGE_LIMIT && !fault;
++ assign estimate_ready=sources_ok && !origin_reset && !cleanup && seeded && seen && publication_fresh && !fault;
+  // Caller supplies range_valid, acc_valid and !origin_reset at final control gate.
+  (* syn_keep = 1 *) wire estimate_ready_state_numeric_tail_kept=
+   ((RANGE_AGE_PRECHECKED && AGE_LIMIT==5000000) || range_age_ticks<AGE_LIMIT) &&
+   ref_height_mm>=0 && ref_height_mm<=5000 &&
+   az_numeric_ok && !cleanup && seeded && seen &&
+-  publication_age<AGE_LIMIT && !fault;
++  publication_fresh && !fault;
+  assign estimate_ready_state_numeric_tail=estimate_ready_state_numeric_tail_kept;
+  assign valid=CAL_MASK[3] && CAL_MASK[4] && estimate_ready;
+  always @(posedge clk)begin
+@@ -1163,7 +1165,7 @@
+  always @(posedge clk) begin
+   update<=0;mul_start<=0;div_start<=0;
+   if(!rst_n || cleanup) begin
+-   state<=0;timer_store<=0;publication_age<=32'hffffffff;seeded<=0;seen<=0;cycle5<=0;
++   state<=0;timer_store<=0;publication_age<=32'hffffffff;publication_fresh<=(32'hffffffff < AGE_LIMIT);seeded<=0;seen<=0;cycle5<=0;
+    origin_mm_store<=0;ref_height_old_store<=0;ref_speed_old_store<=0;ref_speed_store<=0;ref_acc_store<=0;
+    acc_i<=0;acc_out<=0;vq<=0;hq<=0;vel_e<=0;height_e<=0;
+    acc_pending<=0;height_pending<=0;pending_height_epoch_ok<=0;height_transaction_epoch_ok<=0;seed_epoch_ok<=0;filtered_acc_store<=0;filter_steps<=0;filter_fraction<=0;
+@@ -1172,7 +1174,7 @@
+    // Fault recovery starts a new height epoch; no stale interval integration.
+    if(!rst_n || origin_reset || !sources_ok) fault<=0;
+   end else begin
+-   if(publication_age!=32'hffffffff) publication_age<=publication_age+1'b1;
++   if(publication_age!=32'hffffffff)begin publication_age<=publication_age+1'b1;publication_fresh<=((publication_age+32'd1)<AGE_LIMIT);end
+    if(acc_update)begin
+     if(acc_pending || acc_dt_us==0 || acc_dt_us>100000)begin fault<=1;reason<=4;end
+     else begin acc_pending<=1;pending_acc<=az_up_mmps2;pending_acc_dt_store<=acc_dt_us;end
+@@ -1235,7 +1237,7 @@
+       fault<=sources_ok && !origin_reset;seen<=0;height_transaction_epoch_ok<=0;state<=0;reason<=4;
+      end else begin
+       height_transaction_epoch_ok<=0;fused_height_mm<=origin_mm+publish_h_integer;vz_mmps<=publish_v_integer;vz_q16<=publish_v_q16;v_q16_range<=publish_v_q16_range;
+-      sample_az_mmps2<=held_rawaz;publication_age<=0;seen<=1;update<=1;reason<=CAL_MASK[3] && CAL_MASK[4] ? 0:16;state<=0;
++      sample_az_mmps2<=held_rawaz;publication_age<=0;publication_fresh<=(32'd0<AGE_LIMIT);seen<=1;update<=1;reason<=CAL_MASK[3] && CAL_MASK[4] ? 0:16;state<=0;
+      end
+      // Equivalent original .03-per1ms pole, using actual accepted pose dt.
+      // Whole milliseconds run the original update verbatim; fractional time

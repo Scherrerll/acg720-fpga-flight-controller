@@ -1,0 +1,28 @@
+{
+  "classification": "root_requested_duplicate_fallback_cancellation",
+  "tool_builtin_fallback": true,
+  "matching_percent": 2.81,
+  "threshold_percent": 80,
+  "incremental_reuse_success": false,
+  "vendor_pid": 50764,
+  "actual_p_wait": 4294967295,
+  "wait_function_returned": true,
+  "normal_completion": false,
+  "route_failure_claim": false,
+  "STA_qualification_claim": false,
+  "source55_unchanged": true,
+  "VG_unchanged": true,
+  "donor_evidence_unchanged": true,
+  "source_PR_and_copy_unchanged": true,
+  "source_PR_after_sha256": "cf1f4230147cc0393ccbe76d90d911d95b2a7c4b3f866769ace2114985ed1892",
+  "copied_PR_after_sha256": "cf1f4230147cc0393ccbe76d90d911d95b2a7c4b3f866769ace2114985ed1892",
+  "TR_exists": false,
+  "FS_exists": false,
+  "request_receipt_sha256": "4bb33aa5070b6909679e4bcf858649c043c6361b6f37600022ee1f9e3ed5b136",
+  "actual_exit_receipt_sha256": "c2438f7d9486c212cef51dc0bc9d5c867c15478e1c949a586bce377ade9e3db5",
+  "source_PR_before_after_receipt_sha256": {
+    "incremental_seed_before.json": "33ee874cdeeaff3f5bf40b92bda670bf6e1a9a561c80912a26e3caf55dabecea",
+    "incremental_seed_after.json": "848f797ba3ef4f1e1b60cd029cace7ed912480dc96d7467a8ee90e76cf2a57f2"
+  },
+  "note": "The inherited normal_wait_return flag means only p.wait returned. Vendor was deliberately terminated after verified PA2136 duplicate default-flow fallback; not normal completion or product route failure."
+}

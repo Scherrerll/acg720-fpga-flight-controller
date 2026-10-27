@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-26T04:28:54.1132968Z",
+  "native": {
+    "ProcessId": 7440,
+    "ParentProcessId": 15404,
+    "CreationDate": "2026-10-26T12:03:13.659553+08:00",
+    "CommandLine": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\build_attempt_02\\physical.tcl"
+  },
+  "statistics": {
+    "Id": 7440,
+    "CPU": 1516.546875,
+    "StartTime": "2026-10-26T12:03:13.6595536+08:00",
+    "WorkingSet64": 2998022144
+  }
+}

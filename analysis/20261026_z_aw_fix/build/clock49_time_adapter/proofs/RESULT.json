@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Isolated adapter unit only; the49MHz fallback remains incomplete and unqualified.",
+  "actual_waits": [
+    0,
+    0
+  ],
+  "normal_transactions": 12000,
+  "inputs_sha256": "5f671297f76b42860ea546c3f74062769c71d05e93ea8a2425b32148e076319b",
+  "compile_exit_sha256": "de8eec8907b526d8239ad812566d144db4c92e1eb311c4b217003c2698c8dc9d",
+  "vvp_exit_sha256": "6644d6eebcdeeb1335f883146eb995d1dd304c8279b9262447a3757a0528424f",
+  "log_sha256": "526ef39a6803aacb290d10dc01929db376642e4d001ae6ae45c711837e7c0271"
+}

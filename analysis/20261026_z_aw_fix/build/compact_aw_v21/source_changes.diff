@@ -1,0 +1,14 @@
+--- v18/acg720_ano_port.v
++++ v21/acg720_ano_port.v
+@@ -234,8 +234,9 @@
+  wire telemetry_snapshot_hold;
+  generate begin: staged_telemetry
+  reg [343:0] range_diagnostic_q=0;
+- reg [863:0] core_q=0;reg core_initialized=0;reg [887:0] extension_q=0;reg [215:0] acceleration_q=0;
+- always @(posedge clk50) if(!telemetry_snapshot_hold) begin core_initialized<=1;core_q<=core_body;extension_q<=extension;acceleration_q<=acceleration_body;range_diagnostic_q<=range_diagnostic_body;end
++ reg [863:0] core_q=0;reg core_initialized=0;wire [887:0] extension_q;reg [215:0] acceleration_q=0;
++ always @(posedge clk50) if(!telemetry_snapshot_hold) begin core_initialized<=1;core_q<=core_body;acceleration_q<=acceleration_body;range_diagnostic_q<=range_diagnostic_body;end
++ gw5_snapshot_bram #(.WIDTH(888)) extension_storage(.clk(clk50),.enable(!telemetry_snapshot_hold),.data(extension),.q(extension_q));
+  assign range_diagnostic_snapshot=range_diagnostic_q;
+  assign core_snapshot={core_q[863:560],
+   (core_q[862] ? core_q[559:512] : 48'd0),

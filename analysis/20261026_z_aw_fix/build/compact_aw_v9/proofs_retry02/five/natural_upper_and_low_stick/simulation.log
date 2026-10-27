@@ -1,0 +1,5 @@
+PASS natural upper windup: old1850=419/419 first4600ms; new below1850=44ms below1250=924ms upper_rejects=1716 accepted_down=77
+PASS reachable I[-350,850] and bias[0,350] checked each active cycle
+PASS compact/v1 module outputs and persistent integrals match every active cycle
+PASS commit contract checked 2237 times; every Z publication delayed exactly2clocks
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v9\proofs_retry02\five\aw_tb.v:184: $finish called at 111933260000 (1ps)

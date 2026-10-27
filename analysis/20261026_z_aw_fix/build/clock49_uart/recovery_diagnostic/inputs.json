@@ -1,0 +1,10 @@
+{
+  "scope": "Same unchanged receiver RTL at434/425 divisors; two actual independent clock models and identical nominal115200 input. Diagnostic only, not a pass waiver.",
+  "input_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\canonical\\source\\xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_uart\\recovery_diagnostic\\tb.v": "755b68a000d23bfd6abcf0836ac66922df7d6c81a9e99baed0f0d4f63295a71e",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\diagnose_clock49_uart_recovery.py": "6230df5089c05272a7f45d07d84589cf8e2a3f88f62f28bfa62a7def12844f78"
+  },
+  "short_idle_bits": 3,
+  "long_idle_bits": 14
+}

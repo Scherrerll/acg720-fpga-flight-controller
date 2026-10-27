@@ -1,0 +1,12 @@
+{
+  "scope": "Unmodified parameterized PWM RTL component, input clocks50/49MHz behavioral models. Separate vendor PLL model already checked49MHz clock generation. No DUT force/preload. Not integrated49MHz firmware or hardware qualification.",
+  "input_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\canonical\\source\\core\\motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_pwm\\proofs\\tb.v": "6f346cca36672d4179d4edf45e0a5203e6afa7488ff74f119075c0394d2dd74d",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\verify_clock49_pwm_reference.py": "0090378422805cc5f50371138011c627544868549677ef44ba747fe83fa32340",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe": "803b8844af2cc8ed70b5f08b07ffa749901280e81339617ca3e72cbbb852bd2b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe": "e2f442f4d5aa76e55c85c3ff77e4446fbfdb9946b7cfe8a2dff87f275da17b62"
+  },
+  "clock49_half_period_ns": 10.204081632653,
+  "wall_time_tolerance_ns": 60
+}

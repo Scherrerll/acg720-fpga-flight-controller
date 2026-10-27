@@ -1,0 +1,835 @@
+{
+  "reviewed_utc": "2026-10-27T03:32:46.153475+00:00",
+  "passed": true,
+  "findings": [],
+  "scope": "Independent read-only raw physical evidence review of standard v22 P3/R0; no export, promotion, vendor, hardware or frozen-file mutation.",
+  "source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+    "core/height_loss_fallback.v": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976",
+    "position/pose_time_adapter.v": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "netlist_sha256": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8",
+  "FS_sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+  "FS_bytes": 17456619,
+  "vendor_actual_wait": 0,
+  "runner_actual_wait": 0,
+  "actual_receipt_types": "Both actual_p_wait values are exactly int; both normal_wait_return values are exactly True.",
+  "period_ns": 20,
+  "global_freq_mhz": 50,
+  "fmax_mhz": 50.075,
+  "slacks_ns": {
+    "setup": 0.03,
+    "hold": 0.2,
+    "recovery": 12.073,
+    "removal": 2.646,
+    "minimum_pulse_width": 7.387
+  },
+  "reported_path_counts": {
+    "setup": 25,
+    "hold": 25,
+    "recovery": 25,
+    "removal": 25,
+    "minimum_pulse_width": 10
+  },
+  "violated_endpoints": {
+    "setup": 0,
+    "hold": 0
+  },
+  "pins": {
+    "clk50": [
+      "Y18",
+      "in"
+    ],
+    "imu_miso": [
+      "D19",
+      "in"
+    ],
+    "rc_ppm_in": [
+      "B17",
+      "in"
+    ],
+    "range_rx": [
+      "C14",
+      "in"
+    ],
+    "radio_rx": [
+      "B16",
+      "in"
+    ],
+    "imu_sck": [
+      "E17",
+      "out"
+    ],
+    "imu_mosi": [
+      "C20",
+      "out"
+    ],
+    "imu_cs_n": [
+      "E18",
+      "out"
+    ],
+    "imu_gyro_cs_n": [
+      "F20",
+      "out"
+    ],
+    "range_tx": [
+      "C15",
+      "out"
+    ],
+    "uart_tx": [
+      "M15",
+      "out"
+    ],
+    "radio_tx": [
+      "B15",
+      "out"
+    ],
+    "led2": [
+      "L21",
+      "out"
+    ],
+    "led3": [
+      "K21",
+      "out"
+    ],
+    "motor1_pwm": [
+      "D17",
+      "out"
+    ],
+    "motor2_pwm": [
+      "C17",
+      "out"
+    ],
+    "motor3_pwm": [
+      "E16",
+      "out"
+    ],
+    "motor4_pwm": [
+      "D16",
+      "out"
+    ]
+  },
+  "timing_exceptions": [
+    "set_false_path -from [get_ports {radio_rx}]"
+  ],
+  "original_CST_SDC_byte_identical": true,
+  "original_physical_helper_unchanged": true,
+  "terminal_artifact_count": 21,
+  "raw_declared_count": 8,
+  "evidence": {
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/TERMINAL_MANIFEST.json": {
+      "sha256": "e2b8f9dbda0ecd2f16f45e485e9c7add75d99c6e7271a8dfeb6e8d798acf3b94",
+      "bytes": 17679
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/INDEPENDENT_RAW_REVIEW.json": {
+      "sha256": "dafa8ed37f1d3912dc2d8e988030645fa880ace0d79f26b56f2bf83f586f2117",
+      "bytes": 3996
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/physical_exit.json": {
+      "sha256": "6f75186bd5819d873df5eae522101b2efc6ff86c9ff559bb757792d91992203c",
+      "bytes": 1045
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/runner_exit.json": {
+      "sha256": "a77e34c2415256c0e0afca5c694835be6d503ffe90a6e0e126a00dd87fcb83ad",
+      "bytes": 1073
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/physical.log": {
+      "sha256": "b3f60a8254afa53fe123d528f1f905dfca11416151241e671091cd013d0ec0db",
+      "bytes": 2775
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/runner.stdout.log": {
+      "sha256": "20f1c02fd9657cd14ed3668d0df2159d67d9d90db97af8123be70531b42e96eb",
+      "bytes": 275
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/runner.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/runner_exit.json": {
+      "sha256": "a77e34c2415256c0e0afca5c694835be6d503ffe90a6e0e126a00dd87fcb83ad",
+      "bytes": 1073
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/runner_process.json": {
+      "sha256": "1df4e0090f689abbe1f4e96e384ea69b06501fecdec5d12f10f6a750d2d7bed6",
+      "bytes": 791
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/runner_process.json": {
+      "sha256": "1df4e0090f689abbe1f4e96e384ea69b06501fecdec5d12f10f6a750d2d7bed6",
+      "bytes": 791
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/runner.stdout.log.gz": {
+      "sha256": "452c3fea0fa8a58804b941e1ee5b70bcfbfba85bef15c6a54274bb3080cf533c",
+      "bytes": 245
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/runner.stderr.log.gz": {
+      "sha256": "d4f16ccd21e5683a3120e24b7bcad3ab549a5f394d38cb88d27ef34579a8b543",
+      "bytes": 38
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/physical_exit.json": {
+      "sha256": "6f75186bd5819d873df5eae522101b2efc6ff86c9ff559bb757792d91992203c",
+      "bytes": 1045
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/physical_process.json": {
+      "sha256": "c42e1619585ae34b4c7998935aefc7bd9bd334ab9acb85638fb72d16b62f18a5",
+      "bytes": 854
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/physical_process.json": {
+      "sha256": "c42e1619585ae34b4c7998935aefc7bd9bd334ab9acb85638fb72d16b62f18a5",
+      "bytes": 854
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/physical_input.json": {
+      "sha256": "01879504816477b3d34a1c8a3c277d1cfff9fe37835517a09d2e96e51b49da3a",
+      "bytes": 6125
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/physical_input.json": {
+      "sha256": "01879504816477b3d34a1c8a3c277d1cfff9fe37835517a09d2e96e51b49da3a",
+      "bytes": 6125
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/build_input.json": {
+      "sha256": "0b6b8ec0c056b2d7b1e8e9aedb758fad55f733e9656fbc59585bd4041886abba",
+      "bytes": 29684
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/build_input.json": {
+      "sha256": "0b6b8ec0c056b2d7b1e8e9aedb758fad55f733e9656fbc59585bd4041886abba",
+      "bytes": 29684
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/physical.log.gz": {
+      "sha256": "ff64072659370ee0ac807a9b2b7951cbfd941ab8b7a8e577de539e60d804a68d",
+      "bytes": 645
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/physical_audit.json": {
+      "sha256": "8052e453e4d8040305fdb8c28295935324a15fc5236e6fce39e42eccebaf9846",
+      "bytes": 10087
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/physical_audit.json": {
+      "sha256": "8052e453e4d8040305fdb8c28295935324a15fc5236e6fce39e42eccebaf9846",
+      "bytes": 10087
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/build_result.json": {
+      "sha256": "121d495bf4f1b1d14d03fedfa632675776df493127c41ec1d2895332b7b9c2ae",
+      "bytes": 8312
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/build_result.json": {
+      "sha256": "121d495bf4f1b1d14d03fedfa632675776df493127c41ec1d2895332b7b9c2ae",
+      "bytes": 8312
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/project_serialization_check.json": {
+      "sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a",
+      "bytes": 185
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/project_serialization_check.json": {
+      "sha256": "e2d6af9d557a5d5a7d4575693eceb2967b9fda3192cb2b446f315791d73baf6a",
+      "bytes": 185
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/donor_evidence_binding.json": {
+      "sha256": "170475fe6228de8b9979e11d499c2e6900275e51510f549b4566f27c22d5fdc8",
+      "bytes": 292156
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/donor_evidence_binding.json": {
+      "sha256": "170475fe6228de8b9979e11d499c2e6900275e51510f549b4566f27c22d5fdc8",
+      "bytes": 292156
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/functional_evidence_binding.json": {
+      "sha256": "9e7450c3711328bde39656d7d75105ff27e6421d9e36c58199ef08994be6eba6",
+      "bytes": 11050
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/functional_evidence_binding.json": {
+      "sha256": "9e7450c3711328bde39656d7d75105ff27e6421d9e36c58199ef08994be6eba6",
+      "bytes": 11050
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/physical.tcl": {
+      "sha256": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f",
+      "bytes": 463
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/physical.tcl": {
+      "sha256": "4a90cce4f2eff9c6554bf37943f5d9efe9f5b46023ada83636a8dd30c291d25f",
+      "bytes": 463
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/physical.gprj": {
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+      "bytes": 434
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/physical.gprj": {
+      "sha256": "8f504062fd5ea71330a8514aaffad1e8a2ee53ed47100b6a3e5195673cddf081",
+      "bytes": 434
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/impl/pnr/acg720_ano_port.tr": {
+      "sha256": "4ad1c8b9e6be1e70d0e9e2bec4285e145ffcf501667ba0825f778b863b6ac045",
+      "bytes": 379092
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.tr.gz": {
+      "sha256": "e6f7019c82bc542951cc7521d7939294cfcc2acba945214d94010b7cd539faf0",
+      "bytes": 16087
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/impl/pnr/acg720_ano_port.rpt.txt": {
+      "sha256": "afe8a7eed8c9da340851ea3cf48bca081dab060645d32dc46940a5cb2bf2314a",
+      "bytes": 99317
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.rpt.txt.gz": {
+      "sha256": "5cd22ba7add6ba32f0a86e509bacd0b4c8e709fca516ba23c0d803ed9bd41116",
+      "bytes": 5334
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/impl/pnr/acg720_ano_port.fs": {
+      "sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+      "bytes": 17456619
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.fs": {
+      "sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610",
+      "bytes": 17456619
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/impl/pnr/acg720_ano_port.pr": {
+      "sha256": "335fea03d91cf54c2de8d8ecc8e72063e07c662156d4f2c6f7c57927e6d8f371",
+      "bytes": 125775436
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/acg720_ano_port.pr": {
+      "sha256": "335fea03d91cf54c2de8d8ecc8e72063e07c662156d4f2c6f7c57927e6d8f371",
+      "bytes": 125775436
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/impl/pnr/device.cfg": {
+      "sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+      "bytes": 600
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/physical_p3r0_01/terminal_receipts/device.cfg": {
+      "sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+      "bytes": 600
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/source_freeze.json": {
+      "sha256": "798c6443805d56556dbaeb9a4b43531159267b24e473283c6ef362fc00ddf5d6",
+      "bytes": 13139
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/PROOF_BINDING.json": {
+      "sha256": "dd63ff4b218a10ae7f1fcf146e7f045e4057b3a4ef1caa1559cca412db8f47c0",
+      "bytes": 22134
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/acg720_ano_port.cst": {
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "bytes": 1891
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/acg720_ano_port.gprj": {
+      "sha256": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+      "bytes": 4014
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/acg720_ano_port.sdc": {
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "bytes": 254
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/acg720_ano_port.v": {
+      "sha256": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd",
+      "bytes": 27514
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/build.tcl": {
+      "sha256": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+      "bytes": 411
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/calibration.vh": {
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/gw5_snapshot_bram.v": {
+      "sha256": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+      "bytes": 1368
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/level_calibration.vh": {
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/mtf_navigation_shadow.v": {
+      "sha256": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+      "bytes": 10740
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/mtf_xyz_navigation_control.v": {
+      "sha256": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd",
+      "bytes": 26792
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/nav_math_service.v": {
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "bytes": 4106
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/sik_imu_diagnostic.v": {
+      "sha256": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+      "bytes": 5403
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/telemetry_tx.v": {
+      "sha256": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+      "bytes": 20760
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/xy_pi_parameters.v": {
+      "sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+      "bytes": 5208
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/ano_attitude_estimator.v": {
+      "sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "bytes": 41227
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/ano_flight_state.v": {
+      "sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "bytes": 3175
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/bmi088_reader.v": {
+      "sha256": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+      "bytes": 12475
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/control_gate.v": {
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/cordic_atan2.v": {
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/flight_core.v": {
+      "sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+      "bytes": 39677
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/height_loss_fallback.v": {
+      "sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+      "bytes": 5536
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/imu_checked_guard_pipelined.v": {
+      "sha256": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+      "bytes": 6024
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/imu_diagnostic_tap.v": {
+      "sha256": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+      "bytes": 6036
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/imu_pipeline_pipelined.v": {
+      "sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+      "bytes": 9700
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/imu_temporal_check_pipelined.v": {
+      "sha256": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+      "bytes": 3958
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/motor_pwm.v": {
+      "sha256": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+      "bytes": 3583
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/rc_ppm.v": {
+      "sha256": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+      "bytes": 5660
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/spi_uart_modules.v": {
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/ano_flow_fusion.v": {
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/ano_height_fusion.v": {
+      "sha256": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+      "bytes": 44836
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/ano_hold_control.v": {
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/ano_xy_divide36.v": {
+      "sha256": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "bytes": 1823
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/ano_xy_stick.v": {
+      "sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "bytes": 4785
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/ano_z_stick.v": {
+      "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "bytes": 3700
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/mtf_position_integrator.v": {
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "bytes": 9147
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/mtf_shared_flow_fusion.v": {
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "bytes": 9359
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/mtf_shared_height_fusion.v": {
+      "sha256": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+      "bytes": 47670
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/mtf_shared_hold_control.v": {
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "bytes": 23874
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/mtf_xyz_hold_control.v": {
+      "sha256": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976",
+      "bytes": 31486
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/pose_time_adapter.v": {
+      "sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+      "bytes": 2215
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/position_math.v": {
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/position/relative_position.v": {
+      "sha256": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+      "bytes": 13807
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/sensor/flow_reader.v": {
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/sensor/mtf01p_reader.v": {
+      "sha256": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+      "bytes": 13438
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/sensor/mtf_native_geometry.v": {
+      "sha256": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+      "bytes": 14083
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/sensor/mtf_shared_geometry.v": {
+      "sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+      "bytes": 14441
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/sensor/pmw3901_init.vh": {
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/sensor/range_height_estimate.v": {
+      "sha256": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+      "bytes": 5710
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/sensor/range_reader.v": {
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/rtl/ano_manual_angles.v": {
+      "sha256": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+      "bytes": 5795
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/rtl/ano_rate_control.v": {
+      "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "bytes": 16946
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/rtl/ano_rc_angle_targets.v": {
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/rtl/ano_yaw_control.v": {
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/rtl/pid_divide_signed64.v": {
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/core/rtl/quad_mixer_feedback.v": {
+      "sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+      "bytes": 1912
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/acg720_ano_port.cst": {
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "bytes": 1891
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/acg720_ano_port.gprj": {
+      "sha256": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+      "bytes": 4014
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/acg720_ano_port.sdc": {
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "bytes": 254
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/acg720_ano_port.v": {
+      "sha256": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd",
+      "bytes": 27514
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/build.tcl": {
+      "sha256": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+      "bytes": 411
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/calibration.vh": {
+      "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "bytes": 512
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/gw5_snapshot_bram.v": {
+      "sha256": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+      "bytes": 1368
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/level_calibration.vh": {
+      "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "bytes": 500
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/mtf_navigation_shadow.v": {
+      "sha256": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+      "bytes": 10740
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/mtf_xyz_navigation_control.v": {
+      "sha256": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd",
+      "bytes": 26792
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/nav_math_service.v": {
+      "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "bytes": 4106
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/sik_imu_diagnostic.v": {
+      "sha256": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+      "bytes": 5403
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/telemetry_tx.v": {
+      "sha256": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+      "bytes": 20760
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/xy_pi_parameters.v": {
+      "sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+      "bytes": 5208
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/ano_attitude_estimator.v": {
+      "sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "bytes": 41227
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/ano_flight_state.v": {
+      "sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "bytes": 3175
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/bmi088_reader.v": {
+      "sha256": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+      "bytes": 12475
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/control_gate.v": {
+      "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "bytes": 5771
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/cordic_atan2.v": {
+      "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "bytes": 2706
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/flight_core.v": {
+      "sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+      "bytes": 39677
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/height_loss_fallback.v": {
+      "sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+      "bytes": 5536
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/imu_checked_guard_pipelined.v": {
+      "sha256": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+      "bytes": 6024
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/imu_diagnostic_tap.v": {
+      "sha256": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+      "bytes": 6036
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/imu_pipeline_pipelined.v": {
+      "sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+      "bytes": 9700
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/imu_temporal_check_pipelined.v": {
+      "sha256": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+      "bytes": 3958
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/motor_pwm.v": {
+      "sha256": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+      "bytes": 3583
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/rc_ppm.v": {
+      "sha256": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+      "bytes": 5660
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/spi_uart_modules.v": {
+      "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "bytes": 3507
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/ano_flow_fusion.v": {
+      "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "bytes": 8598
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/ano_height_fusion.v": {
+      "sha256": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+      "bytes": 44836
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/ano_hold_control.v": {
+      "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "bytes": 23217
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/ano_xy_divide36.v": {
+      "sha256": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "bytes": 1823
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/ano_xy_stick.v": {
+      "sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "bytes": 4785
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/ano_z_stick.v": {
+      "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "bytes": 3700
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/mtf_position_integrator.v": {
+      "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "bytes": 9147
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/mtf_shared_flow_fusion.v": {
+      "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "bytes": 9359
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/mtf_shared_height_fusion.v": {
+      "sha256": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de",
+      "bytes": 47670
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/mtf_shared_hold_control.v": {
+      "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "bytes": 23874
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/mtf_xyz_hold_control.v": {
+      "sha256": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976",
+      "bytes": 31486
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/pose_time_adapter.v": {
+      "sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+      "bytes": 2215
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/position_math.v": {
+      "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "bytes": 8847
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/position/relative_position.v": {
+      "sha256": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+      "bytes": 13807
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/sensor/flow_reader.v": {
+      "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "bytes": 13415
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/sensor/mtf01p_reader.v": {
+      "sha256": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2",
+      "bytes": 13438
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/sensor/mtf_native_geometry.v": {
+      "sha256": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+      "bytes": 14083
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/sensor/mtf_shared_geometry.v": {
+      "sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+      "bytes": 14441
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/sensor/pmw3901_init.vh": {
+      "sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "bytes": 2125
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/sensor/range_height_estimate.v": {
+      "sha256": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+      "bytes": 5710
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/sensor/range_reader.v": {
+      "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "bytes": 9867
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/rtl/ano_manual_angles.v": {
+      "sha256": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+      "bytes": 5795
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/rtl/ano_rate_control.v": {
+      "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "bytes": 16946
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/rtl/ano_rc_angle_targets.v": {
+      "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "bytes": 14769
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/rtl/ano_yaw_control.v": {
+      "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "bytes": 8713
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/rtl/pid_divide_signed64.v": {
+      "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "bytes": 2001
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/canonical/source/core/rtl/quad_mixer_feedback.v": {
+      "sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+      "bytes": 1912
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "sha256": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8",
+      "bytes": 14538895
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/build_attempt_01/source/impl/gwsynthesis/acg720_ano_port.vg": {
+      "sha256": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8",
+      "bytes": 14538895
+    },
+    "firmware/B0B4/build_candidate.py": {
+      "sha256": "abb5246c203b73c111f80bc91f8db6c8220463f7d4c5cf48dbfe2167ef49db84",
+      "bytes": 14116
+    },
+    "out/z_aw_fix_20261026/compact_aw_v22/physical_p3r0_01/verification/executed_run_physical.py": {
+      "sha256": "d1fe2b3cb6889d4317b3d84a04852dfe1769ebf3ee9148190a5020bafbbca64f",
+      "bytes": 11369
+    },
+    "analysis/20261026_z_aw_fix/build/compact_aw_v22/run_physical.py": {
+      "sha256": "d1fe2b3cb6889d4317b3d84a04852dfe1769ebf3ee9148190a5020bafbbca64f",
+      "bytes": 11369
+    },
+    "out/z_aw_fix_20261026/compact_aw_v4/canonical/source/acg720_ano_port.cst": {
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "bytes": 1891
+    },
+    "firmware/B0B4/source/acg720_ano_port.cst": {
+      "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+      "bytes": 1891
+    },
+    "out/z_aw_fix_20261026/compact_aw_v4/canonical/source/acg720_ano_port.sdc": {
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "bytes": 254
+    },
+    "firmware/B0B4/source/acg720_ano_port.sdc": {
+      "sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "bytes": 254
+    }
+  },
+  "reviewer_script_sha256": "9dcf7352f02a816d72f17c125f4b4b9591f08f230291d8b4bdffb32dae57c8bb",
+  "qualification": "Raw original 20ns/50MHz physical gates satisfied; release export/promotion not performed by this review."
+}

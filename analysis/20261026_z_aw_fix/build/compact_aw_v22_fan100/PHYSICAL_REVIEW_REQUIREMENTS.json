@@ -1,0 +1,22 @@
+{
+  "scope": "Main plus independent review of these exact physical-only preparation hashes before creating PHYSICAL_REVIEW_GATE.json; this file does not authorize launch.",
+  "preparation_sha256": "83cb0b989fd59981e76e534bc4edbce439c6a4d49a1591503957d53bc2a3831e",
+  "input_binding_sha256": "2485476edd3f58a837868ce899ff80966750829fbe59f5d8c3f9355769c690e1",
+  "reviewed_scripts_sha256": {
+    "physical_recipe.py": "420c7d4de1ea4f90b7e24b299ae8f85de13d1d9274bc1e71fd0458743b5ea326",
+    "physical_input_contract.py": "79a1833779ea48b5a1e449af354c0124a9136d3c5085710e9008e830278b2456",
+    "run_physical.py": "2d50c402d930db384a6f51c964d9b7d329c225b88844696a6246b4cd0957382a",
+    "launch_physical_hidden.py": "8e8c824aa47769be33b09fe52ca9111b250767ec7238154fbbd26ef357a6092f",
+    "seal_terminal.py": "bb99d0f6050e5dfffd0c0cb3fa33bc99b0f4951fe2567074a93944cd930cfaba",
+    "physical_snapshot.py": "8c4fea621ed6e504dbdd27830c6fcebec4c4f025dcbdc119252b348285294e4d",
+    "independent_raw_review.py": "ffa08eab7e92f8b5a19155faa02cb3e65d568edbbcaffa74488e5a4a686f24f5",
+    "preflight_physical.py": "74620785affca33c36e9387bab9f36f13619018e883895918d34b2d132f44d99",
+    "prepare_physical.py": "6d877252e3a8e8aa63d8146ab80bb53f9a9fb945ed5bbf6fd8062331f92bd832"
+  },
+  "required_true_fields": [
+    "main_review_passed",
+    "independent_agent_review_passed"
+  ],
+  "actual_gate_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v22_fan100\\PHYSICAL_REVIEW_GATE.json",
+  "vendor_started": false
+}

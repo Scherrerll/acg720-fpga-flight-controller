@@ -1,0 +1,14 @@
+{
+  "scope": "Isolated generated IP/model simulation only; not a flight-controller or physical/hardware qualification. No DUT force/preload, no SIM define, unmodified vendor sources.",
+  "input_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\vendor_generated_reference\\clock49.v": "f8892770f22d3c9c2ce3801df37d907b36e39bfee02dcb9b226642bebcd74163",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\vendor_generated_reference\\clock49_mod.v": "388092c787d2644f3537719bee4cd02e1145617800000722b64603936c9b29ca",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\vendor_generated_reference\\pll_init.v": "3fc6bef9a7086f0920bfa47265b1766854a53f6ca1c0f75084eaf6b6ef4d6258",
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\simlib\\gw5a\\prim_sim.v": "7109c2568188627465d218bc099cf72f12e90807c21d4d862d2335b499043544",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\clock49_generate\\simulation\\tb.v": "208902826ee44d001bf43c98a3a49d340fdebbd27d8fdb8a70a5588dfbfca295",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe": "803b8844af2cc8ed70b5f08b07ffa749901280e81339617ca3e72cbbb852bd2b",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe": "e2f442f4d5aa76e55c85c3ff77e4446fbfdb9946b7cfe8a2dff87f275da17b62",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\simulate_clock49_reference.py": "e270ca3a71011afe23684a56c77de2d0b3894f113ae79d2687ce432b39ee9d15"
+  },
+  "manufacturer_reference_manifest_sha256": "d7630a01185fbf20d60a88eab5b9238c6806c1388560d3633ace025e345b12ed"
+}

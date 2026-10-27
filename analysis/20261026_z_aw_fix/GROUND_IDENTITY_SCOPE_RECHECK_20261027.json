@@ -1,0 +1,10 @@
+{
+  "scope": "Read-only source cross-check prompted by the isolated49MHz chat progress; main50 ground inputs unchanged",
+  "main50_firmware_A580_legacy_identity": "0x0000B0B2, flight_info version5; deliberate retained telemetry protocol",
+  "main50_parameter_A591_identity": "0x0000B0B4, required for parameter capability",
+  "FS_cfg_UserCode_required": "0x0000B0B4",
+  "source_evidence": ["out/z_aw_fix_20261026/compact_aw_v4/canonical/source/acg720_ano_port.v:272", "ground/B0B4/README.md:3", "ground/B0B4/test_xy_pi_transport.py:216", "ground/B0B4/xy_pi_control.py:223"],
+  "conclusion": "Main50 source intentionally reports the legacy A580 telemetry build while A591 reports B4 capability. Existing ground acceptance of that legacy telemetry is consistent with the actual wire source and tests. No main50 identity/decoder changes needed solely because isolated49 may choose a new explicit identity/frequency contract.",
+  "ground_tests_rerun": false,
+  "hardware_readback_performed": false
+}

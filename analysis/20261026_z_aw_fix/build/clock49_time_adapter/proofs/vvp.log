@@ -1,0 +1,2 @@
+PASS default50 actual-module equivalence public139+division state;49MHz full32bit carry transactions=12000 cancellations=57 busy_overruns=47 cycles=409173
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\clock49_time_adapter\proofs\tb.v:85: $finish called at 8183480000 (1ps)

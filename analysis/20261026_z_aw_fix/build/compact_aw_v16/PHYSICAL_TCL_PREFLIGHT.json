@@ -1,0 +1,16 @@
+{
+  "scope": "Exact prepared Python Tcl expression evaluated as strings and Tcl syntax completeness checked; no Tcl execution or vendor/hardware start.",
+  "runner_sha256": "12bc38270e56a3df592f4cb012334a8380e797c09a1d23503348f9af1b5f1c24",
+  "profiles": {
+    "2": {
+      "Tcl_complete": true,
+      "options_verified": true,
+      "Tcl_sha256": "3f59a915b4406313b133fc939754419ac77515b6de7bd8f7352a50ec64b50be5"
+    },
+    "3": {
+      "Tcl_complete": true,
+      "options_verified": true,
+      "Tcl_sha256": "37750f91823fddd70d8fb5d52579e6836c9d64cdb5c9d524ec3c03e754cec65b"
+    }
+  }
+}

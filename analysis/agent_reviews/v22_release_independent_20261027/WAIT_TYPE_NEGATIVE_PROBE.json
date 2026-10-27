@@ -1,0 +1,77 @@
+{
+  "scope": "Only in-memory stub evidence passed to production check_receipt; no qualification file, artifact mutation, export, vendor or hardware",
+  "cases": [
+    {
+      "field": "actual_p_wait",
+      "value": 0,
+      "python_type": "int",
+      "accepted": true
+    },
+    {
+      "field": "actual_p_wait",
+      "value": false,
+      "python_type": "bool",
+      "accepted": true
+    },
+    {
+      "field": "actual_p_wait",
+      "value": 0.0,
+      "python_type": "float",
+      "accepted": true
+    },
+    {
+      "field": "actual_p_wait",
+      "value": "0",
+      "python_type": "str",
+      "accepted": false
+    },
+    {
+      "field": "actual_p_wait",
+      "value": null,
+      "python_type": "NoneType",
+      "accepted": false
+    },
+    {
+      "field": "actual_p_wait",
+      "value": 1,
+      "python_type": "int",
+      "accepted": false
+    },
+    {
+      "field": "actual_completedprocess_returncode",
+      "value": 0,
+      "python_type": "int",
+      "accepted": true
+    },
+    {
+      "field": "actual_completedprocess_returncode",
+      "value": false,
+      "python_type": "bool",
+      "accepted": true
+    },
+    {
+      "field": "actual_completedprocess_returncode",
+      "value": 0.0,
+      "python_type": "float",
+      "accepted": true
+    },
+    {
+      "field": "actual_completedprocess_returncode",
+      "value": "0",
+      "python_type": "str",
+      "accepted": false
+    },
+    {
+      "field": "actual_completedprocess_returncode",
+      "value": null,
+      "python_type": "NoneType",
+      "accepted": false
+    },
+    {
+      "field": "actual_completedprocess_returncode",
+      "value": 1,
+      "python_type": "int",
+      "accepted": false
+    }
+  ]
+}

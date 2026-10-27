@@ -1,0 +1,2 @@
+PASS actual UART sources: default50 cycle/state equivalence256 bytes;49MHz Tx/Rx256 loopback bytes; nominal115200 external host256 good/16 bad-stop frames plus false start; physical TX bit widths checked=9
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\clock49_uart\proofs_retry03\tb.v:83: $finish called at 30823145744 (1ps)

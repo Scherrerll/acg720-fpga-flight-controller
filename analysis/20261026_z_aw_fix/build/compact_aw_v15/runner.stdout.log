@@ -1,0 +1,5 @@
+synthesis PID 61544; log C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v15\build_attempt_01\verification\synthesis.log
+synthesis actual p.wait()=0
+audit PID 63768; log C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v15\build_attempt_01\verification\audit.log
+audit actual p.wait()=0
+{"SYN_only_passed": true, "netlist_sha256": "907f5b52f91a4e5f4f8301bda53492c69791076b14e0940a1d790971f30e274e", "actual_vendor_wait": 0, "actual_audit_wait": 0, "PNR_started": false}

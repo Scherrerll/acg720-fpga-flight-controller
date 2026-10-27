@@ -1,0 +1,25 @@
+{
+  "reviewed_utc": "2026-10-26T22:40:57.153987+00:00",
+  "passed": true,
+  "profile": "physical_p3r0_dsploc_01",
+  "source_freeze_byte_exact": true,
+  "parent_scripts_unchanged": true,
+  "AST_parse_passed": true,
+  "original_physical_gate_calls_AST_identical": true,
+  "original_independent_raw_checks_AST_identical": true,
+  "physical_project_selects_only_combined_CST": true,
+  "original_baseline_prefix_byte_exact": true,
+  "existing_CLOCK_LOC_preserved": "CLOCK_LOC \"observer_reset\" BUFG = CE|SR|LOGIC;",
+  "prefix_definition": "Complete frozen original v18 CST, including IO attributes and its existing CLOCK_LOC; not an IO-only subset",
+  "new_suffix_only": "Exact portable46 DSP/BSRAM INS_LOC rows and comments; no new IO/clock/SDC directives",
+  "sole_option_delta": {
+    "cst_warn_to_error": 1
+  },
+  "pure_Tcl_info_complete_actual_returncode": 0,
+  "preparation_sha256": "5265cb1b6a59660ba8e52eb129823cb7c0dc1aef59eef743d9274ea1311bccd1",
+  "constraint_binding_sha256": "59291ff94b1e9ec46543e3cd6f9d2ee99aede34adc8ba8984848211397461358",
+  "runtime_attempt_absent": true,
+  "launch_receipt_directory_empty": true,
+  "vendor_started": false,
+  "hardware_actions": false
+}

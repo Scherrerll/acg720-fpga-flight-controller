@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "results_sha256": "eb0295ca89af3ac66db0a65d923d30097c1c9bdd6c8fd99a1b9954f48b825e39",
+  "coverage": [
+    {
+      "PRE": 0,
+      "cycles": 1686784,
+      "public_bits": 152,
+      "request_bits": 228,
+      "service_bits": 135,
+      "publications": 26,
+      "seeds": 14,
+      "mul_consumed": 2208,
+      "div_consumed": 2208,
+      "acc_div_consumed": 1980,
+      "numeric_pulses": 4,
+      "commit_vetoes": 4,
+      "epoch_pulses": 5,
+      "age_rejects": 3,
+      "age_bypasses": 0,
+      "ready_cycles": 886790
+    },
+    {
+      "PRE": 1,
+      "cycles": 1508078,
+      "public_bits": 152,
+      "request_bits": 228,
+      "service_bits": 135,
+      "publications": 23,
+      "seeds": 11,
+      "mul_consumed": 1980,
+      "div_consumed": 1980,
+      "acc_div_consumed": 1776,
+      "numeric_pulses": 4,
+      "commit_vetoes": 4,
+      "epoch_pulses": 5,
+      "age_rejects": 0,
+      "age_bypasses": 4,
+      "ready_cycles": 880991
+    }
+  ]
+}

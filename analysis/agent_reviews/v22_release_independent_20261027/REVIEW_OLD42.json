@@ -1,0 +1,99 @@
+{
+  "approved_old42_release_production": false,
+  "reviewed_utc": "2026-10-27T03:29:11.957188+00:00",
+  "scope": "Exact old42 source/seal review only; owner strict-wait revision is intentionally a separate closure. No whole42 rerun or qualified file creation.",
+  "old42_seal_sha256": "5eb911a1fffe723212237b1478384aa797501833368427cb5c892b107b8d832a",
+  "actual_42_validation_wait": 0,
+  "old_tested_production_hashes": {
+    "export_qualified_v4.py": "e008e5f35ec0d8fed612c4773b87c57c21dbcb8d447affc54f5e966ec17e860f",
+    "verify_release.py": "ce54d5e501769bf6450f4a17a3e71211353efc5d33fec56957bcc07396b178eb"
+  },
+  "real_v22_TEMP_retry_completion_and_functional_SYN_archive_replay_passed": true,
+  "exact_self_log_emptySHA_exception_count": 2,
+  "other_old_immutable_inputs_strictly_checked": 17,
+  "exception_negative_cases": [
+    {
+      "case": "third_excluded_output",
+      "rejected": true,
+      "reason": "v22 invalid self-output declarations differ"
+    },
+    {
+      "case": "waive_unrelated_old_hash",
+      "rejected": true,
+      "reason": "Declared evidence hash differs: c:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/analysis/20261026_z_aw_fix/build/compact_aw_v22/run_proofs.py"
+    },
+    {
+      "case": "old_self_log_nonempty_declared_sha",
+      "rejected": true,
+      "reason": "v22 original input path aliases collide"
+    },
+    {
+      "case": "current_terminal_log_empty_sha",
+      "rejected": true,
+      "reason": "v22 invalid self-output declaration/real terminal log binding differs"
+    },
+    {
+      "case": "index_extra_exception",
+      "rejected": true,
+      "reason": "v22 indexed invalid failed-input reference inventory differs"
+    },
+    {
+      "case": "index_omitted_exceptions",
+      "rejected": true,
+      "reason": "v22 indexed invalid failed-input reference inventory differs"
+    }
+  ],
+  "additional_exact_key_nonemptySHA_case": {
+    "case": "old_self_log_nonempty_declared_sha",
+    "rejected": true,
+    "reason": "v22 invalid self-output declaration/real terminal log binding differs"
+  },
+  "standard_DSP_proof_SYN_origin_separation_passed": true,
+  "origin_negative_cases": [
+    {
+      "changed_origin": "metadata",
+      "rejected": true,
+      "reason": "Portable DSP profile must use standard v20 source/proof/SYN and runtime"
+    },
+    {
+      "changed_origin": "physical_metadata",
+      "rejected": true,
+      "reason": "Portable DSP profile must use standard v20 source/proof/SYN and runtime"
+    },
+    {
+      "changed_origin": "donor",
+      "rejected": true,
+      "reason": "Portable DSP profile must use standard v20 source/proof/SYN and runtime"
+    }
+  ],
+  "real_DSP22_int1_int1_route_failure_retained_and_rejected": true,
+  "original20ns_50MHz_five_slacks_zero_endpoints_18pins_B4_gates_retained": true,
+  "findings": [
+    {
+      "priority": "P2",
+      "title": "Require exact integer wait status rather than numeric equality",
+      "file": "firmware/B0B4/verify_release.py",
+      "line": 183,
+      "related_lines": [
+        347,
+        387,
+        1186,
+        1187,
+        1492
+      ],
+      "confirmed_behavior": "check_receipt accepts boolFalse/float0.0 as successful actual_p_wait or CompletedProcess returncode; raw_success_receipt likewise. check_failed_receipt accepts boolTrue/float1.0 as original failure1. Proven with in-memory stubs; no qualified artifact generated.",
+      "impact": "Invalid scalar receipt types can pass the generic physical/proof/SYN success or preserved-failure gates, contrary to normal exact-int policy. Actual nonzero integer failures remain rejected.",
+      "suggestion": "Use type(value) is int with exact0/1 and normal flag isTrue at common and direct wait entry points. Owner has been notified and is fixing separately."
+    }
+  ],
+  "evidence_files": {
+    "WAIT_TYPE_NEGATIVE_PROBE.json": "eb785fbcf2f2266ee8d0372d3a17e584607e524d29c585346d9b6e2e0b4fe434",
+    "WAIT_TYPE_ADDITIONAL_PROBE.json": "a56de92ad0dc5fad6751b2e0f9bf91d9edf39560332f93f262a5ab506ce1c0ee",
+    "FAILED_INPUT_EXCEPTION_REVIEW.json": "15ffcb2e0ff20e73b688702125b6865fa2af87ad286e14b6ac848d8402aa0531",
+    "EMPTY_SHA_EXACT_KEY_PROBE.json": "fac54d5e78a470e0a286d462293ae1f8e5ad4d1250574f26d8609cb0d1a21bb6"
+  },
+  "production_or_archived_inputs_edited": false,
+  "qualified_file_created": false,
+  "vendor_or_hardware_used": false,
+  "review_script_sha256": "dcb6ff466c10b922164dfabea5c628220cb34fa720e0a25048d45b0f2c6480d7"
+}

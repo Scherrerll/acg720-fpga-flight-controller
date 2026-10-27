@@ -1,0 +1,16 @@
+{
+  "classification": "cancelled_orphan_after_runner_assertion",
+  "reason": "Actual native inc_place again reported2.82percent match and default fallback. Runner failed a too-strict wholeVG hash comparison before own-child wait. Stop only verified own orphan; preserve original root1 and no fabricated vendor p.wait.",
+  "pid": 63980,
+  "parent_pid": 25988,
+  "executable": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+  "command_line": "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4_incplace_native\\physical_p3r0_01\\physical.tcl",
+  "created_utc": "2026-10-26T20:58:47.1022970Z",
+  "requested_utc": "2026-10-26T21:02:44.4352498Z",
+  "actual_vendor_p_wait": null,
+  "actual_runner_p_wait": 1,
+  "wait_method": "Verified System.Diagnostics.Process handle, Kill then WaitForExit; original Popen parent had already ended",
+  "observed_native_OS_exit_code": -1,
+  "closed_utc": "2026-10-26T21:02:44.5262786Z",
+  "log_sha256_after_close": "c5921ae163d838cdaae46b14f7e5d901bfd55f78d6cd9d9d67432c56cc1a0251"
+}

@@ -1,0 +1,41 @@
+{
+  "reviewed_utc": "2026-10-26T20:08:21.979172+00:00",
+  "scope": "Direct independent parsing of raw reports, actual exits, source and bitstream. No imported gate parser.",
+  "passed": false,
+  "checks": {
+    "vendor_wait0": false,
+    "runner_wait0": false,
+    "source55": true,
+    "canonical_source55": true,
+    "VG": true,
+    "raw_log_hash": true,
+    "normal_eof": false,
+    "fullroute_and_bitstream": false,
+    "no_unrouted_nets": false,
+    "native_RTL_project": true,
+    "native_SYN_and_hook_eof": true,
+    "native_SYN_source_binding": true,
+    "native_mapped_audits": true,
+    "all_mapped_FF_clk50": true,
+    "raw_TR_exists": false,
+    "physical_artifacts": false,
+    "unchanged_constraints": true
+  },
+  "period_ns": null,
+  "fmax_mhz": null,
+  "slacks_ns": {},
+  "violated_endpoints": {},
+  "worst_setup_row": null,
+  "pins": {},
+  "raw_sha256": {
+    "out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\verification\\physical.log": "16ed40f0cfd8b8717a0fd57387063c20dd5406ad4b931cc89f41c13e3fdaf1a3",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\verification\\physical_exit.json": "0bca2d2a823c22e735a3979ffe573f2336d8b7d2f13f4482e322a897efaf3659",
+    "analysis\\20261026_z_aw_fix\\build\\compact_aw_v4_fan100_native\\physical_p3r0_01\\runner_exit.json": "682b2e462b034367cecb0d521d226dde691aa7ac5a952bc358e58cd32436c026",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\source\\acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\verification\\mapped_audit.json": "51281020a024b85f5c5cb0e74bb5bec0c8dc405d7c575c6ff1c8b3c2a887593c",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\verification\\gain_port_audit.json": "4946eb6e9d7d68e78d99aaad7baca634db72182f2944c67add5fea290673b332",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\verification\\strict_ff_clock_audit.json": "5e3d67733f31f32999d26a713fa2d65623345056a60b424506ce66c935517838",
+    "out\\z_aw_fix_20261026\\compact_aw_v4_fan100_native\\physical_p3r0_01\\verification\\native_synthesis_audit.json": "f41568019783f75ad7a11e66e86b9bd7dd59ef44cb2d4977e5e0d16b38b3f7c7"
+  },
+  "review_script_sha256": "5f2a3a545b0739c1344b4a28c312edb48309a9c28675a04ba696de902300c556"
+}

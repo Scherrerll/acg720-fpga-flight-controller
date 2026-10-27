@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v4\run_physical_p3r0.py", line 68, in <module>
+    try:main()
+        ~~~~^^
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v4\run_physical_p3r0.py", line 60, in main
+    result=helper.physical_audit(VG_SHA,expected);helper.check_sources(expected)
+  File "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\firmware\B0B4\build_candidate.py", line 153, in physical_audit
+    assert out['passed'],('physical qualification failed',criteria,str(VERIFY/'physical_audit.json'))
+           ~~~^^^^^^^^^^
+AssertionError: ('physical qualification failed', {'actual_period_20ns': True, 'fmax_at_least_50': False, 'setup_hold_endpoints_zero': False, 'all_five_nonnegative': False, 'full_route': True, 'physical_command_returned': True, 'only_new_vg': True, 'skip_synthesis': True, 'pins18': True, 'fs_usercode_b4': True, 'cfg_usercode_b4': True}, 'C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v4\\physical_p3r0_01\\verification\\physical_audit.json')

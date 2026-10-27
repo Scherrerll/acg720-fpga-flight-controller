@@ -1,0 +1,23 @@
+{
+  "scope": "Exact v4 source55 and mapped VG. Copy its own old P3 PR; add only three INS_LOC physical constraints outside immutable55. No changes to clocks/falsepaths/RTL/pins.",
+  "reason": "Old complete-route setup table has three launch FF groups. Source AZ path first hop0.517ns; vy path first hop1.315ns; previous_pose path first hop6.920ns. Place each launch FF near its existing first LUT, then require fresh full-route independent50MHz gates.",
+  "baseline_full_route_setup_ns": -0.22,
+  "period_ns": 20,
+  "route_maxfan": 23,
+  "official_manual": "C:/Gowin/Gowin_V1.9.12.04_x64/IDE/doc/EN/SUG1541-1.0E_Gowin Software Physical Constraints User Guide.pdf",
+  "manual_pdf_pages": [
+    17,
+    18,
+    19
+  ],
+  "seed_is_timing_failed_reference_only": true,
+  "incremental_effect_requires_actual_log_review": true,
+  "fallback_policy": "Do not cancel a distinct LOC run solely for incremental fallback; preserve actual flow and fresh result.",
+  "scripts": {
+    "independent_raw_review.py": "03190e4aba071bba0ad51c96ce34c93f10e438d3ad8a0cb0af9a4a091f2f5a6c",
+    "launch_physical_hidden.py": "44a426ddc79f0e24393ae0f1da0d502b825e96c9b9a2e61affe2f057ac7834bb",
+    "physical_snapshot.py": "8b646795212fd8ebfad144130a5dece4b8afd83ae509c846a6ab3c544e87533a",
+    "run_physical.py": "c456fc6735af73166da49f531a9c1bc92067ded862e809c6c6abf0639638e9bd",
+    "seal_terminal.py": "da4a866878074cb4ed30d36959295a192ac367f3e6cf8ec2c44024a6eb92f23a"
+  }
+}

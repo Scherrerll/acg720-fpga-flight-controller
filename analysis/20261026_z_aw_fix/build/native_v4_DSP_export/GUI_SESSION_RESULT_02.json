@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-10-26T22:36:15.382424+00:00",
+  "original98_bytes_unchanged": true,
+  "original_modes_restored": true,
+  "copy_cache_changes_preserved": {
+    "source/acg720_ano_port.gprj.user": {
+      "old_sha256": "80997016f70817c05bbaddf556abc814a940c34f681efb289d1ffe3a94e9563d",
+      "copy_sha256": "721cbb21b4a7a3ae302d6d7723986aaec11d06fc326503a34f5de0f2dcdc7ef4"
+    },
+    "source/impl/pnr/device.cfg": {
+      "old_sha256": "41dc3f20649d82c260a387e3579b0b0e70c108371bc60856ef38d472d7200187",
+      "copy_sha256": "ce67f6af6cd5c68ed755ad7b1f1bfd2651ef174da5776291fac932525b2ce05f"
+    }
+  },
+  "export_sha256": "a9d20d20d9495e6d351003e2b7f214c5673ce4dea55791b6d2270743b5ec8258",
+  "export_validation_sha256": "cdfec43d4ceb45a2d8d2ff2fff6606fe17559809d9b08fe39d3253015059bf3d",
+  "scope": "Official resource location export only; original artifacts preserved, no GUI build or hardware actions"
+}

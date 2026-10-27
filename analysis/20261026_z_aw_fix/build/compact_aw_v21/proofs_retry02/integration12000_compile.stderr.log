@@ -1,0 +1,2 @@
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261026_z_aw_fix\build\compact_aw_v21\proofs_retry02\top_before.v:235: warning: Anachronistic use of named begin/end to surround generate schemes.
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v21\canonical\source\acg720_ano_port.v:235: warning: Anachronistic use of named begin/end to surround generate schemes.

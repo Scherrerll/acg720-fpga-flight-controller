@@ -1,0 +1,93 @@
+{
+  "freeze_manifest": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v2\\map1_synthesis_01\\synthesis_freeze_manifest_final.json",
+  "freeze_manifest_sha256": "1926bf61976b67a15325301cca8fbb37d0df8d7464de0337d96144a44ca5d1f6",
+  "artifact_count": 79,
+  "artifact_bytes": 18419654,
+  "summary_sha256": "755c5c4445fa304698d15240aea7e8cc13c6ec8db269c5a24bcb98f44e24b2ae",
+  "gain_port_audit_sha256": "4fec28400bae944481eeb2169c6073a8e97da4c5bd23faf6c5c55ecb01ad8312",
+  "mapped_audit_sha256": "304f005545775b3907f94db155c3546c1a4cb8df6a3ec25f82555095709409c0",
+  "comparison_sha256": "3512be0d0caaa77202005ae50f2a03f4687f6a6186715268e7210e6bf3056f19",
+  "netlist_sha256": "3b90c12efcd48a1ce9b778194f4be6c7985e0fa99e3d3f456a3a06c593900d49",
+  "mapped_ff_count": 27786,
+  "clock_pin_count": 27888,
+  "init": {
+    "p": 1000,
+    "i": 350
+  },
+  "resources": {
+    "acg720_ano_port": {
+      "map2": {
+        "T_Register": 27786,
+        "T_Alu": 9592,
+        "T_Lut": 36369,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "map1": {
+        "T_Register": 27786,
+        "T_Alu": 9592,
+        "T_Lut": 36370,
+        "T_MULTALU27X18": 30,
+        "T_MULT12X12": 7,
+        "T_MULT27X36": 13,
+        "T_Bsram": 2
+      },
+      "delta": {
+        "T_MULTALU27X18": 0,
+        "T_Alu": 0,
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_Bsram": 0,
+        "T_Register": 0,
+        "T_Lut": 1
+      }
+    },
+    "acg720_ano_port/native_navigation/controller_proof": {
+      "map2": {
+        "T_Register": 3298,
+        "T_Alu": 1609,
+        "T_Lut": 4985,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "map1": {
+        "T_Register": 3298,
+        "T_Alu": 1609,
+        "T_Lut": 4986,
+        "T_MULTALU27X18": 12,
+        "T_MULT12X12": 2,
+        "T_MULT27X36": 2
+      },
+      "delta": {
+        "T_MULTALU27X18": 0,
+        "T_Alu": 0,
+        "T_MULT27X36": 0,
+        "T_MULT12X12": 0,
+        "T_Register": 0,
+        "T_Lut": 1
+      }
+    },
+    "acg720_ano_port/parameters": {
+      "map2": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "map1": {
+        "T_Register": 290,
+        "T_Alu": 79,
+        "T_Lut": 437
+      },
+      "delta": {
+        "T_Register": 0,
+        "T_Alu": 0,
+        "T_Lut": 0
+      }
+    }
+  },
+  "interim_freeze_sha256": "5548e2dbd5ccf16907692615f5253f09ae8177da39c317df59affd9d8408c6d5",
+  "ff_clock_detail_sha256": "bf2660d1bfa8ea44b1c22ade619a8bf75aba96f4f5a4842e493ddb07c506b57e"
+}

@@ -1,0 +1,29 @@
+*** GOWIN Tcl Command Line Console  *** 
+Open project C:/Users/ScherrerL/Desktop/apple/github_publish/acg720-fpga-flight-controller/out/z_aw_fix_20261026/compact_aw_v5/physical_p3r0_01/source/physical.gprj finished
+NOTE (PJ2001) : Skip synthesis, because there is only one netlist file in this project
+Reading netlist file: "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_01\source\impl\gwsynthesis\acg720_ano_port.vg"
+Parsing netlist file "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_01\source\impl\gwsynthesis\acg720_ano_port.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_01\source\acg720_ano_port.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+Error: DesRoute failed.
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+ERROR  (PR0004) : There are total 648 unrouted nets
+Generate file "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_01\source\impl\pnr\acg720_ano_port.pin.html" completed
+Generate file "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_01\source\impl\pnr\acg720_ano_port.rpt.html" completed
+Generate file "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_01\source\impl\pnr\acg720_ano_port.rpt.txt" completed
+Mon Oct 26 15:22:58 2026
+
+
+    while executing
+"run pnr"
+    (file "C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\out\z_aw_fix_20261026\compact_aw_v5\physical_p3r0_01\physical.tcl" line 14)

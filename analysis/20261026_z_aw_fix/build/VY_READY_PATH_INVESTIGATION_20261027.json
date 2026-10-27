@@ -1,0 +1,23 @@
+{
+  "scope": "Read-only investigation for further genuine50MHz work; no proposed new RTL has been applied",
+  "basis": "out/z_aw_fix_20261026/compact_aw_v4/physical_p3r0_01/source/impl/pnr/acg720_ano_port.tr",
+  "basis_sha256": "c62307f8f84c2a0b742e1b5ba09211ad17158d9b6e6807e0c59146775ba80b82",
+  "observed_old_path": {
+    "source": "mtf/metric/vy_x100_28_s0/Q",
+    "target": "staged_telemetry.extension_q_814_s0/D",
+    "slack_ns": -0.177,
+    "data_delay_ns": 20.103,
+    "logic_chain": ["geometry_reason bit3 signed input-velocity range", "geometry_flow_ready", "velocity_fusion live qualification", "nav_xy_ready", "nav_xy_active", "mode status", "extension snapshot"],
+    "large_route_segments_ns": [1.315,1.620,2.735,1.772,2.470,1.105]
+  },
+  "source_facts": [
+    "metric vx/vy both initialize/reset0, retain unless sample_valid, and publish flow_numeric_ok ? signed31product : signed32zero on the same clock",
+    "Both signed products are flow[15:0] times signed{zero,distance_mm[13:0]}; range bounds are inclusive +/-1000000",
+    "geometry input_velocity_ok recomputes the same signed32 range of published vx/vy; both data words and any future predicate must remain one coherent tuple",
+    "reader delays metric_sample_valid by one clock from parser sample, as before; this delay must not change",
+    "extension bit814 is status qualification, but its upstream live-ready terms also feed real control, so it cannot be false-pathed or delayed"
+  ],
+  "possible_followup_if_needed": "Publish a single range predicate on exactly the vx/vy publication edge, resettrue because both velocities0, hold when data holds; consume through an explicit default-off geometry parameter. Do not remove old range checks for default callers. Must independently prove arithmetic sign extension, +/-1000000 boundaries, invalid-zero branch, resets/holds/duplicates/stale gaps and old/new whole-reader/geometry cycles, not just a short waveform.",
+  "not_implemented": true,
+  "priority": "First obtain v15 real terminal result and use the already proven/synthesized v16 and pending v17 candidates. A fresh successful route/STA is authority for which path still limits50MHz. No blind new mapping-option sweep."
+}

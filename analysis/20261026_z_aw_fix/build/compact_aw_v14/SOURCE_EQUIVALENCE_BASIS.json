@@ -1,0 +1,29 @@
+{
+  "scope": "Exact source transformations only: one synthesis comment and one combinational wire alias with synthesis comment; no simulation/tool-output equivalence claim.",
+  "transformations": {
+    "acg720_ano_port.v": {
+      "baseline_sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "candidate_sha256": "b405b11d4d9d96e508794d75bcf3e3320f4c1896adefeadb84752d4abbbd6d7b",
+      "reverse_exact_text_sha256": "78b7443e8de8b0cb29bb3e1a022fb625572f0c7e31dd0dd4d3c56322faec3ca5",
+      "reverse_transform_equals_original_text": true,
+      "before": " reg previous_pose_valid=0;",
+      "after": " reg previous_pose_valid /* synthesis syn_maxfan = 10 */ =0;"
+    },
+    "core/height_loss_fallback.v": {
+      "baseline_sha256": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+      "candidate_sha256": "65f9a4d413d590081334c58729dbbfe48fbce3a3b58750ef57c4b93dd4e56a72",
+      "reverse_exact_text_sha256": "fdd19b6a548b8945e75a74e0ccc558ab95303229aadb855036ae0006d197ece4",
+      "reverse_transform_equals_original_text": true,
+      "before": " assign active=rst_n && healthy && armed && (latched || enter);",
+      "after": " // Same live expression, locally constrain only its combinational driver.\n wire active_fanout_limited /* synthesis syn_maxfan = 50 */;\n assign active_fanout_limited=rst_n && healthy && armed && (latched || enter);\n assign active=active_fanout_limited;"
+    }
+  },
+  "unchanged_files": 53,
+  "official_manual_sha256": "d9ecc1d51509a1af8cfc0e7835064c32c6e87d1950d8ca42dfe3cab1010781c2",
+  "official_manual_pdf_pages": [
+    65,
+    66
+  ],
+  "all_source_restored_text_exact": true,
+  "v4_functional_binding_sha256": "bcbe110ad8496bdf06df1702b83f1ce07d9737dc42d434fae3acbcbad7c4bb93"
+}

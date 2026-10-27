@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "verified_utc": "2026-10-26T23:33:12.251012+00:00",
+  "completion_result_sha256": "e43be16d929abced3ce2586bec8c50a9e142da878a9c1c71235209c67f4df0d3",
+  "completion_manifest_sha256": "51a18e092074deaefe8acebfbc75b0d79122178458d507692c5289104744cde1",
+  "original_waits": [
+    0,
+    1,
+    1
+  ],
+  "new_audit_and_completion_waits": [
+    0,
+    0
+  ],
+  "completion_artifacts_rehashed": 32,
+  "original_attempt_artifacts_unchanged": 78,
+  "original_metadata_artifacts_unchanged": 91,
+  "original_bound_files_unchanged": 23,
+  "actual_SP_count": 28,
+  "all_SP_CLK50": true,
+  "original_same_net_CE_gate_passed": true,
+  "scope": "Actual audit-only completion validated; original vendor0/audit1/root1 and files unchanged. No SYN rerun or physical/hardware qualification."
+}

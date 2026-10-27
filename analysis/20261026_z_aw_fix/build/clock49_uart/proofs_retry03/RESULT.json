@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "UART component proof only. The complete49MHz flight controller is not integrated or qualified.",
+  "actual_waits": [
+    0,
+    0
+  ],
+  "inputs_sha256": "ecb5bd3606eb61fc828fbe8d97f292298ccdf03371bfbb2232afc64c1977fd79",
+  "vvp_log_sha256": "4783a4938b0d2e87093d416d82511ad9f5748f40f1db692dd43444780d3e4420"
+}

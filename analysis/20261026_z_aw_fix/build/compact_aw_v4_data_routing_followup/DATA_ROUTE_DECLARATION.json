@@ -1,0 +1,18 @@
+{
+  "scope": "Physical routing only; three data/ready nets use vendor BUFG routing with signal_type LOGIC only. No CLK constraint, no FF clock connection change, no SDC/falsepath/pin/RTL change.",
+  "nets": [
+    "previous_pose_valid",
+    "core/fallback_control/height_fallback_active",
+    "native_navigation/nav_xy_ready"
+  ],
+  "drivers": {
+    "previous_pose_valid_s0": "Q",
+    "core/fallback_control/height_fallback_active_s": "F",
+    "native_navigation/nav_xy_ready_s": "F"
+  },
+  "VG_sha256": "e67bcab6336757e08645756258d39dd13726b452c392d470de4c900a159aaa8f",
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "reason": "Original v4 raw path8 previous_pose_valid firstnet6.920ns; path1 fallback-active output fanout115 and1.569ns next hop; path3 nav_xy_ready output2.470ns next hop. Original PNR uses all8 PRIMARY and8LW, all true FF clocks stillclk50. Test explicit priority for these late data nets; actual full route/STA remains mandatory.",
+  "official_manual": "SUG1541-1.0E PDF28-29, CLOCK_LOC with signal_type LOGIC supports a non-CLK/CE/SR net on global routing. BUFS is not used (not documented for this AroraV).",
+  "source_clock_audit_reused": "Same exact mapped VG, strict all-FF CLK50 audit; raw TR must still have exactly clk50 Base20ns and all five timing gates."
+}

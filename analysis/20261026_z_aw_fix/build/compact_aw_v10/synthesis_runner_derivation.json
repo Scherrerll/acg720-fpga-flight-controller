@@ -1,0 +1,8 @@
+{
+  "scope": "v9 exact donor, one diagnostic file change, all seven existing B3-relative paths frozen. Original physical/clock/radio/gain/18ports gates unchanged. SYN only.",
+  "donor_runner_sha256": "4bcea1fa4255dab4f0974df080af51bcfd6229397c44913398b74ad5733d2721",
+  "derived_runner_sha256": "b10eba8eaae0945019c4b607203699929f68770670d1fc811693039289175757",
+  "proofs_sha256": "64f1cc24915064915cc87f19a6d89bb5bd4fa32724ceb56aef3eec41d5948702",
+  "proof_runner_exit_sha256": "1ca78fa4e95d9cce70dd574c64be2e1b1a67c69e45b2f3f875c3dc28be604b1c",
+  "proof_runner_actual_wait": 0
+}

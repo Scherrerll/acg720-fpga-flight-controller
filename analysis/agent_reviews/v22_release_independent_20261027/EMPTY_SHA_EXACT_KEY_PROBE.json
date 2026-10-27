@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "case": {
+    "case": "old_self_log_nonempty_declared_sha",
+    "rejected": true,
+    "reason": "v22 invalid self-output declaration/real terminal log binding differs"
+  },
+  "scope": "Additional exact-existing-key mutation. Earlier case added a canonical path alias and correctly hit alias collision; this one edits the existing original spelling and proves only emptySHA is permitted. In memory only; no qualified/export/producer/archive writes."
+}

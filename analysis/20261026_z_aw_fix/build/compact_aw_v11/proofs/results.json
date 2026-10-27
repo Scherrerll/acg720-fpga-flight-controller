@@ -1,0 +1,475 @@
+{
+  "passed": true,
+  "source55": {
+    "acg720_ano_port.cst": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4",
+    "acg720_ano_port.gprj": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc",
+    "acg720_ano_port.sdc": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+    "acg720_ano_port.v": "e53ada1fcd95631a20e2f6649f825013414f99bb562151cce58aa6454c4e988c",
+    "build.tcl": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+    "calibration.vh": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "gw5_snapshot_bram.v": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "level_calibration.vh": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "mtf_navigation_shadow.v": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "mtf_xyz_navigation_control.v": "ce7c2d4199ed518b8a3732aff2a24139bcf8fcdc8fa7bfc9bdb4e93f50b69e8d",
+    "nav_math_service.v": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "sik_imu_diagnostic.v": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "telemetry_tx.v": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "xy_pi_parameters.v": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+    "core/ano_attitude_estimator.v": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "core/ano_flight_state.v": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+    "core/bmi088_reader.v": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "core/control_gate.v": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "core/cordic_atan2.v": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "core/flight_core.v": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+    "core/height_loss_fallback.v": "0d29e5cf7e635277ec5417284116d383385f1b74e1716fcb909665368b207e7b",
+    "core/imu_checked_guard_pipelined.v": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "core/imu_diagnostic_tap.v": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "core/imu_pipeline_pipelined.v": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "core/imu_temporal_check_pipelined.v": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "core/motor_pwm.v": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "core/rc_ppm.v": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "core/spi_uart_modules.v": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "position/ano_flow_fusion.v": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "position/ano_height_fusion.v": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "position/ano_hold_control.v": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "position/ano_xy_divide36.v": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "position/ano_xy_stick.v": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "position/ano_z_stick.v": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "position/mtf_position_integrator.v": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "position/mtf_shared_flow_fusion.v": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "position/mtf_shared_height_fusion.v": "a0648c33d437c270a91bc28ce7736d8a093aa4467d5de7f4ea7acebda9ec2faf",
+    "position/mtf_shared_hold_control.v": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "position/mtf_xyz_hold_control.v": "ffddb029cb34a8d2ac8995cc43d85866e273d3d147bb650cfd5d3c66c580b642",
+    "position/pose_time_adapter.v": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+    "position/position_math.v": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "position/relative_position.v": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "sensor/flow_reader.v": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "sensor/mtf01p_reader.v": "cff3c15a8fad14b5dd59d2fa2cd7e49c0986873eaa3c14bc89f001497030d923",
+    "sensor/mtf_native_geometry.v": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "sensor/mtf_shared_geometry.v": "b4303406c973c4997efbcceb60cce0851b2882f64a1310c95d46e8431924aa22",
+    "sensor/pmw3901_init.vh": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+    "sensor/range_height_estimate.v": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "sensor/range_reader.v": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "core/rtl/ano_manual_angles.v": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "core/rtl/ano_rate_control.v": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "core/rtl/ano_rc_angle_targets.v": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "core/rtl/ano_yaw_control.v": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "core/rtl/pid_divide_signed64.v": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "core/rtl/quad_mixer_feedback.v": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22"
+  },
+  "source55_unchanged": true,
+  "records": [
+    {
+      "kind": "ordinary",
+      "PRE": 0,
+      "pass_lines": [
+        "PASS PRE=0 cycles=1686784 public_bits=152 request_bits=228 service_bits=135 publications=26 seeds=14 mul_consumed=2208 div_consumed=2208 acc_div_consumed=1980 numeric_pulses=4 commit_vetoes=4 epoch_pulses=5 age_rejects=3 age_bypasses=0 ready_cycles=886790"
+      ]
+    },
+    {
+      "kind": "expiry",
+      "PRE": 0,
+      "AGE": 1,
+      "pass_lines": [
+        "PASS expiry AGE=1 PRE=0 cycles=123552 same_age_checks=123552 exact_expiry_edges=1 last_good_edges=2 publications=2 no_DUT_state_force=1"
+      ]
+    },
+    {
+      "kind": "expiry",
+      "PRE": 0,
+      "AGE": 31,
+      "pass_lines": [
+        "PASS expiry AGE=31 PRE=0 cycles=123582 same_age_checks=123582 exact_expiry_edges=1 last_good_edges=1 publications=2 no_DUT_state_force=1"
+      ]
+    },
+    {
+      "kind": "expiry",
+      "PRE": 0,
+      "AGE": 65536,
+      "pass_lines": [
+        "PASS expiry AGE=65536 PRE=0 cycles=189087 same_age_checks=189087 exact_expiry_edges=1 last_good_edges=1 publications=2 no_DUT_state_force=1"
+      ]
+    },
+    {
+      "kind": "ordinary",
+      "PRE": 1,
+      "pass_lines": [
+        "PASS PRE=1 cycles=1508078 public_bits=152 request_bits=228 service_bits=135 publications=23 seeds=11 mul_consumed=1980 div_consumed=1980 acc_div_consumed=1776 numeric_pulses=4 commit_vetoes=4 epoch_pulses=5 age_rejects=0 age_bypasses=4 ready_cycles=880991"
+      ]
+    },
+    {
+      "kind": "expiry",
+      "PRE": 1,
+      "AGE": 1,
+      "pass_lines": [
+        "PASS expiry AGE=1 PRE=1 cycles=123552 same_age_checks=123552 exact_expiry_edges=1 last_good_edges=2 publications=2 no_DUT_state_force=1"
+      ]
+    },
+    {
+      "kind": "expiry",
+      "PRE": 1,
+      "AGE": 31,
+      "pass_lines": [
+        "PASS expiry AGE=31 PRE=1 cycles=123582 same_age_checks=123582 exact_expiry_edges=1 last_good_edges=1 publications=2 no_DUT_state_force=1"
+      ]
+    },
+    {
+      "kind": "expiry",
+      "PRE": 1,
+      "AGE": 65536,
+      "pass_lines": [
+        "PASS expiry AGE=65536 PRE=1 cycles=189087 same_age_checks=189087 exact_expiry_edges=1 last_good_edges=1 publications=2 no_DUT_state_force=1"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-Ptb.PRE=0",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\fusion_pre0.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\fusion_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\old_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\new_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\nav_math_service.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\position\\position_math.v"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:06.496996+00:00",
+      "pid": 46652,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 0.14347386360168457,
+      "ended_utc": "2026-10-26T13:50:06.640489+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\fusion_pre0.vvp"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:06.641315+00:00",
+      "pid": 62492,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 25.511980772018433,
+      "ended_utc": "2026-10-26T13:50:32.153309+00:00",
+      "log_sha256": "4d123fb4ac4cc3a7f27615db344c03f1d0147b9b330ab4ad8407d095d073d4d8"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-Ptb.PRE=0",
+        "-Ptb.AGE=1",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre0_age1.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\old_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\new_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\nav_math_service.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\position\\position_math.v"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:32.162263+00:00",
+      "pid": 28508,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 0.12532734870910645,
+      "ended_utc": "2026-10-26T13:50:32.287615+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre0_age1.vvp"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:32.288631+00:00",
+      "pid": 14880,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 1.8998889923095703,
+      "ended_utc": "2026-10-26T13:50:34.188537+00:00",
+      "log_sha256": "8ecf9a4c66f92979f0787b805e0871371c7c5e4978f619e83a9ba734141bc6a8"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-Ptb.PRE=0",
+        "-Ptb.AGE=31",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre0_age31.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\old_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\new_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\nav_math_service.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\position\\position_math.v"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:34.199768+00:00",
+      "pid": 67032,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 0.12765741348266602,
+      "ended_utc": "2026-10-26T13:50:34.327459+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre0_age31.vvp"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:34.328653+00:00",
+      "pid": 60652,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 1.9083940982818604,
+      "ended_utc": "2026-10-26T13:50:36.237058+00:00",
+      "log_sha256": "f88af8b577a10492cf4571b28a97697184a649af593096bd2af171ddc679ca15"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-Ptb.PRE=0",
+        "-Ptb.AGE=65536",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre0_age65536.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\old_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\new_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\nav_math_service.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\position\\position_math.v"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:36.246988+00:00",
+      "pid": 48260,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 0.12344479560852051,
+      "ended_utc": "2026-10-26T13:50:36.370451+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre0_age65536.vvp"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:36.371416+00:00",
+      "pid": 29248,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 2.873246192932129,
+      "ended_utc": "2026-10-26T13:50:39.244676+00:00",
+      "log_sha256": "cdff731d2d3b2882cabb4387d2b0e51afc8cad0153809ad8d8b84256f497a0e6"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-Ptb.PRE=1",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\fusion_pre1.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\fusion_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\old_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\new_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\nav_math_service.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\position\\position_math.v"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:39.256856+00:00",
+      "pid": 63632,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 0.14583563804626465,
+      "ended_utc": "2026-10-26T13:50:39.402711+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\fusion_pre1.vvp"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:50:39.403580+00:00",
+      "pid": 22276,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 22.757989406585693,
+      "ended_utc": "2026-10-26T13:51:02.161578+00:00",
+      "log_sha256": "179b86676bec383ec78d651415986519ee9b147e878b4bf753f8215578a96721"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-Ptb.PRE=1",
+        "-Ptb.AGE=1",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre1_age1.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\old_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\new_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\nav_math_service.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\position\\position_math.v"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:51:02.174436+00:00",
+      "pid": 52852,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 0.11741471290588379,
+      "ended_utc": "2026-10-26T13:51:02.291863+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre1_age1.vvp"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:51:02.292968+00:00",
+      "pid": 13012,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 1.8598225116729736,
+      "ended_utc": "2026-10-26T13:51:04.152801+00:00",
+      "log_sha256": "500fb6aa1324a4294f27663eb37f0d3c0dff622b4384e9c971549acacb826ee6"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-Ptb.PRE=1",
+        "-Ptb.AGE=31",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre1_age31.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\old_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\new_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\nav_math_service.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\position\\position_math.v"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:51:04.163992+00:00",
+      "pid": 17752,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 0.12231731414794922,
+      "ended_utc": "2026-10-26T13:51:04.286327+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre1_age31.vvp"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:51:04.287276+00:00",
+      "pid": 52712,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 1.8391838073730469,
+      "ended_utc": "2026-10-26T13:51:06.126470+00:00",
+      "log_sha256": "8f4e6ccf9248b4db873845c5c7ba1cf39693350d6f700748f7cd0db992449ed5"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb",
+        "-Ptb.PRE=1",
+        "-Ptb.AGE=65536",
+        "-o",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre1_age65536.vvp",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_tb.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\old_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\new_height.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\nav_math_service.v",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\z_aw_fix_20261026\\compact_aw_v11\\canonical\\source\\position\\position_math.v"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:51:06.137426+00:00",
+      "pid": 51496,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 0.11895060539245605,
+      "ended_utc": "2026-10-26T13:51:06.256391+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\.tools\\iverilog\\app\\bin\\vvp.exe",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\expiry_pre1_age65536.vvp"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:51:06.257562+00:00",
+      "pid": 31208,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 2.7785797119140625,
+      "ended_utc": "2026-10-26T13:51:09.036162+00:00",
+      "log_sha256": "4a9644c4b1e58013c0f4a25bd05889347d3ea1153f40aad0ae22cdf63566842c"
+    },
+    {
+      "command": [
+        "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs\\top\\run.py"
+      ],
+      "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261026_z_aw_fix\\build\\compact_aw_v11\\proofs",
+      "started_utc": "2026-10-26T13:51:09.045501+00:00",
+      "pid": 41712,
+      "actual_p_wait": 0,
+      "normal_wait_return": true,
+      "seconds": 16.617140531539917,
+      "ended_utc": "2026-10-26T13:51:25.662669+00:00",
+      "log_sha256": "ce5ea8638fad97159a02fdd69445747532032013d4ff2cd81224d37175315242"
+    }
+  ],
+  "top13": {
+    "passed": true,
+    "scope": "actual top RTL with controlled simulation forces on core gate dependencies and decoded RX bytes, including actual gate armed FF simultaneous with bank commit; physical RX independently tested",
+    "cases": 13
+  },
+  "reused_control_results_sha256": "1d0f1e8366d12e2f5f427bcfd8c65cc8e8453bb0e05f61de819cec4d9164181b",
+  "exact_control_dependencies": [
+    "position/mtf_xyz_hold_control.v",
+    "nav_math_service.v",
+    "position/position_math.v",
+    "position/ano_xy_stick.v",
+    "position/ano_xy_divide36.v",
+    "position/ano_z_stick.v"
+  ],
+  "scope": "Functional proof only; no synthesis, physical/hardware qualification."
+}

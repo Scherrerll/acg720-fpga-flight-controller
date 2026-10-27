@@ -1,0 +1,51 @@
+{
+  "scope": "Binary combinational distributivity only; actual simulations and physical gates separate",
+  "transformations": {
+    "core/ano_flight_state.v": {
+      "edits": [
+        [
+          "module ano_flight_state #(parameter integer TICKS_PER_MS=50000)(",
+          "module ano_flight_state #(parameter integer TICKS_PER_MS=50000,\n parameter integer PRECHECKED_COLLECTIVE=0)("
+        ],
+        [
+          " input wire [15:0] ch3,collective_us,",
+          " input wire [15:0] ch3,collective_us,\n input wire collective_below_landing,"
+        ],
+        [
+          " wire positive_stick=ch3>=1594;",
+          " wire positive_stick=ch3>=1594;\n wire landing_collective_low=PRECHECKED_COLLECTIVE ?collective_below_landing:(collective_us<1250);"
+        ],
+        [
+          "ch3<=1150 && collective_us<1250",
+          "ch3<=1150 && landing_collective_low"
+        ]
+      ],
+      "baseline_sha256": "34f3559cb4b1cde9991249c40d02cf61f6ec6c6992013cc5596b501ab04fc9b4",
+      "candidate_sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "reverse_exact_normalized_text": true
+    },
+    "core/flight_core.v": {
+      "edits": [
+        [
+          "ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS)) flight_state",
+          "ano_flight_state #(.TICKS_PER_MS(FLIGHT_STATE_TICKS_PER_MS),.PRECHECKED_COLLECTIVE(1)) flight_state"
+        ],
+        [
+          ".ch3(ch3),.collective_us(selected_throttle),.motor_prepared(motor_prepared),",
+          ".ch3(ch3),.collective_us(selected_throttle),.collective_below_landing(selected_collective_below_landing),.motor_prepared(motor_prepared),"
+        ],
+        [
+          "    wire [15:0] fallback_collective,fallback_unmasked_collective;",
+          "    wire [15:0] fallback_collective,fallback_unmasked_collective;\n    // Compare each numeric branch before the late live availability selection.\n    // No state or cycle is added; active implies public fallback equals unmasked.\n    (* syn_keep = 1 *) wire fallback_collective_below_landing=fallback_unmasked_collective<1250;\n    (* syn_keep = 1 *) wire auto_collective_below_landing=hold_collective_us<1250;\n    wire selected_collective_below_landing=height_fallback_active ?fallback_collective_below_landing:auto_collective_below_landing;"
+        ]
+      ],
+      "baseline_sha256": "dabd50476c0c5daaaa889195b9d4ec8015f64e1b62061f2cda70d4b68c4aef56",
+      "candidate_sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60",
+      "reverse_exact_normalized_text": true
+    }
+  },
+  "unchanged_files": 53,
+  "line_endings_normalized": [],
+  "threshold": 1250,
+  "no_new_state_or_cycle": true
+}

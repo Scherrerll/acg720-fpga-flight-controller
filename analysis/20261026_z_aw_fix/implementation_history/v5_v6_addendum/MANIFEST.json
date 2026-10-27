@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-26T08:15:03.166967+00:00",
+  "scope": "New addendum only; exact immutable implementation source deltas and unchanged default bank/build. No build, source mutation, process control, hardware, serial or Git action.",
+  "summary": {
+    "raw_payload_files": 5,
+    "source_snapshots": 2,
+    "source_files_per_snapshot": 55,
+    "other53_same": true
+  },
+  "files": [
+    {
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/canonical/source/position/mtf_xyz_hold_control.v",
+      "archive_relative_path": "holds/compact_v5_04e75ada_mtf_xyz_hold_control.v",
+      "original_sha256": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+      "archive_sha256": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+      "raw_sha256": "04e75ada52551d5622af060efe38fda9aa66ff25199bfb67651f9ec5315ed873",
+      "bytes": 31410,
+      "transform": "none; exact bytes"
+    },
+    {
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v6/canonical/source/mtf_xyz_navigation_control.v",
+      "archive_relative_path": "v6/mtf_xyz_navigation_control.v",
+      "original_sha256": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+      "archive_sha256": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+      "raw_sha256": "f826345ebd2c2fa97477042b0eaea8aa888683911c95cb3907314ebcfc508fea",
+      "bytes": 26637,
+      "transform": "none; exact bytes"
+    },
+    {
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v6/canonical/source/position/mtf_shared_height_fusion.v",
+      "archive_relative_path": "v6/position/mtf_shared_height_fusion.v",
+      "original_sha256": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+      "archive_sha256": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+      "raw_sha256": "69b386c20fc04ce24904ad871d8e36168d4ea8e813f3eccb3b48b8cea90b2dc0",
+      "bytes": 47873,
+      "transform": "none; exact bytes"
+    },
+    {
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/canonical/source/xy_pi_parameters.v",
+      "archive_relative_path": "common/xy_pi_parameters.v",
+      "original_sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+      "archive_sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+      "raw_sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392",
+      "bytes": 5208,
+      "transform": "none; exact bytes"
+    },
+    {
+      "original_repository_relative_path": "out/z_aw_fix_20261026/compact_aw_v5/canonical/source/build.tcl",
+      "archive_relative_path": "common/build.tcl",
+      "original_sha256": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+      "archive_sha256": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+      "raw_sha256": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4",
+      "bytes": 411,
+      "transform": "none; exact bytes"
+    }
+  ],
+  "metadata_files": {
+    "README.md": {
+      "sha256": "0c7f3ec24c909a24be5a98d4b435e7f97b3686c62bbcc13080dcbf8709b1ecd6",
+      "bytes": 881,
+      "mtime_ns": 1793002503737814100
+    },
+    "HISTORY.json": {
+      "sha256": "f361081528cf2e8751330cef7161582ab830c53717ef23af569841b717ea8ace",
+      "bytes": 27902,
+      "mtime_ns": 1793002503737814100
+    }
+  },
+  "source_prepost": {
+    "v5": {
+      "before": "f41a3926752b07df5fb1b363bf4c896f521f3110a34a9ac9f86f16559ac48813",
+      "after": "f41a3926752b07df5fb1b363bf4c896f521f3110a34a9ac9f86f16559ac48813",
+      "unchanged": true
+    },
+    "v6": {
+      "before": "aabd06a537a1bf06d36a93b79fc024c0336f335fe34cc285d1939a10d5531cce",
+      "after": "aabd06a537a1bf06d36a93b79fc024c0336f335fe34cc285d1939a10d5531cce",
+      "unchanged": true
+    }
+  },
+  "parent_history": {
+    "repository_relative_path": "analysis/20261026_z_aw_fix/implementation_history/HISTORY.json",
+    "sha256": "80b50c00d987735890e10485f1aa8e82a4d274803363336d0761cbf6a52c8fcf",
+    "bytes": 38899,
+    "mtime_ns": 1792995951537609200,
+    "variant_count": 5,
+    "mutated": false
+  },
+  "manifest_self_hash_policy": "Excluded from its own file map."
+}
