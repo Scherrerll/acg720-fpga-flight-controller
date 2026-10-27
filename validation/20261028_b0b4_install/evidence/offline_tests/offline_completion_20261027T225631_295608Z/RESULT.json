@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:/Users/ScherrerL/AppData/Local/Programs/Python/Python313/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\validation\\20261028_b0b4_install\\scripts\\test_sram_completion_b0b4.py",
+    "--output=C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\offline_completion_20261027T225631_295608Z\\cases"
+  ],
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "script_sha256": "522e7e0bbe6780c44877512338b45f7697788274b1511953ea88ff61f96628f8",
+  "test_sha256": "747a9d8ec667753bfe5fbddffba2d9c66c0cd4ba6c395bd402fd2ded854ea13b",
+  "hardware_accessed": false,
+  "http_accessed": false
+}

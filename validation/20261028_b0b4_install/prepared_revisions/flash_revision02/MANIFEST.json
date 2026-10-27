@@ -1,0 +1,7 @@
+{
+  "reason": "Preserve tested Flash revision before adapting actual SRAM root1 + independent no-rewrite completion and bounded exact same-group wait. No Flash hardware run occurred.",
+  "files": {
+    "flash_b0b4.py": "d31614b4ec70eba028c48ae040b0b116823f2c9440d675a9a91bb9e132e9bfa8",
+    "test_flash_b0b4.py": "db40e5a6528c6bb47b58e3e1b26b542c274aa250341ba6d53f39517e3d088b08"
+  }
+}

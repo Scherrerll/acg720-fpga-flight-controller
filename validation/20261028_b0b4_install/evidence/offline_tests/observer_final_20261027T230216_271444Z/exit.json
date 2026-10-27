@@ -1,0 +1,19 @@
+{
+  "schema": "b0b4.cold-offline-proof.v1",
+  "args": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\validation\\20261028_b0b4_install\\scripts\\test_observe_cold_b0b4.py",
+    "--output=C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\offline_cold\\observer_final_20261027T230216_271444Z\\cases",
+    "-v"
+  ],
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "hardware_accessed": false,
+  "http_accessed": false,
+  "all_external_boundaries_mocked": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "0593e7ee2d373dd3e68abee71ad7334fb973882c6d50458b2e9427da7819630b",
+  "observer_sha256": "c9b146a914a0f279a1319002f1812d458f40f81caea28ada3e3c200b1ff64225",
+  "test_sha256": "97c2d49ff7f3500c3143a4e3ece9b4a336cd49ccf0f50e39a525eb5992255ea0"
+}

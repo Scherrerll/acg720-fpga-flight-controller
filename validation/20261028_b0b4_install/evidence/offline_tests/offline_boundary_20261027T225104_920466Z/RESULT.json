@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:/Users/ScherrerL/AppData/Local/Programs/Python/Python313/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\validation\\20261028_b0b4_install\\scripts\\test_bench_b0b4.py",
+    "--output=C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\offline_boundary_20261027T225104_920466Z\\cases"
+  ],
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "script_sha256": "24e10d00c7321ba9141c86812df05a6c9a0753404124c861c24879fe5ff01a67",
+  "test_sha256": "ea47004bb80535a3dbcef1e67ca0e57a2fd69292d2b58c1dab31ac3fac767ea7",
+  "hardware_accessed": false,
+  "http_accessed": false
+}

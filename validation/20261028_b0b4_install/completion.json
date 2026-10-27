@@ -1,0 +1,112 @@
+{
+  "schema": "b0b4.hardware-installation-completion.v1",
+  "recorded_utc": "2026-10-27T23:14:31.145616+00:00",
+  "scope": "Props-off SRAM/Flash identity, independent Flash verify, human-confirmed complete power cycle and cold defaults/IMU only.",
+  "installation_passed": true,
+  "installed": true,
+  "sram_verified": true,
+  "flash_written": true,
+  "independent_flash_verified": true,
+  "physical_cold_boot_verified": true,
+  "physical_fact_basis": "Direct operator assertion combined with immutable observed gap/new boot/default GET evidence",
+  "flight_ready": false,
+  "flight_qualified": false,
+  "radio_link_stability_qualified": false,
+  "image": {
+    "path": "firmware/B0B4/release/acg720_ano_port.fs",
+    "sha256": "199bc466f8a8fe18e891600d18161babcea9c2495eee8d307dac62ac8646c610"
+  },
+  "release_manifest_sha256": "c8e03412ff44cbe929f5d8ce6fed6eb3c61078a2028df466a340a61894893a2d",
+  "original_observation_unchanged": true,
+  "original_cold_observation_physical_flag": false,
+  "cold_proof": {
+    "baseline_uptime_ms": 204200,
+    "first_new_boot_uptime_ms": 399,
+    "healthy_samples": 10,
+    "healthy_uptime_start_ms": 4199,
+    "healthy_uptime_end_ms": 6199,
+    "query": {
+      "epoch": 5,
+      "operation_id": 6,
+      "busy": false,
+      "supported": true,
+      "can_query": true,
+      "active": {
+        "build": "0000B0B4",
+        "p_wire": 1000,
+        "i_wire": 350,
+        "generation": 0
+      },
+      "result": {
+        "code": "queried",
+        "operation_id": 6
+      }
+    }
+  },
+  "latest_live_window": {
+    "total": 40,
+    "live": 40,
+    "uptime_regressions": 0,
+    "activity": false
+  },
+  "open_findings": [
+    "Range and flow remain invalid, also observed before programming B0B3.",
+    "A post-cold telemetry receive gap occurred while the operator reports power/connection remained on; source still under read-only investigation."
+  ],
+  "no_motor_unlock_or_flight_commands": true,
+  "no_parameter_SET": true,
+  "automatic_recovery_performed": false,
+  "evidence_inputs": {
+    "operator": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\human_cold_boot_confirmation.json",
+      "sha256": "d224402c7f9b47c86157c872004202e84efa022fb1689827abc8c4349ae127a7",
+      "bytes": 918
+    },
+    "operator_current_power": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\current_power_clarification.json",
+      "sha256": "93004adffab20ecf65402c71a81b6a6f6980fd8b8f740b94de020ac3b6197d4c",
+      "bytes": 413
+    },
+    "cold": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\cold_20261027T230359_351896Z\\summary.json",
+      "sha256": "14e9539131ddcc824d9c6edeeae5d590eeb16feefaa6dd47c0d9960ee07d6246",
+      "bytes": 27530
+    },
+    "cold_samples": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\cold_20261027T230359_351896Z\\samples.jsonl",
+      "sha256": "b03c3c19bf32872dd17776e3b254ee941d57dfef9e43d7f2e267bff83005bac2",
+      "bytes": 1284360
+    },
+    "cold_root": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\root_cold_20261027T230359_148141Z\\exit.json",
+      "sha256": "ae34782e4f4255223b59228a0890cf5338674502794352a87f064db66b223871",
+      "bytes": 1071
+    },
+    "flash": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\flash_20261027T225901_092572Z\\stage_report.json",
+      "sha256": "af0d295abfa42dad13e1fb9f8936ca111a653941b4d5758e401415c395a210d8",
+      "bytes": 5812
+    },
+    "flash_root": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\root_flash_20261027T225900_901379Z\\exit.json",
+      "sha256": "c8c02bb2fc74aca0a01d1f36e2d3cbe92e22f535085ef1857d02b122d7984538",
+      "bytes": 1543
+    },
+    "initial_post_cold_stale": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\post_cold_current_state.json",
+      "sha256": "88b1b073d1d838bc836ee61785389a4a49547415302238592f3e8a49d01bf45a",
+      "bytes": 139064
+    },
+    "recovered": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\post_cold_recovered_state.json",
+      "sha256": "6ed9a5904e05faabe791105c149e79d4eb248b56cf2c7113cbf9834ca09e81bd",
+      "bytes": 394119
+    },
+    "live_window": {
+      "original_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\post_cold_live_window.json",
+      "sha256": "3c2d758544a84d3abd125822c626ec74baa999dd7f878f882bd4e7bb9cdb1d61",
+      "bytes": 23491
+    }
+  },
+  "archive_index": "evidence/ARCHIVE_INDEX.json"
+}

@@ -1,0 +1,23 @@
+{
+  "command": [
+    "C:\\Users\\ScherrerL\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\validation\\20261028_b0b4_install\\scripts\\observe_cold_b0b4.py",
+    "--observe",
+    "--flash-receipt",
+    "out/b0b4_install_20261028/flash_20261027T225901_092572Z/stage_report.json",
+    "--flash-root-receipt",
+    "out/b0b4_install_20261028/root_flash_20261027T225900_901379Z/exit.json"
+  ],
+  "script_sha256": "c9b146a914a0f279a1319002f1812d458f40f81caea28ada3e3c200b1ff64225",
+  "launcher_sha256": "ff057c5dbd699121da52dc64b9fb997e6decfe7078d2428496a4dc4493261ba8",
+  "started_utc": "2026-10-27T23:03:59.148582+00:00",
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "pid": 43176,
+  "finished_utc": "2026-10-27T23:09:36.484140+00:00",
+  "stdout_sha256": "13163003dee9b3d7838a1168f5c7200584cf9f0409a0fd3d4e0ea34d74c0ee69",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

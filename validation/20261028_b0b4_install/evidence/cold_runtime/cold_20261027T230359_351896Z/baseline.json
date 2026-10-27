@@ -1,0 +1,46 @@
+{
+  "sequence": 1020,
+  "info_sequence": 1020,
+  "connected": true,
+  "fresh": true,
+  "flight_info_fresh": true,
+  "uptime_ms": 204200,
+  "telemetry_build_id": 45234,
+  "taking_off": false,
+  "imu_diagnostic_fresh": true,
+  "imu_sequence": 1020,
+  "imu_build_id": 45234,
+  "calibrated": true,
+  "attitude_valid": true,
+  "sensor_ok": true,
+  "armed": false,
+  "controller_enabled": false,
+  "command_fresh": false,
+  "physical_output_active": false,
+  "pwm_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "command_us": [
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "rc_valid": true,
+  "rc_us": [
+    1500,
+    1501,
+    1002,
+    1500,
+    1000,
+    1000,
+    1000,
+    1000
+  ],
+  "raw_count": 203888,
+  "accepted_count": 203888,
+  "pose_count": 201834
+}

@@ -1,0 +1,292 @@
+{
+  "schema": "b0b4.telemetry-gap-audit.v1",
+  "created_utc": "2026-10-27T23:14:27.650459+00:00",
+  "scope": "Local read-only derived analysis; no HTTP, serial, programmer, GUI, raw.bin reads, or full radio-stream output.",
+  "session": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\runtime\\B0B4\\20261027T224649Z_f402bd59",
+  "window_utc": {
+    "start": "2026-10-27T23:10:00",
+    "end": "2026-10-27T23:10:40"
+  },
+  "sources": {
+    "chunks.jsonl": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\runtime\\B0B4\\20261027T224649Z_f402bd59\\chunks.jsonl",
+      "captured_prefix_bytes": 3852644,
+      "sha256": "b591e8fedefa1255f90f444230413c1166117b3b50f3f82074a625a096e1a5ef",
+      "active_log_prefix": true,
+      "unparseable_or_partial_lines": 0
+    },
+    "events.jsonl": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\runtime\\B0B4\\20261027T224649Z_f402bd59\\events.jsonl",
+      "captured_prefix_bytes": 50067,
+      "sha256": "2acb8e3b78634c877327041f0b9fd2c78f80e00de31336810bcba81b42940a4b",
+      "active_log_prefix": true,
+      "unparseable_or_partial_lines": 0
+    },
+    "telemetry.jsonl": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\runtime\\B0B4\\20261027T224649Z_f402bd59\\telemetry.jsonl",
+      "captured_prefix_bytes": 81887592,
+      "sha256": "8880d62f2fd453c0dd580d9c13fe865ffb2149f859e8f273452f828f10b2f3b8",
+      "active_log_prefix": true,
+      "unparseable_or_partial_lines": 0
+    }
+  },
+  "code_binding": {
+    "protocol.py": {
+      "recorded_sha256": "0f6dd59b326a14c2dd8a8375a1b521778ff58f38039d7b3dc3b12807d4555582",
+      "current_sha256": "0f6dd59b326a14c2dd8a8375a1b521778ff58f38039d7b3dc3b12807d4555582",
+      "matches_recorded": true
+    },
+    "ground_server.py": {
+      "recorded_sha256": "02188013a7c0fa563439b5bfdf1ba52c88d6d7d41389af143cc84e24ab96031b",
+      "current_sha256": "02188013a7c0fa563439b5bfdf1ba52c88d6d7d41389af143cc84e24ab96031b",
+      "matches_recorded": true
+    },
+    "recorder.py": {
+      "recorded_sha256": "c700b22eaaf7e83c2c5b81e1e9412281b2ab0586c5f463c6ad10d89613f8222c",
+      "current_sha256": "c700b22eaaf7e83c2c5b81e1e9412281b2ab0586c5f463c6ad10d89613f8222c",
+      "matches_recorded": true
+    }
+  },
+  "chunk_gap": {
+    "duration_s": 22.9037569,
+    "last_before": {
+      "utc": "2026-10-27T23:10:05.830278+00:00",
+      "host_ns": 59949648195700,
+      "offset": 4165121,
+      "length": 485
+    },
+    "first_after": {
+      "utc": "2026-10-27T23:10:28.734026+00:00",
+      "host_ns": 59972551952600,
+      "offset": 4165606,
+      "length": 1
+    },
+    "stale_record_bytes_match_last_offset_end": true
+  },
+  "decoded_gap": {
+    "duration_s": 23.1841759,
+    "before": {
+      "utc": "2026-10-27T23:10:05.830278+00:00",
+      "host_ns": 59949648195700,
+      "recorder_epoch": 4,
+      "sequence": 178,
+      "uptime_ms": 35799,
+      "raw_count": 35207,
+      "accepted_count": 35207,
+      "pose_count": 33153,
+      "latest_reader_fault": 0,
+      "latest_temporal_detail": 0,
+      "first_protection_code": 0,
+      "first_protection_sensor_mask": 0,
+      "first_protection_imu_reason": 0,
+      "first_protection_attitude_fault": 0
+    },
+    "after": {
+      "utc": "2026-10-27T23:10:29.014455+00:00",
+      "host_ns": 59972832371600,
+      "recorder_epoch": 4,
+      "sequence": 294,
+      "uptime_ms": 59000,
+      "raw_count": 58446,
+      "accepted_count": 58446,
+      "pose_count": 56391,
+      "latest_reader_fault": 0,
+      "latest_temporal_detail": 0,
+      "first_protection_code": 0,
+      "first_protection_sensor_mask": 0,
+      "first_protection_imu_reason": 0,
+      "first_protection_attitude_fault": 0
+    },
+    "delta": {
+      "uptime_ms": 23201,
+      "raw_count": 23239,
+      "accepted_count": 23239,
+      "pose_count": 23238,
+      "sequence": 116
+    },
+    "raw_rate_per_uptime_s": 1001.6378604370501,
+    "pose_rate_per_uptime_s": 1001.5947588466014
+  },
+  "per_protocol_max_gap": {
+    "a579": {
+      "max_gap_s": 23.1841759,
+      "before_utc": "2026-10-27T23:10:05.830278+00:00",
+      "after_utc": "2026-10-27T23:10:29.014455+00:00",
+      "before_sequence": 178,
+      "after_sequence": 294
+    },
+    "a57a": {
+      "max_gap_s": 23.1841759,
+      "before_utc": "2026-10-27T23:10:05.830278+00:00",
+      "after_utc": "2026-10-27T23:10:29.014455+00:00",
+      "before_sequence": 178,
+      "after_sequence": 294
+    },
+    "a580": {
+      "max_gap_s": 23.1841759,
+      "before_utc": "2026-10-27T23:10:05.830278+00:00",
+      "after_utc": "2026-10-27T23:10:29.014455+00:00",
+      "before_sequence": 178,
+      "after_sequence": 294
+    },
+    "a581": {
+      "max_gap_s": 23.1841759,
+      "before_utc": "2026-10-27T23:10:05.830278+00:00",
+      "after_utc": "2026-10-27T23:10:29.014455+00:00",
+      "before_sequence": 178,
+      "after_sequence": 294
+    },
+    "a582": {
+      "max_gap_s": 23.1841759,
+      "before_utc": "2026-10-27T23:10:05.830278+00:00",
+      "after_utc": "2026-10-27T23:10:29.014455+00:00",
+      "before_sequence": 178,
+      "after_sequence": 294
+    },
+    "a583": {
+      "max_gap_s": 23.1841759,
+      "before_utc": "2026-10-27T23:10:05.830278+00:00",
+      "after_utc": "2026-10-27T23:10:29.014455+00:00",
+      "before_sequence": 178,
+      "after_sequence": 294
+    },
+    "a585": {
+      "max_gap_s": 23.1841759,
+      "before_utc": "2026-10-27T23:10:05.830278+00:00",
+      "after_utc": "2026-10-27T23:10:29.014455+00:00",
+      "before_sequence": 178,
+      "after_sequence": 294
+    }
+  },
+  "significant_window_events": [
+    {
+      "utc": "2026-10-27T23:10:29.014455+00:00",
+      "kind": "primary_gap",
+      "recorder_epoch": 4,
+      "detail": {
+        "missing": 115,
+        "before": 178,
+        "after": 294
+      }
+    }
+  ],
+  "post_boot_event_counts": {
+    "connected": 0,
+    "disconnected": 0,
+    "ingest_overflow": 0,
+    "reported_uptime_restart": 0,
+    "counter_restart_evidence": 0,
+    "reported_build_changed": 0,
+    "recording_closed": 0,
+    "xy_pi_tx_error": 0
+  },
+  "saved_snapshots": {
+    "post_cold_current_state.json": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\post_cold_current_state.json",
+      "sha256": "88b1b073d1d838bc836ee61785389a4a49547415302238592f3e8a49d01bf45a",
+      "mtime_utc": "2026-10-27T23:10:21.058807+00:00",
+      "fresh": false,
+      "status": "stale",
+      "connected": true,
+      "data_present": false,
+      "flight_info_fresh": false,
+      "uptime_ms": null,
+      "imu_diagnostic_fresh": false,
+      "imu_raw_count": 35207,
+      "imu_pose_count": 33153,
+      "recording": {
+        "bytes": 4165606,
+        "frames": 45270,
+        "primary_frames": 6378,
+        "queue_depth": 0,
+        "error": null,
+        "dropped_chunks": 0,
+        "dropped_bytes": 0,
+        "missing_primary_frames": 156,
+        "duplicates": 0,
+        "closed": false,
+        "receiver_checksum_errors": 2,
+        "ingest_latency_p95_ms": 0.5496
+      }
+    },
+    "post_cold_recovered_state.json": {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\post_cold_recovered_state.json",
+      "sha256": "6ed9a5904e05faabe791105c149e79d4eb248b56cf2c7113cbf9834ca09e81bd",
+      "mtime_utc": "2026-10-27T23:11:39.564238+00:00",
+      "fresh": true,
+      "status": "live",
+      "connected": true,
+      "data_present": true,
+      "flight_info_fresh": true,
+      "uptime_ms": 129400,
+      "imu_diagnostic_fresh": true,
+      "imu_raw_count": 128962,
+      "imu_pose_count": 126907,
+      "recording": {
+        "bytes": 4389226,
+        "frames": 47694,
+        "primary_frames": 6718,
+        "queue_depth": 0,
+        "error": null,
+        "dropped_chunks": 0,
+        "dropped_bytes": 0,
+        "missing_primary_frames": 284,
+        "duplicates": 0,
+        "closed": false,
+        "receiver_checksum_errors": 3,
+        "ingest_latency_p95_ms": 0.5801
+      }
+    }
+  },
+  "conclusions": [
+    "A genuine host-recorded nonempty-read gap exists: 2026-10-27T23:10:05.830278 to 23:10:28.734026 UTC (22.9037569 s). All seven decoded periodic protocols resume at 23:10:29.014455 after a 23.184176 s gap.",
+    "The 23:10:21 stale snapshot stores exactly the final pre-gap byte offset, queue_depth=0, no recorder error or dropped chunks. It is consistent with the receive gap, not merely a browser refresh window or delayed UI rendering.",
+    "Sequence 178 to 294 implies 115 missing intermediate primary frames. Uptime 35799 to 59000 ms and IMU raw/accepted 35207 to 58446, pose 33153 to 56391 advance by approximately the missing wall time. No post-boot uptime/counter restart or disconnect event appears in the checked 23:09:31-23:11:40 interval.",
+    "This supports continued FPGA uptime and IMU processing across the telemetry loss and does not support an FPGA-wide 23 s stall or another observed reboot. It does not prove every internal task ran continuously.",
+    "Single-end host logs cannot distinguish RF loss, a paused/corrupt transmitting telemetry path, radio or driver buffering, or a temporarily unscheduled host serial-reader thread. No nonempty read was recorded; this is not a direct measurement that zero bytes reached the USB hardware.",
+    "Recorder epoch 4 is distinct from transport epoch 5; epoch stability alone cannot prove an uninterrupted RF link. The retained stale IMU object is the last received value, not a live FPGA counter measurement.",
+    "Range/flow validity and flight readiness are separate; this audit does not qualify flight readiness."
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\support\\server.py",
+      "line": 22,
+      "meaning": "FRAME_FRESH_SECONDS=0.5"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\support\\server.py",
+      "line": 530,
+      "meaning": "Snapshot returns fresh/data only within timeout; connected true plus expired main frame becomes stale"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\B0B4\\protocol.py",
+      "line": 214,
+      "meaning": "Retained IMU row is always present; freshness is separately computed"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\B0B4\\ground_server.py",
+      "line": 59,
+      "meaning": "Transport epoch changes on connection transition and observed uptime reset"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\B0B4\\ground_server.py",
+      "line": 102,
+      "meaning": "Serial reader loop enqueues only nonempty chunks"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\B0B4\\ground_server.py",
+      "line": 216,
+      "meaning": "HTTP api/state directly snapshots Dashboard"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\B0B4\\recorder.py",
+      "line": 55,
+      "meaning": "Host timestamp taken on ingest queue insertion"
+    },
+    {
+      "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\ground\\B0B4\\recorder.py",
+      "line": 212,
+      "meaning": "Chunk metadata logged before decode/ingest"
+    }
+  ]
+}

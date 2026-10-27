@@ -1,0 +1,7 @@
+{
+  "reason": "Parent review identified required narrow stale-telemetry exception for the preplanned reload immediately after successful 54/66; no hardware run occurred.",
+  "files": {
+    "flash_b0b4.py": "0c9bbbf40a6baa6d8ac484190a351a10ab3991deeecfa1e4c7cc444cd1412d89",
+    "test_flash_b0b4.py": "65625f75c42834616b347672c2e6221cdf44061412153cc7aa44b66babd918c3"
+  }
+}

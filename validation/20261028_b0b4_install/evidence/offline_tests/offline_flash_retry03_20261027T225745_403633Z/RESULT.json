@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:/Users/ScherrerL/AppData/Local/Programs/Python/Python313/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\validation\\20261028_b0b4_install\\scripts\\test_flash_b0b4.py",
+    "--output=C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\offline_flash_retry03_20261027T225745_403633Z\\cases"
+  ],
+  "normal_wait_return": true,
+  "actual_p_wait": 0,
+  "script_sha256": "0a50b2c822659b4efc5951ed781dc582bc4c4f874bc56dbdd6fc7d434b1d5a28",
+  "test_sha256": "db40e5a6528c6bb47b58e3e1b26b542c274aa250341ba6d53f39517e3d088b08",
+  "hardware_accessed": false,
+  "http_accessed": false
+}

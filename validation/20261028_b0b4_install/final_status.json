@@ -1,0 +1,26 @@
+{
+  "schema": "b0b4.final-hardware-status.v1",
+  "installation_passed": true,
+  "flash_written": true,
+  "independent_flash_verified": true,
+  "physical_cold_boot_verified": true,
+  "active_build": "0000B0B4",
+  "clock_mhz": 50,
+  "cold_default_p": "0.1000",
+  "cold_default_i": "0.0350",
+  "cold_generation": 0,
+  "flight_qualified": false,
+  "telemetry_gap_followup": "closed_at_user_request",
+  "completion": {
+    "path": "completion.json",
+    "sha256": "6c92ae9cbb5200e286889d870f8be767e240a935f2215b329c3ea60e53fc9a69"
+  },
+  "operator_followup": {
+    "path": "user_followup.json",
+    "sha256": "cc5ac4a2f14430ede876456f8031674a63250e8d4c49864d9620af8ceee8e465"
+  },
+  "limitations": [
+    "Range and flow were invalid before and after programming; flight qualification is separate."
+  ],
+  "recorded_utc": "2026-10-27T23:18:20.8587769Z"
+}

@@ -1,0 +1,16 @@
+test_boot_receiver_unready_waits_only_after_boot_evidence (__main__.Boundaries.test_boot_receiver_unready_waits_only_after_boot_evidence) ... ok
+test_default_is_offline_with_no_http_process_or_serial (__main__.Boundaries.test_default_is_offline_with_no_http_process_or_serial) ... ok
+test_exact_same_group_retry_recovers_and_is_bounded (__main__.Boundaries.test_exact_same_group_retry_recovers_and_is_bounded) ... ok
+test_false_flash_certification_and_wrong_image_rejected_before_http (__main__.Boundaries.test_false_flash_certification_and_wrong_image_rejected_before_http) ... ok
+test_healthy_boot_new_GET_and_no_secret_or_raw_stream_persistence (__main__.Boundaries.test_healthy_boot_new_GET_and_no_secret_or_raw_stream_persistence) ... ok
+test_new_epoch_and_new_operation_and_B4_defaults_required (__main__.Boundaries.test_new_epoch_and_new_operation_and_B4_defaults_required) ... ok
+test_other_errors_and_unsafe_activity_abort_without_retry_or_query (__main__.Boundaries.test_other_errors_and_unsafe_activity_abort_without_retry_or_query) ... ok
+test_receipt_requires_root_zero_stage_hash_and_all_actual_child_zero (__main__.Boundaries.test_receipt_requires_root_zero_stage_hash_and_all_actual_child_zero) ... ok
+test_startup_whitelist_never_swallows_wrong_owner_schema_or_identity (__main__.Boundaries.test_startup_whitelist_never_swallows_wrong_owner_schema_or_identity) ... ok
+test_ten_healthy_distinct_advancing_samples_required (__main__.Boundaries.test_ten_healthy_distinct_advancing_samples_required) ... ok
+test_timeout_offline_and_no_uptime_reset_never_pass (__main__.Boundaries.test_timeout_offline_and_no_uptime_reset_never_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.518s
+
+OK

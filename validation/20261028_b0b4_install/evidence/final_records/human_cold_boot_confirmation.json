@@ -1,0 +1,17 @@
+{
+  "schema": "b0b4.human-power-cycle-confirmation.v1",
+  "source": "Direct human reply to request_user_input_async",
+  "question_call_id": "call_7d69ada266864f47a8efa5e14758fc46",
+  "question": "请确认冷启动操作结果：已断开电池、板上 USB 及下载器与板端的连接，板灯全灭至少 5 秒后，仅用电池重新上电并放稳机身；电脑端电台保持连接，CH3／CH5／CH7 均保持低位。",
+  "answer": "已按上述步骤完成",
+  "battery_disconnected": true,
+  "board_usb_disconnected": true,
+  "programmer_disconnected_from_board": true,
+  "all_board_leds_off_at_least_5_seconds": true,
+  "battery_only_power_afterwards": true,
+  "board_stationary_after_power_on": true,
+  "computer_radio_kept_connected": true,
+  "ch3_ch5_ch7_kept_low": true,
+  "assertion_is_human_report_not_software_measurement": true,
+  "recorded_utc": "2026-10-27T23:10:20.8928350Z"
+}

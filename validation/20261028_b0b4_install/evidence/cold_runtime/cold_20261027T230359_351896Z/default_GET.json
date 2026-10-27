@@ -1,0 +1,17 @@
+{
+  "epoch": 5,
+  "operation_id": 6,
+  "busy": false,
+  "supported": true,
+  "can_query": true,
+  "active": {
+    "build": "0000B0B4",
+    "p_wire": 1000,
+    "i_wire": 350,
+    "generation": 0
+  },
+  "result": {
+    "code": "queried",
+    "operation_id": 6
+  }
+}

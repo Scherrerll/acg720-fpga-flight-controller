@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "http_accessed": false,
+  "hardware_accessed": false,
+  "flash_receipt_sha256": "af0d295abfa42dad13e1fb9f8936ca111a653941b4d5758e401415c395a210d8",
+  "flash_root_actual_p_wait": 0,
+  "bound_file_count": 47
+}

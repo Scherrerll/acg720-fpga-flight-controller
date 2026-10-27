@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "script_sha256": "0a50b2c822659b4efc5951ed781dc582bc4c4f874bc56dbdd6fc7d434b1d5a28",
+  "prior_sram": {
+    "path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\sram_20261027T225302_793263Z\\stage_report.json",
+    "sha256": "760ff62cffb413022bad9dd1d4e5171435c07f16edfd9312e40c7043314e5457",
+    "original_root_actual_p_wait": 1,
+    "completion_path": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\sram_completion_20261027T225728_816894Z\\stage_report.json",
+    "completion_sha256": "a9a9c60a13a3d89d0a3f9bb17f2e8b6dd61f89bcfacee978a1fa6cf0b1da4d55",
+    "completion_root": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\b0b4_install_20261028\\root_completion_20261027T225728_627518Z\\exit.json",
+    "completion_root_sha256": "1c03c7e080128275a1d9df206cffb6ad7643657b3f16cac6f2c58a12515c0fb4",
+    "completion_actual_p_wait": 0,
+    "default_GET_sha256": "5a1a5b580b8110aa126312de90fd8e4d50997c2fe3b829de54932d46cbe7d61a",
+    "health_sha256": "5ab170f0d0d39b70a0548f3ea72fa78f18f598a9ff6928f06a041a83ad9775ea"
+  },
+  "hardware_accessed": false,
+  "http_accessed": false
+}

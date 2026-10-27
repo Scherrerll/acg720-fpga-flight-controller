@@ -1,0 +1,10 @@
+{
+  "schema": "b0b4.operator-followup.v1",
+  "source": "Direct human message",
+  "user_text": "当时应该是断电了，不用管",
+  "telemetry_gap_investigation": "closed_at_user_request",
+  "suspected_power_interruption_is_operator_recollection_not_instrument_proof": true,
+  "supersedes_prior_operator_statement_of_uninterrupted_power": true,
+  "further_diagnostic_actions_authorized": false,
+  "recorded_utc": "2026-10-27T23:18:20.7328663Z"
+}
