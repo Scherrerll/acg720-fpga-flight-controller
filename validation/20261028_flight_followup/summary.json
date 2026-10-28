@@ -1,0 +1,365 @@
+{
+  "schema": "b0b4.flight-followup-summary.v1",
+  "date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "firmware_commit": "e8fcb457191c3672ca7e1c8b6d073eb5f12e93d3",
+  "installation_commit": "66a54d32028f84ff998c734cc5e1184ffa9a04ac",
+  "session": "20261028T002255Z_6fde37ef",
+  "morning": {
+    "input_prefixes": {
+      "telemetry.jsonl": {
+        "bytes": 26438358,
+        "prefix_sha256": "5bfab1fa6beb015eb56794d5ff9e1b651487943a845eeaa460f9e224a24ab489"
+      },
+      "events.jsonl": {
+        "bytes": 41389,
+        "prefix_sha256": "3739955a1f79526dae39c9b10c4fa42c918283773bc97a0ed3283084a8852e97"
+      }
+    },
+    "segments": [
+      {
+        "start": "2026-10-28T00:38:26.342273+00:00",
+        "end_last_armed": "2026-10-28T00:38:34.360558+00:00",
+        "epoch": 1,
+        "n": 40,
+        "armed_sample_span_s": 8.0182845,
+        "flying_n": 0,
+        "xyz_n": 0,
+        "mode": {
+          "自稳": 40
+        },
+        "height_mm": null,
+        "tof_mm": null,
+        "z": null,
+        "roll": null,
+        "pitch": null,
+        "roll_error_abs": null,
+        "pitch_error_abs": null,
+        "max_motor": 1200,
+        "motor_at_2000_n": 0,
+        "z_at_1850_n": 0,
+        "max_controller_fault_count": 0,
+        "max_attitude_fault": 0,
+        "max_imu_reason": 0,
+        "max_rejected": 0,
+        "quality": null,
+        "source_age": null,
+        "not_link_n": 0,
+        "not_height_ready_n": 0,
+        "not_flow_ready_n": 0,
+        "max_pose_gap_ms": null,
+        "sequence_missing": 1,
+        "max_host_gap_s": 0.3510627
+      },
+      {
+        "start": "2026-10-28T00:43:47.194910+00:00",
+        "end_last_armed": "2026-10-28T00:44:11.331696+00:00",
+        "epoch": 3,
+        "n": 118,
+        "armed_sample_span_s": 24.136788,
+        "flying_n": 95,
+        "xyz_n": 97,
+        "mode": {
+          "自稳": 20,
+          "定点": 97,
+          "定高": 1
+        },
+        "height_mm": {
+          "n": 95,
+          "min": 0,
+          "max": 1134,
+          "median": 1001,
+          "p95": 1125
+        },
+        "tof_mm": {
+          "n": 95,
+          "min": 175,
+          "max": 1081,
+          "median": 838,
+          "p95": 1071
+        },
+        "z": {
+          "n": 97,
+          "min": 1335,
+          "max": 1850,
+          "median": 1806,
+          "p95": 1850
+        },
+        "roll": {
+          "n": 95,
+          "min": -7.89,
+          "max": 10.03,
+          "median": 0.44,
+          "p95": 7.47
+        },
+        "pitch": {
+          "n": 95,
+          "min": -5.6,
+          "max": 13.71,
+          "median": 1.56,
+          "p95": 6.44
+        },
+        "roll_error_abs": {
+          "n": 95,
+          "min": 0.020000000000000018,
+          "max": 9.52,
+          "median": 0.65,
+          "p95": 7.39
+        },
+        "pitch_error_abs": {
+          "n": 95,
+          "min": 0.009999999999999787,
+          "max": 13.020000000000001,
+          "median": 0.3500000000000001,
+          "p95": 5.47
+        },
+        "max_motor": 2000,
+        "motor_at_2000_n": 12,
+        "z_at_1850_n": 7,
+        "max_controller_fault_count": 0,
+        "max_attitude_fault": 0,
+        "max_imu_reason": 0,
+        "max_rejected": 0,
+        "quality": {
+          "n": 95,
+          "min": 89,
+          "max": 121,
+          "median": 97,
+          "p95": 115
+        },
+        "source_age": {
+          "n": 95,
+          "min": 1,
+          "max": 11,
+          "median": 6,
+          "p95": 10
+        },
+        "not_link_n": 0,
+        "not_height_ready_n": 1,
+        "not_flow_ready_n": 0,
+        "max_pose_gap_ms": {
+          "n": 95,
+          "min": 1.1226,
+          "max": 1.1226,
+          "median": 1.1226,
+          "p95": 1.1226
+        },
+        "sequence_missing": 4,
+        "max_host_gap_s": 0.2972794
+      }
+    ]
+  },
+  "evening": {
+    "input_prefixes": {
+      "telemetry.jsonl": {
+        "bytes": 36070593,
+        "prefix_sha256": "2027a4c96076b1829bc02062b8f761b04836b0b4c42b87a63be16d7913255cbb"
+      },
+      "events.jsonl": {
+        "bytes": 64172,
+        "prefix_sha256": "5fe42ca00018611644e4d993871b6e1b5c39c5d891f93ec8ad04978869856bb7"
+      }
+    },
+    "segments": [
+      {
+        "start": "2026-10-28T10:35:37.635333+00:00",
+        "end_last_armed": "2026-10-28T10:36:08.761878+00:00",
+        "epoch": 6,
+        "n": 153,
+        "armed_sample_span_s": 31.1265445,
+        "flying_n": 131,
+        "xyz_n": 136,
+        "mode": {
+          "自稳": 17,
+          "定点": 136
+        },
+        "height_mm": {
+          "n": 131,
+          "min": 228,
+          "max": 467,
+          "median": 342,
+          "p95": 464
+        },
+        "tof_mm": {
+          "n": 131,
+          "min": 222,
+          "max": 461,
+          "median": 380,
+          "p95": 427
+        },
+        "z": {
+          "n": 136,
+          "min": 1293,
+          "max": 1850,
+          "median": 1850.0,
+          "p95": 1850
+        },
+        "roll": {
+          "n": 131,
+          "min": -1.91,
+          "max": 5.47,
+          "median": 1.7,
+          "p95": 3.93
+        },
+        "pitch": {
+          "n": 131,
+          "min": -0.98,
+          "max": 3.19,
+          "median": 1.83,
+          "p95": 2.68
+        },
+        "roll_error_abs": {
+          "n": 131,
+          "min": 0.0,
+          "max": 2.77,
+          "median": 0.6399999999999997,
+          "p95": 2.1
+        },
+        "pitch_error_abs": {
+          "n": 131,
+          "min": 0.010000000000000009,
+          "max": 1.75,
+          "median": 0.26000000000000023,
+          "p95": 1.24
+        },
+        "max_motor": 2000,
+        "motor_at_2000_n": 7,
+        "z_at_1850_n": 112,
+        "max_controller_fault_count": 0,
+        "max_attitude_fault": 0,
+        "max_imu_reason": 0,
+        "max_rejected": 0,
+        "quality": {
+          "n": 131,
+          "min": 84,
+          "max": 121,
+          "median": 104,
+          "p95": 111
+        },
+        "source_age": {
+          "n": 131,
+          "min": 1,
+          "max": 10,
+          "median": 5,
+          "p95": 10
+        },
+        "not_link_n": 0,
+        "not_height_ready_n": 0,
+        "not_flow_ready_n": 0,
+        "max_pose_gap_ms": {
+          "n": 131,
+          "min": 1.1226,
+          "max": 1.1226,
+          "median": 1.1226,
+          "p95": 1.1226
+        },
+        "sequence_missing": 4,
+        "max_host_gap_s": 0.3510404
+      },
+      {
+        "start": "2026-10-28T10:36:35.483803+00:00",
+        "end_last_armed": "2026-10-28T10:36:57.573529+00:00",
+        "epoch": 6,
+        "n": 111,
+        "armed_sample_span_s": 22.0897321,
+        "flying_n": 94,
+        "xyz_n": 98,
+        "mode": {
+          "自稳": 12,
+          "定点": 99
+        },
+        "height_mm": {
+          "n": 93,
+          "min": 243,
+          "max": 507,
+          "median": 408,
+          "p95": 497
+        },
+        "tof_mm": {
+          "n": 94,
+          "min": 229,
+          "max": 456,
+          "median": 358.0,
+          "p95": 435
+        },
+        "z": {
+          "n": 98,
+          "min": 1295,
+          "max": 1850,
+          "median": 1850.0,
+          "p95": 1850
+        },
+        "roll": {
+          "n": 94,
+          "min": -11.02,
+          "max": 6.0,
+          "median": 1.0550000000000002,
+          "p95": 4.2
+        },
+        "pitch": {
+          "n": 94,
+          "min": -4.51,
+          "max": 3.8,
+          "median": 1.745,
+          "p95": 3.19
+        },
+        "roll_error_abs": {
+          "n": 94,
+          "min": 0.0,
+          "max": 17.14,
+          "median": 1.085,
+          "p95": 4.890000000000001
+        },
+        "pitch_error_abs": {
+          "n": 94,
+          "min": 0.010000000000000231,
+          "max": 9.54,
+          "median": 0.3400000000000001,
+          "p95": 4.0
+        },
+        "max_motor": 2000,
+        "motor_at_2000_n": 11,
+        "z_at_1850_n": 85,
+        "max_controller_fault_count": 0,
+        "max_attitude_fault": 0,
+        "max_imu_reason": 0,
+        "max_rejected": 0,
+        "quality": {
+          "n": 94,
+          "min": 69,
+          "max": 109,
+          "median": 104.0,
+          "p95": 109
+        },
+        "source_age": {
+          "n": 94,
+          "min": 1,
+          "max": 10,
+          "median": 5.0,
+          "p95": 10
+        },
+        "not_link_n": 0,
+        "not_height_ready_n": 1,
+        "not_flow_ready_n": 1,
+        "max_pose_gap_ms": {
+          "n": 93,
+          "min": 1.1226,
+          "max": 1.1226,
+          "median": 1.1226,
+          "p95": 1.1226
+        },
+        "sequence_missing": 1,
+        "max_host_gap_s": 0.2932722
+      }
+    ]
+  },
+  "operator_followup": {
+    "battery_same_as_morning": true,
+    "not_recharged_between_trials": true,
+    "latest_report": "好了，充完电就好了",
+    "conclusion": "Operator reports normal lift after charging; supports a battery/available-thrust explanation. No voltage/RPM/thrust measurement was recorded by this review."
+  },
+  "firmware_or_parameters_changed_during_review": false,
+  "raw_wire_logs_uploaded": false,
+  "flight_qualification_complete": false
+}
