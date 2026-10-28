@@ -1,0 +1,2 @@
+PASS water interlock, 100ms-age counter boundary (scaled), low/high rearm, channel faults, mixer/deadband/saturation
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261028_water_drive\tests_v8\tb_water_control.v:54: $finish called at 26781000 (1ps)

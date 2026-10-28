@@ -1,0 +1,204 @@
+{
+  "passed": true,
+  "criteria": {
+    "actual_period_20ns": true,
+    "fmax_at_least_50": true,
+    "setup_hold_endpoints_zero": true,
+    "all_five_nonnegative": true,
+    "full_route": true,
+    "physical_command_returned": true,
+    "only_new_vg": true,
+    "skip_synthesis": true,
+    "all20pins": true,
+    "fs_usercode_b5": true,
+    "cfg_usercode_b5": true,
+    "actual_vendor_exit_zero": true
+  },
+  "period_ns": 20.0,
+  "fmax_mhz": 50.032,
+  "checks": {
+    "setup": {
+      "worst_slack_ns": 0.013,
+      "reported_paths": 25,
+      "worst_path": [
+        "1",
+        "0.013",
+        "native_navigation/height_fusion/publication_age_9_s1/Q",
+        "core/gate_last_interruption_attitude_fault_1_s0/CE",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "0.008",
+        "19.699"
+      ]
+    },
+    "hold": {
+      "worst_slack_ns": 0.169,
+      "reported_paths": 25,
+      "worst_path": [
+        "1",
+        "0.169",
+        "mtf/metric/dt_ms_5_s0/Q",
+        "mtf/diagnostic_body_365_s0/D",
+        "clk50:[R]",
+        "clk50:[R]",
+        "0.000",
+        "-0.177",
+        "0.299"
+      ]
+    },
+    "recovery": {
+      "worst_slack_ns": 12.66,
+      "reported_paths": 25,
+      "worst_path": [
+        "1",
+        "12.660",
+        "core/boot_4_s0/Q",
+        "core/gate/high_hold_count_1_s3/CLEAR",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "0.000",
+        "7.027"
+      ]
+    },
+    "removal": {
+      "worst_slack_ns": 3.03,
+      "reported_paths": 25,
+      "worst_path": [
+        "1",
+        "3.030",
+        "core/boot_3_s0/Q",
+        "core/receiver/ch5_2_s0/CLEAR",
+        "clk50:[R]",
+        "clk50:[R]",
+        "0.000",
+        "-0.181",
+        "3.163"
+      ]
+    },
+    "minimum_pulse_width": {
+      "worst_slack_ns": 7.387,
+      "reported_paths": 10,
+      "worst_path": [
+        "1",
+        "7.387",
+        "8.287",
+        "0.900",
+        "Low Pulse Width",
+        "clk50",
+        "core/imu/estimator/cdeg_scaled_0_s"
+      ]
+    }
+  },
+  "setup_violated_endpoints": 0,
+  "hold_violated_endpoints": 0,
+  "unrouted_reports": [],
+  "pins": {
+    "clk50": [
+      "Y18",
+      "in"
+    ],
+    "imu_miso": [
+      "D19",
+      "in"
+    ],
+    "rc_ppm_in": [
+      "B17",
+      "in"
+    ],
+    "range_rx": [
+      "C14",
+      "in"
+    ],
+    "radio_rx": [
+      "B16",
+      "in"
+    ],
+    "imu_sck": [
+      "E17",
+      "out"
+    ],
+    "imu_mosi": [
+      "C20",
+      "out"
+    ],
+    "imu_cs_n": [
+      "E18",
+      "out"
+    ],
+    "imu_gyro_cs_n": [
+      "F20",
+      "out"
+    ],
+    "range_tx": [
+      "C15",
+      "out"
+    ],
+    "uart_tx": [
+      "M15",
+      "out"
+    ],
+    "radio_tx": [
+      "B15",
+      "out"
+    ],
+    "led2": [
+      "L21",
+      "out"
+    ],
+    "led3": [
+      "K21",
+      "out"
+    ],
+    "motor1_pwm": [
+      "D17",
+      "out"
+    ],
+    "motor2_pwm": [
+      "C17",
+      "out"
+    ],
+    "motor3_pwm": [
+      "E16",
+      "out"
+    ],
+    "motor4_pwm": [
+      "D16",
+      "out"
+    ],
+    "water_left_pwm": [
+      "A13",
+      "out"
+    ],
+    "water_right_pwm": [
+      "A14",
+      "out"
+    ]
+  },
+  "pressure_report_lines": [
+    "[60%] Routing Phase 0 completed",
+    "[70%] Routing Phase 1 completed",
+    "[80%] Routing Phase 2 completed",
+    "[90%] Routing Phase 3 completed",
+    "    Routing Phase 0: CPU time = 0h 0m 0.044s, Elapsed time = 0h 0m 0.044s",
+    "    Routing Phase 1: CPU time = 0h 15m 11s, Elapsed time = 0h 15m 11s",
+    "    Routing Phase 2: CPU time = 0h 0m 0.981s, Elapsed time = 0h 0m 0.981s",
+    "    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s",
+    "    Total Routing: CPU time = 0h 15m 12s, Elapsed time = 0h 15m 12s",
+    "  Logic                       | 46155/59904                         |  78%",
+    "    --Logic Register as FF    | 27866/59904                         |  47%"
+  ],
+  "congestion_metric": "No numerical congestion metric assumed; report availability recorded verbatim",
+  "bitstream_sha256": "d1e0e3a46178315d103d8db26a05806add46ded9410e2f2e6b683b84742649f5",
+  "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+  "evidence_sha256": {
+    "source\\impl\\pnr\\acg720_ano_port.tr": "1746bf5572d20784f8013b229c67eca9971cb048c9b7135f136e0e1f7ee57769",
+    "source\\impl\\pnr\\acg720_ano_port.rpt.txt": "374dfb89dbd73f3396b362b6b41908a68e76db8543723a42a5f323fc0f7bbbf0",
+    "source\\impl\\pnr\\acg720_ano_port.fs": "d1e0e3a46178315d103d8db26a05806add46ded9410e2f2e6b683b84742649f5",
+    "source\\impl\\pnr\\device.cfg": "4ed9f1f57b267b4974315c571976e5e2960345d7662917b99853bdf2bfaaddd4",
+    "source\\impl\\pnr\\acg720_ano_port.pr": "981769be567b04f98405754e8bd98bed5224000bee07047ca2c4a7fe6fbe1984",
+    "verification\\physical.log": "93fa2135227e72109445447d3924d73290460799ef29f1437455debdef76d0e6",
+    "verification\\physical_exit.json": "2f2972a8074f19dfec2b5023639c2769083ad6d097fcb2a670dcfe9b7e0f99d1"
+  }
+}

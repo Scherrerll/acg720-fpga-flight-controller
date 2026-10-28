@@ -1,0 +1,2 @@
+PASS production50MHz divider=50000clocks; widths16+7+5+9; conservative hold terminals and live expiry
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261028_water_drive\tests_v8\tb_water_timer_limits.v:42: $finish called at 2000631000 (1ps)

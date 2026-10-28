@@ -10,6 +10,8 @@ firmware/B0B0/release/*.fs binary
 firmware/B0B2/verified_timing_20261025/bitstream/*.fs binary
 firmware/B0B3/release/*.fs binary
 firmware/B0B4/release/*.fs binary
+analysis/20261028_water_drive/qualified_offline_B0B5/DO_NOT_PROGRAM/*.fs binary
+analysis/20261028_water_drive/qualified_offline_B0B5/evidence/** linguist-generated=true
 firmware/B0B1/evidence/** linguist-generated=true
 firmware/B0B2/evidence/** linguist-generated=true
 firmware/B0B2/hardware/** linguist-generated=true

@@ -9,6 +9,7 @@
 !firmware/B0B0/release/*.fs
 !firmware/B0B2/verified_timing_20261025/bitstream/acg720_ano_port.fs
 !firmware/B0B3/release/*.fs
+!analysis/20261028_water_drive/qualified_offline_B0B5/DO_NOT_PROGRAM/acg720_ano_port.fs
 *.gprj.user
 .venv/
 .tools/

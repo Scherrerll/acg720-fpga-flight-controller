@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p3r0_v8\\a13_a14\\physical.tcl"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p3r0_v8\\a13_a14\\source",
+  "started_utc": "2026-10-28T18:42:47.911295+00:00",
+  "stdin": "DEVNULL",
+  "create_no_window": true,
+  "pid": 34432,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-28T19:06:09.984682+00:00",
+  "elapsed_s": 1402.0733986999985,
+  "log_sha256": "93fa2135227e72109445447d3924d73290460799ef29f1437455debdef76d0e6"
+}

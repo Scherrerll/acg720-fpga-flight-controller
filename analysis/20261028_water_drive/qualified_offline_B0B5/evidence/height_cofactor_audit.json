@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "before": {
+    "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+    "height_registers": [
+      "native_navigation/geometry/height_mm_31_s4",
+      "native_navigation/geometry/height_mm_12_s4",
+      "native_navigation/geometry/height_mm_11_s4",
+      "native_navigation/geometry/height_mm_10_s4",
+      "native_navigation/geometry/height_mm_9_s4",
+      "native_navigation/geometry/height_mm_8_s4",
+      "native_navigation/geometry/height_mm_7_s4",
+      "native_navigation/geometry/height_mm_6_s4",
+      "native_navigation/geometry/height_mm_5_s4",
+      "native_navigation/geometry/height_mm_4_s4",
+      "native_navigation/geometry/height_mm_3_s4",
+      "native_navigation/geometry/height_mm_2_s4",
+      "native_navigation/geometry/height_mm_1_s4",
+      "native_navigation/geometry/height_mm_0_s4"
+    ],
+    "target_pin_count": 26909,
+    "reachable_pin_pairs": 11662,
+    "maximum_depth": 19,
+    "longest_examples": [
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/norm_pending_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_17_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_16_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_15_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_14_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_13_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_12_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_11_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_10_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_9_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_8_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_7_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_6_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_5_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_4_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_3_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_2_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_1_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_nr_0_s0/CE",
+        "depth": 19
+      },
+      {
+        "source": "native_navigation/geometry/height_mm_3_s4",
+        "target": "core/manual_angles/pending_np_17_s0/CE",
+        "depth": 19
+      }
+    ]
+  },
+  "after": {
+    "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+    "height_registers": [
+      "native_navigation/geometry/height_mm_12_s4",
+      "native_navigation/geometry/height_mm_11_s4",
+      "native_navigation/geometry/height_mm_10_s4",
+      "native_navigation/geometry/height_mm_9_s4",
+      "native_navigation/geometry/height_mm_8_s4",
+      "native_navigation/geometry/height_mm_7_s4",
+      "native_navigation/geometry/height_mm_6_s4",
+      "native_navigation/geometry/height_mm_5_s4",
+      "native_navigation/geometry/height_mm_4_s4",
+      "native_navigation/geometry/height_mm_3_s4",
+      "native_navigation/geometry/height_mm_2_s4",
+      "native_navigation/geometry/height_mm_1_s4",
+      "native_navigation/geometry/height_mm_0_s4",
+      "native_navigation/geometry/height_mm_31_s5"
+    ],
+    "target_pin_count": 26910,
+    "reachable_pin_pairs": 0,
+    "maximum_depth": null,
+    "longest_examples": []
+  },
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "scope": "Tracked combinational LUT/ALU/mux topology, stops at FFs/unsupported primitives. Not formal verification or physical timing qualification. Bounded-producer source proof and complete navigation cycle comparison are separate required evidence."
+}

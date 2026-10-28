@@ -1,0 +1,129 @@
+{
+  "candidates": [
+    {
+      "name": "b18_c18",
+      "balls": [
+        "B18",
+        "C18"
+      ],
+      "p7": [
+        26,
+        27
+      ],
+      "gpio": [
+        "GPIO0_23",
+        "GPIO0_24"
+      ],
+      "vendor_banks": [
+        1,
+        2
+      ],
+      "sites": [
+        "IOT104[B]",
+        "IOT115[A]"
+      ],
+      "clock_capable": [
+        true,
+        true
+      ],
+      "wiring": "Adjacent P7 row/diagonal; C18 historically reserved for emergency-stop input"
+    },
+    {
+      "name": "b18_c19",
+      "balls": [
+        "B18",
+        "C19"
+      ],
+      "p7": [
+        26,
+        28
+      ],
+      "gpio": [
+        "GPIO0_23",
+        "GPIO0_25"
+      ],
+      "vendor_banks": [
+        1,
+        2
+      ],
+      "sites": [
+        "IOT104[B]",
+        "IOT115[B]"
+      ],
+      "clock_capable": [
+        true,
+        true
+      ],
+      "wiring": "Same even P7 column, adjacent signal positions; preserves C18 reservation"
+    },
+    {
+      "name": "f18_f19",
+      "balls": [
+        "F18",
+        "F19"
+      ],
+      "p7": [
+        37,
+        39
+      ],
+      "gpio": [
+        "GPIO0_32",
+        "GPIO0_34"
+      ],
+      "vendor_banks": [
+        2,
+        2
+      ],
+      "sites": [
+        "IOT117[A]",
+        "IOT124[A]"
+      ],
+      "clock_capable": [
+        false,
+        false
+      ],
+      "wiring": "Same odd P7 column, adjacent signal positions; ordinary IO and preserves C18 reservation"
+    },
+    {
+      "name": "a13_a14",
+      "balls": [
+        "A13",
+        "A14"
+      ],
+      "p7": [
+        1,
+        2
+      ],
+      "gpio": [
+        "GPIO0_0",
+        "GPIO0_1"
+      ],
+      "vendor_banks": [
+        1,
+        1
+      ],
+      "sites": [
+        "IOT95[A]",
+        "IOT95[B]"
+      ],
+      "clock_capable": [
+        false,
+        false
+      ],
+      "wiring": "Same complete IOT A/B pair and adjacent P7 row; ordinary IO, preserves C18. Earlier historical IMU wiring used this area; current physical vacancy must be reconfirmed. Shared output clock/reset/frame control may reduce local routing; hypothesis to be tested."
+    }
+  ],
+  "local_reference_sha256": {
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\acg720_reference\\p11_GPIO_crop.png": "7331cbededc95e47986bfdf07f17fc8ef7cfa423f04e1cfd1f8215deb4f80cc4",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\acg720_reference\\p11_GPIO_right_crop.png": "071c6a1bc14e64c0ebd96199c71ad969ace0efa06b7bdca3b1f447441c9a9fb6",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\acg720_reference\\p12_IO_voltage_crop.png": "74121c0ee53c5e04b41c991bf579e2ec7c315552d46a5c73a446bef41d592bf4",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\acg720_reference\\pin_table_verify_p12.png": "231e6d04aa43d7190ac2c0139cbf10544b8e25e832c02d005500ac079e9b5a5c",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\acg720_reference\\pin_table_verify_p30.png": "418144b9a192e594155b419296d63a9971c1834f3744f75da7a0cd5fc6ce99bf"
+  },
+  "source_device": "GW5AT-LV60PG484AC1/I0",
+  "baseline_vendor_io_report_sha256": "5cd22ba7add6ba32f0a86e509bacd0b4c8e709fca516ba23c0d803ed9bd41116",
+  "basis": "Pin/package tables plus P7 schematic; bank numbers and sites from frozen B0B4 vendor report. New physical reports must confirm each selected constrained output.",
+  "actual_occupancy_verified": false,
+  "actual_voltage_verified": false,
+  "scope": "Placement/routing comparison of these three candidates only; no global optimum claim"
+}

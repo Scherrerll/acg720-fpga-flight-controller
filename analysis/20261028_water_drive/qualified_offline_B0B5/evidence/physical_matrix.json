@@ -1,0 +1,2138 @@
+{
+  "passed": true,
+  "candidates": [
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2041.7552897999994,
+      "unrouted_reports": [
+        642
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "2a148b60342c2fb185adad43d02f34d3b3d43f8938cacd9e823f197f196a15d4",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2044.4047900000005,
+      "unrouted_reports": [
+        642
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "dda51a0ada919bb98ce9ce5be1e17dcc452c4cfd22d44d3fbff9009a7a5f195d",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2136.1356879000086,
+      "unrouted_reports": [
+        1190
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "90e9181c53088bf5beb82b39977ca957f127f666761ea152d9aab558e67f6b49",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1205.1030275999947,
+      "unrouted_reports": [
+        396
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "aaba5e69d9c128341e711f1b98f3fe87bcb639a19d8ad60374872253c5261a58",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1259.556119899993,
+      "unrouted_reports": [
+        460
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "788f82af3303f10e286cbcae6221298ff116abe69f874309dcae7af04a7b39e7",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1625.8655547999952,
+      "unrouted_reports": [
+        611
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "27ebf8483dcff52cf1e184ec5f82b403843127db0bc01ff2772fc54ba2d81835",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 1
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2005.5741814999928,
+      "unrouted_reports": [
+        7172
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "1a9f83234bd56b2a487fae3b9312b62ac6d0f22715a937b88780019e06f2094f",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r1_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 1
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1998.8433336000016,
+      "unrouted_reports": [
+        7058
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "65b4d85080d3331394fba1787852c3a88f55bb35a1bdceb71585cb963a902be8",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r1_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 1
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2272.7752661999984,
+      "unrouted_reports": [
+        8630
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "18266df2aacf10019050449deee188d9d179c40fd4449f0b01844754362bb911",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r1_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 1,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1643.5486552000075,
+      "unrouted_reports": [
+        565
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "7898f15f753e22311060d9a7ba28053a3619cce150ac4c35cb6ff029e47cc77c",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p1r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 1,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1643.51493379999,
+      "unrouted_reports": [
+        565
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "cc174f2b5af81c7d160ad7ef35d1dea748e22f1dde06b427cef3c0faf75857ce",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p1r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 1,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1511.2927212000068,
+      "unrouted_reports": [
+        920
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "b4464f9dbb3bdac0ae37d59843810eb696ba414b5def335e96fa49ffbee653f2",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p1r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": true
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2173.827345400001,
+      "unrouted_reports": [
+        1032
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "ab592e847bc98cf35a7fa1cfe89781e765730d648292fa761c038d7b31cfef67",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_inc_p3r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": true
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2175.5193704999983,
+      "unrouted_reports": [
+        1032
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "3ed8cadc1498a0f73def550a2433b5fb886e50a55c937420bb42ac7e73ed645a",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_inc_p3r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": true
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 3001.49293339999,
+      "unrouted_reports": [
+        1544
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "1876918d26e4269492617daa75acbfee48d4797aa140cd98d09c56272d036e8a",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_inc_p3r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 1,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2318.597880599991,
+      "unrouted_reports": [
+        872
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "4415f40b3c69a5e21c9c28e042be2ed89c7e22eea0591fcdfff9c1906ce74c45",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p1r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": true
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 3079.041881500001,
+      "unrouted_reports": [
+        1235
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "6da8257dbccd2b82cb84beea93b614efbe50eb7bad881ccfd881c6b0c19f075d",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_inc_p3r0_v2",
+      "rtl_revision": "v2"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 1,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1799.6011704999983,
+      "unrouted_reports": [
+        924
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "97e698d2399c611a8341603d70056b6c37423c4400ad14f27d50526ad35be9bd",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "61b981fa4a5ac30ed86d45e695dc26ffec9df3cc2e08979620d03841bbc30dbb",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p1r0_v3",
+      "rtl_revision": "v3"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": true
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2915.4159500000096,
+      "unrouted_reports": [
+        1102
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "97e698d2399c611a8341603d70056b6c37423c4400ad14f27d50526ad35be9bd",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "79de3354b7c17f31032be710381233afa7684e1aead6197e7d8c2a2bfb564bd6",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_inc_p3r0_v3",
+      "rtl_revision": "v3"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2058.4654420000006,
+      "unrouted_reports": [
+        481
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "97e698d2399c611a8341603d70056b6c37423c4400ad14f27d50526ad35be9bd",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "d96897aad1b2a2151a835069e26bf372a1fa7bfcfc47a2e07e063e25a5e0437c",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p2r0_v3",
+      "rtl_revision": "v3"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": null,
+      "vendor_elapsed_s": null,
+      "unrouted_reports": [
+        290
+      ],
+      "failure": "Vendor emitted routing/Tcl error, but runner proc.wait did not return for over 80 minutes. Windows enumerates gw_sh as HasExited=True yet no p.wait receipt exists. Stop the offline Python runner; vendor exit code remains unknown.",
+      "aborted": true,
+      "full_route": false,
+      "netlist_sha256": "97e698d2399c611a8341603d70056b6c37423c4400ad14f27d50526ad35be9bd",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "d0e3f4207c9e0bf607b8ee51ffc1caa36cca0b967f49ea8071177a7caf678eb3",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c18_p2r0_v3",
+      "rtl_revision": "v3"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2164.299046100001,
+      "unrouted_reports": [
+        322
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "a4636bfb5689956e31d9aa82cbf1a7c77a5c6c321311d3a17315e4dacfe0d333",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "a01dda9b663efebe90c8cc760f3255405d4b2cccd27fbd0c53f82436b087f2a0",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p2r0_v4",
+      "rtl_revision": "v4"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": true
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2506.8171709000017,
+      "unrouted_reports": [
+        1428
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "a4636bfb5689956e31d9aa82cbf1a7c77a5c6c321311d3a17315e4dacfe0d333",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "0e0c6d287a3eb7c81adfab7be80b178c679b4b6cb0c7531276ab09b1e36585ef",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_inc_p3r0_v4",
+      "rtl_revision": "v4"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": {
+        "setup": -1.703,
+        "hold": 0.125,
+        "recovery": 13.755,
+        "removal": 2.594,
+        "minimum_pulse_width": 7.387
+      },
+      "fmax_mhz": 46.076,
+      "violations": {
+        "setup": 318,
+        "hold": 0
+      },
+      "congestion": {
+        "peak": 0.903,
+        "reported_top_grid_mean": 0.8904,
+        "rows": [
+          {
+            "grid": "R46C63",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R49C132",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R50C63",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R45C131",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R46C128",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R51C63",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R50C22",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R46C134",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R45C122",
+            "congestion": 0.875
+          },
+          {
+            "grid": "R66C63",
+            "congestion": 0.875
+          }
+        ],
+        "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+      },
+      "routing_time_report": "Total Routing: CPU time = 0h 13m 42s, Elapsed time = 0h 13m 42s",
+      "vendor_exit": 0,
+      "vendor_elapsed_s": 1305.2336699000007,
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "io_lines": {
+        "water_left_pwm": "B18/1    | water_left_pwm   | out   | IOT104[B] | GCLKC_1         | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus2",
+        "water_right_pwm": "C18/2    | water_right_pwm  | out   | IOT115[A] | GCLKT_3         | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus1"
+      },
+      "netlist_sha256": "a4636bfb5689956e31d9aa82cbf1a7c77a5c6c321311d3a17315e4dacfe0d333",
+      "bitstream_sha256": "31dcd76e03cf1a1368a903eb1cd9dea8d0146c8605419d1d2d6390b858bf1511",
+      "raw_report_sha256": "635b7686df50a64569196122f2bb29e975b066986e256f1808081cd4a2496830",
+      "worst_setup_path": [
+        "1",
+        "-1.703",
+        "mtf/parser/raw_frame_118_s0/Q",
+        "core/manual_angles/pending_dt_10_s0/CE",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "0.462",
+        "20.961"
+      ],
+      "full_route": true,
+      "unrouted_reports": [],
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c18_p2r0_v4",
+      "rtl_revision": "v4"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2207.1256742999976,
+      "unrouted_reports": [
+        932
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "a4636bfb5689956e31d9aa82cbf1a7c77a5c6c321311d3a17315e4dacfe0d333",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "aec32ef999a379ffb6ca2a36398ece6156fe2f339c1902d6969e3713a8e554c9",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p3r0_v4",
+      "rtl_revision": "v4"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": {
+        "setup": -0.28,
+        "hold": 0.194,
+        "recovery": 13.884,
+        "removal": 1.865,
+        "minimum_pulse_width": 7.387
+      },
+      "fmax_mhz": 49.31,
+      "violations": {
+        "setup": 20,
+        "hold": 0
+      },
+      "congestion": {
+        "peak": 0.917,
+        "reported_top_grid_mean": 0.9044000000000001,
+        "rows": [
+          {
+            "grid": "R35C76",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R40C76",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R42C125",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R36C76",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R52C40",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R33C76",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R30C76",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R63C18",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R30C75",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R57C118",
+            "congestion": 0.889
+          }
+        ],
+        "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+      },
+      "routing_time_report": "Total Routing: CPU time = 0h 12m 5s, Elapsed time = 0h 12m 5s",
+      "vendor_exit": 0,
+      "vendor_elapsed_s": 985.271431000001,
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "io_lines": {
+        "water_left_pwm": "B18/1    | water_left_pwm   | out   | IOT104[B] | GCLKC_1         | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus2",
+        "water_right_pwm": "C18/2    | water_right_pwm  | out   | IOT115[A] | GCLKT_3         | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus1"
+      },
+      "netlist_sha256": "a4636bfb5689956e31d9aa82cbf1a7c77a5c6c321311d3a17315e4dacfe0d333",
+      "bitstream_sha256": "2a5d6e0ca0bac677f2e3a5d6b83c70740081f368c8e377398e03f9fbe546748f",
+      "raw_report_sha256": "fc40b5ed2588d3df671019686f6178d644bf95660766701689a3f9a8001fb96d",
+      "worst_setup_path": [
+        "1",
+        "-0.280",
+        "mtf/parser/raw_frame_127_s0/Q",
+        "core/manual_angles/pending_nr_12_s0/CE",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "-0.008",
+        "20.008"
+      ],
+      "full_route": true,
+      "unrouted_reports": [],
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c18_p3r0_v4",
+      "rtl_revision": "v4"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": true
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1470.113043099991,
+      "unrouted_reports": [
+        0
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "a4636bfb5689956e31d9aa82cbf1a7c77a5c6c321311d3a17315e4dacfe0d333",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "86710653e7d72e75e005163771d7d8a78c616e3908a1a5e33a6d7cf36653e4e9",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c18_inc_p3r0_v4",
+      "rtl_revision": "v4"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1429.1442790999863,
+      "unrouted_reports": [
+        1120
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "031733bf6cf61a12ae9d3a0c815dd56b15eb503be0185719f5204735d653251d",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "997c3aabf275a61cb4f0743e8296be104e9c774a21eb9007808bf52be9830a01",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c18_p3r0_v5",
+      "rtl_revision": "v5"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1552.1772884000093,
+      "unrouted_reports": [
+        1120
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "031733bf6cf61a12ae9d3a0c815dd56b15eb503be0185719f5204735d653251d",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "946419e44fd9138044b11b0776a1ad2be7938d74f5767bdc24d8b51b4daa9be5",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c19_p3r0_v5",
+      "rtl_revision": "v5"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1910.792277399989,
+      "unrouted_reports": [
+        1007
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "031733bf6cf61a12ae9d3a0c815dd56b15eb503be0185719f5204735d653251d",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "22cc395cb7496fc147fe6ff1a42261ebf4c888100c87aa47892d961a48c191fd",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_f18f19_p3r0_v5",
+      "rtl_revision": "v5"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1507.4307345999987,
+      "unrouted_reports": [
+        357
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "031733bf6cf61a12ae9d3a0c815dd56b15eb503be0185719f5204735d653251d",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "52e347757457451606371a91e44fb3424e051052c76e35a1d663d1d560873ee2",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p3r0_v5",
+      "rtl_revision": "v5"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1278.3306714000064,
+      "unrouted_reports": [
+        543
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "031733bf6cf61a12ae9d3a0c815dd56b15eb503be0185719f5204735d653251d",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "5caf594a6ebb8f56eab31f88567da3d6ac9615826e3c7323e1d9056db7fbb074",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c18_p2r0_v5",
+      "rtl_revision": "v5"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 4,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 4416.093130699999,
+      "unrouted_reports": [
+        10333
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "031733bf6cf61a12ae9d3a0c815dd56b15eb503be0185719f5204735d653251d",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "a0f098d1497cc8eb21d0eebd0d01208a04264747c7d05ed56c04ed32e734ee76",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c18_p4r0_v5",
+      "rtl_revision": "v5"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1412.541088699989,
+      "unrouted_reports": [
+        454
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "21f56f9ece6d024450828018c0cd12598395b472a5cd28fe7f8dd60409b8d20e",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "10e10c29e86f90c59b3c4dd423ae99935e761331727030031bdfdb88d9a32974",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_b18c18_p2r0_v6",
+      "rtl_revision": "v6"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2277.726941899993,
+      "unrouted_reports": [
+        1925
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "21f56f9ece6d024450828018c0cd12598395b472a5cd28fe7f8dd60409b8d20e",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "aeb256cebf24bcc275bd65d889e3104318d1aebea9b3c36969ddf71655851488",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v6",
+      "rtl_revision": "v6"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2273.4429911000043,
+      "unrouted_reports": [
+        1925
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "21f56f9ece6d024450828018c0cd12598395b472a5cd28fe7f8dd60409b8d20e",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "e1a99602edbfceafcfef14881684bd98b939a74ad230eb10e474f8654cebd7f7",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v6",
+      "rtl_revision": "v6"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2095.132482899993,
+      "unrouted_reports": [
+        1658
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "21f56f9ece6d024450828018c0cd12598395b472a5cd28fe7f8dd60409b8d20e",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "553e32eb97dc0f24b150ef3aa2d928f4cf392ecdabc333aeb652442153a56abb",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v6",
+      "rtl_revision": "v6"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2251.9203615000006,
+      "unrouted_reports": [
+        1761
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "21f56f9ece6d024450828018c0cd12598395b472a5cd28fe7f8dd60409b8d20e",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "fe28a132a985a215c210518ac547977133bae982f6c6830a6e89a06d1253f335",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p3r0_v6",
+      "rtl_revision": "v6"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1580.297401600008,
+      "unrouted_reports": [
+        480
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "6e618f7c87480ea1d96761614ed75530e27e573188839d25801054c91452e8b7",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v7",
+      "rtl_revision": "v7"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1581.290361499996,
+      "unrouted_reports": [
+        480
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "4ea537ccc63223d3eea81ddd4dac2c1f6eaa6759c600acdeb9feeb337cd4fecc",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v7",
+      "rtl_revision": "v7"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1877.626916100009,
+      "unrouted_reports": [
+        614
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "e69f929c961ddf8c5173a771daf4afb84304d788c65e1152030082a4937f2c62",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v7",
+      "rtl_revision": "v7"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2042.3614980999992,
+      "unrouted_reports": [
+        810
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "49d4ac513ae55d12b7097a1557ccf02d044e067ebc4e089e193e16e379eed843",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v7",
+      "rtl_revision": "v7"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2035.9944134999969,
+      "unrouted_reports": [
+        810
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "11386ed86f46f375e3b92cebeec61b7bcc4fc05eba586737ae3c24c9b9a6ede4",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v7",
+      "rtl_revision": "v7"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": {
+        "setup": -0.626,
+        "hold": 0.206,
+        "recovery": 13.698,
+        "removal": 1.933,
+        "minimum_pulse_width": 7.387
+      },
+      "fmax_mhz": 48.482,
+      "violations": {
+        "setup": 26,
+        "hold": 0
+      },
+      "congestion": {
+        "peak": 0.958,
+        "reported_top_grid_mean": 0.921,
+        "rows": [
+          {
+            "grid": "R58C129",
+            "congestion": 0.958
+          },
+          {
+            "grid": "R58C130",
+            "congestion": 0.944
+          },
+          {
+            "grid": "R30C76",
+            "congestion": 0.931
+          },
+          {
+            "grid": "R44C127",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R44C129",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R57C69",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R59C129",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R44C122",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R46C125",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R59C130",
+            "congestion": 0.903
+          }
+        ],
+        "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+      },
+      "routing_time_report": "Total Routing: CPU time = 0h 17m 52s, Elapsed time = 0h 17m 52s",
+      "vendor_exit": 0,
+      "vendor_elapsed_s": 1400.154174299998,
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "io_lines": {
+        "water_left_pwm": "F18/2    | water_left_pwm   | out   | IOT117[A] | -               | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus1",
+        "water_right_pwm": "F19/2    | water_right_pwm  | out   | IOT124[A] | -               | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus1"
+      },
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "bitstream_sha256": "99e50730f63cf11c1bb00dad2185bc94385c695b860990efbaf0a1aef186d7d3",
+      "raw_report_sha256": "519a8ef38d2c80797b474e00affd38d3a74668046dafb9fcb6175859ad2a76c5",
+      "worst_setup_path": [
+        "1",
+        "-0.626",
+        "native_navigation/geometry/height_mm_1_s4/Q",
+        "core/imu/diagnostic_tap/fault_valid_s0/CE",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "0.008",
+        "20.338"
+      ],
+      "full_route": true,
+      "unrouted_reports": [],
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v7",
+      "rtl_revision": "v7"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 1547.5909297000035,
+      "unrouted_reports": [
+        440
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "df7789c398617f53df2b9d45b941cece476496bace3ee4a2bd55cc0cb93a995f",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p2r0_v7",
+      "rtl_revision": "v7"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2078.9665553000086,
+      "unrouted_reports": [
+        437
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "2414e26b8ae78606f30e0a69382447f9a1d5bcb7f9a4c0d23278b041f1451f89",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p3r0_v7",
+      "rtl_revision": "v7"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2038.1240751000005,
+      "unrouted_reports": [
+        599
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "log_sha256": "2f6511d7356ed3f2bc231cfd2a4d1b19abf8efd24c23685eb92261f2e338c55a",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v8",
+      "rtl_revision": "v8"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2060.8095565999974,
+      "unrouted_reports": [
+        599
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "log_sha256": "831db1401be23644e6bdd9d835b3752192401648e12bbac7143cc41c5059bef2",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v8",
+      "rtl_revision": "v8"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2247.8130608000065,
+      "unrouted_reports": [
+        665
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "log_sha256": "38b72f1ed881e874aa627c63ba62745554072e0a8802571b4316f216b5228868",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p2r0_v8",
+      "rtl_revision": "v8"
+    },
+    {
+      "name": "b18_c18",
+      "qualified": true,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": {
+        "setup": 0.025,
+        "hold": 0.186,
+        "recovery": 14.406,
+        "removal": 1.823,
+        "minimum_pulse_width": 7.387
+      },
+      "fmax_mhz": 50.063,
+      "violations": {
+        "setup": 0,
+        "hold": 0
+      },
+      "congestion": {
+        "peak": 0.931,
+        "reported_top_grid_mean": 0.9128000000000001,
+        "rows": [
+          {
+            "grid": "R14C127",
+            "congestion": 0.931
+          },
+          {
+            "grid": "R57C130",
+            "congestion": 0.931
+          },
+          {
+            "grid": "R30C75",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R31C79",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R50C121",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R30C79",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R52C117",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R24C80",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R46C115",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R46C121",
+            "congestion": 0.903
+          }
+        ],
+        "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+      },
+      "routing_time_report": "Total Routing: CPU time = 0h 8m 41s, Elapsed time = 0h 8m 41s",
+      "vendor_exit": 0,
+      "vendor_elapsed_s": 1073.8555388999957,
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C18"
+      },
+      "io_lines": {
+        "water_left_pwm": "B18/1    | water_left_pwm   | out   | IOT104[B] | GCLKC_1         | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus2",
+        "water_right_pwm": "C18/2    | water_right_pwm  | out   | IOT115[A] | GCLKT_3         | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus1"
+      },
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "bitstream_sha256": "0f2d26a7c5158125b8e7dd8735200f97c5862d10cd97fd6194910458288b7a75",
+      "raw_report_sha256": "5995b67a910c9362a7667b3548e2865fd51b80fbf0678e07f0e0dd64e20848d7",
+      "worst_setup_path": [
+        "1",
+        "0.025",
+        "core/imu/guard/seen_good_s0/Q",
+        "core/manual_angles/pending_nr_1_s0/CE",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "-0.008",
+        "19.703"
+      ],
+      "full_route": true,
+      "unrouted_reports": [],
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v8",
+      "rtl_revision": "v8"
+    },
+    {
+      "name": "b18_c19",
+      "qualified": true,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": {
+        "setup": 0.025,
+        "hold": 0.186,
+        "recovery": 14.406,
+        "removal": 1.823,
+        "minimum_pulse_width": 7.387
+      },
+      "fmax_mhz": 50.063,
+      "violations": {
+        "setup": 0,
+        "hold": 0
+      },
+      "congestion": {
+        "peak": 0.931,
+        "reported_top_grid_mean": 0.9128000000000001,
+        "rows": [
+          {
+            "grid": "R14C127",
+            "congestion": 0.931
+          },
+          {
+            "grid": "R57C130",
+            "congestion": 0.931
+          },
+          {
+            "grid": "R30C75",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R31C79",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R50C121",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R30C79",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R52C117",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R24C80",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R46C115",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R46C121",
+            "congestion": 0.903
+          }
+        ],
+        "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+      },
+      "routing_time_report": "Total Routing: CPU time = 0h 8m 47s, Elapsed time = 0h 8m 47s",
+      "vendor_exit": 0,
+      "vendor_elapsed_s": 1073.6186203000107,
+      "pins": {
+        "water_left_pwm": "B18",
+        "water_right_pwm": "C19"
+      },
+      "io_lines": {
+        "water_left_pwm": "B18/1    | water_left_pwm   | out   | IOT104[B] | GCLKC_1         | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus2",
+        "water_right_pwm": "C19/2    | water_right_pwm  | out   | IOT115[B] | GCLKC_3         | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus1"
+      },
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "bitstream_sha256": "157d00f5d54a89c5f8dd9986b2b94dcd402df269a77f77ae19f00b897027abe6",
+      "raw_report_sha256": "29fc59fe914903a33c488c9b78ca7139885568834000eff325fe33cb9fbe0b30",
+      "worst_setup_path": [
+        "1",
+        "0.025",
+        "core/imu/guard/seen_good_s0/Q",
+        "core/manual_angles/pending_nr_1_s0/CE",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "-0.008",
+        "19.703"
+      ],
+      "full_route": true,
+      "unrouted_reports": [],
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v8",
+      "rtl_revision": "v8"
+    },
+    {
+      "name": "f18_f19",
+      "qualified": false,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": {
+        "setup": -1.729,
+        "hold": 0.124,
+        "recovery": 13.919,
+        "removal": 2.38,
+        "minimum_pulse_width": 7.387
+      },
+      "fmax_mhz": 46.021,
+      "violations": {
+        "setup": 153,
+        "hold": 0
+      },
+      "congestion": {
+        "peak": 0.944,
+        "reported_top_grid_mean": 0.9127000000000001,
+        "rows": [
+          {
+            "grid": "R31C79",
+            "congestion": 0.944
+          },
+          {
+            "grid": "R33C76",
+            "congestion": 0.931
+          },
+          {
+            "grid": "R53C119",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R31C75",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R33C73",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R33C78",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R33C75",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R33C77",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R30C75",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R40C72",
+            "congestion": 0.889
+          }
+        ],
+        "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+      },
+      "routing_time_report": "Total Routing: CPU time = 0h 20m 25s, Elapsed time = 0h 20m 25s",
+      "vendor_exit": 0,
+      "vendor_elapsed_s": 1744.517709599997,
+      "pins": {
+        "water_left_pwm": "F18",
+        "water_right_pwm": "F19"
+      },
+      "io_lines": {
+        "water_left_pwm": "F18/2    | water_left_pwm   | out   | IOT117[A] | -               | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus1",
+        "water_right_pwm": "F19/2    | water_right_pwm  | out   | IOT124[A] | -               | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus1"
+      },
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "bitstream_sha256": "1c1226a6c840db51c2c040083650613c4512fe931d69c74382f089bcc86bb4c7",
+      "raw_report_sha256": "782bbfe06da392b951a3e3fa87a3d1e086eefc73ab56356920db23dce3a2cc20",
+      "worst_setup_path": [
+        "1",
+        "-1.729",
+        "native_navigation/controller_proof/afz_store_0_s0/Q",
+        "native_navigation/controller_proof/ma_store_23_s0/D",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "-0.445",
+        "22.118"
+      ],
+      "full_route": true,
+      "unrouted_reports": [],
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_compare_p3r0_v8",
+      "rtl_revision": "v8"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": false,
+      "physical_options": {
+        "place": 2,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": null,
+      "fmax_mhz": null,
+      "congestion": null,
+      "vendor_exit": 1,
+      "vendor_elapsed_s": 2510.3445969999884,
+      "unrouted_reports": [
+        842
+      ],
+      "failure": "Vendor failed before complete routing/STA; no timing qualification",
+      "aborted": false,
+      "full_route": false,
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "log_sha256": "c62446b0e82d10a58152185b82d045fcde505f71c49d7117bf7e64bf74eb164f",
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p2r0_v8",
+      "rtl_revision": "v8"
+    },
+    {
+      "name": "a13_a14",
+      "qualified": true,
+      "physical_options": {
+        "place": 3,
+        "route": 0,
+        "incremental": false
+      },
+      "slack_ns": {
+        "setup": 0.013,
+        "hold": 0.169,
+        "recovery": 12.66,
+        "removal": 3.03,
+        "minimum_pulse_width": 7.387
+      },
+      "fmax_mhz": 50.032,
+      "violations": {
+        "setup": 0,
+        "hold": 0
+      },
+      "congestion": {
+        "peak": 0.917,
+        "reported_top_grid_mean": 0.889,
+        "rows": [
+          {
+            "grid": "R44C103",
+            "congestion": 0.917
+          },
+          {
+            "grid": "R54C110",
+            "congestion": 0.903
+          },
+          {
+            "grid": "R30C76",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R44C34",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R31C75",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R53C134",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R50C135",
+            "congestion": 0.889
+          },
+          {
+            "grid": "R42C48",
+            "congestion": 0.875
+          },
+          {
+            "grid": "R44C47",
+            "congestion": 0.875
+          },
+          {
+            "grid": "R70C126",
+            "congestion": 0.875
+          }
+        ],
+        "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+      },
+      "routing_time_report": "Total Routing: CPU time = 0h 15m 12s, Elapsed time = 0h 15m 12s",
+      "vendor_exit": 0,
+      "vendor_elapsed_s": 1402.0733986999985,
+      "pins": {
+        "water_left_pwm": "A13",
+        "water_right_pwm": "A14"
+      },
+      "io_lines": {
+        "water_left_pwm": "A13/1    | water_left_pwm   | out   | IOT95[A] | -               | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus2",
+        "water_right_pwm": "A14/1    | water_right_pwm  | out   | IOT95[B] | -               | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus2"
+      },
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "bitstream_sha256": "d1e0e3a46178315d103d8db26a05806add46ded9410e2f2e6b683b84742649f5",
+      "raw_report_sha256": "1746bf5572d20784f8013b229c67eca9971cb048c9b7135f136e0e1f7ee57769",
+      "worst_setup_path": [
+        "1",
+        "0.013",
+        "native_navigation/height_fusion/publication_age_9_s1/Q",
+        "core/gate_last_interruption_attitude_fault_1_s0/CE",
+        "clk50:[R]",
+        "clk50:[R]",
+        "20.000",
+        "0.008",
+        "19.699"
+      ],
+      "full_route": true,
+      "unrouted_reports": [],
+      "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p3r0_v8",
+      "rtl_revision": "v8"
+    }
+  ],
+  "selected": {
+    "name": "a13_a14",
+    "qualified": true,
+    "physical_options": {
+      "place": 3,
+      "route": 0,
+      "incremental": false
+    },
+    "slack_ns": {
+      "setup": 0.013,
+      "hold": 0.169,
+      "recovery": 12.66,
+      "removal": 3.03,
+      "minimum_pulse_width": 7.387
+    },
+    "fmax_mhz": 50.032,
+    "violations": {
+      "setup": 0,
+      "hold": 0
+    },
+    "congestion": {
+      "peak": 0.917,
+      "reported_top_grid_mean": 0.889,
+      "rows": [
+        {
+          "grid": "R44C103",
+          "congestion": 0.917
+        },
+        {
+          "grid": "R54C110",
+          "congestion": 0.903
+        },
+        {
+          "grid": "R30C76",
+          "congestion": 0.889
+        },
+        {
+          "grid": "R44C34",
+          "congestion": 0.889
+        },
+        {
+          "grid": "R31C75",
+          "congestion": 0.889
+        },
+        {
+          "grid": "R53C134",
+          "congestion": 0.889
+        },
+        {
+          "grid": "R50C135",
+          "congestion": 0.889
+        },
+        {
+          "grid": "R42C48",
+          "congestion": 0.875
+        },
+        {
+          "grid": "R44C47",
+          "congestion": 0.875
+        },
+        {
+          "grid": "R70C126",
+          "congestion": 0.875
+        }
+      ],
+      "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+    },
+    "routing_time_report": "Total Routing: CPU time = 0h 15m 12s, Elapsed time = 0h 15m 12s",
+    "vendor_exit": 0,
+    "vendor_elapsed_s": 1402.0733986999985,
+    "pins": {
+      "water_left_pwm": "A13",
+      "water_right_pwm": "A14"
+    },
+    "io_lines": {
+      "water_left_pwm": "A13/1    | water_left_pwm   | out   | IOT95[A] | -               | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus2",
+      "water_right_pwm": "A14/1    | water_right_pwm  | out   | IOT95[B] | -               | LVCMOS33 | 4     | NONE      | OFF       | OFF        | OFF        | SLOW      | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE          | NONE          | bus2"
+    },
+    "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+    "bitstream_sha256": "d1e0e3a46178315d103d8db26a05806add46ded9410e2f2e6b683b84742649f5",
+    "raw_report_sha256": "1746bf5572d20784f8013b229c67eca9971cb048c9b7135f136e0e1f7ee57769",
+    "worst_setup_path": [
+      "1",
+      "0.013",
+      "native_navigation/height_fusion/publication_age_9_s1/Q",
+      "core/gate_last_interruption_attitude_fault_1_s0/CE",
+      "clk50:[R]",
+      "clk50:[R]",
+      "20.000",
+      "0.008",
+      "19.699"
+    ],
+    "full_route": true,
+    "unrouted_reports": [],
+    "run": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\pin_pair_a13a14_p3r0_v8",
+    "rtl_revision": "v8"
+  },
+  "baseline_B0B4_congestion": {
+    "peak": 0.917,
+    "reported_top_grid_mean": 0.9044000000000001,
+    "rows": [
+      {
+        "grid": "R15C123",
+        "congestion": 0.917
+      },
+      {
+        "grid": "R18C115",
+        "congestion": 0.917
+      },
+      {
+        "grid": "R18C117",
+        "congestion": 0.917
+      },
+      {
+        "grid": "R13C129",
+        "congestion": 0.903
+      },
+      {
+        "grid": "R16C118",
+        "congestion": 0.903
+      },
+      {
+        "grid": "R17C114",
+        "congestion": 0.903
+      },
+      {
+        "grid": "R16C133",
+        "congestion": 0.903
+      },
+      {
+        "grid": "R16C138",
+        "congestion": 0.903
+      },
+      {
+        "grid": "R9C137",
+        "congestion": 0.889
+      },
+      {
+        "grid": "R12C131",
+        "congestion": 0.889
+      }
+    ],
+    "scope": "Vendor report_route_congestion -max_grids 10, not a whole-chip mean"
+  },
+  "selection_rule": "Full routing and all 50MHz timing gates first; minimize peak/top-grid mean congestion, then maximize setup slack; metric ties prefer ordinary IO and preserving C18.",
+  "hardware_qualified": false,
+  "global_optimum_claim": false
+}

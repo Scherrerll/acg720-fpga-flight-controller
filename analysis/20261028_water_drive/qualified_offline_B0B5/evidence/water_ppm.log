@@ -1,0 +1,2 @@
+PASS actual PPM decoder + water FSM: atomic frames, malformed interval, missing channels, freshness, fault rearm
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261028_water_drive\tests_v8\tb_water_ppm.v:44: $finish called at 3980220000 (1ps)

@@ -1,0 +1,38 @@
+{
+  "acg720_ano_port.cst": {
+    "packaged_path": "evidence/B0B4_changed_sources/acg720_ano_port.cst",
+    "sha256": "38cabf0ed2edab95e609d23a2b4a5a8a5ff70f3b1e787a2d7b1f759eaaaf69b4"
+  },
+  "acg720_ano_port.gprj": {
+    "packaged_path": "evidence/B0B4_changed_sources/acg720_ano_port.gprj",
+    "sha256": "9725e92ff4a1ef0abfab01f031851b49b0ae5bf4b9e290651f9471618129f0cc"
+  },
+  "acg720_ano_port.v": {
+    "packaged_path": "evidence/B0B4_changed_sources/acg720_ano_port.v",
+    "sha256": "732a8d801434dfae9b50337ff9a18fef6ecdd6192e6803c8c4b8e450dd7338fd"
+  },
+  "build.tcl": {
+    "packaged_path": "evidence/B0B4_changed_sources/build.tcl",
+    "sha256": "ae4e19024a4869bb0665311dd56589014f1ca0aff123c9cc5c02e441200e17a4"
+  },
+  "core/flight_core.v": {
+    "packaged_path": "evidence/B0B4_changed_sources/core/flight_core.v",
+    "sha256": "c78943e763e96b6d647b805c2b8d6aff5f19d3dc1f1aa6ab784c91c1a256eb60"
+  },
+  "mtf_xyz_navigation_control.v": {
+    "packaged_path": "evidence/B0B4_changed_sources/mtf_xyz_navigation_control.v",
+    "sha256": "634f8025367861ec5ec471b70bdbbfa297325527e8cc6fddd7a2ec0f5ed1d4fd"
+  },
+  "position/mtf_shared_height_fusion.v": {
+    "packaged_path": "evidence/B0B4_changed_sources/position/mtf_shared_height_fusion.v",
+    "sha256": "83b8852ae543913a8a55ace6a26516033468252cf89211f2f368bafe3be8f8de"
+  },
+  "sensor/mtf01p_reader.v": {
+    "packaged_path": "evidence/B0B4_changed_sources/sensor/mtf01p_reader.v",
+    "sha256": "7a5ba2ee70237631239fe9f1988e221444a734db5ee8be5acbb81f8330b7ccc2"
+  },
+  "xy_pi_parameters.v": {
+    "packaged_path": "evidence/B0B4_changed_sources/xy_pi_parameters.v",
+    "sha256": "c7333f8d629a8eed60f0d0a1c042536ffb92eab753d23daee03bcfbdef306392"
+  }
+}

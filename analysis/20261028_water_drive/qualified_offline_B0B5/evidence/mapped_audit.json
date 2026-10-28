@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+  "clock_pin_count": 27972,
+  "non_clk50_non_ground": [],
+  "radio_pad_loads": [
+    [
+      "parameter_uart/rx_meta_s0",
+      "D",
+      "DFFCE"
+    ],
+    [
+      "parameter_uart/rx_meta_s1",
+      "D",
+      "DFFSE"
+    ]
+  ],
+  "radio_meta_q_loads": {
+    "parameter_uart/rx_meta_s0": [],
+    "parameter_uart/rx_meta_s1": [
+      [
+        "parameter_uart/rx_sync_s0",
+        "D",
+        "DFFCE"
+      ],
+      [
+        "parameter_uart/rx_sync_s1",
+        "D",
+        "DFFSE"
+      ]
+    ]
+  },
+  "registered_water_output_drivers": {
+    "water_left_pwm": [
+      [
+        "core/water_outputs/left_pwm_s0",
+        "DFFCE"
+      ]
+    ],
+    "water_right_pwm": [
+      [
+        "core/water_outputs/right_pwm_s0",
+        "DFFCE"
+      ]
+    ]
+  },
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc"
+}

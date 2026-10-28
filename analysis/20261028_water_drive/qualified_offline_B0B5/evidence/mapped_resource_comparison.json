@@ -1,0 +1,275 @@
+{
+  "scope": "Mapped primitive counts, not physical utilization or timing qualification. Frozen B0B4 VG used read-only for comparison, never reused by any candidate build.",
+  "baseline_archive_sha256": "63dc505cd2db02343908f1555c153baa1094d71298520c65a7ca91a2645b4ebf",
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "revisions": {
+    "B0B4_read_only": {
+      "netlist_sha256": "e84a81f4a5abb4c15c9e599cc4c2d2e77397a328c9372d0a94c8949fbbf7f4f8",
+      "all": {
+        "FF": 27717,
+        "LUT_primitives": 34546,
+        "ALU": 9552,
+        "other_types": {
+          "INV": 212,
+          "MULTALU27X18": 29,
+          "MULT12X12": 7,
+          "MUX2_LUT6": 167,
+          "MUX2_LUT5": 578,
+          "MULT27X36": 13,
+          "pROM": 2,
+          "GSR": 1
+        }
+      },
+      "water_control": {
+        "FF": 0,
+        "LUT_primitives": 0,
+        "ALU": 0,
+        "other_types": {}
+      },
+      "water_pwm": {
+        "FF": 0,
+        "LUT_primitives": 0,
+        "ALU": 0,
+        "other_types": {}
+      }
+    },
+    "v2": {
+      "netlist_sha256": "af1f8f86c7ea73ff73c95227270afb76cc9e00005bcd5b656a701d44ce2978be",
+      "all": {
+        "FF": 27949,
+        "LUT_primitives": 34985,
+        "ALU": 9603,
+        "other_types": {
+          "INV": 214,
+          "MULTALU27X18": 29,
+          "MULT12X12": 7,
+          "MUX2_LUT6": 167,
+          "MUX2_LUT5": 578,
+          "MULT27X36": 13,
+          "pROM": 2,
+          "GSR": 1
+        }
+      },
+      "water_control": {
+        "FF": 176,
+        "LUT_primitives": 311,
+        "ALU": 46,
+        "other_types": {
+          "INV": 2
+        }
+      },
+      "water_pwm": {
+        "FF": 55,
+        "LUT_primitives": 135,
+        "ALU": 5,
+        "other_types": {
+          "INV": 1
+        }
+      }
+    },
+    "v3": {
+      "netlist_sha256": "97e698d2399c611a8341603d70056b6c37423c4400ad14f27d50526ad35be9bd",
+      "all": {
+        "FF": 27902,
+        "LUT_primitives": 34991,
+        "ALU": 9603,
+        "other_types": {
+          "INV": 214,
+          "MULTALU27X18": 29,
+          "MULT12X12": 7,
+          "MUX2_LUT6": 167,
+          "MUX2_LUT5": 578,
+          "MULT27X36": 13,
+          "pROM": 2,
+          "GSR": 1
+        }
+      },
+      "water_control": {
+        "FF": 128,
+        "LUT_primitives": 260,
+        "ALU": 46,
+        "other_types": {
+          "INV": 2
+        }
+      },
+      "water_pwm": {
+        "FF": 55,
+        "LUT_primitives": 135,
+        "ALU": 5,
+        "other_types": {
+          "INV": 1
+        }
+      }
+    },
+    "v4": {
+      "netlist_sha256": "a4636bfb5689956e31d9aa82cbf1a7c77a5c6c321311d3a17315e4dacfe0d333",
+      "all": {
+        "FF": 27902,
+        "LUT_primitives": 34915,
+        "ALU": 9603,
+        "other_types": {
+          "INV": 213,
+          "MULTALU27X18": 29,
+          "MULT12X12": 7,
+          "MUX2_LUT6": 167,
+          "MUX2_LUT5": 578,
+          "MULT27X36": 13,
+          "pROM": 2,
+          "GSR": 1
+        }
+      },
+      "water_control": {
+        "FF": 128,
+        "LUT_primitives": 262,
+        "ALU": 46,
+        "other_types": {
+          "INV": 2
+        }
+      },
+      "water_pwm": {
+        "FF": 55,
+        "LUT_primitives": 135,
+        "ALU": 5,
+        "other_types": {
+          "INV": 1
+        }
+      }
+    },
+    "v5": {
+      "netlist_sha256": "031733bf6cf61a12ae9d3a0c815dd56b15eb503be0185719f5204735d653251d",
+      "all": {
+        "FF": 27903,
+        "LUT_primitives": 34966,
+        "ALU": 9603,
+        "other_types": {
+          "INV": 215,
+          "MULTALU27X18": 29,
+          "MULT12X12": 7,
+          "MUX2_LUT6": 167,
+          "MUX2_LUT5": 578,
+          "MULT27X36": 13,
+          "pROM": 2,
+          "GSR": 1
+        }
+      },
+      "water_control": {
+        "FF": 128,
+        "LUT_primitives": 262,
+        "ALU": 46,
+        "other_types": {
+          "INV": 2
+        }
+      },
+      "water_pwm": {
+        "FF": 55,
+        "LUT_primitives": 135,
+        "ALU": 5,
+        "other_types": {
+          "INV": 1
+        }
+      }
+    },
+    "v6": {
+      "netlist_sha256": "21f56f9ece6d024450828018c0cd12598395b472a5cd28fe7f8dd60409b8d20e",
+      "all": {
+        "FF": 27903,
+        "LUT_primitives": 34936,
+        "ALU": 9603,
+        "other_types": {
+          "INV": 215,
+          "MULTALU27X18": 29,
+          "MULT12X12": 7,
+          "MUX2_LUT6": 167,
+          "MUX2_LUT5": 578,
+          "MULT27X36": 13,
+          "pROM": 2,
+          "GSR": 1
+        }
+      },
+      "water_control": {
+        "FF": 128,
+        "LUT_primitives": 260,
+        "ALU": 46,
+        "other_types": {
+          "INV": 2
+        }
+      },
+      "water_pwm": {
+        "FF": 55,
+        "LUT_primitives": 135,
+        "ALU": 5,
+        "other_types": {
+          "INV": 1
+        }
+      }
+    },
+    "v7": {
+      "netlist_sha256": "c3821c7c173bb32b10486909959e3232dfcab20335fc1d76e3e684605d7655bb",
+      "all": {
+        "FF": 27872,
+        "LUT_primitives": 34907,
+        "ALU": 9598,
+        "other_types": {
+          "INV": 217,
+          "MULTALU27X18": 29,
+          "MULT12X12": 7,
+          "MUX2_LUT6": 167,
+          "MUX2_LUT5": 578,
+          "MULT27X36": 13,
+          "pROM": 2,
+          "GSR": 1
+        }
+      },
+      "water_control": {
+        "FF": 96,
+        "LUT_primitives": 211,
+        "ALU": 41,
+        "other_types": {
+          "INV": 2
+        }
+      },
+      "water_pwm": {
+        "FF": 55,
+        "LUT_primitives": 135,
+        "ALU": 5,
+        "other_types": {
+          "INV": 1
+        }
+      }
+    },
+    "v8": {
+      "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+      "all": {
+        "FF": 27872,
+        "LUT_primitives": 34900,
+        "ALU": 9598,
+        "other_types": {
+          "INV": 217,
+          "MULTALU27X18": 29,
+          "MULT12X12": 7,
+          "MUX2_LUT6": 167,
+          "MUX2_LUT5": 578,
+          "MULT27X36": 13,
+          "pROM": 2,
+          "GSR": 1
+        }
+      },
+      "water_control": {
+        "FF": 96,
+        "LUT_primitives": 204,
+        "ALU": 41,
+        "other_types": {
+          "INV": 2
+        }
+      },
+      "water_pwm": {
+        "FF": 55,
+        "LUT_primitives": 135,
+        "ALU": 5,
+        "other_types": {
+          "INV": 1
+        }
+      }
+    }
+  }
+}

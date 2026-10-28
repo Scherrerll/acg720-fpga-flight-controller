@@ -1,0 +1,2 @@
+PASS frozen B0B4 flight adapter equivalence: 375426 clock comparisons, real 400Hz PWM, arming/preparation/health/RC recovery; actual core water exclusion
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261028_water_drive\tests_v8\tb_flight_equivalence.v:91: $finish called at 12516100000 (1ps)

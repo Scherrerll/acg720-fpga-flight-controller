@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\bin\\gw_sh.exe",
+    "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\water_synthesis_v8\\synthesis\\synthesis.tcl"
+  ],
+  "cwd": "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\water_synthesis_v8\\synthesis\\source",
+  "started_utc": "2026-10-28T18:26:10.954020+00:00",
+  "stdin": "DEVNULL",
+  "create_no_window": true,
+  "pid": 38976,
+  "actual_p_wait": 0,
+  "normal_wait_return": true,
+  "ended_utc": "2026-10-28T18:30:17.404199+00:00",
+  "elapsed_s": 246.45018600000185,
+  "log_sha256": "943e238f6b6162b257f3705d521841019f09cf554f2980bec5f4ecbba8246962"
+}

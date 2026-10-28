@@ -1,0 +1,347 @@
+{
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\water_drive_control.v": {
+    "sha256": "04d2227b54b5e607fec8ae3fc491d6c9e8154e2d6c224c3a711431e46ec0dd71",
+    "packaged_path": "source/water_drive_control.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_water_control.v": {
+    "sha256": "20361f1ae428cb9c8a3044ba4224960cfc7c92a73cbe413694bfd75d17ccd613",
+    "packaged_path": "tests/tb_water_control.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\control_gate.v": {
+    "sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+    "packaged_path": "source/core/control_gate.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_mode_gate_invariant.v": {
+    "sha256": "8d77ce97c0e5a4b38befb20f6800e85a915ff6c37361122da64b846115997ee2",
+    "packaged_path": "tests/tb_mode_gate_invariant.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\rc_ppm.v": {
+    "sha256": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+    "packaged_path": "source/core/rc_ppm.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\motor_pwm.v": {
+    "sha256": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+    "packaged_path": "source/core/motor_pwm.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\water_pwm_pair.v": {
+    "sha256": "1a2b31d83dcfb945f1c50b005a0eb48104188e95fd1156a57d84493c2fc10137",
+    "packaged_path": "source/water_pwm_pair.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_water_end_to_end.v": {
+    "sha256": "daa996f5018e61f80804f7fe801a976953c94283c4c4598f1a5573ce721769b0",
+    "packaged_path": "tests/tb_water_end_to_end.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_water_timer_limits.v": {
+    "sha256": "d0033d6ade42e5d4868e329c914223ea0d08c36b7986769cbc797594f4d4cf56",
+    "packaged_path": "tests/tb_water_timer_limits.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_water_quantized_timers.v": {
+    "sha256": "2f744221fde6d93ee119497f76527f963ffc51eb1b25f39db31ca00f63f75375",
+    "packaged_path": "tests/tb_water_quantized_timers.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_water_ppm.v": {
+    "sha256": "b2ae80f7a7fff9bbf8deee119805f9a409e5dadfbf44686081cc5aadbb899d63",
+    "packaged_path": "tests/tb_water_ppm.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\xy_pi_parameters.v": {
+    "sha256": "bf2c0eea5c3dea97bae69b9176697cad616ddd5ff6de25268c8268f5c17a66e9",
+    "packaged_path": "source/xy_pi_parameters.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_parameter_identity.v": {
+    "sha256": "df3c65a6be024af7d4db4772a48659ce21be490f11258049cc842128009be960",
+    "packaged_path": "tests/tb_parameter_identity.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\sensor\\mtf01p_reader.v": {
+    "sha256": "8d2a04c912457d2d10a72058edfa0921d76fa218cf7aba9c8378984ce19b9962",
+    "packaged_path": "source/sensor/mtf01p_reader.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\sim_20261028T183320565265Z\\mtf_reference.v": {
+    "sha256": "25a51ff0f1f73fd33304780db374ada9cb8b542669b4b5a874463904f40da337",
+    "packaged_path": "tests/reference/mtf_reference.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_mtf_equivalence.v": {
+    "sha256": "54be21b92e03f6bc331fa2a3467bbcbf265b767af30f06bf05e48e0911616988",
+    "packaged_path": "tests/tb_mtf_equivalence.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\acg720_ano_port.v": {
+    "sha256": "ecaf0d3aa5283f74a8e87085985082f9f621760ee645eabad85434423e57cf30",
+    "packaged_path": "source/acg720_ano_port.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\telemetry_tx.v": {
+    "sha256": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+    "packaged_path": "source/telemetry_tx.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\cordic_atan2.v": {
+    "sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+    "packaged_path": "source/core/cordic_atan2.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\ano_flight_state.v": {
+    "sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+    "packaged_path": "source/core/ano_flight_state.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\ano_xy_stick.v": {
+    "sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+    "packaged_path": "source/position/ano_xy_stick.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\ano_xy_divide36.v": {
+    "sha256": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+    "packaged_path": "source/position/ano_xy_divide36.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\height_loss_fallback.v": {
+    "sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+    "packaged_path": "source/core/height_loss_fallback.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\flight_core.v": {
+    "sha256": "fc4cc6a0f13354f5ce3226ec14d88ed59804a583c31dc7e7b68f6139535feaeb",
+    "packaged_path": "source/core/flight_core.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\bmi088_reader.v": {
+    "sha256": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+    "packaged_path": "source/core/bmi088_reader.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\imu_checked_guard_pipelined.v": {
+    "sha256": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+    "packaged_path": "source/core/imu_checked_guard_pipelined.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\imu_pipeline_pipelined.v": {
+    "sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+    "packaged_path": "source/core/imu_pipeline_pipelined.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\imu_temporal_check_pipelined.v": {
+    "sha256": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+    "packaged_path": "source/core/imu_temporal_check_pipelined.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\spi_uart_modules.v": {
+    "sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+    "packaged_path": "source/core/spi_uart_modules.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\rtl\\pid_divide_signed64.v": {
+    "sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+    "packaged_path": "source/core/rtl/pid_divide_signed64.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\rtl\\quad_mixer_feedback.v": {
+    "sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+    "packaged_path": "source/core/rtl/quad_mixer_feedback.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\position_math.v": {
+    "sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+    "packaged_path": "source/position/position_math.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\relative_position.v": {
+    "sha256": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+    "packaged_path": "source/position/relative_position.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\sensor\\flow_reader.v": {
+    "sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+    "packaged_path": "source/sensor/flow_reader.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\sensor\\range_reader.v": {
+    "sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+    "packaged_path": "source/sensor/range_reader.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\calibration.vh": {
+    "sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+    "packaged_path": "source/calibration.vh",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\ano_attitude_estimator.v": {
+    "sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+    "packaged_path": "source/core/ano_attitude_estimator.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\rtl\\ano_rate_control.v": {
+    "sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+    "packaged_path": "source/core/rtl/ano_rate_control.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\ano_flow_fusion.v": {
+    "sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+    "packaged_path": "source/position/ano_flow_fusion.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\ano_hold_control.v": {
+    "sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+    "packaged_path": "source/position/ano_hold_control.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\ano_z_stick.v": {
+    "sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+    "packaged_path": "source/position/ano_z_stick.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\rtl\\ano_yaw_control.v": {
+    "sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+    "packaged_path": "source/core/rtl/ano_yaw_control.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\ano_height_fusion.v": {
+    "sha256": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+    "packaged_path": "source/position/ano_height_fusion.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\sensor\\range_height_estimate.v": {
+    "sha256": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+    "packaged_path": "source/sensor/range_height_estimate.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\pose_time_adapter.v": {
+    "sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+    "packaged_path": "source/position/pose_time_adapter.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\rtl\\ano_rc_angle_targets.v": {
+    "sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+    "packaged_path": "source/core/rtl/ano_rc_angle_targets.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\rtl\\ano_manual_angles.v": {
+    "sha256": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+    "packaged_path": "source/core/rtl/ano_manual_angles.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\level_calibration.vh": {
+    "sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+    "packaged_path": "source/level_calibration.vh",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\sensor\\mtf_native_geometry.v": {
+    "sha256": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+    "packaged_path": "source/sensor/mtf_native_geometry.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\mtf_position_integrator.v": {
+    "sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+    "packaged_path": "source/position/mtf_position_integrator.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\mtf_navigation_shadow.v": {
+    "sha256": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+    "packaged_path": "source/mtf_navigation_shadow.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\nav_math_service.v": {
+    "sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+    "packaged_path": "source/nav_math_service.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\sensor\\mtf_shared_geometry.v": {
+    "sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+    "packaged_path": "source/sensor/mtf_shared_geometry.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\mtf_shared_flow_fusion.v": {
+    "sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+    "packaged_path": "source/position/mtf_shared_flow_fusion.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\mtf_shared_height_fusion.v": {
+    "sha256": "c01dab6b2940e4a8d82aae803a9de29523706ff2b2b0ede97070fb7e763108fd",
+    "packaged_path": "source/position/mtf_shared_height_fusion.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\mtf_shared_hold_control.v": {
+    "sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+    "packaged_path": "source/position/mtf_shared_hold_control.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\mtf_xyz_navigation_control.v": {
+    "sha256": "cbe7e1abeed83dc49d08f28b572838ed017f4b85d1a29266871befa3d40b685a",
+    "packaged_path": "source/mtf_xyz_navigation_control.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\position\\mtf_xyz_hold_control.v": {
+    "sha256": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976",
+    "packaged_path": "source/position/mtf_xyz_hold_control.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\core\\imu_diagnostic_tap.v": {
+    "sha256": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+    "packaged_path": "source/core/imu_diagnostic_tap.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\sik_imu_diagnostic.v": {
+    "sha256": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+    "packaged_path": "source/sik_imu_diagnostic.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\candidate_v8\\source\\gw5_snapshot_bram.v": {
+    "sha256": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+    "packaged_path": "source/gw5_snapshot_bram.v",
+    "external_dependency": false
+  },
+  "C:\\Gowin\\Gowin_V1.9.12.04_x64\\IDE\\simlib\\gw5a\\prim_sim.v": {
+    "sha256": "7109c2568188627465d218bc099cf72f12e90807c21d4d862d2335b499043544",
+    "packaged_path": null,
+    "external_dependency": true
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\sim_20261028T183320565265Z\\navigation_reference.v": {
+    "sha256": "843218fd914d2d4a929f6eb84f9e04d0cc335b2f581898eb77087d3f942e1ca5",
+    "packaged_path": "tests/reference/navigation_reference.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\sim_20261028T183320565265Z\\height_fusion_reference.v": {
+    "sha256": "e3c4c5a0eb25360b4828f7961e15fab9d0d075d4d9f3eacee8680bc3e9a39b72",
+    "packaged_path": "tests/reference/height_fusion_reference.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_navigation_equivalence.v": {
+    "sha256": "fab069ddfe9d4e77a56ca9cd615bea8a25928d8202b9f4137dacabf1a06c9864",
+    "packaged_path": "tests/tb_navigation_equivalence.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_water_pwm_candidate.v": {
+    "sha256": "f389bb05d81304f14630362b87bac9eab52467643ae070eda69ea24c8bbcc3f5",
+    "packaged_path": "tests/tb_water_pwm_candidate.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_candidate_real50.v": {
+    "sha256": "f6817610c7a757f2d13d3227a495f760dca4ba5d17c238c64bf4f8d855a167ae",
+    "packaged_path": "tests/tb_candidate_real50.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\out\\water_drive_20261028\\sim_20261028T183320565265Z\\flight_core_reference.v": {
+    "sha256": "be6ad7a0d431085155a93a719118c57e8ff9b9378cfdebb5cd5379a96c70e9dc",
+    "packaged_path": "tests/reference/flight_core_reference.v",
+    "external_dependency": false
+  },
+  "C:\\Users\\ScherrerL\\Desktop\\apple\\github_publish\\acg720-fpga-flight-controller\\analysis\\20261028_water_drive\\tests_v8\\tb_flight_equivalence.v": {
+    "sha256": "72fbe8cd39ffcfa1afbb1cd1cf181e20c5d9692014657e7515fb28c956d232b5",
+    "packaged_path": "tests/tb_flight_equivalence.v",
+    "external_dependency": false
+  }
+}

@@ -1,0 +1,2 @@
+PASS end-to-end actual PPM/FSM/PWM: 1800/1600 differential, 1200/1200 reverse after neutral dwell, loss=>1500, high recovery blocked, water neutral before flight1300
+C:\Users\ScherrerL\Desktop\apple\github_publish\acg720-fpga-flight-controller\analysis\20261028_water_drive\tests_v8\tb_water_end_to_end.v:66: $finish called at 103300091000 (1ps)

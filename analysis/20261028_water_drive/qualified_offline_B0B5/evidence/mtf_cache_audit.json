@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "netlist_sha256": "a0153da0f33757efa89d717fc7b6c14afaf139b75485c686db4d26a4b83649a3",
+  "graph_reader_sha256": "a7d8faf9b8bd5c51b7bacf1ce54906c102df745b0d1c9913c2431ced9f5d09cc",
+  "register": "mtf/parser/payload_range_ok_q_s0",
+  "cell": {
+    "type": "DFFRE",
+    "pins": {
+      "Q": [
+        "mtf/parser/payload_range_ok"
+      ],
+      "D": [
+        "mtf/parser/next_payload_range_ok"
+      ],
+      "CLK": [
+        "mtf/parser/clk50_d"
+      ],
+      "RESET": [
+        "mtf/parser/n322_5"
+      ],
+      "CE": [
+        "mtf/parser/samples_31_8"
+      ]
+    }
+  },
+  "frame_register": "mtf/parser/raw_frame_118_s0",
+  "clock_reset_enable_identical": true,
+  "cache_to_manual_angles_ce": {
+    "depth": 12,
+    "cells": [
+      "native_range_fresh_s2",
+      "core_vertical_available_s3",
+      "core/fallback_control/active_fanout_limited_s2",
+      "core/fallback_control/active_fanout_limited_s3",
+      "core/selected_norm_dt_1_s2",
+      "core/manual_angles/pending_nr_17_s24",
+      "core/manual_angles/pending_nr_17_s38",
+      "core/manual_angles/pending_nr_17_s10",
+      "core/manual_angles/pending_nr_17_s35",
+      "core/manual_angles/pending_nr_17_s5",
+      "core/manual_angles/pending_nr_17_s31",
+      "core/manual_angles/pending_nr_17_s2"
+    ]
+  },
+  "flow_cache": {
+    "register": "mtf/parser/payload_flow_ok_q_s0",
+    "cell": {
+      "type": "DFFRE",
+      "pins": {
+        "Q": [
+          "mtf/parser/payload_flow_ok"
+        ],
+        "D": [
+          "mtf/parser/next_payload_flow_ok"
+        ],
+        "CLK": [
+          "mtf/parser/clk50_d"
+        ],
+        "RESET": [
+          "mtf/parser/n322_5"
+        ],
+        "CE": [
+          "mtf/parser/samples_31_8"
+        ]
+      }
+    },
+    "clock_reset_enable_identical": true,
+    "cache_to_flow_output": {
+      "depth": 1,
+      "cells": [
+        "mtf/metric/flow_ok_s"
+      ]
+    },
+    "cache_to_manual_angles_ce": null
+  },
+  "remaining_raw_distance_to_ce": {
+    "depth": 15,
+    "cells": [
+      "native_navigation/geometry/height_ready_state_numeric_tail_without_live_flags_kept_s4",
+      "native_navigation/geometry/height_ready_state_numeric_tail_without_live_flags_kept_s2",
+      "native_navigation/geometry/height_ready_state_numeric_tail_without_live_flags_kept_s1",
+      "native_navigation/core_height_state_tail_kept_s1",
+      "core_vertical_available_s3",
+      "core/fallback_control/active_fanout_limited_s2",
+      "core/fallback_control/active_fanout_limited_s3",
+      "core/selected_norm_dt_1_s2",
+      "core/manual_angles/pending_nr_17_s24",
+      "core/manual_angles/pending_nr_17_s38",
+      "core/manual_angles/pending_nr_17_s10",
+      "core/manual_angles/pending_nr_17_s35",
+      "core/manual_angles/pending_nr_17_s5",
+      "core/manual_angles/pending_nr_17_s31",
+      "core/manual_angles/pending_nr_17_s2"
+    ]
+  },
+  "scope": "Mapped topology only. Raw distance still feeds other geometry predicates; this is not a claim that every critical path was shortened or timing passed."
+}
