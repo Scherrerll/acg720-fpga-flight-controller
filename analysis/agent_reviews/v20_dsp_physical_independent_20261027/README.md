@@ -1,7 +1,7 @@
-Revision02 独立准备审阅通过，无剩余 actionable finding。
+Revision02 的独立准备审阅已通过，没有需要继续处理的问题。
 
-独立核对 actual VG 宏名/类型的官方52→41筛选（39DSP+2BSRAM、11排除）、55源码和原1891B CST前缀、5589B combined及其project选择、唯一新增cst_warn_to_error1、原helper调用与23项独立raw checks。standard v20 当时仍运行；thin runtime不存在且receipt目录为空。
+独立审阅核对了实际 VG 宏名和类型的官方 52→41 筛选（39 DSP、2 BSRAM，排除 11 项）、55 份源码、原 1891 B CST 前缀、5589 B combined 及其 project 选择、唯一新增的 cst_warn_to_error1、原 helper 调用，以及 23 项独立原始检查。当时 standard v20 仍在运行，thin runtime 尚不存在，receipt 目录为空。
 
-初审发现的seal/snapshot状态标记缺口已在revision02修正。独立从实际脚本抽取纯函数/调用表达式验证1183组真值、2366次表达式，全部通过，实际检查进程退出0。旧revision20文件与新revision34文件均复核，当前737个bound inputs重哈希；原准备与首轮测试夹具失败均保留。
+初审发现的 seal/snapshot 状态标记缺口已在 revision02 修正。审阅时从实际脚本独立抽取纯函数和调用表达式，验证了 1183 组真值、2366 次表达式，全部通过，实际检查进程退出码为 0。旧 revision20 和新 revision34 文件均已复核，当前 737 个绑定输入已重新计算哈希；原准备记录和首轮测试夹具失败记录均保留。
 
-`REVIEW.json` 仅批准此prepared recipe，后续launch由主依据standard结果安排。没有执行bound脚本顶层、创建runtime、启动vendor或访问硬件；没有物理资格结论。
+`REVIEW.json` 只批准本次准备的 recipe，后续是否启动由主执行方根据 standard 结果安排。此次没有执行绑定脚本的顶层代码、创建 runtime、启动 vendor 或访问硬件，也没有给出物理资格结论。
