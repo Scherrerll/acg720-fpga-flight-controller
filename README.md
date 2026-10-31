@@ -38,7 +38,7 @@
 ## 仓库目录
 
 - [history](history/README.md)：选型、初始接线及 01–13 阶段的源码和验证摘要，时间顺序见[时间线](docs/TIMELINE.md)。
-- [mechanical](mechanical/README.md)：SolidWorks 总装和零件、STEP、打印件及加工件，保留原相对目录。
+- [机械最终版总装](mechanical/final-assembly-20261031/README.md)：2026-10-31 用户确认的「飞船五颜六色版」，含原始 ZIP、1 个总装和 28 个零件；[机械历史资料](mechanical/README.md)保留早期 CAD、STEP、打印件及加工件。
 - [hardware](hardware/README.md)：材料购买文档原件《材料汇总.docx》。
 - [firmware/B0B5](firmware/B0B5/README.md)：水面双推进的源码、位流入口和测试反馈；[B0B4](firmware/B0B4/README.md)及更早版本也在 firmware 中。
 - [ground](ground/README.md)、`support/`：Python 接收网页和所需解码器；B0B4 地面站支持在明确启用后进行受控的 P/I 查询和设置。
