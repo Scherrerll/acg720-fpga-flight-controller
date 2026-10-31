@@ -1,0 +1,30 @@
+{
+  "mode": "native_full_offline_regression",
+  "passed": true,
+  "tests": 80,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "modules": {
+    "test_ano_control": 6,
+    "test_height_loss": 4,
+    "test_mtf": 3,
+    "test_review_fixes": 5,
+    "test_system": 6,
+    "test_ui_assets": 3,
+    "test_xy_pi_control": 22,
+    "test_xy_pi_http": 22,
+    "test_xy_pi_transport": 9
+  },
+  "elapsed_s": 6.446,
+  "fixture_adaptation": false,
+  "no_real_serial": true,
+  "no_real_device_enumeration": true,
+  "redirected_test_output_modules": [
+    "test_system",
+    "test_mtf"
+  ],
+  "test_data_directory": "C:\\Users\\SCHERR~1\\AppData\\Local\\Temp\\gmfly-ui-regression-work-bvn5b6dt",
+  "test_data_cleaned": true,
+  "output": "................................................................................\n----------------------------------------------------------------------\nRan 80 tests in 6.407s\n\nOK\n"
+}

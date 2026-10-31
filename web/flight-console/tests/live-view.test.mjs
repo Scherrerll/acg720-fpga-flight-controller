@@ -4,8 +4,10 @@ import assert from 'node:assert/strict';
 test('latest live values and history update immediately, drawing eases briefly, and raw states and source gaps stay intact',async()=>{
  const nodes=new Map(),listeners=new Map(),frames=new Map(),timers=new Map();let stamp=0,serial=0;
  class CanvasContext{
-  constructor(){this.strokes=[];this.texts=[];this.path=[];}
+  constructor(){this.strokes=[];this.texts=[];this.path=[];this.clears=0;this.transforms=[];}
   scale(){this.strokes=[];this.texts=[];}
+  setTransform(...values){this.transforms.push(values);}
+  clearRect(){this.strokes=[];this.texts=[];this.path=[];this.clears++;}
   beginPath(){this.path=[];}moveTo(x,y){this.path.push({op:'move',x,y});}lineTo(x,y){this.path.push({op:'line',x,y});}
   stroke(){this.strokes.push({color:this.strokeStyle,path:[...this.path]});}
   fillText(value){this.texts.push(value);}save(){}restore(){}rect(){}clip(){}setLineDash(){}
@@ -16,7 +18,9 @@ test('latest live values and history update immediately, drawing eases briefly, 
   setAttribute(k,v){this.attrs[k]=String(v);}getAttribute(k){return this.attrs[k];}removeAttribute(k){delete this.attrs[k];}
   append(...items){this.children.push(...items);}appendChild(item){this.append(item);}replaceChildren(...items){this.children=[];this.append(...items);}addEventListener(k,fn){this.events[k]=fn;}
   querySelectorAll(tag){return this.children.flatMap(child=>[...(child.tagName===tag?[child]:[]),...child.querySelectorAll(tag)]);}querySelector(tag){return this.querySelectorAll(tag)[0];}
-  getBoundingClientRect(){return {width:this.id?.endsWith('-chart')?800:0,height:143,left:0,top:0};}
+  set width(v){this._width=v;this.widthWrites=(this.widthWrites||0)+1;}get width(){return this._width??300;}
+  set height(v){this._height=v;this.heightWrites=(this.heightWrites||0)+1;}get height(){return this._height??150;}
+  getBoundingClientRect(){return {width:this.id?.endsWith('-chart')?(this.cssWidth??800):0,height:143,left:0,top:0};}
   getContext(){return this.context??=new CanvasContext();}
  }
  const element=id=>{if(!nodes.has(id)){const e=new Element();e.id=id;}return nodes.get(id);};
@@ -38,6 +42,12 @@ test('latest live values and history update immediately, drawing eases briefly, 
   for(const [k,v] of Object.entries(overrides))Object.defineProperty(globalThis,k,{configurable:true,writable:true,value:v});
   await import('../frontend/app.js?live-view-test');await new Promise(resolve=>setImmediate(resolve));
   flushFrames(100);
+  const trend=element('live-orientation-chart');
+  const backingWrites=[trend.widthWrites,trend.heightWrites];
+  const clears=trend.context.clears;
+  flushFrames(140);
+  assert.deepEqual([trend.widthWrites,trend.heightWrites],backingWrites,'unchanged charts must retain their backing buffer between animation frames');
+  assert.ok(trend.context.clears>clears,'each retained buffer is still cleared before drawing, without leaving old traces');
   assert.equal(element('horizon-roll').textContent,'10.0°','default attitude follows the latest real value, not the chart buffer');
   assert.match(element('pose-status').textContent,/最新接收值/);
   assert.equal(element('height-value').textContent,'10.00');
@@ -114,10 +124,19 @@ test('latest live values and history update immediately, drawing eases briefly, 
   assert.equal(element('horizon-roll').textContent,'22.0°');
   assert.equal(element('attitude-rotation').getAttribute('transform'),beforeSlow,'2.6-second response spacing must not disable transitions');
   flushFrames(3700);const late=drawnRoll();flushFrames(4100);assert.ok(drawnRoll()>late&&drawnRoll()<22,'graphical attitude still moves between slow packets');
+  const beforeDpr=[trend.widthWrites,trend.heightWrites];
+  overrides.window.devicePixelRatio=2;flushFrames(4140);
+  assert.equal(trend.width,1600);assert.equal(trend.height,286);
+  assert.deepEqual([trend.widthWrites,trend.heightWrites],beforeDpr.map(v=>v+1),'a DPR change resizes each backing dimension once');
+  flushFrames(4180);
+  assert.deepEqual([trend.widthWrites,trend.heightWrites],beforeDpr.map(v=>v+1));
+  assert.deepEqual(trend.context.transforms.at(-1),[2,0,0,2,0,0],'DPR scaling is replaced per frame, never accumulated');
+  trend.cssWidth=810;flushFrames(4220);
+  assert.equal(trend.width,1620);assert.equal(trend.widthWrites,beforeDpr[0]+2);assert.equal(trend.heightWrites,beforeDpr[1]+1,'CSS width changes leave the unchanged height allocation alone');
   assert.equal(element('horizon-roll').textContent,'22.0°');
   assert.match(element('playback-status').textContent,/连续跟随/);
   overrides.location.hash='#logs';listeners.get('window:hashchange')();await new Promise(resolve=>setImmediate(resolve));
-  await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(4200);
+  await element('log-list').children.find(child=>child.tagName==='button').events.click();flushFrames(4300);
   assert.equal(element('tracking-axis').value,'roll');
   const checked=()=>element('field-selector').querySelectorAll('input').filter(input=>input.checked).map(input=>input.value).sort();
   assert.deepEqual(checked(),['roll_deg','roll_sp_deg']);

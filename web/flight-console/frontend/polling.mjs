@@ -15,7 +15,7 @@ export function createLivePoller({poll, visible, connected, intervalMs=()=>1000,
         failures=online?0:Math.min(failures+1,5);
         // Keep a one-second start cadence. Slow requests must not add another
         // idle second; brief outages retry before entering the ten-second cap.
-        const period=Math.max(200,Math.min(10000,Number(intervalMs())||1000));
+        const period=Math.max(100,Math.min(10000,Number(intervalMs())||1000));
         const delay=immediate?0:online?Math.max(0,period-Math.max(0,clock()-started)):Math.min(10000,1000*2**(failures-1));
         immediate=false;timer=setTimer(run,delay);
       }

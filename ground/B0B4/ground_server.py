@@ -43,16 +43,20 @@ def bind_config(config):
 
 
 class Host:
-    def __init__(self,root,config,no_serial=False,enable_xy_pi=False):
+    def __init__(self,root,config,no_serial=False,enable_xy_pi=False,xy_pi_build='B0B4'):
         self.root=Path(root).resolve();self.root.mkdir(parents=True,exist_ok=True)
         self.dashboard=Dashboard(config['port']);self.config=dict(config)if no_serial else bind_config(config)
         self.lock=threading.RLock();self.no_serial=no_serial;self.stop=threading.Event()
         self.transport_lock=threading.RLock();self.transport_epoch=0;self.transport_connected=False
         self.primary_epoch=None;self.info_epoch=None;self.last_uptime=None
-        self.pi=XYPIController(enabled=enable_xy_pi);self.pi_token=secrets.token_urlsafe(32)
+        self.pi=(XYPIController(enabled=enable_xy_pi) if xy_pi_build=='B0B4' else
+                 XYPIController(enabled=enable_xy_pi,build=xy_pi_build));self.pi_token=secrets.token_urlsafe(32)
         self.pi.connection(0,False,self.config['source'],self.config['baud'])
         self.recorder=Recorder(self.root,self.config,self.dashboard,row_handler=self._receive_row,
                                serial_writes_enabled=bool(enable_xy_pi and not no_serial and self.config['source']=='SiK'and self.config['baud']==115200))
+        # Select only this Host's A591 decoder before its serial owner starts.
+        # The default/global recorder codec remains B0B4 and rejects B0B5.
+        self.recorder.receiver.protocols[b'\xa5\x91']=(24,self.pi.decode_parameter_response)
         self.worker=threading.Thread(target=self.receive,name='single-serial-owner',daemon=True)
         if not no_serial:self.worker.start()
 
@@ -142,6 +146,7 @@ class Host:
             self.dashboard.clear_source(config['port']);self.stop=threading.Event()
             self.recorder=Recorder(self.root,config,self.dashboard,row_handler=self._receive_row,
                                    serial_writes_enabled=bool(self.pi.snapshot()['enabled']and config['source']=='SiK'and config['baud']==115200))
+            self.recorder.receiver.protocols[b'\xa5\x91']=(24,self.pi.decode_parameter_response)
             self.worker=threading.Thread(target=self.receive,daemon=True)
             if not self.no_serial:self.worker.start()
 
@@ -207,9 +212,12 @@ def make_server(host,port):
                 assets['/mtf-ui.js']=('mtf-ui.js','text/javascript; charset=utf-8')
                 assets['/dashboard.js']=('dashboard.js','text/javascript; charset=utf-8')
                 assets['/ui.css']=('ui.css','text/css; charset=utf-8')
+                assets['/gm-fly-mark.svg']=('gm-fly-mark.svg','image/svg+xml')
+                assets['/gm-fly-wordmark.svg']=('gm-fly-wordmark.svg','image/svg+xml')
                 assets['/xy-pi-ui.js']=('xy-pi-ui.js','text/javascript; charset=utf-8')
                 assets['/xy-pi-ui.css']=('xy-pi-ui.css','text/css; charset=utf-8')
                 assets['/pi-help']=('pi-help.html','text/html; charset=utf-8')
+                assets['/parameters']=('parameters.html','text/html; charset=utf-8')
                 if route in assets:
                     name,mime=assets[route];self.send_bytes((HERE/name).read_bytes(),mime);return
                 if route=='/api/state':
@@ -308,16 +316,17 @@ def main():
     parser.add_argument('--source',choices=('SiK','USB'),default='SiK');parser.add_argument('--http-port',type=int,default=8765)
     parser.add_argument('--logs',type=Path,default=ROOT/'ground/runtime/B0B4');parser.add_argument('--no-serial',action='store_true')
     parser.add_argument('--enable-xy-pi',action='store_true',help='允许显式查询及停机 P/I 设置；仅 SiK 115200，单一串口所有者')
+    parser.add_argument('--xy-pi-build',choices=('B0B4','B0B5'),default='B0B4',help='明确选择参数响应版本；默认 B0B4，B0B5 需显式选择')
     args=parser.parse_args()
     if not 0<=args.http_port<=65535:parser.error('Invalid HTTP port')
     if not args.no_serial and not args.port:parser.error('--port is required unless --no-serial')
     if args.no_serial:args.port='offline'
     if not args.no_serial and args.port in {p['port'] for p in ports() if not p['selectable']}:parser.error('Cannot open the programmer as a telemetry port')
-    host=Host(args.logs,dict(port=args.port,baud=args.baud,source=args.source),args.no_serial,args.enable_xy_pi)
+    host=Host(args.logs,dict(port=args.port,baud=args.baud,source=args.source),args.no_serial,args.enable_xy_pi,args.xy_pi_build)
     try:server=make_server(host,args.http_port)
     except Exception:host.close();raise
     enabled=bool(args.enable_xy_pi and not args.no_serial and args.source=='SiK'and args.baud==115200)
-    print(json.dumps(dict(url=f'http://127.0.0.1:{server.server_port}',source=host.config,session=host.recorder.id,serial_writes_enabled=enabled,serial_write_scope='xy_pi_only'if enabled else'none',preview_only=args.no_serial)),flush=True)
+    print(json.dumps(dict(url=f'http://127.0.0.1:{server.server_port}',source=host.config,session=host.recorder.id,serial_writes_enabled=enabled,serial_write_scope='xy_pi_only'if enabled else'none',preview_only=args.no_serial,xy_pi_build=args.xy_pi_build)),flush=True)
     try:server.serve_forever(poll_interval=.2)
     except KeyboardInterrupt:pass
     finally:host.close();server.server_close()

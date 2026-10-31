@@ -3,6 +3,7 @@ from pathlib import Path
 import binascii
 import struct
 import sys
+import threading
 import time
 from mtf_protocol import decode_mtf,display_values
 from rotation_protocol import decode_rotation
@@ -187,6 +188,10 @@ LegacyDashboard=Dashboard
 class Dashboard(LegacyDashboard):
     def __init__(self,port):
         super().__init__(port)
+        # Construction starts no workers and retains no lock aliases. Replace
+        # the legacy Lock before publishing this instance so parent snapshots
+        # can re-enter the same lock during one complete atomic snapshot.
+        self.lock=threading.RLock()
         self.imu_diagnostic=None;self.imu_diagnostic_time=None
 
     def ingest(self,row):
@@ -210,13 +215,13 @@ class Dashboard(LegacyDashboard):
         with self.lock:self.imu_diagnostic=None;self.imu_diagnostic_time=None
 
     def snapshot(self):
-        result=super().snapshot()
-        info=result.get('flight_info')
         with self.lock:
+            result=super().snapshot()
+            info=result.get('flight_info')
             row=dict(self.imu_diagnostic) if self.imu_diagnostic else None
             fresh=bool(row and self.connected and self.imu_diagnostic_time is not None and
                 0<=self.clock()-self.imu_diagnostic_time<.5 and result.get('flight_info_fresh') and
                 isinstance(info,dict) and info.get('build_id')==row['build_id'] and
                 isinstance(info.get('uptime_ms'),int) and abs(info['uptime_ms']-row['uptime_ms'])<1000)
-        result.update(imu_diagnostic=row,imu_diagnostic_fresh=fresh)
-        return result
+            result.update(imu_diagnostic=row,imu_diagnostic_fresh=fresh)
+            return result

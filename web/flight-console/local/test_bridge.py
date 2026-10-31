@@ -93,6 +93,23 @@ class FakeClient:
 
 
 class UnitTests(unittest.TestCase):
+    def test_split_snapshot_is_read_again_once_without_relaxing_identity_or_freshness(self):
+        bad=state();bad['flight_info']['sequence']=13
+        good=state();good['sequence']=13;good['flight_info']['sequence']=13
+        fake=FakeClient();observer=bridge.Bridge(bridge.Config(),fake)
+        with patch.object(fake,'get_json',side_effect=[bad,good]) as read:
+            observer.poll_once()
+            self.assertEqual(read.call_count,2)
+            self.assertTrue(observer.live()['source_valid'])
+            self.assertEqual(observer.live()['sequence'],13)
+        for second in (bad,dict(good,fresh=False)):
+            with self.subTest(second_fresh=second['fresh']), patch.object(fake,'get_json',side_effect=[bad,second]) as read:
+                observer.poll_once()
+                self.assertEqual(read.call_count,2)
+                self.assertFalse(observer.live()['source_valid'])
+                self.assertFalse(observer.live()['fresh'])
+        with patch.object(fake,'get_json',return_value=dict(good,fresh=False)) as read:
+            observer.poll_once();self.assertEqual(read.call_count,1)
     def test_b0b0_reported_modes_are_mapped_instead_of_replaced_by_dashes(self):
         for raw, expected in [('待机', 'DISARMED'), ('自稳 + 高度控制', 'ATT_ALT_HOLD'),
                               ('光流速度控制 + 高度', 'FLOW_ALT_HOLD'), ('光流刹停 + 高度控制', 'FLOW_ALT_HOLD'),
@@ -332,7 +349,7 @@ class UnitTests(unittest.TestCase):
             with self.assertRaises(bridge.BridgeError):
                 bridge.validate_id(ident)
 
-    def test_independent_source_4hz_and_publication_1hz_schedulers(self):
+    def test_independent_source_20hz_and_publication_1hz_schedulers(self):
         now, starts = [0], []
         observer = bridge.Bridge(bridge.Config(), FakeClient(), lambda: now[0])
 
@@ -341,9 +358,9 @@ class UnitTests(unittest.TestCase):
             def wait(self, duration): now[0] += duration
 
         def poll():
-            starts.append(now[0]); now[0] += .1
+            starts.append(now[0]); now[0] += .01
         observer.stop = Stop(); observer.poll_once = poll; observer.run()
-        self.assertEqual(starts, [0, .25, .5])
+        self.assertEqual(starts, [0, .05, .1])
         now[0] = 0; starts.clear()
         observer.publish_once = poll; observer.run_publisher()
         self.assertEqual(starts, [0, 1, 2])

@@ -4,7 +4,7 @@
   "outputDirectory": "public",
   "nodeVersion": "22.11.0",
   "cloudFunctions": {"regions":{"overseas":["ap-hongkong"]}},
-  "rewrites": [{"source":"/logs","destination":"/index.html"}],
+  "rewrites": [{"source":"/logs","destination":"/index.html"},{"source":"/parameters","destination":"/parameters.html"}],
   "headers": [{"source":"/*","headers":[
     {"key":"X-Content-Type-Options","value":"nosniff"},
     {"key":"Referrer-Policy","value":"no-referrer"},

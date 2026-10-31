@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="GM-FLY 共享 XY 速度 P/I 参数调节">
+  <title>GM-FLY · P/I 调节</title>
+  <link rel="icon" type="image/svg+xml" href="/gm-fly-mark.svg">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/remote-pi-ui.css">
+  <script type="module" src="/remote-pi-ui.js"></script>
+</head>
+<body>
+  <a class="pi-skip" href="#main-content">跳到主要内容</a>
+  <header class="topbar">
+    <a class="brand" href="/#live" aria-label="GM-FLY · 飞行遥测"><img class="brand-logo" src="/gm-fly-mark.svg" alt="" width="46" height="46"><img class="brand-wordmark" src="/gm-fly-wordmark.svg" alt="GM-FLY" width="126" height="26"><span class="brand-detail">ACG720 飞行遥测</span></a>
+    <div class="top-status"><span id="pi-connection" class="connection">未连接参数服务</span></div>
+    <div class="top-end"><span class="readonly">写入需停机确认</span></div>
+  </header>
+  <div class="app-shell">
+    <nav class="rail" aria-label="主导航">
+      <a class="nav-item" href="/#live"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><span>实时</span></a>
+      <a class="nav-item" href="/#logs"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6M9 7h3"/></svg><span>日志分析</span></a>
+      <a class="nav-item active" href="/parameters" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg><span>P/I 调节</span></a>
+      <div class="rail-bottom"><span class="rail-line"></span><span>FPGA</span><span class="rail-version">PARAMETERS</span></div>
+    </nav>
+    <main class="pi-main" id="main-content">
+      <div class="page-heading"><div><p class="eyebrow">CONTROL / PARAMETERS</p><h1>P/I 调节</h1></div><a class="button" href="/#live">返回实时监控</a></div>
+      <p class="pi-intro">共享 XY 速度增益 · 设备查询、草稿编辑与写后独立读回</p>
+      <section class="panel pi-access" aria-labelledby="access-title">
+        <div class="panel-heading"><h2 id="access-title">连接参数服务</h2><span class="muted" id="pi-service-state">需要地面端授权</span></div>
+        <form id="pi-access-form" class="pi-access-form" autocomplete="off">
+          <label for="pi-key">独立控制密钥<input id="pi-key" type="password" autocomplete="off" spellcheck="false" autocapitalize="off" maxlength="512" aria-describedby="pi-key-help"></label>
+          <button class="button accent" id="pi-connect" type="submit">连接</button>
+          <button class="button" id="pi-disconnect" type="button" disabled>退出并清除密钥</button>
+        </form>
+        <p class="pi-help" id="pi-key-help">地面端需主动开启参数转发。密钥仅在当前页面内存中使用，刷新或退出后清除；不保存在网址或浏览器存储中。</p>
+      </section>
+      <section class="panel pi-card" id="pi-card" aria-labelledby="pi-title" aria-busy="false">
+        <div class="panel-heading"><h2 id="pi-title">共享 XY 速度 P/I</h2><span class="muted">X / Y 共用 · 仅本次上电有效</span></div>
+        <div class="pi-grid">
+          <div class="pi-readback"><h3>设备最后确认读回</h3><dl class="pi-values"><div><dt>P</dt><dd id="pi-active-p">—</dd></div><div><dt>I</dt><dd id="pi-active-i">—</dd></div><div><dt>Generation</dt><dd id="pi-generation">—</dd></div><div><dt>固件</dt><dd id="pi-build">—</dd></div></dl><p class="pi-help" id="pi-age">请连接并查询设备。</p><p class="pi-help" id="pi-qualification">尚未取得本会话查询资格。</p></div>
+          <form class="pi-draft" id="pi-form" novalidate>
+            <h3>编辑草稿 <span class="muted" id="pi-draft-state">草稿不代表已生效</span></h3>
+            <div class="pi-inputs"><label for="pi-p">P<input id="pi-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="0.1000" aria-describedby="pi-range pi-validation"></label><label for="pi-i">I<input id="pi-i" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="0.0350" aria-describedby="pi-range pi-validation"></label></div>
+            <p class="pi-help" id="pi-range">范围 0～1，最多四位小数；不自动舍入。首次查询成功且草稿未编辑时填入设备值。</p><p class="pi-validation" id="pi-validation"></p>
+            <label class="pi-confirm" for="pi-stopped"><input id="pi-stopped" type="checkbox"><span>我已拆桨、停机并确认未解锁，底部水上电机已停止，CH5 保持低 / 中位；准备同时提交这对 P / I。</span></label>
+            <div class="pi-actions"><button class="button" type="button" id="pi-query" disabled>查询设备</button><button class="button accent" type="submit" id="pi-set" disabled>同时写入 P / I</button><button class="button" type="button" id="pi-defaults">默认值填入草稿</button></div>
+            <p class="pi-help">排队成功不等于写入成功。仅在设备 ACK 后独立读回一致时显示完成；结果未知时先查询，不自动重发。</p>
+          </form>
+        </div>
+        <div class="pi-notice" id="pi-notice" role="status" aria-live="polite" aria-atomic="true">参数转发默认关闭。请先在地面端开启授权。</div>
+        <p class="pi-help pi-scope">仅支持共享 XY 速度 P、I，非全部飞行 PID。地面接收服务及 FPGA 会再次检查写入条件，最终资格由 FPGA 裁决。断电恢复固件默认值，本页面不写入 Flash。</p>
+      </section>
+      <footer><span>GM-FLY · 参数服务</span><span>状态过期、断线或身份变化时停止操作</span></footer>
+    </main>
+  </div>
+</body>
+</html>

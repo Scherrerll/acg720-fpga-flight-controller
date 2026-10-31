@@ -9,7 +9,7 @@
     queued_verify_get: '独立读回核对已排队', await_verify_get: '等待独立 GET 核对'};
   let status = null, token = null, online = false, posting = false;
   let pending = null, uncertain = false, dirty = false, lastActive = null;
-  let draftRevision = 0, actionRevision = 0, lastEpoch, tokenAttempt = 0, statusFailed = false, lastResultKey;
+  let draftRevision = 0, actionRevision = 0, lastEpoch, lastBuild, tokenAttempt = 0, statusFailed = false, lastResultKey;
   let notice = '', tone = 'warn';
   const now = () => performance.now();
 
@@ -21,17 +21,19 @@
     const wire = Number(whole) * 10000 + Number((fraction + '0000').slice(0, 4));
     return wire <= 10000 ? wire : null;
   }
-  function validActive(value) {
+  const expectedBuild = value => value?.expected_build === undefined ? '0000B0B4' : value.expected_build;
+  const knownBuild = value => value === '0000B0B4' || value === '0000B0B5';
+  function validActive(value, build = '0000B0B4') {
     return value && Number.isInteger(value.p_wire) && Number.isInteger(value.i_wire) &&
       gain(value.p_text) === value.p_wire && gain(value.i_text) === value.i_wire &&
       Number.isInteger(value.generation) && value.generation >= 0 && value.generation <= 0xffffffff &&
       Number.isFinite(value.age_ms) && value.age_ms >= 0 &&
-      value.build === '0000B0B4';
+      knownBuild(build) && value.build === build;
   }
   function validStatus(value) {
     return value && ['enabled', 'connected', 'supported', 'busy', 'can_query', 'can_set'].every(k => typeof value[k] === 'boolean') &&
-      (value.epoch === null || Number.isSafeInteger(value.epoch)) &&
-      (value.active == null || validActive(value.active));
+      (value.epoch === null || Number.isSafeInteger(value.epoch)) && knownBuild(expectedBuild(value)) &&
+      (value.active == null || validActive(value.active, expectedBuild(value)));
   }
   function message(text, kind = 'warn') { notice = text; tone = kind; }
   function unknown(text) {
@@ -43,7 +45,7 @@
     const capable = online && !!token && status?.enabled && status?.connected && Number.isSafeInteger(status?.epoch);
     const valid = fields.every(f => gain(f.value) !== null);
     el('query').disabled = !(capable && status.can_query && !busy);
-    el('set').disabled = !(capable && status.can_set && status.supported && validActive(status.active) &&
+    el('set').disabled = !(capable && status.can_set && status.supported && validActive(status.active, expectedBuild(status)) &&
       valid && el('stopped').checked && !busy && !uncertain);
     fields.forEach(f => { f.disabled = busy; f.setAttribute('aria-invalid', String(gain(f.value) === null)); });
     el('defaults').disabled = busy;
@@ -57,7 +59,7 @@
     el('generation').textContent = active ? String(active.generation) : '—';
     el('build').textContent = active ? String(active.build) : '—';
     el('age').textContent = active ? `最后读回距今约 ${((active.age_ms + now() - lastActive.at) / 1000).toFixed(1)} 秒；${online ? '当前写入资格另行检查。' : '状态不可用，以上仅为历史读回。'}` : '尚未取得匹配的设备读回；编辑草稿不代表设备已生效。';
-    el('source').textContent = online ? `接收来源 ${String(status.source ?? '—')} · ${String(status.baud ?? '—')} baud · 连接代次 ${String(status.epoch)}` : '参数服务状态不可用。';
+    el('source').textContent = online ? `接收来源 ${String(status.source ?? '—')} · ${String(status.baud ?? '—')} baud · 参数版本 ${expectedBuild(status)} · 连接代次 ${String(status.epoch)}` : '参数服务状态不可用。';
     let text = notice;
     if (busy && !posting && status?.busy) text = `正在处理：${phases[status.phase] || String(status.phase || '等待设备响应')}。一次仅处理一个操作，请勿重复提交。`;
     if (!text) text = status?.block_reason || (!token ? '正在取得本机会话资格…' : '请查询设备，确认实际 P / I 和 generation。');
@@ -89,7 +91,7 @@
     pending = null;
     const code = String(result.code ?? 'unknown');
     const success = (completed.kind === 'query' && code === 'queried') || (completed.kind === 'set' && code === 'verified');
-    if (success && validActive(value.active)) {
+    if (success && validActive(value.active, expectedBuild(value))) {
       if (completed.kind === 'query') {
         uncertain = false;
         if (!dirty && completed.draftRevision === draftRevision) {
@@ -113,12 +115,13 @@
       online = true;
       if (statusFailed && !uncertain && !pending) message('参数服务状态已恢复；请核对读回值后显式操作。');
       statusFailed = false;
-      if (lastEpoch !== undefined && body.epoch !== lastEpoch) {
+      if ((lastEpoch !== undefined && body.epoch !== lastEpoch) ||
+          (lastBuild !== undefined && expectedBuild(body) !== lastBuild)) {
         lastActive = null; el('stopped').checked = false;
-        if (pending) { pending = null; unknown('接收连接代次已改变。'); }
-        else message('接收连接已变化，请重新查询设备。');
+        if (pending) { pending = null; unknown('接收连接或参数版本已改变。'); }
+        else message('接收连接或参数版本已变化，请重新查询设备。');
       }
-      lastEpoch = body.epoch; status = body;
+      lastEpoch = body.epoch; lastBuild = expectedBuild(body); status = body;
       if (body.active) lastActive = {value: body.active, at: now()};
       finish(body);
       const resultKey = body.result ? `${body.result.operation_id}:${body.result.code}` : null;

@@ -8,14 +8,24 @@
   <meta property="og:title" content="GM-FLY · ACG720 飞行遥测">
   <meta property="og:image" content="https://acg720-flight-console.bloomybowl256.chatgpt.site/gm-fly.png">
   <title>GM-FLY · ACG720 飞行遥测</title>
-  <link rel="icon" type="image/svg+xml" href="/gm-fly-mark.svg">
-  <link rel="apple-touch-icon" href="/gm-fly.png">
-  <link rel="stylesheet" href="/styles.css">
-  <script type="module" src="/app.js"></script>
+  <link rel="icon" type="image/svg+xml" href="./gm-fly-mark.svg">
+  <link rel="apple-touch-icon" href="./gm-fly.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./local-entry.css">
+  <script src="./local-entry.js"></script>
 </head>
 <body>
+  <section class="local-file-help" id="local-file-help" aria-labelledby="local-file-title" hidden>
+    <img src="./gm-fly-mark.svg" alt="GM-FLY" width="64" height="64">
+    <p class="eyebrow">GM-FLY / LOCAL CONSOLE</p>
+    <h1 id="local-file-title">请从本地监控入口启动</h1>
+    <p>当前打开的是网页源码。遥测和日志需要通过本地 HTTP 服务读取，不能直接双击 HTML 使用。</p>
+    <ol><li>返回上一级 <code>flight-console</code> 文件夹。</li><li>双击 <strong>启动本地监控.cmd</strong>，启动完成后会自动打开正确页面。</li></ol>
+    <a class="button accent" href="http://127.0.0.1:8766/">已启动？打开本地监控</a>
+    <p class="local-entry-note">正常地址为 http://127.0.0.1:8766/。接收程序未运行时，界面会显示等待连接。</p>
+  </section>
   <header class="topbar">
-    <a class="brand" href="#live" aria-label="GM-FLY · ACG720 飞行遥测"><img class="brand-logo" src="/gm-fly-mark.svg" alt="" width="46" height="46"><img class="brand-wordmark" src="/gm-fly-wordmark.svg" alt="GM-FLY" width="126" height="26"><span class="brand-detail">ACG720 飞行遥测</span></a>
+    <a class="brand" href="#live" aria-label="GM-FLY · ACG720 飞行遥测"><img class="brand-logo" src="./gm-fly-mark.svg" alt="" width="46" height="46"><img class="brand-wordmark" src="./gm-fly-wordmark.svg" alt="GM-FLY" width="126" height="26"><span class="brand-detail">ACG720 飞行遥测</span></a>
     <div class="top-status"><span id="connection" class="connection"><i></i><span>等待数据</span></span><span class="top-divider"></span><span id="firmware">固件 —</span><span id="sequence" class="desktop-only">SEQ —</span></div>
     <div class="top-end"><span class="readonly">只读监控</span><span id="access-mode">正在连接</span><time id="clock">—</time></div>
   </header>
@@ -23,6 +33,7 @@
     <nav class="rail" aria-label="主导航">
       <a href="#live" id="nav-live" class="nav-item active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><span>实时</span></a>
       <a href="#logs" id="nav-logs" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6M9 7h3"/></svg><span>日志分析</span></a>
+      <a href="/parameters" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg><span>P/I 调节</span></a>
       <div class="rail-bottom"><span class="rail-line"></span><span>FPGA</span><span class="rail-version">CONSOLE / 01</span></div>
     </nav>
     <main>

@@ -2,6 +2,14 @@
 
 本次选用 `v8 / a13_a14 / P3R0`，在独立副本中加入水面双电机控制，原 B0B4 目录保持冻结。2026 年 10 月 29 日，用户收到下面列出的源码和位流路径后反馈：“好的，我测试了一下没有问题，可以的”。这说明在当时的接线和测试条件下运行正常，可以作为后续修改的工作基线。
 
+## 中文注释版
+
+- [中文注释版 Gowin 工程](source_cn/acg720_ano_port.gprj)：包含完整的 57 个工程输入，各自写模块均有中文说明。
+- [中文注释索引](CHINESE_COMMENTS_INDEX.md)、[注释核对记录](COMMENT_AUDIT_CN.json)和[中文参数工具](xy_pi_cli_cn.py)。
+- 按原有权利状态保留[第三方来源与许可说明](../../THIRD_PARTY_NOTICES.md)，并附 [PX4 说明](third_party/NOTICE_PX4.txt)与 [Bitcraze 许可](third_party/UPSTREAM_LICENSE.txt)。
+
+中文注释版是单独的阅读和源码工程副本；已核对非注释代码、综合指令和构建命令与原始版本一致，参数工具仅变更文档说明。此前选中位流来自下方的原始审查包，本次没有对中文注释版重新综合或声称重建位流逐字节一致。
+
 ## 源码与位流
 
 - [Gowin 源码工程](../../analysis/20261028_water_drive/qualified_offline_B0B5/source/acg720_ano_port.gprj)：包含 57 个源输入，工程使用相对路径引用。

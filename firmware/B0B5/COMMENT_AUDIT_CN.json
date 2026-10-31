@@ -1,0 +1,1138 @@
+{
+  "passed": true,
+  "revision": "Chinese comment completion",
+  "scope": "Self-written documentation translated/completed. Generated project, executable source lines, machine pragmas, Tcl commands and selected bitstream preserved. CLI module documentation translated; its executable AST excluding that docstring is identical. No new physical or hardware qualification.",
+  "source_count": 57,
+  "changed_source_count": 56,
+  "source_checks": {
+    "acg720_ano_port.cst": {
+      "original_sha256": "15913c47f1036dc9d8d1f8ed960951ba5ce7b6648b7680a78a96c199bb5a66c5",
+      "submission_sha256": "fe919fff757028eaec90e141c16a7d4ef63364f459cc16460c59f1fdd062d43a",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "acg720_ano_port.gprj": {
+      "original_sha256": "c9ccfd6ddd068d0c5cf2f34712816aaa9f792bee3ff3e13260714bf229443ec5",
+      "submission_sha256": "c9ccfd6ddd068d0c5cf2f34712816aaa9f792bee3ff3e13260714bf229443ec5",
+      "check": "generated_project_byte_identical"
+    },
+    "acg720_ano_port.sdc": {
+      "original_sha256": "1a9e9e0a853166a8b94194a9857df493232068bfff6fff3ea6368b339725aa87",
+      "submission_sha256": "c16706927af12f716ce9b1c65b5f009187d7352dcfc72e2736911df45f6cbb19",
+      "check": "noncomment_commands_identical"
+    },
+    "acg720_ano_port.v": {
+      "original_sha256": "ecaf0d3aa5283f74a8e87085985082f9f621760ee645eabad85434423e57cf30",
+      "submission_sha256": "0100c5b9e7285183065da4ba50e079cda891f1049fe36950e5b5ba2afea44194",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "build.tcl": {
+      "original_sha256": "bb2ea743ff6c1cc684ff404753b68d9b74b9bae99a985b8a91ff11fe3d0fe15e",
+      "submission_sha256": "c51cfe4788aa08e421299a9d86b0f628d65e60373442c145c713d4794f4e0274",
+      "check": "noncomment_commands_identical"
+    },
+    "calibration.vh": {
+      "original_sha256": "f0c0c058a64bacd4bc016bed9395cdff8a6d80052ec7ca053d69942fc0227635",
+      "submission_sha256": "214e6ac22ba23f76f033ed94cbefabd796e8e04a9e4d505d77fa8a985653b5aa",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/ano_attitude_estimator.v": {
+      "original_sha256": "72c7e1fe56eca1a723f1f59bc0d38e081b9e3315eb0750c41dd3f038dea3ea0a",
+      "submission_sha256": "df3b5d7bc6d4c4fa55dbee919c95d5440e1084aaf271c5d76ec3a4ac253973db",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/ano_flight_state.v": {
+      "original_sha256": "ea333e99f152387825006f2c71d7fc6cd50c985ba49e13d930dffc5bdd424736",
+      "submission_sha256": "48f9faca12fb7d83e0e98f056b42e7693c8981427bd46a08a7db4f8ac4189d9e",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/bmi088_reader.v": {
+      "original_sha256": "f535f0df64b3d29a4ad953873ddbe9b586b02d54961e10c9081523fe0b33b81b",
+      "submission_sha256": "2029f53d82aba9bd2dc83a573631a69995a6a4fe42cd474bb2a553d62cd7c107",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/control_gate.v": {
+      "original_sha256": "3981edae40e32e91f05d0b0a5bd1525f1ec8ee9146f262009ba632bd6d0e2622",
+      "submission_sha256": "656736de5f6970872317df58cb9eb20afcf88c3ddd3a57466dc62c0bba7911c5",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/cordic_atan2.v": {
+      "original_sha256": "1ccfac6a19d0d81435af4d7bf9cb6d5e91097947c02e3eb674b49c101ad03e35",
+      "submission_sha256": "89c06de032eab3e1199dc65a41c97f13bf1f779ed952499002666c430ea6384a",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/flight_core.v": {
+      "original_sha256": "fc4cc6a0f13354f5ce3226ec14d88ed59804a583c31dc7e7b68f6139535feaeb",
+      "submission_sha256": "06b717b512a7f630ba8218d4fc50139405270744048b311572779c7bcc63822a",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/height_loss_fallback.v": {
+      "original_sha256": "343320d8ba6505237368b062789bce35ac7d3a3c663407e4d0602892fc57835d",
+      "submission_sha256": "08ecb4af07bdab51d40456af8bdaa1a59d55899ab77142a0ae8e3d09f74e6c21",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/imu_checked_guard_pipelined.v": {
+      "original_sha256": "261550687fd0e147890e923eb2f46b6d659ddd25d7e3a9ede3b942efb86a8a65",
+      "submission_sha256": "2278b3b750b522ad3faf19d53a9e38d03e498c66630957e1ee9743d0675f9c46",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/imu_diagnostic_tap.v": {
+      "original_sha256": "24ee354a62f0102ffbdc115cd73bded208919e20cf3304adc0cff4d21849c44d",
+      "submission_sha256": "f01255777aa6e1fe6f69847f7699c541fef25e7ddc9998afba4650c89f16f223",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/imu_pipeline_pipelined.v": {
+      "original_sha256": "5917c1b62c8bae6ccdf5ce99ef0ad176216908131aab64442bf51973256475e9",
+      "submission_sha256": "9c425ffd8c14a117798d72d6fc07407f3c89fb03d0740b29bcd157d6e9561020",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/imu_temporal_check_pipelined.v": {
+      "original_sha256": "1e4513de3ad3fb78748ebab79cab129b69ac1fd024494801211ed99a8e4eadf1",
+      "submission_sha256": "1313c1445685b2052c38a7230daa5225e94176e7ad80f1e847f16482a9d20dc4",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/motor_pwm.v": {
+      "original_sha256": "7b2b347247fd1045ad3ec6e805a1186e18daee6b9c9011f48dbd77236a122d84",
+      "submission_sha256": "7596b8c688a57665ff8c863c8937587bb4f2c68977696dfd02e5ad9d3f1301ea",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/rc_ppm.v": {
+      "original_sha256": "b57fe72cb45309b97b692f44ff095ccc187cd8b90037acceb0e49530fb7c10a6",
+      "submission_sha256": "124d0b9d744df2bfc1b7c903ae55beeab43e87ab6865bf7b1e95cdf652b7e833",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/rtl/ano_manual_angles.v": {
+      "original_sha256": "0996c8e81fc36a09d97e23334f70d87994c7d29ba7b8fe31f473dcafd6fa8f17",
+      "submission_sha256": "0824672ba06656114a74b1beecc52273f7b216d42bddc3ea0f2f622f98743741",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/rtl/ano_rate_control.v": {
+      "original_sha256": "e60077bb3ea3296df3ae73bd53e3c79e71d1e44bca765ca87569b5e4e098aac9",
+      "submission_sha256": "06b77f98cf8696707baae9756f73eafda0b60dd3a6024c9e658fa6dcaa497f54",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/rtl/ano_rc_angle_targets.v": {
+      "original_sha256": "6f818e62f5626c97f853e00671e1b1452d364650147cecf991e2f2f90c67c509",
+      "submission_sha256": "2d188f5fcce8b9c3ed3ef3a642d9434533e6cf54dd64e531a2f1296d425626d4",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/rtl/ano_yaw_control.v": {
+      "original_sha256": "cf691d5c79bd6286046974880dee2b4f2c2fa2c455cb3c528045df85c08e4b55",
+      "submission_sha256": "5f20462069bb11b19ae6418cd66446fe71201b110db9424aad0d35703d94a71d",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/rtl/pid_divide_signed64.v": {
+      "original_sha256": "3a93cbf7eb7469e782d2c5614879d424259138e57cfb53a2a7e762d0019f8403",
+      "submission_sha256": "197391422803a3df1fb4f31e51f86b4024c6cc591b77ece4135a46709c393936",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/rtl/quad_mixer_feedback.v": {
+      "original_sha256": "c4c385b7afae74d4771b8fc40b415c2b9d30118c7e5fffdfcf751b50e535fe22",
+      "submission_sha256": "464110f1c4fcc86af31c31b68afa0e40bfb8bdf1c52c9aba3a385dfafd9bf96e",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "core/spi_uart_modules.v": {
+      "original_sha256": "fb7503723870cdc966e1e17960b5f656b51c28edd95633f8ae1bc7e5e83a7aa3",
+      "submission_sha256": "147a633df143946574311b0f8a815e6253f35c50b2a7af9480666b99bff2e35c",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "gw5_snapshot_bram.v": {
+      "original_sha256": "5c95137aad5bc37f0b3535092b75ec0f80de27db3aeafb74b2c5f567187dd4a9",
+      "submission_sha256": "725e5cf5d14db6d5d2153ec463d1bda75695e55168f9d52d80cda6a56edce5b1",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "level_calibration.vh": {
+      "original_sha256": "bb358df2725fea19b41c5e6fc6e984d1a86771b16395aa77e0eaecf55f68e37b",
+      "submission_sha256": "e27984a15afad95978189ff58c6d09655e70c73c64a63896e5a6235a90f6b509",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "mtf_navigation_shadow.v": {
+      "original_sha256": "f2f0cbf92d38aff94ebbd4728809c565c92bb23edd7b2711eb6d88e569c3adfb",
+      "submission_sha256": "861bd72d8d37a7dfcf9154b245ad2eda47c6bcdccb9f6675c6ca1c42f06e500c",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "mtf_xyz_navigation_control.v": {
+      "original_sha256": "cbe7e1abeed83dc49d08f28b572838ed017f4b85d1a29266871befa3d40b685a",
+      "submission_sha256": "f09ee8c64190b88785fc2b1a49144805137ed67c8ba4ace086b3941a7b393233",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "nav_math_service.v": {
+      "original_sha256": "507528652bc412c4fe9f79b8445b18813020327b30b7633a13408ee2714e37a7",
+      "submission_sha256": "8cbf8933e0bee0946386a0cad73731d4393ad9785f341625645fbc05e17fe532",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/ano_flow_fusion.v": {
+      "original_sha256": "9bd76b158d39290f5cfbc371b78499e07d64a9c0b450aaaee83cc40c986d6a36",
+      "submission_sha256": "093a3c14003f9d62c892d7981664dc089504d36726c26ac1d68b0597b95f6eef",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/ano_height_fusion.v": {
+      "original_sha256": "24b68ab8b1605c7bf124bb2f0e3eba94bc0c7499d14d77d2251477ab797d02f7",
+      "submission_sha256": "7cb95de110cfd738700feddd352b4801526d6d2940aadcd95f38f4ad73313784",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/ano_hold_control.v": {
+      "original_sha256": "13b00e960e7af855c8645cabfc8417a6d844181701e9845976e3e028d381bdb3",
+      "submission_sha256": "c902dc7267fecb3fec815e10a9b837611d317a30dd73cf73314975e3d43c6870",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/ano_xy_divide36.v": {
+      "original_sha256": "7768d0c6f3e7bcacfd56be6253d39560c3b491980039073bcfc83536074edace",
+      "submission_sha256": "2669e7a29267a0fbb20099db093a12ef08862509ddd78dec20236cb413d11e07",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/ano_xy_stick.v": {
+      "original_sha256": "2fe1f915d855a4bf18b4be7df21743c8e4f9c34ab334c36c6214ed756a5ccd68",
+      "submission_sha256": "8319ef0e6a3014d6f87e72b6357d750ec7e4d50b2773339de82e7e128699d6b0",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/ano_z_stick.v": {
+      "original_sha256": "e93db1a650f0513c53f040fdf974b3e72acf1007efc55f732b9abde0e894126f",
+      "submission_sha256": "c55dfb970d3f5ae7bbee220cd5861d09ecb917e57c46f298805661a2fb2ceaee",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/mtf_position_integrator.v": {
+      "original_sha256": "40466db317bfe64b5dc6c1a00e5e26bfec9a31c09b4a9be8de1370fd3fd6af28",
+      "submission_sha256": "207040aea546abcb5c927a74a89b6a39b41f81f31ec6e564d9ea5c729871d0c7",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/mtf_shared_flow_fusion.v": {
+      "original_sha256": "9a9e0d50efd2001120bd5ce85a95b7002043c7540566b7886c9d90d2dc62b8f8",
+      "submission_sha256": "3e4d645cfedf9cfd5b881fc2b66d4c5211029ffaacb0043912a2a7b74090cf77",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/mtf_shared_height_fusion.v": {
+      "original_sha256": "c01dab6b2940e4a8d82aae803a9de29523706ff2b2b0ede97070fb7e763108fd",
+      "submission_sha256": "a00ee54e765f15412902495fff88f38d6cf0b69298d64efd744e2dab3801c6af",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/mtf_shared_hold_control.v": {
+      "original_sha256": "768005eaeed8aa90fcb4221a678b24fbffa3bab5b7a0d1f6b00b817b870669b5",
+      "submission_sha256": "15cd4b1ae961781497dbae008417cd7e9a514a63468663fddb67fda23159d5e5",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/mtf_xyz_hold_control.v": {
+      "original_sha256": "df5baa0ffc8135c2818271b42ff1fb14ea0cd3ce5131289b66a7cd5d0ff5b976",
+      "submission_sha256": "a18d34f2e041111fda99ef2931324e56a926fba89973ad9a38f0e5f18d3700ed",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/pose_time_adapter.v": {
+      "original_sha256": "5a24a290c0f4b68633ef152628495d552569437a765b7e29b11bf5c8dc353c3b",
+      "submission_sha256": "b29f98a8c759e56b758266c3cab557daf524f4bef073476f80ce68d4adf9ed3a",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/position_math.v": {
+      "original_sha256": "0dde18a813ecd9deca46cfd62e7fc0ca630c81ad26ca20836cbfd20503516635",
+      "submission_sha256": "4debc7a897247389e07c69a66956eed395a39bcc3ec23d20b1fa3e2759d6496f",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "position/relative_position.v": {
+      "original_sha256": "36956adea14ed208ef978e680fbcd1fa455a960fe5ad76aa944e0de429392850",
+      "submission_sha256": "9c0f4b1e93be1d512c299262d3fa8744353466ed9e0fcba0a5b0615dd2ed7c6f",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "sensor/flow_reader.v": {
+      "original_sha256": "9ad582ce2b852b9eaffbf12262c817addb8bc9c3997ef41c3e63192726e38709",
+      "submission_sha256": "1ae5a4d7c97d675cf7f326aa8ef18131cdf4938a2499c02c55ddd75fcdc84c70",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "sensor/mtf01p_reader.v": {
+      "original_sha256": "8d2a04c912457d2d10a72058edfa0921d76fa218cf7aba9c8378984ce19b9962",
+      "submission_sha256": "c72bf7be0adcd2271ade18228e57b92517431108bc8b8324182b6715325522fc",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "sensor/mtf_native_geometry.v": {
+      "original_sha256": "0149d522cc984c4dd796e1b64d519189bc602005b72e8487357ea11ab5fd2f0c",
+      "submission_sha256": "86c3beac81baa1d9a6279d8a4f2fef7fba128b5e0e26eb0d191b83c63925126c",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "sensor/mtf_shared_geometry.v": {
+      "original_sha256": "27cba1fb7bb393f9a058a676be8aadf63401f354a4892249316ee1453caf9b8a",
+      "submission_sha256": "9ec1d45e836c006de99c77c3773d4e03c8ebc6657fa7e7bc3a44109a9f84aabc",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "sensor/pmw3901_init.vh": {
+      "original_sha256": "aa1a35603f15a4db1647c72d6565b99a931fd641fb08113e6149e38b2e1b7389",
+      "submission_sha256": "78252f0474727ff72255c9fd98e90e3bb442368ffab408aff193354d58ff580c",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "sensor/range_height_estimate.v": {
+      "original_sha256": "3507b5ce6e5bd83a06fdb05b83567cb44a0de2bd810d93edd31ff376f70965c4",
+      "submission_sha256": "d091cea365314a1d565df16fc8715c15a71de1bf7b13b3bed9bfe554e5e52b61",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "sensor/range_reader.v": {
+      "original_sha256": "7e9752af383852a9285b374d455c8c08e2c4782329ca47359fa1229886a98a04",
+      "submission_sha256": "e024d7c3be7cdf1120b34b9984a887e12de0c97fa706985a488cd7cc0bf7d662",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "sik_imu_diagnostic.v": {
+      "original_sha256": "f54db1e20f0bf2a7bfd3d39c37fb8de9052925000a58e80884ac54e82ce0b21d",
+      "submission_sha256": "5222b2afed48320fe2cf701d9c17d8c9f572b762bc851943d1c5a74642cbfd56",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "telemetry_tx.v": {
+      "original_sha256": "11fac23449b65f87a3291231f9be173046c893a994ae658e25f3e0a7827adbbb",
+      "submission_sha256": "586b936ad50b2e8f601f0eade91bc25949e2e97b251071ba6d943a9f470a6c1d",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "water_drive_control.v": {
+      "original_sha256": "04d2227b54b5e607fec8ae3fc491d6c9e8154e2d6c224c3a711431e46ec0dd71",
+      "submission_sha256": "ecf9f61cbf222390f46c75f3e1dd7af91ccf17e7cba77c97625157bd13987134",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "water_pwm_pair.v": {
+      "original_sha256": "1a2b31d83dcfb945f1c50b005a0eb48104188e95fd1156a57d84493c2fc10137",
+      "submission_sha256": "04f2d6ece1030ba0b54a2fe432aaaa120a8cef2033f32a6bd259a6e4e1910d8a",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    },
+    "xy_pi_parameters.v": {
+      "original_sha256": "bf2c0eea5c3dea97bae69b9176697cad616ddd5ff6de25268c8268f5c17a66e9",
+      "submission_sha256": "c8e8d1be71ac8518543d38691dca6aba55041308f525ff32a861ac5f0c56280a",
+      "check": "noncomment_code_lines_and_machine_directives_identical"
+    }
+  },
+  "coverage": [
+    {
+      "file": "acg720_ano_port.cst",
+      "kind": "约束配置（语法与命令保留）",
+      "chinese_comment_count": 2,
+      "modules": []
+    },
+    {
+      "file": "acg720_ano_port.gprj",
+      "kind": "高云工程配置（原样保留）",
+      "chinese_comment_count": 0,
+      "modules": []
+    },
+    {
+      "file": "acg720_ano_port.sdc",
+      "kind": "约束配置（语法与命令保留）",
+      "chinese_comment_count": 2,
+      "modules": []
+    },
+    {
+      "file": "acg720_ano_port.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 60,
+      "modules": [
+        {
+          "name": "acg720_ano_port",
+          "chinese_header": true
+        },
+        {
+          "name": "nav_control_handoff",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "build.tcl",
+      "kind": "自写源码",
+      "chinese_comment_count": 5,
+      "modules": []
+    },
+    {
+      "file": "calibration.vh",
+      "kind": "自写源码",
+      "chinese_comment_count": 4,
+      "modules": []
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 106,
+      "modules": [
+        {
+          "name": "ano_attitude_estimator",
+          "chinese_header": true
+        },
+        {
+          "name": "ano_attitude_mul32",
+          "chinese_header": true
+        },
+        {
+          "name": "ano_attitude_div64",
+          "chinese_header": true
+        },
+        {
+          "name": "ano_attitude_sqrt64",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/ano_flight_state.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 14,
+      "modules": [
+        {
+          "name": "ano_flight_state",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/bmi088_reader.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 23,
+      "modules": [
+        {
+          "name": "bmi088_reader",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/control_gate.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 33,
+      "modules": [
+        {
+          "name": "control_gate",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/cordic_atan2.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 8,
+      "modules": [
+        {
+          "name": "cordic_atan2",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/flight_core.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 129,
+      "modules": [
+        {
+          "name": "flight_core",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/height_loss_fallback.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 16,
+      "modules": [
+        {
+          "name": "height_loss_fallback",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/imu_checked_guard_pipelined.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 25,
+      "modules": [
+        {
+          "name": "imu_checked_guard_pipelined",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/imu_diagnostic_tap.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 12,
+      "modules": [
+        {
+          "name": "imu_diagnostic_tap",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 18,
+      "modules": [
+        {
+          "name": "imu_pipeline",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/imu_temporal_check_pipelined.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 16,
+      "modules": [
+        {
+          "name": "imu_temporal_check",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/motor_pwm.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 19,
+      "modules": [
+        {
+          "name": "motor_pwm",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/rc_ppm.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 27,
+      "modules": [
+        {
+          "name": "rc_ppm",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/rtl/ano_manual_angles.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 17,
+      "modules": [
+        {
+          "name": "ano_manual_angles",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/rtl/ano_rate_control.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 42,
+      "modules": [
+        {
+          "name": "ano_rate_control",
+          "chinese_header": true
+        },
+        {
+          "name": "ano_multiply_signed64_32",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/rtl/ano_rc_angle_targets.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 31,
+      "modules": [
+        {
+          "name": "ano_rc_angle_targets",
+          "chinese_header": true
+        },
+        {
+          "name": "ano_rc_sqrt50",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/rtl/ano_yaw_control.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 21,
+      "modules": [
+        {
+          "name": "ano_yaw_control",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/rtl/pid_divide_signed64.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 9,
+      "modules": [
+        {
+          "name": "pid_divide_signed64",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/rtl/quad_mixer_feedback.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 7,
+      "modules": [
+        {
+          "name": "quad_mixer_feedback",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "core/spi_uart_modules.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 15,
+      "modules": [
+        {
+          "name": "spi_mode3_master_1mhz",
+          "chinese_header": true
+        },
+        {
+          "name": "uart_tx_115200",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "gw5_snapshot_bram.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 6,
+      "modules": [
+        {
+          "name": "gw5_snapshot_bram",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "level_calibration.vh",
+      "kind": "自写源码",
+      "chinese_comment_count": 3,
+      "modules": []
+    },
+    {
+      "file": "mtf_navigation_shadow.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 13,
+      "modules": [
+        {
+          "name": "mtf_navigation_shadow",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "mtf_xyz_navigation_control.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 82,
+      "modules": [
+        {
+          "name": "mtf_xyz_navigation_control",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "nav_math_service.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 12,
+      "modules": [
+        {
+          "name": "nav_math_service",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/ano_flow_fusion.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 24,
+      "modules": [
+        {
+          "name": "ano_flow_fusion",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/ano_height_fusion.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 42,
+      "modules": [
+        {
+          "name": "ano_height_fusion",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/ano_hold_control.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 43,
+      "modules": [
+        {
+          "name": "ano_hold_control",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/ano_xy_divide36.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 6,
+      "modules": [
+        {
+          "name": "ano_xy_divide36",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/ano_xy_stick.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 11,
+      "modules": [
+        {
+          "name": "ano_xy_stick",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/ano_z_stick.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 12,
+      "modules": [
+        {
+          "name": "ano_z_stick",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/mtf_position_integrator.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 26,
+      "modules": [
+        {
+          "name": "mtf_position_integrator",
+          "chinese_header": true
+        },
+        {
+          "name": "mtf_position_divide_constant",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/mtf_shared_flow_fusion.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 25,
+      "modules": [
+        {
+          "name": "mtf_shared_flow_fusion",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/mtf_shared_height_fusion.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 47,
+      "modules": [
+        {
+          "name": "mtf_shared_height_fusion",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/mtf_shared_hold_control.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 45,
+      "modules": [
+        {
+          "name": "mtf_shared_hold_control",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/mtf_xyz_hold_control.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 90,
+      "modules": [
+        {
+          "name": "mtf_xyz_hold_control",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/pose_time_adapter.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 7,
+      "modules": [
+        {
+          "name": "pose_time_adapter",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/position_math.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 21,
+      "modules": [
+        {
+          "name": "position_multiply",
+          "chinese_header": true
+        },
+        {
+          "name": "position_gyro_increment",
+          "chinese_header": true
+        },
+        {
+          "name": "position_divide",
+          "chinese_header": true
+        },
+        {
+          "name": "position_sincos",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "position/relative_position.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 36,
+      "modules": [
+        {
+          "name": "relative_position",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "sensor/flow_reader.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 28,
+      "modules": [
+        {
+          "name": "flow_reader",
+          "chinese_header": true
+        },
+        {
+          "name": "pmw3901_spi_mode3",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "sensor/mtf01p_reader.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 57,
+      "modules": [
+        {
+          "name": "mtf_uart_rx",
+          "chinese_header": true
+        },
+        {
+          "name": "micolink_parser",
+          "chinese_header": true
+        },
+        {
+          "name": "mtf_metric_observer",
+          "chinese_header": true
+        },
+        {
+          "name": "mtf01p_reader",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "sensor/mtf_native_geometry.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 38,
+      "modules": [
+        {
+          "name": "mtf_native_geometry",
+          "chinese_header": true
+        },
+        {
+          "name": "mtf_divide100",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "sensor/mtf_shared_geometry.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 43,
+      "modules": [
+        {
+          "name": "mtf_shared_geometry",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "sensor/pmw3901_init.vh",
+      "kind": "自写源码",
+      "chinese_comment_count": 7,
+      "modules": []
+    },
+    {
+      "file": "sensor/range_height_estimate.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 19,
+      "modules": [
+        {
+          "name": "range_height_estimate",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "sensor/range_reader.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 26,
+      "modules": [
+        {
+          "name": "range_reader",
+          "chinese_header": true
+        },
+        {
+          "name": "range_frame_parser",
+          "chinese_header": true
+        },
+        {
+          "name": "range_uart_rx_115200",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "sik_imu_diagnostic.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 9,
+      "modules": [
+        {
+          "name": "sik_imu_diagnostic",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "telemetry_tx.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 19,
+      "modules": [
+        {
+          "name": "telemetry_tx",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "water_drive_control.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 33,
+      "modules": [
+        {
+          "name": "water_drive_control",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "water_pwm_pair.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 23,
+      "modules": [
+        {
+          "name": "water_pwm_pair",
+          "chinese_header": true
+        }
+      ]
+    },
+    {
+      "file": "xy_pi_parameters.v",
+      "kind": "自写源码",
+      "chinese_comment_count": 28,
+      "modules": [
+        {
+          "name": "xy_pi_parameters",
+          "chinese_header": true
+        },
+        {
+          "name": "xy_pi_uart_rx",
+          "chinese_header": true
+        }
+      ]
+    }
+  ],
+  "self_written_verilog_files": 53,
+  "module_count": 69,
+  "all_modules_have_chinese_header": true,
+  "remaining_non_chinese_comments": [
+    {
+      "file": "acg720_ano_port.v",
+      "comment": "/* synthesis syn_maxfan = 10 */",
+      "machine": true
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "comment": "// Adapted from ANO Quadrotor_TM_V1 Ano_Imu.c and Ano_Sensor_Basic.c.",
+      "machine": false
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "comment": "// See reference_ano for original ANO copyright. FPGA port: Q24 quaternion,",
+      "machine": false
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/ano_attitude_estimator.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/flight_core.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/flight_core.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/flight_core.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/flight_core.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/height_loss_fallback.v",
+      "comment": "/* synthesis syn_maxfan = 50 */",
+      "machine": true
+    },
+    {
+      "file": "core/imu_checked_guard_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_checked_guard_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/imu_checked_guard_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_checked_guard_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_BEGIN",
+      "machine": true
+    },
+    {
+      "file": "core/imu_pipeline_pipelined.v",
+      "comment": "// DIAG_TAP_END",
+      "machine": true
+    },
+    {
+      "file": "core/rtl/ano_manual_angles.v",
+      "comment": "/* synthesis syn_dspstyle=\"logic\" */",
+      "machine": true
+    },
+    {
+      "file": "position/mtf_xyz_hold_control.v",
+      "comment": "/* synthesis syn_dspstyle=\"logic\" */",
+      "machine": true
+    }
+  ],
+  "python_cli": {
+    "ast_excluding_module_docstring_identical": true,
+    "chinese_module_docstring": true,
+    "original_sha256": "869a061525ea11e25288acd187b61d848a12ebd2b51e2235f549e11699ef12b0",
+    "submission_sha256": "9c707d69d20917d7d7f33bf765aa1774e0f2ee781447535798fe0c61860d3835"
+  },
+  "gprj_references_resolve": 55,
+  "selected_bitstream_unchanged": true,
+  "bitstream_sha256": "d1e0e3a46178315d103d8db26a05806add46ded9410e2f2e6b683b84742649f5"
+}

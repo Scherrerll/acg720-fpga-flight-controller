@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GM-FLY · P/I 调节</title><link rel="icon" type="image/svg+xml" href="/gm-fly-mark.svg"><link rel="stylesheet" href="/ui.css"><link rel="stylesheet" href="/xy-pi-ui.css"></head>
+<body><a class="skip-link" href="#main-content">跳到主要内容</a><header class="topbar"><a class="brand" href="/" aria-label="GM-FLY · 本地地面站"><img class="brand-logo" src="/gm-fly-mark.svg" alt="" width="46" height="46"><img class="brand-wordmark" src="/gm-fly-wordmark.svg" alt="GM-FLY" width="126" height="26"><span class="brand-detail">ACG720 飞行遥测</span></a><span class="top-context">LOCAL GROUND STATION</span><div class="top-end"><span class="local-indicator">本地接收</span><span class="readonly">参数写入需确认</span></div></header><div class="shell"><nav class="rail" aria-label="主导航"><a class="nav-item" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg><span>实时监控</span></a><a class="nav-item" href="/logs"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h6M9 7h3"/></svg><span>日志分析</span></a><a class="nav-item active" href="/parameters" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg><span>P/I 调节</span></a><div class="rail-bottom"><span class="rail-line"></span><span>FPGA</span><span class="rail-version">LOCAL / B0B4 UI</span></div></nav>
+<main class="parameters-main" id="main-content">
+<div class="page-head"><div><div class="eyebrow">CONTROL / PARAMETERS</div><h1>P/I 调节</h1><p class="muted">共享 XY 速度增益 · 查询设备、编辑草稿与独立读回</p></div><a class="text-link" href="/">← 返回实时监控</a></div>
+<section class="card xy-pi-card" id="xy-pi-card" aria-labelledby="xy-pi-title" aria-busy="false">
+<div class="card-head"><div><h2 id="xy-pi-title">共享 XY 速度 P/I</h2><p class="tiny">X / Y 共用一对增益 · 仅本次上电有效，断电恢复默认值</p></div><a class="text-link" href="/pi-help">参数说明与使用步骤 ↗</a></div>
+<div class="xy-pi-grid">
+<div class="xy-pi-readback"><h3>设备最后读回</h3><dl class="xy-pi-values"><div><dt>P</dt><dd id="xy-pi-active-p">—</dd></div><div><dt>I</dt><dd id="xy-pi-active-i">—</dd></div><div><dt>Generation</dt><dd id="xy-pi-generation">—</dd></div><div><dt>固件</dt><dd id="xy-pi-build">—</dd></div></dl><p class="tiny" id="xy-pi-age">尚未查询设备；编辑草稿不代表设备已生效。</p><p class="tiny" id="xy-pi-source">等待参数服务状态。</p></div>
+<form id="xy-pi-form" class="xy-pi-draft" novalidate>
+<h3>编辑草稿 <span class="subtle" id="xy-pi-draft-state">未提交</span></h3>
+<div class="xy-pi-inputs"><label for="xy-pi-p">P<input id="xy-pi-p" name="p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="0.1000" aria-describedby="xy-pi-range xy-pi-validation"></label><label for="xy-pi-i">I<input id="xy-pi-i" name="i" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="0.0350" aria-describedby="xy-pi-range xy-pi-validation"></label></div>
+<p class="tiny" id="xy-pi-range">范围 0～1，最多四位小数，步长 0.0001；不自动舍入。首次查询成功且草稿未编辑时填入读回值。</p><p class="xy-pi-validation tiny" id="xy-pi-validation"></p>
+<label class="xy-pi-confirm" for="xy-pi-stopped"><input id="xy-pi-stopped" type="checkbox"><span>我已拆桨、停机，确认所有动力停止（含底部水上电机）且未解锁，CH5 保持低 / 中位；准备同时提交这对 P / I。</span></label>
+<div class="xy-pi-actions"><button type="button" class="secondary" id="xy-pi-query" disabled>查询设备</button><button type="submit" id="xy-pi-set" disabled>同时写入 P / I</button><button type="button" class="secondary" id="xy-pi-defaults">默认值填入草稿</button></div>
+<p class="tiny">默认值按钮只改草稿；任何写入都需要明确点击“同时写入”。查询可在飞行中进行，写入资格以设备和接收服务检查为准。</p>
+</form></div>
+<div class="xy-pi-notice" id="xy-pi-status" role="status" aria-live="polite" aria-atomic="true">正在读取参数服务状态…</div>
+</section>
+<footer><span>GM-FLY · 本地地面站</span><span>参数版本由接收服务明确选择 · 写入需停机确认</span></footer>
+</main></div><script src="/xy-pi-ui.js"></script></body></html>

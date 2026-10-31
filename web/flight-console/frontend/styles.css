@@ -18,3 +18,8 @@
 .tracking-details[open] summary{border-bottom:1px solid var(--border)}
 .live-traces .trace-heading{flex-wrap:wrap;row-gap:8px}
 .display-mode{flex-wrap:wrap;justify-content:flex-end;gap:8px}
+/* Status text stays immediate. A brief unpaired frame must not flash the plots;
+   sustained stale data still fades, and recovery cancels the pending dimming. */
+.instrument-content,.live-chart,.motors,.channels,#mode-value,#armed-value{transition:opacity .35s ease,filter .35s ease;transition-delay:0s}
+.instrument-content.is-stale,.live-chart.is-stale,.motors.is-stale,.channels.is-stale,#mode-value.is-stale,#armed-value.is-stale{transition-delay:.25s}
+@media(prefers-reduced-motion:reduce){.instrument-content,.live-chart,.motors,.channels,#mode-value,#armed-value{transition:none}}

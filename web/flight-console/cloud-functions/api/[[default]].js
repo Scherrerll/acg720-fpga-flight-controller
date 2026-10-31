@@ -16,7 +16,8 @@ export function createHandler({storeFactory=store,handler=worker}={}){
     const rawBody=Object.getOwnPropertyDescriptor(Request.prototype,'body').get.call(request);
     const cleanRequest=new Request(request.url,{method:request.method,headers:request.headers,
       ...(rawBody?{body:rawBody,duplex:'half'}:{})});
-    const response=await handler.fetch(cleanRequest,{BUCKET:bucket,PUBLISH_TOKEN:env.PUBLISH_TOKEN||process.env.PUBLISH_TOKEN});
+    const response=await handler.fetch(cleanRequest,{BUCKET:bucket,PUBLISH_TOKEN:env.PUBLISH_TOKEN||process.env.PUBLISH_TOKEN,
+      CONTROL_TOKEN:env.CONTROL_TOKEN||process.env.CONTROL_TOKEN});
     if(request.method==='HEAD'||!response.body)return new Response(null,response);
     let data=Buffer.from(await response.arrayBuffer());
     const headers=new Headers(response.headers);

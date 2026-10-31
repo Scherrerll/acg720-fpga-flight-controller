@@ -419,6 +419,13 @@ class Bridge:
         try:
             state = self.client.get_json("/api/state")
             value = sanitize_live(state)
+            if (value['connected'] and state.get('fresh') is True
+                    and state.get('flight_info_fresh') is True and not value['source_valid']):
+                # Older receivers can read primary/info across two lock windows.
+                # Re-read once, then apply the same strict identity/age checks.
+                # An unpaired or stale second read remains invalid.
+                state = self.client.get_json("/api/state")
+                value = sanitize_live(state)
             with self.lock:
                 now = self.clock()
                 oldest = self.wall_clock() * 1000 - 60000
@@ -514,7 +521,9 @@ class Bridge:
         while not self.stop.is_set():
             started = self.clock()
             self.poll_once()
-            self.stop.wait(max(0, .25 - (self.clock() - started)))
+            # Source frames arrive at 5 Hz and expire after 500 ms. Avoid adding
+            # a 250 ms cache delay ahead of the browser's own 100 ms poll.
+            self.stop.wait(max(0, .05 - (self.clock() - started)))
 
     def run_publisher(self):
         while not self.stop.is_set():
@@ -624,7 +633,8 @@ def make_server(bridge, frontend=None):
                 if path.startswith("/api"):
                     raise BridgeError(404, "Unknown API")
                 decoded = urllib.parse.unquote(path)
-                relative = "index.html" if decoded == "/" else decoded.lstrip("/")
+                relative = {"/": "index.html", "/parameters": "parameters.html",
+                            "/parameters/": "parameters.html"}.get(decoded, decoded.lstrip("/"))
                 file = (frontend / relative).resolve()
                 if not file.is_relative_to(frontend) or not file.is_file():
                     raise BridgeError(404, "Not found")

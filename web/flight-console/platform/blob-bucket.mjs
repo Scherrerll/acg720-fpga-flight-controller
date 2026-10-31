@@ -1,6 +1,6 @@
 // R2 subset used by worker/flight.mjs. The injected store is an EdgeOne Blob Store.
 // Payload and metadata share one atomic set; there is no mutable listing index.
-const KEY = /^(?:telemetry\/latest\.json|logs\/[A-Za-z0-9_-]{8,90}\.json)$/;
+const KEY = /^(?:telemetry\/latest\.json|logs\/[A-Za-z0-9_-]{8,90}\.json|control\/heartbeat\.json|control\/request\/[0-9a-f]{32}\/[0-9a-f]{32}\.json|control\/result\/[0-9a-f]{32}\/[A-Za-z0-9_-]{8,90}\.json)$/;
 function validKey(key) {
   if (typeof key !== 'string' || !KEY.test(key)) throw new TypeError('Invalid bucket key');
 }

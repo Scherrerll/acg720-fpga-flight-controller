@@ -1,0 +1,14 @@
+[
+  {
+    "attitudeColumns": "415.2px 160px",
+    "mainColumns": "638.8px",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "attitudeColumns": "458.2px 105px",
+    "mainColumns": "615.8px 265px",
+    "overflow": false,
+    "width": 1024
+  }
+]

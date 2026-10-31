@@ -4,7 +4,7 @@ import {gzipSync,gunzipSync} from 'node:zlib';
 import {createHandler} from '../cloud-functions/api/[[default]].js';
 
 const token='test-only-not-a-real-credential-123456789';
-function setup({enhanced=false}={}){
+function setup({enhanced=false,controlToken}={}){
  const data=new Map();
  const store={get:async k=>data.get(k)??null,set:async(k,v)=>data.set(k,v),delete:async k=>data.delete(k),list:async()=>({blobs:[...data.keys()].filter(k=>k.startsWith('logs/')).map(key=>({key}))})};
  const handler=createHandler({storeFactory:()=>store});
@@ -16,7 +16,7 @@ function setup({enhanced=false}={}){
    Object.defineProperty(request,'body',{get(){throw Error('EdgeOne parsed body getter accessed');}});
    Object.defineProperty(request,'signal',{value:undefined,configurable:true});
   }
-  return handler({request,env:{PUBLISH_TOKEN:token}});
+  return handler({request,env:{PUBLISH_TOKEN:token,CONTROL_TOKEN:controlToken}});
  };
 }
 const options=(body,{authorized=true,encoding='gzip'}={})=>({method:'POST',headers:{'Content-Type':'application/json','Content-Encoding':encoding,...authorized?{'X-Flight-Publish-Token':token}:{}},body:encoding==='gzip'?gzipSync(body):body});
@@ -48,6 +48,31 @@ test('SDK construction failures return sanitized retryable status',async()=>{
  const handler=createHandler({storeFactory(){throw Error('private diagnostic');}});
  const response=await handler({request:new Request('https://example.test/api/live')});
  assert.equal(response.status,503);assert.deepEqual(await response.json(),{error:'temporarily_unavailable'});
+});
+
+test('EdgeOne adapter keeps control disabled by default and carries isolated control mail through BlobBucket',async()=>{
+ const disabled=setup();
+ assert.equal((await disabled('/api/remote-pi/status')).status,503);
+ const controlToken='operator-only-adapter-fixture-123456789';
+ const request=setup({enhanced:true,controlToken});
+ const epoch='a'.repeat(32),challenge='b'.repeat(32);
+ const publish=body=>({method:'POST',headers:{'Content-Type':'application/json','X-Flight-Publish-Token':token},body:JSON.stringify(body)});
+ const status={enabled:true,connected:true,source:'SiK',baud:115200,epoch:9,
+  supported:false,busy:false,can_query:true,can_set:false,active:null};
+ assert.equal((await request('/api/remote-pi/heartbeat',publish({epoch,challenge,status}))).status,200);
+ assert.equal((await request('/api/remote-pi/status',{headers:{'X-Flight-Control-Token':token}})).status,401);
+ const headers={'X-Flight-Control-Token':controlToken};
+ const snapshot=await(await request('/api/remote-pi/status',{headers})).json();
+ assert.equal(snapshot.relay_fresh,true);
+ const command={id:'adapter_query_123',epoch,challenge,action:'query',expected_epoch:9};
+ assert.equal((await request('/api/remote-pi/command',{method:'POST',headers:{...headers,Origin:'https://example.test','Content-Type':'application/json'},body:JSON.stringify(command)})).status,202);
+ const polled=await(await request(`/api/remote-pi/poll?epoch=${epoch}&challenge=${challenge}`,{headers:{'X-Flight-Publish-Token':token}})).json();
+ assert.equal(polled.command.id,command.id);
+ const active={p_text:'0.1000',i_text:'0.0350',generation:0,build:'0000B0B5',age_ms:0};
+ assert.equal((await request('/api/remote-pi/result',publish({epoch,id:command.id,challenge,intent:polled.command,result:{code:'queried',active,operation_id:1}}))).status,200);
+ const result=await(await request(`/api/remote-pi/result/${epoch}/${command.id}`,{headers})).json();
+ assert.equal(result.result.code,'queried');
+ assert.deepEqual((await(await request('/api/logs')).json()).logs,[]);
 });
 
 test('EdgeOne enhanced Requests preserve bounded identity and gzip write/delete',async()=>{

@@ -2,6 +2,7 @@
 from collections import OrderedDict
 import argparse
 import importlib.util
+import hashlib
 import math
 from pathlib import Path
 import threading
@@ -15,11 +16,34 @@ _SPEC.loader.exec_module(_CODEC)
 encode_request = _CODEC.encode_request
 gain = _CODEC.gain
 
+# Byte-for-byte copy of the B0B5 codec from the manifest-bound review package:
+# analysis/20261028_water_drive/qualified_offline_B0B5/xy_pi_cli.py
+# Its parameter request/response format matches B0B4 except the A591 identity.
+# B0B5 flight_core also enforces water_neutral && !water_enabled at commit.
+# A changed package must be reviewed again.
+_B0B5_CODEC_PATH = Path(__file__).resolve().parent / 'b0b5_xy_pi_codec.py'
+_B0B5_CODEC_SHA256 = '869a061525ea11e25288acd187b61d848a12ebd2b51e2235f549e11699ef12b0'
+_CODECS = {'B0B4': _CODEC}
 
-def decode_parameter_response(packet):
+
+def _codec_for_build(build):
+    if build not in ('B0B4', 'B0B5'):
+        raise ValueError('Parameter build must be exactly B0B4 or B0B5.')
+    if build not in _CODECS:
+        if hashlib.sha256(_B0B5_CODEC_PATH.read_bytes()).hexdigest() != _B0B5_CODEC_SHA256:
+            raise ValueError('B0B5 codec differs from the reviewed package.')
+        spec = importlib.util.spec_from_file_location('b0b5_frozen_xy_pi_codec', _B0B5_CODEC_PATH)
+        codec = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(codec)
+        _CODECS[build] = codec
+    return _CODECS[build]
+
+
+def decode_parameter_response(packet, build='B0B4'):
     """Register this complete frame in PacketReceiver, never a parallel stream."""
-    row = _CODEC.decode_response(packet)
-    if row['opcode'] not in (1, 2) or row['status'] not in _CODEC.STATUS:
+    codec = _codec_for_build(build)
+    row = codec.decode_response(packet)
+    if row['opcode'] not in (1, 2) or row['status'] not in codec.STATUS:
         raise ValueError('unsupported parameter opcode/status')
     return dict(row, _protocol='a591')
 
@@ -46,7 +70,9 @@ class XYPIController:
     therefore never turn a possibly transmitted SET into a safe retry. Callers
     must pass the receive connection epoch through to ``response``.
     """
-    def __init__(self, enabled=False, clock=time.monotonic, sequence_start=None, timeout=3):
+    def __init__(self, enabled=False, clock=time.monotonic, sequence_start=None, timeout=3, build='B0B4'):
+        _codec_for_build(build)
+        self._build = '0000' + build
         if sequence_start is None:
             sequence_start = (time.time_ns() // 1000000) & 0xffffffff
         if not _uint32(sequence_start):
@@ -212,15 +238,17 @@ class XYPIController:
                 code = 'unknown' if self._operation['set_attempted'] else 'cancelled'
                 self._finish_locked(code, 'Serial write failed or was incomplete; query again.', invalidate=True)
 
-    @staticmethod
-    def _valid_response(row):
+    def decode_parameter_response(self, packet):
+        return decode_parameter_response(packet, self._build[4:])
+
+    def _valid_response(self, row):
         return (isinstance(row, dict) and row.get('_protocol') == 'a591'
                 and type(row.get('protocol')) is int and row['protocol'] == 1
                 and type(row.get('opcode')) is int and row['opcode'] in (1, 2)
                 and type(row.get('status')) is int and row['status'] in _CODEC.STATUS
                 and _uint32(row.get('sequence')) and _uint32(row.get('generation'))
                 and all(type(row.get(k)) is int and 0 <= row[k] <= 10000 for k in ('p_wire', 'i_wire'))
-                and row.get('build') == '0000B0B4')
+                and row.get('build') == self._build)
 
     def _observe_locked(self, row):
         self._active = dict(p_text=_gain_text(row['p_wire']), i_text=_gain_text(row['i_wire']),
@@ -305,7 +333,7 @@ class XYPIController:
             active = dict(self._active) if self._active is not None else None
             if active is not None:
                 active['age_ms'] = max(0, round((self._clock() - self._active_at) * 1000, 1))
-            return dict(enabled=self._enabled, connected=self._connected,
+            return dict(enabled=self._enabled, connected=self._connected, expected_build=self._build,
                         source=self._source, baud=self._baud, epoch=self._epoch,
                         supported=self._supported, busy=self._operation is not None,
                         phase=self._phase, operation_id=self._operation_id, active=active,

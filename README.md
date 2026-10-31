@@ -11,9 +11,11 @@
 
 仓库在 2026 年 10 月 22 日开始整理。前面从 9 月的架构和选型讨论、10 月初的 ACG720 选型和接线开始，后面按开发阶段存放。Git 提交日期是实际整理上传的日期；各阶段日期来自会话和验证记录。早期目录是从当前工作区导出的阶段资料，不一定是当天的完整快照。
 
-## 版本说明（更新于 2026-10-29）
+## 版本说明（更新于 2026-10-31）
 
 目前最新的是 [B0B5 水面双推进版本](firmware/B0B5/README.md)，[源码工程在这里](analysis/20261028_water_drive/qualified_offline_B0B5/source/acg720_ano_port.gprj)。A13、A14 输出两路 50 Hz PWM，13 项离线检查和 20 ns 约束下的五类 STA 均通过，Fmax 为 50.032 MHz。10 月 29 日收到用户反馈，当前接线和测试条件下使用正常。具体测了哪些项目见版本记录，暂时没有独立镜像读回、Flash 持久性、冷启动和逐项保护实测证据。
+
+[中文注释版源码工程](firmware/B0B5/source_cn/acg720_ano_port.gprj)和[注释索引](firmware/B0B5/CHINESE_COMMENTS_INDEX.md)可用于阅读与协作；原审查包及其选中位流仍单独保留。
 
 原审查包是在离线阶段打包的，里面保留了“禁止安装”、`installed=false` 和 `hardware_qualified=false` 等当时的状态；后来的测试反馈单独写在 B0B5 记录里。水面测试结果不能用于证明回中刹停、持续悬停或完整飞行功能已经通过验收。[原始审查包](analysis/20261028_water_drive/qualified_offline_B0B5/README.md)中保留了对应源码、位流和离线证据。
 
@@ -27,6 +29,7 @@
 | [B0B2 原 V15](firmware/B0B2/README.md) | 保留原 V15 的 51.400 MHz、19.5 ns 通过结果和当次上板、Flash 记录 | 与后续 P005/I0、B0B3 分开记录，不继承飞行资格 |
 | [B0B0](firmware/B0B0/README.md)、[B0AC](history/12-b0ac/) | 保留原拆桨、Flash 和冷启动证据 | 不能据此判断当前机载镜像或新版本验收情况 |
 | [B0AE](firmware/B0AE/README.md) | 保留 10 月 22 日离线回归和 50.505 MHz 结果 | 后来由 B0B0 取代候选位置 |
+| [ground/B0B4 地面站](ground/B0B4/README.md) | 新增 GM-FLY 风格实时、日志和 P/I 页面，可显式选择 B0B4 或 B0B5 参数协议 | B0B5 实际查询/写入仍需独立实机验收；参数写入需显式启用 |
 | [ground/B0B0](ground/B0B0/README.md) | B0B0 分帧解码、只读接收和自动日志，提供便携导入适配 | 没有电池电压、电流和 ESC 转速实测 |
 | [分享网站](https://gmflylog.com/) · [源码](web/flight-console/README.md) | 恢复 B0B0 实时转发，保留选定日志分享与慢网络恢复 | 实时分享需要电脑端的 8765 接收和 8766 显式实时分享持续运行 |
 
@@ -38,7 +41,7 @@
 - [mechanical](mechanical/README.md)：SolidWorks 总装和零件、STEP、打印件及加工件，保留原相对目录。
 - [hardware](hardware/README.md)：材料购买文档原件《材料汇总.docx》。
 - [firmware/B0B5](firmware/B0B5/README.md)：水面双推进的源码、位流入口和测试反馈；[B0B4](firmware/B0B4/README.md)及更早版本也在 firmware 中。
-- [ground](ground/README.md)、`support/`：Python 只读接收网页和所需解码器。
+- [ground](ground/README.md)、`support/`：Python 接收网页和所需解码器；B0B4 地面站支持在明确启用后进行受控的 P/I 查询和设置。
 - [web/flight-console](web/flight-console/README.md)：分享前端、本地转发、EdgeOne 云函数与存储适配，以及部署和验收记录。
 - [构建与核查工具](docs/BUILD_AND_VERIFY.md)：导出完整性校验、离线构建和选择性 RTL 回放。
 - 其他资料：[接线与单位](docs/HARDWARE.md)、[控制边界与待验收项](docs/STATUS.md)、[第三方来源](THIRD_PARTY_NOTICES.md)。

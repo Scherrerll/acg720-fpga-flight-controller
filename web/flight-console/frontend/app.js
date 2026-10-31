@@ -8,7 +8,10 @@ import {createLiveTween,createLiveFollower,createLivePose} from './live-playback
   const valid = value => typeof value === 'number' && Number.isFinite(value);
   const fmt = (value, digits = 1) => valid(value) ? value.toFixed(digits) : '—';
   const integer = value => valid(value) ? value.toLocaleString('zh-CN', { maximumFractionDigits: 0 }) : '—';
-  const text = (id, value) => { $(id).textContent = value == null || value === '' ? '—' : String(value); };
+  const text = (id, value) => {
+    const node = $(id), next = value == null || value === '' ? '—' : String(value);
+    if (node.textContent !== next) node.textContent = next;
+  };
   const boolText = (value, yes, no) => value === true ? yes : value === false ? no : '—';
   const logArmed = value => value === true || value === 1 ? true : value === false || value === 0 ? false : null;
   const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
@@ -244,8 +247,12 @@ import {createLiveTween,createLiveFollower,createLivePose} from './live-playback
     const rect = canvas.getBoundingClientRect();
     if (!rect.width) return null;
     const dpr = window.devicePixelRatio || 1;
-    canvas.width = Math.round(rect.width * dpr); canvas.height = Math.round(rect.height * dpr);
-    const ctx = canvas.getContext('2d'); ctx.scale(dpr, dpr);
+    const pixelWidth = Math.round(rect.width * dpr), pixelHeight = Math.round(rect.height * dpr);
+    if (canvas.width !== pixelWidth) canvas.width = pixelWidth;
+    if (canvas.height !== pixelHeight) canvas.height = pixelHeight;
+    const ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, rect.width, rect.height);
     ctx.font = '10px "Segoe UI", "Microsoft YaHei", sans-serif';
     return { ctx, width: rect.width, height: rect.height };
   }
@@ -630,7 +637,7 @@ import {createLiveTween,createLiveFollower,createLivePose} from './live-playback
   }
   window.addEventListener('hashchange', route);
   let resizeTimer; window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => state.page === 'logs' ? drawLog() : drawLive(), 80); });
-  const livePoller = createLivePoller({poll:pollLive, visible:()=>!document.hidden, connected:()=>!state.pollFailed && liveStatus().connected, intervalMs:()=>state.caps?.mode === 'local' ? 200 : 1000});
+  const livePoller = createLivePoller({poll:pollLive, visible:()=>!document.hidden, connected:()=>!state.pollFailed && liveStatus().connected, intervalMs:()=>state.caps?.mode === 'local' ? 100 : 1000});
   document.addEventListener('visibilitychange', () => { if (document.hidden) { pause(); stopVisuals(); livePoller.suspend(); } else { poseTransition.reset(); poseStamp = null; chartClock.reset(); chartTransitions.clear(); livePoller.resume(); startVisuals(); loadCapabilities(); } });
   function tick() { if (document.hidden) return; text('clock', new Date().toLocaleTimeString('zh-CN', { hour12: false })); renderLive(); }
   renderLive(); route(); if (!document.hidden) loadCapabilities(); livePoller.resume(); tick();

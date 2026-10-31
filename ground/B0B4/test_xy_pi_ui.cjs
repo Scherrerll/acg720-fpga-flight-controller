@@ -8,7 +8,9 @@ const path = require('node:path');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
 
-const html = fs.readFileSync(path.join(__dirname, 'dashboard.html'), 'utf8');
+const html = fs.readFileSync(path.join(__dirname, 'parameters.html'), 'utf8');
+const dashboard = fs.readFileSync(path.join(__dirname, 'dashboard.html'), 'utf8');
+const logs = fs.readFileSync(path.join(__dirname, 'logs-ui.html'), 'utf8');
 const source = fs.readFileSync(path.join(__dirname, 'xy-pi-ui.js'), 'utf8');
 const css = fs.readFileSync(path.join(__dirname, 'xy-pi-ui.css'), 'utf8');
 const tags = [...html.matchAll(/<[^>]+\bid="(xy-pi-[^"]+)"[^>]*>/g)];
@@ -17,8 +19,25 @@ assert.equal(new Set(ids).size, ids.length, 'HTML IDs must be unique');
 for (const used of source.matchAll(/el\('([^']+)'\)/g)) {
   assert(ids.includes(`xy-pi-${used[1]}`), `JS references a missing real HTML ID: ${used[1]}`);
 }
-assert(html.indexOf('id="xy-pi-card"') > html.indexOf('control-card'));
-assert(html.indexOf('id="xy-pi-card"') < html.indexOf('导航与传感器'));
+assert(!dashboard.includes('id="xy-pi-card"'), 'live page must not contain the parameter form');
+assert(!dashboard.includes('/xy-pi-ui.js') && !dashboard.includes('/xy-pi-ui.css'),
+  'live page must not load the parameter controller or styles');
+assert(!logs.includes('/xy-pi-ui.js') && !logs.includes('/xy-pi-ui.css'));
+for (const [page, route] of [[dashboard, '/'], [logs, '/logs'], [html, '/parameters']]) {
+  const rail = page.match(/<nav\b[^>]*class="rail"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
+  assert(rail, `missing primary side navigation on ${route}`);
+  const links = [...rail.matchAll(/<a\b([^>]+)>/g)].map(match => {
+    const attrs = Object.fromEntries([...match[1].matchAll(/([\w-]+)="([^"]*)"/g)]
+      .map(attr => [attr[1], attr[2]]));
+    return attrs;
+  });
+  assert.deepEqual(links.map(link => link.href).sort(), ['/', '/logs', '/parameters']);
+  assert(links.every(link => link.class.split(/\s+/).includes('nav-item')));
+  const current = links.filter(link => link['aria-current'] === 'page');
+  assert.equal(current.length, 1, `one current navigation item required on ${route}`);
+  assert.equal(current[0].href, route);
+  assert.deepEqual(links.filter(link => link.class.split(/\s+/).includes('active')), current);
+}
 assert(html.includes('href="/xy-pi-ui.css"') && html.includes('src="/xy-pi-ui.js"'));
 assert(html.includes('href="/pi-help"') && html.includes('aria-live="polite"'));
 for (const field of ['p', 'i', 'stopped']) assert(html.includes(`for="xy-pi-${field}"`));
@@ -216,6 +235,44 @@ async function run() {
   x = await setup();
   x.server = {...base, supported: true, can_set: true, active: {...active, build: '0000B0B3'}};
   await x.poll(); x.confirm(); assert(x.e('set').disabled, 'B3 capability is not B4 capability proof');
+  x = await setup();
+  x.server = {...base, supported: true, can_set: true, active: {...active, build: '0000B0B5'}};
+  await x.poll(); x.confirm();
+  assert(x.e('set').disabled && x.e('query').disabled, 'B5 response must not grant B4 parameter capability');
+  assert.equal(x.posts().length, 0, 'unsupported B5 never causes a parameter POST');
+  x = await setup();
+  x.server = {...base, expected_build: '0000B0B5'}; await x.poll();
+  await x.click('query');
+  x.server = {...base, expected_build: '0000B0B5', supported: true, can_set: true,
+    active: {...active, build: '0000B0B5'}, operation_id: 1,
+    result: {code: 'queried', operation_id: 1, message: 'mock matched B5 GET'}};
+  await x.poll(); x.confirm();
+  assert(!x.e('set').disabled && !x.e('query').disabled, 'explicit B5 plus matching GET is accepted');
+  assert(x.e('status').textContent.includes('设备查询完成'));
+  assert(x.e('source').textContent.includes('0000B0B5'));
+  await x.submit();
+  assert.equal(x.posts().length, 2, 'one explicit B5 query and one explicit paired SET');
+  x.server = {...base, expected_build: '0000B0B5', supported: true, can_set: true,
+    active: {...active, build: '0000B0B5', generation: 1}, operation_id: 2,
+    result: {code: 'verified', operation_id: 2, message: 'mock B5 ACK plus GET'}};
+  await x.poll();
+  assert(x.e('status').textContent.includes('成对写入完成'));
+  for (const expected_build of ['0000B0B4', '0000B0B5']) {
+    const foreign = expected_build === '0000B0B4' ? '0000B0B5' : '0000B0B4';
+    x = await setup();
+    x.server = {...base, expected_build, supported: true, can_set: true, active: {...active, build: foreign}};
+    await x.poll(); x.confirm();
+    assert(x.e('set').disabled && x.e('query').disabled, 'explicit selection rejects the other build');
+    assert.equal(x.posts().length, 0);
+  }
+  for (const expected_build of ['0000B0B6', 'B0B5', null]) {
+    x = await setup(); x.server = {...base, expected_build}; await x.poll();
+    assert(x.e('set').disabled && x.e('query').disabled, 'unknown selected build fails closed');
+  }
+  x = await setup(); await x.complete(8); x.confirm();
+  x.server = {...base, expected_build: '0000B0B5', supported: true, can_set: true,
+    active: {...active, build: '0000B0B5'}}; await x.poll();
+  assert(!x.e('stopped').checked && x.e('set').disabled, 'build change consumes the old stop confirmation');
   x = await setup(); x.server = {...base, supported: true, can_set: true, active: {...active, p_wire: null}};
   await x.poll(); x.confirm(); assert(x.e('set').disabled, 'invalid active wire fields fail closed');
 

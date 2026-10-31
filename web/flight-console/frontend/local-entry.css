@@ -1,0 +1,8 @@
+.local-file-entry .topbar,.local-file-entry .app-shell{display:none}
+.local-file-help{max-width:680px;margin:8vh auto;padding:32px;border:1px solid var(--border);border-radius:8px;background:var(--panel);line-height:1.85}
+.local-file-help>img{margin-bottom:18px}
+.local-file-help h1{font-size:24px;margin:8px 0 20px}
+.local-file-help ol{padding-left:22px;margin:20px 0 26px}
+.local-file-help code,.local-file-help strong{color:#bddbfa;overflow-wrap:anywhere}
+.local-file-help .local-entry-note{color:var(--muted);font-size:12px;margin:20px 0 0;overflow-wrap:anywhere}
+@media(max-width:720px){.local-file-help{margin:24px 16px;padding:24px}.local-file-help h1{font-size:21px}}

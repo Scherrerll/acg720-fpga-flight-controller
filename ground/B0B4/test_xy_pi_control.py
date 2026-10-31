@@ -36,7 +36,7 @@ class CodecTests(unittest.TestCase):
     def test_response_strict_identity_crc_opcode_status(self):
         row = decode_parameter_response(packet())
         self.assertEqual((row['_protocol'], row['build'], row['p_wire']), ('a591', '0000B0B4', 1000))
-        variants = [packet(build=0xb0b2), packet(build=0xb0b3), packet(version=2), packet(length=23),
+        variants = [packet(build=0xb0b2), packet(build=0xb0b3), packet(build=0xb0b5), packet(version=2), packet(length=23),
                     packet(op=3), packet(status=7), packet(p=10001), packet(i=10001),
                     packet()[:-1], b'\xa5\x79' + packet()[2:]]
         bad_crc = bytearray(packet()); bad_crc[8] ^= 1; variants.append(bytes(bad_crc))

@@ -1,4 +1,5 @@
-// Only the local publisher has write access. Public routes are read-only.
+// Public telemetry is read-only; remote P/I has a separately authenticated relay.
+import {handleRemotePI} from './remote-pi.mjs';
 const ASSETS = globalThis.__FLIGHT_ASSETS__ || {};
 const TRACKING=['roll_sp_deg','pitch_sp_deg','yaw_rate_dps','yaw_rate_sp_dps'];
 const FIELDS=['t_s','roll_deg','pitch_deg','yaw_deg','height_m','vx_mps','vy_mps','vz_mps','speed_mps','m1_us','m2_us','m3_us','m4_us','throttle_us','armed',...TRACKING];
@@ -90,6 +91,7 @@ async function body(request,limit=8*1024*1024){
  return JSON.parse(new TextDecoder().decode(data));
 }
 async function handle(request,env){
+ const remote=await handleRemotePI(request,env);if(remote)return remote;
  const u=new URL(request.url),path=u.pathname;
  if(request.method==='GET'||request.method==='HEAD'){
   if(path==='/api/capabilities')return json({mode:'share',can_share_logs:false,share_url:u.origin});
@@ -113,7 +115,7 @@ async function handle(request,env){
    const log=await o.json();
    return m[2]?new Response(csv(log),{headers:{...SECURE,'Content-Type':'text/csv; charset=utf-8','Content-Disposition':'attachment; filename="'+log.id+'.csv"','Cache-Control':'no-store'}}):json({log});
   }
-  const name=path==='/'||path==='/logs'?'index.html':path==='/favicon.ico'?'gm-fly-mark.svg':path.slice(1);
+  const name=path==='/parameters'?'parameters.html':path==='/'||path==='/logs'?'index.html':path==='/favicon.ico'?'gm-fly-mark.svg':path.slice(1);
   if(Object.hasOwn(ASSETS,name)){
    const asset=ASSETS[name],body=request.method==='HEAD'?null:asset.encoding==='base64'?Uint8Array.from(atob(asset.body),c=>c.charCodeAt(0)):asset.body;
    return new Response(body,{headers:{...SECURE,'Content-Type':asset.type,'Cache-Control':'no-cache'}});
