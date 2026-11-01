@@ -40,7 +40,7 @@
 - [ground](ground/README.md)、`support/`：Python 接收网页和所需解码器；B0B4 地面站支持在明确启用后进行受控的 P/I 查询和设置。
 - [web/flight-console](web/flight-console/README.md)：分享前端、本地转发、EdgeOne 云函数与存储适配，以及部署和验收记录。
 - [构建与核查工具](docs/BUILD_AND_VERIFY.md)：导出完整性校验、离线构建和选择性 RTL 回放。
-- 其他资料：[接线与单位](docs/HARDWARE.md)、[控制边界与待验收项](docs/STATUS.md)、[第三方来源](THIRD_PARTY_NOTICES.md)。
+- 其他资料：[接线与单位](docs/HARDWARE.md)、[控制边界与待验收项](docs/STATUS.md)。
 
 ## 如何核查
 
