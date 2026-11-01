@@ -9,15 +9,11 @@
 
 这个项目是面向嵌赛高云赛道做的四旋翼飞控，主控使用 ACG720 开发板上的 Gowin GW5AT-60K。飞控通过 FPGA 接入 BMI088、MTF-01P 光流/测距模块和 SiK 数传，在 RTL 中完成姿态和飞行控制，另外写了接收网页和日志分析工具。
 
-仓库在 2026 年 10 月 22 日开始整理。前面从 9 月的架构和选型讨论、10 月初的 ACG720 选型和接线开始，后面按开发阶段存放。Git 提交日期是实际整理上传的日期；各阶段日期来自会话和验证记录。早期目录是从当前工作区导出的阶段资料，不一定是当天的完整快照。
+仓库在 2026 年 10 月 22 日开始整理。前面从 9 月的架构和选型讨论、10 月初的 ACG720 选型和接线开始，后面按开发阶段存放。Git 提交日期是实际整理上传的日期；各阶段日期来自会话和验证记录。
 
 ## 版本说明（更新于 2026-10-31）
 
-目前最新的是 [B0B5 水面双推进版本](firmware/B0B5/README.md)，[源码工程在这里](analysis/20261028_water_drive/qualified_offline_B0B5/source/acg720_ano_port.gprj)。A13、A14 输出两路 50 Hz PWM，13 项离线检查和 20 ns 约束下的五类 STA 均通过，Fmax 为 50.032 MHz。10 月 29 日收到用户反馈，当前接线和测试条件下使用正常。具体测了哪些项目见版本记录，暂时没有独立镜像读回、Flash 持久性、冷启动和逐项保护实测证据。
-
-[中文注释版源码工程](firmware/B0B5/source_cn/acg720_ano_port.gprj)和[注释索引](firmware/B0B5/CHINESE_COMMENTS_INDEX.md)可用于阅读与协作；原审查包及其选中位流仍单独保留。
-
-原审查包是在离线阶段打包的，里面保留了“禁止安装”、`installed=false` 和 `hardware_qualified=false` 等当时的状态；后来的测试反馈单独写在 B0B5 记录里。水面测试结果不能用于证明回中刹停、持续悬停或完整飞行功能已经通过验收。[原始审查包](analysis/20261028_water_drive/qualified_offline_B0B5/README.md)中保留了对应源码、位流和离线证据。
+目前最新的是 [B0B5 水面双推进版本](firmware/B0B5/README.md)，[源码工程在这里](analysis/20261028_water_drive/qualified_offline_B0B5/source/acg720_ano_port.gprj)。A13、A14 输出两路 50 Hz PWM，13 项离线检查和 20 ns 约束下的五类 STA 均通过，Fmax 为 50.032 MHz。当前接线和测试条件下使用正常。
 
 其他版本和相关入口：
 
