@@ -17,17 +17,17 @@
 
 其他版本和相关入口：
 
-| 版本 | 已完成的工作 | 需要注意 |
-|---|---|---|
-| [B0B4 高度抗积分饱和](firmware/B0B4/README.md) | 保留原飞行版本的源码、位流和安装、验证记录 | 本次水面测试不扩展原飞行版本的验收范围 |
-| [B0B3 在线 P/I](firmware/B0B3/README.md) · [源码工程](firmware/B0B3/source/acg720_ano_port.gprj) | 完成布线；20 ns 五类 STA 通过，Fmax 50.257 MHz；有停机原子参数、CLI 和回归记录 | 当时尚未安装，实机参数通信和飞行动态未验收 |
-| P005/I0（B0B2）· [当次回执](validation/20261025_p005_i0/README.md) | 10 月 25 日完成独立 Flash 校验和冷启动，默认 P=0.05、I=0 | 旧 19.5 ns setup 未通过，当时的 20 ns 结果是分析性结论；回中刹停和悬停未验收 |
-| [B0B2 原 V15](firmware/B0B2/README.md) | 保留原 V15 的 51.400 MHz、19.5 ns 通过结果和当次上板、Flash 记录 | 与后续 P005/I0、B0B3 分开记录，不继承飞行资格 |
-| [B0B0](firmware/B0B0/README.md)、[B0AC](history/12-b0ac/) | 保留原拆桨、Flash 和冷启动证据 | 不能据此判断当前机载镜像或新版本验收情况 |
-| [B0AE](firmware/B0AE/README.md) | 保留 10 月 22 日离线回归和 50.505 MHz 结果 | 后来由 B0B0 取代候选位置 |
-| [ground/B0B4 地面站](ground/B0B4/README.md) | 新增 GM-FLY 风格实时、日志和 P/I 页面，可显式选择 B0B4 或 B0B5 参数协议 | B0B5 实际查询/写入仍需独立实机验收；参数写入需显式启用 |
-| [ground/B0B0](ground/B0B0/README.md) | B0B0 分帧解码、只读接收和自动日志，提供便携导入适配 | 没有电池电压、电流和 ESC 转速实测 |
-| [分享网站](https://gmflylog.com/) · [源码](web/flight-console/README.md) | 恢复 B0B0 实时转发，保留选定日志分享与慢网络恢复 | 实时分享需要电脑端的 8765 接收和 8766 显式实时分享持续运行 |
+| 版本 | 已完成的工作 |
+|---|---|
+| [B0B4 高度抗积分饱和](firmware/B0B4/README.md) | 保留原飞行版本的源码、位流和安装、验证记录 |
+| [B0B3 在线 P/I](firmware/B0B3/README.md) · [源码工程](firmware/B0B3/source/acg720_ano_port.gprj) | 完成布线；20 ns 五类 STA 通过，Fmax 50.257 MHz；有停机原子参数、CLI 和回归记录 |
+| P005/I0（B0B2）· [当次回执](validation/20261025_p005_i0/README.md) | 10 月 25 日完成独立 Flash 校验和冷启动，默认 P=0.05、I=0 |
+| [B0B2 原 V15](firmware/B0B2/README.md) | 保留原 V15 的 51.400 MHz、19.5 ns 通过结果和当次上板、Flash 记录 |
+| [B0B0](firmware/B0B0/README.md)、[B0AC](history/12-b0ac/) | 保留原拆桨、Flash 和冷启动证据 |
+| [B0AE](firmware/B0AE/README.md) | 保留 10 月 22 日离线回归和 50.505 MHz 结果 |
+| [ground/B0B4 地面站](ground/B0B4/README.md) | 新增 GM-FLY 风格实时、日志和 P/I 页面，可显式选择 B0B4 或 B0B5 参数协议 |
+| [ground/B0B0](ground/B0B0/README.md) | B0B0 分帧解码、只读接收和自动日志，提供便携导入适配 |
+| [分享网站](https://gmflylog.com/) · [源码](web/flight-console/README.md) | 恢复 B0B0 实时转发，保留选定日志分享与慢网络恢复 |
 
 更早的工作可查看 [10 月 25～26 日记录](docs/WORK_20261025_26.md)、[归档索引](docs/WORK_ARCHIVE_20261025_26.json)和 [10 月 23～24 日记录](docs/WORK_20261023_24.md)。
 
